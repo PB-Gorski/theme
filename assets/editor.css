@@ -1,0 +1,14 @@
+body{
+    background-color: #F2F2F2;
+    color: black;
+    overflow-x: hidden;
+}
+a:link{
+    text-decoration: none;
+}
+
+figure div{
+    height: 100%!important;
+    width: 100%;
+    object-fit: cover;
+}
