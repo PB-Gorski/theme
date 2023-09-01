@@ -10,7 +10,12 @@ module.exports = {
   plugins: [require("tailwind-clip-path")],
   theme: {
     container: {
-      screens: {},
+      screens: {
+        lg: '960px',
+				'xl': '1100px',
+				'2xl': '1540px',
+				'3xl': '2100px',
+      },
     },
     screens: {
       mobile: "480px",
