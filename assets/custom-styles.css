@@ -10,4 +10,7 @@ body {
   font-family: "Robot", sans-serif;
 }
 
-
+/* Wordpress default styles */
+ul.wp-block-navigation__container  > li.wp-block-navigation-item{
+  color:red;
+}
