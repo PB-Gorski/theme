@@ -19,7 +19,6 @@
         <figcaption class="wp-element-caption">My video</figcaption>
       </figure>
       <!-- /wp:core/video -->
-
     </div>
     <!-- /wp:group -->
   </div>
