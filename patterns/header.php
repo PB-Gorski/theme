@@ -31,7 +31,7 @@
       <!-- wp:navigation /-->
 
       <!-- wp:group -->
-      <div class="wp-block-group modal w-full h-[209px] py-[20px] bg-bgLightGray opacity-0 absolute top-[100px] left-0 z-[1] transition ease duration-300">
+      <div class="wp-block-group modal w-full h-[209px] py-[20px] bg-bgLightGray opacity-0 absolute top-[100px] left-0 z-[0] transition ease duration-300">
         <!-- wp:list -->
         <ul class="wp-block-list containe mx-auto flex gap-[20px]">
           <!-- wp:list-item -->
