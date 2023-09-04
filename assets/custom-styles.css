@@ -26,7 +26,7 @@ ul.wp-block-navigation__container  > li.wp-block-navigation-item{
   cursor: pointer;
 }
 
-.modal:has(.wp-block-navigation__container > li:nth-child(1):hover){
+.wp-block-navigation__container > li:nth-child(1):hover + .modal{
 background-color: #E80D38;
 }
 
