@@ -33,7 +33,7 @@
       <!-- wp:group -->
       <div class="wp-block-group modal w-full h-[209px] py-[20px] bg-bgLightGray opacity-0 absolute top-[100px] left-0 z-[0] transition ease duration-300">
         <!-- wp:list -->
-        <ul class="wp-block-list container mx-auto flex gap-[20px]">
+        <ul class="wp-block-list container mx-auto flex items-center gap-[20px]">
           <!-- wp:list-item -->
           <li class="uppercase text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
             WSZYSTKIE
@@ -50,7 +50,7 @@
           </li>
           <!-- /wp:list-item -->
           <!-- wp:list-item -->
-          <li class="w-[2px] h-[37px] bg-[#8A8F99]">
+          <li class="w-[1px] h-[32px] bg-[#8A8F99]">
             <p class="hidden">separator</p>
           </li>
           <!-- /wp:list-item -->
