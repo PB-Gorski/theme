@@ -25,11 +25,11 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group nav-wrapper w-full flex items center justify-between gap-[20px]">
+  <div class="wp-block-group nav-wrapper relative w-full flex items center justify-between gap-[20px]">
     <!-- wp:navigation /-->
 
     <!-- wp:group -->
-    <div class="wp-block-group modal w-full h-[209px] opacity-50">
+    <div class="wp-block-group modal w-full h-[209px] opacity-50 absolute top-0 left-0">
       <!-- wp:paragraph -->
       <p>test</p>
       <!-- /wp:paragraph -->
