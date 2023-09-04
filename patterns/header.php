@@ -29,6 +29,14 @@
     <!-- wp:navigation /-->
 
     <!-- wp:group -->
+    <div class="wp-block-group modal w-full h-[209px] opacity-50">
+      <!-- wp:paragraph -->
+      <p>test</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
     <div class="wp-block-group btn-wrapper flex items-center gap-[10px]">
       <!-- wp:group -->
       <div class="wp-block-group btn-lang flex gap-[5px]">
