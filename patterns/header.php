@@ -25,7 +25,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group nav-wrapper flex items center justify-between">
+  <div class="wp-block-group nav-wrapper flex items center justify-between gap-[20px]">
     <!-- wp:navigation /-->
 
     <!-- wp:group -->

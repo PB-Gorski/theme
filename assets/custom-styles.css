@@ -19,7 +19,7 @@ ul.wp-block-navigation__container  > li.wp-block-navigation-item{
   font-size: 18px;
 }
 .wp-block-navigation-item:hover{
-  text-decoration: underline;
+  text-decoration: underline 2px;
   text-underline-offset: 4px;
   text-decoration-line: 2px;
   text-decoration-color: #E80D38;
