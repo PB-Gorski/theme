@@ -32,6 +32,15 @@
 
       <!-- wp:group -->
       <div class="wp-block-group modal w-full h-[209px] bg-bgLightGray opacity-50 absolute top-[100px] left-0 z-[1] transition ease duration-300">
+        <!-- wp:list -->
+        <ul class="wp-block-list">
+          <!-- wp:list-item -->
+          <li class="uppercase text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+            WSZYSTKIE
+          </li>
+          <!-- wp:list-item -->
+        </ul>
+        <!-- /wp:list -->
         <!-- wp:paragraph -->
         <p>test</p>
         <!-- /wp:paragraph -->
