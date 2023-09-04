@@ -15,7 +15,7 @@
     <a href="<?php home_url(); ?>" class="logo">
       <!-- wp:image -->
       <figure class="wp-block-image w-[115px]">
-        <img src="<?php echo home_url(); ?>/wp-content/themes/mutiny/assets/img/frontpage/logo.png" alt="pb-gorski-logo" />
+        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/frontpage/logo.png" alt="pb-gorski-logo" />
       </figure>
       <!-- /wp:image -->
     </a>
@@ -64,7 +64,7 @@
       <a href="/" class="w-[35px] h-[27px] fixed top-[15px] left-[20px]">
         <!-- wp:image -->
         <figure class="wp-block-image menu-logo desktop:hidden mr-[10px]">
-          <img src="<?php echo home_url(); ?> /wp-content/themes/mutiny/assets/img/frontpage/logo.png" alt="pb-gorski-logo" />
+          <img src="<?php echo home_url(); ?> /wp-content/themes/pbgorski/assets/img/frontpage/logo.png" alt="pb-gorski-logo" />
         </figure>
         <!-- /wp:image -->
       </a>
