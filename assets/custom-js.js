@@ -9,9 +9,9 @@ window.addEventListener("load", function() {
   hoverMenuItem.addEventListener('mouseover',()=>{
     modal.classList.replace('opacity-0', 'opacity-100');
   });
-  hoverMenuItem.addEventListener('mouseleave',()=>{
-    modal.classList.replace('opacity-100', 'opacity-0');
-  });
+  // hoverMenuItem.addEventListener('mouseleave',()=>{
+  //   modal.classList.replace('opacity-100', 'opacity-0');
+  // });
 
   modal.addEventListener('mouseleave',()=>{
     modal.classList.replace('opacity-100', 'opacity-0');
