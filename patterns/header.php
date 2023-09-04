@@ -38,12 +38,9 @@
           <li class="uppercase text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
             WSZYSTKIE
           </li>
-          <!-- wp:list-item -->
+          <!-- /wp:list-item -->
         </ul>
         <!-- /wp:list -->
-        <!-- wp:paragraph -->
-        <p>test</p>
-        <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
 
