@@ -3,6 +3,13 @@ window.addEventListener("load", function() {
     duration: 1200,
   });
   console.log('test2');
-  // document.getElementById('vid').play();
-  // document.getElementById('vid2').play();
+
+  const hoverMenuItem = document.querySelector('.hover-item');
+  const modal = document.querySelector('.modal');
+
+  hoverMenuItem.addEventListener('mouseover',()=>{
+    modal.classList.add('opacity-100');
+  });
+
+
 });

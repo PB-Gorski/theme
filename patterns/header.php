@@ -31,7 +31,7 @@
       <!-- wp:navigation /-->
 
       <!-- wp:group -->
-      <div class="wp-block-group modal w-full h-[209px] opacity-50 absolute top-[100px] left-0 z-[1]">
+      <div class="wp-block-group modal w-full h-[209px] opacity-50 absolute top-[100px] left-0 z-[1] transition ease duration-300">
         <!-- wp:paragraph -->
         <p>test</p>
         <!-- /wp:paragraph -->
