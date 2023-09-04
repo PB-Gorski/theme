@@ -225,7 +225,7 @@ if (!function_exists('pb_gorski_blocks_theme_support')) :
 		]);
 	}
 
-	add_action('after_setup_theme', 'pb-gorskiblocks_theme_support');
+	add_action('after_setup_theme', 'pb_gorski_blocks_theme_support');
 endif;
 
 /**
