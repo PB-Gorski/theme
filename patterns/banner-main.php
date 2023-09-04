@@ -14,12 +14,12 @@
   <div class="wp-block-group h-[80%] mx-auto">
     <!-- wp:group -->
     <div class="wp-block-group h-[80%] w-full">
-      <!-- wp:core/video {"attributes":"autoplay"} -->
+      <!-- wp:core/video {"attributes":{"autoplay":true"}} -->
       <figure class="wp-block-video banner-video"><video controls autoplay src="https://www.pbgorski.pl/assets/front/videos/header/hp.mp4?1688121499"></video>
         <figcaption class="wp-element-caption">My video</figcaption>
       </figure>
       <!-- /wp:core/video -->
-      <!-- wp:core/video {"attribute":"autoplay"} -->
+      <!-- wp:core/video {"attribute":{"autoplay":true"}} -->
       <figure class="wp-block-video banner-video"><video controls autoplay src="https://www.pbgorski.pl/assets/front/videos/header/hp.mp4?1688121499"></video>
         <figcaption class="wp-element-caption">My video</figcaption>
       </figure>
