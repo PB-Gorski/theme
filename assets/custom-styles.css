@@ -12,7 +12,7 @@ body {
 
 /* Wordpress default styles */
 .wp-block-navigation__container{
-  gap:20px;
+  gap: 40px;
 }
 ul.wp-block-navigation__container  > li.wp-block-navigation-item{
   color:#2e384d;
