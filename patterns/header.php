@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:list {"templateLock":"contentOnly","anchor":true} -->
-<ul id="Menu-desktop" class="wp-block-list nav-desktop headerDark h-[60px] desktop:h-[100px] bg-white w-[100%] hidden desktop:flex justify-center items-center">
+<ul id="Menu-desktop" class="wp-block-list nav-desktop container mx-auto h-[100px] flex items-center">
   <!-- wp:list-item -->
   <li>
     <a href="<?php home_url(); ?>" class="logo">
@@ -23,6 +23,34 @@
   <!-- /wp:list-item -->
 
   <!-- wp:navigation /-->
+
+  <!-- wp:group -->
+  <div class="wp-block-group btn-wrapper flex items-center gap-[10px]">
+    <!-- wp:group -->
+    <div class="wp-block-group btn-lang flex gap-[5px]">
+      <!-- wp:paragraph -->
+      <a href="#" class="">PL</a>
+      <span class="">/</span>
+      <!-- /wp:paragraph -->
+      <!-- wp:paragraph -->
+      <a href="#" class="">ENG</a>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div class="wp-block-group btn-fb bg-blue-700 text-white w-[20px] h-[20px] text-center rounded-[5px]">
+      <p>f</p>
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div class="wp-block-group group btn-find-more relative bg-[#3d4b66] text-white w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 desktop:before:w-[90px] before:w-[230px] before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
+      <p class="font-bold z-[1]">Znajdź mieszkanie</p>
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
 
 </ul>
 <!-- /wp:list -->
