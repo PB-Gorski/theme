@@ -28,6 +28,7 @@ module.exports = {
 			colors: {
 				primaryRed: '#E80D38',
         textGray: '#2E384D',
+        bgLightGray:'#EBEEF2'
 			},
 			
 		},
