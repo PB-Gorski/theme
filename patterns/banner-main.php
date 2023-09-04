@@ -15,15 +15,19 @@
     <!-- wp:group -->
     <div class="wp-block-group h-[80%] w-full">
       <!-- wp:core/video {"attributes":{"autoplay":true"}} -->
-      <figure class="wp-block-video banner-video"><video controls autoplay src="https://www.pbgorski.pl/assets/front/videos/header/hp.mp4?1688121499"></video>
+      <figure class="wp-block-video banner-video"><video id="vid" controls autoplay src="https://www.pbgorski.pl/assets/front/videos/header/hp.mp4?1688121499"></video>
         <figcaption class="wp-element-caption">My video</figcaption>
       </figure>
       <!-- /wp:core/video -->
       <!-- wp:core/video {"attribute":{"autoplay":true"}} -->
-      <figure class="wp-block-video banner-video"><video controls autoplay src="https://www.pbgorski.pl/assets/front/videos/header/hp.mp4?1688121499"></video>
+      <figure class="wp-block-video banner-video"><video id="vid2" controls autoplay src="https://www.pbgorski.pl/assets/front/videos/header/hp.mp4?1688121499"></video>
         <figcaption class="wp-element-caption">My video</figcaption>
       </figure>
       <!-- /wp:core/video -->
+      <script>
+        document.getElementById('vid').play();
+        document.getElementById('vid2').play();
+      </script>
     </div>
     <!-- /wp:group -->
   </div>
