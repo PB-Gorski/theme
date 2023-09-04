@@ -39,6 +39,21 @@
             WSZYSTKIE
           </li>
           <!-- /wp:list-item -->
+          <!-- wp:list-item -->
+          <li class="uppercase text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+            GDAŃSK
+          </li>
+          <!-- /wp:list-item -->
+          <!-- wp:list-item -->
+          <li class="uppercase text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+            GDYNIA
+          </li>
+          <!-- /wp:list-item -->
+          <!-- wp:list-item -->
+          <li class="uppercase text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+            <a href="<?php echo home_url(); ?>/inwestycje-zrealizowane">INWESTYCJE ZREALIZAOWANE</a>
+          </li>
+          <!-- /wp:list-item -->
         </ul>
         <!-- /wp:list -->
       </div>
