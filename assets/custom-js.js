@@ -12,5 +12,10 @@ window.addEventListener("load", function() {
     console.log(modal);
   });
 
+  modal.addEventListener('mouseleave',()=>{
+    modal.classList.replace('opacity-100', 'opacity-0');
+
+  })
+
 
 });
