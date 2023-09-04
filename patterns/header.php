@@ -30,7 +30,9 @@
     <div class="wp-block-group btn-lang flex gap-[5px]">
       <!-- wp:paragraph -->
       <a href="#" class="">PL</a>
-      <span class="">/</span>
+      <!-- /wp:paragraph -->
+      <!-- wp:paragraph -->
+      <p class="">/</p>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
       <a href="#" class="">ENG</a>
@@ -40,7 +42,9 @@
 
     <!-- wp:group -->
     <div class="wp-block-group btn-fb bg-blue-700 text-white w-[20px] h-[20px] text-center rounded-[5px]">
+      <!-- wp:paragraph -->
       <p>f</p>
+      <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
 
