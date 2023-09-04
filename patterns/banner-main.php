@@ -24,12 +24,6 @@
         <figcaption class="wp-element-caption">My video</figcaption>
       </figure>
       <!-- /wp:core/video -->
-      <script>
-        window.addEventListener("load", function() {
-          document.getElementById('vid').play();
-          document.getElementById('vid2').play();
-        });
-      </script>
     </div>
     <!-- /wp:group -->
   </div>
