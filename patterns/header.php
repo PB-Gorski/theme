@@ -50,6 +50,11 @@
           </li>
           <!-- /wp:list-item -->
           <!-- wp:list-item -->
+          <li class="w-[2px] h-[37px] bg-[#8A8F99]">
+            <p class="hidden">separator</p>
+          </li>
+          <!-- /wp:list-item -->
+          <!-- wp:list-item -->
           <li class="uppercase text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
             <a href="<?php echo home_url(); ?>/inwestycje-zrealizowane">INWESTYCJE ZREALIZAOWANE</a>
           </li>
