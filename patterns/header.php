@@ -107,35 +107,35 @@
     <!-- wp:list-item -->
     <li class="uppercase border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
       <!-- wp:paragraph -->
-      <p><a href="/about/">O NAS</a></p>
+      <p><a href="/inwestycje/">Inwestycje</a></p>
       <!-- /wp:paragraph -->
     </li>
     <!-- /wp:list-item -->
     <!-- wp:list-item -->
     <li class="uppercase border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
       <!-- wp:paragraph -->
-      <p><a href="/services/">USŁUGI</a></p>
+      <p><a href="/o-nas/">O nas</a></p>
       <!-- /wp:paragraph -->
     </li>
     <!-- /wp:list-item -->
     <!-- wp:list-item -->
     <li class="uppercase border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
       <!-- wp:paragraph -->
-      <p><a href="/realizations/">REALIZACJE</a></p>
+      <p><a href="/aktualnosci/">Aktualności</a></p>
       <!-- /wp:paragraph -->
     </li>
     <!-- /wp:list-item -->
     <!-- wp:list-item -->
     <li class="uppercase border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
       <!-- wp:paragraph -->
-      <p><a href="/blog/">Aktualności</a></p>
+      <p><a href="/kredyty/">Kredyty</a></p>
       <!-- /wp:paragraph -->
     </li>
     <!-- /wp:list-item -->
     <!-- wp:list-item -->
     <li class="p-[10px_20px] uppercase border-[2px] border-white rounded-full w-fit cursor-pointer hover:bg-white hover:text-black transition ease-out duration-300">
       <!-- wp:paragraph -->
-      <p><a href="/contact/">Kontakt</a></p>
+      <p><a href="/kontakt/">Kontakt</a></p>
       <!-- /wp:paragraph -->
     </li>
     <!-- /wp:list-item -->
