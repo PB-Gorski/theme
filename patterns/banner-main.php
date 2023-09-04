@@ -9,9 +9,9 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Banner" class="wp-block-group banner relative mb-0 pt-[80px] desktop:pt-[80px] h-fit desktop:h-screen">
+<div id="Banner" class="wp-block-group banner h-screen desktop:h-screen">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
+  <div class="wp-block-group h-full container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
     <div class="wp-block-group h-[80%] w-full bg-[#F2F2F2]">
       <!-- wp:paragraph -->
