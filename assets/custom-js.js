@@ -9,6 +9,7 @@ window.addEventListener("load", function() {
   hoverMenuItem.addEventListener('mouseover',()=>{
     modal.classList.replace('opacity-50', 'opacity-100');
     console.log('test');
+    console.log(modal);
   });
 
 
