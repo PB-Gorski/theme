@@ -25,8 +25,10 @@
       </figure>
       <!-- /wp:core/video -->
       <script>
-        document.getElementById('vid').play();
-        document.getElementById('vid2').play();
+        window.addEventListener("load", function() {
+          document.getElementById('vid').play();
+          document.getElementById('vid2').play();
+        });
       </script>
     </div>
     <!-- /wp:group -->
