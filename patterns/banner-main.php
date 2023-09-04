@@ -20,7 +20,7 @@
       </figure>
       <!-- /wp:core/video -->
       <!-- wp:core/video {"attribute":{"autoplay":true"}} -->
-      <figure class="wp-block-video banner-video"><video id="vid2" controls autoplay src="https://www.pbgorski.pl/assets/front/videos/header/hp.mp4?1688121499"></video>
+      <figure class="wp-block-video banner-video"><video id="vid2" controls autoplay loop muted preload allow="autoplay" src="https://www.pbgorski.pl/assets/front/videos/header/hp.mp4?1688121499"></video>
         <figcaption class="wp-element-caption">My video</figcaption>
       </figure>
       <!-- /wp:core/video -->
