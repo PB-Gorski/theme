@@ -24,5 +24,11 @@ module.exports = {
       wide: "1496px",
       fullhd: "1920px",
     },
+    extend: {
+			colors: {
+				primaryRed: '#E80D38',
+			},
+			
+		},
   },
 } satisfies Config;
