@@ -8,6 +8,6 @@ window.addEventListener("load", function() {
     duration: 1200,
   });
   console.log('test2');
-  document.getElementById('vid').play();
-  document.getElementById('vid2').play();
+  // document.getElementById('vid').play();
+  // document.getElementById('vid2').play();
 });
