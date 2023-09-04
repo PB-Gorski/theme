@@ -12,7 +12,7 @@
 <ul id="Menu-desktop" class="wp-block-list nav-desktop container mx-auto h-[100px] flex items-center">
   <!-- wp:list-item -->
   <li>
-    <a href="<?php home_url(); ?>" class="logo">
+    <a href="<?php home_url(); ?>" class="logo mr-[80px]">
       <!-- wp:image -->
       <figure class="wp-block-image w-[115px]">
         <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/frontpage/logo.png" alt="pb-gorski-logo" />
