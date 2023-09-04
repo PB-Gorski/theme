@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="search-bar" class="wp-block-group banner relative mb-0 pt-[80px] desktop:pt-[80px] h-fit desktop:h-screen overflow-hidden desktop:overflow-visible">
+<div id="search-bar" class="wp-block-group search-bar">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:paragraph -->

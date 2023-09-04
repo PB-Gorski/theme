@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner h-screen desktop:h-screen">
   <!-- wp:group -->
-  <div class="wp-block-group h-full mx-auto">
+  <div class="wp-block-group h-[80%] mx-auto">
     <!-- wp:group -->
     <div class="wp-block-group h-[80%] w-full bg-[#F2F2F2]">
       <!-- wp:paragraph -->
