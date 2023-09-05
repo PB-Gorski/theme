@@ -209,5 +209,44 @@
   </div>
   <!-- /wp:group -->
 
+  <!-- wp:list -->
+  <ul class="wp-block-list mobile-nav-menu text-[20px] font-semibold w-screen h-screen overflow-scroll pt-[40px] bg-white text-black z-[1] flex flex-col items-center gap-y-[30px] fixed top-[60px] left-0 translate-x-[100%] opacity-[0] transition ease-in-out duration-500">
+    <!-- wp:list-item -->
+    <li class="uppercase border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
+      <!-- wp:paragraph -->
+      <p><a href="/inwestycje/">Inwestycje</a></p>
+      <!-- /wp:paragraph -->
+    </li>
+    <!-- /wp:list-item -->
+    <!-- wp:list-item -->
+    <li class="uppercase border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
+      <!-- wp:paragraph -->
+      <p><a href="/o-nas/">O nas</a></p>
+      <!-- /wp:paragraph -->
+    </li>
+    <!-- /wp:list-item -->
+    <!-- wp:list-item -->
+    <li class="uppercase border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
+      <!-- wp:paragraph -->
+      <p><a href="/aktualnosci/">Aktualności</a></p>
+      <!-- /wp:paragraph -->
+    </li>
+    <!-- /wp:list-item -->
+    <!-- wp:list-item -->
+    <li class="uppercase border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
+      <!-- wp:paragraph -->
+      <p><a href="/kredyty/">Kredyty</a></p>
+      <!-- /wp:paragraph -->
+    </li>
+    <!-- /wp:list-item -->
+    <!-- wp:list-item -->
+    <li class="p-[10px_20px] uppercase border-[2px] border-white rounded-full w-fit cursor-pointer hover:bg-white hover:text-black transition ease-out duration-300">
+      <!-- wp:paragraph -->
+      <p><a href="/kontakt/">Kontakt</a></p>
+      <!-- /wp:paragraph -->
+    </li>
+    <!-- /wp:list-item -->
+  </ul>
+  <!-- /wp:list -->
 </div>
 <!-- /wp:group -->
