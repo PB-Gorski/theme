@@ -55,12 +55,16 @@
                   <!-- wp:paragraph -->
                   <p class="text-[48px] text-primaryRed font-bold">41</p>
                   <!-- /wp:paragraph -->
-                  <!-- wp:paragraph -->
-                  <p class="text-[18px] text-bgDarkGray">dostępnych</p>
-                  <!-- /wp:paragraph -->
-                  <!-- wp:paragraph -->
-                  <p class="text-[18px] text-bgDarkGray">lokali</p>
-                  <!-- /wp:paragraph -->
+                  <!-- wp:group -->
+                  <div class="wp-block-group">
+                    <!-- wp:paragraph -->
+                    <p class="text-[18px] text-bgDarkGray">dostępnych</p>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p class="text-[18px] text-bgDarkGray">lokali</p>
+                    <!-- /wp:paragraph -->
+                  </div>
+                  <!-- /wp:group -->
                 </div>
                 <!-- /wp:group -->
               </div>
