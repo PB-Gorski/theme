@@ -65,7 +65,7 @@
 
 
         <!-- wp:group -->
-        <div class="wp-block-group tab1 container mx-auto">
+        <div class="wp-block-group tab1 container mx-auto text-[17px]">
           <!-- wp:group -->
           <div class="wp-block-group col1">
             <!-- wp:group -->
@@ -77,9 +77,9 @@
             <!-- /wp:group -->
 
             <!-- wp:list -->
-            <ul class="wp-block-list">
+            <ul class="wp-block-list text-textGray">
               <!-- wp:list-item -->
-              <li class="uppercase text-[#8A8F99]">
+              <li class="uppercase hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
                 <a href="#">Osiedle Srebniki</a>
               </li>
               <!-- /wp:list-item -->
@@ -99,14 +99,14 @@
             <!-- /wp:group -->
 
             <!-- wp:list -->
-            <ul class="wp-block-list">
+            <ul class="wp-block-list text-textGray font-bold">
               <!-- wp:list-item -->
-              <li class="uppercase text-[#8A8F99]">
+              <li class="uppercase text-[#8A8F99] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
                 <a href="#">Lista mieszkań</a>
               </li>
               <!-- /wp:list-item -->
               <!-- wp:list-item -->
-              <li class="uppercase text-[#8A8F99]">
+              <li class="uppercase text-[#8A8F99] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
                 <a href="#">Lista lokali uytkowych</a>
               </li>
               <!-- /wp:list-item -->
