@@ -13,14 +13,15 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full flex">
     <!-- wp:group -->
-    <div class="wp-block-group col1 w-[50px]">
+    <div class="wp-block-group col1 w-[50%]">
       <!-- wp:paragraph -->
       <p class="text-white text-[40px] leading-[150%]">Bądź zawsze na bieżąco z naszą ofertą - zapisz się do newslettera</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
+
     <!-- wp:group -->
-    <div class="wp-block-group col2 w-[50px]">
+    <div class="wp-block-group col2 w-[50%]">
       <!-- wp:group -->
       <div class="wp-block-group input">
         <!-- wp:paragraph -->
