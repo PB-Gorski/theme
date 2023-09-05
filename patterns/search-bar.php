@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="search-bar" class="wp-block-group search-bar h-fit bg-bgGray py-[50px]">
+<div id="search-bar" class="wp-block-group search-bar h-fit bg-bgLightGray py-[50px]">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
