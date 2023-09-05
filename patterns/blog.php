@@ -41,17 +41,17 @@
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
                 <!-- wp:image -->
-                <figure class="wp-block-image h-[270px] mb-[30px]">
+                <figure class="wp-block-image h-[270px] mb-[10px]">
                   <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
                 </figure>
                 <!-- /wp:image -->
 
                 <!-- wp:paragraph -->
-                <p class="post-date mr-[20px] text-[16px] text-bgDarkGray font-bold mb-[15px]"><?php the_date(); ?></p>
+                <p class="post-date mr-[20px] text-[16px] text-bgDarkGray mb-[15px]"><?php the_date(); ?></p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:paragraph -->
-                <p class="mr-[20px] text-[24px] font-bold mb-[15px]"><?php the_title(); ?></p>
+                <p class="mr-[20px] text-[24px] font-bold mb-[15px] leading-[32px]"><?php the_title(); ?></p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:group -->
