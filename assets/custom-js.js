@@ -42,8 +42,8 @@ window.addEventListener("load", function() {
   gdyniaTabBtn.addEventListener('click',()=>{
     modalTab1.classList.add('hidden');
     modalTab1.classList.remove('block');
-    modalTab2.classList.replace('hidden','block');
-    modalTab3.classList.replace('block','hidden');
+    modalTab2.classList.replace('block','hidden');
+    modalTab3.classList.replace('hidden','block');
     console.log('tab2 click');
   });
 
