@@ -28,7 +28,8 @@ module.exports = {
 			colors: {
 				primaryRed: '#E80D38',
         textGray: '#2E384D',
-        bgLightGray:'#EBEEF2'
+        bgLightGray:'#EBEEF2',
+        btnHoverRed: '#D00C32'
 			},
 			
 		},
