@@ -26,7 +26,10 @@
       <!-- wp:group -->
       <div class="wp-block-group select">
         <!-- wp:group -->
-        <div class="wp-block-group select__trigger"><span>Tesla</span>
+        <div class="wp-block-group select__trigger">
+          <!-- wp:paragraph -->
+          <span>Tesla</span>
+          <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group arrow">
             <!-- wp:paragraph -->
