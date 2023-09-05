@@ -32,7 +32,7 @@
       <!-- wp:navigation /-->
 
       <!-- wp:group -->
-      <div class="wp-block-group modal w-full h-[209px] py-[20px] bg-bgLightGray opacity-100 absolute top-[100px] left-0 z-[10] transition ease duration-300">
+      <div class="wp-block-group modal w-full h-[209px] py-[20px] bg-bgLightGray opacity-100 absolute top-[100px] left-0 z-[1] transition ease duration-300">
         <!-- wp:group -->
         <div class="wp-block-group container mx-auto">
           <!-- wp:list -->

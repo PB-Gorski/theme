@@ -21,7 +21,7 @@ window.addEventListener("load", function() {
   // });
 
   modal.addEventListener('mouseleave',()=>{
-    // modal.classList.replace('opacity-100', 'opacity-0');
+    modal.classList.replace('opacity-100', 'opacity-0');
     modal.classList.replace('z-[1]', 'z-[0]');
   });
 
