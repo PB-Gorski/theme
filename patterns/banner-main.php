@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Banner" class="wp-block-group banner h-screen desktop:h-screen relative">
+<div id="Banner" class="wp-block-group banner h-[80vh] relative">
   <!-- wp:group -->
   <div class="wp-block-group call-back-pop-up w-[200px] h-[280px] text-center bg-transparent flex flex-col jusify-center items-center fixed bottom-[30px] right-[20px] z-[1]">
     <!-- wp:group -->
