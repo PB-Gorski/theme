@@ -32,7 +32,7 @@
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
-      <div class="wp-block-group inner-cols-wrapper mb-[120px] flex">
+      <div class="wp-block-group inner-cols-wrapper mb-[80px] h-[100px] flex">
         <!-- wp:group -->
         <div class="wp-block-group inner-col1 w-[40%] border-r-[1px] border-[rgba(138,143,153,0.30)]">
           <!-- wp:paragraph -->
