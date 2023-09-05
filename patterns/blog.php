@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group py-[60px] title">
       <!-- wp:paragraph -->
-      <p class="text-[24px] ml-[100px] text-bgDarkGray">Poznaj nasze najnowsze inwestycje</p>
+      <p class="text-[24px] ml-[100px] text-bgDarkGray">Aktualności</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
@@ -24,8 +24,8 @@
     <ul class="wp-block-list mb-[40px] flex desktop:flex-row flex-col justify-between gap-[30px]">
       <?php
       $args = array(
-        'post_type' => 'inwestycje',
-        'posts_per_page' => 3,
+        'post_type' => 'post',
+        'posts_per_page' => 4,
         'order' => 'ASC'
       );
       $post_query = new WP_Query($args);
