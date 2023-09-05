@@ -12,7 +12,7 @@ module.exports = {
     container: {
       screens: {
         lg: '960px',
-				'xl': '1140px',
+				'xl': '1180px',
 				'2xl': '1540px',
 				'3xl': '2100px',
       },
