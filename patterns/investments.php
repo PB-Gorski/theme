@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:list -->
-    <ul class="wp-block-list flex gap-[30px]">
+    <ul class="wp-block-list flex justify-between gap-[30px]">
       <?php
       $args = array(
         'post_type' => 'inwestycje',
