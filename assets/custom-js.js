@@ -60,8 +60,8 @@ window.addEventListener("load", function() {
 
   for (const option of document.querySelectorAll(".custom-option")) {
     option.addEventListener('click', function() {
-      if (true) {
-        this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
+      if (!this.classList.contains('selected')) {
+        // this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
         this.classList.add('selected');
         this.closest('.select').querySelector('.select__trigger span').textContent = this.textContent;
       };
