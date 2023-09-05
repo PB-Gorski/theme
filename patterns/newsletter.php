@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="newsletter" class="wp-block-group newsletter h-[330px] relative bg-[#3d4b67]">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full flex">
+  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full flex items-center">
     <!-- wp:group -->
     <div class="wp-block-group col1 w-[50%]">
       <!-- wp:paragraph -->
@@ -23,7 +23,7 @@
     <!-- wp:group -->
     <div class="wp-block-group col2 w-[50%]">
       <!-- wp:group -->
-      <div class="wp-block-group input">
+      <div class="wp-block-group input flex">
         <!-- wp:paragraph -->
         <p class="w-[370px] h-[60px] bg-white text-white text-[40px] leading-[150%]">input</p>
         <!-- /wp:paragraph -->
