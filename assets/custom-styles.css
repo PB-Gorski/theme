@@ -10,6 +10,15 @@ body {
   font-family: "Robot", sans-serif;
   color: #2E384D;
 }
+/* images */
+.wp-block-image{
+  margin: 0!important;
+}
+figure[class*="wp-block-image"] img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 /* Wordpress default styles */
 .wp-block-navigation__container{
