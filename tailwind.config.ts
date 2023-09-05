@@ -29,7 +29,8 @@ module.exports = {
 				primaryRed: '#E80D38',
         textGray: '#2E384D',
         bgLightGray:'#EBEEF2',
-        btnHoverRed: '#D00C32'
+        btnHoverRed: '#D00C32',
+        bgGray: '#8A8F99'
 			},
 			
 		},
