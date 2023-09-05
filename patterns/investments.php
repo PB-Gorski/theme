@@ -9,11 +9,11 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="inwestycje" class="wp-block-group investments h-[600pxpx] bg-red-300">
+<div id="inwestycje" class="wp-block-group investments h-[600pxpx]">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:list -->
-    <ul class="wp-block-list">
+    <ul class="wp-block-list flex gap-[30px]">
       <?php
       $args = array(
         'post_type' => 'inwestycje',
@@ -26,7 +26,6 @@
         while ($post_query->have_posts()) {
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
-          $counter++;
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile wide:max-w-[420px] desktop:max-w-[354px] max-w-[310px] h-[380px] desktop:h-[450px] wide:h-[530px]">
