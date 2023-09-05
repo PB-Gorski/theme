@@ -68,34 +68,6 @@
         <!-- wp:group -->
         <div class="wp-block-group tab1 container mx-auto text-[17px]">
 
-
-          <!-- wp:group -->
-          <div class="wp-block-group col2">
-            <!-- wp:group -->
-            <div class="wp-block-group title1">
-              <!-- wp:paragraph -->
-              <p class="uppercase text-[#8A8F99] font-medium tracking-[1.5px]">Wyszukiwanie</p>
-              <!-- /wp:paragraph -->
-            </div>
-            <!-- /wp:group -->
-
-            <!-- wp:list -->
-            <ul class="wp-block-list text-textGray font-bold">
-              <!-- wp:list-item -->
-              <li class="text-[#8A8F99] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                <a href="#">Lista mieszkań</a>
-              </li>
-              <!-- /wp:list-item -->
-              <!-- wp:list-item -->
-              <li class="text-[#8A8F99] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                <a href="#">Lista lokali uytkowych</a>
-              </li>
-              <!-- /wp:list-item -->
-            </ul>
-            <!-- /wp:list-->
-
-          </div>
-          <!-- /wp:group -->
         </div>
         <!-- /wp:group -->
 
