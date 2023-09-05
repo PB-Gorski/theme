@@ -33,7 +33,6 @@ window.addEventListener("load", function() {
     modalTab1.classList.add('block');
     modalTab2.classList.replace('block','hidden');
     modalTab3.classList.replace('block','hidden');
-    console.log('tab1 click');
   });
   gdanskTabBtn.addEventListener('click',()=>{
     allTabBtn.classList.remove('tab-active');
@@ -43,7 +42,6 @@ window.addEventListener("load", function() {
     modalTab1.classList.remove('block');
     modalTab2.classList.replace('hidden','block');
     modalTab3.classList.replace('block','hidden');
-    console.log('tab2 click');
   });
   gdyniaTabBtn.addEventListener('click',()=>{
     allTabBtn.classList.remove('tab-active');
@@ -53,7 +51,6 @@ window.addEventListener("load", function() {
     modalTab1.classList.remove('block');
     modalTab2.classList.replace('block','hidden');
     modalTab3.classList.replace('hidden','block');
-    console.log('tab2 click');
   });
 
 
