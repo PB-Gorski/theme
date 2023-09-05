@@ -112,7 +112,7 @@
               <!-- wp:group -->
               <div class="wp-block-group title2 mb-[20px]">
                 <!-- wp:paragraph -->
-                <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Wyszukiwanie2</p>
+                <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Wyszukiwanie</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -149,7 +149,7 @@
               <!-- /wp:group -->
 
               <!-- wp:list -->
-              <ul class="wp-block-list text-textGray flex flex-wrap gap-x-[120px]">
+              <ul class="wp-block-list mb-[20px] text-textGray flex flex-wrap gap-x-[120px]">
                 <!-- wp:list-item -->
                 <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
                   <a href="#">Osiedle Srebniki2</a>
@@ -171,7 +171,7 @@
               <!-- wp:group -->
               <div class="wp-block-group">
                 <!-- wp:paragraph -->
-                <a href="#" class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">Gdański: <span class="font-medium">Wszystkie inwestycje</span></a>
+                <a href="#" class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">Gdański: <span class="font-medium">Wszystkie inwestycje &rarr;</span></a>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
