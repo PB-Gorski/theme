@@ -72,9 +72,9 @@ background-color: #E80D38;
   position: relative;
   display: flex;
   flex-direction: column;
-  border-width: 0 2px 0 2px;
+  /* border-width: 0 2px 0 2px;
   border-style: solid;
-  border-color: #394a6d;
+  border-color: #394a6d; */
 }
 .select__trigger {
   position: relative;
@@ -89,9 +89,9 @@ background-color: #E80D38;
   line-height: 60px;
   background: #ffffff;
   cursor: pointer;
-  border-width: 2px 0 2px 0;
+  /* border-width: 2px 0 2px 0;
   border-style: solid;
-  border-color: #394a6d;
+  border-color: #394a6d; */
 }
 .custom-options {
   position: absolute;
@@ -99,8 +99,8 @@ background-color: #E80D38;
   top: 100%;
   left: 0;
   right: 0;
-  border: 2px solid #394a6d;
-  border-top: 0;
+  /* border: 2px solid #394a6d;
+  border-top: 0; */
   background: #fff;
   transition: all 0.5s;
   opacity: 0;
