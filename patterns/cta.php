@@ -36,7 +36,7 @@
         <!-- wp:group -->
         <div class="wp-block-group inner-col1 w-[40%] border-r-[1px] border-[rgba(138,143,153,0.30)]">
           <!-- wp:paragraph -->
-          <p class="text-bgDarkGray">Zadzwoń do nas</p>
+          <p class="mb-[10px] text-bgDarkGray">Zadzwoń do nas</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
           <p class="relative text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[30%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">(58) 340 79 00</p>
@@ -47,7 +47,7 @@
         <!-- wp:group -->
         <div class="wp-block-group inner-col2 pl-[50px] w-[60%]">
           <!-- wp:paragraph -->
-          <p class="text-bgDarkGray">Napisz</p>
+          <p class="mb-[10px] text-bgDarkGray">Napisz</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
           <p class="relative text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[30%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">sprzedaz@pbgorski.pl</p>
