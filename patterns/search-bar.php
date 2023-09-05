@@ -106,7 +106,20 @@
     <!-- wp:group -->
     <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-[245px] h-[65px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-300 before:ease cursor-pointer">
       <!-- wp:paragraph -->
-      <p class="font-bold z-[1]">Zostaw numer</p>
+      <p class="font-bold">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="injected-svg inject-svg icon-search">
+          <defs>
+            <style></style>
+          </defs>
+          <g id="icon_search" fill="none" stroke="#fff" stroke-width="2">
+            <circle cx="6.5" cy="6.5" r="5.5"></circle>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-4-4"></path>
+          </g>
+        </svg>
+      </p>
+      <!-- /wp:paragraph -->
+      <!-- wp:paragraph -->
+      <p class="font-bold">Szukaj</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
