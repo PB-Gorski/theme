@@ -34,7 +34,7 @@
       <!-- wp:group -->
       <div class="wp-block-group modal container mx-auto w-full h-[209px] py-[20px] bg-bgLightGray opacity-100 absolute top-[100px] left-0 z-[1] transition ease duration-300">
         <!-- wp:list -->
-        <ul class="wp-block-list container mx-auto flex items-center gap-[20px] text-[14px] font-medium">
+        <ul class="wp-block-list mb-[20px] container mx-auto flex items-center gap-[20px] text-[14px] font-medium">
           <!-- wp:list-item -->
           <li class="uppercase text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
             WSZYSTKIE
@@ -70,7 +70,7 @@
           <!-- wp:group -->
           <div class="wp-block-group col1 w-[60%]">
             <!-- wp:group -->
-            <div class="wp-block-group title1">
+            <div class="wp-block-group title1 mb-[20px]">
               <!-- wp:paragraph -->
               <p class="uppercase text-[#8A8F99] font-medium tracking-[1.5px]">Lista inwestycji</p>
               <!-- /wp:paragraph -->
@@ -98,7 +98,7 @@
           <!-- wp:group -->
           <div class="wp-block-group col2 w-[40%]">
             <!-- wp:group -->
-            <div class="wp-block-group title2">
+            <div class="wp-block-group title2 mb-[20px]">
               <!-- wp:paragraph -->
               <p class="uppercase text-[#8A8F99] font-medium tracking-[1.5px]">Wyszukiwanie</p>
               <!-- /wp:paragraph -->
