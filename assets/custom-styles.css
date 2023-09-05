@@ -9,6 +9,7 @@ html {
 body {
   font-family: "Robot", sans-serif;
   color: #2E384D;
+  font-size: 18px;
 }
 /* images */
 figure[class*="wp-block-image"] img {
