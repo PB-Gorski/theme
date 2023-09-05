@@ -31,7 +31,7 @@ module.exports = {
         bgLightGray:'#EBEEF2',
         btnHoverRed: '#D00C32',
         bgDarkGray: '#8A8F99',
-        lightBlue: '#B2F1FF',
+        lightBlue: '#CCF6FF',
 			},
 			
 		},
