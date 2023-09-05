@@ -59,7 +59,7 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group socials flex">
+      <div class="wp-block-group socials flex items-center gap-[3px]">
         <!-- wp:group -->
         <div class="wp-block-group btn-fb bg-[#2d384c] text-white w-[30px] h-[30px] text-center rounded-[5px]">
           <!-- wp:paragraph -->
