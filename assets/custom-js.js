@@ -23,7 +23,7 @@ window.addEventListener("load", function() {
   modal.addEventListener('mouseleave',()=>{
     // modal.classList.replace('opacity-100', 'opacity-0');
     modal.classList.replace('z-[1]', 'z-[0]');
-  })
+  });
 
   allTabBtn.addEventListener('click',()=>{
     modalTab1.classList.remove('hidden');
@@ -31,14 +31,21 @@ window.addEventListener("load", function() {
     modalTab2.classList.replace('block','hidden');
     modalTab3.classList.replace('block','hidden');
     console.log('tab1 click');
-  })
+  });
   gdanskTabBtn.addEventListener('click',()=>{
     modalTab1.classList.add('hidden');
     modalTab1.classList.remove('block');
     modalTab2.classList.replace('hidden','block');
     modalTab3.classList.replace('block','hidden');
     console.log('tab2 click');
-  })
+  });
+  gdyniaTabBtn.addEventListener('click',()=>{
+    modalTab1.classList.add('hidden');
+    modalTab1.classList.remove('block');
+    modalTab2.classList.replace('hidden','block');
+    modalTab3.classList.replace('block','hidden');
+    console.log('tab2 click');
+  });
 
 
 
