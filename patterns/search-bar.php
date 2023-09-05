@@ -104,7 +104,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-[245px] h-[65px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-[400ms] before:ease-in cursor-pointer">
+    <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-[245px] h-[65px] flex items-center justify-center gap-[10px] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-[400ms] before:ease-in cursor-pointer">
       <!-- wp:paragraph -->
       <p class="font-bold">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="injected-svg inject-svg icon-search">
