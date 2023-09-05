@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner h-screen desktop:h-screen relative">
   <!-- wp:group -->
-  <div class="wp-block-group call-back-pop-up w-[200px] h-[250px] text-center bg-transparent flex flex-col jusify-center absolute bottom-[200px] right-[20px] z-[1]">
+  <div class="wp-block-group call-back-pop-up w-[200px] h-[280px] text-center bg-transparent flex flex-col jusify-center items-center absolute bottom-[200px] right-[20px] z-[1]">
     <!-- wp:group -->
     <div class="wp-block-group text mb-[10px] w-full h-[160px] bg-white flex flex-col justify-center items-center gap-y-[15px]">
       <!-- wp:paragraph -->
