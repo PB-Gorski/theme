@@ -108,12 +108,12 @@
             <!-- wp:list -->
             <ul class="wp-block-list text-textGray font-bold">
               <!-- wp:list-item -->
-              <li class="text-[#8A8F99] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+              <li class="text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
                 <a href="#">Lista mieszkań</a>
               </li>
               <!-- /wp:list-item -->
               <!-- wp:list-item -->
-              <li class="text-[#8A8F99] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+              <li class="text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
                 <a href="#">Lista lokali uytkowych</a>
               </li>
               <!-- /wp:list-item -->
