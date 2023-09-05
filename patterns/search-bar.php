@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="search-bar" class="wp-block-group search-bar h-fit bg-bgLightGray py-[50px]">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
+  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] flex">
     <!-- wp:group -->
     <div class="wp-block-group miasto select-wrapper">
       <!-- wp:group -->
@@ -83,6 +83,7 @@
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
+
   </div>
   <!-- /wp:group -->
 </div>
