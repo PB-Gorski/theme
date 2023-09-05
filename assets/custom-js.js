@@ -74,7 +74,10 @@ window.addEventListener("load", function() {
     if (!select.contains(e.target)) {
       select.classList.remove('open');
     };
-});
+  });
+
+  // multiple dropdowns
+  
 
 
 

@@ -28,7 +28,7 @@
         <!-- wp:group -->
         <div class="wp-block-group select__trigger">
           <!-- wp:paragraph -->
-          <span>Tesla</span>
+          <span>Miasto</span>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group arrow">
