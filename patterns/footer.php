@@ -81,12 +81,12 @@
       <!-- wp:group -->
       <div class="wp-block-group inner-col1">
         <!-- wp:paragraph -->
-        <p class="text-[16px] font-bold">Miasta inwestycji</p>
+        <p class="mb-[20px] text-[16px] font-bold">Miasta inwestycji</p>
         <!-- /wp:paragraph -->
         <!-- wp:list -->
         <ul class="wp-block-list text-[#8a8f99] text-[14px]">
           <!-- wp:list-item -->
-          <li class="mb-[15px]">
+          <li class="mb-[10px]">
             <a href="#">Gdańsk</a>
           </li>
           <!-- /wp:list-item -->
