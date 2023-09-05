@@ -79,7 +79,9 @@
 
             <!-- wp:list -->
             <ul class="wp-block-list text-textGray">
-
+              <!-- wp:list-item -->
+              <li>test</li>
+              <!-- /wp:list-item -->
             </ul>
             <!-- /wp:list-->
           </div>
@@ -97,7 +99,9 @@
 
             <!-- wp:list -->
             <ul class="wp-block-list text-textGray font-bold">
-
+              <!-- wp:list-item -->
+              <li>test</li>
+              <!-- /wp:list-item -->
             </ul>
             <!-- /wp:list-->
 
