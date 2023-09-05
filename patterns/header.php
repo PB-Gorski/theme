@@ -92,6 +92,16 @@
                   <a href="#">Św. Piotra</a>
                 </li>
                 <!-- /wp:list-item -->
+                <!-- wp:list-item -->
+                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Wieżycka Folwark</a>
+                </li>
+                <!-- /wp:list-item -->
+                <!-- wp:list-item -->
+                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Toruńska 16</a>
+                </li>
+                <!-- /wp:list-item -->
               </ul>
               <!-- /wp:list -->
             </div>
@@ -110,12 +120,12 @@
               <!-- wp:list -->
               <ul class="wp-block-list text-textGray font-bold">
                 <!-- wp:list-item -->
-                <li class="text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
                   <a href="#">Lista mieszkań &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
-                <li class="text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
                   <a href="#">Lista lokali uytkowych &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
