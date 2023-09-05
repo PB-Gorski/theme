@@ -70,7 +70,7 @@
           <!-- wp:group -->
           <div class="wp-block-group tab1 block text-[17px] flex">
             <!-- wp:group -->
-            <div class="wp-block-group col1 w-[60%]">
+            <div class="wp-block-group col1 w-[60%] border-r-[1px] border-[rgba(138,143,153,0.30)]">
               <!-- wp:group -->
               <div class="wp-block-group title1 mb-[20px]">
                 <!-- wp:paragraph -->
@@ -110,7 +110,7 @@
             <!-- wp:group -->
             <div class="wp-block-group col2 w-[40%]">
               <!-- wp:group -->
-              <div class="wp-block-group title2 mb-[20px]">
+              <div class="wp-block-group title2 mb-[20px] ml-[30px]">
                 <!-- wp:paragraph -->
                 <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Wyszukiwanie2</p>
                 <!-- /wp:paragraph -->
