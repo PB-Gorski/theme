@@ -126,7 +126,7 @@ background-color: #E80D38;
 }
 .custom-option:hover {
   cursor: pointer;
-  background-color: #b2b2b2;
+  background-color: #B2F1FF;
 }
 .custom-option.selected {
   color: #ffffff;
