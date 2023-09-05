@@ -55,7 +55,7 @@
                 <!-- /wp:paragraph -->
 
                 <!-- wp:paragraph -->
-                <p class="">Zobacz więcej &rarr;</p>
+                <p class="relative before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-lightBlue before:transition-height before:duration-300 before:ease cursor-pointer">Zobacz więcej &rarr;</p>
                 <!-- /wp:paragraph -->
 
               </div>

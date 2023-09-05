@@ -30,7 +30,8 @@ module.exports = {
         textGray: '#2E384D',
         bgLightGray:'#EBEEF2',
         btnHoverRed: '#D00C32',
-        bgDarkGray: '#8A8F99'
+        bgDarkGray: '#8A8F99',
+        lightBlue: '#B2F1FF',
 			},
 			
 		},
