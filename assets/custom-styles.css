@@ -163,6 +163,20 @@ background-color: #E80D38;
   left: 5px;
   transform: rotate(45deg);
 }
+/* dropdown btn more */
+.circle,
+.line {
+  stroke: #e80d38;
+  stroke-miterlimit: 10;
+  stroke-width: 2px
+}
+.line {
+  stroke-linecap: round;
+  fill: none
+}
+.circle {
+  fill: #fff
+}
 
 
 

@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="search-bar" class="wp-block-group search-bar h-fit bg-bgLightGray py-[50px]">
+<div id="search-bar" class="wp-block-group search-bar h-fit bg-bgLightGray py-[25px]">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] flex">
     <!-- wp:group -->
@@ -81,6 +81,25 @@
         <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div class="wp-block-group btn-more flex gap-[10px]">
+      <!-- wp:paragraph -->
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
+          <title>icon_filters</title>
+          <path class="line" d="M6 4v16m6-16v16m6-16v16"></path>
+          <circle class="circle" cx="6" cy="10" r="2"></circle>
+          <circle class="circle" cx="12" cy="15" r="2"></circle>
+          <circle class="circle" cx="18" cy="10" r="2"></circle>
+        </svg>
+      </p>
+      <!-- /wp:paragraph -->
+      <!-- wp:paragraph -->
+      <p>Więcej opcji</p>
+      <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
 
