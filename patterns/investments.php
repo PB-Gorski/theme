@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
-    <div class="wp-block-group py-[60px] title">
+    <div class="wp-block-group pt-[60px] pb-[40px] title">
       <!-- wp:paragraph -->
       <p class="text-[24px] ml-[100px] text-bgDarkGray">Poznaj nasze najnowsze inwestycje</p>
       <!-- /wp:paragraph -->
