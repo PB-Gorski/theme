@@ -20,6 +20,19 @@
 
     <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
     <!-- /wp:paragraph -->
+
+    <div class="select-wrapper">
+      <div class="select">
+        <div class="select__trigger"><span>Tesla</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="custom-options">
+          <span class="custom-option selected" data-value="tesla">Tesla</span>
+          <span class="custom-option" data-value="volvo">Volvo</span>
+          <span class="custom-option" data-value="mercedes">Mercedes</span>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- /wp:group -->
 </div>
