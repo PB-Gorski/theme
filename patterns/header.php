@@ -108,9 +108,9 @@
             <!-- /wp:group -->
 
             <!-- wp:group -->
-            <div class="wp-block-group col2 w-[40%] pr-[20px]">
+            <div class="wp-block-group col2 w-[40%] pl-[20px]">
               <!-- wp:group -->
-              <div class="wp-block-group title2 ml-[30px]">
+              <div class="wp-block-group title2">
                 <!-- wp:paragraph -->
                 <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Wyszukiwanie2</p>
                 <!-- /wp:paragraph -->
@@ -120,7 +120,7 @@
               <!-- wp:list -->
               <ul class="wp-block-list text-textGray font-bold">
                 <!-- wp:list-item -->
-                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-[7px] hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
                   <a href="#">Lista mieszkań &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
