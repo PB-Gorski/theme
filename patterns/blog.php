@@ -53,24 +53,6 @@
                 <!-- wp:paragraph -->
                 <p class="mr-[20px] text-[24px] font-bold mb-[15px] leading-[32px]"><?php the_title(); ?></p>
                 <!-- /wp:paragraph -->
-
-                <!-- wp:group -->
-                <div class="wp-block-group available-apartments flex items-center gap-[25px]">
-                  <!-- wp:paragraph -->
-                  <p class="text-[48px] text-primaryRed font-bold">41</p>
-                  <!-- /wp:paragraph -->
-                  <!-- wp:group -->
-                  <div class="wp-block-group leading-[24px]">
-                    <!-- wp:paragraph -->
-                    <p class="text-[18px] text-bgDarkGray">dostępnych</p>
-                    <!-- /wp:paragraph -->
-                    <!-- wp:paragraph -->
-                    <p class="text-[18px] text-bgDarkGray">lokali</p>
-                    <!-- /wp:paragraph -->
-                  </div>
-                  <!-- /wp:group -->
-                </div>
-                <!-- /wp:group -->
               </div>
               <!-- /wp:group -->
             </a>
