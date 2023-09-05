@@ -12,6 +12,14 @@
 <div id="inwestycje" class="wp-block-group investments h-[600pxpx]">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
+    <!-- wp:group -->
+    <div class="wp-block-group title">
+      <!-- wp:paragraph -->
+      <p class="text-[24px]">Poznaj nasze najnowsze inwestycje</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+
     <!-- wp:list -->
     <ul class="wp-block-list flex desktop:flex-row flex-col justify-between gap-[30px]">
       <?php
