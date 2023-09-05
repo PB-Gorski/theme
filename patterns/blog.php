@@ -53,6 +53,11 @@
                 <!-- wp:paragraph -->
                 <p class="mr-[20px] text-[24px] font-bold mb-[15px] leading-[32px]"><?php the_title(); ?></p>
                 <!-- /wp:paragraph -->
+
+                <!-- wp:paragraph -->
+                <p class="mr-[20px] text-[24px] font-bold mb-[15px] leading-[32px]">Zobacz więcej &rarr;</p>
+                <!-- /wp:paragraph -->
+
               </div>
               <!-- /wp:group -->
             </a>
