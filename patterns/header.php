@@ -72,7 +72,7 @@
             <!-- wp:group -->
             <div class="wp-block-group title1 mb-[20px]">
               <!-- wp:paragraph -->
-              <p class="uppercase text-[#8A8F99] font-medium tracking-[1.5px]">Lista inwestycji</p>
+              <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Lista inwestycji</p>
               <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
