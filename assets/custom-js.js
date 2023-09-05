@@ -27,12 +27,14 @@ window.addEventListener("load", function() {
     modalTab1.classList.add('block');
     modalTab2.classList.replace('block','hidden');
     modalTab3.classList.replace('block','hidden');
+    console.log('tab1 click');
   })
   modalTab2.addEventListener('click',()=>{
     modalTab1.classList.add('hidden');
     modalTab1.classList.remove('block');
     modalTab2.classList.replace('hidden','block');
     modalTab3.classList.replace('block','hidden');
+    console.log('tab2 click');
   })
 
 

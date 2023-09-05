@@ -143,7 +143,7 @@
               <!-- wp:group -->
               <div class="wp-block-group title1 mb-[20px]">
                 <!-- wp:paragraph -->
-                <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Lista inwestycji</p>
+                <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Lista inwestycji2</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -152,13 +152,13 @@
               <ul class="wp-block-list text-textGray flex flex-wrap gap-x-[120px]">
                 <!-- wp:list-item -->
                 <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Osiedle Srebniki</a>
+                  <a href="#">Osiedle Srebniki2</a>
                 </li>
                 <!-- /wp:list-item -->
 
                 <!-- wp:list-item -->
                 <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Św. Piotra</a>
+                  <a href="#">Św. Piotra2</a>
                 </li>
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
@@ -212,7 +212,7 @@
               <!-- wp:group -->
               <div class="wp-block-group title1 mb-[20px]">
                 <!-- wp:paragraph -->
-                <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Lista inwestycji</p>
+                <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Lista inwestycji2</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -221,13 +221,13 @@
               <ul class="wp-block-list text-textGray flex flex-wrap gap-x-[120px]">
                 <!-- wp:list-item -->
                 <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Osiedle Srebniki</a>
+                  <a href="#">Osiedle Srebniki2</a>
                 </li>
                 <!-- /wp:list-item -->
 
                 <!-- wp:list-item -->
                 <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Św. Piotra</a>
+                  <a href="#">Św. Piotra2</a>
                 </li>
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
