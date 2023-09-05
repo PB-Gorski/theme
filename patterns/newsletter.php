@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="newsletter" class="wp-block-group newsletter h-[330px] relative bg-[#3d4b67]">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full flex items-center">
+  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full flex items-center gap-[80px]">
     <!-- wp:group -->
     <div class="wp-block-group col1 w-[50%]">
       <!-- wp:paragraph -->
