@@ -15,6 +15,9 @@
     <!-- wp:paragraph -->
     <p>input serach</p>
     <!-- /wp:paragraph -->
+    <!-- wp:input -->
+    <input type="text">
+    <!-- /wp:input -->
   </div>
   <!-- /wp:group -->
 </div>
