@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner h-screen desktop:h-screen relative">
   <!-- wp:group -->
-  <div class="wp-block-group call-back-pop-up">
+  <div class="wp-block-group call-back-pop-up bg-white absolute bottom-[0px] right-[0px]">
     <!-- wp:paragraph -->
     <p>Zostaw swój numer -</p>
     <!-- /wp:paragraph -->
