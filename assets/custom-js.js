@@ -1,7 +1,7 @@
 window.addEventListener("load", function() {
-  // AOS.init({
-  //   duration: 1200,
-  // });
+  AOS.init({
+    duration: 1200,
+  });
 
   const hoverMenuItem = document.querySelector('.hover-item');
   const modal = document.querySelector('.modal');
