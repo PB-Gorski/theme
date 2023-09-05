@@ -28,7 +28,11 @@
         <!-- wp:group -->
         <div class="wp-block-group select__trigger"><span>Tesla</span>
           <!-- wp:group -->
-          <div class="wp-block-group arrow">-></div>
+          <div class="wp-block-group arrow">
+            <!-- wp:paragraph -->
+            <p>-></p>
+            <!-- /wp:paragraph -->
+          </div>
           <!-- /wp:group -->
         </div>
         <!-- /wp:group -->
