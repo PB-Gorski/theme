@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Title: inwestycje
- * Slug: inwestycje
+ * Title: investments
+ * Slug: investments
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="inwestycje" class="wp-block-group inwestycje h-[600pxpx] bg-red-300">
+<div id="inwestycje" class="wp-block-group investments h-[600pxpx] bg-red-300">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:list -->
@@ -30,7 +30,7 @@
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile wide:max-w-[420px] desktop:max-w-[354px] max-w-[310px] h-[380px] desktop:h-[450px] wide:h-[530px]">
-            <a href="<?php the_permalink(); ?>" class="relative z-[2] group p-[25px] desktop:max-w-[400px] max-w-[310px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
+            <a href="<?php the_permalink(); ?>" class="relative z-[2] group p-[25px] desktop:max-w-[400px] max-w-[310px]">
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
                 <!-- wp:image -->
