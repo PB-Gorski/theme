@@ -78,7 +78,7 @@
             <!-- /wp:group -->
 
             <!-- wp:list -->
-            <ul class="wp-block-list text-textGray">
+            <ul class="wp-block-list text-textGray flex flex-wrap gap-[80px]">
               <!-- wp:list-item -->
               <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
                 <a href="#">Osiedle Srebniki</a>
