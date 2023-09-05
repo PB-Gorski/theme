@@ -137,13 +137,13 @@
           </div>
           <!-- /wp:group -->
           <!-- wp:group -->
-          <div class="wp-block-group tab2 hidden text-[17px] flex">
+          <div class="wp-block-group tab2 gdansk hidden text-[17px] flex">
             <!-- wp:group -->
             <div class="wp-block-group col1 w-[60%]">
               <!-- wp:group -->
               <div class="wp-block-group title1 mb-[20px]">
                 <!-- wp:paragraph -->
-                <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Lista inwestycji2</p>
+                <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Lista inwestycji</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -158,11 +158,6 @@
 
                 <!-- wp:list-item -->
                 <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Św. Piotra2</a>
-                </li>
-                <!-- /wp:list-item -->
-                <!-- wp:list-item -->
-                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
                   <a href="#">Wieżycka Folwark</a>
                 </li>
                 <!-- /wp:list-item -->
@@ -173,6 +168,13 @@
                 <!-- /wp:list-item -->
               </ul>
               <!-- /wp:list -->
+              <!-- wp:group -->
+              <div class="wp-block-group">
+                <!-- wp:paragraph -->
+                <a href="#" class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">Gdański: <span class="font-medium">Wszystkie inwestycje</span></a>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
             </div>
             <!-- /wp:group -->
 
