@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner h-screen desktop:h-screen relative">
   <!-- wp:group -->
-  <div class="wp-block-group call-back-pop-up test bg-white absolute bottom-[0px] right-[0px]">
+  <div class="wp-block-group call-back-pop-up w-[200px] h-[160px] test bg-white absolute bottom-[0px] right-[0px]">
     <!-- wp:paragraph -->
     <p>Zostaw swój numer -</p>
     <!-- /wp:paragraph -->
@@ -25,6 +25,12 @@
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
+    <!-- wp:image -->
+    <figure class="wp-block-image">
+      <img src="<?php echo home_url() ?>//wp-content/themes/pbgorski/assets/img/frontpage/phone-icon.png" alt="phone-icon">
+    </figure>
+    <!-- /wp:image -->
+
   </div>
   <!-- /wp:group -->
   <!-- wp:group -->
