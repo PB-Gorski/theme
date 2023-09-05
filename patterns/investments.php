@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group py-[60px] title">
       <!-- wp:paragraph -->
-      <p class="text-[24px] text-bgDarkGray">Poznaj nasze najnowsze inwestycje</p>
+      <p class="text-[24px] ml-[100px] text-bgDarkGray">Poznaj nasze najnowsze inwestycje</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
@@ -41,7 +41,7 @@
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
                 <!-- wp:image -->
-                <figure class="wp-block-image h-[330px]">
+                <figure class="wp-block-image h-[330px] mb-[30px]">
                   <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
                 </figure>
                 <!-- /wp:image -->
