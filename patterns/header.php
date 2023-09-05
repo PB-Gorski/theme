@@ -61,6 +61,62 @@
           <!-- /wp:list-item -->
         </ul>
         <!-- /wp:list -->
+
+
+
+        <!-- wp:group -->
+        <div class="wp-block-group tab1 container mx-auto">
+          <!-- wp:group -->
+          <div class="wp-block-group col1">
+            <!-- wp:group -->
+            <div class="wp-block-group title1">
+              <!-- wp:paragraph -->
+              <p class="uppercase text-[#8A8F99] font-medium tracking-[1.5px]">Lista inwestycji</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:list -->
+            <ul class="wp-block-list">
+              <!-- wp:list-item -->
+              <li class="uppercase text-[#8A8F99]">
+                <a href="#">Osiedle Srebniki</a>
+              </li>
+              <!-- /wp:list-item -->
+            </ul>
+            <!-- /wp:list-->
+          </div>
+          <!-- /wp:group -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group col2">
+            <!-- wp:group -->
+            <div class="wp-block-group title1">
+              <!-- wp:paragraph -->
+              <p class="uppercase text-[#8A8F99] font-medium tracking-[1.5px]">Wyszukiwanie</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:list -->
+            <ul class="wp-block-list">
+              <!-- wp:list-item -->
+              <li class="uppercase text-[#8A8F99]">
+                <a href="#">Lista mieszkań</a>
+              </li>
+              <!-- /wp:list-item -->
+              <!-- wp:list-item -->
+              <li class="uppercase text-[#8A8F99]">
+                <a href="#">Lista lokali uytkowych</a>
+              </li>
+              <!-- /wp:list-item -->
+            </ul>
+            <!-- /wp:list-->
+
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
 
