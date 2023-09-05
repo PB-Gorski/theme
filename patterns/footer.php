@@ -75,7 +75,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group col1 w-[70%]">
+    <div class="wp-block-group col2 w-[70%]">
       <!-- wp:group -->
       <div class="wp-block-group inner-col1">
         <!-- wp:paragraph -->
@@ -95,6 +95,61 @@
           <!-- /wp:list-item -->
         </ul>
         <!-- /wp:list -->
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:group -->
+      <div class="wp-block-group inner-col2">
+        <!-- wp:paragraph -->
+        <p class="mb-[20px] text-[16px] font-bold">Dla klientów</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:list -->
+        <ul class="wp-block-list text-[#8a8f99] text-[14px]">
+          <!-- wp:list-item -->
+          <li class="mb-[10px]">
+            <a href="#">Kredyty</a>
+          </li>
+          <!-- /wp:list-item -->
+          <!-- wp:list-item -->
+          <li>
+            <a href="#">Znajdź mieszkanie</a>
+          </li>
+          <!-- /wp:list-item -->
+        </ul>
+        <!-- /wp:list -->
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:group -->
+      <div class="wp-block-group inner-col3">
+        <!-- wp:paragraph -->
+        <p class="mb-[20px] text-[16px] font-bold">Przedsiębiorstwo Budowlane Górski</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group two-lists flex gap-[50px]">
+          <!-- wp:list -->
+          <ul class="wp-block-list text-[#8a8f99] text-[14px]">
+            <!-- wp:list-item -->
+            <li class="mb-[10px]">
+              <a href="#">Aktualności</a>
+            </li>
+            <!-- /wp:list-item -->
+            <!-- wp:list-item -->
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+            <!-- /wp:list-item -->
+          </ul>
+          <!-- /wp:list -->
+          <!-- wp:list -->
+          <ul class="wp-block-list text-[#8a8f99] text-[14px]">
+            <!-- wp:list-item -->
+            <li class="mb-[10px]">
+              <a href="#">Dla Akcjonariuszy</a>
+            </li>
+            <!-- /wp:list-item -->
+          </ul>
+          <!-- /wp:list -->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
     </div>
