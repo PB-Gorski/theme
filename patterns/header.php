@@ -38,7 +38,7 @@
           <!-- wp:list -->
           <ul class="wp-block-list mb-[20px] flex items-center gap-[20px] text-[14px] font-medium">
             <!-- wp:list-item -->
-            <li class="uppercase allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+            <li class="uppercase allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
               WSZYSTKIE
             </li>
             <!-- /wp:list-item -->
