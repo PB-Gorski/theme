@@ -39,7 +39,7 @@
           <p class="text-bgDarkGray">Zadzwoń do nas</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p class="relative text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-lightBlue before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">(58) 340 79 00</p>
+          <p class="relative text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">(58) 340 79 00</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -50,7 +50,7 @@
           <p class="text-bgDarkGray">Napisz</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p class="relative text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-lightBlue before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">sprzedaz@pbgorski.pl</p>
+          <p class="relative text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">sprzedaz@pbgorski.pl</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
