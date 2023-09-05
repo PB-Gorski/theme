@@ -13,9 +13,9 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
-    <div class="wp-block-group title">
+    <div class="wp-block-group py-[60px] title">
       <!-- wp:paragraph -->
-      <p class="text-[24px]">Poznaj nasze najnowsze inwestycje</p>
+      <p class="text-[24px] text-bgDarkGray">Poznaj nasze najnowsze inwestycje</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
