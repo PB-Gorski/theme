@@ -108,9 +108,9 @@
             <!-- /wp:group -->
 
             <!-- wp:group -->
-            <div class="wp-block-group col2 w-[40%]">
+            <div class="wp-block-group col2 w-[40%] pr-[20px]">
               <!-- wp:group -->
-              <div class="wp-block-group title2 mb-[20px] ml-[30px]">
+              <div class="wp-block-group title2 ml-[30px]">
                 <!-- wp:paragraph -->
                 <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Wyszukiwanie2</p>
                 <!-- /wp:paragraph -->
