@@ -11,9 +11,9 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner h-screen desktop:h-screen relative">
   <!-- wp:group -->
-  <div class="wp-block-group call-back-pop-up w-[200px] h-[280px] text-center bg-transparent flex flex-col jusify-center items-center absolute bottom-[180px] right-[20px] z-[1]">
+  <div class="wp-block-group call-back-pop-up w-[200px] h-[280px] text-center bg-transparent flex flex-col jusify-center items-center fixed bottom-[30px] right-[20px] z-[1]">
     <!-- wp:group -->
-    <div class="wp-block-group text mb-[10px] w-full h-[160px] bg-white flex flex-col justify-center items-center gap-y-[10px]">
+    <div class="wp-block-group text mb-[10px] w-full h-[160px] bg-white flex flex-col justify-center items-center gap-y-[10px] shadow-md">
       <!-- wp:paragraph -->
       <p>Zostaw swój numer -</p>
       <!-- /wp:paragraph -->
