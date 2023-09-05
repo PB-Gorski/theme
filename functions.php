@@ -336,19 +336,19 @@ if (function_exists('register_block_pattern')) {
 
 function custom_post_types()
 {
-	register_post_type('realizacje', array(
+	register_post_type('inwestycje', array(
 		'public' => true,
 		'labels' => array(
-			'name' => 'Realizacje',
-			'add_new_item' => 'Dodaj Realizacje',
-			'edit_item' => 'Edytuj Realizacje',
-			'all_items' => 'Wszystkie Realizacje',
-			'singular_name' => 'Realizacje'
+			'name' => 'Inwestycje',
+			'add_new_item' => 'Dodaj inwestycje',
+			'edit_item' => 'Edytuj inwestycje',
+			'all_items' => 'Wszystkie inwestycje',
+			'singular_name' => 'inwestycje'
 		),
 		'menu_icon' => 'dashicons-flag',
 		'show_in_rest' => true,
 		'has_archive' => true,
-		'rewrite' => array('slug' => 'realizacje'),
+		'rewrite' => array('slug' => 'inwestycje'),
 		'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
 		'taxonomies'  => array('category')
 	));
