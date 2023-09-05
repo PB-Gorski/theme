@@ -40,7 +40,7 @@
       <!-- wp:group -->
       <div class="wp-block-group input checkbox">
         <!-- wp:paragraph -->
-        <p class="text-white text-[40px] leading-[150%]">Wyrażam zgodę na otrzymywanie informacji handlowych w tym marketingowych od PB Górski Sp. z o.o. SKA drogą elektroniczną (za pośrednictwem adresu e-mail). Więcej informacji o administracji danych.Więcej.</p>
+        <p class="text-white text-[14px] leading-[28px]">Wyrażam zgodę na otrzymywanie informacji handlowych w tym marketingowych od PB Górski Sp. z o.o. SKA drogą elektroniczną (za pośrednictwem adresu e-mail). Więcej informacji o administracji danych.Więcej.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
