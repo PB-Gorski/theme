@@ -52,7 +52,7 @@
         <!-- wp:group -->
         <div class="wp-block-group select__trigger">
           <!-- wp:paragraph -->
-          <span>Miasto</span>
+          <span>Inwestycje</span>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group arrow">
