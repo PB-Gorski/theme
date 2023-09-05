@@ -36,7 +36,7 @@
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
       ?>
           <!-- wp:list-item -->
-          <li class="invest-tile wide:max-w-[420px] desktop:max-w-full max-w-[310px] h-[380px] desktop:h-[450px] wide:h-[530px]">
+          <li class="invest-tile max-w-[310px] desktop:max-w-full wide:max-w-[420px]">
             <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-[400px] max-w-[310px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
