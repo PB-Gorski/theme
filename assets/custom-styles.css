@@ -44,6 +44,7 @@ background-color: #E80D38;
   width: 7px;
 }
 .tab-active{
+  color: #2E384D;
   text-decoration: underline 2px;
   text-underline-offset: 4px;
   text-decoration-line: 2px;
