@@ -12,7 +12,9 @@
 <div id="inwestycje" class="wp-block-group inwestycje h-[600pxpx] bg-red-300">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
-    inwestycje
+    <!-- wp:paragraph -->
+    <p>inwestycje</p>
+    <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
 </div>
