@@ -51,7 +51,7 @@
                 <!-- /wp:paragraph -->
 
                 <!-- wp:group -->
-                <div class="wp-block-group available-apartments flex gap-[25px]">
+                <div class="wp-block-group available-apartments flex items-center gap-[25px]">
                   <!-- wp:paragraph -->
                   <p class="text-[48px] text-primaryRed font-bold">41</p>
                   <!-- /wp:paragraph -->
