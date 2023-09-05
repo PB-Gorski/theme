@@ -47,10 +47,10 @@
                 <div class="wp-block-group available-apartments flex gap-[25px]">
                   <!-- wp:paragraph -->
                   <p class="text-[48px] text-primaryRed">41</p>
-                  <!-- wp:paragraph -->
+                  <!-- /wp:paragraph -->
                   <!-- wp:paragraph -->
                   <p class="text-[18px] text-bgDarkGray">dostępnych lokali</p>
-                  <!-- wp:paragraph -->
+                  <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
               </div>
