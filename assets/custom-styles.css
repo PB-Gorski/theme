@@ -26,8 +26,22 @@ ul.wp-block-navigation__container  > li.wp-block-navigation-item{
   cursor: pointer;
 }
 
+/* nav menu */
+
 .wp-block-navigation__container > li:nth-child(1):hover + .modal{
 background-color: #E80D38;
+}
+.wp-block-navigation__container > li:nth-child(1):after {
+  position: absolute;
+  content: '\25BC';
+  font-size: 7px;
+  color: #2e384d;
+  top: 0;
+  bottom: 0;
+  right: -12px;
+  margin: auto;
+  height: 7px;
+  width: 7px;
 }
 
 /* banner-main */
