@@ -66,9 +66,9 @@
 
 
         <!-- wp:group -->
-        <div class="wp-block-group tab1 container mx-auto text-[17px]">
+        <div class="wp-block-group tab1 text-[17px] flex">
           <!-- wp:group -->
-          <div class="wp-block-group col1">
+          <div class="wp-block-group col1 w-[60%]">
             <!-- wp:group -->
             <div class="wp-block-group title1">
               <!-- wp:paragraph -->
@@ -96,7 +96,7 @@
           <!-- /wp:group -->
 
           <!-- wp:group -->
-          <div class="wp-block-group col2">
+          <div class="wp-block-group col2 w-[40%]">
             <!-- wp:group -->
             <div class="wp-block-group title2">
               <!-- wp:paragraph -->
