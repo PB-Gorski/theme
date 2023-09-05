@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner h-screen desktop:h-screen relative">
   <!-- wp:group -->
-  <div class="wp-block-group call-back-pop-up w-[200px] h-[160px] test bg-white absolute bottom-[0px] right-[0px]">
+  <div class="wp-block-group call-back-pop-up w-[200px] h-[160px] text-center bg-white absolute bottom-[0px] right-[0px]">
     <!-- wp:paragraph -->
     <p>Zostaw swój numer -</p>
     <!-- /wp:paragraph -->
@@ -19,7 +19,7 @@
     <p class="font-bold">Odzwonimy do Ciebie</p>
     <!-- /wp:paragraph -->
     <!-- wp:group -->
-    <div class="wp-block-group group btn-find-more relative bg-primaryRed text-white w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-[230px] before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-300 before:ease cursor-pointer">
+    <div class="wp-block-group group btn-find-more relative bg-primaryRed text-white w-[170px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-[230px] before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-300 before:ease cursor-pointer">
       <!-- wp:paragraph -->
       <p class="font-bold z-[1]">Zostaw numer</p>
       <!-- /wp:paragraph -->
