@@ -42,13 +42,10 @@
         <!-- wp:group -->
         <div class="wp-block-group custom-options">
           <!-- wp:paragraph -->
-          <span class="custom-option selected" data-value="tesla">Tesla</span>
+          <span class="custom-option selected" data-value="tesla">Gdańsk</span>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <span class="custom-option" data-value="volvo">Volvo</span>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <span class="custom-option" data-value="mercedes">Mercedes</span>
+          <span class="custom-option" data-value="volvo">Gdynia</span>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
