@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="footer" class="wp-block-group footer h-[450px] relative">
+<div id="footer" class="wp-block-group footer h-[450px] py-[30px] relative">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full flex">
     <!-- wp:group -->
@@ -27,7 +27,7 @@
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
-      <div class="wp-block-group company-info text-[14px] text-[#959ba6] leading-[20px] flex">
+      <div class="wp-block-group company-info mb-[65px] text-[14px] text-[#959ba6] leading-[20px] flex">
         <!-- wp:group -->
         <div class="wp-block-group col1 w-[50%]">
           <!-- wp:paragraph -->
@@ -61,14 +61,14 @@
       <!-- wp:group -->
       <div class="wp-block-group socials flex">
         <!-- wp:group -->
-        <div class="wp-block-group btn-fb bg-blue-700 text-white w-[20px] h-[20px] text-center rounded-[5px]">
+        <div class="wp-block-group btn-fb bg-[#2d384c] text-white w-[30px] h-[30px] text-center rounded-[5px]">
           <!-- wp:paragraph -->
           <p>f</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
         <!-- wp:paragraph -->
-        <p class="text-[#8a8f99]">Odwiedź nas na facebooku</p>
+        <p class="text-[#8a8f99] text-[16px]">Odwiedź nas na facebooku</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
