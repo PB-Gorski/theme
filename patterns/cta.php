@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="cta" class="wp-block-group cta h-[580px] bg-bgDarkGray">
+<div id="cta" class="wp-block-group cta h-[580px] bg-[#f6f7fb]">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] flex">
     <!-- wp:group -->
