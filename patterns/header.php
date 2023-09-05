@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Menu-desktop" class="wp-block-group nav-desktop relative">
+<div id="Menu-desktop" class="wp-block-group nav-desktop mb-[80px] relative">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto h-[100px] flex items-center">
     <!-- wp:group -->
