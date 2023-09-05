@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="search-bar" class="wp-block-group search-bar h-fit bg-bgLightGray py-[25px]">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] flex gap-[1px]">
+  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] text-[18px] flex gap-[1px]">
     <!-- wp:group -->
     <div class="wp-block-group miasto select-wrapper">
       <!-- wp:group -->
@@ -19,7 +19,7 @@
         <!-- wp:group -->
         <div class="wp-block-group select__trigger">
           <!-- wp:paragraph -->
-          <span>Miasto</span>
+          <span class="text-[#999] text-[18px]">Miasto</span>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group arrow">
@@ -52,7 +52,7 @@
         <!-- wp:group -->
         <div class="wp-block-group select__trigger">
           <!-- wp:paragraph -->
-          <span>Inwestycje</span>
+          <span class="text-[#999]">Inwestycje</span>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group arrow">
@@ -85,7 +85,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group btn-more w-[265px] h-[65px] flex gap-[10px] justify-center items-center">
+    <div class="wp-block-group btn-more w-[265px] h-[65px] bg-white flex gap-[10px] justify-center items-center">
       <!-- wp:paragraph -->
       <p>
         <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
