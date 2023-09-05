@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
-    <div class="wp-block-group mb-[40px] title">
+    <div class="wp-block-group title">
       <!-- wp:paragraph -->
       <p class="text-[24px] ml-[100px] text-bgDarkGray">Aktualności</p>
       <!-- /wp:paragraph -->
