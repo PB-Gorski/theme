@@ -14,15 +14,11 @@
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full flex">
     <!-- wp:group -->
     <div class="wp-block-group col1 w-[30%]">
-      <!-- wp:paragraph -->
-      <a href="#" class="w-[35px] h-[27px] block">
-        <!-- wp:image -->
-        <figure class="wp-block-image menu-logo desktop:hidden mr-[10px]">
-          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/frontpage/logo.png" alt="pb-gorski-logo" />
-        </figure>
-        <!-- /wp:image -->
-      </a>
-      <!-- /wp:paragraph -->
+      <!-- wp:image -->
+      <figure class="wp-block-image menu-logo desktop:hidden mr-[10px]">
+        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/frontpage/logo.png" alt="pb-gorski-logo" />
+      </figure>
+      <!-- /wp:image -->
 
       <!-- wp:group -->
       <div class="wp-block-group company-info mb-[65px] text-[14px] text-[#959ba6] leading-[20px] flex">
