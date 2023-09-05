@@ -36,18 +36,22 @@
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
       ?>
           <!-- wp:list-item -->
-          <li class="invest-tile wide:max-w-[420px] desktop:max-w-full max-w-[310px] h-[380px] desktop:h-[450px] wide:h-[530px]">
-            <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-[400px] max-w-[310px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
+          <li class="blog-tile">
+            <a href="<?php the_permalink(); ?>" class="relative group p-[25px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
                 <!-- wp:image -->
-                <figure class="wp-block-image h-[330px] mb-[30px]">
+                <figure class="wp-block-image h-[270px] mb-[30px]">
                   <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
                 </figure>
                 <!-- /wp:image -->
 
                 <!-- wp:paragraph -->
-                <p class="mr-[20px] text-[36px] font-bold mb-[15px]"><?php the_title(); ?></p>
+                <p class="post-date mr-[20px] text-[16px] text-bgDarkGray font-bold mb-[15px]"><?php the_date(); ?></p>
+                <!-- /wp:paragraph -->
+
+                <!-- wp:paragraph -->
+                <p class="mr-[20px] text-[24px] font-bold mb-[15px]"><?php the_title(); ?></p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:group -->
