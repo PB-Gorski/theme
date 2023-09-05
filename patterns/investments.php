@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:list -->
-    <ul class="wp-block-list flex justify-between gap-[30px]">
+    <ul class="wp-block-list flex desktop:flex-row flex-col justify-between gap-[30px]">
       <?php
       $args = array(
         'post_type' => 'inwestycje',
@@ -28,8 +28,8 @@
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
       ?>
           <!-- wp:list-item -->
-          <li class="invest-tile wide:max-w-[420px] desktop:max-w-[354px] max-w-[310px] h-[380px] desktop:h-[450px] wide:h-[530px]">
-            <a href="<?php the_permalink(); ?>" class="relative z-[2] group p-[25px] desktop:max-w-[400px] max-w-[310px]">
+          <li class="invest-tile wide:max-w-[420px] desktop:max-w-full max-w-[310px] h-[380px] desktop:h-[450px] wide:h-[530px]">
+            <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-[400px] max-w-[310px]">
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
                 <!-- wp:image -->
