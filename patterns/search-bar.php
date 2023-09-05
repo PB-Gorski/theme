@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="search-bar" class="wp-block-group search-bar h-[115px] bg-bgLightGray py-[25px] transition-height duration-300 ease">
+<div id="search-bar" class="wp-block-group search-bar h-[115px] bg-bgLightGray py-[25px] transition-height duration-300 ease-out">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] text-[18px] flex gap-[1px]">
     <!-- wp:group -->
@@ -104,9 +104,9 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-[245px] h-[65px] flex items-center justify-center gap-[10px] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-[400ms] before:ease-in cursor-pointer">
+    <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-[245px] h-[65px] flex items-center justify-center gap-[10px] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-300 before:ease cursor-pointer">
       <!-- wp:paragraph -->
-      <p class="font-bold">
+      <p class="font-bold z-[1]">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="injected-svg inject-svg icon-search">
           <defs>
             <style></style>
@@ -119,7 +119,7 @@
       </p>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <p class="font-bold">Szukaj</p>
+      <p class="font-bold z-[1]">Szukaj</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
