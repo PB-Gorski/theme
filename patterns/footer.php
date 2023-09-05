@@ -75,7 +75,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group col2 w-[70%]">
+    <div class="wp-block-group col2 w-[70%] flex justify-between">
       <!-- wp:group -->
       <div class="wp-block-group inner-col1">
         <!-- wp:paragraph -->
