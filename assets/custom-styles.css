@@ -43,6 +43,13 @@ background-color: #E80D38;
   height: 7px;
   width: 7px;
 }
+.tab-active{
+  text-decoration: underline 2px;
+  text-underline-offset: 4px;
+  text-decoration-line: 2px;
+  text-decoration-color: #E80D38;
+  cursor: pointer;
+}
 
 /* banner-main */
 .banner-video{
