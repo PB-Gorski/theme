@@ -77,7 +77,11 @@
             </div>
             <!-- /wp:group -->
 
+            <!-- wp:list -->
+            <ul class="wp-block-list text-textGray">
 
+            </ul>
+            <!-- /wp:list-->
           </div>
           <!-- /wp:group -->
 
@@ -91,6 +95,11 @@
             </div>
             <!-- /wp:group -->
 
+            <!-- wp:list -->
+            <ul class="wp-block-list text-textGray font-bold">
+
+            </ul>
+            <!-- /wp:list-->
 
           </div>
           <!-- /wp:group -->
