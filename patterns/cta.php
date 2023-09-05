@@ -28,13 +28,13 @@
     <!-- wp:group -->
     <div class="wp-block-group col2 w-[55%] pt-[180px] fflex flex-col gap-[30px] items-center jusify-center">
       <!-- wp:paragraph -->
-      <p class="text-[40px] font-bold">Potrzebujesz więcej informacji?</p>
+      <p class="text-[40px] font-bold mb-[40px]">Potrzebujesz więcej informacji?</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
-      <div class="wp-block-group inner-cols-wrapper flex">
+      <div class="wp-block-group inner-cols-wrapper mb-[120px] flex">
         <!-- wp:group -->
-        <div class="wp-block-group inner-col1 w-[50%]">
+        <div class="wp-block-group inner-col1 w-[40%] border-r-[1px] border-[rgba(138,143,153,0.30)]">
           <!-- wp:paragraph -->
           <p class="text-bgDarkGray">Zadzwoń do nas</p>
           <!-- /wp:paragraph -->
@@ -45,7 +45,7 @@
         <!-- /wp:group -->
 
         <!-- wp:group -->
-        <div class="wp-block-group inner-col2 w-[50%]">
+        <div class="wp-block-group inner-col2 pl-[50px] w-[60%]">
           <!-- wp:paragraph -->
           <p class="text-bgDarkGray">Napisz</p>
           <!-- /wp:paragraph -->
