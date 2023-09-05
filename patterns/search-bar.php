@@ -33,7 +33,10 @@
         <!-- wp:group -->
         <div class="wp-block-group custom-options">
           <!-- wp:paragraph -->
-          <span class="custom-option selected" data-value="gdansk">Gdańsk</span>
+          <span class="custom-option selected" data-value="">Miasto</span>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph -->
+          <span class="custom-option" data-value="gdansk">Gdańsk</span>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
           <span class="custom-option" data-value="gdynia">Gdynia</span>
