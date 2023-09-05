@@ -68,7 +68,76 @@
 
 
           <!-- wp:group -->
-          <div class="wp-block-group tab1 text-[17px] flex">
+          <div class="wp-block-group tab1 block text-[17px] flex">
+            <!-- wp:group -->
+            <div class="wp-block-group col1 w-[60%]">
+              <!-- wp:group -->
+              <div class="wp-block-group title1 mb-[20px]">
+                <!-- wp:paragraph -->
+                <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Lista inwestycji</p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:list -->
+              <ul class="wp-block-list text-textGray flex flex-wrap gap-x-[120px] gap-y-[20px]">
+                <!-- wp:list-item -->
+                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Osiedle Srebniki</a>
+                </li>
+                <!-- /wp:list-item -->
+
+                <!-- wp:list-item -->
+                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Św. Piotra</a>
+                </li>
+                <!-- /wp:list-item -->
+                <!-- wp:list-item -->
+                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Wieżycka Folwark</a>
+                </li>
+                <!-- /wp:list-item -->
+                <!-- wp:list-item -->
+                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Toruńska 16</a>
+                </li>
+                <!-- /wp:list-item -->
+              </ul>
+              <!-- /wp:list -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group col2 w-[40%]">
+              <!-- wp:group -->
+              <div class="wp-block-group title2 mb-[20px]">
+                <!-- wp:paragraph -->
+                <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Wyszukiwanie2</p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:list -->
+              <ul class="wp-block-list text-textGray font-bold">
+                <!-- wp:list-item -->
+                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Lista mieszkań &rarr;</a>
+                </li>
+                <!-- /wp:list-item -->
+                <!-- wp:list-item -->
+                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Lista lokali uytkowych &rarr;</a>
+                </li>
+                <!-- /wp:list-item -->
+              </ul>
+              <!-- /wp:list -->
+
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+          <!-- wp:group -->
+          <div class="wp-block-group tab2 hidden text-[17px] flex">
             <!-- wp:group -->
             <div class="wp-block-group col1 w-[60%]">
               <!-- wp:group -->
@@ -136,6 +205,77 @@
             <!-- /wp:group -->
           </div>
           <!-- /wp:group -->
+          <!-- wp:group -->
+          <div class="wp-block-group tab3 hidden text-[17px] flex">
+            <!-- wp:group -->
+            <div class="wp-block-group col1 w-[60%]">
+              <!-- wp:group -->
+              <div class="wp-block-group title1 mb-[20px]">
+                <!-- wp:paragraph -->
+                <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Lista inwestycji</p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:list -->
+              <ul class="wp-block-list text-textGray flex flex-wrap gap-x-[120px]">
+                <!-- wp:list-item -->
+                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Osiedle Srebniki</a>
+                </li>
+                <!-- /wp:list-item -->
+
+                <!-- wp:list-item -->
+                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Św. Piotra</a>
+                </li>
+                <!-- /wp:list-item -->
+                <!-- wp:list-item -->
+                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Wieżycka Folwark</a>
+                </li>
+                <!-- /wp:list-item -->
+                <!-- wp:list-item -->
+                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Toruńska 16</a>
+                </li>
+                <!-- /wp:list-item -->
+              </ul>
+              <!-- /wp:list -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group col2 w-[40%]">
+              <!-- wp:group -->
+              <div class="wp-block-group title2 mb-[20px]">
+                <!-- wp:paragraph -->
+                <p class="uppercase text-[#8A8F99] text-[11px] font-medium tracking-[1.5px]">Wyszukiwanie2</p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:list -->
+              <ul class="wp-block-list text-textGray font-bold">
+                <!-- wp:list-item -->
+                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Lista mieszkań &rarr;</a>
+                </li>
+                <!-- /wp:list-item -->
+                <!-- wp:list-item -->
+                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <a href="#">Lista lokali uytkowych &rarr;</a>
+                </li>
+                <!-- /wp:list-item -->
+              </ul>
+              <!-- /wp:list -->
+
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+
+
         </div>
         <!-- /wp:group -->
 
