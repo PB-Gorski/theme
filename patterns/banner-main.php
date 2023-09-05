@@ -31,7 +31,7 @@
     <!-- /wp:group -->
 
     <!-- wp:image -->
-    <figure class="wp-block-image phone-icon">
+    <figure class="wp-block-image phone-icon cursor-pointe">
       <img src="<?php echo home_url() ?>//wp-content/themes/pbgorski/assets/img/frontpage/phone-icon.png" alt="phone-icon">
     </figure>
     <!-- /wp:image -->
