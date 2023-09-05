@@ -56,7 +56,10 @@
                   <p class="text-[48px] text-primaryRed font-bold">41</p>
                   <!-- /wp:paragraph -->
                   <!-- wp:paragraph -->
-                  <p class="text-[18px] text-bgDarkGray">dostępnych lokali</p>
+                  <p class="text-[18px] text-bgDarkGray">dostępnych</p>
+                  <!-- /wp:paragraph -->
+                  <!-- wp:paragraph -->
+                  <p class="text-[18px] text-bgDarkGray">lokali</p>
                   <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
