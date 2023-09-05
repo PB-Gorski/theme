@@ -12,15 +12,6 @@
 <div id="search-bar" class="wp-block-group search-bar h-[800px]">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
-    <!-- wp:paragraph -->
-    <p>input serach</p>
-    <!-- /wp:paragraph -->
-    <!-- wp:paragraph -->
-    <label for="name">Name (4 to 8 characters):</label>
-
-    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
-    <!-- /wp:paragraph -->
-
     <!-- wp:group -->
     <div class="wp-block-group select-wrapper">
       <!-- wp:group -->
@@ -33,7 +24,7 @@
           <!-- wp:group -->
           <div class="wp-block-group arrow">
             <!-- wp:paragraph -->
-            <p>-></p>
+            <p class="hidden">-></p>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
