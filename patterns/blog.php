@@ -49,6 +49,9 @@
                 <!-- wp:paragraph -->
                 <p class="post-date mr-[20px] text-[16px] text-bgDarkGray mb-[15px]"><?php the_date(); ?></p>
                 <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <p class="post-date mr-[20px] text-[16px] text-bgDarkGray mb-[15px]"><?php echo get_the_date(); ?></p>
+                <!-- /wp:paragraph -->
 
                 <!-- wp:paragraph -->
                 <p class="mr-[20px] text-[24px] font-bold mb-[15px] leading-[32px]"><?php the_title(); ?></p>
