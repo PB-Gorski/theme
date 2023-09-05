@@ -21,18 +21,34 @@
     <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
     <!-- /wp:paragraph -->
 
-    <div class="select-wrapper">
-      <div class="select">
-        <div class="select__trigger"><span>Tesla</span>
-          <div class="arrow"></div>
+    <!-- wp:group -->
+    <div class="wp-block-group select-wrapper">
+      <!-- wp:group -->
+      <div class="wp-block-group select">
+        <!-- wp:group -->
+        <div class="wp-block-group select__trigger"><span>Tesla</span>
+          <!-- wp:group -->
+          <div class="wp-block-group arrow">-></div>
+          <!-- /wp:group -->
         </div>
-        <div class="custom-options">
+        <!-- /wp:group -->
+        <!-- wp:group -->
+        <div class="wp-block-group custom-options">
+          <!-- wp:paragraph -->
           <span class="custom-option selected" data-value="tesla">Tesla</span>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph -->
           <span class="custom-option" data-value="volvo">Volvo</span>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph -->
           <span class="custom-option" data-value="mercedes">Mercedes</span>
+          <!-- /wp:paragraph -->
         </div>
+        <!-- /wp:group -->
       </div>
+      <!-- /wp:group -->
     </div>
+    <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
 </div>
