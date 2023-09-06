@@ -14,9 +14,9 @@
   <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
   <div class="wp-block-group bg-[#f6f7fa]">
     <!-- wp:group -->
-    <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] flex">
+    <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] flex items-center">
       <!-- wp:group -->
-      <div class="wp-block-group left-col w-[50%]">
+      <div class="wp-block-group left-col w-[70%]">
         <!-- wp:paragraph -->
         <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[60px] text-[#2e384c] font-bold">Wszystkie inwestycje</p>
         <!-- /wp:paragraph -->
@@ -44,7 +44,7 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group right-col w-[50%]">
+      <div class="wp-block-group right-col w-[30%]">
         <!-- wp:paragraph -->
         <p class="text-[30px] text-[#8a8f99]">4 inwestycje / 169 lokali</p>
         <!-- /wp:paragraph -->
