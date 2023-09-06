@@ -76,6 +76,11 @@ background-color: #E80D38;
   user-select: none;
   width: 250px;
 }
+@media only screen and (max-width: 480px) {
+  .select-wrapper {
+    width: 100%;
+  }
+}
 .select {
   position: relative;
   display: flex;
