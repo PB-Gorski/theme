@@ -78,8 +78,7 @@
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
           $counter++;
-          echo $the_post->ID;
-          echo $post_query->ID;
+          echo $post->ID;
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full h-[450px] mb-[80px]">
