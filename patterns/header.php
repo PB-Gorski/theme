@@ -375,35 +375,35 @@
   <!-- wp:list -->
   <ul class="wp-block-list mobile-nav-menu text-[30px] w-screen h-screen overflow-scroll pt-[100px] bg-textGray text-white z-[1] flex flex-col items-center gap-y-[30px] fixed top-[0px] left-0 translate-x-[100%] opacity-[0] transition ease-in-out duration-500">
     <!-- wp:list-item -->
-    <li class="border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
+    <li class="border-b-[2px] border-transparent">
       <!-- wp:paragraph -->
       <p><a href="/inwestycje/">Inwestycje</a></p>
       <!-- /wp:paragraph -->
     </li>
     <!-- /wp:list-item -->
     <!-- wp:list-item -->
-    <li class="border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
+    <li class="border-b-[2px] border-transparent">
       <!-- wp:paragraph -->
       <p><a href="/o-nas/">O nas</a></p>
       <!-- /wp:paragraph -->
     </li>
     <!-- /wp:list-item -->
     <!-- wp:list-item -->
-    <li class="border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
+    <li class="border-b-[2px] border-transparent">
       <!-- wp:paragraph -->
       <p><a href="/aktualnosci/">Aktualności</a></p>
       <!-- /wp:paragraph -->
     </li>
     <!-- /wp:list-item -->
     <!-- wp:list-item -->
-    <li class="border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
+    <li class="border-b-[2px] border-transparent">
       <!-- wp:paragraph -->
       <p><a href="/kredyty/">Kredyty</a></p>
       <!-- /wp:paragraph -->
     </li>
     <!-- /wp:list-item -->
     <!-- wp:list-item -->
-    <li class="p-[10px_20px] border-[2px] border-white rounded-full w-fit cursor-pointer hover:bg-white hover:text-black transition ease-out duration-300">
+    <li class="p-[10px_20px] w-fit cursor-pointer hover:bg-white hover:text-black transition ease-out duration-300">
       <!-- wp:paragraph -->
       <p><a href="/kontakt/">Kontakt</a></p>
       <!-- /wp:paragraph -->
