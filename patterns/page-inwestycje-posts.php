@@ -33,11 +33,6 @@
         GDYNIA
       </li>
       <!-- /wp:list-item -->
-      <!-- wp:list-item -->
-      <li class="w-[1px] h-[32px] bg-[#8A8F99] opacity-[30%]">
-        <p class="hidden">separator</p>
-      </li>
-      <!-- /wp:list-item -->
     </ul>
     <!-- /wp:list -->
   </div>
