@@ -104,7 +104,7 @@ window.addEventListener("load", function() {
   const btnMore = this.document.querySelector('.btn-more');
   const searchBar = this.document.querySelector('#search-bar');
   btnMore.addEventListener('click',()=>{
-    searchBar.classList.toggle('h-[250px]')
+    (window.innerWidth < 480) ? searchBar.classList.toggle('h-[250px]') : searchBar.classList.toggle('h-[500px]');ś
   });
 
 
