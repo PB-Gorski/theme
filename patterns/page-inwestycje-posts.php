@@ -66,35 +66,6 @@
 
   </div>
   <!-- /wp:group -->
-  <!-- wp:list -->
-  <ul id="Kategorie" class="wp-block-list categories-all-1 mb-[60px] desktop:mb-[110px] flex flex-wrap gap-[10px]">
-    <!-- wp:list-item -->
-    <li class=""></li>
-    <!-- /wp:list-item -->
-    <?php
-    $args = array(
-      'taxonomy' => 'category',
-      'orderby' => 'name',
-      'paged' => 1,
-      'order'   => 'ASC'
-    );
-    $cats = get_categories($args);
-
-    foreach ($cats as $cat) {
-    ?>
-      <?php
-      $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
-      ?>
-      <!-- wp:list-item -->
-      <li class=""><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $cat->name; ?></a></li>
-      <!-- /wp:list-item -->
-    <?php
-    };
-    ?>
-  </ul>
-  <!-- /wp:list -->
-
-
 
   <!-- wp:group -->
   <div class="wp-block-group investments-posts container mx-auto desktop:px-0 px-[20px]">
@@ -133,13 +104,7 @@
                   <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php the_title(); ?></p>
                   <!-- /wp:paragraph -->
                   <!-- wp:paragraph -->
-                  <p class="mb-[15px] text-[18px] text-bgDarkGray"><?php print_r(get_the_category(34)); ?></p>
-                  <!-- /wp:paragraph -->
-                  <!-- wp:paragraph -->
-                  <p class="mb-[15px] text-[18px] text-bgDarkGray"><?php print_r(wp_get_post_categories(34)); ?></p>
-                  <!-- /wp:paragraph -->
-                  <!-- wp:paragraph -->
-                  <p class="mb-[15px] text-[18px] text-bgDarkGray"><?php print_r(get_the_ID()); ?></p>
+                  <p class="mb-[15px] text-[18px] text-bgDarkGray"><?php print_r(get_the_category(get_the_ID())); ?></p>
                   <!-- /wp:paragraph -->
 
                   <!-- wp:list -->
