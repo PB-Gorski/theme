@@ -10,7 +10,6 @@
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="inwestycje-post" class="wp-block-group inwestycje-post relative">
-
   <!-- wp:group -->
   <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
     <!-- wp:group -->
