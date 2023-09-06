@@ -1,13 +1,12 @@
 <?php
 
 /**
- * Title: page-inwestycje-post
- * Slug: page-inwestycje-post
- * Categories: Banner, Front Page
+ * Title: archive-investments
+ * Slug: archive-investments
+ * Categories: text, banner
  * Viewport Width: 1280
  */
 ?>
-
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="inwestycje-post" class="wp-block-group inwestycje-post relative">
 
@@ -56,26 +55,62 @@
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:group -->
-  <div class="wp-block-group investments-posts container mx-auto desktop:px-0 px-[20px]">
-    <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px]">
-      <?php
-      $args = array(
-        'post_type' => 'inwestycje',
-        'posts_per_page' => 3,
-        'order' => 'ASC'
-      );
-      $post_query = new WP_Query($args);
-      $counter = 0;
-      $i = 0;
+  <!-- wp:list -->
+  <ul class="wp-block-list categories-cities mb-[108px] flex flex-wrap gap-[10px]">
+    <!-- wp:list-item -->
+    <li class="w-fit h-[40px] px-[10px] bg-[#F2F2F2] border-[#AAA] border-[2px] rounded-full uppercase text-[14px] font-semibold leading-[20px] flex justify-center items-center hover:bg-primaryYellow hover:border-primaryYellow transition ease-out duration-300 cursor-pointer">
+      <!-- wp:paragraph -->
+      <p><a href="<?php echo get_home_url() . '/inwestycje'; ?>" class="flex items-center w-full h-full">Wszystkie</a></p>
+      <!-- /wp:paragraph -->
+    </li>
+    <!-- /wp:list-item -->
+    <?php
+    $args = array(
+      'taxonomy' => 'category',
+      'orderby' => 'name',
+      'order'   => 'ASC'
+    );
+    $cats = get_categories($args);
+    $currentCity = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 35, 30));
 
-      if ($post_query->have_posts()) {
-        while ($post_query->have_posts()) {
-          $post_query->the_post();
-          $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
-          $counter++;
-      ?>
+    foreach ($cats as $cat) {
+    ?>
+      <?php
+      $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
+      if (($cat->name) == 'glowna' || ($catNoSpaces) == 'bez-kategorii') {
+        echo '';
+      } else { ?>
+        <!-- wp:list-item -->
+        <li class="w-fit h-[40px] px-[10px] bg-[#F2F2F2] border-[#AAA] border-[2px] rounded-full uppercase text-[14px] font-semibold leading-[20px] flex justify-center items-center hover:bg-primaryYellow hover:border-primaryYellow transition ease-out duration-300 cursor-pointer <?php if ($catNoSpaces == $currentCity) echo 'bg-primaryYellow border-primaryYellow'; ?>">
+          <!-- wp:paragraph -->
+          <p><a href="<?php echo get_category_link($cat->term_id) ?>" class="flex items-center w-full h-full"><?php echo $cat->name; ?></a></p>
+          <!-- /wp:paragraph -->
+        </li>
+        <!-- /wp:list-item -->
+      <?php
+      }; ?>
+    <?php
+    };
+    ?>
+  </ul>
+  <!-- /wp:list -->
+
+  <!-- wp:list -->
+  <ul class="wp-block-list investments-list mb-[150px]">
+    <?php
+    $args = array(
+      'post_type' => 'inwestycje',
+      'posts_per_page' => 10,
+      'order' => 'DESC',
+      'category_name' => $currentCity
+    );
+    $post_query = new WP_Query($args);
+
+    if ($post_query->have_posts()) {
+      while ($post_query->have_posts()) {
+        $post_query->the_post();
+        $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
+        if (true) { ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full h-[450px] mb-[80px]">
             <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
@@ -120,16 +155,43 @@
             </a>
           </li>
           <!-- /wp:list-item -->
-      <?php
-          $i++;
+    <?php
         };
       };
-      wp_reset_query();
-      ?>
-    </ul>
-    <!-- /wp:list -->
+    };
+    wp_reset_query();
+    ?>
+  </ul>
+  <!-- /wp:list -->
+
+  <!-- wp:group -->
+  <div class="wp-block-group button-wrapper desktop:mt-[80px] mt-[40px] flex items-center justify-center gap-[64px] cursor-pointer">
+    <!-- wp:group -->
+    <div class="wp-block-group gray-border hidden desktop:inline-block w-full h-[2px] bg-[#808080] opacity-[15%]">
+      <!-- wp:paragraph -->
+      <p class="hidden">gray separator</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:buttons -->
+    <div class="wp-block-buttons btn-more desktop:w-[330px] w-fit ml-[0px] p-[15px_30px] uppercase border-[2px] border-[#D5D5D5] rounded-full hover:border-primaryYellow hover:text-black transition ease-out duration-300">
+      <!-- wp:paragraph -->
+      <p><a href="#" class="uppercase text-[14px] font-bold">Pokaż więcej</a></p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:buttons -->
+
+    <!-- wp:group -->
+    <div class="wp-block-group gray-border hidden desktop:inline-block w-full h-[2px] bg-[#808080] opacity-[15%]">
+      <!-- wp:paragraph -->
+      <p class="hidden">gray separator</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
-
+</div>
+<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
