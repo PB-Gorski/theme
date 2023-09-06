@@ -345,7 +345,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group btn-open-menu ml-[10px] p-[13px_10px] w-[50px] h-[50px] bg-textGray font-medium cursor-pointer">
+    <div class="wp-block-group btn-open-menu ml-[10px] p-[13px_10px] w-[50px] h-[50px] bg-textGray font-medium cursor-pointer z-[2]">
       <!-- wp:group -->
       <div class="wp-block-group hamburger-btn-line w-[30px] h-[2px] bg-white mb-[8px] rounded-[5px] transition ease-out duration-[400ms]">
         <!-- wp:paragraph -->
@@ -373,7 +373,7 @@
   <!-- /wp:group -->
 
   <!-- wp:list -->
-  <ul class="wp-block-list mobile-nav-menu text-[30px] w-screen h-screen overflow-scroll pt-[40px] bg-textGray text-white z-[1] flex flex-col items-center gap-y-[30px] fixed top-[0px] left-0 translate-x-[100%] opacity-[0] transition ease-in-out duration-500">
+  <ul class="wp-block-list mobile-nav-menu text-[30px] w-screen h-screen overflow-scroll pt-[100px] bg-textGray text-white z-[1] flex flex-col items-center gap-y-[30px] fixed top-[0px] left-0 translate-x-[100%] opacity-[0] transition ease-in-out duration-500">
     <!-- wp:list-item -->
     <li class="border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
       <!-- wp:paragraph -->
