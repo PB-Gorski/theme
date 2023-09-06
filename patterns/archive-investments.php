@@ -8,17 +8,7 @@
  */
 
 
-$category2 = get_category(get_query_var('cat'));
-print_r($category2);
 
-global $post;
-echo $post->ID;
-
-global $wp_query;
-echo $wp_query->post->ID;
-
-$category = get_queried_object();
-echo $category->term_id;
 
 ?>
 
@@ -92,7 +82,18 @@ echo $category->term_id;
         while ($post_query->have_posts()) {
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
-          $counter++; ?>
+          $counter++;
+          $category2 = get_category(get_query_var('cat'));
+          print_r($category2);
+
+          global $post;
+          echo $post->ID;
+
+          global $wp_query;
+          echo $wp_query->post->ID;
+
+          $category = get_queried_object();
+          echo $category->term_id; ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full h-[450px] mb-[80px]">
             <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
