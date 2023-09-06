@@ -68,7 +68,7 @@
       'paged' => $currentPageID,
       'order'   => 'ASC'
     );
-    echo ;currentPageID;
+    echo $currentPageID;
     $cats = get_categories($args);
 
     foreach ($cats as $cat) {
