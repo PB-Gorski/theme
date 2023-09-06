@@ -2,7 +2,7 @@
 
 /**
  * Title: inwestycje-post
- * Slug: inwestycje-post
+ * Slug: page-inwestycje/inwestycje-post
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
