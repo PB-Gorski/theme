@@ -23,7 +23,7 @@
     <p class="text-center text-bgDarkGray mb-[35px]">Zostaw numer, nasz konsultant oddzwoni do Ciebie</p>
     <!-- /wp:paragraph -->
     <!-- wp:group -->
-    <div class="wp-block-group input flex">
+    <div class="wp-block-group input mb-[25px] flex">
       <!-- wp:paragraph -->
       <p class="w-[370px] h-[60px] bg-white text-bgDarkGray text-[14px] leading-[150%]">Numer telefonu</p>
       <!-- /wp:paragraph -->
