@@ -11,11 +11,11 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner h-[80vh] relative">
   <!-- wp:group -->
-  <div class="wp-block-group call-back-modal-bg bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen z-[1]">
+  <div class="wp-block-group call-back-modal-bg opacity-0 bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen z-[1]">
   </div>
   <!-- /wp:group -->
   <!-- wp:group -->
-  <div class="wp-block-group call-back-modal w-[850px] h-[370px] p-[45px_60px] bg-white fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] z-[2]">
+  <div class="wp-block-group call-back-modal opacity-0 w-[850px] h-[370px] p-[45px_60px] bg-white fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] z-[2]">
     <!-- wp:group -->
     <div class="wp-block-group btn-close absolute top-[-5px] right-[15px] cursor-pointer">
       <!-- wp:paragraph -->

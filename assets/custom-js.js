@@ -92,12 +92,16 @@ window.addEventListener("load", function() {
   const btnCloseModal = this.document.querySelector('.btn-close');
   const callModal = this.document.querySelector('.call-back-modal');
   const modalBg = this.document.querySelector('.call-back-modal-bg');
-  const modalBg = this.document.querySelector('.btn-find-more');
+  const btnOpenModal = this.document.querySelector('.btn-find-more');
 
   btnCloseModal.addEventListener('click',()=>{
     callModal.classList.replace('opacity-100', 'opacity-0');
     modalBg.classList.replace('opacity-100', 'opacity-0');
   });
+  btnOpenModal.addEventListener('click',()=>{
+    callModal.classList.replace('opacity-0', 'opacity-100');
+    modalBg.classList.replace('opacity-0', 'opacity-100');
+  })
 
 
 
