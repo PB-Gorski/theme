@@ -18,6 +18,13 @@ figure[class*="wp-block-image"] img {
   object-fit: cover;
   margin: 0;
 }
+figure[class*="wp-block-image cta-img"] img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  object-position: 40%;
+}
 
 /* Wordpress default styles */
 .wp-block-navigation__container{
