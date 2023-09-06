@@ -64,7 +64,7 @@
       </a></li>
     <!-- /wp:list-item -->
     <?php
-    $currentPageID = (int)substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 44, 1) ? (int)substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 44, 1) : 1;
+    $currentPageID = (int)substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 30, 10) ? (int)substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 30, 10) : 1;
     $args = array(
       'taxonomy' => 'category',
       'orderby' => 'name',
