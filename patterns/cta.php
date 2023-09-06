@@ -18,7 +18,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full flex">
     <!-- wp:group -->
-    <div class="wp-block-group col1 w-[45%]">
+    <div class="wp-block-group hidden desktop:block col1 w-[45%]">
       <!-- wp:paragraph -->
       <p class="hidden">empty space</p>
       <!-- /wp:paragraph -->
@@ -26,13 +26,13 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group col2 w-[55%] pt-[160px] fflex flex-col gap-[30px] items-center jusify-center">
+    <div class="wp-block-group col2 w-[100%] desktop:w-[55%] pt-[160px] fflex flex-col gap-[30px] items-center jusify-center">
       <!-- wp:paragraph -->
-      <p class="text-[40px] font-bold mb-[40px]">Potrzebujesz więcej informacji?</p>
+      <p class="text-[28px] desktop:text-[40px] font-bold mb-[40px]">Potrzebujesz więcej informacji?</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
-      <div class="wp-block-group inner-cols-wrapper mb-[80px] h-[100px] flex">
+      <div class="wp-block-group inner-cols-wrapper mb-[80px] h-[100px] desktop:flex">
         <!-- wp:group -->
         <div class="wp-block-group inner-col1 w-[40%] border-r-[1px] border-[rgba(138,143,153,0.30)]">
           <!-- wp:paragraph -->
