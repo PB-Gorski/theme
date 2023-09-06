@@ -56,36 +56,8 @@
   </div>
   <!-- /wp:group -->
   <?php
-
-  $args = array(
-    'taxonomy' => 'category',
-    'orderby' => 'name',
-    'order'   => 'ASC'
-  );
-  $cats = get_categories($args);
-  $currentCategory2 = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 35, 30));
-
-  $categoriesArray = get_the_category();
-  print_r($categoriesArray);
-
+  print_r(get_the_ID());
   ?>
-
-  <!-- wp:list -->
-  <ul class="wp-block-list categories-under-logo my-[20px] flex flex-wrap gap-[10px]">
-    <?php
-    $categoriesArray = get_the_category();
-    foreach ($categoriesArray as $category) {
-      $category_link = get_category_link($category->term_id);
-    ?>
-      <?php
-      echo $category->name; ?>
-    <?php
-    };
-    ?>
-
-  </ul>
-  <!-- /wp:list -->
-
 
   <!-- wp:group -->
   <div class="wp-block-group investments-posts container mx-auto desktop:px-0 px-[20px]">
