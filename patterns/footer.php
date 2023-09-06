@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="footer" class="wp-block-group footer h-[450px] py-[30px] relative">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full flex">
+  <div class="wp-block-group footer1 container mx-auto desktop:px-0 px-[20px] h-full flex">
     <!-- wp:group -->
     <div class="wp-block-group col1 w-[30%]">
       <!-- wp:group -->
@@ -165,7 +165,37 @@
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
 
+  <!-- wp:group -->
+  <div class="wp-block-group footer2 container mx-auto desktop:px-0 px-[20px] border-t-[1px] border-[rgba(0,0,0,0.1)] flex justify-between">
+    <!-- wp:group -->
+    <div class="wp-block-group col1 flex gap-[20px]">
+      <!-- wp:paragraph -->
+      <p>Copyright © 2023 </p>
+      <!-- /wp:paragraph -->
+      <!-- wp:paragraph -->
+      <p>PBGórski</p>
+      <!-- /wp:paragraph -->
+      <!-- wp:paragraph -->
+      <p>Wszelkie prawa zastrzeżone</p>
+      <!-- /wp:paragraph -->
+      <!-- wp:paragraph -->
+      <p>RODO</p>
+      <!-- /wp:paragraph -->
+      <!-- wp:paragraph -->
+      <p>Polityka Cookies</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+    <!-- wp:group -->
+    <div class="wp-block-group col2">
+      <!-- wp:paragraph -->
+      <p>Projekt i wykonanie</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
 
   </div>
   <!-- /wp:group -->
