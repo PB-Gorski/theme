@@ -15,11 +15,11 @@
   </div>
   <!-- /wp:group -->
   <!-- wp:group -->
-  <div class="wp-block-group call-back-modal w-[850px] h-[370px] p-[45px_60px] bg-white relative fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] z-[2]">
+  <div class="wp-block-group call-back-modal w-[850px] h-[370px] p-[45px_60px] bg-white fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] z-[2]">
     <!-- wp:group -->
     <div class="wp-block-group btn-close absolute top-[10px] letf-[10px]">
       <!-- wp:paragraph -->
-      <p class="text-[40px] text-bgDarkGray font-bold">x</p>
+      <p class="text-[40px] text-bgDarkGray opacity-[50%]">x</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
