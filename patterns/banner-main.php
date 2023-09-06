@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Banner" class="wp-block-group banner h-[80vh] relative">
+<div id="Banner" class="wp-block-group banner h-[30vh] desktop:h-[80vh] relative">
   <!-- wp:group -->
   <div class="wp-block-group call-back-modal-bg hidden desktop:block opacity-0 z-[-1] bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen transition duration-300 ease">
   </div>
@@ -82,9 +82,9 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group h-[80%] mx-auto">
+  <div class="wp-block-group h-full] mx-auto">
     <!-- wp:group -->
-    <div class="wp-block-group h-[80%] w-full">
+    <div class="wp-block-group h-full] w-full">
       <!-- wp:core/video -->
       <figure class="wp-block-video banner-video"><video autoplay="true" loop muted preload src="https://www.pbgorski.pl/assets/front/videos/header/hp.mp4?1688121499"></video>
       </figure>
