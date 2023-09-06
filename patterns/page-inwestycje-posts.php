@@ -68,7 +68,7 @@
                 <!-- /wp:image -->
 
                 <!-- wp:group -->
-                <div class="wp-block-group content w-[50%] flex flex-col items-start justify-center gap-[25px]">
+                <div class="wp-block-group content w-[50%] flex flex-col items-start justify-center">
                   <!-- wp:paragraph -->
                   <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php the_title(); ?></p>
                   <!-- /wp:paragraph -->
