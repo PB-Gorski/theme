@@ -11,9 +11,9 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="footer" class="wp-block-group footer pt-[60px] relative">
   <!-- wp:group -->
-  <div class="wp-block-group footer1 container mx-auto mb-[20px] desktop:px-0 px-[20px] h-full flex">
+  <div class="wp-block-group footer1 container mx-auto mb-[20px] desktop:px-0 px-[20px] h-full desktop:flex">
     <!-- wp:group -->
-    <div class="wp-block-group col1 w-[30%]">
+    <div class="wp-block-group col1 desktop:w-[30%]">
       <!-- wp:group -->
       <div class="wp-block-group logo mr-[80px] mb-[25px]">
         <!-- wp:paragraph -->
@@ -79,7 +79,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group col2 w-[70%]">
+    <div class="wp-block-group col2 desktop:w-[70%]">
       <!-- wp:group -->
       <div class="wp-block-group mb-[90px] w-full flex justify-between">
         <!-- wp:group -->
