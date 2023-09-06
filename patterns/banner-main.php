@@ -28,7 +28,7 @@
       <p class="w-[370px] h-[60px] bg-white text-bgDarkGray text-[14px] leading-[150%]">Numer telefonu</p>
       <!-- /wp:paragraph -->
       <!-- wp:group -->
-      <div class="wp-block-group group btn-find-more relative bg-[#e90d38] text-white w-[370px] h-[60px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-300 before:ease cursor-pointer">
+      <div class="wp-block-group group btn-find-more relative bg-[#e80d38] text-white w-[370px] h-[60px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-300 before:ease cursor-pointer">
         <!-- wp:paragraph -->
         <p class="font-bold z-[1]">Zamawiam rozmowę</p>
         <!-- /wp:paragraph -->
