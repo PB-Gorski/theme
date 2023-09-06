@@ -34,7 +34,7 @@
       <!-- wp:group -->
       <div class="wp-block-group inner-cols-wrapper mb-[80px] h-[100px] desktop:flex">
         <!-- wp:group -->
-        <div class="wp-block-group inner-col1 w-[40%] border-r-[1px] border-[rgba(138,143,153,0.30)]">
+        <div class="wp-block-group inner-col1 desktop:w-[40%] desktop:border-r-[1px] desktop:border-[rgba(138,143,153,0.30)]">
           <!-- wp:paragraph -->
           <p class="mb-[10px] text-bgDarkGray">Zadzwoń do nas</p>
           <!-- /wp:paragraph -->
@@ -45,7 +45,7 @@
         <!-- /wp:group -->
 
         <!-- wp:group -->
-        <div class="wp-block-group inner-col2 pl-[50px] w-[60%]">
+        <div class="wp-block-group inner-col2 pl-[50px] desktop:w-[60%]">
           <!-- wp:paragraph -->
           <p class="mb-[10px] text-bgDarkGray">Napisz</p>
           <!-- /wp:paragraph -->
