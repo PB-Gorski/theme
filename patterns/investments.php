@@ -21,7 +21,7 @@
     <!-- /wp:group -->
 
     <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px] flex desktop:flex-row flex-col justify-between gap-[30px]">
+    <ul class="wp-block-list mb-[40px] flex desktop:flex-row flex-col justify-between gap-[20px]">
       <?php
       $args = array(
         'post_type' => 'inwestycje',
@@ -36,8 +36,8 @@
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
       ?>
           <!-- wp:list-item -->
-          <li class="invest-tile max-w-full desktop:max-w-full wide:max-w-[420px]">
-            <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-[400px] max-w-[310px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
+          <li class="invest-tile max-w-full">
+            <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
                 <!-- wp:image -->
