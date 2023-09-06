@@ -6,7 +6,16 @@
  * Categories: text, banner
  * Viewport Width: 1280
  */
+get_the_ID();
+$category = single_term_title("", false);
+$catid = get_cat_ID($category);
+echo $catid;
+
+$category2 = get_category(get_query_var('cat'));
+$cat_id = $category2->cat_ID;
+echo $cat_id . 'cat_id';
 ?>
+
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="inwestycje-archive" class="wp-block-group inwestycje-archive relative">
   <!-- wp:group -->
