@@ -12,9 +12,9 @@
 <div id="inwestycje-post" class="wp-block-group inwestycje-post relative">
 
   <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-  <div class="wp-block-group bg-[#f6f7fa] flex">
+  <div class="wp-block-group bg-[#f6f7fa]">
     <!-- wp:group -->
-    <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
+    <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] flex">
       <!-- wp;group -->
       <div class="wp-block-group left-col w-[50%]">
         <!-- wp:paragraph -->
