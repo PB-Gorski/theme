@@ -82,9 +82,9 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group h-full] mx-auto">
+  <div class="wp-block-group h-full mx-auto">
     <!-- wp:group -->
-    <div class="wp-block-group h-full] w-full">
+    <div class="wp-block-group h-full w-full">
       <!-- wp:core/video -->
       <figure class="wp-block-video banner-video"><video autoplay="true" loop muted preload src="https://www.pbgorski.pl/assets/front/videos/header/hp.mp4?1688121499"></video>
       </figure>
