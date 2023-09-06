@@ -89,10 +89,10 @@ window.addEventListener("load", function() {
 
 
   // call pop up modal
-  const btnCloseModal = this.document.querySelector('.btn-close');
-  const callModal = this.document.querySelector('.call-back-modal');
-  const modalBg = this.document.querySelector('.call-back-modal-bg');
-  const btnOpenModal = this.document.querySelector('.btn-find-more');
+  const btnCloseModal = document.querySelector('.btn-close');
+  const callModal = document.querySelector('.call-back-modal');
+  const modalBg = document.querySelector('.call-back-modal-bg');
+  const btnOpenModal = document.querySelector('.btn-find-more');
 
   btnCloseModal.addEventListener('click',()=>{
     callModal.classList.replace('opacity-100', 'opacity-0');
