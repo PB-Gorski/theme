@@ -23,21 +23,32 @@
 
         <!-- wp:list -->
         <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex items-center gap-[20px] text-[18px] font-medium">
+          <?php
+          $args = array(
+            'taxonomy' => 'category',
+            'orderby' => 'name',
+            'paged' => 1,
+            'order'   => 'ASC'
+          );
+          $cats = get_categories($args);
+          ?>
           <!-- wp:list-item -->
           <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-            Wszystkie
+            <a href="<?php echo get_home_url() . '/inwestycje'; ?>" class="">Wszystkie</a>
           </li>
           <!-- /wp:list-item -->
-          <!-- wp:list-item -->
-          <li class="gdanskTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-            Gdańsk
-          </li>
-          <!-- /wp:list-item -->
-          <!-- wp:list-item -->
-          <li class="gdyniaTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-            Gdynia
-          </li>
-          <!-- /wp:list-item -->
+          <?php
+          foreach ($cats as $cat) {
+          ?>
+            <?php
+            $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
+            ?>
+            <!-- wp:list-item -->
+            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $cat->name; ?></a></li>
+            <!-- /wp:list-item -->
+          <?php
+          };
+          ?>
         </ul>
         <!-- /wp:list -->
       </div>
@@ -58,7 +69,7 @@
   <!-- wp:list -->
   <ul id="Kategorie" class="wp-block-list categories-all-1 mb-[60px] desktop:mb-[110px] flex flex-wrap gap-[10px]">
     <!-- wp:list-item -->
-    <li class=""><a href="<?php echo get_home_url() . '/inwestycje'; ?>" class="">Wszystkie</a></li>
+    <li class=""></li>
     <!-- /wp:list-item -->
     <?php
     $args = array(
@@ -73,14 +84,10 @@
     ?>
       <?php
       $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
-      if (($cat->name) == 'glowna' || ($catNoSpaces) == 'bez-kategorii') {
-        echo '';
-      } else { ?>
-        <!-- wp:list-item -->
-        <li class=""><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $cat->name; ?></a></li>
-        <!-- /wp:list-item -->
-      <?php
-      }; ?>
+      ?>
+      <!-- wp:list-item -->
+      <li class=""><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $cat->name; ?></a></li>
+      <!-- /wp:list-item -->
     <?php
     };
     ?>
