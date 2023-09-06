@@ -23,7 +23,7 @@
     <!-- wp:group -->
     <div class="wp-block-group col2 w-[50%]">
       <!-- wp:group -->
-      <div class="wp-block-group input flex">
+      <div class="wp-block-group input mb-[15px] flex">
         <!-- wp:paragraph -->
         <p class="w-[370px] h-[60px] bg-white text-white text-[40px] leading-[150%]">input</p>
         <!-- /wp:paragraph -->
