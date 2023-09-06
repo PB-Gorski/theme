@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:inwestycje-post {"templateLock":"contentOnly","anchor":true} -->
-<div id="inwestycje-post" class="wp-block-group inwestycje-post h-[35vh] desktop:h-[80vh] relative">
+<div id="inwestycje-post" class="wp-block-group inwestycje-post relative">
   <!-- wp:paragraph -->
   <p>posts-test</p>
   <!-- /wp:paragraph -->
