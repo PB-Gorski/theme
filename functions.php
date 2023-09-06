@@ -352,22 +352,6 @@ function custom_post_types()
 		'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
 		'taxonomies'  => array('category')
 	));
-	register_post_type('uslugi', array(
-		'public' => true,
-		'labels' => array(
-			'name' => 'Usługi',
-			'add_new_item' => 'Dodaj usługi',
-			'edit_item' => 'Edytuj usługi',
-			'all_items' => 'Wszystkie usługi',
-			'singular_name' => 'Usługi'
-		),
-		'menu_icon' => 'dashicons-flag',
-		'show_in_rest' => true,
-		'has_archive' => true,
-		'rewrite' => array('slug' => 'uslugi'),
-		'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
-		'taxonomies'  => array('category')
-	));
 };
 add_action('init', 'custom_post_types');
 
