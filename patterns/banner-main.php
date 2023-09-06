@@ -20,7 +20,7 @@
     <p class="text-[40px] text-center font-bold">Zamów darmowe połączenie</p>
     <!-- /wp:paragraph -->
     <!-- wp:paragraph -->
-    <p class="text-center text-bgDarkGray">Zostaw numer, nasz konsultant oddzwoni do Ciebie</p>
+    <p class="text-center text-bgDarkGray mb-[35px]">Zostaw numer, nasz konsultant oddzwoni do Ciebie</p>
     <!-- /wp:paragraph -->
     <!-- wp:group -->
     <div class="wp-block-group input flex">
