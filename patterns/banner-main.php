@@ -15,7 +15,7 @@
   </div>
   <!-- /wp:group -->
   <!-- wp:group -->
-  <div class="wp-block-group call-back-modal opacity-0 w-[850px] h-[370px] p-[45px_60px] bg-white fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] z-[2] transition duration-300 ease">
+  <div class="wp-block-group call-back-modal opacity-0 w-[850px] h-[370px] p-[45px_60px] bg-white fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] z-[-1] transition duration-300 ease">
     <!-- wp:group -->
     <div class="wp-block-group btn-close absolute top-[-5px] right-[15px] cursor-pointer">
       <!-- wp:paragraph -->
