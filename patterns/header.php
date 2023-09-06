@@ -414,7 +414,7 @@
       <!-- wp:group -->
       <div class="wp-block-group btn-wrapper desktop:flex items-center gap-[10px]">
         <!-- wp:group -->
-        <div class="wp-block-group btn-lang text-[18px] flex gap-[5px]">
+        <div class="wp-block-group btn-lang text-[18px] flex justify-center desktop:justify-start gap-[5px]">
           <!-- wp:paragraph -->
           <a href="#" class="">PL</a>
           <!-- /wp:paragraph -->
@@ -428,7 +428,7 @@
         <!-- /wp:group -->
 
         <!-- wp:group -->
-        <div class="wp-block-group btn-fb bg-blue-700 text-white w-[20px] h-[20px] text-center rounded-[5px]">
+        <div class="wp-block-group btn-fb hidden desktop:block bg-blue-700 text-white w-[20px] h-[20px] text-center rounded-[5px]">
           <!-- wp:paragraph -->
           <p>f</p>
           <!-- /wp:paragraph -->
