@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group col1 w-[30%]">
       <!-- wp:group -->
-      <div class="wp-block-group logo mr-[80px]">
+      <div class="wp-block-group logo mr-[80px] mb-[25px]">
         <!-- wp:paragraph -->
         <a href="<?php home_url(); ?>">
           <!-- wp:image -->
@@ -79,83 +79,90 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group col2 w-[70%] flex justify-between">
+    <div class="wp-block-group col2 w-[70%]">
       <!-- wp:group -->
-      <div class="wp-block-group inner-col1">
-        <!-- wp:paragraph -->
-        <p class="mb-[20px] text-[16px] font-bold">Miasta inwestycji</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:list -->
-        <ul class="wp-block-list text-[#8a8f99] text-[14px]">
-          <!-- wp:list-item -->
-          <li class="mb-[10px]">
-            <a href="#">Gdańsk</a>
-          </li>
-          <!-- /wp:list-item -->
-          <!-- wp:list-item -->
-          <li>
-            <a href="#">Gdynia</a>
-          </li>
-          <!-- /wp:list-item -->
-        </ul>
-        <!-- /wp:list -->
-      </div>
-      <!-- /wp:group -->
-      <!-- wp:group -->
-      <div class="wp-block-group inner-col2">
-        <!-- wp:paragraph -->
-        <p class="mb-[20px] text-[16px] font-bold">Dla klientów</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:list -->
-        <ul class="wp-block-list text-[#8a8f99] text-[14px]">
-          <!-- wp:list-item -->
-          <li class="mb-[10px]">
-            <a href="#">Kredyty</a>
-          </li>
-          <!-- /wp:list-item -->
-          <!-- wp:list-item -->
-          <li>
-            <a href="#">Znajdź mieszkanie</a>
-          </li>
-          <!-- /wp:list-item -->
-        </ul>
-        <!-- /wp:list -->
-      </div>
-      <!-- /wp:group -->
-      <!-- wp:group -->
-      <div class="wp-block-group inner-col3">
-        <!-- wp:paragraph -->
-        <p class="mb-[20px] text-[16px] font-bold">Przedsiębiorstwo Budowlane Górski</p>
-        <!-- /wp:paragraph -->
+      <div class="wp-block-group mb-[60px] w-full flex justify-between">
         <!-- wp:group -->
-        <div class="wp-block-group two-lists flex gap-[50px]">
+        <div class="wp-block-group inner-col1">
+          <!-- wp:paragraph -->
+          <p class="mb-[20px] text-[16px] font-bold">Miasta inwestycji</p>
+          <!-- /wp:paragraph -->
           <!-- wp:list -->
           <ul class="wp-block-list text-[#8a8f99] text-[14px]">
             <!-- wp:list-item -->
             <li class="mb-[10px]">
-              <a href="#">Aktualności</a>
+              <a href="#">Gdańsk</a>
             </li>
             <!-- /wp:list-item -->
             <!-- wp:list-item -->
             <li>
-              <a href="#">Kontakt</a>
-            </li>
-            <!-- /wp:list-item -->
-          </ul>
-          <!-- /wp:list -->
-          <!-- wp:list -->
-          <ul class="wp-block-list text-[#8a8f99] text-[14px]">
-            <!-- wp:list-item -->
-            <li class="mb-[10px]">
-              <a href="#">Dla Akcjonariuszy</a>
+              <a href="#">Gdynia</a>
             </li>
             <!-- /wp:list-item -->
           </ul>
           <!-- /wp:list -->
         </div>
         <!-- /wp:group -->
+        <!-- wp:group -->
+        <div class="wp-block-group inner-col2">
+          <!-- wp:paragraph -->
+          <p class="mb-[20px] text-[16px] font-bold">Dla klientów</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:list -->
+          <ul class="wp-block-list text-[#8a8f99] text-[14px]">
+            <!-- wp:list-item -->
+            <li class="mb-[10px]">
+              <a href="#">Kredyty</a>
+            </li>
+            <!-- /wp:list-item -->
+            <!-- wp:list-item -->
+            <li>
+              <a href="#">Znajdź mieszkanie</a>
+            </li>
+            <!-- /wp:list-item -->
+          </ul>
+          <!-- /wp:list -->
+        </div>
+        <!-- /wp:group -->
+        <!-- wp:group -->
+        <div class="wp-block-group inner-col3">
+          <!-- wp:paragraph -->
+          <p class="mb-[20px] text-[16px] font-bold">Przedsiębiorstwo Budowlane Górski</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:group -->
+          <div class="wp-block-group two-lists flex gap-[50px]">
+            <!-- wp:list -->
+            <ul class="wp-block-list text-[#8a8f99] text-[14px]">
+              <!-- wp:list-item -->
+              <li class="mb-[10px]">
+                <a href="#">Aktualności</a>
+              </li>
+              <!-- /wp:list-item -->
+              <!-- wp:list-item -->
+              <li>
+                <a href="#">Kontakt</a>
+              </li>
+              <!-- /wp:list-item -->
+            </ul>
+            <!-- /wp:list -->
+            <!-- wp:list -->
+            <ul class="wp-block-list text-[#8a8f99] text-[14px]">
+              <!-- wp:list-item -->
+              <li class="mb-[10px]">
+                <a href="#">Dla Akcjonariuszy</a>
+              </li>
+              <!-- /wp:list-item -->
+            </ul>
+            <!-- /wp:list -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
+      <!-- wp:paragraph -->
+      <p class="text-[14px] italic text-[#959ba6]">Niniejsza strona ma charakter informacyjny, nie stanowi oferty handlowej w rozumieniu Art. 66 par. 1 Kodeksu Cywilnego. Wizualizacje i modele budynków przedstawione na stronie internetowej www.pbgorski.pl mają postać zbliżoną do finalnego obiektu, tj. mogą odbiegać od docelowego, rzeczywistego wyglądu budynków i ich zagospodarowania terenu, otoczenia w szczególności w zakresie kolorystyki oraz konstrukcji. Zmianie nie ulegną istotne cechy świadczenia oraz funkcjonalność budynków</p>
+      <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
 
