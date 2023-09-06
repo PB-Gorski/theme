@@ -169,7 +169,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group footer2 container mx-auto desktop:px-0 px-[20px] h-[80px] border-t-[1px] border-[rgba(0,0,0,0.1)] flex justify-between">
+  <div class="wp-block-group footer2 container mx-auto desktop:px-0 px-[20px] h-[80px] border-t-[1px] border-[rgba(0,0,0,0.1)] flex justify-between items-center text-[14px] text-[#959ba6]">
     <!-- wp:group -->
     <div class="wp-block-group col1 flex gap-[20px]">
       <!-- wp:paragraph -->
