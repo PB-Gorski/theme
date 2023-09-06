@@ -133,6 +133,8 @@
       <?php
           $i++;
         };
+        wp_reset_query();
+        wp_reset_postdata();
       };
       wp_reset_query();
       wp_reset_postdata();
