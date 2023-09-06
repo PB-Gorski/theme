@@ -15,7 +15,7 @@
   </div>
   <!-- /wp:group -->
   <!-- wp:group -->
-  <div class="wp-block-group call-back-modal w-[850px] h-[370px] p-[45px_60px] bg-white fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] before:ccontent-[''] before:inline-block before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-red-300 z-[2]">
+  <div class="wp-block-group call-back-modal w-[850px] h-[370px] p-[45px_60px] bg-white fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] z-[2]">
     <!-- wp:paragraph -->
     <p class="text-[40px] text-center font-bold">Zamów darmowe połączenie</p>
     <!-- /wp:paragraph -->
