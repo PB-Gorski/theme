@@ -21,7 +21,7 @@
     <!-- /wp:group -->
 
     <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px] flex desktop:flex-row flex-col justify-between gap-[20px]">
+    <ul class="wp-block-list mb-[40px] flex desktop:flex-row flex-col justify-between gap-[30px]">
       <?php
       $args = array(
         'post_type' => 'inwestycje',
@@ -41,7 +41,7 @@
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
                 <!-- wp:image -->
-                <figure class="wp-block-image w-fulll h-[330px] mb-[30px]">
+                <figure class="wp-block-image w-fulll h-[330px] wide:h-[360px] mb-[30px]">
                   <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
                 </figure>
                 <!-- /wp:image -->
