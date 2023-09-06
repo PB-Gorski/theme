@@ -18,7 +18,7 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:list -->
-    <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] mb-[20px] flex items-center gap-[20px] text-[14px] font-medium">
+    <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] mb-[20px] flex items-center gap-[20px] text-[18px] font-medium">
       <!-- wp:list-item -->
       <li class="uppercase allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
         WSZYSTKIE
