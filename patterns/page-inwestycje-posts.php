@@ -73,6 +73,9 @@
     );
     $cats = get_categories($args);
 
+    echo $currentPageID . '<br>';
+    print_r($cats) . '<br>';
+
     foreach ($cats as $cat) {
     ?>
       <?php
