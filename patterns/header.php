@@ -327,7 +327,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"templateLock":"all","lock":{"move":true,"remove":true},"anchor":true} -->
-<div id="Mobile" class="wp-block-group nav-mobile h-[60px] bg-textGray block desktop:hidden container mx-auto px-[20px] transition ease-out duration-300">
+<div id="Mobile" class="wp-block-group nav-mobile h-[60px] bg-white block desktop:hidden container mx-auto px-[20px] transition ease-out duration-300">
   <!-- wp:group -->
   <div class="wp-block-group h-full flex justify-between items-center">
     <!-- wp:group -->
