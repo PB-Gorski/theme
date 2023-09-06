@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner h-[80vh] relative">
   <!-- wp:group -->
-  <div class="wp-block-group call-back-modal-bg opacity-0 z-[-1] bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen z-[1] transition duration-300 ease">
+  <div class="wp-block-group call-back-modal-bg opacity-0 z-[-1] bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen transition duration-300 ease">
   </div>
   <!-- /wp:group -->
   <!-- wp:group -->
