@@ -43,7 +43,6 @@ ul.wp-block-navigation__container  > li.wp-block-navigation-item{
 }
 
 /* nav menu */
-
 .wp-block-navigation__container > li:nth-child(1):hover + .modal{
 background-color: #E80D38;
 }
@@ -68,10 +67,33 @@ background-color: #E80D38;
   cursor: pointer;
 }
 
+/* mobile navbar action */
+.hamburger-btn-line:nth-child(1) {
+  transform-origin: left;
+  transform: rotate(0);
+}
+.hamburger-btn-line:nth-child(2) {
+  transition: all 0.3s ease-out;
+  width: 30px;
+}
+.hamburger-btn-line:nth-child(3) {
+  transform-origin: left;
+  transform: rotate(0);
+}
+.active .hamburger-btn-line:nth-child(1) {
+  transform-origin: left;
+  transform: rotate(43deg);
+}
+.active .hamburger-btn-line:nth-child(2) {
+  transition: all 0.3s ease-out;
+  width: 0px;
+}
+.active .hamburger-btn-line:nth-child(3) {
+  transform-origin: left;
+  transform: rotate(-43deg);
+}
+
 /* banner-main */
-/* .banner-video{
-  height: 80vh;
-} */
 .banner-video video{
   height: 100%;
   object-fit: cover;
