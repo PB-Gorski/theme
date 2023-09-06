@@ -13,9 +13,9 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
-    <div class="wp-block-group pt-[60px] pb-[40px] title">
+    <div class="wp-block-group pt-[60px] pb-[30px] desktop:pb-[40px] title">
       <!-- wp:paragraph -->
-      <p class="text-[24px] ml-[100px] text-bgDarkGray">Poznaj nasze najnowsze inwestycje</p>
+      <p class="text-[24px] desktop:ml-[100px] text-bgDarkGray">Poznaj nasze najnowsze inwestycje</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
@@ -36,12 +36,12 @@
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
       ?>
           <!-- wp:list-item -->
-          <li class="invest-tile max-w-[310px] desktop:max-w-full wide:max-w-[420px]">
+          <li class="invest-tile max-w-full desktop:max-w-full wide:max-w-[420px]">
             <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-[400px] max-w-[310px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
                 <!-- wp:image -->
-                <figure class="wp-block-image h-[330px] mb-[30px]">
+                <figure class="wp-block-image w-fulll h-[330px] mb-[30px]">
                   <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
                 </figure>
                 <!-- /wp:image -->
