@@ -17,6 +17,9 @@ echo $post->ID;
 global $wp_query;
 echo $wp_query->post->ID;
 
+$category = get_queried_object();
+echo $category->term_id;
+
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
