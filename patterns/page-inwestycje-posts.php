@@ -55,6 +55,44 @@
 
   </div>
   <!-- /wp:group -->
+  <!-- wp:list -->
+  <ul id="Kategorie" class="wp-block-list categories-all-1 mb-[60px] desktop:mb-[110px] flex flex-wrap gap-[10px]">
+    <!-- wp:list-item -->
+    <li class="w-fit h-[40px] px-[10px] bg-primaryYellow border-primaryYellow border-[2px] rounded-full uppercase text-[14px] font-semibold text-center leading-[20px] flex justify-center items-center transition ease-out duration-300 cursor-pointer"><a href="<?php echo get_home_url() . '/realizations'; ?>" class="flex items-center justify-center w-full h-full">
+        <p>Wszystkie realizacje</p>
+      </a></li>
+    <!-- /wp:list-item -->
+    <?php
+    $currentPageID = (int)substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 44, 1) ? (int)substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 44, 1) : 1;
+    $args = array(
+      'taxonomy' => 'category',
+      'orderby' => 'name',
+      'paged' => $currentPageID,
+      'order'   => 'ASC'
+    );
+    $cats = get_categories($args);
+
+    foreach ($cats as $cat) {
+    ?>
+      <?php
+      $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
+      if (($cat->name) == 'glowna' || ($catNoSpaces) == 'bez-kategorii') {
+        echo '';
+      } else { ?>
+        <!-- wp:list-item -->
+        <li class="w-fit h-[40px] px-[10px] bg-[#F2F2F2] border-[#AAA] border-[2px] rounded-full uppercase text-[14px] font-semibold leading-[20px] flex justify-center items-center hover:bg-primaryYellow hover:border-primaryYellow transition ease-out duration-300 cursor-pointer">
+          <a href="<?php echo get_category_link($cat->term_id) ?>" class="flex justify-center items-center w-fit h-full">
+            <p><?php echo $cat->name; ?></p>
+          </a>
+        </li>
+        <!-- /wp:list-item -->
+      <?php
+      }; ?>
+    <?php
+    };
+    ?>
+  </ul>
+  <!-- /wp:list -->
 
   <!-- wp:list -->
   <ul class="wp-block-list categories-under-logo my-[20px] flex flex-wrap gap-[10px]">
