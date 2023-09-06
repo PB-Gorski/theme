@@ -22,18 +22,18 @@
       <!-- wp:list -->
       <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] mb-[20px] flex items-center gap-[20px] text-[18px] font-medium">
         <!-- wp:list-item -->
-        <li class="uppercase allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-          WSZYSTKIE
+        <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+          Wszystkie
         </li>
         <!-- /wp:list-item -->
         <!-- wp:list-item -->
-        <li class="uppercase gdanskTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-          GDAŃSK
+        <li class="gdanskTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+          Gdańsk
         </li>
         <!-- /wp:list-item -->
         <!-- wp:list-item -->
-        <li class="uppercase gdyniaTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-          GDYNIA
+        <li class="gdyniaTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+          Gdynia
         </li>
         <!-- /wp:list-item -->
       </ul>
