@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group title">
       <!-- wp:paragraph -->
-      <p class="text-[24px] ml-[100px] text-bgDarkGray">Aktualności</p>
+      <p class="text-[24px] desktop:ml-[100px] text-bgDarkGray">Aktualności</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
