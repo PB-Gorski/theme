@@ -26,7 +26,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group col2 w-[100%] desktop:w-[55%] pt-[160px] fflex flex-col gap-[30px] items-center jusify-center">
+    <div class="wp-block-group col2 w-[100%] desktop:w-[55%] pt-[50px] desktop:pt-[160px] fflex flex-col gap-[30px] items-center jusify-center">
       <!-- wp:paragraph -->
       <p class="text-[28px] desktop:text-[40px] font-bold mb-[40px]">Potrzebujesz więcej informacji?</p>
       <!-- /wp:paragraph -->
