@@ -68,7 +68,7 @@
     $args = array(
       'taxonomy' => 'category',
       'orderby' => 'name',
-      'paged' => $currentPageID,
+      'paged' => 16,
       'order'   => 'ASC'
     );
     $cats = get_categories($args);
