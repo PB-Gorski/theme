@@ -78,21 +78,11 @@
       $category_link = get_category_link($category->term_id);
     ?>
       <?php
-      if (($category->name) == 'glowna') {
-        echo '';
-      } else { ?>
-        <!-- wp:list-item -->
-        <li class="w-fit p-[0px_8px] flex justify-center items-center bg-[#F2F2F2] leading-[20px] border-[#D5D5D5] border-[2px] rounded-full uppercase text-[13px] font-semibold">
-          <!-- wp:paragraph -->
-          <p><?php echo $category->name ?></p>
-          <!-- /wp:paragraph -->
-        </li>
-        <!-- /wp:list-item -->
-      <?php
-      };
-      ?>
+      echo $category->name; ?>
+    <?php
+    };
+    ?>
 
-    <?php }; ?>
   </ul>
   <!-- /wp:list -->
 
