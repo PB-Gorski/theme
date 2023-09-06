@@ -11,6 +11,11 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner h-[80vh] relative">
   <!-- wp:group -->
+  <div class="wp-block-group call-back-modal w-[850px] h-[370px] bg-white absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] before:content-[''] before:inline-block before:absolute before:top-0 before:left-0 before:w-full before:h-ful before:bg-rgba(0,0,0,0.5) before:transition-height before:duration-300 before:ease">
+
+  </div>
+  <!-- /wp:group -->
+  <!-- wp:group -->
   <div class="wp-block-group call-back-pop-up w-[200px] h-[280px] text-[16px] text-center bg-transparent flex flex-col jusify-center items-center fixed bottom-[30px] right-[20px] z-[2]">
     <!-- wp:group -->
     <div class="wp-block-group text mb-[10px] w-full h-[160px] bg-white flex flex-col justify-center items-center gap-y-[10px] shadow-lg">
