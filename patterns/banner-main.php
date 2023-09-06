@@ -25,7 +25,7 @@
     <!-- wp:group -->
     <div class="wp-block-group input flex">
       <!-- wp:paragraph -->
-      <p class="w-[370px] h-[60px] bg-white text-white text-[40px] leading-[150%]">input</p>
+      <p class="w-[370px] h-[60px] bg-white text-bgDarkGray text-[40px] leading-[150%]">input</p>
       <!-- /wp:paragraph -->
       <!-- wp:group -->
       <div class="wp-block-group group btn-find-more relative bg-[#e90d38] text-white w-[370px] h-[60px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-300 before:ease cursor-pointer">
