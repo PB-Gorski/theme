@@ -55,48 +55,21 @@
 
   </div>
   <!-- /wp:group -->
+  <?php
 
-  <!-- wp:list -->
-  <ul id="Kategorie" class="wp-block-list categories-all-1 mb-[60px] desktop:mb-[110px] flex flex-wrap gap-[10px]">
-    <!-- wp:list-item -->
-    <li class="w-fit h-[40px] px-[10px] bg-primaryYellow border-primaryYellow border-[2px] rounded-full uppercase text-[14px] font-semibold text-center leading-[20px] flex justify-center items-center transition ease-out duration-300 cursor-pointer"><a href="<?php echo get_home_url() . '/realizations'; ?>" class="flex items-center justify-center w-full h-full">
-        <p>Wszystkie realizacje</p>
-      </a></li>
-    <!-- /wp:list-item -->
-    <?php
-    $currentPageID = (int)substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 30, 10) ? (int)substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 30, 10) : 1;
-    $args = array(
-      'taxonomy' => 'category',
-      'orderby' => 'name',
-      'paged' => 16,
-      'order'   => 'ASC'
-    );
-    $cats = get_categories($args);
+  $args = array(
+    'taxonomy' => 'category',
+    'orderby' => 'name',
+    'order'   => 'ASC'
+  );
+  $cats = get_categories($args);
+  $currentCategory2 = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 35, 30));
 
-    echo $currentPageID . '<br>';
-    print_r($cats) . '<br>';
 
-    foreach ($cats as $cat) {
-    ?>
-      <?php
-      $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
-      if (($cat->name) == 'glowna' || ($catNoSpaces) == 'bez-kategorii') {
-        echo '';
-      } else { ?>
-        <!-- wp:list-item -->
-        <li class="w-fit h-[40px] px-[10px] bg-[#F2F2F2] border-[#AAA] border-[2px] rounded-full uppercase text-[14px] font-semibold leading-[20px] flex justify-center items-center hover:bg-primaryYellow hover:border-primaryYellow transition ease-out duration-300 cursor-pointer">
-          <a href="<?php echo get_category_link($cat->term_id) ?>" class="flex justify-center items-center w-fit h-full">
-            <p><?php echo $cat->name; ?></p>
-          </a>
-        </li>
-        <!-- /wp:list-item -->
-      <?php
-      }; ?>
-    <?php
-    };
-    ?>
-  </ul>
-  <!-- /wp:list -->
+  echo $currentCategory2;
+  print_r($cats)
+  ?>
+
 
   <!-- wp:group -->
   <div class="wp-block-group investments-posts container mx-auto desktop:px-0 px-[20px]">
