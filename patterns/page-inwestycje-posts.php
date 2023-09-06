@@ -40,7 +40,7 @@
       <!-- /wp:list -->
     </div>
     <!-- /wp:group -->
-    <!-- wp:group -->
+
     <!-- wp:group -->
     <div class="wp-block-group right-col w-[50%]">
       <!-- wp:paragraph -->
