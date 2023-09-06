@@ -65,10 +65,8 @@
   $cats = get_categories($args);
   $currentCategory2 = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 35, 30));
 
-
-  echo $currentCategory2;
-  print_r($cats)
-
+  $categoriesArray = get_the_category();
+  print_r($categoriesArray);
 
   ?>
 
