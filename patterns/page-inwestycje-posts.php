@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: page-inwestycje-post
- * Slug: page-inwestycje-post
+ * Title: page-inwestycje-posts
+ * Slug: page-inwestycje-posts
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
