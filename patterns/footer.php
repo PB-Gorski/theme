@@ -81,7 +81,7 @@
     <!-- wp:group -->
     <div class="wp-block-group col2 w-[70%]">
       <!-- wp:group -->
-      <div class="wp-block-group mb-[60px] w-full flex justify-between">
+      <div class="wp-block-group mb-[90px] w-full flex justify-between">
         <!-- wp:group -->
         <div class="wp-block-group inner-col1">
           <!-- wp:paragraph -->
