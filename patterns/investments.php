@@ -88,7 +88,7 @@
       <!-- wp:group -->
       <div class="wp-block-group btn-find-more relative bg-[#3d4b66] text-white w-[315px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
         <!-- wp:paragraph -->
-        <p class="font-bold z-[1]">Zobacz wszystkie inwestyjcje</p>
+        <p class="font-bold z-[1]">Zobacz wszystkie inwestycje</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
