@@ -104,7 +104,7 @@
                   <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php the_title(); ?></p>
                   <!-- /wp:paragraph -->
                   <!-- wp:paragraph -->
-                  <p class="mb-[15px] text-[18px] text-bgDarkGray"><?php print_r(get_the_category(get_the_ID())); ?></p>
+                  <p class="mb-[15px] text-[18px] text-bgDarkGray"><?php echo get_the_category(get_the_ID()); ?></p>
                   <!-- /wp:paragraph -->
 
                   <!-- wp:list -->
