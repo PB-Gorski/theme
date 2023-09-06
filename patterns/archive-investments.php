@@ -9,8 +9,13 @@
 
 
 $category2 = get_category(get_query_var('cat'));
-
 print_r($category2);
+
+global $post;
+echo $post->ID;
+
+global $wp_query;
+echo $wp_query->post->ID;
 
 ?>
 
