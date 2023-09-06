@@ -327,7 +327,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"templateLock":"all","lock":{"move":true,"remove":true},"anchor":true} -->
-<div id="Mobile" class="wp-block-group nav-mobile h-[80px] bg-textGray text-white block desktop:hidden container mx-auto px-[20px] transition ease-out duration-300">
+<div id="Mobile" class="wp-block-group nav-mobile h-[80px] bg-white text-textGray block desktop:hidden container mx-auto px-[20px] transition ease-out duration-300">
   <!-- wp:group -->
   <div class="wp-block-group h-full flex justify-between items-center">
     <!-- wp:group -->
@@ -373,7 +373,7 @@
   <!-- /wp:group -->
 
   <!-- wp:list -->
-  <ul class="wp-block-list mobile-nav-menu text-[20px] font-semibold w-screen h-screen overflow-scroll pt-[40px] bg-white text-black z-[1] flex flex-col items-center gap-y-[30px] fixed top-[60px] left-0 translate-x-[100%] opacity-[0] transition ease-in-out duration-500">
+  <ul class="wp-block-list mobile-nav-menu text-[30px] w-screen h-screen overflow-scroll pt-[40px] bg-textGray text-white z-[1] flex flex-col items-center gap-y-[30px] fixed top-[0px] left-0 translate-x-[100%] opacity-[0] transition ease-in-out duration-500">
     <!-- wp:list-item -->
     <li class="border-b-[2px] border-transparent hover:border-primaryYellow hover:text-[#AAAAAA]">
       <!-- wp:paragraph -->
