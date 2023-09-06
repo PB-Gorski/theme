@@ -50,17 +50,19 @@
         'order' => 'ASC'
       );
       $post_query = new WP_Query($args);
+      $counter = 0;
 
       if ($post_query->have_posts()) {
         while ($post_query->have_posts()) {
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
+          $counter++;
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full h-[450px] mb-[80px]">
             <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
               <!-- wp:group -->
-              <div class="wp-block-group wrapper w-full h-full flex gap-[50px]">
+              <div class="wp-block-group wrapper w-full h-full flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
                 <!-- wp:image -->
                 <figure class="wp-block-image w-[50%] h-[330px] desktop:h-full mb-[30px]">
                   <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
@@ -101,6 +103,7 @@
           </li>
           <!-- /wp:list-item -->
       <?php
+          $i++;
         };
       };
       wp_reset_query();
