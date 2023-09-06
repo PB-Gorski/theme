@@ -11,7 +11,12 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner h-[80vh] relative">
   <!-- wp:group -->
-  <div class="wp-block-group call-back-modal w-[850px] h-[370px] bg-white absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] before:content-[''] before:inline-block before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-red-300 z-[3]">
+  <div class="wp-block-group call-back-modal-bg bg-black opacity-[30%] absolute top-0 left-0 w-screen h-screen z-[1]">
+
+  </div>
+  <!-- /wp:group -->
+  <!-- wp:group -->
+  <div class="wp-block-group call-back-modal w-[850px] h-[370px] bg-white absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] before:content-[''] before:inline-block before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-red-300 z-[2]">
     <!-- wp:paragraph -->
     <p class="text-[40px] text-center font-bold">Zamów darmowe połączenie</p>
     <!-- /wp:paragraph -->
