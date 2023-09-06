@@ -88,6 +88,18 @@ window.addEventListener("load", function() {
   });
 
 
+  // call pop up modal
+  const btnCloseModal = this.document.querySelector('.btn-close');
+  const callModal = this.document.querySelector('.call-back-modal');
+  const modalBg = this.document.querySelector('.call-back-modal-bg');
+  const modalBg = this.document.querySelector('.btn-find-more');
+
+  btnCloseModal.addEventListener('click',()=>{
+    callModal.classList.replace('opacity-100', 'opacity-0');
+    modalBg.classList.replace('opacity-100', 'opacity-0');
+  });
+
+
 
 
 
