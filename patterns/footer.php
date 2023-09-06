@@ -31,7 +31,7 @@
       <!-- wp:group -->
       <div class="wp-block-group company-info mb-[30px] desktop:mb-[65px] text-[14px] text-[#959ba6] leading-[20px] desktop:flex">
         <!-- wp:group -->
-        <div class="wp-block-group col1 desktop:w-[50%]">
+        <div class="wp-block-group col1 mb-[15px] desktop:mb-0 desktop:w-[50%]">
           <!-- wp:paragraph -->
           <p>ul. Joachima Lelewela</p>
           <!-- /wp:paragraph -->
