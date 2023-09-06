@@ -15,7 +15,7 @@
   <div class="wp-block-group bg-[#f6f7fa]">
     <!-- wp:group -->
     <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] flex">
-      <!-- wp;group -->
+      <!-- wp:group -->
       <div class="wp-block-group left-col w-[50%]">
         <!-- wp:paragraph -->
         <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[60px] text-[#2e384c] font-bold">Wszystkie inwestycje</p>
