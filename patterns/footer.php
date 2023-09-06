@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group footer1 container mx-auto mb-[20px] desktop:px-0 px-[20px] h-full desktop:flex">
     <!-- wp:group -->
-    <div class="wp-block-group col1 desktop:w-[30%]">
+    <div class="wp-block-group col1 mb-[25px] desktop:mb-0 desktop:w-[30%]">
       <!-- wp:group -->
       <div class="wp-block-group logo mr-[80px] mb-[25px]">
         <!-- wp:paragraph -->
@@ -29,9 +29,9 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group company-info mb-[65px] text-[14px] text-[#959ba6] leading-[20px] flex">
+      <div class="wp-block-group company-info mb-[30px] desktop:mb-[65px] text-[14px] text-[#959ba6] leading-[20px] desktop:flex">
         <!-- wp:group -->
-        <div class="wp-block-group col1 w-[50%]">
+        <div class="wp-block-group col1 desktop:w-[50%]">
           <!-- wp:paragraph -->
           <p>ul. Joachima Lelewela</p>
           <!-- /wp:paragraph -->
@@ -45,7 +45,7 @@
         <!-- /wp:group -->
 
         <!-- wp:group -->
-        <div class="wp-block-group col2 w-[50%]">
+        <div class="wp-block-group col2 desktop:w-[50%]">
           <!-- wp:paragraph -->
           <p>tel.: (+48) 58 340-79-00</p>
           <!-- /wp:paragraph -->
