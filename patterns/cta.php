@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="cta" class="wp-block-group cta h-fit relative">
+<div id="cta" class="wp-block-group cta h-[560px] desktop:h-fit relative">
   <!-- wp:image -->
   <figure class="wp-block-image w-full h-[560px] desktop:h-auto absolute left-0 top-0 z-[-1] scale-x-[-1] desktop:scale-[1]">
     <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/frontpage/cta-bg.jpeg" alt="cta-bg">
