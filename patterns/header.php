@@ -345,7 +345,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group btn-open-menu ml-[10px] w-[50px] h-[50px] bg-textGray font-medium cursor-pointer">
+    <div class="wp-block-group btn-open-menu ml-[10px] p-[13px_10px] w-[50px] h-[50px] bg-textGray font-medium cursor-pointer">
       <!-- wp:group -->
       <div class="wp-block-group hamburger-btn-line w-[30px] h-[2px] bg-white mb-[8px] rounded-[5px] transition ease-out duration-[400ms]">
         <!-- wp:paragraph -->
