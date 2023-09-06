@@ -107,7 +107,6 @@ window.addEventListener("load", function() {
     (window.innerWidth < 480) ? searchBar.classList.toggle('h-[250px]') : searchBar.classList.toggle('h-[500px]');ś
   });
 
-
   // call pop up modal
   const btnCloseModal = document.querySelector('.btn-close');
   const callModal = document.querySelector('.call-back-modal');

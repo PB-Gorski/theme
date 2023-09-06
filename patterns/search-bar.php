@@ -85,7 +85,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group btns-wrapper flex flex-col desktop:flex-row ">
+    <div class="wp-block-group btns-wrapper flex flex-row ">
       <!-- wp:group -->
       <div class="wp-block-group btn-more w-full desktop:w-[265px] h-[65px] bg-white flex gap-[10px] justify-center items-center cursor-pointer">
         <!-- wp:paragraph -->
