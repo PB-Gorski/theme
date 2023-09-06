@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="search-bar" class="wp-block-group search-bar h-[350px] desktop:h-[115px] bg-bgLightGray py-[25px] transition-height duration-[300ms] ease-linear">
+<div id="search-bar" class="wp-block-group search-bar h-[250px] desktop:h-[115px] bg-bgLightGray py-[25px] transition-height duration-[300ms] ease-linear">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] text-[18px] flex flex-col desktop:flex-row gap-[1px]">
     <!-- wp:group -->
