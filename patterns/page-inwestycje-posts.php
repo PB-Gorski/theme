@@ -56,6 +56,29 @@
   </div>
   <!-- /wp:group -->
 
+  <!-- wp:list -->
+  <ul class="wp-block-list categories-under-logo my-[20px] flex flex-wrap gap-[10px]">
+    <?php
+    $categoriesArray = get_the_category();
+    foreach ($categoriesArray as $category) {
+      $category_link = get_category_link($category->term_id);
+    ?>
+      <?php
+      if (($category->name) == 'glowna') {
+        echo '';
+      } else { ?>
+        <!-- wp:list-item -->
+        <li class="w-fit p-[0px_8px] flex justify-center items-center bg-[#F2F2F2] leading-[20px] border-[#D5D5D5] border-[2px] rounded-full uppercase text-[13px] font-semibold text-center">
+          <p><?php echo $category->name; ?></p>
+        </li>
+        <!-- /wp:list-item -->
+      <?php
+      };
+      ?>
+    <?php }; ?>
+  </ul>
+  <!-- /wp:list -->
+
   <!-- wp:group -->
   <div class="wp-block-group investments-posts container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:list -->
