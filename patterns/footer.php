@@ -83,7 +83,7 @@
       <!-- wp:group -->
       <div class="wp-block-group mb-[90px] w-full desktop:flex justify-between">
         <!-- wp:group -->
-        <div class="wp-block-group inner-col1">
+        <div class="wp-block-group inner-col1 mb-[40px] desktop:mb-0">
           <!-- wp:paragraph -->
           <p class="mb-[20px] text-[16px] font-bold">Miasta inwestycji</p>
           <!-- /wp:paragraph -->
@@ -104,7 +104,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group inner-col2">
+        <div class="wp-block-group inner-col2 mb-[40px] desktop:mb-0">
           <!-- wp:paragraph -->
           <p class="mb-[20px] text-[16px] font-bold">Dla klientów</p>
           <!-- /wp:paragraph -->
@@ -125,7 +125,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group inner-col3">
+        <div class="wp-block-group inner-col3 mb-[40px] desktop:mb-0">
           <!-- wp:paragraph -->
           <p class="mb-[20px] text-[16px] font-bold">Przedsiębiorstwo Budowlane Górski</p>
           <!-- /wp:paragraph -->
@@ -171,7 +171,7 @@
   <!-- wp:group -->
   <div class="wp-block-group footer2 container mx-auto desktop:px-0 px-[20px] h-[80px] border-t-[1px] border-[rgba(0,0,0,0.1)] flex justify-between items-center text-[14px] text-[#959ba6]">
     <!-- wp:group -->
-    <div class="wp-block-group col1 flex gap-[20px]">
+    <div class="wp-block-group col1 flex flex-wrap gap-[5px] desktop:gap-[20px]">
       <!-- wp:paragraph -->
       <p>Copyright © 2023 </p>
       <!-- /wp:paragraph -->
