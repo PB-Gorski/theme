@@ -97,10 +97,12 @@ window.addEventListener("load", function() {
   btnCloseModal.addEventListener('click',()=>{
     callModal.classList.replace('opacity-100', 'opacity-0');
     modalBg.classList.replace('opacity-100', 'opacity-0');
+    console.log('close');
   });
   btnOpenModal.addEventListener('click',()=>{
     callModal.classList.replace('opacity-0', 'opacity-100');
     modalBg.classList.replace('opacity-0', 'opacity-100');
+    console.log('open');
   })
 
 
