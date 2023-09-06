@@ -96,7 +96,7 @@
                   <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php the_title(); ?></p>
                   <!-- /wp:paragraph -->
                   <!-- wp:paragraph -->
-                  <p class="mb-[15px] text-[18px] text-bgDarkGray">Gdańsk</p>
+                  <p class="mb-[15px] text-[18px] text-bgDarkGray"><?php echo get_the_category(); ?></p>
                   <!-- /wp:paragraph -->
 
                   <!-- wp:group -->
