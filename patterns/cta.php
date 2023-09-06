@@ -45,7 +45,7 @@
         <!-- /wp:group -->
 
         <!-- wp:group -->
-        <div class="wp-block-group inner-col2 desktop:pl-[50px] desktop:w-[60%]">
+        <div class="wp-block-group inner-col2 mb-[40px] desktop:mb-0 desktop:pl-[50px] desktop:w-[60%]">
           <!-- wp:paragraph -->
           <p class="mb-[10px] text-bgDarkGray">Napisz</p>
           <!-- /wp:paragraph -->
