@@ -30,8 +30,7 @@
             'paged' => 1,
             'order'   => 'ASC'
           );
-          $cats = get_categories($args);
-          ?>
+          $cats = get_categories($args); ?>
           <!-- wp:list-item -->
           <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
             <a href="<?php echo get_home_url() . '/inwestycje'; ?>" class="">Wszystkie</a>
@@ -39,16 +38,11 @@
           <!-- /wp:list-item -->
           <?php
           foreach ($cats as $cat) {
-          ?>
-            <?php
-            $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
-            ?>
+            $catNoSpaces = str_replace(' ', '-', strtolower($cat->name)); ?>
             <!-- wp:list-item -->
             <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $cat->name; ?></a></li>
             <!-- /wp:list-item -->
-          <?php
-          };
-          ?>
+          <?php }; ?>
         </ul>
         <!-- /wp:list -->
       </div>
@@ -85,8 +79,7 @@
         while ($post_query->have_posts()) {
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
-          $counter++;
-      ?>
+          $counter++; ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full h-[450px] mb-[80px]">
             <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
@@ -103,29 +96,17 @@
                   <!-- wp:paragraph -->
                   <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php the_title(); ?></p>
                   <!-- /wp:paragraph -->
-                  <!-- wp:paragraph -->
-                  <p class="mb-[15px] text-[18px] text-bgDarkGray"><?php echo get_the_category(get_the_ID()); ?></p>
-                  <!-- /wp:paragraph -->
 
                   <!-- wp:list -->
-                  <ul class="wp-block-list categories-under-logo my-[20px] flex flex-wrap gap-[10px]">
+                  <ul class="wp-block-list city-categories my-[20px] flex flex-wrap gap-[10px]">
                     <?php
                     $categoriesArray = get_the_category();
                     foreach ($categoriesArray as $category) {
-                      $category_link = get_category_link($category->term_id);
-                    ?>
-                      <?php
-                      if (($category->name) == 'glowna') {
-                        echo '';
-                      } else { ?>
-                        <!-- wp:list-item -->
-                        <li class="w-fit p-[0px_8px] flex justify-center items-center bg-[#F2F2F2] leading-[20px] border-[#D5D5D5] border-[2px] rounded-full uppercase text-[13px] font-semibold text-center">
-                          <p><?php echo $category->name; ?></p>
-                        </li>
-                        <!-- /wp:list-item -->
-                      <?php
-                      };
-                      ?>
+                      $category_link = get_category_link($category->term_id); ?>
+                      <!-- wp:list-item -->
+                      <li class="mb-[15px] text-[18px] text-bgDarkGray"><?php echo $category->name; ?></p>
+                      </li>
+                      <!-- /wp:list-item -->
                     <?php }; ?>
                   </ul>
                   <!-- /wp:list -->
