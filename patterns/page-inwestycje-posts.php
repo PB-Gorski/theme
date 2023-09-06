@@ -58,9 +58,7 @@
   <!-- wp:list -->
   <ul id="Kategorie" class="wp-block-list categories-all-1 mb-[60px] desktop:mb-[110px] flex flex-wrap gap-[10px]">
     <!-- wp:list-item -->
-    <li class="w-fit h-[40px] px-[10px] bg-primaryYellow border-primaryYellow border-[2px] rounded-full uppercase text-[14px] font-semibold text-center leading-[20px] flex justify-center items-center transition ease-out duration-300 cursor-pointer"><a href="<?php echo get_home_url() . '/realizations'; ?>" class="flex items-center justify-center w-full h-full">
-        <p>Wszystkie realizacje</p>
-      </a></li>
+    <li class=""><a href="<?php echo get_home_url() . '/inwestycje'; ?>" class="">Wszystkie</a></li>
     <!-- /wp:list-item -->
     <?php
     $currentPageID = (int)substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 44, 1) ? (int)substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 44, 1) : 1;
@@ -70,6 +68,7 @@
       'paged' => $currentPageID,
       'order'   => 'ASC'
     );
+    echo ;currentPageID;
     $cats = get_categories($args);
 
     foreach ($cats as $cat) {
@@ -94,28 +93,7 @@
   </ul>
   <!-- /wp:list -->
 
-  <!-- wp:list -->
-  <ul class="wp-block-list categories-under-logo my-[20px] flex flex-wrap gap-[10px]">
-    <?php
-    $categoriesArray = get_the_category();
-    foreach ($categoriesArray as $category) {
-      $category_link = get_category_link($category->term_id);
-    ?>
-      <?php
-      if (($category->name) == 'glowna') {
-        echo '';
-      } else { ?>
-        <!-- wp:list-item -->
-        <li class="w-fit p-[0px_8px] flex justify-center items-center bg-[#F2F2F2] leading-[20px] border-[#D5D5D5] border-[2px] rounded-full uppercase text-[13px] font-semibold text-center">
-          <p><?php echo $category->name; ?></p>
-        </li>
-        <!-- /wp:list-item -->
-      <?php
-      };
-      ?>
-    <?php }; ?>
-  </ul>
-  <!-- /wp:list -->
+
 
   <!-- wp:group -->
   <div class="wp-block-group investments-posts container mx-auto desktop:px-0 px-[20px]">
