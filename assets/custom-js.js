@@ -92,16 +92,19 @@ window.addEventListener("load", function() {
   const btnCloseModal = document.querySelector('.btn-close');
   const callModal = document.querySelector('.call-back-modal');
   const modalBg = document.querySelector('.call-back-modal-bg');
-  const btnOpenModal = document.querySelector('.btn-find-more');
+  const btnOpenModal = document.querySelector('.btn-leave-phone');
 
   btnCloseModal.addEventListener('click',()=>{
     callModal.classList.replace('opacity-100', 'opacity-0');
     modalBg.classList.replace('opacity-100', 'opacity-0');
+    modalBg.classList.replace('z-[-1]', 'z-[1]');
     console.log('close');
   });
   btnOpenModal.addEventListener('click',()=>{
     callModal.classList.replace('opacity-0', 'opacity-100');
     modalBg.classList.replace('opacity-0', 'opacity-100');
+    modalBg.classList.replace('z-[1]', 'z-[-1]');
+
     console.log('open');
   })
 

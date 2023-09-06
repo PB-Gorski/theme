@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner h-[80vh] relative">
   <!-- wp:group -->
-  <div class="wp-block-group call-back-modal-bg opacity-0 bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen z-[1] transition duration-300 ease">
+  <div class="wp-block-group call-back-modal-bg opacity-0 z-[-1] bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen z-[1] transition duration-300 ease">
   </div>
   <!-- /wp:group -->
   <!-- wp:group -->
@@ -35,7 +35,7 @@
       <p class="w-[370px] h-[60px] bg-white text-bgDarkGray text-[14px] leading-[150%]">Numer telefonu</p>
       <!-- /wp:paragraph -->
       <!-- wp:group -->
-      <div class="wp-block-group group btn-find-more relative bg-[#e80d38] text-white w-[370px] h-[60px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-300 before:ease cursor-pointer">
+      <div class="wp-block-group group btn-leave-phone relative bg-[#e80d38] text-white w-[370px] h-[60px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-300 before:ease cursor-pointer">
         <!-- wp:paragraph -->
         <p class="font-bold z-[1]">Zamawiam rozmowę</p>
         <!-- /wp:paragraph -->
