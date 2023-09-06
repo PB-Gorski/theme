@@ -14,6 +14,8 @@ echo $catid;
 $category2 = get_category(get_query_var('cat'));
 $cat_id = $category2->cat_ID;
 echo $cat_id . 'cat_id';
+
+echo get_cat_ID('Category Name');
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
