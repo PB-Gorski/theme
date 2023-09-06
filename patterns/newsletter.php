@@ -11,17 +11,17 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="newsletter" class="wp-block-group newsletter h-[330px] relative bg-[#3d4b67]">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full flex items-center gap-[80px]">
+  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full desktop:flex items-center gap-[80px]">
     <!-- wp:group -->
-    <div class="wp-block-group col1 w-[50%]">
+    <div class="wp-block-group col1 desktop:w-[50%]">
       <!-- wp:paragraph -->
-      <p class="text-white text-[40px] leading-[150%]">Bądź zawsze na bieżąco z naszą ofertą - zapisz się do newslettera</p>
+      <p class="text-white text-[25px] desktop:text-[40px] leading-[150%]">Bądź zawsze na bieżąco z naszą ofertą - zapisz się do newslettera</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group col2 w-[50%]">
+    <div class="wp-block-group col2 desktop:w-[50%]">
       <!-- wp:group -->
       <div class="wp-block-group input mb-[15px] flex">
         <!-- wp:paragraph -->
