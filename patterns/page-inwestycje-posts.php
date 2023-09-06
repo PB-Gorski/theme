@@ -61,14 +61,12 @@
     <li class=""><a href="<?php echo get_home_url() . '/inwestycje'; ?>" class="">Wszystkie</a></li>
     <!-- /wp:list-item -->
     <?php
-    $currentPageID = (int)substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 44, 1) ? (int)substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 44, 1) : 1;
     $args = array(
       'taxonomy' => 'category',
       'orderby' => 'name',
-      'paged' => $currentPageID,
+      'paged' => 1,
       'order'   => 'ASC'
     );
-    echo $currentPageID;
     $cats = get_categories($args);
 
     foreach ($cats as $cat) {
@@ -79,11 +77,7 @@
         echo '';
       } else { ?>
         <!-- wp:list-item -->
-        <li class="w-fit h-[40px] px-[10px] bg-[#F2F2F2] border-[#AAA] border-[2px] rounded-full uppercase text-[14px] font-semibold leading-[20px] flex justify-center items-center hover:bg-primaryYellow hover:border-primaryYellow transition ease-out duration-300 cursor-pointer">
-          <a href="<?php echo get_category_link($cat->term_id) ?>" class="flex justify-center items-center w-fit h-full">
-            <p><?php echo $cat->name; ?></p>
-          </a>
-        </li>
+        <li class=""><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $cat->name; ?></a></li>
         <!-- /wp:list-item -->
       <?php
       }; ?>
