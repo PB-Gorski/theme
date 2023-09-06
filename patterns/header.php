@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Menu-desktop" class="wp-block-group nav-desktop relative">
+<div id="Menu-desktop" class="wp-block-group nav-desktop relative hidden desktop:block">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto h-[100px] flex items-center">
     <!-- wp:group -->
@@ -327,22 +327,25 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"templateLock":"all","lock":{"move":true,"remove":true},"anchor":true} -->
-<div id="Mobile" class="wp-block-group nav-mobile  h-[60px] bg-white desktop:hidden container mx-auto px-[20px] transition ease-out duration-300">
+<div id="Mobile" class="wp-block-group nav-mobile h-[60px] bg-textGray block desktop:hidden container mx-auto px-[20px] transition ease-out duration-300">
   <!-- wp:group -->
   <div class="wp-block-group h-full flex justify-between items-center">
-    <!-- wp:paragraph -->
-    <p>
-      <a href="/" class="w-[35px] h-[27px] fixed top-[15px] left-[20px]">
+    <!-- wp:group -->
+    <div class="wp-block-group logo mr-[80px]">
+      <!-- wp:paragraph -->
+      <a href="<?php home_url(); ?>">
         <!-- wp:image -->
-        <figure class="wp-block-image menu-logo desktop:hidden mr-[10px]">
-          <img src="<?php echo home_url(); ?> /wp-content/themes/pbgorski/assets/img/frontpage/logo.png" alt="pb-gorski-logo" />
+        <figure class="wp-block-image w-[115px]">
+          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/frontpage/logo.png" alt="pb-gorski-logo" />
         </figure>
         <!-- /wp:image -->
       </a>
-    </p>
-    <!-- /wp:paragraph -->
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+
     <!-- wp:group -->
-    <div class="wp-block-group btn-open-menu ml-[10px] font-medium cursor-pointer">
+    <div class="wp-block-group btn-open-menu ml-[10px] bg-textGray font-medium cursor-pointer">
       <!-- wp:group -->
       <div class="wp-block-group hamburger-btn-line w-[30px] h-[2px] bg-white mb-[8px] rounded-[5px] transition ease-out duration-[400ms]">
         <!-- wp:paragraph -->
