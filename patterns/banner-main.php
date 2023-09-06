@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner h-[80vh] relative">
   <!-- wp:group -->
-  <div class="wp-block-group call-back-modal-bg bg-black opacity-[30%] fixed top-0 left-0 w-screen h-screen z-[1]">
+  <div class="wp-block-group call-back-modal-bg bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen z-[1]">
   </div>
   <!-- /wp:group -->
   <!-- wp:group -->
@@ -39,7 +39,7 @@
     <!-- wp:group -->
     <div class="wp-block-group input checkbox">
       <!-- wp:paragraph -->
-      <p class="text-bgDarkGray text-[14px] leading-[28px]">Wyrażam zgodę na otrzymywanie informacji handlowych w tym marketingowych od PB Górski Sp. z o.o. SKA drogą elektroniczną (za pośrednictwem adresu e-mail). Więcej informacji o administracji danych.Więcej.</p>
+      <p class="text-bgDarkGray text-[12px] leading-[22px]">Wyrażam zgodę na używanie przez PB Górski sp. z o.o. S.K.A. telekomunikacyjnych urządzeń końcowych dla celów marketingu bezpośredniego, tj. aby przedstawić oferty PB Górski sp. z o.o. S.K.A. telefonicznie. Jednocześnie informujemy, że rozmowa będzie nagrywana. Administratorem Danych Osobowych jest PB Górski sp. z o.o. S.K.A. z siedzibą w Gdańsku (80-312) ul. Wita Stwosza 31A/31. tutaj</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
