@@ -55,9 +55,6 @@
 
   </div>
   <!-- /wp:group -->
-  <?php
-  print_r(get_the_ID());
-  ?>
 
   <!-- wp:group -->
   <div class="wp-block-group investments-posts container mx-auto desktop:px-0 px-[20px]">
@@ -78,7 +75,6 @@
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
           $counter++;
-          echo $post->ID;
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full h-[450px] mb-[80px]">
