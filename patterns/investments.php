@@ -47,7 +47,10 @@
                 <!-- /wp:image -->
 
                 <!-- wp:paragraph -->
-                <p class="mr-[20px] text-[36px] font-bold mb-[15px]"><?php the_title(); ?></p>
+                <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold mb-[15px]"><?php the_title(); ?></p>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <p class="text-[18px] text-bgDarkGray">Gdańsk</p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:group -->
