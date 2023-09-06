@@ -98,6 +98,9 @@
                   <!-- wp:paragraph -->
                   <p class="mb-[15px] text-[18px] text-bgDarkGray"><?php print_r(get_the_category(34)); ?></p>
                   <!-- /wp:paragraph -->
+                  <!-- wp:paragraph -->
+                  <p class="mb-[15px] text-[18px] text-bgDarkGray"><?php print_r(wp_get_post_categories(34)); ?></p>
+                  <!-- /wp:paragraph -->
 
                   <!-- wp:group -->
                   <div class="wp-block-group available-apartments flex items-center gap-[25px]">
