@@ -127,6 +127,15 @@ window.addEventListener("load", function() {
   })
 
 
+  // count up
+  const countUp = new CountUp('count1', 40);
+  if (!countUp.error) {
+    countUp.start();
+  } else {
+    console.error(countUp.error);
+  };
+
+
 
 
 

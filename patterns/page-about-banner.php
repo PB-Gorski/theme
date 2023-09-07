@@ -82,12 +82,33 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group w-full h-full bg-banner">
+  <div class="wp-block-group w-full h-full bg-banner relative">
     <!-- wp:image -->
-    <figure class="wp-block-image w-full h-full">
+    <figure class="wp-block-image w-full h-full absolute top-0 left-0">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/banner.jpeg" alt="banner-background">
     </figure>
     <!-- /wp:image -->
+
+    <!-- wp:group -->
+    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px]">
+      <!-- wp:paragraph -->
+      <p class="text-[60px] font-bold">Poznaj naszą historię,
+        strategię i wartości</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:group -->
+      <div class="wp-block-group">
+        <!-- wp:paragraph -->
+        <p id="count1" class="text-[60px] font-bold">40</p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+
+    </div>
+    <!-- /wp:group -->
+
+
+
 
   </div>
   <!-- /wp:group -->
