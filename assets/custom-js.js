@@ -128,7 +128,9 @@ window.addEventListener("load", function() {
 
 
   // count up
-  const countUp = new CountUp('count1', 40);
+  const count1 = document.querySelector('#count1');
+
+  const countUp = new CountUp(count1, 40);
   if (!countUp.error) {
     countUp.start();
   } else {
