@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Title: taxonomy-osiedla
- * Slug: taxonomy-osiedla
+ * Title: taxonomy-osiedla-browar-gdanski
+ * Slug: taxonomy-osiedla-browar-gdanski
  * Categories: text, banner
  * Viewport Width: 1280
  */
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Wpis" class="wp-block-group taxonomy-osiedla mb-[150px] ooverflow-hidden">
+<div id="Wpis" class="wp-block-group taxonomy-osiedla-browar-gdanski mb-[150px] ooverflow-hidden">
   <!-- wp:group -->
   <div class="wp-block-group">
     <!-- wp:group -->
@@ -38,13 +38,13 @@
         <!-- /wp:paragraph -->
 
         <!-- wp:paragraph -->
-        <p>taxonomy-osiedla</p>
+        <p>taxonomy-osiedla-browar-gdanski</p>
         <!-- /wp:paragraph -->
 
         <!-- wp:group -->
         <div class="wp-block-group">
           <!-- wp:paragraph -->
-          <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[60px] text-[#2e384c] font-bold">Aktualności</p>
+          <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[60px] text-[#2e384c] font-bold">Aktualności - Browar Gdański</p>
           <!-- /wp:paragraph -->
 
           <!-- wp:list -->
