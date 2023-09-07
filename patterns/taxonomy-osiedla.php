@@ -28,7 +28,7 @@
       </div>
       <!-- /wp:group -->
       <!-- wp:paragraph -->
-      <p class="uppercase text-[14px]">Wróć do aktualności</p>
+      <p class="text-[14px]">Wróć do aktualności</p>
       <!-- /wp:paragraph -->
     </a>
     <!-- /wp:paragraph -->
