@@ -316,8 +316,8 @@ function countUp(target, startVal, endVal, decimals, duration, options) {
   // numAnim.start(someMethodToCallOnComplete);
 
   /* CountUp Activation */
-  var normalCountUp = new countUp('normal', 0, 2715923.13, 2, 5);
-  var monoCountUp = new countUp('monospace', 0, 2715923.13, 2, 5);
+  var normalCountUp = new countUp('normal', 0, 40, 2, 5);
+  var monoCountUp = new countUp('monospace', 0, 125, 2, 5);
 
   normalCountUp.start();
   monoCountUp.start();
