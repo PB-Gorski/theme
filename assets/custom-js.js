@@ -1,4 +1,3 @@
-import { CountUp } from 'countup.js';
 window.addEventListener("load", function() {
   
   // AOS.init({
