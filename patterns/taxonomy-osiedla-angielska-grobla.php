@@ -71,7 +71,7 @@
               echo $taxonomy->name . '<br>';
             ?>
               <!-- wp:list-item -->
-              <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo (($taxonomy->name) == 'Angielska Grobla') ? 'tab-active' : 'false'; ?>"><a href="<?php echo get_category_link($taxonomy->term_id) ?>" class=""><?php echo $taxName; ?></a></li>
+              <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo (($taxName) == 'Angielska Grobla') ? 'tab-active' : 'false'; ?>"><a href="<?php echo get_category_link($taxonomy->term_id) ?>" class=""><?php echo $taxName; ?></a></li>
               <!-- /wp:list-item -->
             <?php }; ?>
           </ul>
