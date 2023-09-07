@@ -247,47 +247,31 @@
                 <p class="py-[15px] text-[18px] mb-[10px]">Kinga Piekarska</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:group -->
-                <div class="wp-block-group phone mb-[30px] font-semibold">
-                  <!-- wp:paragraph -->
-                  <a href="tel:+48583407900" class="block underline decoration-2">tel. (+48) 58 340-79-00</a>
-                  <!-- /wp:paragraph -->
-                  <!-- wp:paragraph -->
-                  <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[40px] block underline decoration-2">email: sprzedaz@pbgorski.pl</a>
-                  <!-- /wp:paragraph -->
+                <div class="wp-block-group phone mb-[30px] flex gap-[40px]">
+                  <!-- wp:group -->
+                  <div class="wp-block-group labels">
+                    <!-- wp:paragraph -->
+                    <p class="block underline decoration-2">tel</p>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p class="block underline decoration-2">email:</p>
+                    <!-- /wp:paragraph -->
+                  </div>
+                  <!-- /wp:group -->
+
+                  <!-- wp:group -->
+                  <div class="wp-block-group values">
+                    <!-- wp:paragraph -->
+                    <a href="tel:+48607700555" class="block font-bold underline decoration-2"> 607 700 555</a>
+                    <!-- /wp:paragraph -->
+
+                    <!-- wp:paragraph -->
+                    <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[40px] block underline decoration-2">k.piekarska@pbgorski.pl </a>
+                    <!-- /wp:paragraph -->
+                  </div>
+                  <!-- /wp:group -->
                 </div>
                 <!-- /wp:group -->
-                <!-- wp:list -->
-                <ul class="wp-block-list font-bold">
-                  <!-- wp-list-item -->
-                  <li>
-                    <a href="https://www.google.com/maps/place/Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A/@54.3836995,18.6080757,17.6z/data=!4m5!3m4!1s0x0:0xc1029ad51bc7ce0c!8m2!3d54.4041492!4d18.5669008" class="font-bold flex gap-[10px]">
-                      <!-- wp:image -->
-                      <figure class="wp-block-image">
-                        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/maps-pin.png" alt="map-pin">
-                      </figure>
-                      <!-- /wp:image -->
-                      <!-- wp:paragraph -->
-                      <p class="underline decoration-2">Zobacz na GoogleMaps</p>
-                      <!-- /wp:paragraph -->
-                    </a>
-                  </li>
-                  <!-- /wp-list-item -->
-                  <!-- wp-list-item -->
-                  <li>
-                    <a href="https://www.google.com/maps/dir//Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A,+Lelewela+6%2Flok.+1,+80-442+Gda%C5%84sk/@54.3831786,18.6099402,16.19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x46fd73f68f036d41:0xc1029ad51bc7ce0c!2m2!1d18.5669008!2d54.4041492!3e0" class="font-bold flex gap-[10px]">
-                      <!-- wp:image -->
-                      <figure class="wp-block-image">
-                        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/nav-pin.png" alt="map-pin">
-                      </figure>
-                      <!-- /wp:image -->
-                      <!-- wp:paragraph -->
-                      <p class="underline decoration-2">Pokaż trasę dojazdu</p>
-                      <!-- /wp:paragraph -->
-                    </a>
-                  </li>
-                  <!-- /wp:list-item -->
-                </ul>
-                <!-- /wp:list -->
               </div>
               <!-- /wp:group -->
             </div>
