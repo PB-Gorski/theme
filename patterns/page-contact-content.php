@@ -143,7 +143,7 @@
         <!-- wp:list -->
         <ul class="wp-block-list mt-[50px] ml-0">
           <!-- wp:list-item -->
-          <li class="list-content-wrapper border-b-[1px] border-[#e8e8e8] transition ease-out duration-[500ms]">
+          <li class="list-content-wrapper border-b-[1px] border-[#e8e8e8] text-[30px] transition ease-out duration-[500ms]">
             <!-- wp:group -->
             <div class="wp-block-group click-bar group flex justify-between items-center px-[10px] cursor-pointer">
               <!-- wp:group -->
