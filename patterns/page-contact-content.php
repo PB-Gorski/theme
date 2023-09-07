@@ -231,7 +231,7 @@
             <!-- /wp:group -->
 
             <!-- wp:group -->
-            <div class="wp-block-group step-paragraph paragraph-wrapper px-[20px] pt-[15px] overflow-hidden flex items-center gap-[40px] leading-[21px]  transition-height ease-out duration-[500ms] inactive">
+            <div class="wp-block-group step-paragraph paragraph-wrapper px-[20px] pt-[30px] overflow-hidden flex items-center gap-[40px] leading-[21px]  transition-height ease-out duration-[500ms] inactive">
               <!-- wp:group -->
               <div class="wp-block-group left-col-avatar">
                 <!-- wp:image -->
@@ -244,7 +244,7 @@
               <!-- wp:group -->
               <div class="wp-block-group right-col-text text-black">
                 <!-- wp:paragraph -->
-                <p class="py-[15px] text-[18px] mb-[10px]">Kinga Piekarska</p>
+                <p class="text-[18px] mb-[25px]">Kinga Piekarska</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:group -->
                 <div class="wp-block-group phone flex gap-[40px]">
