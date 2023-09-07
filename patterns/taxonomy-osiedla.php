@@ -17,7 +17,7 @@
       <!-- wp:group -->
       <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
         <!-- wp:paragraph -->
-        <a href="/aktualnosci/" class="group desktop:mt-[60px] mb-[20px] desktop:mb-[40px] w-fit font-semibold flex items-center gap-[8px]">
+        <a href="/aktualnosci/" class="group mb-[20px] desktop:mb-[40px] w-fit font-semibold flex items-center gap-[8px]">
           <!-- wp:group -->
           <div class="wp-block-group group w-[56px] h-[56px]">
             <!-- wp:paragraph -->
