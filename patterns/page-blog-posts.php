@@ -89,51 +89,21 @@
               ?>
             </ul>
           <?php endif; ?>
-
-          <?php print_r(get_the_term_list()) ?>
           <?php
-          $taxonomy = 'location';
-          $args1 = array(
-            'include' => array(12, 30)
-          );
 
-          $terms = get_terms('location', $args1);
-          echo '<ul>';
-
-
-          foreach ($terms as $term) {
-            //Always check if it's an error before continuing. get_term_link() can be finicky sometimes
-            $term_link = get_term_link($term, 'location');
-            if (is_wp_error($term_link))
-              continue;
-            //We successfully got a link. Print it out.
-
-
-            echo '<li><a href="' . $term_link . '">' . $term->name . '</a></li>';
-          }
-          echo '</ul>';
+          $post_tag = get_terms(array(
+            'taxonomy' => 'location',
+            'hide_empty' => false,
+          ));
+          print_r($post_tag);
           ?>
           <?php
-          $taxonomy = 'locations';
-          $args1 = array(
-            'include' => array(12, 30)
-          );
 
-          $terms = get_terms('locations', $args1);
-          echo '<ul>';
-
-
-          foreach ($terms as $term) {
-            //Always check if it's an error before continuing. get_term_link() can be finicky sometimes
-            $term_link = get_term_link($term, 'locations');
-            if (is_wp_error($term_link))
-              continue;
-            //We successfully got a link. Print it out.
-
-
-            echo '<li><a href="' . $term_link . '">' . $term->name . '</a></li>';
-          }
-          echo '</ul>';
+          $post_tag2 = get_terms(array(
+            'taxonomy' => 'locations',
+            'hide_empty' => false,
+          ));
+          print_r($post_tag2);
           ?>
 
 
