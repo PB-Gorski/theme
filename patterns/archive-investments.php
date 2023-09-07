@@ -111,7 +111,7 @@
                     foreach ($categoriesArray as $category) {
                       $category_link = get_category_link($category->term_id); ?>
                       <!-- wp:list-item -->
-                      <li class="mb-[15px] text-[18px] text-bgDarkGray"><?php echo $category->name; ?></p>
+                      <li class="mb-[15px] text-[18px] text-bgDarkGray"><?php echo $category->name; ?>
                       </li>
                       <!-- /wp:list-item -->
                     <?php }; ?>
