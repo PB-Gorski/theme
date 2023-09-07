@@ -45,10 +45,10 @@
           );
           $output = 'names'; // or objects
           $operator = 'and'; // 'and' or 'or'
-          $taxonomies = get_taxonomies($args2, $output, $operator);
-          if ($taxonomies) {
-            echo '<ul>';
-            foreach ($taxonomies  as $taxonomy) {
+          $taxonomies2 = get_taxonomies($args2, $output, $operator);
+          if ($taxonomies2) {
+            echo '<ul class="args2">';
+            foreach ($taxonomies2  as $taxonomy) {
               echo '<li>' . $taxonomy . '</li>';
             }
             echo '</ul>';
@@ -61,20 +61,20 @@
             'name' => 'genre'
           );
           $output = 'objects'; // or names
-          $taxonomies = get_taxonomies($args3, $output);
-          if ($taxonomies) {
-            foreach ($taxonomies as $taxonomy) {
-              echo '<div>' . $taxonomy->labels->name . '</div>';
+          $taxonomies3 = get_taxonomies($args3, $output);
+          if ($taxonomies3) {
+            foreach ($taxonomies3 as $taxonomy) {
+              echo '<div class="args3">' . $taxonomy->labels->name . '</div>';
             }
           }
           ?>
           <?php
-          $taxonomies = get_taxonomies();
-          if (!empty($taxonomies)) : ?>
+          $taxonomies4 = get_taxonomies();
+          if (!empty($taxonomies4)) : ?>
             <ul>
               <?php
-              foreach ($taxonomies as $taxonomy) {
-                echo '<li>' . $taxonomy . '</li>';
+              foreach ($taxonomies4 as $taxonomy) {
+                echo '<li class="args4">' . $taxonomy . '</li>';
               }
               ?>
             </ul>
@@ -83,8 +83,8 @@
           <?php
           // We want to find the Taxonomy to this slug.
           $term_slug = 'myterm';
-          $taxonomies = get_taxonomies();
-          foreach ($taxonomies as $tax_type_key => $taxonomy) {
+          $taxonomies5 = get_taxonomies();
+          foreach ($taxonomies5 as $tax_type_key => $taxonomy) {
             // If term object is returned, break out of loop. (Returns false if there's no object)
             if ($term_object = get_term_by('slug', $term_slug, $taxonomy)) {
               break;
