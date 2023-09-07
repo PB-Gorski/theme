@@ -213,6 +213,161 @@
             <!-- /wp:group -->
           </li>
           <!-- /wp:list-item -->
+          <!-- wp:list-item -->
+          <li class="list-content-wrapper py-[10px] border-b-[1px] border-[#e8e8e8] text-[30px] transition ease-out duration-[500ms]">
+            <!-- wp:group -->
+            <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
+              <!-- wp:group -->
+              <div class="wp-block-group text-wrapper flex gap-[10px] desktop:gap-[20px]">
+                <!-- wp:paragraph -->
+                <p class="w-fit pb-[5px] group-hover:text-primaryYellow uppercase text-bgDarkGray text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500">+</p>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <p class="font-bold text-[14px] desktop:text-[24px] text-bgDarkGray font-bold self-center">Dział sprzedaży</p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden flex gap-[40px] leading-[21px] px-[20px] transition-height ease-out duration-[500ms] inactive">
+              <!-- wp:group -->
+              <div class="wp-block-group left-col-avatar">
+                <!-- wp:image -->
+                <figure class="wp-block-image max-w-[100px] max-h-[100px] rounded-full">
+                  <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/piekarska.jpg" alt="avatar">
+                </figure>
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:group -->
+              <div class="wp-block-group right-col-text">
+                <!-- wp:paragraph -->
+                <p class="py-[15px] text-[18px] text-bgDarkGray mb-[10px]">ul. Kościerska 15, 83-300 Kartuzy</p>
+                <!-- /wp:paragraph -->
+                <!-- wp:group -->
+                <div class="wp-block-group phone mb-[30px] font-semibold">
+                  <!-- wp:paragraph -->
+                  <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[40px] block"> email: sprzedaz@pbgorski.pl</a>
+                  <!-- /wp:paragraph -->
+                  <!-- wp:paragraph -->
+                  <a href="tel:+48583407900" class="block">tel. (+48) 58 340-79-00</a>
+                  <!-- /wp:paragraph -->
+                  <!-- wp:paragraph -->
+                  <a href="tel:+48583047101" class="block">tel. (+48) 58 304-71-01</a>
+                  <!-- /wp:paragraph -->
+                </div>
+                <!-- /wp:group -->
+                <!-- wp:list -->
+                <ul class="wp-block-list font-bold">
+                  <!-- wp-list-item -->
+                  <li>
+                    <a href="https://www.google.com/maps/place/Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A/@54.3836995,18.6080757,17.6z/data=!4m5!3m4!1s0x0:0xc1029ad51bc7ce0c!8m2!3d54.4041492!4d18.5669008" class="font-bold flex gap-[10px]">
+                      <!-- wp:image -->
+                      <figure class="wp-block-image">
+                        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/maps-pin.png" alt="map-pin">
+                      </figure>
+                      <!-- /wp:image -->
+                      <!-- wp:paragraph -->
+                      <p class="underline decoration-2">Zobacz na GoogleMaps</p>
+                      <!-- /wp:paragraph -->
+                    </a>
+                  </li>
+                  <!-- /wp-list-item -->
+                  <!-- wp-list-item -->
+                  <li>
+                    <a href="https://www.google.com/maps/dir//Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A,+Lelewela+6%2Flok.+1,+80-442+Gda%C5%84sk/@54.3831786,18.6099402,16.19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x46fd73f68f036d41:0xc1029ad51bc7ce0c!2m2!1d18.5669008!2d54.4041492!3e0" class="font-bold flex gap-[10px]">
+                      <!-- wp:image -->
+                      <figure class="wp-block-image">
+                        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/nav-pin.png" alt="map-pin">
+                      </figure>
+                      <!-- /wp:image -->
+                      <!-- wp:paragraph -->
+                      <p class="underline decoration-2">Pokaż trasę dojazdu</p>
+                      <!-- /wp:paragraph -->
+                    </a>
+                  </li>
+                  <!-- /wp:list-item -->
+                </ul>
+                <!-- /wp:list -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+          </li>
+          <!-- /wp:list-item -->
+          <!-- wp:list-item -->
+          <li class="list-content-wrapper py-[10px] border-b-[1px] border-[#e8e8e8] text-[30px] transition ease-out duration-[500ms]">
+            <!-- wp:group -->
+            <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
+              <!-- wp:group -->
+              <div class="wp-block-group text-wrapper flex gap-[10px] desktop:gap-[20px]">
+                <!-- wp:paragraph -->
+                <p class="w-fit pb-[5px] group-hover:text-primaryYellow uppercase text-bgDarkGray text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500">+</p>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <p class="font-bold text-[14px] desktop:text-[24px] text-bgDarkGray font-bold self-center">Biuro Zarządu</p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] transition-height ease-out duration-[500ms] inactive">
+              <!-- wp:paragraph -->
+              <p class="py-[15px] text-[18px] text-bgDarkGray mb-[10px]">ul. Kościerska 15, 83-300 Kartuzy</p>
+              <!-- /wp:paragraph -->
+              <!-- wp:group -->
+              <div class="wp-block-group phone mb-[30px] font-semibold">
+                <!-- wp:paragraph -->
+                <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[40px] block"> email: sprzedaz@pbgorski.pl</a>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <a href="tel:+48583407900" class="block">tel. (+48) 58 340-79-00</a>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <a href="tel:+48583047101" class="block">tel. (+48) 58 304-71-01</a>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:list -->
+              <ul class="wp-block-list font-bold">
+                <!-- wp-list-item -->
+                <li>
+                  <a href="https://www.google.com/maps/place/Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A/@54.3836995,18.6080757,17.6z/data=!4m5!3m4!1s0x0:0xc1029ad51bc7ce0c!8m2!3d54.4041492!4d18.5669008" class="font-bold flex gap-[10px]">
+                    <!-- wp:image -->
+                    <figure class="wp-block-image">
+                      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/maps-pin.png" alt="map-pin">
+                    </figure>
+                    <!-- /wp:image -->
+                    <!-- wp:paragraph -->
+                    <p class="underline decoration-2">Zobacz na GoogleMaps</p>
+                    <!-- /wp:paragraph -->
+                  </a>
+                </li>
+                <!-- /wp-list-item -->
+                <!-- wp-list-item -->
+                <li>
+                  <a href="https://www.google.com/maps/dir//Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A,+Lelewela+6%2Flok.+1,+80-442+Gda%C5%84sk/@54.3831786,18.6099402,16.19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x46fd73f68f036d41:0xc1029ad51bc7ce0c!2m2!1d18.5669008!2d54.4041492!3e0" class="font-bold flex gap-[10px]">
+                    <!-- wp:image -->
+                    <figure class="wp-block-image">
+                      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/nav-pin.png" alt="map-pin">
+                    </figure>
+                    <!-- /wp:image -->
+                    <!-- wp:paragraph -->
+                    <p class="underline decoration-2">Pokaż trasę dojazdu</p>
+                    <!-- /wp:paragraph -->
+                  </a>
+                </li>
+                <!-- /wp:list-item -->
+              </ul>
+              <!-- /wp:list -->
+            </div>
+            <!-- /wp:group -->
+          </li>
+          <!-- /wp:list-item -->
 
         </ul>
         <!-- /wp:list -->
