@@ -114,7 +114,7 @@
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
-            <p class="underline underline-2">Zobacz na GoogleMaps</p>
+            <p class="underline decoration-2">Zobacz na GoogleMaps</p>
             <!-- /wp:paragraph -->
           </a>
         </li>
@@ -128,7 +128,7 @@
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
-            <p class="underline">Pokaż trasę dojazdu</p>
+            <p class="underline decoration-2">Pokaż trasę dojazdu</p>
             <!-- /wp:paragraph -->
           </a>
         </li>
