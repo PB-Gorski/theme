@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
     <!-- wp:group -->
-    <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] flex items-center">
+    <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] fflex items-center">
       <!-- wp:group -->
       <div class="wp-block-group left-col w-[70%]">
         <!-- wp:paragraph -->
