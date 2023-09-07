@@ -48,6 +48,9 @@
       <!-- wp:group -->
       <div class="wp-block-group col2 w-[50%] text-[18px] text-bgDarkGray leading-[30px]">
         <!-- wp:paragraph -->
+        <p class="text-[30px] text-textGray">Wieloletnie doświadczenie przedsiębiorstwa owocuje dziś bardzo szeroką, zróżnicowaną ofertą dla klientów.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
         <p class="text-[18px] text-bgDarkGray leading-[30px]">Wśród realizacji dewelopera znajdują się eleganckie inwestycje w prestiżowych lokalizacjach Trójmiasta takie jak osiedle Browar Gdański, Kamienica Tobiasza, czy apartamenty Angielska Grobla na Starym Mieście w Gdańsku.</p>
         <!-- /wp:paragraph -->
       </div>
