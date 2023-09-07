@@ -36,16 +36,17 @@
             'taxonomy' => 'location',
             'hide_empty' => false,
           ));
-          print_r($post_tag);
+          // print_r($post_tag);
           ?>
+
           <?php
-          echo '<br> locations:';
-          $post_tag2 = get_terms(array(
-            'taxonomy' => 'locations',
-            'hide_empty' => false,
-          ));
-          print_r($post_tag2);
+          foreach ($taxonomies as $taxonomy) {
+            // $catNoSpaces = str_replace(' ', '-', strtolower($cat->name)); 
           ?>
+            <!-- wp:list-item -->
+            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $taxonomy->name; ?></a></li>
+            <!-- /wp:list-item -->
+          <?php }; ?>
 
 
           <!-- wp:list-item -->
