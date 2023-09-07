@@ -251,10 +251,10 @@
                   <!-- wp:group -->
                   <div class="wp-block-group labels">
                     <!-- wp:paragraph -->
-                    <p class="block underline decoration-2">tel</p>
+                    <p class="block mb-[20px]">tel</p>
                     <!-- /wp:paragraph -->
                     <!-- wp:paragraph -->
-                    <p class="block underline decoration-2">email:</p>
+                    <p class="block">email:</p>
                     <!-- /wp:paragraph -->
                   </div>
                   <!-- /wp:group -->
@@ -262,11 +262,11 @@
                   <!-- wp:group -->
                   <div class="wp-block-group values">
                     <!-- wp:paragraph -->
-                    <a href="tel:+48607700555" class="block font-bold underline decoration-2"> 607 700 555</a>
+                    <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2"> 607 700 555</a>
                     <!-- /wp:paragraph -->
 
                     <!-- wp:paragraph -->
-                    <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[40px] block underline decoration-2">k.piekarska@pbgorski.pl </a>
+                    <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[40px] block font-bold underline decoration-2">k.piekarska@pbgorski.pl </a>
                     <!-- /wp:paragraph -->
                   </div>
                   <!-- /wp:group -->
