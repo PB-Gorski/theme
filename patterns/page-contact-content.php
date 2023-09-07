@@ -276,6 +276,52 @@
               <!-- /wp:group -->
             </div>
             <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden flex items-center gap-[40px] leading-[21px]  transition-height ease-out duration-[500ms] inactive">
+              <!-- wp:group -->
+              <div class="wp-block-group left-col-avatar">
+                <!-- wp:image -->
+                <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
+                  <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/piekarska.jpg" alt="avatar">
+                </figure>
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:group -->
+              <div class="wp-block-group right-col-text text-black">
+                <!-- wp:paragraph -->
+                <p class="text-[18px] mb-[25px]">Kinga Piekarska</p>
+                <!-- /wp:paragraph -->
+                <!-- wp:group -->
+                <div class="wp-block-group phone flex gap-[40px]">
+                  <!-- wp:group -->
+                  <div class="wp-block-group labels">
+                    <!-- wp:paragraph -->
+                    <p class="block mb-[20px]">tel</p>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p class="block">email:</p>
+                    <!-- /wp:paragraph -->
+                  </div>
+                  <!-- /wp:group -->
+
+                  <!-- wp:group -->
+                  <div class="wp-block-group values">
+                    <!-- wp:paragraph -->
+                    <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2"> 607 700 555</a>
+                    <!-- /wp:paragraph -->
+
+                    <!-- wp:paragraph -->
+                    <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2">k.piekarska@pbgorski.pl </a>
+                    <!-- /wp:paragraph -->
+                  </div>
+                  <!-- /wp:group -->
+                </div>
+                <!-- /wp:group -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
           </li>
           <!-- /wp:list-item -->
           <!-- wp:list-item -->
