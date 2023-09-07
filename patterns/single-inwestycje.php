@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Title: single-osiedla
- * Slug: single-osiedla
+ * Title: single-inwestycje
+ * Slug: single-inwestycje
  * Categories: text, banner
  * Viewport Width: 1280
  */
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Wpis" class="wp-block-group single-page-osiedla mb-[150px] ooverflow-hidden">
+<div id="Wpis" class="wp-block-group single-page-inwestycje mb-[150px] ooverflow-hidden">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] desktop:pt-[60px]">
     <!-- wp:paragraph -->
