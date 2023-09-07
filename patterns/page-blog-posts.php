@@ -46,6 +46,7 @@
           $output = 'names'; // or objects
           $operator = 'and'; // 'and' or 'or'
           $taxonomies2 = get_taxonomies($args2, $output, $operator);
+          print_r($taxonomies2);
           if ($taxonomies2) {
             echo '<ul class="args2">';
             foreach ($taxonomies2  as $taxonomy) {
