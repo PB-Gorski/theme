@@ -24,19 +24,23 @@
         <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex items-center gap-[20px] text-[18px] font-medium">
           <?php
           $args = array(
-            'taxonomy' => 'locations',
+            'taxonomy' => 'location',
             'orderby' => 'name',
             'paged' => 1,
             'order'   => 'ASC'
           );
           $args2 = array(
-            'taxonomy' => 'locations',
+            'taxonomy' => 'location',
           );
           // $cats = get_categories($args);
           $cats = get_categories($args);
           print_r($cats);
           $taxonomies = get_taxonomies($args2);
           print_r($taxonomies);
+
+          $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
+          print_r($term);
+
           ?>
 
           <!-- wp:list-item -->
