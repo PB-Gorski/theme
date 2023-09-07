@@ -383,7 +383,7 @@
         </li>
         <!-- /wplist-item -->
       </ul>
-      <!-- /wplist -->
+      <!-- /wp:list -->
     </div>
     <!-- /wp:group -->
   </div>

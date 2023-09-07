@@ -74,7 +74,7 @@
     <!-- /wp:group -->
 
     <!-- wp:image -->
-    <figure class="wp-block-image phone-icon w-[92px] cursor-pointer">
+    <figure class="wp-block-image phone-icon mx-auto w-[92px] cursor-pointer">
       <img src="<?php echo home_url() ?>//wp-content/themes/pbgorski/assets/img/frontpage/phone-icon.png" alt="phone-icon">
     </figure>
     <!-- /wp:image -->
