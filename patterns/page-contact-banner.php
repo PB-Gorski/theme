@@ -99,18 +99,17 @@
       <!-- wp:group -->
       <div class="wp-block-group text-[#959ba6] text-[30px]">
         <!-- wp:paragraph -->
-        <a href="mailto:sprzedaz@pbgorski.pl" class="block hover:text-[#2e384d] transition duration-[] after:content-[''] after:absolute after:top-0 after:right-[30px] after:w-[2px] after:h-[70px] after:m-auto after:bg-[#e1e3e8] after:rotate-[25deg]">sprzedaz@pbgorski.pl</a>
+        <a href="mailto:sprzedaz@pbgorski.pl" class="inline hover:text-[#2e384d] transition duration-[300ms] ease after:content-[''] after:absolute after:top-0 after:right-[30px] after:w-[2px] after:h-[70px] after:m-auto after:bg-[#e1e3e8] after:rotate-[25deg]">sprzedaz@pbgorski.pl</a>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <a href="tel:+48583407900" class="inline hover:text-[#2e384d] transition duration-[]">(+48) 58 340 79 00, </a>
+        <a href="tel:+48583407900" class="inline hover:text-[#2e384d] transition duration-[300ms] ease">(+48) 58 340 79 00, </a>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <a href="tel:+48607700555" class="inline hover:text-[#2e384d] transition duration-[]">607 700 555, </a>
+        <a href="tel:+48607700555" class="inline hover:text-[#2e384d] transition duration-[300ms] ease">607 700 555, </a>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <a href="tel:+48691990112" class="inline hover:text-[#2e384d] transition duration-[]">691 990 112</a>
+        <a href="tel:+48691990112" class="inline hover:text-[#2e384d] transition duration-[300ms] ease">691 990 112</a>
         <!-- /wp:paragraph -->
-
       </div>
       <!-- /wp:group -->
     </div>
