@@ -13,9 +13,9 @@
   <!-- wp:group -->
   <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
     <!-- wp:group -->
-    <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] flex items-center">
+    <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:group -->
-      <div class="wp-block-group left-col w-[70%]">
+      <div class="wp-block-group">
         <!-- wp:paragraph -->
         <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[60px] text-[#2e384c] font-bold">Aktualności</p>
         <!-- /wp:paragraph -->
@@ -23,15 +23,6 @@
         <!-- wp:list -->
         <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex items-center gap-[20px] text-[18px] font-medium">
           <?php
-          $args = array(
-            'taxonomy' => 'category',
-            'orderby' => 'name',
-            'paged' => 1,
-            'order'   => 'ASC'
-          );
-          ?>
-          <?php
-          echo '<br>location:';
           $taxonomies = get_terms(array(
             'taxonomy' => 'osiedla',
             'hide_empty' => false,
@@ -39,38 +30,22 @@
           // print_r($post_tag);
           ?>
 
-          <?php
-          foreach ($taxonomies as $taxonomy) {
-            // $catNoSpaces = str_replace(' ', '-', strtolower($cat->name)); 
-          ?>
-            <!-- wp:list-item -->
-            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $taxonomy->name; ?></a></li>
-            <!-- /wp:list-item -->
-          <?php }; ?>
-
-
           <!-- wp:list-item -->
           <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
             <a href="<?php echo get_home_url() . '/blog'; ?>" class="">Wszystkie</a>
           </li>
           <!-- /wp:list-item -->
+
           <?php
-          foreach ($cats as $cat) {
-            $catNoSpaces = str_replace(' ', '-', strtolower($cat->name)); ?>
+          foreach ($taxonomies as $taxonomy) {
+            // $catNoSpaces = str_replace(' ', '-', strtolower($cat->name)); 
+          ?>
             <!-- wp:list-item -->
-            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $cat->name; ?></a></li>
+            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo get_category_link($taxonomy->term_id) ?>" class=""><?php echo $taxonomy->name; ?></a></li>
             <!-- /wp:list-item -->
           <?php }; ?>
         </ul>
         <!-- /wp:list -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div class="wp-block-group right-col w-[30%]">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-[#8a8f99]">empty</p>
-        <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
     </div>
