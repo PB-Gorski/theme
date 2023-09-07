@@ -219,5 +219,22 @@ background-color: #E80D38;
   fill: #fff
 }
 
+/* page contact dropdown */
+.inactive {
+  max-height: 0px;
+  opacity: 0%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: -1;
+  position: relative;
+}
+.active {
+  max-height: 280px;
+  opacity: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 0;
+  position: relative;
+}
 
 
