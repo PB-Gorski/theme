@@ -381,7 +381,7 @@
             <!-- /wp:paragraph -->
           </a>
         </li>
-        <!-- /wplist-item -->
+        <!-- /wp:list-item -->
       </ul>
       <!-- /wp:list -->
     </div>
