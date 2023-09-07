@@ -33,7 +33,7 @@
           <?php
           echo '<br>location:';
           $taxonomies = get_terms(array(
-            'taxonomy' => 'location',
+            'taxonomy' => 'osiedla',
             'hide_empty' => false,
           ));
           // print_r($post_tag);
