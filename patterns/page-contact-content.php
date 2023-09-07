@@ -143,13 +143,13 @@
         <!-- wp:list -->
         <ul class="wp-block-list mt-[50px] ml-0">
           <!-- wp:list-item -->
-          <li class="list-content-wrapper border-b-[1px] border-[#e8e8e8] text-[30px] transition ease-out duration-[500ms]">
+          <li class="list-content-wrapper py-[10px] border-b-[1px] border-[#e8e8e8] text-[30px] transition ease-out duration-[500ms]">
             <!-- wp:group -->
-            <div class="wp-block-group click-bar group flex justify-between items-center px-[10px] cursor-pointer">
+            <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
               <div class="wp-block-group text-wrapper flex gap-[10px] desktop:gap-[20px]">
                 <!-- wp:paragraph -->
-                <p class="w-fit group-hover:text-primaryYellow uppercase text-bgDarkGray text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500">+</p>
+                <p class="w-fit pb-[5px] group-hover:text-primaryYellow uppercase text-bgDarkGray text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500">+</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
                 <p class="font-bold text-[14px] desktop:text-[24px] text-bgDarkGray font-bold self-center">Biuro Zarządu</p>
