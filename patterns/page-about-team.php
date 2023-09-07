@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="content" class="wp-block-group team relative">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[50px]">
+  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[50px] desktop:max-w-[680px]">
     <!-- wp:paragraph -->
     <p class="text-[30px] text-textGray leading-[44px]">Rozmach i różnorodność inwestycji prowadzonych przez firmę Górski pokazuje odwagę i konsekwencję w wieloletnim działaniu przedsiębiorstwa.</p>
     <!-- /wp:paragraph -->
