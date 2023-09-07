@@ -114,7 +114,7 @@
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
-            <p class="underline-2">Zobacz na GoogleMaps</p>
+            <p class="underline underline-2">Zobacz na GoogleMaps</p>
             <!-- /wp:paragraph -->
           </a>
         </li>
