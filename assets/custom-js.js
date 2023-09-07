@@ -148,7 +148,7 @@ window.addEventListener("load", function() {
         useEasing: true, // toggle easing
         useGrouping: true, // 1,000,000 vs 1000000
         separator: ',', // character to use as a separator
-        decimal: '.', // character to use as a decimal
+        decimal: ' ', // character to use as a decimal
         decimals: 0
     }
 
