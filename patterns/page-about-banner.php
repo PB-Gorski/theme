@@ -99,7 +99,7 @@
       <!-- wp:group -->
       <div class="wp-block-group">
         <!-- wp:paragraph -->
-        <p id="count1" class="text-[60px] font-bold">40</p>
+        <p id="count1" class="text-[60px] font-bold">0</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
