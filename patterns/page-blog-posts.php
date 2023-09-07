@@ -90,6 +90,52 @@
             </ul>
           <?php endif; ?>
 
+          <?php print_r(get_the_term_list($id, $taxonomy, $before, $sep, $after)) ?>
+          <?php
+          $taxonomy = 'location';
+          $args1 = array(
+            'include' => array(12, 30)
+          );
+
+          $terms = get_terms('location', $args1);
+          echo '<ul>';
+
+
+          foreach ($terms as $term) {
+            //Always check if it's an error before continuing. get_term_link() can be finicky sometimes
+            $term_link = get_term_link($term, 'location');
+            if (is_wp_error($term_link))
+              continue;
+            //We successfully got a link. Print it out.
+
+
+            echo '<li><a href="' . $term_link . '">' . $term->name . '</a></li>';
+          }
+          echo '</ul>';
+          ?>
+          <?php
+          $taxonomy = 'locations';
+          $args1 = array(
+            'include' => array(12, 30)
+          );
+
+          $terms = get_terms('locations', $args1);
+          echo '<ul>';
+
+
+          foreach ($terms as $term) {
+            //Always check if it's an error before continuing. get_term_link() can be finicky sometimes
+            $term_link = get_term_link($term, 'locations');
+            if (is_wp_error($term_link))
+              continue;
+            //We successfully got a link. Print it out.
+
+
+            echo '<li><a href="' . $term_link . '">' . $term->name . '</a></li>';
+          }
+          echo '</ul>';
+          ?>
+
 
           <!-- wp:list-item -->
           <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
