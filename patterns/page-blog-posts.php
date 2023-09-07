@@ -35,7 +35,7 @@
           // $cats = get_categories($args);
           $cats = get_categories($args);
           $argstag = array(
-            'taxonomy' => 'tag',
+            'taxonomy' => 'tags',
             'orderby' => 'name',
             'paged' => 1,
             'order'   => 'ASC'
