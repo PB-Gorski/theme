@@ -231,7 +231,7 @@
             <!-- /wp:group -->
 
             <!-- wp:group -->
-            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden flex gap-[40px] leading-[21px] px-[20px] transition-height ease-out duration-[500ms] inactive">
+            <div class="wp-block-group step-paragraph paragraph-wrapper px-[20px] pt-[15px] overflow-hidden flex gap-[40px] leading-[21px]  transition-height ease-out duration-[500ms] inactive">
               <!-- wp:group -->
               <div class="wp-block-group left-col-avatar">
                 <!-- wp:image -->
@@ -244,18 +244,15 @@
               <!-- wp:group -->
               <div class="wp-block-group right-col-text">
                 <!-- wp:paragraph -->
-                <p class="py-[15px] text-[18px] text-bgDarkGray mb-[10px]">ul. Kościerska 15, 83-300 Kartuzy</p>
+                <p class="py-[15px] text-[18px] mb-[10px]">Kinga Piekarska</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:group -->
                 <div class="wp-block-group phone mb-[30px] font-semibold">
                   <!-- wp:paragraph -->
-                  <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[40px] block"> email: sprzedaz@pbgorski.pl</a>
+                  <a href="tel:+48583407900" class="block underline decoration-2">tel. (+48) 58 340-79-00</a>
                   <!-- /wp:paragraph -->
                   <!-- wp:paragraph -->
-                  <a href="tel:+48583407900" class="block">tel. (+48) 58 340-79-00</a>
-                  <!-- /wp:paragraph -->
-                  <!-- wp:paragraph -->
-                  <a href="tel:+48583047101" class="block">tel. (+48) 58 304-71-01</a>
+                  <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[40px] block underline decoration-2">email: sprzedaz@pbgorski.pl</a>
                   <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
