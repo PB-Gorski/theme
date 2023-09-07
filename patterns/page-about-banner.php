@@ -98,15 +98,57 @@
 
       <!-- wp:group -->
       <div class="wp-block-group">
-        <!-- wp:paragraph -->
-        <p id="count1" class="text-[60px] font-bold">40</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:paragraph -->
-        <p id="count2" class="text-[60px] font-bold">125</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:paragraph -->
-        <p id="count3" class="text-[60px] font-bold">4000</p>
-        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group col1 flex gap-[]">
+          <!-- wp:paragraph -->
+          <p id="count1" class="text-[60px] font-bold">40</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:group -->
+          <div class="wp-block-group leading-[24px]">
+            <!-- wp:paragraph -->
+            <p class="text-[18px] text-bgDarkGray">dostępnych</p>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <p class="text-[18px] text-bgDarkGray">lokali</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+        <!-- wp:group -->
+        <div class="wp-block-group col2 flex gap-[]">
+          <!-- wp:paragraph -->
+          <p id="count2" class="text-[60px] font-bold">125</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:group -->
+          <div class="wp-block-group leading-[24px]">
+            <!-- wp:paragraph -->
+            <p class="text-[18px] text-bgDarkGray">zrealizowanych</p>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <p class="text-[18px] text-bgDarkGray">inwestycji</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+        <!-- wp:group -->
+        <div class="wp-block-group col3 flex gap-[]">
+          <!-- wp:paragraph -->
+          <p id="count3" class="text-[60px] font-bold">4000</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:group -->
+          <div class="wp-block-group leading-[24px]">
+            <!-- wp:paragraph -->
+            <p class="text-[18px] text-bgDarkGray">spredanych</p>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <p class="text-[18px] text-bgDarkGray">mieszkań</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
 
       </div>
       <!-- /wp:group -->
