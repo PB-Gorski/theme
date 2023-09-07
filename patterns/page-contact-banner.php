@@ -99,7 +99,7 @@
       <!-- wp:group -->
       <div class="wp-block-group text-[#959ba6] text-[30px]">
         <!-- wp:paragraph -->
-        <a href="mailto:sprzedaz@pbgorski.pl" class="inline hover:text-[#2e384d] transition duration-[300ms] ease after:content-[''] after:absolute after:top-0 after:right-[30px] after:w-[2px] after:h-[70px] after:m-auto after:bg-[#e1e3e8] after:rotate-[25deg]">sprzedaz@pbgorski.pl</a>
+        <a href="mailto:sprzedaz@pbgorski.pl" class="inline relative hover:text-[#2e384d] transition duration-[300ms] ease after:content-[''] after:absolute after:top-0 after:right-[30px] after:w-[2px] after:h-[70px] after:m-auto after:bg-[#e1e3e8] after:rotate-[25deg]">sprzedaz@pbgorski.pl</a>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
         <div class="wp-block-group links-phones">
