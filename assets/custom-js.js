@@ -132,6 +132,7 @@ window.addEventListener("load", function() {
 
   const countUp = new CountUp(count1, 40);
   if (!countUp.error) {
+    console.log('start');
     countUp.start();
   } else {
     console.error(countUp.error);
