@@ -294,13 +294,14 @@ window.addEventListener("load", function() {
     // numAnim.start(someMethodToCallOnComplete);
 
     /* CountUp Activation */
-    let count1 = new countUp('count1', 0, 40, 0, 1.5);
-    let count2 = new countUp('count2', 0, 125, 0, 1.5);
-    let count3 = new countUp('count3', 0, 4000, 0, 1);
-
-    count1.start();
-    count2.start();
-    count3.start();
+    if(this.document.body.classList.contains('page-id-19')){
+      let count1 = new countUp('count1', 0, 40, 0, 1.5);
+      let count2 = new countUp('count2', 0, 125, 0, 1.5);
+      let count3 = new countUp('count3', 0, 4000, 0, 1);
+      count1.start();
+      count2.start();
+      count3.start();
+    };
 
     // $('#trigger').click(function() {
     // count1.reset();
