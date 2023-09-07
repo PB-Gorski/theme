@@ -247,7 +247,7 @@
                 <p class="py-[15px] text-[18px] mb-[10px]">Kinga Piekarska</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:group -->
-                <div class="wp-block-group phone mb-[30px] flex gap-[40px]">
+                <div class="wp-block-group phone flex gap-[40px]">
                   <!-- wp:group -->
                   <div class="wp-block-group labels">
                     <!-- wp:paragraph -->
@@ -266,7 +266,7 @@
                     <!-- /wp:paragraph -->
 
                     <!-- wp:paragraph -->
-                    <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[40px] block font-bold underline decoration-2">k.piekarska@pbgorski.pl </a>
+                    <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2">k.piekarska@pbgorski.pl </a>
                     <!-- /wp:paragraph -->
                   </div>
                   <!-- /wp:group -->
