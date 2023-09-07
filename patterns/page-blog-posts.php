@@ -30,7 +30,10 @@
             'order'   => 'ASC'
           );
           // $cats = get_categories($args);
-          $cats = get_taxonomies($args); ?>
+          $cats = get_categories($args);
+          print_r($cats)
+          ?>
+
           <!-- wp:list-item -->
           <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
             <a href="<?php echo get_home_url() . '/blog'; ?>" class="">Wszystkie</a>
