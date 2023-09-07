@@ -147,9 +147,8 @@ window.addEventListener("load", function() {
     this.options = options || {
         useEasing: true, // toggle easing
         useGrouping: true, // 1,000,000 vs 1000000
-        separator: ',', // character to use as a separator
-        decimal: ' ', // character to use as a decimal
-        decimals: 0
+        separator: ' ', // character to use as a separator
+        decimal: ',', // character to use as a decimal
     }
 
     // make sure requestAnimationFrame and cancelAnimationFrame are defined
