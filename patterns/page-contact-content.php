@@ -160,7 +160,7 @@
             <!-- /wp:group -->
 
             <!-- wp:group -->
-            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] bg-[#F2F2F2] transition-height ease-out duration-[500ms] inactive">
+            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] transition-height ease-out duration-[500ms] inactive">
               <!-- wp:paragraph -->
               <p class="py-[15px] text-[18px] text-bgDarkGray mb-[10px]">ul. Kościerska 15, 83-300 Kartuzy</p>
               <!-- /wp:paragraph -->
