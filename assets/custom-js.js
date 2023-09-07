@@ -101,11 +101,13 @@ window.addEventListener("load", function() {
 
 
   // search more options handle
-  const btnMore = this.document.querySelector('.btn-more');
-  const searchBar = this.document.querySelector('#search-bar');
-  btnMore.addEventListener('click',()=>{
-    (window.innerWidth < 480) ? searchBar.classList.toggle('h-[450px]') : searchBar.classList.toggle('h-[250px]');ś
-  });
+  if(document.body.classList.contains('home')){
+    const btnMore = this.document.querySelector('.btn-more');
+    const searchBar = this.document.querySelector('#search-bar');
+    btnMore.addEventListener('click',()=>{
+      (window.innerWidth < 480) ? searchBar.classList.toggle('h-[450px]') : searchBar.classList.toggle('h-[250px]');ś
+    });
+  };
 
   // call pop up modal
   const btnCloseModal = document.querySelector('.btn-close');
