@@ -134,19 +134,19 @@ window.addEventListener("load", function() {
 
   const count1 = document.querySelector('#count1');
 
-  const countUp = new CountUp(count1, 40);
-  if (!countUp.error) {
-    console.log('start');
-    countUp.start();
-  } else {
-    console.error(countUp.error);
-  };
+//   const countUp = new CountUp(count1, 40);
+//   if (!countUp.error) {
+//     console.log('start');
+//     countUp.start();
+//   } else {
+//     console.error(countUp.error);
+//   };
 
-  let demo = new CountUp(count1, 0, 100);
-  demo.start();
+//   let demo = new CountUp(count1, 0, 100);
+//   demo.start();
 
-  var numAnim = new countUp.CountUp(count1, 2000);
-numAnim.start()
+//   var numAnim = new countUp.CountUp(count1, 2000);
+// numAnim.start()
 
 /*
 
