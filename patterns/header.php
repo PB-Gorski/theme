@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group logo mr-[80px]">
       <!-- wp:paragraph -->
-      <a href="<?php home_url(); ?>">
+      <a href="<?php echo home_url(); ?>">
         <!-- wp:image -->
         <figure class="wp-block-image w-[115px]">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/frontpage/logo.png" alt="pb-gorski-logo" />
