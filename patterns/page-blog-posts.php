@@ -82,6 +82,7 @@
 
           <?php
           // We want to find the Taxonomy to this slug.
+          global $term_object;
           $term_slug = 'locations';
           $taxonomies5 = get_taxonomies();
           foreach ($taxonomies5 as $tax_type_key => $taxonomy) {
