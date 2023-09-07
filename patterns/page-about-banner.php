@@ -104,6 +104,9 @@
         <!-- wp:paragraph -->
         <p id="monospace" class="text-[60px] font-bold">125</p>
         <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p id="count1" class="text-[60px] font-bold">0</p>
+        <!-- /wp:paragraph -->
 
       </div>
       <!-- /wp:group -->
@@ -116,5 +119,7 @@
 
   </div>
   <!-- /wp:group -->
+  <script nomodule src="js/countUp.umd.js"></script>
+  <script nomodule src="js/main-for-legacy.js"></script>
 </div>
 <!-- /wp:group -->
