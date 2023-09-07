@@ -90,7 +90,7 @@
           'post_type' => 'post',
           'posts_per_page' => 3,
           'order' => 'ASC',
-          'category_name' => 'browar-gdanski'
+          'taxonomy' => 'browar-gdanski'
         );
         $post_query = new WP_Query($args);
         $counter = 0;
