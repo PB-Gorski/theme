@@ -82,7 +82,7 @@
 
           <?php
           // We want to find the Taxonomy to this slug.
-          $term_slug = 'myterm';
+          $term_slug = 'locations';
           $taxonomies5 = get_taxonomies();
           foreach ($taxonomies5 as $tax_type_key => $taxonomy) {
             // If term object is returned, break out of loop. (Returns false if there's no object)
