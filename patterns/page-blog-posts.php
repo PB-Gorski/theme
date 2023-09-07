@@ -24,7 +24,7 @@
         <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex items-center gap-[20px] text-[18px] font-medium">
           <?php
           $args = array(
-            'taxonomy' => 'category',
+            'taxonomy' => 'osiedla',
             'orderby' => 'name',
             'paged' => 1,
             'order'   => 'ASC'
@@ -108,25 +108,6 @@
                     <?php }; ?>
                   </ul>
                   <!-- /wp:list -->
-
-
-                  <!-- wp:group -->
-                  <div class="wp-block-group available-apartments flex items-center gap-[25px]">
-                    <!-- wp:paragraph -->
-                    <p class="text-[48px] text-primaryRed font-bold">41</p>
-                    <!-- /wp:paragraph -->
-                    <!-- wp:group -->
-                    <div class="wp-block-group leading-[24px]">
-                      <!-- wp:paragraph -->
-                      <p class="text-[18px] text-bgDarkGray">dostępnych</p>
-                      <!-- /wp:paragraph -->
-                      <!-- wp:paragraph -->
-                      <p class="text-[18px] text-bgDarkGray">lokali</p>
-                      <!-- /wp:paragraph -->
-                    </div>
-                    <!-- /wp:group -->
-                  </div>
-                  <!-- /wp:group -->
                 </div>
                 <!-- /wp:group -->
               </div>
