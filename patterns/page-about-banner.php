@@ -92,7 +92,7 @@
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[80px] z-[1] relative text-white">
       <!-- wp:group -->
-      <div class="wp-block-group title text-[60px] font-bold pt-[150px] mb-[40px] leading-[70px]">
+      <div class="wp-block-group title text-[60px] font-bold pt-[150px] mb-[50px] leading-[70px]">
         <!-- wp:paragraph -->
         <p>Poznaj naszą historię,</p>
         <!-- /wp:paragraph -->
