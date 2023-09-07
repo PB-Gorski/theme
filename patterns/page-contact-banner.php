@@ -99,7 +99,7 @@
       <!-- wp:group -->
       <div class="wp-block-group text-[#959ba6] text-[30px]">
         <!-- wp:paragraph -->
-        <a href="mailto:sprzedaz@pbgorski.pl">sprzedaz@pbgorski.pl</a>
+        <a href="mailto:sprzedaz@pbgorski.pl" class="block">sprzedaz@pbgorski.pl</a>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
         <a href="tel:+48583407900" class="inline">(+48) 58 340 79 00, </a>
