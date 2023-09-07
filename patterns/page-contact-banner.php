@@ -82,11 +82,11 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group w-full h-full bg-[#f5f7fa] relative">
+  <div class="wp-block-group w-full bg-[#f5f7fa] relative py-[60px]">
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[80px]">
       <!-- wp:group -->
-      <div class="wp-block-group title text-[60px] font-bold pt-[150px] mb-[50px] leading-[70px]">
+      <div class="wp-block-group title text-[60px] font-bold mb-[50px] leading-[70px]">
         <!-- wp:paragraph -->
         <p>Z chęcią odpowiemy na</p>
         <!-- /wp:paragraph -->
