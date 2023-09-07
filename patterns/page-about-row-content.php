@@ -38,11 +38,11 @@
     <div class="wp-block-group row2 flex gap-[100px] mb-[80px]">
       <!-- wp:group -->
       <div class="wp-block-group col1 w-[50%] pl-[60px]">
-        <!-- wp:group -->
+        <!-- wp:image -->
         <figure class="wp-block-image w-full h-full">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img1.jpeg" alt="img">
         </figure>
-        <!-- /wp:group -->
+        <!-- /wp:image -->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
@@ -62,11 +62,11 @@
     <div class="wp-block-group row3 flex flex-row-reverse gap-[20px] mb-[80px]">
       <!-- wp:group -->
       <div class="wp-block-group col1 w-[60%] pl-[60px]">
-        <!-- wp:group -->
+        <!-- wp:image -->
         <figure class="wp-block-image w-full h-full">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img2.jpeg" alt="img">
         </figure>
-        <!-- /wp:group -->
+        <!-- /wp:image -->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
@@ -86,11 +86,11 @@
     <div class="wp-block-group row4 flex gap-[20px] mb-[80px]">
       <!-- wp:group -->
       <div class="wp-block-group col1 w-[60%] pl-[60px]">
-        <!-- wp:group -->
+        <!-- wp:image -->
         <figure class="wp-block-image w-full h-full">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img3.jpeg" alt="img">
         </figure>
-        <!-- /wp:group -->
+        <!-- /wp:image -->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
