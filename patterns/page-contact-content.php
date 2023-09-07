@@ -15,10 +15,10 @@
     <!-- wp:group -->
     <div class="wp-block-group left-col">
       <!-- wp:paragraph -->
-      <p class="text-[30px] text-textGray">Biuro Sprzedaży Mieszkań / Siedziba Firmy</p>
+      <p class="text-[30px] text-textGray mb-[40px]">Biuro Sprzedaży Mieszkań / Siedziba Firmy</p>
       <!-- /wp:paragraph -->
       <!-- wp:group -->
-      <div class="wp-block-group address text-[#8a8f99]">
+      <div class="wp-block-group address mb-[40px] text-[#8a8f99]">
         <!-- wp:paragraph -->
         <p>ul. Joachima Lelewela 37 lok. E,</p>
         <!-- /wp:paragraph -->
@@ -27,7 +27,7 @@
         <!-- /wp:paragraph -->
       </div>
       <!-- wp:group -->
-      <div class="wp-block-group phone">
+      <div class="wp-block-group phone mb-[40px]">
         <!-- wp:paragraph -->
         <p>kom. (+48) 607-700-555</p>
         <!-- /wp:paragraph -->
@@ -37,7 +37,7 @@
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
-      <div class="wp-block-group when-open text-primaryRed font-bold">
+      <div class="wp-block-group when-open mb-[40px] text-primaryRed font-bold">
         <!-- wp:paragraph -->
         <p>Poniedziałek - czwartek: 8:00 - 17:00</p>
         <!-- /wp:paragraph -->
