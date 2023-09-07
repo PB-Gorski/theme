@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
     <!-- wp:group -->
-    <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] fflex items-center">
+    <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] flex items-center">
       <!-- wp:group -->
       <div class="wp-block-group left-col w-[70%]">
         <!-- wp:paragraph -->
@@ -21,7 +21,7 @@
         <!-- /wp:paragraph -->
 
         <!-- wp:list -->
-        <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex items-center gap-[20px] text-[18px] font-medium">
+        <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] fflex items-center gap-[20px] text-[18px] font-medium">
           <?php
           $args = array(
             'taxonomy' => 'category',
