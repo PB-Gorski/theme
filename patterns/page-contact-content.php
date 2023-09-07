@@ -242,7 +242,7 @@
               <!-- /wp:group -->
 
               <!-- wp:group -->
-              <div class="wp-block-group right-col-text">
+              <div class="wp-block-group right-col-text text-black">
                 <!-- wp:paragraph -->
                 <p class="py-[15px] text-[18px] mb-[10px]">Kinga Piekarska</p>
                 <!-- /wp:paragraph -->
