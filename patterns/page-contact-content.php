@@ -162,7 +162,7 @@
             <!-- wp:group -->
             <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] transition-height ease-out duration-[500ms] inactive">
               <!-- wp:paragraph -->
-              <p class="py-[15px] text-[18px] text-bgDarkGray mb-[10px]">ul. Kościerska 15, 83-300 Kartuzy</p>
+              <p class="text-[18px] text-bgDarkGray mb-[10px]">ul. Kościerska 15, 83-300 Kartuzy</p>
               <!-- /wp:paragraph -->
               <!-- wp:group -->
               <div class="wp-block-group phone mb-[30px] font-semibold">
