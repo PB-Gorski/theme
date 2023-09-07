@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group left-col">
       <!-- wp:group -->
-      <div class="wp-group-block section1 mb-[50px]">
+      <div class="wp-block-group section1 mb-[50px]">
         <!-- wp:paragraph -->
         <p class="text-[30px] text-textGray mb-[30px] font-bold">Biuro Sprzedaży Mieszkań / Siedziba Firmy</p>
         <!-- /wp:paragraph -->
@@ -58,7 +58,7 @@
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
-      <div class="wp-group-block section2 mb-[50px]">
+      <div class="wp-block-group section2 mb-[50px]">
         <!-- wp:paragraph -->
         <p class="text-[30px] text-textGray mb-[30px] font-bold">Biuro Obsługi Klienta</p>
         <!-- /wp:paragraph -->
