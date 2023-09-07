@@ -80,6 +80,30 @@
             </ul>
           <?php endif; ?>
 
+          <?php
+          // We want to find the Taxonomy to this slug.
+          $term_slug = 'myterm';
+          $taxonomies = get_taxonomies();
+          foreach ($taxonomies as $tax_type_key => $taxonomy) {
+            // If term object is returned, break out of loop. (Returns false if there's no object)
+            if ($term_object = get_term_by('slug', $term_slug, $taxonomy)) {
+              break;
+            }
+          }
+          //Get the taxonomy!!
+          echo $term_object->taxonomy . '<br>';
+
+          // You can also retrieve other thing of the term:
+          echo $term_object->name . '<br>'; //term name
+          echo $term_object->term_id . '<br>'; // term id
+          echo $term_object->description . '<br>'; // term description
+
+          // See all options by dumping the $term_object:
+          //var_dump( $term_object );
+
+
+          ?>
+
           <!-- wp:list-item -->
           <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
             <a href="<?php echo get_home_url() . '/blog'; ?>" class="">Wszystkie</a>
