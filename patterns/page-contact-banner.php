@@ -82,15 +82,9 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group w-full h-full bg-banner relative">
-    <!-- wp:image -->
-    <figure class="wp-block-image w-full h-full absolute top-0 left-0">
-      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/banner.jpeg" alt="banner-background">
-    </figure>
-    <!-- /wp:image -->
-
+  <div class="wp-block-group w-full h-full bg-[#f5f7fa] relative">
     <!-- wp:group -->
-    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[80px] z-[0] relative text-white">
+    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[80px]">
       <!-- wp:group -->
       <div class="wp-block-group title text-[60px] font-bold pt-[150px] mb-[50px] leading-[70px]">
         <!-- wp:paragraph -->
