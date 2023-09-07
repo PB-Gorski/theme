@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Wpis" class="wp-block-group taxonomy-osiedla mb-[150px] ooverflow-hidden">
   <!-- wp:group -->
-  <div class="wp-block-group desktop:pt-[60px]">
+  <div class="wp-block-group">
     <!-- wp:group -->
     <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
       <!-- wp:group -->

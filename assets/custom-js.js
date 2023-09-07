@@ -35,7 +35,7 @@ window.addEventListener("load", function() {
 
   hoverMenuItem.addEventListener('mouseover',()=>{
     modal.classList.replace('opacity-0', 'opacity-100');
-    modal.classList.replace('z-[0]', 'z-[1]');
+    modal.classList.replace('z-[-1]', 'z-[1]');
   });
   // hoverMenuItem.addEventListener('mouseleave',()=>{
   //   modal.classList.replace('opacity-100', 'opacity-0');
@@ -43,7 +43,7 @@ window.addEventListener("load", function() {
 
   modal.addEventListener('mouseleave',()=>{
     modal.classList.replace('opacity-100', 'opacity-0');
-    modal.classList.replace('z-[1]', 'z-[0]');
+    modal.classList.replace('z-[1]', 'z-[-1]');
   });
 
   allTabBtn.addEventListener('click',()=>{
