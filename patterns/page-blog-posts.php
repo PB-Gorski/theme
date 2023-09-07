@@ -24,14 +24,19 @@
         <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex items-center gap-[20px] text-[18px] font-medium">
           <?php
           $args = array(
-            'taxonomy' => 'osiedle',
+            'taxonomy' => 'category',
             'orderby' => 'name',
             'paged' => 1,
             'order'   => 'ASC'
           );
+          $args2 = array(
+            'taxonomy' => 'location',
+          );
           // $cats = get_categories($args);
           $cats = get_categories($args);
-          print_r($cats)
+          print_r($cats);
+          $taxonomies = get_taxonomies($args2);
+          print_r($taxonomies);
           ?>
 
           <!-- wp:list-item -->
