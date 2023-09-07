@@ -140,6 +140,9 @@ window.addEventListener("load", function() {
     console.error(countUp.error);
   };
 
+  let demo = new CountUp(count1, 0, 100);
+  demo.start();
+
 
 
 
