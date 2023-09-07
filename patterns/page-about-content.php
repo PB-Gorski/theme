@@ -88,7 +88,7 @@
       <div class="wp-block-group col1 w-[40%] pl-[60px]">
         <!-- wp:group -->
         <figure class="wp-block-image w-full h-full">
-          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img1.jpeg" alt="img">
+          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img3.jpeg" alt="img">
         </figure>
         <!-- /wp:group -->
       </div>
