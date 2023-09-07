@@ -59,7 +59,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group row2 flex flex-row-reverse gap-[20px] mb-[80px]">
+    <div class="wp-block-group row3 flex flex-row-reverse gap-[20px] mb-[80px]">
       <!-- wp:group -->
       <div class="wp-block-group col1 w-[60%] pl-[60px]">
         <!-- wp:group -->
@@ -76,6 +76,30 @@
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
         <p class="text-[18px] text-bgDarkGray leading-[30px]">Deweloper w ostatnim czasie postawił także na inwestycje handlowo-usługowe. Galeria Metropolia to unikalne centrum handlowe zintegrowane z dworcem kolejowym Gdańsk Wrzeszcz, gdzie do dyspozycji klientów oddane zostały różnorodne sklepy znanych marek, największy kompleks kinowy w okolicy, a także hotel.</p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div class="wp-block-group row4 flex gap-[20px] mb-[80px]">
+      <!-- wp:group -->
+      <div class="wp-block-group col1 w-[40%] pl-[60px]">
+        <!-- wp:group -->
+        <figure class="wp-block-image w-full h-full">
+          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img1.jpeg" alt="img">
+        </figure>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:group -->
+      <div class="wp-block-group col2 w-[60%] text-[18px] text-bgDarkGray leading-[30px]">
+        <!-- wp:paragraph -->
+        <p class="mb-[30px] text-[30px] text-textGray leading-[44px]">Wieloletnie doświadczenie przedsiębiorstwa owocuje dziś bardzo szeroką, zróżnicowaną ofertą dla klientów.</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class="text-[18px] text-bgDarkGray leading-[30px]">Wśród realizacji dewelopera znajdują się eleganckie inwestycje w prestiżowych lokalizacjach Trójmiasta takie jak osiedle Browar Gdański, Kamienica Tobiasza, czy apartamenty Angielska Grobla na Starym Mieście w Gdańsku.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
