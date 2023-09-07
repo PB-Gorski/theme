@@ -294,7 +294,7 @@ window.addEventListener("load", function() {
     // numAnim.start(someMethodToCallOnComplete);
 
     /* CountUp Activation */
-    if(this.document.body.classList.contains('page-id-19')){
+    if(this.document.body.classList.contains('page-template-page-about')){
       let count1 = new countUp('count1', 0, 40, 0, 1.5);
       let count2 = new countUp('count2', 0, 125, 0, 1.5);
       let count3 = new countUp('count3', 0, 4000, 0, 1);
