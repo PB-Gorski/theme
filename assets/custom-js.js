@@ -1,4 +1,6 @@
+import { CountUp } from 'countup.js';
 window.addEventListener("load", function() {
+  
   // AOS.init({
   //   duration: 1200,
   // });
@@ -130,6 +132,7 @@ window.addEventListener("load", function() {
 
 
   // count up
+
   const count1 = document.querySelector('#count1');
 
   const countUp = new CountUp(count1, 40);
