@@ -91,12 +91,16 @@
 
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[80px] z-[1] relative text-white">
-      <!-- wp:paragraph -->
-      <p class="text-[60px] font-bold pt-[150px] mb-[40px] leading-[70px]">Poznaj naszą historię,</p>
-      <!-- /wp:paragraph -->
-      <!-- wp:paragraph -->
-      <p class="text-[60px] font-bold pt-[150px] mb-[40px] leading-[70px]">strategię i wartości</p>
-      <!-- /wp:paragraph -->
+      <!-- wp:group -->
+      <div class="wp-block-group title text-[60px] font-bold pt-[150px] mb-[40px] leading-[70px]">
+        <!-- wp:paragraph -->
+        <p>Poznaj naszą historię,</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p>strategię i wartości</p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
 
       <!-- wp:group -->
       <div class="wp-block-group flex">
@@ -163,7 +167,5 @@
 
   </div>
   <!-- /wp:group -->
-  <script nomodule src="js/countUp.umd.js"></script>
-  <script nomodule src="js/main-for-legacy.js"></script>
 </div>
 <!-- /wp:group -->
