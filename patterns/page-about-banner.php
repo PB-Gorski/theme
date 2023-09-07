@@ -99,8 +99,12 @@
       <!-- wp:group -->
       <div class="wp-block-group">
         <!-- wp:paragraph -->
-        <p id="count1" class="text-[60px] font-bold">0</p>
+        <p id="normal" class="text-[60px] font-bold">40</p>
         <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p id="monospace" class="text-[60px] font-bold">125</p>
+        <!-- /wp:paragraph -->
+
       </div>
       <!-- /wp:group -->
 
