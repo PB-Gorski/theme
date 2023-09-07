@@ -222,7 +222,7 @@ background-color: #E80D38;
 /* page contact dropdown */
 .inactive {
   max-height: 0px;
-  opacity: 0%;
+  /* opacity: 0%; */
   padding-top: 5px;
   padding-bottom: 5px;
   z-index: -1;
@@ -230,7 +230,7 @@ background-color: #E80D38;
 }
 .active {
   max-height: 280px;
-  opacity: 100%;
+  /* opacity: 100%; */
   padding-top: 5px;
   padding-bottom: 5px;
   z-index: 0;
