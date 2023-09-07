@@ -99,7 +99,7 @@
           echo $term_object->description . '<br>'; // term description
 
           // See all options by dumping the $term_object:
-          //var_dump( $term_object );
+          var_dump($term_object);
 
 
           ?>
