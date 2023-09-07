@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="blog-post" class="wp-block-group blog-post relative">
   <!-- wp:group -->
-  <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
+  <div class="wp-block-group title-wrapper py-[48px] bg-[#f6f7fa]">
     <!-- wp:group -->
     <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:group -->
