@@ -90,7 +90,7 @@
             </ul>
           <?php endif; ?>
 
-          <?php print_r(get_the_term_list($id, $taxonomy, $before, $sep, $after)) ?>
+          <?php print_r(get_the_term_list()) ?>
           <?php
           $taxonomy = 'location';
           $args1 = array(
