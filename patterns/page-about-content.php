@@ -94,7 +94,7 @@
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
-      <div class="wp-block-group col2 w-[40%] text-[18px] text-bgDarkGray leading-[30px]">
+      <div class="wp-block-group col2 pl-[100px] w-[40%] text-[18px] text-bgDarkGray leading-[30px]">
         <!-- wp:paragraph -->
         <p class="mb-[30px] text-[30px] text-textGray leading-[44px]">Hotel Quadrille Conference & Spa</p>
         <!-- /wp:paragraph -->
