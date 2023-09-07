@@ -302,14 +302,14 @@ window.addEventListener("load", function() {
     count2.start();
     count3.start();
 
-    $('#trigger').click(function() {
-    count1.reset();
-    count2.reset();
-    count3.reset();
-    count1.start();
-    count2.start();
-    count3.start();
-    });
+    // $('#trigger').click(function() {
+    // count1.reset();
+    // count2.reset();
+    // count3.reset();
+    // count1.start();
+    // count2.start();
+    // count3.start();
+    // });
 
 
 
