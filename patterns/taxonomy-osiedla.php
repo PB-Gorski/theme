@@ -90,7 +90,13 @@
           'post_type' => 'post',
           'posts_per_page' => 3,
           'order' => 'ASC',
-          'taxonomy' => 'browar-gdanski'
+          'tax_query' => array(
+            array(
+              'taxonomy' => 'osiedla',
+              'field' => 'slug',
+              'terms' => 'browar-gdanski',
+            ),
+          ),
         );
         $post_query = new WP_Query($args);
         $counter = 0;
