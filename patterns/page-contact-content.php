@@ -28,6 +28,7 @@
           <p>80-442 Gdańsk</p>
           <!-- /wp:paragraph -->
         </div>
+        <!-- /wp:group -->
         <!-- wp:group -->
         <div class="wp-block-group phone mb-[30px] font-semibold">
           <!-- wp:paragraph -->
@@ -70,6 +71,7 @@
           <p>80-442 Gdańsk-Wrzeszcz</p>
           <!-- /wp:paragraph -->
         </div>
+        <!-- /wp:group -->
         <!-- wp:group -->
         <div class="wp-block-group phone mb-[30px] font-semibold flex gap-y-[]">
           <!-- wp:paragraph -->
