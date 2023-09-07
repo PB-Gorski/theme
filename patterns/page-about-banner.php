@@ -90,35 +90,37 @@
     <!-- /wp:image -->
 
     <!-- wp:group -->
-    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] z-[1] relative text-white">
+    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[80px] z-[1] relative text-white">
       <!-- wp:paragraph -->
-      <p class="text-[60px] font-bold pt-[150px] mb-[40px] leading-[70px]">Poznaj naszą historię,
-        strategię i wartości</p>
+      <p class="text-[60px] font-bold pt-[150px] mb-[40px] leading-[70px]">Poznaj naszą historię,</p>
+      <!-- /wp:paragraph -->
+      <!-- wp:paragraph -->
+      <p class="text-[60px] font-bold pt-[150px] mb-[40px] leading-[70px]">strategię i wartości</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
       <div class="wp-block-group flex">
         <!-- wp:group -->
-        <div class="wp-block-group col1 w-[260px] h-[68px] flex gap-[10px] items-center">
+        <div class="wp-block-group col1 w-[270px] h-[68px] flex gap-[15px] items-center border-r-[1px] border-[rgba(255,255,255,0.2)]">
           <!-- wp:paragraph -->
-          <p id="count1" class="text-[60px] font-bold">40</p>
+          <p id="count1" class="text-[48px] font-bold">40</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group leading-[24px]">
             <!-- wp:paragraph -->
-            <p class="text-[18px]">dostępnych</p>
+            <p class="text-[18px]">lat</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="text-[18px]">lokali</p>
+            <p class="text-[18px]">doświadczenia</p>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group col2 w-[260px] h-[68px] flex gap-[10px] items-center">
+        <div class="wp-block-group col2 w-[270px] h-[68px] flex gap-[15px] items-center border-[rgba(255,255,255,0.2)]">
           <!-- wp:paragraph -->
-          <p id="count2" class="text-[60px] font-bold">125</p>
+          <p id="count2" class="text-[48px] font-bold">125</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group leading-[24px]">
@@ -133,14 +135,14 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group col3 w-[260px] h-[68px] flex gap-[10px] items-center">
+        <div class="wp-block-group col3 w-[270px] h-[68px] flex gap-[15px] items-center border-[rgba(255,255,255,0.2)]">
           <!-- wp:paragraph -->
-          <p id="count3" class="text-[60px] font-bold">4000</p>
+          <p id="count3" class="text-[48px] font-bold">4000</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group leading-[24px]">
             <!-- wp:paragraph -->
-            <p class="text-[18px]">spredanych</p>
+            <p class="text-[18px]">sprzedanych</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
             <p class="text-[18px]">mieszkań</p>
