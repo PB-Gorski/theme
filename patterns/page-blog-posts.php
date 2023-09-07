@@ -58,7 +58,7 @@
 
           <?php
           $args3 = array(
-            'name' => 'genre'
+            'name' => 'locations'
           );
           $output = 'objects'; // or names
           $taxonomies3 = get_taxonomies($args3, $output);
