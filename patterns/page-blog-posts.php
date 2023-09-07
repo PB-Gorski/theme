@@ -32,7 +32,7 @@
           ?>
           <?php
           echo '<br>location:';
-          $post_tag = get_terms(array(
+          $taxonomies = get_terms(array(
             'taxonomy' => 'location',
             'hide_empty' => false,
           ));
