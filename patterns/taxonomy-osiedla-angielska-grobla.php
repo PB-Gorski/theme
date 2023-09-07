@@ -58,17 +58,17 @@
             ?>
 
             <!-- wp:list-item -->
-            <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+            <li class="allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
               <a href="<?php echo get_home_url() . '/blog'; ?>" class="">Wszystkie</a>
             </li>
             <!-- /wp:list-item -->
 
             <?php
             foreach ($taxonomies as $taxonomy) {
-              // $catNoSpaces = str_replace(' ', '-', strtolower($cat->name)); 
+              $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomy->name));
             ?>
               <!-- wp:list-item -->
-              <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo get_category_link($taxonomy->term_id) ?>" class=""><?php echo $taxonomy->name; ?></a></li>
+              <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php ($taxNoSpaces == 'angielska-grobla') ? 'tab-active' : 'false'; ?>"><a href="<?php echo get_category_link($taxonomy->term_id) ?>" class=""><?php echo $taxonomy->name; ?></a></li>
               <!-- /wp:list-item -->
             <?php }; ?>
           </ul>
