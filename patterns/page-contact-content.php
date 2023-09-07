@@ -73,7 +73,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group phone mb-[30px] font-semibold flex gap-y-[]">
+        <div class="wp-block-group phone mb-[30px] font-semibold">
           <!-- wp:paragraph -->
           <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[40px] block"> email: sprzedaz@pbgorski.pl</a>
           <!-- /wp:paragraph -->
@@ -114,7 +114,7 @@
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
-            <p class="underline">Zobacz na GoogleMaps</p>
+            <p class="underline-2">Zobacz na GoogleMaps</p>
             <!-- /wp:paragraph -->
           </a>
         </li>
