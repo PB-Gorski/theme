@@ -295,9 +295,9 @@ window.addEventListener("load", function() {
     // numAnim.start(someMethodToCallOnComplete);
 
     /* CountUp Activation */
-    let count1 = new countUp('count1', 0, 40, 2, 2);
-    let count2 = new countUp('count2', 0, 125, 2, 2);
-    let count3 = new countUp('count3', 0, 4000, 2, 2);
+    let count1 = new countUp('count1', 0, 40, 0, 1.5);
+    let count2 = new countUp('count2', 0, 125, 0, 1.5);
+    let count3 = new countUp('count3', 0, 4000, 0, 1.5);
 
     count1.start();
     count2.start();
