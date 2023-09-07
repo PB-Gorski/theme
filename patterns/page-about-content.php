@@ -59,7 +59,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group row2 flex flex-col-reverse gap-[20px] mb-[80px]">
+    <div class="wp-block-group row2 flex flex-row-reverse gap-[20px] mb-[80px]">
       <!-- wp:group -->
       <div class="wp-block-group col1 w-[60%] pl-[60px]">
         <!-- wp:group -->
