@@ -139,7 +139,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group px-[40px] col3 w-fit h-[68px] flex gap-[15px] items-center border-r-[1px] border-[rgba(255,255,255,0.2)]">
+        <div class="wp-block-group px-[40px] col3 w-fit h-[68px] flex gap-[15px] items-center">
           <!-- wp:paragraph -->
           <p id="count3" class="text-[48px] font-bold">4000</p>
           <!-- /wp:paragraph -->
