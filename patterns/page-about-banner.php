@@ -90,7 +90,7 @@
     <!-- /wp:image -->
 
     <!-- wp:group -->
-    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px]">
+    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] z-[1] relative text-white">
       <!-- wp:paragraph -->
       <p class="text-[60px] font-bold">Poznaj naszą historię,
         strategię i wartości</p>
