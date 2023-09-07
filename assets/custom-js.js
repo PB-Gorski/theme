@@ -146,6 +146,9 @@ window.addEventListener("load", function() {
   let demo = new CountUp(count1, 0, 100);
   demo.start();
 
+  var numAnim = new countUp.CountUp(count1, 2000);
+numAnim.start()
+
 
 
 
