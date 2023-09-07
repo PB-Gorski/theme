@@ -36,6 +36,9 @@
     <!-- wp:paragraph -->
     <p>single-post-content</p>
     <!-- /wp:paragraph -->
+
+    <!-- wp:site-title /-->
+    <!-- wp:post-content /-->
   </div>
   <!-- /wp:group -->
 </div>
