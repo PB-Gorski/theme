@@ -24,73 +24,14 @@
         <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] fflex items-center gap-[20px] text-[18px] font-medium">
           <?php
           $args = array(
-            'taxonomy' => 'tag',
+            'taxonomy' => 'category',
             'orderby' => 'name',
             'paged' => 1,
             'order'   => 'ASC'
           );
-          $args2 = array(
-            'taxonomy' => 'location',
-          );
-          // $cats = get_categories($args);
-          $cats = get_categories($args);
-          $argstag = array(
-            'taxonomy' => 'tags',
-            'orderby' => 'name',
-            'paged' => 1,
-            'order'   => 'ASC'
-          );
-          // $cats = get_categories($args);
-          $tags = get_tags($argstag);
-          print_r($tags);
-
-          ?>
-
-          <?php
-          $args2 = array(
-            'public'   => true,
-            '_builtin' => false
-
-          );
-          $output = 'names'; // or objects
-          $operator = 'and'; // 'and' or 'or'
-          $taxonomies2 = get_taxonomies($args2, $output, $operator);
-          print_r($taxonomies2);
-          if ($taxonomies2) {
-            echo '<ul class="args2">';
-            foreach ($taxonomies2  as $taxonomy) {
-              echo '<li>' . $taxonomy . '</li>';
-            }
-            echo '</ul>';
-          }
-          ?>
-
-
-          <?php
-          $args3 = array(
-            'name' => 'locations'
-          );
-          $output = 'objects'; // or names
-          $taxonomies3 = get_taxonomies($args3, $output);
-          if ($taxonomies3) {
-            foreach ($taxonomies3 as $taxonomy) {
-              echo '<div class="args3">' . $taxonomy->labels->name . '</div>';
-            }
-          }
           ?>
           <?php
-          $taxonomies4 = get_taxonomies();
-          if (!empty($taxonomies4)) : ?>
-            <ul>
-              <?php
-              foreach ($taxonomies4 as $taxonomy) {
-                echo '<li class="args4">' . $taxonomy . '</li>';
-              }
-              ?>
-            </ul>
-          <?php endif; ?>
-          <?php
-
+          echo '<br>location:';
           $post_tag = get_terms(array(
             'taxonomy' => 'location',
             'hide_empty' => false,
@@ -98,7 +39,7 @@
           print_r($post_tag);
           ?>
           <?php
-
+          echo '<br> locations:';
           $post_tag2 = get_terms(array(
             'taxonomy' => 'locations',
             'hide_empty' => false,
