@@ -231,11 +231,11 @@
             <!-- /wp:group -->
 
             <!-- wp:group -->
-            <div class="wp-block-group step-paragraph paragraph-wrapper px-[20px] pt-[15px] overflow-hidden flex gap-[40px] leading-[21px]  transition-height ease-out duration-[500ms] inactive">
+            <div class="wp-block-group step-paragraph paragraph-wrapper px-[20px] pt-[15px] overflow-hidden flex items-center gap-[40px] leading-[21px]  transition-height ease-out duration-[500ms] inactive">
               <!-- wp:group -->
               <div class="wp-block-group left-col-avatar">
                 <!-- wp:image -->
-                <figure class="wp-block-image max-w-[100px] max-h-[100px] rounded-full">
+                <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
                   <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/piekarska.jpg" alt="avatar">
                 </figure>
               </div>
