@@ -222,15 +222,11 @@ background-color: #E80D38;
 /* page contact dropdown */
 .inactive {
   max-height: 0px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   z-index: -1;
   position: relative;
 }
 .active {
   max-height: 280px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   z-index: 0;
   position: relative;
 }
