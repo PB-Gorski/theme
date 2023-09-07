@@ -96,10 +96,10 @@
       <!-- wp:group -->
       <div class="wp-block-group col2 w-[40%] text-[18px] text-bgDarkGray leading-[30px]">
         <!-- wp:paragraph -->
-        <p class="mb-[30px] text-[30px] text-textGray leading-[44px]">Wieloletnie doświadczenie przedsiębiorstwa owocuje dziś bardzo szeroką, zróżnicowaną ofertą dla klientów.</p>
+        <p class="mb-[30px] text-[30px] text-textGray leading-[44px]">Hotel Quadrille Conference & Spa</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-bgDarkGray leading-[30px]">Wśród realizacji dewelopera znajdują się eleganckie inwestycje w prestiżowych lokalizacjach Trójmiasta takie jak osiedle Browar Gdański, Kamienica Tobiasza, czy apartamenty Angielska Grobla na Starym Mieście w Gdańsku.</p>
+        <p class="text-[18px] text-bgDarkGray leading-[30px]">Do najnowszych realizacji firmy należy Pięciogwiazdkowy Hotel Quadrille, XVIII-wieczny zespół parkowo-pałacowy zlokalizowany w Gdyni Orłowie. PB Górski przekształcił ten historyczny obiekt w ekskluzywny hotel butikowy o wyjątkowym designie nawiązującym m.in. do "Alicji w Krainie Czarów". Na całość składają się oryginalne wnętrza, niepowtarzalne pokoje hotelowe, imponująca strefa MediSpa z podziemnym basenem, autorska restauracja Biały Królik, nowocześnie wyposażona sala konferencyjna oraz malowniczy park.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
