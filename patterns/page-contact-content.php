@@ -140,7 +140,169 @@
     <div class="wp-block-group right-col w-[50%]">
       <!-- wp:group -->
       <div class="wp-block-group section1-drop-down mb-[50px]">
+        <!-- wp:list -->
+        <ul class="wp-block-list mt-[50px] ml-0">
+          <!-- wp:list-item -->
+          <li class="list-content-wrapper transition ease-out duration-[500ms]">
+            <!-- wp:group -->
+            <div class="wp-block-group click-bar group bg-white h-[56px] flex justify-between items-center px-[20px] cursor-pointer">
+              <!-- wp:group -->
+              <div class="wp-block-group text-wrapper flex gap-[10px] desktop:gap-[20px]">
+                <!-- wp:paragraph -->
+                <p class="w-fit group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[20px] font-semibold transition ease-out duration-500">KROK 1</p>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <p class="font-medium text-[14px] desktop:text-[16px] self-center">Lorem ipsum dolor sit amet</p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
 
+              <!-- wp:paragraph -->
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none" class="icon-arrow rotate-90 scale-[0.65] fill-transparent transition ease-out duration-500">
+                  <rect x="1.5" y="1.5" width="53" height="53" rx="26.5" stroke="#AAAAAA" stroke-width="3" class="group-hover:stroke-primaryYellow transition-stroke ease-out duration-500" />
+                  <path d="M28 35L35 28.0189L28.0379 21" stroke="black" stroke-width="1.5" class="group-hover:stroke-black transition-stroke ease-out duration-500" />
+                  <path d="M20 28L31 28" stroke="black" stroke-width="1.5" class="group-hover:stroke-black transition-stroke ease-out duration-500" />
+                </svg>
+              </p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] bg-[#F2F2F2] transition-height ease-out duration-[500ms] inactive">
+              <!-- wp:paragraph -->
+              <p class="py-[15px] text-[16px] mb-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <!-- /wp:paragraph -->
+              <!-- wp:paragraph -->
+              <p class="pb-[15px] font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </li>
+          <!-- /wp:list-item -->
+
+          <!-- wp:list-item -->
+          <li class="list-content-wrapper transition ease-out duration-[500ms]">
+            <!-- wp:group -->
+            <div class="wp-block-group click-bar group bg-white h-[56px] flex justify-between items-center px-[20px] cursor-pointer">
+              <!-- wp:group -->
+              <div class="wp-block-group text-wrapper flex gap-[10px] desktop:gap-[20px]">
+                <!-- wp:paragraph -->
+                <p class="w-fit group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[20px]  font-semibold transition ease-out duration-500">KROK 1</p>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <p class="font-medium text-[14px] desktop:text-[16px] self-center">Lorem ipsum dolor sit amet</p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:paragraph -->
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none" class="icon-arrow rotate-90 scale-[0.65] fill-transparent transition ease-out duration-500">
+                  <rect x="1.5" y="1.5" width="53" height="53" rx="26.5" stroke="#AAAAAA" stroke-width="3" class="group-hover:stroke-primaryYellow transition-stroke ease-out duration-500" />
+                  <path d="M28 35L35 28.0189L28.0379 21" stroke="black" stroke-width="1.5" class="group-hover:stroke-black transition-stroke ease-out duration-500" />
+                  <path d="M20 28L31 28" stroke="black" stroke-width="1.5" class="group-hover:stroke-black transition-stroke ease-out duration-500" />
+                </svg>
+              </p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] bg-[#F2F2F2] transition-height ease-out duration-[500ms] inactive">
+              <!-- wp:paragraph -->
+              <p class="py-[15px] text-[16px] mb-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <!-- /wp:paragraph -->
+              <!-- wp:paragraph -->
+              <p class="pb-[15px] font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </li>
+          <!-- /wp:list-item -->
+
+          <!-- wp:list-item -->
+          <li class="list-content-wrapper transition ease-out duration-[500ms]">
+            <!-- wp:group -->
+            <div class="wp-block-group click-bar group bg-white h-[56px] flex justify-between items-center px-[20px] cursor-pointer">
+              <!-- wp:group -->
+              <div class="wp-block-group text-wrapper flex gap-[10px] desktop:gap-[20px]">
+                <!-- wp:paragraph -->
+                <p class="w-fit group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[20px]  font-semibold transition ease-out duration-500">KROK 1</p>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <p class="font-medium text-[14px] desktop:text-[16px] self-center">Lorem ipsum dolor sit amet</p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:paragraph -->
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none" class="icon-arrow rotate-90 scale-[0.65] fill-transparent transition ease-out duration-500">
+                  <rect x="1.5" y="1.5" width="53" height="53" rx="26.5" stroke="#AAAAAA" stroke-width="3" class="group-hover:stroke-primaryYellow transition-stroke ease-out duration-500" />
+                  <path d="M28 35L35 28.0189L28.0379 21" stroke="black" stroke-width="1.5" class="group-hover:stroke-black transition-stroke ease-out duration-500" />
+                  <path d="M20 28L31 28" stroke="black" stroke-width="1.5" class="group-hover:stroke-black transition-stroke ease-out duration-500" />
+                </svg>
+              </p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] bg-[#F2F2F2] transition-height ease-out duration-[500ms] inactive">
+              <!-- wp:paragraph -->
+              <p class="py-[15px] text-[16px] mb-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <!-- /wp:paragraph -->
+              <!-- wp:paragraph -->
+              <p class="pb-[15px] font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </li>
+          <!-- /wp:list-item -->
+
+          <!-- wp:list-item -->
+          <li class="list-content-wrapper transition ease-out duration-[500ms]">
+            <!-- wp:group -->
+            <div class="wp-block-group click-bar group bg-white h-[56px] flex justify-between items-center px-[20px] cursor-pointer">
+              <!-- wp:group -->
+              <div class="wp-block-group text-wrapper flex gap-[10px] desktop:gap-[20px]">
+                <!-- wp:paragraph -->
+                <p class="w-fit group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[20px]  font-semibold transition ease-out duration-500">KROK 1</p>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <p class="font-medium text-[14px] desktop:text-[16px] self-center">Lorem ipsum dolor sit amet</p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:paragraph -->
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none" class="icon-arrow rotate-90 scale-[0.65] fill-transparent transition ease-out duration-500">
+                  <rect x="1.5" y="1.5" width="53" height="53" rx="26.5" stroke="#AAAAAA" stroke-width="3" class="group-hover:stroke-primaryYellow transition-stroke ease-out duration-500" />
+                  <path d="M28 35L35 28.0189L28.0379 21" stroke="black" stroke-width="1.5" class="group-hover:stroke-black transition-stroke ease-out duration-500" />
+                  <path d="M20 28L31 28" stroke="black" stroke-width="1.5" class="group-hover:stroke-black transition-stroke ease-out duration-500" />
+                </svg>
+              </p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] bg-[#F2F2F2] transition-height ease-out duration-[500ms] inactive">
+              <!-- wp:paragraph -->
+              <p class="py-[15px] text-[16px] mb-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <!-- /wp:paragraph -->
+              <!-- wp:paragraph -->
+              <p class="pb-[15px] font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </li>
+          <!-- /wp:list-item -->
+        </ul>
+        <!-- /wp:list -->
       </div>
       <!-- /wp:group -->
 
