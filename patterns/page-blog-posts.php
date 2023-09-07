@@ -68,6 +68,17 @@
             }
           }
           ?>
+          <?php
+          $taxonomies = get_taxonomies();
+          if (!empty($taxonomies)) : ?>
+            <ul>
+              <?php
+              foreach ($taxonomies as $taxonomy) {
+                echo '<li>' . $taxonomy . '</li>';
+              }
+              ?>
+            </ul>
+          <?php endif; ?>
 
           <!-- wp:list-item -->
           <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
