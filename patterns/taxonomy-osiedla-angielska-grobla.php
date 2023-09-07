@@ -65,12 +65,13 @@
 
             <?php
             foreach ($taxonomies as $taxonomy) {
-              $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomy->name));
+              // $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomy->name));
+              $taxName = $taxonomy->name;
               // echo $taxNoSpaces . '<br>';
               // echo $taxonomy->name . '<br>';
             ?>
               <!-- wp:list-item -->
-              <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php ($taxNoSpaces == 'Angielska Grobla') ? 'tab-active' : 'false'; ?>"><a href="<?php echo get_category_link($taxonomy->term_id) ?>" class=""><?php echo $taxonomy->name; ?></a></li>
+              <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php ($taxName == 'Angielska Grobla') ? 'tab-active' : 'false'; ?>"><a href="<?php echo get_category_link($taxonomy->term_id) ?>" class=""><?php echo $taxName; ?></a></li>
               <!-- /wp:list-item -->
             <?php }; ?>
           </ul>
