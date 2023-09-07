@@ -55,6 +55,20 @@
           }
           ?>
 
+
+          <?php
+          $args3 = array(
+            'name' => 'genre'
+          );
+          $output = 'objects'; // or names
+          $taxonomies = get_taxonomies($args3, $output);
+          if ($taxonomies) {
+            foreach ($taxonomies as $taxonomy) {
+              echo '<div>' . $taxonomy->labels->name . '</div>';
+            }
+          }
+          ?>
+
           <!-- wp:list-item -->
           <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
             <a href="<?php echo get_home_url() . '/blog'; ?>" class="">Wszystkie</a>
