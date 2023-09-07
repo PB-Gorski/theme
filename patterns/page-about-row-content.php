@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Title: about-content
- * Slug: about-content
+ * Title: about-row-content
+ * Slug: about-row-content
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="content" class="wp-block-group content relative">
+<div id="content" class="wp-block-group row-content relative">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[50px]">
     <!-- wp:group -->
