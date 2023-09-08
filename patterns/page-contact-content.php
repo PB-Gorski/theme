@@ -213,7 +213,7 @@
           <a href="https://www.google.com/maps/dir//Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A,+Lelewela+6%2Flok.+1,+80-442+Gda%C5%84sk/@54.3831786,18.6099402,16.19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x46fd73f68f036d41:0xc1029ad51bc7ce0c!2m2!1d18.5669008!2d54.4041492!3e0" class="font-bold flex gap-[10px]">
             <!-- wp:image -->
             <figure class="wp-block-image w-[20px]">
-              <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/nav-pin.png" alt="map-pin">
+              <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/nav-pin.png" alt="nav-pin">
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
@@ -312,7 +312,7 @@
                   <a href="https://www.google.com/maps/dir//Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A,+Lelewela+6%2Flok.+1,+80-442+Gda%C5%84sk/@54.3831786,18.6099402,16.19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x46fd73f68f036d41:0xc1029ad51bc7ce0c!2m2!1d18.5669008!2d54.4041492!3e0" class="font-bold flex gap-[10px]">
                     <!-- wp:image -->
                     <figure class="wp-block-image w-[20px]">
-                      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/nav-pin.png" alt="map-pin">
+                      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/nav-pin.png" alt="nav-pin">
                     </figure>
                     <!-- /wp:image -->
                     <!-- wp:paragraph -->
@@ -523,7 +523,7 @@
                   <a href="https://www.google.com/maps/dir//Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A,+Lelewela+6%2Flok.+1,+80-442+Gda%C5%84sk/@54.3831786,18.6099402,16.19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x46fd73f68f036d41:0xc1029ad51bc7ce0c!2m2!1d18.5669008!2d54.4041492!3e0" class="font-bold flex gap-[10px]">
                     <!-- wp:image -->
                     <figure class="wp-block-image w-[20px]">
-                      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/nav-pin.png" alt="map-pin">
+                      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/nav-pin.png" alt="nav-pin">
                     </figure>
                     <!-- /wp:image -->
                     <!-- wp:paragraph -->
@@ -599,7 +599,7 @@
           <a href="https://www.google.com/maps/dir//Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A,+Lelewela+6%2Flok.+1,+80-442+Gda%C5%84sk/@54.3831786,18.6099402,16.19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x46fd73f68f036d41:0xc1029ad51bc7ce0c!2m2!1d18.5669008!2d54.4041492!3e0" class="font-bold flex gap-[10px]">
             <!-- wp:image -->
             <figure class="wp-block-image w-[20px]">
-              <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/nav-pin.png" alt="map-pin">
+              <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/nav-pin.png" alt="nav-pin">
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
