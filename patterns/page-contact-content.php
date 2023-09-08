@@ -338,7 +338,7 @@
                 <p class="w-fit pb-[5px] group-hover:text-primaryYellow uppercase text-bgDarkGray text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500">+</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="font-bold text-[14px] desktop:text-[24px] text-bgDarkGray font-bold self-center">Biuro Zarządu</p>
+                <p class="bar-titlefont-bold text-[14px] desktop:text-[24px] text-bgDarkGray font-bold self-center">Biuro Zarządu</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
