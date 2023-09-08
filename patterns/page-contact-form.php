@@ -21,8 +21,10 @@
     <!-- /wp:list-item -->
   </ul>
   <!-- /wp:list -->
-  <!-- wp:contact-form-7/contact-form-selector {"id":46,"hash":"3c85cdb","title":"Formularz 1"} -->
-  <div class="wp-block-contact-form-7-contact-form-selector">[contact-form-7 id="3c85cdb" title="Formularz 1"]</div>
+  <!-- wp:contact-form-7/contact-form-selector {"id":57,"hash":"0c00ff8","title":"test"} -->
+  <div class="wp-block-contact-form-7-contact-form-selector">[contact-form-7 id="0c00ff8" title="test"]</div>
   <!-- /wp:contact-form-7/contact-form-selector -->
+</div>
+<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
