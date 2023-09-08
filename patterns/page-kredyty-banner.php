@@ -88,22 +88,26 @@
     </figure>
     <!-- /wp:figure -->
     <!-- wp:group -->
-    <div class="wp-block-group max-w-[300px] text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[50px]">
+    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[50px]">
       <!-- wp:group -->
-      <div class="wp-block-group title text-[60px] font-bold mb-[50px] leading-[70px]">
-        <!-- wp:paragraph -->
-        <p>Uzyskanie kredytu</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:paragraph -->
-        <p>nie musi być skomplikowane.</p>
-        <!-- /wp:paragraph -->
-      </div>
-      <!-- /wp:group -->
-      <!-- wp:group -->
-      <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
-        <!-- wp:paragraph -->
-        <p>Umów się na spotkanie z naszym ekspertem, który przedstawi Ci najkorzystniejsze oferty.</p>
-        <!-- /wp:paragraph -->
+      <div class="wp-block-group title-wrapper max-w-[300px]">
+        <!-- wp:group -->
+        <div class="wp-block-group title text-[60px] font-bold mb-[50px] leading-[70px]">
+          <!-- wp:paragraph -->
+          <p>Uzyskanie kredytu</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph -->
+          <p>nie musi być skomplikowane.</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+        <!-- wp:group -->
+        <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
+          <!-- wp:paragraph -->
+          <p>Umów się na spotkanie z naszym ekspertem, który przedstawi Ci najkorzystniejsze oferty.</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
     </div>
