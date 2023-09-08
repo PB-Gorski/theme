@@ -498,19 +498,7 @@
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
-        <!-- wp:group -->
-        <div class="wp-block-group when-open mb-[30px] text-primaryRed font-bold">
-          <!-- wp:paragraph -->
-          <p>Poniedziałek - Czwartek: 8:00 - 17:00</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <p>Piątek: 8:00 - 16:00</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <p>Soboty pracujące: 9:00 - 14:00</p>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
+
         <!-- wp:paragraph -->
         <p class="text-primaryRed">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</p>
         <!-- /wp:paragraph -->
