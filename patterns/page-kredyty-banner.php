@@ -102,10 +102,7 @@
       <!-- wp:group -->
       <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
         <!-- wp:paragraph -->
-        <p>Uzyskanie kredytu</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:paragraph -->
-        <p>nie musi być skomplikowane.</p>
+        <p>Umów się na spotkanie z naszym ekspertem, który przedstawi Ci najkorzystniejsze oferty.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
