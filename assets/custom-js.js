@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
   // navbar mobile handling
   const btnOpenMenu = document.querySelector(".btn-open-menu");
   const mainNavMenu = document.querySelector(".mobile-nav-menu");
-  const logo = document.querySelector(".logo");
+  const logo = document.querySelector(".logo-mobile");
 
   btnOpenMenu.addEventListener("click", () => {
     if (mainNavMenu.classList.contains("opacity-[0]")) {
