@@ -87,7 +87,7 @@
                 <!-- wp:group -->
                 <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center">
                   <!-- wp:paragraph -->
-                  <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold leading-[46px]"><?php the_title(); ?></p>
+                  <p class="mr-[20px] text-[24px] desktop:text-[36px] font-bold leading-[34px] desktop:leading-[46px]"><?php the_title(); ?></p>
                   <!-- /wp:paragraph -->
 
                   <!-- wp:list -->
