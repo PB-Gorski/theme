@@ -353,7 +353,7 @@
               <!-- wp:group -->
               <div class="wp-block-group text-black">
                 <!-- wp:group -->
-                <div class="wp-block-group phone flex gap-[40px]">
+                <div class="wp-block-group mb-[25px] phone flex gap-[40px]">
                   <!-- wp:group -->
                   <div class="wp-block-group labels">
                     <!-- wp:paragraph -->
