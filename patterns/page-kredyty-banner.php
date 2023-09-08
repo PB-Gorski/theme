@@ -11,8 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner-kredyty relative">
   <!-- wp:group -->
-  <div class="wp-block-group call-back-modal-bg hidden desktop:block opacity-0 z-[-1] bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen transition duration-300 ease">
-  </div>
+  <div class="wp-block-group call-back-modal-bg hidden desktop:block opacity-0 z-[-1] bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen transition duration-300 ease"></div>
   <!-- /wp:group -->
   <!-- wp:group -->
   <div class="wp-block-group call-back-modal hidden desktop:block opacity-0 w-[850px] h-[370px] p-[45px_60px] bg-white fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] z-[-1] transition duration-300 ease">
@@ -88,32 +87,21 @@
       <!-- wp:group -->
       <div class="wp-block-group title text-[60px] font-bold mb-[50px] leading-[70px]">
         <!-- wp:paragraph -->
-        <p>Z chęcią odpowiemy na</p>
+        <p>Uzyskanie kredytu</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p>wszystkie Twoje pytania.</p>
+        <p>nie musi być skomplikowane.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
-
       <!-- wp:group -->
-      <div class="wp-block-group text-[#959ba6] text-[30px]">
+      <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
         <!-- wp:paragraph -->
-        <a href="mailto:sprzedaz@pbgorski.pl" class="inline underline relative hover:text-[#2e384d] transition duration-[300ms] ease after:content-[''] after:absolute after:top-[-10px] after:right-[-20px] after:w-[2px] after:h-[70px] after:m-auto after:bg-[#e1e3e8] after:rotate-[25deg]">sprzedaz@pbgorski.pl</a>
+        <p>Uzyskanie kredytu</p>
         <!-- /wp:paragraph -->
-        <!-- wp:group -->
-        <div class="wp-block-group links-phones mt-[15px]">
-          <!-- wp:paragraph -->
-          <a href="tel:+48583407900" class="inline underline hover:text-[#2e384d] transition duration-[300ms] ease">(+48) 58 340 79 00, </a>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <a href="tel:+48607700555" class="inline underline hover:text-[#2e384d] transition duration-[300ms] ease">607 700 555, </a>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <a href="tel:+48691990112" class="inline underline hover:text-[#2e384d] transition duration-[300ms] ease">691 990 112</a>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
+        <!-- wp:paragraph -->
+        <p>nie musi być skomplikowane.</p>
+        <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
     </div>
