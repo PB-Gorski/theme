@@ -114,7 +114,7 @@
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
-            <p class="underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">Zobacz na GoogleMaps</p>
+            <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Zobacz na GoogleMaps</p>
             <!-- /wp:paragraph -->
           </a>
         </li>
@@ -128,7 +128,7 @@
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
-            <p class="underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">Pokaż trasę dojazdu</p>
+            <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Pokaż trasę dojazdu</p>
             <!-- /wp:paragraph -->
           </a>
         </li>
@@ -188,7 +188,7 @@
                     </figure>
                     <!-- /wp:image -->
                     <!-- wp:paragraph -->
-                    <p class="underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">Zobacz na GoogleMaps</p>
+                    <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Zobacz na GoogleMaps</p>
                     <!-- /wp:paragraph -->
                   </a>
                 </li>
@@ -202,7 +202,7 @@
                     </figure>
                     <!-- /wp:image -->
                     <!-- wp:paragraph -->
-                    <p class="underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">Pokaż trasę dojazdu</p>
+                    <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Pokaż trasę dojazdu</p>
                     <!-- /wp:paragraph -->
                   </a>
                 </li>
@@ -264,7 +264,7 @@
                     <!-- wp:group -->
                     <div class="wp-block-group values">
                       <!-- wp:paragraph -->
-                      <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300"> 607 700 555</a>
+                      <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 607 700 555</a>
                       <!-- /wp:paragraph -->
 
                       <!-- wp:paragraph -->
@@ -310,7 +310,7 @@
                     <!-- wp:group -->
                     <div class="wp-block-group values">
                       <!-- wp:paragraph -->
-                      <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300"> 607 700 555</a>
+                      <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 607 700 555</a>
                       <!-- /wp:paragraph -->
 
                       <!-- wp:paragraph -->
@@ -371,13 +371,13 @@
                   <!-- wp:group -->
                   <div class="wp-block-group values">
                     <!-- wp:paragraph -->
-                    <a href="tel:+48586813031" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">(+48) 58 681-30-31</a>
+                    <a href="tel:+48586813031" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">(+48) 58 681-30-31</a>
                     <!-- /wp:paragraph -->
                     <!-- wp:paragraph -->
-                    <a href="tel:+48586853147" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">(+48) 58 685-31-47</a>
+                    <a href="tel:+48586853147" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">(+48) 58 685-31-47</a>
                     <!-- /wp:paragraph -->
                     <!-- wp:paragraph -->
-                    <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">sekretariat@pbgorski.pl</a>
+                    <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">sekretariat@pbgorski.pl</a>
                     <!-- /wp:paragraph -->
                   </div>
                   <!-- /wp:group -->
@@ -397,7 +397,7 @@
                     </figure>
                     <!-- /wp:image -->
                     <!-- wp:paragraph -->
-                    <p class="underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">Zobacz na GoogleMaps</p>
+                    <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Zobacz na GoogleMaps</p>
                     <!-- /wp:paragraph -->
                   </a>
                 </li>
@@ -411,7 +411,7 @@
                     </figure>
                     <!-- /wp:image -->
                     <!-- wp:paragraph -->
-                    <p class="underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">Pokaż trasę dojazdu</p>
+                    <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Pokaż trasę dojazdu</p>
                     <!-- /wp:paragraph -->
                   </a>
                 </li>
@@ -485,7 +485,7 @@
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
-            <p class="underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">Zobacz na GoogleMaps</p>
+            <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Zobacz na GoogleMaps</p>
             <!-- /wp:paragraph -->
           </a>
         </li>
@@ -499,7 +499,7 @@
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
-            <p class="underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">Pokaż trasę dojazdu</p>
+            <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Pokaż trasę dojazdu</p>
             <!-- /wp:paragraph -->
           </a>
         </li>
