@@ -81,9 +81,9 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group w-full h-[560px] bg-[#f5f7fa] relative py-[60px]">
+  <div class="wp-block-group w-full h-[560px] relative py-[60px]">
     <!-- wp:figure -->
-    <figure class="wp-block-image w-full h-full absolute top-0 left-0">
+    <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-kredyty/banner-bg-kredyty.jpeg" alt="banner-bg">
     </figure>
     <!-- /wp:figure -->
