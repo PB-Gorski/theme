@@ -326,7 +326,6 @@
               <!-- /wp:list-item -->
             </ul>
             <!-- /wp:list -->
-
           </li>
           <!-- /wp:list-item -->
           <!-- wp:list-item -->
@@ -352,15 +351,51 @@
               <p class="py-[15px] text-[18px] text-bgDarkGray mb-[10px]">ul. Kościerska 15, 83-300 Kartuzy</p>
               <!-- /wp:paragraph -->
               <!-- wp:group -->
+              <div class="wp-block-group text-black">
+                <!-- wp:group -->
+                <div class="wp-block-group phone flex gap-[40px]">
+                  <!-- wp:group -->
+                  <div class="wp-block-group labels">
+                    <!-- wp:paragraph -->
+                    <p class="block mb-[20px]">tel</p>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p class="block mb-[20px]">fax:</p>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p class="block">email:</p>
+                    <!-- /wp:paragraph -->
+                  </div>
+                  <!-- /wp:group -->
+
+                  <!-- wp:group -->
+                  <div class="wp-block-group values">
+                    <!-- wp:paragraph -->
+                    <a href="tel:+48586813031" class="mb-[10px] block font-bold underline decoration-2">(+48) 58 681-30-31</a>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <a href="tel:+48586853147" class="mb-[10px] block font-bold underline decoration-2">(+48) 58 685-31-47</a>
+                    <!-- /wp:paragraph -->ś
+                    <!-- wp:paragraph -->
+                    <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2">sekretariat@pbgorski.pl</a>
+                    <!-- /wp:paragraph -->
+                  </div>
+                  <!-- /wp:group -->
+                </div>
+                <!-- /wp:group -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
               <div class="wp-block-group phone mb-[30px] font-semibold">
-                <!-- wp:paragraph -->
-                <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[40px] block"> email: sprzedaz@pbgorski.pl</a>
-                <!-- /wp:paragraph -->
+
                 <!-- wp:paragraph -->
                 <a href="tel:+48583407900" class="block">tel. (+48) 58 340-79-00</a>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
                 <a href="tel:+48583047101" class="block">tel. (+48) 58 304-71-01</a>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <a href="mailto:sprzedaz@pbgorski.pl" class="block"> email: sprzedaz@pbgorski.pl</a>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
