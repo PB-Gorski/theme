@@ -73,7 +73,7 @@
         <p class="text-[30px] text-textGray mb-[30px] font-bold">Umów się na spotkanie</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[24px] text-[#7e878c]">Ewa Cel</p>
+        <p class="mb-[10px] text-[24px] text-[#7e878c] font-bold">Ewa Cel</p>
         <!-- /wp:paragraph -->
         <!-- wp:group -->
         <div class="wp-block-group mb-[25px] phone flex gap-[40px]">
