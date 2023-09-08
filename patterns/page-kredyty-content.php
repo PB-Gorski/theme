@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group left-col w-[50%]">
       <!-- wp:paragraph -->
-      <p class="mb-[30px] text-[24px] text-[#8a8f99]">Aby porównać ofertę kredytów w kilkunastu bankach należy poświęcić dużo czasu na przeglądanie stron w internecie, następnie na wizyty w placówkach i porównywanie poszczególnych ofert. Przychodząc na spotkanie z ekspertem kredytowym PB Górski możesz skrócić cały proces do minimum.</p>
+      <p class="mb-[30px] text-[24px] text-[#8a8f99]">Planując zakup nieruchomości najczęściej wspomagamy się kredytem hipotecznym. Po podjęciu decyzji o kupnie mieszkania, przeglądamy ofertę wybierając odpowiadający nam lokal. I co dalej?</p>
       <!-- /wp:paragraph -->
       <!-- wp:group -->
       <div class="wp-block-group section1 mb-[50px]">
