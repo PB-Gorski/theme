@@ -103,7 +103,7 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group flex">
+      <div class="wp-block-group desktop:flex">
         <!-- wp:group -->
         <div class="wp-block-group col1 pr-[40px] w-fit h-[68px] flex gap-[15px] items-center border-r-[1px] border-[rgba(255,255,255,0.2)]">
           <!-- wp:paragraph -->
