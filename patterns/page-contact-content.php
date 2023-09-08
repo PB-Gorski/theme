@@ -32,10 +32,10 @@
         <!-- wp:group -->
         <div class="wp-block-group phone mb-[30px] font-semibold">
           <!-- wp:paragraph -->
-          <a href="tel:+48607700555">kom. (+48) 607-700-555</a>
+          <a href="tel:+48607700555" class="block">kom. (+48) 607-700-555</a>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <a href="tel:+48691990112">kom. (+48) 691-990-112</a>
+          <a href="tel:+48691990112" class="block">kom. (+48) 691-990-112</a>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
