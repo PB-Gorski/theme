@@ -331,7 +331,7 @@
   <!-- wp:group -->
   <div class="wp-block-group h-full flex justify-between items-center relative z-[2]">
     <!-- wp:group -->
-    <div class="wp-block-group logo mr-[80px] z-[0] relative">
+    <div class="wp-block-group logo-mobile mr-[80px] z-[0] relative">
       <!-- wp:paragraph -->
       <a href="<?php home_url(); ?>">
         <!-- wp:image -->
