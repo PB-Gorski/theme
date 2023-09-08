@@ -14,13 +14,13 @@ window.addEventListener("load", function() {
       mainNavMenu.classList.add("opacity-[1]");
       mainNavMenu.classList.replace('z-[-2]','z-[3]');
       mainNavMenu.classList.remove('translate-x-[100%]');
-      btnOpenMenu.classList.add("active");
+      btnOpenMenu.classList.add("menu-active");
     } else if (mainNavMenu.classList.contains("opacity-[1]")) {
       mainNavMenu.classList.remove("opacity-[1]");
       mainNavMenu.classList.add("opacity-[0]");
       mainNavMenu.classList.replace('z-[3]', 'z-[-2]');
       mainNavMenu.classList.add('translate-x-[100%]');
-      btnOpenMenu.classList.remove("active");
+      btnOpenMenu.classList.remove("menu-active");
     }
   });
 

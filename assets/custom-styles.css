@@ -79,15 +79,15 @@ background-color: #E80D38;
   transform-origin: left;
   transform: rotate(0);
 }
-.active .hamburger-btn-line:nth-child(1) {
+.menu-active .hamburger-btn-line:nth-child(1) {
   transform-origin: left;
   transform: rotate(43deg);
 }
-.active .hamburger-btn-line:nth-child(2) {
+.menu-active .hamburger-btn-line:nth-child(2) {
   transition: all 0.3s ease-out;
   width: 0px;
 }
-.active .hamburger-btn-line:nth-child(3) {
+.menu-active .hamburger-btn-line:nth-child(3) {
   transform-origin: left;
   transform: rotate(-43deg);
 }
