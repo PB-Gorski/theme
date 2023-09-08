@@ -88,7 +88,7 @@
     </figure>
     <!-- /wp:figure -->
     <!-- wp:group -->
-    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[50px]">
+    <div class="wp-block-group max-w-[300px] text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[50px]">
       <!-- wp:group -->
       <div class="wp-block-group title text-[60px] font-bold mb-[50px] leading-[70px]">
         <!-- wp:paragraph -->
