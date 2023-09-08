@@ -101,7 +101,7 @@
         <!-- wp:paragraph -->
         <a href="mailto:sprzedaz@pbgorski.pl" class="inline underline relative hover:text-[#2e384d] transition duration-[300ms] ease after:content-[''] after:absolute after:top-[-10px] after:right-[-20px] after:w-[2px] after:h-[70px] after:m-auto after:bg-[#e1e3e8] after:rotate-[25deg]">sprzedaz@pbgorski.pl</a>
         <!-- /wp:paragraph -->
-        <!-- wp:paragraph -->
+        <!-- wp:group -->
         <div class="wp-block-group links-phones mt-[15px]">
           <!-- wp:paragraph -->
           <a href="tel:+48583407900" class="inline underline hover:text-[#2e384d] transition duration-[300ms] ease">(+48) 58 340 79 00, </a>
