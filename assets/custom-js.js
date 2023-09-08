@@ -16,14 +16,14 @@ window.addEventListener("load", function() {
       mainNavMenu.classList.replace('z-[-2]','z-[3]');
       mainNavMenu.classList.remove('translate-x-[100%]');
       btnOpenMenu.classList.add("menu-active");
-      logo.classList.add("hidden");
+      logo.classList.add("opacity-0");
     } else if (mainNavMenu.classList.contains("opacity-[1]")) {
       mainNavMenu.classList.remove("opacity-[1]");
       mainNavMenu.classList.add("opacity-[0]");
       mainNavMenu.classList.replace('z-[3]', 'z-[-2]');
       mainNavMenu.classList.add('translate-x-[100%]');
       btnOpenMenu.classList.remove("menu-active");
-      logo.classList.remove("hidden");
+      logo.classList.remove("opacity-0");
     }
   });
 
