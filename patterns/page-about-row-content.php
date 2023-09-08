@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group row1 desktop:flex gap-[100px] mb-[80px]">
       <!-- wp:group -->
-      <div class="wp-block-group col1 desktop:w-[50%] pl-[60px]">
+      <div class="wp-block-group col1 desktop:w-[50%] desktop:pl-[60px]">
         <!-- wp:paragraph -->
         <p class="text-[30px] text-textGray leading-[44px]">40 lat obecności na pomorskim rynku, dziesiątki zrealizowanych inwestycji i wiele spektakularnych przedsięwzięć w trakcie realizacji.</p>
         <!-- /wp:paragraph -->
