@@ -82,7 +82,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group w-full h-full bg-banner relative flex items-center">
+  <div class="wp-block-group w-full h-full bg-banner relative flex desktop:block items-center">
     <!-- wp:image -->
     <figure class="wp-block-image w-full h-full absolute top-0 left-0">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/banner.jpeg" alt="banner-background">
