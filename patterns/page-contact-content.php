@@ -73,16 +73,35 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group phone mb-[30px] font-semibold">
-          <!-- wp:paragraph -->
-          <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[40px] block"> email: sprzedaz@pbgorski.pl</a>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <a href="tel:+48583407900" class="block">tel. (+48) 58 340-79-00</a>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <a href="tel:+48583047101" class="block">tel. (+48) 58 304-71-01</a>
-          <!-- /wp:paragraph -->
+        <div class="wp-block-group mb-[25px] phone flex gap-[40px]">
+          <!-- wp:group -->
+          <div class="wp-block-group labels">
+            <!-- wp:paragraph -->
+            <p class="block">email:</p>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <p class="block mb-[20px]">tel</p>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <p class="block mb-[20px]">fax:</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group values">
+            <!-- wp:paragraph -->
+            <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">sprzedaz@pbgorski.pl</a>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <a href="tel:+48583407900" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">(+48) 58 340-79-00</a>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <a href="tel:+483047101" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">(+48) 58 304-71-01</a>
+            <!-- /wp:paragraph -->
+
+          </div>
+          <!-- /wp:group -->
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
@@ -143,7 +162,7 @@
         <!-- wp:list -->
         <ul class="wp-block-list mt-[50px] ml-0">
           <!-- wp:list-item -->
-          <li class="list-content-wrapper py-[10px] border-b-[1px] border-[#e8e8e8] transition ease duration-[500ms]">
+          <li class="list-content-wrapper py-[10px] border-b-[1px] border-[#e8e8e8] transition ease-out duration-[500ms]">
             <!-- wp:group -->
             <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
@@ -152,7 +171,7 @@
                 <p class="w-fit pb-[5px] group-hover:text-primaryYellow uppercase text-bgDarkGray text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500">+</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="font-bold text-[14px] desktop:text-[24px] text-bgDarkGray font-bold self-center">Biuro Zarządu</p>
+                <p class="bar-titlefont-bold text-[14px] desktop:text-[24px] text-bgDarkGray font-bold self-center">Biuro Zarządu</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -162,21 +181,44 @@
             <!-- wp:group -->
             <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] transition-height ease-out duration-[500ms] inactive">
               <!-- wp:paragraph -->
-              <p class="text-[18px] text-bgDarkGray mb-[10px]">ul. Kościerska 15, 83-300 Kartuzy</p>
+              <p class="text-[18px] text-bgDarkGray mb-[35px]">ul. Kościerska 15, 83-300 Kartuzy</p>
               <!-- /wp:paragraph -->
               <!-- wp:group -->
-              <div class="wp-block-group phone mb-[30px] font-semibold">
-                <!-- wp:paragraph -->
-                <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[40px] block"> email: sprzedaz@pbgorski.pl</a>
-                <!-- /wp:paragraph -->
-                <!-- wp:paragraph -->
-                <a href="tel:+48583407900" class="block">tel. (+48) 58 340-79-00</a>
-                <!-- /wp:paragraph -->
-                <!-- wp:paragraph -->
-                <a href="tel:+48583047101" class="block">tel. (+48) 58 304-71-01</a>
-                <!-- /wp:paragraph -->
+              <div class="wp-block-group text-black">
+                <!-- wp:group -->
+                <div class="wp-block-group mb-[25px] phone flex gap-[40px]">
+                  <!-- wp:group -->
+                  <div class="wp-block-group labels">
+                    <!-- wp:paragraph -->
+                    <p class="block mb-[20px]">tel</p>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p class="block mb-[20px]">fax:</p>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p class="block">email:</p>
+                    <!-- /wp:paragraph -->
+                  </div>
+                  <!-- /wp:group -->
+
+                  <!-- wp:group -->
+                  <div class="wp-block-group values">
+                    <!-- wp:paragraph -->
+                    <a href="tel:+48586813031" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">(+48) 58 681-30-31</a>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <a href="tel:+48586853147" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">(+48) 58 685-31-47</a>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">sekretariat@pbgorski.pl</a>
+                    <!-- /wp:paragraph -->
+                  </div>
+                  <!-- /wp:group -->
+                </div>
+                <!-- /wp:group -->
               </div>
               <!-- /wp:group -->
+
               <!-- wp:list -->
               <ul class="wp-block-list font-bold">
                 <!-- wp-list-item -->
