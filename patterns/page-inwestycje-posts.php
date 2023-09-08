@@ -21,7 +21,7 @@
         <!-- /wp:paragraph -->
 
         <!-- wp:list -->
-        <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex items-center gap-[20px] text-[18px] font-medium">
+        <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
           <?php
           $args = array(
             'taxonomy' => 'category',
