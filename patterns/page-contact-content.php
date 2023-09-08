@@ -375,7 +375,7 @@
                     <!-- /wp:paragraph -->
                     <!-- wp:paragraph -->
                     <a href="tel:+48586853147" class="mb-[10px] block font-bold underline decoration-2">(+48) 58 685-31-47</a>
-                    <!-- /wp:paragraph -->ś
+                    <!-- /wp:paragraph -->
                     <!-- wp:paragraph -->
                     <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2">sekretariat@pbgorski.pl</a>
                     <!-- /wp:paragraph -->
@@ -385,20 +385,7 @@
                 <!-- /wp:group -->
               </div>
               <!-- /wp:group -->
-              <!-- wp:group -->
-              <div class="wp-block-group phone mb-[30px] font-semibold">
 
-                <!-- wp:paragraph -->
-                <a href="tel:+48583407900" class="block">tel. (+48) 58 340-79-00</a>
-                <!-- /wp:paragraph -->
-                <!-- wp:paragraph -->
-                <a href="tel:+48583047101" class="block">tel. (+48) 58 304-71-01</a>
-                <!-- /wp:paragraph -->
-                <!-- wp:paragraph -->
-                <a href="mailto:sprzedaz@pbgorski.pl" class="block"> email: sprzedaz@pbgorski.pl</a>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
               <!-- wp:list -->
               <ul class="wp-block-list font-bold">
                 <!-- wp-list-item -->
