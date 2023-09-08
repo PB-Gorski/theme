@@ -25,5 +25,3 @@
   <!-- /wp:list -->
 </div>
 <!-- /wp:group -->
-</div>
-<!-- /wp:group -->
