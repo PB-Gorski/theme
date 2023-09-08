@@ -77,13 +77,13 @@
           <!-- wp:group -->
           <div class="wp-block-group labels">
             <!-- wp:paragraph -->
-            <p class="block">email:</p>
+            <p class="block mb-[30px]">email:</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="block mb-[20px]">tel</p>
+            <p class="block mb-[20px]">tel.</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="block mb-[20px]">fax:</p>
+            <p class="block mb-[20px]">tel.</p>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
@@ -91,7 +91,7 @@
           <!-- wp:group -->
           <div class="wp-block-group values">
             <!-- wp:paragraph -->
-            <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">sprzedaz@pbgorski.pl</a>
+            <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[30px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">sprzedaz@pbgorski.pl</a>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
             <a href="tel:+48583407900" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">(+48) 58 340-79-00</a>
