@@ -14,5 +14,7 @@
   <p> contact form</p>
   <!-- /wp:paragraph -->
 
+  <!-- wp:wpmapblock/wp-map-block {"map_id":"wpmapblock_cbd28970","map_marker_list":[{"lat":"54.3841225","lng":"18.6071059","title":"PB Górski","content":"","iconType":"default","customIconUrl":"","customIconWidth":25,"customIconHeight":40}]} /-->
+
 </div>
 <!-- /wp:group -->
