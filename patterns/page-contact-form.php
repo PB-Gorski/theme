@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="content" class="wp-block-group contact-form relative">
+<div id="contact-form" class="wp-block-group contact-form relative">
   <!-- wp:paragraph -->
   <p> contact form</p>
   <!-- /wp:paragraph -->
