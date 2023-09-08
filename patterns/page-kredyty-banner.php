@@ -81,7 +81,12 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group w-full bg-[#f5f7fa] relative py-[60px]">
+  <div class="wp-block-group w-full h-[560px] bg-[#f5f7fa] relative py-[60px]">
+    <!-- wp:figure -->
+    <figure class="wp-block-image w-full h-full">
+      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/page-content.png" alt="banner-bg">
+    </figure>
+    <!-- /wp:figure -->
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[50px]">
       <!-- wp:group -->
