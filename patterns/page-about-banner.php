@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Banner" class="wp-block-group banner h-[35vh] desktop:h-[90vh] relative">
+<div id="Banner" class="wp-block-group banner h-[80vh] desktop:h-[90vh] relative">
   <!-- wp:group -->
   <div class="wp-block-group call-back-modal-bg hidden desktop:block opacity-0 z-[-1] bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen transition duration-300 ease">
   </div>
@@ -92,7 +92,7 @@
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[80px] z-[0] relative text-white">
       <!-- wp:group -->
-      <div class="wp-block-group title text-[60px] font-bold pt-[150px] mb-[50px] leading-[70px]">
+      <div class="wp-block-group title text-[36px] desktop:text-[60px] font-bold pt-[30px] desktop:pt-[150px] mb-[50px] leading-[70px]">
         <!-- wp:paragraph -->
         <p>Poznaj naszą historię,</p>
         <!-- /wp:paragraph -->
