@@ -10,6 +10,8 @@
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="content" class="wp-block-group contact-form relative">
-  contact form
+  <!-- wp:paragraph -->
+  <p> contact form</p>
+  <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
