@@ -20,6 +20,10 @@
         <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold">Aktualności</p>
         <!-- /wp:paragraph -->
 
+        <!-- wp:contact-form-7/contact-form-selector {"id":65,"hash":"3358ba5","title":"test"} -->
+        <div class="wp-block-contact-form-7-contact-form-selector">[contact-form-7 id="3358ba5" title="test"]</div>
+        <!-- /wp:contact-form-7/contact-form-selector -->
+
         <!-- wp:list -->
         <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
           <?php
