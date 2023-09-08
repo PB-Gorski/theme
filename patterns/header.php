@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto h-[100px] flex items-center">
     <!-- wp:group -->
-    <div class="wp-block-group logo mr-[80px]">
+    <div class="wp-block-group logo mr-[40px]">
       <!-- wp:paragraph -->
       <a href="<?php echo home_url(); ?>">
         <!-- wp:image -->
@@ -331,7 +331,7 @@
   <!-- wp:group -->
   <div class="wp-block-group h-full flex justify-between items-center">
     <!-- wp:group -->
-    <div class="wp-block-group logo mr-[40px]">
+    <div class="wp-block-group logo mr-[80px]">
       <!-- wp:paragraph -->
       <a href="<?php home_url(); ?>">
         <!-- wp:image -->
