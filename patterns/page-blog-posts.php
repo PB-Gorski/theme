@@ -11,13 +11,13 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="blog-post" class="wp-block-group blog-post relative">
   <!-- wp:group -->
-  <div class="wp-block-group title-wrapper py-[48px] bg-[#f6f7fa]">
+  <div class="wp-block-group title-wrapper py-[20px] desktop:py-[48px] bg-[#f6f7fa]">
     <!-- wp:group -->
     <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:group -->
       <div class="wp-block-group">
         <!-- wp:paragraph -->
-        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[60px] text-[#2e384c] font-bold">Aktualności</p>
+        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold">Aktualności</p>
         <!-- /wp:paragraph -->
 
         <!-- wp:list -->
