@@ -42,7 +42,7 @@ if (!defined('ABSPATH')) {
       <td>
         <!-- [checkbox* your-content x5 id:your-content ] -->
         <input id="check1" cols="50" row="10" name="check1" type="checkbox" class="inline" />
-        <label for="check1" class="inline text-[#8a8f99] text-[12px]"> Wyrażam zgodę na przetwarzanie moich danych osobowych, podanych w formularzu kontaktowym, przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku w celu udzielenia odpowiedzi na zapytanie. Podanie danych jest dobrowolne. Oświadczam, że zapoznałem się z klauzulą informacyjną w zakresie ochrony danych osobowych dostępną tutaj</label>
+        <label for="check1" class="inline text-[#8a8f99] text-[12px] leading-[18px]"> Wyrażam zgodę na przetwarzanie moich danych osobowych, podanych w formularzu kontaktowym, przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku w celu udzielenia odpowiedzi na zapytanie. Podanie danych jest dobrowolne. Oświadczam, że zapoznałem się z klauzulą informacyjną w zakresie ochrony danych osobowych dostępną tutaj</label>
       </td>
     </tr>
     <tr>
@@ -50,13 +50,13 @@ if (!defined('ABSPATH')) {
       <td>
         <!-- [checkbox* your-content x5 id:your-content ] -->
         <input id="check2" name="check2" type="checkbox" class="inline" />
-        <label for="check2" class="inline text-[#8a8f99] text-[12px]"> Wyrażam zgodę na przetwarzanie moich danych osobowych, podanych w formularzu kontaktowym, przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku w celu przesyłania informacji marketingowych na mój adres email podany w formularzu. Podanie danych jest dobrowolne. Oświadczam, że zapoznałem się z klauzulą informacyjną w zakresie ochrony danych osobowych dostępną tutaj</label>
+        <label for="check2" class="inline text-[#8a8f99] text-[12px] leading-[18px]"> Wyrażam zgodę na przetwarzanie moich danych osobowych, podanych w formularzu kontaktowym, przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku w celu przesyłania informacji marketingowych na mój adres email podany w formularzu. Podanie danych jest dobrowolne. Oświadczam, że zapoznałem się z klauzulą informacyjną w zakresie ochrony danych osobowych dostępną tutaj</label>
       </td>
     </tr>
     <tr>
       <th><label for="your-content" onclick=""></label></th>
       <td>
-        <p class="text-[#8a8f99] text-[12px]">Informujemy, że administratorem Państwa danych osobowych podanych w powyższym formularzu jest Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku (80-312) ul. Wita Stwosza 31A/31. Państwa dane przetwarzane będą w celu udzielenia odpowiedzi na zapytanie oraz, w przypadku wyrażenia zgody na cele marketingowe, do przesyłania treści marketingowych, zgodnie z art. 6 ust. 1 lit. a) i b) ogólnego rozporządzenia o ochronie danych osobowych. Udzielona przez Państwa zgoda może zostać cofnięta w dowolnym momencie przez wysłanie wiadomości e-mail na adres iod@pbgorski.pl spod adresu, którego zgoda dotyczy. Pełne informacje o zasadach przetwarzania danych osobowych przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku dostępne są w zakładce RODO</p>
+        <p class="text-[#8a8f99] text-[12px] leading-[18px]">Informujemy, że administratorem Państwa danych osobowych podanych w powyższym formularzu jest Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku (80-312) ul. Wita Stwosza 31A/31. Państwa dane przetwarzane będą w celu udzielenia odpowiedzi na zapytanie oraz, w przypadku wyrażenia zgody na cele marketingowe, do przesyłania treści marketingowych, zgodnie z art. 6 ust. 1 lit. a) i b) ogólnego rozporządzenia o ochronie danych osobowych. Udzielona przez Państwa zgoda może zostać cofnięta w dowolnym momencie przez wysłanie wiadomości e-mail na adres iod@pbgorski.pl spod adresu, którego zgoda dotyczy. Pełne informacje o zasadach przetwarzania danych osobowych przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku dostępne są w zakładce RODO</p>
       </td>
     </tr>
   </tbody>
