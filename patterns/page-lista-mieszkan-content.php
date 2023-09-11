@@ -199,7 +199,7 @@
                 foreach ($taxesTest as $taxTest) {
                 ?>
                   <!-- wp:list-item -->
-                  <li class="w-fit"><?php echo $taxTest; ?></li>
+                  <li class="w-fit flex gap-[4px]"><?php echo $taxTest; ?></li>
                   <!-- /wp:list-item -->
                 <?php }; ?>
               </ul>
