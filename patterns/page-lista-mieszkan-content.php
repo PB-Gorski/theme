@@ -173,12 +173,20 @@
       if ($post_query->have_posts()) {
         while ($post_query->have_posts()) {
           $post_query->the_post();
+          $tax = get_terms();
+          $tax2 = get_taxonomies();
       ?>
           <!-- wp:list-item -->
           <li class="py-[20px] border-b-[1px] border-[#e6eaf0]">
-            <a href="<?php the_permalink(); ?>" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
+            <a href="<?php the_permalink(); ?>" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30" class="flex gap-[20px]">
               <!-- wp:paragraph -->
               <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php the_title(); ?></p>
+              <!-- /wp:paragraph -->
+              <!-- wp:paragraph -->
+              <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php print_r($tax); ?></p>
+              <!-- /wp:paragraph -->
+              <!-- wp:paragraph -->
+              <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php print_r($tax2); ?></p>
               <!-- /wp:paragraph -->
             </a>
           </li>
