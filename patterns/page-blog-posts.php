@@ -23,7 +23,7 @@
 
 
         <!-- wp:list -->
-        <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
+        <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
           <?php
           $taxonomies = get_terms(array(
             'taxonomy' => 'osiedla',
