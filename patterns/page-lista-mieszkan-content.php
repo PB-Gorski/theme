@@ -133,7 +133,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[25px] desktop:flex gap-[50px]">
+    <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[25px]">
 
       <!-- wp:group -->
       <div class="wp-block-group taxonomy-list">
@@ -163,42 +163,38 @@
       </div>
       <!-- /wp:group -->
 
-      <!-- wp:group -->
-      <div class="wp-block-group lista-mieszkan">
-        <!-- wp:list -->
-        <ul class="wp-block-list mb-[40px] flex desktop:flex-col flex-col justify-between gap-[30px]">
-          <?php
-          $args = array(
-            'post_type' => 'lokale',
-            'posts_per_page' => 3,
-            'order' => 'ASC'
-          );
-          $post_query = new WP_Query($args);
+      <!-- wp:list -->
+      <ul class="wp-block-list lista-mieszkan mb-[40px] flex desktop:flex-col flex-col justify-between gap-[30px]">
+        <?php
+        $args = array(
+          'post_type' => 'lokale',
+          'posts_per_page' => 3,
+          'order' => 'ASC'
+        );
+        $post_query = new WP_Query($args);
 
-          if ($post_query->have_posts()) {
-            while ($post_query->have_posts()) {
-              $post_query->the_post();
-          ?>
-              <!-- wp:list-item -->
-              <li class="invest-tile max-w-full">
-                <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
-                  <!-- wp:group -->
+        if ($post_query->have_posts()) {
+          while ($post_query->have_posts()) {
+            $post_query->the_post();
+        ?>
+            <!-- wp:list-item -->
+            <li class="invest-tile max-w-full">
+              <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
+                <!-- wp:group -->
 
-                  <!-- wp:paragraph -->
-                  <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold"><?php the_title(); ?></p>
-                  <!-- /wp:paragraph -->
-                </a>
-              </li>
-              <!-- /wp:list-item -->
-          <?php
-            };
+                <!-- wp:paragraph -->
+                <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold"><?php the_title(); ?></p>
+                <!-- /wp:paragraph -->
+              </a>
+            </li>
+            <!-- /wp:list-item -->
+        <?php
           };
-          wp_reset_query();
-          ?>
-        </ul>
-        <!-- /wp:list -->
-      </div>
-      <!-- /wp:group -->
+        };
+        wp_reset_query();
+        ?>
+      </ul>
+      <!-- /wp:list -->
     </div>
     <!-- /wp:group -->
 
