@@ -134,10 +134,6 @@
   </div>
   <!-- /wp:group -->
 
-  <?php do_action('show_beautiful_filters'); ?>
-  <?php echo '<br>'; ?>
-  <?php do_action('show_beautiful_filters_info'); ?>
-
 
   <!-- wp:group -->
   <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[85px]">
@@ -174,14 +170,8 @@
         'order' => 'ASC'
       );
       $post_query = new WP_Query($args);
-      do_action('show_beautiful_filters');
-      echo '<br>';
-      do_action('show_beautiful_filters_info');
 
       if ($post_query->have_posts()) {
-        do_action('show_beautiful_filters');
-        echo '<br>';
-        do_action('show_beautiful_filters_info');
         while ($post_query->have_posts()) {
           $post_query->the_post();
           $tax = get_terms();
