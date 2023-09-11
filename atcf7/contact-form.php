@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
 <table>
   <tbody>
     <tr class="mb-[10px]">
-      <th><label for="your-name" onclick=""></label></th>
+      <th><label for="your-name" onclick="" class="hidden"></label></th>
       <td>
         [text* your-name id:your-name ]
         <input id="your-name" name="your-name" type="text" placeholder="Imię i nazwisko" class="px-[15px] py-[10px] w-[500px] w-full h-[60px] text-[#2e384d]">
