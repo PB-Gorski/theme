@@ -134,6 +134,11 @@
   </div>
   <!-- /wp:group -->
 
+  <?php do_action('show_beautiful_filters'); ?>
+  <?php echo '<br>'; ?>
+  <?php do_action('show_beautiful_filters_info'); ?>
+
+
   <!-- wp:group -->
   <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[85px]">
     <!-- wp:list -->
