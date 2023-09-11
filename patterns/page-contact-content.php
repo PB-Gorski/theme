@@ -81,9 +81,9 @@
   </div>
   <!-- /wp:group -->
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[50px] flex gap-[50px]">
+  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[50px] desktop:flex gap-[50px]">
     <!-- wp:group -->
-    <div class="wp-block-group left-col w-[50%]">
+    <div class="wp-block-group left-col desktop:w-[50%]">
       <!-- wp:group -->
       <div class="wp-block-group section1 mb-[50px]">
         <!-- wp:paragraph -->
@@ -228,7 +228,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group right-col w-[50%]">
+    <div class="wp-block-group right-col desktop:w-[50%]">
       <!-- wp:group -->
       <div class="wp-block-group section1-drop-down mb-[50px]">
         <!-- wp:list -->
