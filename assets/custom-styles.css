@@ -253,3 +253,7 @@ background-color: #E80D38;
   height: 400px !important;
 }
 
+/* contact form */
+#your-name::placeholder {
+  /* ... */
+}
