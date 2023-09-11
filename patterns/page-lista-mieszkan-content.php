@@ -141,14 +141,11 @@
         <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] pb-[50px] fflex flex-wrap items-center gap-[20px] text-[18px] font-medium">
           <?php
           $taxonomies = get_terms();
+          $taxonomies2 = get_taxonomies();
           print_r($taxonomies);
+          echo '</br>';
+          print_r($taxonomies2);
           ?>
-
-          <!-- wp:list-item -->
-          <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-            <a href="<?php echo get_home_url() . '/blog'; ?>" class="">Wszystkie</a>
-          </li>
-          <!-- /wp:list-item -->
 
           <?php
           foreach ($taxonomies as $taxonomy) {
