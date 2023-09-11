@@ -140,6 +140,7 @@
         <!-- wp:list -->
         <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
           <?php
+          $i = 0;
           $taxonomies = get_terms();
           $taxonomies2 = get_taxonomies();
           print_r($taxonomies);
@@ -149,11 +150,13 @@
 
           <?php
           foreach ($taxonomies2 as $taxonomy) {
+            if ($i > 7) {
           ?>
-            <!-- wp:list-item -->
-            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="#" class=""><?php echo $taxonomy; ?></a></li>
-            <!-- /wp:list-item -->
-          <?php }; ?>
+              <!-- wp:list-item -->
+              <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="#" class=""><?php echo $taxonomy; ?></a></li>
+              <!-- /wp:list-item -->
+          <?php }
+          }; ?>
         </ul>
         <!-- /wp:list -->
       </div>
