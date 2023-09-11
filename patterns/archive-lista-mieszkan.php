@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Title: archive-investments
- * Slug: archive-investments
+ * Title: archive-lista-mieszkan
+ * Slug: archive-lista-mieszkan
  * Categories: text, banner
  * Viewport Width: 1280
  */
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="inwestycje-archive" class="wp-block-group inwestycje-archive relative">
+<div id="inwestycje-archive" class="wp-block-group archive-lista-mieszkan relative">
   <!-- wp:group -->
   <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
     <!-- wp:group -->
