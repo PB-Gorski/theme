@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: archive-mieszkan
- * Slug: archive-mieszkan
+ * Title: archive-mieszkania
+ * Slug: archive-mieszkania
  * Categories: text, banner
  * Viewport Width: 1280
  */
