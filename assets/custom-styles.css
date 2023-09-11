@@ -258,5 +258,8 @@ input{
   padding-left: 15px;
 }
 input:focus{
-  border:red;
+  border:red!important;
+}
+input:active{
+  border:green!important;
 }
