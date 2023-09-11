@@ -199,7 +199,7 @@
                 foreach ($taxesTest as $taxTest) {
                 ?>
                   <!-- wp:list-item -->
-                  <li><?php echo $taxTest; ?></li>
+                  <li class="w-fit"><?php echo $taxTest; ?></li>
                   <!-- /wp:list-item -->
                 <?php }; ?>
               </ul>
