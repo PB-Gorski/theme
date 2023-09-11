@@ -265,3 +265,6 @@ input:focus,
 textarea:focus{
   outline: none;
 }
+label{
+  line-height: 18px;
+}
