@@ -175,6 +175,7 @@
           $post_query->the_post();
           $tax = get_terms();
           $tax2 = get_taxonomies();
+          print_r(get_the_ID());
       ?>
           <!-- wp:list-item -->
           <li class="py-[20px] border-b-[1px] border-[#e6eaf0]">
