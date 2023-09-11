@@ -9,9 +9,9 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="content" class="wp-block-group content relative bg-bgLightGray">
+<div id="content" class="wp-block-group content relative ">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[25px] desktop:flex gap-[50px]">
+  <div class="wp-block-group bg-bgLightGray">
     <!-- wp:group -->
     <div class="wp-block-group search-wrapper mx-auto desktop:px-0 px-[20px] text-[18px] flex flex-col desktop:flex-row gap-[10px] desktop:gap-[1px]">
       <!-- wp:group -->
@@ -133,90 +133,95 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group taxonomy-list">
-      <!-- wp:list -->
-      <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] pb-[50px] fflex flex-wrap items-center gap-[20px] text-[18px] font-medium">
-        <?php
-        $taxonomies = get_terms();
-        // print_r($post_tag);
-        ?>
+    <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[25px] desktop:flex gap-[50px]">
 
-        <!-- wp:list-item -->
-        <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-          <a href="<?php echo get_home_url() . '/blog'; ?>" class="">Wszystkie</a>
-        </li>
-        <!-- /wp:list-item -->
+      <!-- wp:group -->
+      <div class="wp-block-group taxonomy-list">
+        <!-- wp:list -->
+        <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] pb-[50px] fflex flex-wrap items-center gap-[20px] text-[18px] font-medium">
+          <?php
+          $taxonomies = get_terms();
+          // print_r($post_tag);
+          ?>
 
-        <?php
-        foreach ($taxonomies as $taxonomy) {
-        ?>
           <!-- wp:list-item -->
-          <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo get_category_link($taxonomy->term_id) ?>" class=""><?php echo $taxonomy->name; ?></a></li>
+          <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+            <a href="<?php echo get_home_url() . '/blog'; ?>" class="">Wszystkie</a>
+          </li>
           <!-- /wp:list-item -->
-        <?php }; ?>
-      </ul>
-      <!-- /wp:list -->
-    </div>
-    <!-- /wp:group -->
 
-    <!-- wp:group -->
-    <div class="wp-block-group lista-mieszkan">
-      <!-- wp:list -->
-      <ul class="wp-block-list mb-[40px] flex desktop:flex-col flex-col justify-between gap-[30px]">
-        <?php
-        $args = array(
-          'post_type' => 'lokale',
-          'posts_per_page' => 3,
-          'order' => 'ASC'
-        );
-        $post_query = new WP_Query($args);
-
-        if ($post_query->have_posts()) {
-          while ($post_query->have_posts()) {
-            $post_query->the_post();
-        ?>
+          <?php
+          foreach ($taxonomies as $taxonomy) {
+          ?>
             <!-- wp:list-item -->
-            <li class="invest-tile max-w-full">
-              <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
-                <!-- wp:group -->
-                <div class="wp-block-group wrapper">
+            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo get_category_link($taxonomy->term_id) ?>" class=""><?php echo $taxonomy->name; ?></a></li>
+            <!-- /wp:list-item -->
+          <?php }; ?>
+        </ul>
+        <!-- /wp:list -->
+      </div>
+      <!-- /wp:group -->
 
-                  <!-- wp:paragraph -->
-                  <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold"><?php the_title(); ?></p>
-                  <!-- /wp:paragraph -->
-                  <!-- wp:paragraph -->
-                  <p class="mb-[15px] text-[18px] text-bgDarkGray">Gdańsk</p>
-                  <!-- /wp:paragraph -->
+      <!-- wp:group -->
+      <div class="wp-block-group lista-mieszkan">
+        <!-- wp:list -->
+        <ul class="wp-block-list mb-[40px] flex desktop:flex-col flex-col justify-between gap-[30px]">
+          <?php
+          $args = array(
+            'post_type' => 'lokale',
+            'posts_per_page' => 3,
+            'order' => 'ASC'
+          );
+          $post_query = new WP_Query($args);
 
+          if ($post_query->have_posts()) {
+            while ($post_query->have_posts()) {
+              $post_query->the_post();
+          ?>
+              <!-- wp:list-item -->
+              <li class="invest-tile max-w-full">
+                <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
                   <!-- wp:group -->
-                  <div class="wp-block-group available-apartments flex items-center gap-[25px]">
+                  <div class="wp-block-group wrapper">
+
                     <!-- wp:paragraph -->
-                    <p class="text-[48px] text-primaryRed font-bold">41</p>
+                    <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold"><?php the_title(); ?></p>
                     <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p class="mb-[15px] text-[18px] text-bgDarkGray">Gdańsk</p>
+                    <!-- /wp:paragraph -->
+
                     <!-- wp:group -->
-                    <div class="wp-block-group leading-[24px]">
+                    <div class="wp-block-group available-apartments flex items-center gap-[25px]">
                       <!-- wp:paragraph -->
-                      <p class="text-[18px] text-bgDarkGray">dostępnych</p>
+                      <p class="text-[48px] text-primaryRed font-bold">41</p>
                       <!-- /wp:paragraph -->
-                      <!-- wp:paragraph -->
-                      <p class="text-[18px] text-bgDarkGray">lokali</p>
-                      <!-- /wp:paragraph -->
+                      <!-- wp:group -->
+                      <div class="wp-block-group leading-[24px]">
+                        <!-- wp:paragraph -->
+                        <p class="text-[18px] text-bgDarkGray">dostępnych</p>
+                        <!-- /wp:paragraph -->
+                        <!-- wp:paragraph -->
+                        <p class="text-[18px] text-bgDarkGray">lokali</p>
+                        <!-- /wp:paragraph -->
+                      </div>
+                      <!-- /wp:group -->
                     </div>
                     <!-- /wp:group -->
                   </div>
                   <!-- /wp:group -->
-                </div>
-                <!-- /wp:group -->
-              </a>
-            </li>
-            <!-- /wp:list-item -->
-        <?php
+                </a>
+              </li>
+              <!-- /wp:list-item -->
+          <?php
+            };
           };
-        };
-        wp_reset_query();
-        ?>
-      </ul>
-      <!-- /wp:list -->
+          wp_reset_query();
+          ?>
+        </ul>
+        <!-- /wp:list -->
+      </div>
+      <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
 
