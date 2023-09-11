@@ -257,3 +257,6 @@ background-color: #E80D38;
 input{
   padding-left: 15px;
 }
+input:focus{
+  border:red;
+}
