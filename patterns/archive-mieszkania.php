@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Title: archive-lista-mieszkan
- * Slug: archive-lista-mieszkan
+ * Title: archive-mieszkan
+ * Slug: archive-mieszkan
  * Categories: text, banner
  * Viewport Width: 1280
  */
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="inwestycje-archive" class="wp-block-group archive-lista-mieszkan relative">
+<div id="inwestycje-archive" class="wp-block-group archive-mieszkania relative">
   <!-- wp:group -->
   <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
     <!-- wp:group -->
@@ -17,7 +17,7 @@
       <!-- wp:group -->
       <div class="wp-block-group left-col desktop:w-[70%]">
         <!-- wp:paragraph -->
-        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">Wszystkie inwestycje archive-lista-mieszkan</p>
+        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">Wszystkie inwestycje archive-mieszkania</p>
         <!-- /wp:paragraph -->
 
         <!-- wp:list -->
