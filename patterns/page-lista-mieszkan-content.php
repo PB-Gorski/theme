@@ -161,6 +161,12 @@
     </ul>
     <!-- /wp:list -->
 
+    <?php
+    do_action('show_beautiful_filters', array(
+      'post_type' => 'mieszkania'
+    ));
+    ?>
+
     <!-- wp:list -->
     <ul class="wp-block-list lista-mieszkan mb-[40px]">
       <?php
