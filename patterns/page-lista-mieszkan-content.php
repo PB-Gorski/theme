@@ -151,7 +151,7 @@
           foreach ($taxonomies2 as $taxonomy) {
           ?>
             <!-- wp:list-item -->
-            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="#" class=""><?php echo $taxonomy->name; ?></a></li>
+            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="#" class=""><?php echo $taxonomy; ?></a></li>
             <!-- /wp:list-item -->
           <?php }; ?>
         </ul>
