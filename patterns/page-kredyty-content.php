@@ -11,9 +11,9 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="content" class="wp-block-group content relative">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[50px] flex gap-[50px]">
+  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[50px] desktop:flex gap-[50px]">
     <!-- wp:group -->
-    <div class="wp-block-group left-col w-[50%]">
+    <div class="wp-block-group left-col desktop:w-[50%]">
       <!-- wp:paragraph -->
       <p class="mb-[30px] text-[24px] text-[#8a8f99]">Planując zakup nieruchomości najczęściej wspomagamy się kredytem hipotecznym. Po podjęciu decyzji o kupnie mieszkania, przeglądamy ofertę wybierając odpowiadający nam lokal. I co dalej?</p>
       <!-- /wp:paragraph -->
@@ -66,7 +66,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group right-col w-[50%]">
+    <div class="wp-block-group right-col desktop:w-[50%]">
       <!-- wp:group -->
       <div class="wp-block-group section2 mb-[50px]">
         <!-- wp:paragraph -->
