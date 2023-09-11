@@ -187,7 +187,7 @@
               <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php print_r($tax); ?></p>
               <!-- /wp:paragraph -->
               <!-- wp:paragraph -->
-              <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php echo wp_get_post_terms(get_the_ID()); ?></p>
+              <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php print_r(wp_get_post_terms(get_the_ID())); ?></p>
               <!-- /wp:paragraph -->
             </a>
           </li>
