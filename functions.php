@@ -341,7 +341,7 @@ function custom_post_types()
 	register_post_type('inwestycje', array(
 		'public' => true,
 		'labels' => array(
-			'name' => 'Inwestycje',
+			'name' => 'Inwestycje (Osiedla)',
 			'add_new_item' => 'Dodaj inwestycje',
 			'edit_item' => 'Edytuj inwestycje',
 			'all_items' => 'Wszystkie inwestycje',
