@@ -92,7 +92,7 @@
       <!-- wp:group -->
       <div class="wp-block-group title-wrapper max-w-[500px]">
         <!-- wp:group -->
-        <div class="wp-block-group title text-[60px] font-bold mb-[20px] leading-[70px]">
+        <div class="wp-block-group title text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
           <!-- wp:paragraph -->
           <p>Uzyskanie kredytu</p>
           <!-- /wp:paragraph -->
