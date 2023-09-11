@@ -240,17 +240,17 @@ background-color: #E80D38;
   position: relative;
   text-align: right;
   width: 600px;
-  height: 400px;
+  height: 100%;
 }
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
   width: 600px;
-  height: 400px;
+  height: 100%;
 }
 .gmap_iframe {
   width: 600px !important;
-  height: 400px !important;
+  height: 100%!important;
 }
 
 /* contact form */
