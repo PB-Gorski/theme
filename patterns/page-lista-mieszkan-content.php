@@ -196,14 +196,14 @@
                   'taxonomy' => 'metraz',
                   'hide_empty' => false,
                 ));
-                $taxesTest = get_the_taxonomies(get_the_ID())
+                $taxesTest = get_the_taxonomies(get_the_ID());
                 print_r(get_the_taxonomies(get_the_ID()));
                 ?>
                 <?php
                 foreach ($taxesTest as $taxTest) {
                 ?>
                   <!-- wp:list-item -->
-                  <li><a href="#" class=""><?php echo $tax->name; ?></a></li>
+                  <li><a href="#" class=""><?php echo $taxTest; ?></a></li>
                   <!-- /wp:list-item -->
                 <?php }; ?>
               </ul>
