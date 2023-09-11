@@ -90,7 +90,7 @@
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:group -->
-      <div class="wp-block-group title-wrapper max-w-[500px]">
+      <div class="wp-block-group title-wrapper">
         <!-- wp:group -->
         <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
           <!-- wp:paragraph -->
@@ -101,7 +101,7 @@
         <!-- wp:group -->
         <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <p class="opacity-[0.75]">Określ parametry, aby znaleźć mieszkanie dokładnie
+          <p class="max-w-[550px] text-white opacity-[0.75]">Określ parametry, aby znaleźć mieszkanie dokładnie
             takie, jakiego potrzebujesz.</p>
           <!-- /wp:paragraph -->
         </div>
