@@ -254,7 +254,8 @@ background-color: #E80D38;
 }
 
 /* contact form */
-input{
+input,
+textarea{
   padding-left: 15px;
 }
 input:focus{
