@@ -184,10 +184,10 @@
               <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php the_title(); ?></p>
               <!-- /wp:paragraph -->
               <!-- wp:paragraph -->
-              <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php (get_terms(get_the_ID())); ?></p>
+              <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php  ?></p>
               <!-- /wp:paragraph -->
               <!-- wp:paragraph -->
-              <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php (get_taxonomies(get_the_ID())); ?></p>
+              <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php ?></p>
               <!-- /wp:paragraph -->
             </a>
           </li>
