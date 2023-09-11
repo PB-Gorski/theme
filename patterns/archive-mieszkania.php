@@ -164,12 +164,7 @@
     <!-- wp:list -->
     <ul class="wp-block-list lista-mieszkan mb-[40px]">
       <?php
-      $args = array(
-        'post_type' => 'mieszkania',
-        'posts_per_page' => 3,
-        'order' => 'ASC'
-      );
-      $post_query = new WP_Query($args);
+      $post_query = new WP_Query();
       do_action('show_beautiful_filters', 'mieszkania');
 
       if ($post_query->have_posts()) {
