@@ -148,7 +148,7 @@
           ?>
 
           <?php
-          foreach ($taxonomies as $taxonomy) {
+          foreach ($taxonomies2 as $taxonomy) {
           ?>
             <!-- wp:list-item -->
             <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo get_category_link($taxonomy->term_id) ?>" class=""><?php echo $taxonomy->name; ?></a></li>
