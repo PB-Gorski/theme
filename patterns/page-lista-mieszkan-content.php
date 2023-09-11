@@ -183,34 +183,10 @@
               <li class="invest-tile max-w-full">
                 <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
                   <!-- wp:group -->
-                  <div class="wp-block-group wrapper">
 
-                    <!-- wp:paragraph -->
-                    <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold"><?php the_title(); ?></p>
-                    <!-- /wp:paragraph -->
-                    <!-- wp:paragraph -->
-                    <p class="mb-[15px] text-[18px] text-bgDarkGray">Gdańsk</p>
-                    <!-- /wp:paragraph -->
-
-                    <!-- wp:group -->
-                    <div class="wp-block-group available-apartments flex items-center gap-[25px]">
-                      <!-- wp:paragraph -->
-                      <p class="text-[48px] text-primaryRed font-bold">41</p>
-                      <!-- /wp:paragraph -->
-                      <!-- wp:group -->
-                      <div class="wp-block-group leading-[24px]">
-                        <!-- wp:paragraph -->
-                        <p class="text-[18px] text-bgDarkGray">dostępnych</p>
-                        <!-- /wp:paragraph -->
-                        <!-- wp:paragraph -->
-                        <p class="text-[18px] text-bgDarkGray">lokali</p>
-                        <!-- /wp:paragraph -->
-                      </div>
-                      <!-- /wp:group -->
-                    </div>
-                    <!-- /wp:group -->
-                  </div>
-                  <!-- /wp:group -->
+                  <!-- wp:paragraph -->
+                  <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold"><?php the_title(); ?></p>
+                  <!-- /wp:paragraph -->
                 </a>
               </li>
               <!-- /wp:list-item -->
