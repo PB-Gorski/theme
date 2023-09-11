@@ -250,3 +250,6 @@ textarea:focus{
 label{
   line-height: 18px;
 }
+.check1 p{
+  display: flex;
+}
