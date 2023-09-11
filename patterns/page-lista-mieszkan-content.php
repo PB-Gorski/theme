@@ -162,9 +162,7 @@
     <!-- /wp:list -->
 
     <?php
-    do_action('show_beautiful_filters', array(
-      'post_type' => 'mieszkania'
-    ));
+    do_action('show_beautiful_filters', 'mieszkania');
     ?>
 
     <!-- wp:list -->
