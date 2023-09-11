@@ -192,16 +192,16 @@
               <!-- wp:list -->
               <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
                 <?php
-                $taxonomies = get_terms(array(
+                $taxes = get_terms(array(
                   'taxonomy' => 'metraz',
                   'hide_empty' => false,
                 ));
                 ?>
                 <?php
-                foreach ($taxonomies as $taxonomy) {
+                foreach ($taxes as $tax) {
                 ?>
                   <!-- wp:list-item -->
-                  <li><a href="#" class=""><?php echo $taxonomy->name; ?></a></li>
+                  <li><a href="#" class=""><?php echo $tax->name; ?></a></li>
                   <!-- /wp:list-item -->
                 <?php }; ?>
               </ul>
