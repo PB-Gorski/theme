@@ -138,7 +138,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[85px]">
     <!-- wp:list -->
-    <ul class="wp-block-list all-taxonomy-list container mx-auto desktop:px-0 px-[20px] bg-[#2f384d] pb-[50px] flex flex-wrap items-center justify-between gap-[20px] text-[18px] font-medium">
+    <ul class="wp-block-list all-taxonomy-list container mx-auto desktop:px-0 px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between gap-[20px] text-[18px] font-medium">
       <?php
       $i = 0;
       $taxonomies = get_terms();
@@ -153,7 +153,7 @@
         if ($i > 7) {
       ?>
           <!-- wp:list-item -->
-          <li class="uppercase text-black text-[#8a8f99]"><?php echo $taxonomy; ?></li>
+          <li class="uppercase text-[#8a8f99]"><?php echo $taxonomy; ?></li>
           <!-- /wp:list-item -->
       <?php };
         $i++;
