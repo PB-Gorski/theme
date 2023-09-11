@@ -175,24 +175,16 @@
       ?>
           <!-- wp:list-item -->
           <li class="py-[20px] border-b-[1px] border-[#e6eaf0]">
-            <!-- wp:paragraph -->
-            <a href="<?php the_permalink(); ?>" class="flex gap-[20px]">
-              <!-- wp:paragraph -->
-              <p class="mr-[20px] text-[16px] hidden text-[#2e384d]"><?php the_title(); ?></p>
-              <!-- /wp:paragraph -->
-
-              <!-- wp:list -->
-              <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] flex flex-wrap justify-between items-center gap-[20px] text-[18px] font-medium">
-                <?php $taxesTest = get_the_taxonomies(get_the_ID());
-                foreach ($taxesTest as $taxTest) { ?>
-                  <!-- wp:list-item -->
-                  <li class="w-fit flex flex-col gap-[4px]"><?php echo $taxTest; ?></li>
-                  <!-- /wp:list-item -->
-                <?php }; ?>
-              </ul>
-              <!-- /wp:list -->
-            </a>
-            <!-- /wp:paragraph -->
+            <!-- wp:list -->
+            <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] flex flex-wrap justify-between items-center gap-[20px] text-[18px] font-medium">
+              <?php $taxesTest = get_the_taxonomies(get_the_ID());
+              foreach ($taxesTest as $taxTest) { ?>
+                <!-- wp:list-item -->
+                <li class="w-fit flex flex-col gap-[4px]"><?php echo $taxTest; ?></li>
+                <!-- /wp:list-item -->
+              <?php }; ?>
+            </ul>
+            <!-- /wp:list -->
           </li>
           <!-- /wp:list-item -->
       <?php
