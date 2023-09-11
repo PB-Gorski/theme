@@ -39,7 +39,7 @@ if (!defined('ABSPATH')) {
     </tr>
     <tr>
       <th><label for="your-content" onclick=""></label></th>
-      <td>
+      <td class="check1">
         <!-- [checkbox* your-content x5 id:your-content ] -->
         <input id="check1" cols="50" row="10" name="check1" type="checkbox" class="inline" />
         <label for="check1" class="inline text-[#8a8f99] text-[12px] leading-[18px]"> Wyrażam zgodę na przetwarzanie moich danych osobowych, podanych w formularzu kontaktowym, przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku w celu udzielenia odpowiedzi na zapytanie. Podanie danych jest dobrowolne. Oświadczam, że zapoznałem się z klauzulą informacyjną w zakresie ochrony danych osobowych dostępną tutaj</label>
