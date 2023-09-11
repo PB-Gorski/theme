@@ -176,8 +176,6 @@
             <!-- wp:list-item -->
             <li class="py-[20px] border-b-[1px] border-[#e6eaf0]">
               <a href="<?php the_permalink(); ?>" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
-                <!-- wp:group -->
-
                 <!-- wp:paragraph -->
                 <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php the_title(); ?></p>
                 <!-- /wp:paragraph -->
