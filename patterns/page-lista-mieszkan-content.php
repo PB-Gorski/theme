@@ -135,33 +135,29 @@
     <!-- wp:group -->
     <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[25px]">
 
-      <!-- wp:group -->
-      <div class="wp-block-group all-taxonomy-list">
-        <!-- wp:list -->
-        <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
-          <?php
-          $i = 0;
-          $taxonomies = get_terms();
-          $taxonomies2 = get_taxonomies();
-          // print_r($taxonomies);
-          // echo '</br> 2 </br>';
-          // print_r($taxonomies2);
-          ?>
+      <!-- wp:list -->
+      <ul class="wp-block-list all-taxonomy-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
+        <?php
+        $i = 0;
+        $taxonomies = get_terms();
+        $taxonomies2 = get_taxonomies();
+        // print_r($taxonomies);
+        // echo '</br> 2 </br>';
+        // print_r($taxonomies2);
+        ?>
 
-          <?php
-          foreach ($taxonomies2 as $taxonomy) {
-            if ($i > 7) {
-          ?>
-              <!-- wp:list-item -->
-              <li class="CityTabBtn text-black"><a href="#" class=""><?php echo $taxonomy; ?></a></li>
-              <!-- /wp:list-item -->
-          <?php };
-            $i++;
-          }; ?>
-        </ul>
-        <!-- /wp:list -->
-      </div>
-      <!-- /wp:group -->
+        <?php
+        foreach ($taxonomies2 as $taxonomy) {
+          if ($i > 7) {
+        ?>
+            <!-- wp:list-item -->
+            <li class="CityTabBtn text-black"><a href="#" class=""><?php echo $taxonomy; ?></a></li>
+            <!-- /wp:list-item -->
+        <?php };
+          $i++;
+        }; ?>
+      </ul>
+      <!-- /wp:list -->
 
       <!-- wp:list -->
       <ul class="wp-block-list lista-mieszkan mb-[40px] flex desktop:flex-col flex-col justify-between gap-[30px]">
