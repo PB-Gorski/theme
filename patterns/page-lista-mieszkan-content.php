@@ -138,7 +138,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[85px]">
     <!-- wp:list -->
-    <ul class="wp-block-list all-taxonomy-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
+    <ul class="wp-block-list all-taxonomy-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center justify-between gap-[20px] text-[18px] font-medium">
       <?php
       $i = 0;
       $taxonomies = get_terms();
@@ -153,7 +153,7 @@
         if ($i > 7) {
       ?>
           <!-- wp:list-item -->
-          <li class="uppercase text-black"><a href="#" class=""><?php echo $taxonomy; ?></a></li>
+          <li class="uppercase text-black"><a href="#" class=""><?php echo $taxonomy; ?></li>
           <!-- /wp:list-item -->
       <?php };
         $i++;
@@ -162,7 +162,7 @@
     <!-- /wp:list -->
 
     <?php
-    do_action('show_beautiful_filters', 'mieszkania');
+    do_action('show_beautiful_filters');
     ?>
 
     <!-- wp:list -->
@@ -185,7 +185,7 @@
           <li class="py-[20px] border-b-[1px] border-[#e6eaf0]">
             <a href="<?php the_permalink(); ?>" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30" class="flex gap-[20px]">
               <!-- wp:paragraph -->
-              <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php the_title(); ?></p>
+              <p class="mr-[20px] text-[16px] hidden text-[#2e384d]"><?php the_title(); ?></p>
               <!-- /wp:paragraph -->
 
               <!-- wp:list -->
