@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group bg-bgLightGray">
     <!-- wp:group -->
-    <div class="wp-block-group search-wrapper mx-auto desktop:px-0 px-[20px] text-[18px] flex flex-col desktop:flex-row gap-[10px] desktop:gap-[1px]">
+    <div class="wp-block-group search-wrapper container mx-auto desktop:px-0 px-[20px] text-[18px] flex flex-col desktop:flex-row gap-[10px] desktop:gap-[1px]">
       <!-- wp:group -->
       <div class="wp-block-group miasto select-wrapper">
         <!-- wp:group -->
@@ -131,69 +131,67 @@
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
-
-    <!-- wp:group -->
-    <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[25px]">
-
-      <!-- wp:list -->
-      <ul class="wp-block-list all-taxonomy-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
-        <?php
-        $i = 0;
-        $taxonomies = get_terms();
-        $taxonomies2 = get_taxonomies();
-        // print_r($taxonomies);
-        // echo '</br> 2 </br>';
-        // print_r($taxonomies2);
-        ?>
-
-        <?php
-        foreach ($taxonomies2 as $taxonomy) {
-          if ($i > 7) {
-        ?>
-            <!-- wp:list-item -->
-            <li class="CityTabBtn text-black"><a href="#" class=""><?php echo $taxonomy; ?></a></li>
-            <!-- /wp:list-item -->
-        <?php };
-          $i++;
-        }; ?>
-      </ul>
-      <!-- /wp:list -->
-
-      <!-- wp:list -->
-      <ul class="wp-block-list lista-mieszkan mb-[40px] flex desktop:flex-col flex-col justify-between gap-[30px]">
-        <?php
-        $args = array(
-          'post_type' => 'lokale',
-          'posts_per_page' => 3,
-          'order' => 'ASC'
-        );
-        $post_query = new WP_Query($args);
-
-        if ($post_query->have_posts()) {
-          while ($post_query->have_posts()) {
-            $post_query->the_post();
-        ?>
-            <!-- wp:list-item -->
-            <li class="py-[20px] border-b-[1px] border-[#e6eaf0]">
-              <a href="<?php the_permalink(); ?>" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
-                <!-- wp:paragraph -->
-                <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php the_title(); ?></p>
-                <!-- /wp:paragraph -->
-              </a>
-            </li>
-            <!-- /wp:list-item -->
-        <?php
-          };
-        };
-        wp_reset_query();
-        ?>
-      </ul>
-      <!-- /wp:list -->
-    </div>
-    <!-- /wp:group -->
-
-
   </div>
   <!-- /wp:group -->
+
+  <!-- wp:group -->
+  <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[25px]">
+    <!-- wp:list -->
+    <ul class="wp-block-list all-taxonomy-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
+      <?php
+      $i = 0;
+      $taxonomies = get_terms();
+      $taxonomies2 = get_taxonomies();
+      // print_r($taxonomies);
+      // echo '</br> 2 </br>';
+      // print_r($taxonomies2);
+      ?>
+
+      <?php
+      foreach ($taxonomies2 as $taxonomy) {
+        if ($i > 7) {
+      ?>
+          <!-- wp:list-item -->
+          <li class="CityTabBtn text-black"><a href="#" class=""><?php echo $taxonomy; ?></a></li>
+          <!-- /wp:list-item -->
+      <?php };
+        $i++;
+      }; ?>
+    </ul>
+    <!-- /wp:list -->
+
+    <!-- wp:list -->
+    <ul class="wp-block-list lista-mieszkan mb-[40px]">
+      <?php
+      $args = array(
+        'post_type' => 'lokale',
+        'posts_per_page' => 3,
+        'order' => 'ASC'
+      );
+      $post_query = new WP_Query($args);
+
+      if ($post_query->have_posts()) {
+        while ($post_query->have_posts()) {
+          $post_query->the_post();
+      ?>
+          <!-- wp:list-item -->
+          <li class="py-[20px] border-b-[1px] border-[#e6eaf0]">
+            <a href="<?php the_permalink(); ?>" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
+              <!-- wp:paragraph -->
+              <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php the_title(); ?></p>
+              <!-- /wp:paragraph -->
+            </a>
+          </li>
+          <!-- /wp:list-item -->
+      <?php
+        };
+      };
+      wp_reset_query();
+      ?>
+    </ul>
+    <!-- /wp:list -->
+  </div>
+  <!-- /wp:group -->
+
 </div>
 <!-- /wp:group -->
