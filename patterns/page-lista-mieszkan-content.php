@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="content" class="wp-block-group content relative bg-bgLightGray">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[50px] desktop:flex gap-[50px]">
+  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[25px] desktop:flex gap-[50px]">
     <!-- wp:group -->
     <div class="wp-block-group search-wrapper mx-auto desktop:px-0 px-[20px] text-[18px] flex flex-col desktop:flex-row gap-[10px] desktop:gap-[1px]">
       <!-- wp:group -->
