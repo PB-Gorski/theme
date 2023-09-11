@@ -161,39 +161,7 @@
     </ul>
     <!-- /wp:list -->
 
-    <!-- wp:list -->
-    <ul class="wp-block-list lista-mieszkan mb-[40px]">
-      <?php
-      $post_query = new WP_Query();
-      do_action('show_beautiful_filters', 'mieszkania');
-
-      if ($post_query->have_posts()) {
-        while ($post_query->have_posts()) {
-          $post_query->the_post();
-          $tax = get_terms();
-          $tax2 = get_taxonomies();
-      ?>
-          <!-- wp:list-item -->
-          <li class="py-[20px] border-b-[1px] border-[#e6eaf0]">
-            <!-- wp:list -->
-            <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] flex flex-wrap justify-between items-center gap-[20px] text-[18px] font-medium">
-              <?php $taxesTest = get_the_taxonomies(get_the_ID());
-              foreach ($taxesTest as $taxTest) { ?>
-                <!-- wp:list-item -->
-                <li class="w-fit flex flex-col gap-[4px]"><?php echo $taxTest; ?></li>
-                <!-- /wp:list-item -->
-              <?php }; ?>
-            </ul>
-            <!-- /wp:list -->
-          </li>
-          <!-- /wp:list-item -->
-      <?php
-        };
-      };
-      wp_reset_query();
-      ?>
-    </ul>
-    <!-- /wp:list -->
+    <?php do_action('show_beautiful_filters', 'mieszkania'); ?>
   </div>
   <!-- /wp:group -->
 
