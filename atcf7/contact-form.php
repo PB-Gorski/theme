@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
 
 <table>
   <tbody>
-    <tr>
+    <tr class="mb-[10px]">
       <th><label for="your-name" onclick=""></label></th>
       <td>
         [text* your-name id:your-name ]
