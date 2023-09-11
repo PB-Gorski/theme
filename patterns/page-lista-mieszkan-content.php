@@ -153,7 +153,7 @@
         if ($i > 7) {
       ?>
           <!-- wp:list-item -->
-          <li class="CityTabBtn text-black"><a href="#" class=""><?php echo $taxonomy; ?></a></li>
+          <li class="uppercase text-black"><a href="#" class=""><?php echo $taxonomy; ?></a></li>
           <!-- /wp:list-item -->
       <?php };
         $i++;
