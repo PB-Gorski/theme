@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
       <th><label for="your-name" onclick=""></label></th>
       <td>
         <!-- [text* your-name id:your-name ] -->
-        <input id="your-name" name="your-name" type="text" placeholder="Imię i nazwisko" class="px-[15px] py-[10px] mb-[10px] w-[500px] w-full h-[60px] text-[#2e384d] placeholder:text-[#757575] focus:border-0">
+        <input id="your-name" name="your-name" type="text" placeholder="Imię i nazwisko" class="px-[15px] py-[10px] mb-[10px] w-[500px] w-full h-[60px] text-[#2e384d] placeholder:text-[#757575] focus:border-white active:border-black">
       </td>
     </tr>
     <tr>
