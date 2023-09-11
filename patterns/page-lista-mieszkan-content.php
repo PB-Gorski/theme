@@ -135,7 +135,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[60px]">
+  <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[85px]">
     <!-- wp:list -->
     <ul class="wp-block-list all-taxonomy-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
       <?php
