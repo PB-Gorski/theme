@@ -61,4 +61,7 @@ if (!defined('ABSPATH')) {
     </tr>
   </tbody>
 </table>
-<div>[submit "Submit"]</div>
+<div>
+  <!-- [submit "Submit"] -->
+  <button type="submit relative bg-[#3d4b66] text-white w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">Wyślij wiadomość</button>
+</div>
