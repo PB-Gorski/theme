@@ -170,7 +170,8 @@
         'order' => 'ASC'
       );
       $post_query = new WP_Query($args);
-
+      do_action('show_beautiful_filters');
+      do_action('show_beautiful_filters_info');
       if ($post_query->have_posts()) {
         while ($post_query->have_posts()) {
           $post_query->the_post();
