@@ -13,89 +13,32 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[50px] desktop:flex gap-[50px]">
     <!-- wp:group -->
-    <div class="wp-block-group left-col desktop:w-[50%]">
-      <!-- wp:paragraph -->
-      <p class="mb-[30px] text-[24px] text-[#8a8f99]">Planując zakup nieruchomości najczęściej wspomagamy się kredytem hipotecznym. Po podjęciu decyzji o kupnie mieszkania, przeglądamy ofertę wybierając odpowiadający nam lokal. I co dalej?</p>
-      <!-- /wp:paragraph -->
-
+    <div class="wp-block-group search-wrapper mx-auto desktop:px-0 px-[20px] text-[18px] flex flex-col desktop:flex-row gap-[10px] desktop:gap-[1px]">
       <!-- wp:group -->
-      <div class="wp-block-group section1 mb-[50px]">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray mb-[10px] font-bold">Oszczędzaj czas</p>
-        <!-- /wp:paragraph -->
+      <div class="wp-block-group miasto select-wrapper">
         <!-- wp:group -->
-        <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
-          <!-- wp:paragraph -->
-          <p>Aby porównać ofertę kredytów w kilkunastu bankach należy poświęcić dużo czasu na przeglądanie stron w internecie, następnie na wizyty w placówkach i porównywanie poszczególnych ofert. Przychodząc na spotkanie z ekspertem kredytowym PB Górski możesz skrócić cały proces do minimum.</p>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div class="wp-block-group section2 mb-[50px]">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray mb-[10px] font-bold">Najkorzystniejsze oferty</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:group -->
-        <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
-          <!-- wp:paragraph -->
-          <p>Ekspert w przystępny sposób przedstawi Ci oferty wiodących banków, wspólnie dokonacie wyboru najkorzystniejszej dla Ciebie opcji, po czym otrzymasz dokładne instrukcje, jakie dokumenty musisz dostarczyć do złożenia wniosku.</p>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div class="wp-block-group section3 mb-[50px]">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray mb-[10px] font-bold">Minimum dokumentów</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:group -->
-        <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
-          <!-- wp:paragraph -->
-          <p>Warto zauważyć, że będą to jedynie dokumenty dotyczące zatrudnienia/zarobków. Całą dokumentację dotyczącą inwestycji dostarczy ekspert, oszczędzając Twój czas. Po pozytywnej decyzji banku możesz udać się na podpisanie umowy kredytowej. Tutaj również będzie towarzyszył Ci nasz przedstawiciel, który odpowie na każde pytanie i rozwieje ewentualne wątpliwości.</p>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-    </div>
-    <!-- /wp:group -->
-
-    <!-- wp:group -->
-    <div class="wp-block-group right-col desktop:w-[50%]">
-      <!-- wp:group -->
-      <div class="wp-block-group section2 mb-[50px]">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray mb-[30px] font-bold">Umów się na spotkanie</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:paragraph -->
-        <p class="mb-[10px] text-[24px] text-[#7e878c] font-bold">Ewa Cel</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:group -->
-        <div class="wp-block-group mb-[25px] phone flex gap-[40px]">
+        <div class="wp-block-group select">
           <!-- wp:group -->
-          <div class="wp-block-group labels">
+          <div class="wp-block-group select__trigger">
             <!-- wp:paragraph -->
-            <p class="block mb-[20px]">tel.</p>
+            <span class="text-[#999] text-[18px]">Miasto</span>
             <!-- /wp:paragraph -->
-            <!-- wp:paragraph -->
-            <p class="block mb-[30px]">email:</p>
-            <!-- /wp:paragraph -->
+            <!-- wp:group -->
+            <div class="wp-block-group arrow">
+              <!-- wp:paragraph -->
+              <p class="hidden">-></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
           </div>
           <!-- /wp:group -->
-
           <!-- wp:group -->
-          <div class="wp-block-group values">
-
+          <div class="wp-block-group custom-options">
             <!-- wp:paragraph -->
-            <a href="tel:+48690099044" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">690 099 044</a>
+            <span class="custom-option" data-value="gdansk">Gdańsk</span>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <a href="mailto:kredyty@pbgorski.pl" class="mb-[30px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">kredyty@pbgorski.pl</a>
+            <span class="custom-option" data-value="gdynia">Gdynia</span>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
@@ -103,6 +46,90 @@
         <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
+
+      <!-- wp:group -->
+      <div class="wp-block-group inwestycje select-wrapper">
+        <!-- wp:group -->
+        <div class="wp-block-group select">
+          <!-- wp:group -->
+          <div class="wp-block-group select__trigger">
+            <!-- wp:paragraph -->
+            <span class="text-[#999]">Inwestycje</span>
+            <!-- /wp:paragraph -->
+            <!-- wp:group -->
+            <div class="wp-block-group arrow">
+              <!-- wp:paragraph -->
+              <p class="hidden">-></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+          <!-- wp:group -->
+          <div class="wp-block-group custom-options">
+            <!-- wp:paragraph -->
+            <span class="custom-option" data-value="osiedle-srebniki">Osiedle Srebniki</span>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <span class="custom-option" data-value="sw-piotra">Św. Piotra</span>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <span class="custom-option" data-value="wiezyscka-folwark">Wiezycka Folwark</span>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <span class="custom-option" data-value="torunska-16">Toruńska 16</span>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+
+      <!-- wp:group -->
+      <div class="wp-block-group btns-wrapper flex flex-row ">
+        <!-- wp:group -->
+        <div class="wp-block-group btn-more w-full desktop:w-[265px] h-[65px] bg-white flex gap-[10px] justify-center items-center cursor-pointer">
+          <!-- wp:paragraph -->
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
+              <title>icon_filters</title>
+              <path class="line" d="M6 4v16m6-16v16m6-16v16"></path>
+              <circle class="circle" cx="6" cy="10" r="2"></circle>
+              <circle class="circle" cx="12" cy="15" r="2"></circle>
+              <circle class="circle" cx="18" cy="10" r="2"></circle>
+            </svg>
+          </p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph -->
+          <p class="text-[18px]">Więcej opcji</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:group -->
+        <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-full desktop:w-[245px] h-[65px] flex items-center justify-center gap-[15px] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
+          <!-- wp:paragraph -->
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="injected-svg inject-svg icon-search">
+              <defs>
+                <style></style>
+              </defs>
+              <g id="icon_search" fill="none" stroke="#fff" stroke-width="2">
+                <circle cx="6.5" cy="6.5" r="5.5"></circle>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-4-4"></path>
+              </g>
+            </svg>
+          </p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph -->
+          <p class="font-bold">Szukaj</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+
     </div>
     <!-- /wp:group -->
   </div>
