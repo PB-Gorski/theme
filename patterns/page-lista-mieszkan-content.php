@@ -135,7 +135,7 @@
     <!-- wp:group -->
     <div class="wp-block-group taxonomy-list">
       <!-- wp:list -->
-      <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
+      <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] pb-[50px] fflex flex-wrap items-center gap-[20px] text-[18px] font-medium">
         <?php
         $taxonomies = get_terms();
         // print_r($post_tag);
@@ -162,7 +162,7 @@
     <!-- wp:group -->
     <div class="wp-block-group lista-mieszkan">
       <!-- wp:list -->
-      <ul class="wp-block-list mb-[40px] flex desktop:flex-row flex-col justify-between gap-[30px]">
+      <ul class="wp-block-list mb-[40px] flex desktop:flex-col flex-col justify-between gap-[30px]">
         <?php
         $args = array(
           'post_type' => 'lokale',
