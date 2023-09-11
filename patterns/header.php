@@ -121,7 +121,7 @@
               <ul class="wp-block-list text-textGray font-bold">
                 <!-- wp:list-item -->
                 <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-[7px] hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Lista mieszkań &rarr;</a>
+                  <a href="<?php echo home_url() . '/lista-mieszkan' ?>">Lista mieszkań &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
