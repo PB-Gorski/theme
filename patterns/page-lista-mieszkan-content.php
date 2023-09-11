@@ -165,7 +165,7 @@
     <ul class="wp-block-list lista-mieszkan mb-[40px]">
       <?php
       $args = array(
-        'post_type' => 'lokale',
+        'post_type' => 'mieszkania',
         'posts_per_page' => 3,
         'order' => 'ASC'
       );
@@ -183,12 +183,7 @@
               <!-- wp:paragraph -->
               <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php the_title(); ?></p>
               <!-- /wp:paragraph -->
-              <!-- wp:paragraph -->
-              <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php  ?></p>
-              <!-- /wp:paragraph -->
-              <!-- wp:paragraph -->
-              <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php ?></p>
-              <!-- /wp:paragraph -->
+
               <!-- wp:list -->
               <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
                 <?php
@@ -197,13 +192,13 @@
                   'hide_empty' => false,
                 ));
                 $taxesTest = get_the_taxonomies(get_the_ID());
-                print_r(get_the_taxonomies(get_the_ID()));
+                // print_r(get_the_taxonomies(get_the_ID()));
                 ?>
                 <?php
                 foreach ($taxesTest as $taxTest) {
                 ?>
                   <!-- wp:list-item -->
-                  <li><a href="#" class=""><?php echo $taxTest; ?></a></li>
+                  <li><?php echo $taxTest; ?></li>
                   <!-- /wp:list-item -->
                 <?php }; ?>
               </ul>
