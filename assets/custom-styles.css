@@ -258,10 +258,5 @@ input{
   padding-left: 15px;
 }
 input:focus{
-  border:red!important;
-  background-color: yellow;
-}
-input:active{
-  border:green!important;
-  background-color: purple;
+  outline: none;
 }

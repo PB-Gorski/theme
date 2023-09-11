@@ -34,7 +34,7 @@ if (!defined('ABSPATH')) {
       <th><label for="your-content" onclick=""></label></th>
       <td>
         <!-- [textarea* your-content x5 id:your-content ] -->
-        <input id="your-name" name="your-name" type="textarea" placeholder="Treść wiadomości" class="px-[15px] py-[10px] mb-[10px] w-[500px] w-full h-[200px] text-[#2e384d] placeholder:text-[#757575]">
+        <textarea id="your-name" cols="50" row="10" name="your-name" type="textarea" placeholder="Treść wiadomości" class="px-[15px] py-[10px] mb-[10px] w-[500px] w-full h-[200px] text-[#2e384d] placeholder:text-[#757575]"></textarea>
       </td>
     </tr>
   </tbody>
