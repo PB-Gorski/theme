@@ -196,6 +196,7 @@
       <ul class="wp-block-list font-bold">
         <!-- wp:list-item -->
         <li>
+          <!-- wp:paragraph -->
           <a href="https://www.google.com/maps/place/Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A/@54.3836995,18.6080757,17.6z/data=!4m5!3m4!1s0x0:0xc1029ad51bc7ce0c!8m2!3d54.4041492!4d18.5669008" class="font-bold flex gap-[10px]">
             <!-- wp:image -->
             <figure class="wp-block-image w-[20px]">
@@ -203,9 +204,10 @@
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
-            <span class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Zobacz na GoogleMaps</span>
+            <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Zobacz na GoogleMaps</p>
             <!-- /wp:paragraph -->
           </a>
+          <!-- /wp:paragraph -->
         </li>
         <!-- /wp:list-item -->
         <!-- wp:list-item -->
