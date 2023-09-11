@@ -174,12 +174,12 @@
             $post_query->the_post();
         ?>
             <!-- wp:list-item -->
-            <li class="invest-tile max-w-full">
-              <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
+            <li class="py-[20px] border-b-[1px] border-[#e6eaf0]">
+              <a href="<?php the_permalink(); ?>" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
                 <!-- wp:group -->
 
                 <!-- wp:paragraph -->
-                <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold"><?php the_title(); ?></p>
+                <p class="mr-[20px] text-[16px] text-[#2e384d]"><?php the_title(); ?></p>
                 <!-- /wp:paragraph -->
               </a>
             </li>
