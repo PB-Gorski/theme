@@ -17,7 +17,7 @@
       <!-- wp:group -->
       <div class="wp-block-group left-col desktop:w-[70%]">
         <!-- wp:paragraph -->
-        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">Wszystkie inwestycje archive-investments</p>
+        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">Wszystkie inwestycje archive-lista-mieszkan</p>
         <!-- /wp:paragraph -->
 
         <!-- wp:list -->
