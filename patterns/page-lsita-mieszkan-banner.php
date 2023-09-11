@@ -84,7 +84,7 @@
   <div class="wp-block-group w-full h-[560px] relative py-[60px]">
     <!-- wp:figure -->
     <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
-      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-kredyty/banner-bg-kredyty.jpeg" alt="banner-bg">
+      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/lista-mieszkan-bg.jpeg" alt="banner-bg">
     </figure>
     <!-- /wp:figure -->
     <!-- wp:group -->
@@ -92,19 +92,17 @@
       <!-- wp:group -->
       <div class="wp-block-group title-wrapper max-w-[500px]">
         <!-- wp:group -->
-        <div class="wp-block-group title text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
+        <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
           <!-- wp:paragraph -->
-          <p>Uzyskanie kredytu</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <p>nie musi być skomplikowane.</p>
+          <p>Znajdź mieszkanie</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
         <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <p>Umów się na spotkanie z naszym ekspertem, który przedstawi Ci najkorzystniejsze oferty.</p>
+          <p class="opacity-[0.75]">Określ parametry, aby znaleźć mieszkanie dokładnie
+            takie, jakiego potrzebujesz.</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
