@@ -9,151 +9,201 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="inwestycje-archive" class="wp-block-group archive-mieszkania relative">
+<div id="content" class="wp-block-group content relative ">
   <!-- wp:group -->
-  <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
+  <div class="wp-block-group bg-bgLightGray">
     <!-- wp:group -->
-    <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[20px] desktop:flex items-center">
+    <div class="wp-block-group search-wrapper container mx-auto py-[20px] desktop:px-0 px-[20px] text-[18px] flex flex-col desktop:flex-row gap-[10px] desktop:gap-[1px]">
       <!-- wp:group -->
-      <div class="wp-block-group left-col desktop:w-[70%]">
-        <!-- wp:paragraph -->
-        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">Wszystkie inwestycje archive-mieszkania</p>
-        <!-- /wp:paragraph -->
-
-        <!-- wp:list -->
-        <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
-          <?php
-          $args = array(
-            'taxonomy' => 'category',
-            'orderby' => 'name',
-            'paged' => 1,
-            'order'   => 'ASC'
-          );
-          $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 39, 20));
-          // echo $currentCategory . '<-current';
-          $cats = get_categories($args); ?>
-          <!-- wp:list-item -->
-          <li class="allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-            <a href="<?php echo get_home_url() . '/inwestycje'; ?>" class="">Wszystkie archive-lista-mieszkan</a>
-          </li>
-          <!-- /wp:list-item -->
-          <?php
-          foreach ($cats as $cat) {
-            $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
-            // echo $catNoSpaces;
-          ?>
-            <!-- wp:list-item -->
-            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory == $catNoSpaces) ? 'tab-active' : ''; ?>"><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $cat->name; ?></a></li>
-            <!-- /wp:list-item -->
-          <?php }; ?>
-        </ul>
-        <!-- /wp:list -->
+      <div class="wp-block-group miasto select-wrapper">
+        <!-- wp:group -->
+        <div class="wp-block-group select">
+          <!-- wp:group -->
+          <div class="wp-block-group select__trigger">
+            <!-- wp:paragraph -->
+            <span class="text-[#999] text-[18px]">Miasto</span>
+            <!-- /wp:paragraph -->
+            <!-- wp:group -->
+            <div class="wp-block-group arrow">
+              <!-- wp:paragraph -->
+              <p class="hidden">-></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+          <!-- wp:group -->
+          <div class="wp-block-group custom-options">
+            <!-- wp:paragraph -->
+            <span class="custom-option" data-value="gdansk">Gdańsk</span>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <span class="custom-option" data-value="gdynia">Gdynia</span>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group right-col desktop:w-[30%]">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-[#8a8f99]">4 inwestycje / 169 lokali</p>
-        <!-- /wp:paragraph -->
+      <div class="wp-block-group inwestycje select-wrapper">
+        <!-- wp:group -->
+        <div class="wp-block-group select">
+          <!-- wp:group -->
+          <div class="wp-block-group select__trigger">
+            <!-- wp:paragraph -->
+            <span class="text-[#999]">Inwestycje</span>
+            <!-- /wp:paragraph -->
+            <!-- wp:group -->
+            <div class="wp-block-group arrow">
+              <!-- wp:paragraph -->
+              <p class="hidden">-></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+          <!-- wp:group -->
+          <div class="wp-block-group custom-options">
+            <!-- wp:paragraph -->
+            <span class="custom-option" data-value="osiedle-srebniki">Osiedle Srebniki</span>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <span class="custom-option" data-value="sw-piotra">Św. Piotra</span>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <span class="custom-option" data-value="wiezyscka-folwark">Wiezycka Folwark</span>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <span class="custom-option" data-value="torunska-16">Toruńska 16</span>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+
+      <!-- wp:group -->
+      <div class="wp-block-group btns-wrapper flex flex-row ">
+        <!-- wp:group -->
+        <div class="wp-block-group btn-more w-full desktop:w-[265px] h-[65px] bg-white flex gap-[10px] justify-center items-center cursor-pointer">
+          <!-- wp:paragraph -->
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
+              <title>icon_filters</title>
+              <path class="line" d="M6 4v16m6-16v16m6-16v16"></path>
+              <circle class="circle" cx="6" cy="10" r="2"></circle>
+              <circle class="circle" cx="12" cy="15" r="2"></circle>
+              <circle class="circle" cx="18" cy="10" r="2"></circle>
+            </svg>
+          </p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph -->
+          <p class="text-[18px]">Więcej opcji</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:group -->
+        <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-full desktop:w-[245px] h-[65px] flex items-center justify-center gap-[15px] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
+          <!-- wp:paragraph -->
+          <p class=" z-[1]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="injected-svg inject-svg icon-search">
+              <defs>
+                <style></style>
+              </defs>
+              <g id="icon_search" fill="none" stroke="#fff" stroke-width="2">
+                <circle cx="6.5" cy="6.5" r="5.5"></circle>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-4-4"></path>
+              </g>
+            </svg>
+          </p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph -->
+          <p class="font-bold z-[1]">Szukaj</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
-
   </div>
   <!-- /wp:group -->
 
+
   <!-- wp:group -->
-  <div class="wp-block-group investments-posts container mx-auto desktop:px-0 px-[20px]">
+  <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[85px]">
     <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px]">
+    <ul class="wp-block-list all-taxonomy-list container mx-auto px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between gap-[20px] text-[13px] font-bold">
+      <?php
+      $i = 0;
+      $taxonomies = get_terms();
+      $taxonomies2 = get_taxonomies();
+      // print_r($taxonomies);
+      // echo '</br> 2 </br>';
+      // print_r($taxonomies2);
+      ?>
+
+      <?php
+      foreach ($taxonomies2 as $taxonomy) {
+        if ($i > 7) {
+      ?>
+          <!-- wp:list-item -->
+          <li class="uppercase text-[#8a8f99]"><?php echo $taxonomy; ?></li>
+          <!-- /wp:list-item -->
+      <?php };
+        $i++;
+      }; ?>
+    </ul>
+    <!-- /wp:list -->
+
+    <!-- wp:list -->
+    <ul class="wp-block-list lista-mieszkan mb-[40px]">
       <?php
       $args = array(
-        'post_type' => 'inwestycje',
+        'post_type' => 'mieszkania',
         'posts_per_page' => 3,
         'order' => 'ASC'
       );
       $post_query = new WP_Query($args);
-      $counter = 0;
-      $i = 0;
+      do_action('show_beautiful_filters', 'mieszkania');
 
       if ($post_query->have_posts()) {
         while ($post_query->have_posts()) {
           $post_query->the_post();
-          $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
-          $counter++; ?>
+          $tax = get_terms();
+          $tax2 = get_taxonomies();
+      ?>
           <!-- wp:list-item -->
-          <li class="invest-tile max-w-full desktop:h-[450px] mb-[80px]">
-            <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
-              <!-- wp:group -->
-              <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
-                <!-- wp:image -->
-                <figure class="wp-block-image desktop:w-[50%] h-[330px] desktop:h-full mb-[30px]">
-                  <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
-                </figure>
-                <!-- /wp:image -->
+          <li class="py-[20px] border-b-[1px] border-[#e6eaf0]">
+            <!-- wp:paragraph -->
+            <a href="<?php the_permalink(); ?>" class="flex gap-[20px]">
+              <!-- wp:paragraph -->
+              <p class="mr-[20px] text-[16px] hidden text-[#2e384d]"><?php the_title(); ?></p>
+              <!-- /wp:paragraph -->
 
-                <!-- wp:group -->
-                <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center">
-                  <!-- wp:paragraph -->
-                  <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php the_title(); ?></p>
-                  <!-- /wp:paragraph -->
-
-                  <!-- wp:list -->
-                  <ul class="wp-block-list city-categories my-[20px] flex flex-wrap gap-[10px]">
-                    <?php
-                    $categoriesArray = get_the_category();
-                    foreach ($categoriesArray as $category) {
-                      $category_link = get_category_link($category->term_id); ?>
-                      <!-- wp:list-item -->
-                      <li class="mb-[15px] text-[18px] text-bgDarkGray"><?php echo $category->name; ?></li>
-                      <!-- /wp:list-item -->
-                    <?php }; ?>
-                  </ul>
-                  <!-- /wp:list -->
-
-
-                  <!-- wp:group -->
-                  <div class="wp-block-group available-apartments flex items-center gap-[25px]">
-                    <!-- wp:paragraph -->
-                    <p class="text-[48px] text-primaryRed font-bold">41</p>
-                    <!-- /wp:paragraph -->
-                    <!-- wp:group -->
-                    <div class="wp-block-group leading-[24px]">
-                      <!-- wp:paragraph -->
-                      <p class="text-[18px] text-bgDarkGray">dostępnych</p>
-                      <!-- /wp:paragraph -->
-                      <!-- wp:paragraph -->
-                      <p class="text-[18px] text-bgDarkGray">lokali</p>
-                      <!-- /wp:paragraph -->
-                    </div>
-                    <!-- /wp:group -->
-                  </div>
-                  <!-- /wp:group -->
-                </div>
-                <!-- /wp:group -->
-
-                <!-- wp:group -->
-                <div class="wp-block-group group btn-read-more mt-[30px] relative bg-[#3d4b66] text-[18px] text-white font-bold w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
-                  <!-- wp:paragraph -->
-                  <p class="z-[1]">Poznaj inwestycję &rarr;</p>
-                  <!-- /wp:paragraph -->
-                </div>
-                <!-- /wp:group -->
-              </div>
-              <!-- /wp:group -->
+              <!-- wp:list -->
+              <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] flex flex-wrap justify-between items-center gap-[20px] text-[18px] font-medium">
+                <?php $taxesTest = get_the_taxonomies(get_the_ID());
+                foreach ($taxesTest as $taxTest) { ?>
+                  <!-- wp:list-item -->
+                  <li class="w-fit flex flex-col gap-[4px]"><?php echo $taxTest; ?></li>
+                  <!-- /wp:list-item -->
+                <?php }; ?>
+              </ul>
+              <!-- /wp:list -->
             </a>
+            <!-- /wp:paragraph -->
           </li>
           <!-- /wp:list-item -->
       <?php
-          $i++;
         };
-        wp_reset_query();
-        wp_reset_postdata();
       };
       wp_reset_query();
-      wp_reset_postdata();
       ?>
     </ul>
     <!-- /wp:list -->
