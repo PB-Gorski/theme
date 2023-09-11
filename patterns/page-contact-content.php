@@ -203,7 +203,7 @@
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
-            <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Zobacz na GoogleMaps</p>
+            <span class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Zobacz na GoogleMaps</span>
             <!-- /wp:paragraph -->
           </a>
         </li>
