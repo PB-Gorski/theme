@@ -136,16 +136,16 @@
     <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[25px]">
 
       <!-- wp:group -->
-      <div class="wp-block-group taxonomy-list">
+      <div class="wp-block-group all-taxonomy-list">
         <!-- wp:list -->
         <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
           <?php
           $i = 0;
           $taxonomies = get_terms();
           $taxonomies2 = get_taxonomies();
-          print_r($taxonomies);
-          echo '</br> 2 </br>';
-          print_r($taxonomies2);
+          // print_r($taxonomies);
+          // echo '</br> 2 </br>';
+          // print_r($taxonomies2);
           ?>
 
           <?php
