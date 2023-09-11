@@ -143,7 +143,7 @@
           $taxonomies = get_terms();
           $taxonomies2 = get_taxonomies();
           print_r($taxonomies);
-          echo '</br>';
+          echo '</br> 2 </br>';
           print_r($taxonomies2);
           ?>
 
