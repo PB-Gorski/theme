@@ -196,6 +196,7 @@
                   'taxonomy' => 'metraz',
                   'hide_empty' => false,
                 ));
+                print_r(get_the_taxonomies(get_the_ID()));
                 ?>
                 <?php
                 foreach ($taxes as $tax) {
