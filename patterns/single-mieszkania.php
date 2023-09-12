@@ -126,9 +126,13 @@
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
 
+  <!-- wp:group -->
+  <div class="wp-block-group bar-info max-w-[800px] desktop:max-w-[1200px] h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] flex items-center justify-between absolute top-[-60px]">
     <!-- wp:group -->
-    <div class="wp-block-group bar-info w-full h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] flex items-center justify-between absolute top-[-60px]">
+    <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
       <!-- wp:group -->
       <div class="wp-block-group col">
         <!-- wp:paragraph -->
@@ -161,10 +165,13 @@
         <!-- wp:post-terms {"term":"pokoje"} /-->
       </div>
       <!-- /wp:group -->
-
     </div>
     <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
 
+  <!-- wp:group -->
+  <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
     <!-- wp:paragraph -->
     <p class="text-[24px]">Przykładowa aranżacja <span class="text-[#828894]">(kliknij zdjęcie by powiększyć)</span></p>
     <!-- /wp:paragraph -->
