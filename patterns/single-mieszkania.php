@@ -53,10 +53,6 @@
 
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
-    <!-- wp:paragraph -->
-    <p>single-mieszkania</p>
-    <!-- /wp:paragraph -->
-
     <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
     <div class="wp-block-group modal relative">
       <!-- wp:group -->
@@ -132,7 +128,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group bar-info w-full h-[120px] bg-[#2e384d] text-white text-[24px] flex items-center justify-between">
+    <div class="wp-block-group bar-info w-full h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] flex items-center justify-between">
       <!-- wp:group -->
       <div class="wp-block-group col">
         <!-- wp:paragraph -->
