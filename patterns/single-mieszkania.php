@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Wpis" class="wp-block-group mieszkania-page-post mb-[150px] ooverflow-hidden">
   <!-- wp:group -->
-  <div class="wp-block-group banner w-full h-[460px] relative py-[60px] before:content-[''] before:inline-block before:w-full before:h-full before:bg-[#091224] before:absolute before:top-0 before:left-0 before:opacity-[50%]">
+  <div class="wp-block-group banner w-full h-[460px] relative py-[60px] before:content-[''] before:inline-block before:w-full before:h-full before:bg-[#091224] before:absolute before:top-0 before:left-0 before:opacity-[30%]">
     <!-- wp:image -->
     <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/lista-mieszkan-bg.jpeg" alt="banner-bg">
@@ -34,7 +34,7 @@
         <!-- wp:group -->
         <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
           <!-- wp:paragraph -->
-          <p><!-- wp:post-title /--></p>
+          <p class="z-[1]"><!-- wp:post-title /--></p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
