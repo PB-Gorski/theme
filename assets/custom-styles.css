@@ -271,6 +271,7 @@ label{
   display: none!important;
 }
 .beautiful-taxonomy-filters-button{
+  position: relative;
   background-color: #E80D38;
   color: white;
   width: 245px;
