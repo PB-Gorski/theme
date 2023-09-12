@@ -328,11 +328,7 @@ label{
   row-gap: 20px;
   column-gap: 2px;
 }
-select{
-  -webkit-appearance: none;
-}
 select option {
-  -webkit-appearance: none;
   position: relative;
   display: block;
   padding: 0 22px 0 22px;
