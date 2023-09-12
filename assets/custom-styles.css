@@ -328,9 +328,7 @@ label{
   row-gap: 20px;
   column-gap: 2px;
 }
-
-
-select {
+select option {
   position: relative;
   display: block;
   padding: 0 22px 0 22px;
@@ -341,7 +339,7 @@ select {
   cursor: pointer;
   transition: all 0.5s;
 }
-select:hover {
+option:hover {
   cursor: pointer;
   background-color: #B2F1FF;
 }
