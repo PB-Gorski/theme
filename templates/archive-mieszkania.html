@@ -19,82 +19,88 @@
 			<!-- wp:pattern {"slug":"lista-mieszkan-banner"} /-->
 			<!-- wp:pattern {"slug":"archive-mieszkania"} /-->
 
-			<ul class="wp-block-list all-taxonomy-list container mx-auto px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
-				<!-- wp:list-item -->
-				<li class="w-[100px] uppercase text-[#8a8f99]">miasto</li>
-				<!-- /wp:list-item -->
-				<!-- wp:list-item -->
-				<li class="w-[180px] uppercase text-[#8a8f99]">inwestycja</li>
-				<!-- /wp:list-item -->
-				<!-- wp:list-item -->
-				<li class="w-[100px] uppercase text-[#8a8f99]">budynek</li>
-				<!-- /wp:list-item -->
-				<!-- wp:list-item -->
-				<li class="w-[65px] uppercase text-[#8a8f99]">nr</li>
-				<!-- /wp:list-item -->
-				<!-- wp:list-item -->
-				<li class="w-[100px] uppercase text-[#8a8f99]">pokoje</li>
-				<!-- /wp:list-item -->
-				<!-- wp:list-item -->
-				<li class="w-[110px] uppercase text-[#8a8f99]">metraz</li>
-				<!-- /wp:list-item -->
-				<!-- wp:list-item -->
-				<li class="w-[100px] uppercase text-[#8a8f99]">pietro</li>
-				<!-- /wp:list-item -->
-				<!-- wp:list-item -->
-				<li class="w-[130px] uppercase text-[#8a8f99]">cena</li>
-				<!-- /wp:list-item -->
-				<!-- wp:list-item -->
-				<li class="w-[175px] uppercase text-[#8a8f99]">termin</li>
-				<!-- /wp:list-item -->
-			</ul>
-			<!-- /wp:list -->
+			<!-- wp:group -->
+			<div class="wp-block-group list-content-wrapper py-[60px]">
 
-			<!-- wp:query -->
-			<div class="wp-block-query">
-				<!-- wp:post-template -->
-				<!-- wp:list -->
-				<ul class="wp-block-list taxonomies container mx-auto px-[20px] flex flex-wrap justify-between items-center text-[18px] font-medium">
-						<!-- wp:list-item -->
-						<li class="w-[100px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"miasto"} /--></li>
-						<!-- /wp:list-item -->
-						<!-- wp:list-item -->
-						<li class="w-[180px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"osiedla"} /--></li>
-						<!-- /wp:list-item -->
-						<!-- wp:list-item -->
-						<li class="w-[100px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"budynek"} /--></li>
-						<!-- /wp:list-item -->
-						<!-- wp:list-item -->
-						<li class="w-[65px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"nr"} /--></li>
-						<!-- /wp:list-item -->
-						<!-- wp:list-item -->
-						<li class="w-[100px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"pokoje"} /--></li>
-						<!-- /wp:list-item -->
-						<!-- wp:list-item -->
-						<li class="w-[110px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"metraz"} /--></li>
-						<!-- /wp:list-item -->
-						<!-- wp:list-item -->
-						<li class="w-[100px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"pietro"} /--></li>
-						<!-- /wp:list-item -->
-						<!-- wp:list-item -->
-						<li class="w-[130px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"cena"} /--></li>
-						<!-- /wp:list-item -->
-						<!-- wp:list-item -->
-						<li class="w-[175px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"termin"} /--></li>
-						<!-- /wp:list-item -->
+				<ul class="wp-block-list all-taxonomy-list container mx-auto px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
+					<!-- wp:list-item -->
+					<li class="w-[100px] uppercase text-[#8a8f99]">miasto</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[180px] uppercase text-[#8a8f99]">inwestycja</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[100px] uppercase text-[#8a8f99]">budynek</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[65px] uppercase text-[#8a8f99]">nr</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[100px] uppercase text-[#8a8f99]">pokoje</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[110px] uppercase text-[#8a8f99]">metraz</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[100px] uppercase text-[#8a8f99]">pietro</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[130px] uppercase text-[#8a8f99]">cena</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[175px] uppercase text-[#8a8f99]">termin</li>
+					<!-- /wp:list-item -->
 				</ul>
 				<!-- /wp:list -->
 
-				<!-- /wp:post-template -->
-				<!-- wp:query-pagination -->
-				
-				<div class="wp-block-query-pagination">
-					<!-- wp:query-pagination-previous /-->
-					<!-- wp:query-pagination-next /-->
+				<!-- wp:query -->
+				<div class="wp-block-query">
+					<!-- wp:post-template -->
+					<!-- wp:list -->
+					<ul class="wp-block-list taxonomies container mx-auto px-[20px] flex flex-wrap justify-between items-center text-[18px] font-medium">
+							<!-- wp:list-item -->
+							<li class="w-[100px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"miasto"} /--></li>
+							<!-- /wp:list-item -->
+							<!-- wp:list-item -->
+							<li class="w-[180px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"osiedla"} /--></li>
+							<!-- /wp:list-item -->
+							<!-- wp:list-item -->
+							<li class="w-[100px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"budynek"} /--></li>
+							<!-- /wp:list-item -->
+							<!-- wp:list-item -->
+							<li class="w-[65px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"nr"} /--></li>
+							<!-- /wp:list-item -->
+							<!-- wp:list-item -->
+							<li class="w-[100px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"pokoje"} /--></li>
+							<!-- /wp:list-item -->
+							<!-- wp:list-item -->
+							<li class="w-[110px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"metraz"} /--></li>
+							<!-- /wp:list-item -->
+							<!-- wp:list-item -->
+							<li class="w-[100px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"pietro"} /--></li>
+							<!-- /wp:list-item -->
+							<!-- wp:list-item -->
+							<li class="w-[130px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"cena"} /--></li>
+							<!-- /wp:list-item -->
+							<!-- wp:list-item -->
+							<li class="w-[175px] py-[20px] border-b-[1px] border-[#e6eaf0]"><!-- wp:post-terms {"term":"termin"} /--></li>
+							<!-- /wp:list-item -->
+					</ul>
+					<!-- /wp:list -->
+
+					<!-- /wp:post-template -->
+					<!-- wp:query-pagination -->
+					
+					<div class="wp-block-query-pagination">
+						<!-- wp:query-pagination-previous /-->
+						<!-- wp:query-pagination-next /-->
+					</div>
+					<!-- /wp:query-pagination -->
 				</div>
-				<!-- /wp:query-pagination -->
+				<!-- /wp:query -->
+				
 			</div>
-			<!-- /wp:query -->
+			<!-- /wp:group -->
 
 
 
