@@ -180,7 +180,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] pt-[140px] pb-[100px]">
     <!-- wp:paragraph -->
-    <p class="text-[24px]">Przykładowa aranżacja <span class="text-[#828894]">(kliknij zdjęcie by powiększyć)</span></p>
+    <p class="mb-[60px] text-[24px]">Przykładowa aranżacja <span class="text-[#828894]">(kliknij zdjęcie by powiększyć)</span></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
