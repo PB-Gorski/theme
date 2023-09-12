@@ -18,7 +18,6 @@
     </figure>
     <!-- /wp:image -->
 
-
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:paragraph -->
@@ -48,13 +47,62 @@
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div class="wp-block-group bar-info container mx-auto h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] flex items-center justify-between absolute bottom-[-60px]">
+      <!-- wp:group -->
+      <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
+        <!-- wp:group -->
+        <div class="wp-block-group col">
+          <!-- wp:paragraph -->
+          <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">odbiór</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:post-terms {"term":"termin"} /-->
+        </div>
+        <!-- /wp:group -->
+        <!-- wp:group -->
+        <div class="wp-block-group col">
+          <!-- wp:paragraph -->
+          <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">powierzchnia</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:group -->
+          <div class="wp-block-group wrapper flex gap-[4px]">
+            <!-- wp:post-terms {"term":"metraz"} /-->
+
+            <!-- wp:paragraph -->
+            <p>m<sup>2</sup></p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+        <!-- wp:group -->
+        <div class="wp-block-group col">
+          <!-- wp:paragraph -->
+          <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">kondygnacja</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:post-terms {"term":"pietro"} /-->
+        </div>
+        <!-- /wp:group -->
+        <!-- wp:group -->
+        <div class="wp-block-group col">
+          <!-- wp:paragraph -->
+          <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">liczba pokoi</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:post-terms {"term":"pokoje"} /-->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
+  <div class="wp-block-group container mx-auto modal relative desktop:px-0 px-[20px]">
     <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-    <div class="wp-block-group modal relative">
+    <div class="wp-block-group relative">
       <!-- wp:group -->
       <div class="wp-block-group call-back-modal-bg hidden desktop:block opacity-0 z-[-1] bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen transition duration-300 ease"></div>
       <!-- /wp:group -->
@@ -122,55 +170,6 @@
           <img src="<?php echo home_url() ?>//wp-content/themes/pbgorski/assets/img/frontpage/phone-icon.png" alt="phone-icon">
         </figure>
         <!-- /wp:image -->
-      </div>
-      <!-- /wp:group -->
-    </div>
-    <!-- /wp:group -->
-  </div>
-  <!-- /wp:group -->
-
-  <!-- wp:group -->
-  <div class="wp-block-group bar-info container mx-auto h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] flex items-center justify-between absolute bottom-[-60px]">
-    <!-- wp:group -->
-    <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
-      <!-- wp:group -->
-      <div class="wp-block-group col">
-        <!-- wp:paragraph -->
-        <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">odbiór</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:post-terms {"term":"termin"} /-->
-      </div>
-      <!-- /wp:group -->
-      <!-- wp:group -->
-      <div class="wp-block-group col">
-        <!-- wp:paragraph -->
-        <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">powierzchnia</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:group -->
-        <div class="wp-block-group wrapper flex gap-[4px]">
-          <!-- wp:post-terms {"term":"metraz"} /-->
-
-          <!-- wp:paragraph -->
-          <p>m<sup>2</sup></p>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-      <!-- wp:group -->
-      <div class="wp-block-group col">
-        <!-- wp:paragraph -->
-        <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">kondygnacja</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:post-terms {"term":"pietro"} /-->
-      </div>
-      <!-- /wp:group -->
-      <!-- wp:group -->
-      <div class="wp-block-group col">
-        <!-- wp:paragraph -->
-        <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">liczba pokoi</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:post-terms {"term":"pokoje"} /-->
       </div>
       <!-- /wp:group -->
     </div>
