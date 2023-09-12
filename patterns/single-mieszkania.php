@@ -232,16 +232,20 @@
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
-      <div class="wp-block-group">
-        <!-- wp:paragraph -->
-        <p class="uppercase text-[10px] text-[#a1a7b2]">budynek</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:post-terms {"term":"nr"} /-->
+      <div class="wp-block-group flex gap-[50px]">
+        <!-- wp:group -->
+        <div class="wp-block-group text-[30px]">
+          <!-- wp:paragraph -->
+          <p class="uppercase text-[10px] text-[#a1a7b2]">budynek</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:post-terms {"term":"nr"} /-->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group">
+      <div class="wp-block-group text-[30px]">
         <!-- wp:paragraph -->
         <p class="uppercase text-[10px] text-[#a1a7b2]">klatka</p>
         <!-- /wp:paragraph -->
@@ -250,7 +254,7 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group">
+      <div class="wp-block-group text-[30px]">
         <!-- wp:paragraph -->
         <p class="uppercase text-[10px] text-[#a1a7b2]">kondygnacja</p>
         <!-- /wp:paragraph -->
