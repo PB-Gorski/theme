@@ -22,9 +22,9 @@
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:paragraph -->
-      <a href="/mieszkania/" class="group mb-[20px] btn-back desktop:mb-[40px] w-fit font-semibold flex items-center gap-[8px]">
+      <a href="/mieszkania/" class="group mb-[20px] btn-back desktop:mb-[40px] w-fit flex items-center gap-[8px]">
         <!-- wp:paragraph -->
-        <p class="text-[14px] text-white opacity-[0.75]">&larr; Wróć do listy</p>
+        <p class="text-[18px] text-white opacity-[0.75]">&larr; Wyszukiwanie</p>
         <!-- /wp:paragraph -->
       </a>
       <!-- /wp:paragraph -->
@@ -41,7 +41,7 @@
         <!-- wp:group -->
         <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <p class="max-w-[550px] text-white opacity-[0.75] flex gap-[4px]">W inwestycji <span class="opacity-100 text-white"> <!-- wp:post-terms {"term":"osiedla"} /--> </span></p>
+          <p class="max-w-[550px] text-white opacity-[0.75] flex gap-[4px]">W inwestycji <!-- wp:post-terms {"term":"osiedla"} /--></p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
