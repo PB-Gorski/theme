@@ -258,12 +258,18 @@
         <!-- wp:paragraph -->
         <p class="uppercase text-[10px] text-[#a1a7b2]">kondygnacja</p>
         <!-- /wp:paragraph -->
-        <!-- wp:paragraph -->
-        <p class=" text-[30px]">Piętro</p>
-        <!-- /wp:paragraph -->
+
+        <!-- wp:group -->
+        <div class="wp-block-group flex gap-[4px]">
+          <!-- wp:paragraph -->
+          <p class=" text-[30px]">Piętro</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:post-terms {"term":"pietro"} /-->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
-      <!-- wp:post-terms {"term":"pietro"} /-->
+
     </div>
     <!-- /wp:group -->
 
