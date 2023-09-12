@@ -286,6 +286,7 @@ label{
   justify-content: center;
   gap: 15px;
   z-index: 1;
+  font-weight: 700;
 }
 .beautiful-taxonomy-filters-button::after{
   content: '';
