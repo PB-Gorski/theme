@@ -183,6 +183,45 @@
     <p class="text-[24px]">Przykładowa aranżacja <span class="text-[#828894]">(kliknij zdjęcie by powiększyć)</span></p>
     <!-- /wp:paragraph -->
 
+    <!-- wp:group -->
+    <div class="wp-block-group two-col-layout">
+      <!-- wp:group -->
+      <div class="wp-block-group left-col w-1/2">
+        <!-- wp:paragraph -->
+        <p>img</p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:group -->
+      <div class="wp-block-group right-col w-1/2">
+        <!-- wp:paragraph -->
+        <p class="uppercase text-[10px] text-[#a1a7b2]">cena lokalu</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class="text-[36px] flex gap-[4px]"><!-- wp:post-terms {"term":"cena"} /--> zł</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class="text-[18pxpx] text-primaryRed">Zapytaj o kredyt</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group group btn-download relative bg-[#f5f7fa] text-textGray w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
+          <!-- wp:paragraph -->
+          <p class="font-bold z-[1]">Pobierz kartę lokalu</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+        <!-- wp:group -->
+        <div class="wp-block-group group btn-find-more relative bg-[#3d4b66] text-white w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#e9ecf2] before:transition-height before:duration-300 before:ease cursor-pointer">
+          <!-- wp:paragraph -->
+          <p class="font-bold z-[1]">Zapytaj o mieszkanie</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
     <!-- wp:post-content /-->
   </div>
   <!-- /wp:group -->
