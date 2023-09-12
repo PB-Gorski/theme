@@ -191,7 +191,7 @@
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
-      <div class="wp-block-group right-col w-[40%] pl-[40px]">
+      <div class="wp-block-group right-col w-[40%] pl-[40px] pt-[50px]">
         <!-- wp:paragraph -->
         <p class="uppercase text-[10px] text-[#a1a7b2]">cena lokalu</p>
         <!-- /wp:paragraph -->
@@ -224,6 +224,19 @@
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div class="wp-block-group apartment-info">
+      <!-- wp:paragraph -->
+      <p class="mb-[50px] text-[24px] text-[#828894]">Lokalizacja mieszkania na kondygnacji</p>
+      <!-- /wp:paragraph -->
+      <!-- wp:post-terms {"term":"budynek"} /-->
+      <!-- wp:post-terms {"term":"klatka"} /-->
+      <!-- wp:post-terms {"term":"pietro"} /-->
+    </div>
+    <!-- /wp:group -->
+
+
 
 
   </div>
