@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group bg-bgLightGray">
     <!-- wp:group -->
-    <div class="wp-block-group search-wrapper mx-auto py-[20px] px-[20px] desktop:h-[102px] text-[18px] flex flex-col desktop:flex-row gap-[10px] desktop:gap-[1px]">
+    <div class="wp-block-group search-wrapper mx-auto py-[20px] px-[20px] desktop:h-[102px] text-[18px] flex flex-col desktop:flex-row gap-[10px] desktop:gap-[1px] overflow-y-hidden">
       <!-- wp:group -->
       <div class="wp-block-group hidden miasto select-wrapper">
         <!-- wp:group -->
