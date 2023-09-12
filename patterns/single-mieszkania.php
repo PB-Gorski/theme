@@ -11,9 +11,14 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Wpis" class="wp-block-group mieszkania-page-post mb-[150px] ooverflow-hidden">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
+  <div class="wp-block-group banner w-full h-[460px] relative py-[60px]">
+    <!-- wp:image -->
+    <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
+      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/lista-mieszkan-bg.jpeg" alt="banner-bg">
+    </figure>
+    <!-- /wp:image -->
     <!-- wp:paragraph -->
-    <a href="/aktualnosci/" class="group mb-[20px] desktop:mb-[40px] w-fit font-semibold flex items-center gap-[8px]">
+    <a href="/mieszkania/" class="group mb-[20px] btn-back desktop:mb-[40px] w-fit font-semibold flex items-center gap-[8px]">
       <!-- wp:group -->
       <div class="wp-block-group group w-[56px] h-[56px]">
         <!-- wp:paragraph -->
@@ -32,7 +37,32 @@
       <!-- /wp:paragraph -->
     </a>
     <!-- /wp:paragraph -->
-
+    <!-- wp:group -->
+    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px]">
+      <!-- wp:group -->
+      <div class="wp-block-group title-wrapper">
+        <!-- wp:group -->
+        <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
+          <!-- wp:paragraph -->
+          <p><!-- wp:post-title /--></p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+        <!-- wp:group -->
+        <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
+          <!-- wp:paragraph -->
+          <p class="max-w-[550px] text-white opacity-[0.75]">W inwestycji X <!-- wp:post-terms {"term":"osiedla"} /--></p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+  <!-- wp:group -->
+  <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
     <!-- wp:paragraph -->
     <p>single-mieszkania</p>
     <!-- /wp:paragraph -->
@@ -109,37 +139,7 @@
       </div>
       <!-- /wp:group -->
 
-      <!-- wp:group -->
-      <div class="wp-block-group banner w-full h-[460px] relative py-[60px]">
-        <!-- wp:image -->
-        <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
-          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/lista-mieszkan-bg.jpeg" alt="banner-bg">
-        </figure>
-        <!-- /wp:image -->
-        <!-- wp:group -->
-        <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px]">
-          <!-- wp:group -->
-          <div class="wp-block-group title-wrapper">
-            <!-- wp:group -->
-            <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
-              <!-- wp:paragraph -->
-              <p><!-- wp:post-title /--></p>
-              <!-- /wp:paragraph -->
-            </div>
-            <!-- /wp:group -->
-            <!-- wp:group -->
-            <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
-              <!-- wp:paragraph -->
-              <p class="max-w-[550px] text-white opacity-[0.75]">W inwestycji X <!-- wp:post-terms {"term":"osiedla"} /--></p>
-              <!-- /wp:paragraph -->
-            </div>
-            <!-- /wp:group -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
+
     </div>
     <!-- /wp:group -->
 
