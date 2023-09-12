@@ -146,7 +146,14 @@
         <!-- wp:paragraph -->
         <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">powierzchnia</p>
         <!-- /wp:paragraph -->
-        <!-- wp:post-terms {"term":"metraz"} /-->
+        <!-- /wp:group -->
+        <div class="wrapper flex gap-[4px]">
+          <!-- wp:post-terms {"term":"metraz"} /-->
+          <!-- wp:paragraph -->
+          <p>m<sup>2</sup></p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
