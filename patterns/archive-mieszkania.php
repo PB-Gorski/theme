@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group search-wrapper container mx-auto py-[20px] desktop:px-0 px-[20px] text-[18px] flex flex-col desktop:flex-row gap-[10px] desktop:gap-[1px]">
       <!-- wp:group -->
-      <div class="wp-block-group miasto select-wrapper">
+      <div class="wp-block-group hidden miasto select-wrapper">
         <!-- wp:group -->
         <div class="wp-block-group select">
           <!-- wp:group -->
@@ -48,7 +48,7 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group inwestycje select-wrapper">
+      <div class="wp-block-group hidden inwestycje select-wrapper">
         <!-- wp:group -->
         <div class="wp-block-group select">
           <!-- wp:group -->
@@ -85,6 +85,8 @@
         <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
+
+      <?php do_action('show_beautiful_filters', 'mieszkania'); ?>
 
       <!-- wp:group -->
       <div class="wp-block-group btns-wrapper flex flex-row ">
@@ -131,37 +133,6 @@
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
-  </div>
-  <!-- /wp:group -->
-
-
-  <!-- wp:group -->
-  <div class="wp-block-group container lista-mieszkan mx-auto desktop:px-0 px-[20px] py-[85px]">
-    <!-- wp:list -->
-    <ul class="wp-block-list all-taxonomy-list container mx-auto px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between gap-[20px] text-[13px] font-bold">
-      <?php
-      $i = 0;
-      $taxonomies = get_terms();
-      $taxonomies2 = get_taxonomies();
-      // print_r($taxonomies);
-      // echo '</br> 2 </br>';
-      // print_r($taxonomies2);
-      ?>
-
-      <?php
-      foreach ($taxonomies2 as $taxonomy) {
-        if ($i > 7) {
-      ?>
-          <!-- wp:list-item -->
-          <li class="uppercase text-[#8a8f99]"><?php echo $taxonomy; ?></li>
-          <!-- /wp:list-item -->
-      <?php };
-        $i++;
-      }; ?>
-    </ul>
-    <!-- /wp:list -->
-
-    <?php do_action('show_beautiful_filters', 'mieszkania'); ?>
   </div>
   <!-- /wp:group -->
 
