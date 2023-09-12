@@ -260,7 +260,7 @@
         <!-- /wp:paragraph -->
 
         <!-- wp:group -->
-        <div class="wp-block-group flex gap-[4px]">
+        <div class="wp-block-group flex gap-[8px]">
           <!-- wp:paragraph -->
           <p class=" text-[30px]">Piętro</p>
           <!-- /wp:paragraph -->
