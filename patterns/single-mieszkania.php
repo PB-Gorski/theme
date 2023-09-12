@@ -49,9 +49,9 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group bar-info container mx-auto h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] flex items-center justify-between absolute bottom-[-60px]">
+    <div class="wp-block-group bar-info max-w-[1200px] mx-auto h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] absolute bottom-[-60px]">
       <!-- wp:group -->
-      <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
+      <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] flex items-center justify-between">
         <!-- wp:group -->
         <div class="wp-block-group col">
           <!-- wp:paragraph -->
