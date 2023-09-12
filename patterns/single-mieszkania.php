@@ -50,6 +50,7 @@
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
+
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
     <!-- wp:paragraph -->
@@ -57,7 +58,7 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-    <div id="Banner" class="wp-block-group banner-lista-mieszkan relative">
+    <div class="wp-block-group modal relative">
       <!-- wp:group -->
       <div class="wp-block-group call-back-modal-bg hidden desktop:block opacity-0 z-[-1] bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen transition duration-300 ease"></div>
       <!-- /wp:group -->
@@ -127,11 +128,12 @@
         <!-- /wp:image -->
       </div>
       <!-- /wp:group -->
-
-
     </div>
     <!-- /wp:group -->
 
+    <!-- wp:paragraph -->
+    <p class="text-[24px]">Przykładowa aranżacja <span class="text-[#828894]">(kliknij zdjęcie by powiększyć)</span></p>
+    <!-- /wp:paragraph -->
 
     <!-- wp:post-content /-->
   </div>
