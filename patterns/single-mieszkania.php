@@ -226,7 +226,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group apartment-info pl-[50px]">
+    <div class="wp-block-group apartment-info desktop:pl-[50px]">
       <!-- wp:paragraph -->
       <p class="mb-[50px] text-[24px] text-[#828894]">Lokalizacja mieszkania na kondygnacji</p>
       <!-- /wp:paragraph -->
