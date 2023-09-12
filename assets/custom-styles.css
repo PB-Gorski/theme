@@ -269,6 +269,9 @@ label{
   box-shadow: none!important;
   -webkit-box-shadow: none!important
 }
+.beautiful-taxonomy-filters-button:hover {
+  background: #E80D38!important;
+}
 .beautiful-taxonomy-filters-label{
   display: none!important;
 }
