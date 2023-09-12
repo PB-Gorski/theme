@@ -267,3 +267,16 @@ label{
 .beautiful-taxonomy-filters {
   background: #ebeef2;
 }
+.beautiful-taxonomy-filters-label{
+  display: none!important;
+}
+.beautiful-taxonomy-filters-button{
+  background-color: #E80D38;
+  color: white;
+  width: 245px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
