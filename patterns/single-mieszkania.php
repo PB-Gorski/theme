@@ -34,7 +34,7 @@
         <!-- wp:group -->
         <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
           <!-- wp:paragraph -->
-          <p class="z-[1]"><!-- wp:post-title /--></p>
+          <p class="z-[1] text-white"><!-- wp:post-title /--></p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
