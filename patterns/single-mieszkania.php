@@ -53,7 +53,7 @@
       <!-- wp:group -->
       <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] py-[30px] desktop:py-0 flex items-center desktop:gap-[110px] flex-wrap">
         <!-- wp:group -->
-        <div class="wp-block-group col basis-1/2">
+        <div class="wp-block-group col basis-1/2 desktop:basis-auto">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">odbiór</p>
           <!-- /wp:paragraph -->
@@ -61,7 +61,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group col basis-1/2">
+        <div class="wp-block-group col basis-1/2 desktop:basis-auto">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">powierzchnia</p>
           <!-- /wp:paragraph -->
@@ -77,7 +77,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group col basis-1/2">
+        <div class="wp-block-group col basis-1/2 desktop:basis-auto">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">kondygnacja</p>
           <!-- /wp:paragraph -->
@@ -85,7 +85,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group col basis-1/2">
+        <div class="wp-block-group col basis-1/2 desktop:basis-auto">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">liczba pokoi</p>
           <!-- /wp:paragraph -->
