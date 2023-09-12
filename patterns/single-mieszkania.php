@@ -132,11 +132,11 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group bar-info w-full h-[120px] bg-[2e384d] flex ">
+    <div class="wp-block-group bar-info w-full h-[120px] bg-[#2e384d] flex items-center justify-between">
       <!-- wp:group -->
       <div class="wp-block-group col">
         <!-- wp:paragraph -->
-        <p class="uppercase">odbiór</p>
+        <p class="uppercase text-[10px] text-[#8a8f99]">odbiór</p>
         <!-- /wp:paragraph -->
         <!-- wp:post-terms {"term":"termin"} /-->
       </div>
@@ -144,7 +144,7 @@
       <!-- wp:group -->
       <div class="wp-block-group col">
         <!-- wp:paragraph -->
-        <p class="uppercase">powierzchnia</p>
+        <p class="uppercase text-[10px] text-[#8a8f99]">powierzchnia</p>
         <!-- /wp:paragraph -->
         <!-- wp:post-terms {"term":"powierzchnia"} /-->
       </div>
@@ -152,7 +152,7 @@
       <!-- wp:group -->
       <div class="wp-block-group col">
         <!-- wp:paragraph -->
-        <p class="uppercase">kondygnacja</p>
+        <p class="uppercase text-[10px] text-[#8a8f99]">kondygnacja</p>
         <!-- /wp:paragraph -->
         <!-- wp:post-terms {"term":"pietro"} /-->
       </div>
@@ -160,7 +160,7 @@
       <!-- wp:group -->
       <div class="wp-block-group col">
         <!-- wp:paragraph -->
-        <p class="uppercase">liczba pokoi</p>
+        <p class="uppercase text-[10px] text-[#8a8f99]">liczba pokoi</p>
         <!-- /wp:paragraph -->
         <!-- wp:post-terms {"term":"pokoje"} /-->
       </div>
