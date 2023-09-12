@@ -241,15 +241,15 @@
           <!-- wp:post-terms {"term":"nr"} /-->
         </div>
         <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
 
-      <!-- wp:group -->
-      <div class="wp-block-group text-[30px]">
-        <!-- wp:paragraph -->
-        <p class="uppercase text-[10px] text-[#a1a7b2]">klatka</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:post-terms {"term":"budynek"} /-->
+        <!-- wp:group -->
+        <div class="wp-block-group text-[30px]">
+          <!-- wp:paragraph -->
+          <p class="uppercase text-[10px] text-[#a1a7b2]">klatka</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:post-terms {"term":"budynek"} /-->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
 
