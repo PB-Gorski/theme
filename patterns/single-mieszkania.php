@@ -51,7 +51,7 @@
     <!-- wp:group -->
     <div class="wp-block-group bar-info max-w-[1260px] w-full mx-auto desktop:h-[120px] bg-[#2e384d] desktop:px-[50px] text-white text-[24px] absolute bottom-[-60px] left-[50%] translate-x-[-50%] flex justify-center items-center">
       <!-- wp:group -->
-      <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] py-[30px] desktop:py-0 flex items-center desktop:gap-[110px]">
+      <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] py-[30px] desktop:py-0 flex items-center desktop:gap-[110px] flex-wrap">
         <!-- wp:group -->
         <div class="wp-block-group col basis-1/2">
           <!-- wp:paragraph -->
