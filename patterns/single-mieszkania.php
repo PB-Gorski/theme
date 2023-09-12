@@ -49,7 +49,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group bar-info max-w-[1200px] w-full mx-auto h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] absolute bottom-[-60px] left-[50%] translate-x-[-50%]">
+    <div class="wp-block-group bar-info max-w-[1366px] w-full mx-auto h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] absolute bottom-[-60px] left-[50%] translate-x-[-50%]">
       <!-- wp:group -->
       <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] flex items-center justify-between">
         <!-- wp:group -->
