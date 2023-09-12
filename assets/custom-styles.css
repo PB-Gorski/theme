@@ -266,6 +266,8 @@ label{
 }
 .beautiful-taxonomy-filters {
   background: #ebeef2;
+  box-shadow: none!important;
+  -webkit-box-shadow: none!important
 }
 .beautiful-taxonomy-filters-label{
   display: none!important;
