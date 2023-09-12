@@ -132,7 +132,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group bar-info w-full h-[120px] bg-[#2e384d] text-white flex items-center justify-between">
+    <div class="wp-block-group bar-info w-full h-[120px] bg-[#2e384d] text-white text-[24px] flex items-center justify-between">
       <!-- wp:group -->
       <div class="wp-block-group col">
         <!-- wp:paragraph -->
