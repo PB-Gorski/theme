@@ -312,7 +312,7 @@ label{
   margin-right: 2px;
   width: 100%;
 }
-.beautiful-taxonomy-filters-tax::before{
+.beautiful-taxonomy-filters-tax .clearfix::before{
   display: none;
 }
 .beautiful-taxonomy-filters-select{
