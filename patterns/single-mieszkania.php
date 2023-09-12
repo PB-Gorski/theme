@@ -198,7 +198,7 @@
         <p class="uppercase text-[10px] text-[#a1a7b2]">cena lokalu</p>
         <!-- /wp:paragraph -->
         <!-- wp:group -->
-        <div class="wp-block-group price flex gap-[4px]">
+        <div class="wp-block-group price text-[36px] flex gap-[4px]">
           <!-- wp:post-terms {"term":"cena"} /-->
           <!-- wp:paragraph -->
           <p class="text-[36px] flex gap-[4px]"> zł</p>
@@ -206,10 +206,10 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:paragraph -->
-        <p class="text-[18pxpx] text-primaryRed">Zapytaj o kredyt</p>
+        <p class="text-[18pxpx] mb-[20px] text-primaryRed">Zapytaj o kredyt</p>
         <!-- /wp:paragraph -->
         <!-- wp:group -->
-        <div class="wp-block-group group btn-download relative bg-[#f5f7fa] text-textGray w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#e9ecf2] before:transition-height before:duration-300 before:ease cursor-pointer">
+        <div class="wp-block-group group mb-[20px] btn-download relative bg-[#f5f7fa] text-textGray w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#e9ecf2] before:transition-height before:duration-300 before:ease cursor-pointer">
           <!-- wp:paragraph -->
           <p class="font-bold z-[1]">Pobierz kartę lokalu</p>
           <!-- /wp:paragraph -->
