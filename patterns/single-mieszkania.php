@@ -131,6 +131,44 @@
     </div>
     <!-- /wp:group -->
 
+    <!-- wp:group -->
+    <div class="wp-block-group bar-info w-full h-[120px] bg-[2e384d] flex ">
+      <!-- wp:group -->
+      <div class="wp-block-group col">
+        <!-- wp:paragraph -->
+        <p class="uppercase">odbiór</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:post-terms {"term":"termin"} /-->
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:group -->
+      <div class="wp-block-group col">
+        <!-- wp:paragraph -->
+        <p class="uppercase">powierzchnia</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:post-terms {"term":"powierzchnia"} /-->
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:group -->
+      <div class="wp-block-group col">
+        <!-- wp:paragraph -->
+        <p class="uppercase">kondygnacja</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:post-terms {"term":"pietro"} /-->
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:group -->
+      <div class="wp-block-group col">
+        <!-- wp:paragraph -->
+        <p class="uppercase">liczba pokoi</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:post-terms {"term":"pokoje"} /-->
+      </div>
+      <!-- /wp:group -->
+
+    </div>
+    <!-- /wp:group -->
+
     <!-- wp:paragraph -->
     <p class="text-[24px]">Przykładowa aranżacja <span class="text-[#828894]">(kliknij zdjęcie by powiększyć)</span></p>
     <!-- /wp:paragraph -->
