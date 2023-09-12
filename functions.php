@@ -309,7 +309,6 @@ function pb_gorski_blocks_register_styles()
 	wp_enqueue_script('swiperMain', get_theme_file_uri('/assets/swiper-main.js'), '1.0', array('swiper'));
 
 	wp_enqueue_style('custom-styles', get_theme_file_uri('/assets/styles.min.css'), '1.0', array('swiper-css'));
-	wp_enqueue_style('taxonomy-filter', get_theme_file_uri('/assets/taxonomy-filter.css'), '1.0', array('taxonomy-filter'));
 
 	wp_enqueue_style('google-fonts-api', '//fonts.googleapis.com', '1.0');
 	wp_enqueue_style('google-fonts-gstatic', '//fonts.gstatic.com', '1.0');
