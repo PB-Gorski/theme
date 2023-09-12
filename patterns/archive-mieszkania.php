@@ -91,7 +91,7 @@
       <!-- wp:group -->
       <div class="wp-block-group btns-wrapper flex flex-row ">
         <!-- wp:group -->
-        <div class="wp-block-group btn-more w-full desktop:w-[230px] h-[65px] bg-white flex gap-[10px] justify-center items-center cursor-pointer">
+        <div class="wp-block-group btn-more w-full desktop:w-[230px] h-[65px] bg-[#f5f7fa] flex gap-[10px] justify-center items-center cursor-pointer">
           <!-- wp:paragraph -->
           <p>
             <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
