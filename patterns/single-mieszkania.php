@@ -184,14 +184,14 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
-    <div class="wp-block-group two-col-layout flex">
+    <div class="wp-block-group two-col-layout flex px-[50px]">
       <!-- wp:group -->
-      <div class="wp-block-group left-col w-1/2">
+      <div class="wp-block-group left-col w-[40%]">
         <!-- wp:post-content /-->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
-      <div class="wp-block-group right-col w-1/2 pl-[40px]">
+      <div class="wp-block-group right-col w-[40%] pl-[40px]">
         <!-- wp:paragraph -->
         <p class="uppercase text-[10px] text-[#a1a7b2]">cena lokalu</p>
         <!-- /wp:paragraph -->
