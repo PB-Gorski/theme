@@ -134,55 +134,6 @@
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:query -->
-  <div class="wp-block-query lista-mieszkan">
-    <!-- wp:post-template -->
-    <!-- wp:list -->
-    <ul class="wp-block-list taxonomies px-[20px] flex flex-wrap justify-between items-center text-[18px] font-medium">
-      <!-- wp:list-item -->
-      <li class="w-[100px] py-[20px] "><!-- wp:post-terms {"term":"miasto"} /--></li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
-      <li class="w-[180px] py-[20px]"><!-- wp:post-terms {"term":"osiedla"} /--></li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
-      <li class="w-[100px] py-[20px]"><!-- wp:post-terms {"term":"budynek"} /--></li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
-      <li class="w-[65px] py-[20px]"><!-- wp:post-terms {"term":"nr"} /--></li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
-      <li class="w-[100px] py-[20px]"><!-- wp:post-terms {"term":"pokoje"} /--></li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
-      <li class="w-[110px] py-[20px] flex gap-[4px]"><!-- wp:post-terms {"term":"metraz"} /-->
-        <!-- wp:paragraph -->
-        <p>m<sup>2</sup></p>
-        <!-- /wp:paragraph -->
-      </li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
-      <li class="w-[100px] py-[20px]"><!-- wp:post-terms {"term":"pietro"} /--></li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
-      <li class="w-[130px] py-[20px] flex gap-[4px]"><!-- wp:post-terms {"term":"cena"} /--> zł</li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
-      <li class="w-[175px] py-[20px]"><!-- wp:post-terms {"term":"termin"} /--></li>
-      <!-- /wp:list-item -->
-    </ul>
-    <!-- /wp:list -->
-
-    <!-- /wp:post-template -->
-    <!-- wp:query-pagination -->
-
-    <div class="wp-block-query-pagination">
-      <!-- wp:query-pagination-previous /-->
-      <!-- wp:query-pagination-next /-->
-    </div>
-    <!-- /wp:query-pagination -->
-  </div>
-  <!-- /wp:query -->
 
 
   <!-- wp:group -->
