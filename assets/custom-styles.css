@@ -310,7 +310,10 @@ label{
 .beautiful-taxonomy-filters-tax{
   margin: 0;
   margin-right: 2px;
-  width: 222px;
+  width: 100%;
+}
+.beautiful-taxonomy-filters-tax::before{
+  display: none;
 }
 .beautiful-taxonomy-filters-select{
   margin: 0;
