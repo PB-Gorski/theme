@@ -330,7 +330,7 @@ label{
 }
 
 
-.select {
+select {
   position: relative;
   display: block;
   padding: 0 22px 0 22px;
@@ -341,11 +341,8 @@ label{
   cursor: pointer;
   transition: all 0.5s;
 }
-.select:hover {
+select:hover {
   cursor: pointer;
   background-color: #B2F1FF;
 }
-.select.selected {
-  color: #ffffff;
-  background-color: #305c91;
-}
+
