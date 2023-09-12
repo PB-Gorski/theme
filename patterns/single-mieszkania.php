@@ -186,7 +186,7 @@
     <!-- wp:group -->
     <div class="wp-block-group two-col-layout flex">
       <!-- wp:group -->
-      <div class="wp-block-group left-col w-1/2 bg-slate-300">
+      <div class="wp-block-group left-col w-1/2">
         <!-- wp:post-content /-->
       </div>
       <!-- /wp:group -->
