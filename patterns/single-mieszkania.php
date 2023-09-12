@@ -232,7 +232,7 @@
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
-      <div class="wp-block-group flex gap-[50px]">
+      <div class="wp-block-group mb-[30px] flex gap-[50px]">
         <!-- wp:group -->
         <div class="wp-block-group text-[30px]">
           <!-- wp:paragraph -->
