@@ -310,11 +310,17 @@ label{
 .beautiful-taxonomy-filters-tax{
   margin: 0;
   margin-right: 2px;
-  width: 230px;
+  width: 220px;
 }
 .beautiful-taxonomy-filters-select{
   margin: 0;
   width: 100%;
   height: 62px;
   color: #999;
+}
+.beautiful-taxonomy-filters-select-wrap{
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
 }
