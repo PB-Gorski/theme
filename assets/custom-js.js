@@ -108,7 +108,7 @@ window.addEventListener("load", function() {
   // search more options handle
   if(body.classList.contains('home') || body.classList.contains('archive')){
     const btnMore = document.querySelector('.btn-more');
-    const searchBar = document.querySelector('#search-wrapper');
+    const searchBar = document.querySelector('.search-wrapper');
     btnMore.addEventListener('click',()=>{
       (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[269px]') : searchBar.classList.toggle('h-[450px]');
     });
