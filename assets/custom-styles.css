@@ -267,7 +267,9 @@ label{
 .beautiful-taxonomy-filters {
   background: #ebeef2;
   box-shadow: none!important;
-  -webkit-box-shadow: none!important
+  -webkit-box-shadow: none!important;
+  padding: 0;
+  margin: 0;
 }
 .beautiful-taxonomy-filters-button:hover {
   background: #E80D38!important;
