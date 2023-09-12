@@ -110,7 +110,7 @@ window.addEventListener("load", function() {
     const btnMore = document.querySelector('.btn-more');
     const searchBar = document.querySelector('.search-wrapper');
     btnMore.addEventListener('click',()=>{
-      (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[269px]') : searchBar.classList.toggle('h-[450px]');
+      (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[184px]') : searchBar.classList.toggle('h-[450px]');
     });
   };
 
