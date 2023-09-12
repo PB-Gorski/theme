@@ -477,6 +477,17 @@ add_action('init', 'cptui_register_my_cpts_mieszkania', -1);
 
 function modify_filter_button($string)
 {
-	return 'Szukaj';
+	return '
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="injected-svg inject-svg icon-search">
+		<defs>
+			<style></style>
+		</defs>
+		<g id="icon_search" fill="none" stroke="#fff" stroke-width="2">
+			<circle cx="6.5" cy="6.5" r="5.5"></circle>
+			<path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-4-4"></path>
+		</g>
+	</svg>
+	Szukaj
+	';
 }
 add_filter('beautiful_filters_apply_button', 'modify_filter_button', 10, 1);
