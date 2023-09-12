@@ -296,7 +296,7 @@ label{
   width: 100%;
   min-height: 0%;
   background-color: #9C0927;
-  transition: height 0.3s ease;
+  transition: min-height 0.3s ease;
   cursor: pointer;
   z-index: -1;
 }
