@@ -17,29 +17,70 @@
 		<!-- wp:group -->
 		<div id="Page content" class="wp-block-group page-content-wrapper" >
 			<!-- wp:pattern {"slug":"lista-mieszkan-banner"} /-->
-			<!-- wp:pattern {"slug":"archive-mieszkania"} /-->
-			
-			<!-- wp:paragraph -->
-			<p>test</p>
-			<!-- /wp:paragraph -->
 
-			<!-- wp:query-title {"type":"archive"} /-->
 			<!-- wp:term-description /-->
 			<!-- wp:query -->
 			<div class="wp-block-query">
-			<!-- wp:post-template -->
-			<!-- wp:post-title {"isLink":true} /-->
-			<!-- wp:post-terms {"term":"miasto"} /-->
-			<!-- wp:post-terms {"term":"nr"} /-->
-			<!-- /wp:post-template -->
-			<!-- wp:query-pagination -->
-			<div class="wp-block-query-pagination">
-			<!-- wp:query-pagination-previous /-->
-			<!-- wp:query-pagination-next /-->
-			</div>
-			<!-- /wp:query-pagination -->
-			</div>
-			<!-- /wp:query -->
+				<!-- wp:post-template -->
+				<!-- wp:post-title {"isLink":true} /-->
+
+				<!-- wp:list -->
+				<ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] flex flex-wrap justify-between items-center gap-[20px] text-[18px] font-medium">
+						<!-- wp:list-item -->
+						<li class="w-fit flex flex-col gap-[4px]"><!-- wp:post-terms {"term":"miasto"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-fit flex flex-col gap-[4px]"><!-- wp:post-terms {"term":"inwestycja"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-fit flex flex-col gap-[4px]"><!-- wp:post-terms {"term":"budynek"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-fit flex flex-col gap-[4px]"><!-- wp:post-terms {"term":"nr"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-fit flex flex-col gap-[4px]"><!-- wp:post-terms {"term":"pokoje"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-fit flex flex-col gap-[4px]"><!-- wp:post-terms {"term":"metraz"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-fit flex flex-col gap-[4px]"><!-- wp:post-terms {"term":"pietro"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-fit flex flex-col gap-[4px]"><!-- wp:post-terms {"term":"cena"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-fit flex flex-col gap-[4px]"><!-- wp:post-terms {"term":"termin"} /--></li>
+						<!-- /wp:list-item -->
+				</ul>
+				<!-- /wp:list -->
+				
+
+
+				<!-- wp:post-terms {"term":"miasto"} /-->
+				<!-- wp:post-terms {"term":"inwestycja"} /-->
+				<!-- wp:post-terms {"term":"budynek"} /-->
+				<!-- wp:post-terms {"term":"nr"} /-->
+				<!-- wp:post-terms {"term":"pokoje"} /-->
+				<!-- wp:post-terms {"term":"metraz"} /-->
+				<!-- wp:post-terms {"term":"pietro"} /-->
+				<!-- wp:post-terms {"term":"cena"} /-->
+				<!-- wp:post-terms {"term":"termin"} /-->
+				<!-- /wp:post-template -->
+				<!-- wp:query-pagination -->
+				<div class="wp-block-query-pagination">
+				<!-- wp:query-pagination-previous /-->
+				<!-- wp:query-pagination-next /-->
+				</div>
+				<!-- /wp:query-pagination -->
+				</div>
+				<!-- /wp:query -->
+
+			<!-- wp:pattern {"slug":"archive-mieszkania"} /-->
+
+
+
 			
 			<!-- wp:template-part {"slug":"front-page/cta"} /-->
 			<!-- wp:template-part {"slug":"front-page/newsletter"} /-->
