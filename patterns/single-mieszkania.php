@@ -146,7 +146,7 @@
         <!-- wp:paragraph -->
         <p class="uppercase text-[10px] text-[#8a8f99]">powierzchnia</p>
         <!-- /wp:paragraph -->
-        <!-- wp:post-terms {"term":"powierzchnia"} /-->
+        <!-- wp:post-terms {"term":"metraz"} /-->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
