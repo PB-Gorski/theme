@@ -477,7 +477,6 @@ add_action('init', 'cptui_register_my_cpts_mieszkania', -1);
 
 function modify_filter_button($string)
 {
-	return 'Search';
+	return 'Szukaj';
 }
-
 add_filter('beautiful_filters_apply_button', 'modify_filter_button', 10, 1);
