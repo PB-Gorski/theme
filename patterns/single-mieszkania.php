@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Title: single-post-content
- * Slug: single-post-content
+ * Title: single-mieszkania
+ * Slug: single-mieszkania
  * Categories: text, banner
  * Viewport Width: 1280
  */
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Wpis" class="wp-block-group single-page-post mb-[150px] ooverflow-hidden">
+<div id="Wpis" class="wp-block-group mieszkania-page-post mb-[150px] ooverflow-hidden">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
     <!-- wp:paragraph -->
