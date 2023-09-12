@@ -226,12 +226,39 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group apartment-info">
+    <div class="wp-block-group apartment-info pl-[50px]">
       <!-- wp:paragraph -->
       <p class="mb-[50px] text-[24px] text-[#828894]">Lokalizacja mieszkania na kondygnacji</p>
       <!-- /wp:paragraph -->
-      <!-- wp:post-terms {"term":"budynek"} /-->
-      <!-- wp:post-terms {"term":"klatka"} /-->
+
+      <!-- wp:group -->
+      <div class="wp-block-group">
+        <!-- wp:paragraph -->
+        <p class="uppercase text-[10px] text-[#a1a7b2]">budynek</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:post-terms {"term":"nr"} /-->
+      </div>
+      <!-- /wp:group -->
+
+      <!-- wp:group -->
+      <div class="wp-block-group">
+        <!-- wp:paragraph -->
+        <p class="uppercase text-[10px] text-[#a1a7b2]">klatka</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:post-terms {"term":"budynek"} /-->
+      </div>
+      <!-- /wp:group -->
+
+      <!-- wp:group -->
+      <div class="wp-block-group">
+        <!-- wp:paragraph -->
+        <p class="uppercase text-[10px] text-[#a1a7b2]">kondygnacja</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class=" text-[30px]">Piętro</p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
       <!-- wp:post-terms {"term":"pietro"} /-->
     </div>
     <!-- /wp:group -->
