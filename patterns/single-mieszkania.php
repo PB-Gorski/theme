@@ -193,13 +193,18 @@
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
-      <div class="wp-block-group right-col w-1/2">
+      <div class="wp-block-group right-col w-1/2 pl-[40px]">
         <!-- wp:paragraph -->
         <p class="uppercase text-[10px] text-[#a1a7b2]">cena lokalu</p>
         <!-- /wp:paragraph -->
-        <!-- wp:paragraph -->
-        <p class="text-[36px] flex gap-[4px]"><!-- wp:post-terms {"term":"cena"} /--> zł</p>
-        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group price flex gap-[4px]">
+          <!-- wp:post-terms {"term":"cena"} /-->
+          <!-- wp:paragraph -->
+          <p class="text-[36px] flex gap-[4px]"> zł</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
         <!-- wp:paragraph -->
         <p class="text-[18pxpx] text-primaryRed">Zapytaj o kredyt</p>
         <!-- /wp:paragraph -->
