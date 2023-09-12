@@ -39,10 +39,11 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
+        <div class="wp-block-group sub-title text-[24px] text-[#8a8f99] flex gap-[4px]">
           <!-- wp:paragraph -->
-          <p class="max-w-[550px] text-white opacity-[0.75] flex gap-[4px]">W inwestycji <!-- wp:post-terms {"term":"osiedla"} /--></p>
+          <p class="max-w-[550px] text-white opacity-[0.75] ">W inwestycji </p>
           <!-- /wp:paragraph -->
+          <!-- wp:post-terms {"term":"osiedla"} /-->
         </div>
         <!-- /wp:group -->
       </div>
