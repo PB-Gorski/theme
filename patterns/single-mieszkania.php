@@ -130,7 +130,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group bar-info max-w-[800px] desktop:max-w-[1200px] h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] flex items-center justify-between absolute top-[-60px]">
+  <div class="wp-block-group bar-info max-w-[800px] desktop:max-w-[1200px] mx-auto h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] flex items-center justify-between absolute top-[-60px]">
     <!-- wp:group -->
     <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
       <!-- wp:group -->
@@ -146,9 +146,10 @@
         <!-- wp:paragraph -->
         <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">powierzchnia</p>
         <!-- /wp:paragraph -->
-        <!-- /wp:group -->
+        <!-- wp:group -->
         <div class="wrapper flex gap-[4px]">
           <!-- wp:post-terms {"term":"metraz"} /-->
+
           <!-- wp:paragraph -->
           <p>m<sup>2</sup></p>
           <!-- /wp:paragraph -->
