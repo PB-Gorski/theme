@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Wpis" class="wp-block-group mieszkania-page-post mb-[150px] ooverflow-hidden">
+<div id="Wpis" class="wp-block-group mieszkania-page-post mb-[150px] ooverflow-hidden relative">
   <!-- wp:group -->
   <div class="wp-block-group banner w-full h-[460px] relative py-[60px] before:content-[''] before:inline-block before:w-full before:h-full before:bg-[#091224] before:absolute before:top-0 before:left-0 before:opacity-[25%]">
     <!-- wp:image -->
