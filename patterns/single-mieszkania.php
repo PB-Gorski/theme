@@ -184,7 +184,7 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
-    <div class="wp-block-group two-col-layout desktop:flex justify-center desktop:px-[50px]">
+    <div class="wp-block-group two-col-layout mb-[30px] desktop:flex justify-center desktop:px-[50px]">
       <!-- wp:group -->
       <div class="wp-block-group left-col desktop:w-[60%]">
         <!-- wp:post-content /-->
