@@ -286,7 +286,7 @@ label{
   justify-content: center;
   gap: 15px;
 }
-.beautiful-taxonomy-filters-button::before{
+.beautiful-taxonomy-filters-button::after{
   content: '';
   display: inline-block;
   position: absolute;
@@ -298,6 +298,6 @@ label{
   transition: height 0.3s ease;
   cursor: pointer;
 }
-.beautiful-taxonomy-filters-button:hover .beautiful-taxonomy-filters-button::before{
+.beautiful-taxonomy-filters-button:hover::after{
   min-height: 100%;
 }
