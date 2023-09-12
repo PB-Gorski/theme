@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Wpis" class="wp-block-group mieszkania-page-post ooverflow-hidden relative">
   <!-- wp:group -->
-  <div class="wp-block-group banner w-full h-[460px] relative py-[60px] before:content-[''] before:inline-block before:w-full before:h-full before:bg-[#091224] before:absolute before:top-0 before:left-0 before:opacity-[25%]">
+  <div class="wp-block-group banner w-full h-[400px] desktop:h-[460px] relative py-[60px] before:content-[''] before:inline-block before:w-full before:h-full before:bg-[#091224] before:absolute before:top-0 before:left-0 before:opacity-[25%]">
     <!-- wp:image -->
     <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/lista-mieszkan-bg.jpeg" alt="banner-bg">
@@ -49,11 +49,11 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group bar-info max-w-[1260px] w-full mx-auto h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] absolute bottom-[-60px] left-[50%] translate-x-[-50%] flex justify-center items-center">
+    <div class="wp-block-group bar-info max-w-[1260px] w-full mx-auto desktop:h-[120px] bg-[#2e384d] desktop:px-[50px] text-white text-[24px] absolute bottom-[-60px] left-[50%] translate-x-[-50%] flex justify-center items-center">
       <!-- wp:group -->
-      <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] flex items-center desktop:gap-[110px]">
+      <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] py-[30px] desktop:py-0 flex items-center desktop:gap-[110px]">
         <!-- wp:group -->
-        <div class="wp-block-group col">
+        <div class="wp-block-group col basis-1/2">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">odbiór</p>
           <!-- /wp:paragraph -->
@@ -61,7 +61,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group col">
+        <div class="wp-block-group col basis-1/2">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">powierzchnia</p>
           <!-- /wp:paragraph -->
@@ -77,7 +77,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group col">
+        <div class="wp-block-group col basis-1/2">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">kondygnacja</p>
           <!-- /wp:paragraph -->
@@ -85,7 +85,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group col">
+        <div class="wp-block-group col basis-1/2">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">liczba pokoi</p>
           <!-- /wp:paragraph -->
