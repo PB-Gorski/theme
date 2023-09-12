@@ -4,6 +4,7 @@ window.addEventListener("load", function() {
   //   duration: 1200,
   // });
 
+  const body = document.body;
   // navbar mobile handling
   const btnOpenMenu = document.querySelector(".btn-open-menu");
   const mainNavMenu = document.querySelector(".mobile-nav-menu");
@@ -105,7 +106,7 @@ window.addEventListener("load", function() {
 
 
   // search more options handle
-  if(document.body.classList.contains('home')){
+  if(body.classList.contains('home') || body.classList.contains('archive')){
     const btnMore = this.document.querySelector('.btn-more');
     const searchBar = this.document.querySelector('#search-bar');
     btnMore.addEventListener('click',()=>{
