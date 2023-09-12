@@ -128,11 +128,11 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group bar-info w-full h-[120px] bg-[#2e384d] px-[50px] text-[rgba(255,255,255,0.6)] text-[24px] flex items-center justify-between absolute top-[60px]">
+    <div class="wp-block-group bar-info w-full h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] flex items-center justify-between absolute top-[-60px]">
       <!-- wp:group -->
       <div class="wp-block-group col">
         <!-- wp:paragraph -->
-        <p class="uppercase text-[10px] text-[#8a8f99]">odbiór</p>
+        <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">odbiór</p>
         <!-- /wp:paragraph -->
         <!-- wp:post-terms {"term":"termin"} /-->
       </div>
@@ -140,7 +140,7 @@
       <!-- wp:group -->
       <div class="wp-block-group col">
         <!-- wp:paragraph -->
-        <p class="uppercase text-[10px] text-[#8a8f99]">powierzchnia</p>
+        <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">powierzchnia</p>
         <!-- /wp:paragraph -->
         <!-- wp:post-terms {"term":"metraz"} /-->
       </div>
@@ -148,7 +148,7 @@
       <!-- wp:group -->
       <div class="wp-block-group col">
         <!-- wp:paragraph -->
-        <p class="uppercase text-[10px] text-[#8a8f99]">kondygnacja</p>
+        <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">kondygnacja</p>
         <!-- /wp:paragraph -->
         <!-- wp:post-terms {"term":"pietro"} /-->
       </div>
@@ -156,7 +156,7 @@
       <!-- wp:group -->
       <div class="wp-block-group col">
         <!-- wp:paragraph -->
-        <p class="uppercase text-[10px] text-[#8a8f99]">liczba pokoi</p>
+        <p class="mb-[10px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">liczba pokoi</p>
         <!-- /wp:paragraph -->
         <!-- wp:post-terms {"term":"pokoje"} /-->
       </div>
