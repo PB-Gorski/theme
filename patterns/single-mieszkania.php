@@ -128,7 +128,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group bar-info w-full h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] flex items-center justify-between">
+    <div class="wp-block-group bar-info w-full h-[120px] bg-[#2e384d] px-[50px] text-white text-[24px] flex items-center justify-between absolute top-[60px]">
       <!-- wp:group -->
       <div class="wp-block-group col">
         <!-- wp:paragraph -->
