@@ -306,3 +306,8 @@ label{
 .beautiful-taxonomy-filters-button:hover::after{
   min-height: 100%;
 }
+.beautiful-taxonomy-filters-select{
+  width: 230px;
+  height: 62px;
+  color: #999;
+}
