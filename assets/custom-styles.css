@@ -280,3 +280,18 @@ label{
   justify-content: center;
   gap: 15px;
 }
+.beautiful-taxonomy-filters-button::before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 0%;
+  background-color: #9C0927;
+  transition: height 0.3s ease;
+  cursor: pointer;
+}
+.beautiful-taxonomy-filters-button::before:hover{
+  min-height: 100%;
+}
