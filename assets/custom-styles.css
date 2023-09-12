@@ -65,6 +65,9 @@ background-color: #E80D38;
   text-decoration-color: #E80D38;
   cursor: pointer;
 }
+.sub-title a{
+  color: white;
+}
 
 /* mobile navbar action */
 .hamburger-btn-line:nth-child(1) {
