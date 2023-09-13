@@ -89,17 +89,17 @@
 
                 <!-- wp:list-item -->
                 <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Św. Piotra</a>
+                  <a href="<?php echo home_url() . '/o-inwestycji'; ?>">Św. Piotra</a>
                 </li>
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
                 <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Wieżycka Folwark</a>
+                  <a href="<?php echo home_url() . '/o-inwestycji'; ?>">Wieżycka Folwark</a>
                 </li>
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
                 <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Toruńska 16</a>
+                  <a href="<?php echo home_url() . '/o-inwestycji'; ?>">Toruńska 16</a>
                 </li>
                 <!-- /wp:list-item -->
               </ul>
