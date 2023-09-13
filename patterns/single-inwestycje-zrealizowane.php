@@ -132,7 +132,7 @@
     <!-- wp:post-content /-->
 
     <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px] flex gap-[30px]">
+    <ul class="wp-block-list mb-[40px] mt-[60px] flex gap-[30px]">
       <?php
       $args = array(
         'post_type' => 'inwest-zrealizowane',
