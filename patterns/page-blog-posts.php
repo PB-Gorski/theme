@@ -90,7 +90,7 @@
                     foreach ($categoriesArray as $category) {
                       $category_link = get_category_link($category->term_id); ?>
                       <!-- wp:list-item -->
-                      <li class="mb-[15px] text-[18px] text-bgDarkGray">
+                      <li class="mb-[15px] text-[18px]">
                         <!-- wp:paragraph -->
                         <p><?php echo $category->name; ?></p>
                         <!-- /wp:paragraph -->
