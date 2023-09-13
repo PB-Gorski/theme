@@ -20,7 +20,7 @@
       </figure>
       <!-- /wp:image -->
       <!-- wp:paragraph -->
-      <p class="text-white ">(+48) 58 340-79-00</p>
+      <a href="tel:+48583407900" class="text-white ">(+48) 58 340-79-00</a>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
