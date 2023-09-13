@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: archive-mieszkania
- * Slug: archive-mieszkania
+ * Title: archive-lokale
+ * Slug: archive-lokale
  * Categories: text, banner
  * Viewport Width: 1280
  */
@@ -21,7 +21,7 @@
       <ul class="wp-block-list w-full">
         <!-- wp:list-item -->
         <li>
-          <?php do_action('show_beautiful_filters', 'mieszkania'); ?>
+          <?php do_action('show_beautiful_filters', 'lokale'); ?>
         </li>
         <!-- /wp:list-item -->
       </ul>
