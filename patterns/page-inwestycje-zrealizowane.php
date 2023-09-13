@@ -110,7 +110,7 @@
                 <!-- wp:group -->
                 <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center">
                   <!-- wp:paragraph -->
-                  <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php the_title(); ?></p>
+                  <p class="mr-[20px] text-[18px] desktop:text-[24px] font-bold"><?php the_title(); ?></p>
                   <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
