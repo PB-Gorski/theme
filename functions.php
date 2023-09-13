@@ -352,7 +352,7 @@ function custom_post_types()
 		'has_archive' => true,
 		'rewrite' => array('slug' => 'inwestycje'),
 		'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
-		'taxonomies'  => array('category')
+		'taxonomies'  => array('category', 'osiedla')
 	));
 };
 add_action('init', 'custom_post_types');
