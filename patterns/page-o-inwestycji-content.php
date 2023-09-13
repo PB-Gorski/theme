@@ -21,7 +21,7 @@
       <a href="<?php echo home_url() . '/o-inwestycji' ?>" class="active-o-inwest text-[8a8f99] hover:text-[#3e4759]">O inwestycji</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lokalizacje' ?>" class="text-[8a8f99] hover:text-[#3e4759]">Lokalizacja</a>
+      <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[8a8f99] hover:text-[#3e4759]">Lokalizacja</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/lista-mieszkan' ?>" class="text-[8a8f99] hover:text-[#3e4759]">Lista mieszkań</a>
