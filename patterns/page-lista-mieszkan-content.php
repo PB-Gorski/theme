@@ -162,7 +162,15 @@
     </ul>
     <!-- /wp:list -->
 
-    <?php do_action('show_beautiful_filters', 'mieszkania'); ?>
+    <!-- wp:list -->
+    <ul class="wp-block-list w-full">
+      <!-- wp:list-item -->
+      <li>
+        <?php do_action('show_beautiful_filters', 'mieszkania'); ?>
+      </li>
+      <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
 
     <!-- wp:list -->
     <ul class="wp-block-list lista-mieszkan mb-[40px]">
