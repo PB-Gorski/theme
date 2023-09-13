@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Title: single-mieszkania
- * Slug: single-mieszkania
+ * Title: single-lokale
+ * Slug: single-lokale
  * Categories: text, banner
  * Viewport Width: 1280
  */
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Wpis" class="wp-block-group mieszkania-page-post ooverflow-hidden relative">
+<div id="Wpis" class="wp-block-group lokale-page-post ooverflow-hidden relative">
   <!-- wp:paragraph -->
   <p>single-lokale.php</p>
   <!-- /wp:paragraph -->
