@@ -491,3 +491,56 @@ function modify_filter_button($string)
 	';
 }
 add_filter('beautiful_filters_apply_button', 'modify_filter_button', 10, 1);
+
+function cptui_register_my_cpts_lokale()
+{
+
+	/**
+	 * Post Type: Lokale.
+	 */
+
+	$labels = [
+		"name" => esc_html__("Lokale", "mutiny-blocks"),
+		"singular_name" => esc_html__("Lokal", "mutiny-blocks"),
+		"menu_name" => esc_html__("Lokale", "mutiny-blocks"),
+		"all_items" => esc_html__("Lokale", "mutiny-blocks"),
+		"add_new" => esc_html__("Lokal", "mutiny-blocks"),
+		"add_new_item" => esc_html__("Lokal", "mutiny-blocks"),
+		"edit_item" => esc_html__("Lokal", "mutiny-blocks"),
+		"new_item" => esc_html__("Lokal", "mutiny-blocks"),
+		"view_item" => esc_html__("Lokal", "mutiny-blocks"),
+		"view_items" => esc_html__("Lokale", "mutiny-blocks"),
+		"search_items" => esc_html__("Lokal", "mutiny-blocks"),
+	];
+
+	$args = [
+		"label" => esc_html__("Lokale", "mutiny-blocks"),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"rest_namespace" => "wp/v2",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"can_export" => false,
+		"rewrite" => ["slug" => "lokale", "with_front" => true],
+		"query_var" => true,
+		"supports" => ["title", "editor", "thumbnail"],
+		"taxonomies" => ["area"],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type("lokale", $args);
+}
+
+add_action('init', 'cptui_register_my_cpts_lokale', -1);
