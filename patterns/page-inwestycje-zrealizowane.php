@@ -63,7 +63,7 @@
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
           $counter++; ?>
           <!-- wp:list-item -->
-          <li class="invest-tile max-w-[400px] test w-full mb-[80px]">
+          <li class="invest-tile group max-w-[400px] test w-full mb-[80px]">
             <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
               <!-- wp:group -->
               <div class="wp-block-group wrapper w-full  <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
@@ -78,7 +78,7 @@
                 <!-- /wp:paragraph -->
 
                 <!-- wp:paragraph -->
-                <p class="relative text-[18px] desktop:text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Zobacz więcej &rarr;</p>
+                <p class="relative text-[18px] desktop:text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] group-hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Zobacz więcej &rarr;</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
