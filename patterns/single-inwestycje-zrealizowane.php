@@ -1,19 +1,19 @@
 <?php
 
 /**
- * Title: single-inwestycje
- * Slug: single-inwestycje
+ * Title: single-inwestycje-zrealizowane
+ * Slug: single-inwestycje-zrealizowane
  * Categories: text, banner
  * Viewport Width: 1280
  */
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Wpis" class="wp-block-group single-page-inwestycje mb-[150px] ooverflow-hidden">
+<div id="Wpis" class="wp-block-group single-page-inwestycje-zrealizowane mb-[150px] ooverflow-hidden">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
     <!-- wp:paragraph -->
-    <a href="/inwestycje/" class="group mb-[20px] desktop:mb-[40px] w-fit font-semibold flex items-center gap-[8px]">
+    <a href="/inwestycje-zrealizowane/" class="group mb-[20px] desktop:mb-[40px] w-fit font-semibold flex items-center gap-[8px]">
       <!-- wp:group -->
       <div class="wp-block-group group w-[56px] h-[56px]">
         <!-- wp:paragraph -->
