@@ -104,7 +104,7 @@
       <!-- wp:group -->
       <div class="wp-block-group left-col desktop:w-[70%]">
         <!-- wp:paragraph -->
-        <p class="container mx-auto desktop:px-0 px-[20px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]"><?php echo get_the_title(); ?></p>
+        <p class="container mx-auto desktop:px-0 px-[20px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]"><?php echo get_the_ID(); ?></p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
