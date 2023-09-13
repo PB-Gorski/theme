@@ -111,7 +111,7 @@
       <!-- wp:group -->
       <div class="wp-block-group title-wrapper">
         <!-- wp:group -->
-        <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
+        <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px] relative">
           <!-- wp:paragraph -->
           <p>Znajdź lokal</p>
           <!-- /wp:paragraph -->
