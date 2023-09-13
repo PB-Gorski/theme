@@ -68,7 +68,6 @@
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
-
   </div>
   <!-- /wp:group -->
 
@@ -129,7 +128,6 @@
                   <!-- /wp:list -->
                 </div>
                 <!-- /wp:group -->
-
               </div>
               <!-- /wp:group -->
             </a>
@@ -138,11 +136,8 @@
       <?php
           $i++;
         };
-        wp_reset_query();
-        wp_reset_postdata();
       };
       wp_reset_query();
-      wp_reset_postdata();
       ?>
     </ul>
     <!-- /wp:list -->
