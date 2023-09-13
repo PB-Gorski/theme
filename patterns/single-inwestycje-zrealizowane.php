@@ -97,6 +97,14 @@
   </div>
   <!-- /wp:group -->
 
+  <!-- wp:paragraph -->
+  <a href="/inwestycje-zrealizowane/" class="group mb-[20px] desktop:mb-[40px] w-fit flex items-center gap-[8px]">
+    <!-- wp:paragraph -->
+    <p class="text-[14px]">&larr; Inwestycje zrealizowane</p>
+    <!-- /wp:paragraph -->
+  </a>
+  <!-- /wp:paragraph -->
+
   <!-- wp:group -->
   <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
     <!-- wp:group -->
@@ -115,13 +123,7 @@
 
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
-    <!-- wp:paragraph -->
-    <a href="/inwestycje-zrealizowane/" class="group mb-[20px] desktop:mb-[40px] w-fit flex items-center gap-[8px]">
-      <!-- wp:paragraph -->
-      <p class="text-[14px]">&larr; Inwestycje zrealizowane</p>
-      <!-- /wp:paragraph -->
-    </a>
-    <!-- /wp:paragraph -->
+
 
     <!-- wp:paragraph -->
     <p>single-inwestycje-zrealizowane.php</p>
