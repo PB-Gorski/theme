@@ -33,41 +33,7 @@
       <!-- wp:group -->
       <div class="wp-block-group left-col desktop:w-[70%]">
         <!-- wp:paragraph -->
-        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">Wszystkie inwestycje page-inwestycje zrealizowane
-        </p>
-        <!-- /wp:paragraph -->
-
-        <!-- wp:list -->
-        <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
-          <?php
-          $args = array(
-            'taxonomy' => 'category',
-            'orderby' => 'name',
-            'paged' => 1,
-            'order'   => 'ASC'
-          );
-          $cats = get_categories($args); ?>
-          <!-- wp:list-item -->
-          <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-            <a href="<?php echo get_home_url() . '/inwestycje'; ?>" class="">Wszystkie</a>
-          </li>
-          <!-- /wp:list-item -->
-          <?php
-          foreach ($cats as $cat) {
-            $catNoSpaces = str_replace(' ', '-', strtolower($cat->name)); ?>
-            <!-- wp:list-item -->
-            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $cat->name; ?></a></li>
-            <!-- /wp:list-item -->
-          <?php }; ?>
-        </ul>
-        <!-- /wp:list -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div class="wp-block-group right-col desktop:w-[30%]">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-[#8a8f99]">4 inwestycje / 169 lokali</p>
+        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">Inwestycje zrealizowane</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -83,8 +49,8 @@
     <ul class="wp-block-list mb-[40px] flex gap-[30px]">
       <?php
       $args = array(
-        'post_type' => 'inwestycje',
-        'posts_per_page' => 3,
+        'post_type' => 'inwest-zrealizowane',
+        'posts_per_page' => 5,
         'order' => 'ASC'
       );
       $post_query = new WP_Query($args);
