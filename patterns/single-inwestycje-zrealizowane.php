@@ -132,11 +132,11 @@
     <!-- wp:post-content /-->
 
     <!-- wp:paragraph -->
-    <p class="text-[#8a8f99] text-[11px]">przeczytaj także</p>
+    <p class="mb-[20px] mt-[60px]  text-[#8a8f99] text-[11px]">przeczytaj także</p>
     <!-- /wp:paragraph -->
 
     <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px] mt-[60px] flex gap-[30px]">
+    <ul class="wp-block-list desktop:flex gap-[30px]">
       <?php
       $args = array(
         'post_type' => 'inwest-zrealizowane',
