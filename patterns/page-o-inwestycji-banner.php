@@ -9,6 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
+o inwestycji.php
 <div id="Banner" class="wp-block-group banner h-[80vh] desktop:h-[90vh] relative">
   <!-- wp:group -->
   <div class="wp-block-group mobile-fixed-phone block desktop:hidden flex justify-center items-center bg-primaryRed w-full h-[87px] fixed bottom-0 left-0 z-[2]">
@@ -110,70 +111,15 @@
       <!-- wp:group -->
       <div class="wp-block-group title text-[36px] desktop:text-[60px] font-bold desktop:pt-[150px] mb-[50px] leading-[44px] desktop:leading-[70px]">
         <!-- wp:paragraph -->
-        <p>Poznaj naszą historię,</p>
+        <p>Osiedle Srebrniki (manual)</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p>strategię i wartości</p>
+        <p class="uppercase text-[18px]">Gdańsk wrzeszcz</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
 
-      <!-- wp:group -->
-      <div class="wp-block-group desktop:flex">
-        <!-- wp:group -->
-        <div class="wp-block-group col1 pl-[40px] desktop:pl-0 pr-[40px] w-fit h-[68px] flex gap-[15px] items-center border-r-[1px] border-[rgba(255,255,255,0.2)]">
-          <!-- wp:paragraph -->
-          <p id="count1" class="text-[48px] font-bold">40</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group leading-[24px]">
-            <!-- wp:paragraph -->
-            <p class="text-[18px]">lat</p>
-            <!-- /wp:paragraph -->
-            <!-- wp:paragraph -->
-            <p class="text-[18px]">doświadczenia</p>
-            <!-- /wp:paragraph -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-        <!-- wp:group -->
-        <div class="wp-block-group col2 px-[40px] w-fit h-[68px] flex gap-[15px] items-center desktop:border-r-[1px] desktop:border-[rgba(255,255,255,0.2)]">
-          <!-- wp:paragraph -->
-          <p id="count2" class="text-[48px] font-bold">125</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group leading-[24px]">
-            <!-- wp:paragraph -->
-            <p class="text-[18px]">zrealizowanych</p>
-            <!-- /wp:paragraph -->
-            <!-- wp:paragraph -->
-            <p class="text-[18px]">inwestycji</p>
-            <!-- /wp:paragraph -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-        <!-- wp:group -->
-        <div class="wp-block-group px-[40px] col3 w-fit h-[68px] flex gap-[15px] items-center">
-          <!-- wp:paragraph -->
-          <p id="count3" class="text-[48px] font-bold">4000</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group leading-[24px]">
-            <!-- wp:paragraph -->
-            <p class="text-[18px]">sprzedanych</p>
-            <!-- /wp:paragraph -->
-            <!-- wp:paragraph -->
-            <p class="text-[18px]">mieszkań</p>
-            <!-- /wp:paragraph -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
 
-      </div>
-      <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
   </div>
