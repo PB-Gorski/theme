@@ -43,7 +43,6 @@
             'taxonomy' => 'osiedla',
             'hide_empty' => false,
           ));
-          print_r($taxonomies);
           ?>
 
           <!-- wp:list-item -->
@@ -55,6 +54,7 @@
           <?php
           foreach ($taxonomies as $taxonomy) {
             // $catNoSpaces = str_replace(' ', '-', strtolower($cat->name)); 
+            print_r(get_category_link($taxonomy->term_id));
           ?>
             <!-- wp:list-item -->
             <li class="text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="#"><?php echo $taxonomy->name; ?></a></li>
