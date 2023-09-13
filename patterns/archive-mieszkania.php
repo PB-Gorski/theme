@@ -86,11 +86,13 @@
       </div>
       <!-- /wp:group -->
 
-      <!-- wp:group -->
-      <div class="wp-block-group">
-        <?php do_action('show_beautiful_filters', 'mieszkania'); ?>
-      </div>
-      <!-- /wp:group -->
+      <!-- wp:list -->
+      <ul class="wp-block-list">
+        <li>
+          <?php do_action('show_beautiful_filters', 'mieszkania'); ?>
+        </li>
+      </ul>
+      <!-- /wp:list -->
 
       <!-- wp:group -->
       <div class="wp-block-group btns-wrapper flex flex-row ">
