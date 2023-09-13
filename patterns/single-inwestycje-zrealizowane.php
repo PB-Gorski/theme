@@ -107,7 +107,7 @@
     </a>
     <!-- /wp:paragraph -->
     <!-- wp:group -->
-    <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[60px] desktop:flex items-center">
+    <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[30px] desktop:py-[60px] desktop:flex items-center">
       <!-- wp:group -->
       <div class="wp-block-group text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">
         <!-- wp:paragraph -->
@@ -121,7 +121,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] py-[20px] desktop:py-[40px]">
+  <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] py-[40px]">
     <!-- wp:post-featured-image /-->
 
     <!-- wp:post-content /-->
