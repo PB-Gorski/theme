@@ -106,7 +106,7 @@ window.addEventListener("load", function() {
 
 
   // search more options handle
-  if(body.classList.contains('home') || body.classList.contains('archive')){
+  if(body.classList.contains('home') || body.classList.contains('archive') || body.classList.contains('page')){
     const btnMore = document.querySelector('.btn-more');
     const searchBar = document.querySelector('.search-wrapper');
     btnMore.addEventListener('click',()=>{
