@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Wpis" class="wp-block-group single-page-inwestycje-zrealizowane mb-[150px] ooverflow-hidden">
+<div id="Wpis" class="wp-block-group single-page-inwestycje-zrealizowane ooverflow-hidden">
   <!-- wp:group -->
   <div class="wp-block-group mobile-fixed-phone block desktop:hidden flex justify-center items-center bg-primaryRed w-full h-[87px] fixed bottom-0 left-0 z-[2]">
     <!-- wp:group -->
