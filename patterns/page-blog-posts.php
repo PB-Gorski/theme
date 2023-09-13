@@ -72,7 +72,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group blog-posts container mx-auto desktop:px-0 px-[20px]">
+  <div class="wp-block-group hidden blog-posts container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:list -->
     <ul class="wp-block-list mb-[40px]">
       <?php
