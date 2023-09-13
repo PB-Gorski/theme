@@ -83,7 +83,7 @@
               <ul class="wp-block-list text-textGray flex flex-wrap gap-x-[140px] gap-y-[10px]">
                 <!-- wp:list-item -->
                 <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Osiedle Srebniki</a>
+                  <a href="<?php echo home_url(); . '/o-inwestycji' ?>">Osiedle Srebniki</a>
                 </li>
                 <!-- /wp:list-item -->
 
