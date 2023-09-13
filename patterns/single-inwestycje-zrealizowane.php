@@ -100,9 +100,9 @@
   <!-- wp:group -->
   <div class="wp-block-group title-wrapper px-[20px] bg-[#f6f7fa]">
     <!-- wp:paragraph -->
-    <a href="/inwestycje-zrealizowane/" class="pt-[20px]">
+    <a href="/inwestycje-zrealizowane/">
       <!-- wp:paragraph -->
-      <p class="text-[18px]">&larr; Inwestycje zrealizowane</p>
+      <p class="mt-[20px] text-[18px]">&larr; Inwestycje zrealizowane</p>
       <!-- /wp:paragraph -->
     </a>
     <!-- /wp:paragraph -->
