@@ -46,7 +46,7 @@
   <!-- wp:group -->
   <div class="wp-block-group investments-posts container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px] test grid grid-rows-3 grid-cols-3 gap-[30px]">
+    <ul class="wp-block-list mb-[40px] grid grid-rows-3 grid-cols-3 gap-[30px]">
       <?php
       $args = array(
         'post_type' => 'inwest-zrealizowane',
@@ -85,14 +85,19 @@
             </a>
           </li>
           <!-- /wp:list-item -->
-      <?php
+        <?php
           $i++;
         };
-        wp_reset_query();
-        wp_reset_postdata();
+        wp_reset_query(); ?>
+        <!-- wp:query-pagination -->
+        <div class="wp-block-query-pagination">
+          <!-- wp:query-pagination-previous /-->
+          <!-- wp:query-pagination-next /-->
+        </div>
+        <!-- /wp:query-pagination -->
+      <?php
       };
-      wp_reset_query();
-      wp_reset_postdata();
+
       ?>
     </ul>
     <!-- /wp:list -->
