@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group mobile-fixed-phone flex justify-center items-center bg-primaryRed w-full h-[87px] fixed bottom-0 left-0 z-[2]">
     <!-- wp:group -->
-    <div class="wp-block-group flex gap-[30px] h-[47px] p-[5px_20px] rounded-full border-[2px] border-[rgba(255,255,255,0.33)]">
+    <div class="wp-block-group flex gap-[30px] items-center h-[47px] p-[5px_20px] rounded-full border-[2px] border-[rgba(255,255,255,0.33)]">
       <!-- wp:image -->
       <figure class="wp-block-image">
         <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/frontpage/phone-2.png'; ?>" alt="phone-icon">
