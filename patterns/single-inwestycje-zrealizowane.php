@@ -36,6 +36,17 @@
     <!-- wp:paragraph -->
     <p>single-inwestycje-zrealizowane.php</p>
     <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p class="text-[60px] font-bold"><!-- wp:post-title /--></p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:post-featured-image /-->
+
+    <!-- wp:post-content /-->
+
+
+
   </div>
   <!-- /wp:group -->
 </div>
