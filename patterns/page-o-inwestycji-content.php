@@ -16,7 +16,7 @@
     <p class="py-[60px] text-[60px] text-center font-bold">Poznaj inwestycję</p>
     <!-- /wp:paragraph -->
     <!-- wp:group -->
-    <div class="wp-block-group row-links my-[30px] flex gap-[20px]">
+    <div class="wp-block-group row-links my-[30px] flex justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/o-inwestycji' ?>" class="active-o-inwest text-[8a8f99] hover:text-[#3e4759]">O inwestycji</a>
       <!-- /wp:paragraph -->
