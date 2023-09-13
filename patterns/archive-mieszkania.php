@@ -88,9 +88,11 @@
 
       <!-- wp:list -->
       <ul class="wp-block-list">
+        <!-- wp:list-item -->
         <li>
           <?php do_action('show_beautiful_filters', 'mieszkania'); ?>
         </li>
+        <!-- /wp:list-item -->
       </ul>
       <!-- /wp:list -->
 
