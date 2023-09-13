@@ -102,7 +102,7 @@
   <!-- wp:group -->
   <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
     <!-- wp:paragraph -->
-    <a href="/inwestycje-zrealizowane/" class="group mb-[20px] desktop:mb-[40px] w-fit flex items-center gap-[8px]">
+    <a href="/inwestycje-zrealizowane/" class="group w-fit">
       <!-- wp:paragraph -->
       <p class="text-[14px]">&larr; Inwestycje zrealizowane</p>
       <!-- /wp:paragraph -->
