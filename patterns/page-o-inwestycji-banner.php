@@ -109,9 +109,9 @@ o inwestycji.php
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[80px] z-[0] relative text-white">
       <!-- wp:group -->
-      <div class="wp-block-group title text-[36px] desktop:text-[60px] font-bold desktop:pt-[150px] mb-[50px] leading-[44px] desktop:leading-[70px]">
+      <div class="wp-block-group title text-[36px] desktop:text-[60px] desktop:pt-[150px] mb-[50px] leading-[44px] desktop:leading-[70px]">
         <!-- wp:paragraph -->
-        <p>Osiedle Srebrniki (manual)</p>
+        <p class="underline">Osiedle Srebrniki (manual)</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
         <p class="uppercase text-[18px]">Gdańsk wrzeszcz</p>
