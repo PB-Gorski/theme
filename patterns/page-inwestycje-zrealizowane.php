@@ -117,7 +117,7 @@
   <!-- wp:group -->
   <div class="wp-block-group investments-posts container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px] grid grid-rows-3 grid-cols-3 gap-[30px]">
+    <ul class="wp-block-list mb-[40px] desktop:grid desktop:grid-rows-3 desktop:grid-cols-3 desktop:gap-[30px]">
       <?php
       $args = array(
         'post_type' => 'inwest-zrealizowane',
