@@ -145,11 +145,11 @@
                 <!-- /wp:image -->
 
                 <!-- wp:paragraph -->
-                <p class="mr-[20px] text-[18px] desktop:text-[24px] font-bold"><?php the_title(); ?></p>
+                <p class="mr-[20px] text-[24px] font-bold"><?php the_title(); ?></p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:paragraph -->
-                <p class="relative text-[18px] desktop:text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] group-hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Zobacz więcej &rarr;</p>
+                <p class="relative text-[18px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] group-hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Zobacz więcej &rarr;</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
