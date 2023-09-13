@@ -46,11 +46,11 @@
   <!-- wp:group -->
   <div class="wp-block-group investments-posts container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px] flex gap-[30px]">
+    <ul class="wp-block-list mb-[40px] grid-rows-3 grid-cols-3 gap-[30px]">
       <?php
       $args = array(
         'post_type' => 'inwest-zrealizowane',
-        'posts_per_page' => 5,
+        'posts_per_page' => 9,
         'order' => 'ASC'
       );
       $post_query = new WP_Query($args);
@@ -77,13 +77,9 @@
                 <p class="mr-[20px] text-[18px] desktop:text-[24px] font-bold"><?php the_title(); ?></p>
                 <!-- /wp:paragraph -->
 
-                <!-- wp:group -->
-                <div class="wp-block-group group btn-read-more mt-[30px] relative bg-[#3d4b66] text-[18px] text-white font-bold w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
-                  <!-- wp:paragraph -->
-                  <p class="z-[1]">Zobacz więcej &rarr;</p>
-                  <!-- /wp:paragraph -->
-                </div>
-                <!-- /wp:group -->
+                <!-- wp:paragraph -->
+                <p class="relative text-[18px] desktop:text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Zobacz więcej &rarr;</p>
+                <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
             </a>
