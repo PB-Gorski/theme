@@ -131,6 +131,10 @@
 
     <!-- wp:post-content /-->
 
+    <!-- wp:paragraph -->
+    <p class="text-[#8a8f99] text-[11px]">przeczytaj także</p>
+    <!-- /wp:paragraph -->
+
     <!-- wp:list -->
     <ul class="wp-block-list mb-[40px] mt-[60px] flex gap-[30px]">
       <?php
