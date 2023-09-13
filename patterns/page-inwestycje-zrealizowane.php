@@ -26,6 +26,7 @@
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
+
   <!-- wp:group -->
   <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
     <!-- wp:group -->
@@ -39,7 +40,6 @@
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
-
   </div>
   <!-- /wp:group -->
 

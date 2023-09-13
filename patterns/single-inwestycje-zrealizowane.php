@@ -37,9 +37,21 @@
     <p>single-inwestycje-zrealizowane.php</p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:paragraph -->
-    <p class="text-[60px] font-bold"><!-- wp:post-title /--></p>
-    <!-- /wp:paragraph -->
+    <!-- wp:group -->
+    <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
+      <!-- wp:group -->
+      <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[60px] desktop:flex items-center">
+        <!-- wp:group -->
+        <div class="wp-block-group left-col desktop:w-[70%]">
+          <!-- wp:paragraph -->
+          <p class="container mx-auto desktop:px-0 px-[20px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]"><!-- wp:post-title /--></p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
 
     <!-- wp:post-featured-image /-->
 
