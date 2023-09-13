@@ -18,19 +18,19 @@
     <!-- wp:group -->
     <div class="wp-block-group row-links my-[30px] flex justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/o-inwestycji' ?>" class="active-o-inwest text-[8a8f99] hover:text-[#3e4759]">O inwestycji</a>
+      <a href="<?php echo home_url() . '/o-inwestycji' ?>" class="active-o-inwest text-[#8a8f99] hover:text-[#3e4759]">O inwestycji</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[8a8f99] hover:text-[#3e4759]">Lokalizacja</a>
+      <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[#8a8f99] hover:text-textGray">Lokalizacja</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lista-mieszkan' ?>" class="text-[8a8f99] hover:text-[#3e4759]">Lista mieszkań</a>
+      <a href="<?php echo home_url() . '/lista-mieszkan' ?>" class="text-[#8a8f99] hover:text-textGray">Lista mieszkań</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/galeria' ?>" class="text-[8a8f99] hover:text-[#3e4759]">Galeria</a>
+      <a href="<?php echo home_url() . '/galeria' ?>" class="text-[#8a8f99] hover:text-textGray">Galeria</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/kronika-budowy' ?>" class="text-[8a8f99] hover:text-[#3e4759]">Kronika budowy</a>
+      <a href="<?php echo home_url() . '/kronika-budowy' ?>" class="text-[#8a8f99] hover:text-textGray">Kronika budowy</a>
       <!-- /wp:paragraph -->
 
     </div>
