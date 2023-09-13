@@ -121,7 +121,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] py-[40px]">
+  <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] py-[20px] desktop:py-[40px]">
     <!-- wp:post-featured-image /-->
 
     <!-- wp:post-content /-->
