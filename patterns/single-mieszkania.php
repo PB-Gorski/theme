@@ -11,8 +11,19 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Wpis" class="wp-block-group mieszkania-page-post ooverflow-hidden relative">
   <!-- wp:group -->
-  <div class="wp-block-group mobile-fixed-phone bg-primaryRed w-full h-[87px] fixed bottom-0 left-0 z-[1]">
-
+  <div class="wp-block-group mobile-fixed-phone bg-primaryRed w-full h-[87px] fixed bottom-0 left-0 z-[2]">
+    <!-- wp:group -->
+    <div class="wp-block-group flex gap-[30px]">
+      <!-- wp:image -->
+      <figure class="wp-block-image">
+        <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/frontpage/phone-2.png'; ?>" alt="phone-icon">
+      </figure>
+      <!-- /wp:image -->
+      <!-- wp:paragraph -->
+      <p class="text-white">(+48) 58 340-79-00</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
   <!-- wp:group -->
