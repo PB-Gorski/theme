@@ -105,7 +105,6 @@
       <div class="wp-block-group text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">
         <!-- wp:paragraph -->
         <!-- wp:post-title /-->
-        <!-- wp:site-title /-->
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
