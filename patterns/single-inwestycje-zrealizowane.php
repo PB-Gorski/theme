@@ -102,9 +102,9 @@
     <!-- wp:group -->
     <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[60px] desktop:flex items-center">
       <!-- wp:group -->
-      <div class="wp-block-group left-col desktop:w-[70%]">
+      <div class="wp-block-group text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">
         <!-- wp:paragraph -->
-        <p class="container mx-auto desktop:px-0 px-[20px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]"><?php echo get_the_ID(); ?></p>
+        <p><?php echo get_the_ID(); ?></p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
