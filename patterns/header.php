@@ -126,7 +126,7 @@
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
                 <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Lista lokali uytkowych &rarr;</a>
+                  <a href="<?php echo home_url() . '/lokale' ?>">Lista lokali uytkowych &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
               </ul>

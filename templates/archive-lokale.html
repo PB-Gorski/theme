@@ -1,0 +1,121 @@
+<!-- wp:group -->
+<div id="PB Górski theme" class="wp-block-group overflow-x-hidden">
+	<!-- wp:list -->
+	<ul class="hidden aos-init">
+		<!-- wp:list-item -->
+		<li>
+			test
+		</li>
+		<!-- /wp:list-item -->
+	</ul>
+	<!-- /wp:list -->
+
+	<!-- wp:template-part {"slug":"front-page/header"} /-->
+
+	<!-- wp:group -->
+	<div id="main" class="wp-block-group ">
+		<!-- wp:group -->
+		<div id="Page content" class="wp-block-group page-content-wrapper" >
+			<!-- wp:pattern {"slug":"lista-lokali-banner"} /-->
+			<!-- wp:pattern {"slug":"archive-lokale"} /-->
+
+			<!-- wp:group -->
+			<div class="wp-block-group list-content-wrapper container mx-auto py-[60px]">
+				<!-- wp:paragraph -->
+				<p class="mb-[50px] text-[24px] text-center">Znaleziono X ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń X)</span></p>
+				<!-- /wp:paragraph -->
+				
+				<!-- wp:list -->
+				<ul class="wp-block-list all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
+					<!-- wp:list-item -->
+					<li class="w-[100px] uppercase text-[#8a8f99]">miasto</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[180px] uppercase text-[#8a8f99]">inwestycja</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[100px] uppercase text-[#8a8f99]">budynek</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[65px] uppercase text-[#8a8f99]">nr</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[100px] uppercase text-[#8a8f99]">pokoje</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[110px] uppercase text-[#8a8f99]">metraz</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[100px] uppercase text-[#8a8f99]">pietro</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[130px] uppercase text-[#8a8f99]">cena</li>
+					<!-- /wp:list-item -->
+					<!-- wp:list-item -->
+					<li class="w-[175px] uppercase text-[#8a8f99]">termin</li>
+					<!-- /wp:list-item -->
+				</ul>
+				<!-- /wp:list -->
+
+				<!-- wp:query -->
+				<div class="wp-block-query">
+					<!-- wp:post-template -->
+					<!-- wp:post-navigation-link /-->
+					<!-- wp:post-link /-->
+					<!-- wp:list -->
+					<ul class="wp-block-list taxonomies px-[20px] flex flex-wrap justify-between items-center text-[18px] font-medium">
+						<!-- wp:list-item -->
+						<li class="w-[100px] py-[20px] "><!-- wp:post-terms {"term":"miasto"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-[180px] py-[20px]"><!-- wp:post-terms {"term":"osiedla"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-[100px] py-[20px]"><!-- wp:post-terms {"term":"budynek"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-[65px] py-[20px]"><!-- wp:post-terms {"term":"nr"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-[100px] py-[20px]"><!-- wp:post-terms {"term":"pokoje"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-[110px] py-[20px] flex gap-[4px]"><!-- wp:post-terms {"term":"metraz"} /-->
+						<!-- wp:paragraph -->
+						<p>m<sup>2</sup></p>
+						<!-- /wp:paragraph -->
+						</li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-[100px] py-[20px]"><!-- wp:post-terms {"term":"pietro"} /--></li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-[130px] py-[20px] flex gap-[4px]"><!-- wp:post-terms {"term":"cena"} /--> zł</li>
+						<!-- /wp:list-item -->
+						<!-- wp:list-item -->
+						<li class="w-[175px] py-[20px]"><!-- wp:post-terms {"term":"termin"} /--></li>
+						<!-- /wp:list-item -->
+					</ul>
+					<!-- /wp:list -->
+					<!-- /wp:post-template -->
+
+					<!-- wp:query-pagination -->
+					<div class="wp-block-query-pagination">
+						<!-- wp:query-pagination-previous /-->
+						<!-- wp:query-pagination-next /-->
+					</div>
+					<!-- /wp:query-pagination -->
+				</div>
+				<!-- /wp:query -->
+			</div>
+			<!-- /wp:group -->
+			
+			<!-- wp:template-part {"slug":"front-page/cta"} /-->
+			<!-- wp:template-part {"slug":"front-page/newsletter"} /-->
+			<!-- wp:template-part {"slug":"front-page/footer"} /-->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
