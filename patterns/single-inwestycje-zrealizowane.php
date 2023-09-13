@@ -98,11 +98,11 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
+  <div class="wp-block-group title-wrapper px-[20px] bg-[#f6f7fa]">
     <!-- wp:paragraph -->
     <a href="/inwestycje-zrealizowane/" class="group w-fit">
       <!-- wp:paragraph -->
-      <p class="text-[14px]">&larr; Inwestycje zrealizowane</p>
+      <p class="text-[18px]">&larr; Inwestycje zrealizowane</p>
       <!-- /wp:paragraph -->
     </a>
     <!-- /wp:paragraph -->
