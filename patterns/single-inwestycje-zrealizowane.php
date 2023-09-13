@@ -97,8 +97,6 @@
   </div>
   <!-- /wp:group -->
 
-
-
   <!-- wp:group -->
   <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
     <!-- wp:paragraph -->
@@ -124,12 +122,6 @@
 
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
-
-
-    <!-- wp:paragraph -->
-    <p>single-inwestycje-zrealizowane.php</p>
-    <!-- /wp:paragraph -->
-
     <!-- wp:post-featured-image /-->
 
     <!-- wp:post-content /-->
