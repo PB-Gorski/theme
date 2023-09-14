@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Banner" class="wp-block-group banner h-[80vh] desktop:h-[90vh] relative">
+<div id="Banner" class="wp-block-group banner h-[50vh] desktop:h-[90vh] relative">
   <!-- wp:group -->
   <div class="wp-block-group mobile-fixed-phone block desktop:hidden flex justify-center items-center bg-primaryRed w-full h-[87px] fixed bottom-0 left-0 z-[2]">
     <!-- wp:group -->
@@ -100,7 +100,7 @@
   <!-- wp:group -->
   <div class="wp-block-group w-full h-full bg-banner relative flex desktop:block items-center">
     <!-- wp:image -->
-    <figure class="wp-block-image w-full h-[770px]  absolute top-0 left-0">
+    <figure class="wp-block-image w-full h-[250px] desktop:h-[770px] absolute top-0 left-0">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/osiedle-srebrniki-bg.jpeg" alt="banner-background">
     </figure>
     <!-- /wp:image -->
