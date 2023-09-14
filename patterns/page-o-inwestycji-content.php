@@ -17,10 +17,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:paragraph -->
     <p class="py-[60px] text-[60px] text-center font-bold">Poznaj inwestycję</p>
     <!-- /wp:paragraph -->
-    <!-- wp:paragraph -->
-    <p class=""><?php print_r(get_current_site('path')); ?></p>
-    <p class=""><?php echo $currentPage ?></p>
-    <!-- /wp:paragraph -->
+
     <!-- wp:group -->
     <div class="wp-block-group row-links my-[30px] flex justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
@@ -43,5 +40,75 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
+
+  <!-- wp:group -->
+  <div class="wp-block-group row-content desktop:flex">
+    <!-- wp:image -->
+    <figure class="wp-block-image left-col w-1/2">
+      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/logo.png" ?>" alt="img">
+    </figure>
+    <!-- /wp:image -->
+
+    <!-- wp:group -->
+    <div class="wp-block-group w-1/2 px-[100px]">
+      <!-- wp:paragraph -->
+      <p class="text-[34px] mb-[40px]">Osiedle Srebrniki to zielona enklawa położona na granicy dwóch dzielnic Gdańska - Wrzeszcza i Moreny</p>
+      <!-- wp:paragraph -->
+
+
+      <!-- wp:group -->
+      <div class="wp-block-group grid grid-rows-2 grid-cols-2">
+        <!-- wp:group -->
+        <div class="wp-block-group info-box1">
+          <!-- wp:paragraph -->
+          <p class="uppercase text-[#8a8f99] text-[31px] trancking-[1px]">LOKALIZACJA</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph -->
+          <p class="text-[24px] mb-[40px]">Gdańsk</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph -->
+          <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[14px] text-[#8a8f99]">więcej o lokalizacji</a>
+          <!-- /wp:paragraph -->
+        </div>
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:group -->
+      <div class="wp-block-group info-box2">
+        <!-- wp:paragraph -->
+        <p class="uppercase text-[#8a8f99] text-[31px] trancking-[1px]">LOKALIZACJA</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class="text-[24px] mb-[40px]">Gdańsk</p>
+        <!-- /wp:paragraph -->
+      </div>
+    </div>
+    <!-- /wp:group -->
+    <!-- wp:group -->
+    <div class="wp-block-group info-box3">
+      <!-- wp:paragraph -->
+      <p class="uppercase text-[#8a8f99] text-[31px] trancking-[1px]">LOKALIZACJA</p>
+      <!-- /wp:paragraph -->
+      <!-- wp:paragraph -->
+      <p class="text-[24px] mb-[40px]">Gdańsk</p>
+      <!-- /wp:paragraph -->
+    </div>
+  </div>
+  <!-- /wp:group -->
+  <!-- wp:group -->
+  <div class="wp-block-group info-box4">
+    <!-- wp:paragraph -->
+    <p class="uppercase text-[#8a8f99] text-[31px] trancking-[1px]">LOKALIZACJA</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="text-[24px] mb-[40px]">Gdańsk</p>
+    <!-- /wp:paragraph -->
+  </div>
+</div>
+<!-- /wp:group -->
+
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
 </div>
 <!-- /wp:group -->
