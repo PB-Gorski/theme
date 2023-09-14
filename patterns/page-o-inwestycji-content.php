@@ -61,7 +61,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- wp:group -->
         <div class="wp-block-group info-box1">
           <!-- wp:paragraph -->
-          <p class="uppercase text-[#8a8f99] text-[31px] trancking-[1px]">LOKALIZACJA</p>
+          <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
           <p class="text-[24px] mb-[40px]">Gdańsk</p>
@@ -75,7 +75,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group info-box2">
         <!-- wp:paragraph -->
-        <p class="uppercase text-[#8a8f99] text-[31px] trancking-[1px]">LOKALIZACJA</p>
+        <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
         <p class="text-[24px] mb-[40px]">Gdańsk</p>
@@ -86,7 +86,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group info-box3">
       <!-- wp:paragraph -->
-      <p class="uppercase text-[#8a8f99] text-[31px] trancking-[1px]">LOKALIZACJA</p>
+      <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
       <p class="text-[24px] mb-[40px]">Gdańsk</p>
@@ -97,7 +97,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group info-box4">
     <!-- wp:paragraph -->
-    <p class="uppercase text-[#8a8f99] text-[31px] trancking-[1px]">LOKALIZACJA</p>
+    <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
     <!-- /wp:paragraph -->
     <!-- wp:paragraph -->
     <p class="text-[24px] mb-[40px]">Gdańsk</p>
