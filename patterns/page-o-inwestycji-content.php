@@ -74,10 +74,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- wp:group -->
         <div class="wp-block-group info-box2">
           <!-- wp:paragraph -->
-          <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
+          <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">TERMIN UKOŃCZENIA (BUDYNEK 1)</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p class="text-[24px]">Gdańsk</p>
+          <p class="text-[24px]">IV kwartał 2020</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -85,10 +85,11 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- wp:group -->
         <div class="wp-block-group info-box3">
           <!-- wp:paragraph -->
-          <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
+
+          <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LICZBA MIESZKAŃ W SPRZEDAŻY</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p class="text-[24px]">Gdańsk</p>
+          <p class="text-[24px]">450 w pierwszym etapie</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -96,10 +97,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- wp:group -->
         <div class="wp-block-group info-box4">
           <!-- wp:paragraph -->
-          <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
+          <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">POWIERZCHNIA MIESZKAŃ</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p class="text-[24px]">Gdańsk</p>
+          <p class="text-[24px]">27 m<sup>2</sup> - 113 m<sup>2</sup></p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
