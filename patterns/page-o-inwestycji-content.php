@@ -55,7 +55,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group desktop:px-[100px] desktop:w-1/2">
         <!-- wp:paragraph -->
-        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-auto">Osiedle Srebrniki to zielona enklawa położona na granicy dwóch dzielnic Gdańska - Wrzeszcza i Moreny</p>
+        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[42px]">Osiedle Srebrniki to zielona enklawa położona na granicy dwóch dzielnic Gdańska - Wrzeszcza i Moreny</p>
         <!-- /wp:paragraph -->
 
         <!-- wp:group -->
@@ -127,7 +127,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group desktop:p-[140px_100px] desktop:w-1/2">
         <!-- wp:paragraph -->
-        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-auto">Postaw na nowoczesną architekturę</p>
+        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[42px]">Postaw na nowoczesną architekturę</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
         <p class="text-[18px] text-[#8a8f99]">W ofercie znajdują się przestronne i doświetlone mieszkania oraz lokale usługowe o wygodnych rozkładach z możliwością aranżacji według własnych potrzeb. W każdym budynku znajduje się cichobieżna winda. Mieszkania na parterze posiadają ogródki, a lokale położone na najwyższych piętrach widok na Zatokę Gdańską. Ofertę multimedialną na terenie osiedla zapewnia <a href="https://www.upc.pl/" class="inline relative before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">https://www.upc.pl/</a></p>
@@ -141,15 +141,15 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group row-content3 desktop:flex">
       <!-- wp:image -->
-      <figure class="wp-block-image left-col w-1/2 m-0">
+      <figure class="wp-block-image left-col desktop:w-1/2 m-0">
         <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img3.jpeg" alt="img">
       </figure>
       <!-- /wp:image -->
 
       <!-- wp:group -->
-      <div class="wp-block-group p-[140px_100px] w-1/2">
+      <div class="wp-block-group desktop:p-[140px_100px] desktop:w-1/2">
         <!-- wp:paragraph -->
-        <p class="text-[34px] mb-[40px]">Zielona enklawa w doskonałej lokalizacji</p>
+        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[42px]">Zielona enklawa w doskonałej lokalizacji</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
         <p class="text-[18px] text-[#8a8f99] mb-[30px]">Osiedle Srebrniki położone jest z dala zgiełku głównych ulic, z dostępem do licznych terenów rekreacyjnych. Jednocześnie położenie na granicy gdańskich dzielnic Wrzeszcza oraz Moreny zapewnia nie tylko pełne zaplecze handlowe, ale również świetne skomunikowanie (w bezpośrednim sąsiedztwie tramwaje, autobusy, przystanek PKM).</p>
