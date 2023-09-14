@@ -66,7 +66,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group tiles-numbers px-[20px] mb-[100px] flex gap-[30px]">
+  <div class="wp-block-group tiles-numbers px-[20px] mb-[100px] flex justify-center gap-[30px]">
     <!-- wp:group -->
     <div class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
       <!-- wp:group -->
