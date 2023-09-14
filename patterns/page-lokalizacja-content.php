@@ -36,7 +36,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group row-content mb-[35px] desktop:flex">
+    <div class="wp-block-group row-content mb-[60px] desktop:flex">
       <!-- wp:image -->
       <figure class="wp-block-image left-col w-[60%] m-0">
         <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/map.png" alt="img">
@@ -68,16 +68,16 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group tiles-numbers">
     <!-- wp:group -->
-    <div class="wp-block-group tile1 p-[30px_100px] bg-[#f5f7fa]">
+    <div class="wp-block-group tile1 p-[30px_100px] max-w-[375px] bg-[#f5f7fa]">
       <!-- wp:group -->
       <div class="wp-block-group circle w-[170px] h-[170px]  bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
-        <p class="mb-[60px] text-[30px] text-white">400m</p>
+        <p class="text-[30px] text-white font-semibold">400m</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:paragraph -->
-      <p class="text-[#8a8f99]">Przedszkole</p>
+      <p class="text-[#8a8f99] text-center">Przedszkole</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
