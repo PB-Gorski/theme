@@ -15,11 +15,11 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:paragraph -->
-    <p class="py-[60px] text-[60px] text-center font-bold">Poznaj inwestycję</p>
+    <p class="py-[60px] text-[36px] desktop:text-[60px] text-center font-bold">Poznaj inwestycję</p>
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
-    <div class="wp-block-group test row-links my-[30px] flex justify-center items-center gap-[20px]">
+    <div class="wp-block-group test row-links my-[30px] flex flex-wrap justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/o-inwestycji' ?>">O inwestycji</a>
       <!-- /wp:paragraph -->
@@ -44,15 +44,15 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group row-content desktop:flex">
     <!-- wp:image -->
-    <figure class="wp-block-image left-col w-1/2 m-0">
+    <figure class="wp-block-image left-col desktop:w-1/2 m-0">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img1.jpeg" alt="img">
     </figure>
     <!-- /wp:image -->
 
     <!-- wp:group -->
-    <div class="wp-block-group px-[100px] w-1/2">
+    <div class="wp-block-group desktop:px-[100px] desktop:w-1/2">
       <!-- wp:paragraph -->
-      <p class="text-[34px] mb-[40px]">Osiedle Srebrniki to zielona enklawa położona na granicy dwóch dzielnic Gdańska - Wrzeszcza i Moreny</p>
+      <p class="text-[30px] desktop:text-[34px] mb-[40px]">Osiedle Srebrniki to zielona enklawa położona na granicy dwóch dzielnic Gdańska - Wrzeszcza i Moreny</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
