@@ -47,7 +47,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group row-content desktop:flex">
       <!-- wp:image -->
-      <figure class="wp-block-image left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0">
+      <figure class="wp-block-image left-col desktop:w-1/2 m mb-[30px] desktop:mb-0-0 mb-[20px] desktop:mb-0">
         <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img1.jpeg" alt="img">
       </figure>
       <!-- /wp:image -->
@@ -119,7 +119,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group row-content2 desktop:flex flex-row-reverse">
       <!-- wp:image -->
-      <figure class="wp-block-image left-col desktop:w-1/2 m-0">
+      <figure class="wp-block-image left-col desktop:w-1/2 m mb-[30px] desktop:mb-0-0">
         <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img2.jpeg" alt="img">
       </figure>
       <!-- /wp:image -->
@@ -141,7 +141,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group row-content3 desktop:flex">
       <!-- wp:image -->
-      <figure class="wp-block-image left-col desktop:w-1/2 m-0">
+      <figure class="wp-block-image left-col desktop:w-1/2 m mb-[30px] desktop:mb-0-0">
         <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img3.jpeg" alt="img">
       </figure>
       <!-- /wp:image -->
@@ -166,7 +166,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group row-content4 desktop:flex flex-row-reverse">
       <!-- wp:image -->
-      <figure class="wp-block-image left-col w-1/2 m-0">
+      <figure class="wp-block-image left-col w-1/2 m-0 mb-[30px] desktop:mb-0">
         <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img4.png" alt="img">
       </figure>
       <!-- /wp:image -->
