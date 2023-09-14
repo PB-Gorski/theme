@@ -34,7 +34,13 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph -->
-    <p>single-inwestycje</p>
+    <p>single-inwestycje.php</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:post-title /-->
+    <!-- wp:pattern {"slug":"o-inwestycji-banner"} /-->
+
+    <!-- wp:paragraph -->
+    <p>single-inwestycje-end.php</p>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
