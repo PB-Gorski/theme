@@ -133,7 +133,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph -->
-    <p class="mb-[60px] text-[30px] tet-center">Plan osiedla "Srebrniki"</p>
+    <p class="mb-[60px] text-[30px] text-center">Plan osiedla "Srebrniki"</p>
     <!-- /wp:paragraph -->
 
     <!-- wp:image -->
