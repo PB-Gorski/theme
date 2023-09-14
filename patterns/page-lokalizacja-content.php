@@ -44,7 +44,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- /wp:image -->
 
       <!-- wp:group -->
-      <div class="wp-block-group pl-[100px] desktop:w-[40%]">
+      <div class="wp-block-group desktop:pl-[100px] desktop:w-[40%]">
         <!-- wp:paragraph -->
         <p class="text-[30px] leading-[40px] mb-[40px]">Srebrniki to osiedle położone na granicy dzielnic Wrzeszcz oraz Morena, w otoczeniu licznych terenów zielonych.</p>
         <!-- /wp:paragraph -->
