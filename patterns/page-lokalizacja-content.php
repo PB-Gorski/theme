@@ -70,7 +70,49 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group tile1 p-[30px_100px] max-w-[375px] bg-[#f5f7fa]">
       <!-- wp:group -->
-      <div class="wp-block-group circle w-[170px] h-[170px]  bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
+      <div class="wp-block-group circle w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
+        <!-- wp:paragraph -->
+        <p class="text-[30px] text-white font-semibold">400m</p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:paragraph -->
+      <p class="text-[#8a8f99] text-center">Przedszkole</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+    <!-- wp:group -->
+    <div class="wp-block-group tile1 p-[30px_100px] max-w-[375px] bg-[#f5f7fa]">
+      <!-- wp:group -->
+      <div class="wp-block-group circle w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
+        <!-- wp:paragraph -->
+        <p class="text-[30px] text-white font-semibold">400m</p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:paragraph -->
+      <p class="text-[#8a8f99] text-center">Przedszkole</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+    <!-- wp:group -->
+    <div class="wp-block-group tile1 p-[30px_100px] max-w-[375px] bg-[#f5f7fa]">
+      <!-- wp:group -->
+      <div class="wp-block-group circle w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
+        <!-- wp:paragraph -->
+        <p class="text-[30px] text-white font-semibold">400m</p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:paragraph -->
+      <p class="text-[#8a8f99] text-center">Przedszkole</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+    <!-- wp:group -->
+    <div class="wp-block-group tile1 p-[30px_100px] max-w-[375px] bg-[#f5f7fa]">
+      <!-- wp:group -->
+      <div class="wp-block-group circle w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
         <p class="text-[30px] text-white font-semibold">400m</p>
         <!-- /wp:paragraph -->
