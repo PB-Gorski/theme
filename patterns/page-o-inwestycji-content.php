@@ -44,7 +44,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group row-content px-[20px] desktop:px-0 desktop:flex">
     <!-- wp:image -->
-    <figure class="wp-block-image left-col desktop:w-1/2 m-0 mb-[30px] desktop:mb-0">
+    <figure class="wp-block-image left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img1.jpeg" alt="img">
     </figure>
     <!-- /wp:image -->
@@ -56,9 +56,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
-      <div class="wp-block-group mb-[100px] grid grid-rows-2 grid-cols-2 gap-[30px]">
+      <div class="wp-block-group mb-[100px] desktop:grid grid-rows-2 grid-cols-2 gap-[30px]">
         <!-- wp:group -->
-        <div class="wp-block-group info-box1">
+        <div class="wp-block-group info-box1 mb-[30px] desktop:mb-[30px]">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
           <!-- /wp:paragraph -->
@@ -72,7 +72,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- /wp:group -->
 
         <!-- wp:group -->
-        <div class="wp-block-group info-box2">
+        <div class="wp-block-group info-box2 mb-[30px] desktop:mb-[30px]">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">TERMIN UKOŃCZENIA (BUDYNEK 1)</p>
           <!-- /wp:paragraph -->
@@ -83,7 +83,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- /wp:group -->
 
         <!-- wp:group -->
-        <div class="wp-block-group info-box3">
+        <div class="wp-block-group info-box3 mb-[30px] desktop:mb-[30px]">
           <!-- wp:paragraph -->
 
           <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LICZBA MIESZKAŃ W SPRZEDAŻY</p>
@@ -95,7 +95,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- /wp:group -->
 
         <!-- wp:group -->
-        <div class="wp-block-group info-box4">
+        <div class="wp-block-group info-box4 mb-[30px] desktop:mb-[30px]">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">POWIERZCHNIA MIESZKAŃ</p>
           <!-- /wp:paragraph -->
