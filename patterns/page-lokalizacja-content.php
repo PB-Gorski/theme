@@ -39,7 +39,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <div class="wp-block-group row-content desktop:flex">
       <!-- wp:image -->
       <figure class="wp-block-image left-col w-1/2 m-0">
-        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/map.jpeg" alt="img">
+        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/map.png" alt="img">
       </figure>
       <!-- /wp:image -->
 
