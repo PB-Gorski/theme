@@ -124,7 +124,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group px-[100px] w-1/2">
       <!-- wp:paragraph -->
-      <p class="text-[34px] mb-[40px]">Osiedle Srebrniki to zielona enklawa położona na granicy dwóch dzielnic Gdańska - Wrzeszcza i Moreny</p>
+      <p class="text-[34px] mb-[40px]">Postaw na nowoczesną architekturę</p>
+      <!-- /wp:paragraph -->
+      <!-- wp:paragraph -->
+      <p class="text-[18px] text-[#8a8f99]">W ofercie znajdują się przestronne i doświetlone mieszkania oraz lokale usługowe o wygodnych rozkładach z możliwością aranżacji według własnych potrzeb. W każdym budynku znajduje się cichobieżna winda. Mieszkania na parterze posiadają ogródki, a lokale położone na najwyższych piętrach widok na Zatokę Gdańską. Ofertę multimedialną na terenie osiedla zapewnia https://www.upc.pl/</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
