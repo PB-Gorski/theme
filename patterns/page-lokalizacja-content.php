@@ -60,6 +60,27 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- /wp:group -->
 
 
+
+
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:group -->
+  <div class="wp-block-group tiles-numbers">
+    <!-- wp:group -->
+    <div class="wp-block-group tile1 bg-[#f5f7fa]">
+      <!-- wp:group -->
+      <div class="wp-block-group circle p-[20px_40px] bg-[#e90d38] rounded-full flex items-center justify-center">
+        <!-- wp:paragraph -->
+        <p class="mb-[60px] text-[30px] text-white">400m</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class="text-[#8a8f99]">Przedszkole</p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
 
