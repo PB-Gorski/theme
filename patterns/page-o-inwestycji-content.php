@@ -103,6 +103,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <p class="text-[24px] mb-[40px]">Gdańsk</p>
     <!-- /wp:paragraph -->
   </div>
+  <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
 
