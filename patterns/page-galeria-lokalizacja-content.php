@@ -41,6 +41,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     </p>
     <!-- /wp:paragraph -->
 
+    <!-- wp:post-content /-->
 
 
 
