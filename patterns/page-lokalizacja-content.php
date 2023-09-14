@@ -70,7 +70,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group tile1 bg-[#f5f7fa]">
       <!-- wp:group -->
-      <div class="wp-block-group circle p-[20px_40px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
+      <div class="wp-block-group circle w-[170px] h-[170px] p-[20px_40px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
         <p class="mb-[60px] text-[30px] text-white">400m</p>
         <!-- /wp:paragraph -->
