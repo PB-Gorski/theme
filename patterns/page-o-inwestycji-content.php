@@ -151,7 +151,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:paragraph -->
       <p class="text-[18px] text-[#8a8f99] mb-[30px]">Osiedle Srebrniki położone jest z dala zgiełku głównych ulic, z dostępem do licznych terenów rekreacyjnych. Jednocześnie położenie na granicy gdańskich dzielnic Wrzeszcza oraz Moreny zapewnia nie tylko pełne zaplecze handlowe, ale również świetne skomunikowanie (w bezpośrednim sąsiedztwie tramwaje, autobusy, przystanek PKM).</p>
       <!-- /wp:paragraph -->
-      <a href="<?php echo home_url() . '/lokalizacja'; ?>" class="inline relative font-medium text-textGray before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Więcej o lokalizacji &rarr;</a>
+      <a href="<?php echo home_url() . '/lokalizacja'; ?>" class="inline relative font-semibold text-textGray before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Więcej o lokalizacji &rarr;</a>
     </div>
     <!-- /wp:group -->
 
