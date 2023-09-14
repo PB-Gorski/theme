@@ -15,7 +15,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:paragraph -->
-    <p class="py-[60px] text-[36px] desktop:text-[60px] text-center font-bold">Poznaj inwestycję</p>
+    <p class="py-[30px] desktop:py-[60px] text-[36px] desktop:text-[60px] text-center font-bold">Poznaj inwestycję</p>
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
@@ -42,9 +42,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group row-content desktop:flex">
+  <div class="wp-block-group row-content px-[20px] desktop:px-0 desktop:flex">
     <!-- wp:image -->
-    <figure class="wp-block-image left-col desktop:w-1/2 m-0">
+    <figure class="wp-block-image left-col desktop:w-1/2 m-0 mb-[30px] desktop:mb-0">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img1.jpeg" alt="img">
     </figure>
     <!-- /wp:image -->
