@@ -68,7 +68,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group tiles-numbers px-[20px] mb-[100px] flex gap-[30px]">
     <!-- wp:group -->
-    <div class="wp-block-group tile1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
+    <div class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
       <!-- wp:group -->
       <div class="wp-block-group circle w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
@@ -82,7 +82,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     </div>
     <!-- /wp:group -->
     <!-- wp:group -->
-    <div class="wp-block-group tile1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
+    <div class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
       <!-- wp:group -->
       <div class="wp-block-group circle w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
@@ -96,7 +96,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     </div>
     <!-- /wp:group -->
     <!-- wp:group -->
-    <div class="wp-block-group tile1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
+    <div class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
       <!-- wp:group -->
       <div class="wp-block-group circle w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
@@ -110,7 +110,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     </div>
     <!-- /wp:group -->
     <!-- wp:group -->
-    <div class="wp-block-group tile1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
+    <div class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
       <!-- wp:group -->
       <div class="wp-block-group circle w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
