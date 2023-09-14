@@ -56,7 +56,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
-      <div class="wp-block-group grid grid-rows-2 grid-cols-2 gap-[30px]">
+      <div class="wp-block-group mb-[100px] grid grid-rows-2 grid-cols-2 gap-[30px]">
         <!-- wp:group -->
         <div class="wp-block-group info-box1">
           <!-- wp:paragraph -->
@@ -66,7 +66,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <p class="text-[24px]">Gdańsk</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[14px] text-[#8a8f99]">więcej o lokalizacji</a>
+          <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[14px] text-[#8a8f99] underline">więcej o lokalizacji</a>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
