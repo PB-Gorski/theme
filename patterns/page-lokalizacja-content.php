@@ -84,7 +84,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
       <!-- wp:group -->
-      <div class="wp-block-group circle w-[170px] h-[170px] mb-[60px] bg-[#b11a3e] rounded-full flex flex-col items-center justify-center">
+      <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#b11a3e] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
         <p class="text-[30px] text-white font-semibold">600 m</p>
         <!-- /wp:paragraph -->
@@ -98,7 +98,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
       <!-- wp:group -->
-      <div class="wp-block-group circle w-[170px] h-[170px] mb-[60px] bg-[#7d2645] rounded-full flex flex-col items-center justify-center">
+      <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#7d2645] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
         <p class="text-[30px] text-white font-semibold">900 m</p>
         <!-- /wp:paragraph -->
@@ -112,7 +112,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
       <!-- wp:group -->
-      <div class="wp-block-group circle w-[170px] h-[170px] mb-[60px] bg-[#52304a] rounded-full flex flex-col items-center justify-center">
+      <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#52304a] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
         <p class="text-[30px] text-white font-semibold">20 min</p>
         <!-- /wp:paragraph -->
