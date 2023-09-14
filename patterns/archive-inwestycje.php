@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: archive-investments
- * Slug: archive-investments
+ * Title: archive-inwestycje
+ * Slug: archive-inwestycje
  * Categories: text, banner
  * Viewport Width: 1280
  */
@@ -17,7 +17,7 @@
       <!-- wp:group -->
       <div class="wp-block-group left-col desktop:w-[70%]">
         <!-- wp:paragraph -->
-        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">Wszystkie inwestycje archive-investments</p>
+        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">Wszystkie inwestycje archive-inwestycje</p>
         <!-- /wp:paragraph -->
 
         <!-- wp:list -->
@@ -65,7 +65,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group investments-posts container mx-auto desktop:px-0 px-[20px]">
+  <div class="wp-block-group inwestycje-posts container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:list -->
     <ul class="wp-block-list mb-[40px]">
       <?php
@@ -131,6 +131,7 @@
                     <!-- /wp:group -->
                   </div>
                   <!-- /wp:group -->
+
                   <!-- wp:group -->
                   <div class="wp-block-group group btn-read-more mt-[30px] relative bg-[#3d4b66] text-[18px] text-white font-bold w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
                     <!-- wp:paragraph -->
@@ -138,6 +139,7 @@
                     <!-- /wp:paragraph -->
                   </div>
                   <!-- /wp:group -->
+
                 </div>
                 <!-- /wp:group -->
               </div>

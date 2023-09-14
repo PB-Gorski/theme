@@ -77,7 +77,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group investments-posts container mx-auto desktop:px-0 px-[20px]">
+  <div class="wp-block-group inwestycje-posts container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:list -->
     <ul class="wp-block-list mb-[40px]">
       <?php
