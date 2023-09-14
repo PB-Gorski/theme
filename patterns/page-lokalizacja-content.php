@@ -126,5 +126,13 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   </div>
   <!-- /wp:group -->
 
+  <!-- wp:group -->
+  <div class="wp-block-group plan-osiedla-wrapper mb-[100px] mx-auto max-width-[690px] w-full">
+    <!-- wp:paragraph -->
+    <p class="text-[24px] text-[#8a8f99]">Osiedle Srebrniki to świetnie skomunikowane z całym Gdańskiem osiedle. Położone pomiędzy Wrzeszczem, a Moreną z dobrym dostępem do kolejki PKM. Otoczone zielenią i terenami rekreacyjnymi. Idealne dla rodzin z dziećmi, jak i dla studentów (10 minut od kampusu Politechniki Gdańskiej).</p>
+    <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:group -->
+
 </div>
 <!-- /wp:group -->
