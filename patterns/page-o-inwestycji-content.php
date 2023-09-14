@@ -6,6 +6,8 @@
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
+$currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 35, 30));
+
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
@@ -16,8 +18,8 @@
     <p class="py-[60px] text-[60px] text-center font-bold">Poznaj inwestycję</p>
     <!-- /wp:paragraph -->
     <!-- wp:paragraph -->
-    <p class=""><?php echo the_permalink(); ?></p>
-    <p class=""><?php echo site_url(); ?></p>
+    <p class=""><?php print_r(get_current_site()); ?></p>
+    <p class=""><?php echo $currentPage ?></p>
     <!-- /wp:paragraph -->
     <!-- wp:group -->
     <div class="wp-block-group row-links my-[30px] flex justify-center items-center gap-[20px]">
