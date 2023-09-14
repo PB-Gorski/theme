@@ -35,7 +35,11 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     </div>
     <!-- /wp:group -->
 
-    galeria
+    <!-- wp:paragraph -->
+    <p>
+      galeria
+    </p>
+    <!-- /wp:paragraph -->
 
 
 
