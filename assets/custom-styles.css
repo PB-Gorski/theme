@@ -16,7 +16,7 @@ figure[class*="wp-block-image"] img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  margin: 0;
+  margin: 0!important;
 }
 @media only screen and (max-width: 480px) {
   figure[class*="wp-block-image cta-img"] img {
