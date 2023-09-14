@@ -113,6 +113,9 @@
         <p class="font-bold underline underline-offset-[20px]">Osiedle Srebrniki (manual)</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
+        <p class="font-bold underline underline-offset-[20px]"><!-- wp:post-title /--></p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
         <p class="uppercase text-[18px] trancking-[10px]">Gdańsk wrzeszcz</p>
         <!-- /wp:paragraph -->
       </div>
