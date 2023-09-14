@@ -70,6 +70,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[14px] text-[#8a8f99]">więcej o lokalizacji</a>
           <!-- /wp:paragraph -->
         </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
@@ -81,6 +82,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <p class="text-[24px] mb-[40px]">Gdańsk</p>
         <!-- /wp:paragraph -->
       </div>
+      <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
     <!-- wp:group -->
@@ -92,6 +94,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <p class="text-[24px] mb-[40px]">Gdańsk</p>
       <!-- /wp:paragraph -->
     </div>
+    <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
   <!-- wp:group -->
