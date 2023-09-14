@@ -129,59 +129,6 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:paragraph -->
       <p class="text-[18px] text-[#8a8f99]">W ofercie znajdują się przestronne i doświetlone mieszkania oraz lokale usługowe o wygodnych rozkładach z możliwością aranżacji według własnych potrzeb. W każdym budynku znajduje się cichobieżna winda. Mieszkania na parterze posiadają ogródki, a lokale położone na najwyższych piętrach widok na Zatokę Gdańską. Ofertę multimedialną na terenie osiedla zapewnia https://www.upc.pl/</p>
       <!-- /wp:paragraph -->
-
-      <!-- wp:group -->
-      <div class="wp-block-group mb-[100px] grid grid-rows-2 grid-cols-2 gap-[30px]">
-        <!-- wp:group -->
-        <div class="wp-block-group info-box1">
-          <!-- wp:paragraph -->
-          <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <p class="text-[24px]">Gdańsk</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[14px] text-[#8a8f99] underline">więcej o lokalizacji</a>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
-
-        <!-- wp:group -->
-        <div class="wp-block-group info-box2">
-          <!-- wp:paragraph -->
-          <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">TERMIN UKOŃCZENIA (BUDYNEK 1)</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <p class="text-[24px]">IV kwartał 2020</p>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
-
-        <!-- wp:group -->
-        <div class="wp-block-group info-box3">
-          <!-- wp:paragraph -->
-
-          <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LICZBA MIESZKAŃ W SPRZEDAŻY</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <p class="text-[24px]">450 w pierwszym etapie</p>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
-
-        <!-- wp:group -->
-        <div class="wp-block-group info-box4">
-          <!-- wp:paragraph -->
-          <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">POWIERZCHNIA MIESZKAŃ</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <p class="text-[24px]">27 m<sup>2</sup> - 113 m<sup>2</sup></p>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
     </div>
     <!-- /wp:group -->
 
