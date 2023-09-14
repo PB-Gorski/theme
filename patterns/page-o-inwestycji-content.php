@@ -18,7 +18,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <p class="py-[60px] text-[60px] text-center font-bold">Poznaj inwestycję</p>
     <!-- /wp:paragraph -->
     <!-- wp:paragraph -->
-    <p class=""><?php print_r(get_current_site()); ?></p>
+    <p class=""><?php print_r(get_current_site('path')); ?></p>
     <p class=""><?php echo $currentPage ?></p>
     <!-- /wp:paragraph -->
     <!-- wp:group -->
