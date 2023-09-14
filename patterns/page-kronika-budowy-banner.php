@@ -110,7 +110,7 @@
       <!-- wp:group -->
       <div class="wp-block-group title text-[36px] desktop:text-[60px] desktop:pt-[290px] mb-[50px] leading-[44px] desktop:leading-[70px]">
         <!-- wp:paragraph -->
-        <p class="font-bold underline underline-offset-[20px]">Galeria Lokalizacja</p>
+        <p class="font-bold underline underline-offset-[20px]">Kronika budowy</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
         <p class="uppercase text-[18px] trancking-[10px]">Lorem ipsum</p>

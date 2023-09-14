@@ -26,17 +26,17 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <a href="<?php echo home_url() . '/lista-mieszkan' ?>" class="text-[#8a8f99] hover:text-textGray">Lista mieszkań</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/galeria-lokalizacja' ?>">Galeria</a>
+      <a href="<?php echo home_url() . '/galeria-lokalizacja' ?>" class="text-[#8a8f99] hover:text-textGray">Galeria</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/kronika-budowy' ?>" class="text-[#8a8f99] hover:text-textGray">Kronika budowy</a>
+      <a href="<?php echo home_url() . '/kronika-budowy' ?>">Kronika budowy</a>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
 
     <!-- wp:paragraph -->
     <p>
-      galeria
+      Kronika budowy
     </p>
     <!-- /wp:paragraph -->
 
