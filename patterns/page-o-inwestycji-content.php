@@ -122,7 +122,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- /wp:image -->
 
     <!-- wp:group -->
-    <div class="wp-block-group px-[100px] w-1/2">
+    <div class="wp-block-group p-[140px_100px] w-1/2">
       <!-- wp:paragraph -->
       <p class="text-[34px] mb-[40px]">Postaw na nowoczesną architekturę</p>
       <!-- /wp:paragraph -->
