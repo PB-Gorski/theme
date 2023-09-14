@@ -31,7 +31,6 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/kronika-budowy' ?>" class="text-[#8a8f99] hover:text-textGray">Kronika budowy</a>
       <!-- /wp:paragraph -->
-
     </div>
     <!-- /wp:group -->
 
