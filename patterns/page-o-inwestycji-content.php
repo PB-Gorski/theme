@@ -55,7 +55,6 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <p class="text-[34px] mb-[40px]">Osiedle Srebrniki to zielona enklawa położona na granicy dwóch dzielnic Gdańska - Wrzeszcza i Moreny</p>
       <!-- /wp:paragraph -->
 
-
       <!-- wp:group -->
       <div class="wp-block-group grid grid-rows-2 grid-cols-2">
         <!-- wp:group -->
