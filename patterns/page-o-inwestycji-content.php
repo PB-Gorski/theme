@@ -15,6 +15,10 @@
     <!-- wp:paragraph -->
     <p class="py-[60px] text-[60px] text-center font-bold">Poznaj inwestycję</p>
     <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class=""><?php echo the_permalink(); ?></p>
+    <p class=""><?php echo site_url(); ?></p>
+    <!-- /wp:paragraph -->
     <!-- wp:group -->
     <div class="wp-block-group row-links my-[30px] flex justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
