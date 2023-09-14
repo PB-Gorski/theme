@@ -114,7 +114,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group row-content2 desktop:flex flex-col-reverse">
+  <div class="wp-block-group row-content2 desktop:flex flex-row-reverse">
     <!-- wp:image -->
     <figure class="wp-block-image left-col w-1/2 m-0">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img2.jpeg" alt="img">
