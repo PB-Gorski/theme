@@ -24,7 +24,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group row-links my-[30px] flex justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/o-inwestycji' ?>" class="active-o-inwest text-[#8a8f99] hover:text-[#3e4759]">O inwestycji</a>
+      <a href="<?php echo home_url() . '/o-inwestycji' ?>" class="active-o-inwest hover:text-[#3e4759]">O inwestycji</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[#8a8f99] hover:text-textGray">Lokalizacja</a>
