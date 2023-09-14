@@ -58,7 +58,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group mb-[100px] desktop:grid grid-rows-2 grid-cols-2 gap-[30px]">
         <!-- wp:group -->
-        <div class="wp-block-group info-box1 mb-[30px] desktop:mb-[30px]">
+        <div class="wp-block-group info-box1 mb-[35px] desktop:mb-[30px]">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
           <!-- /wp:paragraph -->
@@ -72,7 +72,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- /wp:group -->
 
         <!-- wp:group -->
-        <div class="wp-block-group info-box2 mb-[30px] desktop:mb-[30px]">
+        <div class="wp-block-group info-box2 mb-[35px] desktop:mb-[30px]">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">TERMIN UKOŃCZENIA (BUDYNEK 1)</p>
           <!-- /wp:paragraph -->
@@ -83,7 +83,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- /wp:group -->
 
         <!-- wp:group -->
-        <div class="wp-block-group info-box3 mb-[30px] desktop:mb-[30px]">
+        <div class="wp-block-group info-box3 mb-[35px] desktop:mb-[30px]">
           <!-- wp:paragraph -->
 
           <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LICZBA MIESZKAŃ W SPRZEDAŻY</p>
@@ -95,7 +95,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- /wp:group -->
 
         <!-- wp:group -->
-        <div class="wp-block-group info-box4 mb-[30px] desktop:mb-[30px]">
+        <div class="wp-block-group info-box4 mb-[35px] desktop:mb-[30px]">
           <!-- wp:paragraph -->
           <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">POWIERZCHNIA MIESZKAŃ</p>
           <!-- /wp:paragraph -->
