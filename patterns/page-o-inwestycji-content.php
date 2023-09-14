@@ -71,48 +71,46 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-      <!-- wp:group -->
-      <div class="wp-block-group info-box2">
-        <!-- wp:paragraph -->
-        <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:paragraph -->
-        <p class="text-[24px]">Gdańsk</p>
-        <!-- /wp:paragraph -->
-      </div>
-      <!-- /wp:group -->
-    </div>
-    <!-- /wp:group -->
-    <!-- wp:group -->
-    <div class="wp-block-group info-box3">
-      <!-- wp:paragraph -->
-      <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
-      <!-- /wp:paragraph -->
-      <!-- wp:paragraph -->
-      <p class="text-[24px]">Gdańsk</p>
-      <!-- /wp:paragraph -->
-    </div>
-    <!-- /wp:group -->
-  </div>
-  <!-- /wp:group -->
-  <!-- wp:group -->
-  <div class="wp-block-group info-box4">
-    <!-- wp:paragraph -->
-    <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
-    <!-- /wp:paragraph -->
-    <!-- wp:paragraph -->
-    <p class="text-[24px]">Gdańsk</p>
-    <!-- /wp:paragraph -->
-  </div>
-  <!-- /wp:group -->
-</div>
-<!-- /wp:group -->
 
-</div>
-<!-- /wp:group -->
-</div>
-<!-- /wp:group -->
+
+        <!-- wp:group -->
+        <div class="wp-block-group info-box2">
+          <!-- wp:paragraph -->
+          <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph -->
+          <p class="text-[24px]">Gdańsk</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:group -->
+        <div class="wp-block-group info-box3">
+          <!-- wp:paragraph -->
+          <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph -->
+          <p class="text-[24px]">Gdańsk</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:group -->
+        <div class="wp-block-group info-box4">
+          <!-- wp:paragraph -->
+          <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:paragraph -->
+          <p class="text-[24px]">Gdańsk</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
