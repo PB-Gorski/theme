@@ -64,7 +64,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p class="text-[24px] mb-[40px]">Gdańsk</p>
+          <p class="text-[24px]">Gdańsk</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
           <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[14px] text-[#8a8f99]">więcej o lokalizacji</a>
@@ -79,7 +79,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[24px] mb-[40px]">Gdańsk</p>
+        <p class="text-[24px]">Gdańsk</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -91,7 +91,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <p class="text-[24px] mb-[40px]">Gdańsk</p>
+      <p class="text-[24px]">Gdańsk</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
@@ -103,7 +103,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <p class="uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
     <!-- /wp:paragraph -->
     <!-- wp:paragraph -->
-    <p class="text-[24px] mb-[40px]">Gdańsk</p>
+    <p class="text-[24px]">Gdańsk</p>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
