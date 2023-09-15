@@ -10,9 +10,6 @@
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="blog-post" class="wp-block-group blog-post relative">
-  <!-- wp:paragraph -->
-  <p>page-blog-posts.php</p>
-  <!-- /wp:paragraph -->
   <!-- wp:group -->
   <div class="wp-block-group mobile-fixed-phone block desktop:hidden flex justify-center items-center bg-primaryRed w-full h-[87px] fixed bottom-0 left-0 z-[2]">
     <!-- wp:group -->
