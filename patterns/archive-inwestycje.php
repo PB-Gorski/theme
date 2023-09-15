@@ -82,10 +82,8 @@
         'taxonomy' => 'osiedla',
         'hide_empty' => false,
       ));
-      echo 'get_queried_obj: <br>';
-      print_r(get_queried_object());
-      echo 'get_term poza petla: <br>';
-      print_r(get_term(10, 'osiedla'));
+      $term = get_term(10, 'osiedla');
+      $terms = get_terms('osiedla');
 
 
       if ($post_query->have_posts()) {
@@ -109,8 +107,6 @@
           echo the_taxonomies();
           echo '<br>';
           echo 'the_taxonomies<br>';
-          echo the_taxonomies()[68]->name;
-          echo '<br>'
 
       ?>
           <!-- wp:list-item -->
