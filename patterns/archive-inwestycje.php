@@ -53,6 +53,9 @@
 
       <!-- wp:group -->
       <div class="wp-block-group right-col desktop:w-[30%]">
+        <?php
+        print_r(wp_count_terms('inwestycja'))
+        ?>
         <!-- wp:paragraph -->
         <p class="text-[30px] text-[#8a8f99]">4 inwestycje / 169 lokali11</p>
         <!-- /wp:paragraph -->
