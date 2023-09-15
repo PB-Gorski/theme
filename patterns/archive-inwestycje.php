@@ -101,6 +101,10 @@
 
 
           print_r($terms);
+
+          $queried_object = get_queried_object();
+          $this_tax = get_taxonomy($queried_object->taxonomy);
+          echo $this_tax->labels->singular_name;
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full desktop:h-[450px] mb-[80px]">
