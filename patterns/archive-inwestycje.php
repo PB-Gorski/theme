@@ -85,9 +85,7 @@
       print_r(get_queried_object());
       print_r(get_term(1, 'osiedla'));
       $term = get_term(1, 'osiedla');
-      $terms = get_terms('osiedla', array(
-        'fields' => 'slug',
-      ));
+      $terms = get_terms('osiedla');
 
 
       if ($post_query->have_posts()) {
