@@ -104,11 +104,6 @@
           'taxonomy' => 'miasto',
           'hide_empty' => false,
         ));
-        echo $i;
-        print_r($taxonomiesCity[$i]);
-
-        $test = get_term('miasto');
-        print_r($test);
 
 
 
