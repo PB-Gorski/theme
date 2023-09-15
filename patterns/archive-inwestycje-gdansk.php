@@ -100,26 +100,12 @@
         $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
         $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
-        $taxonomiesCity = get_terms(array(
+        $taxonomiesCity = get_term(array(
           'taxonomy' => 'miasto',
         ));
-        foreach ($taxonomiesCity as $taxCity) {
-          // print_r($taxCity->slug);
-          $currentTermCity = (get_term($taxCity, 'miasto'))->slug;
-          // echo  $currentTermCity;
-          echo '<br>';
-          if ($taxCity == 'gdansk') {
-            echo 'gdansk';
-          } else {
-            echo 'not gdansk';
-          }
-          echo '<br>';
-          if ($taxCity == 'gdansk') {
-            echo 'gdansk';
-          } else {
-            echo 'not gdansk';
-          }
-        };
+        echo $taxonomiesCity;
+        echo get_queried_object()->slug;
+
 
         // echo $tax->name;
       ?>
