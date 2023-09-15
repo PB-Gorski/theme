@@ -109,14 +109,15 @@
           $currentTermCity = (get_term($tax2, 'miasto'))->slug;
           $taxNoSpaces = str_replace(' ', '-', strtolower($tax2->name));
           $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
-  
+
           print_r($currentTermCity);
           if ($taxNoSpaces2 == 'gdynia') {
             echo 'gdynia';
           } else {
             echo 'gdansk';
           };
-        
+        };
+
 
 
         // echo $tax->name;
