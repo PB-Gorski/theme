@@ -93,6 +93,8 @@
           echo $term->name; // will show the name
           echo $term->taxonomy; // will show the taxonomy
           echo $term->slug; // will show taxonomy slug
+          print_r(get_term('osiedla'));  // will show taxonomy slug
+          print_r(get_term('osiedla')->name);  // will show taxonomy slug
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full desktop:h-[450px] mb-[80px]">
@@ -111,7 +113,7 @@
                   <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php the_title(); ?></p>
                   <!-- /wp:paragraph -->
                   <!-- wp:paragraph -->
-                  <p><?php echo $taxonomy->name; ?></p>
+                  <p><?php echo $taxonomies->name; ?></p>
                   <!-- /wp:paragraph -->
 
                   <!-- wp:list -->
