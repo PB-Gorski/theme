@@ -43,7 +43,7 @@
             // echo $catNoSpaces;
           ?>
             <!-- wp:list-item -->
-            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory == $catNoSpaces) ? 'tab-active' : ''; ?>"><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $cat->name; ?></a></li>
+            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory == $catNoSpaces) ? 'tab-active' : ''; ?>"><a href="<?php echo home_url() . '/inwestycje/gdansk'; ?>" class=""><?php echo $cat->name; ?></a></li>
             <!-- /wp:list-item -->
           <?php }; ?>
         </ul>
@@ -54,7 +54,7 @@
       <!-- wp:group -->
       <div class="wp-block-group right-col desktop:w-[30%]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-[#8a8f99]"><?php echo wp_count_terms('inwestycja'); ?> inwe31321stycje / <?php echo wp_count_posts('mieszkania')->publish; ?> lokali</p>
+        <p class="text-[30px] text-[#8a8f99]"><?php echo wp_count_terms('inwestycja'); ?> inwestycje / <?php echo wp_count_posts('mieszkania')->publish; ?> lokali</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
