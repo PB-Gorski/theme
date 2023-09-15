@@ -117,8 +117,15 @@
   <div class="wp-block-group title-wrapper py-[20px] desktop:py-[48px] bg-[#f6f7fa]">
     <!-- wp:group -->
     <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
+      <!-- wp:paragraph -->
+      <a href="/blog/" class="group">
+        <!-- wp:paragraph -->
+        <p>&larr; Lista aktualności</p>
+        <!-- /wp:paragraph -->
+      </a>
+      <!-- /wp:paragraph -->
       <!-- wp:group -->
-      <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[24px] desktop:text-[40px] text-[#2e384c] font-bold">
+      <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] text-[24px] desktop:text-[40px] text-[#2e384c] font-bold">
         <!-- wp:post-title /-->
       </div>
       <!-- /wp:group -->
@@ -135,16 +142,7 @@
   <!-- /wp:group -->
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
-    <!-- wp:paragraph -->
-    <a href="/blog/" class="group">
-      <!-- wp:paragraph -->
-      <p>&larr; Lista aktualności</p>
-      <!-- /wp:paragraph -->
-      <!-- wp:paragraph -->
-      <p class="text-[14px]">Wróć do listy</p>
-      <!-- /wp:paragraph -->
-    </a>
-    <!-- /wp:paragraph -->
+
     <!-- wp:post-featured-image /-->
     <!-- wp:group -->
     <div class="wp-block-group max-w-[700px] w-full mx-auto desktop:px-0 px-[20px]">
