@@ -77,7 +77,7 @@
       $counter = 0;
       $i = 0;
       $taxonomies = get_terms(array(
-        'taxonomy' => 'miasto',
+        'taxonomy' => 'inwestycja',
         'hide_empty' => false,
       ));
 
@@ -96,23 +96,33 @@
 
       foreach ($taxonomies as $tax) {
         $counter++;
-        $currentTermCity = (get_term($tax, 'miasto'))->slug;
+        $currentTermCount = (get_term($tax, 'inwestycja'))->count;
         $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
         $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
-        print_r($currentTermCity);
-        if ($currentTermCity == 'gdynia') {
-          echo 'gdynia';
-        } else {
-          echo 'gdansk';
-        };
-
+        $taxonomiesCity = get_terms(array(
+          'taxonomy' => 'miasto',
+          'hide_empty' => false,
+        ));
+        foreach ($taxonomiesCity as $tax2) {
+          $counter++;
+          $currentTermCity = (get_term($tax2, 'miasto'))->slug;
+          $taxNoSpaces = str_replace(' ', '-', strtolower($tax2->name));
+          $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
+  
+          print_r($currentTermCity);
+          if ($taxNoSpaces2 == 'gdynia') {
+            echo 'gdynia';
+          } else {
+            echo 'gdansk';
+          };
+        
 
 
         // echo $tax->name;
       ?>
         <!-- wp:list-item -->
-        <li class=" hidden invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
+        <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
           <div class="relative group desktop:max-w-full max-w-[310px] h-full">
             <!-- wp:group -->
             <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
