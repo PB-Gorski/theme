@@ -100,7 +100,6 @@
           echo '<br>';
           echo 'terms:<br>';
 
-
           print_r($terms);
           echo '<br>';
           echo 'the_taxonomies<br>';
