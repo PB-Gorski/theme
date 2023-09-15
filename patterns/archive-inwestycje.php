@@ -95,6 +95,7 @@
       echo '<br>';
       echo 'foreach:<br>';
       foreach ($taxonomies as $tax) {
+        $counter++;
         echo $tax->name; ?>
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
@@ -147,6 +148,7 @@
         </li>
         <!-- /wp:list-item -->
         <?php
+        $i++;
       };
 
 
