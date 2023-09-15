@@ -31,7 +31,7 @@
           );
           $cats = get_categories($args); ?>
           <!-- wp:list-item -->
-          <li class="allTabBtn text-[#8A8F99] text-textGray underline underline-offset-4 decoration-2 decoration-primaryRed cursor-pointer">
+          <li class="allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
             <a href="<?php echo get_home_url() . '/inwestycje'; ?>" class="">Wszystkie</a>
           </li>
           <!-- /wp:list-item -->
