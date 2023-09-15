@@ -89,12 +89,8 @@
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
           $counter++;
-          $term = get_queried_object();
-          echo $term->name; // will show the name
-          echo $term->taxonomy; // will show the taxonomy
-          echo $term->slug; // will show taxonomy slug
-          print_r(get_term('osiedla'));  // will show taxonomy slug
-          print_r(get_term('osiedla')->name);  // will show taxonomy slug
+
+          print_r(get_term(1, 'osiedla'));  // will show taxonomy slug
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full desktop:h-[450px] mb-[80px]">
