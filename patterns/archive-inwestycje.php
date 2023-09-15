@@ -111,6 +111,12 @@
             'name' => 'test01',
           ));
 
+          echo '<br>';
+          echo 'tersms list:<br>';
+          echo '<br>';
+
+          print_r(get_the_term_list($post->ID, 'test01', '', ', ', ''));
+
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full desktop:h-[450px] mb-[80px]">
