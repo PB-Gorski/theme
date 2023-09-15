@@ -86,9 +86,11 @@
       $term = get_term(10, 'osiedla');
       $terms = get_terms('osiedla');
 
-      foreach ($taxonomies as $tax) {
-        echo $tax->name;
-      };
+      print_r($taxonomies);
+
+      // foreach ($taxonomies as $tax) {
+      //   echo $tax->name;
+      // };
 
 
       if (!$post_query->have_posts()) {
