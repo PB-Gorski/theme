@@ -105,7 +105,12 @@
                 <!-- wp:group -->
                 <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center">
                   <!-- wp:paragraph -->
-                  <p class="mr-[20px] text-[24px] desktop:text-[36px] font-bold leading-[34px] desktop:leading-[46px]"><?php the_title(); ?></p>
+                  <p class="mr-[20px] desktop:mb-[60px] text-[24px] desktop:text-[36px] font-bold leading-[34px] desktop:leading-[46px]"><?php the_title(); ?></p>
+                  <!-- /wp:paragraph -->
+
+                  <!-- wp:paragraph -->
+                  <p class="relative text-[18px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Zobacz więcej &rarr;
+                  </p>
                   <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
