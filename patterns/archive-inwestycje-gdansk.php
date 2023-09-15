@@ -75,7 +75,7 @@
       );
       $post_query = new WP_Query($args);
       $counter = 0;
-      $i = 1;
+      $i = 0;
       $taxonomies = get_terms(array(
         'taxonomy' => 'inwestycja',
         'hide_empty' => false,
@@ -106,6 +106,9 @@
         ));
         echo $i;
         print_r($taxonomiesCity[$i]);
+
+        $test = get_term('gdynia', 'miasto');
+        print_r($test);
 
 
 
