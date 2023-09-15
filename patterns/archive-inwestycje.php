@@ -94,6 +94,11 @@
           print_r(get_term(1, 'osiedla'));
           $term = get_term(1, 'osiedla');
           echo $term->name;
+
+          $terms = get_terms('osiedla', array(
+            'fields' => 'count',
+          ));
+          print_r($terms);
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full desktop:h-[450px] mb-[80px]">
