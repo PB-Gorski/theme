@@ -96,6 +96,8 @@
       // echo 'foreach:<br>';
       foreach ($taxonomies as $tax) {
         $counter++;
+        $term = get_term(1, $tax); //for example uncategorized category
+        echo 'count: ' . $term->count;
         // echo $tax->name;
       ?>
         <!-- wp:list-item -->
