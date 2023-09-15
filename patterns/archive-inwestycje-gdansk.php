@@ -102,7 +102,9 @@
 
         $taxonomiesCity = get_term('miasto');
         print_r($taxonomiesCity);
-        echo get_queried_object()->slug;
+        echo '<br>';
+        print_r($tax);
+
 
 
         // echo $tax->name;
