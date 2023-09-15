@@ -77,7 +77,7 @@
       $counter = 0;
       $i = 0;
       $taxonomies = get_terms(array(
-        'taxonomy' => 'inwestycja',
+        'taxonomy' => 'miasto',
         'hide_empty' => false,
       ));
 
@@ -96,14 +96,16 @@
 
       foreach ($taxonomies as $tax) {
         $counter++;
-        $currentTermCount = (get_term($tax, 'inwestycja'))->count;
+        $currentTermCity = (get_term($tax, 'miasto'))->slug;
         $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
         $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
-        $taxonomiesCity = get_term('miasto');
-        print_r($taxonomiesCity);
-        echo '<br>';
-        print_r($tax);
+        print_r($currentTermCity);
+        if ($currentTermCity == 'gdynia') {
+          echo 'gdynia';
+        } else {
+          echo 'gdansk';
+        };
 
 
 
