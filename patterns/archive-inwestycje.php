@@ -87,6 +87,7 @@
       $terms = get_terms('inwestycje');
 
       print_r($taxonomies);
+      print_r(the_taxonomies());
 
       foreach ($taxonomies as $tax) {
         echo $tax->name;
