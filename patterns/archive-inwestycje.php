@@ -115,7 +115,7 @@
           // echo 'tersms list:<br>';
           // echo '<br>';
 
-          print_r(get_the_term_list($post->ID, 'test01', '', ', ', ''));
+          print_r(get_the_term_list($post_query->ID, 'test01', '', ', ', ''));
 
       ?>
           <!-- wp:list-item -->
@@ -132,7 +132,7 @@
                 <!-- wp:group -->
                 <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center">
                   <!-- wp:paragraph -->
-                  <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php echo get_the_term_list($post->ID, 'test01') ?></p>
+                  <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php echo get_the_term_list($post_query->ID, 'test01') ?></p>
                   <!-- /wp:paragraph -->
 
                   <!-- wp:list -->
