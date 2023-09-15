@@ -63,7 +63,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- wp:group -->
           <div class="wp-block-group info-box1 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
-            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LOKALIZACJA</p>
+            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">LOKALIZACJA</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
             <p class="text-[24px]">Gdańsk</p>
@@ -77,7 +77,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- wp:group -->
           <div class="wp-block-group info-box2 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
-            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">TERMIN UKOŃCZENIA (BUDYNEK 1)</p>
+            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">TERMIN UKOŃCZENIA (BUDYNEK 1)</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
             <p class="text-[24px]">IV kwartał 2020</p>
@@ -89,7 +89,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <div class="wp-block-group info-box3 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
 
-            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">LICZBA MIESZKAŃ W SPRZEDAŻY</p>
+            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">LICZBA MIESZKAŃ W SPRZEDAŻY</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
             <p class="text-[24px]">450 w pierwszym etapie</p>
@@ -100,7 +100,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- wp:group -->
           <div class="wp-block-group info-box4 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
-            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] trancking-[1px]">POWIERZCHNIA MIESZKAŃ</p>
+            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">POWIERZCHNIA MIESZKAŃ</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
             <p class="text-[24px]">27 m<sup>2</sup> - 113 m<sup>2</sup></p>
