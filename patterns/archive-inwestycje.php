@@ -54,7 +54,7 @@
       <!-- wp:group -->
       <div class="wp-block-group right-col desktop:w-[30%]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-[#8a8f99]">4 inwestycje / 169 lokali 2fdsfds</p>
+        <p class="text-[30px] text-[#8a8f99]">4 inwestycje / 169 lokali 1</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -79,7 +79,7 @@
       $counter = 0;
       $i = 0;
       $taxonomies = get_terms(array(
-        'taxonomy' => 'inwestycja',
+        'taxonomy' => 'inwestycje',
         'hide_empty' => false,
         'fields' => 'count',
       ));
