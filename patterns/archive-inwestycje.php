@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="inwestycje-archive" class="wp-block-group inwestycje-archive relative">
   <!-- wp:group -->
-  <div class="wp-block-group title-wrapper bg-[#f6f7fa]">
+  <div class="wp-block-group title-wrapper mb-[40px] bg-[#f6f7fa]">
     <!-- wp:group -->
     <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[20px] desktop:flex items-center">
       <!-- wp:group -->
@@ -102,7 +102,7 @@
       ?>
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
-          <div class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full">
+          <div class="relative group desktop:max-w-full max-w-[310px] h-full">
             <!-- wp:group -->
             <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
               <!-- wp:image -->
