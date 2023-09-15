@@ -78,12 +78,22 @@
       $post_query = new WP_Query($args);
       $counter = 0;
       $i = 0;
+      $taxonomies = get_terms(array(
+        'taxonomy' => 'osiedla',
+        'hide_empty' => false,
+      ));
+
 
       if ($post_query->have_posts()) {
         while ($post_query->have_posts()) {
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
-          $counter++; ?>
+          $counter++;
+          $term = get_queried_object();
+          echo $term->name; // will show the name
+          echo $term->taxonomy; // will show the taxonomy
+          echo $term->slug; // will show taxonomy slug
+      ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full desktop:h-[450px] mb-[80px]">
             <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
@@ -99,6 +109,9 @@
                 <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center">
                   <!-- wp:paragraph -->
                   <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php the_title(); ?></p>
+                  <!-- /wp:paragraph -->
+                  <!-- wp:paragraph -->
+                  <p><?php echo $taxonomy->name; ?></p>
                   <!-- /wp:paragraph -->
 
                   <!-- wp:list -->
