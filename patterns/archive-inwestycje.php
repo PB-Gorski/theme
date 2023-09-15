@@ -97,7 +97,7 @@
       foreach ($taxonomies as $tax) {
         echo $tax->name; ?>
         <!-- wp:list-item -->
-        <li class="hidden invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
+        <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
           <div class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full">
             <!-- wp:group -->
             <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
@@ -183,8 +183,8 @@
           // echo 'tersms list:<br>';
           // echo '<br>';
 
-          print_r(get_the_term_list($post_query->ID, 'inwestycja', '', ', ', ''));
-          echo $post_query->post_count;
+          // print_r(get_the_term_list($post_query->ID, 'inwestycja', '', ', ', ''));
+          // echo $post_query->post_count;
 
         ?>
           <!-- wp:list-item -->
