@@ -103,7 +103,7 @@
 
         foreach ($taxonomiesCity as $taxCity) {
           print_r($taxCity);
-          if ($taxCity == 'gdansk') {
+          if ($taxCity->slug == 'gdansk') {
             echo 'gdansk';
           } else {
             echo 'not gdansk';
