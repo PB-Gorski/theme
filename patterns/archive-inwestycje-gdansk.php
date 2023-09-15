@@ -66,9 +66,25 @@
   <div class="wp-block-group inwestycje-posts container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:list -->
     <ul class="wp-block-list mb-[40px]">
-      <!-- wp:query {"query":{"taxQuery":"inwestycja"}} -->
-      <div class="wp-block-query"></div>
-      <!-- /wp:query -->
+      <?php
+      $args = array(
+        'taxonomy' => 'catentreprise',
+        'hierarchical' => true,
+        'depth' => 1,
+        'child_of' => 'gdansk',
+        'hide_empty' => false
+      );
+
+      $sub_terms = get_categories('city', $args);
+
+      foreach ($sub_terms as $sub_term) {
+      ?>
+        <li><?php echo $sub_term->name ?></li>
+      <?php
+      }
+      ?>
+
+
       <?php
       $args = array(
         'post_type' => 'mieszkania',
