@@ -120,7 +120,7 @@
                 <!-- wp:group -->
                 <div class="wp-block-group flex">
                   <!-- wp:group -->
-                  <div class=" wp-block-group available-apartments flex items-center gap-[25px]">
+                  <div class="wp-block-group available-apartments pr-[35px] flex items-center gap-[25px] border-r-[1px] border-[#ebecee]">
                     <!-- wp:paragraph -->
                     <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
                     <!-- /wp:paragraph -->
@@ -137,7 +137,7 @@
                   </div>
                   <!-- /wp:group -->
                   <!-- wp:group -->
-                  <div class="wp-block-group apartments-price flex justify-center items-center flex-col">
+                  <div class="wp-block-group apartments-price pl-[35px] flex justify-center items-center flex-col">
                     <!-- wp:paragraph -->
                     <p class="mb-[4px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">CENA JUŻ OD</p>
                     <!-- /wp:paragraph -->
