@@ -132,6 +132,7 @@
       <!-- wp:group -->
       <div class="wp-block-group post-date text-[#8a8f99] text-[18px]">
         <!-- wp:post-date {"format":"d / m / Y"} /-->
+        <!-- wp:post-date {"format":"j F Y"} /-->
         <!-- wp:post-date /-->
         <?php the_date('j F Y'); ?>
         <?php the_time('j F Y'); ?>
