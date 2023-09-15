@@ -75,7 +75,7 @@
       );
       $post_query = new WP_Query($args);
       $counter = 0;
-      $i = 0;
+      $i = 1;
       $taxonomies = get_terms(array(
         'taxonomy' => 'inwestycja',
         'hide_empty' => false,
