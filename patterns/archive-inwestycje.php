@@ -137,7 +137,7 @@
                   </div>
                   <!-- /wp:group -->
                   <!-- wp:group -->
-                  <div class="wp-block-group apartments-price">
+                  <div class="wp-block-group apartments-price flex justify-center items-center flex-col">
                     <!-- wp:paragraph -->
                     <p class="mb-[4px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">CENA JUŻ OD</p>
                     <!-- /wp:paragraph -->
