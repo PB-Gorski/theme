@@ -79,7 +79,7 @@
       $counter = 0;
       $i = 0;
       $taxonomies = get_terms(array(
-        'taxonomy' => 'osiedla',
+        'taxonomy' => 'inwestycja',
         'hide_empty' => false,
         'fields' => 'count',
       ));
