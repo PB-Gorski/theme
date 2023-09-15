@@ -80,6 +80,9 @@
         'taxonomy' => 'inwestycja',
         'hide_empty' => false,
       ));
+      $taxonomiesCity = get_terms(array(
+        'taxonomy' => 'miasto',
+      ));
       // $term = get_term(10, 'inwestycja');
       // $terms = get_terms('inwestycja');
 
@@ -98,6 +101,14 @@
         $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
         $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
+        foreach ($taxonomiesCity as $taxCity) {
+          echo $taxCity;
+          if ($taxCity == 'gdansk') {
+            echo 'gdansk';
+          } else {
+            echo 'not gdansk';
+          }
+        };
 
         // echo $tax->name;
       ?>
