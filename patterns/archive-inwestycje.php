@@ -102,7 +102,7 @@
 
 
           print_r($terms);
-
+          the_terms();
 
       ?>
           <!-- wp:list-item -->
