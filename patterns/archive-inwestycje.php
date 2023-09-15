@@ -54,7 +54,7 @@
       <!-- wp:group -->
       <div class="wp-block-group right-col desktop:w-[30%]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-[#8a8f99]">4 inwestycje / 169 lokali 1</p>
+        <p class="text-[30px] text-[#8a8f99]">4 inwestycje / 169 lokali2</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
