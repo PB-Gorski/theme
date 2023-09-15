@@ -83,14 +83,14 @@
         'hide_empty' => false,
         'fields' => 'count',
       ));
-      $term = get_term(10, 'osiedla');
-      $terms = get_terms('osiedla');
+      $term = get_term(10, 'inwestycje');
+      $terms = get_terms('inwestycje');
 
       print_r($taxonomies);
 
-      // foreach ($taxonomies as $tax) {
-      //   echo $tax->name;
-      // };
+      foreach ($taxonomies as $tax) {
+        echo $tax->name;
+      };
 
 
       if (!$post_query->have_posts()) {
