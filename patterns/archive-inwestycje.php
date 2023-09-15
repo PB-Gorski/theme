@@ -81,6 +81,7 @@
       $taxonomies = get_terms(array(
         'taxonomy' => 'osiedla',
         'hide_empty' => false,
+        'fields' => 'count',
       ));
       $term = get_term(10, 'osiedla');
       $terms = get_terms('osiedla');
