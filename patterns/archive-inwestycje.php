@@ -96,7 +96,7 @@
       // echo 'foreach:<br>';
       foreach ($taxonomies as $tax) {
         $counter++;
-        $term = get_term(1, $tax); //for example uncategorized category
+        $term = get_term(1, 'inwestycja'); //for example uncategorized category
         echo 'count: ' . $term->count;
         // echo $tax->name;
       ?>
