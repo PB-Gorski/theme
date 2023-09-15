@@ -70,8 +70,8 @@
     <ul class="wp-block-list mb-[40px]">
       <?php
       $args = array(
-        'post_type' => 'inwestycje',
-        'posts_per_page' => 3,
+        'post_type' => 'mieszkania',
+        'posts_per_page' => 10,
         'order' => 'ASC'
       );
       $post_query = new WP_Query($args);
