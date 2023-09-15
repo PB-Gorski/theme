@@ -71,7 +71,7 @@
         'taxonomy' => 'city',
         'hierarchical' => true,
         'depth' => 1,
-        'child_of' => 'gdansk',
+        // 'child_of' => 'gdansk',
         'hide_empty' => false
       );
 
