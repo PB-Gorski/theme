@@ -77,6 +77,8 @@
 
       $sub_terms = get_categories('city', $args);
 
+      print_r($sub_terms);
+
       foreach ($sub_terms as $sub_term) {
       ?>
         <li><?php echo $sub_term->name ?></li>
@@ -124,10 +126,17 @@
           'hide_empty' => false,
         ));
 
+        foreach ($sub_terms as $sub_term) {
+      ?>
+          <li><?php echo $sub_term->name ?></li>
+        <?php
+        }
+        ?>
+
 
 
         // echo $tax->name;
-      ?>
+        ?>
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
           <div class="relative group desktop:max-w-full max-w-[310px] h-full">
