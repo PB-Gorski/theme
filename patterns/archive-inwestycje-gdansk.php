@@ -82,6 +82,7 @@
       foreach ($sub_terms as $sub_term) {
       ?>
         <li><?php echo $sub_term->name ?></li>
+        <li><?php echo $sub_term->parent ?></li>
       <?php
       }
       ?>
@@ -114,6 +115,8 @@
 
       // echo '<br>';
       // echo 'foreach:<br>';
+
+
 
       foreach ($taxonomies as $tax) {
         $counter++;
