@@ -81,7 +81,7 @@
       $taxonomies = get_terms(array(
         'taxonomy' => 'inwestycja',
         'hide_empty' => false,
-        'fields' => 'count',
+        'fields' => 'count', 'name', 'slug',
       ));
       $term = get_term(10, 'inwestycja');
       $terms = get_terms('inwestycja');
