@@ -79,12 +79,12 @@
       $counter = 0;
       $i = 0;
       $taxonomies = get_terms(array(
-        'taxonomy' => 'inwestycje',
+        'taxonomy' => 'inwestycja',
         'hide_empty' => false,
         'fields' => 'count',
       ));
-      $term = get_term(10, 'inwestycje');
-      $terms = get_terms('inwestycje');
+      $term = get_term(10, 'inwestycja');
+      $terms = get_terms('inwestycja');
 
       print_r($taxonomies);
       print_r(the_taxonomies());
