@@ -107,27 +107,6 @@
                   <!-- wp:paragraph -->
                   <p class="mr-[20px] text-[24px] desktop:text-[36px] font-bold leading-[34px] desktop:leading-[46px]"><?php the_title(); ?></p>
                   <!-- /wp:paragraph -->
-
-                  <!-- wp:list -->
-                  <ul class="wp-block-list city-categories my-[20px] flex flex-wrap gap-[10px]">
-                    <?php
-                    $categoriesArray = get_the_category();
-                    foreach ($categoriesArray as $category) {
-                      $category_link = get_category_link($category->term_id); ?>
-                      <!-- wp:list-item -->
-                      <li class="mb-[15px] text-[18px]">
-                        <!-- wp:paragraph -->
-                        <p><?php echo $category->name; ?></p>
-                        <!-- /wp:paragraph -->
-                        <!-- wp:paragraph -->
-                        <p class="relative text-[18px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Zobacz więcej &rarr;
-                        </p>
-                        <!-- /wp:paragraph -->
-                      </li>
-                      <!-- /wp:list-item -->
-                    <?php }; ?>
-                  </ul>
-                  <!-- /wp:list -->
                 </div>
                 <!-- /wp:group -->
               </div>
