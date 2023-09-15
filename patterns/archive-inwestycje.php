@@ -82,6 +82,12 @@
         'taxonomy' => 'osiedla',
         'hide_empty' => false,
       ));
+      print_r(get_queried_object());
+      print_r(get_term(1, 'osiedla'));
+      $term = get_term(1, 'osiedla');
+      $terms = get_terms('osiedla', array(
+        'fields' => 'count',
+      ));
 
 
       if ($post_query->have_posts()) {
@@ -90,14 +96,10 @@
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
           $counter++;
 
-          print_r(get_queried_object());
-          print_r(get_term(1, 'osiedla'));
-          $term = get_term(1, 'osiedla');
+
           echo $term->name;
 
-          $terms = get_terms('osiedla', array(
-            'fields' => 'count',
-          ));
+
           print_r($terms);
       ?>
           <!-- wp:list-item -->
