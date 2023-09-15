@@ -29,8 +29,6 @@
             'paged' => 1,
             'order'   => 'ASC'
           );
-          $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 39, 20));
-          // echo $currentCategory . '<-current';
           $cats = get_categories($args); ?>
           <!-- wp:list-item -->
           <li class="allTabBtn text-[#8A8F99] text-textGray underline underline-offset-4 decoration-2 decoration-primaryRed cursor-pointer">
@@ -54,7 +52,7 @@
       <!-- wp:group -->
       <div class="wp-block-group right-col desktop:w-[30%]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-[#8a8f99]"><?php echo wp_count_terms('inwestycja'); ?> inwe31321stycje / <?php echo wp_count_posts('mieszkania')->publish; ?> lokali</p>
+        <p class="text-[30px] text-[#8a8f99]"><?php echo wp_count_terms('inwestycja'); ?> inwestycje / <?php echo wp_count_posts('mieszkania')->publish; ?> lokali</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
