@@ -96,8 +96,8 @@
       // echo 'foreach:<br>';
       foreach ($taxonomies as $tax) {
         $counter++;
-        $term = get_term($tax, 'inwestycja'); //for example uncategorized category
-        echo 'count: ' . $term->count;
+        $currentTermCount = (get_term($tax, 'inwestycja'))->count;
+
         // echo $tax->name;
       ?>
         <!-- wp:list-item -->
@@ -120,7 +120,7 @@
                 <!-- wp:group -->
                 <div class="wp-block-group available-apartments flex items-center gap-[25px]">
                   <!-- wp:paragraph -->
-                  <p class="text-[48px] text-primaryRed font-bold">0</p>
+                  <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
                   <!-- /wp:paragraph -->
                   <!-- wp:group -->
                   <div class="wp-block-group leading-[24px]">
