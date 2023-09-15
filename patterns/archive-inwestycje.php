@@ -107,7 +107,9 @@
           echo the_taxonomies(68);
           echo '<br>';
           echo 'the_taxonomies<br>';
-          echo the_taxonomies(2);
+          echo the_taxonomies(array(
+            'name' => 'test01',
+          ));
 
       ?>
           <!-- wp:list-item -->
