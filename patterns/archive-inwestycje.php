@@ -104,10 +104,10 @@
           print_r($terms);
           echo '<br>';
           echo 'the_taxonomies<br>';
-          echo the_taxonomies('test01');
-          echo the_taxonomies(2);
+          echo the_taxonomies(68);
           echo '<br>';
           echo 'the_taxonomies<br>';
+          echo the_taxonomies(2);
 
       ?>
           <!-- wp:list-item -->
