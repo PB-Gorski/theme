@@ -68,7 +68,7 @@
     <ul class="wp-block-list mb-[40px]">
       <?php
       $args = array(
-        'taxonomy' => 'catentreprise',
+        'taxonomy' => 'city',
         'hierarchical' => true,
         'depth' => 1,
         'child_of' => 'gdansk',
