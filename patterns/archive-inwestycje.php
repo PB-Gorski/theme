@@ -123,7 +123,7 @@
           // echo 'tersms list:<br>';
           // echo '<br>';
 
-          // print_r(get_the_term_list($post_query->ID, 'test01', '', ', ', ''));
+          print_r(get_the_term_list($post_query->ID, 'inwestycja', '', ', ', ''));
           echo $post_query->post_count;
 
       ?>
