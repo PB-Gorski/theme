@@ -118,8 +118,13 @@
     <!-- wp:group -->
     <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:group -->
-      <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold">
+      <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[24px] desktop:text-[40px] text-[#2e384c] font-bold">
         <!-- wp:post-title /-->
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:group -->
+      <div class="wp-block-group post-date text-[#8a8f99] text-[18px]">
+        <!-- wp:post-date /-->
       </div>
       <!-- /wp:group -->
     </div>
