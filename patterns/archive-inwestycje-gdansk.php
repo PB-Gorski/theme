@@ -80,22 +80,7 @@
         'taxonomy' => 'inwestycja',
         'hide_empty' => false,
       ));
-      $taxonomiesCity = get_terms(array(
-        'taxonomy' => 'miasto',
-      ));
 
-
-      foreach ($taxonomiesCity as $taxCity) {
-        print_r($taxCity->slug);
-        $currentTermCity = (get_term($taxCity, 'miasto'))->slug;
-        echo  $currentTermCity;
-        echo '<br>';
-        if ($currentTermCity == 'gdansk') {
-          echo 'gdansk';
-        } else {
-          echo 'not gdansk';
-        }
-      };
       // $term = get_term(10, 'inwestycja');
       // $terms = get_terms('inwestycja');
 
@@ -108,13 +93,27 @@
 
       // echo '<br>';
       // echo 'foreach:<br>';
+
       foreach ($taxonomies as $tax) {
         $counter++;
         $currentTermCount = (get_term($tax, 'inwestycja'))->count;
         $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
         $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
-
+        $taxonomiesCity = get_terms(array(
+          'taxonomy' => 'miasto',
+        ));
+        foreach ($taxonomiesCity as $taxCity) {
+          // print_r($taxCity->slug);
+          $currentTermCity = (get_term($taxCity, 'miasto'))->slug;
+          // echo  $currentTermCity;
+          echo '<br>';
+          if ($currentTermCity == 'gdansk') {
+            echo 'gdansk';
+          } else {
+            echo 'not gdansk';
+          }
+        };
 
         // echo $tax->name;
       ?>
