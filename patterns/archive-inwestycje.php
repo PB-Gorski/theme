@@ -79,7 +79,7 @@
       $counter = 0;
       $i = 0;
       $taxonomies = get_terms(array(
-        'taxonomy' => 'inwestycja',
+        'taxonomy' => 'miasto',
         'hide_empty' => false,
       ));
       // $term = get_term(10, 'inwestycja');
@@ -96,7 +96,7 @@
       // echo 'foreach:<br>';
       foreach ($taxonomies as $tax) {
         $counter++;
-        $currentTermCount = (get_term($tax, 'inwestycja'))->count;
+        $currentTermCount = (get_term('gdansk', 'miasto'))->count;
 
         // echo $tax->name;
       ?>
