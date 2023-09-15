@@ -82,10 +82,10 @@
         'taxonomy' => 'osiedla',
         'hide_empty' => false,
       ));
+      echo 'get_queried_obj: <br>';
       print_r(get_queried_object());
+      echo 'get_term poza petla: <br>';
       print_r(get_term(10, 'osiedla'));
-      $term = get_term(10, 'osiedla');
-      $terms = get_terms('osiedla');
 
 
       if ($post_query->have_posts()) {
@@ -94,6 +94,9 @@
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
           $counter++;
 
+          echo 'get_term: <br>';
+          print_r(get_term(10, 'osiedla'));
+          echo '<br>';
 
           echo 'term: <br>';
           print_r($term);
@@ -106,7 +109,7 @@
           echo the_taxonomies();
           echo '<br>';
           echo 'the_taxonomies<br>';
-          echo the_taxonomies()[10]->name;
+          echo the_taxonomies()[68]->name;
           echo '<br>'
 
       ?>
