@@ -104,6 +104,7 @@
           'taxonomy' => 'miasto',
           'hide_empty' => false,
         ));
+        echo $i;
         print_r($taxonomiesCity[$i]);
 
 
