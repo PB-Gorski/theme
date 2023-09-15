@@ -105,6 +105,7 @@
           print_r($taxCity->slug);
           $currentTermCity = (get_term($taxCity, 'miasto'))->slug;
           echo  $currentTermCity;
+          echo '<br>';
           if ($currentTermCity == 'gdansk') {
             echo 'gdansk';
           } else {
