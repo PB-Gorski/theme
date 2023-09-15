@@ -54,7 +54,7 @@
       <!-- wp:group -->
       <div class="wp-block-group right-col desktop:w-[30%]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-[#8a8f99]">4 inwestycje / 169 lokali test2</p>
+        <p class="text-[30px] text-[#8a8f99]">4 inwestycje / 169 lokali test</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -111,9 +111,6 @@
                 <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center">
                   <!-- wp:paragraph -->
                   <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php the_title(); ?></p>
-                  <!-- /wp:paragraph -->
-                  <!-- wp:paragraph -->
-                  <p><?php echo $taxonomies->name; ?></p>
                   <!-- /wp:paragraph -->
 
                   <!-- wp:list -->
