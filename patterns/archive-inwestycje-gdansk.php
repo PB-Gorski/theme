@@ -75,7 +75,7 @@
         'hide_empty' => false
       );
 
-      $sub_terms = get_categories('city', $args);
+      $sub_terms = get_terms($args);
 
       print_r($sub_terms);
 
