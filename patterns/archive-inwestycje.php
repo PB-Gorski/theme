@@ -92,28 +92,28 @@
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
           $counter++;
 
-          echo 'get_term: <br>';
-          print_r(get_term(10, 'osiedla'));
-          echo '<br>';
+          // echo 'get_term: <br>';
+          // print_r(get_term(10, 'osiedla'));
+          // echo '<br>';
 
-          echo 'term: <br>';
-          print_r($term);
-          echo '<br>';
-          echo 'terms:<br>';
+          // echo 'term: <br>';
+          // print_r($term);
+          // echo '<br>';
+          // echo 'terms:<br>';
 
-          print_r($terms);
-          echo '<br>';
-          echo 'the_taxonomies<br>';
-          echo the_taxonomies(68);
-          echo '<br>';
-          echo 'the_taxonomies<br>';
-          echo the_taxonomies(array(
-            'name' => 'test01',
-          ));
+          // print_r($terms);
+          // echo '<br>';
+          // echo 'the_taxonomies<br>';
+          // echo the_taxonomies(68);
+          // echo '<br>';
+          // echo 'the_taxonomies<br>';
+          // echo the_taxonomies(array(
+          //   'name' => 'test01',
+          // ));
 
-          echo '<br>';
-          echo 'tersms list:<br>';
-          echo '<br>';
+          // echo '<br>';
+          // echo 'tersms list:<br>';
+          // echo '<br>';
 
           print_r(get_the_term_list($post->ID, 'test01', '', ', ', ''));
 
@@ -132,7 +132,7 @@
                 <!-- wp:group -->
                 <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center">
                   <!-- wp:paragraph -->
-                  <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php the_title(); ?></p>
+                  <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php echo get_the_term_list($post->ID, 'test01') ?></p>
                   <!-- /wp:paragraph -->
 
                   <!-- wp:list -->
