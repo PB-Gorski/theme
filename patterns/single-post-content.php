@@ -112,6 +112,7 @@
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
+
   <!-- wp:group -->
   <div class="wp-block-group title-wrapper py-[20px] desktop:py-[48px] bg-[#f6f7fa]">
     <!-- wp:group -->
@@ -149,14 +150,6 @@
       <!-- /wp:paragraph -->
     </a>
     <!-- /wp:paragraph -->
-
-    <!-- wp:paragraph -->
-    <p>single-post-content</p>
-    <!-- /wp:paragraph -->
-
-
-
-
     <!-- wp:post-featured-image /-->
     <!-- wp:group -->
     <div class="wp-block-group max-w-[700px] w-full mx-auto desktop:px-0 px-[20px]">
