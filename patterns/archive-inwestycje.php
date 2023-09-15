@@ -104,7 +104,8 @@
           print_r($terms);
           echo '<br>';
           echo 'the_taxonomies<br>';
-          echo the_taxonomies();
+          echo the_taxonomies('test01');
+          echo the_taxonomies(2);
           echo '<br>';
           echo 'the_taxonomies<br>';
 
