@@ -118,30 +118,34 @@
                 <!-- /wp:paragraph -->
 
                 <!-- wp:group -->
-                <div class="wp-block-group available-apartments flex items-center gap-[25px]">
-                  <!-- wp:paragraph -->
-                  <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
-                  <!-- /wp:paragraph -->
+                <div class="wp-block-group flex">
                   <!-- wp:group -->
-                  <div class="wp-block-group leading-[24px]">
+                  <div class=" wp-block-group available-apartments flex items-center gap-[25px]">
                     <!-- wp:paragraph -->
-                    <p class="text-[18px] text-bgDarkGray">dostępnych</p>
+                    <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:group -->
+                    <div class="wp-block-group leading-[24px]">
+                      <!-- wp:paragraph -->
+                      <p class="text-[18px] text-bgDarkGray">dostępnych</p>
+                      <!-- /wp:paragraph -->
+                      <!-- wp:paragraph -->
+                      <p class="text-[18px] text-bgDarkGray">lokali</p>
+                      <!-- /wp:paragraph -->
+                    </div>
+                    <!-- /wp:group -->
+                  </div>
+                  <!-- /wp:group -->
+                  <!-- wp:group -->
+                  <div class="wp-block-group apartments-price">
+                    <!-- wp:paragraph -->
+                    <p class="mb-[4px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">CENA JUŻ OD</p>
                     <!-- /wp:paragraph -->
                     <!-- wp:paragraph -->
-                    <p class="text-[18px] text-bgDarkGray">lokali</p>
+                    <p class="text-[24px] font-bold">8000 zł/m<sup>2</sup></p>
                     <!-- /wp:paragraph -->
                   </div>
                   <!-- /wp:group -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group apartments-price flex items-center gap-[25px]">
-                  <!-- wp:paragraph -->
-                  <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">CENA JUŻ OD</p>
-                  <!-- /wp:paragraph -->
-                  <!-- wp:paragraph -->
-                  <p class="text-[24px] font-bold">8000 zł/m<sup>2</sup></p>
-                  <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
 
