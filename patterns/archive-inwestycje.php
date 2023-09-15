@@ -91,6 +91,9 @@
 
 
       if ($post_query->have_posts()) {
+        $queried_object = get_queried_object();
+        $this_tax = get_taxonomy($queried_object->taxonomy);
+        echo $this_tax->labels->singular_name;
         while ($post_query->have_posts()) {
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
@@ -102,9 +105,7 @@
 
           print_r($terms);
 
-          $queried_object = get_queried_object();
-          $this_tax = get_taxonomy($queried_object->taxonomy);
-          echo $this_tax->labels->singular_name;
+
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full desktop:h-[450px] mb-[80px]">
