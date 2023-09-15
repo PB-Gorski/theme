@@ -102,8 +102,9 @@
         $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
         foreach ($taxonomiesCity as $taxCity) {
-          print_r($taxCity);
-          if ($taxCity->slug == 'gdansk') {
+          // print_r($taxCity);
+          $currentTermCity = (get_term($taxCity, 'miasto'))->slug;
+          if ($currentTermCity == 'gdansk') {
             echo 'gdansk';
           } else {
             echo 'not gdansk';
