@@ -85,8 +85,10 @@
       $term = get_term(10, 'osiedla');
       $terms = get_terms('osiedla');
 
+      print_r(get_the_term_list($post_query->ID, 'test01', '', ', ', ''));
 
-      if ($post_query->have_posts()) {
+
+      if (!$post_query->have_posts()) {
         while ($post_query->have_posts()) {
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
@@ -152,7 +154,7 @@
                   <!-- wp:group -->
                   <div class="wp-block-group available-apartments flex items-center gap-[25px]">
                     <!-- wp:paragraph -->
-                    <p class="text-[48px] text-primaryRed font-bold">41</p>
+                    <p class="text-[48px] text-primaryRed font-bold">0</p>
                     <!-- /wp:paragraph -->
                     <!-- wp:group -->
                     <div class="wp-block-group leading-[24px]">
