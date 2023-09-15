@@ -67,7 +67,7 @@
     <!-- wp:list -->
     <ul class="wp-block-list mb-[40px]">
       <!-- wp:query {"taxQuery":"inwestycja"} -->
-      <li class="wp-block-query"></li>
+      <div class="wp-block-query"></div>
       <!-- /wp:query -->
       <?php
       $args = array(
