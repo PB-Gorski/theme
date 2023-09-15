@@ -131,11 +131,10 @@
           <li><?php echo $sub_term->name ?></li>
         <?php
         }
-        ?>
 
 
 
-        // echo $tax->name;
+
         ?>
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
