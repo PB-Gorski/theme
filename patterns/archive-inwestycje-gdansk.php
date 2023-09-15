@@ -108,7 +108,13 @@
           $currentTermCity = (get_term($taxCity, 'miasto'))->slug;
           // echo  $currentTermCity;
           echo '<br>';
-          if ($currentTermCity == 'gdansk') {
+          if ($taxCity == 'gdansk') {
+            echo 'gdansk';
+          } else {
+            echo 'not gdansk';
+          }
+          echo '<br>';
+          if ($taxCity == 'gdansk') {
             echo 'gdansk';
           } else {
             echo 'not gdansk';
