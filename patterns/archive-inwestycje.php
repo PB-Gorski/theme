@@ -83,26 +83,29 @@
         'hide_empty' => false,
       ));
       print_r(get_queried_object());
-      print_r(get_term(1, 'osiedla'));
-      $term = get_term(1, 'osiedla');
+      print_r(get_term(10, 'osiedla'));
+      $term = get_term(10, 'osiedla');
       $terms = get_terms('osiedla');
 
 
       if ($post_query->have_posts()) {
-        $queried_object = get_queried_object();
-        $this_tax = get_taxonomy($queried_object->taxonomy);
-        echo $this_tax->labels->singular_name;
         while ($post_query->have_posts()) {
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
           $counter++;
 
 
+          echo 'term: <br>';
           print_r($term);
+          echo '<br>';
+          echo 'terms:<br>';
 
 
           print_r($terms);
-          echo the_taxonomies();
+          echo '<br>';
+          echo 'the_taxonomies<br>';
+          echo the_taxonomies()[10]->name;
+          echo '<br>'
 
       ?>
           <!-- wp:list-item -->
