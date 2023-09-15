@@ -54,7 +54,7 @@
       <!-- wp:group -->
       <div class="wp-block-group right-col desktop:w-[30%]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-[#8a8f99]">4 inwestycje / 169 lokali test</p>
+        <p class="text-[30px] text-[#8a8f99]">4 inwestycje / 169 lokali test2</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -73,7 +73,7 @@
         'post_type' => 'mieszkania',
         'posts_per_page' => 10,
         'order' => 'ASC',
-        'category_name' => 'osiedla'
+        'taxonomy_name' => 'osiedla'
       );
       $post_query = new WP_Query($args);
       $counter = 0;
