@@ -107,7 +107,7 @@
         echo $i;
         print_r($taxonomiesCity[$i]);
 
-        $test = get_term('gdynia', 'miasto');
+        $test = get_term('miasto');
         print_r($test);
 
 
