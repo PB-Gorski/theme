@@ -115,12 +115,12 @@
           // echo 'tersms list:<br>';
           // echo '<br>';
 
-          print_r(get_the_term_list($post_query->ID, 'test01', '', ', ', ''));
+          // print_r(get_the_term_list($post_query->ID, 'test01', '', ', ', ''));
 
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
-            <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
+            <div class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full">
               <!-- wp:group -->
               <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
                 <!-- wp:image -->
@@ -179,7 +179,7 @@
                 <!-- /wp:group -->
               </div>
               <!-- /wp:group -->
-            </a>
+            </div>
           </li>
           <!-- /wp:list-item -->
       <?php
