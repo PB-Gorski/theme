@@ -53,9 +53,11 @@
 
       <!-- wp:group -->
       <div class="wp-block-group right-col desktop:w-[30%]">
-
+        <?php
+        print_r(wp_count_terms('inwestycja'));
+        ?>
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-[#8a8f99]"><?php echo wp_count_terms('inwestycja'); ?> inwestycje / 169 lokali11</p>
+        <p class="text-[30px] text-[#8a8f99]"><?php echo wp_count_terms('inwestycja'); ?> inwestycje / <?php echo wp_count_posts('mieszkania'); ?> lokali11</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
