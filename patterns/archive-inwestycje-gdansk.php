@@ -103,7 +103,7 @@
         $taxonomiesCity = get_term(array(
           'taxonomy' => 'miasto',
         ));
-        echo $taxonomiesCity;
+        print_r($taxonomiesCity);
         echo get_queried_object()->slug;
 
 
