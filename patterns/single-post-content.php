@@ -118,10 +118,8 @@
     <!-- wp:group -->
     <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:group -->
-      <div class="wp-block-group">
-        <!-- wp:paragraph -->
-        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold"><!-- wp:post-title /--></p>
-        <!-- /wp:paragraph -->
+      <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold">
+        <!-- wp:post-title /-->
       </div>
       <!-- /wp:group -->
     </div>
