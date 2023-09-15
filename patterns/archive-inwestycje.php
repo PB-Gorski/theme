@@ -73,7 +73,7 @@
         'post_type' => 'mieszkania',
         'posts_per_page' => 10,
         'order' => 'ASC',
-        'taxonomy_name' => 'osiedla'
+        'taxonomy_name' => 'inwestycja'
       );
       $post_query = new WP_Query($args);
       $counter = 0;
@@ -94,7 +94,7 @@
       };
 
 
-      if (!$post_query->have_posts()) {
+      if ($post_query->have_posts()) {
         while ($post_query->have_posts()) {
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
@@ -124,10 +124,11 @@
           // echo '<br>';
 
           // print_r(get_the_term_list($post_query->ID, 'test01', '', ', ', ''));
+          echo $post_query->post_count;
 
       ?>
           <!-- wp:list-item -->
-          <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
+          <li class="hidden invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
             <div class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full">
               <!-- wp:group -->
               <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
