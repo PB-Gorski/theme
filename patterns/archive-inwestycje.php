@@ -104,13 +104,13 @@
           // print_r(get_term(10, 'osiedla'));
           // echo '<br>';
 
-          // echo 'term: <br>';
-          // print_r($term);
-          // echo '<br>';
-          // echo 'terms:<br>';
+          echo 'term: <br>';
+          print_r($term);
+          echo '<br>';
+          echo 'terms:<br>';
 
-          // print_r($terms);
-          // echo '<br>';
+          print_r($terms);
+          echo '<br>';
           // echo 'the_taxonomies<br>';
           // echo the_taxonomies(68);
           // echo '<br>';
