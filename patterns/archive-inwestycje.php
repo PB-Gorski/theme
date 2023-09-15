@@ -92,11 +92,12 @@
       // echo 'the taxonomies print r:<br>';
       // print_r(the_taxonomies());
 
-      echo '<br>';
-      echo 'foreach:<br>';
+      // echo '<br>';
+      // echo 'foreach:<br>';
       foreach ($taxonomies as $tax) {
         $counter++;
-        echo $tax->name; ?>
+        // echo $tax->name;
+      ?>
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
           <div class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full">
@@ -104,7 +105,7 @@
             <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
               <!-- wp:image -->
               <figure class="wp-block-image desktop:w-[50%] h-[330px] desktop:h-full mb-[30px]">
-                <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
+                <img src="" alt="services-background-image">
               </figure>
               <!-- /wp:image -->
 
