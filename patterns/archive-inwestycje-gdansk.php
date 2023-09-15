@@ -100,9 +100,7 @@
         $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
         $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
-        $taxonomiesCity = get_term(array(
-          'taxonomy' => 'miasto',
-        ));
+        $taxonomiesCity = get_term('miasto');
         print_r($taxonomiesCity);
         echo get_queried_object()->slug;
 
