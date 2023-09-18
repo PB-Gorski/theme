@@ -242,10 +242,10 @@
               <!-- wp:group -->
               <div class="wp-block-group text-wrapper flex gap-[10px] desktop:gap-[20px]">
                 <!-- wp:paragraph -->
-                <p class="w-fit pb-[5px] group-hover:text-primaryYellow uppercase text-bgDarkGray text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500">+</p>
+                <p class="w-fit pb-[5px] group-hover:text-primaryYellow uppercase text-bgDarkGray text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="bar-titlefont-bold text-[24px] text-bgDarkGray font-bold self-center">Biuro Zarządu</p>
+                <p class="bar-titlefont-bold text-[24px] text-bgDarkGray font-bold self-center" data-aos="fade-up" data-aos-offset="30">Biuro Zarządu</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
