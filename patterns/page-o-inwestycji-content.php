@@ -15,25 +15,25 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:paragraph -->
-    <p class="py-[30px] desktop:py-[60px] text-[36px] desktop:text-[60px] text-center font-bold">Poznaj inwestycję</p>
+    <p class="py-[30px] desktop:py-[60px] text-[36px] desktop:text-[60px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Poznaj inwestycję</p>
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
     <div class="wp-block-group test row-links my-[30px] flex flex-wrap justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/o-inwestycji' ?>">O inwestycji</a>
+      <a href="<?php echo home_url() . '/o-inwestycji' ?>" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[#8a8f99] hover:text-textGray">Lokalizacja</a>
+      <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lista-mieszkan' ?>" class="text-[#8a8f99] hover:text-textGray">Lista mieszkań</a>
+      <a href="<?php echo home_url() . '/lista-mieszkan' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/galeria-lokalizacja' ?>" class="text-[#8a8f99] hover:text-textGray">Galeria</a>
+      <a href="<?php echo home_url() . '/galeria-lokalizacja' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Galeria</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/kronika-budowy' ?>" class="text-[#8a8f99] hover:text-textGray">Kronika budowy</a>
+      <a href="<?php echo home_url() . '/kronika-budowy' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Kronika budowy</a>
       <!-- /wp:paragraph -->
 
     </div>
