@@ -316,8 +316,11 @@ window.addEventListener("load", function() {
   const clickBar = document.querySelectorAll(".click-bar");
   const stepParagraph = document.querySelectorAll(".step-paragraph");
   const clickBarIcon = document.querySelectorAll('.click-bar-icon');
-  const barTitle = this.document.querySelectorAll('.bar-title-wrapper');
+  const barTitle = document.querySelectorAll('.bar-title-wrapper');
+  const dropDownList = document.querySelector('.contact-drop-down');
 
+  dropDownList.setAttribute('data-aos','fade-up');
+  dropDownList.setAttribute('data-aos-offset','30');
   clickBar.forEach(function(item,index) {
     item.addEventListener("click", () => {
       if (!stepParagraph[index].classList.contains('active')) {
