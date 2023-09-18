@@ -104,7 +104,7 @@
       ?>
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
-          <a href="#" class="relative group inline-block cursor-none desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-offset="30">
+          <a href="<?php echo home_url() . '/o-inwestycji' . ''; ?>" class="relative group inline-block cursor-none desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-offset="30">
             <!-- wp:group -->
             <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
               <!-- wp:image -->
@@ -154,7 +154,7 @@
                 <!-- wp:group -->
                 <div class="wp-block-group group btn-read-more mt-[10px] relative bg-[#3d4b66] text-[18px] text-white font-bold w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
                   <!-- wp:paragraph -->
-                  <a href="<?php echo home_url() . '/o-inwestycji' . ''; ?>" class="z-[1]">Poznaj inwestycję &rarr;</a>
+                  <p class="z-[1]">Poznaj inwestycję &rarr;</p>
                   <!-- /wp:paragraph -->
                 </div>
                 <!-- /wp:group -->
