@@ -38,7 +38,7 @@
         if ($counter < 4) {
       ?>
           <!-- wp:list-item -->
-          <li class="invest-tile max-w-full mb-[80px] w-full">
+          <li class="invest-tile max-w-full mb-[80px] w-full" data-aos="fade-right" data-aos-duration="500" data-aos-offset="30">
             <a href="<?php echo home_url() . '/o-inwestycji' ?>" data-aos="fade-right" data-aos-duration="500" data-aos-offset="30">
               <!-- wp:group -->
               <div class="wp-block-group relative group desktop:max-w-full max-w-[310px] h-full">
