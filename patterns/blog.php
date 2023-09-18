@@ -29,17 +29,18 @@
         'order' => 'ASC'
       );
       $post_query = new WP_Query($args);
-      $counter = 0;
+      $counter2 = 0;
 
       if ($post_query->have_posts()) {
         while ($post_query->have_posts()) {
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
-          $counter++;
+          $counter2++;
+          echo $counter2;
       ?>
           <!-- wp:list-item -->
           <li class="blog-tile w-full inline-block">
-            <a href="<?php the_permalink(); ?>" class="relative group inline-block p-[25px]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="<?php echo $counter * 50; ?>">
+            <a href="<?php the_permalink(); ?>" class="relative group inline-block p-[25px]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="<?php echo $counter2 * 50; ?>">
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
                 <!-- wp:image -->
