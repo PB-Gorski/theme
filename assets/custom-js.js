@@ -1,8 +1,8 @@
+import AOS from 'aos';
 AOS.init({
   once: true
 });
 window.addEventListener("load", function() {
-  
   AOS.init({
     once: true
   });
