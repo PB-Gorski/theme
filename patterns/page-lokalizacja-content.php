@@ -31,7 +31,6 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/kronika-budowy' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Kronika budowy</a>
       <!-- /wp:paragraph -->
-
     </div>
     <!-- /wp:group -->
 
@@ -55,24 +54,17 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- wp:paragraph -->
         <p class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W najbliższym sąsiedztwie znajduje się nie tylko pełne zaplecze handlowe i edukacyjne, ale także przystanek PKM, który pozwala na dojazd do najważniejszych punktów w całym Trójmieście. </p>
         <!-- /wp:paragraph -->
-
-
-
       </div>
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
-
-
-
-
   </div>
   <!-- /wp:group -->
 
   <!-- wp:group -->
   <div class="wp-block-group tiles-numbers px-[20px] mb-[100px] flex flex-col desktop:flex-row justify-center gap-[30px]">
-    <!-- wp:group -->
-    <div class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
+    <!-- wp:paragraph -->
+    <a href="javascript:void(0)" class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]" data-aos="fade-right" data-aos-offset="30" data-aos-delay="50">
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
@@ -83,10 +75,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:paragraph -->
       <p class="text-[#8a8f99] text-center">Przedszkole</p>
       <!-- /wp:paragraph -->
-    </div>
-    <!-- /wp:group -->
-    <!-- wp:group -->
-    <div class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
+    </a>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <a class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#b11a3e] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
@@ -97,10 +89,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:paragraph -->
       <p class="text-[#8a8f99] text-center">Przedszkole</p>
       <!-- /wp:paragraph -->
-    </div>
-    <!-- /wp:group -->
-    <!-- wp:group -->
-    <div class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
+    </a>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <a class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#7d2645] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
@@ -111,10 +103,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:paragraph -->
       <p class="text-[#8a8f99] text-center">Przedszkole</p>
       <!-- /wp:paragraph -->
-    </div>
-    <!-- /wp:group -->
-    <!-- wp:group -->
-    <div class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
+    </a>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <a class="wp-block-group tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]">
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#52304a] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
@@ -125,8 +117,8 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:paragraph -->
       <p class="text-[#8a8f99] text-center">Przedszkole</p>
       <!-- /wp:paragraph -->
-    </div>
-    <!-- /wp:group -->
+    </a>
+    <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
 
