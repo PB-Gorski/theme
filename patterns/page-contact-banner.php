@@ -37,14 +37,14 @@
         <!-- wp:group -->
         <div class="wp-block-group links-phones mt-[15px]">
           <!-- wp:paragraph -->
-          <a href="tel:+48583407900" class="inline-block" data-aos="fade-right" data-aos-offset="30">(+48) 58 340 79 00,</a>
+          <a href="tel:+48583407900" class="inline-block underline hover:text-[#2e384d] transition duration-[300ms] ease" data-aos="fade-right" data-aos-offset="30">(+48) 58 340 79 00,</a>
           <!-- /wp:paragraph -->
 
           <!-- wp:paragraph -->
-          <a href="tel:+48607700555" class="inline-block" data-aos="fade-right" data-aos-offset="30">607 700 555</a>
+          <a href="tel:+48607700555" class="inline-block underline hover:text-[#2e384d] transition duration-[300ms] ease" data-aos="fade-right" data-aos-offset="30">607 700 555</a>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <a href="tel:+48691990112" class="inline-block" data-aos="fade-right" data-aos-offset="30">691 990 112</a>
+          <a href="tel:+48691990112" class="inline-block underline hover:text-[#2e384d] transition duration-[300ms] ease" data-aos="fade-right" data-aos-offset="30">691 990 112</a>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
