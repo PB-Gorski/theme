@@ -40,7 +40,7 @@
       ?>
           <!-- wp:list-item -->
           <li class="blog-tile w-full inline-block">
-            <a href="<?php the_permalink(); ?>" class="relative group inline-block p-[25px]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="<?php echo $counter2 * 50; ?>">
+            <a href="<?php the_permalink(); ?>" class="relative group inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="<?php echo $counter2 * 50; ?>">
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
                 <!-- wp:image -->
