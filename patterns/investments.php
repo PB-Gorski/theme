@@ -25,7 +25,7 @@
       <?php
       $args = array(
         'post_type' => 'mieszkania',
-        'posts_per_page' => 10,
+        'posts_per_page' => 3,
         'order' => 'ASC',
         'taxonomy_name' => 'inwestycja'
       );
@@ -45,18 +45,18 @@
         // echo $tax->name;
       ?>
         <!-- wp:list-item -->
-        <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
+        <li class="invest-tile max-w-full test desktop:max-h-[580px] mb-[80px]">
           <div class="relative group desktop:max-w-full max-w-[310px] h-full">
             <!-- wp:group -->
             <div class="wp-block-group wrapper w-full h-full">
               <!-- wp:image -->
-              <figure class="wp-block-image desktop:w-[50%] h-[330px] desktop:h-full mb-[30px] lowercase">
+              <figure class="wp-block-image h-[330px] desktop:h-full mb-[30px] lowercase">
                 <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $taxNoSpaces2 . '.jpeg'; ?>" alt="inwestycje-img">
               </figure>
               <!-- /wp:image -->
 
               <!-- wp:group -->
-              <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center gap-[15px]">
+              <div class="wp-block-group content flex flex-col items-start justify-center gap-[15px]">
                 <!-- wp:paragraph -->
                 <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php echo $tax->name; ?></p>
                 <!-- /wp:paragraph -->
