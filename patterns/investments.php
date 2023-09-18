@@ -39,7 +39,7 @@
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full mb-[80px] w-full">
-            <a href="<?php echo home_url() . '/o-inwestycji' ?>" data-aos="fade-up" data-aos-duration="500" data-aos-offset="30" data-aos-delay="<?php echo $counter * 50; ?>">
+            <a href="<?php echo home_url() . '/o-inwestycji' ?>" data-aos="fade-up" data-aos-duration="600" data-aos-offset="30" data-aos-delay="<?php echo $counter * 50; ?>">
               <!-- wp:group -->
               <div class="wp-block-group relative group desktop:max-w-full max-w-[310px] h-full">
                 <!-- wp:group -->
