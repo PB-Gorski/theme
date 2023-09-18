@@ -87,58 +87,58 @@
       <!-- wp:group -->
       <div class="wp-block-group section1 mb-[50px]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray mb-[30px] font-bold">Biuro Sprzedaży Mieszkań / Siedziba Firmy</p>
+        <p class="text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Biuro Sprzedaży Mieszkań / Siedziba Firmy</p>
         <!-- /wp:paragraph -->
         <!-- wp:group -->
         <div class="wp-block-group address mb-[30px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <p>ul. Joachima Lelewela 37 lok. E,</p>
+          <p data-aos="fade-right" data-aos-offset="30">ul. Joachima Lelewela 37 lok. E,</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p>80-442 Gdańsk</p>
+          <p data-aos="fade-right" data-aos-offset="30">80-442 Gdańsk</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
         <div class="wp-block-group phone mb-[30px] font-semibold">
           <!-- wp:paragraph -->
-          <a href="tel:+48607700555" class="block">kom. (+48) 607-700-555</a>
+          <a href="tel:+48607700555" class="block" data-aos="fade-right" data-aos-offset="30">kom. (+48) 607-700-555</a>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <a href="tel:+48691990112" class="block">kom. (+48) 691-990-112</a>
+          <a href="tel:+48691990112" class="block" data-aos="fade-right" data-aos-offset="30">kom. (+48) 691-990-112</a>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
         <div class="wp-block-group when-open mb-[30px] text-primaryRed font-bold">
           <!-- wp:paragraph -->
-          <p>Poniedziałek - Czwartek: 8:00 - 17:00</p>
+          <p data-aos="fade-right" data-aos-offset="30">Poniedziałek - Czwartek: 8:00 - 17:00</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p>Piątek: 8:00 - 16:00</p>
+          <p data-aos="fade-right" data-aos-offset="30">Piątek: 8:00 - 16:00</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p>Sobota: 9:00 - 14:00</p>
+          <p data-aos="fade-right" data-aos-offset="30">Sobota: 9:00 - 14:00</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
         <!-- wp:paragraph -->
-        <p class="text-primaryRed">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</p>
+        <p class="text-primaryRed" data-aos="fade-right" data-aos-offset="30">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
       <div class="wp-block-group section2 mb-[50px]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray mb-[30px] font-bold">Biuro Obsługi Klienta</p>
+        <p class="text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Biuro Obsługi Klienta</p>
         <!-- /wp:paragraph -->
         <!-- wp:group -->
         <div class="wp-block-group address mb-[30px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <p>ul. Joachima Lelewela 6 lok. 1,</p>
+          <p data-aos="fade-right" data-aos-offset="30">ul. Joachima Lelewela 6 lok. 1,</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p>80-442 Gdańsk-Wrzeszcz</p>
+          <p data-aos="fade-right" data-aos-offset="30">80-442 Gdańsk-Wrzeszcz</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -147,13 +147,13 @@
           <!-- wp:group -->
           <div class="wp-block-group labels">
             <!-- wp:paragraph -->
-            <p class="block mb-[30px]">email:</p>
+            <p class="block mb-[30px]" data-aos="fade-right" data-aos-offset="30">email:</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="block mb-[20px]">tel.</p>
+            <p class="block mb-[20px]" data-aos="fade-right" data-aos-offset="30">tel.</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="block mb-[20px]">tel.</p>
+            <p class="block mb-[20px]" data-aos="fade-right" data-aos-offset="30">tel.</p>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
