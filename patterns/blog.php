@@ -37,7 +37,7 @@
       ?>
           <!-- wp:list-item -->
           <li class="blog-tile w-full">
-            <a href="<?php the_permalink(); ?>" class="relative group p-[25px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
+            <a href="<?php the_permalink(); ?>" class="relative group p-[25px]" data-aos="fade-up" data-aos-offset="30">
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
                 <!-- wp:image -->
