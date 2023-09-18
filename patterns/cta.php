@@ -47,10 +47,10 @@
         <!-- wp:group -->
         <div class="wp-block-group inner-col2 mb-[40px] desktop:mb-0 desktop:pl-[50px] desktop:w-[60%]">
           <!-- wp:paragraph -->
-          <p class="mb-[10px] text-bgDarkGray">Napisz</p>
+          <p class="mb-[10px] text-bgDarkGray" data-aos="fade-up" data-aos-duration="500" data-aos-offset="30">Napisz</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p class="relative text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[30%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">sprzedaz@pbgorski.pl</p>
+          <p class="relative text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[30%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer" data-aos="fade-up" data-aos-duration="500" data-aos-offset="30">sprzedaz@pbgorski.pl</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
