@@ -120,7 +120,7 @@
       <!-- wp:group -->
       <div class="wp-block-group">
         <!-- wp:paragraph -->
-        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold">Aktualności</p>
+        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold" data-aos="fade-right" data-aos-offset="30">Aktualności</p>
         <!-- /wp:paragraph -->
 
         <!-- wp:list -->
@@ -134,7 +134,7 @@
 
           <!-- wp:list-item -->
           <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-            <a href="<?php echo get_home_url() . '/blog'; ?>" class="">Wszystkie</a>
+            <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block" data-aos="fade-up" data-aos-offset="30">Wszystkie</a>
           </li>
           <!-- /wp:list-item -->
 
@@ -145,7 +145,7 @@
               print_r(get_category_link($taxonomy->term_id));
           ?>
               <!-- wp:list-item -->
-              <li class="text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="#"><?php echo $taxonomy->name; ?></a></li>
+              <li class="text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="#" class="inline-block" data-aos="fade-up" data-aos-offset="30"><?php echo $taxonomy->name; ?></a></li>
               <!-- /wp:list-item -->
           <?php }
           }; ?>
