@@ -28,7 +28,7 @@
     <!-- wp:group -->
     <div class="wp-block-group col2 w-[100%] desktop:w-[55%] pt-[110px] desktop:pt-[160px] fflex flex-col gap-[30px] items-center jusify-center">
       <!-- wp:paragraph -->
-      <p class="text-[28px] desktop:text-[40px] font-bold mb-[20px] desktop:mb-[40px]">Potrzebujesz więcej informacji?</p>
+      <p class="text-[28px] desktop:text-[40px] font-bold mb-[20px] desktop:mb-[40px]" data-aos="fade-left" data-aos-duration="500" data-aos-offset="30">Potrzebujesz więcej informacji?</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
@@ -36,10 +36,10 @@
         <!-- wp:group -->
         <div class="wp-block-group inner-col1 mb-[30px] desktop:mb-0 desktop:w-[40%] desktop:border-r-[1px] desktop:border-[rgba(138,143,153,0.30)]">
           <!-- wp:paragraph -->
-          <p class="mb-[10px] text-bgDarkGray">Zadzwoń do nas</p>
+          <p class="mb-[10px] text-bgDarkGray" data-aos="fade-up" data-aos-duration="500" data-aos-offset="30">Zadzwoń do nas</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p class="relative text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[30%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">(58) 340 79 00</p>
+          <p class="relative text-[22px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[30%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer" data-aos="fade-up" data-aos-duration="500" data-aos-offset="30">(58) 340 79 00</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
