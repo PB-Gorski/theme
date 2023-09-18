@@ -94,20 +94,24 @@
     <div class="wp-block-group row4 desktop:flex gap-[20px] mb-[80px]">
       <!-- wp:group -->
       <div class="wp-block-group col1 desktop:w-[60%] desktop:pl-[60px]">
-        <!-- wp:image -->
-        <figure class="wp-block-image w-full h-full">
-          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img3.jpeg" alt="img">
-        </figure>
-        <!-- /wp:image -->
+        <!-- wp:paragraph -->
+        <a href="#" class="inline-block cursor-default" data-aos="fade-right" data-aos-offset="30">
+          <!-- wp:image -->
+          <figure class="wp-block-image w-full h-full">
+            <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img3.jpeg" alt="img">
+          </figure>
+          <!-- /wp:image -->
+        </a>
+        <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
       <div class="wp-block-group col2 desktop:pl-[100px] desktop:w-[40%] text-[18px] text-bgDarkGray leading-[30px]">
         <!-- wp:paragraph -->
-        <p class="mb-[30px] text-[30px] text-textGray leading-[44px]">Hotel Quadrille Conference & Spa</p>
+        <p class="mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Hotel Quadrille Conference & Spa</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-bgDarkGray leading-[30px]">Do najnowszych realizacji firmy należy Pięciogwiazdkowy Hotel Quadrille, XVIII-wieczny zespół parkowo-pałacowy zlokalizowany w Gdyni Orłowie. PB Górski przekształcił ten historyczny obiekt w ekskluzywny hotel butikowy o wyjątkowym designie nawiązującym m.in. do "Alicji w Krainie Czarów". Na całość składają się oryginalne wnętrza, niepowtarzalne pokoje hotelowe, imponująca strefa MediSpa z podziemnym basenem, autorska restauracja Biały Królik, nowocześnie wyposażona sala konferencyjna oraz malowniczy park.</p>
+        <p class="text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Do najnowszych realizacji firmy należy Pięciogwiazdkowy Hotel Quadrille, XVIII-wieczny zespół parkowo-pałacowy zlokalizowany w Gdyni Orłowie. PB Górski przekształcił ten historyczny obiekt w ekskluzywny hotel butikowy o wyjątkowym designie nawiązującym m.in. do "Alicji w Krainie Czarów". Na całość składają się oryginalne wnętrza, niepowtarzalne pokoje hotelowe, imponująca strefa MediSpa z podziemnym basenem, autorska restauracja Biały Królik, nowocześnie wyposażona sala konferencyjna oraz malowniczy park.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
