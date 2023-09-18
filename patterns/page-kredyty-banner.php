@@ -99,7 +99,7 @@
   <!-- wp:group -->
   <div class="wp-block-group w-full h-[560px] relative py-[60px]">
     <!-- wp:paragraph -->
-    <a href="#" class="inline-block" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+    <a href="#" class="inline-block w-full h-full" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
       <!-- wp:figure -->
       <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
         <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-kredyty/banner-bg-kredyty.jpeg" alt="banner-bg">
@@ -114,10 +114,10 @@
         <!-- wp:group -->
         <div class="wp-block-group title text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
           <!-- wp:paragraph -->
-          <p data-aos="fade-up" data-aos-offset="30">Uzyskanie kredytu</p>
+          <p data-aos="fade-right" data-aos-offset="30">Uzyskanie kredytu</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p data-aos="fade-up" data-aos-offset="30">nie musi być skomplikowane.</p>
+          <p data-aos="fade-right" data-aos-offset="30">nie musi być skomplikowane.</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
