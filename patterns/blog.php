@@ -39,7 +39,7 @@
           <li class="blog-tile w-full">
             <a href="<?php the_permalink(); ?>" class="relative group p-[25px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
               <!-- wp:group -->
-              <div class="wp-block-group wrapper" data-aos="fade-up" data-aos-duration="500" data-aos-offset="30" data-aos-delay="<?php echo $counter * 50; ?>">
+              <div class="wp-block-group wrapper">
                 <!-- wp:image -->
                 <figure class="wp-block-image h-[270px] mb-[10px]">
                   <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
