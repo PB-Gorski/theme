@@ -38,7 +38,7 @@
           $counter2++;
       ?>
           <!-- wp:list-item -->
-          <li class="blog-tile w-full inline-block">
+          <li class="blog-tile w-full inline-block group">
             <a href="<?php the_permalink(); ?>" class="relative group inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="<?php echo $counter2 * 50; ?>">
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
@@ -57,7 +57,7 @@
                 <!-- /wp:paragraph -->
 
                 <!-- wp:paragraph -->
-                <p class="relative inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-lightBlue before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Zobacz więcej &rarr;</p>
+                <p class="relative inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] group-hover:before:min-h-[100%] before:bg-lightBlue before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Zobacz więcej &rarr;</p>
                 <!-- /wp:paragraph -->
 
               </div>
