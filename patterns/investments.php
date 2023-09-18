@@ -39,36 +39,40 @@
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full mb-[80px] w-full">
-            <div class="relative group desktop:max-w-full max-w-[310px] h-full">
+            <a href="#" data-aos="fade-up" data-aos-duration="500" data-aos-offset="30">
               <!-- wp:group -->
-              <div class="wp-block-group wrapper w-full h-full">
-                <!-- wp:image -->
-                <figure class="wp-block-image h-[330px] desktop:max-h-full mb-[30px] lowercase">
-                  <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $taxNoSpaces2 . '.jpeg'; ?>" alt="inwestycje-img">
-                </figure>
-                <!-- /wp:image -->
-
+              <div class="relative group desktop:max-w-full max-w-[310px] h-full">
                 <!-- wp:group -->
-                <div class="wp-block-group content flex flex-col items-start justify-center gap-[15px]">
-                  <!-- wp:paragraph -->
-                  <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold"><?php echo $tax->name; ?></p>
-                  <!-- /wp:paragraph -->
+                <div class="wp-block-group wrapper w-full h-full">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image h-[330px] desktop:max-h-full mb-[30px] lowercase">
+                    <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $taxNoSpaces2 . '.jpeg'; ?>" alt="inwestycje-img">
+                  </figure>
+                  <!-- /wp:image -->
 
                   <!-- wp:group -->
-                  <div class="wp-block-group flex">
+                  <div class="wp-block-group content flex flex-col items-start justify-center gap-[15px]">
+                    <!-- wp:paragraph -->
+                    <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold"><?php echo $tax->name; ?></p>
+                    <!-- /wp:paragraph -->
+
                     <!-- wp:group -->
-                    <div class="wp-block-group available-apartments pr-[35px] flex items-center gap-[25px] border-r-[1px] border-[#ebecee]">
-                      <!-- wp:paragraph -->
-                      <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
-                      <!-- /wp:paragraph -->
+                    <div class="wp-block-group flex">
                       <!-- wp:group -->
-                      <div class="wp-block-group leading-[24px]">
+                      <div class="wp-block-group available-apartments pr-[35px] flex items-center gap-[25px] border-r-[1px] border-[#ebecee]">
                         <!-- wp:paragraph -->
-                        <p class="text-[18px] text-bgDarkGray">dostępnych</p>
+                        <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
                         <!-- /wp:paragraph -->
-                        <!-- wp:paragraph -->
-                        <p class="text-[18px] text-bgDarkGray">lokali</p>
-                        <!-- /wp:paragraph -->
+                        <!-- wp:group -->
+                        <div class="wp-block-group leading-[24px]">
+                          <!-- wp:paragraph -->
+                          <p class="text-[18px] text-bgDarkGray">dostępnych</p>
+                          <!-- /wp:paragraph -->
+                          <!-- wp:paragraph -->
+                          <p class="text-[18px] text-bgDarkGray">lokali</p>
+                          <!-- /wp:paragraph -->
+                        </div>
+                        <!-- /wp:group -->
                       </div>
                       <!-- /wp:group -->
                     </div>
@@ -79,7 +83,7 @@
                 <!-- /wp:group -->
               </div>
               <!-- /wp:group -->
-            </div>
+            </a>
           </li>
           <!-- /wp:list-item -->
       <?php
