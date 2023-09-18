@@ -122,9 +122,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group row-content2 desktop:flex flex-row-reverse">
       <!-- wp:paragraph -->
-      <a href="javascript:void(0)" class="block cursor-default" data-aos="fade-right" data-aos-offset="30">
+      <a href="javascript:void(0)" class="block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">
         <!-- wp:image -->
-        <figure class="wp-block-image left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0">
+        <figure class="wp-block-image w-full h-full">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img2.jpeg" alt="img">
         </figure>
         <!-- /wp:image -->
@@ -134,10 +134,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
         <!-- wp:paragraph -->
-        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]">Postaw na nowoczesną architekturę</p>
+        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Postaw na nowoczesną architekturę</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-[#8a8f99]">W ofercie znajdują się przestronne i doświetlone mieszkania oraz lokale usługowe o wygodnych rozkładach z możliwością aranżacji według własnych potrzeb. W każdym budynku znajduje się cichobieżna winda. Mieszkania na parterze posiadają ogródki, a lokale położone na najwyższych piętrach widok na Zatokę Gdańską. Ofertę multimedialną na terenie osiedla zapewnia <a href="https://www.upc.pl/" class="inline relative before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">https://www.upc.pl/</a></p>
+        <p class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W ofercie znajdują się przestronne i doświetlone mieszkania oraz lokale usługowe o wygodnych rozkładach z możliwością aranżacji według własnych potrzeb. W każdym budynku znajduje się cichobieżna winda. Mieszkania na parterze posiadają ogródki, a lokale położone na najwyższych piętrach widok na Zatokę Gdańską. Ofertę multimedialną na terenie osiedla zapewnia <a href="https://www.upc.pl/" class="inline relative before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">https://www.upc.pl/</a></p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
