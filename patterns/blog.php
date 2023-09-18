@@ -36,7 +36,6 @@
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
           $counter2++;
-          echo $counter2;
       ?>
           <!-- wp:list-item -->
           <li class="blog-tile w-full inline-block">
