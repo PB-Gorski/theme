@@ -352,3 +352,6 @@ option:hover {
   background-color: #B2F1FF;
 }
 
+.left-col-map > div{
+  background: red!important;
+}
