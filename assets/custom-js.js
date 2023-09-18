@@ -315,7 +315,7 @@ window.addEventListener("load", function() {
   // dropdown handle
   const clickBar = document.querySelectorAll(".click-bar");
   const stepParagraph = document.querySelectorAll(".step-paragraph");
-  const iconArrow = document.querySelectorAll(".icon-arrow");
+  // const iconArrow = document.querySelectorAll(".icon-arrow");
   const clickBarIcon = this.document.querySelector('click-bar-icon');
 
   clickBar.forEach(function(item,index) {
@@ -323,13 +323,13 @@ window.addEventListener("load", function() {
       if (!stepParagraph[index].classList.contains('active')) {
         clickBar[index].classList.add('text-black');
         stepParagraph[index].classList.replace('inactive','active');
-        iconArrow[index].classList.replace('rotate-90', 'rotate-[-90deg]');
-        iconArrow[index].classList.add('rotate-[-90deg]');
+        // iconArrow[index].classList.replace('rotate-90', 'rotate-[-90deg]');
+        // iconArrow[index].classList.add('rotate-[-90deg]');
         clickBarIcon.innerHTML = '-';
       } else if (stepParagraph[index].classList.contains('active')) {
         clickBar[index].classList.remove('text-black');
         stepParagraph[index].classList.replace('active', 'inactive');
-        iconArrow[index].classList.replace('rotate-[-90deg]','rotate-90');
+        // iconArrow[index].classList.replace('rotate-[-90deg]','rotate-90');
         clickBarIcon.innerHTML = '+';
       }
     });
