@@ -46,7 +46,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group row-content desktop:flex">
       <!-- wp:paragraph -->
-      <a href="" class="block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0 mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">
+      <a href="javascript:void(0)" class="block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0 mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">
         <!-- wp:image -->
         <figure class="wp-block-image w-full h-full">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img1.jpeg" alt="img">
@@ -122,7 +122,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group row-content2 desktop:flex flex-row-reverse">
       <!-- wp:paragraph -->
-      <a href="" class="block cursor-default" data-aos="fade-right" data-aos-offset="30">
+      <a href="javascript:void(0)" class="block cursor-default" data-aos="fade-right" data-aos-offset="30">
         <!-- wp:image -->
         <figure class="wp-block-image left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img2.jpeg" alt="img">
