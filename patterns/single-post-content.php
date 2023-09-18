@@ -146,9 +146,9 @@
     <!-- wp:group -->
     <div class="wp-block-group max-w-[700px] w-full mx-auto">
       <!-- wp:paragraph -->
-      <p data-aos="fade-right" data-aos-offset="30">
+      <a href="javascript:void(0)" data-aos="fade-right" data-aos-offset="30">
         <!-- wp:post-content /-->
-      </p>
+      </a>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
