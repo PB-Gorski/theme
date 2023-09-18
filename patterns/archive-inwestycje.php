@@ -104,7 +104,7 @@
       ?>
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
-          <div class="relative group desktop:max-w-full max-w-[310px] h-full">
+          <div class="relative group desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-duration="500" data-aos-offset="30">
             <!-- wp:group -->
             <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
               <!-- wp:image -->
