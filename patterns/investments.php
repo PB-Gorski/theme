@@ -39,7 +39,7 @@
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full mb-[80px] w-full">
-            <a href="#" data-aos="fade-up" data-aos-duration="500" data-aos-offset="30">
+            <a href="#" data-aos="fade-right" data-aos-duration="500" data-aos-offset="30">
               <!-- wp:group -->
               <div class="wp-block-group relative group desktop:max-w-full max-w-[310px] h-full">
                 <!-- wp:group -->
