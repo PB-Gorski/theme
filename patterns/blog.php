@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
-    <div class="wp-block-group title">
+    <div class="wp-block-group title mb-[20px]">
       <!-- wp:paragraph -->
       <p data-aos="fade-right" data-aos-offset="30" class="text-[24px] desktop:ml-[100px] text-bgDarkGray">Aktualności</p>
       <!-- /wp:paragraph -->
