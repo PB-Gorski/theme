@@ -123,15 +123,15 @@
         <!-- wp:group -->
         <div class="wp-block-group col1 pl-[40px] desktop:pl-0 pr-[40px] w-fit h-[68px] flex gap-[15px] items-center border-r-[1px] border-[rgba(255,255,255,0.2)]">
           <!-- wp:paragraph -->
-          <p id="count1" class="text-[48px] font-bold" data-aos="fade-right" data-aos-offset="30">40</p>
+          <p id="count1" class="text-[48px] font-bold" data-aos="fade-up" data-aos-offset="30">40</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group leading-[24px]">
             <!-- wp:paragraph -->
-            <p class="text-[18px]" data-aos="fade-right" data-aos-offset="30">lat</p>
+            <p class="text-[18px]" data-aos="fade-up" data-aos-offset="30">lat</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="text-[18px]" data-aos="fade-right" data-aos-offset="30">doświadczenia</p>
+            <p class="text-[18px]" data-aos="fade-up" data-aos-offset="30">doświadczenia</p>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
@@ -140,15 +140,15 @@
         <!-- wp:group -->
         <div class="wp-block-group col2 px-[40px] w-fit h-[68px] flex gap-[15px] items-center desktop:border-r-[1px] desktop:border-[rgba(255,255,255,0.2)]">
           <!-- wp:paragraph -->
-          <p id="count2" class="text-[48px] font-bold" data-aos="fade-right" data-aos-offset="30">125</p>
+          <p id="count2" class="text-[48px] font-bold" data-aos="fade-up" data-aos-offset="30">125</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group leading-[24px]">
             <!-- wp:paragraph -->
-            <p class="text-[18px]" data-aos="fade-right" data-aos-offset="30">zrealizowanych</p>
+            <p class="text-[18px]" data-aos="fade-up" data-aos-offset="30">zrealizowanych</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="text-[18px]" data-aos="fade-right" data-aos-offset="30">inwestycji</p>
+            <p class="text-[18px]" data-aos="fade-up" data-aos-offset="30">inwestycji</p>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
@@ -157,15 +157,15 @@
         <!-- wp:group -->
         <div class="wp-block-group px-[40px] col3 w-fit h-[68px] flex gap-[15px] items-center">
           <!-- wp:paragraph -->
-          <p id="count3" class="text-[48px] font-bold" data-aos="fade-right" data-aos-offset="30">4000</p>
+          <p id="count3" class="text-[48px] font-bold" data-aos="fade-up" data-aos-offset="30">4000</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group leading-[24px]">
             <!-- wp:paragraph -->
-            <p class="text-[18px]" data-aos="fade-right" data-aos-offset="30">sprzedanych</p>
+            <p class="text-[18px]" data-aos="fade-up" data-aos-offset="30">sprzedanych</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="text-[18px]" data-aos="fade-right" data-aos-offset="30">mieszkań</p>
+            <p class="text-[18px]" data-aos="fade-up" data-aos-offset="30">mieszkań</p>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
