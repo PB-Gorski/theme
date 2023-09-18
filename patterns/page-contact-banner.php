@@ -34,7 +34,7 @@
         </p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:paragraph -->
+        <!-- wp:group -->
         <div class="wp-block-group links-phones mt-[15px]">
           <!-- wp:paragraph -->
           <p>
