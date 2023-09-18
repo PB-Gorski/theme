@@ -1,8 +1,11 @@
+AOS.init({
+  once: true
+});
 window.addEventListener("load", function() {
   
-  // AOS.init({
-  //   duration: 1200,
-  // });
+  AOS.init({
+    once: true
+  });
 
   const body = document.body;
   // navbar mobile handling
