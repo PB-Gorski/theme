@@ -1,17 +1,4 @@
-// import AOS from 'aos';
-// var AOS = require('aos');
-// AOS.init({
-//   once: true
-// });
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-AOS.init();
 window.addEventListener("load", function() {
-  AOS.init({
-    once: true
-  });
-
   const body = document.body;
   // navbar mobile handling
   const btnOpenMenu = document.querySelector(".btn-open-menu");
