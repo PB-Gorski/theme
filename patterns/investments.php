@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group pt-[60px] pb-[30px] desktop:pb-[40px] title">
       <!-- wp:paragraph -->
-      <p class="text-[24px] desktop:ml-[100px] text-bgDarkGray">Poznaj nasze najnowsze inwestycje</p>
+      <p data-aos="fade-right" data-aos-duration="500" data-aos-offset="0" class="text-[24px] desktop:ml-[100px] text-bgDarkGray">Poznaj nasze najnowsze inwestycje</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
