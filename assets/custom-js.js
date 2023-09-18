@@ -320,7 +320,6 @@ window.addEventListener("load", function() {
   const dropDownList = document.querySelector('.contact-drop-down');
 
   dropDownList.setAttribute('data-aos','fade-up');
-  dropDownList.setAttribute('data-aos-offset','30');
   clickBar.forEach(function(item,index) {
     item.addEventListener("click", () => {
       if (!stepParagraph[index].classList.contains('active')) {
