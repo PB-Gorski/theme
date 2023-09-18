@@ -234,7 +234,7 @@
       <!-- wp:group -->
       <div class="wp-block-group section1-drop-down mb-[50px]">
         <!-- wp:paragraph -->
-        <a href="#" class="block cursor-default" data-aos="fade-right" data-aos-offset="30">
+        <a href="javascript:void(0)" class="block cursor-default" data-aos="fade-right" data-aos-offset="30">
           <!-- wp:list -->
           <ul class="wp-block-list contact-drop-down mt-[50px] ml-0">
             <!-- wp:list-item -->
