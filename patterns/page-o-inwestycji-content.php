@@ -176,19 +176,23 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
     <!-- wp:group -->
     <div class="wp-block-group row-content4 desktop:flex flex-row-reverse">
-      <!-- wp:image -->
-      <figure class="wp-block-image left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0">
-        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img4.png" alt="img">
-      </figure>
-      <!-- /wp:image -->
+      <!-- wp:paragraph -->
+      <a href="javascript:void(0)" class="block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30" data-aos="fade-right" data-aos-offset="30">
+        <!-- wp:image -->
+        <figure class="wp-block-image w-full h-full">
+          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/img4.png" alt="img">
+        </figure>
+        <!-- /wp:image -->
+      </a>
+      <!-- /wp:paragraph -->
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
         <!-- wp:paragraph -->
-        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]">Widok na Zatokę Gdańską</p>
+        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Widok na Zatokę Gdańską</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-[#8a8f99] mb-[30px]">Taki widok czeka na mieszkańców ostatnich pięter Osiedla Srebrniki.</p>
+        <p class="text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Taki widok czeka na mieszkańców ostatnich pięter Osiedla Srebrniki.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
