@@ -141,14 +141,14 @@
   <!-- /wp:group -->
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
-
     <!-- wp:post-featured-image /-->
+
     <!-- wp:group -->
     <div class="wp-block-group max-w-[700px] w-full mx-auto">
       <!-- wp:paragraph -->
-      <a href="javascript:void(0)" class="block cursor-default" data-aos="fade-right" data-aos-offset="30">
+      <p class="" data-aos="fade-right" data-aos-offset="30">
         <!-- wp:post-content /-->
-      </a>
+      </p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
