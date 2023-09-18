@@ -51,7 +51,7 @@
                 <!-- wp:group -->
                 <div class="wp-block-group content flex flex-col items-start justify-center gap-[15px]">
                   <!-- wp:paragraph -->
-                  <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php echo $tax->name; ?></p>
+                  <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold"><?php echo $tax->name; ?></p>
                   <!-- /wp:paragraph -->
 
                   <!-- wp:group -->
