@@ -124,7 +124,7 @@
         <!-- wp:group -->
         <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <p data-aos="fade-up" data-aos-offset="30">Umów się na spotkanie z naszym ekspertem, który przedstawi Ci najkorzystniejsze oferty.</p>
+          <p data-aos="fade-right" data-aos-offset="30">Umów się na spotkanie z naszym ekspertem, który przedstawi Ci najkorzystniejsze oferty.</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
