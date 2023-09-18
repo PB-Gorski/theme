@@ -134,7 +134,7 @@
 
           <!-- wp:list-item -->
           <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-            <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block" data-aos="fade-up" data-aos-offset="30">Wszystkie</a>
+            <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30">Wszystkie</a>
           </li>
           <!-- /wp:list-item -->
 
@@ -151,7 +151,6 @@
           }; ?>
         </ul>
         <!-- /wp:list -->
-
       </div>
       <!-- /wp:group -->
     </div>
@@ -180,7 +179,7 @@
           $counter++; ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full desktop:h-[450px] mb-[80px]">
-            <a href="<?php the_permalink(); ?>" class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
+            <a href="<?php the_permalink(); ?>" class="relative group inline-block p-[25px] desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-offset="30">
               <!-- wp:group -->
               <div class="wp-block-group wrapper w-full h-full desktop:flex gap-[140px]">
                 <!-- wp:image -->
