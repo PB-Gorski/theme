@@ -36,7 +36,7 @@
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
       ?>
           <!-- wp:list-item -->
-          <li class="blog-tile w-full">
+          <li class="blog-tile w-full" data-aos="fade-up" data-aos-duration="500" data-aos-offset="30" data-aos-delay="<?php echo $counter * 50; ?>">
             <a href="<?php the_permalink(); ?>" class="relative group p-[25px]" data-aos="fade-up" data-aos-duration="300" data-aos-offset="30">
               <!-- wp:group -->
               <div class="wp-block-group wrapper">
