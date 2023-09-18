@@ -339,7 +339,7 @@
                 <p class="w-fit pb-[5px] group-hover:text-primaryYellow uppercase text-bgDarkGray text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="font-bold text-[24px] text-bgDarkGray font-bold self-center">Dział sprzedaży</p>
+                <p class="font-bold text-[24px] text-bgDarkGray font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział sprzedaży</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
