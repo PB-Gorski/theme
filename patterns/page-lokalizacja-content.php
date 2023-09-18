@@ -132,11 +132,15 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <p class="mb-[60px] text-[30px] text-center" data-aos="fade-right" data-aos-offset="30">Plan osiedla "Srebrniki"</p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:image -->
-    <figure class="wp-block-image">
-      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/plan-osiedla.jpeg" alt="plan-osiedla">
-    </figure>
-    <!-- /wp:image -->
+    <!-- wp:paragraph -->
+    <a href="javascript:void(0)" class="block cursor-default" data-aos="fade-right" data-aos-offset="30">
+      <!-- wp:image -->
+      <figure class="wp-block-image">
+        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/plan-osiedla.jpeg" alt="plan-osiedla">
+      </figure>
+      <!-- /wp:image -->
+    </a>
+    <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
 
