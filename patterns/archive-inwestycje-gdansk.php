@@ -79,10 +79,10 @@
 
       print_r($sub_terms);
 
-      foreach ($sub_terms as $sub_term) {
+      foreach ($xsub_terms as $xsub_term) {
       ?>
-        <li><?php $sub_term->name ?></li>
-        <li><?php $sub_term->parent ?></li>
+        <li><?php echo $sub_term->name ?></li>
+        <li><?php echo $sub_term->parent ?></li>
       <?php
       }
       ?>
@@ -129,10 +129,10 @@
           'hide_empty' => false,
         ));
 
-        foreach ($sub_terms as $sub_term) {
+        foreach ($xsub_terms as $xsub_term) {
       ?>
-          <li><?php $sub_term->name ?></li>
-          <li><?php $sub_term->parent ?></li>
+          <li><?php echo $sub_term->name ?></li>
+          <li><?php echo $sub_term->parent ?></li>
         <?php
         }
 
