@@ -127,13 +127,14 @@
       <!-- wp:group -->
       <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] text-[24px] desktop:text-[40px] text-[#2e384c] font-bold">
         <!-- wp:post-title /-->
+        <!-- wp:group -->
+        <div class="wp-block-group post-date text-[#8a8f99] text-[18px]">
+          <!-- wp:post-date {"format":"j F Y"} /-->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
-      <!-- wp:group -->
-      <div class="wp-block-group post-date text-[#8a8f99] text-[18px]">
-        <!-- wp:post-date {"format":"j F Y"} /-->
-      </div>
-      <!-- /wp:group -->
+
     </div>
     <!-- /wp:group -->
   </div>
