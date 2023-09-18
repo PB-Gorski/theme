@@ -1,4 +1,5 @@
 import AOS from 'aos';
+var AOS = require('aos');
 AOS.init({
   once: true
 });
