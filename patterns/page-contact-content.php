@@ -161,13 +161,13 @@
           <!-- wp:group -->
           <div class="wp-block-group values">
             <!-- wp:paragraph -->
-            <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[30px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">sprzedaz@pbgorski.pl</a>
+            <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[30px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300" data-aos="fade-right" data-aos-offset="30">sprzedaz@pbgorski.pl</a>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <a href="tel:+48583407900" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">(+48) 58 340-79-00</a>
+            <a href="tel:+48583407900" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300" data-aos="fade-right" data-aos-offset="30">(+48) 58 340-79-00</a>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <a href="tel:+483047101" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">(+48) 58 304-71-01</a>
+            <a href="tel:+483047101" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300" data-aos="fade-right" data-aos-offset="30">(+48) 58 304-71-01</a>
             <!-- /wp:paragraph -->
 
           </div>
@@ -177,18 +177,18 @@
         <!-- wp:group -->
         <div class="wp-block-group when-open mb-[30px] text-primaryRed font-bold">
           <!-- wp:paragraph -->
-          <p>Poniedziałek - Czwartek: 8:00 - 17:00</p>
+          <p data-aos="fade-right" data-aos-offset="30">Poniedziałek - Czwartek: 8:00 - 17:00</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p>Piątek: 8:00 - 16:00</p>
+          <p data-aos="fade-right" data-aos-offset="30">Piątek: 8:00 - 16:00</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p>Soboty pracujące: 9:00 - 14:00</p>
+          <p data-aos="fade-right" data-aos-offset="30">Soboty pracujące: 9:00 - 14:00</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
         <!-- wp:paragraph -->
-        <p class="text-primaryRed">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</p>
+        <p class="text-primaryRed" data-aos="fade-right" data-aos-offset="30">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -548,34 +548,34 @@
       <!-- wp:group -->
       <div class="wp-block-group section2 mb-[50px]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray mb-[30px] font-bold">Dane Spółki</p>
+        <p class="text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Dane Spółki</p>
         <!-- /wp:paragraph -->
         <!-- wp:group -->
         <div class="wp-block-group address mb-[30px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <p>PB Górski Sp. z o.o. SKA</p>
+          <p data-aos="fade-right" data-aos-offset="30">PB Górski Sp. z o.o. SKA</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p>ul. Joachima Lelewela 37 lok. E</p>
+          <p data-aos="fade-right" data-aos-offset="30">ul. Joachima Lelewela 37 lok. E</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p>80-442 Gdańsk</p>
+          <p data-aos="fade-right" data-aos-offset="30">80-442 Gdańsk</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
         <div class="wp-block-group mb-[30px] text-[15px] font-semibold">
           <!-- wp:paragraph -->
-          <p>NIP 5890008712, REGON 190575747, KRS 0000710392, Sąd Rejonowy Gdańsk-Północ w Gdańsku, VII Wydział Gospodarczy Krajowego Rejestru Sądowego</p>
+          <p data-aos="fade-right" data-aos-offset="30">NIP 5890008712, REGON 190575747, KRS 0000710392, Sąd Rejonowy Gdańsk-Północ w Gdańsku, VII Wydział Gospodarczy Krajowego Rejestru Sądowego</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p>Wysokość kapitału zakładowego i wpłaconego: 24.363.831,64 PLN</p>
+          <p data-aos="fade-right" data-aos-offset="30">Wysokość kapitału zakładowego i wpłaconego: 24.363.831,64 PLN</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
 
         <!-- wp:paragraph -->
-        <p class="text-primaryRed">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</p>
+        <p class="text-primaryRed" data-aos="fade-right" data-aos-offset="30">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
