@@ -34,7 +34,7 @@
           $cats = get_categories($args); ?>
           <!-- wp:list-item -->
           <li class="allTabBtn text-[#8A8F99] text-textGray underline underline-offset-4 decoration-2 decoration-primaryRed cursor-pointer">
-            <a href="<?php echo get_home_url() . '/inwestycje'; ?>" class="">Wszystkie</a>
+            <a href="<?php echo get_home_url() . '/inwestycje'; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30">Wszystkie</a>
           </li>
           <!-- /wp:list-item -->
           <?php
@@ -43,7 +43,7 @@
             // echo $catNoSpaces;
           ?>
             <!-- wp:list-item -->
-            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory == $catNoSpaces) ? 'tab-active' : ''; ?>"><a href="<?php echo home_url() . '/inwestycje-gdansk'; ?>" class=""><?php echo $cat->name; ?></a></li>
+            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory == $catNoSpaces) ? 'tab-active' : ''; ?>"><a href="<?php echo home_url() . '/inwestycje-gdansk'; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30"><?php echo $cat->name; ?></a></li>
             <!-- /wp:list-item -->
           <?php }; ?>
         </ul>
