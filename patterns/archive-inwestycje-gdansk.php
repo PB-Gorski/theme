@@ -77,7 +77,7 @@
 
       $sub_terms = get_terms('city', $args);
 
-      print_r($sub_terms);
+      // print_r($sub_terms);
 
       foreach ($xsub_terms as $xsub_term) {
       ?>
