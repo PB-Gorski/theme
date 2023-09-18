@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="inwestycje-archive" class="wp-block-group inwestycje-archive relative">
   <!-- wp:group -->
-  <div class="wp-block-group title-wrapper mb-[40px] bg-[#f6f7fa]">
+  <div class="wp-block-group title-wrapper mb-[40px] bg-[#f5f7fa]">
     <!-- wp:group -->
     <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[20px] desktop:flex items-center">
       <!-- wp:group -->
