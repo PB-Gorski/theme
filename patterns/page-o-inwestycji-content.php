@@ -19,7 +19,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
-    <div class="wp-block-group test row-links my-[30px] flex flex-wrap justify-center items-center gap-[20px]">
+    <div class="wp-block-group test row-links mb-[50px] flex flex-wrap justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/o-inwestycji' ?>" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
       <!-- /wp:paragraph -->
