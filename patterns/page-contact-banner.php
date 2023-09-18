@@ -12,7 +12,7 @@
 <div id="Banner" class="wp-block-group banner-contact relative">
 
   <!-- wp:group -->
-  <div class="wp-block-group w-full bg-[#f5f7fa] relative py-[60px]">
+  <div class="wp-block-group w-full bg-[#f5f7fa] relative py-[80px]">
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[50px]">
       <!-- wp:group -->
