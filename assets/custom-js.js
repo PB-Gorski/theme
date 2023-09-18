@@ -1,8 +1,12 @@
+// import AOS from 'aos';
+// var AOS = require('aos');
+// AOS.init({
+//   once: true
+// });
 import AOS from 'aos';
-var AOS = require('aos');
-AOS.init({
-  once: true
-});
+import 'aos/dist/aos.css';
+
+AOS.init();
 window.addEventListener("load", function() {
   AOS.init({
     once: true
