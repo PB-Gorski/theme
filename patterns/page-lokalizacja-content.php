@@ -37,19 +37,23 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
     <!-- wp:group -->
     <div class="wp-block-group row-content mb-[60px] desktop:flex">
-      <!-- wp:image -->
-      <figure class="wp-block-image left-col desktop:w-[60%] m-0 mb-[30px]">
-        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/map.png" alt="img">
-      </figure>
-      <!-- /wp:image -->
+      <!-- wp:paragraph -->
+      <a href="javascript:void(0)" class="block cursor-default left-col desktop:w-[60%] m-0 mb-[30px]" data-aos="fade-right" data-aos-offset="30">
+        <!-- wp:image -->
+        <figure class="wp-block-image">
+          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/map.png" alt="img">
+        </figure>
+        <!-- /wp:image -->
+      </a>
+      <!-- /wp:paragraph -->
 
       <!-- wp:group -->
       <div class="wp-block-group desktop:pl-[100px] desktop:w-[40%]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] leading-[40px] mb-[40px]">Srebrniki to osiedle położone na granicy dzielnic Wrzeszcz oraz Morena, w otoczeniu licznych terenów zielonych.</p>
+        <p class="text-[30px] leading-[40px] mb-[40px]" data-aos="fade-right" data-aos-offset="30">Srebrniki to osiedle położone na granicy dzielnic Wrzeszcz oraz Morena, w otoczeniu licznych terenów zielonych.</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-[#8a8f99]">W najbliższym sąsiedztwie znajduje się nie tylko pełne zaplecze handlowe i edukacyjne, ale także przystanek PKM, który pozwala na dojazd do najważniejszych punktów w całym Trójmieście. </p>
+        <p class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W najbliższym sąsiedztwie znajduje się nie tylko pełne zaplecze handlowe i edukacyjne, ale także przystanek PKM, który pozwala na dojazd do najważniejszych punktów w całym Trójmieście. </p>
         <!-- /wp:paragraph -->
 
 
