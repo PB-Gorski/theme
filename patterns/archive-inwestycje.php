@@ -104,7 +104,7 @@
       ?>
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
-          <a href="<?php echo home_url() . '/o-inwestycji' . ''; ?>" class="relative group inline-block cursor-none desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-offset="30">
+          <a href="<?php echo home_url() . '/o-inwestycji' . ''; ?>" class="relative group inline-block cursor-default desktop:max-w-full max-w-[310px] h-full" data-aos="fade-up" data-aos-offset="30">
             <!-- wp:group -->
             <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
               <!-- wp:image -->
