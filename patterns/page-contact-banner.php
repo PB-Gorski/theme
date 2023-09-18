@@ -36,11 +36,13 @@
 
         <!-- wp:group -->
         <div class="wp-block-group links-phones mt-[15px]">
+
+
           <!-- wp:paragraph -->
-          <a href="tel:+48607700555" class="block" data-aos="fade-right" data-aos-offset="30">kom. (+48) 607-700-555</a>
+          <a href="tel:+48607700555" class="inline-block" data-aos="fade-right" data-aos-offset="30">kom. (+48) 607-700-555</a>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <a href="tel:+48691990112" class="block" data-aos="fade-right" data-aos-offset="30">kom. (+48) 691-990-112</a>
+          <a href="tel:+48691990112" class="inline-block" data-aos="fade-right" data-aos-offset="30">kom. (+48) 691-990-112</a>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
