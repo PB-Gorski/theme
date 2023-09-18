@@ -65,7 +65,7 @@
   <!-- wp:group -->
   <div class="wp-block-group inwestycje-posts container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px]">
+    <ul class="wp-block-list mb-[40px] hidden">
       <?php
       $args = array(
         'taxonomy' => 'city',
