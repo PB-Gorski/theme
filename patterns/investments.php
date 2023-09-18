@@ -59,7 +59,7 @@
                     <!-- wp:group -->
                     <div class="wp-block-group flex">
                       <!-- wp:group -->
-                      <div class="wp-block-group available-apartments pr-[35px] flex items-center gap-[25px] border-r-[1px] border-[#ebecee]">
+                      <div class="wp-block-group available-apartments pr-[35px] flex items-center gap-[25px]">
                         <!-- wp:paragraph -->
                         <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
                         <!-- /wp:paragraph -->
