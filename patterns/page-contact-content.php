@@ -330,16 +330,16 @@
           </li>
           <!-- /wp:list-item -->
           <!-- wp:list-item -->
-          <li class="list-content-wrapper py-[20px] border-b-[1px] border-[#e8e8e8] transition ease-out duration-[500ms]">
+          <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
             <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
               <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
                 <!-- wp:paragraph -->
-                <p class="w-[22px] click-bar-icon flex-none pb-[5px] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
+                <p class="w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="pl-[20px] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział sprzedaży</p>
+                <p class="pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział sprzedaży</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -447,16 +447,16 @@
           </li>
           <!-- /wp:list-item -->
           <!-- wp:list-item -->
-          <li class="list-content-wrapper py-[20px] border-b-[1px] border-[#e8e8e8] transition ease-out duration-[500ms]">
+          <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
             <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
               <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
                 <!-- wp:paragraph -->
-                <p class="w-[22px] click-bar-icon flex-none pb-[5px] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
+                <p class="w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="bar-title pl-[20px] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Biuro Zarządu</p>
+                <p class="bar-title pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Biuro Zarządu</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
