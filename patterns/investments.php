@@ -21,7 +21,7 @@
     <!-- /wp:group -->
 
     <!-- wp:list -->
-    <ul class="wp-block-list inwestycje-posts mb-[40px]">
+    <ul class="wp-block-list inwestycje-posts mb-[40px] desktop:flex gap-[30px]">
       <?php
       $args = array(
         'post_type' => 'mieszkania',
