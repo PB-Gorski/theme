@@ -30,13 +30,15 @@
       <div class="wp-block-group text-[#959ba6] test text-[30px]">
         <!-- wp:paragraph -->
         <p>
-          <a href="mailto:sprzedaz@pbgorski.pl" class="inline-block underline relative hover:text-[#2e384d] transition duration-[300ms] ease after:content-[''] after:absolute after:top-[-10px] after:right-[-20px] after:w-[2px] after:h-[70px] after:m-auto after:bg-[#e1e3e8] after:rotate-[25deg]" class="inline-block" data-aos="fade-right" data-aos-offset="30">sprzedaz@pbgorski.pl</a>
+          <a href="mailto:sprzedaz@pbgorski.pl" class="inline-block underline relative hover:text-[#2e384d] transition duration-[300ms] ease after:content-[''] after:absolute after:top-[-10px] after:right-[-20px] after:w-[2px] after:h-[70px] after:m-auto after:bg-[#e1e3e8] after:rotate-[25deg]" data-aos="fade-right" data-aos-offset="30">sprzedaz@pbgorski.pl</a>
         </p>
         <!-- /wp:paragraph -->
 
         <!-- wp:group -->
         <div class="wp-block-group links-phones mt-[15px]">
-
+          <!-- wp:paragraph -->
+          <a href="tel:+48583407900" class="inline-block" data-aos="fade-right" data-aos-offset="30">(+48) 58 340 79 00,</a>
+          <!-- /wp:paragraph -->
 
           <!-- wp:paragraph -->
           <a href="tel:+48607700555" class="inline-block" data-aos="fade-right" data-aos-offset="30">607 700 555</a>
