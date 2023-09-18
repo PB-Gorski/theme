@@ -317,7 +317,7 @@ window.addEventListener("load", function() {
   const stepParagraph = document.querySelectorAll(".step-paragraph");
   // const iconArrow = document.querySelectorAll(".icon-arrow");
   const clickBarIcon = document.querySelector('.click-bar-icon');
-  const barTitle = this.document.querySelector('.bar-title');
+  const barTitle = this.document.querySelector('.bar-title-wrapper');
 
   clickBar.forEach(function(item,index) {
     item.addEventListener("click", () => {
