@@ -110,10 +110,10 @@
       <!-- wp:group -->
       <div class="wp-block-group title text-[36px] desktop:text-[60px] font-bold desktop:pt-[150px] mb-[50px] leading-[44px] desktop:leading-[70px]">
         <!-- wp:paragraph -->
-        <p>Poznaj naszą historię,</p>
+        <p data-aos="fade-right" data-aos-offset="30">Poznaj naszą historię,</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p>strategię i wartości</p>
+        <p data-aos="fade-right" data-aos-offset="30">strategię i wartości</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -123,15 +123,15 @@
         <!-- wp:group -->
         <div class="wp-block-group col1 pl-[40px] desktop:pl-0 pr-[40px] w-fit h-[68px] flex gap-[15px] items-center border-r-[1px] border-[rgba(255,255,255,0.2)]">
           <!-- wp:paragraph -->
-          <p id="count1" class="text-[48px] font-bold">40</p>
+          <p id="count1" class="text-[48px] font-bold" data-aos="fade-right" data-aos-offset="30">40</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group leading-[24px]">
             <!-- wp:paragraph -->
-            <p class="text-[18px]">lat</p>
+            <p class="text-[18px]" data-aos="fade-right" data-aos-offset="30">lat</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="text-[18px]">doświadczenia</p>
+            <p class="text-[18px]" data-aos="fade-right" data-aos-offset="30">doświadczenia</p>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
