@@ -120,7 +120,7 @@
       <!-- wp:paragraph -->
       <a href="/blog/" class="desktop:mt-[-30px] desktop:absolute left-0 ">
         <!-- wp:paragraph -->
-        <p class="mb-[20px] desktop:mb-0">&larr; Lista aktualności</p>
+        <p class="mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">&larr; Lista aktualności</p>
         <!-- /wp:paragraph -->
       </a>
       <!-- /wp:paragraph -->
@@ -145,7 +145,11 @@
     <!-- wp:post-featured-image /-->
     <!-- wp:group -->
     <div class="wp-block-group max-w-[700px] w-full mx-auto">
-      <!-- wp:post-content /-->
+      <!-- wp:paragraph -->
+      <p data-aos="fade-right" data-aos-offset="30">
+        <!-- wp:post-content /-->
+      </p>
+      <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
   </div>
