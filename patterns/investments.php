@@ -36,7 +36,6 @@
         $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
         if ($counter < 4) {
-          echo $counter;
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full mb-[80px] w-full">
