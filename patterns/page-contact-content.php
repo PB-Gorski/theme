@@ -245,7 +245,7 @@
                 <p class="w-fit pb-[5px] click-bar-icon group-hover:text-primaryYellow uppercase text-bgDarkGray text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="bar-titlefont-bold text-[24px] text-bgDarkGray font-bold self-center" data-aos="fade-up" data-aos-offset="30">Biuro Zarządu</p>
+                <p class="bar-title font-bold text-[24px] text-bgDarkGray font-bold self-center" data-aos="fade-up" data-aos-offset="30">Biuro Zarządu</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
