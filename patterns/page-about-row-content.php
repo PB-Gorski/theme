@@ -17,17 +17,17 @@
       <!-- wp:group -->
       <div class="wp-block-group col1 desktop:w-[50%] desktop:pl-[60px]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray leading-[44px]">40 lat obecności na pomorskim rynku, dziesiątki zrealizowanych inwestycji i wiele spektakularnych przedsięwzięć w trakcie realizacji.</p>
+        <p class="text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">40 lat obecności na pomorskim rynku, dziesiątki zrealizowanych inwestycji i wiele spektakularnych przedsięwzięć w trakcie realizacji.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
       <div class="wp-block-group col2 desktop:w-[50%] text-[18px] text-bgDarkGray leading-[30px]">
         <!-- wp:paragraph -->
-        <p>Przedsiębiorstwo Budowlane Górski to jedna z wiodących firm deweloperskich w Trójmieście, która nie boi się wyzwań i bezustannie stara się sprostać oczekiwaniom klientów.</p>
+        <p data-aos="fade-right" data-aos-offset="30">Przedsiębiorstwo Budowlane Górski to jedna z wiodących firm deweloperskich w Trójmieście, która nie boi się wyzwań i bezustannie stara się sprostać oczekiwaniom klientów.</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p>Działalność budowlaną firmy GÓRSKI uzupełnia mecenat nad kulturą oraz wsparcie dla drużyn sportowych.</p>
+        <p data-aos="fade-right" data-aos-offset="30">Działalność budowlaną firmy GÓRSKI uzupełnia mecenat nad kulturą oraz wsparcie dla drużyn sportowych.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
