@@ -307,13 +307,14 @@ function pb_gorski_blocks_register_styles()
 	wp_enqueue_script('countup', '//inorganik.github.io/countUp.js/dist/countUp.umd.js', '2.0.1');
 	wp_enqueue_style('swiper-css', '//cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css', '9.4.1');
 	wp_enqueue_script('swiperMain', get_theme_file_uri('/assets/swiper-main.js'), '1.0', array('swiper'));
+	wp_enqueue_script('aos', '//unpkg.com/aos@2.3.1/dist/aos.js', '2.3');
+
 
 	wp_enqueue_style('custom-styles', get_theme_file_uri('/assets/styles.min.css'), '1.0', array('swiper-css'));
-
 	wp_enqueue_style('google-fonts-api', '//fonts.googleapis.com', '1.0');
 	wp_enqueue_style('google-fonts-gstatic', '//fonts.gstatic.com', '1.0');
 	wp_enqueue_style('google-fonts-roboto', '//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap', '1.0');
-
+	wp_enqueue_style('aos-styles', '//unpkg.com/aos@2.3.1/dist/aos.css', '1.0');
 	wp_enqueue_script('customJS', get_theme_file_uri('/assets/custom-js.js'), '1.0', array('custom-js', 'tailwind-config'));
 }
 add_action('wp_enqueue_scripts', 'pb_gorski_blocks_register_styles');
