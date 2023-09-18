@@ -38,20 +38,24 @@
     <div class="wp-block-group row2 desktop:flex gap-[100px] mb-[80px]">
       <!-- wp:group -->
       <div class="wp-block-group col1 desktop:w-[50%] desktop:pl-[60px]">
-        <!-- wp:image -->
-        <figure class="wp-block-image w-full h-full">
-          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img1.jpeg" alt="img">
-        </figure>
-        <!-- /wp:image -->
+        <!-- wp:paragraph -->
+        <a href="#" class="inline-block cursor-default" data-aos="fade-right" data-aos-offset="30">
+          <!-- wp:image -->
+          <figure class="wp-block-image w-full h-full">
+            <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img1.jpeg" alt="img">
+          </figure>
+          <!-- /wp:image -->
+        </a>
+        <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
       <div class="wp-block-group col2 desktop:w-[50%] text-[18px] text-bgDarkGray leading-[30px]">
         <!-- wp:paragraph -->
-        <p class="mb-[30px] text-[30px] text-textGray leading-[44px]">Wieloletnie doświadczenie przedsiębiorstwa owocuje dziś bardzo szeroką, zróżnicowaną ofertą dla klientów.</p>
+        <p class="mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Wieloletnie doświadczenie przedsiębiorstwa owocuje dziś bardzo szeroką, zróżnicowaną ofertą dla klientów.</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-bgDarkGray leading-[30px]">Wśród realizacji dewelopera znajdują się eleganckie inwestycje w prestiżowych lokalizacjach Trójmiasta takie jak osiedle Browar Gdański, Kamienica Tobiasza, czy apartamenty Angielska Grobla na Starym Mieście w Gdańsku.</p>
+        <p class="text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Wśród realizacji dewelopera znajdują się eleganckie inwestycje w prestiżowych lokalizacjach Trójmiasta takie jak osiedle Browar Gdański, Kamienica Tobiasza, czy apartamenty Angielska Grobla na Starym Mieście w Gdańsku.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
