@@ -80,10 +80,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- wp:group -->
           <div class="wp-block-group info-box2 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
-            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">TERMIN UKOŃCZENIA (BUDYNEK 1)</p>
+            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">TERMIN UKOŃCZENIA (BUDYNEK 1)</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="text-[24px]">IV kwartał 2020</p>
+            <p class="text-[24px]" data-aos="fade-right" data-aos-offset="30">IV kwartał 2020</p>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
@@ -92,10 +92,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <div class="wp-block-group info-box3 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
 
-            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">LICZBA MIESZKAŃ W SPRZEDAŻY</p>
+            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LICZBA MIESZKAŃ W SPRZEDAŻY</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="text-[24px]">450 w pierwszym etapie</p>
+            <p class="text-[24px]" data-aos="fade-right" data-aos-offset="30">450 w pierwszym etapie</p>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
@@ -103,10 +103,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- wp:group -->
           <div class="wp-block-group info-box4 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
-            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">POWIERZCHNIA MIESZKAŃ</p>
+            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">POWIERZCHNIA MIESZKAŃ</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="text-[24px]">27 m<sup>2</sup> - 113 m<sup>2</sup></p>
+            <p class="text-[24px]" data-aos="fade-right" data-aos-offset="30">27 m<sup>2</sup> - 113 m<sup>2</sup></p>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
