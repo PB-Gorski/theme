@@ -99,9 +99,9 @@
   <!-- wp:group -->
   <div class="wp-block-group w-full h-[560px] relative py-[60px]">
     <!-- wp:paragraph -->
-    <a href="#" class="inline-block w-full h-full cursor-default" data-aos="fade-zoom-in" data-aos-duration="600" data-aos-easing="ease" data-aos-offset="0">
+    <a href="#" class="inline-block w-full h-full cursor-default absolute top-0 left-0 z-[-1]" data-aos="fade-zoom-in" data-aos-duration="600" data-aos-easing="ease" data-aos-offset="0">
       <!-- wp:figure -->
-      <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
+      <figure class="wp-block-image w-full h-full ">
         <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-kredyty/banner-bg-kredyty.jpeg" alt="banner-bg">
       </figure>
       <!-- /wp:figure -->
