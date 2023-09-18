@@ -315,25 +315,21 @@ window.addEventListener("load", function() {
   // dropdown handle
   const clickBar = document.querySelectorAll(".click-bar");
   const stepParagraph = document.querySelectorAll(".step-paragraph");
-  // const iconArrow = document.querySelectorAll(".icon-arrow");
-  const clickBarIcon = document.querySelector('.click-bar-icon');
-  const barTitle = this.document.querySelector('.bar-title-wrapper');
+  const clickBarIcon = document.querySelectorAll('.click-bar-icon');
+  const barTitle = this.document.querySelectorAll('.bar-title-wrapper');
 
   clickBar.forEach(function(item,index) {
     item.addEventListener("click", () => {
       if (!stepParagraph[index].classList.contains('active')) {
         clickBar[index].classList.add('text-black');
         stepParagraph[index].classList.replace('inactive', 'active');
-        barTitle.classList.replace('text-bgDarkGray', 'text-black');
-        // iconArrow[index].classList.replace('rotate-90', 'rotate-[-90deg]');
-        // iconArrow[index].classList.add('rotate-[-90deg]');
-        clickBarIcon.innerHTML = '-';
+        barTitle[index].classList.replace('text-bgDarkGray', 'text-black');
+        clickBarIcon[index].innerHTML = '-';
       } else if (stepParagraph[index].classList.contains('active')) {
         clickBar[index].classList.remove('text-black');
         stepParagraph[index].classList.replace('active', 'inactive');
-        // iconArrow[index].classList.replace('rotate-[-90deg]','rotate-90');
-        clickBarIcon.innerHTML = '+';
-        barTitle.classList.replace('text-black', 'text-bgDarkGray');
+        clickBarIcon[index].innerHTML = '+';
+        barTitle[index].classList.replace('text-black', 'text-bgDarkGray');
       }
     });
   });

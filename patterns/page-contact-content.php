@@ -334,12 +334,12 @@
             <!-- wp:group -->
             <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
-              <div class="wp-block-group text-wrapper flex gap-[10px] desktop:gap-[20px]">
+              <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex gap-[10px] desktop:gap-[20px]">
                 <!-- wp:paragraph -->
-                <p class="w-fit pb-[5px] group-hover:text-primaryYellow uppercase text-bgDarkGray text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
+                <p class="w-[22px] click-bar-icon pb-[5px] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="font-bold text-[24px] text-bgDarkGray font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział sprzedaży</p>
+                <p class="font-bold text-[24px] font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział sprzedaży</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -451,12 +451,12 @@
             <!-- wp:group -->
             <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
-              <div class="wp-block-group text-wrapper flex gap-[10px] desktop:gap-[20px]">
+              <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex gap-[10px] desktop:gap-[20px]">
                 <!-- wp:paragraph -->
-                <p class="w-fit pb-[5px] group-hover:text-primaryYellow uppercase text-bgDarkGray text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
+                <p class="w-[22px] click-bar-icon pb-[5px] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="bar-titlefont-bold text-[24px] text-bgDarkGray font-bold self-center" data-aos="fade-up" data-aos-offset="30">Biuro Zarządu</p>
+                <p class="bar-titlefont-bold text-[24px] font-bold self-center" data-aos="fade-up" data-aos-offset="30">Biuro Zarządu</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
