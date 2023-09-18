@@ -29,11 +29,13 @@
         'order' => 'ASC'
       );
       $post_query = new WP_Query($args);
+      $counter = 0;
 
       if ($post_query->have_posts()) {
         while ($post_query->have_posts()) {
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
+          $counter++;
       ?>
           <!-- wp:list-item -->
           <li class="blog-tile w-full inline-block">
