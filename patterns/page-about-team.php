@@ -25,7 +25,7 @@
   <!-- /wp:group -->
 
   <!-- wp:paragraph -->
-  <a href="#" class="inline-block cursor-default desktop:max-w-[900px] mx-auto" data-aos="fade-right" data-aos-offset="30">
+  <a href="#" class="block cursor-default desktop:max-w-[900px] mx-auto" data-aos="fade-right" data-aos-offset="30">
     <!-- wp:image -->
     <figure class="wp-block-image mb-[30px] desktop:max-w-[900px] mx-auto">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img-team-1.jpeg" alt="team-image">
