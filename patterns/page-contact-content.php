@@ -236,7 +236,7 @@
         <!-- wp:list -->
         <ul class="wp-block-list contact-drop-down mt-[50px] ml-0">
           <!-- wp:list-item -->
-          <li class="list-content-wrapper py-[20px] border-b-[1px] border-[#e8e8e8] transition ease-out duration-[500ms]">
+          <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
             <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
@@ -245,7 +245,7 @@
                 <p class="w-[22px] pb-[5px] click-bar-icon group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="bar-title font-bold text-[24px] font-bold self-center transition ease-out duration-[500ms]" data-aos="fade-up" data-aos-offset="30">Biuro Zarządu</p>
+                <p class="bar-title font-bold text-[24px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold self-center transition ease-out duration-[500ms]" data-aos="fade-up" data-aos-offset="30">Biuro Zarządu</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
