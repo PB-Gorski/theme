@@ -339,8 +339,9 @@ window.addEventListener("load", function() {
   // list sorting
 
 function sortListDir() {
+  console.log('sort');
   let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
-  list = document.getElementById("id01");
+  list = document.querySelector(".wp-block-post-template");
   switching = true;
   dir = "asc"; 
   while (switching) {
@@ -349,12 +350,12 @@ function sortListDir() {
     for (i = 0; i < (b.length - 1); i++) {
       shouldSwitch = false;
       if (dir == "asc") {
-        if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        if (b[i].firstElementChild.firstElementChild.firstElementChild.innerText.toLowerCase() > b[i + 1].firstElementChild.firstElementChild.firstElementChild.innerText.toLowerCase()) {
           shouldSwitch = true;
           break;
         }
       } else if (dir == "desc") {
-        if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) {
+        if (b[i].firstElementChild.firstElementChild.firstElementChild.innerText.toLowerCase() < b[i + 1].firstElementChild.firstElementChild.firstElementChild.innerText.toLowerCase()) {
           shouldSwitch= true;
           break;
         }
@@ -372,6 +373,10 @@ function sortListDir() {
     }
   }
 }
+
+const btnSort = document.querySelector('.js-sort');
+
+btnSort.addEventListener('click', sortListDir);
 
 
 });
