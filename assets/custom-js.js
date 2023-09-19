@@ -387,8 +387,8 @@ window.addEventListener("load", function() {
 
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', () => {
-      sortListDir(index);
       console.log(index);
+      // sortListDir(index);
     });
   });
 
