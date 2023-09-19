@@ -373,8 +373,9 @@ option:hover {
   margin: auto;
   bottom: 0;
 }
-.sort-arrow-active::after{
+.sort-arrow-up::after{
   color: #e80d38;
+  transform: rotate(0);
 }
 .sort-arrow-down::after{
   color: #e80d38;
