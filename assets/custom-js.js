@@ -343,7 +343,6 @@ window.addEventListener("load", function() {
     list = document.querySelector(".wp-block-post-template");
     switching = true;
     dir = "asc"; 
-    // let j = 13;
     while (switching) {
       switching = false;
       b = list.querySelectorAll('.wp-block-post');

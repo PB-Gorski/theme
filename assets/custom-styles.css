@@ -360,3 +360,16 @@ option:hover {
     height: 450px!important;
   }
 }
+
+/* sorting arrow */
+.arrow::after{
+  content: '\25b2';
+  color: #e80d38;
+  position: absolute;
+  right: 10px;
+  font-size: 8px;
+  height: 12px;
+  top: 0;
+  margin: auto;
+  bottom: 0;
+}
