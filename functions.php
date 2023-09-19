@@ -511,3 +511,17 @@ function cptui_register_my_cpts_lokale()
 }
 
 add_action('init', 'cptui_register_my_cpts_lokale', -1);
+
+
+function moveElement(&$array, $a, $b)
+{
+	$out = array_splice($array, $a, 1);
+	array_splice($array, $b, 0, $out);
+}
+
+function custom_tax_ordering($taxonomies, $current_post_type)
+{
+	moveElement($taxonomies, 2, 0);
+	return $taxonomies;
+}
+add_filter('beautiful_filters_taxonomy_order', 'custom_tax_ordering');

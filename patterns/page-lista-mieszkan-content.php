@@ -162,10 +162,12 @@
     </ul>
     <!-- /wp:list -->
 
+    <button onclick="sortListDir()">Sort</button>
+
     <!-- wp:list -->
     <ul class="wp-block-list w-full">
       <!-- wp:list-item -->
-      <li>
+      <li class="test">
         <?php do_action('show_beautiful_filters', 'mieszkania'); ?>
       </li>
       <!-- /wp:list-item -->
