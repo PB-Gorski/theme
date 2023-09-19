@@ -376,7 +376,7 @@ window.addEventListener("load", function() {
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', () => {
       btn.classList.add('sort-arrow-active');
-      btn.classList.contains('sort-arrow-active') ? btn.after.classList.add('rotate-180') : btn.after.classList.add('rotate-0');
+      btn.classList.contains('sort-arrow-active') ? btn.after.style.color =  "green" : btn.after.style.color =  "blue";
       indexFrom1 = index+1
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
     });
