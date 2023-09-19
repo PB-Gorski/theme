@@ -336,59 +336,63 @@ window.addEventListener("load", function() {
   });
 
 
-// list sorting
+  // list sorting
 
-function sortListDir(j) {
-  console.log('sort');
-  let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
-  list = document.querySelector(".wp-block-post-template");
-  switching = true;
-  dir = "asc"; 
-  // let j = 13;
-  while (switching) {
-    switching = false;
-    b = list.querySelectorAll('.wp-block-post');
-    for (i = 0; i < (b.length - 1); i++) {
-      shouldSwitch = false;
-      if (dir == "asc") {
-        if (b[i].firstElementChild.childNodes[j].innerText.toLowerCase() > b[i + 1].firstElementChild.childNodes[j].innerText.toLowerCase()) {
-          shouldSwitch = true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (b[i].firstElementChild.childNodes[j].innerText.toLowerCase() < b[i + 1].firstElementChild.childNodes[j].innerText.toLowerCase()) {
-          shouldSwitch= true;
-          break;
+  function sortListDir(j) {
+    console.log('sort');
+    let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
+    list = document.querySelector(".wp-block-post-template");
+    switching = true;
+    dir = "asc"; 
+    // let j = 13;
+    while (switching) {
+      switching = false;
+      b = list.querySelectorAll('.wp-block-post');
+      for (i = 0; i < (b.length - 1); i++) {
+        shouldSwitch = false;
+        if (dir == "asc") {
+          if (b[i].firstElementChild.childNodes[j].innerText.toLowerCase() > b[i + 1].firstElementChild.childNodes[j].innerText.toLowerCase()) {
+            shouldSwitch = true;
+            break;
+          }
+        } else if (dir == "desc") {
+          if (b[i].firstElementChild.childNodes[j].innerText.toLowerCase() < b[i + 1].firstElementChild.childNodes[j].innerText.toLowerCase()) {
+            shouldSwitch= true;
+            break;
+          }
         }
       }
-    }
-    if (shouldSwitch) {
-      b[i].parentNode.insertBefore(b[i + 1], b[i]);
-      switching = true;
-      switchcount ++;
-    } else {
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
+      if (shouldSwitch) {
+        b[i].parentNode.insertBefore(b[i + 1], b[i]);
         switching = true;
+        switchcount ++;
+      } else {
+        if (switchcount == 0 && dir == "asc") {
+          dir = "desc";
+          switching = true;
+        }
       }
     }
   }
-}
-const btnsSort = document.querySelectorAll('.js-sort');
-const btnSortMiasto = document.querySelector('.js-sort-miasto');
-const btnSortInwestycja = document.querySelector('.js-sort-inwestycja');
-const btnSortPietro = document.querySelector('.js-sort-pietro');
+  const btnsSort = document.querySelectorAll('.js-sort');
+  const btnSortMiasto = document.querySelector('.js-sort-miasto');
+  const btnSortInwestycja = document.querySelector('.js-sort-inwestycja');
+  const btnSortPietro = document.querySelector('.js-sort-pietro');
 
-// btnSortMiasto.addEventListener('click', () => sortListDir(1));
-// btnSortInwestycja.addEventListener('click', () => sortListDir(1));
-// btnSortPietro.addEventListener('click', () => sortListDir(13));
- let i=1
-btnsSort.forEach(btn => {
-  btn.addEventListener('click', () => sortListDir(i));
-  i = i+2;
-  console.log(i);
-});
-// btnSortPietro.addEventListener('click', () => sortListDir(13));
+  // btnSortMiasto.addEventListener('click', () => sortListDir(1));
+  // btnSortInwestycja.addEventListener('click', () => sortListDir(1));
+  // btnSortPietro.addEventListener('click', () => sortListDir(13));
+
+  let i=1;
+
+  btnsSort.forEach(btn => {
+    btn.addEventListener('click', () => {
+      sortListDir(i);
+      i = i+2;
+      console.log(i);
+    });
+  });
+
 
 
 });
