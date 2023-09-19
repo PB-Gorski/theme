@@ -387,8 +387,10 @@ window.addEventListener("load", function() {
 
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', () => {
-      console.log(index+1);
+      indexFrom1 = index+1
+      console.log(indexFrom1);
 
+      indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + 2)
       // sortListDir(index);
     });
   });
