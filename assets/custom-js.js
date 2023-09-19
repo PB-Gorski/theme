@@ -339,7 +339,6 @@ window.addEventListener("load", function() {
   // list sorting
 
   function sortListDir(j) {
-    console.log('sort');
     let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
     list = document.querySelector(".wp-block-post-template");
     switching = true;
@@ -382,8 +381,6 @@ window.addEventListener("load", function() {
   // btnSortMiasto.addEventListener('click', () => sortListDir(1));
   // btnSortInwestycja.addEventListener('click', () => sortListDir(1));
   // btnSortPietro.addEventListener('click', () => sortListDir(13));
-
-  let i=1;
 
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', () => {
