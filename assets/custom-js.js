@@ -380,9 +380,10 @@ window.addEventListener("load", function() {
 
       console.log('before loop: ', indexFrom1 + index);
       for (let i = 0 ; i < (indexFrom1 + index) ; i++){
+        console.log('loop: ', i, '/', indexFrom1 + index);
         if(i != indexFrom1 + index){
           btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down')
-        }
+        };
       }
       if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
         btn.classList.add('sort-arrow-up');
