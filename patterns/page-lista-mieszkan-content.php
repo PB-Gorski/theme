@@ -162,7 +162,9 @@
     </ul>
     <!-- /wp:list -->
 
-    <button onclick="sortListDir()">Sort</button>
+    <!-- wp:paragraph -->
+    <p class="js-sort">Sort</p>
+    <!-- /wp:paragraph -->
 
     <!-- wp:list -->
     <ul class="wp-block-list w-full">
