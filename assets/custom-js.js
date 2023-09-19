@@ -374,21 +374,10 @@ window.addEventListener("load", function() {
     }
   }
   const btnsSort = document.querySelectorAll('.js-sort');
-  const btnSortMiasto = document.querySelector('.js-sort-miasto');
-  const btnSortInwestycja = document.querySelector('.js-sort-inwestycja');
-  const btnSortPietro = document.querySelector('.js-sort-pietro');
-
-  // btnSortMiasto.addEventListener('click', () => sortListDir(1));
-  // btnSortInwestycja.addEventListener('click', () => sortListDir(1));
-  // btnSortPietro.addEventListener('click', () => sortListDir(13));
-
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', () => {
       indexFrom1 = index+1
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
-
-      // indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + 2)
-      // sortListDir(index);
     });
   });
 
