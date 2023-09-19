@@ -377,7 +377,7 @@ function sortListDir(j) {
 const btnSort1 = document.querySelector('.js-sort-miasto');
 btnSort1.addEventListener('click', () => sortListDir(1));
 const btnSort2 = document.querySelector('.js-sort-pietro');
-btnSort.addEventListener('click', () => sortListDir(13));
+btnSort2.addEventListener('click', () => sortListDir(13));
 
 
 });
