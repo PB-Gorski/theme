@@ -374,10 +374,21 @@ function sortListDir(j) {
     }
   }
 }
-const btnSort1 = document.querySelector('.js-sort-miasto');
-btnSort1.addEventListener('click', () => sortListDir(1));
-const btnSort2 = document.querySelector('.js-sort-pietro');
-btnSort2.addEventListener('click', () => sortListDir(13));
+const btnsSort = document.querySelectorAll('.js-sort');
+const btnSortMiasto = document.querySelector('.js-sort-miasto');
+const btnSortInwestycja = document.querySelector('.js-sort-inwestycja');
+const btnSortPietro = document.querySelector('.js-sort-pietro');
+
+btnSortMiasto.addEventListener('click', () => sortListDir(1));
+btnSortInwestycja.addEventListener('click', () => sortListDir(1));
+btnSortPietro.addEventListener('click', () => sortListDir(13));
+ let i=1
+btnsSort.forEach(btn => {
+  btn.addEventListener('click', () => sortListDir(i));
+  i = i+2;
+  console.log(i);
+});
+btnSortPietro.addEventListener('click', () => sortListDir(13));
 
 
 });
