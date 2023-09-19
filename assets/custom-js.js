@@ -338,12 +338,13 @@ window.addEventListener("load", function() {
 
 // list sorting
 
-function sortListDir(j) {
+function sortListDir() {
   console.log('sort');
   let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
   list = document.querySelector(".wp-block-post-template");
   switching = true;
   dir = "asc"; 
+  let j = 1;
   while (switching) {
     switching = false;
     b = list.querySelectorAll('.wp-block-post');
@@ -374,7 +375,7 @@ function sortListDir(j) {
   }
 }
 const btnSort = document.querySelector('.js-sort-miasto');
-btnSort.addEventListener('click', sortListDir(1));
+btnSort.addEventListener('click', sortListDir);
 
 
 });
