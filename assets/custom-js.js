@@ -379,7 +379,7 @@ window.addEventListener("load", function() {
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
 
       console.log('before loop: ', indexFrom1 + index);
-      for (let i = 0 ; i <= (indexFrom1 + index) ; i++){
+      for (let i = 0 ; i < (indexFrom1 + index) ; i++){
         console.log('loop: ', i, '/', indexFrom1 + index);
         if(i != indexFrom1 + index){
           btnsSort[indexFrom1 + index].classList.remove('sort-arrow-up', 'sort-arrow-down');
