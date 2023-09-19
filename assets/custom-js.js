@@ -374,9 +374,11 @@ function sortListDir(j) {
     }
   }
 }
-// const btnSort = document.querySelector('.js-sort-miasto');
-// btnSort.addEventListener('click', sortListDir);
-const btnSort = document.querySelector('.js-sort-pietro');
+const btnSort1 = document.querySelector('.js-sort-miasto');
+btnSort.addEventListener('click', () =>{
+  sortListDir(1);
+});
+const btnSort2 = document.querySelector('.js-sort-pietro');
 btnSort.addEventListener('click', sortListDir(13));
 
 
