@@ -344,7 +344,7 @@ function sortListDir() {
   list = document.querySelector(".wp-block-post-template");
   switching = true;
   dir = "asc"; 
-  let j = 15;
+  let j = 13;
   while (switching) {
     switching = false;
     b = list.querySelectorAll('.wp-block-post');
@@ -374,7 +374,9 @@ function sortListDir() {
     }
   }
 }
-const btnSort = document.querySelector('.js-sort-miasto');
+// const btnSort = document.querySelector('.js-sort-miasto');
+// btnSort.addEventListener('click', sortListDir);
+const btnSort = document.querySelector('.js-sort-pietro');
 btnSort.addEventListener('click', sortListDir);
 
 
