@@ -375,8 +375,11 @@ window.addEventListener("load", function() {
   const btnsSort = document.querySelectorAll('.js-sort');
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', () => {
+      indexFrom1 = index + 1;
+      indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
+
       for (let i = 0 ;i < index ; i++){
-        if(i != index){
+        if(i != indexFrom1 + index){
           btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down')
         }
       }
