@@ -376,7 +376,7 @@ window.addEventListener("load", function() {
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', () => {
       btn.classList.contains('sort-arrow-active') ?  btn.classList.add('sort-arrow-down') : null;
-      btn.classList.contains('sort-arrow-down') ?  btn.classList.add('sort-arrow-actve') : null;
+      btn.classList.contains('sort-arrow-down') ?  btn.classList.remove('sort-arrow-down') : null;
       btn.classList.add('sort-arrow-active');
       indexFrom1 = index+1
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
