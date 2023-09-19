@@ -364,7 +364,7 @@ option:hover {
 /* sorting arrow */
 .sort-arrow::after{
   content: '\25b2';
-  color: #e80d38;
+  color: inherit;
   position: absolute;
   right: 10px;
   font-size: 8px;
@@ -372,4 +372,7 @@ option:hover {
   top: 0;
   margin: auto;
   bottom: 0;
+}
+.sort-arrow-active::after{
+  color: #e80d38;
 }
