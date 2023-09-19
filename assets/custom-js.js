@@ -336,7 +336,7 @@ window.addEventListener("load", function() {
   });
 
 
-  // list sorting
+// list sorting
 
 function sortListDir() {
   console.log('sort');
@@ -373,9 +373,7 @@ function sortListDir() {
     }
   }
 }
-
-const btnSort = document.querySelector('.js-sort');
-
+const btnSort = document.querySelector('.js-sort-miasto');
 btnSort.addEventListener('click', sortListDir);
 
 
