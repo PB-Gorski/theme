@@ -375,7 +375,8 @@ window.addEventListener("load", function() {
   const btnsSort = document.querySelectorAll('.js-sort');
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', () => {
-      btn.classList.add('sort-arrow-active')
+      btn.classList.add('sort-arrow-active');
+      btn.classList.contains('sort-arrow-active') ? btn.after.classList.add('rotate-180') : btn.after.classList.add('rotate-0');
       indexFrom1 = index+1
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
     });
