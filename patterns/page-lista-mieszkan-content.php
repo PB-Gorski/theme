@@ -162,9 +162,7 @@
     </ul>
     <!-- /wp:list -->
 
-    <!-- wp:paragraph -->
-    <p class="js-sort">Sort</p>
-    <!-- /wp:paragraph -->
+
 
     <!-- wp:list -->
     <ul class="wp-block-list w-full">
