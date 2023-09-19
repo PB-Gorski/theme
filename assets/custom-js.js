@@ -395,8 +395,6 @@ window.addEventListener("load", function() {
         btn.classList.remove('sort-arrow-down');
         btn.classList.add('sort-arrow-up');
       }
-      indexFrom1 = index + 1;
-      indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
     });
   });
 
