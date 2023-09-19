@@ -377,7 +377,7 @@ window.addEventListener("load", function() {
     btn.addEventListener('click', () => {
       for (let i = 0 ;i < index ; i++){
         if(i != index){
-          btnsSort[i].classList.removed('sort-arrow-up', 'sort-arrow-down')
+          btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down')
         }
       }
       if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
