@@ -385,11 +385,10 @@ window.addEventListener("load", function() {
 
   let i=1;
 
-  btnsSort.forEach(btn => {
+  btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', () => {
-      sortListDir(i);
-      i = i+2;
-      console.log(i);
+      sortListDir(index);
+      console.log(index);
     });
   });
 
