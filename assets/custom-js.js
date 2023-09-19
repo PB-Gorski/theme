@@ -346,7 +346,7 @@ function sortListDir() {
   dir = "asc"; 
   while (switching) {
     switching = false;
-    b = list.getElementsByTagName("LI");
+    b = list.querySelectorAll('.wp-block-post');
     for (i = 0; i < (b.length - 1); i++) {
       shouldSwitch = false;
       if (dir == "asc") {
