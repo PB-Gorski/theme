@@ -344,18 +344,19 @@ function sortListDir() {
   list = document.querySelector(".wp-block-post-template");
   switching = true;
   dir = "asc"; 
+  let j = 0;
   while (switching) {
     switching = false;
     b = list.querySelectorAll('.wp-block-post');
     for (i = 0; i < (b.length - 1); i++) {
       shouldSwitch = false;
       if (dir == "asc") {
-        if (b[i].firstElementChild.firstElementChild.firstElementChild.innerText.toLowerCase() > b[i + 1].firstElementChild.firstElementChild.firstElementChild.innerText.toLowerCase()) {
+        if (b[i].firstElementChild.childNodes[j].innerText.toLowerCase() > b[i + 1].firstElementChild.childNodes[j].innerText.toLowerCase()) {
           shouldSwitch = true;
           break;
         }
       } else if (dir == "desc") {
-        if (b[i].firstElementChild.firstElementChild.firstElementChild.innerText.toLowerCase() < b[i + 1].firstElementChild.firstElementChild.firstElementChild.innerText.toLowerCase()) {
+        if (b[i].firstElementChild.childNodes[j].innerText.toLowerCase() < b[i + 1].firstElementChild.childNodes[j].innerText.toLowerCase()) {
           shouldSwitch= true;
           break;
         }
