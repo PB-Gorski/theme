@@ -374,7 +374,6 @@ window.addEventListener("load", function() {
   }
   const btnsSort = document.querySelectorAll('.js-sort');
   btnsSort.forEach((btn,index) => {
-    btn.classList.remove('sort-arrow-up', 'sort-arrow-down')
     btn.addEventListener('click', () => {
       if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
         btn.classList.add('sort-arrow-up');
@@ -387,6 +386,7 @@ window.addEventListener("load", function() {
       }
       indexFrom1 = index + 1;
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
+      btn.classList.remove('sort-arrow-up', 'sort-arrow-down')
     });
   });
 
