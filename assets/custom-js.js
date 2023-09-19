@@ -379,16 +379,16 @@ const btnSortMiasto = document.querySelector('.js-sort-miasto');
 const btnSortInwestycja = document.querySelector('.js-sort-inwestycja');
 const btnSortPietro = document.querySelector('.js-sort-pietro');
 
-btnSortMiasto.addEventListener('click', () => sortListDir(1));
-btnSortInwestycja.addEventListener('click', () => sortListDir(1));
-btnSortPietro.addEventListener('click', () => sortListDir(13));
+// btnSortMiasto.addEventListener('click', () => sortListDir(1));
+// btnSortInwestycja.addEventListener('click', () => sortListDir(1));
+// btnSortPietro.addEventListener('click', () => sortListDir(13));
  let i=1
 btnsSort.forEach(btn => {
   btn.addEventListener('click', () => sortListDir(i));
   i = i+2;
   console.log(i);
 });
-btnSortPietro.addEventListener('click', () => sortListDir(13));
+// btnSortPietro.addEventListener('click', () => sortListDir(13));
 
 
 });
