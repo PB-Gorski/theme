@@ -389,7 +389,7 @@ window.addEventListener("load", function() {
     btn.addEventListener('click', () => {
       indexFrom1 = index+1
       console.log(indexFrom1);
-      indexFrom1 == 1 ? console.log(indexFrom1) : console.log(indexFrom1 + index);
+      indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
 
       // indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + 2)
       // sortListDir(index);
