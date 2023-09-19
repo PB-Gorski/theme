@@ -344,7 +344,7 @@ function sortListDir() {
   list = document.querySelector(".wp-block-post-template");
   switching = true;
   dir = "asc"; 
-  let j = 1;
+  let j = 3;
   while (switching) {
     switching = false;
     b = list.querySelectorAll('.wp-block-post');
