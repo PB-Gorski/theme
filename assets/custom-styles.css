@@ -362,7 +362,7 @@ option:hover {
 }
 
 /* sorting arrow */
-.arrow::after{
+.sort-arrow::after{
   content: '\25b2';
   color: #e80d38;
   position: absolute;
