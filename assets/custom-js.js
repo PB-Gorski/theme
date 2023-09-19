@@ -382,7 +382,8 @@ window.addEventListener("load", function() {
       for (let i = 0 ; i < (indexFrom1 + index) ; i++){
         console.log('loop: ', i, '/', indexFrom1 + index);
         if(i != indexFrom1 + index){
-          btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down')
+          btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down');
+          console.log('i != clicked: ', i);
         };
       }
       if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
