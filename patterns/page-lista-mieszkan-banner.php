@@ -110,14 +110,14 @@
         <!-- wp:group -->
         <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
           <!-- wp:paragraph -->
-          <p data-aos="fade-up" data-aos-offset="30">Znajdź mieszkanie</p>
+          <p data-aos="fade-right" data-aos-offset="30">Znajdź mieszkanie</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
         <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <p class="max-w-[550px] text-white opacity-[0.75]" data-aos="fade-up" data-aos-offset="30">Określ parametry, aby znaleźć mieszkanie dokładnie
+          <p class="max-w-[550px] text-white opacity-[0.75]" data-aos="fade-right" data-aos-offset="30">Określ parametry, aby znaleźć mieszkanie dokładnie
             takie, jakiego potrzebujesz.</p>
           <!-- /wp:paragraph -->
         </div>
