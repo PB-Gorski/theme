@@ -374,8 +374,8 @@ window.addEventListener("load", function() {
   }
   const btnsSort = document.querySelectorAll('.js-sort');
   btnsSort.forEach((btn,index) => {
+    btn.classList.remove('sort-arrow-up', 'sort-arrow-down')
     btn.addEventListener('click', () => {
-      btn.classList.remove('sort-arrow-up', 'sort-arrow-down')
       if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
         btn.classList.add('sort-arrow-up');
       }else if( btn.classList.contains('sort-arrow-up')){
