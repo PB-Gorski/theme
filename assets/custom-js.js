@@ -385,8 +385,9 @@ window.addEventListener("load", function() {
           btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
           console.log('i != clicked: ', i);
         };
-      }
-      if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
+      };
+
+      if( !btn.classList.contains('sort-arrow-up') || !btn.classList.contains('sort-arrow-down') ){
         btn.classList.add('sort-arrow-up');
       }else if( btn.classList.contains('sort-arrow-up')){
         btn.classList.remove('sort-arrow-up');
