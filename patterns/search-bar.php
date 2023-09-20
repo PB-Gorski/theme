@@ -90,7 +90,6 @@
       <!-- wp:list-item -->
       <li>
         <?php do_action('show_beautiful_filters', 'mieszkania'); ?>
-        <?php do_action('modify_show_count', 'mieszkania'); ?>
       </li>
       <!-- /wp:list-item -->
     </ul>

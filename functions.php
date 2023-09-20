@@ -511,11 +511,3 @@ function cptui_register_my_cpts_lokale()
 }
 
 add_action('init', 'cptui_register_my_cpts_lokale', -1);
-
-
-function modify_show_count($bool, $current_post_type)
-{
-
-	return $bool;
-}
-add_filter('beautiful_filters_show_empty', 'modify_show_count', 10, 2);
