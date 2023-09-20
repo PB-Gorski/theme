@@ -414,7 +414,7 @@ window.addEventListener("load", function() {
           }
         }else if(i != currentFiltr){
           console.log('others', btnsSort[i-counter]);
-          btnsSort[i-counter].classList.remove('sort-arrow-up','sort-arrow-up')
+          btnsSort[i-counter].classList.remove('sort-arrow-up','sort-arrow-down')
         }
         counter++
         // console.log('current filtr: ', currentFiltr);
