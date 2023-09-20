@@ -383,7 +383,6 @@ window.addEventListener("load", function() {
       currentFiltr = indexFrom1 + index;
 
       for (let i = 1 ; i <= (17) ; i=i+2){
-        console.log(i);
         if (i == currentFiltr){
           if( btnsSort[currentFiltr-counter].classList.contains('sort-arrow-up')){
             btnsSort[currentFiltr-counter].classList.remove('sort-arrow-up');
