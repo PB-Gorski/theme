@@ -21,11 +21,11 @@
 
 <form action="#" method="post">
   <select name="tax">
-    <option value="Red">miasto</option>
+    <option value="miasto">miasto</option>
   </select>
   <select name="term">
-    <option value="Red">Gdansk</option>
-    <option value="Green">Gdynia</option>
+    <option value="Gdansk">Gdansk</option>
+    <option value="Gdynia">Gdynia</option>
   </select>
   <input type="submit" name="submit" value="Get Selected Values" />
 </form>
