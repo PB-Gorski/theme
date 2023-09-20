@@ -410,6 +410,7 @@ window.addEventListener("load", function() {
             btnsSort[currentFiltr-counter].classList.add('sort-arrow-down');
           }else{
             btnsSort[currentFiltr-counter].classList.add('sort-arrow-up');
+            btnsSort[currentFiltr-counter].classList.remove('sort-arrow-down');
           }
         }else{
           // console.log('others', );
