@@ -386,18 +386,19 @@ window.addEventListener("load", function() {
       //     console.log('i != clicked: ', i);
       //   };
       // };
+
       indexFrom1 = index + 1;
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
+      currentFiltr = indexFrom1 + index;
 
       console.log('before loop: ', indexFrom1 + index);
       for (let i = 0 ; i < (17) ; i++){
         console.log('i: ', i);
         console.log('index: ', index);
         console.log('indexFrom1: : ',indexFrom1);
-        if(i != indexFrom1 + index){
+        if(i != currentFiltr){
           console.log(btnsSort[i]);
           btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : console.log('empty');;
-          
           console.log('not current: ', i);
         }else{console.log('current: ', i);};
         // btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down');
