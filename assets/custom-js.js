@@ -373,6 +373,9 @@ window.addEventListener("load", function() {
     }
   }
 
+
+
+
   // const btnsSort = document.querySelectorAll('.js-sort');
   // let counter = 1;
 
@@ -425,15 +428,8 @@ window.addEventListener("load", function() {
       indexFrom1 = index + 1;
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
       currentFiltr = indexFrom1 + index;
-
-      console.log('currentItem: ',  currentItem);
-      console.log('currentIteIndex: ', currentFiltr);
-
-
-      console.log('before loop: ', indexFrom1 + index);
       
       for (let i = 1 ; i <= (17) ; i=i+2){
-        console.log(i);
         if (i == currentFiltr){
           console.log(currentFiltr,currentFiltr);
           console.log('current', btnsSort[currentFiltr-counter]);
@@ -449,42 +445,8 @@ window.addEventListener("load", function() {
           btnsSort[i-counter].classList.remove('sort-arrow-up','sort-arrow-down')
         }
         counter++
-        // console.log('current filtr: ', currentFiltr);
-        // console.log('i: ', i);
-        // console.log('index: ', index);
-        // console.log('indexFrom1: : ', indexFrom1);
-
-        // counter = 1;
-        // console.log(btnsSort[i + 1 + counter]);
-        // counter++;
-
-        // if(i != currentFiltr){
-        //   console.log(btnsSort[i]);
-        //   btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : console.log('empty');;
-        //   console.log('not current: ', i);
-        // }else{
-        //   console.log('current: ', i);
-        //   if(btn.classList.contains('sort-arrow-up')){
-        //     console.log('should remove up');
-        //     btn.classList.remove('sort-arrow-up');
-        //     btn.classList.add('sort-arrow-down');
-        //   }else if( btn.classList.contains('sort-arrow-down')){
-        //     console.log('should remove down');
-        //     btn.classList.remove('sort-arrow-down');
-        //     btn.classList.add('sort-arrow-up');
-        //   }
-        // };
-        // btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down');
-        console.log('--------------------------');
       };
       counter=1;
-
-      // if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
-      //   btn.classList.toggle('sort-arrow-up');
-      // }
-
-
-
     });
   });
 
