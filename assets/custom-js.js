@@ -374,8 +374,12 @@ window.addEventListener("load", function() {
   }
   const btnsSort = document.querySelectorAll('.js-sort');
   btnsSort.forEach((btn,index) => {
+    btnIndex = 1;
     btn.addEventListener('click', (e) => {
-      console.log('e.taget: ',e.target);
+      currentItem = e.target;
+      btnIndex
+      console.log('currentItem: ',  currentItem);
+      console.log('currentIteIndex: ',  btnIndex);
       // indexFrom1 = index + 1;
       // indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
 
@@ -430,6 +434,7 @@ window.addEventListener("load", function() {
 
 
     });
+    btnIndex = btnIndex + 2
   });
 
 
