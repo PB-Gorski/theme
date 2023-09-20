@@ -19,16 +19,16 @@
 
 ?>
 
-<!-- <form action="#" method="post">
+<form action="#" method="post">
   <select name="tax">
     <option value="miasto">miasto</option>
   </select>
-  <select name="term">
+  <!-- <select name="term">
     <option value="Gdansk">Gdansk</option>
     <option value="Gdynia">Gdynia</option>
-  </select>
+  </select> -->
   <input type="submit" name="submit" value="Szukaj" />
-</form> -->
+</form>
 
 <?php
 if (isset($_POST['submit'])) {
@@ -38,6 +38,7 @@ if (isset($_POST['submit'])) {
   $selected_val2 = $_POST['select-miasto'];
 }
 
+echo $selected_val1;
 echo $selected_val2;
 
 // $taxonomy = $selected_val1 == true ?  $selected_val1 : 'miasto';
