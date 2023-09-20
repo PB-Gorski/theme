@@ -394,13 +394,13 @@ window.addEventListener("load", function() {
         console.log('i: ', i);
         console.log('index: ', index);
         console.log('indexFrom1: : ',indexFrom1);
-        // if(i != indexFrom1 + index){
-        //   console.log(btnsSort[i]);
-        //   // btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
+        if(i != indexFrom1 + index){
+          console.log(btnsSort[i]);
+          btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
           
-        //   console.log('i != clicked: ', i);
-        // };
-        btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down');
+          console.log('current: ', i);
+        };
+        // btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down');
       };
 
       if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
