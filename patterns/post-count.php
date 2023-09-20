@@ -23,6 +23,16 @@ $query = new WP_Query(array(
   'post_status' => 'publish'
 ));
 $count = $query->found_posts;
+
+function modify_show_count($bool, $current_post_type)
+{
+
+  return $bool;
+}
+add_filter('beautiful_filters_show_empty', 'modify_show_count', 10, 2);
+
+print_r(modify_show_count(true, 'mieszkania'));
+
 ?>
 
 <!-- wp:paragraph -->
