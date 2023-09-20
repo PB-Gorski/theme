@@ -397,7 +397,7 @@ window.addEventListener("load", function() {
 
       console.log('currentItem: ',  currentItem);
       console.log('currentIteIndex: ', currentFiltr);
-      counter++
+
 
       console.log('before loop: ', indexFrom1 + index);
       for (let i = 1 ; i <= (17) ; i=i+2){
