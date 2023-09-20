@@ -387,9 +387,10 @@ window.addEventListener("load", function() {
         };
       };
 
-      if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
-        btn.classList.add('sort-arrow-up');
-      }
+      // if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
+      //   btn.classList.add('sort-arrow-up');
+      // }
+      btn.classList.toggle('sort-arrow-up');
       if( btn.classList.contains('sort-arrow-up')){
         console.log('should remove up');
         btn.classList.remove('sort-arrow-up');
