@@ -378,9 +378,7 @@ window.addEventListener("load", function() {
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', (e) => {
       currentItem = e.target;
-      console.log('currentItem: ',  currentItem);
-      console.log('currentIteIndex: ', currentFiltr);
-      counter++
+
       // indexFrom1 = index + 1;
       // indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
 
@@ -396,6 +394,10 @@ window.addEventListener("load", function() {
       indexFrom1 = index + 1;
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
       currentFiltr = indexFrom1 + index;
+
+      console.log('currentItem: ',  currentItem);
+      console.log('currentIteIndex: ', currentFiltr);
+      counter++
 
       console.log('before loop: ', indexFrom1 + index);
       for (let i = 0 ; i < (17) ; i++){
