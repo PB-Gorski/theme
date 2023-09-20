@@ -27,17 +27,15 @@
     <option value="Gdansk">Gdansk</option>
     <option value="Gdynia">Gdynia</option>
   </select>
-  <input type="submit" name="submit" value="Get Selected Values" />
+  <input type="submit" name="submit" value="Szukaj" />
 </form>
 
 <?php
 if (isset($_POST['submit'])) {
-  $selected_val1 = $_POST['tax'];  // Storing Selected Value In Variable
-  // echo "You have selected :" . $selected_val1;  // Displaying Selected Value
+  $selected_val1 = $_POST['tax'];
 }
 if (isset($_POST['submit'])) {
-  $selected_val2 = $_POST['term'];  // Storing Selected Value In Variable
-  // echo "You have selected :" . $selected_val2;  // Displaying Selected Value
+  $selected_val2 = $_POST['term'];
 }
 
 $taxonomy = $selected_val1 == true ?  $selected_val1 : 'miasto';
