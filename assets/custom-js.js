@@ -393,9 +393,10 @@ window.addEventListener("load", function() {
 
       console.log('before loop: ', indexFrom1 + index);
       for (let i = 0 ; i < (17) ; i++){
+        console.log('current filtr: ', currentFiltr);
         console.log('i: ', i);
         console.log('index: ', index);
-        console.log('indexFrom1: : ',indexFrom1);
+        console.log('indexFrom1: : ', indexFrom1);
         if(i != currentFiltr){
           console.log(btnsSort[i]);
           btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : console.log('empty');;
