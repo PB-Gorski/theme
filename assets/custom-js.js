@@ -402,7 +402,7 @@ window.addEventListener("load", function() {
       
       for (let i = 1 ; i <= (17) ; i=i+2){
         console.log(i);
-        if (i==currentFiltr){
+        if (i == currentFiltr){
           console.log(currentFiltr,currentFiltr);
           console.log('current', btnsSort[currentFiltr-counter]);
           if( btnsSort[currentFiltr-counter].classList.contains('sort-arrow-up')){
@@ -413,7 +413,7 @@ window.addEventListener("load", function() {
             btnsSort[currentFiltr-counter].classList.remove('sort-arrow-down');
           }
         }else{
-          // console.log('others', );
+          console.log('others', btnsSort[currentFiltr-counter]);
         }
         counter++
         // console.log('current filtr: ', currentFiltr);
