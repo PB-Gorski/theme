@@ -40,8 +40,8 @@ if (isset($_POST['submit'])) {
   echo "You have selected :" . $selected_val2;  // Displaying Selected Value
 }
 
-$taxonomy = $selected_val1;
-$term = $selected_val2;
+$taxonomy = $selected_val1 ? $selected_val1 : 'miasto';
+$term = $selected_val2 ? $selected_val2 : 'Gdynia';
 
 $query = new WP_Query(array(
   $taxonomy => $term,
