@@ -398,7 +398,7 @@ window.addEventListener("load", function() {
           console.log(btnsSort[i]);
           btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
           
-          console.log('current: ', i);
+          console.log('not current: ', i);
         };
         // btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down');
       };
