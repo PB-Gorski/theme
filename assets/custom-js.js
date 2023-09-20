@@ -378,7 +378,7 @@ window.addEventListener("load", function() {
       indexFrom1 = index + 1;
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
 
-      console.log('before loop: ', indexFrom1 + index);
+      // console.log('before loop: ', indexFrom1 + index);
       // for (let i = 0 ; i < (indexFrom1 + index) ; i++){
       //   console.log('loop: ', i, '/', indexFrom1 + index);
       //   if(i != indexFrom1 + index){
@@ -402,6 +402,7 @@ window.addEventListener("load", function() {
         btn.classList.add('sort-arrow-up');
         return;
       }
+
       console.log('before loop: ', indexFrom1 + index);
       for (let i = 0 ; i < (indexFrom1 + index) ; i++){
         console.log('loop: ', i, '/', indexFrom1 + index);
