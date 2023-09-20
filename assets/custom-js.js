@@ -394,7 +394,8 @@ window.addEventListener("load", function() {
         console.log('should remove up');
         btn.classList.remove('sort-arrow-up');
         btn.classList.add('sort-arrow-down');
-      }else if( btn.classList.contains('sort-arrow-down') ){
+      }else if( btn.classList.contains('sort-arrow-down')){
+        console.log('should remove down');
         btn.classList.remove('sort-arrow-down');
         btn.classList.add('sort-arrow-up');
       }
