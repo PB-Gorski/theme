@@ -14,8 +14,10 @@ $numTerms = wp_count_terms('miasto', array(
 echo $numTerms;
 echo '<br>';
 
+$taxonomy = 'miasto';
+$term = 'Gdynia';
 $query = new WP_Query(array(
-  'miasto' => 'Gdynia',
+  $taxonomy => $term,
   'post_status' => 'publish'
 ));
 
