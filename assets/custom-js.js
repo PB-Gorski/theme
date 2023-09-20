@@ -399,7 +399,7 @@ window.addEventListener("load", function() {
           btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
           
           console.log('not current: ', i);
-        };
+        }else{console.log('current: ', i);};
         // btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down');
       };
 
