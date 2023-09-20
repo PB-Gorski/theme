@@ -414,7 +414,7 @@ window.addEventListener("load", function() {
         }else{
           // console.log('others', );
         }
-        // counter++
+        counter++
         // console.log('current filtr: ', currentFiltr);
         // console.log('i: ', i);
         // console.log('index: ', index);
@@ -443,6 +443,7 @@ window.addEventListener("load", function() {
         // btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down');
         console.log('--------------------------');
       };
+      counter=1;
 
       // if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
       //   btn.classList.toggle('sort-arrow-up');
