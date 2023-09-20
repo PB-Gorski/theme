@@ -375,8 +375,8 @@ window.addEventListener("load", function() {
   const btnsSort = document.querySelectorAll('.js-sort');
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', () => {
-      indexFrom1 = index + 1;
-      indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
+      // indexFrom1 = index + 1;
+      // indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
 
       // console.log('before loop: ', indexFrom1 + index);
       // for (let i = 0 ; i < (indexFrom1 + index) ; i++){
@@ -397,7 +397,7 @@ window.addEventListener("load", function() {
         btn.classList.add('sort-arrow-down');
         return;
       }else if( btn.classList.contains('sort-arrow-down')){
-        console.log('should remove up');
+        console.log('should remove down');
         btn.classList.remove('sort-arrow-down');
         btn.classList.add('sort-arrow-up');
         return;
@@ -405,6 +405,7 @@ window.addEventListener("load", function() {
 
       indexFrom1 = index + 1;
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
+      console.log(indexFrom1);
 
       console.log('before loop: ', indexFrom1 + index);
       for (let i = 0 ; i < (indexFrom1 + index) ; i++){
