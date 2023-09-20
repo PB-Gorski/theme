@@ -375,7 +375,8 @@ window.addEventListener("load", function() {
   const btnsSort = document.querySelectorAll('.js-sort');
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', (e) => {
-      console.log(e.target);
+      console.log(this.target);
+      console.log(target);
       // indexFrom1 = index + 1;
       // indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
 
