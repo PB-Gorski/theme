@@ -400,7 +400,8 @@ window.addEventListener("load", function() {
       counter++
 
       console.log('before loop: ', indexFrom1 + index);
-      for (let i = 0 ; i < (17) ; i++){
+      for (let i = 1 ; i < (17) ; i=i+2){
+        console.log(i);
         // console.log('current filtr: ', currentFiltr);
         // console.log('i: ', i);
         // console.log('index: ', index);
