@@ -6,13 +6,14 @@
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
-$numTerms = wp_count_terms('miasto', array(
-  'hide_empty' => false,
-  'name' => 'Gdansk'
-));
 
-echo $numTerms;
-echo '<br>';
+// $numTerms = wp_count_terms('miasto', array(
+//   'hide_empty' => false,
+//   'name' => 'Gdansk'
+// ));
+
+// echo $numTerms;
+// echo '<br>';
 
 $taxonomy = 'miasto';
 $term = 'Gdynia';
