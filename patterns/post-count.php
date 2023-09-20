@@ -22,6 +22,7 @@
 <form action="#" method="post">
   <select name="tax">
     <option value="miasto">miasto</option>
+    <option value="pokoje">pokoje</option>
   </select>
   <select name="term">
     <option value="Gdansk">Gdansk</option>
@@ -38,7 +39,7 @@ if (isset($_POST['submit'])) {
   $selected_val2 = $_POST['term'];
 }
 
-echo $selected_val1  == true ? $selected_val2 : 'brak1';;
+echo $selected_val1  == true ? $selected_val1 : 'brak1';;
 echo $selected_val2  == true ? $selected_val2 : 'brak2';;
 
 // $taxonomy = $selected_val1 == true ?  $selected_val1 : 'miasto';
