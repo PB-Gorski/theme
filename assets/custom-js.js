@@ -395,8 +395,8 @@ window.addEventListener("load", function() {
         console.log('index: ', index);
         console.log('indexFrom1: : ',indexFrom1);
         if(i != indexFrom1 + index){
-          console.log(btnsSort[index]);
-          btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
+          console.log(btnsSort[i]);
+          btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : console.log('empty');;
           
           console.log('not current: ', i);
         }else{console.log('current: ', i);};
