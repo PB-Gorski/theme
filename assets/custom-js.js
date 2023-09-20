@@ -392,14 +392,14 @@ window.addEventListener("load", function() {
       currentFiltr = indexFrom1 + index;
 
       console.log('before loop: ', indexFrom1 + index);
-      for (let i = 1 ; i < (17) ; i=i+2){
+      for (let i = 0 ; i < (17) ; i){
         console.log('current filtr: ', currentFiltr);
         console.log('i: ', i);
         console.log('index: ', index);
         console.log('indexFrom1: : ', indexFrom1);
 
         counter = 1;
-        console.log(btnsSort[i + counter]);
+        console.log(btnsSort[i + 1 + counter]);
         counter++;
 
         // if(i != currentFiltr){
