@@ -402,6 +402,14 @@ window.addEventListener("load", function() {
         btn.classList.add('sort-arrow-up');
         return;
       }
+      console.log('before loop: ', indexFrom1 + index);
+      for (let i = 0 ; i < (indexFrom1 + index) ; i++){
+        console.log('loop: ', i, '/', indexFrom1 + index);
+        if(i != indexFrom1 + index){
+          btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
+          console.log('i != clicked: ', i);
+        };
+      };
     });
   });
 
