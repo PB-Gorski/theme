@@ -405,6 +405,7 @@ window.addEventListener("load", function() {
         console.log(i);
         if (i==currentFiltr){
           console.log('current', btnsSort[currentFiltr-counter]);
+          btnsSort[currentFiltr-counter].classList.toggle('sort-arrow-up');
         }else{
           console.log('others', );
         }
