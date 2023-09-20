@@ -400,8 +400,13 @@ window.addEventListener("load", function() {
       counter++
 
       console.log('before loop: ', indexFrom1 + index);
-      for (let i = 1 ; i < (17) ; i=i+2){
+      for (let i = 1 ; i <= (17) ; i=i+2){
         console.log(i);
+        if (i==currentFiltr){
+          console.log('current', btn);
+        }else{
+          console.log('others', btnsSort[index]);
+        }
         // console.log('current filtr: ', currentFiltr);
         // console.log('i: ', i);
         // console.log('index: ', index);
