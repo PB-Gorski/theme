@@ -24,6 +24,8 @@ $query = new WP_Query(array(
 ));
 $count = $query->found_posts;
 
+modify_show_count(true, 'mieszkania');
+
 ?>
 
 <!-- wp:paragraph -->
