@@ -24,20 +24,20 @@ print_r($count);
 
 echo '<br>';
 
-function wp_get_productcat_postcount($id)
+function wp_get_productcat_postcount()
 {
 
   //return $count;
   $args = array(
-    'post_type'     => 'product', //post type, I used 'product'
+    'post_type'     => 'mieszkania', //post type, I used 'product'
     'post_status'   => 'publish', // just tried to find all published post
     'posts_per_page' => -1,  //show all
     'tax_query' => array(
       'relation' => 'AND',
       array(
-        'taxonomy' => 'product_cat',  //taxonomy name  here, I used 'product_cat'
+        'taxonomy' => 'miasto',  //taxonomy name  here, I used 'product_cat'
         'field' => 'id',
-        'terms' => array($id)
+        'terms' => 'Gdynia'
       )
     )
   );
@@ -53,6 +53,7 @@ function wp_get_productcat_postcount($id)
 
   return (int)$query->post_count;
 }
+print_r(wp_get_productcat_postcount());
 ?>
 
 <!-- wp:paragraph -->
