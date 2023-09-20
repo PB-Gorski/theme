@@ -373,12 +373,12 @@ window.addEventListener("load", function() {
     }
   }
   const btnsSort = document.querySelectorAll('.js-sort');
-  btnIndex = 1;
+  btnIndex=1
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', (e) => {
       currentItem = e.target;
       console.log('currentItem: ',  currentItem);
-      console.log('currentIteIndex: ',  btnIndex);
+      console.log('currentIteIndex: ',  btnIndex+2);
       // indexFrom1 = index + 1;
       // indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
 
@@ -433,7 +433,6 @@ window.addEventListener("load", function() {
 
 
     });
-    btnIndex = btnIndex + 2
   });
 
 
