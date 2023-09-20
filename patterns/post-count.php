@@ -23,15 +23,13 @@
   <select name="tax">
     <option value="Red">miasto</option>
   </select>
-  <input type="submit" name="submit" value="Get Selected Values" />
-</form>
-<form action="#" method="post">
   <select name="term">
     <option value="Red">Gdansk</option>
     <option value="Green">Gdynia</option>
   </select>
   <input type="submit" name="submit" value="Get Selected Values" />
 </form>
+
 <?php
 if (isset($_POST['submit'])) {
   $selected_val = $_POST['tax'];  // Storing Selected Value In Variable
