@@ -388,8 +388,8 @@ window.addEventListener("load", function() {
             btnsSort[currentFiltr-counter].classList.remove('sort-arrow-up');
             btnsSort[currentFiltr-counter].classList.add('sort-arrow-down');
           }else{
-            btnsSort[currentFiltr-counter].classList.add('sort-arrow-up');
             btnsSort[currentFiltr-counter].classList.remove('sort-arrow-down');
+            btnsSort[currentFiltr-counter].classList.add('sort-arrow-up');
           }
         }else if(i != currentFiltr){
           btnsSort[i-counter].classList.remove('sort-arrow-up','sort-arrow-down')
