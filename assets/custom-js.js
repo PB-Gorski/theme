@@ -401,6 +401,7 @@ window.addEventListener("load", function() {
           console.log('not current: ', i);
         }else{console.log('current: ', i);};
         // btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down');
+        console.log('--------------------------');
       };
 
       if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
