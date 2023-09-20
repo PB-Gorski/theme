@@ -32,15 +32,15 @@
 
 <?php
 if (isset($_POST['submit'])) {
-  $selected_val = $_POST['tax'];  // Storing Selected Value In Variable
+  $selected_val1 = $_POST['tax'];  // Storing Selected Value In Variable
   // echo "You have selected :" . $selected_val1;  // Displaying Selected Value
 }
 if (isset($_POST['submit'])) {
-  $selected_val = $_POST['term'];  // Storing Selected Value In Variable
+  $selected_val2 = $_POST['term'];  // Storing Selected Value In Variable
   // echo "You have selected :" . $selected_val2;  // Displaying Selected Value
 }
 
-$taxonomy = $selected_val1 == true ? $selected_val1 : 'miasto';
+$taxonomy = $selected_val1 == true ?  $selected_val1 : 'miasto';
 $term = $selected_val2 == true ? $selected_val2 : 'Gdynia';
 
 $query = new WP_Query(array(
