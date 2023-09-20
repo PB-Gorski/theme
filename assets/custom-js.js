@@ -382,7 +382,7 @@ window.addEventListener("load", function() {
       for (let i = 0 ; i < (indexFrom1 + index) ; i++){
         console.log('loop: ', i, '/', indexFrom1 + index);
         if(i != indexFrom1 + index){
-          btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : btnsSort[i].classList.add('test');
+          btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
           console.log('i != clicked: ', i);
         };
       };
