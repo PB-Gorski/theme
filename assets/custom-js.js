@@ -399,7 +399,7 @@ window.addEventListener("load", function() {
         console.log('indexFrom1: : ', indexFrom1);
 
         counter = 1;
-        console.log(btnsSort[i - 1 + counter]);
+        console.log(btnsSort[i + counter]);
         counter++;
 
         // if(i != currentFiltr){
