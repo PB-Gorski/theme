@@ -29,8 +29,8 @@ if (!$query->have_posts()) {
     $query->the_post();
     $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
     $counter++;
-    the_terms(the_ID(), 'mieszkania');
-    the_terms(get_the_ID(), 'mieszkania');
+    the_title();
+    echo wp_count_posts();
   }
 }
 
