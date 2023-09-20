@@ -417,9 +417,9 @@ window.addEventListener("load", function() {
         console.log('--------------------------');
       };
 
-      if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
-        btn.classList.toggle('sort-arrow-up');
-      }
+      // if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
+      //   btn.classList.toggle('sort-arrow-up');
+      // }
 
 
 
