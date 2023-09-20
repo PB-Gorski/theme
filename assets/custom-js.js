@@ -373,12 +373,14 @@ window.addEventListener("load", function() {
     }
   }
   const btnsSort = document.querySelectorAll('.js-sort');
-  btnIndex=1
+  btnIndex=1;
+  counter=1;
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', (e) => {
       currentItem = e.target;
       console.log('currentItem: ',  currentItem);
-      console.log('currentIteIndex: ',  btnIndex=index+2);
+      console.log('currentIteIndex: ',  btnIndex=index+counter);
+      counter++
       // indexFrom1 = index + 1;
       // indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
 
@@ -397,14 +399,14 @@ window.addEventListener("load", function() {
 
       console.log('before loop: ', indexFrom1 + index);
       for (let i = 0 ; i < (17) ; i++){
-        console.log('current filtr: ', currentFiltr);
-        console.log('i: ', i);
-        console.log('index: ', index);
-        console.log('indexFrom1: : ', indexFrom1);
+        // console.log('current filtr: ', currentFiltr);
+        // console.log('i: ', i);
+        // console.log('index: ', index);
+        // console.log('indexFrom1: : ', indexFrom1);
 
-        counter = 1;
-        console.log(btnsSort[i + 1 + counter]);
-        counter++;
+        // counter = 1;
+        // console.log(btnsSort[i + 1 + counter]);
+        // counter++;
 
         // if(i != currentFiltr){
         //   console.log(btnsSort[i]);
