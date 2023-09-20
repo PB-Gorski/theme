@@ -403,7 +403,7 @@ window.addEventListener("load", function() {
       for (let i = 1 ; i <= (17) ; i=i+2){
         console.log(i);
         if (i==currentFiltr){
-          console.log('current', btnsSort[currentFiltr-2]);
+          console.log('current', btnsSort[currentFiltr-counter]);
         }else{
           console.log('others', );
         }
