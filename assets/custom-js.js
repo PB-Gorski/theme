@@ -397,7 +397,7 @@ window.addEventListener("load", function() {
         console.log('i: ', i);
         console.log('index: ', index);
         console.log('indexFrom1: : ', indexFrom1);
-        if(i+2 != currentFiltr){
+        if(i != currentFiltr){
           console.log(btnsSort[i]);
           btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : console.log('empty');;
           console.log('not current: ', i);
