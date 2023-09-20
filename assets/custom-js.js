@@ -405,8 +405,12 @@ window.addEventListener("load", function() {
         console.log(i);
         if (i==currentFiltr){
           console.log('current', btnsSort[currentFiltr-counter]);
-          !btnsSort[currentFiltr-counter].classList.contains('sort-arrow-up') ? btnsSort[currentFiltr-counter].classList.add('sort-arrow-up') : btnsSort[currentFiltr-counter].classList.add('sort-arrow-down')
-
+          if( btnsSort[currentFiltr-counter].classList.contains('sort-arrow-up')){
+            btnsSort[currentFiltr-counter].classList.remove('sort-arrow-up');
+            btnsSort[currentFiltr-counter].classList.add('sort-arrow-down');
+          }else{
+            btnsSort[currentFiltr-counter].classList.add('sort-arrow-up');
+          }
         }else{
           console.log('others', );
         }
