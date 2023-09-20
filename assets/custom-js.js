@@ -390,7 +390,6 @@ window.addEventListener("load", function() {
       //     console.log('i != clicked: ', i);
       //   };
       // };
-      btn.classList.add('sort-arrow-up');
       indexFrom1 = index + 1;
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
       currentFiltr = indexFrom1 + index;
