@@ -12,6 +12,15 @@ $numTerms = wp_count_terms('miasto', array(
 ));
 
 echo $numTerms;
+echo '<br>';
+
+$query = new WP_Query(array(
+  'miasto' => 'Gdansk',
+  'post_status' => 'publish'
+));
+
+$count = $query->found_posts;
+print_r($count);
 ?>
 
 <!-- wp:paragraph -->
