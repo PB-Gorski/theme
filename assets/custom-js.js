@@ -396,7 +396,7 @@ window.addEventListener("load", function() {
         console.log('indexFrom1: : ',indexFrom1);
         if(i != indexFrom1 + index){
           console.log( btnsSort[indexFrom1 + index]);
-          btnsSort[indexFrom1 + index] ? btnsSort[indexFrom1 + index].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
+          btnsSort[indexFrom1] ? btnsSort[indexFrom1].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
           console.log('i != clicked: ', i);
         };
       };
