@@ -42,7 +42,7 @@ function wp_get_productcat_postcount()
     )
   );
 
-  $query = new WP_Query($args);
+  $query2 = new WP_Query($args);
 
   /*
   echo '<pre>';
@@ -51,11 +51,11 @@ function wp_get_productcat_postcount()
   echo '</pre>';
   */
 
-  return (int)$query->post_count;
+  return (int)$query2->post_count;
 }
 print_r(wp_get_productcat_postcount());
 ?>
 
 <!-- wp:paragraph -->
-<p class="mb-[50px] text-[24px] text-center" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo wp_count_posts('mieszkania')->publish; ?> ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
+<p class="mb-[50px] text-[24px] text-center" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo $count - 1; ?> ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
 <!-- /wp:paragraph -->
