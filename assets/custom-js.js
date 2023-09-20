@@ -378,7 +378,7 @@ window.addEventListener("load", function() {
     btn.addEventListener('click', (e) => {
       currentItem = e.target;
       console.log('currentItem: ',  currentItem);
-      console.log('currentIteIndex: ',  btnIndex+2);
+      console.log('currentIteIndex: ',  btnIndex=index+2);
       // indexFrom1 = index + 1;
       // indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
 
