@@ -374,7 +374,7 @@ window.addEventListener("load", function() {
   }
 
   const btnsSort = document.querySelectorAll('.js-sort');
-  let counter=1;
+  let counter = 1;
 
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', () => {
@@ -396,7 +396,7 @@ window.addEventListener("load", function() {
         }
         counter++
       };
-      counter=1;
+      counter = 1;
     });
   });
 
