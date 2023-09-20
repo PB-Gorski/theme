@@ -392,29 +392,29 @@ window.addEventListener("load", function() {
       currentFiltr = indexFrom1 + index;
 
       console.log('before loop: ', indexFrom1 + index);
-      for (let i = 0 ; i < (17) ; i++){
+      for (let i = 1 ; i < (17) ; i=i+2){
         console.log('current filtr: ', currentFiltr);
         console.log('i: ', i);
         console.log('index: ', index);
         console.log('indexFrom1: : ', indexFrom1);
-        if(i != currentFiltr){
-          if(index + indexFrom1 != currentFiltr){
-          console.log(btnsSort[i]);
-          btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : console.log('empty');;
-          console.log('not current: ', i);
-          }
-        }else{
-          console.log('current: ', i);
-          if(btn.classList.contains('sort-arrow-up')){
-            console.log('should remove up');
-            btn.classList.remove('sort-arrow-up');
-            btn.classList.add('sort-arrow-down');
-          }else if( btn.classList.contains('sort-arrow-down')){
-            console.log('should remove down');
-            btn.classList.remove('sort-arrow-down');
-            btn.classList.add('sort-arrow-up');
-          }
-        };
+        console.log(btnsSort[i-2]);
+
+        // if(i != currentFiltr){
+        //   console.log(btnsSort[i]);
+        //   btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : console.log('empty');;
+        //   console.log('not current: ', i);
+        // }else{
+        //   console.log('current: ', i);
+        //   if(btn.classList.contains('sort-arrow-up')){
+        //     console.log('should remove up');
+        //     btn.classList.remove('sort-arrow-up');
+        //     btn.classList.add('sort-arrow-down');
+        //   }else if( btn.classList.contains('sort-arrow-down')){
+        //     console.log('should remove down');
+        //     btn.classList.remove('sort-arrow-down');
+        //     btn.classList.add('sort-arrow-up');
+        //   }
+        // };
         // btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down');
         console.log('--------------------------');
       };
