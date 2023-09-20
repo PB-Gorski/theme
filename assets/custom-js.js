@@ -392,7 +392,8 @@ window.addEventListener("load", function() {
 
       console.log('before loop: ', indexFrom1 + index);
       for (let i = 0 ; i < (indexFrom1 + index) ; i++){
-        console.log('loop: ', i, '/', indexFrom1 + index);
+        console.log('i: ', i, '/', indexFrom1 + index);
+        console.log('indexFrom1: : ',indexFrom1);
         if(i != indexFrom1 + index){
           console.log( btnsSort[indexFrom1 + index]);
           btnsSort[indexFrom1 + index] ? btnsSort[indexFrom1 + index].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
