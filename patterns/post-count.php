@@ -23,37 +23,6 @@ $count = $query->found_posts;
 print_r($count);
 
 echo '<br>';
-
-function wp_get_productcat_postcount()
-{
-
-  //return $count;
-  $args = array(
-    'post_type'     => 'mieszkania', //post type, I used 'product'
-    'post_status'   => 'publish', // just tried to find all published post
-    'posts_per_page' => -1,  //show all
-    'tax_query' => array(
-      'relation' => 'AND',
-      array(
-        'taxonomy' => 'miasto',  //taxonomy name  here, I used 'product_cat'
-        'field' => 'id',
-        'terms' => 'Gdynia'
-      )
-    )
-  );
-
-  $query2 = new WP_Query($args);
-
-  /*
-  echo '<pre>';
-
-  print_r($query->post_count);
-  echo '</pre>';
-  */
-
-  return (int)$query2->post_count;
-}
-print_r(wp_get_productcat_postcount());
 ?>
 
 <!-- wp:paragraph -->
