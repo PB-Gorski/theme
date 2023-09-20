@@ -403,6 +403,15 @@ window.addEventListener("load", function() {
           console.log('not current: ', i);
         }else{
           console.log('current: ', i);
+          if(btn.classList.contains('sort-arrow-up')){
+            console.log('should remove up');
+            btn.classList.remove('sort-arrow-up');
+            btn.classList.add('sort-arrow-down');
+          }else if( btn.classList.contains('sort-arrow-down')){
+            console.log('should remove down');
+            btn.classList.remove('sort-arrow-down');
+            btn.classList.add('sort-arrow-up');
+          }
         };
         // btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down');
         console.log('--------------------------');
@@ -411,15 +420,7 @@ window.addEventListener("load", function() {
       if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
         btn.classList.toggle('sort-arrow-up');
       }
-      if(btn.classList.contains('sort-arrow-up')){
-        console.log('should remove up');
-        btn.classList.remove('sort-arrow-up');
-        btn.classList.add('sort-arrow-down');
-      }else if( btn.classList.contains('sort-arrow-down')){
-        console.log('should remove down');
-        btn.classList.remove('sort-arrow-down');
-        btn.classList.add('sort-arrow-up');
-      }
+
 
 
     });
