@@ -413,7 +413,7 @@ window.addEventListener("load", function() {
             btnsSort[currentFiltr-counter].classList.remove('sort-arrow-down');
           }
         }else if(i != currentFiltr){
-          console.log('others', btnsSort[currentFiltr-counter]);
+          console.log('others', btnsSort[i-counter]);
         }
         counter++
         // console.log('current filtr: ', currentFiltr);
