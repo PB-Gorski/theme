@@ -19,7 +19,7 @@
 
 ?>
 
-<form action="#" method="post">
+<!-- <form action="#" method="post">
   <select name="tax">
     <option value="miasto">miasto</option>
   </select>
@@ -28,21 +28,21 @@
     <option value="Gdynia">Gdynia</option>
   </select>
   <input type="submit" name="submit" value="Szukaj" />
-</form>
+</form> -->
 
 <?php
 if (isset($_POST['submit'])) {
-  $selected_val1 = $_POST['tax'];
+  $selected_val1 = $_POST['miasto'];
 }
 if (isset($_POST['submit'])) {
-  $selected_val2 = $_POST['term'];
+  $selected_val2 = $_POST['select-miasto'];
 }
 
 $taxonomy = $selected_val1 == true ?  $selected_val1 : 'miasto';
 $term = $selected_val2 == true ? $selected_val2 : 'Gdynia';
 
 $query = new WP_Query(array(
-  $taxonomy => $term,
+  'miasto' => $term,
   'post_status' => 'publish'
 ));
 $count = $query->found_posts;
