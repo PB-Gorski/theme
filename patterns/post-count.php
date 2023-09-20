@@ -24,6 +24,14 @@ $query = new WP_Query(array(
 ));
 $count = $query->found_posts;
 
+if (!$query->have_posts()) {
+  while ($query->have_posts()) {
+    $query->the_post();
+    $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
+    $counter++;
+    the_terms(the_ID(), 'mieszkania');
+  }
+}
 
 ?>
 
