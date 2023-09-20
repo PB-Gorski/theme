@@ -8,6 +8,7 @@
  */
 $numTerms = wp_count_terms('miasto', array(
   'hide_empty' => false,
+  'name' => 'Gdansk'
 ));
 
 echo $numTerms;
