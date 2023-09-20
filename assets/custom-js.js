@@ -403,9 +403,9 @@ window.addEventListener("load", function() {
       for (let i = 1 ; i <= (17) ; i=i+2){
         console.log(i);
         if (i==currentFiltr){
-          console.log('current', btn);
+          console.log('current', btnsSort[currentFiltr-2]);
         }else{
-          console.log('others', btnsSort[index]);
+          console.log('others', );
         }
         // console.log('current filtr: ', currentFiltr);
         // console.log('i: ', i);
