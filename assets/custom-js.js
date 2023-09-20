@@ -390,11 +390,11 @@ window.addEventListener("load", function() {
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
 
       console.log('before loop: ', indexFrom1 + index);
-      for (let i = 0 ; i < (17) ; i++){
+      for (let i = 1 ; i < (17) ; i = i + 2){
         console.log('i: ', i);
         console.log('index: ', index);
         console.log('indexFrom1: : ',indexFrom1);
-        if(i+2 != indexFrom1 + index){
+        if(i != indexFrom1 + index){
           console.log(btnsSort[i]);
           btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
           console.log('i != clicked: ', i);
