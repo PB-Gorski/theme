@@ -414,7 +414,7 @@ window.addEventListener("load", function() {
         }else{
           // console.log('others', );
         }
-        counter++
+        // counter++
         // console.log('current filtr: ', currentFiltr);
         // console.log('i: ', i);
         // console.log('index: ', index);
