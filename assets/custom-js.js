@@ -374,7 +374,7 @@ window.addEventListener("load", function() {
   }
   const btnsSort = document.querySelectorAll('.js-sort');
   btnIndex=1;
-  counter=1;
+ 
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', (e) => {
       currentItem = e.target;
@@ -401,12 +401,14 @@ window.addEventListener("load", function() {
 
       console.log('before loop: ', indexFrom1 + index);
       for (let i = 1 ; i <= (17) ; i=i+2){
+        counter=1;
         console.log(i);
         if (i==currentFiltr){
           console.log('current', btnsSort[currentFiltr-counter]);
         }else{
           console.log('others', );
         }
+        counter++
         // console.log('current filtr: ', currentFiltr);
         // console.log('i: ', i);
         // console.log('index: ', index);
