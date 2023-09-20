@@ -32,7 +32,7 @@
 
 <?php
 if (isset($_POST['submit'])) {
-  $selected_val1 = $_POST['miasto'];
+  $selected_val1 = $_POST['tax'];
 }
 if (isset($_POST['submit'])) {
   $selected_val2 = $_POST['select-miasto'];
