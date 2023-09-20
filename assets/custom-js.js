@@ -379,19 +379,19 @@ window.addEventListener("load", function() {
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
 
       console.log('before loop: ', indexFrom1 + index);
-      for (let i = 0 ; i < (indexFrom1 + index) ; i++){
-        console.log('loop: ', i, '/', indexFrom1 + index);
-        if(i != indexFrom1 + index){
-          btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
-          console.log('i != clicked: ', i);
-        };
-      };
+      // for (let i = 0 ; i < (indexFrom1 + index) ; i++){
+      //   console.log('loop: ', i, '/', indexFrom1 + index);
+      //   if(i != indexFrom1 + index){
+      //     btnsSort[i] ? btnsSort[i].classList.remove('sort-arrow-up', 'sort-arrow-down') : null;
+      //     console.log('i != clicked: ', i);
+      //   };
+      // };
 
       if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
         btn.classList.toggle('sort-arrow-up');
         return;
       }
-      if( btn.classList.contains('sort-arrow-up')){
+      if(btn.classList.contains('sort-arrow-up')){
         console.log('should remove up');
         btn.classList.remove('sort-arrow-up');
         btn.classList.add('sort-arrow-down');
