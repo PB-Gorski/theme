@@ -389,14 +389,17 @@ window.addEventListener("load", function() {
 
       if( !btn.classList.contains('sort-arrow-up') && !btn.classList.contains('sort-arrow-down') ){
         btn.classList.toggle('sort-arrow-up');
+        return;
       }else if( btn.classList.contains('sort-arrow-up')){
         console.log('should remove up');
         btn.classList.remove('sort-arrow-up');
         btn.classList.add('sort-arrow-down');
+        return;
       }else if( btn.classList.contains('sort-arrow-down')){
         console.log('should remove up');
         btn.classList.remove('sort-arrow-down');
         btn.classList.add('sort-arrow-up');
+        return;
       }
     });
   });
