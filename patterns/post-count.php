@@ -6,7 +6,7 @@
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
-$numTerms = wp_count_terms('mieszkania', array(
+$numTerms = wp_count_terms('miasto', array(
   'hide_empty' => false,
   'parent'    => 0
 ));
