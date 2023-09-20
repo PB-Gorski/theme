@@ -10,11 +10,8 @@
 
 <form action="#" method="post">
   <select name="Color">
-    <option value="Red">Red</option>
-    <option value="Green">Green</option>
-    <option value="Blue">Blue</option>
-    <option value="Pink">Pink</option>
-    <option value="Yellow">Yellow</option>
+    <option value="Red">Gdansk</option>
+    <option value="Green">Gdynia</option>
   </select>
   <input type="submit" name="submit" value="Get Selected Values" />
 </form>
