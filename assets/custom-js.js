@@ -382,7 +382,7 @@ window.addEventListener("load", function() {
       indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
       currentFiltr = indexFrom1 + index;
 
-      for (let i = 1 ; i <= (17) ; i=i+2){
+      for (let i = 1 ; i <= (17) ; i=+2){
         if (i == currentFiltr){
           if( btnsSort[currentFiltr-counter].classList.contains('sort-arrow-up')){
             btnsSort[currentFiltr-counter].classList.remove('sort-arrow-up');
