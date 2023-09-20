@@ -17,15 +17,12 @@
 
 $taxonomy = 'miasto';
 $term = 'Gdynia';
+
 $query = new WP_Query(array(
   $taxonomy => $term,
   'post_status' => 'publish'
 ));
-
 $count = $query->found_posts;
-print_r($count);
-
-echo '<br>';
 ?>
 
 <!-- wp:paragraph -->
