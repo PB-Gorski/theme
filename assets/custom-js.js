@@ -412,7 +412,7 @@ window.addEventListener("load", function() {
             btnsSort[currentFiltr-counter].classList.add('sort-arrow-up');
           }
         }else{
-          console.log('others', );
+          // console.log('others', );
         }
         counter++
         // console.log('current filtr: ', currentFiltr);
