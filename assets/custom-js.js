@@ -403,7 +403,6 @@ window.addEventListener("load", function() {
           console.log('not current: ', i);
         }else{
           console.log('current: ', i);
-          btn.classList.add('sort-arrow-up');
           if(btn.classList.contains('sort-arrow-up')){
             console.log('should remove up');
             btn.classList.remove('sort-arrow-up');
