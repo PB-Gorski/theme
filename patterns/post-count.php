@@ -23,10 +23,10 @@
   <select name="tax">
     <option value="miasto">miasto</option>
   </select>
-  <!-- <select name="term">
+  <select name="term">
     <option value="Gdansk">Gdansk</option>
     <option value="Gdynia">Gdynia</option>
-  </select> -->
+  </select>
   <input type="submit" name="submit" value="Szukaj" />
 </form>
 
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
   $selected_val1 = $_POST['tax'];
 }
 if (isset($_POST['submit'])) {
-  $selected_val2 = $_POST['select-miasto'];
+  $selected_val2 = $_POST['term'];
 }
 
 echo $selected_val1  == true ? $selected_val2 : 'brak';;
