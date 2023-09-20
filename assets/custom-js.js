@@ -403,6 +403,7 @@ window.addEventListener("load", function() {
       for (let i = 1 ; i <= (17) ; i=i+2){
         console.log(i);
         if (i==currentFiltr){
+          console.log(currentFiltr,currentFiltr);
           console.log('current', btnsSort[currentFiltr-counter]);
           if( btnsSort[currentFiltr-counter].classList.contains('sort-arrow-up')){
             btnsSort[currentFiltr-counter].classList.remove('sort-arrow-up');
