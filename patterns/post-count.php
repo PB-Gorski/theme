@@ -38,8 +38,8 @@ if (isset($_POST['submit'])) {
   $selected_val2 = $_POST['select-miasto'];
 }
 
-echo $selected_val1;
-echo $selected_val2;
+echo $selected_val1  == true ? $selected_val2 : 'brak';;
+echo $selected_val2  == true ? $selected_val2 : 'brak';;
 
 // $taxonomy = $selected_val1 == true ?  $selected_val1 : 'miasto';
 $term = $selected_val2 == true ? $selected_val2 : '';
