@@ -59,23 +59,6 @@
               <li class="uppercase allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo home_url() . '/inwestycje-' . $catNoSpaces; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30"><?php echo $cat->name; ?></a></li>
               <!-- /wp:list-item -->
             <?php }; ?>
-
-
-            <!-- wp:list-item -->
-            <li class="uppercase allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-              WSZYSTKIE
-            </li>
-            <!-- /wp:list-item -->
-            <!-- wp:list-item -->
-            <li class="uppercase gdanskTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-              GDAŃSK
-            </li>
-            <!-- /wp:list-item -->
-            <!-- wp:list-item -->
-            <li class="uppercase gdyniaTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-              GDYNIA
-            </li>
-            <!-- /wp:list-item -->
             <!-- wp:list-item -->
             <li class="w-[1px] h-[32px] bg-[#8A8F99] opacity-[30%]">
               <p class="hidden">separator</p>
