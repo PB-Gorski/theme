@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Title: header
  * Slug: header
@@ -152,6 +151,7 @@
             <!-- /wp:group -->
           </div>
           <!-- /wp:group -->
+
           <!-- wp:group -->
           <div class="wp-block-group tab2 gdansk hidden text-[17px] flex">
             <!-- wp:group -->
@@ -292,13 +292,8 @@
             <!-- /wp:group -->
           </div>
           <!-- /wp:group -->
-
-
         </div>
         <!-- /wp:group -->
-
-
-
       </div>
       <!-- /wp:group -->
 
