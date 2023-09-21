@@ -163,6 +163,8 @@
               $currentTermCount = (get_term($tax, 'inwestycja'))->count;
               $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
               $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
+
+              echo $currentTermCount;
         ?>
 
             <?php
