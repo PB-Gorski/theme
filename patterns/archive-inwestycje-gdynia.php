@@ -113,8 +113,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
         );
         if (!empty($my_terms)) :
           foreach ($my_terms as $my_term) :
-            $brand_name = $my_term->name;
-            $brand_link = get_term_link($my_term);
+            $taxInwestycjeName = $my_term->name;
             $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
             $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
             $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
@@ -133,7 +132,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                   <!-- wp:group -->
                   <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center gap-[15px]">
                     <!-- wp:paragraph -->
-                    <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php echo $brand_name; ?></p>
+                    <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php echo $taxInwestycjeName; ?></p>
                     <!-- /wp:paragraph -->
 
                     <!-- wp:group -->
