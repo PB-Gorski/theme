@@ -370,14 +370,18 @@ $count = $query->found_posts;
           'post_type' => 'mieszkania',
           'posts_per_page' => 10,
           'order' => 'ASC',
-          'taxonomy_name' => 'inwestycja'
+          'taxonomy_name' => 'inwestycja',
+          array(
+            'taxonomy' => 'miasto',
+            'field' => 'slug',
+            'terms' => 'gdynia',
+          ),
         );
         $post_query = new WP_Query($args);
         $counter = 0;
         $i = 0;
         $taxonomies = get_terms(array(
           'taxonomy' => 'inwestycja',
-          'terms' => 'gdansk',
           'hide_empty' => false,
         ));
         // $term = get_term(10, 'inwestycja');
