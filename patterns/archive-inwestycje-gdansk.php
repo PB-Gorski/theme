@@ -405,6 +405,40 @@ $count = $query->found_posts;
 
         // echo '<br>';
         // echo 'foreach:<br>';
+
+
+        $productcat_id = get_queried_object_id();
+        $args2 = array(
+          'numberposts' => -1,
+          'post_type' => array('mieszkania'),
+          'tax_query' => array(
+            array(
+              'taxonomy' => 'inwestycja',
+              'field'    => 'term_id',
+              'terms'    => $productcat_id,
+            ),
+          ),
+        );
+
+        $cat_posts  = get_posts($args2);
+
+        $my_post_ids = wp_list_pluck($cat_posts, 'ID');
+        $my_terms    = wp_get_object_terms($my_post_ids, 'miasto');
+
+        if (!empty($my_terms)) :
+          echo '<ul>';
+          foreach ($my_terms as $my_term) :
+
+            $brand_name = $my_term->name;
+            $brand_link = get_term_link($my_term);
+
+            echo '<li><a alt="' . $brand_name . '" href="' . esc_url($brand_link) . '">' . $brand_name . '</a></li>';
+
+          endforeach;
+          echo '</ul>';
+        endif;
+
+
         foreach ($taxonomies as $tax) {
           $counter++;
           $currentTermCount = (get_term($tax, 'inwestycja'))->count;
