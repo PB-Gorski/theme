@@ -173,8 +173,8 @@
 
                 // foreach ($taxonomies as $tax) {
                 $counter++;
-                $currentTermCount = (get_term($taxonomies[i], 'inwestycja'))->count;
-                $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[i]->name));
+                $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
+                $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
                 $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
                 echo $currentTermCount;
