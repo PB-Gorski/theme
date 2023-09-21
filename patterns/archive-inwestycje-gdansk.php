@@ -103,11 +103,11 @@
       <!-- wp:list -->
       <ul class="wp-block-list mb-[40px]">
         <?php
-        $args = array(
-          'post_type' => 'mieszkania',
-          'posts_per_page' => 10,
-          'order' => 'ASC',
-          'taxonomy_name' => 'miasto',
+        // $args = array(
+        //   'post_type' => 'mieszkania',
+        //   'posts_per_page' => 10,
+        //   'order' => 'ASC',
+        //   'taxonomy_name' => 'miasto',
           // 'tax_query' => array(
           //   'relation' => 'AND',
           //   array(
