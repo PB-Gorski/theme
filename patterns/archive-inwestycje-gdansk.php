@@ -431,7 +431,7 @@ $count = $query->found_posts;
             array(
               'taxonomy' => 'miasto',
               'field'    => 'slug',
-              'terms'    => 'gdynia',
+              'terms'    => 'gdansk',
             ),
           ),
         );
