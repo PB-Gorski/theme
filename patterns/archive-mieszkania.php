@@ -105,7 +105,7 @@
 
       $selected_val2 = 'gdynia';
       if (isset($_POST['submit'])) {
-        $selected_val2 = $_POST['beautiful-taxonomy-filters-tax-miasto'];
+        $selected_val2 = $_POST['select-miasto'];
       }
 
       // echo $selected_val1  == true ? $selected_val1 : 'brak1';;
