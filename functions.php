@@ -511,3 +511,23 @@ function cptui_register_my_cpts_lokale()
 }
 
 add_action('init', 'cptui_register_my_cpts_lokale', -1);
+
+
+/**
+ * Add custom content after every second post
+ * @param {int} increment_post - post counter
+ * @param {array} arrOptions - array of additional post parameters. It includes: 
+     - arrOptions['paged'] - page number
+     - arrOptions['per_page'] - number of posts per page
+     - arrOptions['total'] - number of all posts
+     - arrOptions['terms_settings'] - array of all terms with their settings. See options in filter ymc_post_custom_layout.
+ * @returns {string} HTML markup card post
+ */
+function ymc_after_custom_layout($increment, $arrOptions)
+{
+	echo '<article class="post-item">
+						<h3>My Header</h3>
+			<div>Custom text</div> 
+					</article>';
+}
+add_action('ymc_after_custom_layout_545_1', 'ymc_after_custom_layout', 10, 2);
