@@ -88,6 +88,47 @@
 
               <!-- wp:list -->
               <ul class="wp-block-list text-textGray flex flex-wrap gap-x-[140px] gap-y-[10px]">
+
+                <?php
+                $args = array(
+                  'post_type' => 'mieszkania',
+                  'posts_per_page' => 10,
+                  'order' => 'ASC',
+                  'taxonomy_name' => 'inwestycja'
+                );
+                $post_query = new WP_Query($args);
+                $counter = 0;
+                $i = 0;
+                $taxonomies = get_terms(array(
+                  'taxonomy' => 'inwestycja',
+                  'hide_empty' => false,
+                ));
+                foreach ($taxonomies as $tax) {
+                  $counter++;
+                  $currentTermCount = (get_term($tax, 'inwestycja'))->count;
+                  $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
+                  $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
+                ?>
+                  <!-- wp:list-item -->
+                  <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                    <a href="<?php echo home_url() . '/o-inwestycji' . ''; ?>" class="relative group inline-block cursor-default desktop:max-w-full w-full h-full">
+                      <!-- wp:group -->
+                      <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
+                        <!-- wp:group -->
+                        <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center gap-[15px]">
+                          <!-- wp:paragraph -->
+                          <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php echo $tax->name; ?></p>
+                          <!-- /wp:paragraph -->
+                        </div>
+                        <!-- /wp:group -->
+                      </div>
+                      <!-- /wp:group -->
+                    </a>
+                  </li>
+                  <!-- /wp:list-item -->
+                <?php
+                  $i++;
+                }; ?>
                 <!-- wp:list-item -->
                 <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
                   <a href="<?php echo home_url() . '/o-inwestycji'; ?>">Osiedle Srebniki</a>
