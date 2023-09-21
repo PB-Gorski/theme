@@ -88,13 +88,12 @@
 
 
 
-      // $counter = 0;
-      // $i = 0;
-      // $taxonomies = get_terms(array(
-      //   'taxonomy' => 'inwestycja',
-      //   'hide_empty' => false,
-      // ));
-      // 
+      $counter = 0;
+      $i = 0;
+      $taxonomies = get_terms(array(
+        'taxonomy' => 'inwestycja',
+        'hide_empty' => false,
+      ));
       ?>
     </ul>
     <!-- /wp:list -->
