@@ -102,6 +102,7 @@
       // if (isset($_POST['submit'])) {
       //   $selected_val1 = $_POST['tax'];
       // }
+      $selected_val2 = 'gdansk';
       if (isset($_POST['submit'])) {
         $selected_val2 = $_POST['select-miasto'];
       }
