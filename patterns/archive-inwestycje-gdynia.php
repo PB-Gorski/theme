@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: archive-inwestycje-gdansk
- * Slug: archive-inwestycje-gdansk
+ * Title: archive-inwestycje-gdynia
+ * Slug: archive-inwestycje-gdynia
  * Categories: text, banner
  * Viewport Width: 1280
  */
@@ -102,15 +102,6 @@
         'taxonomy' => 'inwestycja',
         'hide_empty' => false,
       ));
-
-      $query = new WP_Query(array(
-        'miasto' => 'Gdansk',
-        'post_status' => 'publish'
-      ));
-      $count = $query->found_posts;
-      print_r($count);
-      echo '<br>';
-      print_r($query)
 
       // $term = get_term(10, 'inwestycja');
       // $terms = get_terms('inwestycja');
