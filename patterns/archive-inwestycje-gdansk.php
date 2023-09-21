@@ -371,10 +371,17 @@ $count = $query->found_posts;
           'posts_per_page' => 10,
           'order' => 'ASC',
           'taxonomy_name' => 'inwestycja',
-          array(
-            'taxonomy' => 'miasto',
-            'field' => 'slug',
-            'terms' => 'gdynia',
+          'tax_query' => array(
+            array(
+              'taxonomy' => 'miasta',
+              'field' => 'slug',
+              'terms' => 'gdynia',
+            ),
+            array(
+              'taxonomy' => 'inwestycja',
+              'field' => 'slug',
+              'terms' => 'gdynia',
+            ),
           ),
         );
         $post_query = new WP_Query($args);
