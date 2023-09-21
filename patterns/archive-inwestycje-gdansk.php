@@ -110,7 +110,7 @@
       $count = $query->found_posts;
       print_r($count);
       echo '<br>';
-      print_r($query)
+      print_r($query);
 
       // $term = get_term(10, 'inwestycja');
       // $terms = get_terms('inwestycja');
