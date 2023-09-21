@@ -18,15 +18,15 @@ $queryTax = new WP_Tax_Query(array(
 ));
 $count = $query->found_posts;
 
-echo '<br>';
-print_r($query);
-echo '<br>';
-echo '<br>';
-print_r($query->tax_query);
-echo '<br>';
-echo 'tax query: <br>';
-print_r($queryTax);
-echo '<br>';
+// echo '<br>';
+// print_r($query);
+// echo '<br>';
+// echo '<br>';
+// print_r($query->tax_query);
+// echo '<br>';
+// echo 'tax query: <br>';
+// print_r($queryTax);
+// echo '<br>';
 
 ?>
 
