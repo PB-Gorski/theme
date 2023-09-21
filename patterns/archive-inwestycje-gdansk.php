@@ -64,6 +64,20 @@
 
   <!-- wp:group -->
   <div class="wp-block-group inwestycje-posts container mx-auto desktop:px-0 px-[20px]">
+    <?php
+    $query = new WP_Query(array(
+      'miasto' => 'gdansk',
+      'post_status' => 'publish'
+    ));
+    $count = $query->found_posts;
+    ?>
+
+
+
+    <!-- wp:paragraph -->
+    <p class="mb-[50px] text-[24px] text-center" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo $count - 1; ?> oferty pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
+    <!-- /wp:paragraph -->
+
     <!-- wp:list -->
     <ul class="wp-block-list mb-[40px] hidden">
       <?php
@@ -103,20 +117,9 @@
         'hide_empty' => false,
       ));
 
-      $query = new WP_Query(array(
-        'miasto' => 'gdansk',
-        'post_status' => 'publish'
-      ));
-      $count = $query->found_posts;
-      ?>
 
 
 
-      <!-- wp:paragraph -->
-      <p class="mb-[50px] text-[24px] text-center" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo $count - 1; ?> oferty pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
-      <!-- /wp:paragraph -->
-
-      <?php
       // $term = get_term(10, 'inwestycja');
       // $terms = get_terms('inwestycja');
 
@@ -148,7 +151,7 @@
           <li><?php echo $sub_term->name ?></li>
           <li><?php echo $sub_term->parent ?></li>
         <?php
-        }
+        };
 
 
 
