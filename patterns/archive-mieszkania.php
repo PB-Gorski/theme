@@ -14,7 +14,7 @@
   <!-- wp:group -->
   <div class="wp-block-group bg-bgLightGray">
     <!-- wp:group -->
-    <div class="wp-block-group search-wrapper relative mx-auto py-[20px] px-[20px] desktop:h-[100px] text-[18px] flex flex-col desktop:flex-row gap-[10px] desktop:gap-[1px] overflow-y-hidden transition-height duration-[400ms] ease">
+    <div class="wp-block-group search-wrapper relative mx-auto py-[20px] px-[20px] desktop:h-[400px] text-[18px] flex flex-col desktop:flex-row gap-[10px] desktop:gap-[1px] overflow-y-hidden transition-height duration-[400ms] ease">
       <!-- wp:group -->
       <div class="wp-block-group hidden miasto select-wrapper">
         <!-- wp:group -->
