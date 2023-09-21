@@ -8,6 +8,23 @@
  */
 ?>
 
+<?php
+$args2 = array(
+  'numberposts' => -1,
+  'post_type' => array('mieszkania'),
+  'tax_query' => array(
+    array(
+      'taxonomy' => 'miasto',
+      'field'    => 'slug',
+      'terms'    => 'gdynia',
+    ),
+  ),
+);
+$cat_posts  = get_posts($args2);
+$my_post_ids = wp_list_pluck($cat_posts, 'ID');
+$my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
+?>
+
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="inwestycje-archive" class="wp-block-group inwestycje-archive relative">
   <!-- wp:group -->
@@ -17,7 +34,7 @@
       <!-- wp:group -->
       <div class="wp-block-group left-col desktop:w-[70%]">
         <!-- wp:paragraph -->
-        <p class="container mx-auto desktop:px-0 px-[20px] my-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">Gdynia - Inwestycje</p>
+        <p class="container mx-auto desktop:px-0 px-[20px] my-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">Gdańsk - Inwestycje</p>
         <!-- /wp:paragraph -->
 
         <!-- wp:list -->
@@ -36,12 +53,12 @@
           </li>
           <!-- /wp:list-item -->
           <?php
+          $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 42, 20));
           foreach ($cats as $cat) {
             $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
-            // echo $catNoSpaces;
           ?>
             <!-- wp:list-item -->
-            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory == $catNoSpaces) ? 'tab-active' : ''; ?>"><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $cat->name; ?></a></li>
+            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory == $catNoSpaces) ? 'tab-active' : ''; ?>"><a href="<?php echo home_url() . '/inwestycje-' . $catNoSpaces; ?>" class=""><?php echo $cat->name; ?></a></li>
             <!-- /wp:list-item -->
           <?php }; ?>
         </ul>
@@ -56,14 +73,10 @@
           'miasto' => 'gdynia',
           'post_status' => 'publish'
         ));
-        $queryTax = new WP_Tax_Query(array(
-          // 'taxonomy' => 'inwestycje',
-          'post_status' => 'publish'
-        ));
         $count = $query->found_posts;
         ?>
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-[#8a8f99]"><?php echo wp_count_terms('inwestycja'); ?> inwestycje / <?php echo $count - 1; ?> lokali</p>
+        <p class="text-[30px] text-[#8a8f99]"><?php print_r(count($my_terms)); ?> inwestycje / <?php echo $count - 1; ?> lokali</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -80,15 +93,12 @@
       <!-- wp:list -->
       <ul class="wp-block-list mb-[40px]">
         <?php
-        // dziala:
         $counter = 1;
         $i = 1;
-
         $taxonomies = get_terms(array(
           'taxonomy' => 'inwestycja',
           'hide_empty' => false,
         ));
-
         $productcat_id = get_queried_object_id();
         $args2 = array(
           'numberposts' => -1,
@@ -101,47 +111,14 @@
             ),
           ),
         );
-
-        $cat_posts  = get_posts($args2);
-        $my_post_ids = wp_list_pluck($cat_posts, 'ID');
-        $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
-
         if (!empty($my_terms)) :
-          echo '<ul class="test2">';
           foreach ($my_terms as $my_term) :
-
             $brand_name = $my_term->name;
             $brand_link = get_term_link($my_term);
-
-            echo '<li><a alt="' . $brand_name . '" href="' . esc_url($brand_link) . '">' . $brand_name . '</a></li>';
-
-
-            //     foreach ($taxonomies as $tax) {
-            //       $counter++;
-            //       $currentTermCount = (get_term($tax, 'inwestycja'))->count;
-            //       $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
-            //       $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
-
-            //       echo $currentTermCount;
-            // 
-        ?>
-
-            <?php
-            //     };
-
-            // foreach ($taxonomies as $tax) {
-            $counter++;
             $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
             $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
             $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
-
-            echo $currentTermCount;
-            ?>
-
-            <?php
-            // };
-
-            ?>
+        ?>
             <!-- wp:list-item -->
             <li class="invest-tile current max-w-full test desktop:h-[450px] mb-[80px]">
               <a href="<?php echo home_url() . '/o-inwestycji' . ''; ?>" class="relative group inline-block cursor-default desktop:max-w-full w-full h-full" data-aos="fade-up" data-aos-offset="30">
@@ -209,19 +186,13 @@
         <?php
             $counter++;
             $i++;
-
           endforeach;
-          echo '</ul>';
-        endif;
-
-
-        ?>
+        endif; ?>
       </ul>
       <!-- /wp:list -->
     </div>
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
-
 </div>
 <!-- /wp:group -->
