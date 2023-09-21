@@ -424,6 +424,7 @@ $count = $query->found_posts;
 
         $my_post_ids = wp_list_pluck($cat_posts, 'ID');
         $my_terms    = wp_get_object_terms($my_post_ids, 'miasto');
+        print_r($my_terms);
 
         if (!empty($my_terms)) :
           echo '<ul>';
