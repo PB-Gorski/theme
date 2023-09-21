@@ -88,12 +88,7 @@
 
 
 
-      $counter = 0;
-      $i = 0;
-      $taxonomies = get_terms(array(
-        'taxonomy' => 'inwestycja',
-        'hide_empty' => false,
-      ));
+
       ?>
     </ul>
     <!-- /wp:list -->
@@ -143,20 +138,29 @@
         // echo '<br>';
         // echo 'foreach:<br>';
 
-        // $productcat_id      = get_queried_object_id();
-        // $args4 = array(
-        //   'numberposts' => -1,
-        //   'post_type' => array('mieszkania'),
-        //   'tax_query' => array(
-        //     array(
-        //       'taxonomy' => 'miasto',
-        //       'field'    => 'slug',
-        //       'terms'    => 'gdansk',
-        //     ),
-        //   ),
-        // );
+
 
         // dziala:
+        $counter = 0;
+        $i = 0;
+        $taxonomies = get_terms(array(
+          'taxonomy' => 'inwestycja',
+          'hide_empty' => false,
+        ));
+
+        $productcat_id      = get_queried_object_id();
+        $args4 = array(
+          'numberposts' => -1,
+          'post_type' => array('mieszkania'),
+          'tax_query' => array(
+            array(
+              'taxonomy' => 'miasto',
+              'field'    => 'slug',
+              'terms'    => 'gdansk',
+            ),
+          ),
+        );
+
         $cat_posts  = get_posts($args4);
         $my_post_ids = wp_list_pluck($cat_posts, 'ID');
         $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
