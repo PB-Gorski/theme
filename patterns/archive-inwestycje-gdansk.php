@@ -168,17 +168,17 @@
             // 
         ?>
 
-            // <?php
-                //     };
+            <?php
+            //     };
 
-                // foreach ($taxonomies as $tax) {
-                $counter++;
-                $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
-                $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
-                $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
+            // foreach ($taxonomies as $tax) {
+            $counter++;
+            $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
+            $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
+            $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
-                echo $currentTermCount;
-                ?>
+            echo $currentTermCount;
+            ?>
 
             <?php
             // };
