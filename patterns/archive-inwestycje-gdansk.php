@@ -488,6 +488,8 @@ $count = $query->found_posts;
             $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
             $counter++;
 
+            the_title();
+
             // echo 'get_term: <br>';
             // print_r(get_term(10, 'osiedla'));
             // echo '<br>';
