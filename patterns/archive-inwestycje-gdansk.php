@@ -6,28 +6,6 @@
  * Categories: text, banner
  * Viewport Width: 1280
  */
-
-
-$query = new WP_Query(array(
-  'miasto' => 'gdansk',
-  'post_status' => 'publish'
-));
-$queryTax = new WP_Tax_Query(array(
-  // 'taxonomy' => 'inwestycje',
-  'post_status' => 'publish'
-));
-$count = $query->found_posts;
-
-// echo '<br>';
-// print_r($query);
-// echo '<br>';
-// echo '<br>';
-// print_r($query->tax_query);
-// echo '<br>';
-// echo 'tax query: <br>';
-// print_r($queryTax);
-// echo '<br>';
-
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
@@ -73,6 +51,17 @@ $count = $query->found_posts;
 
       <!-- wp:group -->
       <div class="wp-block-group right-col desktop:w-[30%]">
+        <?php
+        $query = new WP_Query(array(
+          'miasto' => 'gdansk',
+          'post_status' => 'publish'
+        ));
+        $queryTax = new WP_Tax_Query(array(
+          // 'taxonomy' => 'inwestycje',
+          'post_status' => 'publish'
+        ));
+        $count = $query->found_posts;
+        ?>
         <!-- wp:paragraph -->
         <p class="text-[30px] text-[#8a8f99]"><?php echo wp_count_terms('inwestycja'); ?> inwestycje / <?php echo $count - 1; ?> lokali</p>
         <!-- /wp:paragraph -->
@@ -96,10 +85,6 @@ $count = $query->found_posts;
 
 
 
-    <!-- wp:paragraph -->
-    <p class="mb-[50px] text-[24px] text-center" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo $count - 1; ?> oferty pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
-    <!-- /wp:paragraph -->
-
     <!-- wp:list -->
     <ul class="wp-block-list mb-[40px] hidden">
       <?php
@@ -113,7 +98,6 @@ $count = $query->found_posts;
 
       $sub_terms = get_terms('city', $args);
 
-      // print_r($sub_terms);
 
       foreach ($xsub_terms as $xsub_term) {
       ?>
@@ -141,22 +125,6 @@ $count = $query->found_posts;
 
 
 
-
-      // $term = get_term(10, 'inwestycja');
-      // $terms = get_terms('inwestycja');
-
-      // echo '<br>';
-      // echo 'taxonomies print r:<br>';
-      // print_r($taxonomies);
-      // echo '<br>';
-      // echo 'the taxonomies print r:<br>';
-      // print_r(the_taxonomies());
-
-      // echo '<br>';
-      // echo 'foreach:<br>';
-
-
-
       foreach ($taxonomies as $tax) {
         $counter++;
         $currentTermCount = (get_term($tax, 'inwestycja'))->count;
@@ -174,8 +142,6 @@ $count = $query->found_posts;
           <li><?php echo $sub_term->parent ?></li>
         <?php
         };
-
-
 
 
         ?>
@@ -253,37 +219,6 @@ $count = $query->found_posts;
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
           $counter++;
-
-          // echo 'get_term: <br>';
-          // print_r(get_term(10, 'osiedla'));
-          // echo '<br>';
-
-          // echo 'term: <br>';
-          // print_r($term);
-          // echo '<br>';
-          // echo 'terms:<br>';
-
-          // print_r($terms);
-          // echo '<br>';
-
-          // echo '<br>';
-          // echo 'the taxonomies print r:<br>';
-          // print_r(the_taxonomies());
-          // echo 'the_taxonomies<br>';
-          // echo the_taxonomies(68);
-          // echo '<br>';
-          // echo 'the_taxonomies<br>';
-          // echo the_taxonomies(array(
-          //   'name' => 'test01',
-          // ));
-
-          // echo '<br>';
-          // echo 'tersms list:<br>';
-          // echo '<br>';
-
-          // print_r(get_the_term_list($post_query->ID, 'inwestycja', '', ', ', ''));
-          // echo $post_query->post_count;
-
         ?>
           <!-- wp:list-item -->
           <li class="hidden invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
