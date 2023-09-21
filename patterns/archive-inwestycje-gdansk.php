@@ -125,13 +125,14 @@
         // dziala:
         $counter = 0;
         $i = 0;
+
         $taxonomies = get_terms(array(
           'taxonomy' => 'inwestycja',
           'hide_empty' => false,
         ));
 
-        $productcat_id      = get_queried_object_id();
-        $args4 = array(
+        $productcat_id = get_queried_object_id();
+        $args2 = array(
           'numberposts' => -1,
           'post_type' => array('mieszkania'),
           'tax_query' => array(
@@ -143,7 +144,7 @@
           ),
         );
 
-        $cat_posts  = get_posts($args4);
+        $cat_posts  = get_posts($args2);
         $my_post_ids = wp_list_pluck($cat_posts, 'ID');
         $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
 
@@ -169,7 +170,7 @@
 
             ?>
             <!-- wp:list-item -->
-            <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
+            <li class="invest-tile current max-w-full test desktop:h-[450px] mb-[80px]">
               <a href="<?php echo home_url() . '/o-inwestycji' . ''; ?>" class="relative group inline-block cursor-default desktop:max-w-full w-full h-full" data-aos="fade-up" data-aos-offset="30">
                 <!-- wp:group -->
                 <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
@@ -233,6 +234,7 @@
             </li>
             <!-- /wp:list-item -->
         <?php
+            $counter++;
 
           endforeach;
           echo '</ul>';
