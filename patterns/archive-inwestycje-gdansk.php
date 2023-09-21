@@ -433,6 +433,86 @@ $count = $query->found_posts;
 
             echo '<li><a alt="' . $brand_name . '" href="' . esc_url($brand_link) . '">' . $brand_name . '</a></li>';
 
+
+            foreach ($taxonomies as $tax) {
+              $counter++;
+              $currentTermCount = (get_term($tax, 'inwestycja'))->count;
+              $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
+              $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
+
+              // echo $tax->name;
+        ?>
+
+            <?php
+            };
+
+            ?>
+            <!-- wp:list-item -->
+            <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
+              <a href="<?php echo home_url() . '/o-inwestycji' . ''; ?>" class="relative group inline-block cursor-default desktop:max-w-full w-full h-full" data-aos="fade-up" data-aos-offset="30">
+                <!-- wp:group -->
+                <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image desktop:w-[50%] h-[330px] desktop:h-full mb-[30px] lowercase">
+                    <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $taxNoSpaces2 . '.jpeg'; ?>" alt="inwestycje-img">
+                  </figure>
+                  <!-- /wp:image -->
+
+                  <!-- wp:group -->
+                  <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center gap-[15px]">
+                    <!-- wp:paragraph -->
+                    <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php echo $brand_name; ?></p>
+                    <!-- /wp:paragraph -->
+
+                    <!-- wp:group -->
+                    <div class="wp-block-group flex">
+                      <!-- wp:group -->
+                      <div class="wp-block-group available-apartments pr-[35px] flex items-center gap-[25px] border-r-[1px] border-[#ebecee]">
+                        <!-- wp:paragraph -->
+                        <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
+                        <!-- /wp:paragraph -->
+                        <!-- wp:group -->
+                        <div class="wp-block-group leading-[24px]">
+                          <!-- wp:paragraph -->
+                          <p class="text-[18px] text-bgDarkGray">dostępnych</p>
+                          <!-- /wp:paragraph -->
+                          <!-- wp:paragraph -->
+                          <p class="text-[18px] text-bgDarkGray">lokali</p>
+                          <!-- /wp:paragraph -->
+                        </div>
+                        <!-- /wp:group -->
+                      </div>
+                      <!-- /wp:group -->
+                      <!-- wp:group -->
+                      <div class="wp-block-group apartments-price pl-[35px] flex justify-center items-center flex-col">
+                        <!-- wp:paragraph -->
+                        <p class="mb-[4px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">CENA JUŻ OD</p>
+                        <!-- /wp:paragraph -->
+                        <!-- wp:paragraph -->
+                        <p class="text-[24px] font-bold">8000 zł/m<sup>2</sup></p>
+                        <!-- /wp:paragraph -->
+                      </div>
+                      <!-- /wp:group -->
+                    </div>
+                    <!-- /wp:group -->
+
+                    <!-- wp:group -->
+                    <div class="wp-block-group group btn-read-more mt-[10px] relative bg-[#3d4b66] text-[18px] text-white font-bold w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
+                      <!-- wp:paragraph -->
+                      <p class="z-[1]">Poznaj inwestycję &rarr;</p>
+                      <!-- /wp:paragraph -->
+                    </div>
+                    <!-- /wp:group -->
+
+                  </div>
+                  <!-- /wp:group -->
+                </div>
+                <!-- /wp:group -->
+              </a>
+            </li>
+            <!-- /wp:list-item -->
+          <?php
+
           endforeach;
           echo '</ul>';
         endif;
@@ -445,7 +525,7 @@ $count = $query->found_posts;
           $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
           // echo $tax->name;
-        ?>
+          ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
             <a href="<?php echo home_url() . '/o-inwestycji' . ''; ?>" class="relative group inline-block cursor-default desktop:max-w-full w-full h-full" data-aos="fade-up" data-aos-offset="30">
