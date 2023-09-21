@@ -8,6 +8,12 @@
  */
 ?>
 
+<?php
+$cat_posts  = get_posts($args2);
+$my_post_ids = wp_list_pluck($cat_posts, 'ID');
+$my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
+?>
+
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="inwestycje-archive" class="wp-block-group inwestycje-archive relative">
   <!-- wp:group -->
@@ -98,6 +104,8 @@
         $my_post_ids = wp_list_pluck($cat_posts, 'ID');
         $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
         print_r(count($my_terms));
+        print_r($cat_posts);
+        print_r($my_post_ids);
 
         if (!empty($my_terms)) :
           foreach ($my_terms as $my_term) :
