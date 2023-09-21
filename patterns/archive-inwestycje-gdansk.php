@@ -143,18 +143,18 @@
         // echo '<br>';
         // echo 'foreach:<br>';
 
-        $productcat_id      = get_queried_object_id();
-        $args4 = array(
-          'numberposts' => -1,
-          'post_type' => array('mieszkania'),
-          'tax_query' => array(
-            array(
-              'taxonomy' => 'miasto',
-              'field'    => 'slug',
-              'terms'    => 'gdansk',
-            ),
-          ),
-        );
+        // $productcat_id      = get_queried_object_id();
+        // $args4 = array(
+        //   'numberposts' => -1,
+        //   'post_type' => array('mieszkania'),
+        //   'tax_query' => array(
+        //     array(
+        //       'taxonomy' => 'miasto',
+        //       'field'    => 'slug',
+        //       'terms'    => 'gdansk',
+        //     ),
+        //   ),
+        // );
 
         // dziala:
         $cat_posts  = get_posts($args4);
