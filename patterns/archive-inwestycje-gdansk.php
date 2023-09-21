@@ -39,10 +39,7 @@
           $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 42, 20));
           foreach ($cats as $cat) {
             $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
-            echo $catNoSpaces;
-            echo $currentCategory;
           ?>
-
             <!-- wp:list-item -->
             <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory == $catNoSpaces) ? 'tab-active' : ''; ?>"><a href="<?php echo home_url() . '/inwestycje-' . $catNoSpaces; ?>" class=""><?php echo $cat->name; ?></a></li>
             <!-- /wp:list-item -->
@@ -83,15 +80,12 @@
       <!-- wp:list -->
       <ul class="wp-block-list mb-[40px]">
         <?php
-        // dziala:
         $counter = 1;
         $i = 1;
-
         $taxonomies = get_terms(array(
           'taxonomy' => 'inwestycja',
           'hide_empty' => false,
         ));
-
         $productcat_id = get_queried_object_id();
         $args2 = array(
           'numberposts' => -1,
@@ -104,7 +98,6 @@
             ),
           ),
         );
-
         $cat_posts  = get_posts($args2);
         $my_post_ids = wp_list_pluck($cat_posts, 'ID');
         $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
@@ -116,7 +109,6 @@
             $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
             $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
             $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
-            // $counter++;
         ?>
             <!-- wp:list-item -->
             <li class="invest-tile current max-w-full test desktop:h-[450px] mb-[80px]">
