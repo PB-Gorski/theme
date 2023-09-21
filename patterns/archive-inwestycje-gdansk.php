@@ -377,6 +377,8 @@ $count = $query->found_posts;
         $i = 0;
         $taxonomies = get_terms(array(
           'taxonomy' => 'inwestycja',
+          'taxonomy' => 'miasto',
+          'terms' => 'gdansk',
           'hide_empty' => false,
         ));
         // $term = get_term(10, 'inwestycja');
