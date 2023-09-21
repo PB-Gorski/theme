@@ -102,6 +102,11 @@
       // if (isset($_POST['submit'])) {
       //   $selected_val1 = $_POST['tax'];
       // }
+      $dom = new DOMDocument();
+      $dom->load("index.html");
+      $div = $dom->getElementById('select-miasto');
+      print_r($div); //prints everything it gets
+
       $selected_val2 = 'gdansk';
       if (isset($_POST['submit'])) {
         $selected_val2 = $_POST['select-miasto'];
