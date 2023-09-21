@@ -97,6 +97,7 @@
         $cat_posts  = get_posts($args2);
         $my_post_ids = wp_list_pluck($cat_posts, 'ID');
         $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
+        print_r($my_terms);
 
         if (!empty($my_terms)) :
           foreach ($my_terms as $my_term) :
@@ -174,7 +175,6 @@
             $counter++;
             $i++;
           endforeach;
-          echo '</ul>';
         endif; ?>
       </ul>
       <!-- /wp:list -->
