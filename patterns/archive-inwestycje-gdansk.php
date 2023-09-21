@@ -442,7 +442,7 @@ $count = $query->found_posts;
         $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
 
         if (!empty($my_terms)) :
-          echo '<ul>';
+          echo '<ul class="test">';
           foreach ($my_terms as $my_term) :
 
             $brand_name = $my_term->name;
