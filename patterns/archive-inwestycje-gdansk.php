@@ -14,6 +14,8 @@ $query = new WP_Query(array(
 ));
 $count = $query->found_posts;
 
+print_r($query);
+
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
