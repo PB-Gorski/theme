@@ -410,7 +410,7 @@ $count = $query->found_posts;
         $productcat_id = get_queried_object_id();
         $args2 = array(
           'numberposts' => -1,
-          'post_type' => array('mieszkania'),
+          'post_type' => 'mieszkania',
           'tax_query' => array(
             array(
               'taxonomy' => 'inwestycja',
