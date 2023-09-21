@@ -370,7 +370,7 @@ $count = $query->found_posts;
           'post_type' => 'mieszkania',
           'posts_per_page' => 10,
           'order' => 'ASC',
-          // 'taxonomy_name' => 'inwestycja',
+          'taxonomy_name' => 'miasto',
           'tax_query' => array(
             'relation' => 'AND',
             array(
@@ -387,6 +387,7 @@ $count = $query->found_posts;
         );
         $post_query = new WP_Query($args);
         $counter = 0;
+        print_r($post_query);
         $i = 0;
         $taxonomies = get_terms(array(
           'taxonomy' => 'inwestycja',
