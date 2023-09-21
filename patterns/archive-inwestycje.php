@@ -30,7 +30,6 @@
             'order'   => 'ASC'
           );
           $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 39, 20));
-          // echo $currentCategory . '<-current';
           $cats = get_categories($args); ?>
           <!-- wp:list-item -->
           <li class="allTabBtn text-[#8A8F99] text-textGray underline underline-offset-4 decoration-2 decoration-primaryRed cursor-pointer">
@@ -40,7 +39,6 @@
           <?php
           foreach ($cats as $cat) {
             $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
-            // echo $catNoSpaces;
           ?>
             <!-- wp:list-item -->
             <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory == $catNoSpaces) ? 'tab-active' : ''; ?>"><a href="<?php echo home_url() . '/inwestycje-' . $catNoSpaces; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30"><?php echo $cat->name; ?></a></li>

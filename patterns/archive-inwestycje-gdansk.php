@@ -29,6 +29,7 @@
             'paged' => 1,
             'order'   => 'ASC'
           );
+          $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 39, 20));
           $cats = get_categories($args); ?>
           <!-- wp:list-item -->
           <li class="allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
@@ -36,9 +37,9 @@
           </li>
           <!-- /wp:list-item -->
           <?php
+          $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 39, 20));
           foreach ($cats as $cat) {
             $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
-            // echo $catNoSpaces;
           ?>
             <!-- wp:list-item -->
             <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory == $catNoSpaces) ? 'tab-active' : ''; ?>"><a href="<?php echo get_category_link($cat->term_id) ?>" class=""><?php echo $cat->name; ?></a></li>
