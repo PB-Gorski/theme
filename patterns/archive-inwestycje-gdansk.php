@@ -115,7 +115,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
         $my_post_ids = wp_list_pluck($cat_posts, 'ID');
         $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
         print_r(count($my_terms));
-        print_r($cat_posts);
+        print_r($cat_posts['ID']);
         print_r($my_post_ids);
 
         if (!empty($my_terms)) :
