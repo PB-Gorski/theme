@@ -9,7 +9,7 @@
 
 
 $query = new WP_Query(array(
-  // 'miasto' => 'gdansk',
+  'miasto' => 'gdansk',
   'post_status' => 'publish'
 ));
 $queryTax = new WP_Tax_Query(array(
