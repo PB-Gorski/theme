@@ -36,7 +36,7 @@
         <!-- wp:group -->
         <div class="wp-block-group container mx-auto">
           <!-- wp:list -->
-          <ul class="wp-block-list mb-[20px] flex items-center gap-[20px] text-[14px] font-medium">
+          <ul class="wp-block-list list-taxonomy-miasta mb-[20px] flex items-center gap-[20px] text-[14px] font-medium">
             <?php
             $args = array(
               'taxonomy' => 'miasto',
@@ -72,8 +72,6 @@
           </ul>
           <!-- /wp:list -->
 
-
-
           <!-- wp:group -->
           <div class="wp-block-group tab1 block text-[17px] flex">
             <!-- wp:group -->
@@ -88,7 +86,6 @@
 
               <!-- wp:list -->
               <ul class="wp-block-list text-textGray flex flex-wrap gap-x-[140px] gap-y-[10px]">
-
                 <?php
                 $args = array(
                   'post_type' => 'mieszkania',
