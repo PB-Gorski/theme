@@ -75,24 +75,6 @@
 
   <!-- wp:group -->
   <div class="wp-block-group inwestycje-gdansk container mx-auto desktop:px-0 px-[20px]">
-    <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px] hidden">
-      <?php
-      // $args = array(
-      //   'post_type' => 'mieszkania',
-      //   'posts_per_page' => 10,
-      //   'order' => 'ASC',
-      //   'taxonomy_name' => 'inwestycja'
-      // );
-      // $post_query = new WP_Query($args);
-
-
-
-
-      ?>
-    </ul>
-    <!-- /wp:list -->
-
     <!-- wp:group -->
     <div class="wp-block-group inwestycje-posts container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:list -->
