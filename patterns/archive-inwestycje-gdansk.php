@@ -59,7 +59,7 @@
         $count = $query->found_posts;
         ?>
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-[#8a8f99]"><?php echo wp_count_terms('inwestycja'); ?> inwestycje / <?php echo $count - 1; ?> lokali</p>
+        <p class="text-[30px] text-[#8a8f99]"><?php print_r(count($my_terms)); ?> inwestycje / <?php echo $count - 1; ?> lokali</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
