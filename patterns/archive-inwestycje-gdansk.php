@@ -75,39 +75,9 @@
 
   <!-- wp:group -->
   <div class="wp-block-group inwestycje-posts container mx-auto desktop:px-0 px-[20px]">
-    <?php
-    $query = new WP_Query(array(
-      'miasto' => 'gdansk',
-      'post_status' => 'publish'
-    ));
-    $count = $query->found_posts;
-    ?>
-
-
 
     <!-- wp:list -->
     <ul class="wp-block-list mb-[40px] hidden">
-      <?php
-      $args = array(
-        'taxonomy' => 'city',
-        'hierarchical' => true,
-        'depth' => 1,
-        // 'child_of' => 'gdansk',
-        'hide_empty' => false
-      );
-
-      $sub_terms = get_terms('city', $args);
-
-
-      foreach ($xsub_terms as $xsub_term) {
-      ?>
-        <li><?php echo $sub_term->name ?></li>
-        <li><?php echo $sub_term->parent ?></li>
-      <?php
-      }
-      ?>
-
-
       <?php
       $args = array(
         'post_type' => 'mieszkania',
