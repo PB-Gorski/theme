@@ -513,21 +513,59 @@ function cptui_register_my_cpts_lokale()
 add_action('init', 'cptui_register_my_cpts_lokale', -1);
 
 
-/**
- * Add custom content after every second post
- * @param {int} increment_post - post counter
- * @param {array} arrOptions - array of additional post parameters. It includes: 
- *    - arrOptions['paged'] - page number
- *    - arrOptions['per_page'] - number of posts per page
- *    - arrOptions['total'] - number of all posts
- *    - arrOptions['terms_settings'] - array of all terms with their settings. See options in filter ymc_post_custom_layout.
- * @returns {string} HTML markup card post
- */
-function ymc_after_custom_layout($increment, $arrOptions)
-{
-	echo '<article class="post-item">
-						<h3>My Header</h3>
-			<div>Custom text</div> 
-					</article>';
+function my_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $target, $options)
+{ ?>
+
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			let _target = "<?php echo $target; ?>";
+			document.querySelectorAll(_target + ' .filter-custom-layout [data-termid]').forEach((el) => {
+				el.addEventListener('click', function(e) {
+					e.preventDefault();
+					let ymc = YMCTools({
+						target: _target,
+						self: this
+					});
+					ymc.updateParams();
+					ymc.getFilterPosts();
+				});
+			});
+		});
+	</script>
+
+<?php
+	if (count($terms)) {
+
+		$multiple = ($multiple) ? 'multiple' : '';
+		$terms_list = implode(",", $terms);
+		$layout = '<ul>';
+		$layout .= '<li><a class="all active" href="#" data-selected="all" data-termid="' . esc_attr($terms_list) . '">' . esc_html__('ALL', 'theme') . '</a></li>';
+
+		foreach ($taxonomy as $tax) {
+			$layout .= '<li>';
+			$layout .= '<header>' . get_taxonomy($tax)->label . '</header>';
+			$layout .= '<ul>';
+			foreach ($terms as $term) {
+				if ($tax === get_term($term)->taxonomy) {
+					$class_icon = '';
+					$color_icon = '';
+					foreach ($options as $obj) {
+						if ($obj->termid === $term) {
+							$class_icon = $obj->classicon;
+							$color_icon = $obj->coloricon;
+							break;
+						}
+					}
+					$layout .= '<li><a class="' . $multiple . '" href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '">' .
+						'<i class="' . esc_attr($class_icon) . '" style="color:' . esc_attr($color_icon) . '"></i>' . esc_html(get_term($term)->name) . '</a></li>';
+				}
+			}
+			$layout .= '</ul></li>';
+		}
+		$layout .= '</ul>';
+		$layout .= '<div class="posts-found"></div>';
+	}
+	return $layout;
 }
-add_action('ymc_after_custom_layout_545_1', 'ymc_after_custom_layout', 10, 2);
+
+add_filter('ymc_filter_custom_layout_148_1', 'my_custom_filter_layout', 10, 6);
