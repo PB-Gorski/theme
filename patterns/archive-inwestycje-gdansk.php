@@ -158,17 +158,30 @@
             echo '<li><a alt="' . $brand_name . '" href="' . esc_url($brand_link) . '">' . $brand_name . '</a></li>';
 
 
-            foreach ($taxonomies as $tax) {
-              $counter++;
-              $currentTermCount = (get_term($tax, 'inwestycja'))->count;
-              $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
-              $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
+            //     foreach ($taxonomies as $tax) {
+            //       $counter++;
+            //       $currentTermCount = (get_term($tax, 'inwestycja'))->count;
+            //       $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
+            //       $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
-              echo $currentTermCount;
+            //       echo $currentTermCount;
+            // 
         ?>
 
+            // <?php
+                //     };
+
+                // foreach ($taxonomies as $tax) {
+                $counter++;
+                $currentTermCount = (get_term($taxonomies[i], 'inwestycja'))->count;
+                $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[i]->name));
+                $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
+
+                echo $currentTermCount;
+                ?>
+
             <?php
-            };
+            // };
 
             ?>
             <!-- wp:list-item -->
@@ -237,6 +250,7 @@
             <!-- /wp:list-item -->
         <?php
             $counter++;
+            $i++;
 
           endforeach;
           echo '</ul>';
