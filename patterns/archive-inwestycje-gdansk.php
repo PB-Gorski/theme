@@ -371,23 +371,23 @@ $count = $query->found_posts;
           'posts_per_page' => 10,
           'order' => 'ASC',
           'taxonomy_name' => 'miasto',
-          'tax_query' => array(
-            'relation' => 'AND',
-            array(
-              'taxonomy' => 'inwestycja',
-              'field'    => 'slug',
-            ),
-            array(
-              'taxonomy' => 'miasto',
-              'field'    => 'slug',
-              'terms'    => 'gdynia',
-              // 'operator' => 'NOT IN',
-            ),
-          ),
+          // 'tax_query' => array(
+          //   'relation' => 'AND',
+          //   array(
+          //     'taxonomy' => 'inwestycja',
+          //     'field'    => 'slug',
+          //   ),
+          //   array(
+          //     'taxonomy' => 'miasto',
+          //     'field'    => 'slug',
+          //     'terms'    => 'gdynia',
+          //     // 'operator' => 'NOT IN',
+          //   ),
+          // ),
         );
         $post_query = new WP_Query($args);
         $counter = 0;
-        print_r($post_query);
+        // print_r($post_query);
         $i = 0;
         $taxonomies = get_terms(array(
           'taxonomy' => 'inwestycja',
@@ -406,23 +406,6 @@ $count = $query->found_posts;
         // echo '<br>';
         // echo 'foreach:<br>';
 
-        $args3 = array(
-          'taxonomy' => 'city',
-          'hierarchical' => true,
-          'depth' => 1,
-          'child_of' => 'gdynia',
-          'hide_empty' => false
-        );
-
-        $sub_terms2 = get_categories($args);
-
-        foreach ($sub_terms2 as $sub_term) {
-        ?>
-          <li><?php echo $sub_term->name ?></li>
-        <?php
-        }
-
-
         $productcat_id      = get_queried_object_id();
         $args4 = array(
           'numberposts' => -1,
@@ -436,13 +419,13 @@ $count = $query->found_posts;
           ),
         );
 
+        // dziala:
         $cat_posts  = get_posts($args4);
-
         $my_post_ids = wp_list_pluck($cat_posts, 'ID');
         $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
 
         if (!empty($my_terms)) :
-          echo '<ul class="test">';
+          echo '<ul class="test2">';
           foreach ($my_terms as $my_term) :
 
             $brand_name = $my_term->name;
