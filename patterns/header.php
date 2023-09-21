@@ -37,6 +37,30 @@
         <div class="wp-block-group container mx-auto">
           <!-- wp:list -->
           <ul class="wp-block-list mb-[20px] flex items-center gap-[20px] text-[14px] font-medium">
+            <?php
+            $args = array(
+              'taxonomy' => 'miasto',
+              'orderby' => 'name',
+              'paged' => 1,
+              'order'   => 'ASC'
+            );
+            $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 39, 20));
+            $cats = get_categories($args); ?>
+            <!-- wp:list-item -->
+            <li class="allTabBtn text-[#8A8F99] text-textGray underline underline-offset-4 decoration-2 decoration-primaryRed cursor-pointer">
+              <a href="<?php echo get_home_url() . '/inwestycje'; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30">Wszystkie</a>
+            </li>
+            <!-- /wp:list-item -->
+            <?php
+            foreach ($cats as $cat) {
+              $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
+            ?>
+              <!-- wp:list-item -->
+              <li class="uppercase allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo home_url() . '/inwestycje-' . $catNoSpaces; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30"><?php echo $cat->name; ?></a></li>
+              <!-- /wp:list-item -->
+            <?php }; ?>
+
+
             <!-- wp:list-item -->
             <li class="uppercase allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
               WSZYSTKIE
