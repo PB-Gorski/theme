@@ -56,10 +56,6 @@
           'miasto' => 'gdansk',
           'post_status' => 'publish'
         ));
-        $queryTax = new WP_Tax_Query(array(
-          // 'taxonomy' => 'inwestycje',
-          'post_status' => 'publish'
-        ));
         $count = $query->found_posts;
         ?>
         <!-- wp:paragraph -->
