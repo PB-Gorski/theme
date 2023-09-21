@@ -88,12 +88,13 @@
 
 
 
-      $counter = 0;
-      $i = 0;
-      $taxonomies = get_terms(array(
-        'taxonomy' => 'inwestycja',
-        'hide_empty' => false,
-      ));
+      // $counter = 0;
+      // $i = 0;
+      // $taxonomies = get_terms(array(
+      //   'taxonomy' => 'inwestycja',
+      //   'hide_empty' => false,
+      // ));
+      // 
       ?>
     </ul>
     <!-- /wp:list -->
@@ -122,14 +123,14 @@
         //   ),
         // ),
         // );
-        $post_query = new WP_Query($args);
-        $counter = 0;
-        // print_r($post_query);
-        $i = 0;
-        $taxonomies = get_terms(array(
-          'taxonomy' => 'inwestycja',
-          'hide_empty' => false,
-        ));
+        // $post_query = new WP_Query($args);
+
+        // $counter = 0;
+        // $i = 0;
+        // $taxonomies = get_terms(array(
+        //   'taxonomy' => 'inwestycja',
+        //   'hide_empty' => false,
+        // ));
         // $term = get_term(10, 'inwestycja');
         // $terms = get_terms('inwestycja');
 
