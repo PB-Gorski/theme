@@ -123,8 +123,8 @@
 
 
         // dziala:
-        $counter = 0;
-        $i = 0;
+        $counter = 1;
+        $i = 1;
 
         $taxonomies = get_terms(array(
           'taxonomy' => 'inwestycja',
