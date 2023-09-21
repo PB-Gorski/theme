@@ -15,6 +15,8 @@ $query = new WP_Query(array(
 $count = $query->found_posts;
 
 print_r($query);
+echo '<br>';
+print_r($query->tax_query);
 
 ?>
 
