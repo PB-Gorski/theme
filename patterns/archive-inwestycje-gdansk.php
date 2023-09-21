@@ -9,6 +9,17 @@
 ?>
 
 <?php
+$args2 = array(
+  'numberposts' => -1,
+  'post_type' => array('mieszkania'),
+  'tax_query' => array(
+    array(
+      'taxonomy' => 'miasto',
+      'field'    => 'slug',
+      'terms'    => 'gdansk',
+    ),
+  ),
+);
 $cat_posts  = get_posts($args2);
 $my_post_ids = wp_list_pluck($cat_posts, 'ID');
 $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
