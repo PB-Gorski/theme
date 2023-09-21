@@ -104,7 +104,7 @@
       ));
 
       $query = new WP_Query(array(
-        'miasto' => $term,
+        'miasto' => 'gdansk',
         'post_status' => 'publish'
       ));
       $count = $query->found_posts;
