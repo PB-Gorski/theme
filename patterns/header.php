@@ -56,7 +56,7 @@
               $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
             ?>
               <!-- wp:list-item -->
-              <li class="uppercase allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo home_url() . '/inwestycje-' . $catNoSpaces; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30"><?php echo $cat->name; ?></a></li>
+              <li class="uppercase allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo home_url() . '/inwestycje-' . $catNoSpaces; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30"><?php echo $cat->name; ?></a></li>
               <!-- /wp:list-item -->
             <?php }; ?>
             <!-- wp:list-item -->
