@@ -110,41 +110,14 @@
         $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
 
         if (!empty($my_terms)) :
-          echo '<ul class="test2">';
           foreach ($my_terms as $my_term) :
-
             $brand_name = $my_term->name;
             $brand_link = get_term_link($my_term);
-
-            echo '<li><a alt="' . $brand_name . '" href="' . esc_url($brand_link) . '">' . $brand_name . '</a></li>';
-
-
-            //     foreach ($taxonomies as $tax) {
-            //       $counter++;
-            //       $currentTermCount = (get_term($tax, 'inwestycja'))->count;
-            //       $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
-            //       $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
-
-            //       echo $currentTermCount;
-            // 
-        ?>
-
-            <?php
-            //     };
-
-            // foreach ($taxonomies as $tax) {
-            $counter++;
             $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
             $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
             $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
-
-            echo $currentTermCount;
-            ?>
-
-            <?php
-            // };
-
-            ?>
+            // $counter++;
+        ?>
             <!-- wp:list-item -->
             <li class="invest-tile current max-w-full test desktop:h-[450px] mb-[80px]">
               <a href="<?php echo home_url() . '/o-inwestycji' . ''; ?>" class="relative group inline-block cursor-default desktop:max-w-full w-full h-full" data-aos="fade-up" data-aos-offset="30">
@@ -212,19 +185,14 @@
         <?php
             $counter++;
             $i++;
-
           endforeach;
           echo '</ul>';
-        endif;
-
-
-        ?>
+        endif; ?>
       </ul>
       <!-- /wp:list -->
     </div>
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
-
 </div>
 <!-- /wp:group -->
