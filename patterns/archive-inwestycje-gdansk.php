@@ -80,48 +80,6 @@
       <!-- wp:list -->
       <ul class="wp-block-list mb-[40px]">
         <?php
-        // $args = array(
-        //   'post_type' => 'mieszkania',
-        //   'posts_per_page' => 10,
-        //   'order' => 'ASC',
-        //   'taxonomy_name' => 'miasto',
-        // 'tax_query' => array(
-        //   'relation' => 'AND',
-        //   array(
-        //     'taxonomy' => 'inwestycja',
-        //     'field'    => 'slug',
-        //   ),
-        //   array(
-        //     'taxonomy' => 'miasto',
-        //     'field'    => 'slug',
-        //     'terms'    => 'gdynia',
-        //     // 'operator' => 'NOT IN',
-        //   ),
-        // ),
-        // );
-        // $post_query = new WP_Query($args);
-
-        // $counter = 0;
-        // $i = 0;
-        // $taxonomies = get_terms(array(
-        //   'taxonomy' => 'inwestycja',
-        //   'hide_empty' => false,
-        // ));
-        // $term = get_term(10, 'inwestycja');
-        // $terms = get_terms('inwestycja');
-
-        // echo '<br>';
-        // echo 'taxonomies print r:<br>';
-        // print_r($taxonomies);
-        // echo '<br>';
-        // echo 'the taxonomies print r:<br>';
-        // print_r(the_taxonomies());
-
-        // echo '<br>';
-        // echo 'foreach:<br>';
-
-
-
         // dziala:
         $counter = 1;
         $i = 1;
