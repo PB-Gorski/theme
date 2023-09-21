@@ -110,7 +110,7 @@
       // echo $selected_val2  == true ? $selected_val2 : 'brak2';;
 
       // $taxonomy = $selected_val1 == true ?  $selected_val1 : 'miasto';
-      $term = $selected_val2 == true ? $selected_val2 : 'gdynia';
+      // $term = $selected_val2 == true ? $selected_val2 : 'gdynia';
 
       $query = new WP_Query(array(
         'miasto' => $term,
