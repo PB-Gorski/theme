@@ -12,11 +12,21 @@ $query = new WP_Query(array(
   'miasto' => 'gdansk',
   'post_status' => 'publish'
 ));
+$queryTax = new WP_Tax_Query(array(
+  'taxonomy' => 'inwestycje',
+  'post_status' => 'publish'
+));
 $count = $query->found_posts;
 
+echo '<br>';
 print_r($query);
 echo '<br>';
+echo '<br>';
 print_r($query->tax_query);
+echo '<br>';
+echo 'tax query: <br>';
+print_r($queryTax);
+echo '<br>';
 
 ?>
 
