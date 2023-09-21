@@ -406,6 +406,22 @@ $count = $query->found_posts;
         // echo '<br>';
         // echo 'foreach:<br>';
 
+        $args3 = array(
+          'taxonomy' => 'city',
+          'hierarchical' => true,
+          'depth' => 1,
+          'child_of' => 'gdynia',
+          'hide_empty' => false
+        );
+
+        $sub_terms2 = get_categories($args);
+
+        foreach ($sub_terms2 as $sub_term) {
+        ?>
+          <li><?php echo $sub_term->name ?></li>
+        <?php
+        }
+
 
         $productcat_id = get_queried_object_id();
         $args2 = array(
