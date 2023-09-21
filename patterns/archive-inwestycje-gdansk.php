@@ -108,20 +108,20 @@
         //   'posts_per_page' => 10,
         //   'order' => 'ASC',
         //   'taxonomy_name' => 'miasto',
-          // 'tax_query' => array(
-          //   'relation' => 'AND',
-          //   array(
-          //     'taxonomy' => 'inwestycja',
-          //     'field'    => 'slug',
-          //   ),
-          //   array(
-          //     'taxonomy' => 'miasto',
-          //     'field'    => 'slug',
-          //     'terms'    => 'gdynia',
-          //     // 'operator' => 'NOT IN',
-          //   ),
-          // ),
-        );
+        // 'tax_query' => array(
+        //   'relation' => 'AND',
+        //   array(
+        //     'taxonomy' => 'inwestycja',
+        //     'field'    => 'slug',
+        //   ),
+        //   array(
+        //     'taxonomy' => 'miasto',
+        //     'field'    => 'slug',
+        //     'terms'    => 'gdynia',
+        //     // 'operator' => 'NOT IN',
+        //   ),
+        // ),
+        // );
         $post_query = new WP_Query($args);
         $counter = 0;
         // print_r($post_query);
