@@ -103,7 +103,7 @@
       //   $selected_val1 = $_POST['tax'];
       // }
       $dom = new DOMDocument();
-      $dom->load("index.html");
+      $dom->load("archive-mieszkania.html");
       $div = $dom->getElementById('select-miasto');
       print_r($div); //prints everything it gets
 
