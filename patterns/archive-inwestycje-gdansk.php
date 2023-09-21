@@ -423,24 +423,23 @@ $count = $query->found_posts;
         }
 
 
-        $productcat_id = get_queried_object_id();
-        $args2 = array(
+        $productcat_id      = get_queried_object_id();
+        $args4 = array(
           'numberposts' => -1,
-          'post_type' => 'mieszkania',
+          'post_type' => array('mieszkania'),
           'tax_query' => array(
             array(
-              'taxonomy' => 'inwestycja',
-              'field'    => 'term_id',
-              'terms'    => $productcat_id,
+              'taxonomy' => 'miasto',
+              'field'    => 'slug',
+              'terms'    => 'gdynia',
             ),
           ),
         );
 
-        $cat_posts  = get_posts($args2);
+        $cat_posts  = get_posts($args4);
 
         $my_post_ids = wp_list_pluck($cat_posts, 'ID');
-        $my_terms    = wp_get_object_terms($my_post_ids, 'miasto');
-        print_r($my_terms);
+        $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
 
         if (!empty($my_terms)) :
           echo '<ul>';
