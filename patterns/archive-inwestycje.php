@@ -80,25 +80,11 @@
         'taxonomy' => 'inwestycja',
         'hide_empty' => false,
       ));
-      // $term = get_term(10, 'inwestycja');
-      // $terms = get_terms('inwestycja');
-
-      // echo '<br>';
-      // echo 'taxonomies print r:<br>';
-      // print_r($taxonomies);
-      // echo '<br>';
-      // echo 'the taxonomies print r:<br>';
-      // print_r(the_taxonomies());
-
-      // echo '<br>';
-      // echo 'foreach:<br>';
       foreach ($taxonomies as $tax) {
         $counter++;
         $currentTermCount = (get_term($tax, 'inwestycja'))->count;
         $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
         $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
-
-        // echo $tax->name;
       ?>
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
@@ -174,37 +160,6 @@
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
           $counter++;
-
-          // echo 'get_term: <br>';
-          // print_r(get_term(10, 'osiedla'));
-          // echo '<br>';
-
-          // echo 'term: <br>';
-          // print_r($term);
-          // echo '<br>';
-          // echo 'terms:<br>';
-
-          // print_r($terms);
-          // echo '<br>';
-
-          // echo '<br>';
-          // echo 'the taxonomies print r:<br>';
-          // print_r(the_taxonomies());
-          // echo 'the_taxonomies<br>';
-          // echo the_taxonomies(68);
-          // echo '<br>';
-          // echo 'the_taxonomies<br>';
-          // echo the_taxonomies(array(
-          //   'name' => 'test01',
-          // ));
-
-          // echo '<br>';
-          // echo 'tersms list:<br>';
-          // echo '<br>';
-
-          // print_r(get_the_term_list($post_query->ID, 'inwestycja', '', ', ', ''));
-          // echo $post_query->post_count;
-
         ?>
           <!-- wp:list-item -->
           <li class="hidden invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
