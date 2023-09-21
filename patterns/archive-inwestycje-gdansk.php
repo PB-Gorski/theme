@@ -370,17 +370,18 @@ $count = $query->found_posts;
           'post_type' => 'mieszkania',
           'posts_per_page' => 10,
           'order' => 'ASC',
-          'taxonomy_name' => 'inwestycja',
+          // 'taxonomy_name' => 'inwestycja',
           'tax_query' => array(
-            array(
-              'taxonomy' => 'miasta',
-              'field' => 'slug',
-              'terms' => 'gdynia',
-            ),
+            'relation' => 'AND',
             array(
               'taxonomy' => 'inwestycja',
-              'field' => 'slug',
-              'terms' => 'gdynia',
+              'field'    => 'slug',
+            ),
+            array(
+              'taxonomy' => 'miasto',
+              'field'    => 'term_id',
+              'terms'    => 'gdynia',
+              'operator' => 'NOT IN',
             ),
           ),
         );
