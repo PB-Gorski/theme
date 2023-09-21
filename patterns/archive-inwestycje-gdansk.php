@@ -381,7 +381,7 @@ $count = $query->found_posts;
               'taxonomy' => 'miasto',
               'field'    => 'slug',
               'terms'    => 'gdynia',
-              'operator' => 'NOT IN',
+              // 'operator' => 'NOT IN',
             ),
           ),
         );
