@@ -399,6 +399,9 @@ option:hover {
 .dropdown-filter{
   margin-right: 2px!important;
 }
+.arrow::before{
+  content: none!important;
+}
 
 /* sorting arrow */
 .sort-arrow::after{
