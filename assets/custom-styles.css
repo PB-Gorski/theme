@@ -389,7 +389,8 @@ option:hover {
 .menu-link::before,
 .menu-link::after,
 .arrow::before,
-.arrow::after{
+.arrow::after,
+.menu-passive::before{
   content: none!important;
 }
 .menu-passive__item:hover{
