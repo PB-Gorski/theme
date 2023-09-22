@@ -27,12 +27,12 @@ window.addEventListener("load", function() {
   const modal = document.querySelector('.modal');
   const tabBtns = document.querySelectorAll('.tabBtn');
   const headerTabs = document.querySelectorAll('.headerTab');
-  const allTabBtn = document.querySelector('.allTabBtn');
-  const gdanskTabBtn = document.querySelector('.gdanskTabBtn');
-  const gdyniaTabBtn = document.querySelector('.gdyniaTabBtn');
-  const modalTab1 = document.querySelector('.tab1');
-  const modalTab2 = document.querySelector('.tab2');
-  const modalTab3 = document.querySelector('.tab3');
+  // const allTabBtn = document.querySelector('.allTabBtn');
+  // const gdanskTabBtn = document.querySelector('.gdanskTabBtn');
+  // const gdyniaTabBtn = document.querySelector('.gdyniaTabBtn');
+  // const modalTab1 = document.querySelector('.tab1');
+  // const modalTab2 = document.querySelector('.tab2');
+  // const modalTab3 = document.querySelector('.tab3');
 
   hoverMenuItem.addEventListener('mouseover',()=>{
     modal.classList.replace('opacity-0', 'opacity-100');
@@ -53,7 +53,6 @@ window.addEventListener("load", function() {
         tabBtns[i].classList.remove('tab-active');
         headerTabs[i].classList.remove('block');
         headerTabs[i].classList.add('hidden');
-        console.log(tabBtns[i]);
       }
       tabBtn.classList.add('tab-active');
       headerTabs[index].classList.remove('hidden');
