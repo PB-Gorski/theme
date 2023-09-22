@@ -388,6 +388,7 @@ option:hover {
   background-color: #B2F1FF;
   padding-left: 10px;
   padding-right: 10px;
+  cursor: pointer;
 }
 
 /* sorting arrow */
