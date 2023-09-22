@@ -360,6 +360,12 @@ option:hover {
 .btn-all{
   display: none;
 }
+.dropdown-filter{
+  margin: 0;
+  width: 100%;
+  height: 62px;
+  color: #999;
+}
 
 /* sorting arrow */
 .sort-arrow::after{
