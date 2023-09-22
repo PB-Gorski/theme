@@ -46,8 +46,8 @@
             $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 39, 20));
             $cats = get_categories($args); ?>
             <!-- wp:list-item -->
-            <li class="uppercase text-[#8A8F99] text-textGray underline underline-offset-4 decoration-2 decoration-primaryRed cursor-pointer">
-              <a href="<?php echo get_home_url() . '/inwestycje'; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30">Wszystkie</a>
+            <li class="allTabBtn uppercase text-[#8A8F99] text-textGray underline underline-offset-4 decoration-2 decoration-primaryRed cursor-pointer">
+              <p class="inline-block" data-aos="fade-right" data-aos-offset="30">Wszystkie</p>
             </li>
             <!-- /wp:list-item -->
             <?php
@@ -55,7 +55,9 @@
               $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
             ?>
               <!-- wp:list-item -->
-              <li class="uppercase allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer"><a href="<?php echo home_url() . '/inwestycje-' . $catNoSpaces; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30"><?php echo $cat->name; ?></a></li>
+              <li class="uppercase text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+                <p class="inline-block" data-aos="fade-right" data-aos-offset="30"><?php echo $cat->name; ?></p>
+              </li>
               <!-- /wp:list-item -->
             <?php }; ?>
             <!-- wp:list-item -->
@@ -72,7 +74,7 @@
           <!-- /wp:list -->
 
           <!-- wp:group -->
-          <div class="wp-block-group tab1 block text-[17px] flex">
+          <div class="wp-block-group allTabBtn tab1 block text-[17px] flex">
             <!-- wp:group -->
             <div class="wp-block-group col1 w-[60%] border-r-[1px] border-[rgba(138,143,153,0.30)]">
               <!-- wp:group -->
