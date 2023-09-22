@@ -47,6 +47,9 @@ window.addEventListener("load", function() {
   });
 
   tabBtns.forEach(tabBtn => {
+    for(let i = 0 ; i<3 ; i++){
+      tabBtns[i].classList.remove('tab-active');
+    }
     tabBtn.addEventListener('click', () => {
       tabBtn.classList.add('tab-active');
 
