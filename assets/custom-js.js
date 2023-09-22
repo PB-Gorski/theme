@@ -51,10 +51,12 @@ window.addEventListener("load", function() {
     tabBtn.addEventListener('click', () => {
       for(let i = 0 ; i<3 ; i++){
         tabBtns[i].classList.remove('tab-active');
+        headerTabs[i].classList.remove('block');
         console.log(tabBtns[i]);
       }
       tabBtn.classList.add('tab-active');
-      headerTabs[index].classList.add('test');
+      headerTabs[index].classList.remove('hidden');
+      headerTabs[index].classList.add('block');
     });
   });
 
