@@ -50,7 +50,7 @@ window.addEventListener("load", function() {
     tabBtn.addEventListener('click', () => {
       tabBtn.classList.add('tab-active');
 
-    })
+    });
   });
 
   allTabBtn.addEventListener('click',()=>{
