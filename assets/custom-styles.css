@@ -379,6 +379,10 @@ option:hover {
   color: #2E384D!important;
   font-size: 18px!important;
 }
+.menu-link{
+  color: #2E384D!important;
+  font-size: 18px!important;
+}
 
 /* sorting arrow */
 .sort-arrow::after{
