@@ -57,33 +57,33 @@ window.addEventListener("load", function() {
     });
   });
 
-  allTabBtn.addEventListener('click',()=>{
-    allTabBtn.classList.add('tab-active');
-    gdanskTabBtn.classList.remove('tab-active');
-    gdyniaTabBtn.classList.remove('tab-active');
-    modalTab1.classList.remove('hidden');
-    modalTab1.classList.add('block');
-    modalTab2.classList.replace('block','hidden');
-    modalTab3.classList.replace('block','hidden');
-  });
-  gdanskTabBtn.addEventListener('click',()=>{
-    allTabBtn.classList.remove('tab-active');
-    gdanskTabBtn.classList.add('tab-active');
-    gdyniaTabBtn.classList.remove('tab-active');
-    modalTab1.classList.add('hidden');
-    modalTab1.classList.remove('block');
-    modalTab2.classList.replace('hidden','block');
-    modalTab3.classList.replace('block','hidden');
-  });
-  gdyniaTabBtn.addEventListener('click',()=>{
-    allTabBtn.classList.remove('tab-active');
-    gdanskTabBtn.classList.remove('tab-active');
-    gdyniaTabBtn.classList.add('tab-active');
-    modalTab1.classList.add('hidden');
-    modalTab1.classList.remove('block');
-    modalTab2.classList.replace('block','hidden');
-    modalTab3.classList.replace('hidden','block');
-  });
+  // allTabBtn.addEventListener('click',()=>{
+  //   allTabBtn.classList.add('tab-active');
+  //   gdanskTabBtn.classList.remove('tab-active');
+  //   gdyniaTabBtn.classList.remove('tab-active');
+  //   modalTab1.classList.remove('hidden');
+  //   modalTab1.classList.add('block');
+  //   modalTab2.classList.replace('block','hidden');
+  //   modalTab3.classList.replace('block','hidden');
+  // });
+  // gdanskTabBtn.addEventListener('click',()=>{
+  //   allTabBtn.classList.remove('tab-active');
+  //   gdanskTabBtn.classList.add('tab-active');
+  //   gdyniaTabBtn.classList.remove('tab-active');
+  //   modalTab1.classList.add('hidden');
+  //   modalTab1.classList.remove('block');
+  //   modalTab2.classList.replace('hidden','block');
+  //   modalTab3.classList.replace('block','hidden');
+  // });
+  // gdyniaTabBtn.addEventListener('click',()=>{
+  //   allTabBtn.classList.remove('tab-active');
+  //   gdanskTabBtn.classList.remove('tab-active');
+  //   gdyniaTabBtn.classList.add('tab-active');
+  //   modalTab1.classList.add('hidden');
+  //   modalTab1.classList.remove('block');
+  //   modalTab2.classList.replace('block','hidden');
+  //   modalTab3.classList.replace('hidden','block');
+  // });
 
 
   for (const dropdown of document.querySelectorAll(".select-wrapper")) {
