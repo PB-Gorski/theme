@@ -52,7 +52,7 @@ window.addEventListener("load", function() {
       for(let i = 0 ; i<3 ; i++){
         tabBtns[i].classList.remove('tab-active');
         headerTabs[i].classList.remove('block');
-        headerTabs[i].classList.remove('hidden');
+        headerTabs[i].classList.add('hidden');
         console.log(tabBtns[i]);
       }
       tabBtn.classList.add('tab-active');
