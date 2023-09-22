@@ -403,7 +403,7 @@ option:hover {
   margin-right: 2px!important;
 }
 .menu-passive__item .active{
-  padding: 0!important;
+  padding: 10px!important;
 }
 
 /* sorting arrow */
