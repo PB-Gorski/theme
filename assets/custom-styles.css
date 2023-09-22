@@ -358,7 +358,7 @@ option:hover {
 
 /* taxonomy filter YMC */
 .btn-all{
-  display: none;
+  display: none!important;
 }
 .dropdown-filter{
   margin: 0;
