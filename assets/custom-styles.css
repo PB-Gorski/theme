@@ -378,11 +378,16 @@ option:hover {
   background-color: white!important;
   color: #2E384D!important;
   font-size: 18px!important;
-  padding: 0;
+  padding: 0!important;
 }
 .menu-link{
   color: #2E384D!important;
   font-size: 18px!important;
+}
+.menu-passive__item:hover{
+  background-color: #B2F1FF;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* sorting arrow */
