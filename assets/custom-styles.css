@@ -385,10 +385,10 @@ option:hover {
   font-size: 18px!important;
 }
 .menu-link::before{
- display: none!important;
+  content: none!important;
 }
 .menu-link::after{
- display: none!important;
+  content: none!important;
 }
 .menu-passive__item:hover{
   background-color: #B2F1FF;
