@@ -390,6 +390,9 @@ option:hover {
   padding-right: 10px;
   /* cursor: pointer; */
 }
+.dropdown-filter{
+  margin-right: 2px!important;
+}
 
 /* sorting arrow */
 .sort-arrow::after{
