@@ -378,6 +378,7 @@ option:hover {
   background-color: white!important;
   color: #2E384D!important;
   font-size: 18px!important;
+  padding: 0;
 }
 .menu-link{
   color: #2E384D!important;
