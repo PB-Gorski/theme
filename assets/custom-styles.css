@@ -373,6 +373,8 @@ option:hover {
 }
 .menu-active{
   border: none!important;
+  display: flex;
+  align-items: center;
 }
 .menu-passive{
   background-color: white!important;
