@@ -384,10 +384,16 @@ option:hover {
   color: #2E384D!important;
   font-size: 18px!important;
 }
+.menu-link::before{
+ display: none!important;
+}
+.menu-link::after{
+ display: none!important;
+}
 .menu-passive__item:hover{
   background-color: #B2F1FF;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 10px!important;
+  padding-right: 10px!important;
   /* cursor: pointer; */
 }
 .dropdown-filter{
