@@ -97,6 +97,8 @@
       </ul>
       <!-- /wp:list -->
 
+      <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
+
 
       <?php
       // if (isset($_POST['submit'])) {
