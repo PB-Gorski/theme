@@ -97,7 +97,7 @@
       </ul>
       <!-- /wp:list -->
 
-      <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
+
 
 
       <?php
@@ -169,6 +169,8 @@
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
+
+    <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
   </div>
   <!-- /wp:group -->
 
