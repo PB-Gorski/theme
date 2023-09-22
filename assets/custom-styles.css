@@ -384,10 +384,10 @@ option:hover {
   color: #2E384D!important;
   font-size: 18px!important;
 }
-.menu-link::before{
-  content: none!important;
-}
-.menu-link::after{
+.menu-link::before,
+.menu-link::after,
+.arrow::before,
+.arrow::after{
   content: none!important;
 }
 .menu-passive__item:hover{
@@ -398,9 +398,6 @@ option:hover {
 }
 .dropdown-filter{
   margin-right: 2px!important;
-}
-.arrow::before{
-  content: none!important;
 }
 
 /* sorting arrow */
