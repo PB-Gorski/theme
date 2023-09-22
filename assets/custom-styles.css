@@ -357,6 +357,11 @@ option:hover {
 }
 
 /* taxonomy filter YMC */
+.ymc-smart-filter-container{
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .btn-all{
   display: none!important;
 }
