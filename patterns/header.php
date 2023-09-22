@@ -184,45 +184,42 @@
                 $my_post_ids = wp_list_pluck($cat_posts, 'ID');
                 $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                 ?>
-                <?php
-                $args = array(
-                  'taxonomy' => 'miasto',
-                  'orderby' => 'name',
-                  'paged' => 1,
-                  'order'   => 'ASC'
-                );
-                $cats = get_categories($args); ?>
-                <?php
-                $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 42, 20));
-                foreach ($cats as $cat) {
-                  $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
-                ?>
-                  <!-- wp:list-item -->
-                  <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer"><a href="<?php echo home_url() . '/inwestycje-' . $catNoSpaces; ?>" class=""><?php echo $cat->name; ?></a></li>
-                  <!-- /wp:list-item -->
-                <?php }; ?>
-
-
-
-
-
-
-                <!-- wp:list-item -->
-                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Osiedle Srebniki2</a>
-                </li>
-                <!-- /wp:list-item -->
+              <?php
+              $counter = 1;
+              $i = 1;
+              $taxonomies = get_terms(array(
+                'taxonomy' => 'inwestycja',
+                'hide_empty' => false,
+              ));
+              $productcat_id = get_queried_object_id();
+              $args2 = array(
+                'numberposts' => -1,
+                'post_type' => array('mieszkania'),
+                'tax_query' => array(
+                  array(
+                    'taxonomy' => 'miasto',
+                    'field'    => 'slug',
+                    'terms'    => 'gdansk',
+                  ),
+                ),
+              );
+              if (!empty($my_terms)) :
+                foreach ($my_terms as $my_term) :
+                  $taxInwestycjeName = $my_term->name;
+                  $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
+                  $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
+                  $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
+              ?>
 
                 <!-- wp:list-item -->
                 <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Wieżycka Folwark</a>
+                  <a href="#"><?php echo $taxInwestycjeName; ?></a>
                 </li>
-                <!-- /wp:list-item -->
-                <!-- wp:list-item -->
-                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Toruńska 16</a>
-                </li>
-                <!-- /wp:list-item -->
+                <!-- /wp:list-item -->             
+
+
+
+
               </ul>
               <!-- /wp:list -->
               <!-- wp:group -->
