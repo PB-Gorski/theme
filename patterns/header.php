@@ -222,12 +222,6 @@
                     $i++;
                   endforeach;
                 endif; ?>
-
-
-
-
-
-
               </ul>
               <!-- /wp:list -->
               <!-- wp:group -->
@@ -283,11 +277,60 @@
 
               <!-- wp:list -->
               <ul class="wp-block-list text-textGray flex flex-wrap gap-x-[120px]">
-                <!-- wp:list-item -->
-                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Św. Piotra3</a>
-                </li>
-                <!-- /wp:list-item -->
+                <?php
+                $args2 = array(
+                  'numberposts' => -1,
+                  'post_type' => array('mieszkania'),
+                  'tax_query' => array(
+                    array(
+                      'taxonomy' => 'miasto',
+                      'field'    => 'slug',
+                      'terms'    => 'gdynia',
+                    ),
+                  ),
+                );
+                $cat_posts  = get_posts($args2);
+                $my_post_ids = wp_list_pluck($cat_posts, 'ID');
+                $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
+                ?>
+
+                <?php
+                $counter = 1;
+                $i = 1;
+                $taxonomies = get_terms(array(
+                  'taxonomy' => 'inwestycja',
+                  'hide_empty' => false,
+                ));
+                $productcat_id = get_queried_object_id();
+                $args2 = array(
+                  'numberposts' => -1,
+                  'post_type' => array('mieszkania'),
+                  'tax_query' => array(
+                    array(
+                      'taxonomy' => 'miasto',
+                      'field'    => 'slug',
+                      'terms'    => 'gdynia',
+                    ),
+                  ),
+                );
+                if (!empty($my_terms)) :
+                  foreach ($my_terms as $my_term) :
+                    $taxInwestycjeName = $my_term->name;
+                    $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
+                    $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
+                    $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
+                ?>
+
+                    <!-- wp:list-item -->
+                    <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                      <a href="#"><?php echo $taxInwestycjeName; ?></a>
+                    </li>
+                    <!-- /wp:list-item -->
+                <?php
+                    $counter++;
+                    $i++;
+                  endforeach;
+                endif; ?>
               </ul>
               <!-- /wp:list -->
             </div>
