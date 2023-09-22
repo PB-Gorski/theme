@@ -26,6 +26,7 @@ window.addEventListener("load", function() {
   const hoverMenuItem = document.querySelector('.hover-item');
   const modal = document.querySelector('.modal');
   const tabBtns = document.querySelectorAll('.tabBtn');
+  const headerTabs = document.querySelectorAll('.headerTab');
   const allTabBtn = document.querySelector('.allTabBtn');
   const gdanskTabBtn = document.querySelector('.gdanskTabBtn');
   const gdyniaTabBtn = document.querySelector('.gdyniaTabBtn');
@@ -46,14 +47,14 @@ window.addEventListener("load", function() {
     modal.classList.replace('z-[1]', 'z-[-1]');
   });
 
-  tabBtns.forEach(tabBtn => {
+  tabBtns.forEach((tabBtn,index) => {
     tabBtn.addEventListener('click', () => {
       for(let i = 0 ; i<3 ; i++){
         tabBtns[i].classList.remove('tab-active');
-        console.log( tabBtns[i]);
+        console.log(tabBtns[i]);
       }
       tabBtn.classList.add('tab-active');
-
+      headerTabs[index].classList.add('test');
     });
   });
 

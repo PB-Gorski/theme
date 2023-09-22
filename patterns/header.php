@@ -74,7 +74,7 @@
           <!-- /wp:list -->
 
           <!-- wp:group -->
-          <div class="wp-block-group allTabBtn tab1 block text-[17px] flex">
+          <div class="wp-block-group headerTab tab1 allTabBtn block text-[17px] flex">
             <!-- wp:group -->
             <div class="wp-block-group col1 w-[60%] border-r-[1px] border-[rgba(138,143,153,0.30)]">
               <!-- wp:group -->
@@ -155,7 +155,7 @@
           <!-- /wp:group -->
 
           <!-- wp:group -->
-          <div class="wp-block-group tab2 gdansk hidden text-[17px] flex">
+          <div class="wp-block-group headerTab tab2 gdansk hidden text-[17px] flex">
             <!-- wp:group -->
             <div class="wp-block-group col1 w-[60%]">
               <!-- wp:group -->
@@ -226,7 +226,7 @@
           </div>
           <!-- /wp:group -->
           <!-- wp:group -->
-          <div class="wp-block-group tab3 hidden text-[17px] flex">
+          <div class="wp-block-group headerTab tab3 hidden text-[17px] flex">
             <!-- wp:group -->
             <div class="wp-block-group col1 w-[60%]">
               <!-- wp:group -->
