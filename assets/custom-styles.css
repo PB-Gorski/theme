@@ -406,7 +406,7 @@ option:hover {
   padding: 0px!important;
   padding-left: 25px!important;
 }
-.post-entry .post-custom-layout{
+.post-entry.post-custom-layout{
   display: block!important;
 }
 
