@@ -64,6 +64,7 @@ background-color: #E80D38;
   text-decoration-thickness: 2px!important;
   text-decoration-color: #E80D38!important;
   cursor: pointer!important;
+  border-bottom: #E80D38 2px solid;
 }
 .sub-title a{
   color: white;
