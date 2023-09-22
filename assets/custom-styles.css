@@ -258,7 +258,7 @@ label{
   }
 }
 
-/* taxonomy filter */
+/* taxonomy filter (beautiful-taxonomy-filter) */
 
 .wp-block-post.mieszkania.type-mieszkania{
   border-bottom: 1px solid #e6eaf0;
@@ -354,6 +354,11 @@ option:hover {
   .left-col-map > div{
     height: 450px!important;
   }
+}
+
+/* taxonomy filter YMC */
+.btn-all{
+  display: none;
 }
 
 /* sorting arrow */
