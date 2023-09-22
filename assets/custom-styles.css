@@ -59,7 +59,7 @@ background-color: #E80D38;
 }
 .tab-active{
   color: #2E384D!important;
-  text-decoration: underline 2px!important;
+  text-decoration: underline!important;
   text-underline-offset: 4px!important;
   text-decoration-line: 2px!important;
   text-decoration-color: #E80D38!important;
