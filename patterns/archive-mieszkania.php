@@ -170,7 +170,16 @@
     </div>
     <!-- /wp:group -->
 
-    <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
+    <!-- wp:list -->
+    <ul class="wp-block-list w-full">
+      <!-- wp:list-item -->
+      <li>
+        <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
+      </li>
+      <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
+
   </div>
   <!-- /wp:group -->
 
