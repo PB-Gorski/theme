@@ -407,7 +407,7 @@ option:hover {
   padding-left: 25px!important;
 }
 .post-entry .post-custom-layout{
-  display: block;
+  display: block!important;
 }
 
 /* sorting arrow */
