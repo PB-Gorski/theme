@@ -535,7 +535,6 @@ function my_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $target,
 
 <?php
 	if (count($terms)) {
-
 		$multiple = ($multiple) ? 'multiple' : '';
 		$terms_list = implode(",", $terms);
 		$layout = '<ul>';
@@ -574,7 +573,7 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 {
 	$layout  = '<h2>' . get_the_title($post_id) . '</h2>';
 	$layout .= '<p>' . wp_trim_words(get_the_content($post_id), 30) . '</p>';
-	$layout .= '<a href="' . get_the_permalink($post_id) . '">Read More</a>';
+	$layout .= '<a href="' . get_the_permalink($post_id) . '">-></a>';
 	// $layout .= '<a class="'.esc_attr($arrOptions['class_popup']).'" data-postid="'.esc_attr($post_id).'" href="#">Open Popup</a>';  
 	return $layout;
 }
