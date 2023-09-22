@@ -46,7 +46,7 @@
             $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 39, 20));
             $cats = get_categories($args); ?>
             <!-- wp:list-item -->
-            <li class="allTabBtn uppercase text-[#8A8F99] text-textGray underline underline-offset-4 decoration-2 decoration-primaryRed cursor-pointer">
+            <li class="tabBtn allTabBtn uppercase text-[#8A8F99] text-textGray underline underline-offset-4 decoration-2 decoration-primaryRed cursor-pointer">
               <p class="inline-block" data-aos="fade-right" data-aos-offset="30">Wszystkie</p>
             </li>
             <!-- /wp:list-item -->
@@ -55,7 +55,7 @@
               $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
             ?>
               <!-- wp:list-item -->
-              <li class="uppercase text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+              <li class="tabBtn uppercase text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
                 <p class="inline-block" data-aos="fade-right" data-aos-offset="30"><?php echo $cat->name; ?></p>
               </li>
               <!-- /wp:list-item -->

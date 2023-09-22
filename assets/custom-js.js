@@ -25,6 +25,7 @@ window.addEventListener("load", function() {
 
   const hoverMenuItem = document.querySelector('.hover-item');
   const modal = document.querySelector('.modal');
+  const tabBtns = document.querySelectorAll('.tabBtn');
   const allTabBtn = document.querySelector('.allTabBtn');
   const gdanskTabBtn = document.querySelector('.gdanskTabBtn');
   const gdyniaTabBtn = document.querySelector('.gdyniaTabBtn');
@@ -43,6 +44,13 @@ window.addEventListener("load", function() {
   modal.addEventListener('mouseleave',()=>{
     modal.classList.replace('opacity-100', 'opacity-0');
     modal.classList.replace('z-[1]', 'z-[-1]');
+  });
+
+  tabBtns.forEach(tabBtn => {
+    tabBtn.addEventListener('click', () => {
+      tabBtn.classList.add('tab-active');
+
+    })
   });
 
   allTabBtn.addEventListener('click',()=>{
