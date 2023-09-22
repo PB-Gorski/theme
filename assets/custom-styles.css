@@ -367,7 +367,7 @@ option:hover {
   color: #999;
 }
 .menu-active{
-  border: none;
+  border: none!important;
 }
 
 /* sorting arrow */
