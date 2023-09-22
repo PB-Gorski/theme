@@ -241,23 +241,7 @@
               <ul class="wp-block-list text-textGray flex flex-wrap gap-x-[120px]">
                 <!-- wp:list-item -->
                 <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Osiedle Srebniki3</a>
-                </li>
-                <!-- /wp:list-item -->
-
-                <!-- wp:list-item -->
-                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
                   <a href="#">Św. Piotra3</a>
-                </li>
-                <!-- /wp:list-item -->
-                <!-- wp:list-item -->
-                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Wieżycka Folwark</a>
-                </li>
-                <!-- /wp:list-item -->
-                <!-- wp:list-item -->
-                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                  <a href="#">Toruńska 16</a>
                 </li>
                 <!-- /wp:list-item -->
               </ul>
