@@ -35,7 +35,7 @@
     <!-- wp:post-featured-image /-->
 
     <!-- wp:group -->
-    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px]">
+    <div class="wp-block-group text-content container mx-auto desktop:px-[50px] px-[20px]">
       <!-- wp:paragraph -->
       <a href="/mieszkania/" class="group mb-[20px] btn-back desktop:mb-[40px] w-fit flex items-center gap-[8px]">
         <!-- wp:paragraph -->
