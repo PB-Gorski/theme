@@ -6,12 +6,8 @@
  * Categories: text, banner
  * Viewport Width: 1280
  */
-print_r(get_the_ID());
-print_r(get_the_post_thumbnail(get_the_ID(), 'thumbnail'));
-print_r(get_the_post_thumbnail_url());
-
 ?>
-<!-- wp:post-featured-image /-->
+
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Wpis" class="wp-block-group mieszkania-page-post ooverflow-hidden relative">
@@ -31,10 +27,12 @@ print_r(get_the_post_thumbnail_url());
   <!-- wp:group -->
   <div class="wp-block-group banner w-full h-[460px] relative py-[60px] pt-[170px] desktop:pt-[60px] before:content-[''] before:inline-block before:w-full before:h-full before:bg-[#091224] before:absolute before:top-0 before:left-0 before:opacity-[25%]">
     <!-- wp:image -->
-    <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
+    <figure class="wp-block-image hidden w-full h-full absolute top-0 left-0 z-[-1]">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/lista-mieszkan-bg.jpeg" alt="banner-bg ">
     </figure>
     <!-- /wp:image -->
+
+    <!-- wp:post-featured-image /-->
 
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px]">
