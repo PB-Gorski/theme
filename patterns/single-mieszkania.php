@@ -9,7 +9,9 @@
 print_r(get_the_ID());
 print_r(get_the_post_thumbnail(get_the_ID(), 'thumbnail'));
 print_r(get_the_post_thumbnail_url());
+
 ?>
+<!-- wp:post-featured-image /-->
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Wpis" class="wp-block-group mieszkania-page-post ooverflow-hidden relative">
