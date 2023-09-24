@@ -39,7 +39,7 @@
       <!-- wp:paragraph -->
       <a href="/mieszkania/" class="group mb-[20px] btn-back desktop:mb-[40px] w-fit flex items-center gap-[8px]">
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-[#b9bdc5] hover:text-white opacity-[0.75] transition duration-300 ease">&larr; Wyszukiwanie</p>
+        <p class="text-[18px] text-white hover:opacity-[0] opacity-[0.5] transition duration-300 ease">&larr; Wyszukiwanie</p>
         <!-- /wp:paragraph -->
       </a>
       <!-- /wp:paragraph -->
