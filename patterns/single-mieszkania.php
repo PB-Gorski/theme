@@ -56,7 +56,7 @@
           <!-- wp:paragraph -->
           <p class="max-w-[550px] text-white opacity-[0.5] ">W inwestycji </p>
           <!-- /wp:paragraph -->
-          <!-- wp:post-terms {"term":"osiedla"} /-->
+          <!-- wp:post-terms {"term":"inwestycja"} /-->
         </div>
         <!-- /wp:group -->
       </div>
