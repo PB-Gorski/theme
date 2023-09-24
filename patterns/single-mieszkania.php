@@ -6,6 +6,9 @@
  * Categories: text, banner
  * Viewport Width: 1280
  */
+print_r(get_the_post_thumbnail($post->ID, 'thumbnail'));
+print_r(get_the_post_thumbnail(get_the_ID(), 'thumbnail'));
+
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
