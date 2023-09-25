@@ -579,6 +579,7 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 	$layout .= '<p>' . get_the_term_list($post_id, 'pokoje') . '</p>';
 	$layout .= '<p>' . get_the_term_list($post_id, 'metraz') . '</p>';
 	$layout .= '<p>' . get_the_term_list($post_id, 'pietro') . '</p>';
+	$layout .= '<p>' . get_the_term_list($post_id, 'cena') . '</p>';
 	$layout .= '<p>' . get_the_term_list($post_id, 'termin') . '</p>';
 	$layout .= '<a href="' . get_the_permalink($post_id) . '">-></a>';
 	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="w-[26px] h-[17px]" />';
