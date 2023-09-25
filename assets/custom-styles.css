@@ -414,7 +414,7 @@ option:hover {
   border-bottom: 3px solid #E80D38!important;
 }
 .count{
-  display: none;
+  display: none!important;
 }
 .menu-passive__item:hover{
   background-color: #B2F1FF;
