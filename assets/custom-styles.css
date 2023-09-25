@@ -410,7 +410,8 @@ option:hover {
   content: none!important;
 }
 .menu-link::after{
-  border: 3px solid #E80D38!important
+  border-left: 3px solid #E80D38!important;
+  border-bottom: 3px solid #E80D38!important;
 }
 .menu-passive__item:hover{
   background-color: #B2F1FF;
