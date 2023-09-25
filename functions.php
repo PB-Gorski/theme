@@ -568,9 +568,10 @@ function my_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $target,
 
 add_filter('ymc_filter_custom_layout_148_1', 'my_custom_filter_layout', 10, 6);
 
-function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $arrOptions)
+function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $arrOptions, $founded_post)
 {
 	$layout  = '<h2 class="hidden">' . get_the_title($post_id) . '</h2>';
+	$layout .= '<p class="mb-[50px] text-[24px] text-center aos-init aos-animate">Znaleziono ' . $founded_post . ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' . wp_count_posts('mieszkania')->publish . ')</span></p>';
 	$layout .= '<div class="list-item-mieszkanie w-full text-[16px] text-textGray flex justify-between items-center">';
 	$layout .= '<p class="w-[100px]">' . get_the_term_list($post_id, 'miasto') . '</p>';
 	$layout .= '<p class="w-[180px]">' . get_the_term_list($post_id, 'inwestycja') . '</p>';
