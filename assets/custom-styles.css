@@ -370,8 +370,8 @@ option:hover {
 /* taxonomy filter YMC */
 .ymc-smart-filter-container{
   max-width: 100%!important;
-  padding-left: 20px!important;
-  padding-right: 20px!important;
+  /* padding-left: 20px!important;
+  padding-right: 20px!important; */
 }
 .btn-all{
   display: none!important;
