@@ -475,6 +475,6 @@ background-color: #e8fbff!important;
   border-bottom: 1px solid #b5b5b5;
   width: 100%;
 }
-.arrow-red:hover{
+.list-item-mieszkanie:hover .arrow-red{
   height: 40px!important;
 }
