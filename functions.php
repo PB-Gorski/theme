@@ -574,7 +574,7 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 	$layout .= '<div class="list-item-mieszkanie w-full text-[16px] text-textGray flex justify-between items-center">';
 	// $layout .= '<p class="w-[100px]">' . get_the_terms($post_id, 'miasto') . '</p>';
 	// $layout .= '<p class="w-[100px]">' . get_terms($post_id, 'miasto') . '</p>';
-	$layout .= '<p class="w-[800px]">' . print_r(wp_get_object_terms($post_id, 'miasto')['name']) . '</p>';
+	$layout .= '<p class="w-[800px]">' . print_r(wp_get_object_terms($post_id, 'miasto')[0]->name) . '</p>';
 	$layout .= '<p class="w-[800px]">' . print_r(wp_get_object_terms($post_id, 'miasto')) . '</p>';
 	$layout .= '<p class="w-[100px]">' . get_the_term_list($post_id, 'miasto') . '</p>';
 	$layout .= '<p class="w-[180px]">' . get_the_term_list($post_id, 'inwestycja') . '</p>';
