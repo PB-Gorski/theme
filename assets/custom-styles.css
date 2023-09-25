@@ -399,8 +399,8 @@ option:hover {
   width: 100%;
   height: 100%;
 }
-.menu-link::before,
-.menu-link::after,
+/* .menu-link::before,
+.menu-link::after, */
 .arrow::before,
 .arrow::after,
 .menu-passive::before{
