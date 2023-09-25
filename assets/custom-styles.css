@@ -470,7 +470,7 @@ background-color: #e8fbff!important;
   height: 17px!important;
 }
 .ymc-smart-filter-container .container-posts .post-custom-layout .post-item {
-  padding: 0!important;
+  padding: 0 20px!important;
   border: none;
   border-bottom: 1px solid #b5b5b5;
   width: 100%;
