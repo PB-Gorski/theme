@@ -597,4 +597,4 @@ function ymc_posts_selected($layouts, $founded_post)
 	$layouts = 'Znaleziono: ' . $founded_post . 'ofert pasujących do Twoich kryteriów';
 	return $layouts;
 }
-add_filter('ymc_posts_selected_545_1', 'ymc_posts_selected', 10, 2);
+add_filter('ymc_posts_selected_148_1', 'ymc_posts_selected', 10, 2);
