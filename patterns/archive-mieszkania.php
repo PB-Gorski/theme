@@ -13,6 +13,16 @@
 <div id="content" class="wp-block-group content relative ">
   <!-- wp:group -->
   <div class="wp-block-group bg-bgLightGray">
+    <!-- wp:list -->
+    <ul class="wp-block-list w-full">
+      <!-- wp:list-item -->
+      <li class="container mx-auto">
+        <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
+      </li>
+      <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
+
     <!-- wp:group -->
     <div class="wp-block-group search-wrapper relative mx-auto py-[20px] px-[20px] desktop:h-[100px] text-[18px] flex flex-col desktop:flex-row gap-[10px] desktop:gap-[1px] overflow-y-hidden transition-height duration-[400ms] ease">
       <!-- wp:group -->
@@ -172,15 +182,7 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:list -->
-    <ul class="wp-block-list w-full">
-      <!-- wp:list-item -->
-      <li class="container mx-auto">
-        <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
-      </li>
-      <!-- /wp:list-item -->
-    </ul>
-    <!-- /wp:list -->
+
 
   </div>
   <!-- /wp:group -->
