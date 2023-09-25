@@ -450,3 +450,7 @@ option:hover {
   color: #2E384D!important;
   text-decoration: none!important;
 }
+.ymc-smart-filter-container .container-posts .post-custom-layout .post-item {
+  border: none;
+border-bottom: 1px solid #e6eaf0;
+}
