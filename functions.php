@@ -571,7 +571,7 @@ add_filter('ymc_filter_custom_layout_148_1', 'my_custom_filter_layout', 10, 6);
 function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $arrOptions)
 {
 	$layout  = '<h2 class="hidden">' . get_the_title($post_id) . '</h2>';
-	$layout .= '<div class="list-item-mieszkanie w-full text-[16px] text-textGray flex justify-between items-center">';
+	$layout .= '<a href="' . get_the_permalink($post_id) . '" class="list-item-mieszkanie w-full text-[16px] text-textGray flex justify-between items-center">';
 	$layout .= '<p class="w-[100px]">' . get_the_term_list($post_id, 'miasto') . '</p>';
 	$layout .= '<p class="w-[180px]">' . get_the_term_list($post_id, 'inwestycja') . '</p>';
 	$layout .= '<p class="w-[100px]">' . get_the_term_list($post_id, 'budynek') . '</p>';
@@ -581,9 +581,9 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 	$layout .= '<p class="w-[100px]">' . get_the_term_list($post_id, 'pietro') . '</p>';
 	$layout .= '<p class="w-[130px]">' . get_the_term_list($post_id, 'cena') . '</p>';
 	$layout .= '<p class="w-[175px]">' . get_the_term_list($post_id, 'termin') . '</p>';
-	$layout .= '<a href="' . get_the_permalink($post_id) . '">-></a>';
+	$layout .= '<p href="' . get_the_permalink($post_id) . '">-></p>';
 	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="w-[26px] h-[17px]" />';
-	$layout .= '</div>';
+	$layout .= '</a>';
 	// $layout .= '<a class="' . esc_attr($arrOptions['class_popup']) . '" data-postid="' . esc_attr($post_id) . '" href="#">Open Popup</a>';
 
 	return $layout;
