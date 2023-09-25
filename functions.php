@@ -572,15 +572,15 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 {
 	$layout  = '<h2 class="hidden">' . get_the_title($post_id) . '</h2>';
 	$layout .= '<div class="list-item-mieszkanie w-full text-[18px] text-textGray flex justify-between items-center">';
-	$layout .= '<p>' . get_the_term_list($post_id, 'miasto') . '</p>';
-	$layout .= '<p>' . get_the_term_list($post_id, 'inwestycja') . '</p>';
-	$layout .= '<p>' . get_the_term_list($post_id, 'budynek') . '</p>';
-	$layout .= '<p>' . get_the_term_list($post_id, 'nr') . '</p>';
-	$layout .= '<p>' . get_the_term_list($post_id, 'pokoje') . '</p>';
-	$layout .= '<p>' . get_the_term_list($post_id, 'metraz') . '</p>';
-	$layout .= '<p>' . get_the_term_list($post_id, 'pietro') . '</p>';
-	$layout .= '<p>' . get_the_term_list($post_id, 'cena') . '</p>';
-	$layout .= '<p>' . get_the_term_list($post_id, 'termin') . '</p>';
+	$layout .= '<p class="w-[100px]">' . get_the_term_list($post_id, 'miasto') . '</p>';
+	$layout .= '<p class="w-[180px]>' . get_the_term_list($post_id, 'inwestycja') . '</p>';
+	$layout .= '<p class="w-[100px]>' . get_the_term_list($post_id, 'budynek') . '</p>';
+	$layout .= '<p class="w-[65px]>' . get_the_term_list($post_id, 'nr') . '</p>';
+	$layout .= '<p class="w-[100px]>' . get_the_term_list($post_id, 'pokoje') . '</p>';
+	$layout .= '<p class="w-[110px]>' . get_the_term_list($post_id, 'metraz') . '</p>';
+	$layout .= '<p class="w-[100px]>' . get_the_term_list($post_id, 'pietro') . '</p>';
+	$layout .= '<p class="w-[130px]>' . get_the_term_list($post_id, 'cena') . '</p>';
+	$layout .= '<p class="w-[175px]>' . get_the_term_list($post_id, 'termin') . '</p>';
 	$layout .= '<a href="' . get_the_permalink($post_id) . '">-></a>';
 	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="w-[26px] h-[17px]" />';
 	$layout .= '</div>';
