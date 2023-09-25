@@ -584,7 +584,7 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 	$layout .= '<p class="w-[130px]">' . wp_get_object_terms($post_id, 'cena')[0]->name . ' zł</p>';
 	$layout .= '<p class="w-[175px]">' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
 	// $layout .= '<a href="' . get_the_permalink($post_id) . '">-></a>';
-	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="w-[26px] h-[17px] hidden group-hover:block" />';
+	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="w-[26px] h-[17px] opacity-0 group-hover:opacity-1" />';
 	$layout .= '</a>';
 	// $layout .= '<a class="' . esc_attr($arrOptions['class_popup']) . '" data-postid="' . esc_attr($post_id) . '" href="#">Open Popup</a>';
 
