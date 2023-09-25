@@ -441,3 +441,7 @@ option:hover {
   color: #e80d38;
   transform: rotate(180deg);
 }
+.post-entry .post-custom-layout article{
+  display: flex;
+  gap: 20px;
+}
