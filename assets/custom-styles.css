@@ -459,7 +459,8 @@ option:hover {
 .post-entry.post-custom-layout > article:hover{
 background-color: #e8fbff!important;
 }
-.list-item-mieszkanie a{
+.list-item-mieszkanie a,
+.list-item-mieszkanie{
   font-size: 16px!important;
   color: #2E384D!important;
   text-decoration: none!important;
