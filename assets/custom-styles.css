@@ -456,7 +456,7 @@ option:hover {
   display: flex;
   gap: 20px;
 }
-.list-item-mieszkanie a{
+.list-item-mieszkanie p{
   font-size: 16px!important;
   color: #2E384D!important;
   text-decoration: none!important;
