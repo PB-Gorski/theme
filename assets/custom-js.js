@@ -451,7 +451,7 @@ window.addEventListener("load", function() {
 
 
 
-  const element = document.querySelector(".sort-container");
+  const element = document.querySelector(".filter-layout");
   const newElement = `
     <!-- wp:list -->
     <ul class="wp-block-list all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
