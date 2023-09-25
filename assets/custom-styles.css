@@ -448,4 +448,5 @@ option:hover {
 .list-item-mieszkanie a{
   font-size: 18px!important;
   color: #2E384D!important;
+  text-decoration: none;
 }
