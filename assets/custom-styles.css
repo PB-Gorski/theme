@@ -475,6 +475,9 @@ background-color: #e8fbff!important;
   border-bottom: 1px solid #b5b5b5;
   width: 100%;
 }
+.arrow-red{
+  opacity: 0!important;
+}
 .list-item-mieszkanie:hover .arrow-red{
-  height: 40px!important;
+  opacity:1!important;
 }
