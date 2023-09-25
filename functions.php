@@ -599,3 +599,17 @@ function ymc_posts_selected($layouts, $founded_post)
 	return $layouts;
 }
 add_filter('ymc_posts_selected_148_1', 'ymc_posts_selected', 10, 2);
+
+
+
+
+
+add_filter('ymc_sort_posts_by_FilterID_LayoutID', '$ymc_sort_posts', 10, 1);
+function ymc_sort_posts($layouts)
+{
+	$layouts .= '<div class="menu-passive__item">
+                <a class="menu-link" data-order="' . esc_attr('desc') . '" data-orderby="' . esc_attr('name') . '" href="#">' .
+		esc_html__('Sort by Name', 'ymc-smart-filter') . '</a></div>';
+	return $layouts;
+}
+add_filter('ymc_sort_posts_by_148_1', 'ymc_sort_posts', 10, 1);
