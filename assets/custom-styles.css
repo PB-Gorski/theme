@@ -456,5 +456,6 @@ option:hover {
 }
 .ymc-smart-filter-container .container-posts .post-custom-layout .post-item {
   border: none;
-border-bottom: 1px solid #b5b5b5;
+  border-bottom: 1px solid #b5b5b5;
+  width: 100%;
 }
