@@ -406,6 +406,10 @@ option:hover {
 .menu-passive::before{
   content: none!important;
 }
+.menu-link::before,
+.menu-link::after{
+  border: #E80D38!important
+}
 .menu-passive__item:hover{
   background-color: #B2F1FF;
   /* cursor: pointer; */
