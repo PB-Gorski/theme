@@ -413,6 +413,9 @@ option:hover {
   border-left: 3px solid #E80D38!important;
   border-bottom: 3px solid #E80D38!important;
 }
+.count{
+  display: none;
+}
 .menu-passive__item:hover{
   background-color: #B2F1FF;
   /* cursor: pointer; */
