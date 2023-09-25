@@ -572,10 +572,11 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 {
 	$layout  = '<h2 class="hidden">' . get_the_title($post_id) . '</h2>';
 	$layout .= '<div class="list-item-mieszkanie text-[18px] text-textGray flex gap-[10px]">';
-	$layout .= '<p class="!text-[18px]">' . get_the_term_list($post_id, 'miasto') . '</p>';
-	$layout .= '<p class="text-[18px]">' . get_the_term_list($post_id, 'inwestycja') . '</p>';
+	$layout .= '<p>' . get_the_term_list($post_id, 'miasto') . '</p>';
+	$layout .= '<p>' . get_the_term_list($post_id, 'inwestycja') . '</p>';
 	$layout .= '<p>' . get_the_term_list($post_id, 'budynek') . '</p>';
 	$layout .= '<a href="' . get_the_permalink($post_id) . '">-></a>';
+	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red"/>';
 	$layout .= '</div>';
 	// $layout .= '<a class="' . esc_attr($arrOptions['class_popup']) . '" data-postid="' . esc_attr($post_id) . '" href="#">Open Popup</a>';
 
