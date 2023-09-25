@@ -422,6 +422,7 @@ option:hover {
 }
 .dropdown-filter{
   margin-right: 2px!important;
+  max-width: 230px!important;
 }
 .menu-passive__item .active{
   padding: 0px!important;
