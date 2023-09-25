@@ -578,7 +578,7 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 	$layout .= '<p class="w-[180px]">' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
 	$layout .= '<p class="w-[100px]">' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
 	$layout .= '<p class="w-[65px]">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
-	// $layout .= '<p class="w-[100px]">' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
+	$layout .= '<p class="w-[100px]">' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p class="w-[110px]">' . wp_get_object_terms($post_id, 'metraz')[0]->name . '</p>';
 	$layout .= '<p class="w-[100px]">' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
 	$layout .= '<p class="w-[130px]">' . wp_get_object_terms($post_id, 'cena')[0]->name . '</p>';
