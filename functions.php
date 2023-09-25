@@ -589,3 +589,12 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 	return $layout;
 }
 add_filter('ymc_post_custom_layout_148_1', 'my_custom_post_layout', 10, 5);
+
+
+add_filter('ymc_posts_selected_FilterID_LayoutID', 'ymc_posts_selected', 10, 2);
+function ymc_posts_selected($layouts, $founded_post)
+{
+	$layouts = 'Znaleziono: ' . $founded_post . 'ofert pasujących do Twoich kryteriów';
+	return $layouts;
+}
+add_filter('ymc_posts_selected_545_1', 'ymc_posts_selected', 10, 2);
