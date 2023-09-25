@@ -450,6 +450,10 @@ option:hover {
   color: #2E384D!important;
   text-decoration: none!important;
 }
+.list-item-mieszkanie img{
+  width: 26px!important;
+  height: 17px!important;
+}
 .ymc-smart-filter-container .container-posts .post-custom-layout .post-item {
   border: none;
 border-bottom: 1px solid #e6eaf0;
