@@ -579,9 +579,9 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 	$layout .= '<p class="w-[100px]">' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
 	$layout .= '<p class="w-[65px]">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
 	$layout .= '<p class="w-[100px]">' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
-	$layout .= '<p class="w-[110px]">' . wp_get_object_terms($post_id, 'metraz')[0]->name . '</p>';
+	$layout .= '<p class="w-[110px]">' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p class="w-[100px]">' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
-	$layout .= '<p class="w-[130px]">' . wp_get_object_terms($post_id, 'cena')[0]->name . '</p>';
+	$layout .= '<p class="w-[130px]">' . wp_get_object_terms($post_id, 'cena')[0]->name . ' zł</p>';
 	$layout .= '<p class="w-[175px]">' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
 	// $layout .= '<a href="' . get_the_permalink($post_id) . '">-></a>';
 	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="w-[26px] h-[17px]" />';
