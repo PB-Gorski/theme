@@ -445,3 +445,7 @@ option:hover {
   display: flex;
   gap: 20px;
 }
+.list-item-mieszkanie{
+  font-size: 18px!important;
+  color: #2E384D!important;
+}
