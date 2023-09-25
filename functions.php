@@ -571,7 +571,7 @@ add_filter('ymc_filter_custom_layout_148_1', 'my_custom_filter_layout', 10, 6);
 function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $arrOptions)
 {
 	$layout  = '<h2 class="hidden">' . get_the_title($post_id) . '</h2>';
-	$layout .= '<a href="' . get_the_permalink($post_id) . '" class="list-item-mieszkanie w-full text-[16px] text-textGray flex justify-between items-center">';
+	$layout .= '<a href="' . get_the_permalink($post_id) . '" class="list-item-mieszkanie w-full py-[25px] text-[16px] text-textGray flex justify-between items-center">';
 	// $layout .= '<p class="w-[100px]">' . get_the_terms($post_id, 'miasto') . '</p>';
 	// $layout .= '<p class="w-[100px]">' . get_terms($post_id, 'miasto') . '</p>';
 	$layout .= '<p class="w-[100px]">' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
