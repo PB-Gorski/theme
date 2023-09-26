@@ -493,6 +493,6 @@ background-color: #e8fbff!important;
   top: 300px;
   right: -200px;
 }
-.post-edit-link{
+a.post-edit-link{
   position: static;
 }
