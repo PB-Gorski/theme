@@ -228,6 +228,8 @@
           <p class="font-bold z-[1]">Pobierz kartę lokalu</p>
           <!-- /wp:paragraph -->
           <?php print_r(do_shortcode('[pdf_attachment file="1" name="pobierz"]')); ?>
+          <?php echo pdf_all_attachment_files(); ?>
+          <?php echo pdf_attachment_file(1, "optional file name"); ?>
 
         </div>
         <!-- /wp:group -->
