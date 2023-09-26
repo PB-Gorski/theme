@@ -486,6 +486,7 @@ background-color: #e8fbff!important;
 }
 
 .entry-content{
+  position: relative;
 }
 .entry-content a{
   position: absolute;
