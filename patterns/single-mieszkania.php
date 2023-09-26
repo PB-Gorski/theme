@@ -227,6 +227,8 @@
           <!-- wp:paragraph -->
           <p class="font-bold z-[1]">Pobierz kartę lokalu</p>
           <!-- /wp:paragraph -->
+          <?php echo do_shortcode('[pdf_attachment file="1" name="optional file name"]'); ?>
+
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
