@@ -144,7 +144,7 @@
     <!-- wp:post-featured-image /-->
 
     <!-- wp:group -->
-    <div class="wp-block-group max-w-[840px] w-full mx-auto">
+    <div class="wp-block-group max-w-[840px] w-full mx-auto pt-[40px]">
       <!-- wp:post-content /-->
     </div>
     <!-- /wp:group -->
