@@ -514,10 +514,10 @@ background-color: #e8fbff!important;
   top: 300px;
   right: -200px;
 }
-.single .single-post > .entry-content > p {
+.entry-content p {
   color: #565656!important;
 }
-
+#Wpis > div.wp-block-group.container.mx-auto.relative.desktop\:px-0.px-\[20px\].is-layout-flow.wp-block-group-is-layout-flow > div > div > p:nth-child(3)
 .single .entry-content a{
   position: static;
 }
