@@ -142,6 +142,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
     <?php
+    print_r(get_the_post_thumbnail());
     if (get_the_post_thumbnail() == true) { ?>
       <!-- wp:post-featured-image /-->
     <?php } else { ?>
