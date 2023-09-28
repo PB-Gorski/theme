@@ -183,7 +183,7 @@
               <!-- wp:group -->
               <div class="wp-block-group wrapper w-full desktop:flex gap-[140px]">
                 <!-- wp:image -->
-                <figure class="wp-block-image desktop:w-[50%] h-[330px]">
+                <figure class="wp-block-image desktop:w-[50%] h-[330px] m-0">
                   <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
                 </figure>
                 <!-- /wp:image -->
@@ -191,7 +191,7 @@
                 <!-- wp:group -->
                 <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center">
                   <!-- wp:paragraph -->
-                  <p class="mr-[20px] desktop:mb-[30px] text-[24px] desktop:text-[36px] font-bold leading-[34px] desktop:leading-[46px]"><?php the_title(); ?></p>
+                  <p class="text-[24px] desktop:text-[36px] font-bold leading-[34px] desktop:leading-[46px]"><?php the_title(); ?></p>
                   <!-- /wp:paragraph -->
 
                   <!-- wp:paragraph -->
