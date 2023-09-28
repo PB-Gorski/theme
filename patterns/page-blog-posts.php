@@ -179,7 +179,7 @@
           $counter++; ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full mb-[80px]">
-            <a href="<?php the_permalink(); ?>" class="relative group inline-block p-[25px] desktop:max-w-full max-w-[310px]" data-aos="fade-right" data-aos-offset="30">
+            <a href="<?php the_permalink(); ?>" class="relative group inline-block desktop:max-w-full max-w-[310px]" data-aos="fade-right" data-aos-offset="30">
               <!-- wp:group -->
               <div class="wp-block-group wrapper w-full desktop:flex gap-[120px]">
                 <!-- wp:image -->
