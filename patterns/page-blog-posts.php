@@ -178,7 +178,7 @@
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
           $counter++; ?>
           <!-- wp:list-item -->
-          <li class="invest-tile max-w-full desktop:h-[450px] mb-[80px]">
+          <li class="invest-tile max-w-full mb-[80px]">
             <a href="<?php the_permalink(); ?>" class="relative group inline-block p-[25px] desktop:max-w-full max-w-[310px]" data-aos="fade-right" data-aos-offset="30">
               <!-- wp:group -->
               <div class="wp-block-group wrapper w-full desktop:flex gap-[120px]">
