@@ -195,7 +195,7 @@
                   <!-- /wp:paragraph -->
 
                   <!-- wp:paragraph -->
-                  <p class=""><?php the_excerpt(); ?></p>
+                  <p class="post-excerpt"><?php the_excerpt(); ?></p>
                   <!-- /wp:paragraph -->
 
                   <!-- wp:post-excerpt /-->
