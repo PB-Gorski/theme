@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 module.exports = {
-  important: true,
+  // important: true,
   content: [
     "./assets/**/*.{js,ts}",
     "./parts/**/*.{html,php}",
