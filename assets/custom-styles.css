@@ -514,7 +514,7 @@ background-color: #e8fbff!important;
   top: 300px;
   right: -200px;
 }
-.single .single-post .entry-content p {
+.single .single-post > .entry-content > p {
   color: #565656!important;
 }
 
