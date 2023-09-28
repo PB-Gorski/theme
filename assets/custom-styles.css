@@ -514,6 +514,9 @@ background-color: #e8fbff!important;
   top: 300px;
   right: -200px;
 }
+.single .single-post .entry-content p {
+  color: #565656;
+}
 .single .entry-content a{
   position: static;
 }
