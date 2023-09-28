@@ -514,6 +514,9 @@ background-color: #e8fbff!important;
   top: 300px;
   right: -200px;
 }
+.single .entry-content a{
+  position: static;
+}
 a.post-edit-link{
   position: static;
 }
