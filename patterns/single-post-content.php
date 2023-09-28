@@ -141,19 +141,6 @@
   <!-- /wp:group -->
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
-    <?php
-    print_r(the_ID());
-    print_r(the_post_thumbnail());
-    print_r(get_the_post_thumbnail());
-    if (get_the_post_thumbnail() == true) { ?>
-      <!-- wp:post-featured-image /-->
-    <?php } else { ?>
-      <!-- wp:image -->
-      <figure class="wp-block-image">
-        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg" alt="pb-gorski-logo">
-      </figure>
-      <!-- /wp:image -->
-    <?php }; ?>
     <!-- wp:post-featured-image /-->
 
     <!-- wp:group -->
