@@ -118,9 +118,9 @@
     <!-- wp:group -->
     <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:paragraph -->
-      <a href="/blog/" class="desktop:mt-[-30px] desktop:absolute left-0 ">
+      <a href="/blog/" class="desktop:mt-[-30px] desktop:aabsolute left-0 ">
         <!-- wp:paragraph -->
-        <p class="mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">&larr; Lista aktualności</p>
+        <p class="pb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">&larr; Lista aktualności</p>
         <!-- /wp:paragraph -->
       </a>
       <!-- /wp:paragraph -->
