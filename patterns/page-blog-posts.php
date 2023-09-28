@@ -195,7 +195,11 @@
                   <!-- /wp:paragraph -->
 
                   <!-- wp:group -->
-                  <div class="wp-block-group post-excerpt mb-[40px]"><?php echo the_excerpt(); ?></div>
+                  <div class="wp-block-group post-excerpt mb-[40px]">
+                    <!-- wp:paragraph -->
+                    <?php echo the_excerpt(); ?>
+                    <!-- /wp:paragraph -->
+                  </div>
                   <!-- /wp:group -->
 
                   <!-- wp:paragraph -->
