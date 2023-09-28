@@ -181,7 +181,7 @@
           <li class="invest-tile max-w-full desktop:h-[450px] mb-[80px]">
             <a href="<?php the_permalink(); ?>" class="relative group inline-block p-[25px] desktop:max-w-full max-w-[310px]" data-aos="fade-right" data-aos-offset="30">
               <!-- wp:group -->
-              <div class="wp-block-group wrapper w-full desktop:flex gap-[140px]">
+              <div class="wp-block-group wrapper w-full desktop:flex gap-[120px]">
                 <!-- wp:image -->
                 <figure class="wp-block-image desktop:w-[50%] h-[330px] m-0">
                   <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
