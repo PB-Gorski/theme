@@ -515,7 +515,7 @@ background-color: #e8fbff!important;
   position: relative;
 }
 .single-mieszkania .entry-content a{
-  position: absolute;
+  position: absolute!important;
   top: 300px;
   right: -200px;
 }
