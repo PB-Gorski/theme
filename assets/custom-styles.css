@@ -522,6 +522,6 @@ background-color: #e8fbff!important;
 .single .entry-content p {
   color: #565656!important;
 }
-.single .entry-content .modula .post-edit-link a{
+.single .entry-content > .modula > .post-edit-link a{
   position: static!important;
 }
