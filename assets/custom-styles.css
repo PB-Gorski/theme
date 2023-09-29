@@ -55,6 +55,11 @@ figure[class*="wp-block-image"] img {
   margin-left: auto;
   margin-right: auto;
 }
+.single-mieszkania .wp-block-post-featured-image img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 /* Wordpress default styles */
