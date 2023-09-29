@@ -519,17 +519,12 @@ background-color: #e8fbff!important;
   top: 300px;
   right: -200px;
 }
-
-.single .entry-content .post-edit-link a{
-  position: static!important;
-}
-
 .single .entry-content p {
   color: #565656!important;
 }
 .single .entry-content a{
   position: static;
 }
-a.post-edit-link{
-  position: static;
+.single .entry-content .post-edit-link a{
+  position: static!important;
 }
