@@ -523,7 +523,7 @@ background-color: #e8fbff!important;
   color: #565656!important;
 }
 .single .entry-content a{
-  position: static;
+  position: static!important;
 }
 .single .entry-content .post-edit-link a{
   position: static!important;
