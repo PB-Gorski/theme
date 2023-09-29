@@ -162,10 +162,8 @@
     </ul>
     <!-- /wp:list -->
 
-
-
     <!-- wp:list -->
-    <ul class="wp-block-list w-full hidden test">
+    <ul class="wp-block-list w-full">
       <!-- wp:list-item -->
       <li class="test">
         <?php do_action('show_beautiful_filters', 'mieszkania'); ?>
