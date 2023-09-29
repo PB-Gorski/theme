@@ -254,7 +254,7 @@
           <!-- wp:paragraph -->
           <p class="uppercase text-[10px] text-[#a1a7b2]">budynek</p>
           <!-- /wp:paragraph -->
-          <!-- wp:post-terms {"term":"nr"} /-->
+          <!-- wp:post-terms {"term":"budynek"} /-->
         </div>
         <!-- /wp:group -->
 
@@ -263,7 +263,7 @@
           <!-- wp:paragraph -->
           <p class="uppercase text-[10px] text-[#a1a7b2]">klatka</p>
           <!-- /wp:paragraph -->
-          <!-- wp:post-terms {"term":"budynek"} /-->
+          <!-- wp:post-terms {"term":"nr"} /-->
         </div>
         <!-- /wp:group -->
       </div>
