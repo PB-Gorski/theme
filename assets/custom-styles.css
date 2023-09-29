@@ -27,6 +27,10 @@ h4 {
   line-height: 44px;
   padding: 10.75px 0 1.25px;
 }
+a{
+  color:#8a8f99;
+  text-decoration: underline;
+}
 /* images */
 figure[class*="wp-block-image"] img {
   height: 100%!important;
