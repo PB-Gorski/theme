@@ -529,3 +529,6 @@ background-color: #e8fbff!important;
 .single .entry-content > .modula > a{
   position: static!important;
 }
+.single .entry-content h4{
+  margin-bottom: 50px;
+}
