@@ -114,7 +114,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group title-wrapper py-[20px] desktop:py-[48px] bg-[#ebeef2]">
+  <div class="wp-block-group title-wrapper py-[20px] desktop:py-[48px] bg-[#ebeef2] mb-[50px]">
     <!-- wp:group -->
     <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:paragraph -->
