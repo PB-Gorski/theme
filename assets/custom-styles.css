@@ -524,7 +524,8 @@ background-color: #e8fbff!important;
   right: -200px;
 }
 .single .entry-content p {
-  color: #565656!important;
+  /* color: #565656!important; */
+  color: #8a8f99!important;
 }
 .single .entry-content > .modula > a{
   position: static!important;
