@@ -165,8 +165,9 @@
       <?php
       $args = array(
         'post_type' => 'post',
-        'posts_per_page' => 10,
-        'order' => 'DESC'
+        'posts_per_page' => 5,
+        'order' => 'DESC',
+        'paged' => $paged
       );
       $post_query = new WP_Query($args);
       $counter = 0;
@@ -253,6 +254,7 @@
         echo get_the_posts_pagination();
       };
       wp_reset_query();
+      wp_reset_postdata();
       ?>
     </ul>
     <!-- /wp:list -->
