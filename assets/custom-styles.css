@@ -32,7 +32,8 @@ h4 {
   text-decoration: underline;
 }
 /* images */
-figure[class*="wp-block-image"] img {
+figure[class*="wp-block-image"] img,
+.wp-block-post-featured-image img {
   height: 100%!important;
   width: 100%;
   object-fit: cover;
