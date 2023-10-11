@@ -21,58 +21,54 @@
 	<!-- wp:group -->
 	<div id="main" class="wp-block-group ">
 		<!-- wp:group -->
-		<div id="Page content" class="wp-block-group page-content-wrapper" >
+		<div id="Page content" class="wp-block-group page-content-wrapper container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:pattern {"slug":"not_page-blog-posts"} /-->
 		
-    <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px]">
-			<!-- wp:query {"query":{"perPage":5,"pages":0,"offset":0,"postType":"post"}} -->
-				<!-- wp:post-template -->
-				<!-- wp:list-item {"isLink":true} -->
-				<li class="invest-tile max-w-full h-[330px] mb-[80px]">
-					<div class="relative group inline-block desktop:max-w-full max-w-[310px]" data-aos="fade-right" data-aos-offset="30">
-						<!-- wp:group -->
-						<div class="wp-block-group wrapper w-full desktop:flex gap-[120px]">
+				<!-- wp:query {"query":{"perPage":5,"pages":0,"offset":0,"postType":"post"},"isLink":true} -->
+					<!-- wp:post-template -->
+					<!-- wp:list-item {"isLink":true} -->
+					<li class="invest-tile max-w-full h-[330px] mb-[80px]">
+						<div class="relative group inline-block desktop:max-w-full max-w-[310px]" data-aos="fade-right" data-aos-offset="30">
 							<!-- wp:group -->
-							<div class="wp-block-image desktop:w-[50%] h-[330px] m-0">
-								<!-- wp:post-featured-image /-->
-							</div>
-							<!-- /wp:group -->
-
-							<!-- wp:group -->
-							<div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center">
-								<!-- wp:paragraph -->
-								<p class="mb-[30px] text-[24px] desktop:text-[36px] font-bold leading-[34px] desktop:leading-[46px]"><!-- wp:post-title {"isLink":true} /--></p>
-								<!-- /wp:paragraph -->
-
+							<div class="wp-block-group wrapper w-full desktop:flex gap-[120px]">
 								<!-- wp:group -->
-								<div class="wp-block-group post-excerpt mb-[40px]">
-									<!-- wp:post-excerpt /-->
+								<div class="wp-block-image desktop:w-[50%] h-[330px] m-0">
+									<!-- wp:post-featured-image "isLink":true /-->
 								</div>
 								<!-- /wp:group -->
 
-								<!-- wp:paragraph -->
-								<p class="relative text-[18px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Zobacz więcej &rarr;
-								</p>
-								<!-- /wp:paragraph -->
+								<!-- wp:group -->
+								<div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center">
+									<!-- wp:paragraph -->
+									<p class="mb-[30px] text-[24px] desktop:text-[36px] font-bold leading-[34px] desktop:leading-[46px]"><!-- wp:post-title {"isLink":true} /--></p>
+									<!-- /wp:paragraph -->
+
+									<!-- wp:group -->
+									<div class="wp-block-group post-excerpt mb-[40px]">
+										<!-- wp:post-excerpt "isLink":true /-->
+									</div>
+									<!-- /wp:group -->
+
+									<!-- wp:paragraph -->
+									<p class="relative text-[18px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Zobacz więcej &rarr;
+									</p>
+									<!-- /wp:paragraph -->
+								</div>
+								<!-- /wp:group -->
 							</div>
 							<!-- /wp:group -->
 						</div>
-						<!-- /wp:group -->
-					</div>
-				</li>
-				<!-- /wp:list-item -->
-				<!-- /wp:post-template -->
+					</li>
+					<!-- /wp:list-item -->
+					<!-- /wp:post-template -->
 
-				<!-- wp:query-pagination -->
-				<!-- wp:query-pagination-previous {"label":"Poprzednie"} /-->
-				<!-- wp:query-pagination-numbers /-->
-				<!-- wp:query-pagination-next {"label":"Następne"} /-->
-				<!-- /wp:query-pagination -->
+					<!-- wp:query-pagination -->
+					<!-- wp:query-pagination-previous {"label":"Poprzednie"} /-->
+					<!-- wp:query-pagination-numbers /-->
+					<!-- wp:query-pagination-next {"label":"Następne"} /-->
+					<!-- /wp:query-pagination -->
 
-			<!-- /wp:query -->
-		</ul>
-    <!-- /wp:list -->
+				<!-- /wp:query -->
 
 			<!-- wp:template-part {"slug":"front-page/cta"} /-->
 			<!-- wp:template-part {"slug":"front-page/newsletter"} /-->
