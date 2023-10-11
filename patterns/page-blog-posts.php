@@ -216,13 +216,8 @@
         <?php
           $i++;
         }; ?>
-        <!-- wp:query-pagination -->
-        <div class="wp-block-query-pagination">
-          <!-- wp:query-pagination-previous /-->
-          <!-- wp:query-pagination-numbers /-->
-          <!-- wp:query-pagination-next /-->
-        </div>
-        <!-- /wp:query-pagination -->
+        <div class="nav-previous alignleft"><?php previous_posts_link('Older posts'); ?></div>
+        <div class="nav-next alignright"><?php next_posts_link('Newer posts'); ?></div>
       <?php };
       wp_reset_query();
       ?>
