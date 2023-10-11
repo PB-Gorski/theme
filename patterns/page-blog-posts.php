@@ -219,6 +219,7 @@
         <!-- wp:query-pagination -->
         <div class="wp-block-query-pagination">
           <!-- wp:query-pagination-previous /-->
+          <!-- wp:query-pagination-numbers /-->
           <!-- wp:query-pagination-next /-->
         </div>
         <!-- /wp:query-pagination -->
