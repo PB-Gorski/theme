@@ -213,10 +213,16 @@
             </a>
           </li>
           <!-- /wp:list-item -->
-      <?php
+        <?php
           $i++;
-        };
-      };
+        }; ?>
+        <!-- wp:query-pagination -->
+        <div class="wp-block-query-pagination">
+          <!-- wp:query-pagination-previous /-->
+          <!-- wp:query-pagination-next /-->
+        </div>
+        <!-- /wp:query-pagination -->
+      <?php };
       wp_reset_query();
       ?>
     </ul>
