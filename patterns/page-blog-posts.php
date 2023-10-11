@@ -172,7 +172,10 @@
       $counter = 0;
       $i = 0;
 
-      if ($post_query->have_posts()) {
+      if ($post_query->have_posts()) { ?>
+        <div class="nav-previous alignleft"><?php next_posts_link('Older posts'); ?></div>
+        <div class="nav-next alignright"><?php previous_posts_link('Newer posts'); ?></div>
+        <?php
         while ($post_query->have_posts()) {
           $post_query->the_post();
           $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
