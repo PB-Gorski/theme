@@ -258,47 +258,7 @@
       ?>
     </ul>
     <!-- /wp:list -->
-    <?php
-    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-    $args = array(
-      'posts_per_page' => 4,
-      'paged' => $paged
-    );
-    $custom_query = new WP_Query($args);
-    ?>
-    <!----start-------->
-    <div class="wrap">
-      <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
 
-          <?php
-          while ($custom_query->have_posts()) :
-            $custom_query->the_post();
-          ?>
-            <div>
-              <ul>
-                <li>
-                  <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                  <div>
-                    <ul>
-                      <div><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a></div>
-                    </ul>
-                    <ul>
-                      <p><?php echo the_content(); ?></p>
-                    </ul>
-                  </div>
-                  <div>
-                </li>
-              </ul>
-            </div> <!-- end blog posts -->
-          <?php endwhile; ?>
-          <?php if (function_exists("pagination")) {
-            pagination($custom_query->max_num_pages);
-          } ?>
-        </main><!-- #main -->
-      </div><!-- #primary -->
-    </div><!-- .wrap -->
-    <!----end-------->
   </div>
   <!-- /wp:group -->
 
