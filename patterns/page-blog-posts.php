@@ -168,7 +168,7 @@
         'post_type' => 'post',
         'posts_per_page' => 5,
         'order' => 'DESC',
-        'paged' => $paged
+        'paged' => 189
       );
       $post_query = new WP_Query($args);
       $counter = 0;
