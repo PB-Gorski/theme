@@ -219,14 +219,14 @@
         <div class="nav-previous alignleft"><?php previous_posts_link('Older posts'); ?></div>
         <div class="nav-next alignright"><?php next_posts_link('Newer posts'); ?></div>
       <?php
-        posts_nav_link();
-        next_posts_link();
-        previous_posts_link();
-        get_next_posts_link();
-        get_previous_posts_link();
-        paginate_links();
-        the_posts_pagination();
-        get_the_posts_pagination();
+        echo posts_nav_link();
+        echo next_posts_link();
+        echo previous_posts_link();
+        echo get_next_posts_link();
+        echo get_previous_posts_link();
+        echo paginate_links();
+        echo the_posts_pagination();
+        echo get_the_posts_pagination();
       };
       wp_reset_query();
       ?>
