@@ -163,6 +163,7 @@
     <!-- wp:list -->
     <ul class="wp-block-list mb-[40px]">
       <?php
+      $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
       $args = array(
         'post_type' => 'post',
         'posts_per_page' => 5,
