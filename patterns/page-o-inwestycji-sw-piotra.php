@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: o-inwestycji-osiedle-srebrniki-content
- * Slug: o-inwestycji-osiedle-srebrniki-content
+ * Title: o-inwestycji-sw-piotra-content
+ * Slug: o-inwestycji-sw-piotra-content
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
@@ -15,13 +15,13 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:paragraph -->
-    <p class="py-[30px] desktop:py-[60px] text-[36px] desktop:text-[60px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Poznaj inwestycję</p>
+    <p class="py-[30px] desktop:py-[60px] text-[36px] desktop:text-[60px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Św. Piotra</p>
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
     <div class="wp-block-group test row-links mb-[50px] flex flex-wrap justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/o-inwestycji-osiedle-srebrniki' ?>" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
+      <a href="<?php echo home_url() . '/o-inwestycji-sw-piotra' ?>" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
