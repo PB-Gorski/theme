@@ -110,7 +110,7 @@
       <!-- wp:group -->
       <div class="wp-block-group title text-[36px] desktop:text-[60px] desktop:pt-[160px] mb-[50px] leading-[44px] desktop:leading-[70px]">
         <!-- wp:paragraph -->
-        <p class="font-bold" data-aos="fade-right" data-aos-offset="30">Gdynia - Św. Piotra</p>
+        <p class="font-bold" data-aos="fade-right" data-aos-offset="30">Gdańsk Śródmieście - zamieszkaj w centrum miasta</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
