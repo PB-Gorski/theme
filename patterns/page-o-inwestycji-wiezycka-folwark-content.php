@@ -150,14 +150,13 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2 flex flex-col justify-center">
         <!-- wp:paragraph -->
-        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Apartamenty w pobliżu Motławy</p>
+        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Inwestycja w sąsiedztwie zabytkowego dworku Wendtów będzie powstawać etapami</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W dwóch budynkach będzie jedynie 29 apartamentów, co gwarantuje prywatność oraz spokój. Mieszkania charakteryzuje optymalny rozkład pokoi, umożliwiający dostowanie przestrzeni do swoich potrzeb. Przestronne balkony, winda, podziemny garaż - to wszystko czeka na mieszkańców Toruńskiej 16, zlokalizowanej w pobliżu Motławy. </p>
+        <p class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Obecnie realizowany jest etap pierwszy, czyli budowa budynków 4, 5 i 6. Docelowo powstanie 12 budynków wielorodzinnych, które swoją architekturą idealnie wpasują się w klimat dawnego folwarku. Niska zabudowa gwarantuje prywatność, spokój i możliwość zacieśniania relacji sąsiedzkich.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
-
     </div>
     <!-- /wp:group -->
 
@@ -176,10 +175,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
         <!-- wp:paragraph -->
-        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Zamieszkaj w centrum Gdańska</p>
+        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Malownicze położenie z dogodnym dojazdem</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Toruńska 16 to miejsce idealne dla osób ceniących mieszkanie w centrum miasta. Spacerem w kilkanaście minut dojdziemy do Głównego Miasta, przystanku SKM czy galerii handlowej. Wszędzie będzie blisko!</p>
+        <p class="text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">To okolica, która od lat intensywnie rozwija się a wokół nie brakuje terenów zielonych. Osiedle sąsiaduje z zabytkowym parkiem i wzgórzami a jednocześnie dojazd do obwodnicy Trójmiasta zajmuje tylko 5 minut, do centrum Gdańska kwadrans. Świetnie odnajdą się tu zarówno rodziny z dziećmi, jak i osoby ceniące sobie bliskość terenów rekreacyjnych. </p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
