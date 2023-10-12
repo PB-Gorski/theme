@@ -24,7 +24,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <a href="<?php echo home_url() . '/o-inwestycji-sw-piotra' ?>" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lokalizacja' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
+      <a href="<?php echo home_url() . '/lokalizacja-sw-piotra' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/lista-mieszkan' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
