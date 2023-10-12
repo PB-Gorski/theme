@@ -21,7 +21,7 @@
     <!-- /wp:group -->
 
     <!-- wp:list -->
-    <ul class="wp-block-list inwestycje-posts mb-[40px] flex desktop:flex-row flex-col justify-between gap-[30px]">
+    <ul class="wp-block-list inwestycje-posts mb-[40px] flex desktop:flex-row flex-col justify-between desktop:gap-[30px]">
       <?php
       $counter = 0;
       $i = 0;
