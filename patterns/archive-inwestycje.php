@@ -183,7 +183,7 @@
 
         $alias = preg_replace('/[\-]+/', '-', $alias);
         $alias = trim($alias, '-');
-        $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
+        $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
         $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
         $alias = strtr($alias, ' ', '-');
 
