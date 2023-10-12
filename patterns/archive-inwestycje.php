@@ -172,11 +172,8 @@
         $currentTermCount = (get_term($tax, 'inwestycja'))->count;
         $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
         $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
-        // echo $taxNoSpaces;
-        // echo $taxNoSpaces2;
 
         $alias = $taxNoSpaces2;
-
         $alias = strtolower($alias);
         $alias = str_replace(' ', '-', $alias);
         $alias = preg_replace('/[^0-9a-ąćęłńóśźżś\-]+/', '', $alias);
@@ -186,8 +183,6 @@
         $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
         $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
         $alias = strtr($alias, ' ', '-');
-
-        // echo $alias;
       ?>
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
