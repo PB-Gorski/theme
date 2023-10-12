@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: o-inwestycji-content
- * Slug: o-inwestycji-content
+ * Title: o-inwestycji-osiedle-srebrniki-content
+ * Slug: o-inwestycji-osiedle-srebrniki-content
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
