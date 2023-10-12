@@ -15,7 +15,11 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:paragraph -->
-    <p class="py-[30px] desktop:py-[60px] text-[36px] desktop:text-[60px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Św. Piotra</p>
+    <p class="py-[30px] desktop:py-[60px] text-[36px] desktop:text-[60px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Toruńska 16</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="py-[30px] desktop:py-[60px] text-[20px] text-[#8a8f9] desktop:text-[24px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Kameralna inwestycja zlokalizowana w Śródmieściu Gdańska
+    </p>
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
