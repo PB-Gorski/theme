@@ -74,9 +74,6 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
             <!-- wp:paragraph -->
             <p class="text-[24px]" data-aos="fade-right" data-aos-offset="30">Gdańsk Śródmieście</p>
             <!-- /wp:paragraph -->
-            <!-- wp:paragraph -->
-            <a href="<?php echo home_url() . '/lokalizacja' ?>" class="inline-block text-[14px] text-[#8a8f99] underline" data-aos="fade-right" data-aos-offset="30">więcej o lokalizacji</a>
-            <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
 
