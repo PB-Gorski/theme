@@ -172,6 +172,9 @@
         $currentTermCount = (get_term($tax, 'inwestycja'))->count;
         $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
         $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
+        echo $taxNoSpaces;
+        echo $taxNoSpaces2;
+
       ?>
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
@@ -304,7 +307,6 @@
                     <!-- /wp:paragraph -->
                   </div>
                   <!-- /wp:group -->
-
                 </div>
                 <!-- /wp:group -->
               </div>
