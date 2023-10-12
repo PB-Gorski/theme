@@ -7,7 +7,6 @@
  * Viewport Width: 1280
  */
 ?>
-o-inwestycji-osiedle-srebrniki
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner h-[50vh] desktop:h-[90vh] relative">
   <!-- wp:group -->
