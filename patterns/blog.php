@@ -21,7 +21,7 @@
     <!-- /wp:group -->
 
     <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px] flex desktop:flex-row flex-col justify-between gap-[30px]">
+    <ul class="wp-block-list mb-[40px] flex desktop:flex-row flex-col justify-between desktop:gap-[30px] gap-[60px]">
       <?php
       $args = array(
         'post_type' => 'post',
