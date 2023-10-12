@@ -38,6 +38,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <div class="wp-block-group row-content mb-[60px] desktop:flex">
       <!-- wp:paragraph -->
       <a href="javascript:void(0)" class="block cursor-default left-col desktop:w-[60%] m-0 mb-[30px]" data-aos="fade-right" data-aos-offset="30">
+        <!-- wp:wpmapblock/wp-map-block {"map_id":"wpmapblock_cbd28970","map_marker_list":[{"lat":"54.3841225","lng":"18.6071059","title":"PB Górski","content":"","iconType":"default","customIconUrl":"","customIconWidth":25,"customIconHeight":40}]} /-->
         <!-- wp:image -->
         <figure class="wp-block-image">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/map.png" alt="img">
