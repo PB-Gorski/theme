@@ -323,7 +323,6 @@ label{
   display: none!important;
 }
 .beautiful-taxonomy-filters-button{
-  position: relative;
   background-color: #E80D38;
   color: white;
   width: 230px;
@@ -338,6 +337,11 @@ label{
   top: 20px;
   right: 20px;
   margin: 0;
+}
+@media only screen and (max-width: 480px) {
+  .beautiful-taxonomy-filters-button{
+    position: relative;
+  }
 }
 .beautiful-taxonomy-filters-button::after{
   content: '';
