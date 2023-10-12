@@ -64,12 +64,12 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">1200 m</p>
+        <p class="text-[30px] text-white font-semibold">500 m</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] text-center">Plaża miejska</p>
+      <p class="text-[#8a8f99] text-center">Szkoła podstawowa</p>
       <!-- /wp:paragraph -->
     </a>
     <!-- /wp:paragraph -->
@@ -78,7 +78,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#b11a3e] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">290 m</p>
+        <p class="text-[30px] text-white font-semibold">600 m</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -92,7 +92,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#7d2645] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">1 km</p>
+        <p class="text-[30px] text-white font-semibold">700 m</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -106,12 +106,12 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#52304a] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">300 m</p>
+        <p class="text-[30px] text-white font-semibold">20 min</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] text-center">Apteka</p>
+      <p class="text-[#8a8f99] text-center">Lotnisko</p>
       <!-- /wp:paragraph -->
     </a>
     <!-- /wp:paragraph -->
@@ -121,7 +121,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group plan-osiedla-wrapper mb-[100px] mx-auto max-w-[690px] w-full px-[20px] desktop:px-0">
     <!-- wp:paragraph -->
-    <p class="mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Zaledwie 5 minut będzie dzielić mieszkańców Św. Piotra od Skweru Kościuszki, plaży miejskiej czy Mariny Gdyńskiej. Św. Piotra to także idealne miejsce dla miłośników miejskiego życia - w najbliższej okolicy znajduje się zróżnicowana oferta kawiarni, restauracji i barów, a także kluby fitness, kina i teatry.</p>
+    <p class="mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Lokalizacja osiedla Wieżycka Folwark gwarantuje łatwe dotarcie zarówno do centrum Gdańska (15 minut), jak Gdyni (30 minut) a także zapewnia dostęp do pełnej infrastruktury w pobliżu miejsca zamieszkania (sklepy, punkty usługowe, szkoły, przedszkola, przychodnia).</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Bez względu na to, czy pracujesz w Gdańsku, czy w Gdyni dotrzesz tam bez problemu. Pobliska obwodnica zapewnia łatwy dojazd do całego Trójmiasta, autostrady A1, lotniska, na Półwysep Helski bądź na Kaszuby. Zlokalizowane przy zjazdach z obwodnicy centra handlowe umożliwiają zrobienie wszelkich zakupów, od spożywczych po meblowe.</p>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
