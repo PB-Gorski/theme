@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="inwestycje" class="wp-block-group inwestycje mb-[150px] relative">
+<div id="inwestycje" class="wp-block-group inwestycje desktop:mb-[150px] mb-[80px] relative">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
