@@ -422,9 +422,9 @@ option:hover {
   color: #999;
 }
 .menu-active{
-  border: none!important;
+  /* border: none!important;
   display: flex;
-  align-items: center;
+  align-items: center; */
 }
 .menu-passive{
   background-color: white!important;
