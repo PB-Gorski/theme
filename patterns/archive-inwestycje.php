@@ -179,11 +179,11 @@
 
         $alias = strtolower($alias);
         $alias = str_replace(' ', '-', $alias);
-        $alias = preg_replace('/[^0-9a-ąćęłńóśźż\-]+/', '', $alias);
+        $alias = preg_replace('/[^0-9a-ąćęłńóśźżś\-]+/', '', $alias);
 
         $alias = preg_replace('/[\-]+/', '-', $alias);
         $alias = trim($alias, '-');
-        $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z'), $alias);
+        $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
         $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
         $alias = strtr($alias, ' ', '-');
 
