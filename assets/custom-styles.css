@@ -340,6 +340,7 @@ label{
 }
 @media only screen and (max-width: 480px) {
   .beautiful-taxonomy-filters-button{
+    margin-left: 20px;
     position: relative;
   }
 }
