@@ -100,7 +100,7 @@
   <div class="wp-block-group w-full h-full bg-banner relative flex desktop:block items-center">
     <!-- wp:image -->
     <figure class="wp-block-image w-full h-[250px] desktop:h-[90vh] absolute top-0 left-0">
-      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-torunska-16/torunska-16-bg.jpeg" alt="banner-background">
+      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-torunska-16/torunska-16-bg.jpg" alt="banner-background">
     </figure>
     <!-- /wp:image -->
   </div>
