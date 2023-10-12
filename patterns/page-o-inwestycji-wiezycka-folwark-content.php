@@ -18,7 +18,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <p class="py-[30px] desktop:py-0 desktop:pt-[60px] text-[36px] desktop:text-[60px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Wieżycka Folwark</p>
     <!-- /wp:paragraph -->
     <!-- wp:paragraph -->
-    <p class="pb-[30px] max-w-[700px] desktop:pb-[60px] text-[20px] text-[#8a8f99] desktop:text-[24px] text-center" data-aos="fade-right" data-aos-offset="30">Wyjątkowe osiedle zlokalizowane w południowej części Gdańska, w sąsiedztwie zabytkowego dworku Wendtów</p>
+    <p class="pb-[30px] mx-auto max-w-[700px] desktop:pb-[60px] text-[20px] text-[#8a8f99] desktop:text-[24px] text-center" data-aos="fade-right" data-aos-offset="30">Wyjątkowe osiedle zlokalizowane w południowej części Gdańska, w sąsiedztwie zabytkowego dworku Wendtów</p>
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
@@ -51,7 +51,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <a href="javascript:void(0)" class="block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0 mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">
         <!-- wp:image -->
         <figure class="wp-block-image w-full h-full">
-          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/img1.jpeg" alt="img">
+          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/img1.png" alt="img">
         </figure>
         <!-- /wp:image -->
       </a>
@@ -122,7 +122,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <a href="javascript:void(0)" class="block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">
         <!-- wp:image -->
         <figure class="wp-block-image w-full h-full">
-          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/img2.jpg" alt="img">
+          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/img2.png" alt="img">
         </figure>
         <!-- /wp:image -->
       </a>
