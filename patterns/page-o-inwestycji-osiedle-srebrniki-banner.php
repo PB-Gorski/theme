@@ -110,21 +110,13 @@ o-inwestycji-osiedle-srebrniki
       <!-- wp:group -->
       <div class="wp-block-group title text-[36px] desktop:text-[60px] desktop:pt-[290px] mb-[50px] leading-[44px] desktop:leading-[70px]">
         <!-- wp:paragraph -->
-        <p class="font-bold underline underline-offset-[20px]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki (manual)</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:paragraph -->
-        <p class="font-bold underline underline-offset-[20px]" data-aos="fade-right" data-aos-offset="30"><!-- wp:post-title /--></p>
-        <!-- /wp:paragraph -->
-        <!-- wp:paragraph -->
-        <p class="font-bold underline test underline-offset-[20px]" data-aos="fade-right" data-aos-offset="30"><?php the_title(); ?></p>
+        <p class="font-bold underline underline-offset-[20px]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
         <p class="uppercase text-[18px] trancking-[10px]" data-aos="fade-right" data-aos-offset="30">Gdańsk wrzeszcz</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
-
-
     </div>
     <!-- /wp:group -->
   </div>
