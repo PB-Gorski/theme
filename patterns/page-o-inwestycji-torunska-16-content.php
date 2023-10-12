@@ -116,10 +116,8 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- /wp:group -->
         </div>
         <!-- /wp:group -->
-
       </div>
       <!-- /wp:group -->
-
     </div>
     <!-- /wp:group -->
 
@@ -138,10 +136,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
         <!-- wp:paragraph -->
-        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Apartamenty z widokiem na morze </p>
+        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Apartamenty w pobliżu Motławy</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W ofercie znajdują się dobrze doświetlone, starannie zaprojektowane mieszkania z dużymi balkonami i loggiami. Apartamentom na ostatnich piętrach przestrzeni dodadzą wysokie przeszklone fasady i komfortowe tarasy. Mieszkańcy najwyższych pięter będą mogli również cieszyć się pięknym widokiem na morze.</p>
+        <p class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W dwóch budynkach będzie jedynie 29 apartamentów, co gwarantuje prywatność oraz spokój. Mieszkania charakteryzuje optymalny rozkład pokoi, umożliwiający dostowanie przestrzeni do swoich potrzeb. Przestronne balkony, winda, podziemny garaż - to wszystko czeka na mieszkańców Toruńskiej 16, zlokalizowanej w pobliżu Motławy. </p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -164,10 +162,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
         <!-- wp:paragraph -->
-        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Pełen komfort życia w centrum miasta</p>
+        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Zamieszkaj w centrum Gdańska</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Inwestycja zapewnia pełen komfort życia i relaks w samym centrum miasta. W strefie wejściowej zaplanowana jest duża ilość zieleni, a w samym budynku mieszkańcy będą mogli cieszyć się takimi udogodnieniami jak części wspólne w wysokim standardzie, portiernia, dwupoziomowy garaż, siłownia z częścią wypoczynkową oraz zieleń rekreacyjna na dachu garażu.</p>
+        <p class="text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Toruńska 16 to miejsce idealne dla osób ceniących mieszkanie w centrum miasta. Spacerem w kilkanaście minut dojdziemy do Głównego Miasta, przystanku SKM czy galerii handlowej. Wszędzie będzie blisko!</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -190,10 +188,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
         <!-- wp:paragraph -->
-        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Tętniące życiem miasto w zasięgu ręki</p>
+        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Sprawdź dostępne mieszkania</p>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Położenie apartamentów gwarantuje łatwość poruszania się po trójmiejskiej aglomeracji. Inwestycja jest zlokalizowana w odległości 1 km od stacji SKM i PKP Gdynia Główna i około 5 min od Skweru Kościuszki, plaży miejskiej czy Mariny Gdyńskiej. Św. Piotra to idealne miejsce dla miłośników miejskiego życia - w najbliższej okolicy znajdują się kawiarnie, restauracje, bary, kluby fitness, kina czy teatry. </p>
+        <p class="text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Znajdź odpowiednie mieszkanie już teraz - wybierz dogodny metraż dla siebie i rodziny.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
