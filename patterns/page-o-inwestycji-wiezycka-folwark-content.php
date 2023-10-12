@@ -18,7 +18,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <p class="py-[30px] desktop:py-0 desktop:pt-[60px] text-[36px] desktop:text-[60px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Wieżycka Folwark</p>
     <!-- /wp:paragraph -->
     <!-- wp:paragraph -->
-    <p class="pb-[30px] desktop:pb-[60px] text-[20px] text-[#8a8f99] desktop:text-[24px] text-center" data-aos="fade-right" data-aos-offset="30">Wyjątkowe osiedle zlokalizowane w południowej części Gdańska, w sąsiedztwie zabytkowego dworku Wendtów</p>
+    <p class="pb-[30px] max-w-[700px] desktop:pb-[60px] text-[20px] text-[#8a8f99] desktop:text-[24px] text-center" data-aos="fade-right" data-aos-offset="30">Wyjątkowe osiedle zlokalizowane w południowej części Gdańska, w sąsiedztwie zabytkowego dworku Wendtów</p>
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
