@@ -2,7 +2,7 @@
 
 /**
  * Title: o-inwestycji-osiedle-srebrniki-banner
- * Slug: o-inwestycji-banner
+ * Slug: o-inwestycji-osiedle-srebrniki-banner
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
