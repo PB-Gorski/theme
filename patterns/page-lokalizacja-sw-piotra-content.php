@@ -40,7 +40,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <a href="javascript:void(0)" class="block cursor-default left-col desktop:w-[60%] m-0 mb-[30px]" data-aos="fade-right" data-aos-offset="30">
         <!-- wp:image -->
         <figure class="wp-block-image">
-          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/map.png" alt="img">
+          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/map.png" alt="img">
         </figure>
         <!-- /wp:image -->
       </a>
@@ -68,12 +68,12 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">400 m</p>
+        <p class="text-[30px] text-white font-semibold">1200 m</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] text-center">Przedszkole</p>
+      <p class="text-[#8a8f99] text-center">Plaża miejska</p>
       <!-- /wp:paragraph -->
     </a>
     <!-- /wp:paragraph -->
@@ -82,12 +82,12 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#b11a3e] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">600 m</p>
+        <p class="text-[30px] text-white font-semibold">290 m</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] text-center">Przedszkole</p>
+      <p class="text-[#8a8f99] text-center">Sklep spożywczy</p>
       <!-- /wp:paragraph -->
     </a>
     <!-- /wp:paragraph -->
@@ -96,12 +96,12 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#7d2645] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">900 m</p>
+        <p class="text-[30px] text-white font-semibold">1 km</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] text-center">Przedszkole</p>
+      <p class="text-[#8a8f99] text-center">Przystanek SKM</p>
       <!-- /wp:paragraph -->
     </a>
     <!-- /wp:paragraph -->
@@ -110,39 +110,16 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#52304a] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">20 min</p>
+        <p class="text-[30px] text-white font-semibold">300 m</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] text-center">Przedszkole</p>
+      <p class="text-[#8a8f99] text-center">Apteka</p>
       <!-- /wp:paragraph -->
     </a>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
-
-  <!-- wp:group -->
-  <div class="wp-block-group plan-osiedla-wrapper mb-[100px] mx-auto max-w-[690px] w-full px-[20px] desktop:px-0">
-    <!-- wp:paragraph -->
-    <p class="mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki to świetnie skomunikowane z całym Gdańskiem osiedle. Położone pomiędzy Wrzeszczem, a Moreną z dobrym dostępem do kolejki PKM. Otoczone zielenią i terenami rekreacyjnymi. Idealne dla rodxzin z dziećmi, jak i dla studentów (10 minut od kampusu Politechniki Gdańskiej).</p>
-    <!-- /wp:paragraph -->
-
-    <!-- wp:paragraph -->
-    <p class="mb-[60px] text-[30px] text-center" data-aos="fade-right" data-aos-offset="30">Plan osiedla "Srebrniki"</p>
-    <!-- /wp:paragraph -->
-
-    <!-- wp:paragraph -->
-    <a href="javascript:void(0)" class="block cursor-default" data-aos="fade-right" data-aos-offset="30">
-      <!-- wp:image -->
-      <figure class="wp-block-image">
-        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/plan-osiedla.jpeg" alt="plan-osiedla">
-      </figure>
-      <!-- /wp:image -->
-    </a>
-    <!-- /wp:paragraph -->
-  </div>
-  <!-- /wp:group -->
-
 </div>
 <!-- /wp:group -->
