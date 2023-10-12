@@ -59,13 +59,13 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
-      <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:px-[100px] desktop:w-1/2">
+      <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:px-[100px] desktop:w-1/2 flex flex-col justify-center">
         <!-- wp:paragraph -->
         <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">W ramach inwestycji powstaną 2 kameralne budynki</p>
         <!-- /wp:paragraph -->
 
         <!-- wp:group -->
-        <div class="wp-block-group mb-[100px] desktop:grid grid-rows-2 grid-cols-2 gap-[30px]">
+        <div class="wp-block-group mb-[100px] desktop:mb-0 desktop:grid grid-rows-2 grid-cols-2 gap-[30px]">
           <!-- wp:group -->
           <div class="wp-block-group info-box1 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
