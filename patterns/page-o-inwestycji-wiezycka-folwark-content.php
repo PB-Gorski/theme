@@ -64,7 +64,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- /wp:paragraph -->
 
         <!-- wp:group -->
-        <div class="wp-block-group mb-[100px] desktop:mb-0 desktop:grid grid-rows-2 grid-cols-2 gap-[30px]">
+        <div class="wp-block-group mb-[100px] desktop:mb-0 desktop:grid grid-rows-3 grid-cols-3 gap-[30px]">
           <!-- wp:group -->
           <div class="wp-block-group info-box1 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
@@ -90,7 +90,26 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- wp:group -->
           <div class="wp-block-group info-box3 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
-
+            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LICZBA MIESZKAŃ (ETAP I)</p>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <p class="text-[24px]" data-aos="fade-right" data-aos-offset="30">78</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
+          <!-- wp:group -->
+          <div class="wp-block-group info-box3 mb-[35px] desktop:mb-[30px]">
+            <!-- wp:paragraph -->
+            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">POWIERZCHNIA MIESZKAŃ</p>
+            <!-- /wp:paragraph -->
+            <!-- wp:paragraph -->
+            <p class="text-[24px]" data-aos="fade-right" data-aos-offset="30">38 m<sup>2</sup> - 79 m<sup>2</sup></p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
+          <!-- wp:group -->
+          <div class="wp-block-group info-box3 mb-[35px] desktop:mb-[30px]">
+            <!-- wp:paragraph -->
             <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">OSIEDLE</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
