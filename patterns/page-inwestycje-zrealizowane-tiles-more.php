@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: inwestycje-zrealizowane-tiles-more
- * Slug: inwestycje-zrealizowane-tiles-more
+ * Title: page-inwestycje-zrealizowane-tiles-more
+ * Slug: page-inwestycje-zrealizowane-tiles-more
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="blog" class="wp-block-group inwestycje-zrealizowane-tiles-more h-[600pxpx]">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
+  <div class="wp-block-group max-w-[840px] w-full mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
     <div class="wp-block-group title mb-[20px]">
       <!-- wp:paragraph -->
