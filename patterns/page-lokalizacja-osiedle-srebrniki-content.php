@@ -136,7 +136,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <a href="javascript:void(0)" class="block cursor-default" data-aos="fade-right" data-aos-offset="30">
       <!-- wp:image -->
       <figure class="wp-block-image">
-        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/plan-osiedla.jpeg" alt="plan-osiedla">
+        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/plan-osiedla.jpeg" alt="plan-osiedla">
       </figure>
       <!-- /wp:image -->
     </a>
