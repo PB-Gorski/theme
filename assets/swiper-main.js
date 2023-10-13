@@ -10,23 +10,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
       prevEl: '#services-prev',
     },
   });
-  let $lgSwiper = document.getElementById("lg-swipper");
-  const swiper = new Swiper(".swiper", {
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      prevEl: ".swiper-button-prev",
     },
-
-    on: {
-      init: function () {
-        const lg = lightGallery($lgSwiper, {
-          speed: 300
-        });
-        $lgSwiper.addEventListener("lgBeforeClose", () => {
-          swiper.slideTo(lg.index, 0);
-        });
-      }
-    }
+    thumbs: {
+      swiper: swiper,
+    },
   });
   
 });
