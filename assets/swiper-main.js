@@ -9,4 +9,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
       prevEl: '#services-prev',
     },
   });
+  const swiper = new Swiper(".swiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    on: {
+      init: function () {
+        const lg = lightGallery($lgSwiper, {
+          speed: 300
+        });
+        $lgSwiper.addEventListener("lgBeforeClose", () => {
+          swiper.slideTo(lg.index, 0);
+        });
+      }
+    }
+  });
+  
 });
