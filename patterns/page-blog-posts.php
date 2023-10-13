@@ -175,7 +175,6 @@
       $i = 0;
 
       if ($post_query->have_posts()) {
-        the_posts_pagination();
       ?>
         <?php
         while ($post_query->have_posts()) {
