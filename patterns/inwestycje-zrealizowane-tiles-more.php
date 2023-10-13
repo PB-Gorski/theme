@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: page-inwestycje-zrealizowane-tiles-more
- * Slug: page-inwestycje-zrealizowane-tiles-more
+ * Title: inwestycje-zrealizowane-tiles-more
+ * Slug: inwestycje-zrealizowane-tiles-more
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
