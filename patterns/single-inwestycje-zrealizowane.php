@@ -118,7 +118,7 @@
     <!-- wp:group -->
     <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:paragraph -->
-      <a href="/blog/" class="desktop:mt-[-30px] desktop:aabsolute left-0 ">
+      <a href="/inwestycje-zrealizowane/" class="desktop:mt-[-30px] desktop:aabsolute left-0 ">
         <!-- wp:paragraph -->
         <p class="pb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">&larr; Inwestycje zrealizowane</p>
         <!-- /wp:paragraph -->
