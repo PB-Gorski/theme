@@ -125,7 +125,7 @@
       </a>
       <!-- /wp:paragraph -->
       <!-- wp:group -->
-      <div class="wp-block-group text-[24px] desktop:text-[40px] text-[#2e384c] font-bold">
+      <div class="wp-block-group text-[24px] desktop:text-[60px] text-[#2e384c] font-bold">
         <!-- wp:post-title /-->
         <!-- wp:group -->
         <div class="wp-block-group post-date text-[#8a8f99] text-[18px] font-normal">
