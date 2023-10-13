@@ -127,7 +127,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
 
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
+  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] relative">
     <!-- wp:group -->
     <div class="wp-block-group row-links my-[40px] flex flex-wrap justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
