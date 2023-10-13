@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: lokalizacja-banner
- * Slug: lokalizacja-banner
+ * Title: lokalizacja-osiedle-srebrniki-banner
+ * Slug: lokalizacja-osiedle-srebrniki-banner
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
