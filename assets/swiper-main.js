@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     spaceBetween: 10,
     slidesPerView: 4,
     freeMode: true,
-    watchSlidesProgress: true,
+    // watchSlidesProgress: true,
   });
   var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
