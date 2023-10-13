@@ -1,3 +1,4 @@
+import lightGallery from "https://cdn.skypack.dev/lightgallery@2.0.0-beta.3";
 document.addEventListener("DOMContentLoaded", function(event) {
   new Swiper('#id', {
     direction: "horizontal",
