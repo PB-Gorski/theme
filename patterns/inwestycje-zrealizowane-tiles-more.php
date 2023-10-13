@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group title mb-[20px]">
       <!-- wp:paragraph -->
-      <p data-aos="fade-right" data-aos-offset="30" class="text-[24px] desktop:ml-[100px] text-bgDarkGray">Aktualności</p>
+      <p data-aos="fade-right" data-aos-offset="30" class="text-[24px] desktop:ml-[100px] text-bgDarkGray">Przeczytaj także</p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
