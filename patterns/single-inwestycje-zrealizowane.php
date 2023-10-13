@@ -139,7 +139,7 @@
   </div>
   <!-- /wp:group -->
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
+  <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] [&>ul]:flex">
     <!-- wp:group -->
     <div class="wp-block-group mx-auto max-w-[900px] w-full">
       <!-- wp:post-featured-image /-->
