@@ -148,6 +148,8 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     </div>
     <!-- /wp:group -->
 
+    <?php echo do_shortcode('[metaslider id="1823"]'); ?>
+
     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="hidden swiper mySwiper2">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
