@@ -523,7 +523,6 @@ background-color: #e8fbff!important;
 .mieszkania-list-taxonomies:hover .arrow-red{
   opacity:1!important;
 }
-
 .entry-content{
   position: relative;
 }
@@ -541,4 +540,8 @@ background-color: #e8fbff!important;
 }
 .single .entry-content h4{
   margin-bottom: 30px;
+}
+.single-inwest-zrealizowane{
+  color:#2E384D;
+  text-decoration: none;
 }
