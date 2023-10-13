@@ -608,12 +608,12 @@ background-color: #e8fbff!important;
   height: 100%;
   object-fit: cover;
 }
-.swiper-slide-active{
+.mySwiper2 > .swiper-wrapper > .swiper-slide-active{
   display: block;
   position: absolute;
   top:0;
   left: 0;
 }
-.swiper-slide{
+.mySwiper2 > .swiper-wrapper > .swiper-slide-active{
   display: none
 }
