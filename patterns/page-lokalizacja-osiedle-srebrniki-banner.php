@@ -110,7 +110,7 @@
       <!-- wp:group -->
       <div class="wp-block-group title text-[36px] desktop:text-[60px] desktop:pt-[290px] mb-[50px] leading-[44px] desktop:leading-[70px]">
         <!-- wp:paragraph -->
-        <p class="font-bold underline underline-offset-[20px]" data-aos="fade-right" data-aos-offset="30">Gdańsk - Srebrniki</p>
+        <p class="font-bold" data-aos="fade-right" data-aos-offset="30">Gdańsk - Srebrniki</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
