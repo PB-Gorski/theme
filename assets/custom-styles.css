@@ -614,6 +614,6 @@ background-color: #e8fbff!important;
   top:0;
   left: 0;
 }
-.mySwiper2 > .swiper-wrapper > .swiper-slide-active{
+.mySwiper2 > .swiper-wrapper > .swiper-slide{
   display: none
 }
