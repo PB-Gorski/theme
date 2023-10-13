@@ -134,14 +134,17 @@
         <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
-
     </div>
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
-    <!-- wp:post-featured-image /-->
+    <!-- wp:group -->
+    <div class="wp-block-group max-w-[900px] w-full">
+      <!-- wp:post-featured-image /-->
+    </div>
+    <!-- /wp:group -->
 
     <!-- wp:group -->
     <div class="wp-block-group max-w-[840px] w-full mx-auto pt-[40px]">
