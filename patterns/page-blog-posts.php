@@ -177,8 +177,6 @@
       if ($post_query->have_posts()) {
         the_posts_pagination();
       ?>
-        <div class="nav-previous alignleft"><?php next_posts_link('Older posts'); ?></div>
-        <div class="nav-next alignright"><?php previous_posts_link('Newer posts'); ?></div>
         <?php
         while ($post_query->have_posts()) {
           $post_query->the_post();
@@ -223,45 +221,15 @@
         <?php
           $i++;
         }; ?>
-        <div class="nav-previous alignleft"><?php previous_posts_link('Older posts'); ?></div>
-        <div class="nav-next alignright"><?php next_posts_link('Newer posts'); ?></div>
-        <div class="pagination">
-          <?php
-          echo paginate_links(array(
-            'base'         => str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999))),
-            'total'        => $post_query->max_num_pages,
-            'current'      => max(1, get_query_var('paged')),
-            'format'       => '?paged=%#%',
-            'show_all'     => false,
-            'type'         => 'plain',
-            'end_size'     => 2,
-            'mid_size'     => 1,
-            'prev_next'    => true,
-            'prev_text'    => sprintf('<i></i> %1$s', __('Newer Posts', 'text-domain')),
-            'next_text'    => sprintf('%1$s <i></i>', __('Older Posts', 'text-domain')),
-            'add_args'     => false,
-            'add_fragment' => '',
-          ));
-          ?>
-        </div>
+
       <?php
-        echo posts_nav_link();
-        echo next_posts_link();
-        echo previous_posts_link();
-        echo get_next_posts_link();
-        echo get_previous_posts_link();
-        echo paginate_links();
-        echo the_posts_pagination();
-        echo get_the_posts_pagination();
       };
       wp_reset_query();
       wp_reset_postdata();
       ?>
     </ul>
     <!-- /wp:list -->
-
   </div>
   <!-- /wp:group -->
-
 </div>
 <!-- /wp:group -->
