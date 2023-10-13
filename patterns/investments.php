@@ -34,12 +34,23 @@
         $currentTermCount = (get_term($tax, 'inwestycja'))->count;
         $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
         $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
-        // echo $taxNoSpaces2;
+
+        $alias = $taxNoSpaces2;
+        $alias = strtolower($alias);
+        $alias = str_replace(' ', '-', $alias);
+        $alias = preg_replace('/[^0-9a-ąćęłńóśźżś\-]+/', '', $alias);
+
+        $alias = preg_replace('/[\-]+/', '-', $alias);
+        $alias = trim($alias, '-');
+        $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
+        $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
+        $alias = strtr($alias, ' ', '-');
+
         if ($counter < 4) {
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full mb-[80px] w-full inline-block">
-            <a href="<?php echo home_url() . '/o-inwestycji' ?>" class="inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="<?php echo $counter * 50; ?>">
+            <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="<?php echo $counter * 50; ?>">
               <!-- wp:group -->
               <div class="wp-block-group relative group desktop:max-w-full max-w-[310px] h-full">
                 <!-- wp:group -->
