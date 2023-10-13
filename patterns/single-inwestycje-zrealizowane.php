@@ -141,7 +141,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px]">
     <!-- wp:group -->
-    <div class="wp-block-group max-w-[900px] w-full">
+    <div class="wp-block-group mx-auto max-w-[900px] w-full">
       <!-- wp:post-featured-image /-->
     </div>
     <!-- /wp:group -->
