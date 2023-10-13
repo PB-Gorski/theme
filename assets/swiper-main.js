@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
     },
+    
     on: {
       init: function () {
         const lg = lightGallery($lgSwiper, {
