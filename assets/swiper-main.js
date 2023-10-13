@@ -9,12 +9,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       prevEl: '#services-prev',
     },
   });
+  let $lgSwiper = document.getElementById("lg-swipper");
   const swiper = new Swiper(".swiper", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
     },
-    
+
     on: {
       init: function () {
         const lg = lightGallery($lgSwiper, {
