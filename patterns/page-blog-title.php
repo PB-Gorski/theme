@@ -122,11 +122,16 @@
         <!-- wp:paragraph -->
         <p class="mx-auto mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold" data-aos="fade-right" data-aos-offset="30">Aktualności</p>
         <!-- /wp:paragraph -->
+
+        <span>
+          <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer" data-aos="fade-right" data-aos-offset="30">Wszystkie</a>
+        </span>
+
         <!-- wp:core/categories {"showPostCounts":false,"displayAsDropdown":false,"showHierarchy":false} /-->
 
 
         <!-- wp:list -->
-        <ul class="wp-block-list taxonomies mx-auto pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px]">
+        <ul class="wp-block-list hidden taxonomies mx-auto pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px]">
           <!-- wp:list-item -->
           <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
             <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30">Wszystkie</a>
