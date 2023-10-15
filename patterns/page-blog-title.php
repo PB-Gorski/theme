@@ -124,7 +124,7 @@
         <!-- /wp:paragraph -->
 
         <!-- wp:group -->
-        <div class="flex flex-wrap gap-[20px]">
+        <div class="wp-block-group flex flex-wrap gap-[20px]">
           <span>
             <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Wszystkie</a>
           </span>
