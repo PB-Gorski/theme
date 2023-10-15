@@ -127,13 +127,6 @@
 
         <!-- wp:list -->
         <ul class="wp-block-list taxonomies mx-auto pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px]">
-          <?php
-          $taxonomies = get_terms(array(
-            'taxonomy' => 'osiedla',
-            'hide_empty' => false,
-          ));
-          ?>
-
           <!-- wp:list-item -->
           <li class="allTabBtn tab-active text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
             <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30">Wszystkie</a>
@@ -141,6 +134,11 @@
           <!-- /wp:list-item -->
 
           <?php
+          $taxonomies = get_terms(array(
+            'taxonomy' => 'osiedla',
+            'hide_empty' => false,
+          ));
+
           if (false) {
             foreach ($taxonomies as $taxonomy) {
               // $catNoSpaces = str_replace(' ', '-', strtolower($cat->name)); 
