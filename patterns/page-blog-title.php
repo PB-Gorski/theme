@@ -129,7 +129,7 @@
             <?php $id = the_ID(); ?>
             <?php
             echo $id;
-            if ($id === 1817) {
+            if ($id == '1817') {
               echo 'blog';
             } else {
               echo 'not blog';
