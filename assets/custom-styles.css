@@ -604,3 +604,7 @@ background-color: #e8fbff!important;
   display: flex;
   gap: 20px;
 }
+.current-cat{
+  text-decoration: underline 2px;
+  text-decoration-color: #e80d38;
+}
