@@ -401,7 +401,7 @@
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
                   <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
-                    <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/piekarska.jpg" alt="avatar">
+                    <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/jahn.jpg" alt="avatar">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -410,7 +410,7 @@
                 <!-- wp:group -->
                 <div class="wp-block-group right-col-text text-black">
                   <!-- wp:paragraph -->
-                  <p class="text-[18px] mb-[25px]">Kinga Piekarska</p>
+                  <p class="text-[18px] mb-[25px]">Bartłomiej Jahn</p>
                   <!-- /wp:paragraph -->
                   <!-- wp:group -->
                   <div class="wp-block-group phone flex gap-[40px]">
@@ -428,11 +428,11 @@
                     <!-- wp:group -->
                     <div class="wp-block-group values">
                       <!-- wp:paragraph -->
-                      <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 607 700 555</a>
+                      <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 691 992 538</a>
                       <!-- /wp:paragraph -->
 
                       <!-- wp:paragraph -->
-                      <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[2e384d] transition ease duration-300">k.piekarska@pbgorski.pl </a>
+                      <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[2e384d] transition ease duration-300"> b.jahn@pbgorski.pl </a>
                       <!-- /wp:paragraph -->
                     </div>
                     <!-- /wp:group -->
