@@ -666,7 +666,7 @@
                 <p class="w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział reklamacji</p>
+                <p class="pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Produkcja i sprzedaż betonu</p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -712,7 +712,7 @@
                       <a href="tel:583407900" class="mb-[20px] inline-block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> (+48) 58 340-79-00, </a>
                       <!-- /wp:paragraph -->
                       <!-- wp:paragraph -->
-                      <a href="tel:+48693034715" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 693 034 715</a>
+                      <a href="tel:+48693034715" class="mb-[20px] inline-block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 693 034 715</a>
                       <!-- /wp:paragraph -->
 
                       <!-- wp:paragraph -->
@@ -730,6 +730,98 @@
             <!-- /wp:list -->
           </li>
           <!-- /wp:list-item -->
+          <!-- wp:list-item -->
+          <li class="list-content-wrapper transition ease-out duration-[500ms]">
+            <!-- wp:group -->
+            <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
+              <!-- wp:group -->
+              <div class="wp-block-group bar-title-wrapper w-full text-bgDarkGray flex transition ease-out duration-[500ms]">
+                <!-- wp:paragraph -->
+                <p class="w-[22px] pb-[5px] flex-none click-bar-icon py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <p class="bar-title font-bold grow pl-[20px] py-[20px] text-[24px] border-b-[1px] border-[#e8e8e8] font-bold self-center transition ease-out duration-[500ms]" data-aos="fade-up" data-aos-offset="30">Produkcja i sprzedaż betonu</p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] transition-height ease-out duration-[500ms] inactive">
+              <!-- wp:paragraph -->
+              <p class="text-[18px] text-bgDarkGray mb-[35px]">ul. Budowlanych 19, 80-298 Gdańsk</p>
+              <!-- /wp:paragraph -->
+              <!-- wp:group -->
+              <div class="wp-block-group text-black">
+                <!-- wp:group -->
+                <div class="wp-block-group mb-[25px] phone flex gap-[40px]">
+                  <!-- wp:group -->
+                  <div class="wp-block-group labels">
+                    <!-- wp:paragraph -->
+                    <p class="block mb-[20px]">tel</p>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p class="block mb-[20px]">fax:</p>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p class="block">email:</p>
+                    <!-- /wp:paragraph -->
+                  </div>
+                  <!-- /wp:group -->
+
+                  <!-- wp:group -->
+                  <div class="wp-block-group values">
+                    <!-- wp:paragraph -->
+                    <a href="tel:+691994009" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">(+48) 691-994-009</a>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <a href="mailto:produkcja.kokoszki@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">produkcja.kokoszki@pbgorski.pl</a>
+                    <!-- /wp:paragraph -->
+                  </div>
+                  <!-- /wp:group -->
+                </div>
+                <!-- /wp:group -->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:list -->
+              <ul class="wp-block-list font-bold">
+                <!-- wp:list-item -->
+                <li>
+                  <a href="https://www.google.com/maps/place/Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A/@54.3836995,18.6080757,17.6z/data=!4m5!3m4!1s0x0:0xc1029ad51bc7ce0c!8m2!3d54.4041492!4d18.5669008" class="font-bold flex gap-[10px]">
+                    <!-- wp:image -->
+                    <figure class="wp-block-image w-[20px]">
+                      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/maps-pin.png" alt="map-pin">
+                    </figure>
+                    <!-- /wp:image -->
+                    <!-- wp:paragraph -->
+                    <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Zobacz na GoogleMaps</p>
+                    <!-- /wp:paragraph -->
+                  </a>
+                </li>
+                <!-- /wp:list-item -->
+                <!-- wp:list-item -->
+                <li>
+                  <a href="https://www.google.com/maps/dir//Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A,+Lelewela+6%2Flok.+1,+80-442+Gda%C5%84sk/@54.3831786,18.6099402,16.19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x46fd73f68f036d41:0xc1029ad51bc7ce0c!2m2!1d18.5669008!2d54.4041492!3e0" class="font-bold flex gap-[10px]">
+                    <!-- wp:image -->
+                    <figure class="wp-block-image w-[20px]">
+                      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/nav-pin.png" alt="nav-pin">
+                    </figure>
+                    <!-- /wp:image -->
+                    <!-- wp:paragraph -->
+                    <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Pokaż trasę dojazdu</p>
+                    <!-- /wp:paragraph -->
+                  </a>
+                </li>
+                <!-- /wp:list-item -->
+              </ul>
+              <!-- /wp:list -->
+            </div>
+            <!-- /wp:group -->
+          </li>
+          <!-- /wp:list-item -->
+
 
 
 
