@@ -789,7 +789,7 @@
               <ul class="wp-block-list font-bold">
                 <!-- wp:list-item -->
                 <li>
-                  <a href="https://www.google.com/maps/place/Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A/@54.3836995,18.6080757,17.6z/data=!4m5!3m4!1s0x0:0xc1029ad51bc7ce0c!8m2!3d54.4041492!4d18.5669008" class="font-bold flex gap-[10px]">
+                  <a href="https://www.google.pl/maps/place/ul-budowlanych-19-80-298-gdansk" class="font-bold flex gap-[10px]">
                     <!-- wp:image -->
                     <figure class="wp-block-image w-[20px]">
                       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/maps-pin.png" alt="map-pin">
@@ -803,7 +803,7 @@
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
                 <li>
-                  <a href="https://www.google.com/maps/dir//Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A,+Lelewela+6%2Flok.+1,+80-442+Gda%C5%84sk/@54.3831786,18.6099402,16.19z/data=!4m9!4m8!1m0!1m5!1m1!1s0x46fd73f68f036d41:0xc1029ad51bc7ce0c!2m2!1d18.5669008!2d54.4041492!3e0" class="font-bold flex gap-[10px]">
+                  <a href="https://www.google.com/maps/dir/Stare+Miasto,+Krak%C3%B3w/Budowlanych,+80-298+Gda%C5%84sk/@52.1725457,16.576864,7z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47165b11bb2ba5ed:0x4e9197ac6101863a!2m2!1d19.9377113!2d50.0605618!1m5!1m1!1s0x46fd9e2903f69961:0x2a0002dd23f6f47f!2m2!1d18.476286!2d54.3680391?entry=ttu" class="font-bold flex gap-[10px]">
                     <!-- wp:image -->
                     <figure class="wp-block-image w-[20px]">
                       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/nav-pin.png" alt="nav-pin">
