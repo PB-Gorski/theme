@@ -606,5 +606,6 @@ background-color: #e8fbff!important;
 }
 .current-cat{
   text-decoration: underline 2px;
+  text-underline-offset: 3px;
   text-decoration-color: #e80d38;
 }
