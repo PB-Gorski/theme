@@ -166,5 +166,78 @@
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
+
+  <!-- wp:group -->
+  <div class="wp-block-group hidden blog-posts container mx-auto desktop:px-0 px-[20px]">
+    <!-- wp:list -->
+    <ul class="hidden wp-block-list mb-[40px]">
+      <?php
+      $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+      $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => 5,
+        'order' => 'DESC',
+        'paged' => $paged
+      );
+      $post_query = new WP_Query($args);
+      $counter = 0;
+      $i = 0;
+
+      if ($post_query->have_posts()) {
+      ?>
+        <?php
+        while ($post_query->have_posts()) {
+          $post_query->the_post();
+          $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
+          $counter++; ?>
+          <!-- wp:list-item -->
+          <li class="invest-tile max-w-full mb-[80px]">
+            <a href="<?php the_permalink(); ?>" class="relative group inline-block desktop:max-w-full max-w-[310px]" data-aos="fade-right" data-aos-offset="30">
+              <!-- wp:group -->
+              <div class="wp-block-group hidden wrapper w-full desktop:flex gap-[120px]">
+                <!-- wp:image -->
+                <figure class="wp-block-image desktop:w-[50%] h-[330px] m-0">
+                  <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
+                </figure>
+                <!-- /wp:image -->
+
+                <!-- wp:group -->
+                <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center">
+                  <!-- wp:paragraph -->
+                  <p class="mb-[30px] text-[24px] desktop:text-[36px] font-bold leading-[34px] desktop:leading-[46px]"><?php the_title(); ?></p>
+                  <!-- /wp:paragraph -->
+
+                  <!-- wp:group -->
+                  <div class="wp-block-group post-excerpt mb-[40px]">
+                    <!-- wp:paragraph -->
+                    <?php the_excerpt(); ?>
+                    <!-- /wp:paragraph -->
+                  </div>
+                  <!-- /wp:group -->
+
+                  <!-- wp:paragraph -->
+                  <p class="relative text-[18px] inline before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Zobacz więcej &rarr;
+                  </p>
+                  <!-- /wp:paragraph -->
+                </div>
+                <!-- /wp:group -->
+              </div>
+              <!-- /wp:group -->
+            </a>
+          </li>
+          <!-- /wp:list-item -->
+        <?php
+          $i++;
+        }; ?>
+
+      <?php
+      };
+      wp_reset_query();
+      wp_reset_postdata();
+      ?>
+    </ul>
+    <!-- /wp:list -->
+  </div>
+  <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
