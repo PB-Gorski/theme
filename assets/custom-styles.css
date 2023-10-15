@@ -621,7 +621,7 @@ background-color: #e8fbff!important;
 
 }
 .current-cat{
-  color: #2E384D;
+  color: #2E384D!important;
   text-decoration: underline 2px;
   text-underline-offset: 4px;
   text-decoration-color: #e80d38;
