@@ -608,9 +608,9 @@ background-color: #e8fbff!important;
 .page-blog-test .wp-block-categories-list li{
   color: #8a8f99;
 }
-.page-blog-test .wp-block-categories-list li:first{
-  color: #8a8f99;
-  text-decoration: none;
+.page-blog-test .wp-block-categories-list:first-child{
+  color: #8a8f99!important;
+  text-decoration: none!important;
 }
 .page-blog-test .wp-block-categories-list li:hover{
   color: #2E384D;
