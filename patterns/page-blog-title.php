@@ -127,7 +127,7 @@
         <div class="flex flex-wrap gap-[20px]">
           <span>
             <?php echo the_ID(); ?>
-            <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn text-[#8A8F99] <?php the_ID() == 1817 ? print_r('blog') : print_r('not blog'); ?> hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Wszystkie</a>
+            <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn text-[#8A8F99] <?php (the_ID() == 1817) ? print_r('blog') : print_r('not blog'); ?> hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Wszystkie</a>
           </span>
 
           <!-- wp:core/categories {"showPostCounts":false,"displayAsDropdown":false,"showHierarchy":false} /-->
