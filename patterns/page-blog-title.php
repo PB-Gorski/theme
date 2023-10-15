@@ -126,7 +126,7 @@
 
 
         <!-- wp:list -->
-        <ul class="wp-block-list taxonomies mx-auto pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
+        <ul class="wp-block-list taxonomies mx-auto pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px]">
           <?php
           $taxonomies = get_terms(array(
             'taxonomy' => 'osiedla',

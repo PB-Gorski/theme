@@ -608,6 +608,10 @@ background-color: #e8fbff!important;
 .page-blog-test .wp-block-categories-list li{
   color: #8a8f99;
 }
+.page-blog-test .wp-block-categories-list li:first{
+  color: #8a8f99;
+  text-decoration: none;
+}
 .page-blog-test .wp-block-categories-list li:hover{
   color: #2E384D;
   text-decoration: underline 2px;
@@ -617,6 +621,7 @@ background-color: #e8fbff!important;
 
 }
 .current-cat{
+  color: #2E384D;
   text-decoration: underline 2px;
   text-underline-offset: 4px;
   text-decoration-color: #e80d38;
