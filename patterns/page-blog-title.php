@@ -128,6 +128,13 @@
           <span>
             <?php echo the_ID(); ?>
             <?php $id = the_ID(); ?>
+            <?php
+            if ($id == 1817) {
+              echo 'blog';
+            } else {
+              echo 'not blog';
+            }
+            ?>
             <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn text-[#8A8F99] <?php ($id == 1817) ? print_r('blog') : print_r('not blog'); ?> hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Wszystkie</a>
           </span>
 
