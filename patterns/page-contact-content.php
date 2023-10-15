@@ -284,7 +284,7 @@
                     <a href="tel:+48586853147" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">(+48) 58 685-31-47</a>
                     <!-- /wp:paragraph -->
                     <!-- wp:paragraph -->
-                    <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">sekretariat@pbgorski.pl</a>
+                    <a href="mailto:sekretariat@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">sekretariat@pbgorski.pl</a>
                     <!-- /wp:paragraph -->
                   </div>
                   <!-- /wp:group -->
@@ -385,7 +385,7 @@
                       <!-- /wp:paragraph -->
 
                       <!-- wp:paragraph -->
-                      <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">k.piekarska@pbgorski.pl </a>
+                      <a href="mailto:k.piekarska@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">k.piekarska@pbgorski.pl </a>
                       <!-- /wp:paragraph -->
                     </div>
                     <!-- /wp:group -->
@@ -432,7 +432,7 @@
                       <!-- /wp:paragraph -->
 
                       <!-- wp:paragraph -->
-                      <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[2e384d] transition ease duration-300"> b.jahn@pbgorski.pl </a>
+                      <a href="mailto:b.jahn@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[2e384d] transition ease duration-300"> b.jahn@pbgorski.pl </a>
                       <!-- /wp:paragraph -->
                     </div>
                     <!-- /wp:group -->
@@ -502,7 +502,7 @@
                       <!-- /wp:paragraph -->
 
                       <!-- wp:paragraph -->
-                      <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300"> e.lipska@pbgorski.pl</a>
+                      <a href="mailto:e.lipska@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300"> e.lipska@pbgorski.pl</a>
                       <!-- /wp:paragraph -->
                     </div>
                     <!-- /wp:group -->
@@ -572,7 +572,7 @@
                       <!-- /wp:paragraph -->
 
                       <!-- wp:paragraph -->
-                      <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300"> kredyty@pbgorski.pl</a>
+                      <a href="mailto:kredyty@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300"> kredyty@pbgorski.pl</a>
                       <!-- /wp:paragraph -->
                     </div>
                     <!-- /wp:group -->
@@ -642,7 +642,7 @@
                       <!-- /wp:paragraph -->
 
                       <!-- wp:paragraph -->
-                      <a href="mailto:sprzedaz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">b.derkacz@pbgorski.pl</a>
+                      <a href="mailto:derkacz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">b.derkacz@pbgorski.pl</a>
                       <!-- /wp:paragraph -->
                     </div>
                     <!-- /wp:group -->
