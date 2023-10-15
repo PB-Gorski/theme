@@ -126,9 +126,9 @@
         <!-- wp:group -->
         <div class="flex flex-wrap gap-[20px]">
           <span>
-            <?php echo the_ID(); ?>
             <?php $id = the_ID(); ?>
             <?php
+            echo $id;
             if ($id == 1817) {
               echo 'blog';
             } else {
