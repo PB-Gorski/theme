@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: page-blog-posts
- * Slug: page-blog-posts
+ * Title: page-blog-title
+ * Slug: page-blog-title
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
