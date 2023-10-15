@@ -600,6 +600,7 @@ background-color: #e8fbff!important;
 }
 
 /* page blog */
-.page-blog-test .wp-block-categories-list li{
-  color: red!important;
+.page-blog-test .wp-block-categories-list{
+  display: flex;
+  gap: 20px;
 }

@@ -120,13 +120,13 @@
       <!-- wp:group -->
       <div class="wp-block-group">
         <!-- wp:paragraph -->
-        <p class="container mx-auto desktop:px-0 px-[20px] mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold" data-aos="fade-right" data-aos-offset="30">Aktualności</p>
+        <p class="mx-auto mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold" data-aos="fade-right" data-aos-offset="30">Aktualności</p>
         <!-- /wp:paragraph -->
         <!-- wp:core/categories {"showPostCounts":false,"displayAsDropdown":false,"showHierarchy":false} /-->
 
 
         <!-- wp:list -->
-        <ul class="wp-block-list taxonomies container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
+        <ul class="wp-block-list taxonomies mx-auto pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
           <?php
           $taxonomies = get_terms(array(
             'taxonomy' => 'osiedla',
