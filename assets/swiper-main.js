@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let closeButtons = document.querySelectorAll('.close-button');
   for (let y = 0; y < closeButtons.length; ++y) {
       closeButtons[y].addEventListener('click', function(event) {
+        document.querySelector('.gallery-top').classList.add('hidden');
         console.log(event);
         let fullScreenElements = document.querySelectorAll('.fullscreen');
         console.log(fullScreenElements);
