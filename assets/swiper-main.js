@@ -49,6 +49,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let sliders = document.querySelectorAll('.swiper-slide');
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
+
+
+
+        // document.querySelector('.gallery-top').classList.remove('hidden');
+        event.target.parentNode.parentNode.parentNode.classList.add('fullscreen');
+        setTimeout(function() {
+            galleryTop.update();
+            // galleryThumbs.update();
+        }, 200);
+
         galleryTop.destroy();
 
         let galleryTop2 = new Swiper('.gallery-top', {
@@ -58,14 +68,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
           spaceBetween: 10,
           keyboardControl: true
         });
-
-
-        // document.querySelector('.gallery-top').classList.remove('hidden');
-        event.target.parentNode.parentNode.parentNode.classList.add('fullscreen');
-        setTimeout(function() {
-            galleryTop.update();
-            // galleryThumbs.update();
-        }, 200);
       }, false);
   }
   
