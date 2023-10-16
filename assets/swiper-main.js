@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
         console.log('click');
-        document.querySelector('.gallery-top').classList.remove('hidden');
+        // document.querySelector('.gallery-top').classList.remove('hidden');
         event.target.parentNode.parentNode.parentNode.classList.add('fullscreen');
         setTimeout(function() {
             galleryTop.update();
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let closeButtons = document.querySelectorAll('.close-button');
   for (let y = 0; y < closeButtons.length; ++y) {
       closeButtons[y].addEventListener('click', function(event) {
-        document.querySelector('.gallery-top').classList.add('hidden');
+        // document.querySelector('.gallery-top').classList.add('hidden');
         console.log(event);
         let fullScreenElements = document.querySelectorAll('.fullscreen');
         console.log(fullScreenElements);
