@@ -36,44 +36,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     spaceBetween: 10,
     keyboardControl: true
   });
-  // const galleryThumbs = new Swiper('.gallery-thumbs', {
-  //     nextButton: '.swiper-button-next',
-  //     prevButton: '.swiper-button-prev',
-  //     spaceBetween: 10,
-  //     centeredSlides: true,
-  //     slidesPerView: 'auto',
-  //     touchRatio: 0.2,
-  //     slideToClickedSlide: true
-  // });
-  // galleryTop.params.control = galleryThumbs;
-  // galleryThumbs.params.control = galleryTop;
   
   let sliders = document.querySelectorAll('.swiper-slide');
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
-
-
-
-        // document.querySelector('.gallery-top').classList.remove('hidden');
-        event.target.parentNode.parentNode.parentNode.classList.add('fullscreen');
-        // setTimeout(function() {
-        //     galleryTop.update();
-
-        // }, 200);
-
-        // galleryTop.destroy();
-
-
-        const params = galleryTop.params; params.slidesPerView = 1; 
-        galleryTop.update();
-
-        // let galleryTop2 = new Swiper('.gallery-top', {
-        //   nextButton: '.swiper-button-next',
-        //   prevButton: '.swiper-button-prev',
-        //   slidesPerView: 'auto',
-        //   spaceBetween: 10,
-        //   keyboardControl: true
-        // });
+      event.target.parentNode.parentNode.parentNode.classList.add('fullscreen');
+      const params = galleryTop.params; params.slidesPerView = 1; 
+      galleryTop.update();
       }, false);
   }
   

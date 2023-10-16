@@ -664,7 +664,7 @@ background-color: #e8fbff!important;
 }
 
 .close-button {
-  display: none;
+  /* display: none; */
   height: 45px;
   width: 45px;
   color: #fff;
