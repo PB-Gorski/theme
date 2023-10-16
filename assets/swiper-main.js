@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       nextEl: ".js-swiper-button-next",
       prevEl: ".js-swiper-button-prev",
     },
-    initialSlide: 2,
+    // initialSlide: 2,
     slidesPerView: 3.2,
     spaceBetween: 10,
     keyboardControl: true
