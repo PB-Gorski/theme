@@ -96,8 +96,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         const params = galleryTopTemp.params;
         params.slidesPerView = 3.2;
-        params.initialSlide = 0;
-
+        params.initialSlide = 1;
 
         galleryTopTemp.update();
 
