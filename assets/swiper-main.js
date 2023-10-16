@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // });
 
         const params = galleryTop.params;
-        params.slidesPerView = 3.2;
+        params.slidesPerView = 2.2;
         params.initialSlide = 1;
 
         galleryTopTemp.update();
