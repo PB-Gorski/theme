@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let galleryTop = new Swiper('.gallery-top', {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    slidesPerView: 2,
+    slidesPerView: 3,
     spaceBetween: 10,
     keyboardControl: true
   });
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let galleryTop2 = new Swiper('.gallery-top', {
           nextButton: '.swiper-button-next',
           prevButton: '.swiper-button-prev',
-          slidesPerView: 2,
+          slidesPerView: 'auto',
           spaceBetween: 10,
           keyboardControl: true
         });
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         event.target.parentNode.parentNode.parentNode.classList.add('fullscreen');
         setTimeout(function() {
             galleryTop.update();
-            galleryThumbs.update();
+            // galleryThumbs.update();
         }, 200);
       }, false);
   }
