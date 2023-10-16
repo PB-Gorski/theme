@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // params.slidesPerView = 1; 
         // params.initialSlide = i; 
 
-        // galleryTop.destroy();
+        galleryTop.destroy();
         let galleryTop2 = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
