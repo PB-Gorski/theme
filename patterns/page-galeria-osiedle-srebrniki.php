@@ -156,7 +156,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <h1 class="text-center">Wizualizacje</h1>
           <br />
           <br />
-          <div class="swiper-container">
+          <div class="swiper-container relative">
             <span class="close-button"></span>
             <div class="js-gallery-top gallery-top">
               <div class="swiper-wrapper">
