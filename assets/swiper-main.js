@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         params.slidesPerView = 1; 
         galleryTop.update();
         params.initialSlide = i; 
+        console.log(i);
         galleryTop.update();
       }, false);
   }
