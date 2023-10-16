@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             fullScreenElements[x].classList.remove('fullscreen');
             setTimeout(function() {
               galleryTop.update();
-              galleryThumbs.update();
+              // galleryThumbs.update();
             }, 200);
         }
       });
