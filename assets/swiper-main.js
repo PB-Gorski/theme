@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     },
     // initialSlide: 2,
     slidesPerView: 3.2,
-    spaceBetween: 10,
+    spaceBetween: 20,
     keyboardControl: true
   });
   let galleryTopTemp;
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           },
           initialSlide: i,
           slidesPerView: 1,
-          spaceBetween: 10,
+          spaceBetween: 20,
           keyboardControl: true
         });
 
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           },
           // initialSlide: ,
           slidesPerView: 3.2,
-          spaceBetween: 10,
+          spaceBetween: 20,
           keyboardControl: true
         });
         galleryTopTemp2.update();
