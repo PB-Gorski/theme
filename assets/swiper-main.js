@@ -54,10 +54,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         // document.querySelector('.gallery-top').classList.remove('hidden');
         event.target.parentNode.parentNode.parentNode.classList.add('fullscreen');
-        setTimeout(function() {
-            galleryTop.update();
-            // galleryThumbs.update();
-        }, 200);
+        // setTimeout(function() {
+        //     galleryTop.update();
+
+        // }, 200);
 
         galleryTop.destroy();
 
