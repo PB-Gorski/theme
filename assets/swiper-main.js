@@ -97,14 +97,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
         galleryTop.update();
 
-        galleryTop.update();
-
         galleryTop = galleryTopTemp2;
         
         let fullScreenElements = document.querySelectorAll('.fullscreen');
         for (let x = 0; x < fullScreenElements.length; ++x) {
           fullScreenElements[x].classList.remove('fullscreen');
-          galleryTop.update();
+          // galleryTop.update();
         }
       });
   }
