@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let closeButtons = document.querySelectorAll('.close-button');
   for (let y = 0; y < closeButtons.length; ++y) {
     
-      closeButtons[i].addEventListener('click', function(event) {
+      closeButtons[y].addEventListener('click', function(event) {
         const params = galleryTop.params; params.slidesPerView = 3.2; 
         galleryTop.update();
         // document.querySelector('.gallery-top').classList.add('hidden');
