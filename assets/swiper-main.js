@@ -65,23 +65,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }, false);
   }
 
-  galleryTop.on('click', function () {
-    console.log('slide clicked');
-    console.log();
-  });
+  // galleryTop.on('click', function () {
+  //   console.log('slide clicked');
+  //   console.log();
+  // });
   
   
   let closeButtons = document.querySelectorAll('.close-button');
   for (let y = 0; y < closeButtons.length; ++y) {
     
       closeButtons[y].addEventListener('click', function(event) {
+        galleryTop2.destroy();
+         let galleryTop3 = new Swiper('.js-gallery-top', {
+          navigation: {
+            nextEl: ".js-swiper-button-next",
+            prevEl: ".js-swiper-button-prev",
+          },
+          // initialSlide: 2,
+          initialSlide: i,
+          slidesPerView: 3.2,
+          spaceBetween: 10,
+          keyboardControl: true
+        });
+        console.log(i);
+        galleryTop3.update();
         const params = galleryTop2.params;
-        params.slidesPerView = 3.2; 
-        galleryTop.update();
+        // params.slidesPerView = 3.2; 
+        // galleryTop.update();
         let fullScreenElements = document.querySelectorAll('.fullscreen');
         for (let x = 0; x < fullScreenElements.length; ++x) {
           fullScreenElements[x].classList.remove('fullscreen');
-          galleryTop.update();
+          galleryTop3.update();
         }
       });
   }
