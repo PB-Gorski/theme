@@ -254,6 +254,179 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     </div>
 
 
+
+    <!-- Slider main container -->
+    <div class='swiper-container'>
+      <!-- Additional required wrapper -->
+      <div class='swiper-wrapper'>
+        <!-- Slides -->
+        <div class='swiper-slide'>
+          Slide 1
+          <img src='https://farm5.staticflickr.com/4906/31468331457_2b30dda299_z.jpg' alt='Hubble’s Cosmic Holiday Wreath'>
+          <figcaption>
+            <a href='https://www.flickr.com/photos/gsfc/31468331457/'>"Hubble’s Cosmic Holiday Wreath" &copy; NASA </a><br />
+            <a href='https://creativecommons.org/licenses/by/2.0/' target='_blank'>Creative Commons</a>
+          </figcaption>
+        </div>
+        <div class='swiper-slide'>
+          Slide 2
+          <img src='https://farm5.staticflickr.com/4892/46385281411_69f232b371_z.jpg' alt='Launch of Apollo 8'>
+          <figcaption>
+            <a href='https://www.flickr.com/photos/gsfc/46385281411/'>"Launch of Apollo 8" &copy; NASA </a><br />
+            <a href='https://creativecommons.org/licenses/by/2.0/' target='_blank'>Creative Commons</a>
+          </figcaption>
+        </div>
+        <div class='swiper-slide'>
+          Slide 3
+          <img src='https://farm5.staticflickr.com/4849/44568285330_ff61d638a9_z.jpg' alt='Launch of Apollo 8 lunar orbit mission'>
+          <figcaption>
+            <a href='https://www.flickr.com/photos/gsfc/44568285330/'>"Launch of Apollo 8 lunar orbit mission" &copy; NASA </a><br />
+            <a href='https://creativecommons.org/licenses/by/2.0/' target='_blank'>Creative Commons</a>
+          </figcaption>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class='swiper-button-prev'></div>
+      <div class='swiper-button-next'></div>
+    </div>
+
+    <style>
+      .swiper-container {
+        height: 300px;
+      }
+
+      .swiper-container.fullscreen {
+        height: 100vh;
+      }
+
+      .swiper-slide {
+        background: lightgray;
+        text-align: center;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .swiper-slide img {
+        position: absolute;
+        max-width: 100%;
+        z-index: 2;
+        cursor: pointer;
+      }
+
+      .swiper-slide figcaption {
+        position: absolute;
+        bottom: 15%;
+        z-index: 3;
+      }
+
+      .swiper-slide a {
+        background: #000;
+        color: #fff;
+      }
+
+      .fullscreen .swiper-slide img {
+        pointer-events: none;
+      }
+
+      .fullscreen .swiper-slide .backdrop {
+        background: #000;
+        opacity: .7;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        cursor: pointer;
+      }
+
+      .fullscreen .swiper-slide .close-button {
+        background: #000;
+        color: #fff;
+        font-size: 16px;
+        font-family: sans-serif;
+        padding: 10px 18px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        cursor: pointer;
+      }
+    </style>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
+    <script>
+      window.onload = function() {
+        var swiper = new Swiper('.swiper-container', {
+          loop: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination'
+          },
+          slidesPerView: 3,
+          spaceBetween: 10
+        });
+
+        var swiperSlides = Array.from(swiper.slides);
+
+        swiperSlides.forEach(function(slide) {
+          openFullscreenSliderHandler(slide);
+          closeFullscreenSliderHandler(slide);
+        });
+
+        function openFullscreenSliderHandler(slide) {
+          var slideImage = slide.querySelector('img');
+
+          slideImage.addEventListener('click', function() {
+            var slideNumber = slide.dataset.swiperSlideIndex;
+            openFullscreenSwiper(slideNumber);
+          });
+        }
+
+        function openFullscreenSwiper(slideNumber) {
+          swiper.el.classList.add('fullscreen');
+          swiper.params.slidesPerView = 1;
+          swiper.update();
+          swiper.slideToLoop(parseInt(slideNumber, 10), 0);
+        }
+
+        function closeFullscreenSliderHandler(slide) {
+          var slideNumber = slide.dataset.swiperSlideIndex;
+          var backdrop = document.createElement('div');
+          var closeButton = document.createElement('div');
+
+          slide.appendChild(backdrop);
+          slide.appendChild(closeButton);
+          backdrop.classList.add('backdrop');
+          closeButton.classList.add('close-button');
+          closeButton.innerHTML = 'x';
+
+          backdrop.addEventListener('click', function() {
+            closeFullscreenSwiper(slideNumber);
+          });
+
+          closeButton.addEventListener('click', function() {
+            closeFullscreenSwiper(slideNumber);
+          });
+        }
+
+        function closeFullscreenSwiper(slideNumber) {
+          swiper.el.classList.remove('fullscreen');
+          swiper.params.slidesPerView = 3;
+          swiper.update();
+          swiper.slideToLoop(parseInt(slideNumber, 10), 0);
+        }
+      }
+    </script>
+
   </div>
   <!-- /wp:group -->
 
