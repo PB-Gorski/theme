@@ -645,11 +645,11 @@ background-color: #e8fbff!important;
   width: 100%;
 }
 
-.gallery-thumbs {
+/* .gallery-thumbs {
   height: 50%;
   box-sizing: border-box;
   padding: 10px 0;
-}
+} */
 
 .gallery-thumbs .swiper-slide {
   width: 25%;
