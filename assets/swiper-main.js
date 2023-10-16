@@ -46,9 +46,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
         console.log(event.target.parentNode);
         const params = galleryTop.params;
         params.slidesPerView = 1; 
-        // galleryTop.update();
         params.initialSlide = i; 
-        params.activeIndex = i;
+
+        let galleryTop = new Swiper('.js-gallery-top', {
+          navigation: {
+            nextEl: ".js-swiper-button-next",
+            prevEl: ".js-swiper-button-prev",
+          },
+          // initialSlide: 2,
+          initialSlide: i,
+          slidesPerView: 1,
+          spaceBetween: 10,
+          keyboardControl: true
+        });
         console.log(i);
         galleryTop.update();
       }, false);
