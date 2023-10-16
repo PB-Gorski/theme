@@ -43,12 +43,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
       sliders[i].addEventListener('click', function(event) {
         event.target.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
         // event.target.classList.add('fullscreen');
-        console.log(event.target.parentNode);
+        // console.log(event.target.parentNode);
         // const params = galleryTop.params;
         // params.slidesPerView = 1; 
         // params.initialSlide = i; 
-        galleryTop.destroy();
 
+        // galleryTop.destroy();
         let galleryTop2 = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
           keyboardControl: true
         });
         console.log('open fullscreen');
-        console.log(i);
         galleryTop2.update();
       }, false);
   }
@@ -78,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       closeButtons[y].addEventListener('click', function(event) {
         // galleryTop2.destroy();
         console.log('close');
+
          let galleryTop = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
