@@ -149,7 +149,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- /wp:group -->
 
 
-    <div class="container h-[800px]">
+    <div class="container mb-[80px]">
       <div class="row">
         <div class="col-sm-6 col-sm-push-3">
           <p class="mb-[20px] text-[#8a8f99]">Wizualizacje</p>
