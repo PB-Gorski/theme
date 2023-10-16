@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       sliders[i].addEventListener('click', function(event) {
         event.target.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
         // event.target.classList.add('fullscreen');
-        console.log(event.target);
+        console.log(event.target.parentNode);
         galleryTop.activeIndex();
         const params = galleryTop.params; params.slidesPerView = 1; 
         galleryTop.update();
