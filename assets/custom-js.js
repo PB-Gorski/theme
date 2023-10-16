@@ -495,6 +495,8 @@ window.addEventListener("load", function() {
     keyboardControl: true
   });
   var galleryThumbs = new Swiper('.gallery-thumbs', {
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
       spaceBetween: 10,
       centeredSlides: true,
       slidesPerView: 'auto',
