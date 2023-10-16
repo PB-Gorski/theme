@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       sliders[i].addEventListener('click', function(event) {
         galleryTop.destroy();
 
-        let galleryTop = new Swiper('.gallery-top', {
+        let galleryTop2 = new Swiper('.gallery-top', {
           nextButton: '.swiper-button-next',
           prevButton: '.swiper-button-prev',
           slidesPerView: 2,
