@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         galleryTop2.update();
 
-        galleryTopTemp = galleryTop2
+        galleryTopTemp = galleryTop2;
       }, false);
   }
 
