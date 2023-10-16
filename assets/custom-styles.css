@@ -645,7 +645,7 @@ background-color: #e8fbff!important;
 }
 
 .gallery-thumbs {
-  height: 20%;
+  height: 360px;
   box-sizing: border-box;
   padding: 10px 0;
 }

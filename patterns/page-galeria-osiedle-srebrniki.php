@@ -248,7 +248,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
               <div class="swiper-button-next swiper-button-white"></div>
               <div class="swiper-button-prev swiper-button-white"></div>
             </div>
-            <div class="hidden gallery-thumbs">
+            <div class="gallery-thumbs">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080)"></div>
                 <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1070)"></div>
