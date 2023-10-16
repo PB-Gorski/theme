@@ -37,8 +37,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     spaceBetween: 10,
     keyboardControl: true
   });
+  let galleryTopTemp;
   
   let sliders = document.querySelectorAll('.swiper-slide');
+  
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
         event.target.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
@@ -61,8 +63,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
         console.log('open fullscreen');
         galleryTop2.update();
+        galleryTopTemp = galleryTop2
       }, false);
   }
+
 
   // galleryTop.on('click', function () {
   //   console.log('slide clicked');
@@ -76,26 +80,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
       closeButtons[y].addEventListener('click', function(event) {
         // galleryTop2.destroy();
         console.log('close');
-
-        //  let galleryTop = new Swiper('.js-gallery-top', {
-        //   navigation: {
-        //     nextEl: ".js-swiper-button-next",
-        //     prevEl: ".js-swiper-button-prev",
-        //   },
-        //   initialSlide: 0,
-        //   slidesPerView: 3.2,
-        //   spaceBetween: 10,
-        //   keyboardControl: true
-        // });
-        // console.log(i);
+        galleryTopTemp.destroy();
+         let galleryTop = new Swiper('.js-gallery-top', {
+          navigation: {
+            nextEl: ".js-swiper-button-next",
+            prevEl: ".js-swiper-button-prev",
+          },
+          initialSlide: 0,
+          slidesPerView: 3.2,
+          spaceBetween: 10,
+          keyboardControl: true
+        });
+        console.log(i);
         galleryTop.update();
         const params = galleryTop2.params;
         params.slidesPerView = 3.2; 
-        galleryTop2.update();
+        galleryTop.update();
         let fullScreenElements = document.querySelectorAll('.fullscreen');
         for (let x = 0; x < fullScreenElements.length; ++x) {
           fullScreenElements[x].classList.remove('fullscreen');
-          galleryTop2.update();
+          galleryTop.update();
         }
       });
   }
