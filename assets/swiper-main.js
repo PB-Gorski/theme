@@ -97,9 +97,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         //   spaceBetween: 20,
         //   keyboardControl: true
         // });
-        galleryTopTemp2.update();
+        galleryTopTemp.update();
 
-        galleryTop = galleryTopTemp2;
+        galleryTop = galleryTopTemp;
         
         let fullScreenElements = document.querySelectorAll('.fullscreen');
         for (let x = 0; x < fullScreenElements.length; ++x) {
