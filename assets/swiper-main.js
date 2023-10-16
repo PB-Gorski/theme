@@ -43,13 +43,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
       touchRatio: 0.2,
       slideToClickedSlide: true
   });
-  galleryTop.params.control = galleryThumbs;
-  galleryThumbs.params.control = galleryTop;
+  // galleryTop.params.control = galleryThumbs;
+  // galleryThumbs.params.control = galleryTop;
   
   let sliders = document.querySelectorAll('.swiper-slide');
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
         galleryTop.params.slidesPerView = 'auto';
+        galleryTop.reInit();
 
 
         // document.querySelector('.gallery-top').classList.remove('hidden');
