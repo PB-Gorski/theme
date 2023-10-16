@@ -28,8 +28,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // });
 
   let galleryTop = new Swiper('.gallery-top', {
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
     slidesPerView: 3.2,
     spaceBetween: 10,
     keyboardControl: true
