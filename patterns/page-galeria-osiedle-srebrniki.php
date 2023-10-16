@@ -176,13 +176,6 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
               <div class="js-swiper-button-next swiper-button-next swiper-button-white"></div>
               <div class="js-swiper-button-prev swiper-button-prev  swiper-button-white"></div>
             </div>
-            <div class="gallery-thumbs hidden">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url(https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/osiedle-srebrniki-bg.jpeg)"></div>
-                <div class="swiper-slide" style="background-image:url(https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg)"></div>
-                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1060)"></div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
