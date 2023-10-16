@@ -80,21 +80,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
       closeButtons[y].addEventListener('click', function(event) {
         // galleryTop2.destroy();
-        // console.log('close');
         // const params = galleryTop2.params;
         // params.slidesPerView = 3.2; 
 
-        galleryTopTemp.destroy();
-         let galleryTopTemp2 = new Swiper('.js-gallery-top', {
-          navigation: {
-            nextEl: ".js-swiper-button-next",
-            prevEl: ".js-swiper-button-prev",
-          },
-          // initialSlide: ,
-          slidesPerView: 3.2,
-          spaceBetween: 20,
-          keyboardControl: true
-        });
+        const params = galleryTopTemp.params;
+        params.slidesPerView = 3.2; 
+
+        // galleryTopTemp.destroy();
+        //  let galleryTopTemp2 = new Swiper('.js-gallery-top', {
+        //   navigation: {
+        //     nextEl: ".js-swiper-button-next",
+        //     prevEl: ".js-swiper-button-prev",
+        //   },
+        //   // initialSlide: ,
+        //   slidesPerView: 3.2,
+        //   spaceBetween: 20,
+        //   keyboardControl: true
+        // });
         galleryTopTemp2.update();
 
         galleryTop = galleryTopTemp2;
