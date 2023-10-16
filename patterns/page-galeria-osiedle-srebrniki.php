@@ -152,7 +152,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <div class="container h-[800px]">
       <div class="row">
         <div class="col-sm-6 col-sm-push-3">
-          <p class="mb-[20px] text-left text-[#8a8f99]">Wizualizacje</p>
+          <p class="mb-[20px] text-[#8a8f99]">Wizualizacje</p>
           <div class="swiper-container">
             <span class="close-button"></span>
             <div class="js-gallery-top gallery-top">
@@ -176,25 +176,24 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img6.jpg" alt="slide">
                 </div>
               </div>
-              <div class="js-swiper-button-next swiper-button-next swiper-button-white">></div>
-              <div class="js-swiper-button-prev swiper-button-prev  swiper-button-white">
-                << /div>
-              </div>
+              <div class="js-swiper-button-next swiper-button-next text-[36px] font-semibold">></div>
+              <div class="js-swiper-button-prev swiper-button-prev text-[36px] font-semibold">></div>
             </div>
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
     </div>
-    <!-- /wp:group -->
+
+
+
+
+
+
 
 
   </div>
   <!-- /wp:group -->
+
+
+</div>
+<!-- /wp:group -->
