@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // console.log('close');
 
         galleryTopTemp.destroy();
-         let galleryTop2 = new Swiper('.js-gallery-top', {
+         let galleryTopTemp2 = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
             prevEl: ".js-swiper-button-prev",
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         galleryTop.update();
         let fullScreenElements = document.querySelectorAll('.fullscreen');
 
-        galleryTop = galleryTop2;
+        galleryTop = galleryTopTemp2;
 
         for (let x = 0; x < fullScreenElements.length; ++x) {
           fullScreenElements[x].classList.remove('fullscreen');
