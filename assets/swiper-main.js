@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for (let y = 0; y < closeButtons.length; ++y) {
     
       closeButtons[y].addEventListener('click', function(event) {
-        galleryTop2.destroy();
+        // galleryTop2.destroy();
          let galleryTop3 = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
