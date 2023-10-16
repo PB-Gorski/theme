@@ -49,7 +49,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let sliders = document.querySelectorAll('.swiper-slide');
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
-        galleryTop.params.slidesPerView = 'auto';
+        galleryTop.destroy();
+
+        let galleryTop = new Swiper('.gallery-top', {
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
+          slidesPerView: 2,
+          spaceBetween: 10,
+          keyboardControl: true
+        });
 
 
         // document.querySelector('.gallery-top').classList.remove('hidden');
