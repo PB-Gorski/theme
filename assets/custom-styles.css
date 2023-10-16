@@ -640,10 +640,13 @@ background-color: #e8fbff!important;
   min-width: 300px;
   transition: transform .5s;
 }
-.swiper-slide:hover {
+.swiper-slide-hover:hover {
   transform: scale(1.05);
   box-shadow: 0 30px 50px 0 rgba(31,36,67,.3);
   z-index: 1;
+}
+.fullscreen .swiper-slide-hover{
+  transform: scale(1)!important;
 }
 .swiper-slide img {
   display: block;
