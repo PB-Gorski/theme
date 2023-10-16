@@ -646,13 +646,13 @@ background-color: #e8fbff!important;
 }
 
 .gallery-thumbs {
-  height: 20%;
+  height: 50%;
   box-sizing: border-box;
   padding: 10px 0;
 }
 
 .gallery-thumbs .swiper-slide {
-  width: 50%;
+  width: 25%;
   height: 100%;
   /* opacity: 0.4; */
   background-size: cover;
