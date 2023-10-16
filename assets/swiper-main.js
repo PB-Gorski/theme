@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
           keyboardControl: true
         });
         galleryTop.update();
-        const params = galleryTop2.params;
-        params.slidesPerView = 3.2; 
+        // const params = galleryTop2.params;
+        // params.slidesPerView = 3.2; 
         galleryTop.update();
         let fullScreenElements = document.querySelectorAll('.fullscreen');
 
