@@ -184,40 +184,6 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       </div>
     </div>
 
-    <div class="container 2 h-[800px]">
-      <div class="row">
-        <div class="col-sm-6 col-sm-push-3">
-          <p class="mb-[20px] text-[#8a8f99]">Wizualizacje</p>
-          <div class="swiper-container">
-            <span class="close-button"></span>
-            <div class="js-gallery-top gallery-top">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg" alt="slide">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img2.jpg" alt="slide">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img3.jpg" alt="slide">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img4.jpg" alt="slide">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img5.jpg" alt="slide">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img6.jpg" alt="slide">
-                </div>
-              </div>
-              <div class="js-swiper-button-next swiper-button-next text-[36px] font-semibold">></div>
-              <div class="js-swiper-button-prev swiper-button-prev text-[36px] font-semibold">&lt;</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
 
