@@ -91,12 +91,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
           spaceBetween: 10,
           keyboardControl: true
         });
-        console.log(i);
         galleryTop.update();
         const params = galleryTop2.params;
         params.slidesPerView = 3.2; 
         galleryTop.update();
         let fullScreenElements = document.querySelectorAll('.fullscreen');
+
         for (let x = 0; x < fullScreenElements.length; ++x) {
           fullScreenElements[x].classList.remove('fullscreen');
           galleryTop.update();
