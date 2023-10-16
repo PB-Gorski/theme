@@ -148,77 +148,6 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     </div>
     <!-- /wp:group -->
 
-    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="hidden not_swiper not_mySwiper2">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-        </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-
-    <div thumbsSlider="" class="hidden not_swiper not_mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </div>
-        <div class="swiper-slide">
-          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-        </div>
-      </div>
-    </div>
 
     <div class="container h-[800px]">
       <div class="row">
@@ -255,43 +184,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
 
 
-    <!-- Slider main container3 -->
-    <div class='hidden swiper-container'>
-      <!-- Additional required wrapper -->
-      <div class='swiper-wrapper'>
-        <!-- Slides -->
-        <div class='swiper-slide'>
-          Slide 1
-          <img src='https://farm5.staticflickr.com/4906/31468331457_2b30dda299_z.jpg' alt='Hubble’s Cosmic Holiday Wreath'>
-          <figcaption>
-            <a href='https://www.flickr.com/photos/gsfc/31468331457/'>"Hubble’s Cosmic Holiday Wreath" &copy; NASA </a><br />
-            <a href='https://creativecommons.org/licenses/by/2.0/' target='_blank'>Creative Commons</a>
-          </figcaption>
-        </div>
-        <div class='swiper-slide'>
-          Slide 2
-          <img src='https://farm5.staticflickr.com/4892/46385281411_69f232b371_z.jpg' alt='Launch of Apollo 8'>
-          <figcaption>
-            <a href='https://www.flickr.com/photos/gsfc/46385281411/'>"Launch of Apollo 8" &copy; NASA </a><br />
-            <a href='https://creativecommons.org/licenses/by/2.0/' target='_blank'>Creative Commons</a>
-          </figcaption>
-        </div>
-        <div class='swiper-slide'>
-          Slide 3
-          <img src='https://farm5.staticflickr.com/4849/44568285330_ff61d638a9_z.jpg' alt='Launch of Apollo 8 lunar orbit mission'>
-          <figcaption>
-            <a href='https://www.flickr.com/photos/gsfc/44568285330/'>"Launch of Apollo 8 lunar orbit mission" &copy; NASA </a><br />
-            <a href='https://creativecommons.org/licenses/by/2.0/' target='_blank'>Creative Commons</a>
-          </figcaption>
-        </div>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
 
-      <!-- If we need navigation buttons -->
-      <div class='swiper-button-prev'></div>
-      <div class='swiper-button-next'></div>
-    </div>
 
 
 
