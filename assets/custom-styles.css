@@ -714,4 +714,5 @@ background-color: #e8fbff!important;
 }
 .swiper-button-next:after {
   content: '>';
+  font-family: none;
 }
