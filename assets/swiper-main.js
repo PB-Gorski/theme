@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   galleryTop.on('click', function (e) {
     console.log('slide clicked');
-    console.log(e.target);
+    console.log(e);
   });
   
   
@@ -58,16 +58,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       closeButtons[y].addEventListener('click', function(event) {
         const params = galleryTop.params; params.slidesPerView = 3.2; 
         galleryTop.update();
-        // document.querySelector('.gallery-top').classList.add('hidden');
-        // console.log(event);
         let fullScreenElements = document.querySelectorAll('.fullscreen');
-        // console.log(fullScreenElements);
         for (let x = 0; x < fullScreenElements.length; ++x) {
-            fullScreenElements[x].classList.remove('fullscreen');
-            setTimeout(function() {
-              galleryTop.update();
-              // galleryThumbs.update();
-            }, 200);
+          fullScreenElements[x].classList.remove('fullscreen');
+          galleryTop.update();
         }
       });
   }
