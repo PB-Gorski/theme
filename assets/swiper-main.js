@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         console.log(event.target.parentNode);
         const params = galleryTop.params;
         params.slidesPerView = 1; 
-        galleryTop.update();
+        // galleryTop.update();
         params.initialSlide = i; 
         console.log(i);
         galleryTop.update();
