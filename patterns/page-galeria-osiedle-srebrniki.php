@@ -149,7 +149,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- /wp:group -->
 
 
-    <div class="container h-[800px]">
+    <div class="container">
       <div class="row">
         <div class="col-sm-6 col-sm-push-3">
           <br />
