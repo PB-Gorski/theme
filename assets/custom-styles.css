@@ -640,7 +640,7 @@ background-color: #e8fbff!important;
   background-repeat: no-repeat;
 }
 
-.gallery-top {
+.js-gallery-top {
   height: 400px;
   width: 100%;
 }
@@ -696,7 +696,7 @@ background-color: #e8fbff!important;
   background-color: #161418;
 }
 
-.fullscreen .gallery-top .swiper-slide {
+.fullscreen .js-gallery-top .swiper-slide {
   cursor: default;
   background-size: contain;
 }
@@ -705,7 +705,7 @@ background-color: #e8fbff!important;
   display: block;
 }
 
-.fullscreen .gallery-top {
+.fullscreen .js-gallery-top {
   height: 100%
 }
 
