@@ -221,6 +221,39 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     </div>
 
 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-push-3">
+          <br />
+          <h1 class="text-center">Mobile touch gallery</h1>
+          <br />
+          <br />
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <span class="close-button"></span>
+            <div class="gallery-top">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080)"></div>
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next swiper-button-white"></div>
+              <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <div class="gallery-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </div>
   <!-- /wp:group -->
 
