@@ -160,19 +160,19 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                 <div class="swiper-slide swiper-slide-hover">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg" alt="slide">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide swiper-slide-hover">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img2.jpg" alt="slide">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide swiper-slide-hover">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img3.jpg" alt="slide">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide swiper-slide-hover">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img4.jpg" alt="slide">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide swiper-slide-hover">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img5.jpg" alt="slide">
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide swiper-slide-hover">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img6.jpg" alt="slide">
                 </div>
               </div>
