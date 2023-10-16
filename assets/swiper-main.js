@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           spaceBetween: 10,
           keyboardControl: true
         });
-        galleryTop.update();
+        galleryTopTemp2.update();
 
         galleryTop = galleryTopTemp2;
         
@@ -103,8 +103,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         for (let x = 0; x < fullScreenElements.length; ++x) {
           fullScreenElements[x].classList.remove('fullscreen');
           // galleryTop.update();
-        }
+        };
       });
-  }
+  };
   
 });
