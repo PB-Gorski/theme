@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           spaceBetween: 10,
           keyboardControl: true
         });
-        console.log(i);
+        // console.log(i);
         galleryTop3.update();
         // const params = galleryTop3.params;
         // params.slidesPerView = 3.2; 
