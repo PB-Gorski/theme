@@ -176,8 +176,8 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img6.jpg" alt="slide">
                 </div>
               </div>
-              <div class="js-swiper-button-next swiper-button-next pb-[5px] text-[36px] font-semibold">></div>
-              <div class="js-swiper-button-prev swiper-button-prev pb-[5px] text-[36px] font-semibold">&lt;</div>
+              <div class="js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">></div>
+              <div class="js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">&lt;</div>
             </div>
           </div>
         </div>
