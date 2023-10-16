@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           spaceBetween: 10,
           keyboardControl: true
         });
+        console.log('open fullscreen');
         console.log(i);
         galleryTop2.update();
       }, false);
@@ -76,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
       closeButtons[y].addEventListener('click', function(event) {
         // galleryTop2.destroy();
+        console.log('close');
          let galleryTop3 = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
