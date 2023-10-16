@@ -235,7 +235,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
               <div class="swiper-wrapper">
                 <!-- <div class="swiper-slide bg-[url('<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/2LsfL9YCN8rA2V8Zm1PB14RVfZiBKIerrcOPcS8YCHFwQXuIqnq9cwbM557t_3jpg-image(1200x_).jpg'; ?>')]" style="background-image:url(<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/2LsfL9YCN8rA2V8Zm1PB14RVfZiBKIerrcOPcS8YCHFwQXuIqnq9cwbM557t_3jpg-image(1200x_).jpg'; ?>)"> -->
                 <!-- wp:image -->
-                <figure class="wp-block-image swiper-slide">
+                <figure class="wp-block-image swiper-slide h-[240px]">
                   <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/2LsfL9YCN8rA2V8Zm1PB14RVfZiBKIerrcOPcS8YCHFwQXuIqnq9cwbM557t_3jpg-image(1200x_).jpg'; ?>" alt="budowa">
                 </figure>
                 <!-- /wp:image -->
