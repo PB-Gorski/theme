@@ -726,7 +726,7 @@ background-color: #e8fbff!important;
   height: 50px;
   background: rgba(0,0,0,.5);
   border-radius: 50%;
-  z-index:0;
+  z-index: 1;
   /* display: flex;
   justify-content: center;
   align-items: center; */
