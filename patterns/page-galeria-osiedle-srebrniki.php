@@ -243,6 +243,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                 <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080)"></div>
                 <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1070)"></div>
                 <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1060)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1050)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1040)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1030)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1020)"></div>
               </div>
               <!-- Add Arrows -->
               <div class="swiper-button-next swiper-button-white"></div>
@@ -253,6 +257,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                 <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080)"></div>
                 <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1070)"></div>
                 <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1060)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1050)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1040)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1030)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1020)"></div>
               </div>
             </div>
           </div>
