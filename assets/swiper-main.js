@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // event.target.classList.add('fullscreen');
         console.log(event.target.parentNode);
         const params = galleryTop.params;
-        params.slidesPerView = 1; 
+        // params.slidesPerView = 1; 
         galleryTop.update();
       }, false);
   }
