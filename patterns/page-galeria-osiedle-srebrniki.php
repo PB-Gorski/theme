@@ -220,7 +220,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       </div>
     </div>
 
-    <div class="container">
+    <div class="container h-[800px]">
       <div class="row">
         <div class="col-sm-6 col-sm-push-3">
           <br />
