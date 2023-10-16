@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         //   keyboardControl: true
         // });
 
-        const params = galleryTopTemp.params;
+        const params = galleryTop.params;
         params.slidesPerView = 3.2;
         params.initialSlide = 1;
 
