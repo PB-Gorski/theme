@@ -547,14 +547,14 @@ background-color: #e8fbff!important;
 }
 
 /* swiper test */
-.swiper {
+/* .swiper {
   width: 100%;
   height: 100%;
 }
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -587,8 +587,8 @@ background-color: #e8fbff!important;
 .mySwiper .swiper-slide {
   width: 25%;
   height: 100%;
-  /* opacity: 0.4; */
-}
+  opacity: 0.4;
+} */
 /* .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
 } */
