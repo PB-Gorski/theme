@@ -492,6 +492,7 @@ window.addEventListener("load", function() {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     spaceBetween: 10,
+    slidesPerView: 4,
     keyboardControl: true
  });
  var galleryThumbs = new Swiper('.gallery-thumbs', {
