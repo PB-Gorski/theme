@@ -712,12 +712,12 @@ background-color: #e8fbff!important;
   opacity: 1;
   transition-delay: 0s;
 }
-/* .swiper-button-next:after {
-  content: '>';
+.swiper-button-next:after {
+  content: '';
 }
 .swiper-button-prev:after {
-  content: '<';
-} */
+  content: '';
+}
 .swiper-button-next:after,
 .swiper-button-prev:after {
   /* font-family: none;
