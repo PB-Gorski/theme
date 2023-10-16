@@ -654,25 +654,9 @@ background-color: #e8fbff!important;
   object-fit: scale-down;
 }
 .gallery-top {
+  position: relative;
   height: 100%;
   width: 100%;
-}
-
-/* .gallery-thumbs {
-  height: 50%;
-  box-sizing: border-box;
-  padding: 10px 0;
-} */
-
-.gallery-thumbs .swiper-slide {
-  width: 25%;
-  height: 100%;
-  /* opacity: 0.4; */
-  background-size: cover;
-  cursor: pointer;
-}
-.gallery-thumbs .swiper-slide-active {
-  opacity: 1;
 }
 .close-button {
   /* display: none; */
