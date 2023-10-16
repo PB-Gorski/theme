@@ -625,6 +625,16 @@ background-color: #e8fbff!important;
 
 
 /* swiper fullscreen */
+html,
+body {
+   position: relative;
+   height: 100%;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
 .swiper-container {
   width: 100%;
   height: 300px;
