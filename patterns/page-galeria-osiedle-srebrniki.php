@@ -162,7 +162,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
             <div class="gallery-top hidden">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image:url(https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/osiedle-srebrniki-bg.jpeg)"></div>
-                <div class="swiper-slide" style="background-image:url(https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/2LsfL9YCN8rA2V8Zm1PB14RVfZiBKIerrcOPcS8YCHFwQXuIqnq9cwbM557t_3jpg-image(1200x_).jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg)"></div>
                 <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1060)"></div>
               </div>
               <!-- Add Arrows -->
@@ -172,7 +172,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
             <div class="gallery-thumbs">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" style="background-image:url(https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/osiedle-srebrniki-bg.jpeg)"></div>
-                <div class="swiper-slide" style="background-image:url(https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/2LsfL9YCN8rA2V8Zm1PB14RVfZiBKIerrcOPcS8YCHFwQXuIqnq9cwbM557t_3jpg-image(1200x_).jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg)"></div>
                 <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1060)"></div>
               </div>
             </div>
