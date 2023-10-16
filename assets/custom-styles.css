@@ -636,6 +636,14 @@ background-color: #e8fbff!important;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  width: 100%;
+  min-width: 300px;
+  transition: all .5s;
+}
+.swiper-slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 30px 50px 0 rgba(31,36,67,.3);
+  z-index: 1;
 }
 .gallery-top {
   height: 100%;
