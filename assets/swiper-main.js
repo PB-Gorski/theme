@@ -50,6 +50,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
         galleryTop.params.slidesPerView = 'auto';
+        //And reinit
+        galleryTop.reInit();
 
         // document.querySelector('.gallery-top').classList.remove('hidden');
         event.target.parentNode.parentNode.parentNode.classList.add('fullscreen');
