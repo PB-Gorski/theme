@@ -172,7 +172,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                   <figure class="wp-block-image h-full w-full">
                     <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg" alt="slide">
                   </figure>
-                  <!-- wp:image -->
+                  <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
 
