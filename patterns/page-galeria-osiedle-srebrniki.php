@@ -148,41 +148,69 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     </div>
     <!-- /wp:group -->
 
-
-    <div class="container mb-[80px]">
-      <div class="row">
-        <div class="col-sm-6 col-sm-push-3">
+    <!-- wp:group -->
+    <div class="wp-block-group container mb-[80px]">
+      <!-- wp:group -->
+      <div class="wp-block-group row">
+        <!-- wp:group -->
+        <div class="wp-block-group col-sm-6 col-sm-push-3">
+          <!-- wp:paragraph -->
           <p class="mb-[20px] text-[#8a8f99]">Wizualizacje</p>
-          <div class="swiper-container">
+          <!-- /wp:paragraph -->
+          <!-- wp:group -->
+          <div class="wp-block-group swiper-container">
             <span class="close-button"></span>
-            <div class="js-gallery-top gallery-top">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-slide-hover">
+            <!-- wp:group -->
+            <div class="wp-block-group js-gallery-top gallery-top">
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-wrapper">
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg" alt="slide">
                 </div>
-                <div class="swiper-slide swiper-slide-hover">
+                <!-- /wp:group -->
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img2.jpg" alt="slide">
                 </div>
-                <div class="swiper-slide swiper-slide-hover">
+                <!-- /wp:group -->
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img3.jpg" alt="slide">
                 </div>
-                <div class="swiper-slide swiper-slide-hover">
+                <!-- /wp:group -->
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img4.jpg" alt="slide">
                 </div>
-                <div class="swiper-slide swiper-slide-hover">
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img5.jpg" alt="slide">
                 </div>
-                <div class="swiper-slide swiper-slide-hover">
+                <!-- /wp:group -->
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img6.jpg" alt="slide">
                 </div>
+                <!-- /wp:group -->
               </div>
-              <div class="js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">></div>
-              <div class="js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">&lt;</div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">></div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">&lt;</div>
+              <!-- /wp:group -->
             </div>
+            <!-- /wp:group -->
           </div>
+          <!-- /wp:group -->
         </div>
+        <!-- /wp:group -->
       </div>
+      <!-- /wp:group -->
     </div>
+    <!-- /wp:group -->
 
 
 
