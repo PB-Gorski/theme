@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   galleryTop.on('click', function () {
     console.log('slide clicked');
-    console.log(el);
+    console.log();
   });
   
   
