@@ -38,23 +38,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
   
   let sliders = document.querySelectorAll('.swiper-slide');
-  for (let i = 0; i < sliders.length; ++i) {
-      sliders[i].addEventListener('click', function(event) {
+  // for (let i = 0; i < sliders.length; ++i) {
+      sliders.addEventListener('click', function(event) {
       event.target.parentNode.parentNode.parentNode.classList.add('fullscreen');
       const params = galleryTop.params; params.slidesPerView = 1; 
       galleryTop.update();
       }, false);
-  }
+  // }
   
   let closeButtons = document.querySelectorAll('.close-button');
-  for (let y = 0; y < closeButtons.length; ++y) {
-      closeButtons[y].addEventListener('click', function(event) {
+  // for (let y = 0; y < closeButtons.length; ++y) {
+    
+      closeButtons.addEventListener('click', function(event) {
         const params = galleryTop.params; params.slidesPerView = 3.2; 
         galleryTop.update();
         // document.querySelector('.gallery-top').classList.add('hidden');
         // console.log(event);
         let fullScreenElements = document.querySelectorAll('.fullscreen');
-        console.log(fullScreenElements);
+        // console.log(fullScreenElements);
         for (let x = 0; x < fullScreenElements.length; ++x) {
             fullScreenElements[x].classList.remove('fullscreen');
             setTimeout(function() {
@@ -63,6 +64,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }, 200);
         }
       });
-  }
+  // }
   
 });
