@@ -225,7 +225,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <div class="row">
         <div class="col-sm-6 col-sm-push-3">
           <br />
-          <h1 class="text-center">Mobile touch gallery</h1>
+          <h1 class="text-center">Wizualizacje</h1>
           <br />
           <br />
           <!-- Swiper -->
