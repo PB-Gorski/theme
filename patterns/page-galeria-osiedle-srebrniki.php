@@ -159,7 +159,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- Swiper -->
           <div class="swiper-container">
             <span class="close-button"></span>
-            <div class="gallery-top">
+            <div class="js-gallery-top">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/osiedle-srebrniki-bg.jpeg" alt="slide">
@@ -175,8 +175,8 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                 </div>
               </div>
               <!-- Add Arrows -->
-              <div class="swiper-button-next swiper-button-white"></div>
-              <div class="swiper-button-prev swiper-button-white"></div>
+              <div class="js-swiper-button-next swiper-button-white"></div>
+              <div class="js-swiper-button-prev swiper-button-white"></div>
             </div>
             <div class="gallery-thumbs hidden">
               <div class="swiper-wrapper">

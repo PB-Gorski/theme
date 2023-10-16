@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //   },
   // });
 
-  let galleryTop = new Swiper('.gallery-top', {
+  let galleryTop = new Swiper('.js-gallery-top', {
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".js-swiper-button-next",
+      prevEl: ".js-swiper-button-prev",
     },
     slidesPerView: 3.2,
     spaceBetween: 10,
