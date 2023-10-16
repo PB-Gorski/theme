@@ -221,7 +221,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     </div>
 
 
-    <div class="hidden container">
+    <div class=" container">
       <div class="row">
         <div class="col-sm-6 col-sm-push-3">
           <br />
@@ -255,8 +255,8 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
 
 
-    <!-- Slider main container -->
-    <div class='swiper-container'>
+    <!-- Slider main container3 -->
+    <div class='hidden swiper-container'>
       <!-- Additional required wrapper -->
       <div class='swiper-wrapper'>
         <!-- Slides -->
@@ -293,139 +293,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <div class='swiper-button-next'></div>
     </div>
 
-    <style>
-      .swiper-container {
-        height: 300px;
-      }
 
-      .swiper-container.fullscreen {
-        height: 100vh;
-      }
-
-      .swiper-slide {
-        background: lightgray;
-        text-align: center;
-        /* Center slide text vertically */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-      }
-
-      .swiper-slide img {
-        position: absolute;
-        max-width: 100%;
-        z-index: 2;
-        cursor: pointer;
-      }
-
-      .swiper-slide figcaption {
-        position: absolute;
-        bottom: 15%;
-        z-index: 3;
-      }
-
-      .swiper-slide a {
-        background: #000;
-        color: #fff;
-      }
-
-      .fullscreen .swiper-slide img {
-        pointer-events: none;
-      }
-
-      .fullscreen .swiper-slide .backdrop {
-        background: #000;
-        opacity: .7;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        cursor: pointer;
-      }
-
-      .fullscreen .swiper-slide .close-button {
-        background: #000;
-        color: #fff;
-        font-size: 16px;
-        font-family: sans-serif;
-        padding: 10px 18px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 4;
-        cursor: pointer;
-      }
-    </style>
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
-    <script>
-      window.onload = function() {
-        var swiper = new Swiper('.swiper-container', {
-          loop: true,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          pagination: {
-            el: '.swiper-pagination'
-          },
-          slidesPerView: 3,
-          spaceBetween: 10
-        });
-
-        var swiperSlides = Array.from(swiper.slides);
-
-        swiperSlides.forEach(function(slide) {
-          openFullscreenSliderHandler(slide);
-          closeFullscreenSliderHandler(slide);
-        });
-
-        function openFullscreenSliderHandler(slide) {
-          var slideImage = slide.querySelector('img');
-
-          slideImage.addEventListener('click', function() {
-            var slideNumber = slide.dataset.swiperSlideIndex;
-            openFullscreenSwiper(slideNumber);
-          });
-        }
-
-        function openFullscreenSwiper(slideNumber) {
-          swiper.el.classList.add('fullscreen');
-          swiper.params.slidesPerView = 1;
-          swiper.update();
-          swiper.slideToLoop(parseInt(slideNumber, 10), 0);
-        }
-
-        function closeFullscreenSliderHandler(slide) {
-          var slideNumber = slide.dataset.swiperSlideIndex;
-          var backdrop = document.createElement('div');
-          var closeButton = document.createElement('div');
-
-          slide.appendChild(backdrop);
-          slide.appendChild(closeButton);
-          backdrop.classList.add('backdrop');
-          closeButton.classList.add('close-button');
-          closeButton.innerHTML = 'x';
-
-          backdrop.addEventListener('click', function() {
-            closeFullscreenSwiper(slideNumber);
-          });
-
-          closeButton.addEventListener('click', function() {
-            closeFullscreenSwiper(slideNumber);
-          });
-        }
-
-        function closeFullscreenSwiper(slideNumber) {
-          swiper.el.classList.remove('fullscreen');
-          swiper.params.slidesPerView = 3;
-          swiper.update();
-          swiper.slideToLoop(parseInt(slideNumber, 10), 0);
-        }
-      }
-    </script>
 
   </div>
   <!-- /wp:group -->
