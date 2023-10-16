@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
   
   let closeButtons = document.querySelectorAll('.close-button');
-  // for (let y = 0; y < closeButtons.length; ++y) {
+  for (let y = 0; y < closeButtons.length; ++y) {
     
       closeButtons.addEventListener('click', function(event) {
         const params = galleryTop.params; params.slidesPerView = 3.2; 
@@ -70,6 +70,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }, 200);
         }
       });
-  // }
+  }
   
 });
