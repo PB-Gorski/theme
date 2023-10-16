@@ -44,11 +44,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         event.target.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
         // event.target.classList.add('fullscreen');
         console.log(event.target.parentNode);
-        const params = galleryTop.params;
-        params.slidesPerView = 1; 
-        params.initialSlide = i; 
+        // const params = galleryTop.params;
+        // params.slidesPerView = 1; 
+        // params.initialSlide = i; 
+        galleryTop.destroy();
 
-        let galleryTop = new Swiper('.js-gallery-top', {
+        let galleryTop2 = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
             prevEl: ".js-swiper-button-prev",
@@ -60,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           keyboardControl: true
         });
         console.log(i);
-        galleryTop.update();
+        galleryTop2.update();
       }, false);
   }
 
