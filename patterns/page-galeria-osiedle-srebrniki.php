@@ -240,8 +240,8 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                 </figure>
                 <!-- /wp:image -->
                 <!-- </div> -->
-                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1060)"></div>
-                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1060)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1080)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1070)"></div>
                 <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1060)"></div>
               </div>
               <!-- Add Arrows -->
