@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for (let y = 0; y < closeButtons.length; ++y) {
     
       closeButtons[y].addEventListener('click', function(event) {
-        const params = galleryTop.params; params.slidesPerView = 1; 
+        const params = galleryTop.params; params.slidesPerView = 3.2; 
         galleryTop.update();
         let fullScreenElements = document.querySelectorAll('.fullscreen');
         for (let x = 0; x < fullScreenElements.length; ++x) {
