@@ -509,6 +509,7 @@ window.addEventListener("load", function() {
   var sliders = document.querySelectorAll('.swiper-slide');
   for (var i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
+        console.log('click');
         event.target.parentNode.parentNode.parentNode.classList.add('fullscreen');
         setTimeout(function() {
             galleryTop.update();
@@ -520,6 +521,7 @@ window.addEventListener("load", function() {
   var closeButtons = document.querySelectorAll('.close-button');
   for (var y = 0; y < closeButtons.length; ++y) {
       closeButtons[y].addEventListener('click', function(event) {
+        
         console.log(event);
         var fullScreenElements = document.querySelectorAll('.fullscreen');
         console.log(fullScreenElements);
