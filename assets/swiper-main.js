@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
         const params = galleryTop.params; params.slidesPerView = 1; 
-          galleryTop.update() 
+        galleryTop.update();
 
         // let galleryTop2 = new Swiper('.gallery-top', {
         //   nextButton: '.swiper-button-next',
@@ -80,8 +80,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let closeButtons = document.querySelectorAll('.close-button');
   for (let y = 0; y < closeButtons.length; ++y) {
       closeButtons[y].addEventListener('click', function(event) {
+        const params = galleryTop.params; params.slidesPerView = 3.2; 
+        galleryTop.update();
         // document.querySelector('.gallery-top').classList.add('hidden');
-        console.log(event);
+        // console.log(event);
         let fullScreenElements = document.querySelectorAll('.fullscreen');
         console.log(fullScreenElements);
         for (let x = 0; x < fullScreenElements.length; ++x) {
