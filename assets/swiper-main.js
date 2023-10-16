@@ -27,13 +27,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //   },
   // });
 
-  const galleryTop = new Swiper('.gallery-top', {
+  var galleryTop = new Swiper('.gallery-top', {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     spaceBetween: 10,
     keyboardControl: true
  });
- const galleryThumbs = new Swiper('.gallery-thumbs', {
+ var galleryThumbs = new Swiper('.gallery-thumbs', {
        nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     spaceBetween: 10,
@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
  galleryTop.params.control = galleryThumbs;
  galleryThumbs.params.control = galleryTop;
  
- const sliders = document.querySelectorAll('.swiper-slide');
- for (const i = 0; i < sliders.length; ++i) {
+ var sliders = document.querySelectorAll('.swiper-slide');
+ for (var i = 0; i < sliders.length; ++i) {
     sliders[i].addEventListener('click', function(event) {
        console.log('click');
        event.target.parentNode.parentNode.parentNode.classList.add('fullscreen');
@@ -57,13 +57,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }, false);
  }
  
- const closeButtons = document.querySelectorAll('.close-button');
- for (const y = 0; y < closeButtons.length; ++y) {
+ var closeButtons = document.querySelectorAll('.close-button');
+ for (var y = 0; y < closeButtons.length; ++y) {
     closeButtons[y].addEventListener('click', function(event) {
        console.log(event);
-       const fullScreenElements = document.querySelectorAll('.fullscreen');
+       var fullScreenElements = document.querySelectorAll('.fullscreen');
        console.log(fullScreenElements);
-       for (const x = 0; x < fullScreenElements.length; ++x) {
+       for (var x = 0; x < fullScreenElements.length; ++x) {
           fullScreenElements[x].classList.remove('fullscreen');
           setTimeout(function() {
              galleryTop.update();
