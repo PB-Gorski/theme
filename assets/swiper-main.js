@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
         console.log('click');
+        event.target.parentNode.parentNode.parentNode.classList.toggle('hidden');
         event.target.parentNode.parentNode.parentNode.classList.add('fullscreen');
         setTimeout(function() {
             galleryTop.update();
