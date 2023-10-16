@@ -77,22 +77,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // galleryTop2.destroy();
         console.log('close');
 
-         let galleryTop = new Swiper('.js-gallery-top', {
-          navigation: {
-            nextEl: ".js-swiper-button-next",
-            prevEl: ".js-swiper-button-prev",
-          },
-          // initialSlide: 2,
-          initialSlide: 0,
-          slidesPerView: 3.2,
-          spaceBetween: 10,
-          keyboardControl: true
-        });
+        //  let galleryTop = new Swiper('.js-gallery-top', {
+        //   navigation: {
+        //     nextEl: ".js-swiper-button-next",
+        //     prevEl: ".js-swiper-button-prev",
+        //   },
+        //   initialSlide: 0,
+        //   slidesPerView: 3.2,
+        //   spaceBetween: 10,
+        //   keyboardControl: true
+        // });
         // console.log(i);
         galleryTop.update();
-        // const params = galleryTop3.params;
-        // params.slidesPerView = 3.2; 
-        // galleryTop.update();
+        const params = galleryTop.params;
+        params.slidesPerView = 3.2; 
+        galleryTop.update();
         let fullScreenElements = document.querySelectorAll('.fullscreen');
         for (let x = 0; x < fullScreenElements.length; ++x) {
           fullScreenElements[x].classList.remove('fullscreen');
