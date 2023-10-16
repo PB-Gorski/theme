@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     keyboardControl: true
   });
   let galleryTopTemp;
-  
   let sliders = document.querySelectorAll('.swiper-slide');
   
   for (let i = 0; i < sliders.length; ++i) {
@@ -51,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // params.initialSlide = i; 
 
         galleryTop.destroy();
+
         let galleryTop2 = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
@@ -61,8 +61,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
           spaceBetween: 10,
           keyboardControl: true
         });
-        console.log('open fullscreen');
+        // console.log('open fullscreen');
         galleryTop2.update();
+
         galleryTopTemp = galleryTop2
       }, false);
   }
@@ -79,9 +80,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
       closeButtons[y].addEventListener('click', function(event) {
         // galleryTop2.destroy();
-        console.log('close');
+        // console.log('close');
+
         galleryTopTemp.destroy();
-         let galleryTopTemp2 = new Swiper('.js-gallery-top', {
+         let galleryTop2 = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
             prevEl: ".js-swiper-button-prev",
@@ -97,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         galleryTop.update();
         let fullScreenElements = document.querySelectorAll('.fullscreen');
 
-        galleryTop = galleryTopTemp2;
+        galleryTop = galleryTop2;
 
         for (let x = 0; x < fullScreenElements.length; ++x) {
           fullScreenElements[x].classList.remove('fullscreen');
