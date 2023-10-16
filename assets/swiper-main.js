@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       closeButtons[y].addEventListener('click', function(event) {
         // galleryTop2.destroy();
         console.log('close');
-         let galleryTop3 = new Swiper('.js-gallery-top', {
+         let galleryTop = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
             prevEl: ".js-swiper-button-prev",
@@ -90,14 +90,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
           keyboardControl: true
         });
         // console.log(i);
-        galleryTop3.update();
+        galleryTop.update();
         // const params = galleryTop3.params;
         // params.slidesPerView = 3.2; 
         // galleryTop.update();
         let fullScreenElements = document.querySelectorAll('.fullscreen');
         for (let x = 0; x < fullScreenElements.length; ++x) {
           fullScreenElements[x].classList.remove('fullscreen');
-          galleryTop3.update();
+          galleryTop.update();
         }
       });
   }
