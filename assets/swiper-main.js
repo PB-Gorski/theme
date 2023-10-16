@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       prevEl: ".js-swiper-button-prev",
     },
     initialSlide: 2,
-    slidesPerView: 1,
+    slidesPerView: 3.2,
     spaceBetween: 10,
     keyboardControl: true
   });
@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // event.target.classList.add('fullscreen');
         console.log(event.target.parentNode);
         const params = galleryTop.params;
-        // params.slidesPerView = 1; 
-        params.initialSlide = 1; 
+        params.slidesPerView = 1; 
+        params.initialSlide = i; 
         galleryTop.update();
       }, false);
   }
