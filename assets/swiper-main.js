@@ -82,10 +82,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // galleryTop2.destroy();
         // const params = galleryTop2.params;
         // params.slidesPerView = 3.2; 
-
-        const params = galleryTopTemp.params;
-        params.slidesPerView = 3.2; 
-
         // galleryTopTemp.destroy();
         //  let galleryTopTemp2 = new Swiper('.js-gallery-top', {
         //   navigation: {
@@ -97,6 +93,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         //   spaceBetween: 20,
         //   keyboardControl: true
         // });
+
+        const params = galleryTopTemp.params;
+        params.slidesPerView = 3.2;
+        params.initialSlide = 0;
+
+
         galleryTopTemp.update();
 
         galleryTop = galleryTopTemp;
@@ -104,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let fullScreenElements = document.querySelectorAll('.fullscreen');
         for (let x = 0; x < fullScreenElements.length; ++x) {
           fullScreenElements[x].classList.remove('fullscreen');
-          // galleryTop.update();
         };
       });
   };
