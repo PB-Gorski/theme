@@ -30,19 +30,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let galleryTop = new Swiper('.gallery-top', {
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    slidesPerView: 3,
+    slidesPerView: 3.2,
     spaceBetween: 10,
     keyboardControl: true
   });
-  const galleryThumbs = new Swiper('.gallery-thumbs', {
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-      spaceBetween: 10,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      touchRatio: 0.2,
-      slideToClickedSlide: true
-  });
+  // const galleryThumbs = new Swiper('.gallery-thumbs', {
+  //     nextButton: '.swiper-button-next',
+  //     prevButton: '.swiper-button-prev',
+  //     spaceBetween: 10,
+  //     centeredSlides: true,
+  //     slidesPerView: 'auto',
+  //     touchRatio: 0.2,
+  //     slideToClickedSlide: true
+  // });
   // galleryTop.params.control = galleryThumbs;
   // galleryThumbs.params.control = galleryTop;
   
@@ -59,15 +59,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         // }, 200);
 
-        galleryTop.destroy();
+        // galleryTop.destroy();
 
-        let galleryTop2 = new Swiper('.gallery-top', {
-          nextButton: '.swiper-button-next',
-          prevButton: '.swiper-button-prev',
-          slidesPerView: 'auto',
-          spaceBetween: 10,
-          keyboardControl: true
-        });
+
+        const params = galleryTop.params; params.slidesPerView = 1; 
+          galleryTop.update() 
+
+        // let galleryTop2 = new Swiper('.gallery-top', {
+        //   nextButton: '.swiper-button-next',
+        //   prevButton: '.swiper-button-prev',
+        //   slidesPerView: 'auto',
+        //   spaceBetween: 10,
+        //   keyboardControl: true
+        // });
       }, false);
   }
   
