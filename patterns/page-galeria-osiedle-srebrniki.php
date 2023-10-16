@@ -177,7 +177,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                 </div>
               </div>
               <div class="js-swiper-button-next swiper-button-next text-[36px] font-semibold">></div>
-              <div class="js-swiper-button-prev swiper-button-prev text-[36px] font-semibold">></div>
+              <div class="js-swiper-button-prev swiper-button-prev text-[36px] font-semibold">&lt;</div>
             </div>
           </div>
         </div>
