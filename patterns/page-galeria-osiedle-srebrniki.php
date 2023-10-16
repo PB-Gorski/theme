@@ -160,17 +160,23 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
             <span class="close-button"></span>
             <div class="js-gallery-top gallery-top">
               <div class="swiper-wrapper">
-                <div class="swiper-slide 1">
-                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/osiedle-srebrniki-bg.jpeg" alt="slide">
-                </div>
-                <div class="swiper-slide 2">
+                <div class="swiper-slide">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg" alt="slide">
                 </div>
-                <div class="swiper-slide 3">
+                <div class="swiper-slide">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img2.jpg" alt="slide">
                 </div>
-                <div class="swiper-slide 4">
+                <div class="swiper-slide">
                   <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img3.jpg" alt="slide">
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img4.jpg" alt="slide">
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img5.jpg" alt="slide">
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img6.jpg" alt="slide">
                 </div>
               </div>
               <div class="js-swiper-button-next swiper-button-next swiper-button-white"></div>
