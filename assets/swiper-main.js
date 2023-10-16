@@ -89,13 +89,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // });
         // console.log(i);
         galleryTop.update();
-        const params = galleryTop.params;
+        const params = galleryTop2.params;
         params.slidesPerView = 3.2; 
-        galleryTop.update();
+        galleryTop2.update();
         let fullScreenElements = document.querySelectorAll('.fullscreen');
         for (let x = 0; x < fullScreenElements.length; ++x) {
           fullScreenElements[x].classList.remove('fullscreen');
-          galleryTop.update();
+          galleryTop2.update();
         }
       });
   }
