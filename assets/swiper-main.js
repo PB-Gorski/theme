@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
         console.log(i);
         galleryTop3.update();
-        const params = galleryTop2.params;
+        // const params = galleryTop3.params;
         // params.slidesPerView = 3.2; 
         // galleryTop.update();
         let fullScreenElements = document.querySelectorAll('.fullscreen');
