@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // galleryTop2.destroy();
         console.log('close');
         galleryTopTemp.destroy();
-         let galleryTop = new Swiper('.js-gallery-top', {
+         let galleryTopTemp2 = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
             prevEl: ".js-swiper-button-prev",
@@ -96,6 +96,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // params.slidesPerView = 3.2; 
         galleryTop.update();
         let fullScreenElements = document.querySelectorAll('.fullscreen');
+
+        galleryTop = galleryTopTemp2;
 
         for (let x = 0; x < fullScreenElements.length; ++x) {
           fullScreenElements[x].classList.remove('fullscreen');
