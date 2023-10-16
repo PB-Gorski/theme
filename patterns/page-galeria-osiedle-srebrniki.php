@@ -240,7 +240,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                 </figure>
                 <!-- /wp:image -->
                 <!-- </div> -->
-                <div class="swiper-slide" style="background-image:url(<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/8olM2FjwP3D4J915ZfbRpY7fmtvEyElvWBWzg0Bdim08x4Yeih8WufYe13KO_1jpg-image(1200x_).jpg'; ?>)"></div>
+                <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1060)"></div>
                 <div class="swiper-slide" style="background-image:url(https://unsplash.it/1920/1060)"></div>
               </div>
               <!-- Add Arrows -->
