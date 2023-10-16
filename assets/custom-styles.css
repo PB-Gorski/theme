@@ -735,7 +735,7 @@ background-color: #e8fbff!important;
   height: 50px;
   background: rgba(0,0,0,.5);
   border-radius: 50%;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
