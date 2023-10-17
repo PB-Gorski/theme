@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           prevEl: ".js-swiper-button-prev",
         },
         initialSlide: i,
-        // activeIndex: i,
+        activeIndex: i,
         slidesPerView: 1,
         spaceBetween: 20,
         keyboardControl: true,
