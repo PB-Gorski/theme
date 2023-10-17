@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // for (let j = 0 ; j<galleryTop.length ; ++j){
         //   galleryTop[i].destroy();
         // };
-        galleryTop.destroy();
+        galleryTop[0].destroy();
         // galleryTop2.destroy();
 
         let galleryTopTemp2 = new Swiper('.js-gallery-top', {
