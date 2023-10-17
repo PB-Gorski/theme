@@ -136,7 +136,9 @@
       <ul class="wp-block-list w-full">
         <!-- wp:list-item -->
         <li>
-          <!-- <?php do_action('show_beautiful_filters', 'mieszkania'); ?> -->
+          <?php
+          // do_action('show_beautiful_filters', 'mieszkania'); 
+          ?>
         </li>
         <!-- /wp:list-item -->
       </ul>
