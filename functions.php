@@ -536,7 +536,7 @@ function my_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $target,
 	if (count($terms)) {
 		$multiple = ($multiple) ? 'multiple' : '';
 		$terms_list = implode(",", $terms);
-		$layout = '<ul>';
+		$layout = '<ul class="test">';
 		$layout .= '<li><a class="all active" href="#" data-selected="all" data-termid="' . esc_attr($terms_list) . '">' . esc_html__('ALL', 'theme') . '</a></li>';
 
 		foreach ($taxonomy as $tax) {
