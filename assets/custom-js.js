@@ -502,7 +502,7 @@ window.addEventListener("load", function() {
     </ul>
     <!-- /wp:list -->
     `;
-  // element.insertAdjacentHTML( 'afterend', newElement )
+  element.insertAdjacentHTML( 'afterend', newElement )
 
 
 
