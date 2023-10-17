@@ -50,9 +50,6 @@
       <!-- wp:list-item -->
       <li class="container mx-auto pt-[40px]">
         <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
-        <?php echo do_shortcode('[ymc_filter id="148_1"]'); ?>
-        <?php echo do_shortcode('[ymc_filter id="148-1"]'); ?>
-        <?php echo do_shortcode('[ymc_filter id="13"]'); ?>
       </li>
       <!-- /wp:list-item -->
     </ul>
