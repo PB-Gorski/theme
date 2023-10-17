@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       // galleryTop[0].destroy();
       // galleryTop2.destroy();
 
-      const params = galleryTopTemp[l].params;
-      params.slidesPerView = 3.2;
+      // const params = galleryTopTemp[l].params;
+      // params.slidesPerView = 3.2;
 
       let galleryTopTemp2 = new Swiper('.js-gallery-top', {
         navigation: {
