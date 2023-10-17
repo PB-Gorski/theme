@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         galleryTop.destroy();
         galleryTop2.destroy();
-        let galleryTopTemp2 = new Swiper('.js-gallery-top', {
+        let galleryTopTemp2 = new Swiper('.js-gallery-top2', {
           navigation: {
             nextEl: ".js-swiper-button-next",
             prevEl: ".js-swiper-button-prev",
