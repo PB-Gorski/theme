@@ -159,7 +159,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group swiper-container">
-            <span class="close-button inline"></span>
+            <!-- wp:group -->
+            <div class="wp-block-group close-button inline"></div>
+            <!-- /wp:group -->
 
             <!-- wp:group -->
             <div class="wp-block-group js-gallery-top gallery-top">
