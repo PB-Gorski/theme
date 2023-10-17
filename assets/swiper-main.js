@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
 
         galleryTop.destroy();
-        let galleryTop2 = new Swiper('.js-gallery-top', {
+        let galleryTopTemp2 = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
             prevEl: ".js-swiper-button-prev",
@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
           keyboardControl: true
         });
 
-        galleryTop2.update();
-        galleryTopTemp = galleryTop2;
+        galleryTopTemp2.update();
+        galleryTopTemp = galleryTopTemp2;
       }, false);
   }
   
