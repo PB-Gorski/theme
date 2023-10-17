@@ -44,18 +44,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
 
         galleryTopTemp2[0].update();
-        galleryTopTemp = galleryTopTemp2[0];
+        galleryTopTemp = galleryTopTemp2;
       }, false);
   }
   
   let closeButtons = document.querySelectorAll('.close-button');
   for (let y = 0; y < closeButtons.length; ++y) {
     closeButtons[y].addEventListener('click', function(event) {
-      const params = galleryTopTemp.params;
+      const params = galleryTopTemp[0].params;
       params.slidesPerView = 3.2;
       params.initialSlide = 0;
 
-      galleryTopTemp.update();
+      galleryTopTemp[0].update();
       galleryTop = galleryTopTemp;
       
       let fullScreenElements = document.querySelectorAll('.fullscreen');
