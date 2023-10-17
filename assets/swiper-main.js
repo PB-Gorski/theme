@@ -1,5 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function(event) {
+  let swipers = document.querySelectorAll('.js-gallery-top');
   let galleryTop = new Swiper('.js-gallery-top', {
     navigation: {
       nextEl: ".js-swiper-button-next",
@@ -9,15 +10,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     spaceBetween: 20,
     keyboardControl: true
   });
-  let galleryTop2 = new Swiper('.js-gallery-top2', {
-    navigation: {
-      nextEl: ".js-swiper-button-next",
-      prevEl: ".js-swiper-button-prev",
-    },
-    slidesPerView: 3.2,
-    spaceBetween: 20,
-    keyboardControl: true
-  });
+  // let galleryTop2 = new Swiper('.js-gallery-top2', {
+  //   navigation: {
+  //     nextEl: ".js-swiper-button-next",
+  //     prevEl: ".js-swiper-button-prev",
+  //   },
+  //   slidesPerView: 3.2,
+  //   spaceBetween: 20,
+  //   keyboardControl: true
+  // });
   let galleryTopTemp;
   let sliders = document.querySelectorAll('.swiper-slide');
   
@@ -25,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
       sliders[i].addEventListener('click', function(event) {
         event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
 
-        galleryTop.destroy();
-        galleryTop2.destroy();
-        
+        galleryTop[i].destroy();
+        // galleryTop2.destroy();
+
         let galleryTopTemp2 = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
