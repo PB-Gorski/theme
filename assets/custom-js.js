@@ -477,7 +477,6 @@ window.addEventListener("load", function() {
 
   const element = document.querySelector(".filter-layout");
   const newElement = `
-    <!-- wp:list -->
     <ul class="wp-block-list all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
       <!-- wp:list-item -->
       <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
@@ -507,7 +506,6 @@ window.addEventListener("load", function() {
       <li class="js-sort js-sort-termin w-[175px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">termin</li>
       <!-- /wp:list-item -->
     </ul>
-    <!-- /wp:list -->
     `;
   element.insertAdjacentHTML( 'afterend', newElement )
 
