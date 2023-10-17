@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           prevEl: ".js-swiper-button-prev",
         },
         initialSlide: i,
-        // activeIndex: i,
+        activeIndex: i,
         slidesPerView: 1,
         spaceBetween: 20,
         keyboardControl: true,
@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           },
         },
       });
+
 
       for (let k = 0 ; k<galleryTop.length ; ++k){
         galleryTopTemp2[k].update();
