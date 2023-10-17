@@ -651,7 +651,7 @@ background-color: #e8fbff!important;
 }
 
 .fullscreen .swiper-slide img {
-  object-fit: scale-down;
+  object-fit: scale-down!important;
 }
 .gallery-top {
   position: relative;
