@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
         event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
-        // for (let j = 0 ; j<galleryTop.length ; ++j){
-        //   galleryTop[i].destroy();
-        // };
-        galleryTop[0].destroy();
+        for (let j = 0 ; j<galleryTop.length ; ++j){
+          galleryTop[i].destroy();
+        };
+        // galleryTop[0].destroy();
         // galleryTop2.destroy();
 
         let galleryTopTemp2 = new Swiper('.js-gallery-top', {
@@ -43,7 +43,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
           keyboardControl: true
         });
 
-        galleryTopTemp2[0].update();
+        for (let k = 0 ; k<galleryTop.length ; ++k){
+          galleryTopTemp2[k].update();
+        };
+
+        // galleryTopTemp2[0].update();
         galleryTopTemp = galleryTopTemp2;
       }, false);
   }
@@ -55,7 +59,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
       params.slidesPerView = 3.2;
       params.initialSlide = 0;
 
-      galleryTopTemp[0].update();
+      for (let j = 0 ; j<galleryTop.length ; ++j){
+        galleryTopTemp[j].update();
+      };      
+
+      // galleryTopTemp[0].update();
       galleryTop = galleryTopTemp;
       
       let fullScreenElements = document.querySelectorAll('.fullscreen');
