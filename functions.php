@@ -518,7 +518,7 @@ function my_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $target,
 	<script>
 		window.addEventListener('DOMContentLoaded', () => {
 			let _target = "<?php echo $target; ?>";
-			document.querySelectorAll(_target + ' .filter-custom-layout [data-termid]').forEach((el) => {
+			document.querySelectorAll(_target + ' .filter-custom-layout TEST2 [data-termid]').forEach((el) => {
 				el.addEventListener('click', function(e) {
 					e.preventDefault();
 					let ymc = YMCTools({
