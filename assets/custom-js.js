@@ -380,7 +380,7 @@ window.addEventListener("load", function() {
         // new
         if (dir == "asc") {
           // console.log('i: ',i);
-          // console.log('j: ',j);
+          console.log('j: ',j);
           if (b[i].firstChild.childNodes[j].firstChild.textContent.toLowerCase() > b[i + 1].firstChild.childNodes[j].firstChild.textContent.toLowerCase()) {
             shouldSwitch = true;
             break;
