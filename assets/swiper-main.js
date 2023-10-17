@@ -22,52 +22,41 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let galleryTopTemp;
   let sliders = document.querySelectorAll('.swiper-slide');
 
-  for (let q = 0 ; q<galleryTop.length ; ++q){
-    galleryTop[q].on('slideChange', function () {
-      console.log('slide index from loop: ',galleryTop[q].clickedIndex);
-    });
-  };
-
 
   
   for (let i = 0; i < sliders.length; ++i) {
-      sliders[i].addEventListener('click', function(event) {
-        for (let q = 0 ; q<galleryTop.length ; ++q){
-          galleryTop[q].on('click', function () {
-            console.log('slide index from loop: ',galleryTop[q].clickedIndex);
-          });
-        };
+    sliders[i].addEventListener('click', function(event) {
 
-        console.log('clicked slider index from swiper index: ', galleryTop[1].clickedIndex);
-        console.log('clicked slider index: ', i);
-        console.log('clicked slider index swiper fun: ', galleryTop);
+      console.log('clicked slider index from swiper index: ', galleryTop[1].clickedIndex);
+      console.log('clicked slider index: ', i);
+      console.log('clicked slider index swiper fun: ', galleryTop);
 
-        event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
-        for (let j = 0 ; j<galleryTop.length ; ++j){
-          galleryTop[j].destroy();
-        };
-        // galleryTop[0].destroy();
-        // galleryTop2.destroy();
+      event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
+      for (let j = 0 ; j<galleryTop.length ; ++j){
+        galleryTop[j].destroy();
+      };
+      // galleryTop[0].destroy();
+      // galleryTop2.destroy();
 
-        let galleryTopTemp2 = new Swiper('.js-gallery-top', {
-          navigation: {
-            nextEl: ".js-swiper-button-next",
-            prevEl: ".js-swiper-button-prev",
-          },
-          initialSlide: i,
-          activeIndex: i,
-          slidesPerView: 1,
-          spaceBetween: 20,
-          keyboardControl: true
-        });
+      let galleryTopTemp2 = new Swiper('.js-gallery-top', {
+        navigation: {
+          nextEl: ".js-swiper-button-next",
+          prevEl: ".js-swiper-button-prev",
+        },
+        initialSlide: i,
+        activeIndex: i,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        keyboardControl: true
+      });
 
-        for (let k = 0 ; k<galleryTop.length ; ++k){
-          galleryTopTemp2[k].update();
-        };
+      for (let k = 0 ; k<galleryTop.length ; ++k){
+        galleryTopTemp2[k].update();
+      };
 
-        // galleryTopTemp2[0].update();
-        galleryTopTemp = galleryTopTemp2;
-      }, false);
+      // galleryTopTemp2[0].update();
+      galleryTopTemp = galleryTopTemp2;
+    }, false);
   }
   
   let closeButtons = document.querySelectorAll('.close-button');

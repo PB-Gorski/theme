@@ -151,7 +151,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group container mb-[80px]">
       <!-- wp:group -->
-      <div class="wp-block-group row-wizualizacje mb-[80px]">
+      <div id="wizualizacje" class="wp-block-group row-wizualizacje mb-[80px]">
         <!-- wp:group -->
         <div class="wp-block-group col-sm-6 col-sm-push-3">
           <!-- wp:paragraph -->
@@ -252,7 +252,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
 
       <!-- wp:group -->
-      <div class="wp-block-group row-zdjecia">
+      <div id="zdjecia" class="wp-block-group row-zdjecia">
         <!-- wp:group -->
         <div class="wp-block-group col-sm-6 col-sm-push-3">
           <!-- wp:paragraph -->
