@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       for (let l = 0 ; l<galleryTop.length ; ++l){
         const params = galleryTopTemp[l].params;
         params.slidesPerView = 3.2;
-        params.initialSlide = 0;
+        // params.initialSlide = 0;
       };      
 
       // const params = galleryTopTemp[0].params;
