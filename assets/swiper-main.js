@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           nextEl: ".js-swiper-button-next",
           prevEl: ".js-swiper-button-prev",
         },
-        // initialSlide: i,
+        initialSlide: i,
         // activeIndex: i,
         slidesPerView: 1,
         spaceBetween: 20,
@@ -81,11 +81,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // params.initialSlide = 0;
       };      
 
-      const params = galleryTopTemp[0].params;
-      params.slidesPerView = 3.2;
-      params.initialSlide = 0;
+
 
       for (let j = 0 ; j<galleryTop.length ; ++j){
+        const params = galleryTopTemp[j].params;
+        params.slidesPerView = 3.2;
+        params.initialSlide = 0;
         galleryTopTemp[j].update();
       };      
 
