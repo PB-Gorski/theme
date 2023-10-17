@@ -22,8 +22,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let galleryTopTemp;
   let sliders = document.querySelectorAll('.swiper-slide');
   
-  for (let i = 0; i < sliders.length; ++i) {
-      sliders[i].addEventListener('click', function(event) {
+  // for (let i = 0; i < sliders.length; ++i) {
+      sliders[galleryTop.clickedIndex].addEventListener('click', function(event) {
+        console.log('clicked slider index: ', i);
+        console.log('clicked slider index swiper fun: ', galleryTop);
         event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
         for (let j = 0 ; j<galleryTop.length ; ++j){
           galleryTop[j].destroy();
@@ -50,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // galleryTopTemp2[0].update();
         galleryTopTemp = galleryTopTemp2;
       }, false);
-  }
+  // }
   
   let closeButtons = document.querySelectorAll('.close-button');
   for (let y = 0; y < closeButtons.length; ++y) {
