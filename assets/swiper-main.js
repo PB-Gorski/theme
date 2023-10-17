@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             nextEl: ".js-swiper-button-next",
             prevEl: ".js-swiper-button-prev",
           },
-          // initialSlide: i,
+          initialSlide: i,
           activeIndex: i,
           slidesPerView: 1,
           spaceBetween: 20,
