@@ -176,6 +176,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                   <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
+                <!-- wp:group -->
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
@@ -184,6 +185,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                   <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
+                <!-- wp:group -->
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
@@ -192,6 +194,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                   <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
+                <!-- wp:group -->
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
@@ -204,6 +207,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
               </div>
               <!-- /wp:group -->
+
               <!-- wp:group -->
               <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
                 <!-- wp:paragraph -->
