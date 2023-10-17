@@ -148,6 +148,22 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     </div>
     <!-- /wp:group -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
+
+    <div class="owl-carousel owl-theme">
+      <div> Your Content </div>
+      <div> Your Content </div>
+      <div> Your Content </div>
+      <div> Your Content </div>
+      <div> Your Content </div>
+      <div> Your Content </div>
+      <div> Your Content </div>
+    </div>
+
+
+
     <!-- wp:group -->
     <div class="wp-block-group container mb-[80px]">
       <!-- wp:group -->
