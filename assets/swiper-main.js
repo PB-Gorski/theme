@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
           keyboardControl: true
         });
 
-        galleryTopTemp2.update();
-        galleryTopTemp = galleryTopTemp2;
+        galleryTopTemp2[0].update();
+        galleryTopTemp = galleryTopTemp2[0];
       }, false);
   }
   
