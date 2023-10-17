@@ -363,7 +363,7 @@ window.addEventListener("load", function() {
       switching = false;
       // b = list.querySelectorAll('.wp-block-post');
       b = list.querySelectorAll('.post-item');
-      for (i = 0; i < (b.length - 1); i++) {
+      for (i = 0; i < (b.length + 4); i++) {
         shouldSwitch = false;
         // if (dir == "asc") {
         //   if (b[i].firstElementChild.childNodes[j].innerText.toLowerCase() > b[i + 1].firstElementChild.childNodes[j].innerText.toLowerCase()) {
