@@ -381,12 +381,12 @@ window.addEventListener("load", function() {
         // console.log('i: ',i);
         if (dir == "asc") {
           // console.log('j: ',j);
-          if (b[i].firstChild.childNodes[j].firstChild.textContent.toLowerCase() > b[i + 1].firstChild.childNodes[j].firstChild.textContent.toLowerCase()) {
+          if (b[i].firstChild.childNodes[j].firstChild > b[i + 1].firstChild.childNodes[j].firstChild) {
             shouldSwitch = true;
             break;
           }
         } else if (dir == "desc") {
-          if (b[i].firstChild.childNodes[j].firstChild.textContent.toLowerCase() < b[i + 1].firstChild.childNodes[j].firstChild.textContent.toLowerCase()) {
+          if (b[i].firstChild.childNodes[j].firstChild < b[i + 1].firstChild.childNodes[j].firstChild) {
             shouldSwitch= true;
             break;
           }
