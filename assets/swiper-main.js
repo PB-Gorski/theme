@@ -21,6 +21,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // });
   let galleryTopTemp;
   let sliders = document.querySelectorAll('.swiper-slide');
+
+  for (let i = 0 ; i<galleryTop.length ; ++i){
+    galleryTop[i].on('slideChange', function () {
+      console.log('slide index from loop: ',galleryTop[i].clickedIndex);
+    });
+  };
+
+
   
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
