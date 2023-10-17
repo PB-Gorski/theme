@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     keyboardControl: true,
   });
 
-  galleryTop[0].on('click', function () {
-    console.log('slide [0] clicked');
-  });
+  // galleryTop[0].on('click', function () {
+  //   console.log('slide [0] clicked');
+  // });
   // let galleryTop2 = new Swiper('.js-gallery-top2', {
   //   navigation: {
   //     nextEl: ".js-swiper-button-next",
