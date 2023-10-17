@@ -382,12 +382,12 @@ window.addEventListener("load", function() {
         // console.log('i: ',i);
         if (dir == "asc") {
           // console.log('j: ',j);
-          if (b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('.') > b[i + 1].firstChild.childNodes[j].firstChild.textContent.split(' ').join('.')) {
+          if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))){
             shouldSwitch = true;
             break;
           }
         } else if (dir == "desc") {
-          if (b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('.') < b[i + 1].firstChild.childNodes[j].firstChild.textContent.split(' ').join('.')) {
+          if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) < parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
             shouldSwitch= true;
             break;
           }
