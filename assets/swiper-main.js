@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     keyboardControl: true,
     on: {
       click: function () {
-        console.log('swiper clicked form new Swiper');
+        console.log('swiper clicked form new Swiper:', this.galleryTop.clickedIndex);
       },
     },
   });
