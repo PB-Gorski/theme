@@ -9,6 +9,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     spaceBetween: 20,
     keyboardControl: true
   });
+  let galleryTop2 = new Swiper('.js-gallery-top', {
+    navigation: {
+      nextEl: ".js-swiper-button-next",
+      prevEl: ".js-swiper-button-prev",
+    },
+    slidesPerView: 3.2,
+    spaceBetween: 20,
+    keyboardControl: true
+  });
   let galleryTopTemp;
   let sliders = document.querySelectorAll('.swiper-slide');
   
