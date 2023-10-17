@@ -56,7 +56,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         activeIndex: i,
         slidesPerView: 1,
         spaceBetween: 20,
-        keyboardControl: true
+        keyboardControl: true,
+        on: {
+          click: function () {
+            console.log('swiper clicked form new Swiper');
+          },
+        },
       });
 
       for (let k = 0 ; k<galleryTop.length ; ++k){
