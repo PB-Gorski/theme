@@ -450,8 +450,8 @@ window.addEventListener("load", function() {
       // dla poprzedniej listy:
       currentFiltr = indexFrom1 + index;
 
-      console.log('indexFrom1: ', indexFrom1);
-      console.log('currentFiltr: ',currentFiltr);
+      // console.log('indexFrom1: ', indexFrom1);
+      // console.log('currentFiltr: ',currentFiltr);
 
       sortListDir(index);
       
