@@ -78,8 +78,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     closeButtons[y].addEventListener('click', function(event) {
 
       for (let l = 0 ; l<galleryTop.length ; ++l){
-        const params = galleryTopTemp[l].params;
-        params.slidesPerView = 3.2;
         // params.initialSlide = 0;
       };      
 
