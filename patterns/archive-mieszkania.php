@@ -137,7 +137,7 @@
         <!-- wp:list-item -->
         <li>
           <?php
-          // do_action('show_beautiful_filters', 'mieszkania'); 
+          // do_action('show_beautiful_filters', 'not_mieszkania'); 
           ?>
         </li>
         <!-- /wp:list-item -->
