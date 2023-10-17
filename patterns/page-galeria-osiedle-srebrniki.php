@@ -151,14 +151,23 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
 
-    <div class="owl-carousel owl-theme">
-      <div> Your Content </div>
-      <div> Your Content </div>
-      <div> Your Content </div>
-      <div> Your Content </div>
-      <div> Your Content </div>
-      <div> Your Content </div>
-      <div> Your Content </div>
+    <div class="owl-carousel owl-theme owl-loaded">
+      <div class="owl-stage-outer">
+        <div class="owl-stage">
+          <div class="owl-item">...</div>
+          <div class="owl-item">...</div>
+          <div class="owl-item">...</div>
+        </div>
+      </div>
+      <div class="owl-nav">
+        <div class="owl-prev">prev</div>
+        <div class="owl-next">next</div>
+      </div>
+      <div class="owl-dots">
+        <div class="owl-dot active"><span></span></div>
+        <div class="owl-dot"><span></span></div>
+        <div class="owl-dot"><span></span></div>
+      </div>
     </div>
 
 
