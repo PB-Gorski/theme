@@ -265,7 +265,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
             <!-- /wp:group -->
 
             <!-- wp:group -->
-            <div class="wp-block-group js-gallery-top gallery-top">
+            <div class="wp-block-group js-gallery-top gallery-top2">
               <!-- wp:group -->
               <div class="wp-block-group swiper-wrapper">
                 <!-- wp:group -->
