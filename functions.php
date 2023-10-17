@@ -593,19 +593,6 @@ add_filter('ymc_post_custom_layout_148_1', 'my_custom_post_layout', 10, 5);
 function ymc_posts_selected($layouts, $founded_post)
 {
 	$layouts = '<p class="mb-[50px] text-[24px] text-center aos-init aos-animate">Znaleziono ' . $founded_post . ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' . wp_count_posts('mieszkania')->publish . ')</span></p>';
-	$layouts .= '
-    <ul class="wp-block-list all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
-      <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
-      <li class="js-sort js-sort-inwestycja w-[180px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
-      <li class="js-sort js-sort-budynek w-[110px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
-      <li class="js-sort js-sort-nr w-[65px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">nr</li>
-      <li class="js-sort js-sort-pokoje w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pokoje</li>
-      <li class="js-sort js-sort-metraz w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">metraz</li>
-      <li class="js-sort js-sort-pietro w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pietro</li>
-      <li class="js-sort js-sort-cena w-[130px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">cena</li>
-      <li class="js-sort js-sort-termin w-[175px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">termin</li>
-    </ul>
-	';
 	return $layouts;
 }
 add_filter('ymc_posts_selected_148_1', 'ymc_posts_selected', 10, 2);
