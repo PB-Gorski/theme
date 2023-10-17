@@ -154,9 +154,15 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <div class="owl-carousel owl-theme owl-loaded">
       <div class="owl-stage-outer">
         <div class="owl-stage">
-          <div class="owl-item">...</div>
-          <div class="owl-item">...</div>
-          <div class="owl-item">...</div>
+          <div class="owl-item">
+            <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg" alt="slide">
+          </div>
+          <div class="owl-item">
+            <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg" alt="slide">
+          </div>
+          <div class="owl-item">
+            <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg" alt="slide">
+          </div>
         </div>
       </div>
       <div class="owl-nav">
