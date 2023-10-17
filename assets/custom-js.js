@@ -453,7 +453,7 @@ window.addEventListener("load", function() {
       console.log('indexFrom1: ', indexFrom1);
       console.log('currentFiltr: ',currentFiltr);
 
-      sortListDir(indexFrom1);
+      sortListDir(index);
       
       for (let i = 1 ; i <= (17) ; i=i+2){
         if (i == currentFiltr){
