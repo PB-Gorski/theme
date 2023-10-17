@@ -46,7 +46,7 @@
     <!-- /wp:list -->
 
     <!-- wp:list -->
-    <ul class="wp-block-list w-full">
+    <ul class="wp-block-list js-lista-mieszkan-list w-full">
       <!-- wp:list-item -->
       <li class="container mx-auto pt-[40px]">
         <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
