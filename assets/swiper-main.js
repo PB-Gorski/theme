@@ -8,7 +8,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     },
     slidesPerView: 3.2,
     spaceBetween: 20,
-    keyboardControl: true
+    keyboardControl: true,
+    on: {
+      click: function () {
+        console.log('swiper clicked form new Swiper');
+      },
+    },
   });
   galleryTop.on('click', function () {
     console.log('slide clicked');
