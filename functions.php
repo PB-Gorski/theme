@@ -608,4 +608,4 @@ function ymc_posts_selected($layouts, $founded_post)
 	';
 	return $layouts;
 }
-add_filter('ymc_posts_selected_148_1', 'ymc_posts_selected', 10, 2);
+add_filter('ymc_posts_selected_148_3', 'ymc_posts_selected', 10, 2);
