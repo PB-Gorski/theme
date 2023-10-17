@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
         for (let q = 0 ; q<galleryTop.length ; ++q){
-          galleryTop[q].on('slideChange', function () {
+          galleryTop[q].on('click', function () {
             console.log('slide index from loop: ',galleryTop[q].clickedIndex);
           });
         };
