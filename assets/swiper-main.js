@@ -9,11 +9,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     slidesPerView: 3.2,
     spaceBetween: 20,
     keyboardControl: true,
-    on: {
-      click: function () {
-        console.log('swiper clicked form new Swiper:', this.galleryTop[0].clickedIndex);
-      },
-    },
   });
 
   galleryTop[0].on('click', function () {
@@ -36,24 +31,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for (let i = 0; i < sliders.length; ++i) {
     sliders[i].addEventListener('click', function(event) {
 
-      console.log('clicked slider index from swiper index: ', galleryTop.clickedIndex);
-      console.log('clicked slider index: ', i);
-      console.log('clicked slider index swiper fun: ', galleryTop);
+      // console.log('clicked slider index from swiper index: ', galleryTop.clickedIndex);
+      // console.log('clicked slider index: ', i);
+      // console.log('clicked slider index swiper fun: ', galleryTop);
 
       event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
+
       for (let j = 0 ; j<galleryTop.length ; ++j){
         galleryTop[j].destroy();
       };
       // galleryTop[0].destroy();
       // galleryTop2.destroy();
 
+      const params = galleryTopTemp[l].params;
+      params.slidesPerView = 3.2;
+
       let galleryTopTemp2 = new Swiper('.js-gallery-top', {
         navigation: {
           nextEl: ".js-swiper-button-next",
           prevEl: ".js-swiper-button-prev",
         },
-        initialSlide: i,
-        activeIndex: i,
+        // initialSlide: i,
+        // activeIndex: i,
         slidesPerView: 1,
         spaceBetween: 20,
         keyboardControl: true,
