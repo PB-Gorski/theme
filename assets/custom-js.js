@@ -380,27 +380,14 @@ window.addEventListener("load", function() {
         // new
         // b[0].firstChild.childNodes[7].firstChild.textContent.split(' ').join('');
         // console.log('i: ',i);
-
-
-
         if (dir == "asc") {
           // console.log('j: ',j);
-
-          if(j==7){
-            if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))){
-              shouldSwitch = true;
-              break;
-            }
-          }else{
-            if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i].firstChild.childNodes[j].firstChild.textContent){
-              shouldSwitch = true;
-              break;
-            }
+          if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i + 1].firstChild.childNodes[j].firstChild.textContent) {
+            shouldSwitch = true;
+            break;
           }
-
-
-        } else if (false) {
-          if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) < parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
+        } else if (dir == "desc") {
+          if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i + 1].firstChild.childNodes[j].firstChild.textContent) {
             shouldSwitch= true;
             break;
           }
