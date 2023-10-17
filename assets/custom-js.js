@@ -399,7 +399,7 @@ window.addEventListener("load", function() {
           }
 
 
-        } else if (dir == "desc") {
+        } else if (false) {
           if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) < parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
             shouldSwitch= true;
             break;
