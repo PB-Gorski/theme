@@ -148,36 +148,6 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     </div>
     <!-- /wp:group -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
-
-    <div class="owl-carousel owl-theme owl-loaded">
-      <div class="owl-stage-outer">
-        <div class="owl-stage">
-          <div class="owl-item">
-            <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg" alt="slide">
-          </div>
-          <div class="owl-item">
-            <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg" alt="slide">
-          </div>
-          <div class="owl-item">
-            <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/wizualizacje/img1.jpg" alt="slide">
-          </div>
-        </div>
-      </div>
-      <div class="owl-nav">
-        <div class="owl-prev">prev</div>
-        <div class="owl-next">next</div>
-      </div>
-      <div class="owl-dots">
-        <div class="owl-dot active"><span></span></div>
-        <div class="owl-dot"><span></span></div>
-        <div class="owl-dot"><span></span></div>
-      </div>
-    </div>
-
-
-
     <!-- wp:group -->
     <div class="wp-block-group container mb-[80px]">
       <!-- wp:group -->
