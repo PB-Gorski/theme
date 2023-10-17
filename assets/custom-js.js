@@ -446,10 +446,14 @@ window.addEventListener("load", function() {
     btn.addEventListener('click', () => {
       indexFrom1 = index + 1;
       // indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
-      currentFiltr = indexFrom1 + index;
+      
+      // dla poprzedniej listy:
+      // currentFiltr = indexFrom1 + index;
 
       console.log('indexFrom1: ', indexFrom1);
       console.log('currentFiltr: ',currentFiltr);
+
+      sortListDir(indexFrom1);
       
       for (let i = 1 ; i <= (17) ; i=i+2){
         if (i == currentFiltr){
