@@ -55,9 +55,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let closeButtons = document.querySelectorAll('.close-button');
   for (let y = 0; y < closeButtons.length; ++y) {
     closeButtons[y].addEventListener('click', function(event) {
-      const params = galleryTopTemp[0].params;
-      params.slidesPerView = 3.2;
-      params.initialSlide = 0;
+
+      for (let l = 0 ; l<galleryTop.length ; ++l){
+        const params = galleryTopTemp[l].params;
+        params.slidesPerView = 3.2;
+        params.initialSlide = 0;
+      };      
+
+      // const params = galleryTopTemp[0].params;
+      // params.slidesPerView = 3.2;
+      // params.initialSlide = 0;
 
       for (let j = 0 ; j<galleryTop.length ; ++j){
         galleryTopTemp[j].update();
