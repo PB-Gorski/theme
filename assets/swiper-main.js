@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     spaceBetween: 20,
     keyboardControl: true
   });
+  galleryTop.on('click', function () {
+    console.log('slide clicked');
+  });
   // let galleryTop2 = new Swiper('.js-gallery-top2', {
   //   navigation: {
   //     nextEl: ".js-swiper-button-next",
