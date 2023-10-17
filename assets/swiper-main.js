@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     spaceBetween: 20,
     keyboardControl: true
   });
-  let galleryTop2 = new Swiper('.js-gallery-top', {
+  let galleryTop2 = new Swiper('.js-gallery-top2', {
     navigation: {
       nextEl: ".js-swiper-button-next",
       prevEl: ".js-swiper-button-prev",
