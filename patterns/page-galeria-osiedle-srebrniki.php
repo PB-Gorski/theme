@@ -160,7 +160,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- wp:group -->
           <div class="wp-block-group swiper-container">
             <!-- wp:group -->
-            <div class="wp-block-group close-button inline"></div>
+            <div class="wp-block-group close-button"></div>
             <!-- /wp:group -->
 
             <!-- wp:group -->
