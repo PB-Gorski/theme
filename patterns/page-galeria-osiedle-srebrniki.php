@@ -248,12 +248,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
-    </div>
-    <!-- /wp:group -->
 
 
-    <!-- wp:group -->
-    <div class="wp-block-group container mb-[80px]">
+
       <!-- wp:group -->
       <div class="wp-block-group row-zdjecia">
         <!-- wp:group -->
