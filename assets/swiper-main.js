@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
-        console.log('clicked slider index from swiper index: ', galleryTop[0].clickedIndex);
+        console.log('clicked slider index from swiper index: ', galleryTop[1].clickedIndex);
         console.log('clicked slider index: ', i);
         console.log('clicked slider index swiper fun: ', galleryTop);
 
