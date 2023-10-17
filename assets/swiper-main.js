@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
   let galleryTopTemp;
   let sliders = document.querySelectorAll('.swiper-slide');
 
-  for (let i = 0 ; i<galleryTop.length ; ++i){
-    galleryTop[i].on('slideChange', function () {
-      console.log('slide index from loop: ',galleryTop[i].clickedIndex);
+  for (let q = 0 ; q<galleryTop.length ; ++q){
+    galleryTop[q].on('slideChange', function () {
+      console.log('slide index from loop: ',galleryTop[q].clickedIndex);
     });
   };
 
@@ -32,6 +32,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
+        for (let q = 0 ; q<galleryTop.length ; ++q){
+          galleryTop[q].on('slideChange', function () {
+            console.log('slide index from loop: ',galleryTop[q].clickedIndex);
+          });
+        };
+
         console.log('clicked slider index from swiper index: ', galleryTop[1].clickedIndex);
         console.log('clicked slider index: ', i);
         console.log('clicked slider index swiper fun: ', galleryTop);
