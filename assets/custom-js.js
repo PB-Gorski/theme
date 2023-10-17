@@ -386,7 +386,7 @@ window.addEventListener("load", function() {
         if (dir == "asc") {
           // console.log('j: ',j);
 
-          if(i==7){
+          if(j==7){
             if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))){
               shouldSwitch = true;
               break;
