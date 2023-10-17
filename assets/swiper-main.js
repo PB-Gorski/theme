@@ -24,9 +24,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
   for (let i = 0; i < sliders.length; ++i) {
       sliders[i].addEventListener('click', function(event) {
-        console.log('clicked slider index from swiper index: ', galleryTop.clickedIndex);
+        console.log('clicked slider index from swiper index: ', galleryTop[0].clickedIndex);
         console.log('clicked slider index: ', i);
         console.log('clicked slider index swiper fun: ', galleryTop);
+
         event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
         for (let j = 0 ; j<galleryTop.length ; ++j){
           galleryTop[j].destroy();
