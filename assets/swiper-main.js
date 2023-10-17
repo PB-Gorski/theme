@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         keyboardControl: true,
         on: {
           click: function () {
-            console.log(galleryTopTemp2.clickedIndex);
+            console.log(galleryTopTemp2[0].clickedIndex);
             console.log('swiper clicked form new Swiper');
           },
         },
