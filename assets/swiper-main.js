@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       sliders[i].addEventListener('click', function(event) {
         event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
         for (let j = 0 ; j<galleryTop.length ; ++j){
-          galleryTop[i].destroy();
+          galleryTop[j].destroy();
         };
         // galleryTop[0].destroy();
         // galleryTop2.destroy();
