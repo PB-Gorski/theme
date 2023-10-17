@@ -81,9 +81,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // params.initialSlide = 0;
       };      
 
-      // const params = galleryTopTemp[0].params;
-      // params.slidesPerView = 3.2;
-      // params.initialSlide = 0;
+      const params = galleryTopTemp[0].params;
+      params.slidesPerView = 3.2;
+      params.initialSlide = 0;
 
       for (let j = 0 ; j<galleryTop.length ; ++j){
         galleryTopTemp[j].update();
