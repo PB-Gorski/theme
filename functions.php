@@ -562,7 +562,6 @@ function my_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $target,
 		}
 		$layout .= '</ul>';
 		$layout .= '<div class="posts-found TEST"></div>';
-		$layout .= '<ul class="wp-block-list all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold"></ul>';
 	}
 	return $layout;
 }
