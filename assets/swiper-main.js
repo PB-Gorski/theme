@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       sliders[i].addEventListener('click', function(event) {
         event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
 
-        galleryTop.destroy();
+        // galleryTop.destroy();
         let galleryTopTemp2 = new Swiper('.js-gallery-top', {
           navigation: {
             nextEl: ".js-swiper-button-next",
