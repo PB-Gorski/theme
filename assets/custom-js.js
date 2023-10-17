@@ -478,33 +478,15 @@ window.addEventListener("load", function() {
   const element = document.querySelector(".filter-layout");
   const newElement = `
     <ul class="wp-block-list all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
-      <!-- wp:list-item -->
       <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
       <li class="js-sort js-sort-inwestycja w-[180px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
       <li class="js-sort js-sort-budynek w-[110px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
       <li class="js-sort js-sort-nr w-[65px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">nr</li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
       <li class="js-sort js-sort-pokoje w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pokoje</li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
       <li class="js-sort js-sort-metraz w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">metraz</li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
       <li class="js-sort js-sort-pietro w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pietro</li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
       <li class="js-sort js-sort-cena w-[130px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">cena</li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
       <li class="js-sort js-sort-termin w-[175px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">termin</li>
-      <!-- /wp:list-item -->
     </ul>
     `;
   element.insertAdjacentHTML( 'afterend', newElement )
