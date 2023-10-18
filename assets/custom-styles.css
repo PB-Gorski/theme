@@ -418,6 +418,9 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 .filter-entry {
   max-width: 1160px;
 }
+.ymc-smart-filter-container .filter-layout3 {
+  background-color: #ebeef2;
+}
 .filter-layout3-148 > .filter-entry{
   height: 50px;
   margin-bottom: 40px;
@@ -501,6 +504,7 @@ border-width: 0 2px 2px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 /* sorting arrow */

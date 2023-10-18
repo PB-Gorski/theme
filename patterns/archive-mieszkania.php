@@ -59,9 +59,9 @@
     <!-- /wp:group -->
 
     <!-- wp:list -->
-    <ul class="wp-block-list js-lista-mieszkan-list w-full">
+    <ul class="wp-block-list js-lista-mieszkan-list w-full bg-white">
       <!-- wp:list-item -->
-      <li class="container mx-auto pt-[40px]">
+      <li class="short-code-ymc-filter [&>div>div>div]:container [&>div>div>div]:mx-auto">
         <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
       </li>
       <!-- /wp:list-item -->
