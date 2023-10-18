@@ -413,7 +413,7 @@ option:hover {
   padding-right: 20px!important; */
 }
 .btn-all{
-  /* display: none!important; */
+  display: none!important;
 }
 .ymc-smart-filter-container .filter-layout3 .filter-entry {
   max-width: 930px;
