@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .applyTest {
+    @apply [&>div>div>div]:container [&>div>div>div]:mx-auto;
+  }
+}
+
 /* general */
 html {
   scroll-behavior: smooth;
