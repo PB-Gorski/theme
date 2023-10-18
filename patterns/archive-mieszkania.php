@@ -12,7 +12,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="content" class="wp-block-group content relative ">
   <!-- wp:group -->
-  <div class="wp-block-group bg-bgLightGray">
+  <div class="wp-block-group">
 
     <!-- wp:group -->
     <div class="wp-block-group hidden btns-wrapper flex flex-row ">
@@ -61,7 +61,7 @@
     <!-- wp:list -->
     <ul class="wp-block-list js-lista-mieszkan-list w-full bg-white">
       <!-- wp:list-item -->
-      <li class="short-code-ymc-filter applyTest">
+      <li class="short-code-ymc-filter applyContainer1">
         <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
       </li>
       <!-- /wp:list-item -->

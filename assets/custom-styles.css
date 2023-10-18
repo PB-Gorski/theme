@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .applyTest {
+  .applyContainer1 {
     @apply [&>div>div>div]:container [&>div>div>div]:mx-auto;
   }
 }
