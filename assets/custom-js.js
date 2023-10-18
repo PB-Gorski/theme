@@ -378,11 +378,11 @@ window.addEventListener("load", function() {
   
   // search more options handle
   if(true){
-    const btnMore = document.getElementsByClassName('btn-more');
+    const btnMore = document.querySelector('btn-more');
     const searchBar = document.querySelector('.filter-layout3-148');
     
 
-    btnMore[0].addEventListener('click',()=>{
+    btnMore.addEventListener('click',()=>{
       console.log('more flters');
       (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[150px]') : searchBar.classList.toggle('h-[450px]');
     });
