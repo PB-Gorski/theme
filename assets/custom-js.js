@@ -382,7 +382,7 @@ window.addEventListener("load", function() {
     const searchBar = document.querySelector('.filter-layout3-148');
     
 
-    btnMore.addEventListener('click',()=>{
+    btnMore[0].addEventListener('click',()=>{
       console.log('more flters');
       (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[150px]') : searchBar.classList.toggle('h-[450px]');
     });
