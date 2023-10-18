@@ -415,7 +415,6 @@ window.addEventListener("load", function() {
           }
         } else if (dir == "desc") {
           if(j!=7){
-            console.log('!=7');
             if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i+1].firstChild.childNodes[j].firstChild.textContent) {
               shouldSwitch = true;
               break;
