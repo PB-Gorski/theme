@@ -385,12 +385,12 @@ window.addEventListener("load", function() {
 
           if (dir == "asc") {
             // console.log('j: ',j);
-            if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i].firstChild.childNodes[j].firstChild.textContent) {
+            if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i+1].firstChild.childNodes[j].firstChild.textContent) {
               shouldSwitch = true;
               break;
             }
           }else if (dir == "desc") {
-            if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i].firstChild.childNodes[j].firstChild.textContent) {
+            if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i+1].firstChild.childNodes[j].firstChild.textContent) {
               shouldSwitch= true;
               break;
             }
