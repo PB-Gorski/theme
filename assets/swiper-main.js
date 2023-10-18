@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let params = swiperInstance.params;
         params.slidesPerView = 1;
         swiperInstance.slideTo(clickedSlideIndex);
+        console.log(clickedSlideIndex);
         swiperInstance.update();
       
         swiperNode.parentNode.querySelector('.close-button').addEventListener('click', function(event) {
