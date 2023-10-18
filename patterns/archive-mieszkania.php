@@ -43,6 +43,9 @@
       <!-- wp:list-item -->
       <li class="js-sort js-sort-termin w-[175px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">termin</li>
       <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="empty w-[30px]"></li>
+      <!-- /wp:list-item -->
     </ul>
     <!-- /wp:list -->
     <!-- wp:list -->
