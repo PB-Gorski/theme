@@ -380,21 +380,19 @@ window.addEventListener("load", function() {
         // new
         // b[0].firstChild.childNodes[7].firstChild.textContent.split(' ').join('');
         // console.log('i: ',i);
-        if (dir == "asc") {
           // console.log('j: ',j);
 
-          if (dir == "asc") {
-            // console.log('j: ',j);
-            if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i+1].firstChild.childNodes[j].firstChild.textContent) {
-              shouldSwitch = true;
-              break;
-            }
-          }else if (dir == "desc") {
-            if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i+1].firstChild.childNodes[j].firstChild.textContent) {
-              shouldSwitch= true;
-              break;
-            }
-          } 
+        if (dir == "asc") {
+          // console.log('j: ',j);
+          if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i+1].firstChild.childNodes[j].firstChild.textContent) {
+            shouldSwitch = true;
+            break;
+          }
+        }else if (dir == "desc") {
+          if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i+1].firstChild.childNodes[j].firstChild.textContent) {
+            shouldSwitch= true;
+            break;
+          }
         }         
       }
 
