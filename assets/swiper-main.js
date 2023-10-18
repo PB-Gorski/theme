@@ -30,7 +30,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         swiperNode.parentNode.querySelector('.close-button').addEventListener('click', function(event) {
           let params2 = swiperInstance.params;
           params2.slidesPerView = 3.2;
-          params2.initialSlide = 0;
+          swiperInstance.slideTo(clickedSlideIndex);
+          console.log('after', clickedSlideIndex);
+
+          // params2.initialSlide = 0;
           swiperInstance.update();
           swiperNode.parentNode.classList.remove('fullscreen');
         });
