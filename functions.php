@@ -589,21 +589,21 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 add_filter('ymc_post_custom_layout_148_1', 'my_custom_post_layout', 10, 5);
 
 
-// add_filter('ymc_posts_selected_FilterID_LayoutID', 'ymc_posts_selected', 10, 2);
-// function ymc_posts_selected($layouts, $founded_post)
-// {
-// 	$layouts = '<p class="text-[24px] text-center aos-init aos-animate">Znaleziono ' . $founded_post . ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' . wp_count_posts('mieszkania')->publish . ')</span></p>';
-// 	return $layouts;
-// }
-// add_filter('ymc_posts_selected_148_1', 'ymc_posts_selected', 10, 2);
-
+add_filter('ymc_posts_selected_FilterID_LayoutID', 'ymc_posts_selected', 10, 2);
 function ymc_posts_selected($layouts, $founded_post)
 {
-	$query = new WP_Query([
-		'post_type' => 'mieszkania',
-		'posts_per_page' => -1
-	]);
-	$layouts = 'Example text ' . $founded_post . ' from ' . $query->found_posts;
+	$layouts = '<p class="text-[24px] text-center aos-init aos-animate">Znaleziono ' . $founded_post . ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' . wp_count_posts('mieszkania')->publish . ')</span></p>';
 	return $layouts;
 }
 add_filter('ymc_posts_selected_148_1', 'ymc_posts_selected', 10, 2);
+
+// function ymc_posts_selected($layouts, $founded_post)
+// {
+// 	$query = new WP_Query([
+// 		'post_type' => 'mieszkania',
+// 		'posts_per_page' => -1
+// 	]);
+// 	$layouts = 'Example text ' . $founded_post . ' from ' . $query->found_posts;
+// 	return $layouts;
+// }
+// add_filter('ymc_posts_selected_148_1', 'ymc_posts_selected', 10, 2);
