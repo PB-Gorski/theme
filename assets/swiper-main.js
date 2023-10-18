@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     swiperNode.querySelector('.swiper-slide').addEventListener('click', function(event) {
       let clickedSlideIndex = Array.prototype.indexOf.call(event.target.parentElement.children, event.target);
 // test
-      swiperNode.classList.add('fullscreen');
+// event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
+
+      swiperNode.parentNode.classList.add('fullscreen');
       
       const params = swiperInstance.params;
       params.slidesPerView = 1;
@@ -29,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         params2.slidesPerView = 3.2;
         params2.initialSlide = 0;
         swiperInstance.update();
-        swiperNode.classList.remove('fullscreen');
+        swiperNode.parentNode.classList.remove('fullscreen');
       });
     });
   });
