@@ -1,5 +1,5 @@
 window.addEventListener("load", function() {
-  wp.hooks.addAction('ymc_after_loaded_data_72_1', 'smartfilter', function(target, res){
+  wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
     console.log('Complete loaded data ' + target + ' ' + res.found);
 });
   const body = document.body;
