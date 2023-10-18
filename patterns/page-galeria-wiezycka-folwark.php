@@ -169,7 +169,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
               <div class="wp-block-group swiper-slide swiper-slide-hover">
                 <!-- wp:image -->
                 <figure class="wp-block-image h-full w-full">
-                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/wizualizacje/img1.jpg" alt="slide">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/wizualizacje-i-okolica/img1.jpg" alt="slide">
                 </figure>
                 <!-- /wp:image -->
               </div>
@@ -178,7 +178,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
               <div class="wp-block-group swiper-slide swiper-slide-hover">
                 <!-- wp:image -->
                 <figure class="wp-block-image h-full w-full">
-                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/wizualizacje/img2.jpg" alt="slide">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/wizualizacje-i-okolica/img2.jpg" alt="slide">
                 </figure>
                 <!-- /wp:image -->
               </div>
@@ -187,7 +187,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
               <div class="wp-block-group swiper-slide swiper-slide-hover">
                 <!-- wp:image -->
                 <figure class="wp-block-image h-full w-full">
-                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/wizualizacje/img3.jpg" alt="slide">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/wizualizacje-i-okolica/img3.jpg" alt="slide">
                 </figure>
                 <!-- /wp:image -->
               </div>
