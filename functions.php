@@ -596,3 +596,14 @@ function ymc_posts_selected($layouts, $founded_post)
 	return $layouts;
 }
 add_filter('ymc_posts_selected_148_1', 'ymc_posts_selected', 10, 2);
+
+function ymc_posts_selected($layouts, $founded_post)
+{
+	$query = new WP_Query([
+		'post_type' => 'post',
+		'posts_per_page' => -1
+	]);
+	$layouts = 'Example text ' . $founded_post . ' from ' . $query->found_posts;
+	return $layouts;
+}
+add_filter('ymc_posts_selected_72_1', 'ymc_posts_selected', 10, 2);
