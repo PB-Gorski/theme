@@ -473,7 +473,7 @@ border: #8a8f99!important;
 }
 .menu-passive{
   display: block;
-  height: 180px;
+  max-height: 180px;
   overflow-y: scroll;
 }
 .dropdown-filter{
