@@ -471,6 +471,11 @@ border: #8a8f99!important;
   background-color: #B2F1FF;
   /* cursor: pointer; */
 }
+.menu-passive{
+  display: block;
+  height: 180px;
+  overflow-y: scroll;
+}
 .dropdown-filter{
   margin-right: 2px!important;
   max-width: 230px!important;
