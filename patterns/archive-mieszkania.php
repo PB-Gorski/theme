@@ -20,7 +20,7 @@
       <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li class="js-sort js-sort-inwestycja w-[170px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
+      <li class="js-sort js-sort-inwestycja w-[160px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
       <li class="js-sort js-sort-budynek w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
