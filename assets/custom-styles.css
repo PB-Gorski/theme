@@ -420,8 +420,8 @@ option:hover {
 }
 .filter-layout3-148{
   height: 70px;
-  overflow-y: hidden;
   margin-bottom: 40px;
+  /* overflow-y: hidden; */
 }
 .dropdown-filter{
   margin: 0;
