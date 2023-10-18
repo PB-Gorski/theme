@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // click per slider
     swiperNode.querySelector('.swiper-slide').addEventListener('click', function(event) {
       let clickedSlideIndex = Array.prototype.indexOf.call(event.target.parentElement.children, event.target);
-
+// test
       event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
       
       const params = swiperInstance.params;
