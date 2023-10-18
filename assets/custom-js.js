@@ -389,13 +389,15 @@ window.addEventListener("load", function() {
               shouldSwitch = true;
               break;
             }
-          } else if (dir == "desc") {
+          }else if (dir == "desc") {
             if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i].firstChild.childNodes[j].firstChild.textContent) {
               shouldSwitch= true;
               break;
             }
-          }          
+          } 
+        }         
       }
+
       if (shouldSwitch) {
         b[i].parentNode.insertBefore(b[i + 1], b[i]);
         switching = true;
