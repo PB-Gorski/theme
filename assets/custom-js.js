@@ -342,7 +342,7 @@ window.addEventListener("load", function() {
 
 
   // sortowanie listy mieszkan
-  const element = document.querySelector(".container-post-custom-layout");
+  const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
   const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const sortingBarHTML = `
     <ul class="wp-block-list container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
@@ -372,7 +372,7 @@ window.addEventListener("load", function() {
       <p class="text-[18px]">Więcej opcji</p>
     </div>
   `
-  element.insertAdjacentHTML('beforebegin', sortingBarHTML);
+  listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
   dropDownFilters[3].insertAdjacentHTML('afterend', btnMoreHTML);
 
   
