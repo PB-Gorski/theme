@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   swipers.forEach(swiperNode => {
     let swiperInstance = new Swiper(swiperNode, {
       navigation: {
-        nextEl: swiperInstance.querySelector(".js-swiper-button-next"),
-        prevEl: swiperInstance.querySelector(".js-swiper-button-prev"),
+        nextEl: swiperNode.querySelector(".js-swiper-button-next"),
+        prevEl: swiperNode.querySelector(".js-swiper-button-prev"),
       },
       slidesPerView: 3.2,
       spaceBetween: 20,
