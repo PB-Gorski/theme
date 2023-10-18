@@ -349,7 +349,7 @@ window.addEventListener("load", function() {
     console.log('more flters');
 
     btnMore.addEventListener('click',()=>{
-      (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[70px]') : searchBar.classList.toggle('h-[450px]');
+      (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[150px]') : searchBar.classList.toggle('h-[450px]');
     });
   };
 
