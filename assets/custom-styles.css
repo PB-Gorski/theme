@@ -447,7 +447,8 @@ option:hover {
   height: 100%;
 }
 .ymc-smart-filter-container .filter-layout3 .dropdown-filter .menu-active .arrow {
-border: #8a8f99!important;
+border-color: #8a8f99!important;
+border-width: 0 2px 2px 0;
 }
 
 /* .menu-link::before,
