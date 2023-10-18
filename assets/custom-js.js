@@ -342,18 +342,6 @@ window.addEventListener("load", function() {
 
 
   // sortowanie listy mieszkan
-  // search more options handle
-  if(true){
-    const btnMore = document.getElementsByClassName('btn-more');
-    const searchBar = document.querySelector('.filter-layout3-148');
-    
-
-    btnMore.addEventListener('click',()=>{
-      console.log('more flters');
-      (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[150px]') : searchBar.classList.toggle('h-[450px]');
-    });
-  };
-
   const element = document.querySelector(".container-post-custom-layout");
   const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const newElement = `
@@ -370,22 +358,35 @@ window.addEventListener("load", function() {
       <li class="empty w-[30px]"></li>
     </ul>
     `;
-    const btnMore = `
-      <div class="wp-block-group btn-more mb-[10px] w-full desktop:w-[230px] h-[62px] bg-[#f5f7fa] flex self-center gap-[10px] justify-center items-center cursor-pointer">
-        <p>
-          <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
-            <title>icon_filters</title>
-            <path class="line" d="M6 4v16m6-16v16m6-16v16"></path>
-            <circle class="circle" cx="6" cy="10" r="2"></circle>
-            <circle class="circle" cx="12" cy="15" r="2"></circle>
-            <circle class="circle" cx="18" cy="10" r="2"></circle>
-          </svg>
-        </p>
-        <p class="text-[18px]">Więcej opcji</p>
-      </div>
-    `
+  const btnMore = `
+    <div class="wp-block-group btn-more mb-[10px] w-full desktop:w-[230px] h-[62px] bg-[#f5f7fa] flex self-center gap-[10px] justify-center items-center cursor-pointer">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
+          <title>icon_filters</title>
+          <path class="line" d="M6 4v16m6-16v16m6-16v16"></path>
+          <circle class="circle" cx="6" cy="10" r="2"></circle>
+          <circle class="circle" cx="12" cy="15" r="2"></circle>
+          <circle class="circle" cx="18" cy="10" r="2"></circle>
+        </svg>
+      </p>
+      <p class="text-[18px]">Więcej opcji</p>
+    </div>
+  `
   element.insertAdjacentHTML('beforebegin', newElement );
-  dropDownFilters[3].insertAdjacentHTML('afterend', btnMore)
+  dropDownFilters[3].insertAdjacentHTML('afterend', btnMore);
+
+  
+  // search more options handle
+  if(true){
+    const btnMore = document.querySelector('.btn-more');
+    const searchBar = document.querySelector('.filter-layout3-148');
+    
+
+    btnMore.addEventListener('click',()=>{
+      console.log('more flters');
+      (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[150px]') : searchBar.classList.toggle('h-[450px]');
+    });
+  };
 
   function sortListDir(j) {
     let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
