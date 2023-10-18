@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
         swiperNode.parentNode.classList.add('fullscreen');
         
-        const params = swiperInstance.params;
+        let params = swiperInstance.params;
         params.slidesPerView = 1;
         swiperInstance.slideTo(clickedSlideIndex);
         swiperInstance.update();
       
         swiperNode.parentNode.querySelector('.close-button').addEventListener('click', function(event) {
-          const params2 = swiperInstance.params;
+          let params2 = swiperInstance.params;
           params2.slidesPerView = 3.2;
           params2.initialSlide = 0;
           swiperInstance.update();
