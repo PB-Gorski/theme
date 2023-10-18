@@ -377,25 +377,55 @@ window.addEventListener("load", function() {
         //   }
         // }
 
+
+        // working
+        // if (dir == "asc") {
+        //   // console.log('j: ',j);
+        //   if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i+1].firstChild.childNodes[j].firstChild.textContent) {
+        //     shouldSwitch = true;
+        //     break;
+        //   }
+        // }else if (dir == "desc") {
+        //   if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i+1].firstChild.childNodes[j].firstChild.textContent) {
+        //     shouldSwitch= true;
+        //     break;
+        //   }
+        // } 
+        
+        
+        
+
         // new
         // b[0].firstChild.childNodes[7].firstChild.textContent.split(' ').join('');
         // console.log('i: ',i);
-          // console.log('j: ',j);
-
         if (dir == "asc") {
           // console.log('j: ',j);
-          if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i+1].firstChild.childNodes[j].firstChild.textContent) {
-            shouldSwitch = true;
-            break;
+
+          if(j!=7){
+            console.log('!=7');
+            if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i+1].firstChild.childNodes[j].firstChild.textContent) {
+              shouldSwitch = true;
+              break;
+            }
+          }else{
+            console.log('poza !=7');
+
+            if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i+1].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
+              console.log('switch1');
+
+              shouldSwitch = true;
+              break;
+            }
           }
-        }else if (dir == "desc") {
-          if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i+1].firstChild.childNodes[j].firstChild.textContent) {
+        } else if (dir == "desc") {
+          console.log('switch2');
+          if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i].firstChild.childNodes[j].firstChild.textContent) {
+            console.log('switch3');
             shouldSwitch= true;
             break;
           }
-        }         
+        }        
       }
-
       if (shouldSwitch) {
         b[i].parentNode.insertBefore(b[i + 1], b[i]);
         switching = true;
