@@ -4,7 +4,7 @@
 
 @layer components {
   .applyContainer1 {
-    @apply [&>div>div>div]:container [&>div>div>div]:mx-auto;
+    @apply [&>div>div>:first-child]:container [&>div>div>:first-child]:mx-auto;
   }
 }
 
