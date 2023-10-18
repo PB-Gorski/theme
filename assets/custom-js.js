@@ -378,7 +378,7 @@ window.addEventListener("load", function() {
   
   // search more options handle
   if(true){
-    const btnMore = document.querySelector('btn-more');
+    const btnMore = document.querySelector('.btn-more');
     const searchBar = document.querySelector('.filter-layout3-148');
     
 
