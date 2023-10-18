@@ -384,19 +384,25 @@ window.addEventListener("load", function() {
           // console.log('j: ',j);
 
           if(j!=7){
+            console.log('!=7');
             if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i].firstChild.childNodes[j].firstChild.textContent) {
               shouldSwitch = true;
               break;
             }
           }else{
+            console.log('poza !=7');
 
             if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) < parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
+              console.log('switch1');
+
               shouldSwitch = true;
               break;
             }
           }
         } else if (dir == "desc") {
+          console.log('switch2');
           if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i].firstChild.childNodes[j].firstChild.textContent) {
+            console.log('switch3');
             shouldSwitch= true;
             break;
           }
