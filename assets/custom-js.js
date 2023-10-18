@@ -384,10 +384,10 @@ window.addEventListener("load", function() {
   const searchBar = document.querySelector('.filter-entry');
   
 
-  btnMore.addEventListener('click',()=>{
-    console.log('more flters');
-    (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[160px]') : searchBar.classList.toggle('h-[450px]');
-  });
+  // btnMore.addEventListener('click',()=>{
+  //   console.log('more flters');
+  //   (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[160px]') : searchBar.classList.toggle('h-[450px]');
+  // });
 
   function sortListDir(j) {
     let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
