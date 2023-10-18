@@ -222,15 +222,13 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                 </div>
                 <!-- /wp:group -->
                 <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <div class="wp-block-group swiper-slide">
                 </div>
                 <!-- /wp:group -->
                 <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <div class="wp-block-group swiper-slide">
                 </div>
                 <!-- /wp:group -->
-
-
               </div>
               <!-- /wp:group -->
 
