@@ -418,7 +418,7 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 .filter-entry {
   max-width: 1160px;
 }
-.filter-layout3-148 .filter-entry{
+.filter-layout3-148 > .filter-entry{
   height: 50px;
   margin-bottom: 40px;
   /* overflow-y: hidden; */
