@@ -421,10 +421,11 @@ option:hover {
   height: 62px;
   color: #999;
 }
-.menu-active{
-  /* border: none!important;
+.dropdown-filter > .menu-active{
+  border: none!important;
   display: flex;
-  align-items: center; */
+  align-items: center;
+  justify-content: center;
 }
 .menu-passive{
   background-color: white!important;
