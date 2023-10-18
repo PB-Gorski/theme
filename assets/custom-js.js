@@ -345,38 +345,38 @@ window.addEventListener("load", function() {
 
 
   // sortowanie listy mieszkan
-  const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
-  const dropDownFilters = document.querySelectorAll(".dropdown-filter");
-  const sortingBarHTML = `
-    <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
-      <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
-      <li class="js-sort js-sort-inwestycja w-[180px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
-      <li class="js-sort js-sort-budynek w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
-      <li class="js-sort js-sort-nr w-[65px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">nr</li>
-      <li class="js-sort js-sort-pokoje w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pokoje</li>
-      <li class="js-sort js-sort-metraz w-[110px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">metraz</li>
-      <li class="js-sort js-sort-pietro w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pietro</li>
-      <li class="js-sort js-sort-cena w-[130px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">cena</li>
-      <li class="js-sort js-sort-termin w-[175px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">termin</li>
-      <li class="empty w-[30px]"></li>
-    </ul>
-    `;
-  const btnMoreHTML = `
-    <div class="wp-block-group btn-more js-injected mb-[10px] w-full desktop:w-[230px] h-[62px] bg-[#f5f7fa] flex self-center gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3]">
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
-          <title>icon_filters</title>
-          <path class="line" d="M6 4v16m6-16v16m6-16v16"></path>
-          <circle class="circle" cx="6" cy="10" r="2"></circle>
-          <circle class="circle" cx="12" cy="15" r="2"></circle>
-          <circle class="circle" cx="18" cy="10" r="2"></circle>
-        </svg>
-      </p>
-      <p class="text-[18px]">Więcej opcji</p>
-    </div>
-  `
-  listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
-  dropDownFilters[3].insertAdjacentHTML('afterend', btnMoreHTML);
+  // const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
+  // const dropDownFilters = document.querySelectorAll(".dropdown-filter");
+  // const sortingBarHTML = `
+  //   <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
+  //     <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
+  //     <li class="js-sort js-sort-inwestycja w-[180px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
+  //     <li class="js-sort js-sort-budynek w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
+  //     <li class="js-sort js-sort-nr w-[65px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">nr</li>
+  //     <li class="js-sort js-sort-pokoje w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pokoje</li>
+  //     <li class="js-sort js-sort-metraz w-[110px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">metraz</li>
+  //     <li class="js-sort js-sort-pietro w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pietro</li>
+  //     <li class="js-sort js-sort-cena w-[130px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">cena</li>
+  //     <li class="js-sort js-sort-termin w-[175px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">termin</li>
+  //     <li class="empty w-[30px]"></li>
+  //   </ul>
+  //   `;
+  // const btnMoreHTML = `
+  //   <div class="wp-block-group btn-more js-injected mb-[10px] w-full desktop:w-[230px] h-[62px] bg-[#f5f7fa] flex self-center gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3]">
+  //     <p>
+  //       <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
+  //         <title>icon_filters</title>
+  //         <path class="line" d="M6 4v16m6-16v16m6-16v16"></path>
+  //         <circle class="circle" cx="6" cy="10" r="2"></circle>
+  //         <circle class="circle" cx="12" cy="15" r="2"></circle>
+  //         <circle class="circle" cx="18" cy="10" r="2"></circle>
+  //       </svg>
+  //     </p>
+  //     <p class="text-[18px]">Więcej opcji</p>
+  //   </div>
+  // `
+  // listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
+  // dropDownFilters[3].insertAdjacentHTML('afterend', btnMoreHTML);
 
   
   // search more options handle
