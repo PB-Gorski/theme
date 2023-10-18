@@ -421,7 +421,7 @@ option:hover {
 .filter-layout3-148 > .filter-entry{
   height: 50px;
   margin-bottom: 40px;
-  /* overflow-y: hidden; */
+  transition: height 0.3 ease-in-out;
 }
 .ymc-smart-filter-container .filter-layout3 .posts-found:empty {
   display: block!important;
