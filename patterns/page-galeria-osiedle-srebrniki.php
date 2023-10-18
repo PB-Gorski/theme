@@ -255,8 +255,6 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       </div>
       <!-- /wp:group -->
 
-
-
       <!-- wp:group -->
       <div id="zdjecia" class="wp-block-group row-zdjecia">
         <!-- wp:group -->
@@ -356,21 +354,90 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       </div>
       <!-- /wp:group -->
 
+      <!-- wp:group -->
+      <div id="okolica" class="wp-block-group row-zdjecia">
+        <!-- wp:group -->
+        <div class="wp-block-group col-sm-6 col-sm-push-3">
+          <!-- wp:paragraph -->
+          <p class="mb-[20px] text-[#8a8f99]">Zdjęcia</p>
+          <!-- /wp:paragraph -->
+          <!-- wp:group -->
+          <div class="wp-block-group swiper-container">
+            <!-- wp:group -->
+            <div class="wp-block-group close-button"></div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group js-gallery-top gallery-top">
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-wrapper">
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image h-full w-full">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/zdjecia/img1.jpg" alt="slide">
+                  </figure>
+                  <!-- /wp:image -->
+                </div>
+                <!-- /wp:group -->
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image h-full w-full">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/zdjecia/img2.jpg" alt="slide">
+                  </figure>
+                  <!-- /wp:image -->
+                </div>
+                <!-- /wp:group -->
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image h-full w-full">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/zdjecia/img3.jpg" alt="slide">
+                  </figure>
+                  <!-- /wp:image -->
+                </div>
+                <!-- /wp:group -->
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image h-full w-full">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/zdjecia/img4.jpg" alt="slide">
+                  </figure>
+                  <!-- /wp:image -->
+                </div>
+                <!-- /wp:group -->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:group -->
+              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
+                <!-- wp:paragraph -->
+                <p>></p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
+                <!-- wp:paragraph -->
+                <p>&lt;</p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
 
     </div>
     <!-- /wp:group -->
 
-
-
-
-
-
-
-
-
   </div>
   <!-- /wp:group -->
-
 
 </div>
 <!-- /wp:group -->
