@@ -344,7 +344,7 @@ window.addEventListener("load", function() {
   // sortowanie listy mieszkan
   const element = document.querySelector(".container-post-custom-layout");
   const dropDownFilters = document.querySelectorAll(".dropdown-filter");
-  const sortingBar = `
+  const sortingBarHTML = `
     <ul class="wp-block-list container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
       <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
       <li class="js-sort js-sort-inwestycja w-[180px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
@@ -372,7 +372,7 @@ window.addEventListener("load", function() {
       <p class="text-[18px]">Więcej opcji</p>
     </div>
   `
-  element.insertAdjacentHTML('beforebegin', sortingBar);
+  element.insertAdjacentHTML('beforebegin', sortingBarHTML);
   dropDownFilters[3].insertAdjacentHTML('afterend', btnMoreHTML);
 
   
