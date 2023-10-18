@@ -362,11 +362,11 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div id="okolica" class="wp-block-group row-okolica mb-[80px]">
+      <div id="wrzesien" class="wp-block-group row-wrzesien mb-[80px]">
         <!-- wp:group -->
         <div class="wp-block-group col-sm-6 col-sm-push-3">
           <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Okolica</p>
+          <p class="mb-[20px] text-[#8a8f99]">Wrzesień</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group swiper-container">
@@ -382,29 +382,12 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/okolica/img1.jpg" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/wrzesien/img14.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/okolica/img2.jpg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/okolica/img3.jpg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
+
               </div>
               <!-- /wp:group -->
 
