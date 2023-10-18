@@ -382,9 +382,18 @@ window.addEventListener("load", function() {
         // console.log('i: ',i);
         if (dir == "asc") {
           // console.log('j: ',j);
-          if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
-            shouldSwitch = true;
-            break;
+
+          if(i==7){
+            if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
+              shouldSwitch = true;
+              break;
+            }
+          }else{
+
+            if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i].firstChild.childNodes[j].firstChild.textContent) {
+              shouldSwitch = true;
+              break;
+            }
           }
         } else if (dir == "desc") {
           if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) < parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
