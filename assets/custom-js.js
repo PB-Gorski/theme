@@ -396,7 +396,7 @@ window.addEventListener("load", function() {
             }
           }
         } else if (dir == "desc") {
-          if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) < parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
+          if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i].firstChild.childNodes[j].firstChild.textContent) {
             shouldSwitch= true;
             break;
           }
