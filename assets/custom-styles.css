@@ -449,6 +449,7 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 .dropdown-filter .menu-active .arrow {
 border: #8a8f99!important;
 }
+
 /* .menu-link::before,
 .menu-link::after, */
 .arrow::before,
@@ -473,6 +474,7 @@ border: #8a8f99!important;
 .dropdown-filter{
   margin-right: 2px!important;
   max-width: 230px!important;
+  border-bottom: 3px solid #dcdee3;
 }
 .menu-passive__item .active{
   padding: 0px!important;
