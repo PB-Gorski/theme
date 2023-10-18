@@ -345,7 +345,7 @@ window.addEventListener("load", function() {
   const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
   const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const sortingBarHTML = `
-    <ul class="wp-block-list container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
+    <ul class="wp-block-list js-incected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
       <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
       <li class="js-sort js-sort-inwestycja w-[180px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
       <li class="js-sort js-sort-budynek w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
@@ -359,7 +359,7 @@ window.addEventListener("load", function() {
     </ul>
     `;
   const btnMoreHTML = `
-    <div class="wp-block-group btn-more mb-[10px] w-full desktop:w-[230px] h-[62px] bg-[#f5f7fa] flex self-center gap-[10px] justify-center items-center cursor-pointer">
+    <div class="wp-block-group btn-more js-incected mb-[10px] w-full desktop:w-[230px] h-[62px] bg-[#f5f7fa] flex self-center gap-[10px] justify-center items-center cursor-pointer">
       <p>
         <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
           <title>icon_filters</title>
