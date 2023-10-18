@@ -408,18 +408,12 @@ window.addEventListener("load", function() {
               break;
             }
           }else{
-            console.log('poza !=7');
-
             if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i+1].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
-              console.log('switch1');
-
               shouldSwitch = true;
               break;
             }
           }
         } else if (dir == "desc") {
-          console.log('switch2');
-
           if(j!=7){
             console.log('!=7');
             if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i+1].firstChild.childNodes[j].firstChild.textContent) {
@@ -427,11 +421,7 @@ window.addEventListener("load", function() {
               break;
             }
           }else{
-            console.log('poza !=7');
-
             if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) < parseInt(b[i+1].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
-              console.log('switch1');
-
               shouldSwitch = true;
               break;
             }
