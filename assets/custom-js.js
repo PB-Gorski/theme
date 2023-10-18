@@ -352,7 +352,6 @@ window.addEventListener("load", function() {
 
 
   // sortowanie listy mieszkan
-
   function sortListDir(j) {
     let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
     // list = document.querySelector(".wp-block-post-template");
@@ -377,7 +376,6 @@ window.addEventListener("load", function() {
         //   }
         // }
 
-
         // working
         // if (dir == "asc") {
         //   // console.log('j: ',j);
@@ -392,22 +390,17 @@ window.addEventListener("load", function() {
         //   }
         // } 
         
-        
-
-
         // new
         // b[0].firstChild.childNodes[7].firstChild.textContent.split(' ').join('');
         // console.log('i: ',i);
         if (dir == "asc") {
-          // console.log('j: ',j);
-
           if(j!=7){
-            console.log('!=7');
             if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i+1].firstChild.childNodes[j].firstChild.textContent) {
               shouldSwitch = true;
               break;
             }
           }else{
+            // dla ceny fix na int
             if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i+1].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
               shouldSwitch = true;
               break;
@@ -425,13 +418,6 @@ window.addEventListener("load", function() {
               break;
             }
           }
-
-
-          // if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i+1].firstChild.childNodes[j].firstChild.textContent) {
-          //   console.log('switch3');
-          //   shouldSwitch= true;
-          //   break;
-          // }
         }        
       }
       if (shouldSwitch) {
