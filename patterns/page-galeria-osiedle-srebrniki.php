@@ -140,10 +140,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <a href="<?php echo home_url() . '/mieszkania' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/galeria-osiedle-srebrniki' ?>" class="text-[#8a8f99]hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Galeria</a>
+      <a href="<?php echo home_url() . '/galeria-osiedle-srebrniki' ?>" class="hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Galeria</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/kronika-budowy-osiedle-srebrniki' ?>" class="" data-aos="fade-up" data-aos-offset="30">Kronika budowy</a>
+      <a href="<?php echo home_url() . '/kronika-budowy-osiedle-srebrniki' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Kronika budowy</a>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
