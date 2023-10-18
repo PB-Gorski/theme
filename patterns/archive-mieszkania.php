@@ -57,6 +57,7 @@
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
+
     <!-- wp:list -->
     <ul class="wp-block-list js-lista-mieszkan-list w-full">
       <!-- wp:list-item -->
