@@ -425,7 +425,6 @@ option:hover {
   border: none!important;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .menu-passive{
   background-color: white!important;
