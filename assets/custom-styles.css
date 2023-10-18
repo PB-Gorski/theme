@@ -418,8 +418,8 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 .filter-entry {
   max-width: 1160px;
 }
-.filter-layout3-148{
-  height: 70px;
+.filter-layout3-148 .filter-entry{
+  height: 50px;
   margin-bottom: 40px;
   /* overflow-y: hidden; */
 }
@@ -488,6 +488,12 @@ border-width: 0 2px 2px 0;
 }
 .post-entry.post-custom-layout{
   display: block!important;
+}
+.posts-found{
+  z-index: 5;
+  position: relative;
+  background: #ebeef2;
+  height: 110px;
 }
 
 /* sorting arrow */
