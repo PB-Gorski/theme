@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
       
-      const params = swiperInstance.params;
+      const params = swiperInstance.swiper.params;
       params.slidesPerView = 1;
       swiperInstance.slideTo(clickedSlideIndex);
       swiperInstance.update();
