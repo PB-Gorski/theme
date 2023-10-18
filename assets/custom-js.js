@@ -353,6 +353,7 @@ window.addEventListener("load", function() {
 
   // sortowanie listy mieszkan
   const element = document.querySelector(".container-post-custom-layout");
+  const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const newElement = `
     <ul class="wp-block-list container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
       <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
@@ -367,7 +368,22 @@ window.addEventListener("load", function() {
       <li class="empty w-[30px]"></li>
     </ul>
     `;
-  element.insertAdjacentHTML( 'beforebegin', newElement );
+    const btnMore = `
+      <div class="wp-block-group btn-more w-full desktop:w-[230px] h-[62px] bg-[#f5f7fa] flex gap-[10px] justify-center items-center cursor-pointer">
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
+            <title>icon_filters</title>
+            <path class="line" d="M6 4v16m6-16v16m6-16v16"></path>
+            <circle class="circle" cx="6" cy="10" r="2"></circle>
+            <circle class="circle" cx="12" cy="15" r="2"></circle>
+            <circle class="circle" cx="18" cy="10" r="2"></circle>
+          </svg>
+        </p>
+        <p class="text-[18px]">Więcej opcji</p>
+      </div>
+    `
+  element.insertAdjacentHTML('beforebegin', newElement );
+  dropDownFilters[3].insertAdjacentHTML('afterend', btnMore)
 
   function sortListDir(j) {
     let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
