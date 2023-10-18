@@ -103,7 +103,7 @@
     <div class="wp-block-group w-full bg-banner h-[250px] desktop:h-[770px] relative flex desktop:block items-center">
       <!-- wp:image -->
       <figure class="wp-block-image w-full h-full absolute top-0 left-0">
-        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji/osiedle-srebrniki-bg.jpeg" alt="banner-background">
+        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/osiedle-srebrniki-bg.jpeg" alt="banner-background">
       </figure>
       <!-- /wp:image -->
 
