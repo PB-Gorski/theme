@@ -354,16 +354,17 @@ window.addEventListener("load", function() {
   // sortowanie listy mieszkan
   const element = document.querySelector(".container-post-custom-layout");
   const newElement = `
-    <ul class="wp-block-list all-taxonomy-list2 px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
+    <ul class="wp-block-list container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
       <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
-      <li class="js-sort js-sort-inwestycja w-[180px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
-      <li class="js-sort js-sort-budynek w-[110px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
+      <li class="js-sort js-sort-inwestycja w-[160px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
+      <li class="js-sort js-sort-budynek w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
       <li class="js-sort js-sort-nr w-[65px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">nr</li>
       <li class="js-sort js-sort-pokoje w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pokoje</li>
-      <li class="js-sort js-sort-metraz w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">metraz</li>
+      <li class="js-sort js-sort-metraz w-[110px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">metraz</li>
       <li class="js-sort js-sort-pietro w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pietro</li>
       <li class="js-sort js-sort-cena w-[130px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">cena</li>
       <li class="js-sort js-sort-termin w-[175px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">termin</li>
+      <li class="empty w-[30px]"></li>
     </ul>
     `;
   element.insertAdjacentHTML( 'beforebegin', newElement );
