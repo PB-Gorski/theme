@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     // click per slider
-    swiperInstance.addEventListener('click', '.swiper-slide', function(event) {
+    swiperInstance.querySelector('.swiper-slide').addEventListener('click', function(event) {
       let clickedSlideIndex = Array.prototype.indexOf.call(event.target.parentElement.children, event.target);
 
       event.target.parentNode.parentNode.parentNode.parentNode.parentNode.classList.add('fullscreen');
