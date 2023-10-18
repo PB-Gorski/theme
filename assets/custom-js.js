@@ -114,17 +114,6 @@ window.addEventListener("load", function() {
     }
   });
 
-
-  // search more options handle
-  if(true){
-    const btnMore = document.querySelector('.btn-more');
-    const searchBar = document.querySelector('.filter-layout3-148');
-
-    btnMore.addEventListener('click',()=>{
-      (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[70px]') : searchBar.classList.toggle('h-[450px]');
-    });
-  };
-
   // call pop up modal
   const btnCloseModal = document.querySelector('.btn-close');
   const callModal = document.querySelector('.call-back-modal');
@@ -353,6 +342,17 @@ window.addEventListener("load", function() {
 
 
   // sortowanie listy mieszkan
+  // search more options handle
+  if(true){
+    const btnMore = document.querySelector('.btn-more');
+    const searchBar = document.querySelector('.filter-layout3-148');
+    console.log('more flters');
+
+    btnMore.addEventListener('click',()=>{
+      (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[70px]') : searchBar.classList.toggle('h-[450px]');
+    });
+  };
+
   const element = document.querySelector(".container-post-custom-layout");
   const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const newElement = `
