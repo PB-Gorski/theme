@@ -378,12 +378,12 @@ window.addEventListener("load", function() {
   
   // search more options handle
   const btnMore = document.querySelector('.btn-more');
-  const searchBar = document.querySelector('.filter-layout3-148');
+  const searchBar = document.querySelector('.filter-entry');
   
 
   btnMore.addEventListener('click',()=>{
     console.log('more flters');
-    (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[150px]') : searchBar.classList.toggle('h-[450px]');
+    (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[160px]') : searchBar.classList.toggle('h-[450px]');
   });
 
   function sortListDir(j) {
