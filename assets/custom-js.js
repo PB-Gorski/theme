@@ -392,7 +392,7 @@ window.addEventListener("load", function() {
           }else{
             console.log('poza !=7');
 
-            if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) < parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
+            if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
               console.log('switch1');
 
               shouldSwitch = true;
