@@ -116,13 +116,14 @@ window.addEventListener("load", function() {
 
 
   // search more options handle
-  // if(true){
-  //   const btnMore = document.querySelector('.btn-more');
-  //   const searchBar = document.querySelector('.search-wrapper');
-  //   btnMore.addEventListener('click',()=>{
-  //     (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[184px]') : searchBar.classList.toggle('h-[450px]');
-  //   });
-  // };
+  if(true){
+    const btnMore = document.querySelector('.btn-more');
+    const searchBar = document.querySelector('.filter-layout3-148');
+
+    btnMore.addEventListener('click',()=>{
+      (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[70px]') : searchBar.classList.toggle('h-[450px]');
+    });
+  };
 
   // call pop up modal
   const btnCloseModal = document.querySelector('.btn-close');
