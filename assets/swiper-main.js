@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     spaceBetween: 20,
     keyboardControl: true,
   });
-
+// test
   // galleryTop[0].on('click', function () {
   //   console.log('slide [0] clicked');
   // });
