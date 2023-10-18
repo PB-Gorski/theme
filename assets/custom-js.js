@@ -369,7 +369,7 @@ window.addEventListener("load", function() {
     </ul>
     `;
     const btnMore = `
-      <div class="wp-block-group btn-more w-full desktop:w-[230px] h-[62px] bg-[#f5f7fa] flex gap-[10px] justify-center items-center cursor-pointer">
+      <div class="wp-block-group btn-more mb-[10px] w-full desktop:w-[230px] h-[62px] bg-[#f5f7fa] flex self-center gap-[10px] justify-center items-center cursor-pointer">
         <p>
           <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
             <title>icon_filters</title>

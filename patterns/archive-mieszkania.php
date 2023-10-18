@@ -15,7 +15,7 @@
   <div class="wp-block-group bg-bgLightGray">
 
     <!-- wp:group -->
-    <div class="wp-block-group btns-wrapper flex flex-row ">
+    <div class="wp-block-group hidden btns-wrapper flex flex-row ">
       <!-- wp:group -->
       <div class="wp-block-group btn-more w-full desktop:w-[230px] h-[62px] bg-[#f5f7fa] flex gap-[10px] justify-center items-center cursor-pointer">
         <!-- wp:paragraph -->
