@@ -423,6 +423,9 @@ option:hover {
   margin-bottom: 40px;
   /* overflow-y: hidden; */
 }
+.ymc-smart-filter-container .filter-layout3 .posts-found:empty {
+  display: block!important;
+}
 .dropdown-filter{
   margin: 0;
   width: 100%;
@@ -439,6 +442,7 @@ option:hover {
   color: #2E384D!important;
   font-size: 18px!important;
   padding: 0!important;
+  z-index: 2;
 }
 .menu-link{
   color: #2E384D!important;
@@ -490,7 +494,7 @@ border-width: 0 2px 2px 0;
   display: block!important;
 }
 .posts-found{
-  z-index: 5;
+  z-index: 1;
   position: relative;
   background: #ebeef2;
   height: 110px;
