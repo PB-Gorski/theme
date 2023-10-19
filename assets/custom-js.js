@@ -556,9 +556,9 @@ window.addEventListener("load", function() {
 
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
-    dropDownFilters[3].insertAdjacentHTML('afterend', BtnCustomPriceSelect);
-    dropDownFilters[4].insertAdjacentHTML('afterend', btnMoreHTML);
-    dropDownFilters[3].insertAdjacentHTML('afterend', btnFilterSerach);
+    dropDownFilters[2].insertAdjacentHTML('afterend', BtnCustomPriceSelect);
+    dropDownFilters[2].insertAdjacentHTML('afterend', btnMoreHTML);
+    dropDownFilters[2].insertAdjacentHTML('afterend', btnFilterSerach);
     
     // postsFoundHTML.insertAdjacentHTML('afterend', sortingStartingValueHTML);
     // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
