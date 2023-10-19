@@ -686,11 +686,11 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div id="listopad-2021" class="wp-block-group row-czerwiec mb-[80px]">
+      <div id="luty-2022" class="wp-block-group row-czerwiec mb-[80px]">
         <!-- wp:group -->
         <div class="wp-block-group col-sm-6 col-sm-push-3">
           <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Listopad 2021</p>
+          <p class="mb-[20px] text-[#8a8f99]">Luty 2022</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group swiper-container">
@@ -706,7 +706,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/listopad-2021/img32.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/luty-2022/img31.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -715,7 +715,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/listopad-2021/img33.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/luty-2022/img32.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -724,7 +724,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/listopad-2021/img33.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/luty-2022/img33.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -733,7 +733,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/listopad-2021/img34.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/luty-2022/img33.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -742,7 +742,43 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/listopad-2021/img35.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/luty-2022/img34.png" alt="slide">
+                  </figure>
+                  <!-- /wp:image -->
+                </div>
+                <!-- /wp:group -->
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image h-full w-full">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/luty-2022/img35.png" alt="slide">
+                  </figure>
+                  <!-- /wp:image -->
+                </div>
+                <!-- /wp:group -->
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image h-full w-full">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/luty-2022/img36.png" alt="slide">
+                  </figure>
+                  <!-- /wp:image -->
+                </div>
+                <!-- /wp:group -->
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image h-full w-full">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/luty-2022/img37.png" alt="slide">
+                  </figure>
+                  <!-- /wp:image -->
+                </div>
+                <!-- /wp:group -->
+                <!-- wp:group -->
+                <div class="wp-block-group swiper-slide swiper-slide-hover">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image h-full w-full">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/luty-2022/img38.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
