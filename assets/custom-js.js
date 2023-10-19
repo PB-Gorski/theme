@@ -350,7 +350,7 @@ window.addEventListener("load", function() {
   mainDropDown.addEventListener('click', openMenu)
 
   function openMenu(){
-    dropDownList.classList.add('dropdown__list_active')
+    dropDownList.classList.toggle('dropdown__list_active')
   }
 
   dropDowns.forEach(item => {
