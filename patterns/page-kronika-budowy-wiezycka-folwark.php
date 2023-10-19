@@ -419,11 +419,11 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div id="sierpien-2022" class="wp-block-group row-czerwiec mb-[80px]">
+      <div id="listopad-2022" class="wp-block-group row-czerwiec mb-[80px]">
         <!-- wp:group -->
         <div class="wp-block-group col-sm-6 col-sm-push-3">
           <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Sierpień 2022</p>
+          <p class="mb-[20px] text-[#8a8f99]">Listopad 2022</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group swiper-container">
@@ -439,55 +439,51 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/sierpien-2022/img16.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/listopad-2022/img15.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/sierpien-2022/img17.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/sierpien-2022/img18.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/sierpien-2022/img19.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/listopad-2022/img16.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
               </div>
               <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/listopad-2022/img17.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/listopad-2022/img18.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
 
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>></p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>&lt;</p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>&lt;</p>
+              <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
           </div>
@@ -496,980 +492,982 @@
         <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div id="czerwiec-2022" class="wp-block-group row-czerwiec mb-[80px]">
-        <!-- wp:group -->
-        <div class="wp-block-group col-sm-6 col-sm-push-3">
-          <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Czerwiec 2022</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group swiper-container">
-            <!-- wp:group -->
-            <div class="wp-block-group close-button"></div>
-            <!-- /wp:group -->
-
-            <!-- wp:group -->
-            <div class="wp-block-group js-gallery-top gallery-top">
-              <!-- wp:group -->
-              <div class="wp-block-group swiper-wrapper">
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/czerwiec-2022/img20.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/czerwiec-2022/img21.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/czerwiec-2022/img22.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/czerwiec-2022/img23.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/czerwiec-2022/img24.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/czerwiec-2022/img25.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-              </div>
-              <!-- /wp:group -->
-
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>></p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>&lt;</p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-            </div>
-            <!-- /wp:group -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div id="kwiecien-2022" class="wp-block-group row-czerwiec mb-[80px]">
-        <!-- wp:group -->
-        <div class="wp-block-group col-sm-6 col-sm-push-3">
-          <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Kwiecień 2022</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group swiper-container">
-            <!-- wp:group -->
-            <div class="wp-block-group close-button"></div>
-            <!-- /wp:group -->
-
-            <!-- wp:group -->
-            <div class="wp-block-group js-gallery-top gallery-top">
-              <!-- wp:group -->
-              <div class="wp-block-group swiper-wrapper">
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/kwiecien-2022/img26.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/kwiecien-2022/img27.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/kwiecien-2022/img28.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/kwiecien-2022/img29.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/kwiecien-2022/img30.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-              </div>
-              <!-- /wp:group -->
-
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>></p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>&lt;</p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-            </div>
-            <!-- /wp:group -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div id="luty-2022" class="wp-block-group row-czerwiec mb-[80px]">
-        <!-- wp:group -->
-        <div class="wp-block-group col-sm-6 col-sm-push-3">
-          <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Luty 2022</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group swiper-container">
-            <!-- wp:group -->
-            <div class="wp-block-group close-button"></div>
-            <!-- /wp:group -->
-
-            <!-- wp:group -->
-            <div class="wp-block-group js-gallery-top gallery-top">
-              <!-- wp:group -->
-              <div class="wp-block-group swiper-wrapper">
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img31.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img32.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img33.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img33.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img34.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img35.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img36.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img37.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img38.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-              </div>
-              <!-- /wp:group -->
-
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>></p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>&lt;</p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-            </div>
-            <!-- /wp:group -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div id="grudzien-2021" class="wp-block-group row-czerwiec mb-[80px]">
-        <!-- wp:group -->
-        <div class="wp-block-group col-sm-6 col-sm-push-3">
-          <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Grudzień 2021</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group swiper-container">
-            <!-- wp:group -->
-            <div class="wp-block-group close-button"></div>
-            <!-- /wp:group -->
-
-            <!-- wp:group -->
-            <div class="wp-block-group js-gallery-top gallery-top">
-              <!-- wp:group -->
-              <div class="wp-block-group swiper-wrapper">
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/grudzien-2021/img39.jpeg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/grudzien-2021/img40.jpeg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/grudzien-2021/img41.jpeg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/grudzien-2021/img42.jpeg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-              </div>
-              <!-- /wp:group -->
-
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>></p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>&lt;</p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-            </div>
-            <!-- /wp:group -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div id="wrzesien-2021" class="wp-block-group row-czerwiec mb-[80px]">
-        <!-- wp:group -->
-        <div class="wp-block-group col-sm-6 col-sm-push-3">
-          <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Wrzesień 2021</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group swiper-container">
-            <!-- wp:group -->
-            <div class="wp-block-group close-button"></div>
-            <!-- /wp:group -->
-
-            <!-- wp:group -->
-            <div class="wp-block-group js-gallery-top gallery-top">
-              <!-- wp:group -->
-              <div class="wp-block-group swiper-wrapper">
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/wrzesien-2021/img43.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/wrzesien-2021/img44.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/wrzesien-2021/img45.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/wrzesien-2021/img46.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-              </div>
-              <!-- /wp:group -->
-
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>></p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>&lt;</p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-            </div>
-            <!-- /wp:group -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div id="lipiec-2021" class="wp-block-group row-czerwiec mb-[80px]">
-        <!-- wp:group -->
-        <div class="wp-block-group col-sm-6 col-sm-push-3">
-          <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Lipiec 2021</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group swiper-container">
-            <!-- wp:group -->
-            <div class="wp-block-group close-button"></div>
-            <!-- /wp:group -->
-
-            <!-- wp:group -->
-            <div class="wp-block-group js-gallery-top gallery-top">
-              <!-- wp:group -->
-              <div class="wp-block-group swiper-wrapper">
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/lipiec-2021/img47.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/lipiec-2021/img48.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/lipiec-2021/img49.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/lipiec-2021/img50.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-              </div>
-              <!-- /wp:group -->
-
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>></p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>&lt;</p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-            </div>
-            <!-- /wp:group -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div id="maj-2021" class="wp-block-group row-czerwiec mb-[80px]">
-        <!-- wp:group -->
-        <div class="wp-block-group col-sm-6 col-sm-push-3">
-          <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Maj 2021</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group swiper-container">
-            <!-- wp:group -->
-            <div class="wp-block-group close-button"></div>
-            <!-- /wp:group -->
-
-            <!-- wp:group -->
-            <div class="wp-block-group js-gallery-top gallery-top">
-              <!-- wp:group -->
-              <div class="wp-block-group swiper-wrapper">
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/maj-2021/img51.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/maj-2021/img52.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/maj-2021/img53.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/maj-2021/img54.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-              </div>
-              <!-- /wp:group -->
-
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>></p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>&lt;</p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-            </div>
-            <!-- /wp:group -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div id="marzec-2021" class="wp-block-group row-czerwiec mb-[80px]">
-        <!-- wp:group -->
-        <div class="wp-block-group col-sm-6 col-sm-push-3">
-          <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Marzec 2021</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group swiper-container">
-            <!-- wp:group -->
-            <div class="wp-block-group close-button"></div>
-            <!-- /wp:group -->
-
-            <!-- wp:group -->
-            <div class="wp-block-group js-gallery-top gallery-top">
-              <!-- wp:group -->
-              <div class="wp-block-group swiper-wrapper">
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/marzec-2021/img55.jpeg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/marzec-2021/img56.jpeg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/marzec-2021/img57.jpeg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/marzec-2021/img58.jpeg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/marzec-2021/img59.jpeg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-
-              </div>
-              <!-- /wp:group -->
-
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>></p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>&lt;</p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-            </div>
-            <!-- /wp:group -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div id="styczen-2021" class="wp-block-group row-czerwiec mb-[80px]">
-        <!-- wp:group -->
-        <div class="wp-block-group col-sm-6 col-sm-push-3">
-          <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Styczeń 2021</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group swiper-container">
-            <!-- wp:group -->
-            <div class="wp-block-group close-button"></div>
-            <!-- /wp:group -->
-
-            <!-- wp:group -->
-            <div class="wp-block-group js-gallery-top gallery-top">
-              <!-- wp:group -->
-              <div class="wp-block-group swiper-wrapper">
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/styczen-2021/img60.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/styczen-2021/img61.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/styczen-2021/img62.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/styczen-2021/img63.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/styczen-2021/img64.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-              </div>
-              <!-- /wp:group -->
-
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>></p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>&lt;</p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-            </div>
-            <!-- /wp:group -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div id="listopad-2020" class="wp-block-group row-czerwiec mb-[80px]">
-        <!-- wp:group -->
-        <div class="wp-block-group col-sm-6 col-sm-push-3">
-          <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Listopad 2020</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group swiper-container">
-            <!-- wp:group -->
-            <div class="wp-block-group close-button"></div>
-            <!-- /wp:group -->
-
-            <!-- wp:group -->
-            <div class="wp-block-group js-gallery-top gallery-top">
-              <!-- wp:group -->
-              <div class="wp-block-group swiper-wrapper">
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/listopad-2020/img65.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/listopad-2020/img66.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/listopad-2020/img67.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/listopad-2020/img68.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-              </div>
-              <!-- /wp:group -->
-
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>></p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>&lt;</p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-            </div>
-            <!-- /wp:group -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div id="pazdziernik-2020" class="wp-block-group row-czerwiec mb-[80px]">
-        <!-- wp:group -->
-        <div class="wp-block-group col-sm-6 col-sm-push-3">
-          <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Październik 2020</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:group -->
-          <div class="wp-block-group swiper-container">
-            <!-- wp:group -->
-            <div class="wp-block-group close-button"></div>
-            <!-- /wp:group -->
-
-            <!-- wp:group -->
-            <div class="wp-block-group js-gallery-top gallery-top">
-              <!-- wp:group -->
-              <div class="wp-block-group swiper-wrapper">
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/pazdziernik-2020/img69.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/pazdziernik-2020/img70.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/pazdziernik-2020/img71.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/pazdziernik-2020/img72.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/pazdziernik-2020/img73.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-              </div>
-              <!-- /wp:group -->
-
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>></p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-              <!-- wp:group -->
-              <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
-                <!-- wp:paragraph -->
-                <p>&lt;</p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-            </div>
-            <!-- /wp:group -->
-          </div>
-          <!-- /wp:group -->
-        </div>
-        <!-- /wp:group -->
-      </div>
-      <!-- /wp:group -->
-
     </div>
     <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div id="czerwiec-2022" class="wp-block-group row-czerwiec mb-[80px]">
+      <!-- wp:group -->
+      <div class="wp-block-group col-sm-6 col-sm-push-3">
+        <!-- wp:paragraph -->
+        <p class="mb-[20px] text-[#8a8f99]">Czerwiec 2022</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group swiper-container">
+          <!-- wp:group -->
+          <div class="wp-block-group close-button"></div>
+          <!-- /wp:group -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group js-gallery-top gallery-top">
+            <!-- wp:group -->
+            <div class="wp-block-group swiper-wrapper">
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/czerwiec-2022/img20.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/czerwiec-2022/img21.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/czerwiec-2022/img22.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/czerwiec-2022/img23.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/czerwiec-2022/img24.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/czerwiec-2022/img25.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>&lt;</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div id="kwiecien-2022" class="wp-block-group row-czerwiec mb-[80px]">
+      <!-- wp:group -->
+      <div class="wp-block-group col-sm-6 col-sm-push-3">
+        <!-- wp:paragraph -->
+        <p class="mb-[20px] text-[#8a8f99]">Kwiecień 2022</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group swiper-container">
+          <!-- wp:group -->
+          <div class="wp-block-group close-button"></div>
+          <!-- /wp:group -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group js-gallery-top gallery-top">
+            <!-- wp:group -->
+            <div class="wp-block-group swiper-wrapper">
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/kwiecien-2022/img26.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/kwiecien-2022/img27.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/kwiecien-2022/img28.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/kwiecien-2022/img29.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/kwiecien-2022/img30.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>&lt;</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div id="luty-2022" class="wp-block-group row-czerwiec mb-[80px]">
+      <!-- wp:group -->
+      <div class="wp-block-group col-sm-6 col-sm-push-3">
+        <!-- wp:paragraph -->
+        <p class="mb-[20px] text-[#8a8f99]">Luty 2022</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group swiper-container">
+          <!-- wp:group -->
+          <div class="wp-block-group close-button"></div>
+          <!-- /wp:group -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group js-gallery-top gallery-top">
+            <!-- wp:group -->
+            <div class="wp-block-group swiper-wrapper">
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img31.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img32.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img33.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img33.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img34.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img35.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img36.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img37.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/luty-2022/img38.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>&lt;</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div id="grudzien-2021" class="wp-block-group row-czerwiec mb-[80px]">
+      <!-- wp:group -->
+      <div class="wp-block-group col-sm-6 col-sm-push-3">
+        <!-- wp:paragraph -->
+        <p class="mb-[20px] text-[#8a8f99]">Grudzień 2021</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group swiper-container">
+          <!-- wp:group -->
+          <div class="wp-block-group close-button"></div>
+          <!-- /wp:group -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group js-gallery-top gallery-top">
+            <!-- wp:group -->
+            <div class="wp-block-group swiper-wrapper">
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/grudzien-2021/img39.jpeg" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/grudzien-2021/img40.jpeg" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/grudzien-2021/img41.jpeg" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/grudzien-2021/img42.jpeg" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>&lt;</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div id="wrzesien-2021" class="wp-block-group row-czerwiec mb-[80px]">
+      <!-- wp:group -->
+      <div class="wp-block-group col-sm-6 col-sm-push-3">
+        <!-- wp:paragraph -->
+        <p class="mb-[20px] text-[#8a8f99]">Wrzesień 2021</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group swiper-container">
+          <!-- wp:group -->
+          <div class="wp-block-group close-button"></div>
+          <!-- /wp:group -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group js-gallery-top gallery-top">
+            <!-- wp:group -->
+            <div class="wp-block-group swiper-wrapper">
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/wrzesien-2021/img43.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/wrzesien-2021/img44.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/wrzesien-2021/img45.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/wrzesien-2021/img46.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>&lt;</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div id="lipiec-2021" class="wp-block-group row-czerwiec mb-[80px]">
+      <!-- wp:group -->
+      <div class="wp-block-group col-sm-6 col-sm-push-3">
+        <!-- wp:paragraph -->
+        <p class="mb-[20px] text-[#8a8f99]">Lipiec 2021</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group swiper-container">
+          <!-- wp:group -->
+          <div class="wp-block-group close-button"></div>
+          <!-- /wp:group -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group js-gallery-top gallery-top">
+            <!-- wp:group -->
+            <div class="wp-block-group swiper-wrapper">
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/lipiec-2021/img47.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/lipiec-2021/img48.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/lipiec-2021/img49.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/lipiec-2021/img50.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>&lt;</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div id="maj-2021" class="wp-block-group row-czerwiec mb-[80px]">
+      <!-- wp:group -->
+      <div class="wp-block-group col-sm-6 col-sm-push-3">
+        <!-- wp:paragraph -->
+        <p class="mb-[20px] text-[#8a8f99]">Maj 2021</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group swiper-container">
+          <!-- wp:group -->
+          <div class="wp-block-group close-button"></div>
+          <!-- /wp:group -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group js-gallery-top gallery-top">
+            <!-- wp:group -->
+            <div class="wp-block-group swiper-wrapper">
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/maj-2021/img51.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/maj-2021/img52.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/maj-2021/img53.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/maj-2021/img54.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>&lt;</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div id="marzec-2021" class="wp-block-group row-czerwiec mb-[80px]">
+      <!-- wp:group -->
+      <div class="wp-block-group col-sm-6 col-sm-push-3">
+        <!-- wp:paragraph -->
+        <p class="mb-[20px] text-[#8a8f99]">Marzec 2021</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group swiper-container">
+          <!-- wp:group -->
+          <div class="wp-block-group close-button"></div>
+          <!-- /wp:group -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group js-gallery-top gallery-top">
+            <!-- wp:group -->
+            <div class="wp-block-group swiper-wrapper">
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/marzec-2021/img55.jpeg" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/marzec-2021/img56.jpeg" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/marzec-2021/img57.jpeg" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/marzec-2021/img58.jpeg" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/marzec-2021/img59.jpeg" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>&lt;</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div id="styczen-2021" class="wp-block-group row-czerwiec mb-[80px]">
+      <!-- wp:group -->
+      <div class="wp-block-group col-sm-6 col-sm-push-3">
+        <!-- wp:paragraph -->
+        <p class="mb-[20px] text-[#8a8f99]">Styczeń 2021</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group swiper-container">
+          <!-- wp:group -->
+          <div class="wp-block-group close-button"></div>
+          <!-- /wp:group -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group js-gallery-top gallery-top">
+            <!-- wp:group -->
+            <div class="wp-block-group swiper-wrapper">
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/styczen-2021/img60.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/styczen-2021/img61.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/styczen-2021/img62.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/styczen-2021/img63.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/styczen-2021/img64.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>&lt;</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div id="listopad-2020" class="wp-block-group row-czerwiec mb-[80px]">
+      <!-- wp:group -->
+      <div class="wp-block-group col-sm-6 col-sm-push-3">
+        <!-- wp:paragraph -->
+        <p class="mb-[20px] text-[#8a8f99]">Listopad 2020</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group swiper-container">
+          <!-- wp:group -->
+          <div class="wp-block-group close-button"></div>
+          <!-- /wp:group -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group js-gallery-top gallery-top">
+            <!-- wp:group -->
+            <div class="wp-block-group swiper-wrapper">
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/listopad-2020/img65.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/listopad-2020/img66.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/listopad-2020/img67.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/listopad-2020/img68.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>&lt;</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group -->
+    <div id="pazdziernik-2020" class="wp-block-group row-czerwiec mb-[80px]">
+      <!-- wp:group -->
+      <div class="wp-block-group col-sm-6 col-sm-push-3">
+        <!-- wp:paragraph -->
+        <p class="mb-[20px] text-[#8a8f99]">Październik 2020</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group swiper-container">
+          <!-- wp:group -->
+          <div class="wp-block-group close-button"></div>
+          <!-- /wp:group -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group js-gallery-top gallery-top">
+            <!-- wp:group -->
+            <div class="wp-block-group swiper-wrapper">
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/pazdziernik-2020/img69.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/pazdziernik-2020/img70.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/pazdziernik-2020/img71.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/pazdziernik-2020/img72.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <!-- wp:image -->
+                <figure class="wp-block-image h-full w-full">
+                  <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-wiezycka-folwark/galeria/kronika-budowy/pazdziernik-2020/img73.png" alt="slide">
+                </figure>
+                <!-- /wp:image -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-next swiper-button-next pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group js-swiper-button-prev swiper-button-prev pb-[4px] text-[36px] font-semibold">
+              <!-- wp:paragraph -->
+              <p>&lt;</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
   </div>
   <!-- /wp:group -->
+</div>
+<!-- /wp:group -->
 
 
 </div>
