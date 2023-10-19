@@ -455,7 +455,7 @@ window.addEventListener("load", function() {
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
     dropDownFilters[2].insertAdjacentHTML('afterend', btnFilterSerach);
     dropDownFilters[2].insertAdjacentHTML('afterend', btnMoreHTML);
-    dropDownFilters[2].insertAdjacentHTML('afterend', BtnCustomPriceSelect);
+    // dropDownFilters[2].insertAdjacentHTML('afterend', BtnCustomPriceSelect);
     
     // postsFoundHTML.insertAdjacentHTML('afterend', sortingStartingValueHTML);
     // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
@@ -466,6 +466,13 @@ window.addEventListener("load", function() {
   let btnSearch = document.querySelector('.btn-search');
 
   // dropdown test
+  mainDropDown.forEach(dropDownEl =>{
+    console.log('before event active list click');
+    dropDownEl.addEventListener('click', (e) =>{
+      console.log('show min/max list');
+      e.target.nextElementSibling.classList.toggle('dropdown__list_active');
+    });
+  });
 
 
   dropDowns.forEach(item => {
@@ -725,13 +732,7 @@ window.addEventListener("load", function() {
 
 
 
-  mainDropDown.forEach(dropDownEl =>{
-    console.log('before event active list click');
-    dropDownEl.addEventListener('click', (e) =>{
-      console.log('show min/max list');
-      e.target.nextElementSibling.classList.toggle('dropdown__list_active');
-    });
-  });
+
 
 
 
