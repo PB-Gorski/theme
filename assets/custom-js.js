@@ -466,15 +466,6 @@ window.addEventListener("load", function() {
   let btnSearch = document.querySelector('.btn-search');
 
   // dropdown test
-setTimeout(() => {
-  mainDropDown.forEach(dropDownEl =>{
-    dropDownEl.addEventListener('click', (e) =>{
-      console.log('show min/max list');
-      e.target.nextElementSibling.classList.toggle('dropdown__list_active');
-    });
-  });
-}, 500);
-
 
 
   dropDowns.forEach(item => {
@@ -501,7 +492,6 @@ setTimeout(() => {
 
   console.log(priceValueArr);
 
-  console.log('backup');
   priceValueArr.forEach(priceValue => {
     if (priceValue < 600000 && priceValue > 400000){
       newArr.push(priceValue);
@@ -546,6 +536,12 @@ setTimeout(() => {
   };
 
   btnSearch.addEventListener('click', runSorting);
+  mainDropDown.forEach(dropDownEl =>{
+    dropDownEl.addEventListener('click', (e) =>{
+      console.log('show min/max list');
+      e.target.nextElementSibling.classList.toggle('dropdown__list_active');
+    });
+  });
 
 
 
