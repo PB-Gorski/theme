@@ -444,7 +444,9 @@ window.addEventListener("load", function() {
   const dropDownList = document.querySelectorAll('.dropdown__list');
   const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
   let priceValueArrHTMLCol = dropDownFilters[6].childNodes[1].children;
-  
+  let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
+  let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
+  let priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
   let priceValueArr = [];
   let newArr = [];
   let newArrHTMLList = [];
@@ -520,9 +522,9 @@ window.addEventListener("load", function() {
   // });
 
   function runSorting(){
-    let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
-    let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
-    let priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
+    priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
+    priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
+    priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
 
     console.log(priceMinValue,priceMaxValue);
     console.log('runSorting2');
