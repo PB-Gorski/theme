@@ -348,11 +348,11 @@ window.addEventListener("load", function() {
   const priceValueArrHTMLCol = dropDownFilters[4].childNodes[1].children;
   const priceValueArrNodeList = dropDownFilters[4].childNodes[1].childNodes;
 
-  const priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
+  const priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.selected.split(' ').join(''));
   let priceValueArr = [];
 
   for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-    priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+    priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.selected.split(' ').join('')));
   }
 
   console.log(priceValueArr);
@@ -369,18 +369,12 @@ window.addEventListener("load", function() {
   });
 
   newArr.forEach(elem => {
+
   })
 
   console.log('newArr');
   console.log(newArr);
 
-  const ages = [32, 33, 16, 40];
-  let result = priceValueArr.filter(checkAdult);
-
-  function checkAdult(age) {
-    return age <= 600000;
-  } 
-  console.log(checkAdult);
 
 
 
