@@ -384,6 +384,7 @@ window.addEventListener("load", function() {
   const postsFoundParentHTML = document.querySelector('.filter-layout3-148');
 
   let counter;
+  let postsCount;
   
   console.log('hook: ', wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
     // postsCount = res.found;
