@@ -43,18 +43,30 @@
       <option value="800000">800 000 zł</option>
       <option value="1200000">1 000 000 zł</option>
     </select> -->
+    <div id="ymc-smart-filter-container-1" class="ymc-smart-filter-container my-[50px] ymc-filter-148 ymc-loaded-filter ymc-filter-layout3 ymc-post-custom-layout ymc-pagination-numeric data-target-ymc148-1 data-target-ymc1 ">
+      <div id="filter-layout3-1" class="filter-layout filter-layout3 filter-layout3-148 filter-layout3-148-1">
+        <div class="filter-entry">
+          <div class="dropdown-filter">
+            <div class="menu-active"><span>Pokoje</span> <i class="arrow down"></i></div>
+            <div class="menu-passive"><i class="btn-close">x</i>
+              <div class="menu-passive__item item-1">
 
-    <div class="dropdown-filter myfilter my-[120px]">
-      <div class="menu-active"><span>Cena min</span> <i class="arrow down open"></i></div>
+                <a class="menu-link  multiple" href="#" data-selected="1" data-termid="43" data-name="1">1 <span class="count">8</span></a>
+              </div>
+              <div class="menu-passive__item item-2">
 
-      <div class="menu-passive" style="display: block;">
-        <div class="menu-passive__item item-0">
-          <a class="menu-link multiple" href="#" data-selected="400000" data-termid="450" data-name="400000">400000<span class="count">400000</span></a>
-        </div>
-      </div>
-      <div class="menu-passive" style="display: block;">
-        <div class="menu-passive__item item-1">
-          <a class="menu-link multiple" href="#" data-selected="500000" data-termid="450" data-name="500000">500000<span class="count">500000</span></a>
+                <a class="menu-link  multiple" href="#" data-selected="2" data-termid="34" data-name="2">2 <span class="count">56</span></a>
+              </div>
+              <div class="menu-passive__item item-3">
+
+                <a class="menu-link  multiple" href="#" data-selected="3" data-termid="53" data-name="3">3 <span class="count">64</span></a>
+              </div>
+              <div class="menu-passive__item item-4">
+
+                <a class="menu-link  multiple" href="#" data-selected="4" data-termid="25" data-name="4">4 <span class="count">25</span></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
