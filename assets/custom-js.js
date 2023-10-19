@@ -361,9 +361,6 @@ window.addEventListener("load", function() {
   console.log(priceValueArr);
   console.log('------');
 
-  // let filtered = filterRange(priceValueArr, 400000, 600000);
-  // console.log(filtered);
-
   let newArr = [];
   priceValueArr.forEach(priceValue => {
     if (priceValue < 600000 && priceValue > 400000){
@@ -375,9 +372,7 @@ window.addEventListener("load", function() {
   console.log(newArr);
 
   let newArrHTMLList = [];
-  newArr.forEach((elem,index) => {
-    let indexFrom2 = index + 2;
-
+  newArr.forEach(elem => {
     for(j = 2 ; j < priceValueArrNodeList.length ; j++){
       if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
         newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
@@ -402,7 +397,7 @@ window.addEventListener("load", function() {
 
   const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
   const sortingBarHTML = `
-    <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
+    <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[22px] flex flex-wrap items-center justify-between text-[13px] font-bold z-0 relative">
       <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
       <li class="js-sort js-sort-inwestycja w-[180px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
       <li class="js-sort js-sort-budynek w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
