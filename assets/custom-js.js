@@ -385,13 +385,16 @@ window.addEventListener("load", function() {
 
   let counter;
   
-  let postsCount = wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
+  wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
     // postsCount = res.found;
     // console.log(res.found);
     // console.log('Complete loaded data ' + target + ' ' + res.found);
     console.log('hook completed');
-    counter = res.found;
+    let x = res.found;
+    postsCount = x;
+    
   });
+    console.log(postsCount);
 
 
     console.log('post found from js ', counter);
