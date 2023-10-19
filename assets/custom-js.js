@@ -358,8 +358,8 @@ window.addEventListener("load", function() {
   console.log(priceValueArr);
   console.log('------');
 
-  let filtered = filterRange(priceValueArr, 400000, 600000);
-  console.log(filtered);
+  // let filtered = filterRange(priceValueArr, 400000, 600000);
+  // console.log(filtered);
 
   var res = priceValueArr.filter(function(o) {
     // check value is within the range
