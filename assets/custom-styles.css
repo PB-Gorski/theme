@@ -814,9 +814,9 @@ background-color: #e8fbff!important;
   margin-left: 5px;
 }
 
-.dropdown__value:hover{
+/* .dropdown__value:hover{
   background: rgb(91, 61, 61);
-}
+} */
 
 .dropdown__list {
   display: none;
