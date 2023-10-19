@@ -535,7 +535,7 @@ window.addEventListener("load", function() {
   //   });
   // };
 
-  btnSearch.addEventListener('click', runSorting);
+  // btnSearch.addEventListener('click', runSorting);
   mainDropDown.forEach(dropDownEl =>{
     dropDownEl.addEventListener('click', (e) =>{
       console.log('show min/max list');
