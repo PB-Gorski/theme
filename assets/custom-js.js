@@ -353,6 +353,7 @@ window.addEventListener("load", function() {
 
   for (i = 2 ; i < priceValueArrNodeList.length ; i++){
     priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+
     priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
 
   }
@@ -374,17 +375,19 @@ window.addEventListener("load", function() {
   console.log('newArr');
   console.log(newArr);
 
-  let newArrHTMList = [];
+  let newArrHTMLList = [];
   newArr.forEach((elem,index) => {
     let indexFrom2 = index + 2;
+    console.log(indexFrom2);
+    console.log(elem);
     if (priceValueArrNodeList[indexFrom2].childNodes[1].dataset.name == elem){
-      newArrHTMList.push(priceValueArrNodeList[indexFrom2].childNodes[1])
+      newArrHTMLList.push(priceValueArrNodeList[indexFrom2].childNodes[1])
     }
 
   })
 
-  console.log('newArr');
-  console.log(newArrHTMList);
+  console.log('newArrHTMLList');
+  console.log(newArrHTMLList);
 
 
 
