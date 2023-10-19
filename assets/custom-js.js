@@ -342,6 +342,33 @@ window.addEventListener("load", function() {
   });
 
 
+  // dropdown test
+  const mainDropDown = document.querySelector('.dropdown__value')
+  const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'))
+  const dropDownList = document.querySelector('.dropdown__list')
+  let target
+  mainDropDown.addEventListener('click', openMenu)
+
+  function openMenu(){
+    dropDownList.classList.add('dropdown__list_active')
+  }
+
+  dropDowns.forEach(item => {
+    item.addEventListener('click',  choise)
+  })
+
+  function choise(event,){
+    event.preventDefault()
+    target = event.target.textContent
+    mainDropDown.textContent = (target)
+    dropDownList.classList.remove('dropdown__list_active')
+  }
+  
+  
+
+
+
+
   // sortowanie listy mieszkan
   // price select
   const dropDownFilters = document.querySelectorAll(".dropdown-filter");

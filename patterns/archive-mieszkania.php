@@ -44,29 +44,32 @@
       <option value="1200000">1 000 000 zł</option>
     </select> -->
 
-
-    <div id="filter-layout3-1" class="filter-layout filter-layout3 filter-layout3-148 filter-layout3-148-1">
-      <div class="filter-entry">
-        <div class="dropdown-filter">
-          <div class="menu-active"><span>Pokoje</span> <i class="arrow down"></i></div>
-          <div class="menu-passive"><i class="btn-close">x</i>
-            <div class="menu-passive__item item-1">
-
-              <a class="menu-link  multiple" href="#" data-selected="1" data-termid="43" data-name="1">1 <span class="count">8</span></a>
-            </div>
-            <div class="menu-passive__item item-2">
-
-              <a class="menu-link  multiple" href="#" data-selected="2" data-termid="34" data-name="2">2 <span class="count">56</span></a>
-            </div>
-            <div class="menu-passive__item item-3">
-
-              <a class="menu-link  multiple" href="#" data-selected="3" data-termid="53" data-name="3">3 <span class="count">64</span></a>
-            </div>
-            <div class="menu-passive__item item-4">
-
-              <a class="menu-link  multiple" href="#" data-selected="4" data-termid="25" data-name="4">4 <span class="count">25</span></a>
-            </div>
-          </div>
+    <div class="content">
+      <div class="card">
+        <div class="dropdown">
+          <div class="dropdown__value">400000</div>
+          <ul class="dropdown__list">
+            <li class="dropdown__item">
+              <a href="" class="dropdown__link">
+                400000
+              </a>
+            </li>
+            <li class="dropdown__item">
+              <a href="" class="dropdown__link">
+                500000
+              </a>
+            </li>
+            <li class="dropdown__item">
+              <a href="" class="dropdown__link">
+                600000
+              </a>
+            </li>
+            <li class="dropdown__item">
+              <a href="" class="dropdown__link">
+                800000
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
