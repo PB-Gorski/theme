@@ -58,23 +58,20 @@
     </div>
     <!-- /wp:group -->
 
+    <!-- wp:group -->
+    <div class="dropdown-filter">
+      <input type="text" placeholder="Cena max">
+    </div>
+    <!-- /wp:group -->
+    <select name="priceMax" id="priceMax">
+      <option value="400000">400 000 zł</option>
+      <option value="600000">600 000 zł</option>
+      <option value="800000">800 000 zł</option>
+      <option value="1200000">1 000 000 zł</option>
+    </select>
+
     <!-- wp:list -->
     <ul class="wp-block-list js-lista-mieszkan-list w-full bg-white">
-      <!-- wp:list-item -->
-      <li class="priceTest">
-        <!-- wp:group -->
-        <div class="dropdown-filter">
-          <input type="text" placeholder="Cena max">
-        </div>
-        <!-- /wp:group -->
-        <select name="priceMax" id="priceMax">
-          <option value="400000">400 000 zł</option>
-          <option value="600000">600 000 zł</option>
-          <option value="800000">800 000 zł</option>
-          <option value="1200000">1 000 000 zł</option>
-        </select>
-      </li>
-      <!-- /wp:list-item -->
       <!-- wp:list-item -->
       <li class="short-code-ymc-filter applyContainer1">
         <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
