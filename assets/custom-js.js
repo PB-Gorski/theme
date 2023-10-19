@@ -492,10 +492,10 @@ window.addEventListener("load", function() {
 
   // price selects
   // nodeElem to int
-  for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-    priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
-    priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
-  }
+  // for (i = 2 ; i < priceValueArrNodeList.length ; i++){
+  //   priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+  //   priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
+  // }
 
   console.log(priceValueArr);
 
@@ -529,6 +529,12 @@ window.addEventListener("load", function() {
     console.log(priceMinValue,priceMaxValue);
     console.log('runSorting2');
     let priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
+
+    for (i = 2 ; i < priceValueArrNodeList.length ; i++){
+      priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+      priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
+    }
+  
 
     priceValueArr.forEach(priceValue => {
       if (priceValue < 500000 && priceValue > 400000){
