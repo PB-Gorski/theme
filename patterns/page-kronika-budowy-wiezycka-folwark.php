@@ -349,6 +349,15 @@
       </figure>
       <!-- /wp:embed -->
 
+      <!-- wp:embed {"url":"https://example.com/"} -->
+      <figure class="wp-block-embed">
+        <div class="wp-block-embed__wrapper">
+          https://www.youtube.com/watch?v=n-_Tu_AQOJw
+        </div>
+        <figcaption class="wp-element-caption">Embedded content from an example URL</figcaption>
+      </figure>
+      <!-- /wp:embed -->
+
       <!-- wp:group -->
       <div id="styczen-2022" class="wp-block-group row-wrzesien mb-[80px]">
         <!-- wp:group -->
