@@ -349,13 +349,14 @@ window.addEventListener("load", function() {
   const priceValueArrNodeList = dropDownFilters[4].childNodes[1].childNodes;
 
   const priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
-  let priveValueArr = [];
+  let priceValueArr = [];
 
   for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-    priveValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+    priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
   }
 
-  console.log(priveValueArr);
+  console.log(priceValueArr);
+  console.log(filterRange(priceValueArr, 400000, 600000));
   
 
 
