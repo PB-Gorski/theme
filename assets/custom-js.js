@@ -410,7 +410,7 @@ window.addEventListener("load", function() {
     });
   };
 
-  btnSearch.addEventListener('click', runSorting());
+  btnSearch.addEventListener('click', runSorting);
 
 
 
