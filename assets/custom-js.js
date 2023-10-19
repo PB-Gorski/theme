@@ -537,6 +537,7 @@ window.addEventListener("load", function() {
 
   // btnSearch.addEventListener('click', runSorting);
   mainDropDown.forEach(dropDownEl =>{
+    console.log('before event active list click');
     dropDownEl.addEventListener('click', (e) =>{
       console.log('show min/max list');
       e.target.nextElementSibling.classList.toggle('dropdown__list_active');
