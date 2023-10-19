@@ -374,11 +374,9 @@ window.addEventListener("load", function() {
 
   let newArr = [];
   priceValueArr.forEach(priceValue => {
-    if (priceValue < 600000){
+    if (priceValue < 600000 && priceValue > 400000){
       newArr.push(priceValue)
-    }else if(priceValue > 400000){
-      newArr.push(priceValue);
-    }
+    };
   });
 
   console.log('newArr');
