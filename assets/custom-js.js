@@ -499,27 +499,27 @@ window.addEventListener("load", function() {
 
   console.log(priceValueArr);
 
-  // priceValueArr.forEach(priceValue => {
-  //   if (priceValue < 600000 && priceValue > 400000){
-  //     newArr.push(priceValue);
-  //   };
-  // });
+  priceValueArr.forEach(priceValue => {
+    if (priceValue < 600000 && priceValue > 400000){
+      newArr.push(priceValue);
+    };
+  });
 
-  // console.log(newArr);
+  console.log(newArr);
 
-  // newArr.forEach(elem => {
-  //   for(j = 2 ; j < priceValueArrNodeList.length ; j++){
-  //     if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
-  //       newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
-  //     };
-  //   };
-  // });
+  newArr.forEach(elem => {
+    for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+      if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+        newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+      };
+    };
+  });
 
-  // console.log(newArrHTMLList);
+  console.log(newArrHTMLList);
 
-  // newArrHTMLList.forEach(htmlElemList => {
-  //   htmlElemList.click();
-  // });
+  newArrHTMLList.forEach(htmlElemList => {
+    htmlElemList.click();
+  });
 
   function runSorting(){
     console.log('runSorting2');
