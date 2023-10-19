@@ -361,17 +361,6 @@ window.addEventListener("load", function() {
   // let filtered = filterRange(priceValueArr, 400000, 600000);
   // console.log(filtered);
 
-  var res = priceValueArr.filter(function(o) {
-    // check value is within the range
-    // remove `=` if you don't want to include the range boundary
-    return o.score <= 600000 && o.score >= 400000;
-  });
-
-  console.log('res');
-  console.log(res);
-
-
-
   let newArr = [];
   priceValueArr.forEach(priceValue => {
     if (priceValue < 600000 && priceValue > 400000){
@@ -381,6 +370,14 @@ window.addEventListener("load", function() {
 
   console.log('newArr');
   console.log(newArr);
+
+  const ages = [32, 33, 16, 40];
+  let result = priceValueArr.filter(checkAdult);
+
+function checkAdult(age) {
+  return age <= 600000;
+} 
+console.log(checkAdult);
 
 
 
