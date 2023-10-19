@@ -351,6 +351,7 @@ window.addEventListener("load", function() {
 mainDropDown.forEach(dropDown =>{
   dropDown.addEventListener('click', function(e){
     console.log(e.target);
+    e.target.nextSibling.classList.toggle('dropdown__list_active')
   }
   );
 
