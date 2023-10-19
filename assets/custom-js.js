@@ -350,14 +350,7 @@ window.addEventListener("load", function() {
 
 mainDropDown.forEach(dropDown =>{
   dropDown.addEventListener('click', function(e){
-    console.log(e.target);
-    // e.target.nextSibling.classList.toggle('dropdown__list_active')
     e.target.nextElementSibling.classList.toggle('dropdown__list_active')
-    // e.target.nextNode.classList.toggle('dropdown__list_active')
-    // console.log( e.target.nextSibling);
-    // console.log( e.target.nextElementSibling);
-    // console.log( e.target.nextNode);
-
   }
   );
 
@@ -386,7 +379,8 @@ mainDropDown.forEach(dropDown =>{
   function choise(e,){
     e.preventDefault()
     target = e.target.textContent
-    mainDropDown.textContent = (target)
+    // mainDropDown.textContent = (target)
+    e.target.parentNode.parentNode.previousElementSibling.textContent = (target)
     dropDownList.forEach(el =>{
       if(el.classList.contains('dropdown__list_active')){
         el.classList.remove('dropdown__list_active')
