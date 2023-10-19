@@ -501,7 +501,7 @@ border-width: 0 2px 2px 0;
 }
 .dropdown-filter{
   margin-right: 2px!important;
-  max-width: 140px!important;
+  max-width: 190px!important;
   border-bottom: 3px solid #dcdee3;
 }
 .menu-passive__item .active{
@@ -840,10 +840,10 @@ background-color: #e8fbff!important;
   background-color: #fff;
 }
 
-.dropdown__link:hover{
+/* .dropdown__link:hover{
 background: rgb(154, 99, 99);
 color: #fff;
-}
+} */
 
 .dropdown__list_active {
   display: block;
