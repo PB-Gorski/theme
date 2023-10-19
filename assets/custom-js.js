@@ -472,7 +472,7 @@ window.addEventListener("load", function() {
     item.addEventListener('click', choise)
   });
 
-  function choise(e,){
+  function choise(e){
     e.preventDefault();
     target = e.target.textContent;
     e.target.parentNode.parentNode.previousElementSibling.textContent = (target);
@@ -536,13 +536,7 @@ window.addEventListener("load", function() {
   // };
 
   // btnSearch.addEventListener('click', runSorting);
-  mainDropDown.forEach(dropDownEl =>{
-    console.log('before event active list click');
-    dropDownEl.addEventListener('click', (e) =>{
-      console.log('show min/max list');
-      e.target.nextElementSibling.classList.toggle('dropdown__list_active');
-    });
-  });
+
 
 
 
@@ -731,10 +725,23 @@ window.addEventListener("load", function() {
 
 
 
+  mainDropDown.forEach(dropDownEl =>{
+    console.log('before event active list click');
+    dropDownEl.addEventListener('click', (e) =>{
+      console.log('show min/max list');
+      e.target.nextElementSibling.classList.toggle('dropdown__list_active');
+    });
+  });
 
 
 
 
 
-
+});
+mainDropDown.forEach(dropDownEl =>{
+  console.log('before event active list click');
+  dropDownEl.addEventListener('click', (e) =>{
+    console.log('show min/max list');
+    e.target.nextElementSibling.classList.toggle('dropdown__list_active');
+  });
 });
