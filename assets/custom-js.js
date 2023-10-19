@@ -379,7 +379,9 @@ window.addEventListener("load", function() {
   let btnSearch = document.querySelector('.btn-search');
   let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
   let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
-  let priceValueArr, newArr, newArrHTMLList = [];
+  let priceValueArr = [];
+  let newArr = [];
+  let newArrHTMLList = [];
 
   // nodeElem to int
   for (i = 2 ; i < priceValueArrNodeList.length ; i++){
