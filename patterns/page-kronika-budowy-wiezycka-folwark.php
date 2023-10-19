@@ -333,28 +333,18 @@
       <!-- /wp:group -->
 
       <!-- wp:embed {"url":"https://www.youtube.com/watch?v=n-_Tu_AQOJw","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-      <figure class="wp-block-embed video-yt mb-[80px] is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+      <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
         <div class="wp-block-embed__wrapper">
           https://www.youtube.com/watch?v=n-_Tu_AQOJw
         </div>
       </figure>
       <!-- /wp:embed -->
 
-
-      <!-- wp:embed {"url":"https://www.youtube.com/watch?v=QZXc39hT8t4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-      <figure class="wp-block-embed video-yt opacity-0 is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-        <div class="wp-block-embed__wrapper">
-          https://www.youtube.com/watch?v=QZXc39hT8t4
-        </div>
-      </figure>
-      <!-- /wp:embed -->
-
-      <!-- wp:embed {"url":"https://example.com/"} -->
-      <figure class="wp-block-embed">
+      <!-- wp:embed {"url":"https://www.youtube.com/watch?v=n-_Tu_AQOJw","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+      <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
         <div class="wp-block-embed__wrapper">
           https://www.youtube.com/watch?v=n-_Tu_AQOJw
         </div>
-        <figcaption class="wp-element-caption">Embedded content from an example URL</figcaption>
       </figure>
       <!-- /wp:embed -->
 
