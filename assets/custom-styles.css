@@ -786,7 +786,7 @@ background-color: #e8fbff!important;
 
 
 #filter-layout3-1 > div.filter-entry > div:nth-child(5){
-  display: hidden;
+  display: none;
 }
 /* dropdown test */
 .dropdown {
