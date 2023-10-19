@@ -382,34 +382,14 @@ window.addEventListener("load", function() {
   `;
   const postsFoundHTML = document.querySelector('.posts-found');
   const postsFoundParentHTML = document.querySelector('.filter-layout3-148');
-
-  let counter;
-  let postsCount;
   
   console.log('hook: ', wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
     // postsCount = res.found;
     // console.log(res.found);
     // console.log('Complete loaded data ' + target + ' ' + res.found);
-    console.log('hook completed');
 
-    
-    postsFoundHTML.insertAdjacentHTML('afterend', '<p class="firstTime bg-white text-[24px] text-center aos-init aos-animate">Znaleziono ' + postsCount + ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>');
-    counter = true;
+    // postsFoundHTML.insertAdjacentHTML('afterend', '<p class="firstTime bg-white text-[24px] text-center aos-init aos-animate">Znaleziono ' + postsCount + ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>');
   }));
-
-
-    console.log('post found from js ', counter);
-   // if(!counter){
-    
-
-    postsFoundHTML.insertAdjacentHTML('afterend', '<p class="firstTime bg-white text-[24px] text-center aos-init aos-animate">Znaleziono ' + postsCount + ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>');
-    counter = true;
-  // };
-  // if(counter){
-    // document.querySelector('.firstTime').classList.add('hidden');
-  // }
-
-  postsFoundHTML.innerText = 'test';
 
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
