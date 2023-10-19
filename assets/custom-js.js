@@ -438,6 +438,7 @@ window.addEventListener("load", function() {
       <p class="font-bold z-[1]">Szukaj</p>
     </div>
   `;
+  const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
 
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
@@ -554,7 +555,6 @@ window.addEventListener("load", function() {
   }
 
 
-  const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
 
 
   const postsFoundHTML = document.querySelector('.posts-found');
