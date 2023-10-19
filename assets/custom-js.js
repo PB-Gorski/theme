@@ -469,6 +469,7 @@ window.addEventListener("load", function() {
   
     mainDropDown.forEach(dropDown =>{
       dropDown.addEventListener('click', (e) =>{
+        console.log('show min/max list');
         e.target.nextElementSibling.classList.toggle('dropdown__list_active');
       });
     });
@@ -515,7 +516,6 @@ window.addEventListener("load", function() {
   });
 
   console.log(newArrHTMLList);
-
 
   newArrHTMLList.forEach(htmlElemList => {
     htmlElemList.click();
