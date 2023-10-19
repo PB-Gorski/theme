@@ -384,21 +384,20 @@ window.addEventListener("load", function() {
   const postsFoundParentHTML = document.querySelector('.filter-layout3-148');
 
   let counter = false;
+  let postsCount;
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
-    // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
-    // if(!counter){
-      const sortingStartingValue = `
-        <p class="text-[24px] text-center aos-init aos-animate">Znaleziono x ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>
-      `;
-      console.log('Complete loaded data ' + target + ' ' + res.found);
-
-      postsFoundHTML.insertAdjacentHTML('afterend', '<p class="firstTime text-[24px] text-center aos-init aos-animate">Znaleziono ' + res.found + ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>');
-      counter = true;
-    // };
-    // if(counter){
-      // document.querySelector('.firstTime').classList.add('hidden');
-    // }
+    postsCount = res.found;
   });
+
+   // if(!counter){
+    console.log('Complete loaded data ' + target + ' ' + res.found);
+
+    postsFoundHTML.insertAdjacentHTML('afterend', '<p class="firstTime text-[24px] text-center aos-init aos-animate">Znaleziono ' + postsCount + ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>');
+    counter = true;
+  // };
+  // if(counter){
+    // document.querySelector('.firstTime').classList.add('hidden');
+  // }
 
   postsFoundHTML.innerText = 'test';
 
