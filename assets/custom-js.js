@@ -390,8 +390,9 @@ window.addEventListener("load", function() {
     // console.log(res.found);
     // console.log('Complete loaded data ' + target + ' ' + res.found);
     console.log('hook completed');
-    return res.found;
+    postsCount = res.found;
   });
+
 
     console.log('post found from js ', postsCount);
    // if(!counter){
