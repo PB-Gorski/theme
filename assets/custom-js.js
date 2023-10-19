@@ -389,6 +389,7 @@ window.addEventListener("load", function() {
     postsCount = res.found;
   });
 
+    console.log('post found from js ',postsCount);
    // if(!counter){
     console.log('Complete loaded data ' + target + ' ' + res.found);
 
