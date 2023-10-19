@@ -424,13 +424,13 @@ console.log(checkAdult);
   const postsFoundHTML = document.querySelector('.posts-found');
   const postsFoundParentHTML = document.querySelector('.filter-layout3-148');
   
-  console.log('hook: ', wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
+  wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
     // postsCount = res.found;
     // console.log(res.found);
     // console.log('Complete loaded data ' + target + ' ' + res.found);
 
     // postsFoundHTML.insertAdjacentHTML('afterend', '<p class="firstTime bg-white text-[24px] text-center aos-init aos-animate">Znaleziono ' + postsCount + ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>');
-  }));
+  });
 
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
