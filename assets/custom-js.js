@@ -378,7 +378,9 @@ window.addEventListener("load", function() {
     </div>
   `;
   const postsFoundHTML = document.querySelector('.posts-found');
-  
+  const postsFoundParentHTML = document.querySelector('.filter-layout3-148');
+
+
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
     console.log('Complete loaded data ' + target + ' ' + res.found);
   });
@@ -388,6 +390,7 @@ window.addEventListener("load", function() {
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
     dropDownFilters[3].insertAdjacentHTML('afterend', btnMoreHTML);
+    postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
   };
 
   
