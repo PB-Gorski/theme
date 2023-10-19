@@ -387,6 +387,7 @@ window.addEventListener("load", function() {
   let postsCount = '';
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
     postsCount = res.found;
+    console.log(res.found);
     console.log('Complete loaded data ' + target + ' ' + res.found);
   });
 
