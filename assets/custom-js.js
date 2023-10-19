@@ -379,9 +379,13 @@ window.addEventListener("load", function() {
   newArr.forEach((elem,index) => {
     let indexFrom2 = index + 2;
     console.log('name without spaces');
+    console.log(elem);
     console.log(parseInt(priceValueArrNodeList[indexFrom2].childNodes[1].dataset.name));
-    if (parseInt(priceValueArrNodeList[indexFrom2].childNodes[1].dataset.name) == elem){
-      newArrHTMLList.push(priceValueArrNodeList[indexFrom2].childNodes[1])
+
+    for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+      if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+        newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+      }
     }
 
   })
