@@ -368,16 +368,19 @@ window.addEventListener("load", function() {
     };
   });
 
+  newArr.forEach(elem => {
+  })
+
   console.log('newArr');
   console.log(newArr);
 
   const ages = [32, 33, 16, 40];
   let result = priceValueArr.filter(checkAdult);
 
-function checkAdult(age) {
-  return age <= 600000;
-} 
-console.log(checkAdult);
+  function checkAdult(age) {
+    return age <= 600000;
+  } 
+  console.log(checkAdult);
 
 
 
