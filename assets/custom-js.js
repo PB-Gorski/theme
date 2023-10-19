@@ -370,16 +370,20 @@ window.addEventListener("load", function() {
     };
   });
 
-  let newArrHTMLList = [];
-  newArr.forEach(elem => {
-    if (priceValueArrNodeList[i].childNodes[1].dataset.name == elem){
 
+  console.log('newArr');
+  console.log(newArr);
+
+  let newArrHTMList = [];
+  newArr.forEach((elem,index) => {
+    if (priceValueArrNodeList[index].childNodes[1].dataset.name == elem){
+      newArrHTMList.push(priceValueArrNodeList[index].childNodes[1])
     }
 
   })
 
   console.log('newArr');
-  console.log(newArr);
+  console.log(newArrHTMList);
 
 
 
