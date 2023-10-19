@@ -2,7 +2,7 @@
 
 /**
  * Title: kronika-budowy-sw-piotra
- * Slug: kronika-budowy-osiedle-srebrniki
+ * Slug: kronika-budowy-sw-piotra
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
@@ -449,7 +449,6 @@
         <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
-
 
       <!-- wp:group -->
       <div id="czerwiec-2022" class="wp-block-group row-czerwiec mb-[80px]">
