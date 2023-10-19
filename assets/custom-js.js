@@ -388,7 +388,7 @@ mainDropDown.forEach(dropDown =>{
     target = e.target.textContent
     mainDropDown.textContent = (target)
     dropDownList.forEach(el =>{
-      if(el.contains('dropdown__list_active')){
+      if(el.classList.contains('dropdown__list_active')){
         el.classList.remove('dropdown__list_active')
       };
     })
