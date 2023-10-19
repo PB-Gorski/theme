@@ -44,56 +44,52 @@
       <option value="1200000">1 000 000 zł</option>
     </select> -->
 
-    <div class="content">
-      <div class="card">
-        <div class="dropdown">
-          <div class="dropdown__value">400000</div>
-          <ul class="dropdown__list">
-            <li class="dropdown__item">
-              <a href="" class="dropdown__link">
-                400000
-              </a>
-            </li>
-            <li class="dropdown__item">
-              <a href="" class="dropdown__link">
-                500000
-              </a>
-            </li>
-            <li class="dropdown__item">
-              <a href="" class="dropdown__link">
-                600000
-              </a>
-            </li>
-            <li class="dropdown__item">
-              <a href="" class="dropdown__link">
-                800000
-              </a>
-            </li>
-          </ul>
+    <div class="mySortingBar container mx-auto flex gap-[10px]">
+      <div class="content h-[250px]">
+        <div class="card">
+          <div class="dropdown">
+            <div class="dropdown__value">400000</div>
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="" class="dropdown__link">400000</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="" class="dropdown__link">500000</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="" class="dropdown__link">600000</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="" class="dropdown__link">800000</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+
+      <!-- wp:group -->
+      <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-full desktop:w-[230px] h-[62px] flex items-center justify-center gap-[15px] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
+        <!-- wp:paragraph -->
+        <p class=" z-[1]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="injected-svg inject-svg icon-search">
+            <defs>
+              <style></style>
+            </defs>
+            <g id="icon_search" fill="none" stroke="#fff" stroke-width="2">
+              <circle cx="6.5" cy="6.5" r="5.5"></circle>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-4-4"></path>
+            </g>
+          </svg>
+        </p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class="font-bold z-[1]">Szukaj</p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
     </div>
 
-    <!-- wp:group -->
-    <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-full desktop:w-[230px] h-[62px] flex items-center justify-center gap-[15px] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
-      <!-- wp:paragraph -->
-      <p class=" z-[1]">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="injected-svg inject-svg icon-search">
-          <defs>
-            <style></style>
-          </defs>
-          <g id="icon_search" fill="none" stroke="#fff" stroke-width="2">
-            <circle cx="6.5" cy="6.5" r="5.5"></circle>
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-4-4"></path>
-          </g>
-        </svg>
-      </p>
-      <!-- /wp:paragraph -->
-      <!-- wp:paragraph -->
-      <p class="font-bold z-[1]">Szukaj</p>
-      <!-- /wp:paragraph -->
-    </div>
-    <!-- /wp:group -->
+
 
     <!-- wp:list -->
     <ul class="wp-block-list js-lista-mieszkan-list w-full bg-white">
