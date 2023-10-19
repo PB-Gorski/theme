@@ -416,26 +416,26 @@ window.addEventListener("load", function() {
     htmlElemList.click();
   });
 
-  function runSorting(){
-    console.log('runSorting2');
-    priceValueArr.forEach(priceValue => {
-      if (priceValue < priceMaxValue && priceValue > priceMinValue){
-        newArr.push(priceValue);
-      };
-    });
+  // function runSorting(){
+  //   console.log('runSorting2');
+  //   priceValueArr.forEach(priceValue => {
+  //     if (priceValue < priceMaxValue && priceValue > priceMinValue){
+  //       newArr.push(priceValue);
+  //     };
+  //   });
 
-    newArr.forEach(elem => {
-      for(j = 2 ; j < priceValueArrNodeList.length ; j++){
-        if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
-          newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
-        };
-      };
-    });
+  //   newArr.forEach(elem => {
+  //     for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+  //       if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+  //         newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+  //       };
+  //     };
+  //   });
 
-    newArrHTMLList.forEach(htmlElemList => {
-      htmlElemList.click();
-    });
-  };
+  //   newArrHTMLList.forEach(htmlElemList => {
+  //     htmlElemList.click();
+  //   });
+  // };
 
   btnSearch.addEventListener('click', runSorting);
 
