@@ -50,6 +50,20 @@
       <option value="800000">800 000 zł</option>
       <option value="1200000">1 000 000 zł</option>
     </select>
+
+    <div class="dropdown-filter myfilter">
+      <div class="menu-active"><span>Cena min</span> <i class="arrow down open"></i></div>
+
+      <div class="menu-passive" style="display: block;">
+        <i class="btn-close">x</i>
+        <div class="menu-passive__item item-0">
+          <a class="menu-link isDisabled multiple" href="#" data-selected="0" data-termid="450" data-name="0">0<span class="count">0</span></a>
+        </div>
+      </div>
+    </div>
+
+
+
     <!-- wp:group -->
     <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-full desktop:w-[230px] h-[62px] flex items-center justify-center gap-[15px] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
       <!-- wp:paragraph -->

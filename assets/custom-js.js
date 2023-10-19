@@ -347,15 +347,12 @@ window.addEventListener("load", function() {
   const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const priceValueArrHTMLCol = dropDownFilters[4].childNodes[1].children;
   const priceValueArrNodeList = dropDownFilters[4].childNodes[1].childNodes;
-
   const priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
   let priceValueArr = [];
 
   for (i = 2 ; i < priceValueArrNodeList.length ; i++){
     priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
-
     priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
-
   }
 
   console.log(priceValueArr);
