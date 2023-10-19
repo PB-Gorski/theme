@@ -57,7 +57,13 @@
       <div class="menu-passive" style="display: block;">
         <i class="btn-close">x</i>
         <div class="menu-passive__item item-0">
-          <a class="menu-link isDisabled multiple" href="#" data-selected="0" data-termid="450" data-name="0">0<span class="count">0</span></a>
+          <a class="menu-link isDisabled multiple" href="#" data-selected="0" data-termid="450" data-name="0">400000<span class="count">400000</span></a>
+        </div>
+      </div>
+      <div class="menu-passive" style="display: block;">
+        <i class="btn-close">x</i>
+        <div class="menu-passive__item item-0">
+          <a class="menu-link isDisabled multiple" href="#" data-selected="0" data-termid="450" data-name="0">500000<span class="count">500000</span></a>
         </div>
       </div>
     </div>
