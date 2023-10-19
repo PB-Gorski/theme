@@ -464,14 +464,26 @@ window.addEventListener("load", function() {
     </div>
   `;
 
+  if(document.body.classList.contains('post-type-archive-mieszkania')){
+    listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
+    dropDownFilters[2].insertAdjacentHTML('afterend', btnFilterSerach);
+    dropDownFilters[2].insertAdjacentHTML('afterend', btnMoreHTML);
+    dropDownFilters[2].insertAdjacentHTML('afterend', BtnCustomPriceSelect);
+    
+    // postsFoundHTML.insertAdjacentHTML('afterend', sortingStartingValueHTML);
+    // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
+
+
+  };
+
   // price selects
   const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const priceValueArrHTMLCol = dropDownFilters[4].childNodes[1].children;
   const priceValueArrNodeList = dropDownFilters[4].childNodes[1].childNodes;
   const priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
   let btnSearch = document.querySelector('.btn-search');
-  // let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
-  // let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
+  let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
+  let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
   let priceValueArr = [];
   let newArr = [];
   let newArrHTMLList = [];
@@ -509,28 +521,28 @@ window.addEventListener("load", function() {
     htmlElemList.click();
   });
 
-  // function runSorting(){
-  //   console.log('runSorting2');
-  //   priceValueArr.forEach(priceValue => {
-  //     if (priceValue < priceMaxValue && priceValue > priceMinValue){
-  //       newArr.push(priceValue);
-  //     };
-  //   });
+  function runSorting(){
+    console.log('runSorting2');
+    // priceValueArr.forEach(priceValue => {
+    //   if (priceValue < priceMaxValue && priceValue > priceMinValue){
+    //     newArr.push(priceValue);
+    //   };
+    // });
 
-  //   newArr.forEach(elem => {
-  //     for(j = 2 ; j < priceValueArrNodeList.length ; j++){
-  //       if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
-  //         newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
-  //       };
-  //     };
-  //   });
+    // newArr.forEach(elem => {
+    //   for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+    //     if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+    //       newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+    //     };
+    //   };
+    // });
 
-  //   newArrHTMLList.forEach(htmlElemList => {
-  //     htmlElemList.click();
-  //   });
-  // };
+    // newArrHTMLList.forEach(htmlElemList => {
+    //   htmlElemList.click();
+    // });
+  };
 
-  // btnSearch.addEventListener('click', runSorting);
+  btnSearch.addEventListener('click', runSorting);
 
 
 
@@ -554,17 +566,7 @@ window.addEventListener("load", function() {
     // postsFoundHTML.insertAdjacentHTML('afterend', '<p class="firstTime bg-white text-[24px] text-center aos-init aos-animate">Znaleziono ' + postsCount + ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>');
   });
 
-  if(document.body.classList.contains('post-type-archive-mieszkania')){
-    listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
-    dropDownFilters[2].insertAdjacentHTML('afterend', btnFilterSerach);
-    dropDownFilters[2].insertAdjacentHTML('afterend', btnMoreHTML);
-    dropDownFilters[2].insertAdjacentHTML('afterend', BtnCustomPriceSelect);
-    
-    // postsFoundHTML.insertAdjacentHTML('afterend', sortingStartingValueHTML);
-    // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
 
-
-  };
 
   
   // search more options handle
