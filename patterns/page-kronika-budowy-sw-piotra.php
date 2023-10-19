@@ -227,15 +227,6 @@
                   <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/maj-2023/img8.jpeg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
 
                 <!-- wp:group -->
                 <div class="wp-block-group swiper-slide">
