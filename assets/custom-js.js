@@ -345,6 +345,10 @@ window.addEventListener("load", function() {
 
 
   // sortowanie listy mieszkan
+  if(document.body.classList.contains('page-id-606') || document.body.classList.contains('page-id-11') || document.body.classList.contains('page-id-13')){
+  }
+
+
   const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
   const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const sortingBarHTML = `
@@ -374,20 +378,24 @@ window.addEventListener("load", function() {
       </p>
       <p class="text-[18px]">Więcej opcji</p>
     </div>
-  `
-  listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
-  dropDownFilters[3].insertAdjacentHTML('afterend', btnMoreHTML);
+  `;
+
+  if(document.body.classList.contains('post-type-archive-mieszkania')){
+    listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
+    dropDownFilters[3].insertAdjacentHTML('afterend', btnMoreHTML);
+  };
 
   
   // search more options handle
   const btnMore = document.querySelector('.btn-more');
   const searchBar = document.querySelector('.filter-entry');
   
-
-  btnMore.addEventListener('click',()=>{
-    console.log('more flters');
-    (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[160px]') : searchBar.classList.toggle('h-[450px]');
-  });
+  if(document.body.classList.contains('post-type-archive-mieszkania')){
+    btnMore.addEventListener('click',()=>{
+      console.log('more flters');
+      (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[160px]') : searchBar.classList.toggle('h-[450px]');
+    });
+  };
 
   function sortListDir(j) {
     let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
