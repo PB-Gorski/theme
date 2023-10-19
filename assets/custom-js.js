@@ -383,8 +383,14 @@ window.addEventListener("load", function() {
     console.log(parseInt(priceValueArrNodeList[indexFrom2].childNodes[1].dataset.name));
 
     for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+      console.log('inty calej listy:');
+      console.log(priceValueArrNodeList[j].childNodes[1].dataset.name);
+      
       if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
         newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+
+        console.log('elemnty przefiltrowane z listy:');
+        console.log(priceValueArrNodeList[j].childNodes[1].dataset.name);
       }
     }
 
