@@ -352,6 +352,12 @@ mainDropDown.forEach(dropDown =>{
   dropDown.addEventListener('click', function(e){
     console.log(e.target);
     e.target.nextSibling.classList.toggle('dropdown__list_active')
+    e.target.nextElementSibling.classList.toggle('dropdown__list_active')
+    e.target.nextNode.classList.toggle('dropdown__list_active')
+    console.log( e.target.nextSibling);
+    console.log( e.target.nextElementSibling);
+    console.log( e.target.nextNode);
+
   }
   );
 
