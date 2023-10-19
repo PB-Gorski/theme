@@ -394,7 +394,7 @@ window.addEventListener("load", function() {
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
     dropDownFilters[3].insertAdjacentHTML('afterend', btnMoreHTML);
-    postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
+    // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
   };
 
   
