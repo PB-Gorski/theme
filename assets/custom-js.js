@@ -353,10 +353,10 @@ mainDropDown.forEach(dropDown =>{
     console.log(e.target);
     // e.target.nextSibling.classList.toggle('dropdown__list_active')
     e.target.nextElementSibling.classList.toggle('dropdown__list_active')
-    e.target.nextNode.classList.toggle('dropdown__list_active')
-    console.log( e.target.nextSibling);
-    console.log( e.target.nextElementSibling);
-    console.log( e.target.nextNode);
+    // e.target.nextNode.classList.toggle('dropdown__list_active')
+    // console.log( e.target.nextSibling);
+    // console.log( e.target.nextElementSibling);
+    // console.log( e.target.nextNode);
 
   }
   );
@@ -365,19 +365,29 @@ mainDropDown.forEach(dropDown =>{
   // mainDropDown.addEventListener('click', openMenu);
 
 
-  function openMenu(e){
-    dropDownList.classList.toggle('dropdown__list_active')
-  }
+  // function openMenu(e){
+  //   dropDownList.classList.toggle('dropdown__list_active')
+  // }
 
+  // dropDowns.forEach(item => {
+  //   item.addEventListener('click',  choise)
+  // })
   dropDowns.forEach(item => {
     item.addEventListener('click',  choise)
   })
 
+  // function choise(event,){
+  //   event.preventDefault()
+  //   target = event.target.textContent
+  //   mainDropDown.textContent = (target)
+  //   dropDownList.classList.remove('dropdown__list_active')
+  //   console.log(target);
+  // }
   function choise(event,){
     event.preventDefault()
     target = event.target.textContent
     mainDropDown.textContent = (target)
-    dropDownList.classList.remove('dropdown__list_active')
+    // dropDownList.classList.remove('dropdown__list_active')
     console.log(target);
   }
   
