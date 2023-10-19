@@ -362,6 +362,7 @@ window.addEventListener("load", function() {
     target = event.target.textContent
     mainDropDown.textContent = (target)
     dropDownList.classList.remove('dropdown__list_active')
+    console.log(target);
   }
   
   
