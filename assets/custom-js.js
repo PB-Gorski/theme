@@ -343,12 +343,29 @@ window.addEventListener("load", function() {
 
 
   // sortowanie listy mieszkan
+  // price select
+  const dropDownFilters = document.querySelectorAll(".dropdown-filter");
+  const priceValueArrHTMLCol = dropDownFilters[4].childNodes[1].children;
+  const priceValueArrNodeList = dropDownFilters[4].childNodes[1].childNodes;
+
+  const priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
+  const priveValueArr = []
+
+  for (i = 2 ; i <= priceValueArrNodeList.length ; i++){
+    priveValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')))
+  }
+
+  console.log(priveValueArr);
+  
+
+
+
+
   if(document.body.classList.contains('page-id-606') || document.body.classList.contains('page-id-11') || document.body.classList.contains('page-id-13')){
   }
 
 
   const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
-  const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const sortingBarHTML = `
     <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[20px] flex flex-wrap items-center justify-between text-[13px] font-bold">
       <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
@@ -398,7 +415,7 @@ window.addEventListener("load", function() {
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
     dropDownFilters[4].insertAdjacentHTML('afterend', btnMoreHTML);
     
-    postsFoundHTML.insertAdjacentHTML('afterend', sortingStartingValueHTML);
+    // postsFoundHTML.insertAdjacentHTML('afterend', sortingStartingValueHTML);
     // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
 
 
