@@ -342,32 +342,7 @@ window.addEventListener("load", function() {
   });
 
 
-  // dropdown test
-  // const mainDropDown = document.querySelectorAll('.dropdown__value');
-  // const dropDownList = document.querySelectorAll('.dropdown__list');
-  // const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
-  // let target;
 
-  // mainDropDown.forEach(dropDown =>{
-  //   dropDown.addEventListener('click', (e) =>{
-  //     e.target.nextElementSibling.classList.toggle('dropdown__list_active');
-  //   });
-  // });
-
-  // dropDowns.forEach(item => {
-  //   item.addEventListener('click',  choise)
-  // });
-
-  // function choise(e,){
-  //   e.preventDefault();
-  //   target = e.target.textContent;
-  //   e.target.parentNode.parentNode.previousElementSibling.textContent = (target);
-  //   dropDownList.forEach(el =>{
-  //     if(el.classList.contains('dropdown__list_active')){
-  //       el.classList.remove('dropdown__list_active')
-  //     };
-  //   });
-  // };
 
 
   // sortowanie listy mieszkan
@@ -475,6 +450,33 @@ window.addEventListener("load", function() {
 
 
   };
+
+    // dropdown test
+    const mainDropDown = document.querySelectorAll('.dropdown__value');
+    const dropDownList = document.querySelectorAll('.dropdown__list');
+    const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
+    let target;
+  
+    mainDropDown.forEach(dropDown =>{
+      dropDown.addEventListener('click', (e) =>{
+        e.target.nextElementSibling.classList.toggle('dropdown__list_active');
+      });
+    });
+  
+    dropDowns.forEach(item => {
+      item.addEventListener('click',  choise)
+    });
+  
+    function choise(e,){
+      e.preventDefault();
+      target = e.target.textContent;
+      e.target.parentNode.parentNode.previousElementSibling.textContent = (target);
+      dropDownList.forEach(el =>{
+        if(el.classList.contains('dropdown__list_active')){
+          el.classList.remove('dropdown__list_active')
+        };
+      });
+    };
 
   // price selects
   const dropDownFilters = document.querySelectorAll(".dropdown-filter");
