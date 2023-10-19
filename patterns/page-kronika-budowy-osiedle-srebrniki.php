@@ -818,7 +818,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/listopad-2021/img36.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/sierpien-2021/img36.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -827,7 +827,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/listopad-2021/img37.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/sierpien-2021/img37.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -836,7 +836,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/listopad-2021/img38.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/sierpien-2021/img38.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
