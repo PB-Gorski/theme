@@ -389,6 +389,7 @@ window.addEventListener("load", function() {
     // postsCount = res.found;
     // console.log(res.found);
     // console.log('Complete loaded data ' + target + ' ' + res.found);
+    console.log('hook completed');
     return res.found;
   });
 
