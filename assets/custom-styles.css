@@ -438,6 +438,9 @@ option:hover {
 .filter-layout3-148{
   padding-top: 10px;
 }
+.ymc-smart-filter-container .filter-layout3 .posts-found{
+  margin-bottom: 0;
+}
 .ymc-smart-filter-container .filter-layout3 .posts-found:empty {
   display: block!important;
 }
