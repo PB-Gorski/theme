@@ -383,18 +383,18 @@ window.addEventListener("load", function() {
   const postsFoundHTML = document.querySelector('.posts-found');
   const postsFoundParentHTML = document.querySelector('.filter-layout3-148');
 
-  let counter = false;
+  let counter;
   
   let postsCount = wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
     // postsCount = res.found;
     // console.log(res.found);
     // console.log('Complete loaded data ' + target + ' ' + res.found);
     console.log('hook completed');
-    postsCount = res.found;
+    counter = res.found;
   });
 
 
-    console.log('post found from js ', postsCount);
+    console.log('post found from js ', counter);
    // if(!counter){
     
 
