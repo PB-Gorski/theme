@@ -392,9 +392,12 @@ window.addEventListener("load", function() {
       `;
       console.log('Complete loaded data ' + target + ' ' + res.found);
 
-      postsFoundHTML.insertAdjacentHTML('afterend', '<p class="text-[24px] text-center aos-init aos-animate">Znaleziono ' + res.found + ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>');
+      postsFoundHTML.insertAdjacentHTML('afterend', '<p class="firstTime text-[24px] text-center aos-init aos-animate">Znaleziono ' + res.found + ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>');
       counter = true;
     };
+    if(counter){
+      document.querySelector('.firstTime').classList.add('hidden');
+    }
   });
 
   postsFoundHTML.innerText = 'test';
