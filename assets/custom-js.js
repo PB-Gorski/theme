@@ -371,14 +371,13 @@ window.addEventListener("load", function() {
   console.log(res);
 
 
-  let arr = [5, 3, 8, 1];
 
-let filtered = filterRange(arr, 1, 4);
 
-alert( filtered ); // 3,1 (matching values)
+  priceValueArr.forEach(priceValue => {
+    if (priceValue < 600000){
 
-alert( arr ); // 5,3,8,1 (not modified)
-  
+    }
+  })
 
 
 
