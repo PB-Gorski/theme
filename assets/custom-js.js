@@ -440,8 +440,8 @@ window.addEventListener("load", function() {
   `;
   const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
   let btnSearch = document.querySelector('.btn-search');
-  let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
-  let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
+  // let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
+  // let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
   const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const mainDropDown = document.querySelectorAll('.dropdown__value');
   const dropDownList = document.querySelectorAll('.dropdown__list');
