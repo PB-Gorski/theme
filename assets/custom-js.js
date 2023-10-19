@@ -485,55 +485,55 @@ window.addEventListener("load", function() {
 
   // price selects
   // nodeElem to int
-  for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-    priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
-    priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
-  }
+  // for (i = 2 ; i < priceValueArrNodeList.length ; i++){
+  //   priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+  //   priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
+  // }
 
-  console.log(priceValueArr);
+  // console.log(priceValueArr);
 
-  priceValueArr.forEach(priceValue => {
-    if (priceValue < 600000 && priceValue > 400000){
-      newArr.push(priceValue);
-    };
-  });
+  // priceValueArr.forEach(priceValue => {
+  //   if (priceValue < 600000 && priceValue > 400000){
+  //     newArr.push(priceValue);
+  //   };
+  // });
 
-  console.log(newArr);
+  // console.log(newArr);
 
-  newArr.forEach(elem => {
-    for(j = 2 ; j < priceValueArrNodeList.length ; j++){
-      if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
-        newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
-      };
-    };
-  });
+  // newArr.forEach(elem => {
+  //   for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+  //     if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+  //       newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+  //     };
+  //   };
+  // });
 
-  console.log(newArrHTMLList);
+  // console.log(newArrHTMLList);
 
-  newArrHTMLList.forEach(htmlElemList => {
-    htmlElemList.click();
-  });
+  // newArrHTMLList.forEach(htmlElemList => {
+  //   htmlElemList.click();
+  // });
 
-  function runSorting(){
-    console.log('runSorting2');
-    priceValueArr.forEach(priceValue => {
-      if (priceValue < priceMaxValue && priceValue > priceMinValue){
-        newArr.push(priceValue);
-      };
-    });
+  // function runSorting(){
+  //   console.log('runSorting2');
+  //   priceValueArr.forEach(priceValue => {
+  //     if (priceValue < priceMaxValue && priceValue > priceMinValue){
+  //       newArr.push(priceValue);
+  //     };
+  //   });
 
-    newArr.forEach(elem => {
-      for(j = 2 ; j < priceValueArrNodeList.length ; j++){
-        if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
-          newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
-        };
-      };
-    });
+  //   newArr.forEach(elem => {
+  //     for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+  //       if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+  //         newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+  //       };
+  //     };
+  //   });
 
-    newArrHTMLList.forEach(htmlElemList => {
-      htmlElemList.click();
-    });
-  };
+  //   newArrHTMLList.forEach(htmlElemList => {
+  //     htmlElemList.click();
+  //   });
+  // };
 
   btnSearch.addEventListener('click', runSorting);
   mainDropDown.forEach(dropDownEl =>{
