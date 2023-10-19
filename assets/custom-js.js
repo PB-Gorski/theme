@@ -352,7 +352,7 @@ window.addEventListener("load", function() {
   const priveValueArr = []
 
   for (i = 2 ; i <= priceValueArrNodeList.length ; i++){
-    priveValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')))
+    console.log((parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''))));
   }
 
   console.log(priveValueArr);
