@@ -376,8 +376,9 @@ window.addEventListener("load", function() {
 
   let newArrHTMList = [];
   newArr.forEach((elem,index) => {
-    if (priceValueArrNodeList[index].childNodes[1].dataset.name == elem){
-      newArrHTMList.push(priceValueArrNodeList[index].childNodes[1])
+    let indexFrom2 = index + 2;
+    if (priceValueArrNodeList[indexFrom2].childNodes[1].dataset.name == elem){
+      newArrHTMList.push(priceValueArrNodeList[indexFrom2].childNodes[1])
     }
 
   })
