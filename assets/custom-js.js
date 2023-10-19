@@ -388,7 +388,7 @@ window.addEventListener("load", function() {
     // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
     // if(!counter){
       const sortingStartingValue = `
-        <p class="text-[24px] text-center aos-init aos-animate">Znaleziono 39 ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>
+        <p class="text-[24px] text-center aos-init aos-animate">Znaleziono x ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>
       `;
       console.log('Complete loaded data ' + target + ' ' + res.found);
 
@@ -396,7 +396,7 @@ window.addEventListener("load", function() {
       counter = true;
     // };
     // if(counter){
-      document.querySelector('.firstTime').classList.add('hidden');
+      // document.querySelector('.firstTime').classList.add('hidden');
     // }
   });
 
