@@ -340,6 +340,15 @@
       </figure>
       <!-- /wp:embed -->
 
+
+      <!-- wp:embed {"url":"https://www.youtube.com/watch?v=QZXc39hT8t4","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+      <figure class="wp-block-embed video-yt opacity-0 is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+        <div class="wp-block-embed__wrapper">
+          https://www.youtube.com/watch?v=QZXc39hT8t4
+        </div>
+      </figure>
+      <!-- /wp:embed -->
+
       <!-- wp:group -->
       <div id="styczen-2022" class="wp-block-group row-wrzesien mb-[80px]">
         <!-- wp:group -->
