@@ -1714,7 +1714,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/luty-2020/img83.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/luty-2020/img83.jpg" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -1723,7 +1723,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/luty-2020/img84.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/luty-2020/img84.jpg" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -1732,7 +1732,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/luty-2020/img85.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/luty-2020/img85.jpg" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -1741,7 +1741,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/luty-2020/img86.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/kronika-budowy/luty-2020/img86.jpg" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
