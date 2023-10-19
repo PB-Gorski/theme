@@ -893,7 +893,7 @@
         <!-- wp:group -->
         <div class="wp-block-group col-sm-6 col-sm-push-3">
           <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Wrzesien 2021</p>
+          <p class="mb-[20px] text-[#8a8f99]">Wrzesień 2021</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group swiper-container">
