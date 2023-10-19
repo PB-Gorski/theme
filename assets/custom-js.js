@@ -389,12 +389,17 @@ window.addEventListener("load", function() {
     priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
   }
 
+  console.log(priceValueArr);
+
+
   console.log('backup');
   priceValueArr.forEach(priceValue => {
     if (priceValue < 600000 && priceValue > 400000){
       newArr.push(priceValue);
     };
   });
+
+  console.log(newArr);
 
   newArr.forEach(elem => {
     for(j = 2 ; j < priceValueArrNodeList.length ; j++){
@@ -403,6 +408,9 @@ window.addEventListener("load", function() {
       };
     };
   });
+
+  console.log(newArrHTMLList);
+
 
   newArrHTMLList.forEach(htmlElemList => {
     htmlElemList.click();
