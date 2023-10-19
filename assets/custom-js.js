@@ -390,7 +390,7 @@ window.addEventListener("load", function() {
   }
 
   function runSorting(){
-    console.log('runSorting');
+    console.log('runSorting2');
     priceValueArr.forEach(priceValue => {
       if (priceValue < priceMaxValue && priceValue > priceMinValue){
         newArr.push(priceValue);
@@ -410,7 +410,7 @@ window.addEventListener("load", function() {
     });
   };
 
-  btnSearch.addEventListener('click', runSorting);
+  btnSearch.addEventListener('click', runSorting());
 
 
 
