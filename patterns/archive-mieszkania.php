@@ -44,7 +44,7 @@
       <option value="1200000">1 000 000 zł</option>
     </select> -->
 
-    <div class="dropdown-filter myfilter">
+    <div class="dropdown-filter myfilter my-[120px]">
       <div class="menu-active"><span>Cena min</span> <i class="arrow down open"></i></div>
 
       <div class="menu-passive" style="display: block;">
