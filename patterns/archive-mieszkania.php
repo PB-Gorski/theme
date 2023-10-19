@@ -61,6 +61,15 @@
     <!-- wp:list -->
     <ul class="wp-block-list js-lista-mieszkan-list w-full bg-white">
       <!-- wp:list-item -->
+      <li class="priceTest">
+        <!-- wp:group -->
+        <div class="dropdown-filter">
+          <input type="text">
+        </div>
+        <!-- /wp:group -->
+      </li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
       <li class="short-code-ymc-filter applyContainer1">
         <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
       </li>
