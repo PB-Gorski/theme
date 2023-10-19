@@ -318,7 +318,7 @@ window.addEventListener("load", function() {
     // });
 
 
-  // dropdown handle
+  // contact dropdown handle
   const clickBar = document.querySelectorAll(".click-bar");
   const stepParagraph = document.querySelectorAll(".step-paragraph");
   const clickBarIcon = document.querySelectorAll('.click-bar-icon');
@@ -340,9 +340,6 @@ window.addEventListener("load", function() {
       }
     });
   });
-
-
-
 
 
   // sortowanie listy mieszkan
@@ -458,11 +455,7 @@ window.addEventListener("load", function() {
     dropDownFilters[2].insertAdjacentHTML('afterend', btnFilterSerach);
     dropDownFilters[2].insertAdjacentHTML('afterend', btnMoreHTML);
     // dropDownFilters[2].insertAdjacentHTML('afterend', BtnCustomPriceSelect);
-    
-    // postsFoundHTML.insertAdjacentHTML('afterend', sortingStartingValueHTML);
-    // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
   };
-
 
   let btnSearch = document.querySelector('.btn-search');
 
@@ -474,7 +467,6 @@ window.addEventListener("load", function() {
       e.target.nextElementSibling.classList.toggle('dropdown__list_active');
     });
   });
-
 
   dropDowns.forEach(item => {
     item.addEventListener('click', choise)
@@ -492,36 +484,7 @@ window.addEventListener("load", function() {
   };
 
   // price selects
-  // nodeElem to int
-  // for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-  //   priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
-  //   priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
-  // }
-
   console.log(priceValueArr);
-
-  // priceValueArr.forEach(priceValue => {
-  //   if (priceValue < 600000 && priceValue > 400000){
-  //     newArr.push(priceValue);
-  //   };
-  // });
-
-  // console.log(newArr);
-
-  // newArr.forEach(elem => {
-  //   for(j = 2 ; j < priceValueArrNodeList.length ; j++){
-  //     if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
-  //       newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
-  //     };
-  //   };
-  // });
-
-  // console.log(newArrHTMLList);
-
-  // newArrHTMLList.forEach(htmlElemList => {
-  //   htmlElemList.click();
-  // });
-
   function runSorting(){
     priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
     priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
@@ -536,7 +499,6 @@ window.addEventListener("load", function() {
       priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
     }
   
-
     priceValueArr.forEach(priceValue => {
       if (priceValue < priceMaxValue && priceValue > priceMinValue){
         newArr.push(priceValue);
@@ -560,14 +522,8 @@ window.addEventListener("load", function() {
   btnSearch.addEventListener('click', runSorting);
 
 
-
-
-
-
   if(document.body.classList.contains('page-id-606') || document.body.classList.contains('page-id-11') || document.body.classList.contains('page-id-13')){
   }
-
-
 
 
   const postsFoundHTML = document.querySelector('.posts-found');
@@ -607,35 +563,6 @@ window.addEventListener("load", function() {
       b = list.querySelectorAll('.post-item');
       for (i = 0; i < (b.length - 1); i++) {
         shouldSwitch = false;
-        // if (dir == "asc") {
-        //   if (b[i].firstElementChild.childNodes[j].innerText.toLowerCase() > b[i + 1].firstElementChild.childNodes[j].innerText.toLowerCase()) {
-        //     shouldSwitch = true;
-        //     break;
-        //   }
-        // } else if (dir == "desc") {
-        //   if (b[i].firstElementChild.childNodes[j].innerText.toLowerCase() < b[i + 1].firstElementChild.childNodes[j].innerText.toLowerCase()) {
-        //     shouldSwitch= true;
-        //     break;
-        //   }
-        // }
-
-        // working
-        // if (dir == "asc") {
-        //   // console.log('j: ',j);
-        //   if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i+1].firstChild.childNodes[j].firstChild.textContent) {
-        //     shouldSwitch = true;
-        //     break;
-        //   }
-        // }else if (dir == "desc") {
-        //   if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i+1].firstChild.childNodes[j].firstChild.textContent) {
-        //     shouldSwitch= true;
-        //     break;
-        //   }
-        // } 
-        
-        // new
-        // b[0].firstChild.childNodes[7].firstChild.textContent.split(' ').join('');
-        // console.log('i: ',i);
         if (dir == "asc") {
           if(j!=7){
             if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i+1].firstChild.childNodes[j].firstChild.textContent) {
@@ -676,38 +603,6 @@ window.addEventListener("load", function() {
     }
   }
 
-
-
-
-  // const btnsSort = document.querySelectorAll('.js-sort');
-  // let counter = 1;
-
-  // btnsSort.forEach((btn,index) => {
-  //   btn.addEventListener('click', () => {
-  //     indexFrom1 = index + 1;
-  //     indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
-  //     currentFiltr = indexFrom1 + index;
-
-  //     for (let i = 1 ; i <= (17) ; i=+2){
-  //       if (i == currentFiltr){
-  //         if( btnsSort[currentFiltr-counter].classList.contains('sort-arrow-up')){
-  //           btnsSort[currentFiltr-counter].classList.remove('sort-arrow-up');
-  //           btnsSort[currentFiltr-counter].classList.add('sort-arrow-down');
-  //         }else{
-  //           btnsSort[currentFiltr-counter].classList.remove('sort-arrow-down');
-  //           btnsSort[currentFiltr-counter].classList.add('sort-arrow-up');
-  //         }
-  //       }else if(i != currentFiltr){
-  //         btnsSort[i-counter].classList.remove('sort-arrow-up','sort-arrow-down')
-  //       }
-  //       counter++
-  //     };
-  //     counter = 1;
-  //   });
-  // });
-
-
-
   // ---------------
 
   const btnsSort = document.querySelectorAll('.js-sort');
@@ -717,10 +612,8 @@ window.addEventListener("load", function() {
     btn.addEventListener('click', () => {
       indexFrom1 = index + 1;
       // indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
-      
       // dla poprzedniej listy:
       currentFiltr = indexFrom1 + index;
-
       // console.log('indexFrom1: ', indexFrom1);
       // console.log('currentFiltr: ',currentFiltr);
 
