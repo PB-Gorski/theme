@@ -343,13 +343,22 @@ window.addEventListener("load", function() {
 
 
   // dropdown test
-  const mainDropDown = document.querySelector('.dropdown__value')
+  const mainDropDown = document.querySelectorAll('.dropdown__value')
+  const dropDownList = document.querySelectorAll('.dropdown__list')
   const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'))
-  const dropDownList = document.querySelector('.dropdown__list')
-  let target
-  mainDropDown.addEventListener('click', openMenu)
+  let target;
 
-  function openMenu(){
+mainDropDown.forEach(dropDown =>{
+  dropDown.addEventListener('click', function(e){
+    console.log(e.target);
+  }
+  );
+
+})
+  // mainDropDown.addEventListener('click', openMenu);
+
+
+  function openMenu(e){
     dropDownList.classList.toggle('dropdown__list_active')
   }
 

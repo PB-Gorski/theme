@@ -46,8 +46,8 @@
 
     <div class="mySortingBar container mx-auto flex gap-[10px]">
       <div class="content h-[250px]">
-        <div class="card">
-          <div class="dropdown dropdown-min">
+        <div class="card flex gap-[10]">
+          <div class="dropdown">
             <div class="dropdown__value">min</div>
             <ul class="dropdown__list">
               <li class="dropdown__item">
@@ -64,7 +64,7 @@
               </li>
             </ul>
           </div>
-          <div class="dropdown dropdown-max">
+          <div class="dropdown">
             <div class="dropdown__value">max</div>
             <ul class="dropdown__list">
               <li class="dropdown__item">
