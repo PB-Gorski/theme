@@ -499,32 +499,32 @@ window.addEventListener("load", function() {
 
   console.log(priceValueArr);
 
-  priceValueArr.forEach(priceValue => {
-    if (priceValue < priceMaxValue && priceValue > priceMinValue){
-      newArr.push(priceValue);
-    };
-  });
+  // priceValueArr.forEach(priceValue => {
+  //   if (priceValue < 600000 && priceValue > 400000){
+  //     newArr.push(priceValue);
+  //   };
+  // });
 
-  console.log(newArr);
+  // console.log(newArr);
 
-  newArr.forEach(elem => {
-    for(j = 2 ; j < priceValueArrNodeList.length ; j++){
-      if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
-        newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
-      };
-    };
-  });
+  // newArr.forEach(elem => {
+  //   for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+  //     if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+  //       newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+  //     };
+  //   };
+  // });
 
-  console.log(newArrHTMLList);
+  // console.log(newArrHTMLList);
 
-  newArrHTMLList.forEach(htmlElemList => {
-    htmlElemList.click();
-  });
+  // newArrHTMLList.forEach(htmlElemList => {
+  //   htmlElemList.click();
+  // });
 
   function runSorting(){
     console.log('runSorting2');
     priceValueArr.forEach(priceValue => {
-      if (priceValue < priceMaxValue && priceValue > priceMinValue){
+      if (priceValue < 500000 && priceValue > 400000){
         newArr.push(priceValue);
       };
     });
@@ -540,6 +540,7 @@ window.addEventListener("load", function() {
     newArrHTMLList.forEach(htmlElemList => {
       htmlElemList.click();
     });
+    console.log('runSorting2 finish');
   };
 
   btnSearch.addEventListener('click', runSorting);
