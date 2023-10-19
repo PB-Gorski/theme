@@ -516,6 +516,8 @@ window.addEventListener("load", function() {
     newArrHTMLList.forEach(htmlElemList => {
       htmlElemList.click();
     });
+
+    console.log(htmlElemList);
     console.log('runSorting2 finish');
   };
 
