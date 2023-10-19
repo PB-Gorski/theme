@@ -383,13 +383,15 @@ mainDropDown.forEach(dropDown =>{
   //   dropDownList.classList.remove('dropdown__list_active')
   //   console.log(target);
   // }
-  function choise(event,){
-    event.preventDefault()
-    target = event.target.textContent
+  function choise(e,){
+    e.preventDefault()
+    target = e.target.textContent
     mainDropDown.textContent = (target)
-    if(dropDownList.contains('dropdown__list_active')){
-      dropDownList.classList.remove('dropdown__list_active')
-    };
+    dropDownList.forEach(el =>{
+      if(el.contains('dropdown__list_active')){
+        el.classList.remove('dropdown__list_active')
+      };
+    })
     console.log(target);
   }
   
