@@ -34,22 +34,15 @@
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
-
-
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group -->
-    <div class="dropdown-filter">
-      <input type="text" placeholder="Cena max">
-    </div>
-    <!-- /wp:group -->
-    <select name="priceMax" id="priceMax">
+    <!-- <select name="priceMax" id="priceMax">
       <option value="400000">400 000 zł</option>
       <option value="600000">600 000 zł</option>
       <option value="800000">800 000 zł</option>
       <option value="1200000">1 000 000 zł</option>
-    </select>
+    </select> -->
 
     <div class="dropdown-filter myfilter">
       <div class="menu-active"><span>Cena min</span> <i class="arrow down open"></i></div>
@@ -57,18 +50,16 @@
       <div class="menu-passive" style="display: block;">
         <i class="btn-close">x</i>
         <div class="menu-passive__item item-0">
-          <a class="menu-link isDisabled multiple" href="#" data-selected="0" data-termid="450" data-name="0">400000<span class="count">400000</span></a>
+          <a class="menu-link isDisabled multiple" href="#" data-selected="400000" data-termid="450" data-name="400000">400000<span class="count">400000</span></a>
         </div>
       </div>
       <div class="menu-passive" style="display: block;">
         <i class="btn-close">x</i>
         <div class="menu-passive__item item-0">
-          <a class="menu-link isDisabled multiple" href="#" data-selected="0" data-termid="450" data-name="0">500000<span class="count">500000</span></a>
+          <a class="menu-link isDisabled multiple" href="#" data-selected="500000" data-termid="450" data-name="500000">500000<span class="count">500000</span></a>
         </div>
       </div>
     </div>
-
-
 
     <!-- wp:group -->
     <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-full desktop:w-[230px] h-[62px] flex items-center justify-center gap-[15px] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
