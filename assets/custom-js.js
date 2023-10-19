@@ -460,34 +460,33 @@ window.addEventListener("load", function() {
     // postsFoundHTML.insertAdjacentHTML('afterend', sortingStartingValueHTML);
     // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
   };
+
   let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
   let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
   let btnSearch = document.querySelector('.btn-search');
 
-    // dropdown test
+  // dropdown test
+  mainDropDown.forEach(dropDown =>{
+    dropDown.addEventListener('click', (e) =>{
+      console.log('show min/max list');
+      e.target.nextElementSibling.classList.toggle('dropdown__list_active');
+    });
+  });
 
-  
-    mainDropDown.forEach(dropDown =>{
-      dropDown.addEventListener('click', (e) =>{
-        console.log('show min/max list');
-        e.target.nextElementSibling.classList.toggle('dropdown__list_active');
-      });
+  dropDowns.forEach(item => {
+    item.addEventListener('click',  choise)
+  });
+
+  function choise(e,){
+    e.preventDefault();
+    target = e.target.textContent;
+    e.target.parentNode.parentNode.previousElementSibling.textContent = (target);
+    dropDownList.forEach(el =>{
+      if(el.classList.contains('dropdown__list_active')){
+        el.classList.remove('dropdown__list_active')
+      };
     });
-  
-    dropDowns.forEach(item => {
-      item.addEventListener('click',  choise)
-    });
-  
-    function choise(e,){
-      e.preventDefault();
-      target = e.target.textContent;
-      e.target.parentNode.parentNode.previousElementSibling.textContent = (target);
-      dropDownList.forEach(el =>{
-        if(el.classList.contains('dropdown__list_active')){
-          el.classList.remove('dropdown__list_active')
-        };
-      });
-    };
+  };
 
   // price selects
   // nodeElem to int
