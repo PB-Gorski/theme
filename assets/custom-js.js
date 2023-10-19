@@ -356,6 +356,7 @@ window.addEventListener("load", function() {
   }
 
   console.log(priceValueArr);
+  console.log('------');
   console.log(filterRange(priceValueArr, 400000, 600000));
   
 
