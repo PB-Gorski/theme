@@ -538,7 +538,7 @@ window.addEventListener("load", function() {
   
 
     priceValueArr.forEach(priceValue => {
-      if (priceValue < 500000 && priceValue > 400000){
+      if (priceValue < priceMaxValue && priceValue > priceMinValue){
         newArr.push(priceValue);
       };
     });
