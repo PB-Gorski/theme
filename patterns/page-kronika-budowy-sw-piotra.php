@@ -1303,11 +1303,11 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div id="grudzien-2020" class="wp-block-group row-czerwiec mb-[80px]">
+      <div id="listopad-2020" class="wp-block-group row-czerwiec mb-[80px]">
         <!-- wp:group -->
         <div class="wp-block-group col-sm-6 col-sm-push-3">
           <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Grudzień 2020</p>
+          <p class="mb-[20px] text-[#8a8f99]">Listopad 2020</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group swiper-container">
@@ -1323,7 +1323,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/grudzien-2020/img56.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/listopad-2020/img65.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -1332,7 +1332,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/grudzien-2020/img57.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/listopad-2020/img66.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -1341,7 +1341,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/grudzien-2020/img58.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/listopad-2020/img67.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -1350,16 +1350,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/grudzien-2020/img59.png" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/grudzien-2020/img60.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/listopad-2020/img68.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
