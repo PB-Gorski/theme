@@ -1,7 +1,5 @@
 window.addEventListener("load", function() {
-  wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
-    console.log('Complete loaded data ' + target + ' ' + res.found);
-});
+
   const body = document.body;
   // navbar mobile handling
   const btnOpenMenu = document.querySelector(".btn-open-menu");
@@ -379,6 +377,13 @@ window.addEventListener("load", function() {
       <p class="text-[18px]">Więcej opcji</p>
     </div>
   `;
+  const postsFoundHTML = document.querySelector('.posts-found');
+  
+  wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
+    console.log('Complete loaded data ' + target + ' ' + res.found);
+  });
+
+  postsFoundHTML.innerText = 'test';
 
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
