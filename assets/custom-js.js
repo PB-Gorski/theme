@@ -353,6 +353,8 @@ window.addEventListener("load", function() {
 
   for (i = 2 ; i < priceValueArrNodeList.length ; i++){
     priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.selected.split(' ').join('')));
+    priceValueArrNodeList[i].childNodes[1].dataset.selected = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.selected.split(' ').join(''));
+
   }
 
   console.log(priceValueArr);
@@ -368,9 +370,9 @@ window.addEventListener("load", function() {
     };
   });
 
-  newArr.forEach(elem => {
+  // newArr.forEach(elem => {
 
-  })
+  // })
 
   console.log('newArr');
   console.log(newArr);
