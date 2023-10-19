@@ -43,7 +43,7 @@
       <option value="800000">800 000 zł</option>
       <option value="1200000">1 000 000 zł</option>
     </select> -->
-    <div id="ymc-smart-filter-container-1" class="ymc-smart-filter-container my-[50px] ymc-filter-148 ymc-loaded-filter ymc-filter-layout3 ymc-post-custom-layout ymc-pagination-numeric data-target-ymc148-1 data-target-ymc1 ">
+    <div id="ymc-smart-filter-container-1" class="ymc-smart-filter-container2 my-[50px] ymc-filter-148 ymc-loaded-filter ymc-filter-layout3 ymc-post-custom-layout ymc-pagination-numeric data-target-ymc148-1 data-target-ymc1 ">
       <div id="filter-layout3-1" class="filter-layout filter-layout3 filter-layout3-148 filter-layout3-148-1">
         <div class="filter-entry">
           <div class="dropdown-filter">
