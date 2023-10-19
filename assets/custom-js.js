@@ -388,16 +388,16 @@ window.addEventListener("load", function() {
           <div class="dropdown__value dropdown__value-min">min</div>
           <ul class="dropdown__list">
             <li class="dropdown__item">
-              <a href="" class="dropdown__link">400000</a>
+              <a href="javascript:void(0);" class="dropdown__link">400000</a>
             </li>
             <li class="dropdown__item">
-              <a href="" class="dropdown__link">500000</a>
+              <a href="javascript:void(0);" class="dropdown__link">500000</a>
             </li>
             <li class="dropdown__item">
-              <a href="" class="dropdown__link">600000</a>
+              <a href="javascript:void(0);" class="dropdown__link">600000</a>
             </li>
             <li class="dropdown__item">
-              <a href="" class="dropdown__link">800000</a>
+              <a href="javascript:void(0);" class="dropdown__link">800000</a>
             </li>
           </ul>
         </div>
@@ -405,16 +405,16 @@ window.addEventListener("load", function() {
           <div class="dropdown__value dropdown__value-max">max</div>
           <ul class="dropdown__list">
             <li class="dropdown__item">
-              <a href="" class="dropdown__link">400002</a>
+              <a href="javascript:void(0);" class="dropdown__link">400002</a>
             </li>
             <li class="dropdown__item">
-              <a href="" class="dropdown__link">500002</a>
+              <a href="javascript:void(0);" class="dropdown__link">500002</a>
             </li>
             <li class="dropdown__item">
-              <a href="" class="dropdown__link">600002</a>
+              <a href="javascript:void(0);" class="dropdown__link">600002</a>
             </li>
             <li class="dropdown__item">
-              <a href="" class="dropdown__link">800002</a>
+              <a href="javascript:void(0);" class="dropdown__link">800002</a>
             </li>
           </ul>
         </div>
