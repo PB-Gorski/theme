@@ -15,7 +15,7 @@
     <div class="content h-[59px]">
       <div class="card flex gap-[1px]">
         <div class="dropdown w-[140px]">
-          <div class="dropdown__value dropdown__value-min">min</div>
+          <div class="dropdown__value dropdown__value-min">min<i class="arrow down"></i></div>
           <ul class="dropdown__list">
             <li class="dropdown__item">
               <a href="javascript:void(0);" class="dropdown__link">400000</a>
@@ -32,7 +32,7 @@
           </ul>
         </div>
         <div class="dropdown w-[140px]">
-          <div class="dropdown__value dropdown__value-max">max</div>
+          <div class="dropdown__value dropdown__value-max">max<i class="arrow down"></i></div>
           <ul class="dropdown__list">
             <li class="dropdown__item">
               <a href="javascript:void(0);" class="dropdown__link">400002</a>
