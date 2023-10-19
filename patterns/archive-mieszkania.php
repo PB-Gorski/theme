@@ -48,7 +48,7 @@
       <div class="content h-[250px]">
         <div class="card">
           <div class="dropdown">
-            <div class="dropdown__value">400000</div>
+            <div class="dropdown__value">0</div>
             <ul class="dropdown__list">
               <li class="dropdown__item">
                 <a href="" class="dropdown__link">400000</a>
