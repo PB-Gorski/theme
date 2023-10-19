@@ -380,6 +380,9 @@ window.addEventListener("load", function() {
   const sortingStartingValue = `
     <p class="text-[24px] text-center aos-init aos-animate">Znaleziono 39 ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>
   `;
+  const sortingStartingValueHTML =`
+    <p class="mb-[50px] bg-white text-[24px] text-center" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo $count - 1; ?> oferty pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
+  `;
   const postsFoundHTML = document.querySelector('.posts-found');
   const postsFoundParentHTML = document.querySelector('.filter-layout3-148');
   
@@ -394,7 +397,11 @@ window.addEventListener("load", function() {
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
     dropDownFilters[4].insertAdjacentHTML('afterend', btnMoreHTML);
+    
+    postsFoundHTML.insertAdjacentHTML('afterend', sortingStartingValueHTML);
     // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
+
+
   };
 
   
