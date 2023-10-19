@@ -387,7 +387,9 @@ mainDropDown.forEach(dropDown =>{
     event.preventDefault()
     target = event.target.textContent
     mainDropDown.textContent = (target)
-    // dropDownList.classList.remove('dropdown__list_active')
+    if(dropDownList.contains('dropdown__list_active')){
+      dropDownList.classList.remove('dropdown__list_active')
+    };
     console.log(target);
   }
   
