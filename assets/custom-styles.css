@@ -797,8 +797,8 @@ background-color: #e8fbff!important;
 }
 
 .dropdown__value {
-  color: #fff;
-  background: gray;
+  color: #999;
+  background: white;
   box-sizing: border-box;
   padding: 10px;
   display: flex;
@@ -827,7 +827,6 @@ background-color: #e8fbff!important;
   width: 108px;
   border: 1px solid gray;
   border-bottom: none;
-  border-radius: 4px;
 }
 
 .dropdown__link {
