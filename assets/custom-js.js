@@ -378,8 +378,8 @@ window.addEventListener("load", function() {
   let newArrHTMLList = [];
   newArr.forEach((elem,index) => {
     let indexFrom2 = index + 2;
-    console.log(indexFrom2);
-    console.log(elem);
+    console.log('name without spaces');
+    console.log(priceValueArrNodeList[indexFrom2].childNodes[1].dataset.name);
     if (priceValueArrNodeList[indexFrom2].childNodes[1].dataset.name == elem){
       newArrHTMLList.push(priceValueArrNodeList[indexFrom2].childNodes[1])
     }
