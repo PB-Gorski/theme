@@ -461,8 +461,7 @@ window.addEventListener("load", function() {
     // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
   };
 
-  let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
-  let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
+
   let btnSearch = document.querySelector('.btn-search');
 
   // dropdown test
@@ -522,8 +521,12 @@ window.addEventListener("load", function() {
   // });
 
   function runSorting(){
+    let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
+    let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
+    console.log(priceMinValue,priceMaxValue);
     console.log('runSorting2');
     let priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
+
     priceValueArr.forEach(priceValue => {
       if (priceValue < 500000 && priceValue > 400000){
         newArr.push(priceValue);
