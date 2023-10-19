@@ -360,6 +360,15 @@ window.addEventListener("load", function() {
 
   let filtered = filterRange(priceValueArr, 400000, 600000);
   console.log(filtered);
+
+  var res = priceValueArr.filter(function(o) {
+    // check value is within the range
+    // remove `=` if you don't want to include the range boundary
+    return o.score <= 600000 && o.score >= 400000;
+  });
+
+  console.log('res');
+  console.log(res);
   
 
 
