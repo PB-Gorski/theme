@@ -377,12 +377,20 @@ window.addEventListener("load", function() {
       <p class="text-[18px]">Więcej opcji</p>
     </div>
   `;
+  const sortingStartingValue = `
+    <p class="text-[24px] text-center aos-init aos-animate">Znaleziono 39 ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>
+  `;
   const postsFoundHTML = document.querySelector('.posts-found');
   const postsFoundParentHTML = document.querySelector('.filter-layout3-148');
 
 
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
+    // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
+    const sortingStartingValue = `
+      <p class="text-[24px] text-center aos-init aos-animate">Znaleziono 39 ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>
+    `;
     console.log('Complete loaded data ' + target + ' ' + res.found);
+    postsFoundParentHTML.insertAdjacentHTML('afterend', '<p class="text-[24px] text-center aos-init aos-animate">Znaleziono ' + res.found + 'ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>');
   });
 
   postsFoundHTML.innerText = 'test';
