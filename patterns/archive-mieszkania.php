@@ -64,7 +64,7 @@
       <li class="priceTest">
         <!-- wp:group -->
         <div class="dropdown-filter">
-          <input type="text">
+          <input type="text" placeholder="Cena max">
         </div>
         <!-- /wp:group -->
       </li>
