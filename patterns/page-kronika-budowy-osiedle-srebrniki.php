@@ -148,11 +148,11 @@
     <!-- wp:group -->
     <div class="wp-block-group container mb-[80px]">
       <!-- wp:group -->
-      <div id="lipiec" class="wp-block-group row-lipiec mb-[80px]">
+      <div id="lipiec-2023" class="wp-block-group row-lipiec mb-[80px]">
         <!-- wp:group -->
         <div class="wp-block-group col-sm-6 col-sm-push-3">
           <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Lipiec</p>
+          <p class="mb-[20px] text-[#8a8f99]">Lipiec 2023</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group swiper-container">
@@ -254,11 +254,11 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div id="marzec" class="wp-block-group row-marzec mb-[80px]">
+      <div id="marzec-2023" class="wp-block-group row-marzec mb-[80px]">
         <!-- wp:group -->
         <div class="wp-block-group col-sm-6 col-sm-push-3">
           <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Marzec</p>
+          <p class="mb-[20px] text-[#8a8f99]">Marzec 2023</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group swiper-container">
@@ -362,11 +362,11 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div id="wrzesien" class="wp-block-group row-wrzesien mb-[80px]">
+      <div id="wrzesien-2022" class="wp-block-group row-wrzesien mb-[80px]">
         <!-- wp:group -->
         <div class="wp-block-group col-sm-6 col-sm-push-3">
           <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Wrzesień</p>
+          <p class="mb-[20px] text-[#8a8f99]">Wrzesień 2022</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group swiper-container">
@@ -452,11 +452,11 @@
 
 
       <!-- wp:group -->
-      <div id="czerwiec" class="wp-block-group row-czerwiec mb-[80px]">
+      <div id="czerwiec-2022" class="wp-block-group row-czerwiec mb-[80px]">
         <!-- wp:group -->
         <div class="wp-block-group col-sm-6 col-sm-push-3">
           <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[#8a8f99]">Czerwiec</p>
+          <p class="mb-[20px] text-[#8a8f99]">Czerwiec 2022</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group swiper-container">
