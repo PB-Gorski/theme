@@ -349,7 +349,7 @@ window.addEventListener("load", function() {
   let target;
 
   mainDropDown.forEach(dropDown =>{
-    dropDown.addEventListener('click', e =>{
+    dropDown.addEventListener('click', (e) =>{
       e.target.nextElementSibling.classList.toggle('dropdown__list_active');
     });
   });
@@ -368,10 +368,6 @@ window.addEventListener("load", function() {
       };
     });
   };
-  
-  
-
-
 
 
   // sortowanie listy mieszkan
@@ -380,41 +376,39 @@ window.addEventListener("load", function() {
   const priceValueArrHTMLCol = dropDownFilters[4].childNodes[1].children;
   const priceValueArrNodeList = dropDownFilters[4].childNodes[1].childNodes;
   const priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
-  let priceValueArr = [];
+  let btnSearch = document.querySelector('.btn-search');
+  let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
+  let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
+  let priceValueArr, newArr, newArrHTMLList = [];
 
+  // nodeElem to int
   for (i = 2 ; i < priceValueArrNodeList.length ; i++){
     priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
     priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
   }
 
-  // console.log(priceValueArr);
-  // console.log('------');
+  function runSorting(){
+    console.log('runSorting');
+    priceValueArr.forEach(priceValue => {
+      if (priceValue < priceMaxValue && priceValue > priceMinValue){
+        newArr.push(priceValue);
+      };
+    });
 
-  let newArr = [];
-  priceValueArr.forEach(priceValue => {
-    if (priceValue < 600000 && priceValue > 400000){
-      newArr.push(priceValue)
-    };
-  });
+    newArr.forEach(elem => {
+      for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+        if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+          newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+        };
+      };
+    });
 
-  // console.log('newArr');
-  // console.log(newArr);
+    newArrHTMLList.forEach(htmlElemList => {
+      htmlElemList.click();
+    });
+  };
 
-  let newArrHTMLList = [];
-  newArr.forEach(elem => {
-    for(j = 2 ; j < priceValueArrNodeList.length ; j++){
-      if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
-        newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
-      }
-    }
-  })
-
-  // console.log('newArrHTMLList');
-  // console.log(newArrHTMLList);
-
-  newArrHTMLList.forEach(htmlElemList => {
-    htmlElemList.click();
-  })
+  btnSearch.addEventListener('click', runSorting);
 
 
 
