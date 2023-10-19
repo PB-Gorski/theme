@@ -343,31 +343,31 @@ window.addEventListener("load", function() {
 
 
   // dropdown test
-  const mainDropDown = document.querySelectorAll('.dropdown__value');
-  const dropDownList = document.querySelectorAll('.dropdown__list');
-  const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
-  let target;
+  // const mainDropDown = document.querySelectorAll('.dropdown__value');
+  // const dropDownList = document.querySelectorAll('.dropdown__list');
+  // const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
+  // let target;
 
-  mainDropDown.forEach(dropDown =>{
-    dropDown.addEventListener('click', (e) =>{
-      e.target.nextElementSibling.classList.toggle('dropdown__list_active');
-    });
-  });
+  // mainDropDown.forEach(dropDown =>{
+  //   dropDown.addEventListener('click', (e) =>{
+  //     e.target.nextElementSibling.classList.toggle('dropdown__list_active');
+  //   });
+  // });
 
-  dropDowns.forEach(item => {
-    item.addEventListener('click',  choise)
-  });
+  // dropDowns.forEach(item => {
+  //   item.addEventListener('click',  choise)
+  // });
 
-  function choise(e,){
-    e.preventDefault();
-    target = e.target.textContent;
-    e.target.parentNode.parentNode.previousElementSibling.textContent = (target);
-    dropDownList.forEach(el =>{
-      if(el.classList.contains('dropdown__list_active')){
-        el.classList.remove('dropdown__list_active')
-      };
-    });
-  };
+  // function choise(e,){
+  //   e.preventDefault();
+  //   target = e.target.textContent;
+  //   e.target.parentNode.parentNode.previousElementSibling.textContent = (target);
+  //   dropDownList.forEach(el =>{
+  //     if(el.classList.contains('dropdown__list_active')){
+  //       el.classList.remove('dropdown__list_active')
+  //     };
+  //   });
+  // };
 
 
   // sortowanie listy mieszkan
@@ -389,7 +389,7 @@ window.addEventListener("load", function() {
     priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
   }
 
-  console.log('runSorting2');
+  console.log('backup');
   priceValueArr.forEach(priceValue => {
     if (priceValue < 600000 && priceValue > 400000){
       newArr.push(priceValue);
