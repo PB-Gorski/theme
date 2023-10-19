@@ -48,15 +48,13 @@
       <div class="menu-active"><span>Cena min</span> <i class="arrow down open"></i></div>
 
       <div class="menu-passive" style="display: block;">
-        <i class="btn-close">x</i>
         <div class="menu-passive__item item-0">
-          <a class="menu-link isDisabled multiple" href="#" data-selected="400000" data-termid="450" data-name="400000">400000<span class="count">400000</span></a>
+          <a class="menu-link multiple" href="#" data-selected="400000" data-termid="450" data-name="400000">400000<span class="count">400000</span></a>
         </div>
       </div>
       <div class="menu-passive" style="display: block;">
-        <i class="btn-close">x</i>
-        <div class="menu-passive__item item-0">
-          <a class="menu-link isDisabled multiple" href="#" data-selected="500000" data-termid="450" data-name="500000">500000<span class="count">500000</span></a>
+        <div class="menu-passive__item item-1">
+          <a class="menu-link multiple" href="#" data-selected="500000" data-termid="450" data-name="500000">500000<span class="count">500000</span></a>
         </div>
       </div>
     </div>
