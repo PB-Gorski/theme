@@ -466,8 +466,8 @@ window.addEventListener("load", function() {
   let btnSearch = document.querySelector('.btn-search');
 
   // dropdown test
-  mainDropDown.forEach(dropDown =>{
-    dropDown.addEventListener('click', (e) =>{
+  mainDropDown.forEach(dropDownEl =>{
+    dropDownEl.addEventListener('click', (e) =>{
       console.log('show min/max list');
       e.target.nextElementSibling.classList.toggle('dropdown__list_active');
     });

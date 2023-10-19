@@ -827,6 +827,7 @@ background-color: #e8fbff!important;
   width: 108px;
   border: 1px solid gray;
   border-bottom: none;
+  z-index: 2;
 }
 
 .dropdown__link {
