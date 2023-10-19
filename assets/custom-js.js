@@ -439,8 +439,6 @@ window.addEventListener("load", function() {
     </div>
   `;
   const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
-  let btnSearch = document.querySelector('.btn-search');
-
   const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const mainDropDown = document.querySelectorAll('.dropdown__value');
   const dropDownList = document.querySelectorAll('.dropdown__list');
@@ -464,6 +462,7 @@ window.addEventListener("load", function() {
   };
   // let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
   // let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
+  let btnSearch = document.querySelector('.btn-search');
 
     // dropdown test
 
@@ -490,8 +489,6 @@ window.addEventListener("load", function() {
     };
 
   // price selects
-
-
   // nodeElem to int
   for (i = 2 ; i < priceValueArrNodeList.length ; i++){
     priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
@@ -499,7 +496,6 @@ window.addEventListener("load", function() {
   }
 
   console.log(priceValueArr);
-
 
   console.log('backup');
   priceValueArr.forEach(priceValue => {
