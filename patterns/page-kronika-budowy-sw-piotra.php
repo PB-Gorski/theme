@@ -283,7 +283,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/marzec-2023/img8.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/luty-2023/img8.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -292,7 +292,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/marzec-2023/img9.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/luty-2023/img9.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -301,7 +301,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/marzec-2023/img10.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/luty-2023/img10.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
@@ -310,7 +310,7 @@
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/marzec-2023/img11.png" alt="slide">
+                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/galeria/kronika-budowy/luty-2023/img11.png" alt="slide">
                   </figure>
                   <!-- /wp:image -->
                 </div>
