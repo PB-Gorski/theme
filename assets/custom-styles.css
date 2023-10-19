@@ -810,7 +810,7 @@ background-color: #e8fbff!important;
 }
 
 .dropdown__value:after {
-  content: '\21E9';
+  content: '\02228';
   margin-left: 5px;
 }
 
