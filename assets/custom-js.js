@@ -460,8 +460,8 @@ window.addEventListener("load", function() {
     // postsFoundHTML.insertAdjacentHTML('afterend', sortingStartingValueHTML);
     // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
   };
-  // let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
-  // let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
+  let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
+  let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
   let btnSearch = document.querySelector('.btn-search');
 
     // dropdown test
