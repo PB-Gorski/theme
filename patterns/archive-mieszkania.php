@@ -11,7 +11,7 @@
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="content" class="wp-block-group content relative ">
-  <div class="mySortingBar w-[281px]">
+  <div class="mySortingBar w-[281px] container mx-auto">
     <div class="content h-[59px]">
       <div class="card flex gap-[1px]">
         <div class="dropdown w-[140px]">
