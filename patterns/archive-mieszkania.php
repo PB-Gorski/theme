@@ -11,6 +11,46 @@
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="content" class="wp-block-group content relative ">
+  <div class="mySortingBar w-[281px]">
+    <div class="content h-[59px]">
+      <div class="card flex gap-[1px]">
+        <div class="dropdown w-[140px]">
+          <div class="dropdown__value dropdown__value-min">min</div>
+          <ul class="dropdown__list">
+            <li class="dropdown__item">
+              <a href="javascript:void(0);" class="dropdown__link">400000</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="javascript:void(0);" class="dropdown__link">500000</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="javascript:void(0);" class="dropdown__link">600000</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="javascript:void(0);" class="dropdown__link">800000</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown w-[140px]">
+          <div class="dropdown__value dropdown__value-max">max</div>
+          <ul class="dropdown__list">
+            <li class="dropdown__item">
+              <a href="javascript:void(0);" class="dropdown__link">400002</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="javascript:void(0);" class="dropdown__link">500002</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="javascript:void(0);" class="dropdown__link">600002</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="javascript:void(0);" class="dropdown__link">800002</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- wp:group -->
   <div class="wp-block-group">
