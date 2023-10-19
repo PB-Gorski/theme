@@ -443,8 +443,8 @@ window.addEventListener("load", function() {
   const mainDropDown = document.querySelectorAll('.dropdown__value');
   const dropDownList = document.querySelectorAll('.dropdown__list');
   const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
-  const priceValueArrHTMLCol = dropDownFilters[6].childNodes[1].children;
-  const priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
+  let priceValueArrHTMLCol = dropDownFilters[6].childNodes[1].children;
+  
   const priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
   let priceValueArr = [];
   let newArr = [];
@@ -523,6 +523,7 @@ window.addEventListener("load", function() {
 
   function runSorting(){
     console.log('runSorting2');
+    let priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
     priceValueArr.forEach(priceValue => {
       if (priceValue < 500000 && priceValue > 400000){
         newArr.push(priceValue);
