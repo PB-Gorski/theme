@@ -445,10 +445,10 @@ window.addEventListener("load", function() {
         </div>
       </div>
     </div>
-
-    <!-- wp:group -->
+  </div>
+  `;
+  const btnFilterSerach = `
     <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-full desktop:w-[230px] h-[62px] flex items-center justify-center gap-[15px] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
-      <!-- wp:paragraph -->
       <p class=" z-[1]">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="injected-svg inject-svg icon-search">
           <defs>
@@ -460,13 +460,8 @@ window.addEventListener("load", function() {
           </g>
         </svg>
       </p>
-      <!-- /wp:paragraph -->
-      <!-- wp:paragraph -->
       <p class="font-bold z-[1]">Szukaj</p>
-      <!-- /wp:paragraph -->
     </div>
-    <!-- /wp:group -->
-  </div>
   `;
 
   // price selects
@@ -563,6 +558,7 @@ window.addEventListener("load", function() {
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
     dropDownFilters[3].insertAdjacentHTML('afterend', BtnCustomPriceSelect);
     dropDownFilters[5].insertAdjacentHTML('afterend', btnMoreHTML);
+    dropDownFilters[6].insertAdjacentHTML('afterend', btnFilterSerach);
     
     // postsFoundHTML.insertAdjacentHTML('afterend', sortingStartingValueHTML);
     // postsFoundParentHTML.insertAdjacentHTML('afterend', 'test2');
