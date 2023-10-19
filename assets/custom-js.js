@@ -439,6 +439,20 @@ window.addEventListener("load", function() {
     </div>
   `;
   const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
+  const dropDownFilters = document.querySelectorAll(".dropdown-filter");
+  const priceValueArrHTMLCol = dropDownFilters[4].childNodes[1].children;
+  const priceValueArrNodeList = dropDownFilters[4].childNodes[1].childNodes;
+  const priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
+  let btnSearch = document.querySelector('.btn-search');
+  let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
+  let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
+  let priceValueArr = [];
+  let newArr = [];
+  let newArrHTMLList = [];
+  const mainDropDown = document.querySelectorAll('.dropdown__value');
+  const dropDownList = document.querySelectorAll('.dropdown__list');
+  const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
+  let target;
 
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
@@ -453,10 +467,7 @@ window.addEventListener("load", function() {
   };
 
     // dropdown test
-    const mainDropDown = document.querySelectorAll('.dropdown__value');
-    const dropDownList = document.querySelectorAll('.dropdown__list');
-    const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
-    let target;
+
   
     mainDropDown.forEach(dropDown =>{
       dropDown.addEventListener('click', (e) =>{
@@ -480,16 +491,7 @@ window.addEventListener("load", function() {
     };
 
   // price selects
-  const dropDownFilters = document.querySelectorAll(".dropdown-filter");
-  const priceValueArrHTMLCol = dropDownFilters[4].childNodes[1].children;
-  const priceValueArrNodeList = dropDownFilters[4].childNodes[1].childNodes;
-  const priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
-  let btnSearch = document.querySelector('.btn-search');
-  let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
-  let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
-  let priceValueArr = [];
-  let newArr = [];
-  let newArrHTMLList = [];
+
 
   // nodeElem to int
   for (i = 2 ; i < priceValueArrNodeList.length ; i++){
