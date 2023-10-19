@@ -387,11 +387,12 @@ window.addEventListener("load", function() {
   let postsCount;
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
     postsCount = res.found;
+    console.log('Complete loaded data ' + target + ' ' + res.found);
   });
 
     console.log('post found from js ',postsCount);
    // if(!counter){
-    console.log('Complete loaded data ' + target + ' ' + res.found);
+    
 
     postsFoundHTML.insertAdjacentHTML('afterend', '<p class="firstTime text-[24px] text-center aos-init aos-animate">Znaleziono ' + postsCount + ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>');
     counter = true;
