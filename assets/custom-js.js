@@ -475,8 +475,8 @@ window.addEventListener("load", function() {
   const priceValueArrNodeList = dropDownFilters[4].childNodes[1].childNodes;
   const priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
   let btnSearch = document.querySelector('.btn-search');
-  let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
-  let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
+  // let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
+  // let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
   let priceValueArr = [];
   let newArr = [];
   let newArrHTMLList = [];
