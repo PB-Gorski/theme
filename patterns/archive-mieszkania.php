@@ -44,7 +44,7 @@
       <option value="1200000">1 000 000 zł</option>
     </select> -->
 
-    <div class="mySortingBar container mx-auto flex gap-[10px]">
+    <div class="mySortingBar hidden container mx-auto flex gap-[10px]">
       <div class="content h-[250px]">
         <div class="card flex gap-[10px]">
           <div class="dropdown">
