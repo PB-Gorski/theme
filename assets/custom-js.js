@@ -371,83 +371,6 @@ window.addEventListener("load", function() {
 
 
   // sortowanie listy mieszkan
-  // price select
-  const dropDownFilters = document.querySelectorAll(".dropdown-filter");
-  const priceValueArrHTMLCol = dropDownFilters[4].childNodes[1].children;
-  const priceValueArrNodeList = dropDownFilters[4].childNodes[1].childNodes;
-  const priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
-  let btnSearch = document.querySelector('.btn-search');
-  // let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
-  // let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
-  let priceValueArr = [];
-  let newArr = [];
-  let newArrHTMLList = [];
-
-  // nodeElem to int
-  for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-    priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
-    priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
-  }
-
-  console.log(priceValueArr);
-
-
-  console.log('backup');
-  priceValueArr.forEach(priceValue => {
-    if (priceValue < 600000 && priceValue > 400000){
-      newArr.push(priceValue);
-    };
-  });
-
-  console.log(newArr);
-
-  newArr.forEach(elem => {
-    for(j = 2 ; j < priceValueArrNodeList.length ; j++){
-      if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
-        newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
-      };
-    };
-  });
-
-  console.log(newArrHTMLList);
-
-
-  newArrHTMLList.forEach(htmlElemList => {
-    htmlElemList.click();
-  });
-
-  // function runSorting(){
-  //   console.log('runSorting2');
-  //   priceValueArr.forEach(priceValue => {
-  //     if (priceValue < priceMaxValue && priceValue > priceMinValue){
-  //       newArr.push(priceValue);
-  //     };
-  //   });
-
-  //   newArr.forEach(elem => {
-  //     for(j = 2 ; j < priceValueArrNodeList.length ; j++){
-  //       if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
-  //         newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
-  //       };
-  //     };
-  //   });
-
-  //   newArrHTMLList.forEach(htmlElemList => {
-  //     htmlElemList.click();
-  //   });
-  // };
-
-  btnSearch.addEventListener('click', runSorting);
-
-
-
-
-
-  if(document.body.classList.contains('page-id-606') || document.body.classList.contains('page-id-11') || document.body.classList.contains('page-id-13')){
-  }
-
-
-  const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
   const sortingBarHTML = `
     <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[22px] flex flex-wrap items-center justify-between text-[13px] font-bold z-0 relative">
       <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
@@ -545,8 +468,86 @@ window.addEventListener("load", function() {
     <!-- /wp:group -->
   </div>
   `;
+
+  // price selects
+  const dropDownFilters = document.querySelectorAll(".dropdown-filter");
+  const priceValueArrHTMLCol = dropDownFilters[4].childNodes[1].children;
+  const priceValueArrNodeList = dropDownFilters[4].childNodes[1].childNodes;
+  const priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
+  let btnSearch = document.querySelector('.btn-search');
   let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
   let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
+  let priceValueArr = [];
+  let newArr = [];
+  let newArrHTMLList = [];
+
+  // nodeElem to int
+  for (i = 2 ; i < priceValueArrNodeList.length ; i++){
+    priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+    priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
+  }
+
+  console.log(priceValueArr);
+
+
+  console.log('backup');
+  priceValueArr.forEach(priceValue => {
+    if (priceValue < 600000 && priceValue > 400000){
+      newArr.push(priceValue);
+    };
+  });
+
+  console.log(newArr);
+
+  newArr.forEach(elem => {
+    for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+      if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+        newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+      };
+    };
+  });
+
+  console.log(newArrHTMLList);
+
+
+  newArrHTMLList.forEach(htmlElemList => {
+    htmlElemList.click();
+  });
+
+  // function runSorting(){
+  //   console.log('runSorting2');
+  //   priceValueArr.forEach(priceValue => {
+  //     if (priceValue < priceMaxValue && priceValue > priceMinValue){
+  //       newArr.push(priceValue);
+  //     };
+  //   });
+
+  //   newArr.forEach(elem => {
+  //     for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+  //       if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+  //         newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+  //       };
+  //     };
+  //   });
+
+  //   newArrHTMLList.forEach(htmlElemList => {
+  //     htmlElemList.click();
+  //   });
+  // };
+
+  btnSearch.addEventListener('click', runSorting);
+
+
+
+
+
+  if(document.body.classList.contains('page-id-606') || document.body.classList.contains('page-id-11') || document.body.classList.contains('page-id-13')){
+  }
+
+
+  const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
+
+
   const postsFoundHTML = document.querySelector('.posts-found');
   const postsFoundParentHTML = document.querySelector('.filter-layout3-148');
   
