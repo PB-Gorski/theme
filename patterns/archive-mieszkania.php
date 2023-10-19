@@ -67,6 +67,12 @@
           <input type="text" placeholder="Cena max">
         </div>
         <!-- /wp:group -->
+        <select name="priceMax" id="priceMax">
+          <option value="400000">400 000 zł</option>
+          <option value="600000">600 000 zł</option>
+          <option value="800000">800 000 zł</option>
+          <option value="1200000">1 000 000 zł</option>
+        </select>
       </li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
