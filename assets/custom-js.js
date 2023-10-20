@@ -559,7 +559,7 @@ window.addEventListener("load", function() {
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     btnMore.addEventListener('click',()=>{
       console.log('more flters');
-      (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-fit') : searchBar.classList.toggle('h-[450px]');
+      (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[140px]') : searchBar.classList.toggle('h-[450px]');
     });
   };
 
