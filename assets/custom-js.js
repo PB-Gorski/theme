@@ -500,7 +500,7 @@ window.addEventListener("load", function() {
     // console.log('runSorting2');
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-      priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.termid.split(' ').join('')));
+      priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
       priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
     }
   
@@ -509,7 +509,7 @@ window.addEventListener("load", function() {
         newArr.push(priceValue);
       };
     });
-    console.log('termsid: ', priceValueArr);
+    console.log('prices from range: ', priceValueArr);
     
     
     // console.log('new price arr: ',newArr);
