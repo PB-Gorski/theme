@@ -871,5 +871,10 @@ color: #fff;
   left: 50%;
   transform: translateX(-50%);
 }
+.preloader{
+  max-width: 1170px!important;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
