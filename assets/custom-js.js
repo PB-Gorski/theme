@@ -492,7 +492,7 @@ window.addEventListener("load", function() {
     priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
 
     console.log(priceMinValue,priceMaxValue);
-    // console.log('runSorting2');
+    console.log('runSorting2');
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
       priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
@@ -504,6 +504,8 @@ window.addEventListener("load", function() {
         newArr.push(priceValue);
       };
     });
+    console.log(priceValueArr);
+
 
     newArr.forEach(elem => {
       for(j = 2 ; j < priceValueArrNodeList.length ; j++){
@@ -514,12 +516,15 @@ window.addEventListener("load", function() {
       console.log('filtered new arr elements: ', newArrHTMLList.length);
     });
 
+    console.log(newArr);
+
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
       if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
         priceValueArrNodeList[i].childNodes[1].click();
+        console.log(priceValueArrNodeList[i].childNodes[1]);
       }
-      priceValueArrNodeList[i].childNodes[1].classList.remove('active');
+      // priceValueArrNodeList[i].childNodes[1].classList.remove('active');
     }
 
     // priceValueArrNodeList.forEach(htmlElemList => {
@@ -530,6 +535,7 @@ window.addEventListener("load", function() {
 
     newArrHTMLList.forEach(htmlElemList => {
       htmlElemList.click();
+      console.log(htmlElemList);
     });
     console.log(newArrHTMLList);
     
