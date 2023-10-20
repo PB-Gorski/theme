@@ -61,14 +61,16 @@ $tax_sort = $taxonomy;
 
         if (get_taxonomy($select_term)->label == 'Cena') {
           echo 'custom cena';
+        } else {
+
+          echo '<div class="dropdown-filter">';
+          echo '<div class="menu-active">';
+          echo '<span>' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
+          echo '</div>';
+          echo '<div class="menu-passive">';
+          echo '<i class="btn-close">x</i>';
         }
 
-        echo '<div class="dropdown-filter">';
-        echo '<div class="menu-active">';
-        echo '<span>' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
-        echo '</div>';
-        echo '<div class="menu-passive">';
-        echo '<i class="btn-close">x</i>';
 
         $terms_icons = null;
 
