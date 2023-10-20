@@ -514,10 +514,10 @@ window.addEventListener("load", function() {
     });
 
 
-    for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-      priceValueArrNodeList[i].childNodes[1].classList.contains('active');
-      priceValueArrNodeList[i].childNodes[1].click();
-    }
+    // for (i = 2 ; i < priceValueArrNodeList.length ; i++){
+    //   priceValueArrNodeList[i].childNodes[1].classList.contains('active');
+    //   priceValueArrNodeList[i].childNodes[1].click();
+    // }
 
     // priceValueArrNodeList.forEach(htmlElemList => {
     //   if(htmlElemList.classList.contains('active')){
