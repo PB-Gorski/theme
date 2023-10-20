@@ -17,7 +17,7 @@
     <div class="content w-[281px] h-[59px] mx-auto">
       <div class="card flex gap-[1px]">
         <div class="dropdown w-[140px]">
-          <div class="dropdown__value dropdown__value-min">min</i></div>
+          <div class="dropdown__value dropdown__value-min">0</i></div>
           <ul class="dropdown__list">
             <li class="dropdown__item">
               <a href="javascript:void(0);" class="dropdown__link">400000</a>
