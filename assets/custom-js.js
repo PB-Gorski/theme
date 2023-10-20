@@ -544,12 +544,12 @@ window.addEventListener("load", function() {
       console.log(htmlElemList);
     });
     console.log(newArrHTMLList);
+    console.log('runSorting2 finish');
     priceValueArr = [];
     newArr = [];
     newArrHTMLList = [];
     priceValueArrNodeList = [];
 
-    // console.log('runSorting2 finish');
   };
   
 
