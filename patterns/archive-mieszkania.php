@@ -10,9 +10,9 @@
 
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="content" class="wp-block-group content relative ">
-  <div class="mySortingBar w-[281px] container mx-auto">
-    <div class="content h-[59px]">
+<div id="content" class="wp-block-group content bg-[#ebeef2] relative ">
+  <div class="mySortingBar container mx-auto">
+    <div class="content w-[281px] h-[59px]">
       <div class="card flex gap-[1px]">
         <div class="dropdown w-[140px]">
           <div class="dropdown__value dropdown__value-min">min</i></div>
