@@ -593,10 +593,10 @@ function themeslug_customize_register($wp_customize)
 			'type'     => 'select',
 			'priority' => 8,
 			'choices'  => array(
-				'group1' => __('Group 1', 'ctotheme'),
-				'group2' => __('Group 2', 'ctotheme'),
-				'group3' => __('Group 3', 'ctotheme'),
-				'group4' => __('Group 4', 'ctotheme')
+				'Group 1' => __('Group 1', 'ctotheme'),
+				'Group 2' => __('Group 2', 'ctotheme'),
+				'Group 3' => __('Group 3', 'ctotheme'),
+				'Group 4' => __('Group 4', 'ctotheme')
 			)
 		)
 	);
