@@ -521,14 +521,14 @@ function pbgorski_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $t
 	$filter_id = '148';
 	$layout_id = '1';
 	$layout  = ''; //Override demo message
-        ob_start();
+	ob_start();
 
-        if (file_exists($filepath_filter)) {
-           require $filepath_filter;
-           $layout .= ob_get_contents();
+	if (file_exists($filepath_filter)) {
+		require $filepath_filter;
+		$layout .= ob_get_contents();
 	}
 
-        ob_end_clean();
+	ob_end_clean();
 
 	return $layout;
 }
@@ -573,3 +573,32 @@ add_filter('ymc_posts_selected_148_1', 'ymc_posts_selected', 10, 2);
 // 	return $layouts;
 // }
 // add_filter('ymc_posts_selected_148_1', 'ymc_posts_selected', 10, 2);
+
+// Add "Designed by" notification in footer
+function themeslug_customize_register($wp_customize)
+{
+	$wp_customize->add_setting(
+		'powered_by',
+		array(
+			'default' => 'Group 1',
+			//'sanitize_callback' => 'sanitize_powered_by',
+			'capability'        => 'edit_theme_options',
+		)
+	);
+	$wp_customize->add_control(
+		'powered_by',
+		array(
+			'section'  => 'footer_section',
+			'label'    => __('Designed by'),
+			'type'     => 'select',
+			'priority' => 8,
+			'choices'  => array(
+				'group1' => __('Group 1', 'ctotheme'),
+				'group2' => __('Group 2', 'ctotheme'),
+				'group3' => __('Group 3', 'ctotheme'),
+				'group4' => __('Group 4', 'ctotheme')
+			)
+		)
+	);
+}
+add_action('customize_register', 'themeslug_customize_register');
