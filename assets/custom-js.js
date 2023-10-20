@@ -515,12 +515,12 @@ window.addEventListener("load", function() {
 
 
 
-    newArrHTMLList.forEach(htmlElemList => {
+    priceValueArrNodeList.forEach(htmlElemList => {
       if(htmlElemList.classList.contains('active')){
         htmlElemList.click();
       };
     });
-    
+
     newArrHTMLList.forEach(htmlElemList => {
       htmlElemList.click();
     });
