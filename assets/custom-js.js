@@ -521,7 +521,11 @@ window.addEventListener("load", function() {
         };
       };
     });
-    console.log('filtered new arr html elements: ', newArrHTMLList.dataset.termid);
+
+    console.log('filtered new arr html elements: ', newArrHTMLList);
+    newArrHTMLList.forEach(el2 =>{
+      console.log(el.dataset.termid);
+    });
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
       if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
