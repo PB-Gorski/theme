@@ -516,9 +516,9 @@ window.addEventListener("load", function() {
 
 
     newArrHTMLList.forEach(htmlElemList => {
-      if(htmlElemList.classList.contains('active')){
-        htmlElemList.click();
-      };
+      // if(htmlElemList.classList.contains('active')){
+      //   htmlElemList.click();
+      // };
 
       htmlElemList.click();
     });
