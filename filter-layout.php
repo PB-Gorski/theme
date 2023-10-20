@@ -14,29 +14,19 @@ $tax_sort = $taxonomy;
   <?php do_action("ymc_before_filter_layout_" . $layout_id . '_' . $c_target); ?>
 
   <?php if (is_array($terms_selected)) :
-
     $all_terms = implode(',', $terms_selected);
   ?>
     <div class="search_tabs container"></div>
-
     <div class="filter-entry" data-terms="<?php echo esc_attr($all_terms); ?>">
-
       <?php
-
       $type_multiple = ((bool) $ymc_multiple_filter) ? 'multiple' : '';
-
       if ($ymc_sort_terms !== 'manual') {
         ($ymc_sort_terms === 'asc') ? asort($terms_selected) : arsort($terms_selected);
       }
-
       ?>
-
       <?php
-
       $arr_taxonomies = [];
-
       foreach ($terms_selected as $term) {
-
         $arr_taxonomies[] = get_term($term)->taxonomy;
       }
       $arr_taxonomies = array_unique($arr_taxonomies);
@@ -57,9 +47,7 @@ $tax_sort = $taxonomy;
       }
 
       foreach ($result_tax as $tax) {
-
         $select_term = apply_filters('ymc_select_term_dropdown', $tax);
-
         if (get_taxonomy($select_term)->label == 'Cena') { ?>
           <div class="dropdown-filter customPrice">
             <div class="dropdown__value dropdown__value-min">0</i></div>
@@ -109,7 +97,6 @@ $tax_sort = $taxonomy;
             <p class="font-bold z-[1] text-white">Szukaj</p>
           </div>
       <?php
-
           echo '<div class="dropdown-filter defaultPrice hidden">';
           echo '<div class="menu-active">';
           echo '<span>' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
