@@ -530,7 +530,8 @@ window.addEventListener("load", function() {
     }
 
     newArrHTMLList.forEach(htmlElemList => {  
-      htmlElemList.click();
+      htmlElemList.dispatchEvent(new MouseEvent("click",{bubbles: true, cancellable: true}));
+
       console.log(htmlElemList);
     });
 
