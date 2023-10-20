@@ -58,16 +58,18 @@ $tax_sort = $taxonomy;
       foreach ($result_tax as $tax) {
         $select_term = apply_filters('ymc_select_term_dropdown', $tax);
 
-        if (get_taxonomy($select_term)->label == 'Cena') {
+        if (!(get_taxonomy($select_term)->label == 'Cena')) {
+          echo '<div class="dropdown-filter">';
+          echo '<div class="menu-active">';
+          echo '<span>' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
+          echo '</div>';
+          echo '<div class="menu-passive">';
+          echo '<i class="btn-close">x</i>';
+        } else {
           echo 'custom cena';
         };
 
-        echo '<div class="dropdown-filter">';
-        echo '<div class="menu-active">';
-        echo '<span>' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
-        echo '</div>';
-        echo '<div class="menu-passive">';
-        echo '<i class="btn-close">x</i>';
+
 
         $terms_icons = null;
 
