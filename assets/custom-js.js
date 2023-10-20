@@ -496,11 +496,11 @@ window.addEventListener("load", function() {
     priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
     // priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
 
-    console.log(priceMinValue,priceMaxValue);
-    console.log('runSorting2');
+    // console.log(priceMinValue,priceMaxValue);
+    // console.log('runSorting2');
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-      priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+      priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.termid.split(' ').join('')));
       priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
     }
   
@@ -509,9 +509,9 @@ window.addEventListener("load", function() {
         newArr.push(priceValue);
       };
     });
-    console.log(priceValueArr);
+    console.log('termsid: ', priceValueArr);
     
-    console.log('new price arr: ',newArr);
+    // console.log('new price arr: ',newArr);
 
     newArr.forEach(elem => {
       for(j = 2 ; j < priceValueArrNodeList.length ; j++){
@@ -520,7 +520,7 @@ window.addEventListener("load", function() {
         };
       };
     });
-    console.log('filtered new arr html elements: ', newArrHTMLList);
+    // console.log('filtered new arr html elements: ', newArrHTMLList);
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
       if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
@@ -532,11 +532,11 @@ window.addEventListener("load", function() {
     newArrHTMLList.forEach(htmlElemList => {  
       htmlElemList.dispatchEvent(new MouseEvent("click",{bubbles: true, cancellable: true}));
 
-      console.log(htmlElemList);
+      // console.log(htmlElemList);
     });
 
-    console.log(newArrHTMLList);
-    console.log('runSorting2 finish');
+    // console.log(newArrHTMLList);
+    // console.log('runSorting2 finish');
 
     priceValueArr = [];
     newArr = [];
