@@ -539,11 +539,8 @@ window.addEventListener("load", function() {
     //   };
     // });
 
-    newArrHTMLList.forEach(htmlElemList => {
-      setTimeout(() => {
-        
-        htmlElemList.click();
-      }, 1000);
+    newArrHTMLList.forEach(htmlElemList => {  
+      htmlElemList.click();
       console.log(htmlElemList);
     });
 
