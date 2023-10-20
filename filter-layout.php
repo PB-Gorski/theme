@@ -57,6 +57,8 @@ $tax_sort = $taxonomy;
 
       foreach ($result_tax as $tax) {
         $select_term = apply_filters('ymc_select_term_dropdown', $tax);
+        $index = 0;
+        echo $index;
 
         if (!(get_taxonomy($select_term)->label == 'Cena')) {
           echo '<div class="dropdown-filter">';
@@ -74,8 +76,7 @@ $tax_sort = $taxonomy;
         $terms_icons = null;
 
         foreach ($terms_selected as $term) {
-          $index = 0;
-          echo $index;
+
 
           if ($tax === get_term($term)->taxonomy) {
 
@@ -105,7 +106,6 @@ $tax_sort = $taxonomy;
 
         echo '</div>';
         echo '</div>';
-        $index = $index + 1;
       }
 
       unset($result_tax);
