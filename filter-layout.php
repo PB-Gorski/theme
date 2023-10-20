@@ -102,15 +102,6 @@ $tax_sort = $taxonomy;
               </ul>
             </div>     
             <div class="wp-block-group btn-more dropdown-filter mt-[5px] w-full h-[62px] bg-[#f5f7fa] flex self-start gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3]">
-              <p>
-                <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
-                  <title>icon_filters</title>
-                  <path class="line" d="M6 4v16m6-16v16m6-16v16"></path>
-                  <circle class="circle" cx="6" cy="10" r="2"></circle>
-                  <circle class="circle" cx="12" cy="15" r="2"></circle>
-                  <circle class="circle" cx="18" cy="10" r="2"></circle>
-                </svg>
-              </p>
               <p class="text-[18px]">Więcej opcji</p>
             </div> 
             <div class="wp-block-group group dropdown-filter btn-search mt-[5px] relative bg-primaryRed text-white w-full desktop:w-[140px] h-[62px] flex items-center justify-center gap-[15px] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
