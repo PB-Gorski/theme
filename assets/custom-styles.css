@@ -6,6 +6,9 @@
   .applyContainer1 {
     @apply [&>div>div>:first-child]:container [&>div>div>:first-child]:mx-auto;
   }
+  .post-custom-layout-148 {
+    @apply container mx-auto;
+  }
 }
 
 /* general */
