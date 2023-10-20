@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let params = swiperInstance.params;
         params.slidesPerView = 1;
         swiperInstance.update();
-        swiperInstance.slideTo(clickedSlideIndex);
+        swiperInstance.slideTo(clickedSlideIndex,0);
 
         swiperInstance.update();
       
