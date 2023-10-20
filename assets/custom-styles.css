@@ -421,8 +421,8 @@ option:hover {
 .btn-all{
   display: none!important;
 }
-.filter-custom-layout-148 .filter-custom-layout-148-1 {
-  background-color: #ebeef2;
+.filter-custom-layout-148-1 {
+  background-color: #ebeef2!important;
 }
 .ymc-smart-filter-container .filter-layout3 .filter-entry {
   max-width: 1170px;
