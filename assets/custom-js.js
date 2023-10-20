@@ -527,10 +527,10 @@ window.addEventListener("load", function() {
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
       if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
         priceValueArrNodeList[i].childNodes[1].classList.remove('active');
-        console.log(priceValueArrNodeList[i].childNodes[1]);
+        // console.log(priceValueArrNodeList[i].childNodes[1]);
       }
       priceValueArrNodeList[i].childNodes[1].click();
-      console.log(priceValueArrNodeList[i].childNodes[1])
+      // console.log(priceValueArrNodeList[i].childNodes[1])
     }
 
     // priceValueArrNodeList.forEach(htmlElemList => {
