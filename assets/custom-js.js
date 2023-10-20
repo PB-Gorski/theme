@@ -416,14 +416,10 @@ window.addEventListener("load", function() {
   const mainDropDown = document.querySelectorAll('.dropdown__value');
   const dropDownList = document.querySelectorAll('.dropdown__list');
   const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
-  // let priceValueArrHTMLCol = dropDownFilters[6].childNodes[1].children;
-  // let priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
-  let priceValueArrHTMLCol = 0
-  let priceValueArrNodeList = 0
-  // let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
-  // let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
-  let priceMaxValue = 0
-  let priceMinValue = 0
+  let priceValueArrHTMLCol = dropDownFilters[6].childNodes[1].children;
+  let priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
+  let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
+  let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
   // let priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
   let priceValueArr = [];
   let newArr = [];
@@ -432,8 +428,8 @@ window.addEventListener("load", function() {
 
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
-    // dropDownFilters[2].insertAdjacentHTML('afterend', btnFilterSerach);
-    // dropDownFilters[2].insertAdjacentHTML('afterend', btnMoreHTML);
+    dropDownFilters[2].insertAdjacentHTML('afterend', btnFilterSerach);
+    dropDownFilters[2].insertAdjacentHTML('afterend', btnMoreHTML);
     // dropDownFilters[2].insertAdjacentHTML('afterend', BtnCustomPriceSelect);
   };
 
@@ -536,7 +532,7 @@ window.addEventListener("load", function() {
       terms: filteredTermsID.join(),            
     }).apiTermUpdate(); 
   };
-  // btnSearch.addEventListener('click', runSorting);
+  btnSearch.addEventListener('click', runSorting);
 
 
   if(document.body.classList.contains('page-id-606') || document.body.classList.contains('page-id-11') || document.body.classList.contains('page-id-13')){
