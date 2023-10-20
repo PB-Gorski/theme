@@ -444,7 +444,7 @@ window.addEventListener("load", function() {
   let priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
   let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
   let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
-  let priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
+  // let priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
   let priceValueArr = [];
   let newArr = [];
   let newArrHTMLList = [];
@@ -486,10 +486,11 @@ window.addEventListener("load", function() {
   // price selects
   // console.log(priceValueArr);
   function runSorting(){
+    priceValueArrNodeList = [];
     priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
     priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
     priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
-    priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
+    // priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
 
     console.log(priceMinValue,priceMaxValue);
     console.log('runSorting2');
@@ -539,12 +540,14 @@ window.addEventListener("load", function() {
       console.log(htmlElemList);
     });
     console.log(newArrHTMLList);
+
+    priceValueArr = [];
+    newArr = [];
+    newArrHTMLList = [];
     // console.log('runSorting2 finish');
   };
   
-  priceValueArr = [];
-  newArr = [];
-  newArrHTMLList = [];
+
 
   btnSearch.addEventListener('click', runSorting);
 
