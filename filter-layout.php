@@ -60,55 +60,54 @@ $tax_sort = $taxonomy;
 
         $select_term = apply_filters('ymc_select_term_dropdown', $tax);
 
-        if (get_taxonomy($select_term)->label == 'Cena') {
-          echo '
-            <div class="dropdown-filter customPrice">
-              <div class="dropdown__value dropdown__value-min">0</i></div>
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <a href="javascript:void(0);" class="dropdown__link">400000</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="javascript:void(0);" class="dropdown__link">498000</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="javascript:void(0);" class="dropdown__link">500000</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="javascript:void(0);" class="dropdown__link">600000</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="javascript:void(0);" class="dropdown__link">800000</a>
-                </li>
-              </ul>
-            </div>
-            <div class="dropdown-filter customPrice">
-              <div class="dropdown__value dropdown__value-max">max</i></div>
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <a href="javascript:void(0);" class="dropdown__link">400002</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="javascript:void(0);" class="dropdown__link">499002</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="javascript:void(0);" class="dropdown__link">500002</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="javascript:void(0);" class="dropdown__link">600002</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="javascript:void(0);" class="dropdown__link">800002</a>
-                </li>
-              </ul>
-            </div>     
-            <div class="wp-block-group btn-more dropdown-filter mt-[5px] w-full h-[62px] bg-[#f5f7fa] hover:bg-[#f2f2f2] flex self-start gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3]">
-              <p class="text-[18px]">Więcej opcji</p>
-            </div> 
-            <div class="wp-block-group group dropdown-filter btn-search mt-[5px] relative bg-primaryRed text-white w-full desktop:w-[140px] h-[62px] flex items-center justify-center gap-[15px] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
-              <p class="font-bold z-[1] text-white">Szukaj</p>
-            </div>                          
-          ';
+        if (get_taxonomy($select_term)->label == 'Cena') { ?>
+          <div class="dropdown-filter customPrice">
+            <div class="dropdown__value dropdown__value-min">0</i></div>
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="javascript:void(0);" class="dropdown__link">400000</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="javascript:void(0);" class="dropdown__link">498000</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="javascript:void(0);" class="dropdown__link">500000</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="javascript:void(0);" class="dropdown__link">600000</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="javascript:void(0);" class="dropdown__link">800000</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-filter customPrice">
+            <div class="dropdown__value dropdown__value-max">max</i></div>
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="javascript:void(0);" class="dropdown__link">400002</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="javascript:void(0);" class="dropdown__link">499002</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="javascript:void(0);" class="dropdown__link">500002</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="javascript:void(0);" class="dropdown__link">600002</a>
+              </li>
+              <li class="dropdown__item">
+                <a href="javascript:void(0);" class="dropdown__link">800002</a>
+              </li>
+            </ul>
+          </div>
+          <div class="wp-block-group btn-more dropdown-filter mt-[5px] w-full h-[62px] bg-[#f5f7fa] hover:bg-[#f2f2f2] flex self-start gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3]">
+            <p class="text-[18px]">Więcej opcji</p>
+          </div>
+          <div class="wp-block-group group dropdown-filter btn-search mt-[5px] relative bg-primaryRed text-white w-full desktop:w-[140px] h-[62px] flex items-center justify-center gap-[15px] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
+            <p class="font-bold z-[1] text-white">Szukaj</p>
+          </div>
+      <?php
 
           echo '<div class="dropdown-filter defaultPrice hidden">';
           echo '<div class="menu-active">';
