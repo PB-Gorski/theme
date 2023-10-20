@@ -522,22 +522,12 @@ window.addEventListener("load", function() {
     });
     console.log('filtered new arr html elements: ', newArrHTMLList);
 
-
-
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
       if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
         priceValueArrNodeList[i].childNodes[1].classList.remove('active');
         // console.log(priceValueArrNodeList[i].childNodes[1]);
       }
-      // priceValueArrNodeList[i].childNodes[1].click();
-      // console.log(priceValueArrNodeList[i].childNodes[1])
     }
-
-    // priceValueArrNodeList.forEach(htmlElemList => {
-    //   if(htmlElemList.classList.contains('active')){
-    //     htmlElemList.click();
-    //   };
-    // });
 
     newArrHTMLList.forEach(htmlElemList => {  
       htmlElemList.click();
