@@ -467,6 +467,7 @@ window.addEventListener("load", function() {
     newArrHTMLList = [];
     priceValueArrNodeList = [];
 
+    document.querySelector('.js-foundedPostOnStart').classList.add('hidden');
     priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
     priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
     priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
