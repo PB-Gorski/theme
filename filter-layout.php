@@ -101,6 +101,7 @@ $tax_sort = $taxonomy;
               </li>
             </ul>
           </div>
+
           <div class="wp-block-group btn-more dropdown-filter mt-[5px] w-full h-[62px] bg-[#f5f7fa] hover:bg-[#f2f2f2] flex self-start gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3]">
             <p class="text-[18px]">Więcej opcji</p>
           </div>
@@ -119,16 +120,11 @@ $tax_sort = $taxonomy;
           $terms_icons = null;
 
           foreach ($terms_selected as $term) {
-
             if ($tax === get_term($term)->taxonomy) {
-
               $is_disabled = (get_term($term)->count === 0) ? 'isDisabled' : '';
-
               // Choose icons
               if (!empty($ymc_terms_icons)) {
-
                 foreach ($ymc_terms_icons as $key => $val) {
-
                   if ((int) $term === (int) $key) {
                     $terms_icons = '<i class="' . $val . '"></i>';
                     break;
@@ -142,14 +138,11 @@ $tax_sort = $taxonomy;
                                 href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
                 esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
             }
-
             $terms_icons = null;
           }
-
           echo '</div>';
           echo '</div>';
         } else {
-
           echo '<div class="dropdown-filter">';
           echo '<div class="menu-active">';
           echo '<span>' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
@@ -158,18 +151,13 @@ $tax_sort = $taxonomy;
           echo '<i class="btn-close">x</i>';
 
           $terms_icons = null;
-
           foreach ($terms_selected as $term) {
-
             if ($tax === get_term($term)->taxonomy) {
 
               $is_disabled = (get_term($term)->count === 0) ? 'isDisabled' : '';
-
               // Choose icons
               if (!empty($ymc_terms_icons)) {
-
                 foreach ($ymc_terms_icons as $key => $val) {
-
                   if ((int) $term === (int) $key) {
                     $terms_icons = '<i class="' . $val . '"></i>';
                     break;
@@ -183,27 +171,16 @@ $tax_sort = $taxonomy;
                                 href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
                 esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
             }
-
             $terms_icons = null;
           }
-
           echo '</div>';
           echo '</div>';
         }
       }
-
       unset($result_tax);
-
       ?>
-
-
-
     </div>
-
     <div class="posts-found"></div>
-
   <?php endif; ?>
-
   <?php do_action("ymc_after_filter_layout_" . $layout_id . '_' . $c_target); ?>
-
 </div>
