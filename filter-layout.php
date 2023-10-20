@@ -65,7 +65,7 @@ $tax_sort = $taxonomy;
           echo '</div>';
           echo '<div class="menu-passive">';
           echo '<i class="btn-close">x</i>';
-        } else {
+        } else if ((!(get_taxonomy($select_term)->label == 'Cena'))) {
           echo 'custom cena';
         };
 
