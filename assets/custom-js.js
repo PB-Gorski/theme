@@ -491,7 +491,7 @@ window.addEventListener("load", function() {
     priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
     priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
 
-    // console.log(priceMinValue,priceMaxValue);
+    console.log(priceMinValue,priceMaxValue);
     // console.log('runSorting2');
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
@@ -523,7 +523,7 @@ window.addEventListener("load", function() {
       htmlElemList.click();
       });
 
-    // console.log(newArrHTMLList);
+    console.log(newArrHTMLList);
     // console.log('runSorting2 finish');
   };
 
