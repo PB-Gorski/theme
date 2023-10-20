@@ -9,7 +9,7 @@ $tax_sort = $taxonomy;
 ?>
 
 
-<div id="<?php echo esc_attr($ymc_filter_layout); ?>-<?php echo esc_attr($c_target); ?>" class="filter-layout bg-[#ebeef2] <?php echo esc_attr($ymc_filter_layout); ?> <?php echo esc_attr($ymc_filter_layout); ?>-<?php echo esc_attr($layout_id); ?> <?php echo esc_attr($ymc_filter_layout); ?>-<?php echo esc_attr($layout_id); ?>-<?php echo esc_attr($c_target); ?>">
+<div id="<?php echo esc_attr($ymc_filter_layout); ?>-<?php echo esc_attr($c_target); ?>" class="filter-layout <?php echo esc_attr($ymc_filter_layout); ?> <?php echo esc_attr($ymc_filter_layout); ?>-<?php echo esc_attr($layout_id); ?> <?php echo esc_attr($ymc_filter_layout); ?>-<?php echo esc_attr($layout_id); ?>-<?php echo esc_attr($c_target); ?>">
 
   <?php do_action("ymc_before_filter_layout_" . $layout_id . '_' . $c_target); ?>
 
@@ -100,7 +100,19 @@ $tax_sort = $taxonomy;
                   <a href="javascript:void(0);" class="dropdown__link">800002</a>
                 </li>
               </ul>
-            </div>        
+            </div>     
+            <div class="wp-block-group btn-more js-injected mb-[10px] w-full desktop:w-[140px] h-[62px] bg-[#f5f7fa] flex self-center gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3]">
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
+                  <title>icon_filters</title>
+                  <path class="line" d="M6 4v16m6-16v16m6-16v16"></path>
+                  <circle class="circle" cx="6" cy="10" r="2"></circle>
+                  <circle class="circle" cx="12" cy="15" r="2"></circle>
+                  <circle class="circle" cx="18" cy="10" r="2"></circle>
+                </svg>
+              </p>
+              <p class="text-[18px]">Więcej opcji</p>
+            </div>               
           ';
         } else {
 

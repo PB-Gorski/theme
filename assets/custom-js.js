@@ -358,18 +358,7 @@ window.addEventListener("load", function() {
     </ul>
     `;
   const btnMoreHTML = `
-    <div class="wp-block-group btn-more js-injected mb-[10px] w-full desktop:w-[140px] h-[62px] bg-[#f5f7fa] flex self-center gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3]">
-      <p>
-        <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
-          <title>icon_filters</title>
-          <path class="line" d="M6 4v16m6-16v16m6-16v16"></path>
-          <circle class="circle" cx="6" cy="10" r="2"></circle>
-          <circle class="circle" cx="12" cy="15" r="2"></circle>
-          <circle class="circle" cx="18" cy="10" r="2"></circle>
-        </svg>
-      </p>
-      <p class="text-[18px]">Więcej opcji</p>
-    </div>
+
   `;
   const sortingStartingValue = `
     <p class="text-[24px] text-center aos-init aos-animate">Znaleziono 39 ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>
