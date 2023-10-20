@@ -426,6 +426,7 @@ option:hover {
 }
 .ymc-smart-filter-container .filter-layout3 .filter-entry {
   max-width: 1170px;
+  row-gap: 12px!important;
 }
 #filter-layout3-filter-layout3 > .filter-entry {
   height: 50px;
