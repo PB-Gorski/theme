@@ -545,10 +545,10 @@ window.addEventListener("load", function() {
     });
     console.log(newArrHTMLList);
     console.log('runSorting2 finish');
-    priceValueArr = [];
-    newArr = [];
-    newArrHTMLList = [];
-    priceValueArrNodeList = [];
+    // priceValueArr = [];
+    // newArr = [];
+    // newArrHTMLList = [];
+    // priceValueArrNodeList = [];
 
   };
   
