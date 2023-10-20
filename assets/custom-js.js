@@ -540,10 +540,7 @@ window.addEventListener("load", function() {
     // });
 
     newArrHTMLList.forEach(htmlElemList => {
-      setInterval(() => {
-        htmlElemList.click();
-        
-      }, 10);
+      htmlElemList.click();
       console.log(htmlElemList);
     });
 
