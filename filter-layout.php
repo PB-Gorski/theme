@@ -62,6 +62,7 @@ $tax_sort = $taxonomy;
         echo '<div class="dropdown-filter">';
         echo '<div class="menu-active">';
         echo '<span>' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
+        echo print_r(get_taxonomy($select_term));
         echo '</div>';
         echo '<div class="menu-passive">';
         echo '<i class="btn-close">x</i>';
