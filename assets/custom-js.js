@@ -522,7 +522,9 @@ window.addEventListener("load", function() {
 
       htmlElemList.click();
       });
-
+      priceValueArr = [];
+      newArr = [];
+      newArrHTMLList = [];
     console.log(newArrHTMLList);
     // console.log('runSorting2 finish');
   };
