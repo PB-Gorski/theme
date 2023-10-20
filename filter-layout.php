@@ -3,16 +3,15 @@
 $ymc_filter_layout = 'filter-layout3';
 $terms_selected = $terms;
 $c_target = 'filter-layout3';
-$id = $layout_id;
 $ymc_multiple_filter = '1';
 $ymc_sort_terms = 'manual';
 $tax_sort = $taxonomy;
 ?>
 
 
-<div id="<?php echo esc_attr($ymc_filter_layout); ?>-<?php echo esc_attr($c_target); ?>" class="filter-layout <?php echo esc_attr($ymc_filter_layout); ?> <?php echo esc_attr($ymc_filter_layout); ?>-<?php echo esc_attr($id); ?> <?php echo esc_attr($ymc_filter_layout); ?>-<?php echo esc_attr($id); ?>-<?php echo esc_attr($c_target); ?>">
+<div id="<?php echo esc_attr($ymc_filter_layout); ?>-<?php echo esc_attr($c_target); ?>" class="filter-layout <?php echo esc_attr($ymc_filter_layout); ?> <?php echo esc_attr($ymc_filter_layout); ?>-<?php echo esc_attr($layout_id); ?> <?php echo esc_attr($ymc_filter_layout); ?>-<?php echo esc_attr($layout_id); ?>-<?php echo esc_attr($c_target); ?>">
 
-  <?php do_action("ymc_before_filter_layout_" . $id . '_' . $c_target); ?>
+  <?php do_action("ymc_before_filter_layout_" . $layout_id . '_' . $c_target); ?>
 
   <?php if (is_array($terms_selected)) :
 
@@ -41,7 +40,7 @@ $tax_sort = $taxonomy;
       }
       $arr_taxonomies = array_unique($arr_taxonomies);
 
-      $show_all = apply_filters('ymc_button_show_all_' . $id . '_' . $c_target, __('All', 'ymc-smart-filter'));
+      $show_all = apply_filters('ymc_button_show_all_' . $layout_id . '_' . $c_target, __('All', 'ymc-smart-filter'));
 
       echo '<a class="btn-all" href="#" data-selected="all" data-terms="' . esc_attr($all_terms) . '">' . esc_html($show_all) . '</a>';
 
@@ -113,6 +112,6 @@ $tax_sort = $taxonomy;
 
   <?php endif; ?>
 
-  <?php do_action("ymc_after_filter_layout_" . $id . '_' . $c_target); ?>
+  <?php do_action("ymc_after_filter_layout_" . $layout_id . '_' . $c_target); ?>
 
 </div>
