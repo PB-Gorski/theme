@@ -60,7 +60,54 @@ $tax_sort = $taxonomy;
         $select_term = apply_filters('ymc_select_term_dropdown', $tax);
 
         if (get_taxonomy($select_term)->label == 'Cena') {
-          echo 'custom cena';
+          echo '
+            <div class="mySortingBar container mx-auto">
+              <div class="content w-[281px] h-[59px] mx-auto">
+                <div class="card flex gap-[1px]">
+                  <div class="dropdown w-[140px]">
+                    <div class="dropdown__value dropdown__value-min">0</i></div>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__item">
+                        <a href="javascript:void(0);" class="dropdown__link">400000</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="javascript:void(0);" class="dropdown__link">498000</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="javascript:void(0);" class="dropdown__link">500000</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="javascript:void(0);" class="dropdown__link">600000</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="javascript:void(0);" class="dropdown__link">800000</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown w-[140px]">
+                    <div class="dropdown__value dropdown__value-max">max</i></div>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__item">
+                        <a href="javascript:void(0);" class="dropdown__link">400002</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="javascript:void(0);" class="dropdown__link">499002</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="javascript:void(0);" class="dropdown__link">500002</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="javascript:void(0);" class="dropdown__link">600002</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="javascript:void(0);" class="dropdown__link">800002</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>          
+          ';
         } else {
 
           echo '<div class="dropdown-filter">';
