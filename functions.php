@@ -518,7 +518,8 @@ add_action('init', 'cptui_register_my_cpts_lokale', -1);
 function pbgorski_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
-
+	$filter_id = '148';
+	$layout_id = '1';
 	$layout  = ''; //Override demo message
         ob_start();
 
