@@ -536,7 +536,7 @@ window.addEventListener("load", function() {
       terms: filteredTermsID.join(),            
     }).apiTermUpdate(); 
   };
-  btnSearch.addEventListener('click', runSorting);
+  // btnSearch.addEventListener('click', runSorting);
 
 
   if(document.body.classList.contains('page-id-606') || document.body.classList.contains('page-id-11') || document.body.classList.contains('page-id-13')){
