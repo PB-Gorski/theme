@@ -526,10 +526,10 @@ window.addEventListener("load", function() {
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
       if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
-        priceValueArrNodeList[i].childNodes[1].click();
+        priceValueArrNodeList[i].childNodes[1].classList.remove('active');
         console.log(priceValueArrNodeList[i].childNodes[1]);
       }
-      priceValueArrNodeList[i].childNodes[1].classList.remove('active');
+      priceValueArrNodeList[i].childNodes[1].click();
       console.log(priceValueArrNodeList[i].childNodes[1])
     }
 
@@ -540,13 +540,10 @@ window.addEventListener("load", function() {
     // });
 
     newArrHTMLList.forEach(htmlElemList => {
-      setInterval(() => {
-        
-      }, 100);
-
       htmlElemList.click();
       console.log(htmlElemList);
     });
+
     console.log(newArrHTMLList);
     console.log('runSorting2 finish');
     priceValueArr = [];
