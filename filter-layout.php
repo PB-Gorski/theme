@@ -101,7 +101,7 @@ $tax_sort = $taxonomy;
                 </li>
               </ul>
             </div>     
-            <div class="wp-block-group btn-more js-injected mb-[10px] w-full desktop:w-[140px] h-[62px] bg-[#f5f7fa] flex self-center gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3]">
+            <div class="wp-block-group btn-more  mb-[10px] w-full h-[62px] bg-[#f5f7fa] flex self-center gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3]">
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" id="icon_filters" width="24" height="24" viewBox="0 0 24 24" class="injected-svg inject-svg icon-filters">
                   <title>icon_filters</title>
@@ -113,7 +113,20 @@ $tax_sort = $taxonomy;
               </p>
               <p class="text-[18px]">Więcej opcji</p>
             </div> 
-                        
+            <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-full desktop:w-[140px] h-[62px] flex items-center justify-center gap-[15px] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
+              <p class=" z-[1]">
+                <svg width="16" height="16" class="injected-svg inject-svg icon-search">
+                  <defs>
+                    <style></style>
+                  </defs>
+                  <g id="icon_search" fill="none" stroke="#fff" stroke-width="2">
+                    <circle cx="6.5" cy="6.5" r="5.5"></circle>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-4-4"></path>
+                  </g>
+                </svg>
+              </p>
+              <p class="font-bold z-[1]">Szukaj</p>
+            </div>                          
           ';
         } else {
 
