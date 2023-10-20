@@ -427,8 +427,8 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 .filter-entry {
   max-width: 1170px;
 }
-.ymc-smart-filter-container .filter-layout3 {
-  background-color: #ebeef2;
+#filter-layout3-filter-layout3 > .filter-entry {
+  height: 50px;
 }
 .filter-layout3-148 > .filter-entry{
   height: 50px;
