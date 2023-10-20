@@ -409,20 +409,7 @@ window.addEventListener("load", function() {
   </div>
   `;
   const btnFilterSerach = `
-    <div class="wp-block-group group btn-search relative bg-primaryRed text-white w-full desktop:w-[140px] h-[62px] flex items-center justify-center gap-[15px] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
-      <p class=" z-[1]">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="injected-svg inject-svg icon-search">
-          <defs>
-            <style></style>
-          </defs>
-          <g id="icon_search" fill="none" stroke="#fff" stroke-width="2">
-            <circle cx="6.5" cy="6.5" r="5.5"></circle>
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-4-4"></path>
-          </g>
-        </svg>
-      </p>
-      <p class="font-bold z-[1]">Szukaj</p>
-    </div>
+
   `;
   const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
   const dropDownFilters = document.querySelectorAll(".dropdown-filter");
