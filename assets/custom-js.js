@@ -524,7 +524,8 @@ window.addEventListener("load", function() {
         priceValueArrNodeList[i].childNodes[1].click();
         console.log(priceValueArrNodeList[i].childNodes[1]);
       }
-      // priceValueArrNodeList[i].childNodes[1].classList.remove('active');
+      priceValueArrNodeList[i].childNodes[1].classList.remove('active');
+      console.log(priceValueArrNodeList[i].childNodes[1])
     }
 
     // priceValueArrNodeList.forEach(htmlElemList => {
