@@ -513,11 +513,13 @@ window.addEventListener("load", function() {
       };
     });
 
+
+
     newArrHTMLList.forEach(htmlElemList => {
-      setTimeout(() => {
+      if(htmlElemList.classList.contains('active')){
         htmlElemList.click();
-        
-      },100);
+      }
+        htmlElemList.click();
     });
 
     // console.log(newArrHTMLList);
@@ -541,6 +543,7 @@ window.addEventListener("load", function() {
 
     // postsFoundHTML.insertAdjacentHTML('afterend', '<p class="firstTime bg-white text-[24px] text-center aos-init aos-animate">Znaleziono ' + postsCount + ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>');
   });
+
 
   
   // search more options handle
