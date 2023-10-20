@@ -522,10 +522,13 @@ window.addEventListener("load", function() {
       };
     });
 
+    let filteredTermsID = [];
     console.log('filtered new arr html elements: ', newArrHTMLList);
     newArrHTMLList.forEach(el2 =>{
-      console.log(el2.dataset.termid);
+      filteredTermsID.push(el2.dataset.termid);
     });
+
+    console.log(...filteredTermsID);
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
       if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
@@ -548,10 +551,10 @@ window.addEventListener("load", function() {
     newArrHTMLList = [];
     priceValueArrNodeList = [];
 
-    // YMCTools({
-    //   target: '.data-target-ymc1',
-    //   terms: ''            
-    // }).apiTermUpdate(); 
+    YMCTools({
+      target: '.data-target-ymc1',
+      terms: [...filteredTermsID],            
+    }).apiTermUpdate(); 
   };
   btnSearch.addEventListener('click', runSorting);
 
