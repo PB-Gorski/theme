@@ -7,7 +7,7 @@
     @apply [&>div>div>:first-child]:container [&>div>div>:first-child]:mx-auto;
   }
   .applyContainer2 {
-    @apply [&>div>:first-child]:container [&>div>:first-child]:mx-auto;
+    @apply [&>div>div>:nth-child(2)]:container [&>div>div>:nth-child(2)]:mx-auto;
   }
 }
 
