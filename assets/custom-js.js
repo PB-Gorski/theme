@@ -511,6 +511,7 @@ window.addEventListener("load", function() {
           newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
         };
       };
+      console.log('filtered new arr elements: ', newArrHTMLList.length);
     });
 
 
