@@ -422,8 +422,8 @@ window.addEventListener("load", function() {
   let priceValueArrNodeList = 0
   // let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
   // let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
-  let priceMaxValue =0
-  let priceMaxValue =0
+  let priceMaxValue = 0
+  let priceMinValue = 0
   // let priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
   let priceValueArr = [];
   let newArr = [];
