@@ -519,8 +519,9 @@ window.addEventListener("load", function() {
       if(htmlElemList.classList.contains('active')){
         htmlElemList.click();
       }
-        htmlElemList.click();
-    });
+
+      htmlElemList.click();
+      });
 
     // console.log(newArrHTMLList);
     // console.log('runSorting2 finish');
