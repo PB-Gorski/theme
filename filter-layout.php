@@ -62,6 +62,10 @@ $tax_sort = $taxonomy;
 
         $select_term = apply_filters('ymc_select_term_dropdown', $tax);
 
+        if (get_taxonomy($select_term)->label == 'Cena') {
+          echo 'custom cena';
+        };
+
         echo '<div class="dropdown-filter">';
         echo '<div class="menu-active">';
         echo '<span>' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
