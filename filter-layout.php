@@ -55,7 +55,9 @@ $tax_sort = $taxonomy;
         $result_tax = $arr_taxonomies;
       }
 
-      foreach ($result_tax as $tax => $index) {
+      foreach ($result_tax as $tax) {
+        $index;
+
         echo $index;
 
         $select_term = apply_filters('ymc_select_term_dropdown', $tax);
@@ -99,6 +101,7 @@ $tax_sort = $taxonomy;
 
         echo '</div>';
         echo '</div>';
+        $index++;
       }
 
       unset($result_tax);
