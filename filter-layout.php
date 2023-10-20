@@ -168,8 +168,6 @@ $tax_sort = $taxonomy;
 
           echo '</div>';
           echo '</div>';
-        }          
-
         } else {
 
           echo '<div class="dropdown-filter">';
