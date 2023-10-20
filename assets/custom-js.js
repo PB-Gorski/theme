@@ -511,6 +511,7 @@ window.addEventListener("load", function() {
     });
     console.log('termsid: ', priceValueArr);
     
+    
     // console.log('new price arr: ',newArr);
 
     newArr.forEach(elem => {
@@ -542,6 +543,11 @@ window.addEventListener("load", function() {
     newArr = [];
     newArrHTMLList = [];
     priceValueArrNodeList = [];
+
+    // YMCTools({
+    //   target: '.data-target-ymc545-1',
+    //   terms: 'termID'            
+    // }).apiTermUpdate();  
   };
   btnSearch.addEventListener('click', runSorting);
 
