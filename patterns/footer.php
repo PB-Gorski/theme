@@ -10,23 +10,6 @@
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="footer" class="wp-block-group footer pt-[60px] relative">
-  <?php if (get_theme_mod('hide_powered_by') == false) { ?>
-    <!-- wp:paragraph -->
-    <a href="#" target="_blank">
-      <!-- wp:list -->
-      <ul>
-        <!-- wp:list-item -->
-        <li>
-          <?php echo get_theme_mod('powered_by'); ?>
-        </li>
-        <!-- /wp:list-item -->
-      </ul>
-      <!-- /wp:list -->
-
-    </a>.
-    <!-- /wp:paragraph -->
-  <?php } // end hide_powered_by if 
-  ?>
   <!-- wp:group -->
   <div class="wp-block-group footer1 container mx-auto mb-[20px] desktop:px-0 px-[20px] h-full desktop:flex">
     <!-- wp:group -->

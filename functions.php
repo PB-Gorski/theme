@@ -575,30 +575,3 @@ add_filter('ymc_posts_selected_148_1', 'ymc_posts_selected', 10, 2);
 // add_filter('ymc_posts_selected_148_1', 'ymc_posts_selected', 10, 2);
 
 // Add "Designed by" notification in footer
-function themeslug_customize_register($wp_customize)
-{
-	$wp_customize->add_setting(
-		'powered_by',
-		array(
-			'default' => 'Group 1',
-			//'sanitize_callback' => 'sanitize_powered_by',
-			'capability'        => 'edit_theme_options',
-		)
-	);
-	$wp_customize->add_control(
-		'powered_by',
-		array(
-			'section'  => 'footer_section',
-			'label'    => __('Designed by'),
-			'type'     => 'select',
-			'priority' => 8,
-			'choices'  => array(
-				'Group 1' => __('Group 1', 'ctotheme'),
-				'Group 2' => __('Group 2', 'ctotheme'),
-				'Group 3' => __('Group 3', 'ctotheme'),
-				'Group 4' => __('Group 4', 'ctotheme')
-			)
-		)
-	);
-}
-add_action('customize_register', 'themeslug_customize_register');
