@@ -56,7 +56,7 @@ $tax_sort = $taxonomy;
       }
 
       foreach ($result_tax as $tax) {
-        $index;
+        $index = 0;
 
         echo $index;
 
