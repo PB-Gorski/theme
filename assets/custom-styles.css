@@ -522,12 +522,11 @@ border-width: 0 2px 2px 0;
 .posts-found{
   z-index: 1;
   position: relative;
-  background: #ebeef2;
   height: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #ebeef2;
 }
 
 /* sorting arrow */
