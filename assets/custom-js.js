@@ -514,12 +514,16 @@ window.addEventListener("load", function() {
     });
 
 
+    for (i = 2 ; i < priceValueArrNodeList.length ; i++){
+      priceValueArrNodeList[i].childNodes[1].classList.contains('active');
+      priceValueArrNodeList[i].childNodes[1].click();
+    }
 
-    priceValueArrNodeList.forEach(htmlElemList => {
-      if(htmlElemList.classList.contains('active')){
-        htmlElemList.click();
-      };
-    });
+    // priceValueArrNodeList.forEach(htmlElemList => {
+    //   if(htmlElemList.classList.contains('active')){
+    //     htmlElemList.click();
+    //   };
+    // });
 
     newArrHTMLList.forEach(htmlElemList => {
       htmlElemList.click();
