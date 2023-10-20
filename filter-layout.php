@@ -101,7 +101,7 @@ $tax_sort = $taxonomy;
 
         echo '</div>';
         echo '</div>';
-        $index++;
+        $index = $index + 1;
       }
 
       unset($result_tax);
