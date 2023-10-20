@@ -18,7 +18,7 @@ $tax_sort = $taxonomy;
     $all_terms = implode(',', $terms_selected);
   ?>
 
-    <div class="filter-entry" data-terms="<?php echo esc_attr($all_terms); ?>">
+    <div class="filter-entry h-[50px] transition-height ease duration-[300]" data-terms="<?php echo esc_attr($all_terms); ?>">
 
       <?php
 
