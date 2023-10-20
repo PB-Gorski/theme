@@ -514,7 +514,10 @@ window.addEventListener("load", function() {
     });
 
     newArrHTMLList.forEach(htmlElemList => {
-      htmlElemList.click();
+      setTimeout(() => {
+        htmlElemList.click();
+        
+      },100);
     });
 
     // console.log(newArrHTMLList);
