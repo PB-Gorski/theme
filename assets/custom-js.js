@@ -486,10 +486,10 @@ window.addEventListener("load", function() {
   // price selects
   // console.log(priceValueArr);
   function runSorting(){
-    priceValueArr = [];
-    newArr = [];
-    newArrHTMLList = [];
-    priceValueArrNodeList = [];
+    // priceValueArr = [];
+    // newArr = [];
+    // newArrHTMLList = [];
+    // priceValueArrNodeList = [];
 
     priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
     priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
@@ -545,15 +545,11 @@ window.addEventListener("load", function() {
     });
     console.log(newArrHTMLList);
     console.log('runSorting2 finish');
-    // priceValueArr = [];
-    // newArr = [];
-    // newArrHTMLList = [];
-    // priceValueArrNodeList = [];
-
+    priceValueArr = [];
+    newArr = [];
+    newArrHTMLList = [];
+    priceValueArrNodeList = [];
   };
-  
-
-
   btnSearch.addEventListener('click', runSorting);
 
 
