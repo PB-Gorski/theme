@@ -510,7 +510,8 @@ window.addEventListener("load", function() {
       };
     });
     console.log(priceValueArr);
-
+    
+    console.log('new price arr: ',newArr);
 
     newArr.forEach(elem => {
       for(j = 2 ; j < priceValueArrNodeList.length ; j++){
@@ -518,10 +519,9 @@ window.addEventListener("load", function() {
           newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
         };
       };
-      console.log('filtered new arr elements: ', newArrHTMLList.length);
     });
+    console.log('filtered new arr html elements: ', newArrHTMLList);
 
-    console.log(newArr);
 
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
