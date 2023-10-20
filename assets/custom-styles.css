@@ -429,6 +429,7 @@ option:hover {
 }
 #filter-layout3-filter-layout3 > .filter-entry {
   height: 50px;
+  transition: height 0.3s ease-out;
 }
 .filter-layout3-148 > .filter-entry{
   height: 50px;
