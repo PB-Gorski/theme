@@ -40,9 +40,9 @@ $tax_sort = $taxonomy;
       }
       $arr_taxonomies = array_unique($arr_taxonomies);
 
-      $show_all = apply_filters('ymc_button_show_all_' . $layout_id . '_' . $c_target, __('All', 'ymc-smart-filter'));
+      // $show_all = apply_filters('ymc_button_show_all_' . $layout_id . '_' . $c_target, __('All', 'ymc-smart-filter'));
 
-      echo '<a class="btn-all" href="#" data-selected="all" data-terms="' . esc_attr($all_terms) . '">' . esc_html($show_all) . '</a>';
+      // echo '<a class="btn-all hidden" href="#" data-selected="all" data-terms="' . esc_attr($all_terms) . '">' . esc_html($show_all) . '</a>';
 
       if (!is_null($tax_sort)) {
         $result_tax = [];
