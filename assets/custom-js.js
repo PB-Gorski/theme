@@ -518,13 +518,14 @@ window.addEventListener("load", function() {
     newArrHTMLList.forEach(htmlElemList => {
       if(htmlElemList.classList.contains('active')){
         htmlElemList.click();
-      }
+      };
 
       htmlElemList.click();
-      });
-      priceValueArr = [];
-      newArr = [];
-      newArrHTMLList = [];
+    });
+
+    priceValueArr = [];
+    newArr = [];
+    newArrHTMLList = [];
     console.log(newArrHTMLList);
     // console.log('runSorting2 finish');
   };
