@@ -1,10 +1,5 @@
 <?php if (!defined('ABSPATH')) exit;
 
-// Add Style
-$filter_css = "";
-
-echo '<style id="' . $handle_filter . '">' . $filter_css . '</style>';
-
 //Manual added TODO: Connect
 
 $ymc_filter_layout = 'filter-layout3';
