@@ -461,9 +461,9 @@ window.addEventListener("load", function() {
 
   // dropdown test
   mainDropDown.forEach(dropDownEl =>{
-    console.log('before event active list click');
+    // console.log('before event active list click');
     dropDownEl.addEventListener('click', (e) =>{
-      console.log('show min/max list');
+      // console.log('show min/max list');
       e.target.nextElementSibling.classList.toggle('dropdown__list_active');
     });
   });
@@ -484,15 +484,15 @@ window.addEventListener("load", function() {
   };
 
   // price selects
-  console.log(priceValueArr);
+  // console.log(priceValueArr);
   function runSorting(){
     priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
     priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
     priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
     priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
 
-    console.log(priceMinValue,priceMaxValue);
-    console.log('runSorting2');
+    // console.log(priceMinValue,priceMaxValue);
+    // console.log('runSorting2');
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
       priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
