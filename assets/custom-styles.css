@@ -474,7 +474,10 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 .dropdown-filter .menu-active .arrow {
 border-color: #8a8f99!important;
 border-width: 0 2px 2px 0;
-border-radius: 0!important;
+}
+.ymc-smart-filter-container .filter-layout3 .dropdown-filter{
+  border-radius: 0!important;
+  margin-bottom: 0!important;  
 }
 
 /* .menu-link::before,
