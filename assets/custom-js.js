@@ -486,7 +486,6 @@ window.addEventListener("load", function() {
   // price selects
   // console.log(priceValueArr);
   function runSorting(){
-    priceValueArrNodeList = [];
     priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
     priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
     priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
@@ -544,6 +543,7 @@ window.addEventListener("load", function() {
     priceValueArr = [];
     newArr = [];
     newArrHTMLList = [];
+    priceValueArrNodeList = [];
     // console.log('runSorting2 finish');
   };
   
