@@ -524,7 +524,7 @@ window.addEventListener("load", function() {
 
     console.log('filtered new arr html elements: ', newArrHTMLList);
     newArrHTMLList.forEach(el2 =>{
-      console.log(el.dataset.termid);
+      console.log(el2.dataset.termid);
     });
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
