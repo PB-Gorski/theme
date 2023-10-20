@@ -516,12 +516,12 @@ window.addEventListener("load", function() {
 
     newArr.forEach(elem => {
       for(j = 2 ; j < priceValueArrNodeList.length ; j++){
-        if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+        if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.termid) == elem){
           newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
         };
       };
     });
-    // console.log('filtered new arr html elements: ', newArrHTMLList);
+    console.log('filtered new arr html elements: ', newArrHTMLList);
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
       if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
@@ -545,9 +545,9 @@ window.addEventListener("load", function() {
     priceValueArrNodeList = [];
 
     // YMCTools({
-    //   target: '.data-target-ymc545-1',
-    //   terms: 'termID'            
-    // }).apiTermUpdate();  
+    //   target: '.data-target-ymc1',
+    //   terms: ''            
+    // }).apiTermUpdate(); 
   };
   btnSearch.addEventListener('click', runSorting);
 
