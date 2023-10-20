@@ -543,7 +543,7 @@ window.addEventListener("load", function() {
       setTimeout(() => {
         
         htmlElemList.click();
-      }, 100);
+      }, 1000);
       console.log(htmlElemList);
     });
 
