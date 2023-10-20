@@ -168,8 +168,6 @@ $tax_sort = $taxonomy;
       ?>
     </div>
     <?php
-    $term = $selected_val2 == true ? $selected_val2 : '';
-
     $query = new WP_Query(array(
       'miasto' => $term,
       'post_status' => 'publish'
