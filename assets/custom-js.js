@@ -539,12 +539,12 @@ window.addEventListener("load", function() {
       console.log(htmlElemList);
     });
     console.log(newArrHTMLList);
-    
-    priceValueArr = [];
-    newArr = [];
-    newArrHTMLList = [];
     // console.log('runSorting2 finish');
   };
+  
+  priceValueArr = [];
+  newArr = [];
+  newArrHTMLList = [];
 
   btnSearch.addEventListener('click', runSorting);
 
