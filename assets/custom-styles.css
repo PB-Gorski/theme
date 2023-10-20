@@ -812,7 +812,6 @@ background-color: #e8fbff!important;
   display: flex;
   justify-content: space-around;
   cursor: pointer;
-  border-radius: 6px;
   width: 100%;
 
 }
