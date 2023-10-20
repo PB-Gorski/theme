@@ -104,7 +104,7 @@ $tax_sort = $taxonomy;
 
       ?>
 
-      <div class="selected-items"></div>
+
 
     </div>
 
