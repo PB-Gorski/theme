@@ -27,7 +27,7 @@ module.exports = {
     },
     extend: {
 			colors: {
-				primaryRed: '#E80D38',
+				primaryRed: '#b22944',
         textGray: '#2E384D',
         bgLightGray:'#EBEEF2',
         btnHoverRed: '#D00C32',
