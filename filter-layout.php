@@ -19,7 +19,7 @@ $tax_sort = $taxonomy;
   ?>
     <div class="search_tabs"></div>
 
-    <div class="filter-entry" data-terms="<?php echo esc_attr($all_terms); ?>">
+    <div class="filter-entry container" data-terms="<?php echo esc_attr($all_terms); ?>">
 
       <?php
 
