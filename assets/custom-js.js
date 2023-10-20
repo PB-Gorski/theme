@@ -528,7 +528,7 @@ window.addEventListener("load", function() {
       filteredTermsID.push(el2.dataset.termid);
     });
 
-    console.log(...filteredTermsID);
+    console.log(filteredTermsID.join(','));
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
       if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
@@ -553,7 +553,7 @@ window.addEventListener("load", function() {
 
     YMCTools({
       target: '.data-target-ymc1',
-      terms: [...filteredTermsID],            
+      terms: filteredTermsID.join(),            
     }).apiTermUpdate(); 
   };
   btnSearch.addEventListener('click', runSorting);
