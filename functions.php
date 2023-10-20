@@ -513,57 +513,15 @@ function cptui_register_my_cpts_lokale()
 add_action('init', 'cptui_register_my_cpts_lokale', -1);
 
 
+
+
 function my_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $target, $options)
-{ ?>
-	<script>
-		window.addEventListener('DOMContentLoaded', () => {
-			let _target = "<?php echo $target; ?>";
-			document.querySelectorAll(_target + ' .filter-custom-layout [data-termid]').forEach((el) => {
-				el.addEventListener('click', function(e) {
-					e.preventDefault();
-					let ymc = YMCTools({
-						target: _target,
-						self: this
-					});
-					ymc.updateParams();
-					ymc.getFilterPosts();
-				});
-			});
-		});
-	</script>
+{
+	$filepath_filter = YMC_SMART_FILTER_DIR . "/includes/core/frontend/layouts/filter/" . $ymc_filter_layout . ".php";
 
-<?php
-	if (count($terms)) {
-		$multiple = ($multiple) ? 'multiple' : '';
-		$terms_list = implode(",", $terms);
-		$layout = '<ul class="test">';
-		$layout .= '<li><a class="all active" href="#" data-selected="all" data-termid="' . esc_attr($terms_list) . '">' . esc_html__('ALL', 'theme') . '</a></li>';
-
-		foreach ($taxonomy as $tax) {
-			$layout .= '<li>';
-			$layout .= '<header>' . get_taxonomy($tax)->label . '</header>';
-			$layout .= '<ul>';
-			foreach ($terms as $term) {
-				if ($tax === get_term($term)->taxonomy) {
-					$class_icon = '';
-					$color_icon = '';
-					foreach ($options as $obj) {
-						if ($obj->termid === $term) {
-							$class_icon = $obj->classicon;
-							$color_icon = $obj->coloricon;
-							break;
-						}
-					}
-					$layout .= '<li><a class="' . $multiple . '" href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '">' .
-						'<i class="' . esc_attr($class_icon) . '" style="color:' . esc_attr($color_icon) . '"></i>' . esc_html(get_term($term)->name) . '</a></li>';
-				}
-			}
-			$layout .= '</ul></li>';
-		}
-		$layout .= '</ul>';
-		$layout .= '<div class="posts-found TEST"></div>';
+	if (file_exists($filepath_filter)) {
+		require $filepath_filter;
 	}
-	return $layout;
 }
 
 add_filter('ymc_filter_custom_layout_148_1', 'my_custom_filter_layout', 10, 6);
