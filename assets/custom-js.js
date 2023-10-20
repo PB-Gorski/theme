@@ -517,7 +517,7 @@ window.addEventListener("load", function() {
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
       if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
         priceValueArrNodeList[i].childNodes[1].click();
-        if(priceValueArrNodeList[i].childNodes[1].classList.remove('active')){
+        priceValueArrNodeList[i].childNodes[1].classList.remove('active');
       }
     }
 
