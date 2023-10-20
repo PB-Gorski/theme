@@ -529,7 +529,7 @@ window.addEventListener("load", function() {
         priceValueArrNodeList[i].childNodes[1].classList.remove('active');
         // console.log(priceValueArrNodeList[i].childNodes[1]);
       }
-      priceValueArrNodeList[i].childNodes[1].click();
+      // priceValueArrNodeList[i].childNodes[1].click();
       // console.log(priceValueArrNodeList[i].childNodes[1])
     }
 
@@ -546,6 +546,7 @@ window.addEventListener("load", function() {
 
     console.log(newArrHTMLList);
     console.log('runSorting2 finish');
+
     priceValueArr = [];
     newArr = [];
     newArrHTMLList = [];
