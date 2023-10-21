@@ -870,6 +870,10 @@ color: #fff;
 .dropdown__list_active {
   display: block;
 }
+.dropdown-filter-title{
+  padding: 20px 10px;
+  margin-bottom: 30px;
+}
 
 .search_tabs{
   width: 100%;
