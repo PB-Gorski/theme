@@ -872,8 +872,8 @@ color: #fff;
   display: block;
 }
 .dropdown-filter-title{
-  padding: 20px 10px;
-  margin-bottom: 30px;
+  color: gray;
+  padding: 20px 15px;
 }
 .search_tabs{
   width: 100%;
