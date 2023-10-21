@@ -476,7 +476,7 @@ option:hover {
   color: #2E384D!important;
   font-size: 18px!important;
   padding: 0!important;
-  z-index: 2;
+  z-index: 3;
 }
 .menu-link{
   color: #2E384D!important;
