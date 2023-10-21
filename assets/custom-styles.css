@@ -884,11 +884,14 @@ color: #fff;
 .tab_mieszkania{
   height: 100%;
   width: 125px;
+  color: #8a8f99;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .tab_mieszkania.active{
+  color:#2E384D;
   border-bottom: #b22944 2px solid;
 }
 
