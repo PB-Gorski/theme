@@ -144,10 +144,11 @@ $tax_sort = $taxonomy;
 
               <div class="dropdown-filter">';
                 <div class="menu-active">';
-                  <span><?php get_taxonomy($select_term)->label ?></span> <i class="arrow down"></i>';
-                </div>';
-                <div class="menu-passive">';
-                  <i class="btn-close">x</i>';
+                  <span><?php get_taxonomy($select_term)->label ?></span>
+                  <i class="arrow down"></i>
+                </div>
+                <div class="menu-passive">
+                  <i class="btn-close">x</i>
               <?php
               $terms_icons = null;
               foreach ($terms_selected as $term) {
