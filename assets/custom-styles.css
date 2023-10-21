@@ -435,11 +435,11 @@ option:hover {
   row-gap: 12px!important;
 }
 #filter-layout3-filter-layout3 > .filter-entry {
-  height: 50px;
+  height: 120px;
   transition: height 0.3s ease-out;
 }
 .filter-layout3-148 > .filter-entry{
-  height: 50px;
+  height: 300px;
   margin-bottom: 40px;
   transition: height 0.3s ease-out;
   max-width: 1170px;
