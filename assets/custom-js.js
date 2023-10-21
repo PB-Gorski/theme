@@ -459,8 +459,10 @@ window.addEventListener("load", function() {
     });
   };
 
-
-  document.querySelector('.js-post-found').hasChildNodes() ? document.querySelector('.js-foundedPostOnStart').classList.add('hidden') : null;
+  if(document.querySelector('.js-post-found').hasChildNodes()){
+    document.querySelector('.js-foundedPostOnStart').classList.add('hidden');
+    console.log('true');;
+  }
   // price selects
   // console.log(priceValueArr);
   function runSorting(){
