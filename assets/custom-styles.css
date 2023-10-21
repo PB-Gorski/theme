@@ -492,6 +492,9 @@ border-width: 0 2px 2px 0;
   border-radius: 0!important;
   margin-bottom: 0!important;  
 }
+.btn-more.dropdown-filter{
+  margin-top: 2px;
+}
 
 /* .menu-link::before,
 .menu-link::after, */

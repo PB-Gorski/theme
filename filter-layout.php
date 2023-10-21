@@ -16,7 +16,17 @@ $tax_sort = $taxonomy;
   <?php if (is_array($terms_selected)) :
     $all_terms = implode(',', $terms_selected);
   ?>
-    <div class="search_tabs container"></div>
+    <div class="search_tabs container flex justify-center items-center">
+      <div class="tab-mieszkania h-full border-b-[2px] border-b-primaryRed w-[100px]">
+        <p class="text-[20px] font-bold">Mieszkania</p>
+      </div>
+      <div class="tab-mieszkania">
+        <p>Lokale</p>
+      </div>
+      <div class="tab-mieszkania">
+        <p>Biura</p>
+      </div>
+    </div>
     <div class="filter-entry" data-terms="<?php echo esc_attr($all_terms); ?>">
       <?php
       $type_multiple = ((bool) $ymc_multiple_filter) ? 'multiple' : '';
