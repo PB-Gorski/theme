@@ -40,6 +40,9 @@ h4 {
   color:#8a8f99;
   text-decoration: underline;
 }
+.single.single-mieszkania a{
+  text-decoration: none!important;
+}
 /* images */
 figure[class*="wp-block-image"] img,
 .wp-block-post-featured-image img {
