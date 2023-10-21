@@ -460,7 +460,7 @@ window.addEventListener("load", function() {
   };
 
 
-  document.querySelector('.js-post-found').hasChildNodes ? document.querySelector('.js-foundedPostOnStart').classList.add('hidden') : null;
+  document.querySelector('.js-post-found').hasChildNodes() ? document.querySelector('.js-foundedPostOnStart').classList.add('hidden') : null;
   // price selects
   // console.log(priceValueArr);
   function runSorting(){
