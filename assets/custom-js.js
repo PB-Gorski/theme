@@ -463,7 +463,7 @@ window.addEventListener("load", function() {
 
   menuItemsPassive.forEach(item =>{
     item.addEventListener('click', ()=>{
-      if(document.querySelector('.js-post-found').hasChildNodes()){
+      if(document.querySelector('.js-post-found').hasChildNodes() || item.classList.contains('active')){
         document.querySelector('.js-foundedPostOnStart').classList.add('hidden');
         console.log('true');;
       }
