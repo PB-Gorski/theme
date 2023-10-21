@@ -461,17 +461,18 @@ window.addEventListener("load", function() {
 
   const menuItemsPassive = document.querySelectorAll('.menu-link');
   let counter = 0;
+  // menuItemsPassive.forEach(item =>{
+  //   item.addEventListener('click', ()=>{
+  //     if(document.querySelector('.js-post-found').hasChildNodes() || item.classList.contains('active')){
+  //       document.querySelector('.js-foundedPostOnStart').classList.add('hidden');
+  //       console.log('true');;
+  //     };
+  //   });
+  // });
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
     if (counter == 2){
       console.log('posts loaded2');
-      menuItemsPassive.forEach(item =>{
-        item.addEventListener('click', ()=>{
-          if(document.querySelector('.js-post-found').hasChildNodes() || item.classList.contains('active')){
-            document.querySelector('.js-foundedPostOnStart').classList.add('hidden');
-            console.log('true');;
-          };
-        });
-      });
+      document.querySelector('.js-foundedPostOnStart').classList.add('hidden');
     };
     counter++;
   });
