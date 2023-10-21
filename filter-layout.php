@@ -17,13 +17,13 @@ $tax_sort = $taxonomy;
     $all_terms = implode(',', $terms_selected);
   ?>
     <div class="search_tabs container flex justify-center items-center">
-      <div class="tab_mieszkania">
+      <div class="tab_mieszkania active">
         <p class="text-[20px] font-bold">Mieszkania</p>
       </div>
-      <div class="tab-mieszkania">
+      <div class="tab_mieszkania">
         <p class="text-[20px] font-bold">Lokale</p>
       </div>
-      <div class=" tab-mieszkania">
+      <div class=" tab_mieszkania">
         <p class="text-[20px] font-bold">Biura</p>
       </div>
     </div>

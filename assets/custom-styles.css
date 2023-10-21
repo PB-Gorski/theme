@@ -889,6 +889,9 @@ color: #fff;
   justify-content: center;
   align-items: center;
 }
+.tab_mieszkania.active{
+  border-bottom: #b22944 2px solid;
+}
 
 .preloader{
   max-width: 1170px!important;
