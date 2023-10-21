@@ -470,8 +470,12 @@ window.addEventListener("load", function() {
     });
   });
 
+  let counter = 0;
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-    console.log('posts loaded');
+    if (counter = 1){
+      console.log('posts loaded2');
+    }
+    counter++;
   });
 
 
