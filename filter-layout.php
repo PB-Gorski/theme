@@ -142,6 +142,7 @@ $tax_sort = $taxonomy;
             } else {
               ?>
               <div class="dropdown-filter">
+                <p class="dropdown-filter-title"><?php echo get_taxonomy($select_term)->label ?></p>
                 <div class="menu-active">
                   <span><?php echo get_taxonomy($select_term)->label ?></span>
                   <i class="arrow down"></i>
