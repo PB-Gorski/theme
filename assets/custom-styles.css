@@ -881,6 +881,9 @@ color: #fff;
   left: 50%;
   transform: translateX(-50%);
 }
+.tab_mieszkania{
+  border-bottom: #b22944 2px solid;
+}
 .preloader{
   max-width: 1170px!important;
   margin-left: auto;

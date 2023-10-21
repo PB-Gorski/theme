@@ -21,14 +21,14 @@ $tax_sort = $taxonomy;
         <p class="text-[20px] font-bold">Mieszkania</p>
       </div>
       <div class="tab-mieszkania">
-        <p>Lokale</p>
+        <p class="text-[20px] font-bold">Lokale</p>
       </div>
-      <div class="tab-mieszkania">
-        <p>Biura</p>
+      <div class=" tab-mieszkania">
+        <p class="text-[20px] font-bold">Biura</p>
       </div>
     </div>
 
-    <div class="filter-entry" data-terms="<?php echo esc_attr($all_terms); ?>">
+    <div class=" filter-entry" data-terms="<?php echo esc_attr($all_terms); ?>">
       <?php
       $type_multiple = ((bool) $ymc_multiple_filter) ? 'multiple' : '';
       if ($ymc_sort_terms !== 'manual') {
