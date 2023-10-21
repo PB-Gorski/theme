@@ -107,14 +107,15 @@ $tax_sort = $taxonomy;
           <div class="wp-block-group group dropdown-filter btn-search mt-[5px] relative bg-primaryRed text-white w-full desktop:w-[140px] h-[62px] flex items-center justify-center gap-[15px] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
             <p class="font-bold z-[1] text-white">Szukaj</p>
           </div>
-      <?php
-          echo '<div class="dropdown-filter defaultPrice hidden">';
-          echo '<div class="menu-active">';
-          echo '<span>' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
-          echo '</div>';
-          echo '<div class="menu-passive">';
-          echo '<i class="btn-close">x</i>';
 
+          <div class="dropdown-filter defaultPrice hidden">
+            <div class="menu-active">'
+              <span><?php ' . get_taxonomy($select_term)->label . ' ?></span> <i class="arrow down"></i>'
+            </div>'
+            <div class="menu-passive">'
+              <i class="btn-close">x</i>'
+
+          <?php
           $terms_icons = null;
 
           foreach ($terms_selected as $term) {
@@ -176,18 +177,18 @@ $tax_sort = $taxonomy;
         }
       }
       unset($result_tax);
-      ?>
-    </div>
-    <?php
-    $query = new WP_Query(array(
-      'miasto' => $term,
-      'post_status' => 'publish'
-    ));
-    $count = $query->found_posts;
-    ?>
+          ?>
+            </div>
+            <?php
+            $query = new WP_Query(array(
+              'miasto' => $term,
+              'post_status' => 'publish'
+            ));
+            $count = $query->found_posts;
+            ?>
 
-    <p class="w-full absolute top-[107px] translate-x-[-50%] z-[2] js-foundedPostOnStart text-[24px] text-center" style="left:50.4%;top:107px" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo wp_count_posts('mieszkania')->publish; ?> ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
-    <div class="posts-found js-post-found"></div>
-  <?php endif; ?>
-  <?php do_action("ymc_after_filter_layout_" . $layout_id . '_' . $c_target); ?>
-</div>
+            <p class="w-full absolute top-[107px] translate-x-[-50%] z-[2] js-foundedPostOnStart text-[24px] text-center" style="left:50.4%;top:107px" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo wp_count_posts('mieszkania')->publish; ?> ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
+            <div class="posts-found js-post-found"></div>
+          <?php endif; ?>
+          <?php do_action("ymc_after_filter_layout_" . $layout_id . '_' . $c_target); ?>
+          </div>
