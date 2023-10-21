@@ -141,10 +141,9 @@ $tax_sort = $taxonomy;
               echo '</div>';
             } else {
               ?>
-
               <div class="dropdown-filter">';
                 <div class="menu-active">';
-                  <span><?php get_taxonomy($select_term)->label ?></span>
+                  <span><?php echo get_taxonomy($select_term)->label ?></span>
                   <i class="arrow down"></i>
                 </div>
                 <div class="menu-passive">
