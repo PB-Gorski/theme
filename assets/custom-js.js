@@ -459,10 +459,17 @@ window.addEventListener("load", function() {
     });
   };
 
-  if(document.querySelector('.js-post-found').hasChildNodes()){
-    document.querySelector('.js-foundedPostOnStart').classList.add('hidden');
-    console.log('true');;
-  }
+  const menuItemsPassive = this.document.querySelectorAll('.menu-passive');
+
+  menuItemsPassive.forEach(item =>{
+    item.addEventListener('click', ()=>{
+      if(document.querySelector('.js-post-found').hasChildNodes()){
+        document.querySelector('.js-foundedPostOnStart').classList.add('hidden');
+        console.log('true');;
+      }
+    });
+  });
+
   // price selects
   // console.log(priceValueArr);
   function runSorting(){
