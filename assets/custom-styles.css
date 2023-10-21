@@ -458,11 +458,12 @@ option:hover {
 .dropdown-filter{
   margin: 0;
   width: 100%;
-  height: fit-content;
+  height: 120px;
   color: #2E384D!important;
   /* z-index: 3; */
 }
 .dropdown-filter.customPrice{
+  height: 120px;
   align-self: flex-start!important;
   margin-top: 2px!important;
 }
