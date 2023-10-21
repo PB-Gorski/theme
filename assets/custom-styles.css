@@ -476,7 +476,11 @@ option:hover {
   color: #2E384D!important;
   font-size: 18px!important;
   padding: 0!important;
-  z-index: 4;
+  z-index: 3!important;
+  display: block;
+  /* max-height: 180px; */
+  max-height: 300px;
+  overflow-y: scroll;
 }
 .menu-link{
   color: #2E384D!important;
@@ -517,12 +521,7 @@ border-width: 0 2px 2px 0;
   background-color: #B2F1FF;
   /* cursor: pointer; */
 }
-.menu-passive{
-  display: block;
-  /* max-height: 180px; */
-  max-height: 300px;
-  overflow-y: scroll;
-}
+
 .dropdown-filter{
   margin-right: 2px!important;
   max-width: 193px!important;
