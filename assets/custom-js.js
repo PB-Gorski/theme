@@ -470,6 +470,11 @@ window.addEventListener("load", function() {
     });
   });
 
+  wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
+    console.log('posts loaded');
+  });
+
+
   // price selects
   // console.log(priceValueArr);
   function runSorting(){
