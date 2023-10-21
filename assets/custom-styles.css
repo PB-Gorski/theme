@@ -10,7 +10,7 @@
     @apply [&>div>div>:nth-child(2)]:container [&>div>div>:nth-child(2)]:mx-auto;
   }
   .search_tabs {
-    @apply container flex justify-center items-center;
+    @apply ;
   }
   .tab_mieszkania {
     @apply border-b-[2px] border-b-primaryRed w-[100px];
