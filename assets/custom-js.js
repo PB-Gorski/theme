@@ -459,7 +459,7 @@ window.addEventListener("load", function() {
     });
   };
 
-  const menuItemsPassive = this.document.querySelectorAll('.menu-passive');
+  const menuItemsPassive = document.querySelectorAll('.menu-passive');
 
   menuItemsPassive.forEach(item =>{
     item.addEventListener('click', ()=>{
