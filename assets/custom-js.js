@@ -498,6 +498,7 @@ window.addEventListener("load", function() {
     // console.log('runSorting2');
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
+      console.log('linki z data', priceValueArrNodeList);
       priceValueArr.push(parseInt(priceValueArrNodeList[i].dataset.name.split(' ').join('')));
       priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
     }
