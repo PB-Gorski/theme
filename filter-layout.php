@@ -108,8 +108,10 @@ $tax_sort = $taxonomy;
               <p class="text-[18px]">Więcej opcji</p>
             </div>
           </div>
-          <div class="wp-block-group group dropdown-filter btn-search mt-[5px] relative bg-primaryRed text-white w-full desktop:w-[140px] h-[62px] flex items-center justify-center gap-[15px] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
-            <p class="font-bold z-[1] text-white">Szukaj</p>
+          <div class="btn-search btn-wrapper not_dropdown-filter bg-white h-[120px] flex items-center justify-center">
+            <div class="wp-block-group group dropdown-filter btn-search mt-[5px] relative bg-primaryRed text-white w-full desktop:w-[140px] h-[62px] flex items-center justify-center gap-[15px] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
+              <p class="font-bold z-[1] text-white">Szukaj</p>
+            </div>
           </div>
 
           <div class="dropdown-filter defaultPrice hidden">
