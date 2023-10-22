@@ -8,7 +8,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Menu-desktop" class="wp-block-group nav-desktop bg-transparent absolute z-[1] hidden desktop:block">
+<div id="Menu-desktop" class="wp-block-group nav-desktop w-full bg-transparent absolute z-[1] hidden desktop:block">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto h-[100px] flex items-center text-white">
     <!-- wp:group -->
