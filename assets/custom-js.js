@@ -358,9 +358,11 @@ window.addEventListener("load", function() {
 
   window.addEventListener('click', function(e) {
     let activeDropDowns = document.querySelectorAll('.dropdown__list_active');
-    activeDropDowns.forEach(el=>{
-      el.classList.remove('activeDropDowns');
-    })
+    if (activeDropDowns){
+      activeDropDowns.forEach(el=>{
+        el.classList.remove('activeDropDowns');
+      })
+    }
   });
 
   const menuItemsPassive = document.querySelectorAll('.menu-link');
