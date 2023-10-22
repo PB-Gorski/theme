@@ -276,7 +276,7 @@ background-color: #E80D38;
 }
 .btn-wrapper{
   height: 120px;
-  width: 100%;
+  max-width: 193px;
   background-color: white;
   display: flex;
   justify-content: center;
