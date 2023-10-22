@@ -1,16 +1,4 @@
 window.addEventListener("load", function() {
-  window.addEventListener('click', function(e) {
-    let activeDropDowns = document.querySelectorAll('.dropdown__list_active');
-    if (activeDropDowns){
-      activeDropDowns.forEach(el=>{
-        if(el.classList.contains('dropdown__list_active')){
-
-          el.classList.remove('dropdown__list_active');
-        }
-      })
-    }
-  });
-
   const body = document.body;
   // navbar mobile handling
   const btnOpenMenu = document.querySelector(".btn-open-menu");
