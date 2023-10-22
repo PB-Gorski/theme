@@ -103,13 +103,13 @@ $tax_sort = $taxonomy;
             </ul>
           </div>
 
-          <div class="btn-wrapper not_dropdown-filter bg-white h-[120px] flex items-center justify-center" style="margin-right:2px;">
-            <div class="wp-block-group btn-more mt-[5px] w-[80px] bg-[#ebeef2] flex gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer" style="height:50px">
-              <p class="text-[18px]">Więcej opcji</p>
+          <div class="btn-wrapper bg-white h-[120px] flex items-center justify-center" style="margin-right:2px;">
+            <div class="wp-block-group btn-more relative mt-[5px] w-[80px] bg-[#ebeef2] flex gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#e1e1e1] before:transition-height before:duration-300 before:ease cursor-pointer" style="height:50px;width:170px">
+              <p class="text-[18px] font-bold">Więcej opcji</p>
             </div>
           </div>
-          <div class="btn-search btn-wrapper not_dropdown-filter bg-white h-[120px] flex items-center justify-center">
-            <div class="wp-block-group group btn-search mt-[5px] relative bg-primaryRed text-white w-full desktop:w-[140px] h-[62px] flex items-center justify-center gap-[15px] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer">
+          <div class="btn-search btn-wrapper bg-white h-[120px] flex items-center justify-center">
+            <div class="wp-block-group group btn-search mt-[5px] relative bg-primaryRed text-white w-full desktop:w-[140px] h-[62px] flex items-center justify-center gap-[15px] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer" style="height:50px;width:170px">
               <p class="font-bold z-[1] text-white">Szukaj</p>
             </div>
           </div>
