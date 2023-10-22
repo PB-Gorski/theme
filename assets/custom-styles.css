@@ -872,6 +872,7 @@ background-color: #e8fbff!important;
 .dropdown__list {
   display: none;
   position: absolute;
+  top: 120px;
   list-style-type: none;
   padding: 0;
   margin: 0;
