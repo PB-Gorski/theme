@@ -528,6 +528,9 @@ border-width: 0 2px 2px 0;
   max-width: 193px!important;
   border-bottom: 3px solid #dcdee3;
 }
+.ymc-smart-filter-container .filter-layout3 .dropdown-filter .menu-passive {
+  top: 90px!important;
+}
 .menu-passive__item .active{
   padding: 0px!important;
   padding-left: 25px!important;
