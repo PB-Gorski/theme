@@ -488,7 +488,7 @@ window.addEventListener("load", function() {
     priceValueArrNodeList = [];
 
     foundedPostOnStart.classList.add('hidden');
-    priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
+    priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes[1];
     priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
     priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
     // priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
