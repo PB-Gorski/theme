@@ -382,7 +382,7 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group btn-wrapper flex items-center gap-[10px]">
+      <div class="wp-block-group btn-wrapper-header flex items-center gap-[10px]">
         <!-- wp:group -->
         <div class="wp-block-group btn-lang flex gap-[5px]">
           <!-- wp:paragraph -->
