@@ -94,6 +94,21 @@ $tax_sort = $taxonomy;
               <li class="dropdown__item">
                 <span class="dropdown__link cursor-pointer">500 000</span>
               </li>
+              <li class="dropdown__item">
+                <span class="dropdown__link cursor-pointer">750 000</span>
+              </li>
+              <li class="dropdown__item">
+                <span class="dropdown__link cursor-pointer">1 000 000</span>
+              </li>
+              <li class="dropdown__item">
+                <span class="dropdown__link cursor-pointer">1 500 000</span>
+              </li>
+              <li class="dropdown__item">
+                <span class="dropdown__link cursor-pointer">2 000 000</span>
+              </li>
+              <li class="dropdown__item">
+                <span class="dropdown__link cursor-pointer">2 500 000</span>
+              </li>
             </ul>
           </div>
           <div class="dropdown-filter customPrice price-max flex-col bg-white h-fit">
