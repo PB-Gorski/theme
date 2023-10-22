@@ -412,15 +412,12 @@ window.addEventListener("load", function() {
 
   `;
   const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
-  const dropDownFilters = document.querySelectorAll(".dropdown-filter");
+  // const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const mainDropDown = document.querySelectorAll('.dropdown__value');
   const dropDownList = document.querySelectorAll('.dropdown__list');
   const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
-  let priceValueArrHTMLCol = dropDownFilters[5].childNodes[1].children;
-  let priceValueArrNodeList = dropDownFilters[5].childNodes[3].childNodes[3].childNodes;
   let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
   let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
-  // let priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
   let priceValueArr = [];
   let newArr = [];
   let newArrHTMLList = [];
@@ -488,8 +485,8 @@ window.addEventListener("load", function() {
     priceValueArrNodeList = [];
 
     foundedPostOnStart.classList.add('hidden');
-    // priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
-    priceValueArrNodeList = dropDownFilters[5].childNodes[3].childNodes[3].childNodes;
+    const dropDownFilters = document.querySelectorAll(".dropdown-filter");
+    priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
     priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
     priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
     // priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
@@ -498,9 +495,9 @@ window.addEventListener("load", function() {
     // console.log('runSorting2');
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-      console.log('linki z data', priceValueArrNodeList[i]);
-      
-      priceValueArr.push(parseInt(priceValueArrNodeList[i].dataset.name.split(' ').join('')));
+      console.log('linki z data', priceValueArrNodeList[i].childNodes[0]);
+
+      priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[0].dataset.name.split(' ').join('')));
 
       priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
     }
