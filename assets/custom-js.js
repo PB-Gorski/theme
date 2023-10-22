@@ -1,4 +1,12 @@
 window.addEventListener("load", function() {
+  window.addEventListener('click', function(e) {
+    let activeDropDowns = document.querySelectorAll('.dropdown__list_active');
+    if (activeDropDowns){
+      activeDropDowns.forEach(el=>{
+        el.classList.remove('dropdown__list_active');
+      })
+    }
+  });
 
   const body = document.body;
   // navbar mobile handling
@@ -356,14 +364,7 @@ window.addEventListener("load", function() {
     });
   };
 
-  window.addEventListener('click', function(e) {
-    let activeDropDowns = document.querySelectorAll('.dropdown__list_active');
-    if (activeDropDowns){
-      activeDropDowns.forEach(el=>{
-        el.classList.remove('dropdown__list_active');
-      })
-    }
-  });
+
 
   const menuItemsPassive = document.querySelectorAll('.menu-link');
   const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
