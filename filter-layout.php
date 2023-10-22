@@ -83,7 +83,7 @@ $tax_sort = $taxonomy;
           </div>
           <div class="dropdown-filter customPrice price-max flex-col bg-white h-fit">
             <p class="dropdown-filter-title">Cena do:</p>
-            <div class="dropdown__value dropdown__value-max">max</i></div>
+            <div class="dropdown__value dropdown__value-max font-bold">Max</i></div>
             <ul class="dropdown__list">
               <li class="dropdown__item">
                 <a href="javascript:void(0);" class="dropdown__link">400002</a>
