@@ -394,7 +394,7 @@ window.addEventListener("load", function() {
   function choise(e){
     e.preventDefault();
     target = e.target.textContent;
-    // e.target.parentNode.parentNode.previousElementSibling.textContent = '<span>' + target + '<span>';
+    e.target.parentNode.parentNode.previousElementSibling.textContent = '';
     let spanTarget = document.createElement("span");
     spanTarget.innerHTML = target;
 
