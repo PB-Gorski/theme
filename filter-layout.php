@@ -116,10 +116,9 @@ $tax_sort = $taxonomy;
 
           <div class="dropdown-filter defaultPrice hidden">
             <div class="menu-active">
-              <span><?php ' . get_taxo
-              nomy($select_term)->label . ' ?></span>
+              <span><?php ' . get_taxonomy($select_term)->label . ' ?></span>
               <span class="arrow-down"></span>
-            </div>'
+            </div>
             <div class="menu-passive">
               <i class="btn-close">x</i>
 
