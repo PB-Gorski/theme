@@ -460,11 +460,12 @@ window.addEventListener("load", function() {
   };
 
   const menuItemsPassive = document.querySelectorAll('.menu-link');
+  const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
   let counter = 0;
   // menuItemsPassive.forEach(item =>{
   //   item.addEventListener('click', ()=>{
   //     if(document.querySelector('.js-post-found').hasChildNodes() || item.classList.contains('active')){
-  //       document.querySelector('.js-foundedPostOnStart').classList.add('hidden');
+  //       foundedPostOnStart.classList.add('hidden');
   //       console.log('true');;
   //     };
   //   });
@@ -472,7 +473,7 @@ window.addEventListener("load", function() {
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
     if (counter == 2){
       console.log('posts loaded2');
-      document.querySelector('.js-foundedPostOnStart').classList.add('hidden');
+      foundedPostOnStart.classList.add('hidden');
     };
     counter++;
   });
@@ -486,7 +487,7 @@ window.addEventListener("load", function() {
     newArrHTMLList = [];
     priceValueArrNodeList = [];
 
-    document.querySelector('.js-foundedPostOnStart').classList.add('hidden');
+    foundedPostOnStart.classList.add('hidden');
     priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
     priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
     priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
@@ -578,8 +579,9 @@ window.addEventListener("load", function() {
   
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     btnMore.addEventListener('click',()=>{
-      console.log('more flters');
       (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[350px]') : searchBar.classList.toggle('h-[450px]');
+      foundedPostOnStart.style.classList.add('top-[417px]')
+
     });
   };
 
