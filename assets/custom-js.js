@@ -580,7 +580,7 @@ window.addEventListener("load", function() {
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     btnMore.addEventListener('click',()=>{
       (window.innerWidth > 480) ? searchBar.classList.toggle('desktop:h-[350px]') : searchBar.classList.toggle('h-[450px]');
-      foundedPostOnStart.style.classList.add('top-[417px]')
+      foundedPostOnStart.classList.add('top-[417px]')
 
     });
   };
