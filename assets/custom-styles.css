@@ -858,16 +858,10 @@ background-color: #e8fbff!important;
   width: 100%;
 
 }
-
 .dropdown__value:after {
   content: '\02228';
   margin-left: 5px;
 }
-
-/* .dropdown__value:hover{
-  background: rgb(91, 61, 61);
-} */
-
 .dropdown__list {
   display: none;
   position: absolute;
@@ -879,7 +873,6 @@ background-color: #e8fbff!important;
   border-bottom: none;
   z-index: 3;
 }
-
 .dropdown__link {
   display: block;
   text-decoration: none;
@@ -890,12 +883,6 @@ background-color: #e8fbff!important;
   border-radius: 4px;
   background-color: #fff;
 }
-
-/* .dropdown__link:hover{
-background: rgb(154, 99, 99);
-color: #fff;
-} */
-
 .dropdown__list_active {
   display: block;
 }
@@ -911,6 +898,9 @@ color: #fff;
   top: -70px;
   left: 50%;
   transform: translateX(-50%);
+}
+.arrow-down:after {
+  content: '\25bc';
 }
 .tab_mieszkania{
   height: 100%;
