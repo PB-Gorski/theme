@@ -280,7 +280,7 @@ background-color: #E80D38;
   background-color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 /* page contact dropdown */
