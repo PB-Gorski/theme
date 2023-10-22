@@ -114,7 +114,7 @@ $tax_sort = $taxonomy;
             </div>
           </div>
 
-          <div class="dropdown-filter defaultPrice hidden">
+          <div class="dropdown-filter defaultPrice">
             <div class="menu-active">
               <span><?php echo get_taxonomy($select_term)->label; ?> </span>
               <span class="arrow-down"></span>
