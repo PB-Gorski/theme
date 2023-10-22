@@ -416,8 +416,8 @@ window.addEventListener("load", function() {
   const mainDropDown = document.querySelectorAll('.dropdown__value');
   const dropDownList = document.querySelectorAll('.dropdown__list');
   const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
-  let priceValueArrHTMLCol = dropDownFilters[6].childNodes[1].children;
-  let priceValueArrNodeList = dropDownFilters[6].childNodes[1].childNodes;
+  let priceValueArrHTMLCol = dropDownFilters[7].childNodes[1].children;
+  let priceValueArrNodeList = dropDownFilters[7].childNodes[1].childNodes;
   let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
   let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
   // let priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
