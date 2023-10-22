@@ -285,9 +285,9 @@ background-color: #E80D38;
 .btn-more{
   width: 170px;
 }
-.btn-more:hover{
+/* .btn-more:hover{
   background-color: #e1e1e1!important;
-}
+} */
 
 /* page contact dropdown */
 .inactive {
