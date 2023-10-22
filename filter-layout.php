@@ -122,18 +122,12 @@ $tax_sort = $taxonomy;
           echo '<i class="btn-close">x</i>';
 
           $terms_icons = null;
-
           foreach ($terms_selected as $term) {
-
             if ($tax === get_term($term)->taxonomy) {
-
               $is_disabled = (get_term($term)->count === 0) ? 'isDisabled' : '';
 
-              // Choose icons
               if (!empty($ymc_terms_icons)) {
-
                 foreach ($ymc_terms_icons as $key => $val) {
-
                   if ((int) $term === (int) $key) {
                     $terms_icons = '<i class="' . $val . '"></i>';
                     break;
@@ -150,7 +144,6 @@ $tax_sort = $taxonomy;
 
             $terms_icons = null;
           }
-
           echo '</div>';
           echo '</div>';
         } else {
