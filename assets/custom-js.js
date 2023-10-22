@@ -28,26 +28,15 @@ window.addEventListener("load", function() {
   const modal = document.querySelector('.modal');
   const tabBtns = document.querySelectorAll('.tabBtn');
   const headerTabs = document.querySelectorAll('.headerTab');
-  // const allTabBtn = document.querySelector('.allTabBtn');
-  // const gdanskTabBtn = document.querySelector('.gdanskTabBtn');
-  // const gdyniaTabBtn = document.querySelector('.gdyniaTabBtn');
-  // const modalTab1 = document.querySelector('.tab1');
-  // const modalTab2 = document.querySelector('.tab2');
-  // const modalTab3 = document.querySelector('.tab3');
 
   hoverMenuItem.addEventListener('mouseover',()=>{
     modal.classList.replace('opacity-0', 'opacity-100');
     modal.classList.replace('z-[-1]', 'z-[1]');
   });
-  // hoverMenuItem.addEventListener('mouseleave',()=>{
-  //   modal.classList.replace('opacity-100', 'opacity-0');
-  // });
-
   modal.addEventListener('mouseleave',()=>{
     modal.classList.replace('opacity-100', 'opacity-0');
     modal.classList.replace('z-[1]', 'z-[-1]');
   });
-
   tabBtns.forEach((tabBtn,index) => {
     tabBtn.addEventListener('click', () => {
       for(let i = 0 ; i<3 ; i++){
@@ -60,35 +49,6 @@ window.addEventListener("load", function() {
       headerTabs[index].classList.add('block');
     });
   });
-
-  // allTabBtn.addEventListener('click',()=>{
-  //   allTabBtn.classList.add('tab-active');
-  //   gdanskTabBtn.classList.remove('tab-active');
-  //   gdyniaTabBtn.classList.remove('tab-active');
-  //   modalTab1.classList.remove('hidden');
-  //   modalTab1.classList.add('block');
-  //   modalTab2.classList.replace('block','hidden');
-  //   modalTab3.classList.replace('block','hidden');
-  // });
-  // gdanskTabBtn.addEventListener('click',()=>{
-  //   allTabBtn.classList.remove('tab-active');
-  //   gdanskTabBtn.classList.add('tab-active');
-  //   gdyniaTabBtn.classList.remove('tab-active');
-  //   modalTab1.classList.add('hidden');
-  //   modalTab1.classList.remove('block');
-  //   modalTab2.classList.replace('hidden','block');
-  //   modalTab3.classList.replace('block','hidden');
-  // });
-  // gdyniaTabBtn.addEventListener('click',()=>{
-  //   allTabBtn.classList.remove('tab-active');
-  //   gdanskTabBtn.classList.remove('tab-active');
-  //   gdyniaTabBtn.classList.add('tab-active');
-  //   modalTab1.classList.add('hidden');
-  //   modalTab1.classList.remove('block');
-  //   modalTab2.classList.replace('block','hidden');
-  //   modalTab3.classList.replace('hidden','block');
-  // });
-
 
   for (const dropdown of document.querySelectorAll(".select-wrapper")) {
     dropdown.addEventListener('click', function() {
@@ -106,13 +66,12 @@ window.addEventListener("load", function() {
     });
   };
 
-
   window.addEventListener('click', function(e) {
     for (const select of document.querySelectorAll('.select')) {
         if (!select.contains(e.target)) {
             select.classList.remove('open');
         }
-    }
+    };
   });
 
   // call pop up modal
@@ -198,74 +157,69 @@ window.addEventListener("load", function() {
     this.dec = Math.pow(10, this.decimals);
     this.duration = duration * 1000 || 2000;
 
-    // Robert Penner's easeOutExpo
     this.easeOutExpo = function(t, b, c, d) {
         return c * (-Math.pow(2, - 10 * t / d) + 1) * 1024 / 1023 + b;
     }
     this.count = function(timestamp) {
+      if (self.startTime === null) self.startTime = timestamp;
+      self.timestamp = timestamp;
+      let progress = timestamp - self.startTime;
+      self.remaining = self.duration - progress;
 
-        if (self.startTime === null) self.startTime = timestamp;
+      if (self.options.useEasing) {
+          if (self.countDown) {
+              let i = self.easeOutExpo(progress, 0, self.startVal - self.endVal, self.duration);
+              self.frameVal = self.startVal - i;
+          } else {
+              self.frameVal = self.easeOutExpo(progress, self.startVal, self.endVal - self.startVal, self.duration);
+          }
+      } else {
+          if (self.countDown) {
+              let i = (self.startVal - self.endVal) * (progress / self.duration);
+              self.frameVal = self.startVal - i;
+          } else {
+              self.frameVal = self.startVal + (self.endVal - self.startVal) * (progress / self.duration);
+          }
+      }
 
-        self.timestamp = timestamp;
+      // decimal
+      self.frameVal = Math.round(self.frameVal * self.dec) / self.dec;
 
-        let progress = timestamp - self.startTime;
-        self.remaining = self.duration - progress;
+      // don't go past endVal since progress can exceed duration in the last frame
+      if (self.countDown) {
+          self.frameVal = (self.frameVal < self.endVal) ? self.endVal : self.frameVal;
+      } else {
+          self.frameVal = (self.frameVal > self.endVal) ? self.endVal : self.frameVal;
+      }
 
-        // to ease or not to ease
-        if (self.options.useEasing) {
-            if (self.countDown) {
-                let i = self.easeOutExpo(progress, 0, self.startVal - self.endVal, self.duration);
-                self.frameVal = self.startVal - i;
-            } else {
-                self.frameVal = self.easeOutExpo(progress, self.startVal, self.endVal - self.startVal, self.duration);
-            }
-        } else {
-            if (self.countDown) {
-                let i = (self.startVal - self.endVal) * (progress / self.duration);
-                self.frameVal = self.startVal - i;
-            } else {
-                self.frameVal = self.startVal + (self.endVal - self.startVal) * (progress / self.duration);
-            }
-        }
+      // format and print value
+      self.d.innerHTML = self.formatNumber(self.frameVal.toFixed(self.decimals));
 
-        // decimal
-        self.frameVal = Math.round(self.frameVal * self.dec) / self.dec;
-
-        // don't go past endVal since progress can exceed duration in the last frame
-        if (self.countDown) {
-            self.frameVal = (self.frameVal < self.endVal) ? self.endVal : self.frameVal;
-        } else {
-            self.frameVal = (self.frameVal > self.endVal) ? self.endVal : self.frameVal;
-        }
-
-        // format and print value
-        self.d.innerHTML = self.formatNumber(self.frameVal.toFixed(self.decimals));
-
-        // whether to continue
-        if (progress < self.duration) {
-            self.rAF = requestAnimationFrame(self.count);
-        } else {
-            if (self.callback != null) self.callback();
-        }
+      // whether to continue
+      if (progress < self.duration) {
+          self.rAF = requestAnimationFrame(self.count);
+      } else {
+          if (self.callback != null) self.callback();
+      }
     }
     this.start = function(callback) {
-        self.callback = callback;
-        // make sure values are valid
-        if (!isNaN(self.endVal) && !isNaN(self.startVal)) {
-            self.rAF = requestAnimationFrame(self.count);
-        } else {
-            console.log('countUp error: startVal or endVal is not a number');
-            self.d.innerHTML = '--';
-        }
-        return false;
+      self.callback = callback;
+      // make sure values are valid
+      if (!isNaN(self.endVal) && !isNaN(self.startVal)) {
+          self.rAF = requestAnimationFrame(self.count);
+      } else {
+          console.log('countUp error: startVal or endVal is not a number');
+          self.d.innerHTML = '--';
+      }
+      return false;
     }
     this.stop = function() {
-        cancelAnimationFrame(self.rAF);
+      cancelAnimationFrame(self.rAF);
     }
     this.reset = function() {
-        self.startTime = null;
-        cancelAnimationFrame(self.rAF);
-        self.d.innerHTML = self.formatNumber(self.startVal.toFixed(self.decimals));
+      self.startTime = null;
+      cancelAnimationFrame(self.rAF);
+      self.d.innerHTML = self.formatNumber(self.startVal.toFixed(self.decimals));
     }
     this.resume = function() {
         self.startTime = null;
@@ -274,18 +228,18 @@ window.addEventListener("load", function() {
         requestAnimationFrame(self.count);
     }
     this.formatNumber = function(nStr) {
-        nStr += '';
-        let x, x1, x2, rgx;
-        x = nStr.split('.');
-        x1 = x[0];
-        x2 = x.length > 1 ? self.options.decimal + x[1] : '';
-        rgx = /(\d+)(\d{3})/;
-        if (self.options.useGrouping) {
-            while (rgx.test(x1)) {
-                x1 = x1.replace(rgx, '$1' + self.options.separator + '$2');
-            }
-        }
-        return x1 + x2;
+      nStr += '';
+      let x, x1, x2, rgx;
+      x = nStr.split('.');
+      x1 = x[0];
+      x2 = x.length > 1 ? self.options.decimal + x[1] : '';
+      rgx = /(\d+)(\d{3})/;
+      if (self.options.useGrouping) {
+          while (rgx.test(x1)) {
+              x1 = x1.replace(rgx, '$1' + self.options.separator + '$2');
+          }
+      }
+      return x1 + x2;
     }
 
     // format startVal on initialization
@@ -341,8 +295,8 @@ window.addEventListener("load", function() {
     });
   });
 
-
   // sortowanie listy mieszkan
+  // price selects
   const sortingBarHTML = `
     <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[22px] flex flex-wrap items-center justify-between text-[13px] font-bold z-0 relative">
       <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
@@ -393,7 +347,6 @@ window.addEventListener("load", function() {
     e.target.parentNode.parentNode.previousElementSibling.textContent = '';
     let spanTarget = document.createElement("span");
     spanTarget.innerText = target;
-
     e.target.parentNode.parentNode.previousElementSibling.appendChild(spanTarget);
 
     dropDownList.forEach(el =>{
@@ -402,6 +355,13 @@ window.addEventListener("load", function() {
       };
     });
   };
+
+  window.addEventListener('click', function(e) {
+    let activeDropDowns = document.querySelectorAll('.dropdown__list_active');
+    activeDropDowns.forEach(el=>{
+      el.classList.remove('activeDropDowns');
+    })
+  });
 
   const menuItemsPassive = document.querySelectorAll('.menu-link');
   const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
@@ -470,12 +430,6 @@ window.addEventListener("load", function() {
       }
     }
 
-    newArrHTMLList.forEach(htmlElemList => {  
-      // htmlElemList.dispatchEvent(new MouseEvent("click",{bubbles: true, cancellable: true}));
-
-      // console.log(htmlElemList);
-    });
-
     // console.log(newArrHTMLList);
     // console.log('runSorting2 finish');
 
@@ -494,7 +448,6 @@ window.addEventListener("load", function() {
 
   if(document.body.classList.contains('page-id-606') || document.body.classList.contains('page-id-11') || document.body.classList.contains('page-id-13')){
   }
-
 
   const postsFoundHTML = document.querySelector('.posts-found');
   const postsFoundParentHTML = document.querySelector('.filter-layout3-148');
@@ -523,13 +476,11 @@ window.addEventListener("load", function() {
 
   function sortListDir(j) {
     let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
-    // list = document.querySelector(".wp-block-post-template");
     list = document.querySelector(".post-entry");
     switching = true;
     dir = "asc"; 
     while (switching) {
       switching = false;
-      // b = list.querySelectorAll('.wp-block-post');
       b = list.querySelectorAll('.post-item');
       for (i = 0; i < (b.length - 1); i++) {
         shouldSwitch = false;
@@ -581,11 +532,7 @@ window.addEventListener("load", function() {
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', () => {
       indexFrom1 = index + 1;
-      // indexFrom1 == 1 ? sortListDir(indexFrom1) : sortListDir(indexFrom1 + index);
-      // dla poprzedniej listy:
       currentFiltr = indexFrom1 + index;
-      // console.log('indexFrom1: ', indexFrom1);
-      // console.log('currentFiltr: ',currentFiltr);
 
       sortListDir(index);
       
