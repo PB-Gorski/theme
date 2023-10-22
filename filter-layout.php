@@ -81,7 +81,8 @@ $tax_sort = $taxonomy;
               </li>
             </ul>
           </div>
-          <div class="dropdown-filter customPrice price-max">
+          <div class="dropdown-filter customPrice price-max flex-col bg-white h-fit">
+            <p class="dropdown-filter-title">Cena do:</p>
             <div class="dropdown__value dropdown__value-max">max</i></div>
             <ul class="dropdown__list">
               <li class="dropdown__item">
@@ -192,7 +193,7 @@ $tax_sort = $taxonomy;
     $count = $query->found_posts;
     ?>
 
-    <p class="w-full absolute top-[177px] translate-x-[-50%] z-[2] js-foundedPostOnStart text-[24px] text-center" style="left:50.5%;top:107px" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo wp_count_posts('mieszkania')->publish; ?> ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
+    <p class="w-full absolute translate-x-[-50%] z-[2] js-foundedPostOnStart text-[24px] text-center" style="left:50.5%;top:177px" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo wp_count_posts('mieszkania')->publish; ?> ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
     <div class="posts-found js-post-found"></div>
   <?php endif; ?>
   <?php do_action("ymc_after_filter_layout_" . $layout_id . '_' . $c_target); ?>
