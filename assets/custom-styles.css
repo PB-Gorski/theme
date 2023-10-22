@@ -9,6 +9,9 @@
   .applyContainer2 {
     @apply [&>div>div>:nth-child(2)]:container [&>div>div>:nth-child(2)]:mx-auto;
   }
+  .apply-btn-more-hover {
+    @apply before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#e1e1e1] before:transition-height before:duration-300 before:ease cursor-pointer;
+  }
 }
 
 /* general */
