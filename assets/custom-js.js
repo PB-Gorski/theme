@@ -494,10 +494,10 @@ window.addEventListener("load", function() {
     // console.log(priceMinValue,priceMaxValue);
     // console.log('runSorting2');
 
-    for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-      console.log('linki z data', priceValueArrNodeList[i].childNodes[0]);
+    for (i = 1 ; i < priceValueArrNodeList.length ; i++){
+      console.log('linki z data', priceValueArrNodeList[i].childNodes[1]);
 
-      priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[0].dataset.name.split(' ').join('')));
+      priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
 
       priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
     }
