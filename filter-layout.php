@@ -62,7 +62,7 @@ $tax_sort = $taxonomy;
         if (get_taxonomy($select_term)->label == 'Cena') { ?>
           <div class="dropdown-filter customPrice price-min flex-col bg-white h-fit">
             <p class="dropdown-filter-title">Cena od:</p>
-            <div class="dropdown__value dropdown__value-min font-bold">0</i></div>
+            <div class="dropdown__value dropdown__value-min font-bold">0</div>
             <ul class="dropdown__list">
               <li class="dropdown__item">
                 <a href="javascript:void(0);" class="dropdown__link">400000</a>
@@ -83,7 +83,7 @@ $tax_sort = $taxonomy;
           </div>
           <div class="dropdown-filter customPrice price-max flex-col bg-white h-fit">
             <p class="dropdown-filter-title">Cena do:</p>
-            <div class="dropdown__value dropdown__value-max font-bold">Max</i></div>
+            <div class="dropdown__value dropdown__value-max font-bold">Max</div>
             <ul class="dropdown__list">
               <li class="dropdown__item">
                 <a href="javascript:void(0);" class="dropdown__link">400002</a>
