@@ -104,7 +104,7 @@ $tax_sort = $taxonomy;
           </div>
 
           <div class="btn-wrapper not_dropdown-filter bg-white h-[120px] flex items-center justify-center">
-            <div class="wp-block-group btn-more mt-[5px] w-[80px] h-[62px] bg-[#f5f7fa] hover:bg-[#f2f2f2] flex gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3]">
+            <div class="wp-block-group btn-more mt-[5px] w-[80px] h-[62px] bg-[#ebeef2] hover:bg-[#f2f2f2] flex gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3]">
               <p class="text-[18px]">Więcej opcji</p>
             </div>
           </div>
