@@ -901,6 +901,7 @@ background-color: #e8fbff!important;
 }
 .arrow-down:after {
   content: '\25bc';
+  font-size: 12px;
 }
 .tab_mieszkania{
   height: 100%;
