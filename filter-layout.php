@@ -136,7 +136,7 @@ $tax_sort = $taxonomy;
                     }
                   }; ?>
                   <div class="menu-passive__item item-<?php echo esc_attr(get_term($term)->slug) ?>">
-                    <a class="menu-link <?php echo ' ' .  esc_attr($is_disabled) . ' ' .  esc_attr($type_multiple) ?>" href="#" data-selected="<?php echo ' ' . esc_attr(get_term($term)->slug); ?>" data-termid="<?php echo ' ' . esc_attr($term); ?>" data-name="<?php echo ' ' . esc_attr(get_term($term)->name); ?>"><?php echo ' ' . esc_html(get_term($term)->name) . ' ' ?> <span class="count"><?php echo esc_html(get_term($term)->count); ?></span></a>
+                    <a class="menu-link <?php echo esc_attr($is_disabled) . ' ' .  esc_attr($type_multiple) ?>" href="#" data-selected="<?php echo ' ' . esc_attr(get_term($term)->slug); ?>" data-termid="<?php echo ' ' . esc_attr($term); ?>" data-name="<?php echo ' ' . esc_attr(get_term($term)->name); ?>"><?php echo esc_html(get_term($term)->name); ?> <span class="count"><?php echo esc_html(get_term($term)->count); ?></span></a>
                   </div>
               <?php };
                 $terms_icons = null;

@@ -486,7 +486,7 @@ window.addEventListener("load", function() {
 
     foundedPostOnStart.classList.add('hidden');
     const dropDownFilters = document.querySelectorAll(".dropdown-filter");
-    priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
+    let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
     priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
     priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
     // priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
