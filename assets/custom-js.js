@@ -399,7 +399,7 @@ window.addEventListener("load", function() {
     spanTarget.innerText = target;
 
     e.target.parentNode.parentNode.previousElementSibling.appendChild(spanTarget);
-    r
+    
     dropDownList.forEach(el =>{
       if(el.classList.contains('dropdown__list_active')){
         el.classList.remove('dropdown__list_active')
