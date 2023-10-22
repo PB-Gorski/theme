@@ -113,39 +113,7 @@ $tax_sort = $taxonomy;
               <p class="font-bold z-[1] text-white">Szukaj</p>
             </div>
           </div>
-
-          <div class="dropdown-filter defaultPrice">
-            <div class="menu-active">
-              <span><?php echo get_taxonomy($select_term)->label; ?></span>
-              <span class="arrow-down"></span>
-            </div>
-            <div class="menu-passive">
-              <?php
-              $terms_icons = null;
-
-              foreach ($terms_selected as $term) {
-                if ($tax === get_term($term)->taxonomy) {
-                  $is_disabled = (get_term($term)->count === 0) ? 'isDisabled' : '';
-                  // Choose icons
-                  if (!empty($ymc_terms_icons)) {
-                    foreach ($ymc_terms_icons as $key => $val) {
-                      if ((int) $term === (int) $key) {
-                        $terms_icons = '<i class="' . $val . '"></i>';
-                        break;
-                      }
-                    }
-                  }; ?>
-                  <div class="menu-passive__item item-<?php echo esc_attr(get_term($term)->slug) ?>"><a class="menu-link <?php echo esc_attr($is_disabled) . ' ' .  esc_attr($type_multiple) ?>" href="#" data-selected="<?php echo ' ' . esc_attr(get_term($term)->slug); ?>" data-termid="<?php echo ' ' . esc_attr($term); ?>" data-name="<?php echo ' ' . esc_attr(get_term($term)->name); ?>"><?php echo esc_html(get_term($term)->name); ?> <span class="count"><?php echo esc_html(get_term($term)->count); ?></span></a></div>
-              <?php };
-                $terms_icons = null;
-              }; ?>
-            </div>
-          </div>
-        <?php
-        } else {
-        ?>
-
-      <?php
+          <?php
           echo '<div class="dropdown-filter">';
           echo '<div class="menu-active">';
           echo '<span>' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
@@ -185,6 +153,39 @@ $tax_sort = $taxonomy;
 
           echo '</div>';
           echo '</div>';
+        } else {
+          ?>
+          <div class="dropdown-filter flex-col bg-white h-fit">
+            <p class="dropdown-filter-title"><?php echo get_taxonomy($select_term)->label . ':' ?></p>
+            <div class="menu-active font-bold"><span><?php echo get_taxonomy($select_term)->label ?></span><span class="arrow-down"></span></div>
+            <div class="menu-passive"><i class="btn-close">x</i>
+              <?php
+              $terms_icons = null;
+              foreach ($terms_selected as $term) {
+                if ($tax === get_term($term)->taxonomy) {
+
+                  $is_disabled = (get_term($term)->count === 0) ? 'isDisabled' : '';
+                  // Choose icons
+                  if (!empty($ymc_terms_icons)) {
+                    foreach ($ymc_terms_icons as $key => $val) {
+                      if ((int) $term === (int) $key) {
+                        $terms_icons = '<i class="' . $val . '"></i>';
+                        break;
+                      }
+                    }
+                  }
+
+                  echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
+                  ' . $terms_icons . '
+                                <a class="menu-link ' .  esc_attr($is_disabled) . ' ' .  esc_attr($type_multiple) . '" 
+                                href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
+                    esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
+                }
+                $terms_icons = null;
+              } ?>
+            </div>
+          </div>
+      <?php
         }
       }
       unset($result_tax);
