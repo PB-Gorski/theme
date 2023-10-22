@@ -482,7 +482,7 @@ window.addEventListener("load", function() {
     priceValueArr = [];
     newArr = [];
     newArrHTMLList = [];
-    priceValueArrNodeList = [];
+    // priceValueArrNodeList = [];
 
     foundedPostOnStart.classList.add('hidden');
     const dropDownFilters = document.querySelectorAll(".dropdown-filter");
