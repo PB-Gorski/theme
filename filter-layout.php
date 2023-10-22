@@ -65,7 +65,7 @@ $tax_sort = $taxonomy;
             <div class="dropdown__value dropdown__value-min font-bold"><span>0</span></div>
             <ul class="dropdown__list">
               <li class="dropdown__item">
-                <a href="javascript:void(0);" class="dropdown__link after:content-['zł']">400000</a>
+                <a href="javascript:void(0);" class="dropdown__link">400000</a>
               </li>
               <li class="dropdown__item">
                 <a href="javascript:void(0);" class="dropdown__link">498000</a>
