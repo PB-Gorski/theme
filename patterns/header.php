@@ -412,6 +412,13 @@
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
+        <!-- wp:group -->
+        <div class="wp-block-group group btn-call-header relative bg-transparent text-primaryRed w-[55px] h-[55px] flex items-center justify-center border-[2px] border-primaryRed rounded-full cursor-pointer">
+          <!-- wp:paragraph -->
+          <a href="#" class=" font-bold z-[1]">Znajdź mieszkanie</a>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
     </div>
