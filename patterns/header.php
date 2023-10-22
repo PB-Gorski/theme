@@ -17,7 +17,7 @@
       <a href="<?php echo home_url(); ?>">
         <!-- wp:image -->
         <figure class="wp-block-image w-[115px]">
-          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/frontpage/logo.png" alt="pb-gorski-logo" />
+          <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/frontpage/logo-white.png" alt="pb-gorski-logo" />
         </figure>
         <!-- /wp:image -->
       </a>
