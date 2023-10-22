@@ -496,6 +496,7 @@ option:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 20px!important;
 }
 .menu-passive{
   background-color: white!important;
@@ -902,7 +903,7 @@ background-color: #e8fbff!important;
 }
 .arrow-down:after {
   content: '\25bc';
-  font-size: 12px;
+  font-size: 11px;
 }
 .tab_mieszkania{
   height: 100%;
