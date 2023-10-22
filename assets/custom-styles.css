@@ -858,7 +858,9 @@ background-color: #e8fbff!important;
   justify-content: space-between;
   cursor: pointer;
   width: 100%;
-
+}
+.dropdown__value > span:after{
+  content: ' zł';
 }
 .dropdown__value:after {
   content: '\25bc';
