@@ -103,7 +103,7 @@ $tax_sort = $taxonomy;
             </ul>
           </div>
 
-          <div class="btn-wrapper not_dropdown-filter bg-white h-[120px] flex items-center justify-center">
+          <div class="btn-wrapper not_dropdown-filter mr-[2px] bg-white h-[120px] flex items-center justify-center">
             <div class="wp-block-group btn-more mt-[5px] w-[80px] bg-[#ebeef2] flex gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#dcdee3]" style="height:50px">
               <p class="text-[18px]">Więcej opcji</p>
             </div>
