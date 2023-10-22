@@ -394,7 +394,7 @@ window.addEventListener("load", function() {
   function choise(e){
     e.preventDefault();
     target = e.target.textContent;
-    e.target.parentNode.parentNode.previousElementSibling.textContent = (target);
+    e.target.parentNode.parentNode.previousElementSibling.textContent = '<span>' + target + '<span>';
     dropDownList.forEach(el =>{
       if(el.classList.contains('dropdown__list_active')){
         el.classList.remove('dropdown__list_active')
