@@ -466,7 +466,6 @@ option:hover {
 .dropdown-filter.customPrice{
   height: 120px;
   align-self: flex-start!important;
-  margin-top: 2px!important;
 }
 .dropdown-filter > .menu-active{
   border: none!important;
@@ -884,7 +883,7 @@ color: #fff;
   height: 70px;
   background-color: #ebeef2;
   position: absolute;
-  top: -68px;
+  top: -72px;
   left: 50%;
   transform: translateX(-50%);
 }
