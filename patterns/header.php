@@ -408,7 +408,7 @@
         <!-- wp:group -->
         <div class="wp-block-group group btn-find-more relative bg-transparent text-white w-[230px] h-[55px] flex items-center justify-center border-[2px] border-white rounded-full cursor-pointer">
           <!-- wp:paragraph -->
-          <a href="<?php echo home_url() . '/mieszkania'; ?>" class="font-bold z-[1]">Znajdź mieszkanie</a>
+          <a href="<?php echo home_url() . '/mieszkania'; ?>" class="z-[1]">Znajdź mieszkanie</a>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
