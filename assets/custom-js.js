@@ -439,7 +439,7 @@ window.addEventListener("load", function() {
 
     // console.log(priceMinValue,priceMaxValue);
     // console.log('runSorting2');
-    console.log('no spaces', priceMinValue,priceMaxValue);
+    // console.log('no spaces', priceMinValue,priceMaxValue);
 
     for (i = 1 ; i < priceValueArrNodeList.length ; i++){
       priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
