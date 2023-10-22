@@ -3,7 +3,10 @@ window.addEventListener("load", function() {
     let activeDropDowns = document.querySelectorAll('.dropdown__list_active');
     if (activeDropDowns){
       activeDropDowns.forEach(el=>{
-        el.classList.remove('dropdown__list_active');
+        if(el.classList.contains('dropdown__list_active')){
+
+          el.classList.remove('dropdown__list_active');
+        }
       })
     }
   });
