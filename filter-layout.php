@@ -195,8 +195,8 @@ $tax_sort = $taxonomy;
     $count = $query->found_posts;
     ?>
 
-    <p class="w-full absolute translate-x-[-50%] z-[2] js-foundedPostOnStart text-[24px] text-center" style="left:50.5%;top:177px" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo wp_count_posts('mieszkania')->publish; ?> ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
-    <div class="posts-found js-post-found"></div>
+    <p class="js-foundedPostOnStart bg-white w-full absolute translate-x-[-50%] z-[2] text-[24px] text-center" style="left:50.5%;top:177px" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo wp_count_posts('mieszkania')->publish; ?> ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
+    <div class="posts-found js-post-foundbg-white"></div>
   <?php endif; ?>
   <?php do_action("ymc_after_filter_layout_" . $layout_id . '_' . $c_target); ?>
 </div>
