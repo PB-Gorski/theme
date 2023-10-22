@@ -384,28 +384,6 @@
       <!-- wp:group -->
       <div class="wp-block-group btn-wrapper-header flex items-center gap-[10px]">
         <!-- wp:group -->
-        <div class="wp-block-group btn-lang flex gap-[5px]">
-          <!-- wp:paragraph -->
-          <a href="#" class="">PL</a>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <p class="">/</p>
-          <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <a href="#" class="">ENG</a>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
-
-        <!-- wp:group -->
-        <div class="wp-block-group btn-fb bg-blue-700 text-white w-[20px] h-[20px] text-center rounded-[5px]">
-          <!-- wp:paragraph -->
-          <p>f</p>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
-
-        <!-- wp:group -->
         <div class="wp-block-group group btn-find-more relative bg-transparent text-white w-[230px] h-[48px] flex items-center justify-center border-[2px] border-white rounded-full cursor-pointer">
           <!-- wp:paragraph -->
           <a href="<?php echo home_url() . '/mieszkania'; ?>" class="z-[1]">Znajdź mieszkanie</a>
