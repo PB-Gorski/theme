@@ -358,12 +358,9 @@ window.addEventListener("load", function() {
     </ul>
     `;
   const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
-  // const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const mainDropDown = document.querySelectorAll('.dropdown__value');
   const dropDownList = document.querySelectorAll('.dropdown__list');
   const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
-  // let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerText);
-  // let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerText);
   let priceValueArr = [];
   let newArr = [];
   let newArrHTMLList = [];
@@ -371,18 +368,11 @@ window.addEventListener("load", function() {
 
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
-    // dropDownFilters[2].insertAdjacentHTML('afterend', btnFilterSerach);
-    // dropDownFilters[2].insertAdjacentHTML('afterend', btnMoreHTML);
-    // dropDownFilters[2].insertAdjacentHTML('afterend', BtnCustomPriceSelect);
   };
-
   let btnSearch = document.querySelector('.btn-search');
 
-  // dropdown test
   mainDropDown.forEach(dropDownEl =>{
-    // console.log('before event active list click');
     dropDownEl.addEventListener('click', (e) =>{
-      // console.log('show min/max list');
       e.target.nextElementSibling.classList.toggle('dropdown__list_active');
     });
   });
@@ -410,14 +400,7 @@ window.addEventListener("load", function() {
   const menuItemsPassive = document.querySelectorAll('.menu-link');
   const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
   let counter = 0;
-  // menuItemsPassive.forEach(item =>{
-  //   item.addEventListener('click', ()=>{
-  //     if(document.querySelector('.js-post-found').hasChildNodes() || item.classList.contains('active')){
-  //       foundedPostOnStart.classList.add('hidden');
-  //       console.log('true');;
-  //     };
-  //   });
-  // });
+
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
     if (counter == 2){
       console.log('posts loaded2');
@@ -428,12 +411,10 @@ window.addEventListener("load", function() {
 
 
   // price selects
-  // console.log(priceValueArr);
   function runSorting(){
     priceValueArr = [];
     newArr = [];
     newArrHTMLList = [];
-    // priceValueArrNodeList = [];
 
     foundedPostOnStart.classList.add('hidden');
     const dropDownFilters = document.querySelectorAll(".dropdown-filter");
