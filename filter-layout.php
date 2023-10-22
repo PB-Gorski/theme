@@ -109,11 +109,12 @@ $tax_sort = $taxonomy;
           </div>
 
           <div class="dropdown-filter defaultPrice hidden">
-            <div class="menu-active">'
-              <span><?php ' . get_taxonomy($select_term)->label . ' ?></span> <i class="arrow down"></i>'
+            <div class="menu-active">
+              <span><?php ' . get_taxonomy($select_term)->label . ' ?></span>
+              <i class="arrow down"></i>
             </div>'
-            <div class="menu-passive">'
-              <i class="btn-close">x</i>'
+            <div class="menu-passive">
+              <i class="btn-close">x</i>
 
               <?php
               $terms_icons = null;
@@ -149,47 +150,48 @@ $tax_sort = $taxonomy;
                 </div>
                 <div class="menu-passive">
                   <i class="btn-close">x</i>
-              <?php
-              $terms_icons = null;
-              foreach ($terms_selected as $term) {
-                if ($tax === get_term($term)->taxonomy) {
+                  <?php
+                  $terms_icons = null;
+                  foreach ($terms_selected as $term) {
+                    if ($tax === get_term($term)->taxonomy) {
 
-                  $is_disabled = (get_term($term)->count === 0) ? 'isDisabled' : '';
-                  // Choose icons
-                  if (!empty($ymc_terms_icons)) {
-                    foreach ($ymc_terms_icons as $key => $val) {
-                      if ((int) $term === (int) $key) {
-                        $terms_icons = '<i class="' . $val . '"></i>';
-                        break;
+                      $is_disabled = (get_term($term)->count === 0) ? 'isDisabled' : '';
+                      // Choose icons
+                      if (!empty($ymc_terms_icons)) {
+                        foreach ($ymc_terms_icons as $key => $val) {
+                          if ((int) $term === (int) $key) {
+                            $terms_icons = '<i class="' . $val . '"></i>';
+                            break;
+                          }
+                        }
                       }
-                    }
-                  }
 
-                  echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
+                      echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
                   ' . $terms_icons . '
                                 <a class="menu-link ' .  esc_attr($is_disabled) . ' ' .  esc_attr($type_multiple) . '" 
                                 href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
-                    esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
-                }
-                $terms_icons = null;
-              }
-              echo '</div>';
-              echo '</div>';
+                        esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
+                    }
+                    $terms_icons = null;
+                  } ?>
+                </div>
+              </div>
+          <?php
             }
           }
           unset($result_tax);
-              ?>
-                </div>
-                <?php
-                $query = new WP_Query(array(
-                  'miasto' => $term,
-                  'post_status' => 'publish'
-                ));
-                $count = $query->found_posts;
-                ?>
+          ?>
+            </div>
+            <?php
+            $query = new WP_Query(array(
+              'miasto' => $term,
+              'post_status' => 'publish'
+            ));
+            $count = $query->found_posts;
+            ?>
 
-                <p class="w-full absolute top-[107px] translate-x-[-50%] z-[2] js-foundedPostOnStart text-[24px] text-center" style="left:50.4%;top:107px" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo wp_count_posts('mieszkania')->publish; ?> ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
-                <div class="posts-found js-post-found"></div>
-              <?php endif; ?>
-              <?php do_action("ymc_after_filter_layout_" . $layout_id . '_' . $c_target); ?>
-              </div>
+            <p class="w-full absolute top-[177px] translate-x-[-50%] z-[2] js-foundedPostOnStart text-[24px] text-center" style="left:50.5%;top:107px" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo wp_count_posts('mieszkania')->publish; ?> ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
+            <div class="posts-found js-post-found"></div>
+          <?php endif; ?>
+          <?php do_action("ymc_after_filter_layout_" . $layout_id . '_' . $c_target); ?>
+          </div>
