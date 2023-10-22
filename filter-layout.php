@@ -148,12 +148,8 @@ $tax_sort = $taxonomy;
         ?>
           <div class="dropdown-filter flex-col bg-white h-fit">
             <p class="dropdown-filter-title"><?php echo get_taxonomy($select_term)->label . ':' ?></p>
-            <div class="menu-active font-bold">
-              <span><?php echo get_taxonomy($select_term)->label ?></span>
-              <span class="arrow-down"></span>
-            </div>
-            <div class="menu-passive">
-              <i class="btn-close">x</i>
+            <div class="menu-active font-bold"><span><?php echo get_taxonomy($select_term)->label ?></span><span class="arrow-down"></span></div>
+            <div class="menu-passive"><i class="btn-close">x</i>
               <?php
               $terms_icons = null;
               foreach ($terms_selected as $term) {
