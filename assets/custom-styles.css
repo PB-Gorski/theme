@@ -887,14 +887,14 @@ background-color: #e8fbff!important;
   width: 100%;
 }
 .dropdown__link {
-  display: block;
-  text-decoration: none;
-  color: black;
-  padding: 5px 10px;
-  box-sizing: border-box;
-  border-bottom: 1px solid gray;
-  border-radius: 4px;
-  background-color: #fff;
+  /* display: block; */
+  /* text-decoration: none; */
+  /* color: black; */
+  /* padding: 5px 10px; */
+  /* box-sizing: border-box; */
+  /* border-bottom: 1px solid gray; */
+  /* border-radius: 4px; */
+  /* background-color: #fff; */
 }
 .dropdown__list_active {
   display: block;
