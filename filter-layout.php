@@ -65,19 +65,19 @@ $tax_sort = $taxonomy;
             <div class="dropdown__value dropdown__value-min font-bold"><span>0</span></div>
             <ul class="dropdown__list">
               <li class="dropdown__item">
-                <span class="dropdown__link">400 000</span>
+                <span class="dropdown__link cursor-pointer">400 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link">498000</span>
+                <span class="dropdown__link cursor-pointer">498000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link">500000</span>
+                <span class="dropdown__link cursor-pointer">500000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link">600000</span>
+                <span class="dropdown__link cursor-pointer">600000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link">800000</span>
+                <span class="dropdown__link cursor-pointer">800000</span>
               </li>
             </ul>
           </div>
