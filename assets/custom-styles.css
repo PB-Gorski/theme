@@ -90,7 +90,7 @@ figure[class*="wp-block-image"] img,
   gap: 40px;
 }
 ul.wp-block-navigation__container  > li.wp-block-navigation-item{
-  color:#2e384d;
+  color:white;
   font-size: 18px;
 }
 .wp-block-navigation-item:hover{
