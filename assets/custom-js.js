@@ -396,7 +396,7 @@ window.addEventListener("load", function() {
     target = e.target.textContent;
     e.target.parentNode.parentNode.previousElementSibling.textContent = '';
     let spanTarget = document.createElement("span");
-    spanTarget.innerHTML = target;
+    spanTarget.innerText = target;
 
     e.target.parentNode.parentNode.previousElementSibling.appendChild(spanTarget);
     dropDownList.forEach(el =>{
