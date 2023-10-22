@@ -488,7 +488,8 @@ window.addEventListener("load", function() {
     priceValueArrNodeList = [];
 
     foundedPostOnStart.classList.add('hidden');
-    priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes[1];
+    // priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
+    priceValueArrNodeList = dropDownFilters[5].childNodes[3].childNodes[3].childNodes[1];
     priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
     priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
     // priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
@@ -497,7 +498,7 @@ window.addEventListener("load", function() {
     // console.log('runSorting2');
 
     for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-      priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+      priceValueArr.push(parseInt(priceValueArrNodeList[i].dataset.name.split(' ').join('')));
       priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
     }
   
