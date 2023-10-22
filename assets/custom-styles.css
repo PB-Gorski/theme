@@ -882,7 +882,7 @@ background-color: #e8fbff!important;
   /* border-bottom: none; */
   z-index: 3;
   background-color: #fff;
-  /* overflow-y: scroll;; */
+  overflow-y: scroll;;
 }
 .dropdown__item {
   width: 100%;
