@@ -60,7 +60,7 @@ $tax_sort = $taxonomy;
       foreach ($result_tax as $tax) {
         $select_term = apply_filters('ymc_select_term_dropdown', $tax);
         if (get_taxonomy($select_term)->label == 'Cena') { ?>
-          <div class="dropdown-filter customPrice price-min">
+          <div class="dropdown-filter customPrice price-min flex-col bg-white h-fit">
             <p class="dropdown-filter-title-custom"><?php echo get_taxonomy($select_term)->label . ':' ?></p>
             <div class="dropdown__value dropdown__value-min">0</i></div>
             <ul class="dropdown__list">
