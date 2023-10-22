@@ -860,7 +860,8 @@ background-color: #e8fbff!important;
   width: 100%;
 }
 .dropdown__value > span:after,
-.dropdown__link:after{
+.dropdown__link:after
+.dropdown__link > span:after{
   content: ' zł';
 }
 .dropdown__value:after {
