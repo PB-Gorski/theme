@@ -357,60 +357,6 @@ window.addEventListener("load", function() {
       <li class="empty w-[30px]"></li>
     </ul>
     `;
-  const btnMoreHTML = `
-
-  `;
-  const sortingStartingValue = `
-    <p class="text-[24px] text-center aos-init aos-animate">Znaleziono 39 ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>
-  `;
-  const sortingStartingValueHTML =`
-    <p class="mb-[50px] bg-white text-[24px] text-center" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo $count - 1; ?> oferty pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
-  `;
-  const BtnCustomPriceSelect = `
-  <div class="mySortingBar w-[281px]">
-    <div class="content h-[59px]">
-      <div class="card flex gap-[1px]">
-        <div class="dropdown w-[140px]">
-          <div class="dropdown__value dropdown__value-min">min</div>
-          <ul class="dropdown__list">
-            <li class="dropdown__item">
-              <a href="javascript:void(0);" class="dropdown__link">400000</a>
-            </li>
-            <li class="dropdown__item">
-              <a href="javascript:void(0);" class="dropdown__link">500000</a>
-            </li>
-            <li class="dropdown__item">
-              <a href="javascript:void(0);" class="dropdown__link">600000</a>
-            </li>
-            <li class="dropdown__item">
-              <a href="javascript:void(0);" class="dropdown__link">800000</a>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown w-[140px]">
-          <div class="dropdown__value dropdown__value-max">max</div>
-          <ul class="dropdown__list">
-            <li class="dropdown__item">
-              <a href="javascript:void(0);" class="dropdown__link">400002</a>
-            </li>
-            <li class="dropdown__item">
-              <a href="javascript:void(0);" class="dropdown__link">500002</a>
-            </li>
-            <li class="dropdown__item">
-              <a href="javascript:void(0);" class="dropdown__link">600002</a>
-            </li>
-            <li class="dropdown__item">
-              <a href="javascript:void(0);" class="dropdown__link">800002</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  `;
-  const btnFilterSerach = `
-
-  `;
   const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
   // const dropDownFilters = document.querySelectorAll(".dropdown-filter");
   const mainDropDown = document.querySelectorAll('.dropdown__value');
@@ -487,8 +433,8 @@ window.addEventListener("load", function() {
     foundedPostOnStart.classList.add('hidden');
     const dropDownFilters = document.querySelectorAll(".dropdown-filter");
     let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
-    priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML);
-    priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML);
+    priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML).split(' ').join('');
+    priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML).split(' ').join('');
     // priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
 
     // console.log(priceMinValue,priceMaxValue);

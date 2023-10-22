@@ -65,49 +65,49 @@ $tax_sort = $taxonomy;
             <div class="dropdown__value dropdown__value-min font-bold"><span>0</span></div>
             <ul class="dropdown__list">
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">50 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="50">50 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">100 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">100 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">150 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">150 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">200 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">200 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">250 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">250 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">300 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">300 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">350 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">350 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">400 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">400 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">450 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">450 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">500 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">500 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">750 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">750 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">1 000 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">1 000 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">1 500 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">1 500 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">2 000 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">2 000 000</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link cursor-pointer">2 500 000</span>
+                <span class="dropdown__link cursor-pointer" data-value="450000">2 500 000</span>
               </li>
             </ul>
           </div>
