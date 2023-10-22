@@ -399,7 +399,7 @@ window.addEventListener("load", function() {
     spanTarget.innerText = target;
 
     e.target.parentNode.parentNode.previousElementSibling.appendChild(spanTarget);
-    
+
     dropDownList.forEach(el =>{
       if(el.classList.contains('dropdown__list_active')){
         el.classList.remove('dropdown__list_active')
@@ -438,8 +438,8 @@ window.addEventListener("load", function() {
     foundedPostOnStart.classList.add('hidden');
     const dropDownFilters = document.querySelectorAll(".dropdown-filter");
     let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
-    priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerHTML.split(' ').join(''));
-    priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerHTML.split(' ').join(''));
+    priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
+    priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
     // priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
 
     // console.log(priceMinValue,priceMaxValue);
