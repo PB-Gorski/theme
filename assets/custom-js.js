@@ -362,8 +362,8 @@ window.addEventListener("load", function() {
   const mainDropDown = document.querySelectorAll('.dropdown__value');
   const dropDownList = document.querySelectorAll('.dropdown__list');
   const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
-  let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerText);
-  let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerText);
+  // let priceMinValue = parseInt(document.querySelector('.dropdown__value-min').innerText);
+  // let priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').innerText);
   let priceValueArr = [];
   let newArr = [];
   let newArrHTMLList = [];
