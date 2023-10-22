@@ -115,10 +115,10 @@ $tax_sort = $taxonomy;
           </div>
 
           <div class="dropdown-filter defaultPrice hidden">
-            <div class="menu-active">
+            <div class="menu-active flex space-between items-center">
               <span><?php ' . get_taxo
               nomy($select_term)->label . ' ?></span>
-              <span class="arrow-down">Down</span>
+              <span class="arrow-down"></span>
             </div>'
             <div class="menu-passive">
               <i class="btn-close">x</i>
@@ -152,9 +152,9 @@ $tax_sort = $taxonomy;
         ?>
           <div class="dropdown-filter flex-col bg-white h-fit">
             <p class="dropdown-filter-title"><?php echo get_taxonomy($select_term)->label . ':' ?></p>
-            <div class="menu-active font-bold">
+            <div class="menu-active font-bold flex space-between items-center">
               <span><?php echo get_taxonomy($select_term)->label ?></span>
-              <span class="arrow-down">Down</span>
+              <span class="arrow-down"></span>
             </div>
             <div class="menu-passive">
               <i class="btn-close">x</i>

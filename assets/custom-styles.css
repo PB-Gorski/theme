@@ -853,7 +853,7 @@ background-color: #e8fbff!important;
   box-sizing: border-box;
   padding: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   cursor: pointer;
   width: 100%;
 
