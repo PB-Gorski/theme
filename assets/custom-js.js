@@ -441,10 +441,7 @@ window.addEventListener("load", function() {
     // console.log('runSorting2');
 
     for (i = 1 ; i < priceValueArrNodeList.length ; i++){
-      console.log('linki z data', priceValueArrNodeList[i].childNodes[1]);
-
       priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
-
       priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
     }
   
@@ -454,7 +451,6 @@ window.addEventListener("load", function() {
       };
     });
     console.log('prices from range: ', priceValueArr);
-    
     
     // console.log('new price arr: ',newArr);
 
