@@ -60,7 +60,7 @@
                 <!-- /wp:paragraph -->
 
                 <!-- wp:paragraph -->
-                <p class="relative inline text-primaryRed before:content-[''] before:inline-block cursor-pointer">Czytaj więcej &#x25BA;</p>
+                <p class="relative inline text-primaryRed before:content-[''] before:inline-block cursor-pointer">Czytaj dalej <span class="text-[11px]">&#x25BA;</span></p>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
