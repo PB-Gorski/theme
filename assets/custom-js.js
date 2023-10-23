@@ -298,18 +298,22 @@ window.addEventListener("load", function() {
   // setring chosen option in active window
 
   let passiveOptions = document.querySelectorAll('.menu-passive__item');
+  let optionSpan = this.document.createElement('span');
   let counter2 = 0;
   passiveOptions.forEach(item => {
     item.addEventListener('click', ()=>{
+      let optionSpan = this.document.createElement('span');
       let choosenOption = item.childNodes[1].dataset.name
+      optionSpan = choosenOption;
       if(counter>1){
-        item.parentNode.previousElementSibling.childNodes[0].innerText = item.parentNode.previousElementSibling.childNodes[0].innerText + ', ' + choosenOption;
+        // item.parentNode.previousElementSibling.childNodes[0].innerText = item.parentNode.previousElementSibling.childNodes[0].innerText + ', ' + choosenOption;
+        item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan)
         counter2++;
         console.log(counter2);
       }else{
         let choosenOption2 = item.childNodes[1].dataset.name
         item.parentNode.previousElementSibling.childNodes[0].innerText = choosenOption2;
-      }
+      };
     });
 
 
