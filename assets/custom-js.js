@@ -304,20 +304,23 @@ window.addEventListener("load", function() {
       let optionSpan = document.createElement('span');
       let choosenOption = item.childNodes[1].dataset.name
       let choosenOptions = item.childNodes[1].dataset.name
+      let stopAdding = false;
       optionSpan.innerText = choosenOption;
 
       if(item.parentNode.previousElementSibling.childNodes[0].childNodes){
         console.log('have child span');
         let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
+
         choosenOptionsArr.forEach(option => {
           if(option.innerText == choosenOption){
             console.log('clear existing span');
-            option.innerText = '';
-          }
-        })
-      }
+            option.remove();
+            stopAdding = true;
+          };
+        });
+      };
 
-      if(counter>2){
+      if(counter>2 && !stopAdding){
         console.log('conter>1');
         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan);
         console.log(counter2);
@@ -330,6 +333,7 @@ window.addEventListener("load", function() {
         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan2);
         counter2++;
       };
+      stopAdding = false;
     });
   });
   // price selects
