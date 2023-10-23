@@ -206,6 +206,8 @@ $tax_sort = $taxonomy;
           }
           echo '</div>';
           echo '</div>';
+        } else  if (get_taxonomy($select_term)->label == 'Metraz') {
+          echo 'Custom Metraz';
         } else {
           ?>
           <div class="dropdown-filter flex-col bg-white h-fit">
