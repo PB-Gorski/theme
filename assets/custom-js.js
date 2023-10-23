@@ -461,10 +461,10 @@ window.addEventListener("load", function() {
     newArrHTMLList = [];
     priceValueArrNodeList = [];
 
-    YMCTools({
-      target: '.data-target-ymc1',
-      terms: filteredTermsID.join(),            
-    }).apiTermUpdate(); 
+    // YMCTools({
+    //   target: '.data-target-ymc1',
+    //   terms: filteredTermsID.join(),            
+    // }).apiTermUpdate(); 
   };
   // btnSearch.addEventListener('click', runSearching);
 
@@ -644,12 +644,27 @@ window.addEventListener("load", function() {
     newArrHTMLListMetraz = [];
     metrazValueArrNodeList = [];
 
+
+  };
+
+  function filteredTermsMerge(){
+    let filteredTerms = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
+
     YMCTools({
       target: '.data-target-ymc1',
-      terms: filteredTermsIDMetraz.join(),            
+      terms: filteredTerms,          
     }).apiTermUpdate(); 
-  };
-  btnSearch.addEventListener('click', runSearchingMetraz);
+  }
+  // *******************************************************
+  btnSearch.addEventListener('click', () =>{
+    console.log('btn search start');
+    runSearching;
+    console.log('runsearching done');
+    runSearchingMetraz;
+    console.log('runsearchingMetraz done');
+    filteredTermsMerge;
+  } );
+  // *******************************************************
 
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
   });
