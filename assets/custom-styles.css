@@ -572,8 +572,8 @@ border-width: 0 2px 2px 0;
 }
 
 .dropdown-filter{
-  margin-right: 2px!important;
-  max-width: 165px!important;
+  /* margin-right: 2px!important; */
+  max-width: 167px!important;
   align-self: flex-start;
   /* border-bottom: 3px solid #dcdee3; */
 }
