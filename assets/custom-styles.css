@@ -880,6 +880,9 @@ background-color: #e8fbff!important;
 .dropdown__link:after{
   content: ' zł';
 }
+.dropdown__link .menu-link:hover{
+  background-color: #B2F1FF;
+}
 .dropdown__value:after {
   content: '\25bc';
   margin-left: 5px;
