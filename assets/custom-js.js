@@ -304,7 +304,7 @@ window.addEventListener("load", function() {
       let optionSpan = document.createElement('span');
       let choosenOption = item.childNodes[1].dataset.name
       optionSpan.innerText = choosenOption;
-      if(counter>1){
+      if(counter>2){
         console.log('conter>1');
         item.parentNode.previousElementSibling.childNodes[0].innerText = '';
         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan)
