@@ -529,7 +529,7 @@ window.addEventListener("load", function() {
   //   });
   // });
 
-  // price selects
+  // metraz selects
   const mainDropDownMetraz = document.querySelectorAll('.dropdown__value-metraz');
   const dropDownListMetraz = document.querySelectorAll('.dropdown__list-metraz');
   const dropDownsMetraz = Array.from(document.querySelectorAll('.dropdown__link-metraz'));
@@ -542,10 +542,11 @@ window.addEventListener("load", function() {
   mainDropDownMetraz.forEach(dropDownEl =>{
     dropDownEl.addEventListener('click', (e) =>{
       if(e.target.nextElementSibling){
-        console.log('span');
+        console.log(e.target);
+        console.log('drop down span');
         e.target.nextElementSibling.classList.toggle('dropdown__list_active');
       }else if(e.target.parentNode.nextElementSibling){
-        console.log('span container');
+        console.log('dropdown span container');
         e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active');
       }
     });
