@@ -470,7 +470,7 @@ option:hover {
   flex-grow: 1;
   /* flex-basis: 100%; */
 }
-.ymc-smart-filter-container .filter-layout3 .dropdown-filter:nth-child(8){
+.ymc-smart-filter-container .filter-layout3 .dropdown-filter:nth-child(6){
   background-color: red!important;
 }
 #filter-layout3-filter-layout3 > .filter-entry {
