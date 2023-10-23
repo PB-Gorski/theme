@@ -537,7 +537,6 @@ window.addEventListener("load", function() {
   const mainDropDownMetraz = document.querySelectorAll('.dropdown__value-metraz');
   const dropDownListMetraz = document.querySelectorAll('.dropdown__list-metraz');
   const dropDownsMetraz = Array.from(document.querySelectorAll('.dropdown__link-metraz'));
-  // let btnSearch = document.querySelector('.btn-search');
   let metrazValueArr = [];
   let newArrMetraz = [];
   let newArrHTMLListMetraz = [];
@@ -576,18 +575,17 @@ window.addEventListener("load", function() {
     });
   };
 
-  const foundedPostOnStartMetraz = document.querySelector('.js-foundedPostOnStart');;
   let counterMetraz = 0;
 
-  wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-    if (counterMetraz == 2){
-      console.log('posts loaded2');
-      foundedPostOnStart.classList.add('hidden');
-    };
-    counterMetraz++;
-  });
+  // wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
+  //   if (counterMetraz == 2){
+  //     console.log('posts loaded2');
+  //     foundedPostOnStart.classList.add('hidden');
+  //   };
+  //   counterMetraz++;
+  // });
 
-  function runSearching(){
+  function runSearchingMetraz(){
     metrazValueArr = [];
     newArrMetraz = [];
     newArrHTMLListMetraz = [];
@@ -649,7 +647,7 @@ window.addEventListener("load", function() {
       terms: filteredTermsIDMetraz.join(),            
     }).apiTermUpdate(); 
   };
-  btnSearch.addEventListener('click', runSearching);
+  btnSearch.addEventListener('click', runSearchingMetraz);
 
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
   });
