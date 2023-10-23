@@ -317,7 +317,7 @@ window.addEventListener("load", function() {
             console.log('choosen option text for cleaning', choosenOption);
             console.log('clear existing span');
             // option.innerText = '';
-            option.firstChild.remove('span');
+            option.remove('span');
             console.log('choosen option ', option);
             console.log('choosen option parentNode ', option.parentNode);
             option.parentNode.innerText('Miasto');
