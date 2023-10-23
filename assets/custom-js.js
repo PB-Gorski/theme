@@ -319,6 +319,7 @@ window.addEventListener("load", function() {
             console.log('clear existing span');
             // option.innerText = '';
             option.remove('span');
+            option.innerText('Miasto');
             // stopAdding = true;
           };
         });
