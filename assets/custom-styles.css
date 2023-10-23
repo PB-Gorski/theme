@@ -910,6 +910,7 @@ background-color: #e8fbff!important;
 }
 .dropdown__link:hover {
   background-color: #B2F1FF;
+  border: none!important;
 }
 .dropdown__list_active {
   display: block;
