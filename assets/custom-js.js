@@ -303,7 +303,7 @@ window.addEventListener("load", function() {
     item.addEventListener('click', ()=>{
       let choosenOption = item.childNodes[1].dataset.name
       if(counter>0){
-        item.parentNode.previousElementSibling.childNodes[0].innerText = choosenOption + ', ' + choosenOption2;
+        item.parentNode.previousElementSibling.childNodes[0].innerText = item.parentNode.previousElementSibling.childNodes[0].innerText + ', ' + choosenOption;
         counter2++;
         console.log(counter2);
       }else{
