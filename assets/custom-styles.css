@@ -882,13 +882,11 @@ background-color: #e8fbff!important;
   width: 100%;
 }
 .dropdown__value > span:after,
-.dropdown__link:after,
 .dropdown__link:after{
-  content: ' m'!important;
+  content: ' zł'!important;
 }
 .dropdown__value-metraz > span:after,
-.dropdown__link:after,
-.dropdown__link:after{
+.dropdown__value-metraz >.dropdown__link:after{
   content: ' m'!important;
 }
 .dropdown__value:after {
