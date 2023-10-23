@@ -294,104 +294,10 @@ window.addEventListener("load", function() {
     });
   });
 
-  // sortowanie listy mieszkan
-  const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
-  const sortingBarHTML = `
-  <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[22px] flex flex-wrap items-center justify-between text-[13px] font-bold z-0 relative">
-    <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
-    <li class="js-sort js-sort-inwestycja w-[180px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
-    <li class="js-sort js-sort-budynek w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
-    <li class="js-sort js-sort-nr w-[65px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">nr</li>
-    <li class="js-sort js-sort-pokoje w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pokoje</li>
-    <li class="js-sort js-sort-metraz w-[110px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">metraz</li>
-    <li class="js-sort js-sort-pietro w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pietro</li>
-    <li class="js-sort js-sort-cena w-[130px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">cena</li>
-    <li class="js-sort js-sort-termin w-[175px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">termin</li>
-    <li class="empty w-[30px]"></li>
-  </ul>
-  `;
 
-  if(document.body.classList.contains('post-type-archive-mieszkania')){
-    listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
-  };
+  //---------------------------------------------------------------------- 
 
-  function sortListDir(j) {
-    let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
-    list = document.querySelector(".post-entry");
-    switching = true;
-    dir = "asc"; 
-    while (switching) {
-      switching = false;
-      b = list.querySelectorAll('.post-item');
-      for (i = 0; i < (b.length - 1); i++) {
-        shouldSwitch = false;
-        if (dir == "asc") {
-          if(j!=7){
-            if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i+1].firstChild.childNodes[j].firstChild.textContent) {
-              shouldSwitch = true;
-              break;
-            };
-          }else{
-            // dla ceny fix na int
-            if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i+1].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
-              shouldSwitch = true;
-              break;
-            };
-          };
-        } else if (dir == "desc") {
-          if(j!=7){
-            if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i+1].firstChild.childNodes[j].firstChild.textContent) {
-              shouldSwitch = true;
-              break;
-            }
-          }else{
-            if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) < parseInt(b[i+1].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
-              shouldSwitch = true;
-              break;
-            };
-          };
-        };    
-      };
-      if (shouldSwitch) {
-        b[i].parentNode.insertBefore(b[i + 1], b[i]);
-        switching = true;
-        switchcount ++;
-      } else {
-        if (switchcount == 0 && dir == "asc") {
-          dir = "desc";
-          switching = true;
-        };
-      };
-    };
-  };
 
-  const btnsSort = document.querySelectorAll('.js-sort');
-  btnIndex=1;
-  counter=1;
-  btnsSort.forEach((btn,index) => {
-    btn.addEventListener('click', () => {
-      indexFrom1 = index + 1;
-      currentFiltr = indexFrom1 + index;
-
-      sortListDir(index);
-      
-      for (let i = 1 ; i <= (17) ; i=i+2){
-        if (i == currentFiltr){
-          if( btnsSort[currentFiltr-counter].classList.contains('sort-arrow-up')){
-            btnsSort[currentFiltr-counter].classList.remove('sort-arrow-up');
-            btnsSort[currentFiltr-counter].classList.add('sort-arrow-down');
-          }else{
-            btnsSort[currentFiltr-counter].classList.add('sort-arrow-up');
-            btnsSort[currentFiltr-counter].classList.remove('sort-arrow-down');
-          }
-        }else if(i != currentFiltr){
-          btnsSort[i-counter].classList.remove('sort-arrow-up','sort-arrow-down')
-        }
-        counter++
-      };
-      counter=1;
-    });
-  });
 
 
 
@@ -578,6 +484,107 @@ window.addEventListener("load", function() {
       foundedPostOnStart.classList.toggle('top-[320px]')
     });
   };
+
+
+
+  // sortowanie listy mieszkan
+  const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
+  const sortingBarHTML = `
+  <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[22px] flex flex-wrap items-center justify-between text-[13px] font-bold z-0 relative">
+    <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
+    <li class="js-sort js-sort-inwestycja w-[180px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
+    <li class="js-sort js-sort-budynek w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
+    <li class="js-sort js-sort-nr w-[65px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">nr</li>
+    <li class="js-sort js-sort-pokoje w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pokoje</li>
+    <li class="js-sort js-sort-metraz w-[110px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">metraz</li>
+    <li class="js-sort js-sort-pietro w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pietro</li>
+    <li class="js-sort js-sort-cena w-[130px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">cena</li>
+    <li class="js-sort js-sort-termin w-[175px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">termin</li>
+    <li class="empty w-[30px]"></li>
+  </ul>
+  `;
+
+  if(document.body.classList.contains('post-type-archive-mieszkania')){
+    listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
+  };
+
+  function sortListDir(j) {
+    let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
+    list = document.querySelector(".post-entry");
+    switching = true;
+    dir = "asc"; 
+    while (switching) {
+      switching = false;
+      b = list.querySelectorAll('.post-item');
+      for (i = 0; i < (b.length - 1); i++) {
+        shouldSwitch = false;
+        if (dir == "asc") {
+          if(j!=7){
+            if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i+1].firstChild.childNodes[j].firstChild.textContent) {
+              shouldSwitch = true;
+              break;
+            };
+          }else{
+            // dla ceny fix na int
+            if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i+1].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
+              shouldSwitch = true;
+              break;
+            };
+          };
+        } else if (dir == "desc") {
+          if(j!=7){
+            if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i+1].firstChild.childNodes[j].firstChild.textContent) {
+              shouldSwitch = true;
+              break;
+            }
+          }else{
+            if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) < parseInt(b[i+1].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
+              shouldSwitch = true;
+              break;
+            };
+          };
+        };    
+      };
+      if (shouldSwitch) {
+        b[i].parentNode.insertBefore(b[i + 1], b[i]);
+        switching = true;
+        switchcount ++;
+      } else {
+        if (switchcount == 0 && dir == "asc") {
+          dir = "desc";
+          switching = true;
+        };
+      };
+    };
+  };
+
+  const btnsSort = document.querySelectorAll('.js-sort');
+  btnIndex = 1;
+  counter = 1;
+  btnsSort.forEach((btn,index) => {
+    btn.addEventListener('click', () => {
+      indexFrom1 = index + 1;
+      currentFiltr = indexFrom1 + index;
+
+      sortListDir(index);
+      
+      for (let i = 1 ; i <= (17) ; i=i+2){
+        if (i == currentFiltr){
+          if( btnsSort[currentFiltr-counter].classList.contains('sort-arrow-up')){
+            btnsSort[currentFiltr-counter].classList.remove('sort-arrow-up');
+            btnsSort[currentFiltr-counter].classList.add('sort-arrow-down');
+          }else{
+            btnsSort[currentFiltr-counter].classList.add('sort-arrow-up');
+            btnsSort[currentFiltr-counter].classList.remove('sort-arrow-down');
+          }
+        }else if(i != currentFiltr){
+          btnsSort[i-counter].classList.remove('sort-arrow-up','sort-arrow-down')
+        }
+        counter++
+      };
+      counter=1;
+    });
+  });  
 
 
 
