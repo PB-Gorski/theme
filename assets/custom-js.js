@@ -301,13 +301,14 @@ window.addEventListener("load", function() {
   let counter2 = 0;
   passiveOptions.forEach(item => {
     item.addEventListener('click', ()=>{
+      let choosenOption = item.childNodes[1].dataset.name
       if(counter>0){
-        item.parentNode.previousElementSibling.childNodes[0].innerText = choosenOption + ', ' + choosenOption;
+        item.parentNode.previousElementSibling.childNodes[0].innerText = choosenOption + ', ' + choosenOption2;
         counter2++;
         console.log(counter2);
       }else{
-        let choosenOption = item.childNodes[1].dataset.name
-        item.parentNode.previousElementSibling.childNodes[0].innerText = choosenOption;
+        let choosenOption2 = item.childNodes[1].dataset.name
+        item.parentNode.previousElementSibling.childNodes[0].innerText = choosenOption2;
       }
     });
 
