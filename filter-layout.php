@@ -209,10 +209,10 @@ $tax_sort = $taxonomy;
         } else  if (get_taxonomy($select_term)->label == 'Metraz') { ?>
           <div class="dropdown-filter customMetraz metraz-min flex-col bg-white h-fit">
             <p class="dropdown-filter-title">Metraż od:</p>
-            <div class="dropdown__value dropdown__value-min font-bold"><span>0</span></div>
+            <div class="dropdown__value dropdown__value-metraz dropdown__value-min font-bold"><span>0</span></div>
             <ul class="dropdown__list">
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer before:content-['m']">10</span>
+                <span class="dropdown__link menu-link cursor-pointer">10</span>
               </li>
               <li class="dropdown__item">
                 <span class="dropdown__link menu-link cursor-pointer">25</span>
