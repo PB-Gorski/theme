@@ -302,8 +302,7 @@ window.addEventListener("load", function() {
   passiveOptions.forEach(item => {
     item.addEventListener('click', () => {
       let optionSpan = document.createElement('span');
-      let choosenOption = item.childNodes[1].dataset.name
-      let choosenOptions = item.childNodes[1].dataset.name
+      let choosenOption = item.childNodes[1].dataset.name;
       let stopAdding = false;
       optionSpan.innerText = choosenOption;
 
