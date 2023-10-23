@@ -466,7 +466,7 @@ window.addEventListener("load", function() {
       terms: filteredTermsID.join(),            
     }).apiTermUpdate(); 
   };
-  btnSearch.addEventListener('click', runSearching);
+  // btnSearch.addEventListener('click', runSearching);
 
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
   });
@@ -588,6 +588,7 @@ window.addEventListener("load", function() {
   });
 
   function runSearchingMetraz(){
+    console.log(run);
     metrazValueArr = [];
     newArrMetraz = [];
     newArrHTMLListMetraz = [];
