@@ -210,7 +210,7 @@ $tax_sort = $taxonomy;
           <div class="dropdown-filter customMetraz metraz-min flex-col bg-white h-fit">
             <p class="dropdown-filter-title">Metraż od:</p>
             <div class="dropdown__value dropdown__value-metraz dropdown__value-min font-bold"><span>0</span></div>
-            <ul class="dropdown__list">
+            <ul class="dropdown__list dropdown__list-metraz">
               <li class="dropdown__item">
                 <span class="dropdown__link menu-link cursor-pointer">10</span>
               </li>
@@ -253,7 +253,7 @@ $tax_sort = $taxonomy;
           <div class="dropdown-filter customMetraz metraz-max flex-col bg-white h-fit">
             <p class="dropdown-filter-title">Metraz do do:</p>
             <div class="dropdown__value dropdown__value-max font-bold">Max</div>
-            <ul class="dropdown__list">
+            <ul class="dropdown__list dropdown__list-metraz">
               <li class="dropdown__item">
                 <span class="dropdown__link menu-link cursor-pointer">10</span>
               </li>
