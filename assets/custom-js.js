@@ -314,7 +314,8 @@ window.addEventListener("load", function() {
 
         choosenOptionsArr.forEach(option => {
           if(option.innerText == choosenOption){
-            console.log('choosen option for cleaning', choosenOption);
+            console.log('choosen option ', option);
+            console.log('choosen option text for cleaning', choosenOption);
             console.log('clear existing span');
             option.innerText = '';
             stopAdding = true;
