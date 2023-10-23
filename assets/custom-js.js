@@ -379,7 +379,6 @@ window.addEventListener("load", function() {
   function choise(e){
     e.preventDefault();
     target = e.target.textContent;
-    console.log(target);
     e.target.parentNode.parentNode.previousElementSibling.textContent = '';
     let spanTarget = document.createElement("span");
     spanTarget.innerText = target;
@@ -564,7 +563,7 @@ window.addEventListener("load", function() {
 
   function choiseMetraz(e){
     e.preventDefault();
-    target = e.target.textContent;
+    targetMetraz = e.target.textContent;
     e.target.parentNode.parentNode.previousElementSibling.textContent = '';
     let spanTargetMetraz = document.createElement("span");
     spanTargetMetraz.innerText = targetMetraz;
