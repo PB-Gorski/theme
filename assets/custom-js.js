@@ -577,21 +577,22 @@ window.addEventListener("load", function() {
 
   let counterMetraz = 0;
 
-  // wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-  //   if (counterMetraz == 2){
-  //     console.log('posts loaded2');
-  //     foundedPostOnStart.classList.add('hidden');
-  //   };
-  //   counterMetraz++;
-  // });
+  // const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
+
+  wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
+    if (counterMetraz == 2){
+      console.log('posts loaded2');
+      foundedPostOnStart.classList.add('hidden');
+    };
+    counterMetraz++;
+  });
 
   function runSearchingMetraz(){
     metrazValueArr = [];
     newArrMetraz = [];
     newArrHTMLListMetraz = [];
-
-    foundedPostOnStart.classList.add('hidden');
     const dropDownFiltersMetraz = document.querySelectorAll(".dropdown-filter");
+    foundedPostOnStart.classList.add('hidden');
     let metrazValueArrNodeList = dropDownFiltersMetraz[5].childNodes[1].childNodes;
     metrazMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
     metrazMaxValue = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
