@@ -294,7 +294,8 @@ window.addEventListener("load", function() {
     });
   });
 
-  // sortingBar inject
+  // sortowanie listy mieszkan
+  const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
   const sortingBarHTML = `
   <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[22px] flex flex-wrap items-center justify-between text-[13px] font-bold z-0 relative">
     <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
@@ -309,13 +310,94 @@ window.addEventListener("load", function() {
     <li class="empty w-[30px]"></li>
   </ul>
   `;
-if(document.body.classList.contains('post-type-archive-mieszkania')){
-  listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
-};
 
-  // sortowanie listy mieszkan
+  if(document.body.classList.contains('post-type-archive-mieszkania')){
+    listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
+  };
+
+  function sortListDir(j) {
+    let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
+    list = document.querySelector(".post-entry");
+    switching = true;
+    dir = "asc"; 
+    while (switching) {
+      switching = false;
+      b = list.querySelectorAll('.post-item');
+      for (i = 0; i < (b.length - 1); i++) {
+        shouldSwitch = false;
+        if (dir == "asc") {
+          if(j!=7){
+            if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i+1].firstChild.childNodes[j].firstChild.textContent) {
+              shouldSwitch = true;
+              break;
+            };
+          }else{
+            // dla ceny fix na int
+            if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i+1].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
+              shouldSwitch = true;
+              break;
+            };
+          };
+        } else if (dir == "desc") {
+          if(j!=7){
+            if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i+1].firstChild.childNodes[j].firstChild.textContent) {
+              shouldSwitch = true;
+              break;
+            }
+          }else{
+            if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) < parseInt(b[i+1].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
+              shouldSwitch = true;
+              break;
+            };
+          };
+        };    
+      };
+      if (shouldSwitch) {
+        b[i].parentNode.insertBefore(b[i + 1], b[i]);
+        switching = true;
+        switchcount ++;
+      } else {
+        if (switchcount == 0 && dir == "asc") {
+          dir = "desc";
+          switching = true;
+        };
+      };
+    };
+  };
+
+  const btnsSort = document.querySelectorAll('.js-sort');
+  btnIndex=1;
+  counter=1;
+  btnsSort.forEach((btn,index) => {
+    btn.addEventListener('click', () => {
+      indexFrom1 = index + 1;
+      currentFiltr = indexFrom1 + index;
+
+      sortListDir(index);
+      
+      for (let i = 1 ; i <= (17) ; i=i+2){
+        if (i == currentFiltr){
+          if( btnsSort[currentFiltr-counter].classList.contains('sort-arrow-up')){
+            btnsSort[currentFiltr-counter].classList.remove('sort-arrow-up');
+            btnsSort[currentFiltr-counter].classList.add('sort-arrow-down');
+          }else{
+            btnsSort[currentFiltr-counter].classList.add('sort-arrow-up');
+            btnsSort[currentFiltr-counter].classList.remove('sort-arrow-down');
+          }
+        }else if(i != currentFiltr){
+          btnsSort[i-counter].classList.remove('sort-arrow-up','sort-arrow-down')
+        }
+        counter++
+      };
+      counter=1;
+    });
+  });
+
+
+
+
+  // wyszukiwanie mieszkan po filtrach
   // setting chosen option in active window
-
   let passiveOptions = document.querySelectorAll('.menu-passive__item');
   let counter2 = 0;
   passiveOptions.forEach(item => {
@@ -364,20 +446,17 @@ if(document.body.classList.contains('post-type-archive-mieszkania')){
       console.log(stopAdding);
     });
   });
-  // price selects
 
-  const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
+  // price selects
   const mainDropDown = document.querySelectorAll('.dropdown__value');
   const dropDownList = document.querySelectorAll('.dropdown__list');
   const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
+  let btnSearch = document.querySelector('.btn-search');
   let priceValueArr = [];
   let newArr = [];
   let newArrHTMLList = [];
   let target;
 
-
-
-  let btnSearch = document.querySelector('.btn-search');
 
   mainDropDown.forEach(dropDownEl =>{
     dropDownEl.addEventListener('click', (e) =>{
@@ -422,8 +501,7 @@ if(document.body.classList.contains('post-type-archive-mieszkania')){
     counter++;
   });
 
-  // price selects
-  function runSorting(){
+  function runSearching(){
     priceValueArr = [];
     newArr = [];
     newArrHTMLList = [];
@@ -475,9 +553,6 @@ if(document.body.classList.contains('post-type-archive-mieszkania')){
       }
     }
 
-    // console.log(newArrHTMLList);
-    // console.log('runSorting2 finish');
-
     priceValueArr = [];
     newArr = [];
     newArrHTMLList = [];
@@ -488,14 +563,8 @@ if(document.body.classList.contains('post-type-archive-mieszkania')){
       terms: filteredTermsID.join(),            
     }).apiTermUpdate(); 
   };
-  btnSearch.addEventListener('click', runSorting);
+  btnSearch.addEventListener('click', runSearching);
 
-
-  if(document.body.classList.contains('page-id-606') || document.body.classList.contains('page-id-11') || document.body.classList.contains('page-id-13')){
-  }
-
-  const postsFoundHTML = document.querySelector('.posts-found');
-  const postsFoundParentHTML = document.querySelector('.filter-layout3-148');
   
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
     // postsCount = res.found;
@@ -505,8 +574,6 @@ if(document.body.classList.contains('post-type-archive-mieszkania')){
     // postsFoundHTML.insertAdjacentHTML('afterend', '<p class="firstTime bg-white text-[24px] text-center aos-init aos-animate">Znaleziono ' + postsCount + ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń 151)</span></p>');
   });
 
-
-  
   // search more options handle
   const btnMore = document.querySelector('.btn-more');
   const searchBar = document.querySelector('.filter-entry');
@@ -519,85 +586,6 @@ if(document.body.classList.contains('post-type-archive-mieszkania')){
     });
   };
 
-  function sortListDir(j) {
-    let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
-    list = document.querySelector(".post-entry");
-    switching = true;
-    dir = "asc"; 
-    while (switching) {
-      switching = false;
-      b = list.querySelectorAll('.post-item');
-      for (i = 0; i < (b.length - 1); i++) {
-        shouldSwitch = false;
-        if (dir == "asc") {
-          if(j!=7){
-            if (b[i].firstChild.childNodes[j].firstChild.textContent > b[i+1].firstChild.childNodes[j].firstChild.textContent) {
-              shouldSwitch = true;
-              break;
-            }
-          }else{
-            // dla ceny fix na int
-            if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i+1].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
-              shouldSwitch = true;
-              break;
-            }
-          }
-        } else if (dir == "desc") {
-          if(j!=7){
-            if (b[i].firstChild.childNodes[j].firstChild.textContent < b[i+1].firstChild.childNodes[j].firstChild.textContent) {
-              shouldSwitch = true;
-              break;
-            }
-          }else{
-            if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) < parseInt(b[i+1].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
-              shouldSwitch = true;
-              break;
-            }
-          }
-        }        
-      }
-      if (shouldSwitch) {
-        b[i].parentNode.insertBefore(b[i + 1], b[i]);
-        switching = true;
-        switchcount ++;
-      } else {
-        if (switchcount == 0 && dir == "asc") {
-          dir = "desc";
-          switching = true;
-        }
-      }
-    }
-  }
-
-  // ---------------
-
-  const btnsSort = document.querySelectorAll('.js-sort');
-  btnIndex=1;
-  counter=1;
-  btnsSort.forEach((btn,index) => {
-    btn.addEventListener('click', () => {
-      indexFrom1 = index + 1;
-      currentFiltr = indexFrom1 + index;
-
-      sortListDir(index);
-      
-      for (let i = 1 ; i <= (17) ; i=i+2){
-        if (i == currentFiltr){
-          if( btnsSort[currentFiltr-counter].classList.contains('sort-arrow-up')){
-            btnsSort[currentFiltr-counter].classList.remove('sort-arrow-up');
-            btnsSort[currentFiltr-counter].classList.add('sort-arrow-down');
-          }else{
-            btnsSort[currentFiltr-counter].classList.add('sort-arrow-up');
-            btnsSort[currentFiltr-counter].classList.remove('sort-arrow-down');
-          }
-        }else if(i != currentFiltr){
-          btnsSort[i-counter].classList.remove('sort-arrow-up','sort-arrow-down')
-        }
-        counter++
-      };
-      counter=1;
-    });
-  });
 
 
 
