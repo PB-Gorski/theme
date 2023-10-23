@@ -314,12 +314,12 @@ window.addEventListener("load", function() {
           if(option.innerText == choosenOption){
             console.log('have child span');
             stopAdding = true;
-            console.log('choosen option ', option);
-            console.log('choosen option parentNode ', option.parentNode);
             console.log('choosen option text for cleaning', choosenOption);
             console.log('clear existing span');
             // option.innerText = '';
-            option.remove('span');
+            option.firstChild.remove('span');
+            console.log('choosen option ', option);
+            console.log('choosen option parentNode ', option.parentNode);
             option.parentNode.innerText('Miasto');
             // stopAdding = true;
           };
