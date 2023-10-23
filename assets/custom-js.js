@@ -372,7 +372,6 @@ window.addEventListener("load", function() {
 
 
   dropDowns.forEach(item => {
-    console.log('klik na wartosc ceny');
     item.addEventListener('click', choise)
   });
 
