@@ -464,6 +464,7 @@ window.addEventListener("load", function() {
     //   target: '.data-target-ymc1',
     //   terms: filteredTermsID.join(),            
     // }).apiTermUpdate(); 
+    return filteredTermsID;
   };
   // btnSearch.addEventListener('click', runSearching);
 
@@ -644,20 +645,21 @@ window.addEventListener("load", function() {
     metrazValueArrNodeList = [];
 
     return filteredTermsIDMetraz;
-
-
   };
 
   function filteredTermsMerge(){
     console.log('filteredTermsMerge');
-    let test = runSearchingMetraz();
-    console.log('merged: ',test);
+    let filteredPrices = runSearching();
+    let filteredMetraze = runSearchingMetraz();
+    console.log('prices: ',filteredPrices);
+    console.log('metraze: ',filteredMetraze);
+    console.log('all merged', filteredPrices.join() + ',' + filteredMetraze.join());
 
     // let filteredTerms = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
 
     YMCTools({
       target: '.data-target-ymc1',
-      terms: test.join(),          
+      terms: filteredPrices.join() + ',' + filteredMetraze.join()          
     }).apiTermUpdate(); 
   }
   // *******************************************************
@@ -668,6 +670,7 @@ window.addEventListener("load", function() {
     runSearchingMetraz();
     console.log('runsearchingMetraz done');
     filteredTermsMerge();
+    console.log('merged done');
   } );
   // *******************************************************
 
