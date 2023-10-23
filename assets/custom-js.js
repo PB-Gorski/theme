@@ -369,6 +369,13 @@ window.addEventListener("load", function() {
       }
     });
   });
+
+
+  dropDowns.forEach(item => {
+    console.log('klik na wartosc ceny');
+    item.addEventListener('click', choise)
+  });
+
   function choise(e){
     e.preventDefault();
     target = e.target.textContent;
@@ -383,12 +390,7 @@ window.addEventListener("load", function() {
         el.classList.remove('dropdown__list_active')
       };
     });
-  };
-
-  dropDowns.forEach(item => {
-    console.log('klik na wartosc ceny');
-    item.addEventListener('click', choise)
-  });
+  };  
 
 
 
@@ -557,10 +559,10 @@ window.addEventListener("load", function() {
   });
 
   dropDownsMetraz.forEach(item => {
-    item.addEventListener('click', choise)
+    item.addEventListener('click', choiseMetraz)
   });
 
-  function choise(e){
+  function choiseMetraz(e){
     e.preventDefault();
     target = e.target.textContent;
     e.target.parentNode.parentNode.previousElementSibling.textContent = '';
