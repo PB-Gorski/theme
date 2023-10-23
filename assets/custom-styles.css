@@ -901,6 +901,9 @@ background-color: #e8fbff!important;
   width: 100%;
   padding: 8px 0px;
 }
+.dropdown__item:hover {
+  background-color: #B2F1FF;
+}
 .dropdown__link {
   background-color: transparent;
   padding-left: 25px;
