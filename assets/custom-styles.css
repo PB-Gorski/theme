@@ -64,6 +64,7 @@ figure[class*="wp-block-image"] img,
 }
 .footer-logo img{
   height: 20px;
+  margin: 0;
 }
 .single-mieszkania .wp-block-post-featured-image{
   width: 100%;
