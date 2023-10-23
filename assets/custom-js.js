@@ -298,12 +298,20 @@ window.addEventListener("load", function() {
   // setring chosen option in active window
 
   let passiveOptions = document.querySelectorAll('.menu-passive__item');
-
+  let counter2 = 0;
   passiveOptions.forEach(item => {
     item.addEventListener('click', ()=>{
-      let choosenOption = item.childNodes[1].dataset.name
-      item.parentNode.previousElementSibling.childNodes[0].innerText = item.parentNode.previousElementSibling.childNodes[0].innerText + ': ' + choosenOption;
+      if(counter>0){
+        item.parentNode.previousElementSibling.childNodes[0].innerText = choosenOption + ', ' + choosenOption;
+        counter2++;
+        console.log(counter2);
+      }else{
+        let choosenOption = item.childNodes[1].dataset.name
+        item.parentNode.previousElementSibling.childNodes[0].innerText = choosenOption;
+      }
     });
+
+
   });
   // price selects
   const sortingBarHTML = `
