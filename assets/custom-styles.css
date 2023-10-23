@@ -886,7 +886,7 @@ background-color: #e8fbff!important;
   content: ' zł'!important;
 }
 .dropdown__list-metraz >li > span:after{
-  content: ' m'!important;
+  content: ' m²'!important;
 }
 .dropdown__value:after {
   content: '\25bc';
