@@ -655,10 +655,10 @@ window.addEventListener("load", function() {
 
     // let filteredTerms = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
 
-    YMCTools({
-      target: '.data-target-ymc1',
-      terms: filteredTerms,          
-    }).apiTermUpdate(); 
+    // YMCTools({
+    //   target: '.data-target-ymc1',
+    //   terms: filteredTerms,          
+    // }).apiTermUpdate(); 
   }
   // *******************************************************
   btnSearch.addEventListener('click', () =>{
