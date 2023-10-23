@@ -308,6 +308,7 @@ window.addEventListener("load", function() {
       optionSpan.innerText = choosenOption;
 
       if(item.parentNode.previousElementSibling.childNodes[0].childNodes){
+        stopAdding = true;
         console.log('have child span');
         let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
 
