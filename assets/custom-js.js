@@ -593,7 +593,7 @@ window.addEventListener("load", function() {
     newArrHTMLListMetraz = [];
     const dropDownFiltersMetraz = document.querySelectorAll(".dropdown-filter");
     foundedPostOnStart.classList.add('hidden');
-    let metrazValueArrNodeList = dropDownFiltersMetraz[5].childNodes[1].childNodes;
+    let metrazValueArrNodeList = dropDownFiltersMetraz[8].childNodes[1].childNodes;
     metrazMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
     metrazMaxValue = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
     
