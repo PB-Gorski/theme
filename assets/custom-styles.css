@@ -462,10 +462,6 @@ option:hover {
   max-width: 1170px;
   /* row-gap: 12px!important; */
 }
-.ymc-smart-filter-container .filter-layout3 .filter-entry {
-  max-width: 1170px;
-  row-gap: 12px!important;
-}
 .ymc-smart-filter-container .filter-layout3 div{
   margin: 0!important;
 }
