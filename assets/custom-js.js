@@ -652,7 +652,7 @@ window.addEventListener("load", function() {
     console.log('filteredTermsMerge');
     let test = runSearchingMetraz();
     console.log(test);
-    console.log(filteredTermsIDMetraz);
+
     // let filteredTerms = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
 
     YMCTools({
