@@ -327,12 +327,12 @@ window.addEventListener("load", function() {
         console.log('check for start ', item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName);
         if(item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName === undefined){
           console.log('undefined span 0');
-          counter = 0;
+          // counter2 = 0;
         }else{
           console.log('span wypelniony');
         }
 
-        if(counter>2){
+        if(counter2>2){
           
           console.log('conter>2');
           item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan);
