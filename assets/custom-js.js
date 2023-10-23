@@ -545,13 +545,15 @@ window.addEventListener("load", function() {
   mainDropDownMetraz.forEach(dropDownEl =>{
     dropDownEl.addEventListener('click', (e) =>{
       if(e.target.nextElementSibling){
-        // console.log(e.target);
-        // console.log('dropdown span');
-        // e.target.nextElementSibling.classList.toggle('dropdown__list_active');
+        console.log(e.target);
+        console.log('dropdown span');
+        e.target.nextElementSibling.classList.toggle('dropdown__list_active');
+        return;
       }
       else if(e.target.parentNode.nextElementSibling){
         console.log('dropdown span container');
         e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active');
+        return;
       }
     });
   });
