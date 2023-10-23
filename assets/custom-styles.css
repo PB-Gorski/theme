@@ -471,7 +471,7 @@ option:hover {
   /* flex-basis: 100%; */
 }
 .ymc-smart-filter-container .filter-layout3 .dropdown-filter:last-child{
-  background-color: red;
+  background-color: red!important;
 }
 #filter-layout3-filter-layout3 > .filter-entry {
   height: 102px;
