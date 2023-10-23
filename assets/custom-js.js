@@ -369,11 +369,6 @@ window.addEventListener("load", function() {
       }
     });
   });
-
-  dropDowns.forEach(item => {
-    item.addEventListener('click', choise)
-  });
-
   function choise(e){
     e.preventDefault();
     target = e.target.textContent;
@@ -389,6 +384,12 @@ window.addEventListener("load", function() {
       };
     });
   };
+
+  dropDowns.forEach(item => {
+    item.addEventListener('click', choise)
+  });
+
+
 
   const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
   let counter = 0;
