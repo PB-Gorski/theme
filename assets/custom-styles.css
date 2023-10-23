@@ -463,9 +463,9 @@ option:hover {
   row-gap: 12px!important;
 }
 
-.ymc-smart-filter-container .filter-layout3 .dropdown-filter::nth-child(8),
-.ymc-smart-filter-container .filter-layout3 .dropdown-filter::nth-child(9),
-.ymc-smart-filter-container .filter-layout3 .dropdown-filter::nth-child(10) {
+.filter-layout3 .dropdown-filter::nth-child(8),
+.filter-layout3 .dropdown-filter::nth-child(9),
+.filter-layout3 .dropdown-filter::nth-child(10) {
   max-width: 33.33%!important;
   flex-grow: 1;
   /* flex-basis: 100%; */
