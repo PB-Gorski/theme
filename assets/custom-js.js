@@ -332,7 +332,7 @@ window.addEventListener("load", function() {
           console.log('span wypelniony');
         }
 
-        if(counter2>1){
+        if(counter>1){
           
           console.log('conter>1');
           item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan);
