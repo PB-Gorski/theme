@@ -305,12 +305,13 @@ window.addEventListener("load", function() {
       let choosenOption = item.childNodes[1].dataset.name
       optionSpan.innerText = choosenOption;
       if(counter>1){
-        item.parentNode.previousElementSibling.childNodes[0].innerText = '';
+
         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan)
         counter2++;
         console.log(counter2);
       }else{
         let choosenOption2 = item.childNodes[1].dataset.name
+        item.parentNode.previousElementSibling.childNodes[0].innerText = '';
         item.parentNode.previousElementSibling.childNodes[0].innerText = choosenOption2;
       };
     });
