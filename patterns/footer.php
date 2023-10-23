@@ -197,7 +197,7 @@
 
       <!-- wp:image -->
       <figrure class="wp-block-image">
-        <img src="<? echo home_url() . '//wp-content/themes/pbgorski/assets/img/frontpage/logo-webo.png' ?>" alt="logo-webo" />
+        <img src="<? echo home_url() . '/wp-content/themes/pbgorski/assets/img/frontpage/logo-webo.png'; ?>" alt="logo-webo" />
       </figrure>
       <!-- /wp:image -->
     </div>
