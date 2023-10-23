@@ -912,6 +912,9 @@ background-color: #e8fbff!important;
   background-color: #B2F1FF;
   border: none!important;
 }
+.dropdown__link::after {
+  border: none!important;
+}
 .dropdown__list_active {
   display: block;
 }
