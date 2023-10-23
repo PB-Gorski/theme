@@ -302,7 +302,7 @@ window.addEventListener("load", function() {
   passiveOptions.forEach(item => {
     item.addEventListener('click', ()=>{
       let choosenOption = item.childNodes[1].dataset.name
-      if(counter>0){
+      if(counter>1){
         item.parentNode.previousElementSibling.childNodes[0].innerText = item.parentNode.previousElementSibling.childNodes[0].innerText + ', ' + choosenOption;
         counter2++;
         console.log(counter2);
