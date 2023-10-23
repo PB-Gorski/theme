@@ -307,21 +307,7 @@ window.addEventListener("load", function() {
       let stopAdding = false;
       optionSpan.innerText = choosenOption;
 
-      if(item.parentNode.previousElementSibling.childNodes[0].childNodes){
-        stopAdding = true;
-        console.log('have child span');
-        let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
 
-        choosenOptionsArr.forEach(option => {
-          if(option.innerText == choosenOption){
-            console.log('choosen option ', option);
-            console.log('choosen option text for cleaning', choosenOption);
-            console.log('clear existing span');
-            option.innerText = '';
-            stopAdding = true;
-          };
-        });
-      };
       if(!stopAdding){
         if(counter>2){
           console.log('conter>1');
@@ -339,6 +325,21 @@ window.addEventListener("load", function() {
       }
       stopAdding = false;
       console.log(stopAdding);
+      if(item.parentNode.previousElementSibling.childNodes[0].childNodes){
+        stopAdding = true;
+        console.log('have child span');
+        let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
+
+        choosenOptionsArr.forEach(option => {
+          if(option.innerText == choosenOption){
+            console.log('choosen option ', option);
+            console.log('choosen option text for cleaning', choosenOption);
+            console.log('clear existing span');
+            option.innerText = '';
+            stopAdding = true;
+          };
+        });
+      };
     });
   });
   // price selects
