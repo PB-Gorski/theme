@@ -465,10 +465,10 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 div{
   margin: 0!important;
 }
-.ymc-smart-filter-container .filter-layout3 div:nth-child(9),
 .ymc-smart-filter-container .filter-layout3 div:nth-child(10),
 .ymc-smart-filter-container .filter-layout3 div:nth-child(11),
-.ymc-smart-filter-container .filter-layout3 div:nth-child(12) {
+.ymc-smart-filter-container .filter-layout3 div:nth-child(12),
+.ymc-smart-filter-container .filter-layout3 div:nth-child(13) {
   max-width: 25%!important;
   flex-grow: 1;
 }
