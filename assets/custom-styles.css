@@ -458,6 +458,17 @@ option:hover {
   max-width: 1170px;
   row-gap: 12px!important;
 }
+.ymc-smart-filter-container .filter-layout3 .filter-entry {
+  max-width: 1170px;
+  row-gap: 12px!important;
+}
+.ymc-smart-filter-container .filter-layout3 .filter-entry:nth-child(8),
+.ymc-smart-filter-container .filter-layout3 .filter-entry:nth-child(9),
+.ymc-smart-filter-container .filter-layout3 .filter-entry:nth-child(10) {
+  max-width: 33.33%!important;
+  flex-grow: 1;
+  /* flex-basis: 100%; */
+}
 #filter-layout3-filter-layout3 > .filter-entry {
   height: 102px;
   transition: height 0.3s ease-out;
