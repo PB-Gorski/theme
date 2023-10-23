@@ -295,7 +295,7 @@ window.addEventListener("load", function() {
   });
 
   // sortowanie listy mieszkan
-  // setring chosen option in active window
+  // setting chosen option in active window
 
   let passiveOptions = document.querySelectorAll('.menu-passive__item');
   let counter2 = 0;
@@ -306,7 +306,7 @@ window.addEventListener("load", function() {
       optionSpan.innerText = choosenOption;
       if(counter>2){
         console.log('conter>1');
-        item.parentNode.previousElementSibling.childNodes[0].innerText = '';
+        // item.parentNode.previousElementSibling.childNodes[0].innerText = '';
         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan)
         // counter2++;
         console.log(counter2);
