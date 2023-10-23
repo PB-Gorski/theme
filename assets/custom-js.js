@@ -648,6 +648,7 @@ window.addEventListener("load", function() {
   };
 
   function filteredTermsMerge(){
+    console.log('filteredTermsMerge');
     let filteredTerms = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
 
     YMCTools({
@@ -658,11 +659,11 @@ window.addEventListener("load", function() {
   // *******************************************************
   btnSearch.addEventListener('click', () =>{
     console.log('btn search start');
-    runSearching;
+    runSearching();
     console.log('runsearching done');
-    runSearchingMetraz;
+    runSearchingMetraz();
     console.log('runsearchingMetraz done');
-    filteredTermsMerge;
+    filteredTermsMerge();
   } );
   // *******************************************************
 
