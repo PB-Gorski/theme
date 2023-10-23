@@ -295,6 +295,17 @@ window.addEventListener("load", function() {
   });
 
   // sortowanie listy mieszkan
+  // setring chosen option in active window
+
+  let passiveOptions = document.querySelectorAll('.menu-passive__item');
+
+  console.log('passive options', passiveOptions);
+
+  passiveOptions.forEach(item => {
+    item.addEventListener('click', ()=>{
+      console.log(item);
+    });
+  });
   // price selects
   const sortingBarHTML = `
     <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[22px] flex flex-wrap items-center justify-between text-[13px] font-bold z-0 relative">
