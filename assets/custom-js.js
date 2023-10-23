@@ -371,12 +371,13 @@ window.addEventListener("load", function() {
   });
 
   dropDowns.forEach(item => {
-    item.addEventListener('click', choise)
+    item.addEventListener('click', choise())
   });
 
   function choise(e){
     e.preventDefault();
     target = e.target.textContent;
+    console.log(target);
     e.target.parentNode.parentNode.previousElementSibling.textContent = '';
     let spanTarget = document.createElement("span");
     spanTarget.innerText = target;
