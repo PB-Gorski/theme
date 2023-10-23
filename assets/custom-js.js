@@ -315,7 +315,7 @@ window.addEventListener("load", function() {
           if(option.innerText == choosenOption){
             console.log('choosen option for cleaning', choosenOption);
             console.log('clear existing span');
-            option.remove();
+            option.innerText = '';
             stopAdding = true;
           };
         });
