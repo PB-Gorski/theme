@@ -209,86 +209,86 @@ $tax_sort = $taxonomy;
         } else  if (get_taxonomy($select_term)->label == 'Metraz') { ?>
           <div class="dropdown-filter customMetraz metraz-min flex-col bg-white h-fit">
             <p class="dropdown-filter-title">Metraż od:</p>
-            <div class="dropdown__value dropdown__value-metraz dropdown__value-min font-bold"><span>0</span></div>
+            <div class="dropdown__value dropdown__value-metraz dropdown__value-metraz dropdown__value-min font-bold"><span>0</span></div>
             <ul class="dropdown__list dropdown__list-metraz">
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">10</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">10</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">25</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">25</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">40</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">40</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">50</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">50</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">60</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">60</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">70</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">70</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">80</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">80</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">100</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">100</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">120</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">120</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">150</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">150</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">200</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">200</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">250</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">250</span>
               </li>
             </ul>
           </div>
 
           <div class="dropdown-filter customMetraz metraz-max flex-col bg-white h-fit">
             <p class="dropdown-filter-title">Metraz do do:</p>
-            <div class="dropdown__value dropdown__value-max font-bold">Max</div>
+            <div class="dropdown__value dropdown__value-metraz dropdown__value-max font-bold">Max</div>
             <ul class="dropdown__list dropdown__list-metraz">
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">10</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">10</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">25</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">25</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">40</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">40</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">50</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">50</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">60</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">60</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">70</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">70</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">80</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">80</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">100</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">100</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">120</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">120</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">150</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">150</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">200</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">200</span>
               </li>
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">250</span>
+                <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">250</span>
               </li>
             </ul>
           </div>

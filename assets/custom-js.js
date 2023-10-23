@@ -295,14 +295,9 @@ window.addEventListener("load", function() {
   });
 
 
-  //---------------------------------------------------------------------- 
+  //  ---------------------------------------------------------------------- 
 
-
-
-
-
-
-  // wyszukiwanie mieszkan po filtrach
+  // wyszukiwanie mieszkan po filtrach (cena)
   // setting chosen option in active window
   let passiveOptions = document.querySelectorAll('.menu-passive__item');
   let counter2 = 0;
@@ -362,7 +357,6 @@ window.addEventListener("load", function() {
   let newArr = [];
   let newArrHTMLList = [];
   let target;
-
 
   mainDropDown.forEach(dropDownEl =>{
     dropDownEl.addEventListener('click', (e) =>{
@@ -470,7 +464,6 @@ window.addEventListener("load", function() {
   };
   btnSearch.addEventListener('click', runSearching);
 
-  
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
   });
 
@@ -485,7 +478,178 @@ window.addEventListener("load", function() {
     });
   };
 
+  // wyszukiwanie mieszkan po filtrach (metraz)
+  // setting chosen option in active window
+  // let passiveOptionsMetraz = document.querySelectorAll('.menu-passive__item');
+  // let counter2 = 0;
+  // passiveOptions.forEach(item => {
+  //   item.addEventListener('click', () => {
+  //     let optionSpan = document.createElement('span');
+  //     let choosenOption = item.childNodes[1].dataset.name;
+  //     let stopAdding = false;
+  //     optionSpan.innerText = choosenOption;
 
+  //     let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
+  //     choosenOptionsArr.forEach(option => {
+  //       if(option.innerText == choosenOption){
+  //         console.log('have child span');
+  //         stopAdding = true;
+  //         console.log('choosen option text for cleaning', choosenOption);
+  //         console.log('clear existing span');
+  //         option.remove('span');
+  //       };
+  //     });
+
+  //     if(!stopAdding){
+  //       console.log('check for start ', item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName);
+  //       if(item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName === undefined){
+  //         console.log('undefined span 0');
+  //       }else{
+  //         console.log('span wypelniony');
+  //       }
+
+  //       if(counter>2){
+          
+  //         console.log('conter>1');
+  //         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan);
+  //         console.log(counter2);
+  //       }else{
+  //         console.log('else');
+
+  //         let optionSpan2 = document.createElement('span');
+  //         let choosenOption2 = item.childNodes[1].dataset.name;
+  //         optionSpan2.innerText = choosenOption2;
+  //         item.parentNode.previousElementSibling.childNodes[0].innerText = '';
+  //         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan2);
+  //         counter2++;
+  //       };
+  //     }
+  //     stopAdding = false;
+  //     console.log(stopAdding);
+  //   });
+  // });
+
+  // price selects
+  const mainDropDownMetraz = document.querySelectorAll('.dropdown__value-metraz');
+  const dropDownListMetraz = document.querySelectorAll('.dropdown__list-metraz');
+  const dropDownsMetraz = Array.from(document.querySelectorAll('.dropdown__link-metraz'));
+  // let btnSearch = document.querySelector('.btn-search');
+  let metrazValueArr = [];
+  let newArrMetraz = [];
+  let newArrHTMLListMetraz = [];
+  let targetMetraz;
+
+  mainDropDownMetraz.forEach(dropDownEl =>{
+    dropDownEl.addEventListener('click', (e) =>{
+      if(e.target.nextElementSibling){
+        console.log('span');
+        e.target.nextElementSibling.classList.toggle('dropdown__list_active');
+      }else if(e.target.parentNode.nextElementSibling){
+        console.log('span container');
+        e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active');
+      }
+    });
+  });
+
+  dropDownsMetraz.forEach(item => {
+    item.addEventListener('click', choise)
+  });
+
+  function choise(e){
+    e.preventDefault();
+    target = e.target.textContent;
+    e.target.parentNode.parentNode.previousElementSibling.textContent = '';
+    let spanTargetMetraz = document.createElement("span");
+    spanTargetMetraz.innerText = targetMetraz;
+    e.target.parentNode.parentNode.previousElementSibling.appendChild(spanTargetMetraz);
+
+    dropDownListMetraz.forEach(el =>{
+      if(el.classList.contains('dropdown__list_active')){
+        el.classList.remove('dropdown__list_active')
+      };
+    });
+  };
+
+  const foundedPostOnStartMetraz = document.querySelector('.js-foundedPostOnStart');;
+  let counterMetraz = 0;
+
+  wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
+    if (counterMetraz == 2){
+      console.log('posts loaded2');
+      foundedPostOnStart.classList.add('hidden');
+    };
+    counterMetraz++;
+  });
+
+  function runSearching(){
+    metrazValueArr = [];
+    newArrMetraz = [];
+    newArrHTMLListMetraz = [];
+
+    foundedPostOnStart.classList.add('hidden');
+    const dropDownFiltersMetraz = document.querySelectorAll(".dropdown-filter");
+    let metrazValueArrNodeList = dropDownFiltersMetraz[5].childNodes[1].childNodes;
+    metrazMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
+    metrazMaxValue = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
+    
+    console.log('no spaces', metrazMinValue,metrazMaxValue);
+
+    for (i = 1 ; i < metrazValueArrNodeList.length ; i++){
+      metrazValueArr.push(parseInt(metrazValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+      metrazValueArrNodeList[i].childNodes[1].dataset.name = parseInt(metrazValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
+    }
+  
+    metrazValueArr.forEach(metrazValue => {
+      metrazMaxValue.isNaN ? metrazMaxValue = 10000000 : metrazMaxValue = metrazMaxValue;
+      console.log('metraz max value ',metrazMaxValue);
+      if (metrazValue < metrazMaxValue && metrazValue > metrazMinValue){
+        newArrMetraz.push(metrazValue);
+      };
+    });
+    console.log('metraz from range: ', metrazValueArr);
+    
+    // console.log('new metraz arr: ',newArr);
+
+    newArrMetraz.forEach(elem => {
+      for(j = 2 ; j < metrazValueArrNodeList.length ; j++){
+        if (parseInt(metrazValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+          newArrHTMLListMetraz.push(metrazValueArrNodeList[j].childNodes[1]);
+        };
+      };
+    });
+
+    let filteredTermsIDMetraz = [];
+    console.log('filtered new arr html elements: ', newArrHTMLListMetraz);
+    newArrHTMLListMetraz.forEach(el2 =>{
+      filteredTermsIDMetraz.push(el2.dataset.termid);
+    });
+
+    console.log(filteredTermsIDMetraz.join(','));
+
+    for (i = 2 ; i < metrazValueArrNodeList.length ; i++){
+      if(metrazValueArrNodeList[i].childNodes[1].classList.contains('active')){
+        metrazValueArrNodeList[i].childNodes[1].classList.remove('active');
+        // console.log(metrazValueArrNodeList[i].childNodes[1]);
+      }
+    }
+
+    metrazValueArr = [];
+    newArrMetraz = [];
+    newArrHTMLListMetraz = [];
+    metrazValueArrNodeList = [];
+
+    YMCTools({
+      target: '.data-target-ymc1',
+      terms: filteredTermsIDMetraz.join(),            
+    }).apiTermUpdate(); 
+  };
+  btnSearch.addEventListener('click', runSearching);
+
+  wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
+  });
+
+
+  // -------------------------------------------------------------------------------------
 
   // sortowanie listy mieszkan
   const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
