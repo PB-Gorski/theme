@@ -919,7 +919,8 @@ background-color: #e8fbff!important;
 .dropdown__link::after {
   border: none!important;
 }
-.dropdown__list_active {
+.dropdown__list_active,
+.dropdown__list_active-metraz {
   display: block;
 }
 .dropdown-filter-title{

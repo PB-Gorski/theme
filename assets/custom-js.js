@@ -547,13 +547,11 @@ window.addEventListener("load", function() {
       if(e.target.nextElementSibling){
         console.log(e.target);
         console.log('dropdown span');
-        e.target.nextElementSibling.classList.toggle('dropdown__list_active');
+        e.target.nextElementSibling.classList.toggle('dropdown__list_active-metraz');
       }
       else if(e.target.parentNode.nextElementSibling){
         console.log('dropdown span container');
-        e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active');
-        return;
-
+        e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active-metraz');
       }
     });
   });
