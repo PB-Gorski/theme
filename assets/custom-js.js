@@ -324,12 +324,21 @@ window.addEventListener("load", function() {
       });
 
       if(!stopAdding){
+        console.log('check for start ', item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName);
+        if(item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName === undefined){
+          console.log('undefined span 0');
+        }else{
+          console.log('span wypelniony');
+        }
+
         if(counter>2){
-          console.log('conter>1');
+          
+          console.log('conter>2');
           item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan);
           console.log(counter2);
         }else{
           console.log('else');
+
           let optionSpan2 = document.createElement('span');
           let choosenOption2 = item.childNodes[1].dataset.name;
           optionSpan2.innerText = choosenOption2;
