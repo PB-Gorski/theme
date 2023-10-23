@@ -371,7 +371,7 @@ window.addEventListener("load", function() {
   });
 
   dropDowns.forEach(item => {
-    item.addEventListener('click', choise())
+    item.addEventListener('click', choise)
   });
 
   function choise(e){
