@@ -300,15 +300,26 @@ window.addEventListener("load", function() {
   let passiveOptions = document.querySelectorAll('.menu-passive__item');
   let counter2 = 0;
   passiveOptions.forEach(item => {
-    item.addEventListener('click', ()=>{
+    item.addEventListener('click', () => {
       let optionSpan = document.createElement('span');
       let choosenOption = item.childNodes[1].dataset.name
+      let choosenOptions = item.childNodes[1].dataset.name
       optionSpan.innerText = choosenOption;
+
+      if(item.parentNode.previousElementSibling.childNodes[0].childNodes){
+        console.log('have child span');
+        let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
+        choosenOptionsArr.forEach(option => {
+          if(option.innerText == choosenOption){
+            console.log('clear existing span');
+            option.innerText = '';
+          }
+        })
+      }
+
       if(counter>2){
         console.log('conter>1');
-        // item.parentNode.previousElementSibling.childNodes[0].innerText = '';
         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan);
-        // counter2++;
         console.log(counter2);
       }else{
         console.log('else');
@@ -316,13 +327,10 @@ window.addEventListener("load", function() {
         let choosenOption2 = item.childNodes[1].dataset.name
         optionSpan2.innerText = choosenOption2
         item.parentNode.previousElementSibling.childNodes[0].innerText = '';
-        // item.parentNode.previousElementSibling.childNodes[0].innerText = choosenOption2;
         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan2);
         counter2++;
       };
     });
-
-
   });
   // price selects
   const sortingBarHTML = `
