@@ -553,7 +553,6 @@ window.addEventListener("load", function() {
       else if(e.target.parentNode.nextElementSibling){
         console.log('dropdown span container');
         e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active');
-        return;
       }
     });
   });
