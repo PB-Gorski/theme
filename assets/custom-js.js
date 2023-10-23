@@ -588,7 +588,7 @@ window.addEventListener("load", function() {
   });
 
   function runSearchingMetraz(){
-    console.log(run);
+    console.log('run');
     metrazValueArr = [];
     newArrMetraz = [];
     newArrHTMLListMetraz = [];
