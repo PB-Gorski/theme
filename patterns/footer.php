@@ -190,7 +190,7 @@
     </div>
     <!-- /wp:group -->
     <!-- wp:group -->
-    <div class="wp-block-group col2 flex gap-[10px]">
+    <div class="wp-block-group col2 flex gap-[10px] items-center">
       <!-- wp:paragraph -->
       <p>Wdrożone przez </p>
       <!-- /wp:paragraph -->
