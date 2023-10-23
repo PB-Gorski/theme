@@ -462,9 +462,10 @@ option:hover {
   max-width: 1170px;
   row-gap: 12px!important;
 }
-.ymc-smart-filter-container .filter-layout3 .filter-entry:nth-child(8),
-.ymc-smart-filter-container .filter-layout3 .filter-entry:nth-child(9),
-.ymc-smart-filter-container .filter-layout3 .filter-entry:nth-child(10) {
+
+.ymc-smart-filter-container .filter-layout3 .dropdown-filter::nth-child(8),
+.ymc-smart-filter-container .filter-layout3 .dropdown-filter::nth-child(9),
+.ymc-smart-filter-container .filter-layout3 .dropdown-filter::nth-child(10) {
   max-width: 33.33%!important;
   flex-grow: 1;
   /* flex-basis: 100%; */
