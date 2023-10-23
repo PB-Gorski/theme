@@ -315,6 +315,7 @@ window.addEventListener("load", function() {
             console.log('have child span');
             stopAdding = true;
             console.log('choosen option ', option);
+            console.log('choosen option parentNode ', option.parentNode);
             console.log('choosen option text for cleaning', choosenOption);
             console.log('clear existing span');
             // option.innerText = '';
