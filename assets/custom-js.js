@@ -322,7 +322,7 @@ window.addEventListener("load", function() {
         });
       };
 
-      if(counter>2 && !stopAdding){
+      if(counter>2){
         console.log('conter>1');
         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan);
         console.log(counter2);
