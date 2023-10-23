@@ -643,12 +643,17 @@ window.addEventListener("load", function() {
     newArrHTMLListMetraz = [];
     metrazValueArrNodeList = [];
 
+    return filteredTermsIDMetraz;
+
 
   };
 
   function filteredTermsMerge(){
     console.log('filteredTermsMerge');
-    let filteredTerms = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
+    let test = runSearchingMetraz();
+    console.log(test);
+    console.log(filteredTermsIDMetraz);
+    // let filteredTerms = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
 
     YMCTools({
       target: '.data-target-ymc1',
