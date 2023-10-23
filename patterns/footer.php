@@ -190,10 +190,15 @@
     </div>
     <!-- /wp:group -->
     <!-- wp:group -->
-    <div class="wp-block-group col2">
+    <div class="wp-block-group col2 flex gap-[10px]">
       <!-- wp:paragraph -->
-      <p>Projekt i wykonanie</p>
+      <p>Wdrożone przez </p>
       <!-- /wp:paragraph -->
+      <!-- wp:image -->
+      <figrure class="wp-block-image">
+        <img src="<? echo home_url() ?>//wp-content/themes/pbgorski/assets/img/frontpage/logo-webo.png ?>" alt="logo-webo">
+      </figrure>
+      <!-- /wp:image -->
     </div>
     <!-- /wp:group -->
 
