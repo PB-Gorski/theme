@@ -212,7 +212,7 @@ $tax_sort = $taxonomy;
             <div class="dropdown__value dropdown__value-min font-bold"><span>0</span></div>
             <ul class="dropdown__list">
               <li class="dropdown__item">
-                <span class="dropdown__link menu-link cursor-pointer">10</span>
+                <span class="dropdown__link menu-link cursor-pointer before:content-['m']">10</span>
               </li>
               <li class="dropdown__item">
                 <span class="dropdown__link menu-link cursor-pointer">25</span>
