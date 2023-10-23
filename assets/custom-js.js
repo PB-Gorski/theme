@@ -307,24 +307,22 @@ window.addEventListener("load", function() {
       let stopAdding = false;
       optionSpan.innerText = choosenOption;
 
-      // if(item.parentNode.previousElementSibling.childNodes[0].childNodes){
-        let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
-        
-        choosenOptionsArr.forEach(option => {
-          if(option.innerText == choosenOption){
-            console.log('have child span');
-            stopAdding = true;
-            console.log('choosen option text for cleaning', choosenOption);
-            console.log('clear existing span');
-            // option.innerText = '';
-            option.remove('span');
-            console.log('choosen option ', option);
-            console.log('choosen option parentNode ', option.parentNode);
-            option.parentNode.innerText('Miasto');
-            // stopAdding = true;
-          };
-        });
-      // };
+      let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
+      choosenOptionsArr.forEach(option => {
+        if(option.innerText == choosenOption){
+          console.log('have child span');
+          stopAdding = true;
+          console.log('choosen option text for cleaning', choosenOption);
+          console.log('clear existing span');
+          // option.innerText = '';
+          option.remove('span');
+          // console.log('choosen option ', option);
+          // console.log('choosen option parentNode ', option.parentNode);
+          // option.parentNode.innerText('Miasto');
+          // stopAdding = true;
+        };
+      });
+
       if(!stopAdding){
         if(counter>2){
           console.log('conter>1');
