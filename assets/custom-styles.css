@@ -466,7 +466,9 @@ option:hover {
   max-width: 1170px;
   row-gap: 12px!important;
 }
-
+.ymc-smart-filter-container .filter-layout3 div{
+  margin: 0!important;
+}
 .ymc-smart-filter-container .filter-layout3 div:nth-child(9),
 .ymc-smart-filter-container .filter-layout3 div:nth-child(10),
 .ymc-smart-filter-container .filter-layout3 div:nth-child(11),
@@ -475,7 +477,7 @@ option:hover {
   flex-grow: 1;
 }
 .ymc-smart-filter-container .filter-layout3 div:nth-child(12) {
-  margin-right: 0;
+  margin-right: 0!important;
 }
 #filter-layout3-filter-layout3 > .filter-entry {
   height: 102px;
