@@ -294,6 +294,25 @@ window.addEventListener("load", function() {
     });
   });
 
+  // sortingBar inject
+  const sortingBarHTML = `
+  <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[22px] flex flex-wrap items-center justify-between text-[13px] font-bold z-0 relative">
+    <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
+    <li class="js-sort js-sort-inwestycja w-[180px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
+    <li class="js-sort js-sort-budynek w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
+    <li class="js-sort js-sort-nr w-[65px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">nr</li>
+    <li class="js-sort js-sort-pokoje w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pokoje</li>
+    <li class="js-sort js-sort-metraz w-[110px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">metraz</li>
+    <li class="js-sort js-sort-pietro w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pietro</li>
+    <li class="js-sort js-sort-cena w-[130px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">cena</li>
+    <li class="js-sort js-sort-termin w-[175px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">termin</li>
+    <li class="empty w-[30px]"></li>
+  </ul>
+  `;
+if(document.body.classList.contains('post-type-archive-mieszkania')){
+  listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
+};
+
   // sortowanie listy mieszkan
   // setting chosen option in active window
 
@@ -313,12 +332,7 @@ window.addEventListener("load", function() {
           stopAdding = true;
           console.log('choosen option text for cleaning', choosenOption);
           console.log('clear existing span');
-          // option.innerText = '';
           option.remove('span');
-          // console.log('choosen option ', option);
-          // console.log('choosen option parentNode ', option.parentNode);
-          // option.parentNode.innerText('Miasto');
-          // stopAdding = true;
         };
       });
 
@@ -326,7 +340,6 @@ window.addEventListener("load", function() {
         console.log('check for start ', item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName);
         if(item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName === undefined){
           console.log('undefined span 0');
-          // counter2 = 0;
         }else{
           console.log('span wypelniony');
         }
@@ -352,20 +365,7 @@ window.addEventListener("load", function() {
     });
   });
   // price selects
-  const sortingBarHTML = `
-    <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list px-[20px] bg-[#2f384d] py-[22px] flex flex-wrap items-center justify-between text-[13px] font-bold z-0 relative">
-      <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
-      <li class="js-sort js-sort-inwestycja w-[180px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
-      <li class="js-sort js-sort-budynek w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
-      <li class="js-sort js-sort-nr w-[65px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">nr</li>
-      <li class="js-sort js-sort-pokoje w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pokoje</li>
-      <li class="js-sort js-sort-metraz w-[110px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">metraz</li>
-      <li class="js-sort js-sort-pietro w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">pietro</li>
-      <li class="js-sort js-sort-cena w-[130px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">cena</li>
-      <li class="js-sort js-sort-termin w-[175px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">termin</li>
-      <li class="empty w-[30px]"></li>
-    </ul>
-    `;
+
   const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
   const mainDropDown = document.querySelectorAll('.dropdown__value');
   const dropDownList = document.querySelectorAll('.dropdown__list');
@@ -375,9 +375,8 @@ window.addEventListener("load", function() {
   let newArrHTMLList = [];
   let target;
 
-  if(document.body.classList.contains('post-type-archive-mieszkania')){
-    listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
-  };
+
+
   let btnSearch = document.querySelector('.btn-search');
 
   mainDropDown.forEach(dropDownEl =>{
@@ -411,8 +410,6 @@ window.addEventListener("load", function() {
     });
   };
 
-
-
   const menuItemsPassive = document.querySelectorAll('.menu-link');
   const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
   let counter = 0;
@@ -424,7 +421,6 @@ window.addEventListener("load", function() {
     };
     counter++;
   });
-
 
   // price selects
   function runSorting(){
