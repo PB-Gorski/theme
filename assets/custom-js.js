@@ -302,7 +302,7 @@ window.addEventListener("load", function() {
   passiveOptions.forEach(item => {
     item.addEventListener('click', ()=>{
       let choosenOption = item.childNodes[1].dataset.name
-      item.parentNode.previousElementSibling.childNodes[0].innerText = choosenOption;
+      item.parentNode.previousElementSibling.childNodes[0].innerText = item.parentNode.previousElementSibling.childNodes[0].innerText + ': ' + choosenOption;
     });
   });
   // price selects
