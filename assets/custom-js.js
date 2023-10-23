@@ -327,8 +327,8 @@ window.addEventListener("load", function() {
       }else{
         console.log('else');
         let optionSpan2 = document.createElement('span');
-        let choosenOption2 = item.childNodes[1].dataset.name
-        optionSpan2.innerText = choosenOption2
+        let choosenOption2 = item.childNodes[1].dataset.name;
+        optionSpan2.innerText = choosenOption2;
         item.parentNode.previousElementSibling.childNodes[0].innerText = '';
         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan2);
         counter2++;
