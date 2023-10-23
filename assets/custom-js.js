@@ -298,7 +298,6 @@ window.addEventListener("load", function() {
   // setring chosen option in active window
 
   let passiveOptions = document.querySelectorAll('.menu-passive__item');
-  let optionSpan = this.document.createElement('span');
   let counter2 = 0;
   passiveOptions.forEach(item => {
     item.addEventListener('click', ()=>{
