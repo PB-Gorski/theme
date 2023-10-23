@@ -303,7 +303,7 @@ window.addEventListener("load", function() {
 
   passiveOptions.forEach(item => {
     item.addEventListener('click', ()=>{
-      console.log(item);
+      console.log(item.childNodes[1].dataset.name);
     });
   });
   // price selects
