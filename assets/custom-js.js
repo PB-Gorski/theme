@@ -427,7 +427,12 @@ window.addEventListener("load", function() {
     const dropDownFilters = document.querySelectorAll(".dropdown-filter");
     let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
     priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
-    priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
+    if (parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join('')) === undefined){
+      priceMaxValue = 10000000;
+    }else{
+      priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
+
+    }
     // priceValue = parseInt(priceValueArrNodeList[2].childNodes[1].dataset.name.split(' ').join(''));
 
     // console.log(priceMinValue,priceMaxValue);
@@ -440,7 +445,7 @@ window.addEventListener("load", function() {
     }
   
     priceValueArr.forEach(priceValue => {
-      !priceMaxValue.isNaN ? priceMaxValue = 10000000 : null;
+      priceMaxValue.isNaN ? priceMaxValue = 10000000 : null;
       console.log('price max value ',priceMaxValue);
       if (priceValue < priceMaxValue && priceValue > priceMinValue){
         newArr.push(priceValue);
