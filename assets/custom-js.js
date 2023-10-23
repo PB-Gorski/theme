@@ -299,11 +299,10 @@ window.addEventListener("load", function() {
 
   let passiveOptions = document.querySelectorAll('.menu-passive__item');
 
-  console.log('passive options', passiveOptions);
-
   passiveOptions.forEach(item => {
     item.addEventListener('click', ()=>{
-      console.log(item.childNodes[1].dataset.name);
+      let choosenOption = item.childNodes[1].dataset.name
+      item.parentNode.previousElementSibling.childNodes[0].innerText = choosenOption;
     });
   });
   // price selects
