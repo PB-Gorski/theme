@@ -651,7 +651,7 @@ window.addEventListener("load", function() {
   function filteredTermsMerge(){
     console.log('filteredTermsMerge');
     let test = runSearchingMetraz();
-    console.log(test);
+    console.log('merged: ',test);
 
     // let filteredTerms = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
 
