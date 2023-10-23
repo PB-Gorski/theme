@@ -334,6 +334,7 @@ window.addEventListener("load", function() {
         counter2++;
       };
       stopAdding = false;
+      console.log(stopAdding);
     });
   });
   // price selects
