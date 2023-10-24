@@ -819,7 +819,7 @@ window.addEventListener("load", function() {
     console.log(testArr);
     console.log(miasto + ',' + inwestycja);
 
-    function runfromCookies(){
+    function runFromCookies(){
       YMCTools({
         target: '.data-target-ymc1',
         terms: testArr.join(),      
@@ -827,7 +827,7 @@ window.addEventListener("load", function() {
       console.log('after YMC api update');
     }
 
-    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', runfromCookies());
+    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', runFromCookies());
 
 
   
