@@ -807,7 +807,6 @@ window.addEventListener("load", function() {
       };
     });
 
-    console.log('lista mieszkan page');
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
     let passiveOptions = document.querySelectorAll('.menu-passive__item');
@@ -818,19 +817,25 @@ window.addEventListener("load", function() {
         let choosenOption = item.childNodes[1].dataset.name;
         let stopAdding = false;
 
-        console.log(choosenOption);
+        // console.log(choosenOption);
         optionSpan.innerText = choosenOption;
 
-        let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
-        choosenOptionsArr.forEach(option => {
-          if(option.innerText == choosenOption){
-            console.log('have child span');
-            stopAdding = true;
-            console.log('choosen option text for cleaning', choosenOption);
-            console.log('clear existing span');
-            option.remove('span');
-          };
-        });
+        document.cookie = "miasto=" + choosenOption;
+
+        let x = document.cookie;
+
+        console.log('cookie from x: ', x);
+
+        // let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
+        // choosenOptionsArr.forEach(option => {
+        //   if(option.innerText == choosenOption){
+        //     console.log('have child span');
+        //     stopAdding = true;
+        //     console.log('choosen option text for cleaning', choosenOption);
+        //     console.log('clear existing span');
+        //     option.remove('span');
+        //   };
+        // });
       });
     });
     
