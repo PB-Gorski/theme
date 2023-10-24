@@ -819,7 +819,11 @@ window.addEventListener("load", function() {
       }).apiTermUpdate(); 
       console.log('after YMC api update');
     }
-    // runFromCookies()
+
+    setTimeout(() => {
+      runFromCookies()
+      
+    }, 1000);
 
     wp.hooks.addAction('ymc_before_loaded_data_FilterID_LayoutID', 'smartfilter', function(){
       // YMCTools({
