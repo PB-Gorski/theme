@@ -299,9 +299,7 @@ window.addEventListener("load", function() {
 
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     console.log('lista mieszkan page');
-  };
-
-  // wyszukiwanie mieszkan po filtrach (cena)
+    // wyszukiwanie mieszkan po filtrach (cena)
   // setting chosen option in active window
   let passiveOptions = document.querySelectorAll('.menu-passive__item');
   let counter2 = 0;
@@ -685,6 +683,9 @@ window.addEventListener("load", function() {
 
   wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
   });
+  };
+
+  
 
 
   // -------------------------------------------------------------------------------------
