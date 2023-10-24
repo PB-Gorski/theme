@@ -856,7 +856,9 @@ window.addEventListener("load", function() {
 
         console.log('cookie from x: ', x);
 
-        // let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
+        let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
+
+        console.log('filter type: ',choosenOptionsArr);
         // choosenOptionsArr.forEach(option => {
         //   if(option.innerText == choosenOption){
         //     console.log('have child span');
