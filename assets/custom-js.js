@@ -398,15 +398,10 @@ window.addEventListener("load", function() {
     let counter = 0;
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-      // if (counter == 2){
-      //   console.log('posts loaded2');
-      //   YMCTools({
-      //     target: '.data-target-ymc1',
-      //     terms: '28,72'
-      //   }).apiTermUpdate(); 
-      //   console.log('after YMC api update');
-      // };
-      foundedPostOnStart.classList.add('hidden');
+      if (counter == 2){
+        console.log('posts loaded2');
+        foundedPostOnStart.classList.add('hidden');
+      };
       counter++;
     });
 
@@ -586,6 +581,13 @@ window.addEventListener("load", function() {
     };
 
     let counterMetraz = 0;
+    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
+      if (counterMetraz == 2){
+        console.log('posts loaded2');
+        foundedPostOnStart.classList.add('hidden');
+      };
+      counterMetraz++;
+    });
 
     // const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
 
@@ -659,10 +661,10 @@ window.addEventListener("load", function() {
 
       // let filteredTerms = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
 
-      // YMCTools({
-      //   target: '.data-target-ymc1',
-      //   terms: filteredPrices.join() + ',' + filteredMetraze.join()          
-      // }).apiTermUpdate(); 
+      YMCTools({
+        target: '.data-target-ymc1',
+        terms: filteredPrices.join() + ',' + filteredMetraze.join()          
+      }).apiTermUpdate(); 
     }
     // *******************************************************
     btnSearch.addEventListener('click', () =>{
