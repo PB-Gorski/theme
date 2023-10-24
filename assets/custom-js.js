@@ -989,10 +989,10 @@ window.addEventListener("load", function() {
     const mainDropDown = document.querySelectorAll('.dropdown__value-price');
     const dropDownList = document.querySelectorAll('.dropdown__list');
     const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
-    // let btnSearch = document.querySelector('.btn-search');
-    // let priceValueArr = [];
-    // let newArr = [];
-    // let newArrHTMLList = [];
+    let btnSearch = document.querySelector('.btn-search');
+    let priceValueArr = [];
+    let newArr = [];
+    let newArrHTMLList = [];
     let target;
 
     mainDropDown.forEach(dropDownEl =>{
