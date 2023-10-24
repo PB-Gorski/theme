@@ -846,19 +846,20 @@ window.addEventListener("load", function() {
         let optionSpan = document.createElement('span');
         let choosenOption = item.childNodes[1].dataset.name;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
+        let cookieData = document.cookie
         // let stopAdding = false;
 
         optionSpan.innerText = choosenOption;
-        document.cookie = "miasto=";
-        document.cookie = "inwestcyja=";
+       cookieData = "miasto=";
+       cookieData = "inwestcyja=";
 
 
         if(filterType == 'Miasto:'){
-          document.cookie = "miasto=" + choosenOption;
+         cookieData = "miasto=" + choosenOption;
         }else if(filterType == 'Inwestycja:'){
-          document.cookie = "inwestcyja=" + choosenOption;
+         cookieData = "inwestcyja=" + choosenOption;
         }
-        console.log('cookie from x: ', x);
+        console.log('cookie from x: ', cookieData);
         console.log('filter type: ', filterType);
 
 
