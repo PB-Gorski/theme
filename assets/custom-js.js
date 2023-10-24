@@ -850,7 +850,8 @@ window.addEventListener("load", function() {
       // }).apiTermUpdate(); 
       // console.log('after YMC data loaded');
 
-      dataLoaded = true
+      dataLoaded = true;
+      console.log('switched');
     });
 
     if(dataLoaded){
