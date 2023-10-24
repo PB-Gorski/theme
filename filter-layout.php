@@ -28,7 +28,7 @@ $tax_sort = $taxonomy;
       </div>
     </div>
 
-    <div class="filter-entry container mx-auto" data-terms="<?php echo esc_attr($all_terms); ?>">
+    <div class="filter-entry container mx-auto justify-center" data-terms="<?php echo esc_attr($all_terms); ?>">
       <?php
       $type_multiple = ((bool) $ymc_multiple_filter) ? 'multiple' : '';
       if ($ymc_sort_terms !== 'manual') {
