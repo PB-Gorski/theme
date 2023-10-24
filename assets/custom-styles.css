@@ -966,4 +966,8 @@ background-color: #e8fbff!important;
 .filter-custom-layout-1850-2 {
   background-color: #ebeef2
 }
+.home .ymc-smart-filter-container {
+  min-height: 130px;
+  background-color: red;
+}
 
