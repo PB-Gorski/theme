@@ -902,18 +902,12 @@ window.addEventListener("load", function() {
     passiveOptionsCustomFilters.forEach(item => {
       item.addEventListener('click', () => {
         let optionSpan = document.createElement('span');
-        let choosenOption = item.childNodes[1].dataset.termid;
+        let choosenOption = item.childNodes[1].textContent;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
 
         optionSpan.innerText = choosenOption;
 
-        if(filterType == 'Miasto:'){
-          document.cookie = "miasto=" + choosenOption;
-        }else if(filterType == 'Inwestycja:'){
-          document.cookie = "inwestycja=" + choosenOption;
-        }else if(filterType == 'Pokoje:'){
-          document.cookie = "pokoje=" + choosenOption;
-        }else if(filterType == 'Cena od:'){
+        if(filterType == 'Cena od:'){
           document.cookie = "cenaOd=" + choosenOption;
         }else if(filterType == 'Cena do:'){
           document.cookie = "cenaDo=" + choosenOption;
