@@ -814,7 +814,7 @@ window.addEventListener("load", function() {
     let miasto = getCookie("miasto");
     let inwestycja = getCookie("inwestycja");
 
-    testArr = [miasto,inwestycja]
+    testArr = [parseInt(miasto),parseInt(inwestycja)]
     
     console.log(testArr);
     console.log(miasto + inwestycja);
