@@ -718,7 +718,6 @@ window.addEventListener("load", function() {
               break;
             };
           }else{
-            // dla ceny fix na int
             if (parseInt(b[i].firstChild.childNodes[j].firstChild.textContent.split(' ').join('')) > parseInt(b[i+1].firstChild.childNodes[j].firstChild.textContent.split(' ').join(''))) {
               shouldSwitch = true;
               break;
@@ -763,15 +762,15 @@ window.addEventListener("load", function() {
       
       for (let i = 1 ; i <= (17) ; i=i+2){
         if (i == currentFiltr){
-          if( btnsSort[currentFiltr-counter].classList.contains('sort-arrow-up')){
-            btnsSort[currentFiltr-counter].classList.remove('sort-arrow-up');
-            btnsSort[currentFiltr-counter].classList.add('sort-arrow-down');
+          if( btnsSort[currentFiltr - counter].classList.contains('sort-arrow-up')){
+            btnsSort[currentFiltr - counter].classList.remove('sort-arrow-up');
+            btnsSort[currentFiltr - counter].classList.add('sort-arrow-down');
           }else{
-            btnsSort[currentFiltr-counter].classList.add('sort-arrow-up');
-            btnsSort[currentFiltr-counter].classList.remove('sort-arrow-down');
+            btnsSort[currentFiltr - counter].classList.add('sort-arrow-up');
+            btnsSort[currentFiltr - counter].classList.remove('sort-arrow-down');
           }
         }else if(i != currentFiltr){
-          btnsSort[i-counter].classList.remove('sort-arrow-up','sort-arrow-down')
+          btnsSort[i - counter].classList.remove('sort-arrow-up','sort-arrow-down');
         }
         counter++
       };
