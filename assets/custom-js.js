@@ -886,9 +886,7 @@ window.addEventListener("load", function() {
       // }).apiTermUpdate(); 
       return filteredTermsID;
     };
-    setTimeout(() => {
       runSearching();
-    }, 2000);
 
     filteredTermsFromCookies = [miasto,inwestycja,pokoje,cenaOd,cenaDo]
     
