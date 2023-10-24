@@ -820,11 +820,11 @@ window.addEventListener("load", function() {
     // runFromCookies()
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-      YMCTools({
-        target: '.data-target-ymc1',
-        terms: '28,72'
-      }).apiTermUpdate(); 
-      console.log('after YMC data loaded');
+      // YMCTools({
+      //   target: '.data-target-ymc1',
+      //   terms: '28,72'
+      // }).apiTermUpdate(); 
+      // console.log('after YMC data loaded');
     });
 
 
