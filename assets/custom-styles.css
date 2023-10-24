@@ -516,7 +516,7 @@ option:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px!important;
+  padding: 10px 15px!important;
 }
 .menu-passive{
   background-color: white!important;
