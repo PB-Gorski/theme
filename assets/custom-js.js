@@ -805,15 +805,21 @@ window.addEventListener("load", function() {
     console.log(testArr);
     console.log(miasto + ',' + inwestycja);
 
-    function runFromCookies(){
+    // function runFromCookies(){
+    //   YMCTools({
+    //     target: '.data-target-ymc1',
+    //     terms: testArr.join(),      
+    //   }).apiTermUpdate(); 
+    //   console.log('after YMC api update');
+    // }
+
+    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
       YMCTools({
         target: '.data-target-ymc1',
-        terms: testArr.join(),      
+        terms: '28,72'
       }).apiTermUpdate(); 
       console.log('after YMC api update');
-    }
-
-    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', runFromCookies());
+    });
 
 
   
