@@ -297,6 +297,10 @@ window.addEventListener("load", function() {
 
   //  ---------------------------------------------------------------------- 
 
+  if(document.body.classList.contains('post-type-archive-mieszkania')){
+    console.log('lista mieszkan page');
+  };
+
   // wyszukiwanie mieszkan po filtrach (cena)
   // setting chosen option in active window
   let passiveOptions = document.querySelectorAll('.menu-passive__item');
