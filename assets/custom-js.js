@@ -822,12 +822,21 @@ window.addEventListener("load", function() {
     // runFromCookies()
 
     wp.hooks.addAction('ymc_before_loaded_data_FilterID_LayoutID', 'smartfilter', function(){
+      // YMCTools({
+      //   target: '.data-target-ymc1',
+      //   terms: '28,72',      
+      // }).apiTermUpdate(); 
+      // console.log('after YMC api update');
+    });
+
+    wp.hooks.addAction('ymc_complete_loaded_data_FilterID_LayoutID', 'smartfilter',function(){
       YMCTools({
         target: '.data-target-ymc1',
         terms: '28,72',      
       }).apiTermUpdate(); 
       console.log('after YMC api update');
     });
+
 
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
