@@ -844,21 +844,25 @@ window.addEventListener("load", function() {
       item.addEventListener('click', () => {
         let optionSpan = document.createElement('span');
         let choosenOption = item.childNodes[1].dataset.name;
-        let stopAdding = false;
+        let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
+        // let stopAdding = false;
 
-        // console.log(choosenOption);
         optionSpan.innerText = choosenOption;
-
-        document.cookie = "miasto=" + choosenOption;
-        document.cookie = "inwestcyja=" + choosenOption;
+       
+       
 
         let x = document.cookie;
 
         console.log('cookie from x: ', x);
+        console.log('filter type: ', filterType);
 
-        let choosenOptionsArr = item.parentNode.previousElementSibling.previousElementSibling.textContent;
+        if(filterType == 'Miasto:'){
+          document.cookie = "miasto=" + choosenOption;
+        }else if(filterType == 'Inwestycja:'){
+          document.cookie = "inwestcyja=" + choosenOption;
+        }
 
-        console.log('filter type: ',choosenOptionsArr);
+
         // choosenOptionsArr.forEach(option => {
         //   if(option.innerText == choosenOption){
         //     console.log('have child span');
