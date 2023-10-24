@@ -823,6 +823,7 @@ window.addEventListener("load", function() {
     let cenaDo = parseInt(getCookie("cenaDo").split(' ').join(''));
 
     priceMinValue = cenaOd;
+    runSearching();
 
     filteredTermsFromCookies = [miasto,inwestycja,pokoje,cenaOd,cenaDo]
     
