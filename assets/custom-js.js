@@ -757,6 +757,7 @@ window.addEventListener("load", function() {
     btn.addEventListener('click', () => {
       indexFrom1 = index + 1;
       let currentFiltr = indexFrom1 + index;
+      console.log('current filtr: ', currentFiltr);
 
       sortListDir(index);
       
