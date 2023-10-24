@@ -474,6 +474,9 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 div:nth-child(12) {
   margin-right: 0!important;
 }
+.ymc-smart-filter-container .filter-layout3 div:nth-child(12) {
+  border-right: 2px solid white;
+}
 #filter-layout3-filter-layout3 > .filter-entry {
   height: 120px;
   transition: height 0.3s ease-out;
