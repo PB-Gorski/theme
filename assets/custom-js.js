@@ -850,6 +850,7 @@ window.addEventListener("load", function() {
         optionSpan.innerText = choosenOption;
 
         document.cookie = "miasto=" + choosenOption;
+        document.cookie = "inwestcyja=" + choosenOption;
 
         let x = document.cookie;
 
