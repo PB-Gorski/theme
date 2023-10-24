@@ -819,10 +819,12 @@ window.addEventListener("load", function() {
       }).apiTermUpdate(); 
       console.log('after YMC api update');
     }
-
-    setTimeout(() => {
-      runFromCookies()
-    }, 1000);
+    if(document.cookie.match(/^(.*;)?\s*MyCookie\s*=\s*[^;]+(.*)?$/)){
+      console.log('cookie exist');
+      setTimeout(() => {
+        runFromCookies()
+      }, 1000);
+    };
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
       // YMCTools({
