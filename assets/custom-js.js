@@ -862,7 +862,7 @@ window.addEventListener("load", function() {
           console.log('inwestycja written');
         }
         console.log('filter type: ', filterType);
-        console.log('cookie data: ', cookieData);
+        console.log('cookie data: ', document.cookie);
 
 
         // choosenOptionsArr.forEach(option => {
