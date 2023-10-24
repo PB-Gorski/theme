@@ -819,8 +819,10 @@ window.addEventListener("load", function() {
     let miasto = getCookie("miasto");
     let inwestycja = getCookie("inwestycja");
     let pokoje = getCookie("pokoje");
+    let cenaOd = getCookie("cenaOd");
+    let cenaDo = getCookie("cenaDo");
 
-    filteredTermsFromCookies = [miasto,inwestycja,pokoje]
+    filteredTermsFromCookies = [miasto,inwestycja,pokoje,cenaOd,cenaDo]
     
     console.log(filteredTermsFromCookies);
     console.log(miasto + ',' + inwestycja);
@@ -856,6 +858,7 @@ window.addEventListener("load", function() {
         }
     };
     deleteAllCookies();
+
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
     const searchBar = document.querySelector('.filter-entry');
@@ -886,6 +889,10 @@ window.addEventListener("load", function() {
           document.cookie = "inwestycja=" + choosenOption;
         }else if(filterType == 'Pokoje:'){
           document.cookie = "pokoje=" + choosenOption;
+        }else if(filterType == 'Cena od:'){
+          document.cookie = "cenaOd=" + choosenOption;
+        }else if(filterType == 'Cena do:'){
+          document.cookie = "cenaDo=" + choosenOption;
         }
         console.log('filter type: ', filterType);
         console.log('cookie data: ', document.cookie);
