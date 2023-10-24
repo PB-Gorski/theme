@@ -816,7 +816,7 @@ window.addEventListener("load", function() {
 
     testArr = [parseInt(miasto),parseInt(inwestycja)]
     
-    console.log(testArr.join());
+    console.log(testArr);
     console.log(miasto + ',' + inwestycja);
 
     function runfromCookies(){
@@ -827,7 +827,7 @@ window.addEventListener("load", function() {
       console.log('after YMC api update');
     }
 
-    wp.hooks.addAction('ymc_after_loaded_data_FilterID_LayoutID', 'smartfilter', runfromCookies());
+    wp.hooks.addAction('ymc_after_loaded_data_FilterID_LayoutID', 'smartfilter', runfromCookies);
 
 
   
