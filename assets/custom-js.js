@@ -819,8 +819,10 @@ window.addEventListener("load", function() {
     let miasto = getCookie("miasto");
     let inwestycja = getCookie("inwestycja");
     let pokoje = getCookie("pokoje");
-    let cenaOd = getCookie("cenaOd");
+    let cenaOd = parseInt(getCookie("cenaOd"));
     let cenaDo = getCookie("cenaDo");
+
+    priceMinValue = cenaOd;
 
     filteredTermsFromCookies = [miasto,inwestycja,pokoje,cenaOd,cenaDo]
     
