@@ -816,7 +816,7 @@ window.addEventListener("load", function() {
 
     testArr = [parseInt(miasto),parseInt(inwestycja)]
     
-    console.log(testArr);
+    console.log(testArr.join());
     console.log(miasto + ',' + inwestycja);
 
     
