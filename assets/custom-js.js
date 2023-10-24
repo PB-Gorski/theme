@@ -887,7 +887,7 @@ window.addEventListener("load", function() {
       return filteredTermsID;
     };
     let filteredCustomPriceFromCookies = runSearching();
-    console.log(filteredCustomPriceFromCookies);
+    console.log(filteredCustomPriceFromCookies.join());
 
     filteredTermsFromCookies = [miasto,inwestycja,pokoje,cenaOd,cenaDo]
     
@@ -897,7 +897,7 @@ window.addEventListener("load", function() {
     function runFromCookies(){
       YMCTools({
         target: '.data-target-ymc1',
-        terms: filteredCustomPriceFromCookies,      
+        terms: filteredCustomPriceFromCookies.join(),      
       }).apiTermUpdate(); 
       console.log('after YMC api update');
     }
