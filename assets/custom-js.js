@@ -793,6 +793,7 @@ window.addEventListener("load", function() {
   };
 
   if(document.body.classList.contains('home')){
+    console.log('home');
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
     const searchBar = document.querySelector('.filter-entry');
