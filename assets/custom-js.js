@@ -406,7 +406,7 @@ window.addEventListener("load", function() {
       //   }).apiTermUpdate(); 
       //   console.log('after YMC api update');
       // };
-      foundedPostOnStart.classList.add('hidden');
+      // foundedPostOnStart.classList.add('hidden');
       counter++;
     });
 
