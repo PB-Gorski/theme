@@ -397,13 +397,18 @@ window.addEventListener("load", function() {
     const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
     let counter = 0;
 
-    // wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-    //   if (counter == 2){
-    //     console.log('posts loaded2');
-    //     foundedPostOnStart.classList.add('hidden');
-    //   };
-    //   counter++;
-    // });
+    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
+      if (counter == 2){
+        console.log('posts loaded2');
+        YMCTools({
+          target: '.data-target-ymc1',
+          terms: '28,72'
+        }).apiTermUpdate(); 
+        console.log('after YMC api update');
+        foundedPostOnStart.classList.add('hidden');
+      };
+      counter++;
+    });
 
     function runSearching(){
       priceValueArr = [];
@@ -814,11 +819,11 @@ window.addEventListener("load", function() {
     // }
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-      YMCTools({
-        target: '.data-target-ymc1',
-        terms: '28,72'
-      }).apiTermUpdate(); 
-      console.log('after YMC api update');
+      // YMCTools({
+      //   target: '.data-target-ymc1',
+      //   terms: '28,72'
+      // }).apiTermUpdate(); 
+      // console.log('after YMC api update');
     });
 
 
