@@ -326,7 +326,6 @@ window.addEventListener("load", function() {
     console.log(miasto);
     
 
-    checkCookie();
 
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
