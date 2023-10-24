@@ -483,7 +483,7 @@ window.addEventListener("load", function() {
       }else{
         searchBar.classList.toggle('h-[450px]');
       };
-      foundedPostOnStart.classList.toggle('top-[320px]')
+      foundedPostOnStart.classList.toggle('top-[280px]')
     });
   };
 
