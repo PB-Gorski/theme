@@ -397,13 +397,13 @@ window.addEventListener("load", function() {
     const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
     let counter = 0;
 
-    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-      if (counter == 2){
-        console.log('posts loaded2');
-        foundedPostOnStart.classList.add('hidden');
-      };
-      counter++;
-    });
+    // wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
+    //   if (counter == 2){
+    //     console.log('posts loaded2');
+    //     foundedPostOnStart.classList.add('hidden');
+    //   };
+    //   counter++;
+    // });
 
     function runSearching(){
       priceValueArr = [];
@@ -470,9 +470,6 @@ window.addEventListener("load", function() {
       return filteredTermsID;
     };
     // btnSearch.addEventListener('click', runSearching);
-
-    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
-    });
 
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
@@ -587,14 +584,6 @@ window.addEventListener("load", function() {
 
     // const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
 
-    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-      if (counterMetraz == 2){
-        console.log('posts loaded2');
-        foundedPostOnStart.classList.add('hidden');
-      };
-      counterMetraz++;
-    });
-
     function runSearchingMetraz(){
       console.log('run');
       metrazValueArr = [];
@@ -681,9 +670,6 @@ window.addEventListener("load", function() {
       console.log('merged done');
     } );
     // *******************************************************
-
-    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(target, res){
-    });
 
     // sortowanie listy mieszkan
     const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
