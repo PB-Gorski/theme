@@ -299,35 +299,6 @@ window.addEventListener("load", function() {
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     console.log('lista mieszkan page');
-
-    // function setCookie(cname,cvalue) {
-    //   document.cookie = cname + "=" + cvalue;
-    // };
-    function getCookie(cname) {
-      let name = cname + "=";
-      let decodedCookie = decodeURIComponent(document.cookie);
-      let ca = decodedCookie.split(';');
-      for(let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-        };
-        if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
-        };
-      };
-      return "";
-    };
-    // function checkCookie() {
-    //   let user = getCookie("miasto");
-    //   console.log(user);
-    // };
-    let miasto = getCookie("miasto");
-    let inwestycja = getCookie("inwestycja");
-    console.log(miasto, ' ', inwestycja);
-    
-
-
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
     let passiveOptions = document.querySelectorAll('.menu-passive__item');
@@ -473,6 +444,7 @@ window.addEventListener("load", function() {
 
       let filteredTermsID = [];
       console.log('filtered new arr html elements: ', newArrHTMLList);
+
       newArrHTMLList.forEach(el2 =>{
         filteredTermsID.push(el2.dataset.termid);
       });
@@ -818,8 +790,57 @@ window.addEventListener("load", function() {
         
         counter=1;
       });
-    });      
-  };
+    });    
+
+
+
+    // cookie data handle
+    function getCookie(cname) {
+      let name = cname + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        };
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        };
+      };
+      return "";
+    };
+
+    let miasto = getCookie("miasto");
+    let inwestycja = getCookie("inwestycja");
+    console.log(miasto, ' ', inwestycja);
+
+    let cookieIncomingMiasto = miasto;
+
+    
+
+
+    newArr.forEach(elem => {
+      for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+        if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+          newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+        };
+      };
+    });
+
+    let filteredTermsID = [];
+    console.log('filtered new arr html elements: ', newArrHTMLList);
+    
+    newArrHTMLList.forEach(el2 =>{
+      filteredTermsID.push(el2.dataset.termid);
+    });
+
+    console.log(filteredTermsID.join(','));
+
+  
+    
+    
+  }; //end page lista mieszkan
 
   //  frontpage - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('home')){
@@ -844,8 +865,9 @@ window.addEventListener("load", function() {
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
         let optionSpan = document.createElement('span');
-        let choosenOption = item.childNodes[1].dataset.name;
+        let choosenOption = item.childNodes[1].dataset.termid;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
+        // item.parentNode.previousElementSibling.nextElementSibling.childNodes[4].childNodes[1].dataset.termid
         let cookieData = document.cookie
         // let stopAdding = false;
 
