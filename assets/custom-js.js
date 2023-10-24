@@ -898,6 +898,49 @@ window.addEventListener("load", function() {
         console.log('cookie data: ', document.cookie);
       });
     });
+
+    // frontpage custom dropdowns handle
+    // price selects
+    const mainDropDown = document.querySelectorAll('.dropdown__value-price');
+    const dropDownList = document.querySelectorAll('.dropdown__list');
+    const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
+    // let btnSearch = document.querySelector('.btn-search');
+    // let priceValueArr = [];
+    // let newArr = [];
+    // let newArrHTMLList = [];
+    let target;
+
+    mainDropDown.forEach(dropDownEl =>{
+      dropDownEl.addEventListener('click', (e) =>{
+        if(e.target.nextElementSibling){
+          console.log('span');
+          e.target.nextElementSibling.classList.toggle('dropdown__list_active');
+        }else if(e.target.parentNode.nextElementSibling){
+          console.log('span container');
+          e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active');
+        }
+      });
+    });
+
+
+    dropDowns.forEach(item => {
+      item.addEventListener('click', choise)
+    });
+
+    function choise(e){
+      e.preventDefault();
+      target = e.target.textContent;
+      e.target.parentNode.parentNode.previousElementSibling.textContent = '';
+      let spanTarget = document.createElement("span");
+      spanTarget.innerText = target;
+      e.target.parentNode.parentNode.previousElementSibling.appendChild(spanTarget);
+
+      dropDownList.forEach(el =>{
+        if(el.classList.contains('dropdown__list_active')){
+          el.classList.remove('dropdown__list_active')
+        };
+      });
+    };  
     
 
 
