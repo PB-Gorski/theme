@@ -815,10 +815,11 @@ window.addEventListener("load", function() {
     let inwestycja = getCookie("inwestycja");
     
     console.log(miasto + inwestycja);
+    console.log(miasto.toString + inwestycja);
     
     YMCTools({
       target: '.data-target-ymc1',
-      terms: miasto + inwestycja,      
+      terms: '40,72',      
     }).apiTermUpdate(); 
     console.log('after YMC api update');
 
