@@ -817,13 +817,12 @@ window.addEventListener("load", function() {
     testArr = [parseInt(miasto),parseInt(inwestycja)]
     
     console.log(testArr);
-    console.log(miasto + inwestycja);
-    console.log(miasto.toString + inwestycja);
-    console.log(miasto.toString() + inwestycja.toString());
+    console.log(miasto + ',' + inwestycja);
+
     
     YMCTools({
       target: '.data-target-ymc1',
-      terms: '40,72',      
+      terms: testArr.join(),      
     }).apiTermUpdate(); 
     console.log('after YMC api update');
 
