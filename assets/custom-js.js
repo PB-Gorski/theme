@@ -813,7 +813,10 @@ window.addEventListener("load", function() {
 
     let miasto = getCookie("miasto");
     let inwestycja = getCookie("inwestycja");
+
+    testArr = [miasto,inwestycja]
     
+    console.log(testArr);
     console.log(miasto + inwestycja);
     console.log(miasto.toString + inwestycja);
     console.log(miasto.toString() + inwestycja.toString());
