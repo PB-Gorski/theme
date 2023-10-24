@@ -764,16 +764,16 @@ window.addEventListener("load", function() {
       
       for (let i = 1 ; i <= (17) ; i=i+2){
         if (i == currentFiltr){
-          if( btnsSort[currentFiltr - counter +1].classList.contains('sort-arrow-up')){
-            btnsSort[currentFiltr - counter +1].classList.remove('sort-arrow-up');
-            btnsSort[currentFiltr - counter +1].classList.add('sort-arrow-down');
+          if( btnsSort[currentFiltr - counter].classList.contains('sort-arrow-up')){
+            btnsSort[currentFiltr - counter].classList.remove('sort-arrow-up');
+            btnsSort[currentFiltr - counter].classList.add('sort-arrow-down');
           }else{
-            btnsSort[currentFiltr - counter +1].classList.add('sort-arrow-up');
-            btnsSort[currentFiltr - counter +1].classList.remove('sort-arrow-down');
+            btnsSort[currentFiltr - counter].classList.add('sort-arrow-up');
+            btnsSort[currentFiltr - counter].classList.remove('sort-arrow-down');
           }
         }else if(i != currentFiltr){
           console.log('i rozny od current filtr');
-          // btnsSort[i - counter].classList.remove('sort-arrow-up','sort-arrow-down');
+          btnsSort[i].classList.remove('sort-arrow-up','sort-arrow-down');
         }
         counter++
       };
