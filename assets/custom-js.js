@@ -820,15 +820,15 @@ window.addEventListener("load", function() {
     let inwestycja = getCookie("inwestycja");
     let pokoje = getCookie("pokoje");
 
-    testArr = [parseInt(miasto),parseInt(inwestycja)]
+    filteredTermsFromCookies = [miasto,inwestycja,pokoje]
     
-    console.log(testArr);
+    console.log(filteredTermsFromCookies);
     console.log(miasto + ',' + inwestycja);
 
     function runFromCookies(){
       YMCTools({
         target: '.data-target-ymc1',
-        terms: testArr.join(),      
+        terms: filteredTermsFromCookies.join(),      
       }).apiTermUpdate(); 
       console.log('after YMC api update');
     }
