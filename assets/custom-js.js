@@ -850,14 +850,14 @@ window.addEventListener("load", function() {
         // let stopAdding = false;
 
         optionSpan.innerText = choosenOption;
-       cookieData = "miasto=";
-       cookieData = "inwestcyja=";
+        cookieData = "miasto=";
+        cookieData = "inwestcyja=";
 
 
         if(filterType == 'Miasto:'){
          cookieData = "miasto=" + choosenOption;
         }else if(filterType == 'Inwestycja:'){
-         cookieData = "inwestcyja=" + choosenOption;
+         cookieData = "inwestcyja=" + filterType;
         }
         console.log('cookie data: ', cookieData);
         console.log('filter type: ', filterType);
