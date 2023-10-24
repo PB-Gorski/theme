@@ -806,6 +806,8 @@ window.addEventListener("load", function() {
         searchBar.classList.toggle('h-[450px]');
       };
     });
+
+    
   }
 
   // -------------------------------------------------------------------------------------
