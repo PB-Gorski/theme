@@ -773,7 +773,9 @@ window.addEventListener("load", function() {
           }
         }else if(i != currentFiltr){
           console.log('i rozny od current filtr');
-          btnsSort[i].classList.remove('sort-arrow-up','sort-arrow-down');
+          if(btnsSort[i - counter]){
+            btnsSort[i - counter].classList.remove('sort-arrow-up','sort-arrow-down');
+          }
         }
         counter++
       };
