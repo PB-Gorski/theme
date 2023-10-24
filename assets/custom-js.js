@@ -786,8 +786,10 @@ window.addEventListener("load", function() {
     });    
 
 
-    let dataLoaded = false;
+  
     // cookie data handle
+    document.cookie = "miasto=; inwestycja=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
     function getCookie(cname) {
       let name = cname + "=";
       let decodedCookie = decodeURIComponent(document.cookie);
@@ -813,7 +815,7 @@ window.addEventListener("load", function() {
     console.log(miasto + ',' + inwestycja);
 
     function runFromCookies(){
-      document.cookie = ''
+
       YMCTools({
         target: '.data-target-ymc1',
         terms: testArr.join(),      
