@@ -296,7 +296,7 @@ window.addEventListener("load", function() {
 
 
   //  ---------------------------------------------------------------------- 
-
+  //  filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     console.log('lista mieszkan page');
     // wyszukiwanie mieszkan po filtrach (cena)
@@ -807,8 +807,36 @@ window.addEventListener("load", function() {
       };
     });
 
+    console.log('lista mieszkan page');
+    // wyszukiwanie mieszkan po filtrach (cena)
+    // setting chosen option in active window
+    let passiveOptions = document.querySelectorAll('.menu-passive__item');
+    // let counter2 = 0;
+    passiveOptions.forEach(item => {
+      item.addEventListener('click', () => {
+        let optionSpan = document.createElement('span');
+        let choosenOption = item.childNodes[1].dataset.name;
+        let stopAdding = false;
+
+        console.log(choosenOption);
+        optionSpan.innerText = choosenOption;
+
+        let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
+        choosenOptionsArr.forEach(option => {
+          if(option.innerText == choosenOption){
+            console.log('have child span');
+            stopAdding = true;
+            console.log('choosen option text for cleaning', choosenOption);
+            console.log('clear existing span');
+            option.remove('span');
+          };
+        });
+      });
+    });
     
-  }
+
+
+  };
 
   // -------------------------------------------------------------------------------------
 
