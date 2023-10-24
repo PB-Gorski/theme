@@ -768,9 +768,9 @@ window.addEventListener("load", function() {
       sortListDir(index);
       
       for (let i = 1 ; i <= (17) ; i=i+2){
-        if(btnsSort[i - counter]){
-          btnsSort[i - counter].classList.remove('sort-arrow-up','sort-arrow-down');
-        }
+        // if(btnsSort[i - counter]){
+        //   btnsSort[i - counter].classList.remove('sort-arrow-up','sort-arrow-down');
+        // }
         if (i == currentFiltr){
           if( btnsSort[currentFiltr - counter].classList.contains('sort-arrow-up')){
             btnsSort[currentFiltr - counter].classList.remove('sort-arrow-up');
