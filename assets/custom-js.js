@@ -888,7 +888,7 @@ window.addEventListener("load", function() {
     };
     setTimeout(() => {
       runSearching();
-    }, 1200);
+    }, 2000);
 
     filteredTermsFromCookies = [miasto,inwestycja,pokoje,cenaOd,cenaDo]
     
