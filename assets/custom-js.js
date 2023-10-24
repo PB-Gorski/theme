@@ -858,7 +858,7 @@ window.addEventListener("load", function() {
           cookieData = "miasto=" + choosenOption;
           console.log('miasto written');
         }else if(filterType == 'Inwestycja:'){
-          cookieData = "inwestcyja=" + filterType;
+          cookieData = "inwestcyja=" + choosenOption;
           console.log('inwestycja written');
         }
         console.log('filter type: ', filterType);
