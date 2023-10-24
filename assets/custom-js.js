@@ -813,6 +813,7 @@ window.addEventListener("load", function() {
     console.log(miasto + ',' + inwestycja);
 
     function runFromCookies(){
+      document.cookie = ''
       YMCTools({
         target: '.data-target-ymc1',
         terms: testArr.join(),      
