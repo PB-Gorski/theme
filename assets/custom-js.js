@@ -849,21 +849,17 @@ window.addEventListener("load", function() {
         // let stopAdding = false;
 
         optionSpan.innerText = choosenOption;
-       
-       
-
-        let x = document.cookie;
         document.cookie = "miasto=";
         document.cookie = "inwestcyja=";
 
-        console.log('cookie from x: ', x);
-        console.log('filter type: ', filterType);
 
         if(filterType == 'Miasto:'){
           document.cookie = "miasto=" + choosenOption;
         }else if(filterType == 'Inwestycja:'){
           document.cookie = "inwestcyja=" + choosenOption;
         }
+        console.log('cookie from x: ', x);
+        console.log('filter type: ', filterType);
 
 
         // choosenOptionsArr.forEach(option => {
