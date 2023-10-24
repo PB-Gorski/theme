@@ -824,7 +824,7 @@ window.addEventListener("load", function() {
         target: '.data-target-ymc1',
         terms: '28,72'
       }).apiTermUpdate(); 
-      console.log('after YMC api update');
+      console.log('after YMC data loaded');
     });
 
 
