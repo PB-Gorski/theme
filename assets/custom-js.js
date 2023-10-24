@@ -299,8 +299,31 @@ window.addEventListener("load", function() {
   //  filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     console.log('lista mieszkan page');
-    // let x = 
-    console.log('cookie from x: ', document.cookie('miasto'));
+
+    function setCookie(cname,cvalue) {
+      document.cookie = cname + "=" + cvalue;
+    };
+    function getCookie(cname) {
+      let name = cname + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(';');
+      for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        };
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        };
+      };
+      return "";
+    };
+    function checkCookie() {
+      let user = getCookie("miasto");
+      console.log(user);
+    };
+
+    checkCookie();
 
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
