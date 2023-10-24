@@ -12,9 +12,7 @@
 
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="content" class="wp-block-group content bg-[#ebeef2] relative ">
-
-
+<div id="content" class="wp-block-group content bg-[#ebeef2] relative">
   <!-- wp:group -->
   <div class="wp-block-group">
     <!-- wp:list -->
