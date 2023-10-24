@@ -300,9 +300,9 @@ window.addEventListener("load", function() {
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     console.log('lista mieszkan page');
 
-    function setCookie(cname,cvalue) {
-      document.cookie = cname + "=" + cvalue;
-    };
+    // function setCookie(cname,cvalue) {
+    //   document.cookie = cname + "=" + cvalue;
+    // };
     function getCookie(cname) {
       let name = cname + "=";
       let decodedCookie = decodeURIComponent(document.cookie);
@@ -318,10 +318,13 @@ window.addEventListener("load", function() {
       };
       return "";
     };
-    function checkCookie() {
-      let user = getCookie("miasto");
-      console.log(user);
-    };
+    // function checkCookie() {
+    //   let user = getCookie("miasto");
+    //   console.log(user);
+    // };
+    let miasto = getCookie("miasto");
+    console.log(miasto);
+    
 
     checkCookie();
 
