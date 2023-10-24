@@ -811,13 +811,13 @@ window.addEventListener("load", function() {
     console.log(miasto + ',' + inwestycja);
 
     function runFromCookies(){
-      // YMCTools({
-      //   target: '.data-target-ymc1',
-      //   terms: '28,72',      
-      // }).apiTermUpdate(); 
-      // console.log('after YMC api update');
+      YMCTools({
+        target: '.data-target-ymc1',
+        terms: '28,72',      
+      }).apiTermUpdate(); 
+      console.log('after YMC api update');
     }
-    // runFromCookies()
+    runFromCookies()
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
       // YMCTools({
