@@ -875,6 +875,7 @@ window.addEventListener("load", function() {
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
     let passiveOptions = document.querySelectorAll('.menu-passive__item');
+    let passiveOptionsCustomFilters = document.querySelectorAll('.dropdown__item');
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
         let optionSpan = document.createElement('span');
@@ -898,6 +899,30 @@ window.addEventListener("load", function() {
         console.log('cookie data: ', document.cookie);
       });
     });
+    passiveOptionsCustomFilters.forEach(item => {
+      item.addEventListener('click', () => {
+        let optionSpan = document.createElement('span');
+        let choosenOption = item.childNodes[1].dataset.termid;
+        let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
+
+        optionSpan.innerText = choosenOption;
+
+        if(filterType == 'Miasto:'){
+          document.cookie = "miasto=" + choosenOption;
+        }else if(filterType == 'Inwestycja:'){
+          document.cookie = "inwestycja=" + choosenOption;
+        }else if(filterType == 'Pokoje:'){
+          document.cookie = "pokoje=" + choosenOption;
+        }else if(filterType == 'Cena od:'){
+          document.cookie = "cenaOd=" + choosenOption;
+        }else if(filterType == 'Cena do:'){
+          document.cookie = "cenaDo=" + choosenOption;
+        }
+        console.log('filter type: ', filterType);
+        console.log('cookie data: ', document.cookie);
+      });
+    });
+
 
     // frontpage custom dropdowns handle
     // price selects
