@@ -819,13 +819,15 @@ window.addEventListener("load", function() {
     console.log(testArr.join());
     console.log(miasto + ',' + inwestycja);
 
-    
-    YMCTools({
-      target: '.data-target-ymc1',
-      terms: testArr.join(),      
-    }).apiTermUpdate(); 
-    console.log('after YMC api update');
+    function runfromCookies(){
+      YMCTools({
+        target: '.data-target-ymc1',
+        terms: testArr.join(),      
+      }).apiTermUpdate(); 
+      console.log('after YMC api update');
+    }
 
+    wp.hooks.addAction('ymc_after_loaded_data_FilterID_LayoutID', 'smartfilter', runfromCookies());
 
 
   
