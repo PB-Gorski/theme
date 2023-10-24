@@ -323,7 +323,8 @@ window.addEventListener("load", function() {
     //   console.log(user);
     // };
     let miasto = getCookie("miasto");
-    console.log(miasto);
+    let inwestycja = getCookie("inwestycja");
+    console.log(miasto, ' ', inwestycja);
     
 
 
