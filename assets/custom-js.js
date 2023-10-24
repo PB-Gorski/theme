@@ -296,7 +296,7 @@ window.addEventListener("load", function() {
 
 
   //  ---------------------------------------------------------------------- 
-  //  filtrowanie i sortowanie listy mieszkan
+  //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     console.log('lista mieszkan page');
 
@@ -820,6 +820,7 @@ window.addEventListener("load", function() {
     });      
   };
 
+  //  frontpage - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('home')){
     console.log('home');
     // search more options handle
