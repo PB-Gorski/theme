@@ -513,9 +513,6 @@ function cptui_register_my_cpts_lokale()
 
 add_action('init', 'cptui_register_my_cpts_lokale', -1);
 
-
-
-
 function pbgorski_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
@@ -534,6 +531,25 @@ function pbgorski_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $t
 	return $layout;
 }
 add_filter('ymc_filter_custom_layout_148_1', 'pbgorski_custom_filter_layout', 10, 6);
+
+function pbgorski_custom_filter_layout2($layout, $terms, $taxonomy, $multiple, $target, $options)
+{
+	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
+	$filter_id = '1850';
+	$layout_id = '2';
+	$layout  = ''; //Override demo message
+	ob_start();
+
+	if (file_exists($filepath_filter)) {
+		require $filepath_filter;
+		$layout .= ob_get_contents();
+	}
+
+	ob_end_clean();
+
+	return $layout;
+}
+add_filter('ymc_filter_custom_layout_148_1', 'pbgorski_custom_filter_layout2', 10, 6);
 
 function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $arrOptions)
 {
