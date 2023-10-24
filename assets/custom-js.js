@@ -834,11 +834,11 @@ window.addEventListener("load", function() {
     });
 
     wp.hooks.addAction('ymc_complete_loaded_data_FilterID_LayoutID', 'smartfilter',function(){
-      YMCTools({
-        target: '.data-target-ymc1',
-        terms: '28,72',      
-      }).apiTermUpdate(); 
-      console.log('after YMC api update');
+      // YMCTools({
+      //   target: '.data-target-ymc1',
+      //   terms: '28,72',      
+      // }).apiTermUpdate(); 
+      // console.log('after YMC api update');
     });
 
 
