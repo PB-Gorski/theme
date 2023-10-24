@@ -825,7 +825,6 @@ window.addEventListener("load", function() {
     console.log(miasto + ',' + inwestycja);
 
     function runFromCookies(){
-
       YMCTools({
         target: '.data-target-ymc1',
         terms: testArr.join(),      
@@ -838,17 +837,24 @@ window.addEventListener("load", function() {
     }, 1000);
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-      // YMCTools({
-      //   target: '.data-target-ymc1',
-      //   terms: '28,72'
-      // }).apiTermUpdate(); 
-      // console.log('after YMC data loaded');
     });
   }; //end page lista mieszkan
 
   //  frontpage - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('home')){
     console.log('home');
+    document.cookie = "miasto=; inwestycja=; inwestcyja=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    function deleteAllCookies() {
+        const cookies = document.cookie.split(";");
+    
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i];
+            const eqPos = cookie.indexOf("=");
+            const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+            document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        }
+    };
+    deleteAllCookies();
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
     const searchBar = document.querySelector('.filter-entry');
