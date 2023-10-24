@@ -818,6 +818,7 @@ window.addEventListener("load", function() {
 
     let miasto = getCookie("miasto");
     let inwestycja = getCookie("inwestycja");
+    let pokoje = getCookie("pokoje");
 
     testArr = [parseInt(miasto),parseInt(inwestycja)]
     
@@ -843,7 +844,7 @@ window.addEventListener("load", function() {
   //  frontpage - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('home')){
     console.log('home');
-    document.cookie = "miasto=; inwestycja=; inwestcyja=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "miasto=; inwestycja=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     function deleteAllCookies() {
         const cookies = document.cookie.split(";");
     
@@ -876,16 +877,15 @@ window.addEventListener("load", function() {
         let optionSpan = document.createElement('span');
         let choosenOption = item.childNodes[1].dataset.termid;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
-        let cookieData = document.cookie
 
         optionSpan.innerText = choosenOption;
 
         if(filterType == 'Miasto:'){
           document.cookie = "miasto=" + choosenOption;
-          console.log('miasto written');
         }else if(filterType == 'Inwestycja:'){
           document.cookie = "inwestycja=" + choosenOption;
-          console.log('inwestycja written');
+        }else if(filterType == 'Pokoje:'){
+          document.cookie = "pokoje=" + choosenOption;
         }
         console.log('filter type: ', filterType);
         console.log('cookie data: ', document.cookie);
