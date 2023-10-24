@@ -756,7 +756,7 @@ window.addEventListener("load", function() {
   btnsSort.forEach((btn,index) => {
     btn.addEventListener('click', () => {
       indexFrom1 = index + 1;
-      currentFiltr = indexFrom1 + index;
+      let currentFiltr = indexFrom1 + index;
 
       sortListDir(index);
       
@@ -770,7 +770,8 @@ window.addEventListener("load", function() {
             btnsSort[currentFiltr - counter].classList.remove('sort-arrow-down');
           }
         }else if(i != currentFiltr){
-          btnsSort[i - counter].classList.remove('sort-arrow-up','sort-arrow-down');
+          console.log('i rozny od current filtr');
+          // btnsSort[i - counter].classList.remove('sort-arrow-up','sort-arrow-down');
         }
         counter++
       };
