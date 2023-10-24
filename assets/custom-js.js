@@ -855,12 +855,14 @@ window.addEventListener("load", function() {
 
 
         if(filterType == 'Miasto:'){
-         cookieData = "miasto=" + choosenOption;
+          cookieData = "miasto=" + choosenOption;
+          console.log('miasto written');
         }else if(filterType == 'Inwestycja:'){
-         cookieData = "inwestcyja=" + filterType;
+          cookieData = "inwestcyja=" + filterType;
+          console.log('inwestycja written');
         }
-        console.log('cookie data: ', cookieData);
         console.log('filter type: ', filterType);
+        console.log('cookie data: ', cookieData);
 
 
         // choosenOptionsArr.forEach(option => {
