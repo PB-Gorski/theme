@@ -820,7 +820,7 @@ window.addEventListener("load", function() {
     let inwestycja = getCookie("inwestycja");
     let pokoje = getCookie("pokoje");
     let cenaOd = parseInt(getCookie("cenaOd").split(' ').join(''));
-    let cenaDo = getCookie("cenaDo");
+    let cenaDo = parseInt(getCookie("cenaDo").split(' ').join(''));
 
     priceMinValue = cenaOd;
 
