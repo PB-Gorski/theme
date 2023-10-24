@@ -859,7 +859,7 @@ window.addEventListener("load", function() {
         }else if(filterType == 'Inwestycja:'){
          cookieData = "inwestcyja=" + choosenOption;
         }
-        console.log('cookie from x: ', cookieData);
+        console.log('cookie data: ', cookieData);
         console.log('filter type: ', filterType);
 
 
