@@ -392,8 +392,6 @@ window.addEventListener("load", function() {
       });
     };  
 
-
-
     const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
     let counter = 0;
 
@@ -823,6 +821,70 @@ window.addEventListener("load", function() {
     let cenaDo = parseInt(getCookie("cenaDo").split(' ').join(''));
 
     priceMinValue = cenaOd;
+    function runSearching(){
+      priceValueArr = [];
+      newArr = [];
+      newArrHTMLList = [];
+
+      foundedPostOnStart.classList.add('hidden');
+      const dropDownFilters = document.querySelectorAll(".dropdown-filter");
+      let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
+      priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
+      priceMaxValue = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
+      
+      console.log('no spaces', priceMinValue,priceMaxValue);
+
+      for (i = 1 ; i < priceValueArrNodeList.length ; i++){
+        priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+        priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
+      }
+    
+      priceValueArr.forEach(priceValue => {
+        priceMaxValue.isNaN ? priceMaxValue = 10000000 : priceMaxValue = priceMaxValue;
+        console.log('price max value ',priceMaxValue);
+        if (priceValue < priceMaxValue && priceValue > priceMinValue){
+          newArr.push(priceValue);
+        };
+      });
+      console.log('prices from range: ', priceValueArr);
+      
+      // console.log('new price arr: ',newArr);
+
+      newArr.forEach(elem => {
+        for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+          if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+            newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+          };
+        };
+      });
+
+      let filteredTermsID = [];
+      console.log('filtered new arr html elements: ', newArrHTMLList);
+
+      newArrHTMLList.forEach(el2 =>{
+        filteredTermsID.push(el2.dataset.termid);
+      });
+
+      console.log(filteredTermsID.join(','));
+
+      for (i = 2 ; i < priceValueArrNodeList.length ; i++){
+        if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
+          priceValueArrNodeList[i].childNodes[1].classList.remove('active');
+          // console.log(priceValueArrNodeList[i].childNodes[1]);
+        }
+      }
+
+      priceValueArr = [];
+      newArr = [];
+      newArrHTMLList = [];
+      priceValueArrNodeList = [];
+
+      // YMCTools({
+      //   target: '.data-target-ymc1',
+      //   terms: filteredTermsID.join(),            
+      // }).apiTermUpdate(); 
+      return filteredTermsID;
+    };
     runSearching();
 
     filteredTermsFromCookies = [miasto,inwestycja,pokoje,cenaOd,cenaDo]
