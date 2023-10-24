@@ -786,9 +786,8 @@ window.addEventListener("load", function() {
     });    
 
 
-  
     // cookie data handle
-    document.cookie = "miasto=; inwestycja=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "miasto=; inwestycja=; inwestcyja=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     function deleteAllCookies() {
         const cookies = document.cookie.split(";");
     
@@ -800,7 +799,7 @@ window.addEventListener("load", function() {
         }
     };
     deleteAllCookies();
-    
+
     function getCookie(cname) {
       let name = cname + "=";
       let decodedCookie = decodeURIComponent(document.cookie);
