@@ -458,10 +458,6 @@ option:hover {
 .filter-custom-layout-148-1 {
   background-color: #ebeef2!important;
 }
-.ymc-smart-filter-container .filter-layout3 .filter-entry {
-  max-width: 1170px;
-  /* row-gap: 12px!important; */
-}
 .ymc-smart-filter-container .filter-layout3 div{
   margin: 0!important;
 }
@@ -484,9 +480,9 @@ option:hover {
   height: 300px;
   margin-bottom: 40px;
   transition: height 0.3s ease-out;
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
+  /* max-width: 1170px; */
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 .filter-layout3-148{
   padding-top: 10px;
