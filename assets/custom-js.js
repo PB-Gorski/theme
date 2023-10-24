@@ -855,10 +855,10 @@ window.addEventListener("load", function() {
 
 
         if(filterType == 'Miasto:'){
-          cookieData = "miasto=" + choosenOption;
+          document.cookie = "miasto=" + choosenOption;
           console.log('miasto written');
         }else if(filterType == 'Inwestycja:'){
-          cookieData = "inwestcyja=" + choosenOption;
+          document.cookie = "inwestcyja=" + choosenOption;
           console.log('inwestycja written');
         }
         console.log('filter type: ', filterType);
