@@ -813,14 +813,14 @@ window.addEventListener("load", function() {
 
     let miasto = getCookie("miasto");
     let inwestycja = getCookie("inwestycja");
-    console.log(miasto, ' ', inwestycja);
-
-    let cookieIncomingMiasto = miasto;
-
+    
+    console.log(miasto + inwestycja);
+    
     YMCTools({
       target: '.data-target-ymc1',
       terms: miasto + inwestycja,      
     }).apiTermUpdate(); 
+    console.log('after YMC api update');
 
 
 
