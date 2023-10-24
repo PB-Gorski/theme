@@ -817,25 +817,12 @@ window.addEventListener("load", function() {
 
     let cookieIncomingMiasto = miasto;
 
-    
+    YMCTools({
+      target: '.data-target-ymc1',
+      terms: miasto + inwestycja,      
+    }).apiTermUpdate(); 
 
 
-    newArr.forEach(elem => {
-      for(j = 2 ; j < priceValueArrNodeList.length ; j++){
-        if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
-          newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
-        };
-      };
-    });
-
-    let filteredTermsID = [];
-    console.log('filtered new arr html elements: ', newArrHTMLList);
-    
-    newArrHTMLList.forEach(el2 =>{
-      filteredTermsID.push(el2.dataset.termid);
-    });
-
-    console.log(filteredTermsID.join(','));
 
   
     
