@@ -856,7 +856,7 @@ window.addEventListener("load", function() {
 
         console.log('cookie from x: ', x);
 
-        let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
+        let choosenOptionsArr = item.parentNode.previousElementSibling.previousElementSibling.textContent;
 
         console.log('filter type: ',choosenOptionsArr);
         // choosenOptionsArr.forEach(option => {
