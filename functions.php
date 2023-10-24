@@ -536,7 +536,7 @@ function pbgorski_custom_filter_layout2($layout, $terms, $taxonomy, $multiple, $
 {
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout2.php';
 	$filter_id = '1850';
-	$layout_id = '1';
+	$layout_id = '2';
 	$layout  = ''; //Override demo message
 	ob_start();
 
