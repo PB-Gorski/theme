@@ -476,7 +476,7 @@ option:hover {
   margin-right: 0!important;
 }
 #filter-layout3-filter-layout3 > .filter-entry {
-  height: 122px;
+  height: 120px;
   transition: height 0.3s ease-out;
   row-gap: 2px;
 }
