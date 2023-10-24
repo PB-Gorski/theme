@@ -787,7 +787,7 @@ window.addEventListener("load", function() {
 
 
     // cookie data handle
-    document.cookie = "miasto=; inwestycja=; inwestcyja=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "miasto=; inwestycja=; pokoje=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     function deleteAllCookies() {
         const cookies = document.cookie.split(";");
     
@@ -844,7 +844,7 @@ window.addEventListener("load", function() {
   //  frontpage - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('home')){
     console.log('home');
-    document.cookie = "miasto=; inwestycja=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "miasto=; inwestycja=; pokoje=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     function deleteAllCookies() {
         const cookies = document.cookie.split(";");
     
