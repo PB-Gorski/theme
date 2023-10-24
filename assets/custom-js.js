@@ -853,6 +853,8 @@ window.addEventListener("load", function() {
        
 
         let x = document.cookie;
+        document.cookie = "miasto=";
+        document.cookie = "inwestcyja=";
 
         console.log('cookie from x: ', x);
         console.log('filter type: ', filterType);
