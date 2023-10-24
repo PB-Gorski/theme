@@ -659,10 +659,10 @@ window.addEventListener("load", function() {
 
       // let filteredTerms = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
 
-      YMCTools({
-        target: '.data-target-ymc1',
-        terms: filteredPrices.join() + ',' + filteredMetraze.join()          
-      }).apiTermUpdate(); 
+      // YMCTools({
+      //   target: '.data-target-ymc1',
+      //   terms: filteredPrices.join() + ',' + filteredMetraze.join()          
+      // }).apiTermUpdate(); 
     }
     // *******************************************************
     btnSearch.addEventListener('click', () =>{
@@ -813,7 +813,7 @@ window.addEventListener("load", function() {
     function runFromCookies(){
       YMCTools({
         target: '.data-target-ymc1',
-        terms: testArr.join(),      
+        terms: '28,72',      
       }).apiTermUpdate(); 
       console.log('after YMC api update');
     }
