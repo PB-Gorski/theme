@@ -850,8 +850,8 @@ window.addEventListener("load", function() {
         // let stopAdding = false;
 
         optionSpan.innerText = choosenOption;
-        cookieData = "miasto=";
-        cookieData = "inwestcyja=";
+        // cookieData = "miasto=";
+        // cookieData = "inwestcyja=";
 
 
         if(filterType == 'Miasto:'){
