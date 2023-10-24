@@ -761,21 +761,22 @@ window.addEventListener("load", function() {
 
       sortListDir(index);
       
-      for (let i = 1 ; i <= (17) ; i=i+2){
+      // for (let i = 1 ; i <= (17) ; i=i+2){
         if (i == currentFiltr){
-          if( btnsSort[currentFiltr - counter].classList.contains('sort-arrow-up')){
-            btnsSort[currentFiltr - counter].classList.remove('sort-arrow-up');
-            btnsSort[currentFiltr - counter].classList.add('sort-arrow-down');
+          if( btnsSort.classList.contains('sort-arrow-up')){
+            btnsSort.classList.remove('sort-arrow-up');
+            btnsSort.classList.add('sort-arrow-down');
           }else{
-            btnsSort[currentFiltr - counter].classList.add('sort-arrow-up');
-            btnsSort[currentFiltr - counter].classList.remove('sort-arrow-down');
+            btnsSort.classList.add('sort-arrow-up');
+            btnsSort.classList.remove('sort-arrow-down');
           }
         }else if(i != currentFiltr){
           console.log('i rozny od current filtr');
           // btnsSort[i - counter].classList.remove('sort-arrow-up','sort-arrow-down');
         }
         counter++
-      };
+      // };
+
       counter=1;
     });
   });  
