@@ -786,7 +786,7 @@ window.addEventListener("load", function() {
     });    
 
 
-
+    let dataLoaded = false;
     // cookie data handle
     function getCookie(cname) {
       let name = cname + "=";
@@ -820,10 +820,10 @@ window.addEventListener("load", function() {
       console.log('after YMC api update');
     }
 
-    setTimeout(() => {
-      runFromCookies()
+    // setTimeout(() => {
+    //   runFromCookies()
       
-    }, 1000);
+    // }, 1000);
 
     wp.hooks.addAction('ymc_before_loaded_data_FilterID_LayoutID', 'smartfilter', function(){
       // YMCTools({
@@ -849,7 +849,17 @@ window.addEventListener("load", function() {
       //   terms: '28,72'
       // }).apiTermUpdate(); 
       // console.log('after YMC data loaded');
+
+      dataLoaded = true
     });
+
+    if(dataLoaded){
+      YMCTools({
+        target: '.data-target-ymc1',
+        terms: '28,72',      
+      }).apiTermUpdate(); 
+      console.log('after YMC api update');
+    }
 
 
   
