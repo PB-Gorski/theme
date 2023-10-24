@@ -967,7 +967,6 @@ background-color: #e8fbff!important;
   background-color: #ebeef2
 }
 .home .ymc-smart-filter-container {
-  min-height: 130px;
-  background-color: red;
+  min-height: 120px;
 }
 
