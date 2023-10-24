@@ -969,7 +969,7 @@ background-color: #e8fbff!important;
 .home .ymc-smart-filter-container {
   min-height: 120px;
 }
-.home .container-posts .container-post-custom-layout{
+.home #ymc-smart-filter-container-2 > div.container-posts.container-post-custom-layout{
   display: none;
 }
 
