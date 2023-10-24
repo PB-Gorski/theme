@@ -816,6 +816,7 @@ window.addEventListener("load", function() {
     
     console.log(miasto + inwestycja);
     console.log(miasto.toString + inwestycja);
+    console.log(miasto.toString() + inwestycja.toString());
     
     YMCTools({
       target: '.data-target-ymc1',
