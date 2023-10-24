@@ -798,17 +798,15 @@ window.addEventListener("load", function() {
     const btnMore = document.querySelector('.btn-more');
     const searchBar = document.querySelector('.filter-entry');
     
-    if(document.body.classList.contains('post-type-archive-mieszkania')){
-      btnMore.addEventListener('click',()=>{
-        if(window.innerWidth > 480){
-          searchBar.classList.toggle('desktop:h-[240px]');
-          searchBar.classList.toggle('gap-y-[0px]');
-        }else{
-          searchBar.classList.toggle('h-[450px]');
-        };
-        foundedPostOnStart.classList.toggle('top-[280px]')
-      });
-    };
+    btnMore.addEventListener('click',()=>{
+      if(window.innerWidth > 480){
+        searchBar.classList.toggle('desktop:h-[240px]');
+        searchBar.classList.toggle('gap-y-[0px]');
+      }else{
+        searchBar.classList.toggle('h-[450px]');
+      };
+      foundedPostOnStart.classList.toggle('top-[280px]')
+    });
   }
 
   // -------------------------------------------------------------------------------------
