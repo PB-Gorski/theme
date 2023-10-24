@@ -349,7 +349,7 @@ window.addEventListener("load", function() {
   });
 
   // price selects
-  const mainDropDown = document.querySelectorAll('.dropdown__value');
+  const mainDropDown = document.querySelectorAll('.dropdown__value-price');
   const dropDownList = document.querySelectorAll('.dropdown__list');
   const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
   let btnSearch = document.querySelector('.btn-search');
@@ -569,8 +569,8 @@ window.addEventListener("load", function() {
     e.target.parentNode.parentNode.previousElementSibling.appendChild(spanTargetMetraz);
 
     dropDownListMetraz.forEach(el =>{
-      if(el.classList.contains('dropdown__list_active')){
-        el.classList.remove('dropdown__list_active')
+      if(el.classList.contains('dropdown__list_active-metraz')){
+        el.classList.remove('dropdown__list_active-metraz')
       };
     });
   };
