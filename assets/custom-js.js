@@ -822,26 +822,7 @@ window.addEventListener("load", function() {
 
     setTimeout(() => {
       runFromCookies()
-      
     }, 1000);
-
-    wp.hooks.addAction('ymc_before_loaded_data_FilterID_LayoutID', 'smartfilter', function(){
-      // YMCTools({
-      //   target: '.data-target-ymc1',
-      //   terms: '28,72',      
-      // }).apiTermUpdate(); 
-      // console.log('after YMC api update');
-    });
-
-    wp.hooks.addAction('ymc_complete_loaded_data_FilterID_LayoutID', 'smartfilter',function(){
-      // YMCTools({
-      //   target: '.data-target-ymc1',
-      //   terms: '28,72',      
-      // }).apiTermUpdate(); 
-      // console.log('after YMC api update');
-    });
-
-
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
       // YMCTools({
@@ -849,14 +830,7 @@ window.addEventListener("load", function() {
       //   terms: '28,72'
       // }).apiTermUpdate(); 
       // console.log('after YMC data loaded');
-
     });
-    
-
-
-  
-    
-    
   }; //end page lista mieszkan
 
   //  frontpage - filtrowanie i sortowanie listy mieszkan
@@ -878,20 +852,14 @@ window.addEventListener("load", function() {
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
     let passiveOptions = document.querySelectorAll('.menu-passive__item');
-    // let counter2 = 0;
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
         let optionSpan = document.createElement('span');
         let choosenOption = item.childNodes[1].dataset.termid;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
-        // item.parentNode.previousElementSibling.nextElementSibling.childNodes[4].childNodes[1].dataset.termid
         let cookieData = document.cookie
-        // let stopAdding = false;
 
         optionSpan.innerText = choosenOption;
-        // cookieData = "miasto=";
-        // cookieData = "inwestcyja=";
-
 
         if(filterType == 'Miasto:'){
           document.cookie = "miasto=" + choosenOption;
@@ -902,17 +870,6 @@ window.addEventListener("load", function() {
         }
         console.log('filter type: ', filterType);
         console.log('cookie data: ', document.cookie);
-
-
-        // choosenOptionsArr.forEach(option => {
-        //   if(option.innerText == choosenOption){
-        //     console.log('have child span');
-        //     stopAdding = true;
-        //     console.log('choosen option text for cleaning', choosenOption);
-        //     console.log('clear existing span');
-        //     option.remove('span');
-        //   };
-        // });
       });
     });
     
