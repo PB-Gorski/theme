@@ -757,19 +757,19 @@ window.addEventListener("load", function() {
     btn.addEventListener('click', () => {
       indexFrom1 = index + 1;
       let currentFiltr = indexFrom1 + index;
-      currentFiltr = indexFrom1;
+      // currentFiltr = indexFrom1;
       console.log('current filtr: ', currentFiltr);
 
       sortListDir(index);
       
       for (let i = 1 ; i <= (17) ; i=i+2){
         if (i == currentFiltr){
-          if( btnsSort[currentFiltr - counter].classList.contains('sort-arrow-up')){
-            btnsSort[currentFiltr - counter].classList.remove('sort-arrow-up');
-            btnsSort[currentFiltr - counter].classList.add('sort-arrow-down');
+          if( btnsSort[currentFiltr - counter +1].classList.contains('sort-arrow-up')){
+            btnsSort[currentFiltr - counter +1].classList.remove('sort-arrow-up');
+            btnsSort[currentFiltr - counter +1].classList.add('sort-arrow-down');
           }else{
-            btnsSort[currentFiltr - counter].classList.add('sort-arrow-up');
-            btnsSort[currentFiltr - counter].classList.remove('sort-arrow-down');
+            btnsSort[currentFiltr - counter +1].classList.add('sort-arrow-up');
+            btnsSort[currentFiltr - counter +1].classList.remove('sort-arrow-down');
           }
         }else if(i != currentFiltr){
           console.log('i rozny od current filtr');
