@@ -853,7 +853,8 @@ window.addEventListener("load", function() {
       dataLoaded = true;
       console.log('switched');
     });
-
+    
+    console.log(dataLoaded);
     if(dataLoaded){
       YMCTools({
         target: '.data-target-ymc1',
