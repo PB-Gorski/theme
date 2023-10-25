@@ -910,6 +910,20 @@ window.addEventListener("load", function() {
     });
   }; //end page lista mieszkan
 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
   //  frontpage - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('home')){
     console.log('home');
