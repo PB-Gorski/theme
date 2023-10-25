@@ -32,12 +32,13 @@ window.addEventListener("load", function() {
     // setting chosen option in active window
     let passiveOptions = document.querySelectorAll('.menu-passive__item');
     let passiveOptionsCustomFilters = document.querySelectorAll('.dropdown__item');
+    let choosenOptions =[]
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
         let optionSpan = document.createElement('span');
         let choosenOption = item.childNodes[1].dataset.termid;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
-        let choosenOptions =[]
+        
         // optionSpan.innerText = choosenOption;
 
         choosenOptions.push(choosenOption)
