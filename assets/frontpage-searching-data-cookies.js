@@ -40,7 +40,7 @@ window.addEventListener("load", function() {
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
         
         // optionSpan.innerText = choosenOption;
-        
+
         let filteredPriceFromFrontPage = runSearchingFrontPage();
 
         choosenOptions.push(choosenOption)
@@ -70,7 +70,7 @@ window.addEventListener("load", function() {
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
         
         let filteredPriceFromFrontPage = runSearchingFrontPage();
-        document.cookie = "filteredTerms=" + choosenOptions.join() + filteredPriceFromFrontPage;
+        document.cookie = "filteredTerms=" + choosenOptions.join() + ',' + filteredPriceFromFrontPage;
         // optionSpan.innerText = choosenOption;
 
         // if(filterType == 'Cena od:'){
