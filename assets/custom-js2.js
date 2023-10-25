@@ -40,7 +40,7 @@ window.addEventListener("load", function() {
         let choosenOptions =[]
         // optionSpan.innerText = choosenOption;
 
-        choosenOptions.push(choosenOption)
+        choosenOptions.push(choosenOptions)
 
         if(filterType == 'Miasto:'){
           document.cookie = "miasto=" + choosenOptions;
