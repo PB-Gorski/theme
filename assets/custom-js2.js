@@ -188,7 +188,7 @@ window.addEventListener("load", function() {
       return filteredTermsID;
     }; 
 
-    // let filteredPriceFromFrontPage = runSearchingFrontPage();
+    let filteredPriceFromFrontPage = runSearchingFrontPage();
 
     console.log(filteredPriceFromFrontPage);
   };
