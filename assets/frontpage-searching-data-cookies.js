@@ -40,6 +40,8 @@ window.addEventListener("load", function() {
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
         
         // optionSpan.innerText = choosenOption;
+        
+        let filteredPriceFromFrontPage = runSearchingFrontPage();
 
         choosenOptions.push(choosenOption)
         console.log(choosenOptions);
