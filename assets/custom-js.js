@@ -814,6 +814,7 @@ window.addEventListener("load", function() {
       return "";
     };
 
+    let filteredTerms = getCookie("filteredTerms");
     let miasto = getCookie("miasto");
     let inwestycja = getCookie("inwestycja");
     let pokoje = getCookie("pokoje");

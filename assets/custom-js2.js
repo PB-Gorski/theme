@@ -44,17 +44,19 @@ window.addEventListener("load", function() {
         choosenOptions.push(choosenOption)
         console.log(choosenOptions);
 
-        if(filterType == 'Miasto:'){
-          document.cookie = "miasto=" + choosenOptions.join();
-        }else if(filterType == 'Inwestycja:'){
-          document.cookie = "inwestycja=" + choosenOptions.join();
-        }else if(filterType == 'Pokoje:'){
-          document.cookie = "pokoje=" + choosenOptions.join();
-        }else if(filterType == 'Cena od:'){
-          document.cookie = "cenaOd=" + choosenOptions.join();
-        }else if(filterType == 'Cena do:'){
-          document.cookie = "cenaDo=" + choosenOptions.join();
-        }
+        document.cookie = "filteredTerms=" + choosenOptions.join();
+
+        // if(filterType == 'Miasto:'){
+        //   document.cookie = "miasto=" + choosenOptions.join();
+        // }else if(filterType == 'Inwestycja:'){
+        //   document.cookie = "inwestycja=" + choosenOptions.join();
+        // }else if(filterType == 'Pokoje:'){
+        //   document.cookie = "pokoje=" + choosenOptions.join();
+        // }else if(filterType == 'Cena od:'){
+        //   document.cookie = "cenaOd=" + choosenOptions.join();
+        // }else if(filterType == 'Cena do:'){
+        //   document.cookie = "cenaDo=" + choosenOptions.join();
+        // }
         console.log('filter type: ', filterType);
         console.log('cookie data: ', document.cookie);
       });
