@@ -40,7 +40,7 @@ window.addEventListener("load", function() {
         let choosenOptions =[]
         // optionSpan.innerText = choosenOption;
 
-        choosenOptions.push(choosenOptions)
+        choosenOptions.push(choosenOption)
         console.log(choosenOptions.join());
 
         if(filterType == 'Miasto:'){
