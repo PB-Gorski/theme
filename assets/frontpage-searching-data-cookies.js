@@ -31,7 +31,7 @@ window.addEventListener("load", function() {
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
     let passiveOptions = document.querySelectorAll('.menu-passive__item');
-    // let passiveOptionsCustomFilters = document.querySelectorAll('.dropdown__item');
+    let passiveOptionsCustomFilters = document.querySelectorAll('.dropdown__item');
     let choosenOptions =[]
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
@@ -64,16 +64,18 @@ window.addEventListener("load", function() {
     passiveOptionsCustomFilters.forEach(item => {
       item.addEventListener('click', () => {
         let optionSpan = document.createElement('span');
-        let choosenOption = item.childNodes[1].textContent;
+        // let choosenOption = item.childNodes[1].textContent;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
+        
+        let filteredPriceFromFrontPage = runSearchingFrontPage();
+        document.cookie = "filteredTerms=" + choosenOptions.join() + filteredPriceFromFrontPage;
+        // optionSpan.innerText = choosenOption;
 
-        optionSpan.innerText = choosenOption;
-
-        if(filterType == 'Cena od:'){
-          document.cookie = "cenaOd=" + choosenOption;
-        }else if(filterType == 'Cena do:'){
-          document.cookie = "cenaDo=" + choosenOption;
-        }
+        // if(filterType == 'Cena od:'){
+        //   document.cookie = "cenaOd=" + choosenOption;
+        // }else if(filterType == 'Cena do:'){
+        //   document.cookie = "cenaDo=" + choosenOption;
+        // }
         console.log('filter type: ', filterType);
         console.log('cookie data: ', document.cookie);
       });
