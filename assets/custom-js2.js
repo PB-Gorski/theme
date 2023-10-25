@@ -85,7 +85,7 @@ window.addEventListener("load", function() {
     const mainDropDown = document.querySelectorAll('.dropdown__value-price');
     const dropDownList = document.querySelectorAll('.dropdown__list');
     const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
-    let btnSearch = document.querySelector('.btn-search');
+    // let btnSearch = document.querySelector('.btn-search');
     let priceValueArr = [];
     let newArr = [];
     let newArrHTMLList = [];
@@ -102,7 +102,6 @@ window.addEventListener("load", function() {
         }
       });
     });
-
 
     dropDowns.forEach(item => {
       item.addEventListener('click', choise)
@@ -128,7 +127,6 @@ window.addEventListener("load", function() {
       newArr = [];
       newArrHTMLList = [];
 
-      foundedPostOnStart.classList.add('hidden');
       const dropDownFilters = document.querySelectorAll(".dropdown-filter");
       let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
       priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
