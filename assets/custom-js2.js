@@ -37,19 +37,21 @@ window.addEventListener("load", function() {
         let optionSpan = document.createElement('span');
         let choosenOption = item.childNodes[1].dataset.termid;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
+        let choosenOptions =[]
+        // optionSpan.innerText = choosenOption;
 
-        optionSpan.innerText = choosenOption;
+        choosenOptions.push(choosenOption)
 
         if(filterType == 'Miasto:'){
-          document.cookie = "miasto=" + choosenOption;
+          document.cookie = "miasto=" + choosenOptions;
         }else if(filterType == 'Inwestycja:'){
-          document.cookie = "inwestycja=" + choosenOption;
+          document.cookie = "inwestycja=" + choosenOptions;
         }else if(filterType == 'Pokoje:'){
-          document.cookie = "pokoje=" + choosenOption;
+          document.cookie = "pokoje=" + choosenOptions;
         }else if(filterType == 'Cena od:'){
-          document.cookie = "cenaOd=" + choosenOption;
+          document.cookie = "cenaOd=" + choosenOptions;
         }else if(filterType == 'Cena do:'){
-          document.cookie = "cenaDo=" + choosenOption;
+          document.cookie = "cenaDo=" + choosenOptions;
         }
         console.log('filter type: ', filterType);
         console.log('cookie data: ', document.cookie);
