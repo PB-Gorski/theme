@@ -115,6 +115,8 @@ window.addEventListener("load", function() {
       spanTarget.innerText = target;
       e.target.parentNode.parentNode.previousElementSibling.appendChild(spanTarget);
 
+      let filteredPriceFromFrontPage = runSearchingFrontPage();
+
       dropDownList.forEach(el =>{
         if(el.classList.contains('dropdown__list_active')){
           el.classList.remove('dropdown__list_active')
@@ -186,14 +188,9 @@ window.addEventListener("load", function() {
       return filteredTermsID;
     }; 
 
-    let filteredPriceFromFrontPage = runSearchingFrontPage();
+    // let filteredPriceFromFrontPage = runSearchingFrontPage();
 
     console.log(filteredPriceFromFrontPage);
-    
-    
-    
-
-
   };
 
 
