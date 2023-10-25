@@ -192,7 +192,7 @@ window.addEventListener("load", function() {
 
     
 
-    console.log(filteredPriceFromFrontPage);
+    // console.log(filteredPriceFromFrontPage);
   };
 
 
