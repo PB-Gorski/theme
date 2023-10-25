@@ -41,6 +41,7 @@ window.addEventListener("load", function() {
         // optionSpan.innerText = choosenOption;
 
         choosenOptions.push(choosenOptions)
+        console.log(...choosenOptions);
 
         if(filterType == 'Miasto:'){
           document.cookie = "miasto=" + choosenOptions;
