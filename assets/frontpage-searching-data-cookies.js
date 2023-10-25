@@ -61,23 +61,23 @@ window.addEventListener("load", function() {
         console.log('cookie data: ', document.cookie);
       });
     });
-    // passiveOptionsCustomFilters.forEach(item => {
-    //   item.addEventListener('click', () => {
-    //     let optionSpan = document.createElement('span');
-    //     let choosenOption = item.childNodes[1].textContent;
-    //     let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
+    passiveOptionsCustomFilters.forEach(item => {
+      item.addEventListener('click', () => {
+        let optionSpan = document.createElement('span');
+        let choosenOption = item.childNodes[1].textContent;
+        let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
 
-    //     optionSpan.innerText = choosenOption;
+        optionSpan.innerText = choosenOption;
 
-    //     if(filterType == 'Cena od:'){
-    //       document.cookie = "cenaOd=" + choosenOption;
-    //     }else if(filterType == 'Cena do:'){
-    //       document.cookie = "cenaDo=" + choosenOption;
-    //     }
-    //     console.log('filter type: ', filterType);
-    //     console.log('cookie data: ', document.cookie);
-    //   });
-    // });
+        if(filterType == 'Cena od:'){
+          document.cookie = "cenaOd=" + choosenOption;
+        }else if(filterType == 'Cena do:'){
+          document.cookie = "cenaDo=" + choosenOption;
+        }
+        console.log('filter type: ', filterType);
+        console.log('cookie data: ', document.cookie);
+      });
+    });
 
 
     // frontpage custom dropdowns handle
@@ -188,7 +188,7 @@ window.addEventListener("load", function() {
       return filteredTermsID;
     }; 
 
-    let filteredPriceFromFrontPage = runSearchingFrontPage();
+    
 
     console.log(filteredPriceFromFrontPage);
   };
