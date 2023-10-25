@@ -41,18 +41,18 @@ window.addEventListener("load", function() {
         // optionSpan.innerText = choosenOption;
 
         choosenOptions.push(choosenOptions)
-        console.log(...choosenOptions);
+        console.log(choosenOptions.join());
 
         if(filterType == 'Miasto:'){
-          document.cookie = "miasto=" + choosenOptions;
+          document.cookie = "miasto=" + choosenOptions.join();
         }else if(filterType == 'Inwestycja:'){
-          document.cookie = "inwestycja=" + choosenOptions;
+          document.cookie = "inwestycja=" + choosenOptions.join();
         }else if(filterType == 'Pokoje:'){
-          document.cookie = "pokoje=" + choosenOptions;
+          document.cookie = "pokoje=" + choosenOptions.join();
         }else if(filterType == 'Cena od:'){
-          document.cookie = "cenaOd=" + choosenOptions;
+          document.cookie = "cenaOd=" + choosenOptions.join();
         }else if(filterType == 'Cena do:'){
-          document.cookie = "cenaDo=" + choosenOptions;
+          document.cookie = "cenaDo=" + choosenOptions.join();
         }
         console.log('filter type: ', filterType);
         console.log('cookie data: ', document.cookie);
