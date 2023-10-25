@@ -821,6 +821,8 @@ window.addEventListener("load", function() {
     let cenaOd = parseInt(getCookie("cenaOd").split(' ').join(''));
     let cenaDo = parseInt(getCookie("cenaDo").split(' ').join(''));
 
+
+
     priceMinValue = cenaOd;
     priceMaxValue = cenaDo;
     function runSearching(){
@@ -894,11 +896,13 @@ window.addEventListener("load", function() {
     
     console.log(filteredTermsFromCookies);
     console.log(miasto + ',' + inwestycja);
+    console.log('filteredTerms from frontpage',filteredTerms);
 
+  
     function runFromCookies(){
       YMCTools({
         target: '.data-target-ymc1',
-        terms: filteredCustomPriceFromCookies.join(),      
+        terms: filteredTerms.join(),      
       }).apiTermUpdate(); 
       console.log('after YMC api update');
     }
