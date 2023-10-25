@@ -896,13 +896,13 @@ window.addEventListener("load", function() {
     
     console.log(filteredTermsFromCookies);
     console.log(miasto + ',' + inwestycja);
-    console.log('filteredTerms from frontpage',filteredTerms);
+    console.log('filteredTerms from frontpage: ',filteredTerms);
 
   
     function runFromCookies(){
       YMCTools({
         target: '.data-target-ymc1',
-        terms: filteredTerms.join(),      
+        terms: filteredTerms,      
       }).apiTermUpdate(); 
       console.log('after YMC api update');
     }
