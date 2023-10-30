@@ -42,7 +42,7 @@ window.addEventListener("load", function() {
         
         // optionSpan.innerText = choosenOption;
 
-        let filteredPriceFromFrontPage = runSearchingFrontPage();
+        let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
 
         choosenOptions.push(choosenOption)
         console.log(choosenOptions);
@@ -313,8 +313,10 @@ window.addEventListener("load", function() {
       //   target: '.data-target-ymc1',
       //   terms: filteredTermsID.join(),            
       // }).apiTermUpdate(); 
-      return filteredTermsID;
+      return filteredTermsIDMetraz;
     }; 
+
+    console.log(runSearchingMetrazFrontPage());
 
 
 
