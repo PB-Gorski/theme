@@ -318,22 +318,6 @@ window.addEventListener("load", function() {
       return filteredTermsIDMetraz;
     };
 
-    function filteredTermsMerge(){
-      console.log('filteredTermsMerge');
-      let filteredPrices = runSearching();
-      let filteredMetraze = runSearchingMetraz();
-      console.log('prices: ',filteredPrices);
-      console.log('metraze: ',filteredMetraze);
-      console.log('all merged', filteredPrices.join() + ',' + filteredMetraze.join());
-
-      // let filteredTerms = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
-
-      YMCTools({
-        target: '.data-target-ymc1',
-        terms: filteredPrices.join() + ',' + filteredMetraze.join()          
-      }).apiTermUpdate(); 
-    }
-
 
     // -------------------------------------------------------------------------------------
 
