@@ -267,13 +267,7 @@ window.addEventListener("load", function() {
     };
 
     let counterMetraz = 0;
-    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-      if (counterMetraz == 2){
-        console.log('posts loaded2');
-        foundedPostOnStart.classList.add('hidden');
-      };
-      counterMetraz++;
-    });
+
 
 
     // -------------------------------------------------------------------------------------
