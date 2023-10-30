@@ -71,7 +71,7 @@ window.addEventListener("load", function() {
         // let choosenOption = item.childNodes[1].textContent;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
         
-        let filteredPriceFromFrontPage = runSearchingFrontPage();
+        let filteredPriceFromFrontPage = runSearchingFrontPage() + runSearchingMetrazFrontPage();
         document.cookie = "filteredTerms=" + choosenOptions.join() + ',' + filteredPriceFromFrontPage;
         // optionSpan.innerText = choosenOption;
 
@@ -316,7 +316,7 @@ window.addEventListener("load", function() {
       return filteredTermsIDMetraz;
     }; 
 
-    console.log(runSearchingMetrazFrontPage());
+    console.log('run searching metraz',runSearchingMetrazFrontPage());
 
 
 
