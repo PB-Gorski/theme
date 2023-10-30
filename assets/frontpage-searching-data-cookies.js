@@ -36,11 +36,8 @@ window.addEventListener("load", function() {
 
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
-        // let optionSpan = document.createElement('span');
         let choosenOption = item.childNodes[1].dataset.termid;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
-        
-        // optionSpan.innerText = choosenOption;
 
         let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
 
@@ -67,19 +64,11 @@ window.addEventListener("load", function() {
 
     passiveOptionsCustomFilters.forEach(item => {
       item.addEventListener('click', () => {
-        // let optionSpan = document.createElement('span');
-        // let choosenOption = item.childNodes[1].textContent;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
         
         let filteredPriceFromFrontPage = runSearchingFrontPage() + runSearchingMetrazFrontPage();
         document.cookie = "filteredTerms=" + choosenOptions.join() + ',' + filteredPriceFromFrontPage;
-        // optionSpan.innerText = choosenOption;
 
-        // if(filterType == 'Cena od:'){
-        //   document.cookie = "cenaOd=" + choosenOption;
-        // }else if(filterType == 'Cena do:'){
-        //   document.cookie = "cenaDo=" + choosenOption;
-        // }
         console.log('filter type: ', filterType);
         console.log('cookie data: ', document.cookie);
       });
@@ -91,7 +80,6 @@ window.addEventListener("load", function() {
     const mainDropDown = document.querySelectorAll('.dropdown__value-price');
     const dropDownList = document.querySelectorAll('.dropdown__list');
     const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
-    // let btnSearch = document.querySelector('.btn-search');
     let priceValueArr = [];
     let newArr = [];
     let newArrHTMLList = [];
@@ -121,7 +109,7 @@ window.addEventListener("load", function() {
       spanTarget.innerText = target;
       e.target.parentNode.parentNode.previousElementSibling.appendChild(spanTarget);
 
-      let filteredPriceFromFrontPage = runSearchingFrontPage();
+      // let filteredPriceFromFrontPage = runSearchingFrontPage();
 
       dropDownList.forEach(el =>{
         if(el.classList.contains('dropdown__list_active')){
@@ -187,22 +175,12 @@ window.addEventListener("load", function() {
       newArrHTMLList = [];
       priceValueArrNodeList = [];
 
-      // YMCTools({
-      //   target: '.data-target-ymc1',
-      //   terms: filteredTermsID.join(),            
-      // }).apiTermUpdate(); 
       return filteredTermsID;
     }; 
-
-    
-
     // console.log(filteredPriceFromFrontPage);
   };
 
-
   // -------------------------------------------------------------------------------------
-
-
 
     // metraz
     // deleteAllCookies();
@@ -250,40 +228,38 @@ window.addEventListener("load", function() {
       });
     };
 
-    let counterMetraz = 0;
-
     function runSearchingMetrazFrontPage(){
-      priceValueArr = [];
+      metrazValueArr = [];
       newArr = [];
       newArrHTMLList = [];
 
       const dropDownFilters = document.querySelectorAll(".dropdown-filter");
-      let priceValueArrNodeList = dropDownFilters[8].childNodes[1].childNodes;
-      priceMinValue = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
-      priceMaxValue = document.querySelector('.dropdown__value-max-metraz').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
+      let metrazValueArrNodeList = dropDownFilters[8].childNodes[1].childNodes;
+      metrazMinValue = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
+      metrazMaxValue = document.querySelector('.dropdown__value-max-metraz').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
       
-      console.log('no spaces', priceMinValue,priceMaxValue);
+      console.log('no spaces', metrazMinValue,metrazMaxValue);
 
-      for (i = 1 ; i < priceValueArrNodeList.length ; i++){
-        priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
-        priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
+      for (i = 1 ; i < metrazValueArrNodeList.length ; i++){
+        metrazValueArr.push(parseInt(metrazValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+        metrazValueArrNodeList[i].childNodes[1].dataset.name = parseInt(metrazValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
       }
     
-      priceValueArr.forEach(priceValue => {
-        priceMaxValue.isNaN ? priceMaxValue = 10000000 : priceMaxValue = priceMaxValue;
-        console.log('price max value ',priceMaxValue);
-        if (priceValue < priceMaxValue && priceValue > priceMinValue){
+      metrazValueArr.forEach(priceValue => {
+        metrazMaxValue.isNaN ? metrazMaxValue = 10000000 : metrazMaxValue = metrazMaxValue;
+        console.log('price max value ',metrazMaxValue);
+        if (priceValue < metrazMaxValue && priceValue > metrazMinValue){
           newArr.push(priceValue);
         };
       });
-      console.log('prices from range: ', priceValueArr);
+      console.log('prices from range: ', metrazValueArr);
       
       // console.log('new price arr: ',newArr);
 
       newArr.forEach(elem => {
-        for(j = 2 ; j < priceValueArrNodeList.length ; j++){
-          if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
-            newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+        for(j = 2 ; j < metrazValueArrNodeList.length ; j++){
+          if (parseInt(metrazValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+            newArrHTMLList.push(metrazValueArrNodeList[j].childNodes[1]);
           };
         };
       });
@@ -297,17 +273,17 @@ window.addEventListener("load", function() {
 
       console.log(filteredTermsIDMetraz.join(','));
 
-      for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-        if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
-          priceValueArrNodeList[i].childNodes[1].classList.remove('active');
-          // console.log(priceValueArrNodeList[i].childNodes[1]);
+      for (i = 2 ; i < metrazValueArrNodeList.length ; i++){
+        if(metrazValueArrNodeList[i].childNodes[1].classList.contains('active')){
+          metrazValueArrNodeList[i].childNodes[1].classList.remove('active');
+          // console.log(metrazValueArrNodeList[i].childNodes[1]);
         }
       }
 
-      priceValueArr = [];
+      metrazValueArr = [];
       newArr = [];
       newArrHTMLList = [];
-      priceValueArrNodeList = [];
+      metrazValueArrNodeList = [];
 
       // YMCTools({
       //   target: '.data-target-ymc1',
@@ -317,8 +293,6 @@ window.addEventListener("load", function() {
     }; 
 
     console.log('run searching metraz',runSearchingMetrazFrontPage());
-
-
 
     // -------------------------------------------------------------------------------------
 
