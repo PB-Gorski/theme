@@ -119,6 +119,8 @@ window.addEventListener("load", function() {
       let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
       priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
       priceMaxValue = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
+
+      console.log('price min max',priceMinValue, priceMaxValue);
       
       // console.log('no spaces', priceMinValue,priceMaxValue);
 
