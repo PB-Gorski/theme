@@ -208,8 +208,6 @@ window.addEventListener("load", function() {
     // deleteAllCookies();
 
     let passiveOptionsCustomFiltersMetraz = document.querySelectorAll('.dropdown__item');
-    let choosenOptionsMetraz =[]
-
     
     passiveOptionsCustomFiltersMetraz.forEach(item => {
       item.addEventListener('click', () => {
@@ -218,14 +216,9 @@ window.addEventListener("load", function() {
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
         
         let filteredPriceFromFrontPage = runSearchingFrontPage();
-        document.cookie = "filteredTerms=" + choosenOptionsMetraz.join() + ',' + filteredPriceFromFrontPage;
-        // optionSpan.innerText = choosenOption;
+        document.cookie = "filteredTermsMetraz=" + choosenOptionsMetraz.join();
+        // document.cookie = "filteredTerms=" + choosenOptionsMetraz.join() + ',' + filteredPriceFromFrontPage;
 
-        // if(filterType == 'Cena od:'){
-        //   document.cookie = "cenaOd=" + choosenOption;
-        // }else if(filterType == 'Cena do:'){
-        //   document.cookie = "cenaDo=" + choosenOption;
-        // }
         console.log('filter type: ', filterType);
         console.log('cookie data: ', document.cookie);
       });
