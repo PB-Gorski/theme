@@ -260,7 +260,7 @@ window.addEventListener("load", function() {
       const dropDownFilters = document.querySelectorAll(".dropdown-filter");
       let priceValueArrNodeList = dropDownFilters[8].childNodes[1].childNodes;
       priceMinValue = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
-      priceMaxValue = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
+      priceMaxValue = document.querySelector('.dropdown__value-max-metraz').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
       
       console.log('no spaces', priceMinValue,priceMaxValue);
 
