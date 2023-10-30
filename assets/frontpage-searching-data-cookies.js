@@ -206,7 +206,7 @@ window.addEventListener("load", function() {
 
     //  metraz
     // deleteAllCookies();
-
+    let choosenOptionsMetraz =[]
     let passiveOptionsCustomFiltersMetraz = document.querySelectorAll('.dropdown__item');
     
     passiveOptionsCustomFiltersMetraz.forEach(item => {
