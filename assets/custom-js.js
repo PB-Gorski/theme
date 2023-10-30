@@ -919,7 +919,7 @@ window.addEventListener("load", function() {
   }; //end page lista mieszkan
 
   
-  console.log(filteredTerms);
+  console.log('filteredTerms check',filteredTerms);
 
 
 
