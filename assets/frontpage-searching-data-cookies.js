@@ -202,7 +202,147 @@ window.addEventListener("load", function() {
 
 
 
+      //  metraz
+      deleteAllCookies();
+  
+      // metraz selects
+    const mainDropDownMetraz = document.querySelectorAll('.dropdown__value-metraz');
+    const dropDownListMetraz = document.querySelectorAll('.dropdown__list-metraz');
+    const dropDownsMetraz = Array.from(document.querySelectorAll('.dropdown__link-metraz'));
+    let metrazValueArr = [];
+    let newArrMetraz = [];
+    let newArrHTMLListMetraz = [];
+    let targetMetraz;
 
+    mainDropDownMetraz.forEach(dropDownEl =>{
+      dropDownEl.addEventListener('click', (e) =>{
+        if(e.target.nextElementSibling){
+          console.log(e.target);
+          console.log('dropdown span');
+          e.target.nextElementSibling.classList.toggle('dropdown__list_active-metraz');
+        }
+        else if(e.target.parentNode.nextElementSibling){
+          console.log('dropdown span container');
+          e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active-metraz');
+        }
+      });
+    });
+
+    dropDownsMetraz.forEach(item => {
+      item.addEventListener('click', choiseMetraz)
+    });
+
+    function choiseMetraz(e){
+      e.preventDefault();
+      targetMetraz = e.target.textContent;
+      e.target.parentNode.parentNode.previousElementSibling.textContent = '';
+      let spanTargetMetraz = document.createElement("span");
+      spanTargetMetraz.innerText = targetMetraz;
+      e.target.parentNode.parentNode.previousElementSibling.appendChild(spanTargetMetraz);
+
+      dropDownListMetraz.forEach(el =>{
+        if(el.classList.contains('dropdown__list_active-metraz')){
+          el.classList.remove('dropdown__list_active-metraz')
+        };
+      });
+    };
+
+    let counterMetraz = 0;
+    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
+      if (counterMetraz == 2){
+        console.log('posts loaded2');
+        foundedPostOnStart.classList.add('hidden');
+      };
+      counterMetraz++;
+    });
+
+    // const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
+
+    function runSearchingMetraz(){
+      console.log('run');
+      metrazValueArr = [];
+      newArrMetraz = [];
+      newArrHTMLListMetraz = [];
+      const dropDownFiltersMetraz = document.querySelectorAll(".dropdown-filter");
+      foundedPostOnStart.classList.add('hidden');
+      let metrazValueArrNodeList = dropDownFiltersMetraz[8].childNodes[1].childNodes;
+      metrazMinValue = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
+      metrazMaxValue = document.querySelector('.dropdown__value-max-metraz').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
+      
+      console.log('no spaces', metrazMinValue,metrazMaxValue);
+
+      for (i = 1 ; i < metrazValueArrNodeList.length ; i++){
+        metrazValueArr.push(parseInt(metrazValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+        metrazValueArrNodeList[i].childNodes[1].dataset.name = parseInt(metrazValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
+      }
+    
+      metrazValueArr.forEach(metrazValue => {
+        metrazMaxValue.isNaN ? metrazMaxValue = 10000000 : metrazMaxValue = metrazMaxValue;
+        console.log('metraz max value ',metrazMaxValue);
+        if (metrazValue < metrazMaxValue && metrazValue > metrazMinValue){
+          newArrMetraz.push(metrazValue);
+        };
+      });
+      console.log('metraz from range: ', metrazValueArr);
+      
+      // console.log('new metraz arr: ',newArr);
+
+      newArrMetraz.forEach(elem => {
+        for(j = 2 ; j < metrazValueArrNodeList.length ; j++){
+          if (parseInt(metrazValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+            newArrHTMLListMetraz.push(metrazValueArrNodeList[j].childNodes[1]);
+          };
+        };
+      });
+
+      let filteredTermsIDMetraz = [];
+      console.log('filtered new arr html elements: ', newArrHTMLListMetraz);
+      newArrHTMLListMetraz.forEach(el2 =>{
+        filteredTermsIDMetraz.push(el2.dataset.termid);
+      });
+
+      console.log(filteredTermsIDMetraz.join(','));
+
+      for (i = 2 ; i < metrazValueArrNodeList.length ; i++){
+        if(metrazValueArrNodeList[i].childNodes[1].classList.contains('active')){
+          metrazValueArrNodeList[i].childNodes[1].classList.remove('active');
+          // console.log(metrazValueArrNodeList[i].childNodes[1]);
+        }
+      }
+
+      metrazValueArr = [];
+      newArrMetraz = [];
+      newArrHTMLListMetraz = [];
+      metrazValueArrNodeList = [];
+
+      return filteredTermsIDMetraz;
+    };
+
+    function filteredTermsMerge(){
+      console.log('filteredTermsMerge');
+      let filteredPrices = runSearching();
+      let filteredMetraze = runSearchingMetraz();
+      console.log('prices: ',filteredPrices);
+      console.log('metraze: ',filteredMetraze);
+      console.log('all merged', filteredPrices.join() + ',' + filteredMetraze.join());
+
+      // let filteredTerms = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
+
+      YMCTools({
+        target: '.data-target-ymc1',
+        terms: filteredPrices.join() + ',' + filteredMetraze.join()          
+      }).apiTermUpdate(); 
+    }
+    // *******************************************************
+    btnSearch.addEventListener('click', () =>{
+      console.log('btn search start');
+      runSearching();
+      console.log('runsearching done');
+      runSearchingMetraz();
+      console.log('runsearchingMetraz done');
+      filteredTermsMerge();
+      console.log('merged done');
+    } );
 
 
 
