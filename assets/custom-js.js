@@ -414,7 +414,7 @@ window.addEventListener("load", function() {
       priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
       priceMaxValue = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
       
-      console.log('no spaces', priceMinValue,priceMaxValue);
+      // console.log('no spaces', priceMinValue,priceMaxValue);
 
       for (i = 1 ; i < priceValueArrNodeList.length ; i++){
         priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
@@ -837,7 +837,7 @@ window.addEventListener("load", function() {
       // priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
       priceMaxValue = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : cenaDo;
       
-      console.log('no spaces', priceMinValue,priceMaxValue);
+      // console.log('no spaces', priceMinValue,priceMaxValue);
 
       for (i = 1 ; i < priceValueArrNodeList.length ; i++){
         priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
