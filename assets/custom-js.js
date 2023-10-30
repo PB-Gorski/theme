@@ -900,7 +900,7 @@ window.addEventListener("load", function() {
     console.log('filteredTerms from frontpage: ',filteredTerms);
 
   
-    if(filteredTerms != null){
+    // if(filteredTerms != null){
       function runFromCookies(){
         YMCTools({
           target: '.data-target-ymc1',
@@ -912,14 +912,14 @@ window.addEventListener("load", function() {
       setTimeout(() => {
         runFromCookies()
       }, 1000);
-    };
+    // };
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
     });
   }; //end page lista mieszkan
 
   
-  console.log('filteredTerms check',filteredTerms);
+  console.log('filteredTerms check: ',filteredTerms);
 
 
 
