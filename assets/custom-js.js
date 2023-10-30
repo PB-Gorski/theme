@@ -550,7 +550,8 @@ window.addEventListener("load", function() {
         if(e.target.nextElementSibling){
           console.log(e.target);
           console.log('dropdown span');
-          e.target.nextElementSibling.classList.toggle('dropdown__list_active-metraz');
+          // e.target.nextElementSibling.classList.toggle('dropdown__list_active-metraz');
+          e.target.classList.toggle('dropdown__list_active-metraz');
         }
         // else if(e.target.parentNode.nextElementSibling){
         //   console.log('dropdown span container');
