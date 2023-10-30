@@ -366,7 +366,7 @@ window.addEventListener("load", function() {
       console.log('metraze: ',filteredMetraze);
       console.log('all merged', filteredPrices.join() + ',' + filteredMetraze.join());
 
-      // let filteredTerms = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
+      // let filteredTermsFromCookies = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
 
       YMCTools({
         target: '.data-target-ymc1',
@@ -523,7 +523,7 @@ window.addEventListener("load", function() {
       return "";
     };
 
-    let filteredTerms = getCookie("filteredTerms");
+    let filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
     let miasto = getCookie("miasto");
     let inwestycja = getCookie("inwestycja");
     let pokoje = getCookie("pokoje");
@@ -578,7 +578,7 @@ window.addEventListener("load", function() {
         filteredTermsID.push(el2.dataset.termid);
       });
 
-      console.log(filteredTermsID.join(','));
+      console.log('new filtered id', filteredTermsID.join(','));
 
       for (i = 2 ; i < priceValueArrNodeList.length ; i++){
         if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
@@ -592,10 +592,10 @@ window.addEventListener("load", function() {
       newArrHTMLList = [];
       priceValueArrNodeList = [];
 
-      // YMCTools({
-      //   target: '.data-target-ymc1',
-      //   terms: filteredTermsID.join(),            
-      // }).apiTermUpdate(); 
+      YMCTools({
+        target: '.data-target-ymc1',
+        terms: filteredTermsID.join(),            
+      }).apiTermUpdate(); 
       return filteredTermsID;
     };
     let filteredCustomPriceFromCookies = runSearching();
@@ -605,19 +605,19 @@ window.addEventListener("load", function() {
     
     console.log(filteredTermsFromCookies);
     console.log(miasto + ',' + inwestycja);
-    console.log('filteredTerms from frontpage: ',filteredTerms);
+    console.log('filteredTermsFromCookies from frontpage: ',filteredTermsFromCookies);
 
   
     
     function runFromCookies(){
       YMCTools({
         target: '.data-target-ymc1',
-        terms: filteredTerms,      
+        terms: filteredTermsFromCookies,      
       }).apiTermUpdate(); 
       console.log('after YMC api update');
     };
 
-    if(filteredTerms != null){
+    if(filteredTermsFromCookies != null){
       setTimeout(() => {
         runFromCookies()
       }, 1000);
