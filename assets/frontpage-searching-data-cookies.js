@@ -204,12 +204,12 @@ window.addEventListener("load", function() {
 
 
 
-    //  metraz
+    // metraz
     // deleteAllCookies();
     let choosenOptionsMetraz =[]
     let passiveOptionsCustomFiltersMetraz = document.querySelectorAll('.dropdown__item');
     
-    passiveOptionsCustomFiltersMetraz.forEach(item => {
+    _passiveOptionsCustomFiltersMetraz.forEach(item => {
       item.addEventListener('click', () => {
         let optionSpan = document.createElement('span');
         // let choosenOption = item.childNodes[1].textContent;
