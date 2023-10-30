@@ -41,6 +41,12 @@ window.addEventListener("load", function() {
 
         let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
 
+        if(choosenOptions.includes(choosenOption)){
+          console.log('include');
+        }else{
+          console.log('not include');
+        };
+
         choosenOptions.push(choosenOption)
         console.log(choosenOptions);
 

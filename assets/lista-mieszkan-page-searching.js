@@ -598,6 +598,9 @@ window.addEventListener("load", function() {
       }).apiTermUpdate(); 
       return filteredTermsID;
     };
+
+
+    
     let filteredCustomPriceFromCookies = runSearching();
     console.log(filteredCustomPriceFromCookies.join());
 
@@ -611,7 +614,7 @@ window.addEventListener("load", function() {
     
     // function runFromCookies(){
     //   YMCTools({
-    //     target: '.data-target-ymc1',
+    //     target: '.data-target-ymc1', 
     //     terms: filteredTermsFromCookies,      
     //   }).apiTermUpdate(); 
     //   console.log('after YMC api update');
