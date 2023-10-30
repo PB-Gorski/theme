@@ -191,7 +191,7 @@ window.addEventListener("load", function() {
       //   target: '.data-target-ymc1',
       //   terms: filteredTermsID.join(),            
       // }).apiTermUpdate(); 
-      // return filteredTermsID;
+      return filteredTermsID;
     }; 
 
     
@@ -210,32 +210,6 @@ window.addEventListener("load", function() {
     let passiveOptionsCustomFiltersMetraz = document.querySelectorAll('.dropdown__item');
     let choosenOptionsMetraz =[]
 
-    passiveOptions.forEach(item => {
-      item.addEventListener('click', () => {
-        let choosenOption = item.childNodes[1].dataset.termid;
-        let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
-        let filteredPriceFromFrontPage = runSearchingFrontPage();
-
-        choosenOptionsMetraz.push(choosenOption)
-        console.log(choosenOptionsMetraz);
-
-        document.cookie = "filteredTermsMetraz=" + choosenOptionsMetraz.join() + filteredPriceFromFrontPage;
-
-        // if(filterType == 'Miasto:'){
-        //   document.cookie = "miasto=" + choosenOptionsMetraz.join();
-        // }else if(filterType == 'Inwestycja:'){
-        //   document.cookie = "inwestycja=" + choosenOptionsMetraz.join();
-        // }else if(filterType == 'Pokoje:'){
-        //   document.cookie = "pokoje=" + choosenOptionsMetraz.join();
-        // }else if(filterType == 'Cena od:'){
-        //   document.cookie = "cenaOd=" + choosenOptionsMetraz.join();
-        // }else if(filterType == 'Cena do:'){
-        //   document.cookie = "cenaDo=" + choosenOptionsMetraz.join();
-        // }
-        console.log('filter type: ', filterType);
-        console.log('cookie data: ', document.cookie);
-      });
-    });
     
     passiveOptionsCustomFiltersMetraz.forEach(item => {
       item.addEventListener('click', () => {
