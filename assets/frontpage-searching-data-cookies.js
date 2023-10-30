@@ -288,14 +288,14 @@ window.addEventListener("load", function() {
         };
       });
 
-      let filteredTermsID = [];
+      let filteredTermsIDMetraz = [];
       console.log('filtered new arr html elements: ', newArrHTMLList);
 
       newArrHTMLList.forEach(el2 =>{
-        filteredTermsID.push(el2.dataset.termid);
+        filteredTermsIDMetraz.push(el2.dataset.termid);
       });
 
-      console.log(filteredTermsID.join(','));
+      console.log(filteredTermsIDMetraz.join(','));
 
       for (i = 2 ; i < priceValueArrNodeList.length ; i++){
         if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
