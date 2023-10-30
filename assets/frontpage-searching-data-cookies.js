@@ -36,7 +36,7 @@ window.addEventListener("load", function() {
 
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
-        let optionSpan = document.createElement('span');
+        // let optionSpan = document.createElement('span');
         let choosenOption = item.childNodes[1].dataset.termid;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
         
@@ -67,7 +67,7 @@ window.addEventListener("load", function() {
 
     passiveOptionsCustomFilters.forEach(item => {
       item.addEventListener('click', () => {
-        let optionSpan = document.createElement('span');
+        // let optionSpan = document.createElement('span');
         // let choosenOption = item.childNodes[1].textContent;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
         
@@ -207,22 +207,6 @@ window.addEventListener("load", function() {
     // metraz
     // deleteAllCookies();
     let choosenOptionsMetraz =[]
-    let passiveOptionsCustomFiltersMetraz = document.querySelectorAll('.dropdown__item');
-    
-    _passiveOptionsCustomFiltersMetraz.forEach(item => {
-      item.addEventListener('click', () => {
-        let optionSpan = document.createElement('span');
-        // let choosenOption = item.childNodes[1].textContent;
-        let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
-        
-        let filteredPriceFromFrontPage = runSearchingFrontPage();
-        document.cookie = "filteredTermsMetraz=" + choosenOptionsMetraz.join();
-        // document.cookie = "filteredTerms=" + choosenOptionsMetraz.join() + ',' + filteredPriceFromFrontPage;
-
-        console.log('filter type: ', filterType);
-        console.log('cookie data: ', document.cookie);
-      });
-    });
 
     // metraz selects
     const mainDropDownMetraz = document.querySelectorAll('.dropdown__value-metraz');
@@ -267,6 +251,70 @@ window.addEventListener("load", function() {
     };
 
     let counterMetraz = 0;
+
+    function runSearchingMetrazFrontPage(){
+      priceValueArr = [];
+      newArr = [];
+      newArrHTMLList = [];
+
+      const dropDownFilters = document.querySelectorAll(".dropdown-filter");
+      let priceValueArrNodeList = dropDownFilters[8].childNodes[1].childNodes;
+      priceMinValue = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
+      priceMaxValue = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
+      
+      console.log('no spaces', priceMinValue,priceMaxValue);
+
+      for (i = 1 ; i < priceValueArrNodeList.length ; i++){
+        priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
+        priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
+      }
+    
+      priceValueArr.forEach(priceValue => {
+        priceMaxValue.isNaN ? priceMaxValue = 10000000 : priceMaxValue = priceMaxValue;
+        console.log('price max value ',priceMaxValue);
+        if (priceValue < priceMaxValue && priceValue > priceMinValue){
+          newArr.push(priceValue);
+        };
+      });
+      console.log('prices from range: ', priceValueArr);
+      
+      // console.log('new price arr: ',newArr);
+
+      newArr.forEach(elem => {
+        for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+          if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
+            newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+          };
+        };
+      });
+
+      let filteredTermsID = [];
+      console.log('filtered new arr html elements: ', newArrHTMLList);
+
+      newArrHTMLList.forEach(el2 =>{
+        filteredTermsID.push(el2.dataset.termid);
+      });
+
+      console.log(filteredTermsID.join(','));
+
+      for (i = 2 ; i < priceValueArrNodeList.length ; i++){
+        if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
+          priceValueArrNodeList[i].childNodes[1].classList.remove('active');
+          // console.log(priceValueArrNodeList[i].childNodes[1]);
+        }
+      }
+
+      priceValueArr = [];
+      newArr = [];
+      newArrHTMLList = [];
+      priceValueArrNodeList = [];
+
+      // YMCTools({
+      //   target: '.data-target-ymc1',
+      //   terms: filteredTermsID.join(),            
+      // }).apiTermUpdate(); 
+      return filteredTermsID;
+    }; 
 
 
 
