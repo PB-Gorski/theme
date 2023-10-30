@@ -40,15 +40,28 @@ window.addEventListener("load", function() {
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
 
         let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
+        function removeItemAll(arr, value) {
+          let i = 0;
+          while (i < arr.length) {
+            if (arr[i] === value) {
+              arr.splice(i, 1);
+            } else {
+              ++i;
+            }
+          }
+          return arr;
+        };
 
         if(choosenOptions.includes(choosenOption)){
           console.log('include');
+          removeItemAll(choosenOptions,choosenOption)
         }else{
           console.log('not include');
+          choosenOptions.push(choosenOption)
         };
 
-        choosenOptions.push(choosenOption)
-        console.log(choosenOptions);
+        // choosenOptions.push(choosenOption)
+        console.log('new arr after check: ', choosenOptions);
 
         document.cookie = "filteredTerms=" + choosenOptions.join() + filteredPriceFromFrontPage;
 
