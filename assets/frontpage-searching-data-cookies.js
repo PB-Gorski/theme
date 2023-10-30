@@ -191,7 +191,7 @@ window.addEventListener("load", function() {
       //   target: '.data-target-ymc1',
       //   terms: filteredTermsID.join(),            
       // }).apiTermUpdate(); 
-      return filteredTermsID;
+      // return filteredTermsID;
     }; 
 
     
