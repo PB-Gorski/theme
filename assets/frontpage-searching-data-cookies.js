@@ -178,9 +178,9 @@ window.addEventListener("load", function() {
       return filteredTermsID;
     }; 
     // console.log(filteredPriceFromFrontPage);
-  };
+  
 
-  // -------------------------------------------------------------------------------------
+    // -------------------------------------------------------------------------------------
 
     // metraz
     // deleteAllCookies();
@@ -291,11 +291,12 @@ window.addEventListener("load", function() {
       // }).apiTermUpdate(); 
       return filteredTermsIDMetraz;
     }; 
-
     console.log('run searching metraz',runSearchingMetrazFrontPage());
 
-    // -------------------------------------------------------------------------------------
+    
 
+    // -------------------------------------------------------------------------------------
+  };
 
 
 
