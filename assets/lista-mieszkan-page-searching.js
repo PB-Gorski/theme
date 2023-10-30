@@ -609,19 +609,19 @@ window.addEventListener("load", function() {
 
   
     
-    function runFromCookies(){
-      YMCTools({
-        target: '.data-target-ymc1',
-        terms: filteredTermsFromCookies,      
-      }).apiTermUpdate(); 
-      console.log('after YMC api update');
-    };
+    // function runFromCookies(){
+    //   YMCTools({
+    //     target: '.data-target-ymc1',
+    //     terms: filteredTermsFromCookies,      
+    //   }).apiTermUpdate(); 
+    //   console.log('after YMC api update');
+    // };
 
-    if(filteredTermsFromCookies != null){
-      setTimeout(() => {
-        runFromCookies()
-      }, 1000);
-    };
+    // if(filteredTermsFromCookies != null){
+    //   setTimeout(() => {
+    //     runFromCookies()
+    //   }, 1000);
+    // };
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
     });
