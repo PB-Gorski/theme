@@ -785,8 +785,7 @@ window.addEventListener("load", function() {
 
 
     // cookie data handle
-
-    // document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
+    document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
     function deleteAllCookies() {
         const cookies = document.cookie.split(";");
     
@@ -816,11 +815,11 @@ window.addEventListener("load", function() {
     };
 
     let filteredTerms = getCookie("filteredTerms");
-    // let miasto = getCookie("miasto");
-    // let inwestycja = getCookie("inwestycja");
-    // let pokoje = getCookie("pokoje");
-    // let cenaOd = parseInt(getCookie("cenaOd").split(' ').join(''));
-    // let cenaDo = parseInt(getCookie("cenaDo").split(' ').join(''));
+    let miasto = getCookie("miasto");
+    let inwestycja = getCookie("inwestycja");
+    let pokoje = getCookie("pokoje");
+    let cenaOd = parseInt(getCookie("cenaOd").split(' ').join(''));
+    let cenaDo = parseInt(getCookie("cenaDo").split(' ').join(''));
 
 
 
@@ -900,26 +899,21 @@ window.addEventListener("load", function() {
     console.log('filteredTerms from frontpage: ',filteredTerms);
 
   
-    // if(filteredTerms != null){
-      function runFromCookies(){
-        YMCTools({
-          target: '.data-target-ymc1',
-          terms: filteredTerms,      
-        }).apiTermUpdate(); 
-        console.log('after YMC api update');
-      };
+    function runFromCookies(){
+      YMCTools({
+        target: '.data-target-ymc1',
+        terms: filteredTerms,      
+      }).apiTermUpdate(); 
+      console.log('after YMC api update');
+    }
 
-      setTimeout(() => {
-        runFromCookies()
-      }, 1000);
-    // };
+    setTimeout(() => {
+      runFromCookies()
+    }, 1000);
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
     });
   }; //end page lista mieszkan
-
-  
-  console.log('filteredTerms check: ',filteredTerms);
 
 
 
