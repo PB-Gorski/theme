@@ -202,10 +202,10 @@ window.addEventListener("load", function() {
 
 
 
-      //  metraz
-      deleteAllCookies();
-  
-      // metraz selects
+    //  metraz
+    deleteAllCookies();
+
+    // metraz selects
     const mainDropDownMetraz = document.querySelectorAll('.dropdown__value-metraz');
     const dropDownListMetraz = document.querySelectorAll('.dropdown__list-metraz');
     const dropDownsMetraz = Array.from(document.querySelectorAll('.dropdown__link-metraz'));
@@ -333,16 +333,10 @@ window.addEventListener("load", function() {
         terms: filteredPrices.join() + ',' + filteredMetraze.join()          
       }).apiTermUpdate(); 
     }
-    // *******************************************************
-    btnSearch.addEventListener('click', () =>{
-      console.log('btn search start');
-      runSearching();
-      console.log('runsearching done');
-      runSearchingMetraz();
-      console.log('runsearchingMetraz done');
-      filteredTermsMerge();
-      console.log('merged done');
-    } );
+
+
+    // -------------------------------------------------------------------------------------
+
 
 
 
