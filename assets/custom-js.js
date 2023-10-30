@@ -824,8 +824,8 @@ window.addEventListener("load", function() {
 
 
 
-    priceMinValue = cenaOd;
-    priceMaxValue = cenaDo;
+    // priceMinValue = cenaOd;
+    // priceMaxValue = cenaDo;
     function runSearching(){
       priceValueArr = [];
       newArr = [];
