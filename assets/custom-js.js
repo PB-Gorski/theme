@@ -899,19 +899,20 @@ window.addEventListener("load", function() {
     console.log('filteredTerms from frontpage: ',filteredTerms);
 
   
-    if(filteredTerms != null){
-      function runFromCookies(){
-        YMCTools({
-          target: '.data-target-ymc1',
-          terms: filteredTerms,      
-        }).apiTermUpdate(); 
-        console.log('after YMC api update');
-      };
+    
+    function runFromCookies(){
+      YMCTools({
+        target: '.data-target-ymc1',
+        terms: filteredTerms,      
+      }).apiTermUpdate(); 
+      console.log('after YMC api update');
     };
 
-    setTimeout(() => {
-      runFromCookies()
-    }, 1000);
+    if(filteredTerms != null){
+      setTimeout(() => {
+        runFromCookies()
+      }, 1000);
+    };
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
     });
