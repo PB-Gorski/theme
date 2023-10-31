@@ -74,7 +74,7 @@ window.addEventListener("load", function() {
         // }else if(filterType == 'Cena do:'){
         //   document.cookie = "cenaDo=" + choosenOptions.join();
         // }
-        console.log('filter type: ', filterType);
+        // console.log('filter type: ', filterType);
         console.log('cookie data: ', document.cookie);
       });
     });
@@ -85,7 +85,7 @@ window.addEventListener("load", function() {
         let filteredPriceFromFrontPage = runSearchingFrontPage() + runSearchingMetrazFrontPage();
         document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + ',' + filteredPriceFromFrontPage;
 
-        console.log('filter type: ', filterType);
+        // console.log('filter type: ', filterType);
         console.log('cookie data: ', document.cookie);
       });
     });
