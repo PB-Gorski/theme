@@ -155,7 +155,7 @@ window.addEventListener("load", function() {
       priceValueArr.forEach(priceValue => {
         priceMaxValue.isNaN ? priceMaxValue = 10000000 : priceMaxValue = priceMaxValue;
         console.log('price max value ',priceMaxValue);
-        if (priceValue < priceMaxValue && priceValue > priceMinValue){
+        if (priceValue <= priceMaxValue && priceValue >= priceMinValue){
           newArr.push(priceValue);
         };
       });
@@ -265,7 +265,7 @@ window.addEventListener("load", function() {
       metrazValueArr.forEach(priceValue => {
         metrazMaxValue.isNaN ? metrazMaxValue = 10000000 : metrazMaxValue = metrazMaxValue;
         console.log('price max value ',metrazMaxValue);
-        if (priceValue < metrazMaxValue && priceValue > metrazMinValue){
+        if (priceValue <= metrazMaxValue && priceValue >= metrazMinValue){
           newArr.push(priceValue);
         };
       });
