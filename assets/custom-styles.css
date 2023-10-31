@@ -104,7 +104,7 @@ ul.wp-block-navigation__container  > li.wp-block-navigation-item{
   text-decoration-color: #E80D38;
   cursor: pointer;
 }
-.single.single-mieszkania{
+.single.single-mieszkania a{
   color: inherit!important;
 }
 
