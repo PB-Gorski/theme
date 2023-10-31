@@ -366,7 +366,7 @@ window.addEventListener("load", function() {
       });
 
       let filteredTermsIDMetraz = [];
-      console.log('filtered new arr html elements: ', newArrHTMLListMetraz);
+      // console.log('filtered new arr html elements: ', newArrHTMLListMetraz);
       newArrHTMLListMetraz.forEach(el2 =>{
         filteredTermsIDMetraz.push(el2.dataset.termid);
       });
@@ -635,7 +635,7 @@ window.addEventListener("load", function() {
       });
 
       let filteredTermsID = [];
-      console.log('filtered new arr html elements: ', newArrHTMLList);
+      // console.log('filtered new arr html elements: ', newArrHTMLList);
 
       newArrHTMLList.forEach(el2 =>{
         filteredTermsID.push(el2.dataset.termid);
