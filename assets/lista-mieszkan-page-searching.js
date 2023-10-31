@@ -432,14 +432,8 @@ window.addEventListener("load", function() {
 
     // ------------------------------------------------------------------------------
 
-
-
-
-
     // priceMinValue = cenaOd;
     // priceMaxValue = cenaDo;
-
-    
 
     function runSearchingPrice(){
       priceValueArr = [];
@@ -463,7 +457,7 @@ window.addEventListener("load", function() {
       priceValueArr.forEach(priceValue => {
         priceMaxValue.isNaN ? priceMaxValue = 10000000 : priceMaxValue = priceMaxValue;
         console.log('price max value ',priceMaxValue);
-        if (priceValue < priceMaxValue && priceValue > priceMinValue){
+        if (priceValue <= priceMaxValue && priceValue >= priceMinValue){
           newArr.push(priceValue);
         };
       });
@@ -596,7 +590,7 @@ window.addEventListener("load", function() {
       // filteredTermsMerge();
       let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
-      
+
       YMCTools({
         target: '.data-target-ymc1',
         terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join(),            
