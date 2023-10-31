@@ -121,14 +121,15 @@ window.addEventListener("load", function() {
     };  
 
     const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
-    let counter = 0;
+    let counterPostsLoad = 0;
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-      if (counter == 2){
+      if (counterPostsLoad == 1){
         console.log('posts loaded2');
         // foundedPostOnStart.classList.add('hidden');
       };
-      counter++;
+      counterPostsLoad++;
+      console.log('posts found counter after ++: ', counterPostsLoad);
     });
 
     function runSearching(){
