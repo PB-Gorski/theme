@@ -598,10 +598,11 @@ window.addEventListener("load", function() {
       let metrazeID = runSearchingMetraz();
       YMCTools({
         target: '.data-target-ymc1',
-        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join()        ,            
+        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join(),            
       }).apiTermUpdate(); 
       console.log('in btn prices: ', pricesID.join());
       console.log('in btn metraze: ', metrazeID.join());
+      console.log('all terms id searched: ', pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join());
     });
     // *******************************************************
 
