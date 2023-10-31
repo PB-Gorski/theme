@@ -549,19 +549,19 @@ window.addEventListener("load", function() {
       // cookies exist
       console.log('cookies exist');
       let filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
-      let miasto = getCookie("miasto");
-      let inwestycja = getCookie("inwestycja");
-      let pokoje = getCookie("pokoje");
-      let cenaOd = parseInt(getCookie("cenaOd").split(' ').join(''));
-      let cenaDo = parseInt(getCookie("cenaDo").split(' ').join(''));
+      // let miasto = getCookie("miasto");
+      // let inwestycja = getCookie("inwestycja");
+      // let pokoje = getCookie("pokoje");
+      // let cenaOd = parseInt(getCookie("cenaOd").split(' ').join(''));
+      // let cenaDo = parseInt(getCookie("cenaDo").split(' ').join(''));
 
       let filteredCustomPriceFromCookies = runSearching();
       console.log(filteredCustomPriceFromCookies.join());
   
-      filteredTermsFromCookies = [miasto,inwestycja,pokoje,cenaOd,cenaDo]
+      // filteredTermsFromCookies = [miasto,inwestycja,pokoje,cenaOd,cenaDo]
       
       console.log(filteredTermsFromCookies);
-      console.log(miasto + ',' + inwestycja);
+      // console.log(miasto + ',' + inwestycja);
       console.log('filteredTermsFromCookies from frontpage: ',filteredTermsFromCookies);
 
       function runFromCookies(){
