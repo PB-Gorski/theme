@@ -488,7 +488,7 @@ window.addEventListener("load", function() {
         console.log('current filtr: ', currentFiltr);
 
         sortListDir(index);
-        
+        counter = 1;
         for (let i = 1 ; i <= (17) ; i=i+2){
           // if(btnsSort[i - counter]){
           //   btnsSort[i - counter].classList.remove('sort-arrow-up','sort-arrow-down');
