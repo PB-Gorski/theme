@@ -650,7 +650,7 @@ window.addEventListener("load", function() {
 
       YMCTools({
         target: '.data-target-ymc1',
-        terms: filteredTermsID.join() + choosenOptions.join(),            
+        terms: filteredTermsID.join() + ',' + choosenOptions.join(),            
       }).apiTermUpdate(); 
 
       console.log('all filtered id price: ', filteredTermsID.join());
