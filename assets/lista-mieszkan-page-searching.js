@@ -558,7 +558,7 @@ window.addEventListener("load", function() {
 
       let filteredTermsIDMetraz = [];
 
-      if(priceMinValue == 0 && priceMaxValue == 'Max'){
+      if(metrazMinValue == 0 && metrazMaxValue == 'Max'){
         console.log('metraz not changed');
         filteredTermsIDMetraz = [];
       }else{
