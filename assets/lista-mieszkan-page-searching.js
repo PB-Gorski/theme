@@ -129,7 +129,7 @@ window.addEventListener("load", function() {
         foundedPostOnStart.classList.add('hidden');
       };
       counterPostsLoad++;
-      console.log('posts found counter after ++: ', counterPostsLoad);
+      // console.log('posts found counter after ++: ', counterPostsLoad);
     });
 
     function runSearching(){
