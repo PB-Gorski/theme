@@ -126,7 +126,7 @@ window.addEventListener("load", function() {
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
       if (counterPostsLoad == 1){
         console.log('posts loaded2');
-        // foundedPostOnStart.classList.add('hidden');
+        foundedPostOnStart.classList.add('hidden');
       };
       counterPostsLoad++;
       console.log('posts found counter after ++: ', counterPostsLoad);
