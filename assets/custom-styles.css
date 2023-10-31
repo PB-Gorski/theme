@@ -480,8 +480,8 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 div:nth-child(13) {
   border-right: 2px solid white;
 }
-#filter-layout3-filter-layout3 > .filter-entry {
-  height: auto!important;
+#filter-layout3-filter-layout3 > .filter-entry.active-search-more {
+  height: auto;
 }
 @media only screen and (min-width: 480px) {
   #filter-layout3-filter-layout3 > .filter-entry {
