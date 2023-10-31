@@ -562,6 +562,7 @@ window.addEventListener("load", function() {
       newArrHTMLList = [];
 
       foundedPostOnStart.classList.add('hidden');
+      foundedPostOnStart.classList.add('hidden2');
       const dropDownFilters = document.querySelectorAll(".dropdown-filter");
       let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
       priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
