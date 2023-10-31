@@ -61,7 +61,8 @@ window.addEventListener("load", function() {
         // choosenOptions.push(choosenOption)
         console.log('new arr after check: ', choosenOptions);
 
-        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + filteredPriceFromFrontPage;
+        // document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + filteredPriceFromFrontPage;
+        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join();
 
         // if(filterType == 'Miasto:'){
         //   document.cookie = "miasto=" + choosenOptions.join();
@@ -307,7 +308,7 @@ window.addEventListener("load", function() {
       // }).apiTermUpdate(); 
       return filteredTermsIDMetraz;
     }; 
-    console.log('run searching metraz',runSearchingMetrazFrontPage());
+    // console.log('run searching metraz',runSearchingMetrazFrontPage());
 
     
 
