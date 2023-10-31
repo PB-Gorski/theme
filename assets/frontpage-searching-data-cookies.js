@@ -61,7 +61,7 @@ window.addEventListener("load", function() {
         // choosenOptions.push(choosenOption)
         console.log('new arr after check: ', choosenOptions);
 
-        document.cookie = "filteredTerms=" + choosenOptions.join() + filteredPriceFromFrontPage;
+        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + filteredPriceFromFrontPage;
 
         // if(filterType == 'Miasto:'){
         //   document.cookie = "miasto=" + choosenOptions.join();
@@ -83,7 +83,7 @@ window.addEventListener("load", function() {
       item.addEventListener('click', () => {
         // let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
         let filteredPriceFromFrontPage = runSearchingFrontPage() + runSearchingMetrazFrontPage();
-        document.cookie = "filteredTerms=" + choosenOptions.join() + ',' + filteredPriceFromFrontPage;
+        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + ',' + filteredPriceFromFrontPage;
 
         console.log('filter type: ', filterType);
         console.log('cookie data: ', document.cookie);
