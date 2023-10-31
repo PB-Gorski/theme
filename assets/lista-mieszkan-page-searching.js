@@ -596,6 +596,7 @@ window.addEventListener("load", function() {
       // filteredTermsMerge();
       let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
+      
       YMCTools({
         target: '.data-target-ymc1',
         terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join(),            
