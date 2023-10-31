@@ -515,6 +515,7 @@ window.addEventListener("load", function() {
       });
     });    
 
+    // ------------------------------------------------------------------------------
 
     // cookie data handle
     document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
@@ -652,7 +653,8 @@ window.addEventListener("load", function() {
         terms: filteredTermsID.join() + choosenOptions.join(),            
       }).apiTermUpdate(); 
 
-      console.log('all filtered id: ', filteredTermsID.join() + choosenOptions.join());
+      console.log('all filtered id price: ', filteredTermsID.join());
+      console.log('all filtered choosen options: ', choosenOptions.join());
       return filteredTermsID;
     };
 
