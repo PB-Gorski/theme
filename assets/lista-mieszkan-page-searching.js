@@ -408,9 +408,9 @@ window.addEventListener("load", function() {
       runSearching();
       console.log('runsearching done');
       runSearchingMetraz();
-      // console.log('runsearchingMetraz done');
-      // filteredTermsMerge();
-      // console.log('merged done');
+      console.log('runsearchingMetraz done');
+      filteredTermsMerge();
+      console.log('merged done');
     } );
     // *******************************************************
 
