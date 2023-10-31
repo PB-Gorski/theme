@@ -89,10 +89,10 @@ window.addEventListener("load", function() {
     mainDropDown.forEach(dropDownEl =>{
       dropDownEl.addEventListener('click', (e) =>{
         if(e.target.nextElementSibling){
-          console.log('span');
+          // console.log('span');
           e.target.nextElementSibling.classList.toggle('dropdown__list_active');
         }else if(e.target.parentNode.nextElementSibling){
-          console.log('span container');
+          // console.log('span container');
           e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active');
         }
       });
