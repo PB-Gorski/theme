@@ -9,7 +9,6 @@ window.addEventListener("load", function() {
     // setting chosen option in active window
     let passiveOptions = document.querySelectorAll('.menu-passive__item');
     let counter2 = 0;
-    let choosenOptions =[]
 
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
@@ -441,6 +440,7 @@ window.addEventListener("load", function() {
     // priceMinValue = cenaOd;
     // priceMaxValue = cenaDo;
 
+    let choosenOptions =[];
 
     function runSearching(){
       priceValueArr = [];
@@ -501,14 +501,14 @@ window.addEventListener("load", function() {
       newArrHTMLList = [];
       priceValueArrNodeList = [];
 
-      YMCTools({
-        target: '.data-target-ymc1',
-        terms: filteredTermsID.join() + ',' + choosenOptions.join(),            
-      }).apiTermUpdate(); 
+      // YMCTools({
+      //   target: '.data-target-ymc1',
+      //   terms: filteredTermsID.join() + ',' + choosenOptions.join(),            
+      // }).apiTermUpdate(); 
 
-      console.log('all filtered id price: ', filteredTermsID.join());
-      console.log('all filtered choosen options: ', choosenOptions.join());
-      console.log('all filtered: ',filteredTermsID.join() + ',' + choosenOptions.join());
+      // console.log('all filtered id price: ', filteredTermsID.join());
+      // console.log('all filtered choosen options: ', choosenOptions.join());
+      // console.log('all filtered: ',filteredTermsID.join() + ',' + choosenOptions.join());
       return filteredTermsID;
     };
 
@@ -590,12 +590,24 @@ window.addEventListener("load", function() {
     // *******************************************************
     btnSearch.addEventListener('click', () =>{
       // console.log('btn search start');
-      runSearching();
+      // runSearching();
       // console.log('runsearching done');
       // runSearchingMetraz();
       // console.log('runsearchingMetraz done');
       // filteredTermsMerge();
-      console.log('merged done');
+      let pricesID = runSearching();
+      let metrazeID = runSearchingMetraz();
+      YMCTools({
+        target: '.data-target-ymc1',
+        terms: pricesID.join() + ',' + metrazeID.join(),            
+      }).apiTermUpdate(); 
+      console.log('in btn prices: ', pricesID.join());
+      console.log('in btn metraze: ', metrazeID.join());
+
+      // console.log('all filtered id price: ', filteredTermsID.join());
+      // console.log('all filtered choosen options: ', choosenOptions.join());
+      // console.log('all filtered: ',filteredTermsID.join() + ',' + choosenOptions.join());
+      // console.log('merged done');
     } );
     // *******************************************************
 
