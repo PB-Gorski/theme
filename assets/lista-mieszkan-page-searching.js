@@ -171,12 +171,19 @@ window.addEventListener("load", function() {
         };
       });
 
+      // console.log('filtered new arr html elements: ', newArrHTMLList);
+      
       let filteredTermsID = [];
-      console.log('filtered new arr html elements: ', newArrHTMLList);
+      if(priceMinValue == 0 && priceMaxValue == 'Max'){
+        console.log('price not changed');
+        filteredTermsID = [];
+      }else{
+        console.log('price changed');
+        newArrHTMLList.forEach(el2 =>{
+          filteredTermsID.push(el2.dataset.termid);
+        });
+      }
 
-      newArrHTMLList.forEach(el2 =>{
-        filteredTermsID.push(el2.dataset.termid);
-      });
 
       console.log(filteredTermsID.join(','));
 
