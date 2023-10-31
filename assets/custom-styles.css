@@ -485,6 +485,11 @@ option:hover {
   transition: height 0.3s ease-out;
   row-gap: 2px;
 }
+@media only screen and (max-width: 480px) {
+  #filter-layout3-filter-layout3 > .filter-entry {
+    height: fit-content
+  }
+}
 .filter-layout3-148 > .filter-entry{
   height: 300px;
   margin-bottom: 40px;
