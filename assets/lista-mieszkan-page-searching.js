@@ -9,10 +9,13 @@ window.addEventListener("load", function() {
     // setting chosen option in active window
     let passiveOptions = document.querySelectorAll('.menu-passive__item');
     let counter2 = 0;
+    let choosenOptions =[]
+
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
         let optionSpan = document.createElement('span');
         let choosenOption = item.childNodes[1].dataset.name;
+        let choosenOptionID = item.childNodes[1].dataset.termid;
         let stopAdding = false;
         optionSpan.innerText = choosenOption;
 
@@ -26,6 +29,25 @@ window.addEventListener("load", function() {
             option.remove('span');
           };
         });
+
+        function removeItemAll(arr, value) {
+          let i = 0;
+          while (i < arr.length) {
+            if (arr[i] === value) {
+              arr.splice(i, 1);
+            } else {
+              ++i;
+            }
+          }
+          return arr;
+        };
+
+        if(choosenOptions.includes(choosenOptionID)){
+          removeItemAll(choosenOptions,choosenOptionID)
+        }else{
+          choosenOptions.push(choosenOptionID)
+        };
+        console.log(choosenOptions);
 
         if(!stopAdding){
           // console.log('check for start ', item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName);
