@@ -480,16 +480,16 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 div:nth-child(13) {
   border-right: 2px solid white;
 }
-@media only screen and (min-width: 480px) {
 #filter-layout3-filter-layout3 > .filter-entry {
-  height: 120px;
-  transition: height 0.3s ease-out;
-  row-gap: 2px;
+  height: fit-content!important;
 }
-}
-@media only screen and (max-width: 480px) {
+
+
+@media only screen and (min-width: 480px) {
   #filter-layout3-filter-layout3 > .filter-entry {
-    height: fit-content!important;
+    height: 120px;
+    transition: height 0.3s ease-out;
+    row-gap: 2px;
   }
 }
 .filter-layout3-148 > .filter-entry{
