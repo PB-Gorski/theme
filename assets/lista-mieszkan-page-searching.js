@@ -137,12 +137,12 @@ window.addEventListener("load", function() {
     const searchBar = document.querySelector('.filter-entry');
     
     if(document.body.classList.contains('post-type-archive-mieszkania')){
+      if(window.innerWidth < 480){
+        searchBar.classList.toggle('active-search-more');
+      }
       btnMore.addEventListener('click',()=>{
         if(window.innerWidth > 480){
           searchBar.classList.toggle('desktop:h-[240px]');
-          if(window.innerWidth < 480){
-            searchBar.classList.toggle('active-search-more');
-          }
           searchBar.classList.toggle('gap-y-[0px]');
         }else{
           searchBar.classList.toggle('h-[450px]');
