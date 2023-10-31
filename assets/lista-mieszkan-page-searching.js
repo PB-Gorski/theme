@@ -399,7 +399,7 @@ window.addEventListener("load", function() {
 
       YMCTools({
         target: '.data-target-ymc1',
-        terms: filteredPrices.join() + ',' + filteredMetraze.join()          
+        terms: filteredPrices.join() + ',' + filteredMetraze.join() + ',' + choosenOptions.join()        
       }).apiTermUpdate(); 
     }
     // *******************************************************
@@ -654,14 +654,14 @@ window.addEventListener("load", function() {
       newArrHTMLList = [];
       priceValueArrNodeList = [];
 
-      YMCTools({
-        target: '.data-target-ymc1',
-        terms: filteredTermsID.join() + ',' + choosenOptions.join(),            
-      }).apiTermUpdate(); 
+      // YMCTools({
+      //   target: '.data-target-ymc1',
+      //   terms: filteredTermsID.join() + ',' + choosenOptions.join(),            
+      // }).apiTermUpdate(); 
 
-      console.log('all filtered id price: ', filteredTermsID.join());
-      console.log('all filtered choosen options: ', choosenOptions.join());
-      console.log('all filtered: ',filteredTermsID.join() + ',' + choosenOptions.join());
+      // console.log('all filtered id price: ', filteredTermsID.join());
+      // console.log('all filtered choosen options: ', choosenOptions.join());
+      // console.log('all filtered: ',filteredTermsID.join() + ',' + choosenOptions.join());
       return filteredTermsID;
     };
 
