@@ -7,6 +7,7 @@ window.addEventListener("load", function() {
     console.log('lista mieszkan page');
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
+    let choosenOptions =[];
     let passiveOptions = document.querySelectorAll('.menu-passive__item');
     let counter2 = 0;
 
@@ -440,7 +441,7 @@ window.addEventListener("load", function() {
     // priceMinValue = cenaOd;
     // priceMaxValue = cenaDo;
 
-    let choosenOptions =[];
+    
 
     function runSearchingPrice(){
       priceValueArr = [];
@@ -483,9 +484,15 @@ window.addEventListener("load", function() {
       let filteredTermsID = [];
       // console.log('filtered new arr html elements: ', newArrHTMLList);
 
-      newArrHTMLList.forEach(el2 =>{
-        filteredTermsID.push(el2.dataset.termid);
-      });
+      if(priceMinValue == 0 && priceMaxValue == 'Max'){
+        console.log('price not changed');
+        filteredTermsID = [];
+      }else{
+        console.log('price changed');
+        newArrHTMLList.forEach(el2 =>{
+          filteredTermsID.push(el2.dataset.termid);
+        });
+      }
 
       console.log('new filtered id', filteredTermsID.join(','));
 
@@ -550,12 +557,22 @@ window.addEventListener("load", function() {
       });
 
       let filteredTermsIDMetraz = [];
-      // console.log('filtered new arr html elements: ', newArrHTMLListMetraz);
-      newArrHTMLListMetraz.forEach(el2 =>{
-        filteredTermsIDMetraz.push(el2.dataset.termid);
-      });
 
-      console.log(filteredTermsIDMetraz.join(','));
+      if(priceMinValue == 0 && priceMaxValue == 'Max'){
+        console.log('metraz not changed');
+        filteredTermsIDMetraz = [];
+      }else{
+        console.log('metraz changed');
+        newArrHTMLListMetraz.forEach(el2 =>{
+          filteredTermsIDMetraz.push(el2.dataset.termid);
+        });
+      }
+
+      // newArrHTMLListMetraz.forEach(el2 =>{
+      //   filteredTermsIDMetraz.push(el2.dataset.termid);
+      // });
+
+      console.log('metraze po ifie', filteredTermsIDMetraz.join(','));
 
       for (i = 2 ; i < metrazValueArrNodeList.length ; i++){
         if(metrazValueArrNodeList[i].childNodes[1].classList.contains('active')){
@@ -571,22 +588,6 @@ window.addEventListener("load", function() {
 
       return filteredTermsIDMetraz;
     };
-
-    function filteredTermsMerge(){
-      console.log('filteredTermsMerge');
-      let filteredPrices = runSearchingPrice();
-      let filteredMetraze = runSearchingMetraz();
-      console.log('prices: ',filteredPrices);
-      console.log('metraze: ',filteredMetraze);
-      console.log('all merged', filteredPrices.join() + ',' + filteredMetraze.join());
-
-      // let filteredTermsFromCookies = filteredTermsIDMetraz.join() + ',' + filteredTermsID.join()
-
-      YMCTools({
-        target: '.data-target-ymc1',
-        terms: filteredPrices.join() + ',' + filteredMetraze.join() + ',' + choosenOptions.join()        
-      }).apiTermUpdate(); 
-    }
     // *******************************************************
     btnSearch.addEventListener('click', () =>{
       // console.log('btn search start');
@@ -603,12 +604,7 @@ window.addEventListener("load", function() {
       }).apiTermUpdate(); 
       console.log('in btn prices: ', pricesID.join());
       console.log('in btn metraze: ', metrazeID.join());
-
-      // console.log('all filtered id price: ', filteredTermsID.join());
-      // console.log('all filtered choosen options: ', choosenOptions.join());
-      // console.log('all filtered: ',filteredTermsID.join() + ',' + choosenOptions.join());
-      // console.log('merged done');
-    } );
+    });
     // *******************************************************
 
 
