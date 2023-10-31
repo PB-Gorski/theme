@@ -131,7 +131,7 @@ window.addEventListener("load", function() {
     });
 
 
-    // btnSearch.addEventListener('click', runSearching);
+    // btnSearch.addEventListener('click', runSearchingPrice);
 
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
@@ -405,7 +405,7 @@ window.addEventListener("load", function() {
       // let cenaOd = parseInt(getCookie("cenaOd").split(' ').join(''));
       // let cenaDo = parseInt(getCookie("cenaDo").split(' ').join(''));
 
-      let filteredCustomPriceFromCookies = runSearching();
+      let filteredCustomPriceFromCookies = runSearchingPrice();
       console.log(filteredCustomPriceFromCookies.join());
   
       // filteredTermsFromCookies = [miasto,inwestycja,pokoje,cenaOd,cenaDo]
@@ -442,7 +442,7 @@ window.addEventListener("load", function() {
 
     let choosenOptions =[];
 
-    function runSearching(){
+    function runSearchingPrice(){
       priceValueArr = [];
       newArr = [];
       newArrHTMLList = [];
@@ -574,7 +574,7 @@ window.addEventListener("load", function() {
 
     function filteredTermsMerge(){
       console.log('filteredTermsMerge');
-      let filteredPrices = runSearching();
+      let filteredPrices = runSearchingPrice();
       let filteredMetraze = runSearchingMetraz();
       console.log('prices: ',filteredPrices);
       console.log('metraze: ',filteredMetraze);
@@ -590,12 +590,12 @@ window.addEventListener("load", function() {
     // *******************************************************
     btnSearch.addEventListener('click', () =>{
       // console.log('btn search start');
-      // runSearching();
-      // console.log('runsearching done');
+      // runSearchingPrice();
+      // console.log('runsearchingPrice done');
       // runSearchingMetraz();
       // console.log('runsearchingMetraz done');
       // filteredTermsMerge();
-      let pricesID = runSearching();
+      let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
       YMCTools({
         target: '.data-target-ymc1',
