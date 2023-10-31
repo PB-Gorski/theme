@@ -38,8 +38,8 @@ window.addEventListener("load", function() {
       item.addEventListener('click', () => {
         let choosenOption = item.childNodes[1].dataset.termid;
         let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
-
         let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
+
         function removeItemAll(arr, value) {
           let i = 0;
           while (i < arr.length) {
@@ -53,10 +53,8 @@ window.addEventListener("load", function() {
         };
 
         if(choosenOptions.includes(choosenOption)){
-          console.log('include');
           removeItemAll(choosenOptions,choosenOption)
         }else{
-          console.log('not include');
           choosenOptions.push(choosenOption)
         };
 
@@ -83,8 +81,7 @@ window.addEventListener("load", function() {
 
     passiveOptionsCustomFilters.forEach(item => {
       item.addEventListener('click', () => {
-        let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
-        
+        // let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
         let filteredPriceFromFrontPage = runSearchingFrontPage() + runSearchingMetrazFrontPage();
         document.cookie = "filteredTerms=" + choosenOptions.join() + ',' + filteredPriceFromFrontPage;
 

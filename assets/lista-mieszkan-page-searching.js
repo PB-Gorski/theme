@@ -38,7 +38,7 @@ window.addEventListener("load", function() {
           if(counter>2){
             
             console.log('conter>1');
-            item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan);
+            // item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan);
             console.log(counter2);
           }else{
             console.log('else');
@@ -600,7 +600,7 @@ window.addEventListener("load", function() {
     };
 
 
-    
+
     let filteredCustomPriceFromCookies = runSearching();
     console.log(filteredCustomPriceFromCookies.join());
 
