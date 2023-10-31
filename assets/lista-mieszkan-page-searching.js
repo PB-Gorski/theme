@@ -599,7 +599,7 @@ window.addEventListener("load", function() {
       let metrazeID = runSearchingMetraz();
       YMCTools({
         target: '.data-target-ymc1',
-        terms: pricesID.join() + ',' + metrazeID.join(),            
+        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join()        ,            
       }).apiTermUpdate(); 
       console.log('in btn prices: ', pricesID.join());
       console.log('in btn metraze: ', metrazeID.join());
