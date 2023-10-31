@@ -126,7 +126,7 @@ window.addEventListener("load", function() {
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
       if (counter == 2){
         console.log('posts loaded2');
-        foundedPostOnStart.classList.add('hidden');
+        // foundedPostOnStart.classList.add('hidden');
       };
       counter++;
     });
