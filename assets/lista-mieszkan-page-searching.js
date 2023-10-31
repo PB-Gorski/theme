@@ -567,7 +567,7 @@ window.addEventListener("load", function() {
       function runFromCookies(){
         YMCTools({
           target: '.data-target-ymc1', 
-          terms: filteredTermsFromCookies,      
+          terms: filteredTermsFromCookies.join(),      
         }).apiTermUpdate(); 
         console.log('after YMC api update');
       };
