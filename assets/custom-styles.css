@@ -481,7 +481,7 @@ option:hover {
   border-right: 2px solid white;
 }
 #filter-layout3-filter-layout3 > .filter-entry {
-  height: fit-content;
+  height: auto;
 }
 @media only screen and (min-width: 480px) {
   #filter-layout3-filter-layout3 > .filter-entry {
