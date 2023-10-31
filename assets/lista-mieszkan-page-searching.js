@@ -482,7 +482,7 @@ window.addEventListener("load", function() {
       let filteredTermsID = [];
       // console.log('filtered new arr html elements: ', newArrHTMLList);
 
-      if(priceMinValue == 0 && priceMaxValue == 'Max'){
+      if(priceMinValue == 0 && priceMaxValue == 10000000){
         console.log('price not changed');
         filteredTermsID = [];
       }else{
@@ -556,7 +556,7 @@ window.addEventListener("load", function() {
 
       let filteredTermsIDMetraz = [];
 
-      if(metrazMinValue == 0 && metrazMaxValue == 'Max'){
+      if(metrazMinValue == 0 && metrazMaxValue == 10000000){
         console.log('metraz not changed');
         filteredTermsIDMetraz = [];
       }else{
