@@ -607,8 +607,8 @@ window.addEventListener("load", function() {
         if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
           priceValueArrNodeList[i].childNodes[1].classList.remove('active');
           // console.log(priceValueArrNodeList[i].childNodes[1]);
-        }
-      }
+        };
+      };
 
       priceValueArr = [];
       newArr = [];
@@ -625,8 +625,8 @@ window.addEventListener("load", function() {
     };
 
 
-
-    // let filteredCustomPriceFromCookies = runSearching();
+    
+    let filteredCustomPriceFromCookies = runSearching();
     console.log(filteredCustomPriceFromCookies.join());
 
     filteredTermsFromCookies = [miasto,inwestycja,pokoje,cenaOd,cenaDo]
