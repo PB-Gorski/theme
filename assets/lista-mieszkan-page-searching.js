@@ -532,7 +532,7 @@ window.addEventListener("load", function() {
       metrazValueArr.forEach(metrazValue => {
         metrazMaxValue.isNaN ? metrazMaxValue = 10000000 : metrazMaxValue = metrazMaxValue;
         console.log('metraz max value ',metrazMaxValue);
-        if (metrazValue < metrazMaxValue && metrazValue > metrazMinValue){
+        if (metrazValue <= metrazMaxValue && metrazValue >= metrazMinValue){
           newArrMetraz.push(metrazValue);
         };
       });
