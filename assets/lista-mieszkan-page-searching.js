@@ -655,6 +655,7 @@ window.addEventListener("load", function() {
 
       console.log('all filtered id price: ', filteredTermsID.join());
       console.log('all filtered choosen options: ', choosenOptions.join());
+      console.log('all filtered: ',filteredTermsID.join() + ',' + choosenOptions.join());
       return filteredTermsID;
     };
 
