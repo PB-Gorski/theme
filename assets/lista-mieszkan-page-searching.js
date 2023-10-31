@@ -616,8 +616,10 @@ window.addEventListener("load", function() {
 
       YMCTools({
         target: '.data-target-ymc1',
-        terms: filteredTermsID.join(),            
+        terms: filteredTermsID.join() + choosenOptions.join(),            
       }).apiTermUpdate(); 
+
+      console.log('all filtered id: ', filteredTermsID.join() + choosenOptions.join());
       return filteredTermsID;
     };
 
