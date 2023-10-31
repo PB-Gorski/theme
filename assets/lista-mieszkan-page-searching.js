@@ -22,7 +22,6 @@ window.addEventListener("load", function() {
         let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
         choosenOptionsArr.forEach(option => {
           if(option.innerText == choosenOption){
-            console.log('have child span');
             stopAdding = true;
             console.log('choosen option text for cleaning', choosenOption);
             console.log('clear existing span');
@@ -407,8 +406,8 @@ window.addEventListener("load", function() {
     btnSearch.addEventListener('click', () =>{
       console.log('btn search start');
       runSearching();
-      // console.log('runsearching done');
-      // runSearchingMetraz();
+      console.log('runsearching done');
+      runSearchingMetraz();
       // console.log('runsearchingMetraz done');
       // filteredTermsMerge();
       // console.log('merged done');
