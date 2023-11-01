@@ -259,9 +259,9 @@ window.addEventListener("load", function() {
     // ------------------------------------------------------------------------------
 
     // sortowanie listy mieszkan
-    const listaMieszkanContainer = document.querySelector(".container-post-custom-layout");
+    const listaMieszkanContainer = document.querySelector(".post-custom-layout");
     const sortingBarHTML = `
-    <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list w-[1064px] px-[20px] bg-[#2f384d] py-[22px] flex flex-wrap items-center justify-between text-[13px] font-bold z-0 relative">
+    <ul class="wp-block-list js-injected container mx-auto all-taxonomy-list w-[1024px] px-[20px] bg-[#2f384d] py-[22px] flex flex-wrap items-center justify-between text-[13px] font-bold z-0 relative">
       <li class="js-sort js-sort-miasto w-[100px] uppercase text-[#8a8f99] cursor-pointer relative sort-arrow">miasto</li>
       <li class="js-sort js-sort-inwestycja w-[180px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">inwestycja</li>
       <li class="js-sort js-sort-budynek w-[100px] uppercase text-[#8a8f99] cursor-pointer sort-arrow relative">budynek</li>
