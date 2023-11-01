@@ -554,7 +554,9 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 .posts-found{
   margin-bottom: 0;
 }
-
+.custom-posts-found{
+  top: 160px;
+}
 @media only screen and (max-width: 1024px) {
   .custom-posts-found{
     top: 740px;
