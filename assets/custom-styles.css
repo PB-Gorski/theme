@@ -660,7 +660,7 @@ border-width: 0 2px 2px 0;
 }
 .post-entry.post-custom-layout{
   display: block!important;
-  width: 1024px;
+  width: 1024px!important;
 }
 .posts-found{
   z-index: 1;
