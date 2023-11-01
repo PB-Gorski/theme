@@ -492,7 +492,7 @@
     <!-- wp:list-item -->
     <li class="">
       <!-- wp:group -->
-      <div class="wp-block-group btn-wrapper desktop:flex items-center gap-[10px]">
+      <div class="wp-block-group btn-wrapper-mobile desktop:flex items-center gap-[10px]">
         <!-- wp:group -->
         <div class="wp-block-group btn-lang mb-[30px] desktop:mb-0 text-[18px] flex justify-center desktop:justify-start gap-[5px]">
           <!-- wp:paragraph -->
