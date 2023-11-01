@@ -138,7 +138,7 @@ window.addEventListener("load", function() {
     
     if(document.body.classList.contains('post-type-archive-mieszkania')){
       if(window.innerWidth < 480){
-        searchBar.classList.toggle('active-search-more');
+        searchBar.classList.toggle('active-search-more test3');
       }
       btnMore.addEventListener('click',()=>{
         if(window.innerWidth > 480){
