@@ -235,7 +235,6 @@
           <!-- wp:paragraph -->
           <?php echo do_shortcode('[pdf_attachment file="1" name="Pobierz kartę lokalu2"]'); ?>
           <?php echo do_shortcode('[pdf_all_attachments]'); ?>
-          <?php echo pdf_all_attachment_files(); ?>
 
           <!-- /wp:paragraph -->
         </div>
