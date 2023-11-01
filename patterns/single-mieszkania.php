@@ -206,6 +206,7 @@
         <!-- wp:post-content /-->
       </div>
       <!-- /wp:group -->
+
       <!-- wp:group -->
       <div class="wp-block-group right-col desktop:w-[40%] desktop:pl-[40px] pt-[50px]">
         <!-- wp:paragraph -->
@@ -227,6 +228,9 @@
           <!-- wp:paragraph -->
           <p class="font-bold z-[1]">Pobierz kartę lokalu</p>
           <!-- /wp:paragraph -->
+          <?php echo do_shortcode('[pdf_attachment file="1" name="optional file name"]'); ?>
+
+
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
