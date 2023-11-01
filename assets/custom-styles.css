@@ -476,12 +476,17 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 div:nth-child(7) {
   z-index: 1
 }
-.ymc-smart-filter-container .filter-layout3 div:nth-child(9),
-.ymc-smart-filter-container .filter-layout3 div:nth-child(10),
-.ymc-smart-filter-container .filter-layout3 div:nth-child(12),
-.ymc-smart-filter-container .filter-layout3 div:nth-child(13) {
-  /* max-width: 25%!important; */
-  grid-column: 1 / 4;
+.ymc-smart-filter-container .filter-layout3 div:nth-child(9) {
+  grid-column: 1 / 3;
+}
+.ymc-smart-filter-container .filter-layout3 div:nth-child(10){
+  grid-column: 3 / 5;
+}
+.ymc-smart-filter-container .filter-layout3 div:nth-child(12){
+  grid-column: 5 / 7;
+}
+.ymc-smart-filter-container .filter-layout3 div:nth-child(13){
+  grid-column: 7 / 9;
 }
 .ymc-smart-filter-container .filter-layout3 div:nth-child(12) {
   margin-right: 0!important;
