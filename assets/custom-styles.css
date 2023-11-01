@@ -474,7 +474,7 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 div:nth-child(5),
 .ymc-smart-filter-container .filter-layout3 div:nth-child(6),
 .ymc-smart-filter-container .filter-layout3 div:nth-child(7) {
-  z-index: 1
+  /* z-index: 1 */
 }
 .ymc-smart-filter-container .filter-layout3 div:nth-child(6){
   /* grid-column: 1 / span 2;
