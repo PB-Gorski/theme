@@ -580,7 +580,7 @@ option:hover {
   .dropdown-filter{
     margin: 0;
     width: 100%;
-    height: auto;
+    /* height: auto; */
     color: #2E384D!important;
     align-items: flex-start!important;
     /* max-width: 167px!important; */
