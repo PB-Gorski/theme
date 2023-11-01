@@ -527,7 +527,7 @@ option:hover {
   height: 120px;
   color: #2E384D!important;
   align-items: flex-start!important;
-  max-width: 167px!important;
+  /* max-width: 167px!important; */
   align-self: flex-start;
   border-right: 2px solid#ebeef2;
   border-bottom: 2px solid#ebeef2;
