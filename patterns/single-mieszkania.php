@@ -25,7 +25,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group banner w-full h-[460px] relative py-[60px] pt-[170px] desktop:pt-[60px] before:content-[''] before:inline-block before:w-full before:h-full before:bg-[#091224] before:absolute before:top-0 before:left-0 before:opacity-[25%]">
+  <div class="wp-block-group banner w-full h-[460px] relative py-[60px] pt-[30px] desktop:pt-[60px] before:content-[''] before:inline-block before:w-full before:h-full before:bg-[#091224] before:absolute before:top-0 before:left-0 before:opacity-[25%]">
     <!-- wp:image -->
     <figure class="wp-block-image hidden w-full h-full absolute top-0 left-0 z-[-1]">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/lista-mieszkan-bg.jpeg" alt="banner-bg ">
