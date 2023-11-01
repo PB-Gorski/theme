@@ -660,6 +660,7 @@ border-width: 0 2px 2px 0;
 }
 .post-entry.post-custom-layout{
   display: block!important;
+  width: 1024px;
 }
 .posts-found{
   z-index: 1;
@@ -707,6 +708,9 @@ background-color: #e8fbff!important;
 .list-item-mieszkanie img{
   width: 26px!important;
   height: 17px!important;
+}
+.container-posts {
+  overflow: scroll;
 }
 .ymc-smart-filter-container .container-posts .post-custom-layout .post-item {
   padding: 0 20px!important;
