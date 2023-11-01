@@ -481,7 +481,7 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 div:nth-child(12),
 .ymc-smart-filter-container .filter-layout3 div:nth-child(13) {
   /* max-width: 25%!important; */
-  flex-grow: 1;
+  grid-column: 1 / 4;
 }
 .ymc-smart-filter-container .filter-layout3 div:nth-child(12) {
   margin-right: 0!important;
