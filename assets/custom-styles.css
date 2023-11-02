@@ -542,10 +542,13 @@ option:hover {
     grid-column: 3 / 5;
   }
   .ymc-smart-filter-container .filter-layout3 div:nth-child(12){
-    grid-column: 5 / 7;
+    grid-column: 5 / 6;
   }
   .ymc-smart-filter-container .filter-layout3 div:nth-child(13){
-    grid-column: 7 / 9;
+    grid-column: 6 / 7;
+  }
+  .ymc-smart-filter-container .filter-layout3 div:nth-child(14){
+    grid-column: 7 / 8;
   }
   .ymc-smart-filter-container .filter-layout3 div:nth-child(12) {
     margin-right: 0!important;
