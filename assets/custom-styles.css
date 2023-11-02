@@ -761,6 +761,7 @@ background-color: #e8fbff!important;
   padding: 15px 20px;
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 .single-mieszkania .entry-content a::before{
   content: '';
@@ -772,8 +773,9 @@ background-color: #e8fbff!important;
   min-height: 0%;
   background-color: #e9ecf2;
   transition: height 0.3s ease;
+  z-index: -1;
 }
-.single-mieszkania .entry-content a:hover .single-mieszkania .entry-content a::before{
+.single-mieszkania .entry-content a:hover .single-mieszkania > .entry-content > a::before{
   min-height: 100%;
 }
 .single-mieszkania .entry-content a::before{
