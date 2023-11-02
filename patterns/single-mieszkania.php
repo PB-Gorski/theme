@@ -263,11 +263,11 @@
     <!-- wp:group -->
     <div class="wp-block-group apartment-info desktop:pl-[50px]">
       <!-- wp:paragraph -->
-      <p class="mb-[50px] desktop:text-[24px] text-[20px] text-[#828894]">Lokalizacja mieszkania na kondygnacji</p>
+      <p class="mb-[50px] text-[24px]">Lokalizacja mieszkania na kondygnacji</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
-      <div class="wp-block-group mb-[30px] flex gap-[50px]">
+      <div class="wp-block-group desktop:mb-[30px] mb-[20px] flex gap-[50px]">
         <!-- wp:group -->
         <div class="wp-block-group desktop:text-[30px] text-[24px]">
           <!-- wp:paragraph -->
