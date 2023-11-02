@@ -54,7 +54,7 @@
         <!-- wp:group -->
         <div class="wp-block-group sub-title desktop:text-[24px] text-[20px] text-[#8a8f99] flex gap-[4px]">
           <!-- wp:paragraph -->
-          <p class="max-w-[550px] text-white opacity-[0.5] ">W inwestycji </p>
+          <p class="max-w-[550px] text-white font-medium opacity-[0.5] ">W inwestycji </p>
           <!-- /wp:paragraph -->
 
           <!-- wp:group -->
