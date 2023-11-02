@@ -269,7 +269,7 @@
       <!-- wp:group -->
       <div class="wp-block-group mb-[30px] flex gap-[50px]">
         <!-- wp:group -->
-        <div class="wp-block-group text-[30px]">
+        <div class="wp-block-group desktop:text-[30px] text-[24px]">
           <!-- wp:paragraph -->
           <p class="uppercase text-[10px] text-[#a1a7b2]">budynek</p>
           <!-- /wp:paragraph -->
@@ -278,7 +278,7 @@
         <!-- /wp:group -->
 
         <!-- wp:group -->
-        <div class="wp-block-group text-[30px]">
+        <div class="wp-block-group text-[30px] desktop:text-[30px] text-[24px]">
           <!-- wp:paragraph -->
           <p class="uppercase text-[10px] text-[#a1a7b2]">klatka</p>
           <!-- /wp:paragraph -->
@@ -289,7 +289,7 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group text-[30px]">
+      <div class="wp-block-group text-[30px] desktop:text-[30px] text-[24px]">
         <!-- wp:paragraph -->
         <p class="uppercase text-[10px] text-[#a1a7b2]">kondygnacja</p>
         <!-- /wp:paragraph -->
