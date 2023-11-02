@@ -748,12 +748,11 @@ background-color: #e8fbff!important;
   position: relative;
 }
 .cpt-file-icon{
-  display: none;
+  display: none!important;
 }
 .post-edit-link{
-  display: none;
+  display: none!important;
 }
-
 .single-mieszkania .entry-content a{
   position: absolute!important;
   top: 310px;
@@ -775,10 +774,9 @@ background-color: #e8fbff!important;
     position: absolute!important;
     top: auto;
     bottom: 0px;
-    right: -270px;
+    right: 0px;
   
     background-color: #f5f7fa;
-    color: inherit;
     font-weight: bold;
     text-align: center;
     width: 100%;
