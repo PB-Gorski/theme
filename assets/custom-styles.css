@@ -609,7 +609,7 @@ option:hover {
 }
 @media only screen and (max-width: 1024px) {
   .custom-posts-found{
-    top: 510px;
+    top: 630px;
   }
 }
 .ymc-smart-filter-container .filter-layout3 .posts-found:empty {
