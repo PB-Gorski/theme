@@ -10,9 +10,6 @@
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner-lista-lokali relative">
-  <!-- wp:paragraph -->
-  <p>page-lista-lokali-banner.php</p>
-  <!-- /wp:paragraph -->
   <!-- wp:group -->
   <div class="wp-block-group mobile-fixed-phone block desktop:hidden flex justify-center items-center bg-primaryRed w-full h-[87px] fixed bottom-0 left-0 z-[2]">
     <!-- wp:group -->
@@ -72,7 +69,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group call-back-pop-up w-[200px] h-[280px] hidden desktop:block text-[16px] text-center bg-transparent flex flex-col jusify-center items-center fixed bottom-[30px] right-[20px] z-[2]">
+  <div class="wp-block-group call-back-pop-up w-[200px] h-[280px] hidden desktop:block text-[16px] text-center bg-transparent flex flex-col jusify-center items-center fixed bottom-[30px] right-[20px] z-[4]">
     <!-- wp:group -->
     <div class="wp-block-group text mb-[10px] w-full h-[160px] bg-white flex flex-col justify-center items-center gap-y-[10px] shadow-lg">
       <!-- wp:paragraph -->
@@ -100,28 +97,28 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group w-full h-[460px] relative py-[60px] before:content-[''] before:inline-block before:w-full before:h-full before:bg-[#091224] before:absolute before:top-0 before:left-0 before:opacity-[25%]">
+  <div class="wp-block-group w-full h-[600px] relative py-[60px]">
     <!-- wp:image -->
     <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/lista-mieszkan-bg.jpeg" alt="banner-bg">
     </figure>
     <!-- /wp:image -->
     <!-- wp:group -->
-    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px]">
+    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pt-[100px]">
       <!-- wp:group -->
       <div class="wp-block-group title-wrapper">
         <!-- wp:group -->
-        <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px] relative">
+        <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
           <!-- wp:paragraph -->
-          <p>Znajdź lokal</p>
+          <p data-aos="fade-right" data-aos-offset="30">Znajdź lokal</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
         <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <p class="max-w-[550px] text-white opacity-[0.75]">Określ parametry, aby znaleźć mieszkanie dokładnie
-            takie, jakiego potrzebujesz.</p>
+          <p class="max-w-[550px] text-white opacity-[0.75]" data-aos="fade-right" data-aos-offset="30">Określ parametry, aby znaleźć lokal dokładnie
+            taki, jakiego potrzebujesz.</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
