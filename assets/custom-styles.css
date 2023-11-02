@@ -772,7 +772,7 @@ background-color: #e8fbff!important;
   width: 100%;
   min-height: 0%;
   background-color: #e9ecf2;
-  transition: height 0.3s ease;
+  transition: min-height 0.3s ease;
   z-index: -1;
 }
 .single-mieszkania .entry-content a:hover::before{
