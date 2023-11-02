@@ -1107,7 +1107,7 @@ background-color: #e8fbff!important;
 }
 .dropdown__link {
   background-color: transparent;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 .dropdown__link:hover {
   background-color: #B2F1FF;
