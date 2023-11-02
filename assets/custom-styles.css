@@ -773,7 +773,7 @@ background-color: #e8fbff!important;
   background-color: #e9ecf2;
   transition: height 0.3s ease;
 }
-.single-mieszkania .entry-content a:hover a::before{
+.single-mieszkania .entry-content a:hover .single-mieszkania .entry-content a::before{
   min-height: 100%;
 }
 .single-mieszkania .entry-content a::before{
