@@ -8,9 +8,6 @@
  */
 ?>
 
-
-
-
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="content" class="wp-block-group content bg-[#ebeef2] relative">
   <!-- wp:group -->
