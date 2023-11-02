@@ -515,7 +515,7 @@ option:hover {
   .ymc-smart-filter-container .filter-layout3 div:nth-child(12),
   .ymc-smart-filter-container .filter-layout3 div:nth-child(13),
   .ymc-smart-filter-container .filter-layout3 div:nth-child(14){
-    opacity:0;
+    opacity:1;
     transition: opacity 0.3s ease;
   }
 }
