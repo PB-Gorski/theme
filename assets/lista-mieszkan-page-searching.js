@@ -145,7 +145,7 @@ window.addEventListener("load", function() {
         if(window.innerWidth > 480){
           searchBar.classList.toggle('desktop:h-[240px]');
           searchBar.classList.toggle('gap-y-[0px]');
-          postsFound.classList.toggle()
+          // postsFound.classList.toggle()
         }else{
           searchBar.classList.toggle('h-[450px]');
         };
