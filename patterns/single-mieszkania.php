@@ -209,7 +209,7 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
-    <div class="wp-block-group two-col-layout mb-[30px] desktop:flex justify-center desktop:px-[50px]">
+    <div class="wp-block-group two-col-layout desktop:mb-[30px] mb-[60px] desktop:flex justify-center desktop:px-[50px]">
       <!-- wp:group -->
       <div class="wp-block-group left-col desktop:w-[60%]">
         <!-- wp:post-content /-->
@@ -263,7 +263,7 @@
     <!-- wp:group -->
     <div class="wp-block-group apartment-info desktop:pl-[50px]">
       <!-- wp:paragraph -->
-      <p class="mb-[50px] desktop:text-[24px] text-[18px] text-[#828894]">Lokalizacja mieszkania na kondygnacji</p>
+      <p class="mb-[50px] desktop:text-[24px] text-[20px] text-[#828894]">Lokalizacja mieszkania na kondygnacji</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
