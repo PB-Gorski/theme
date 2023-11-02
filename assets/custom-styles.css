@@ -505,8 +505,15 @@ option:hover {
 
 .ymc-smart-filter-container .filter-layout3 div:nth-child(7) {
   grid-column: 1 / span 3;
-  grid-row: 4 / span 1;
+  grid-row: 5 / span 1;
 }
+@media only screen and (max-width: 640px) {
+  .ymc-smart-filter-container .filter-layout3 div:nth-child(14) {
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 1;
+  }
+}
+
 .ymc-smart-filter-container .filter-layout3 div:nth-child(9),
 .ymc-smart-filter-container .filter-layout3 div:nth-child(10),
 .ymc-smart-filter-container .filter-layout3 div:nth-child(11),
