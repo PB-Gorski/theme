@@ -668,6 +668,7 @@ option:hover {
   font-size: 18px!important;
   width: 100%;
   height: 100%;
+  padding-left: 20px!important;
 }
 .ymc-smart-filter-container .filter-layout3 .dropdown-filter .menu-active .arrow {
 border-color: #8a8f99!important;
