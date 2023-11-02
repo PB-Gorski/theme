@@ -775,7 +775,7 @@ background-color: #e8fbff!important;
   transition: height 0.3s ease;
   z-index: -1;
 }
-.single-mieszkania .entry-content a:hover .single-mieszkania > .entry-content > a::before{
+.single-mieszkania .entry-content a:hover::before{
   min-height: 100%;
 }
 .single-mieszkania .entry-content a::before{
