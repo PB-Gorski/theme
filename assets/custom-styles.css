@@ -467,15 +467,18 @@ option:hover {
 .ymc-smart-filter-container .filter-layout3 div{
   margin: 0!important;
 }
-.ymc-smart-filter-container .filter-layout3 div:nth-child(1),
-.ymc-smart-filter-container .filter-layout3 div:nth-child(2),
-.ymc-smart-filter-container .filter-layout3 div:nth-child(3),
-.ymc-smart-filter-container .filter-layout3 div:nth-child(4),
-.ymc-smart-filter-container .filter-layout3 div:nth-child(5),
-.ymc-smart-filter-container .filter-layout3 div:nth-child(6),
-.ymc-smart-filter-container .filter-layout3 div:nth-child(7) {
-  /* z-index: 1 */
+@media only screen and (min-width: 640px) {
+  .ymc-smart-filter-container .filter-layout3 div:nth-child(1),
+  .ymc-smart-filter-container .filter-layout3 div:nth-child(2),
+  .ymc-smart-filter-container .filter-layout3 div:nth-child(3),
+  .ymc-smart-filter-container .filter-layout3 div:nth-child(4),
+  .ymc-smart-filter-container .filter-layout3 div:nth-child(5),
+  .ymc-smart-filter-container .filter-layout3 div:nth-child(6),
+  .ymc-smart-filter-container .filter-layout3 div:nth-child(7) {
+    z-index: 1
+  }
 }
+
 @media only screen and (max-width: 640px) {
   .ymc-smart-filter-container .filter-layout3 div:nth-child(1),
   .ymc-smart-filter-container .filter-layout3 div:nth-child(2),
