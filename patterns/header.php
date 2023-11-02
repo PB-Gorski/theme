@@ -409,7 +409,7 @@
 <!-- wp:group {"templateLock":"all","lock":{"move":true,"remove":true},"anchor":true} -->
 <div id="Mobile" class="wp-block-group nav-mobile h-[80px] bg-white text-textGray block desktop:hidden container mx-auto px-[20px] transition ease-out duration-300">
   <!-- wp:group -->
-  <div class="wp-block-group h-full flex justify-between items-center relative z-[2]">
+  <div class="wp-block-group h-full flex justify-between items-center relative z-[4]">
     <!-- wp:group -->
     <div class="wp-block-group logo-mobile mr-[80px] z-[0] relative transition ease duration-300">
       <!-- wp:paragraph -->
@@ -425,7 +425,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group btn-open-menu ml-[10px] p-[13px_10px] w-[50px] bg-textGray font-medium cursor-pointer z-[4]">
+    <div class="wp-block-group btn-open-menu ml-[10px] p-[13px_10px] w-[50px] bg-textGray font-medium cursor-pointer">
       <!-- wp:group -->
       <div class="wp-block-group hamburger-btn-line w-[30px] h-[2px] bg-white mb-[8px] rounded-[5px] transition ease-out duration-[400ms]">
         <!-- wp:paragraph -->
