@@ -594,6 +594,8 @@ option:hover {
   height: 300px;
   margin-bottom: 40px;
   transition: height 0.3s ease-out;
+  z-index: 3;
+  position: relative;
   /* max-width: 1170px; */
   /* margin-left: auto;
   margin-right: auto; */
