@@ -770,6 +770,27 @@ background-color: #e8fbff!important;
   justify-content: center;
   z-index: 1;
 }
+@media only screen and (max-width: 480px) {
+  .single-mieszkania .entry-content a{
+    position: absolute!important;
+    top: auto;
+    bottom: 0px;
+    right: -270px;
+  
+    background-color: #f5f7fa;
+    color: inherit;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    height: 55px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+}
+
+
 .single-mieszkania .entry-content a::before{
   content: '';
   display: inline-block;
