@@ -747,6 +747,9 @@ background-color: #e8fbff!important;
 .entry-content{
   position: relative;
 }
+.cpt-file-icon{
+  display: none;
+}
 .single-mieszkania .entry-content a{
   position: absolute!important;
   top: 310px;
