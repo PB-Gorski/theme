@@ -135,6 +135,7 @@ window.addEventListener("load", function() {
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
     const searchBar = document.querySelector('.filter-entry');
+    const postsFound = document.querySelector('.js-post-found');
     
     if(document.body.classList.contains('post-type-archive-mieszkania')){
       if(window.innerWidth < 480){
@@ -144,6 +145,7 @@ window.addEventListener("load", function() {
         if(window.innerWidth > 480){
           searchBar.classList.toggle('desktop:h-[240px]');
           searchBar.classList.toggle('gap-y-[0px]');
+          postsFound.classList.toggle()
         }else{
           searchBar.classList.toggle('h-[450px]');
         };
