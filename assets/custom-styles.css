@@ -768,7 +768,7 @@ background-color: #e8fbff!important;
   height: 17px!important;
 }
 .container-posts {
-  overflow: scroll;
+  overflow-x: scroll;
 }
 .ymc-smart-filter-container .container-posts .post-custom-layout .post-item {
   padding: 0 20px!important;
