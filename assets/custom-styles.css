@@ -619,7 +619,6 @@ option:hover {
   align-self: flex-start;
   border-right: 2px solid#ebeef2;
   border-bottom: 2px solid#ebeef2;
-  box-shadow: 0 10px 40px 0 rgba(0,0,0,.1);
   /* z-index: 1; */
 }
 @media only screen and (max-width: 1024px) {
@@ -657,6 +656,7 @@ option:hover {
   /* max-height: 180px; */
   max-height: 300px;
   overflow-y: scroll;
+  box-shadow: 0 10px 40px 0 rgba(0,0,0,.1);
 }
 .menu-link{
   color: #2E384D!important;
@@ -1097,6 +1097,7 @@ background-color: #e8fbff!important;
   z-index: 4!important;
   background-color: #fff;
   overflow-y: scroll;;
+  box-shadow: 0 10px 40px 0 rgba(0,0,0,.1);
 }
 .dropdown__item {
   width: 100%;
