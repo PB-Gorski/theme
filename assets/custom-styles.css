@@ -660,7 +660,7 @@ option:hover {
   color: #2E384D!important;
   font-size: 18px!important;
   padding: 0!important;
-  z-index: 3!important;
+  z-index: 4!important;
   display: block;
   /* max-height: 180px; */
   max-height: 300px;
