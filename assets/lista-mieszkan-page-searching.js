@@ -425,7 +425,7 @@ window.addEventListener("load", function() {
 
       function runFromCookies(){
         YMCTools({
-          target: '.data-target-ymc1', 
+          target: '.data-target-ymc2', 
           terms: filteredTermsFromCookies,      
         }).apiTermUpdate(); 
         console.log('after YMC api update');
@@ -602,7 +602,7 @@ window.addEventListener("load", function() {
       let metrazeID = runSearchingMetraz();
 
       YMCTools({
-        target: '.data-target-ymc1',
+        target: '.data-target-ymc2',
         terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join(),            
       }).apiTermUpdate(); 
       console.log('in btn prices: ', pricesID.join());
