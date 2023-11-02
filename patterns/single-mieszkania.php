@@ -52,11 +52,16 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group sub-title text-[24px] text-[#8a8f99] flex gap-[4px]">
+        <div class="wp-block-group sub-title desktop:text-[24px] text-[20px] text-[#8a8f99] flex gap-[4px]">
           <!-- wp:paragraph -->
           <p class="max-w-[550px] text-white opacity-[0.5] ">W inwestycji </p>
           <!-- /wp:paragraph -->
-          <!-- wp:post-terms {"term":"inwestycja"} /-->
+
+          <!-- wp:group -->
+          <div class="wp-block-group text-white">
+            <!-- wp:post-terms {"term":"inwestycja"} /-->
+          </div>
+          <!-- /wp:group -->
         </div>
         <!-- /wp:group -->
       </div>
