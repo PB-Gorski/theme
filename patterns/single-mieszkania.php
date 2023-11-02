@@ -269,7 +269,7 @@
       <!-- wp:group -->
       <div class="wp-block-group desktop:mb-[30px] mb-[20px] flex gap-[50px]">
         <!-- wp:group -->
-        <div class="wp-block-group desktop:text-[30px] text-[24px]">
+        <div class="wp-block-group text-[30px]">
           <!-- wp:paragraph -->
           <p class="uppercase text-[10px] text-[#a1a7b2]">budynek</p>
           <!-- /wp:paragraph -->
