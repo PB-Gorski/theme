@@ -750,6 +750,10 @@ background-color: #e8fbff!important;
 .cpt-file-icon{
   display: none;
 }
+.post-edit-link{
+  display: none;
+}
+
 .single-mieszkania .entry-content a{
   position: absolute!important;
   top: 310px;
