@@ -571,7 +571,7 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 
 	return $layout;
 }
-add_filter('ymc_post_custom_layout_148_1', 'my_custom_post_layout', 10, 5);
+add_filter('ymc_post_custom_layout_148_2', 'my_custom_post_layout', 10, 5);
 function my_custom_post_layout2($layout, $post_id, $filter_id, $increment_post, $arrOptions)
 {
 	$layout = '';
