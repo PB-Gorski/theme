@@ -205,7 +205,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] pt-[140px] pb-[100px]">
     <!-- wp:paragraph -->
-    <p class="desktop:mb-[60px] mb-0 text-[24px] font-medium">Przykładowa aranżacja <span class="text-[#828894] desktop:text-[24px] text-[18px]">(kliknij zdjęcie by powiększyć)</span></p>
+    <p class="desktop:mb-[60px] mb-0 text-[24px] font-medium">Przykładowa aranżacja <span class="text-[#828894] font-normal desktop:text-[24px] text-[18px]">(kliknij zdjęcie by powiększyć)</span></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
