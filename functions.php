@@ -532,7 +532,7 @@ function pbgorski_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $t
 
 	return $layout;
 }
-add_filter('ymc_filter_custom_layout_148_1', 'pbgorski_custom_filter_layout', 10, 6);
+add_filter('ymc_filter_custom_layout_148_2', 'pbgorski_custom_filter_layout', 10, 6);
 
 function pbgorski_custom_filter_layout2($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
