@@ -519,25 +519,6 @@ function pbgorski_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $t
 {
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
 	$filter_id = '148';
-	$layout_id = '1';
-	$layout  = ''; //Override demo message
-	ob_start();
-
-	if (file_exists($filepath_filter)) {
-		require $filepath_filter;
-		$layout .= ob_get_contents();
-	}
-
-	ob_end_clean();
-
-	return $layout;
-}
-add_filter('ymc_filter_custom_layout_148_1', 'pbgorski_custom_filter_layout', 10, 6);
-
-function pbgorski_custom_filter_layout2($layout, $terms, $taxonomy, $multiple, $target, $options)
-{
-	$filepath_filter = get_stylesheet_directory() . '/filter-layout2.php';
-	$filter_id = '1850';
 	$layout_id = '2';
 	$layout  = ''; //Override demo message
 	ob_start();
@@ -551,7 +532,26 @@ function pbgorski_custom_filter_layout2($layout, $terms, $taxonomy, $multiple, $
 
 	return $layout;
 }
-add_filter('ymc_filter_custom_layout_1850_2', 'pbgorski_custom_filter_layout2', 10, 6);
+add_filter('ymc_filter_custom_layout_148_2', 'pbgorski_custom_filter_layout', 10, 6);
+
+function pbgorski_custom_filter_layout2($layout, $terms, $taxonomy, $multiple, $target, $options)
+{
+	$filepath_filter = get_stylesheet_directory() . '/filter-layout2.php';
+	$filter_id = '1850';
+	$layout_id = '3';
+	$layout  = ''; //Override demo message
+	ob_start();
+
+	if (file_exists($filepath_filter)) {
+		require $filepath_filter;
+		$layout .= ob_get_contents();
+	}
+
+	ob_end_clean();
+
+	return $layout;
+}
+add_filter('ymc_filter_custom_layout_1850_3', 'pbgorski_custom_filter_layout3', 10, 6);
 
 function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $arrOptions)
 {
@@ -571,13 +571,13 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 
 	return $layout;
 }
-add_filter('ymc_post_custom_layout_148_1', 'my_custom_post_layout', 10, 5);
+add_filter('ymc_post_custom_layout_148_2', 'my_custom_post_layout', 10, 5);
 function my_custom_post_layout2($layout, $post_id, $filter_id, $increment_post, $arrOptions)
 {
 	$layout = '';
 	return $layout;
 }
-add_filter('ymc_post_custom_layout_1850_2', 'my_custom_post_layout2', 10, 5);
+add_filter('ymc_post_custom_layout_1850_3', 'my_custom_post_layout2', 10, 5);
 
 
 add_filter('ymc_posts_selected_FilterID_LayoutID', 'ymc_posts_selected', 10, 2);
@@ -586,4 +586,4 @@ function ymc_posts_selected($layouts, $founded_post)
 	$layouts = '<p class="text-[24px] text-center aos-init aos-animate">Znaleziono ' . $founded_post . ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' . wp_count_posts('mieszkania')->publish . ')</span></p>';
 	return $layouts;
 }
-add_filter('ymc_posts_selected_148_1', 'ymc_posts_selected', 10, 2);
+add_filter('ymc_posts_selected_148_2', 'ymc_posts_selected', 10, 2);
