@@ -475,7 +475,7 @@ option:hover {
   .ymc-smart-filter-container .filter-layout3 div:nth-child(5),
   .ymc-smart-filter-container .filter-layout3 div:nth-child(6),
   .ymc-smart-filter-container .filter-layout3 div:nth-child(7) {
-    z-index: 1
+    /* z-index: 1 */
   }
 }
 
@@ -647,7 +647,8 @@ option:hover {
   justify-content: space-between;
   padding: 10px 15px!important;
 }
-.menu-passive{
+.ymc-smart-filter-container .filter-layout3 .dropdown-filter .menu-passive {
+  top: 100px!important;
   background-color: white!important;
   color: #2E384D!important;
   font-size: 18px!important;
@@ -658,6 +659,9 @@ option:hover {
   max-height: 300px;
   overflow-y: scroll;
 }
+/* .menu-passive{
+
+} */
 .menu-link{
   color: #2E384D!important;
   font-size: 18px!important;
@@ -696,9 +700,6 @@ border-width: 0 2px 2px 0;
 .menu-passive__item:hover{
   background-color: #B2F1FF;
   /* cursor: pointer; */
-}
-.ymc-smart-filter-container .filter-layout3 .dropdown-filter .menu-passive {
-  top: 100px!important;
 }
 .menu-passive__item .active{
   padding: 0px!important;
