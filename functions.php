@@ -577,7 +577,7 @@ function my_custom_post_layout2($layout, $post_id, $filter_id, $increment_post, 
 	$layout = '';
 	return $layout;
 }
-add_filter('ymc_post_custom_layout_1850_2', 'my_custom_post_layout2', 10, 5);
+add_filter('ymc_post_custom_layout_1850_3', 'my_custom_post_layout2', 10, 5);
 
 
 add_filter('ymc_posts_selected_FilterID_LayoutID', 'ymc_posts_selected', 10, 2);
