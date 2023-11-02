@@ -208,7 +208,7 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group right-col desktop:w-[40%] desktop:pl-[40px] pt-[50px]">
+      <div class="wp-block-group right-col desktop:w-[40%] desktop:pl-[40px] desktop:pt-[50px] pt-0">
         <!-- wp:paragraph -->
         <p class="uppercase text-[10px] text-[#a1a7b2]">cena lokalu</p>
         <!-- /wp:paragraph -->
