@@ -74,9 +74,12 @@ window.addEventListener("load", function() {
         console.log(stopAdding);
 
         function showActiveFilterName(){
-          item.parentNode.previousElementSibling.childNodes[1].dataset.label = choosenOption;
-          item.parentNode.previousElementSibling.childNodes[1].innerHTML = item.parentNode.previousElementSibling.childNodes[1].getAttribute('data-label');
-           console.log('item: ', item.parentNode.previousElementSibling.childNodes[1].getAttribute('data-label'));
+          let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
+
+          menuActiveSpan.dataset.label = choosenOption;
+          menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
+
+          console.log('item: ', menuActiveSpan.getAttribute('data-label'));
 
           // let filterSpanName = document.querySelectorAll('[data-label]')
           // filterSpanName[0].dataset.label = choosenOption; 
