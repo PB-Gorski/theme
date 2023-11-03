@@ -523,7 +523,7 @@ option:hover {
   opacity:0;
   transition: opacity 0.3s ease;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1024px) {
   .ymc-smart-filter-container .filter-layout3 div:nth-child(9),
   .ymc-smart-filter-container .filter-layout3 div:nth-child(10),
   .ymc-smart-filter-container .filter-layout3 div:nth-child(11),
