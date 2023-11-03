@@ -196,9 +196,9 @@
       <!-- /wp:paragraph -->
 
       <!-- wp:image -->
-      <figrure class="wp-block-image footer-logo">
+      <figure class="wp-block-image footer-logo">
         <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/frontpage/logo-webo.png'; ?>" alt="logo-webo" />
-      </figrure>
+      </figure>
       <!-- /wp:image -->
     </div>
     <!-- /wp:group -->
