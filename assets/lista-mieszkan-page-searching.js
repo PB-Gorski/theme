@@ -78,7 +78,8 @@ window.addEventListener("load", function() {
         stopAdding = false;
         console.log(stopAdding);
 
-        let choosenInwestycjeCount = 1
+        let choosenInwestycjeCount = 1;
+        let choosenPokojeArr = [];
         function showActiveFilterName(){
           let miastoArr = [28,40];
           let inwestycjaArr = [72,71,82,81];
@@ -114,7 +115,8 @@ window.addEventListener("load", function() {
             tempPokojeArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
                 if(item.childNodes[1].dataset.termid == choosenItem){
-                  console.log('Pokoje: ',item.childNodes[1].dataset.name);
+                  choosenPokojeArr.push(item.childNodes[1].dataset.name)
+                  console.log('Pokoje: ',choosenPokojeArr);
                 }
               });
             })
