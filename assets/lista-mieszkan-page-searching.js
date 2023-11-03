@@ -105,7 +105,7 @@ window.addEventListener("load", function() {
               if(tempInwestycjaArr.length > 0 ){
                 numberCount = tempInwestycjaArr.length;
                 
-              }else{
+              }else if(tempInwestycjaArr.length == 0){
                 menuActiveSpan.innerHTML = 'Wybierz if';
               };
               
