@@ -98,26 +98,9 @@ window.addEventListener("load", function() {
             console.log('temp miastoArr',tempMiastoArr);
 
           }else if(inwestycjaArr.includes(+choosenOptionID)){
-            console.log('wybrano z kategorii - inwestycja');
-            // inwestycja
-            // if(tempInwestycjaArr.includes(choosenOptionID)){
-            //   removeItemAll(tempInwestycjaArr,choosenOptionID);
-            // }else{
-            //   tempInwestycjaArr.push(choosenOptionID)
-            // };
-            
-            // add/remove items in arr
             tempInwestycjaArr.includes(choosenOptionID) ? removeItemAll(tempInwestycjaArr,choosenOptionID) : tempInwestycjaArr.push(choosenOptionID);
 
-
-
-            if(tempInwestycjaArr.length > 0 ){
-              numberCount = tempInwestycjaArr.length;
-              
-            }else if(tempInwestycjaArr.length == 0){
-              // menuActiveSpan.innerHTML = 'Wybierz if';
-              numberCount = 0
-            };
+            if(tempInwestycjaArr.length > 0 ){numberCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){numberCount = 0};
 
             menuActiveSpan.innerHTML = 'Wybrano: ' + numberCount;
             console.log('temp inwestycjaArr',tempInwestycjaArr.length);
