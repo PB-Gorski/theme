@@ -110,6 +110,15 @@ window.addEventListener("load", function() {
             console.log('wybrano z kategorii - pokoje');
             // pokoje
             if(tempPokojeArr.includes(choosenOptionID)){removeItemAll(tempPokojeArr,choosenOptionID);}else{tempPokojeArr.push(choosenOptionID)};
+
+            tempPokojeArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  console.log('Pokoje: ',item.childNodes[1].dataset.name);
+                }
+              });
+            })
+   
             
             console.log('temp inwestycjaArr',tempPokojeArr);
           }else{
