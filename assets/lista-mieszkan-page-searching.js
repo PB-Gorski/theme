@@ -104,10 +104,11 @@ window.addEventListener("load", function() {
 
               if(tempInwestycjaArr.length > 0 ){
                 numberCount = tempInwestycjaArr.length;
-                menuActiveSpan.innerHTML = 'Wybrano: ' + numberCount;
+                
               }else{
                 menuActiveSpan.innerHTML = 'Wybierz if';
-              }
+              };
+              menuActiveSpan.innerHTML = 'Wybrano: ' + numberCount;
             }else{
               tempInwestycjaArr.push(choosenOptionID)
             };
