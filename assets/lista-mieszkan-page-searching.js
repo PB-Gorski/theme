@@ -78,7 +78,7 @@ window.addEventListener("load", function() {
         stopAdding = false;
         console.log(stopAdding);
 
-        let numberCount = 1
+        let choosenInwestycjeCount = 1
         function showActiveFilterName(){
           let miastoArr = [28,40];
           let inwestycjaArr = [72,71,82,81];
@@ -98,21 +98,19 @@ window.addEventListener("load", function() {
             console.log('temp miastoArr',tempMiastoArr);
 
           }else if(inwestycjaArr.includes(+choosenOptionID)){
+            // inwestycje
             tempInwestycjaArr.includes(choosenOptionID) ? removeItemAll(tempInwestycjaArr,choosenOptionID) : tempInwestycjaArr.push(choosenOptionID);
 
-            if(tempInwestycjaArr.length > 0 ){numberCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){numberCount = 0};
+            if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
 
-            menuActiveSpan.innerHTML = 'Wybrano: ' + numberCount;
+            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
             console.log('temp inwestycjaArr',tempInwestycjaArr.length);
             
           } else if(pokojeArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - pokoje');
             // pokoje
-            if(tempPokojeArr.includes(choosenOptionID)){
-              removeItemAll(tempPokojeArr,choosenOptionID)
-            }else{
-              tempPokojeArr.push(choosenOptionID)
-            };
+            if(tempPokojeArr.includes(choosenOptionID)){removeItemAll(tempPokojeArr,choosenOptionID);}else{tempPokojeArr.push(choosenOptionID)};
+            
             console.log('temp inwestycjaArr',tempPokojeArr);
           }else{
             console.log('error');
