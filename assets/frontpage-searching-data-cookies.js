@@ -18,6 +18,8 @@ window.addEventListener("load", function() {
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
     const searchBar = document.querySelector('.filter-entry');
+    const dropDownFIltersArr = document.querySelectorAll('.dropdown-filter');
+
     
     btnMore.addEventListener('click',()=>{
       if(window.innerWidth > 480){
@@ -31,7 +33,6 @@ window.addEventListener("load", function() {
       }else{
         searchBar.classList.toggle('h-[450px]');
       };
-      foundedPostOnStart.classList.toggle('top-[280px]')
     });
 
     // wyszukiwanie mieszkan po filtrach (cena)
