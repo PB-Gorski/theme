@@ -75,7 +75,7 @@ window.addEventListener("load", function() {
 
         function showActiveFilterName(){
           let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
-          let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML;
+          let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','');
 
           menuActiveSpan.dataset.label = choosenOption;
           menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
