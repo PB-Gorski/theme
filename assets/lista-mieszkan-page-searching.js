@@ -75,7 +75,7 @@ window.addEventListener("load", function() {
 
         function showActiveFilterName(){
           item.parentNode.previousElementSibling.childNodes[1].dataset.label = choosenOption;
-          item.parentNode.previousElementSibling.childNodes[1] = filterSpanName[0].getAttribute('data-label');
+          item.parentNode.previousElementSibling.childNodes[1] = item.parentNode.previousElementSibling.childNodes[1].getAttribute('data-label');
 
 
           // let filterSpanName = document.querySelectorAll('[data-label]')
