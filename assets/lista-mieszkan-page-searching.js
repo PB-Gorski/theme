@@ -6,6 +6,9 @@ window.addEventListener("load", function() {
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
     let choosenOptions =[];
+    let tempMiastoArr = [];
+    let tempInwestycjaArr = [];
+    let tempPokojeArr = [];
     let passiveOptions = document.querySelectorAll('.menu-passive__item');
     let counter2 = 0;
 
@@ -74,7 +77,7 @@ window.addEventListener("load", function() {
         stopAdding = false;
         console.log(stopAdding);
 
-        let tempMiastoArr = [];
+        
         function showActiveFilterName(){
           let miastoArr = [28,40];
           let inwestycjaArr = [72,71,82,81];
@@ -85,7 +88,17 @@ window.addEventListener("load", function() {
           if(miastoArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - miasto');
 
-            
+            if(tempInwestycjaArr.includes(choosenOptionID)){
+              removeItemAll(tempInwestycjaArr,choosenOptionID)
+            }else{
+              tempInwestycjaArr.push(choosenOptionID)
+            };
+            console.log('temp miastoArr',tempInwestycjaArr);
+            console.log('temp miastoArr2',choosenOptions);
+
+          }else if(inwestycjaArr.includes(+choosenOptionID)){
+            console.log('wybrano z kategorii - inwestycja');
+
             if(tempMiastoArr.includes(choosenOptionID)){
               removeItemAll(tempMiastoArr,choosenOptionID)
             }else{
@@ -94,8 +107,6 @@ window.addEventListener("load", function() {
             console.log('temp miastoArr',tempMiastoArr);
             console.log('temp miastoArr2',choosenOptions);
 
-          }else if(inwestycjaArr.includes(+choosenOptionID)){
-            console.log('wybrano z kategorii - inwestycja');
           } else if(pokojeArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - pokoje');
           }else{
@@ -111,7 +122,6 @@ window.addEventListener("load", function() {
           console.log('item: ', menuActiveSpan.getAttribute('data-label'));
           console.log('item category: ', menuActiveTitle);
           console.log('item termid: ', +choosenOptionID);
-          console.log('item termid: ', Number(choosenOptionID));
 
 
         }
