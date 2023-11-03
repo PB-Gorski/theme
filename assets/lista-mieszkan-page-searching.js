@@ -9,7 +9,8 @@ window.addEventListener("load", function() {
     let tempMiastoArr = [];
     let tempInwestycjaArr = [];
     let tempPokojeArr = [];
-    let passiveOptions = document.querySelectorAll('.menu-link')
+    let passiveOptions = document.querySelectorAll('.menu-passive__item')
+    // let passiveOptions = document.querySelectorAll('.menu-passive__item')
     let counter2 = 0;
 
     passiveOptions.forEach(item => {
