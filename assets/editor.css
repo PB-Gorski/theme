@@ -15,7 +15,12 @@ figure div{
     display: none;
 }
 .editor-styles-wrapper #filter-layout3-filter-layout3 > .filter-entry {
-    height: 240px!important;
+    height:300px!important;
+}
+@media only screen and (min-width: 1024px){
+    .editor-styles-wrapper #filter-layout3-filter-layout3>.filter-entry {
+        height: 300px;
+    }
 }
 .ymc-smart-filter-container .filter-layout3 div:nth-child(9),
 .ymc-smart-filter-container .filter-layout3 div:nth-child(10),
