@@ -333,7 +333,7 @@ $tax_sort = $taxonomy;
           <div class="dropdown-filter flex-col bg-white h-fit">
             <p class="dropdown-filter-title"><?php echo get_taxonomy($select_term)->label . ':' ?></p>
             <div class="menu-active font-bold">
-              <span data-label-single="" class="flex flex-row gap-[5px]">Wybierz<?php get_taxonomy($select_term)->label ?></span><span class="arrow-down"></span>
+              <span data-label-single="single" class="flex flex-row gap-[5px]">Wybierz<?php get_taxonomy($select_term)->label ?></span><span class="arrow-down"></span>
             </div>
             <div class="menu-passive">
               <!-- <i class="btn-close">x</i> -->

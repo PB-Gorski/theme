@@ -262,9 +262,9 @@ window.addEventListener("load", function() {
       counterMetraz++;
     });
 
-    const filterSpanName = document.querySelectorAll('[data-label-single]')
+    const filterSpanName = document.querySelector('[data-label-single]')
     function showActiveFilterName(){
-      filterSpanName[0].innerHTML = filterSpanName[0].getAttribute('data-label-single');
+      filterSpanName.innerHTML = filterSpanName.getAttribute('data-label-single');
     }
 
 
