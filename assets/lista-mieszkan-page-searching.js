@@ -78,6 +78,7 @@ window.addEventListener("load", function() {
         stopAdding = false;
         console.log(stopAdding);
 
+        let choosenMiastoArr = [];
         let choosenInwestycjeCount = 1;
         let choosenPokojeArr = [];
         function showActiveFilterName(){
@@ -92,11 +93,22 @@ window.addEventListener("load", function() {
             // miasto
             if(tempMiastoArr.includes(choosenOptionID)){
               removeItemAll(tempMiastoArr,choosenOptionID);
-
             }else{
               tempMiastoArr.push(choosenOptionID)
             };
             console.log('temp miastoArr',tempMiastoArr);
+
+            // ------------------------------------------------
+            // test
+            if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
+
+            tempMiastoArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
+              });
+            });
+            menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
+            console.log('miasto: ',choosenPokojeArr);
 
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
@@ -105,10 +117,8 @@ window.addEventListener("load", function() {
             if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
 
             menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
-            console.log('temp inwestycjaArr',tempInwestycjaArr.length);
           } else if(pokojeArr.includes(+choosenOptionID)){
             // pokoje
-            console.log('wybrano z kategorii - pokoje');
             if(tempPokojeArr.includes(choosenOptionID)){removeItemAll(tempPokojeArr,choosenOptionID);}else{tempPokojeArr.push(choosenOptionID)};
 
             tempPokojeArr.forEach(choosenItem =>{
@@ -116,7 +126,6 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
               });
             });
-
             menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
           }else{
             console.log('error');
