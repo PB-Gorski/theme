@@ -12,7 +12,7 @@ window.addEventListener("load", function() {
     let passiveOptions = document.querySelectorAll('.menu-link')
     let counter2 = 0;
 
-    passiveOptions.childNodes.forEach(item => {
+    passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
         let optionSpan = document.createElement('span');
         let choosenOption = item.childNodes[1].dataset.name;
