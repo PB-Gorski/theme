@@ -106,10 +106,9 @@ window.addEventListener("load", function() {
 
             menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
             console.log('temp inwestycjaArr',tempInwestycjaArr.length);
-            
           } else if(pokojeArr.includes(+choosenOptionID)){
-            console.log('wybrano z kategorii - pokoje');
             // pokoje
+            console.log('wybrano z kategorii - pokoje');
             if(tempPokojeArr.includes(choosenOptionID)){removeItemAll(tempPokojeArr,choosenOptionID);}else{tempPokojeArr.push(choosenOptionID)};
 
             tempPokojeArr.forEach(choosenItem =>{
