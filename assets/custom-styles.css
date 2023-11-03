@@ -623,16 +623,13 @@ border-width: 0 2px 2px 0;
   top: 100px!important;
 }
 .menu-passive__item .active{
-  /* padding: 0px!important;
-  padding-left: 25px!important; */
+  padding: 8px 15px!important;
 }
 .menu-passive__item{
   padding: 0px!important;
-  /* padding-left: 0px!important; */
 }
 .menu-passive__item a{
   padding: 8px 15px!important;
-  /* padding-left: 0px!important; */
 }
 
 /* YMC Flter Frontpage */
