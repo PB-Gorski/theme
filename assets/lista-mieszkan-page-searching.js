@@ -75,17 +75,13 @@ window.addEventListener("load", function() {
 
         function showActiveFilterName(){
           let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
+          let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML;
 
           menuActiveSpan.dataset.label = choosenOption;
           menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
 
           console.log('item: ', menuActiveSpan.getAttribute('data-label'));
-
-          // let filterSpanName = document.querySelectorAll('[data-label]')
-          // filterSpanName[0].dataset.label = choosenOption; 
-          // filterSpanName[0].innerHTML  = filterSpanName[0].getAttribute('data-label');
-          // console.log('item ',item.parentNode.previousElementSibling.childNodes[0]);
-
+          console.log('item category: ', menuActiveTitle);
         }
         showActiveFilterName();
       });
