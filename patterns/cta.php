@@ -39,7 +39,7 @@
           <p class="mb-[10px] text-bgDarkGray" data-aos="fade-up" data-aos-offset="30">Zadzwoń do nas</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p class="relative text-[22px] font-medium inline-block border-b-primaryRed border-b-[2px] before:coontent-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[30%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer" data-aos="fade-up" data-aos-offset="30">(58) 340 79 00</p>
+          <p class="relative text-[22px] font-medium inline-block border-b-primaryRed border-b-[2px] cursor-pointer" data-aos="fade-up" data-aos-offset="30">(58) 340 79 00</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -50,7 +50,7 @@
           <p class="mb-[10px] text-bgDarkGray" data-aos="fade-up" data-aos-offset="30">Napisz</p>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p class="relative text-[22px] font-medium inline-block border-b-primaryRed border-b-[2px] _before:coontent-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[30%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer" data-aos="fade-up" data-aos-offset="30">sprzedaz@pbgorski.pl</p>
+          <p class="relative text-[22px] font-medium inline-block border-b-primaryRed border-b-[2px] cursor-pointer" data-aos="fade-up" data-aos-offset="30">sprzedaz@pbgorski.pl</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
