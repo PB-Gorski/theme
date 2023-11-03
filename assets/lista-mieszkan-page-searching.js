@@ -75,6 +75,7 @@ window.addEventListener("load", function() {
 
         const filterSpanName = document.querySelector('[data-label-single]')
         function showActiveFilterName(){
+          filterSpanName.setAttribute('data-label-single', 'test') = 
           filterSpanName.innerHTML = filterSpanName.getAttribute('data-label-single');
         }
         showActiveFilterName();
