@@ -14,3 +14,6 @@ figure div{
 .menu-passive{
     display: none;
 }
+.editor-styles-wrapper #filter-layout3-filter-layout3>.filter-entry {
+    height: 240px;
+}
