@@ -74,13 +74,14 @@ window.addEventListener("load", function() {
         console.log(stopAdding);
 
         function showActiveFilterName(){
-          let filterSpanName = document.querySelectorAll('[data-label]')
-          filterSpanName[0].dataset.label = choosenOption; 
-          filterSpanName[0].innerHTML = filterSpanName[0].getAttribute('data-label');
+          item.parentNode.previousElementSibling.childNodes[1].dataset.label = choosenOption
 
-          console.log('item ',item.parentNode.previousElementSibling.childNodes[0]);
+          // let filterSpanName = document.querySelectorAll('[data-label]')
+          // filterSpanName[0].dataset.label = choosenOption; 
+          // filterSpanName[0].innerHTML = filterSpanName[0].getAttribute('data-label');
 
-          // item.parentNode.previousElementSibling.childNodes[0].childNodes[0].dataset 
+          // console.log('item ',item.parentNode.previousElementSibling.childNodes[0]);
+
         }
         showActiveFilterName();
       });
