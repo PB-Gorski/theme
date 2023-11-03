@@ -77,7 +77,7 @@ window.addEventListener("load", function() {
         stopAdding = false;
         console.log(stopAdding);
 
-        
+        let numberCount = 0
         function showActiveFilterName(){
           let miastoArr = [28,40];
           let inwestycjaArr = [72,71,82,81];
