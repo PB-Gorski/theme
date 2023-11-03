@@ -102,7 +102,7 @@ window.addEventListener("load", function() {
             if(tempInwestycjaArr.includes(choosenOptionID)){
               removeItemAll(tempInwestycjaArr,choosenOptionID);
 
-              tempInwestycjaArr.length > 0 ? menuActiveSpan.dataset.label = 'Wybrano: ' + tempInwestycjaArr.length : menuActiveSpan.dataset.label = 'Wybierz';
+              tempInwestycjaArr.length > 0 ? menuActiveSpan.innerHTML = 'Wybrano: ' + tempInwestycjaArr.length : menuActiveSpan.innerHTML = 'Wybierz';
             }else{
               tempInwestycjaArr.push(choosenOptionID)
             };
