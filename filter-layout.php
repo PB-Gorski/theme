@@ -21,7 +21,7 @@ $tax_sort = $taxonomy;
         <p class="text-[20px] font-semibold">Mieszkania</p>
       </div>
       <div class="tab_mieszkania">
-        <p class="text-[20px] font-semibold">Lokale</p>
+        <p class="text-[20px] font-semibold"><a href="<?php echo home_url() . '/lokale'; ?>">Lokale</a></p>
       </div>
       <div class=" tab_mieszkania">
         <p class="text-[20px] font-semibold">Biura</p>
