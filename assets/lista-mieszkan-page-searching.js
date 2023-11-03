@@ -78,7 +78,9 @@ window.addEventListener("load", function() {
           filterSpanName[0].dataset.label = choosenOption; 
           filterSpanName[0].innerHTML = filterSpanName[0].getAttribute('data-label');
 
-          item.parentNode.previousElementSibling.childNodes[0].childNodes[0].dataset = 'test2';
+          console.log('item ',item.parentNode.previousElementSibling.childNodes[0]);
+
+          // item.parentNode.previousElementSibling.childNodes[0].childNodes[0].dataset 
         }
         showActiveFilterName();
       });
