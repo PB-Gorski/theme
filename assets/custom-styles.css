@@ -1196,4 +1196,7 @@ background-color: #e8fbff!important;
 .home #ymc-smart-filter-container-2 > div.container-posts.container-post-custom-layout{
   display: none;
 }
+#ymc-smart-filter-container-3 > div.container-posts.container-post-custom-layout{
+  display: none;
+}
 
