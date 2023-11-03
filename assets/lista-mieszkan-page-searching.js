@@ -74,12 +74,13 @@ window.addEventListener("load", function() {
         console.log(stopAdding);
 
         function showActiveFilterName(){
-          item.parentNode.previousElementSibling.childNodes[1].dataset.label = choosenOption
+          item.parentNode.previousElementSibling.childNodes[1].dataset.label = choosenOption;
+          item.parentNode.previousElementSibling.childNodes[1] = filterSpanName[0].getAttribute('data-label');
+
 
           // let filterSpanName = document.querySelectorAll('[data-label]')
           // filterSpanName[0].dataset.label = choosenOption; 
-          // filterSpanName[0].innerHTML = filterSpanName[0].getAttribute('data-label');
-
+          filterSpanName[0].innerHTML 
           // console.log('item ',item.parentNode.previousElementSibling.childNodes[0]);
 
         }
