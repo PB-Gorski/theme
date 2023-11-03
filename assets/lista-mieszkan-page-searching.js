@@ -73,10 +73,10 @@ window.addEventListener("load", function() {
         stopAdding = false;
         console.log(stopAdding);
 
-        const filterSpanName = document.querySelector('[data-label]')
         function showActiveFilterName(){
-          filterSpanName.dataset.label = choosenOption; 
-          filterSpanName.innerHTML = filterSpanName.getAttribute('data-label');
+          const filterSpanName = document.querySelectorAll('[data-label]')
+          filterSpanName[0].dataset.label = choosenOption; 
+          filterSpanName[0].innerHTML = filterSpanName.getAttribute('data-label');
         }
         showActiveFilterName();
       });
