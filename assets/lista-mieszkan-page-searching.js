@@ -119,10 +119,7 @@ window.addEventListener("load", function() {
             console.log('temp inwestycjaArr',tempPokojeArr);
           }else{
             console.log('error');
-          }
-
-
-
+          };
 
           // menuActiveSpan.dataset.label = choosenOption;
           menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
@@ -131,8 +128,7 @@ window.addEventListener("load", function() {
           console.log('item category: ', menuActiveTitle);
           console.log('item termid: ', +choosenOptionID);
 
-
-        }
+        };
         showActiveFilterName();
       });
     });
