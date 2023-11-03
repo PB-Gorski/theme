@@ -81,11 +81,11 @@ window.addEventListener("load", function() {
           let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
           let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
-          if(miastoArr.includes(choosenOptionID)){
+          if(miastoArr.includes(+choosenOptionID)){
             console.log('miasto');
-          }else if(inwestycjaArr.includes(choosenOptionID)){
+          }else if(inwestycjaArr.includes(+choosenOptionID)){
             console.log('inwestycja');
-          } else if(pokojeArr.includes(choosenOptionID)){
+          } else if(pokojeArr.includes(+choosenOptionID)){
             console.log('pokoje');
           }else{
             console.log('error');
