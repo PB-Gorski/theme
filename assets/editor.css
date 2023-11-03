@@ -6,9 +6,11 @@ body{
 a:link{
     text-decoration: none;
 }
-
 figure div{
     height: 100%!important;
     width: 100%;
     object-fit: cover;
+}
+.menu-passive{
+    display: none;
 }
