@@ -82,11 +82,11 @@ window.addEventListener("load", function() {
           let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
           if(miastoArr.includes(+choosenOptionID)){
-            console.log('miasto');
+            console.log('wybrano z kategorii - miasto');
           }else if(inwestycjaArr.includes(+choosenOptionID)){
-            console.log('inwestycja');
+            console.log('wybrano z kategorii - inwestycja');
           } else if(pokojeArr.includes(+choosenOptionID)){
-            console.log('pokoje');
+            console.log('wybrano z kategorii - pokoje');
           }else{
             console.log('error');
           }
