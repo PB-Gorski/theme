@@ -627,6 +627,23 @@ border-width: 0 2px 2px 0;
   padding-left: 25px!important;
 }
 
+/* YMC Flter Frontpage */
+.filter-custom-layout-1850-2 {
+  background-color: #ebeef2
+}
+.home .ymc-smart-filter-container {
+  min-height: 120px;
+}
+.home #ymc-smart-filter-container-2 > div.container-posts.container-post-custom-layout{
+  display: none;
+}
+#ymc-smart-filter-container-3 > div.container-posts.container-post-custom-layout{
+  display: none;
+}
+.filter-custom-layout-1850.filter-custom-layout-1850-3{
+  background-color: #ebeef2;
+}
+
 /* filter layout ymc end */
 /* -------------------------------------------------------------------------------- */
 
@@ -1046,17 +1063,4 @@ background-color: #e8fbff!important;
   margin-right: auto;
 }
 
-/* YMC Flter Frontpage */
-.filter-custom-layout-1850-2 {
-  background-color: #ebeef2
-}
-.home .ymc-smart-filter-container {
-  min-height: 120px;
-}
-.home #ymc-smart-filter-container-2 > div.container-posts.container-post-custom-layout{
-  display: none;
-}
-#ymc-smart-filter-container-3 > div.container-posts.container-post-custom-layout{
-  display: none;
-}
 
