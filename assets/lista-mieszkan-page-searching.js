@@ -114,16 +114,11 @@ window.addEventListener("load", function() {
 
             tempPokojeArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){
-                  choosenPokojeArr.push(item.childNodes[1].dataset.name)
-                }
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
               });
-            })
-            console.log('Pokoje: ',choosenPokojeArr);
+            });
 
             menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
-            
-            console.log('temp pokojeArr: ',tempPokojeArr);
           }else{
             console.log('error');
           };
