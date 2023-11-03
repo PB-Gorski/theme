@@ -83,6 +83,15 @@ window.addEventListener("load", function() {
 
           if(miastoArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - miasto');
+
+            let tempMiastoArr = [];
+            if(tempMiastoArr.includes(choosenOptionID)){
+              removeItemAll(tempMiastoArr,choosenOptionID)
+            }else{
+              tempMiastoArr.push(choosenOptionID)
+            };
+            console.log('temp miastoArr',tempMiastoArr);
+
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - inwestycja');
           } else if(pokojeArr.includes(+choosenOptionID)){
