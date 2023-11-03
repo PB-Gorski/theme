@@ -94,7 +94,6 @@ window.addEventListener("load", function() {
               tempMiastoArr.push(choosenOptionID)
             };
             console.log('temp miastoArr',tempMiastoArr);
-            console.log('temp miastoArr2',choosenOptions);
 
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - inwestycja');
@@ -105,10 +104,16 @@ window.addEventListener("load", function() {
               tempInwestycjaArr.push(choosenOptionID)
             };
             console.log('temp inwestycjaArr',tempInwestycjaArr);
-            console.log('temp inwestycjaArr2',choosenOptions);
             
           } else if(pokojeArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - pokoje');
+
+            if(tempPokojeArr.includes(choosenOptionID)){
+              removeItemAll(tempPokojeArr,choosenOptionID)
+            }else{
+              tempPokojeArr.push(choosenOptionID)
+            };
+            console.log('temp inwestycjaArr',tempPokojeArr);
           }else{
             console.log('error');
           }
