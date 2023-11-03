@@ -76,8 +76,8 @@ window.addEventListener("load", function() {
         const filterSpanName = document.querySelector('[data-label-single]')
         function showActiveFilterName(){
           filterSpanName.innerHTML = filterSpanName.getAttribute('data-label-single');
-          showActiveFilterName();
         }
+        showActiveFilterName();
       });
     });
 
