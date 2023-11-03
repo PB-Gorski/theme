@@ -9,10 +9,10 @@ window.addEventListener("load", function() {
     let tempMiastoArr = [];
     let tempInwestycjaArr = [];
     let tempPokojeArr = [];
-    let passiveOptions = document.querySelectorAll('.menu-passive__item');
+    let passiveOptions = document.querySelectorAll('.menu-link')
     let counter2 = 0;
 
-    passiveOptions.forEach(item => {
+    passiveOptions.childNodes.forEach(item => {
       item.addEventListener('click', () => {
         let optionSpan = document.createElement('span');
         let choosenOption = item.childNodes[1].dataset.name;
@@ -112,7 +112,7 @@ window.addEventListener("load", function() {
             }else if(tempInwestycjaArr.length == 0){
               menuActiveSpan.innerHTML = 'Wybierz if';
             };
-            
+
             menuActiveSpan.innerHTML = 'Wybrano: ' + numberCount;
             console.log('temp inwestycjaArr',tempInwestycjaArr.length);
             
