@@ -121,7 +121,7 @@ window.addEventListener("load", function() {
             })
             console.log('Pokoje: ',choosenPokojeArr);
 
-            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenPokojeArr.join(', ');
+            menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
             
             console.log('temp pokojeArr: ',tempPokojeArr);
           }else{
