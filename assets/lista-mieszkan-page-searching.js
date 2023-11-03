@@ -101,7 +101,7 @@ window.addEventListener("load", function() {
             // inwestycja
             if(tempInwestycjaArr.includes(choosenOptionID)){
               removeItemAll(tempInwestycjaArr,choosenOptionID);
-              
+
               tempInwestycjaArr.length > 0 ? menuActiveSpan.dataset.label = 'Wybrano: ' + tempInwestycjaArr.length : menuActiveSpan.dataset.label = 'Wybierz';
             }else{
               tempInwestycjaArr.push(choosenOptionID)
@@ -124,7 +124,7 @@ window.addEventListener("load", function() {
 
 
 
-          menuActiveSpan.dataset.label = choosenOption;
+          // menuActiveSpan.dataset.label = choosenOption;
           menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
 
           console.log('item: ', menuActiveSpan.getAttribute('data-label'));
