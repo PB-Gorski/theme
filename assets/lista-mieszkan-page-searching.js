@@ -103,7 +103,7 @@ window.addEventListener("load", function() {
               removeItemAll(tempInwestycjaArr,choosenOptionID);
 
               if(tempInwestycjaArr.length > 0 ){
-                numberCount = tempInwestycjaArr.length
+                numberCount = tempInwestycjaArr.length;
                 menuActiveSpan.innerHTML = 'Wybrano: ' + numberCount;
               }else{
                 menuActiveSpan.innerHTML = 'Wybierz if';
