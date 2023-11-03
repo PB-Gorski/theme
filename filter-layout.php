@@ -298,7 +298,7 @@ $tax_sort = $taxonomy;
           echo '<div class="dropdown-filter defaultMetraz hidden">';
           echo '<div class="menu-active">';
           echo '<span class="hidden">' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
-          echo '<span>Wybierz2 ' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
+          echo '<span>Wybierz</span> <i class="arrow down"></i>';
           echo '</div>';
           echo '<div class="menu-passive">';
           // echo '<i class="btn-close">x</i>';
@@ -333,7 +333,7 @@ $tax_sort = $taxonomy;
           <div class="dropdown-filter flex-col bg-white h-fit">
             <p class="dropdown-filter-title"><?php echo get_taxonomy($select_term)->label . ':' ?></p>
             <div class="menu-active font-bold">
-              <span class="flex flex-row gap-[5px]">Wybierz2<?php echo get_taxonomy($select_term)->label ?></span><span class="arrow-down"></span>
+              <span class="flex flex-row gap-[5px]">Wybierz<?php get_taxonomy($select_term)->label ?></span><span class="arrow-down"></span>
             </div>
             <div class="menu-passive">
               <!-- <i class="btn-close">x</i> -->
