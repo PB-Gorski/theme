@@ -100,11 +100,15 @@ window.addEventListener("load", function() {
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - inwestycja');
             // inwestycja
-            if(tempInwestycjaArr.includes(choosenOptionID)){
-              removeItemAll(tempInwestycjaArr,choosenOptionID);
-            }else{
-              tempInwestycjaArr.push(choosenOptionID)
-            };
+            // if(tempInwestycjaArr.includes(choosenOptionID)){
+            //   removeItemAll(tempInwestycjaArr,choosenOptionID);
+            // }else{
+            //   tempInwestycjaArr.push(choosenOptionID)
+            // };
+            
+            // add/remove items in arr
+            tempInwestycjaArr.includes(choosenOptionID) ? removeItemAll(tempInwestycjaArr,choosenOptionID) : tempInwestycjaArr.push(choosenOptionID);
+
 
 
             if(tempInwestycjaArr.length > 0 ){
