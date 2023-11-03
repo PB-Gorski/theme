@@ -19,7 +19,7 @@ figure div{
 }
 @media only screen and (min-width: 1024px){
     .editor-styles-wrapper #filter-layout3-filter-layout3>.filter-entry {
-        height: 300px;
+        height: 300px!important;
     }
 }
 .ymc-smart-filter-container .filter-layout3 div:nth-child(9),
