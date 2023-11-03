@@ -46,34 +46,39 @@ window.addEventListener("load", function() {
         };
         console.log(choosenOptions);
 
-        // if(!stopAdding){
-        //   // console.log('check for start ', item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName);
-        //   if(item.parentNode.previousElementSibling.childNodes[0].childNodes[0] === undefined){
-        //     console.log('undefined span 0');
-        //   }else{
-        //     console.log('span wypelniony');
-        //   }
+        if(!stopAdding){
+          // console.log('check for start ', item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName);
+          if(item.parentNode.previousElementSibling.childNodes[0].childNodes[0] === undefined){
+            console.log('undefined span 0');
+          }else{
+            console.log('span wypelniony');
+          }
 
-        //   if(counter>2){
+          if(counter>2){
             
-        //     console.log('conter>1');
-        //     // item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan);
-        //     console.log(counter2);
-        //   }else{
-        //     console.log('else');
+            console.log('conter>1');
+            // item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan);
+            console.log(counter2);
+          }else{
+            console.log('else');
 
-        //     let optionSpan2 = document.createElement('span');
-        //     let choosenOption2 = item.childNodes[1].dataset.name;
-        //     optionSpan2.innerText = choosenOption2;
-        //     item.parentNode.previousElementSibling.childNodes[0].innerText = '';
-        //     // item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan2);
-        //     counter2++;
-        //   };
-        // }
-        // stopAdding = false;
-        // console.log(stopAdding);
+            let optionSpan2 = document.createElement('span');
+            let choosenOption2 = item.childNodes[1].dataset.name;
+            optionSpan2.innerText = choosenOption2;
+            item.parentNode.previousElementSibling.childNodes[0].innerText = '';
+            // item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan2);
+            counter2++;
+          };
+        }
+        stopAdding = false;
+        console.log(stopAdding);
+
+        const filterSpanName = document.querySelector('[data-label-single]')
+        function showActiveFilterName(){
+          filterSpanName.innerHTML = filterSpanName.getAttribute('data-label-single');
+          showActiveFilterName();
+        }
       });
-      showActiveFilterName();
     });
 
     // price selects
@@ -262,10 +267,7 @@ window.addEventListener("load", function() {
       counterMetraz++;
     });
 
-    const filterSpanName = document.querySelector('[data-label-single]')
-    function showActiveFilterName(){
-      filterSpanName.innerHTML = filterSpanName.getAttribute('data-label-single');
-    }
+
 
 
 
