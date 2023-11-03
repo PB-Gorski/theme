@@ -534,7 +534,7 @@ function pbgorski_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $t
 }
 add_filter('ymc_filter_custom_layout_148_2', 'pbgorski_custom_filter_layout', 10, 6);
 
-function pbgorski_custom_filter_layout2($layout, $terms, $taxonomy, $multiple, $target, $options)
+function pbgorski_custom_filter_layout3($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout2.php';
 	$filter_id = '1850';
