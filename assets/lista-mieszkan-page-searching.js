@@ -92,6 +92,7 @@ window.addEventListener("load", function() {
               tempMiastoArr.push(choosenOptionID)
             };
             console.log('temp miastoArr',tempMiastoArr);
+            console.log('temp miastoArr2',choosenOptions);
 
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - inwestycja');
