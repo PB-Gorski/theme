@@ -87,6 +87,8 @@ window.addEventListener("load", function() {
             console.log('inwestycja');
           } else if(pokojeArr.includes(choosenOptionID)){
             console.log('pokoje');
+          }else{
+            console.log('error');
           }
 
 
@@ -97,6 +99,7 @@ window.addEventListener("load", function() {
 
           console.log('item: ', menuActiveSpan.getAttribute('data-label'));
           console.log('item category: ', menuActiveTitle);
+          console.log('item termid: ', choosenOptionID);
 
 
         }
