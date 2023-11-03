@@ -101,17 +101,18 @@ window.addEventListener("load", function() {
             // inwestycja
             if(tempInwestycjaArr.includes(choosenOptionID)){
               removeItemAll(tempInwestycjaArr,choosenOptionID);
-
-              if(tempInwestycjaArr.length > 0 ){
-                numberCount = tempInwestycjaArr.length;
-                
-              }else if(tempInwestycjaArr.length == 0){
-                menuActiveSpan.innerHTML = 'Wybierz if';
-              };
-              
             }else{
               tempInwestycjaArr.push(choosenOptionID)
             };
+
+
+            if(tempInwestycjaArr.length > 0 ){
+              numberCount = tempInwestycjaArr.length;
+              
+            }else if(tempInwestycjaArr.length == 0){
+              menuActiveSpan.innerHTML = 'Wybierz if';
+            };
+            
             menuActiveSpan.innerHTML = 'Wybrano: ' + numberCount;
             console.log('temp inwestycjaArr',tempInwestycjaArr.length);
             
