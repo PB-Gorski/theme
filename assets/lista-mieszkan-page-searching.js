@@ -80,7 +80,7 @@ window.addEventListener("load", function() {
 
           // let filterSpanName = document.querySelectorAll('[data-label]')
           // filterSpanName[0].dataset.label = choosenOption; 
-          filterSpanName[0].innerHTML 
+          // filterSpanName[0].innerHTML  = filterSpanName[0].getAttribute('data-label');
           // console.log('item ',item.parentNode.previousElementSibling.childNodes[0]);
 
         }
