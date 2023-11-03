@@ -108,10 +108,11 @@ window.addEventListener("load", function() {
               }else{
                 menuActiveSpan.innerHTML = 'Wybierz if';
               };
-              menuActiveSpan.innerHTML = 'Wybrano: ' + numberCount;
+              
             }else{
               tempInwestycjaArr.push(choosenOptionID)
             };
+            menuActiveSpan.innerHTML = 'Wybrano: ' + numberCount;
             console.log('temp inwestycjaArr',tempInwestycjaArr.length);
             
           } else if(pokojeArr.includes(+choosenOptionID)){
