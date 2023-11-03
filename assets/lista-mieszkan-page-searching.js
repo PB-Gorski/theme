@@ -116,13 +116,13 @@ window.addEventListener("load", function() {
               passiveOptions.forEach(item => {
                 if(item.childNodes[1].dataset.termid == choosenItem){
                   choosenPokojeArr.push(item.childNodes[1].dataset.name)
-                  console.log('Pokoje: ',choosenPokojeArr);
                 }
               });
             })
+            console.log('Pokoje: ',choosenPokojeArr);
    
             
-            console.log('temp inwestycjaArr',tempPokojeArr);
+            console.log('temp pokojeArr: ',tempPokojeArr);
           }else{
             console.log('error');
           };
