@@ -74,6 +74,7 @@ window.addEventListener("load", function() {
         stopAdding = false;
         console.log(stopAdding);
 
+        let tempMiastoArr = [];
         function showActiveFilterName(){
           let miastoArr = [28,40];
           let inwestycjaArr = [72,71,82,81];
@@ -84,7 +85,7 @@ window.addEventListener("load", function() {
           if(miastoArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - miasto');
 
-            let tempMiastoArr = [];
+            
             if(tempMiastoArr.includes(choosenOptionID)){
               removeItemAll(tempMiastoArr,choosenOptionID)
             }else{
