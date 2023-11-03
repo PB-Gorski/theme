@@ -74,9 +74,9 @@ window.addEventListener("load", function() {
         console.log(stopAdding);
 
         function showActiveFilterName(){
-          const filterSpanName = document.querySelectorAll('[data-label]')
+          let filterSpanName = document.querySelectorAll('[data-label]')
           filterSpanName[0].dataset.label = choosenOption; 
-          filterSpanName[0].innerHTML = filterSpanName.getAttribute('data-label');
+          filterSpanName[0].innerHTML = filterSpanName[0].getAttribute('data-label');
         }
         showActiveFilterName();
       });
