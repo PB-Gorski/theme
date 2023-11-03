@@ -27,6 +27,7 @@ window.addEventListener("load", function() {
           };
         });
 
+        // removing items from arr
         function removeItemAll(arr, value) {
           let i = 0;
           while (i < arr.length) {
@@ -74,14 +75,30 @@ window.addEventListener("load", function() {
         console.log(stopAdding);
 
         function showActiveFilterName(){
+          let miastoArr = [28,40];
+          let inwestycjaArr = [72,71,82,81];
+          let pokojeArr = [43,34,53,25];
           let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
           let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
+
+          if(miastoArr.includes(choosenOptionID)){
+            console.log('miasto');
+          }else if(inwestycjaArr.includes(choosenOptionID)){
+            console.log('inwestycja');
+          } else if(pokojeArr.includes(choosenOptionID)){
+            console.log('pokoje');
+          }
+
+
+
 
           menuActiveSpan.dataset.label = choosenOption;
           menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
 
           console.log('item: ', menuActiveSpan.getAttribute('data-label'));
           console.log('item category: ', menuActiveTitle);
+
+
         }
         showActiveFilterName();
       });
