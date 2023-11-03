@@ -102,7 +102,12 @@ window.addEventListener("load", function() {
             if(tempInwestycjaArr.includes(choosenOptionID)){
               removeItemAll(tempInwestycjaArr,choosenOptionID);
 
-              tempInwestycjaArr.length > 0 ? menuActiveSpan.innerHTML = 'Wybrano: ' . tempInwestycjaArr.length : menuActiveSpan.innerHTML = 'Wybierz';
+              if(tempInwestycjaArr.length > 0 ){
+                numberCount = tempInwestycjaArr.length
+                menuActiveSpan.innerHTML = 'Wybrano: ' + numberCount;
+              }else{
+                menuActiveSpan.innerHTML = 'Wybierz if';
+              }
             }else{
               tempInwestycjaArr.push(choosenOptionID)
             };
