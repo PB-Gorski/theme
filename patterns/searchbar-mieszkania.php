@@ -19,7 +19,7 @@
     <ul class="wp-block-list js-lista-mieszkan-list w-full bg-white">
       <!-- wp:list-item -->
       <li class="short-code-ymc-filter applyContainer1 applyContainer2">
-        <?php echo do_shortcode('[ymc_filter id="1850"]'); ?>
+
       </li>
       <!-- /wp:list-item -->
     </ul>

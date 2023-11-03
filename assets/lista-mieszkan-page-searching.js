@@ -590,6 +590,7 @@ window.addEventListener("load", function() {
 
       return filteredTermsIDMetraz;
     };
+    
     // *******************************************************
     btnSearch.addEventListener('click', () =>{
       // console.log('btn search start');
