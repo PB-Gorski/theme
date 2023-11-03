@@ -102,11 +102,11 @@ window.addEventListener("load", function() {
             if(tempInwestycjaArr.includes(choosenOptionID)){
               removeItemAll(tempInwestycjaArr,choosenOptionID);
 
-              tempInwestycjaArr.length > 0 ? menuActiveSpan.innerHTML = 'Wybrano: ' + tempInwestycjaArr.length : menuActiveSpan.innerHTML = 'Wybierz';
+              tempInwestycjaArr.length > 0 ? menuActiveSpan.innerHTML = 'Wybrano: ' . tempInwestycjaArr.length : menuActiveSpan.innerHTML = 'Wybierz';
             }else{
               tempInwestycjaArr.push(choosenOptionID)
             };
-            console.log('temp inwestycjaArr',tempInwestycjaArr);
+            console.log('temp inwestycjaArr',tempInwestycjaArr.length);
             
           } else if(pokojeArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - pokoje');
