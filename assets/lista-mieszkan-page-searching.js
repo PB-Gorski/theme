@@ -111,7 +111,8 @@ window.addEventListener("load", function() {
               numberCount = tempInwestycjaArr.length;
               
             }else if(tempInwestycjaArr.length == 0){
-              menuActiveSpan.innerHTML = 'Wybierz if';
+              // menuActiveSpan.innerHTML = 'Wybierz if';
+              numberCount = 0
             };
 
             menuActiveSpan.innerHTML = 'Wybrano: ' + numberCount;
