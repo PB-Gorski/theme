@@ -298,7 +298,7 @@ $tax_sort = $taxonomy;
           echo '<div class="dropdown-filter defaultMetraz hidden">';
           echo '<div class="menu-active">';
           echo '<span class="hidden">' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
-          echo '<span>Wybierz</span> <i class="arrow down"></i>';
+          echo '<span>Wybierz ' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
           echo '</div>';
           echo '<div class="menu-passive">';
           // echo '<i class="btn-close">x</i>';
