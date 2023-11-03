@@ -577,7 +577,7 @@ option:hover {
 #filter-layout3-filter-layout3 > .filter-entry.active-search-more {
   height: auto!important;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1024px) {
   #filter-layout3-filter-layout3 > .filter-entry {
     height: 120px;
     transition: height 0.3s ease-out;
