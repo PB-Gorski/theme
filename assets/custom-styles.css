@@ -495,7 +495,7 @@ option:hover {
   grid-row: 4 / span 1; */
   display: flex!important;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1024px) {
   .ymc-smart-filter-container .filter-layout3 div:nth-child(6){
     /* grid-column: 1 / span 2;
     grid-row: 4 / span 1; */
