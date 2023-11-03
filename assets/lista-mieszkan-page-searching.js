@@ -73,6 +73,7 @@ window.addEventListener("load", function() {
         stopAdding = false;
         console.log(stopAdding);
       });
+      showActiveFilterName();
     });
 
     // price selects
@@ -260,6 +261,14 @@ window.addEventListener("load", function() {
       };
       counterMetraz++;
     });
+
+    const filterSpanName = document.querySelectorAll('[data-label-single]')
+    function showActiveFilterName(){
+      filterSpanName[0].innerHTML = filterSpanName[0].getAttribute('data-label-single');
+    }
+
+
+
 
     // const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
 
@@ -590,7 +599,7 @@ window.addEventListener("load", function() {
 
       return filteredTermsIDMetraz;
     };
-    
+
     // *******************************************************
     btnSearch.addEventListener('click', () =>{
       // console.log('btn search start');
