@@ -18,7 +18,11 @@
       <p data-aos="fade-right" data-aos-duration="500" data-aos-offset="30" class="text-[24px] text-center font-bold">Poznaj nasze najnowsze inwestycje</p>
       <!-- /wp:paragraph -->
       <!-- wp:group -->
-      <div class="wp-block-group mx-auto w-[130px] border-b-primaryRed border-b-[2px]"></div>
+      <div class="wp-block-group mx-auto w-[130px] border-b-primaryRed border-b-[2px]">
+        <!-- wp:paragraph -->
+        <p class="hidden">empty for border bottom</p>
+        <!-- /wp:paragraph -->
+      </div>
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->

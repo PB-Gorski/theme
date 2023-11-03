@@ -18,7 +18,8 @@
       <p data-aos="fade-right" data-aos-offset="30" class="text-[24px] text-center font-bold">Aktualności</p>
       <!-- /wp:paragraph -->
       <!-- wp:group -->
-      <div class="wp-block-group mx-auto w-[130px] border-b-primaryRed border-b-[2px]"><!-- wp:paragraph -->
+      <div class="wp-block-group mx-auto w-[130px] border-b-primaryRed border-b-[2px]">
+        <!-- wp:paragraph -->
         <p class="hidden">empty for border bottom</p>
         <!-- /wp:paragraph -->
       </div>
