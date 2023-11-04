@@ -10,6 +10,7 @@ window.addEventListener("load", function() {
     let tempInwestycjaArr = [];
     let tempPokojeArr = [];
     let tempPietroArr = [];
+    let tempTerminArr = [];
     let passiveOptions = document.querySelectorAll('.menu-passive__item')
     // let passiveOptions = document.querySelectorAll('.menu-passive__item')
     let counter2 = 0;
@@ -88,6 +89,7 @@ window.addEventListener("load", function() {
           let inwestycjaArr = [72,71,82,81];
           let pokojeArr = [43,34,53,25];
           let pietroArr = [97,78,60,66];
+          let terminArr = [49,91,38,122,93];
           let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
           let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
@@ -131,6 +133,16 @@ window.addEventListener("load", function() {
               });
             });
             menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
+          }else if(terminArr.includes(+choosenOptionID)){
+            // termin
+            if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
+
+            tempTerminArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenTerminArr.push(item.childNodes[1].dataset.name)}
+              });
+            });
+            menuActiveSpan.innerHTML = choosenTerminArr.join(', ');
           }else{
             console.log('error');
           };
