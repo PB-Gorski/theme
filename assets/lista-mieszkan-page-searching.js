@@ -929,7 +929,7 @@ window.addEventListener("load", function() {
 
       YMCTools({
         target: '.data-target-ymc2',
-        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join(),            
+        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join() + ',' + filteredTermsFromCookies,            
       }).apiTermUpdate(); 
       console.log('in btn prices: ', pricesID.join());
       console.log('in btn metraze: ', metrazeID.join());
