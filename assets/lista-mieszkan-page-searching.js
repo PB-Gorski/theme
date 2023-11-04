@@ -9,6 +9,7 @@ window.addEventListener("load", function() {
     let tempMiastoArr = [];
     let tempInwestycjaArr = [];
     let tempPokojeArr = [];
+    let tempPietroArr = [];
     let passiveOptions = document.querySelectorAll('.menu-passive__item')
     // let passiveOptions = document.querySelectorAll('.menu-passive__item')
     let counter2 = 0;
@@ -81,25 +82,18 @@ window.addEventListener("load", function() {
         let choosenMiastoArr = [];
         let choosenInwestycjeCount = 1;
         let choosenPokojeArr = [];
+        let choosenPietroArr = [];
         function showActiveFilterName(){
           let miastoArr = [28,40];
           let inwestycjaArr = [72,71,82,81];
           let pokojeArr = [43,34,53,25];
+          let pietroArr = [97,78,60,66];
           let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
           let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
           if(miastoArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - miasto');
             // miasto
-            // if(tempMiastoArr.includes(choosenOptionID)){
-            //   removeItemAll(tempMiastoArr,choosenOptionID);
-            // }else{
-            //   tempMiastoArr.push(choosenOptionID)
-            // };
-            // console.log('temp miastoArr',tempMiastoArr);
-
-            // ------------------------------------------------
-            // test
             if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
 
             tempMiastoArr.forEach(choosenItem =>{
@@ -117,7 +111,7 @@ window.addEventListener("load", function() {
             if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
 
             menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
-          } else if(pokojeArr.includes(+choosenOptionID)){
+          }else if(pokojeArr.includes(+choosenOptionID)){
             // pokoje
             if(tempPokojeArr.includes(choosenOptionID)){removeItemAll(tempPokojeArr,choosenOptionID);}else{tempPokojeArr.push(choosenOptionID)};
 
@@ -127,6 +121,16 @@ window.addEventListener("load", function() {
               });
             });
             menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
+          }else if(pietroArr.includes(+choosenOptionID)){
+            // pietro
+            if(tempPietroArr.includes(choosenOptionID)){removeItemAll(tempPietroArr,choosenOptionID);}else{tempPietroArr.push(choosenOptionID)};
+
+            tempPietroArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
+              });
+            });
+            menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
           }else{
             console.log('error');
           };
