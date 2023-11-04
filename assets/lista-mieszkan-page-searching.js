@@ -695,6 +695,7 @@ window.addEventListener("load", function() {
             returnChoosenFromCookiesPokoje.forEach(el => {
               el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenPokojeArr.join(', ');
             });
+            console.log('koncowy array: ',choosenPokojeArr);
           }else if(pietroArr.includes(+item)){
             // pietro
             if(tempPietroArr.includes(item)){removeItemAll(tempPietroArr,item);}else{tempPietroArr.push(item)};
