@@ -10,7 +10,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Menu-desktop" class="wp-block-group nav-desktop relative hidden desktop:block">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto h-[100px] flex items-center text-white">
+  <div class="wp-block-group container mx-auto h-[100px] flex items-center">
     <!-- wp:group -->
     <div class="wp-block-group logo mr-[40px]">
       <!-- wp:paragraph -->
@@ -384,7 +384,7 @@
       <!-- wp:group -->
       <div class="wp-block-group btn-wrapper-header flex items-center gap-[10px]">
         <!-- wp:group -->
-        <div class="wp-block-group group btn-find-more relative bg-transparent text-white p-[15px] h-[48px] flex items-center justify-center border-[2px] border-white rounded-full cursor-pointer">
+        <div class="wp-block-group group btn-find-more relative bg-transparent p-[15px] h-[48px] flex items-center justify-center border-[2px] border-textGray rounded-full cursor-pointer">
           <!-- wp:paragraph -->
           <a href="<?php echo home_url() . '/mieszkania'; ?>" class="z-[1]">Znajdź mieszkanie</a>
           <!-- /wp:paragraph -->
