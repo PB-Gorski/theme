@@ -541,7 +541,6 @@ label{
   border-right: 2px solid#ebeef2;
   border-bottom: 2px solid#ebeef2;
   /* z-index: 1; */
-  overflow-y: hidden;
 }
 @media only screen and (max-width: 1024px) {
   .dropdown-filter{
@@ -1025,6 +1024,7 @@ background-color: #e8fbff!important;
 .dropdown-filter-title{
   color: gray;
   padding: 20px 15px;
+  overflow-y: hidden;
 }
 @media only screen and (max-width: 1024px) {
   .dropdown-filter-title{
