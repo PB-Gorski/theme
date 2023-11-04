@@ -751,9 +751,9 @@ window.addEventListener("load", function() {
         // menuActiveSpan.dataset.label = choosenOption;
         // menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
 
-        console.log('item: ', menuActiveSpan.getAttribute('data-label'));
-        console.log('item category: ', menuActiveTitle);
-        console.log('item termid: ', +choosenOptionID);
+        // console.log('item: ', menuActiveSpan.getAttribute('data-label'));
+        // console.log('item category: ', menuActiveTitle);
+        // console.log('item termid: ', +choosenOptionID);
 
       };      
       showActiveFilterName();
