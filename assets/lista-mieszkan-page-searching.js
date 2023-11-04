@@ -638,26 +638,26 @@ window.addEventListener("load", function() {
             });
           }else if(inwestycjaArr.includes(+item)){
             // inwestycje
-            tempInwestycjaArr.includes(item) ? removeItemAll(tempInwestycjaArr,item) : tempInwestycjaArr.push(item);
+            // tempInwestycjaArr.includes(item) ? removeItemAll(tempInwestycjaArr,item) : tempInwestycjaArr.push(item);
 
-            if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
+            // if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
 
-            tempInwestycjaArr.forEach(choosenItem =>{
-              passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
-              });
-            });
+            // tempInwestycjaArr.forEach(choosenItem =>{
+            //   passiveOptions.forEach(item => {
+            //     if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
+            //   });
+            // });
             
-            passiveOptions.forEach(option => {
-              if(option.childNodes[1].dataset.termid == item){
-                console.log('option from cookies for finding parent: ',option);
-                returnChoosenFromCookies.push(option)
-              };              
-            });
+            // passiveOptions.forEach(option => {
+            //   if(option.childNodes[1].dataset.termid == item){
+            //     console.log('option from cookies for finding parent: ',option);
+            //     returnChoosenFromCookies.push(option)
+            //   };              
+            // });
 
-            returnChoosenFromCookies.forEach(el => {
-              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenInwestycjaArr.join(', ');
-            });
+            // returnChoosenFromCookies.forEach(el => {
+            //   el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenInwestycjaArr.join(', ');
+            // });
 
             // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
           }else if(pokojeArr.includes(+item)){
