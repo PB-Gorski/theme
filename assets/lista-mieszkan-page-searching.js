@@ -11,6 +11,7 @@ window.addEventListener("load", function() {
     let tempPokojeArr = [];
     let tempPietroArr = [];
     let tempTerminArr = [];
+    let tempInneArr = [];
     let passiveOptions = document.querySelectorAll('.menu-passive__item')
     // let passiveOptions = document.querySelectorAll('.menu-passive__item')
     let counter2 = 0;
@@ -85,12 +86,14 @@ window.addEventListener("load", function() {
         let choosenPokojeArr = [];
         let choosenPietroArr = [];
         let choosenTempArr = [];
+        let choosenInneCount = 1;
         function showActiveFilterName(){
           let miastoArr = [28,40];
           let inwestycjaArr = [72,71,82,81];
           let pokojeArr = [43,34,53,25];
           let pietroArr = [97,78,60,66];
           let terminArr = [49,91,38,122,93];
+          let inneArr = [72,71,82,81];
           let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
           let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
@@ -144,7 +147,14 @@ window.addEventListener("load", function() {
               });
             });
             menuActiveSpan.innerHTML = choosenTempArr.join(', ');
-          }else{
+          }else if(inwestycjaArr.includes(+choosenOptionID)){
+            // inne
+            tempInneArr.includes(choosenOptionID) ? removeItemAll(tempInneArr,choosenOptionID) : tempInneArr.push(choosenOptionID);
+
+            if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
+
+            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
+          }{
             console.log('error');
           };
 
