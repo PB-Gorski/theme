@@ -318,7 +318,7 @@ function pb_gorski_blocks_register_styles()
 	wp_enqueue_style('aos-styles', '//unpkg.com/aos@2.3.1/dist/aos.css', '1.0');
 	wp_enqueue_script('customJS', get_theme_file_uri('/assets/custom-js.js'), '1.0', array('custom-js', 'tailwind-config'));
 	wp_enqueue_script('customJS2', get_theme_file_uri('/assets/frontpage-searching-data-cookies.js'), '1.0', array('frontpage-searching-data-cookies.js', 'tailwind-config'));
-	// wp_enqueue_script('customJS3', get_theme_file_uri('/assets/lista-mieszkan-page-searching.js'), '1.0', array('lista-mieszkan-page-searching.js', 'tailwind-config'));
+	wp_enqueue_script('customJS3', get_theme_file_uri('/assets/lista-mieszkan-page-searching.js'), '1.0', array('lista-mieszkan-page-searching.js', 'tailwind-config'));
 }
 add_action('wp_enqueue_scripts', 'pb_gorski_blocks_register_styles');
 
