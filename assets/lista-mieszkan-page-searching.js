@@ -657,7 +657,7 @@ window.addEventListener("load", function() {
             });
 
             returnChoosenFromCookies.forEach(el => {
-              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenInwestycjaArr.join(', ');
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenInwestycjaArr.length;
             });
 
             // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
