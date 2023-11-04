@@ -679,6 +679,7 @@ window.addEventListener("load", function() {
 
             if(tempPokojeArr.includes(item)){removeItemAll(tempPokojeArr,item);}else{tempPokojeArr.push(item)};
 
+            choosenPokojeArr=  [];
             tempPokojeArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
