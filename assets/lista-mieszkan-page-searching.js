@@ -542,8 +542,10 @@ window.addEventListener("load", function() {
         let returnChoosenFromCookiesInwestycje = [];
         let returnChoosenFromCookiesPokoje = [];
         let returnChoosenFromCookiesPietro = [];
+        let returnChoosenFromCookiesTermin = [];
         filteredTermsFromCookiesArr.forEach(item=>{
           console.log('item form filtered cookies: ', item);
+
           if(miastoArr.includes(+item)){
             console.log('wybrano z kategorii - miasto');
             // miasto
@@ -588,8 +590,6 @@ window.addEventListener("load", function() {
             returnChoosenFromCookiesInwestycje.forEach(el => {
               el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInwestycje.length;
             });
-
-            // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
           }else if(pokojeArr.includes(+item)){
             // pokoje
             if(tempPokojeArr.includes(item)){removeItemAll(tempPokojeArr,item);}else{tempPokojeArr.push(item)};
@@ -613,17 +613,6 @@ window.addEventListener("load", function() {
             });
           }else if(pietroArr.includes(+item)){
             // pietro
-            // if(tempPietroArr.includes(item)){removeItemAll(tempPietroArr,item);}else{tempPietroArr.push(item)};
-
-            // tempPietroArr.forEach(choosenItem =>{
-            //   passiveOptions.forEach(item => {
-            //     if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
-            //   });
-            // });
-            // menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
-
-
-
             if(tempPietroArr.includes(item)){removeItemAll(tempPietroArr,item);}else{tempPietroArr.push(item)};
 
             choosenPietroArr = [];
@@ -645,14 +634,40 @@ window.addEventListener("load", function() {
             });
           }else if(terminArr.includes(+item)){
             // termin
-            if(tempTerminArr.includes(item)){removeItemAll(tempTerminArr,item);}else{tempTerminArr.push(item)};
+            // if(tempTerminArr.includes(item)){removeItemAll(tempTerminArr,item);}else{tempTerminArr.push(item)};
+
+            // tempTerminArr.forEach(choosenItem =>{
+            //   passiveOptions.forEach(item => {
+            //     if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
+            //   });
+            // });
+            // menuActiveSpan.innerHTML = choosenTempArr.join(', ');
+
+
+
+
+
+            // inwestycje
+            tempTerminArr.includes(item) ? removeItemAll(tempTerminArr,item) : tempTerminArr.push(item);
+
+            if(tempTerminArr.length > 0 ){choosenTerminCount = tempTerminArr.length;}else if(tempTerminArr.length == 0){choosenTerminCount = 0};
 
             tempTerminArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenTerminArr.push(item.childNodes[1].dataset.name)}
               });
             });
-            menuActiveSpan.innerHTML = choosenTempArr.join(', ');
+            
+            passiveOptions.forEach(option => {
+              if(option.childNodes[1].dataset.termid == item){
+                console.log('option from cookies for finding parent: ',option);
+                returnChoosenFromCookiesTermin.push(option)
+              };              
+            });
+
+            returnChoosenFromCookiesTermin.forEach(el => {
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesTermin.length;
+            });            
           }else if(inneArr.includes(+item)){
             // inne
             tempInneArr.includes(item) ? removeItemAll(tempInneArr,item) : tempInneArr.push(item);
@@ -909,13 +924,8 @@ window.addEventListener("load", function() {
     };
 
     // *******************************************************
+
     btnSearch.addEventListener('click', () =>{
-      // console.log('btn search start');
-      // runSearchingPrice();
-      // console.log('runsearchingPrice done');
-      // runSearchingMetraz();
-      // console.log('runsearchingMetraz done');
-      // filteredTermsMerge();
       let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
 
@@ -923,10 +933,12 @@ window.addEventListener("load", function() {
         target: '.data-target-ymc2',
         terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join() + ',' + filteredTermsFromCookies,            
       }).apiTermUpdate(); 
+
       console.log('in btn prices: ', pricesID.join());
       console.log('in btn metraze: ', metrazeID.join());
       console.log('all terms id searched: ', pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join());
     });
+
     // *******************************************************
 
 
