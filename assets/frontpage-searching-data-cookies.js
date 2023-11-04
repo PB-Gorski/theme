@@ -49,9 +49,10 @@ window.addEventListener("load", function() {
 
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
+        let choosenOptionID = item.childNodes[1].dataset.termid;
         let choosenOption = item.childNodes[1].dataset.termid;
-        let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
-        let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
+        // let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
+        // let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
 
         function removeItemAll(arr, value) {
           let i = 0;
