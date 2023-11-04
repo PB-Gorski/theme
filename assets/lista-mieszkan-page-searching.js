@@ -613,6 +613,7 @@ window.addEventListener("load", function() {
         console.log('filteredTermsFromCookiesArr', filteredTermsFromCookiesArr);
 
         let returnChoosenFromCookies =[];
+        let choosenInwestycjaArr =[];
         filteredTermsFromCookiesArr.forEach(item=>{
           console.log('item form filtered cookies: ', item);
           if(miastoArr.includes(+item)){
