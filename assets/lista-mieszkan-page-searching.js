@@ -511,22 +511,12 @@ window.addEventListener("load", function() {
       // cookies exist
       console.log('cookies exist');
       filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
-      // let miasto = getCookie("miasto");
-      // let inwestycja = getCookie("inwestycja");
-      // let pokoje = getCookie("pokoje");
-      // let cenaOd = parseInt(getCookie("cenaOd").split(' ').join(''));
-      // let cenaDo = parseInt(getCookie("cenaDo").split(' ').join(''));
 
       let filteredCustomPriceFromCookies = runSearchingPrice();
       console.log(filteredCustomPriceFromCookies.join());
-  
-      // filteredTermsFromCookies = [miasto,inwestycja,pokoje,cenaOd,cenaDo]
       
       console.log(filteredTermsFromCookies);
-      // console.log(miasto + ',' + inwestycja);
       console.log('filteredTermsFromCookies from frontpage: ',filteredTermsFromCookies);
-
-
 
       let choosenMiastoArr = [];
       let choosenInwestycjeCount = 1;
@@ -651,7 +641,7 @@ window.addEventListener("load", function() {
             });
 
             returnChoosenFromCookiesPietro.forEach(el => {
-              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenPokojeArr.join(', ');
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenPietroArr.join(', ');
             });
           }else if(terminArr.includes(+item)){
             // termin
