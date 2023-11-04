@@ -623,6 +623,13 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
               });
             });
+
+            passiveOptions.forEach(option => {
+              if(option.childNodes[1].dataset.termid == item){
+                console.log(option);
+              };
+              
+            })
             // menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
             console.log('miasto from cookies: ',choosenMiastoArr);
 
