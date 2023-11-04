@@ -608,7 +608,10 @@ window.addEventListener("load", function() {
         // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
         // let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
-        filteredTermsFromCookies.forEach(item=>{
+        let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies + "]");
+        console.log('filteredTermsFromCookiesArr', filteredTermsFromCookiesArr);
+
+        filteredTermsFromCookiesArr.forEach(item=>{
           console.log('item form filtered cookies: ', item);
           if(miastoArr.includes(+item)){
             console.log('wybrano z kategorii - miasto');
