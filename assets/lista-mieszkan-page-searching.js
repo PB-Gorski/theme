@@ -589,7 +589,160 @@ window.addEventListener("load", function() {
       console.log(filteredTermsFromCookies);
       // console.log(miasto + ',' + inwestycja);
       console.log('filteredTermsFromCookies from frontpage: ',filteredTermsFromCookies);
-      
+
+
+
+      let choosenMiastoArr = [];
+      let choosenInwestycjeCount = 1;
+      let choosenPokojeArr = [];
+      let choosenPietroArr = [];
+      let choosenTempArr = [];
+      let choosenInneCount = 1;
+      function showActiveFilterName(cookiesSearchedIDs){
+        let miastoArr = [28,40];
+        let inwestycjaArr = [72,71,82,81];
+        let pokojeArr = [43,34,53,25];
+        let pietroArr = [97,78,60,66];
+        let terminArr = [49,91,38,122,93];
+        let inneArr = [520,521,522];
+        let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
+        let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
+
+        filteredTermsFromCookies.forEach(item=>{
+          if(miastoArr.includes(+item)){
+            console.log('wybrano z kategorii - miasto');
+            // miasto
+            if(tempMiastoArr.includes(item)){removeItemAll(tempMiastoArr,item);}else{tempMiastoArr.push(item)};
+
+            tempMiastoArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
+              });
+            });
+            menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
+            console.log('miasto: ',choosenMiastoArr);
+
+          }else if(inwestycjaArr.includes(+item)){
+            // inwestycje
+            tempInwestycjaArr.includes(item) ? removeItemAll(tempInwestycjaArr,item) : tempInwestycjaArr.push(item);
+
+            if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
+
+            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
+          }else if(pokojeArr.includes(+item)){
+            // pokoje
+            if(tempPokojeArr.includes(item)){removeItemAll(tempPokojeArr,item);}else{tempPokojeArr.push(item)};
+
+            tempPokojeArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
+              });
+            });
+            menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
+          }else if(pietroArr.includes(+item)){
+            // pietro
+            if(tempPietroArr.includes(item)){removeItemAll(tempPietroArr,item);}else{tempPietroArr.push(item)};
+
+            tempPietroArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
+              });
+            });
+            menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
+          }else if(terminArr.includes(+item)){
+            // termin
+            if(tempTerminArr.includes(item)){removeItemAll(tempTerminArr,item);}else{tempTerminArr.push(item)};
+
+            tempTerminArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
+              });
+            });
+            menuActiveSpan.innerHTML = choosenTempArr.join(', ');
+          }else if(inneArr.includes(+item)){
+            // inne
+            tempInneArr.includes(item) ? removeItemAll(tempInneArr,item) : tempInneArr.push(item);
+
+            if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
+
+            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
+          }else{
+            console.log('error');
+          };
+        })
+
+
+
+        if(miastoArr.includes(+choosenOptionID)){
+          console.log('wybrano z kategorii - miasto');
+          // miasto
+          if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
+
+          tempMiastoArr.forEach(choosenItem =>{
+            passiveOptions.forEach(item => {
+              if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
+            });
+          });
+          menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
+          console.log('miasto: ',choosenMiastoArr);
+
+        }else if(inwestycjaArr.includes(+choosenOptionID)){
+          // inwestycje
+          tempInwestycjaArr.includes(choosenOptionID) ? removeItemAll(tempInwestycjaArr,choosenOptionID) : tempInwestycjaArr.push(choosenOptionID);
+
+          if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
+
+          menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
+        }else if(pokojeArr.includes(+choosenOptionID)){
+          // pokoje
+          if(tempPokojeArr.includes(choosenOptionID)){removeItemAll(tempPokojeArr,choosenOptionID);}else{tempPokojeArr.push(choosenOptionID)};
+
+          tempPokojeArr.forEach(choosenItem =>{
+            passiveOptions.forEach(item => {
+              if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
+            });
+          });
+          menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
+        }else if(pietroArr.includes(+choosenOptionID)){
+          // pietro
+          if(tempPietroArr.includes(choosenOptionID)){removeItemAll(tempPietroArr,choosenOptionID);}else{tempPietroArr.push(choosenOptionID)};
+
+          tempPietroArr.forEach(choosenItem =>{
+            passiveOptions.forEach(item => {
+              if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
+            });
+          });
+          menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
+        }else if(terminArr.includes(+choosenOptionID)){
+          // termin
+          if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
+
+          tempTerminArr.forEach(choosenItem =>{
+            passiveOptions.forEach(item => {
+              if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
+            });
+          });
+          menuActiveSpan.innerHTML = choosenTempArr.join(', ');
+        }else if(inneArr.includes(+choosenOptionID)){
+          // inne
+          tempInneArr.includes(choosenOptionID) ? removeItemAll(tempInneArr,choosenOptionID) : tempInneArr.push(choosenOptionID);
+
+          if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
+
+          menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
+        }else{
+          console.log('error');
+        };          
+
+
+        // menuActiveSpan.dataset.label = choosenOption;
+        // menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
+
+        console.log('item: ', menuActiveSpan.getAttribute('data-label'));
+        console.log('item category: ', menuActiveTitle);
+        console.log('item termid: ', +choosenOptionID);
+
+      };      
       showActiveFilterName();
 
       function runFromCookies(){
