@@ -582,7 +582,10 @@ window.addEventListener("load", function() {
 
             tempInwestycjaArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  choosenMiastoArr.push(item.childNodes[1].dataset.name);
+                  item.childNodes[1].classList.add('active');
+                }
               });
             });
             
@@ -603,7 +606,10 @@ window.addEventListener("load", function() {
             choosenPokojeArrv= [];
             tempPokojeArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  choosenPokojeArr.push(item.childNodes[1].dataset.name);
+                  item.childNodes[1].classList.add('active');
+                }
               });
             });
             
@@ -624,7 +630,10 @@ window.addEventListener("load", function() {
             choosenPietroArr = [];
             tempPietroArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  choosenPietroArr.push(item.childNodes[1].dataset.name);
+                  item.childNodes[1].classList.add('active');
+                }
               });
             });
             
@@ -646,7 +655,10 @@ window.addEventListener("load", function() {
 
             tempTerminArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenTerminArr.push(item.childNodes[1].dataset.name)}
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  choosenTerminArr.push(item.childNodes[1].dataset.name);
+                  item.childNodes[1].classList.add('active');
+                };
               });
             });
             
@@ -665,7 +677,10 @@ window.addEventListener("load", function() {
 
             tempInneArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenInneArr.push(item.childNodes[1].dataset.name)}
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  choosenInneArr.push(item.childNodes[1].dataset.name);
+                  item.childNodes[1].classList.add('active');
+                };
               });
             });
             
