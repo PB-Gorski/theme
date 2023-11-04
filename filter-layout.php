@@ -342,7 +342,7 @@ $tax_sort = $taxonomy;
               foreach ($terms_selected as $term) {
                 if ($tax === get_term($term)->taxonomy) {
 
-                  $is_disabled = (get_term($term)->count === 0) ? 'isDisabled' : '';
+                  // $is_disabled = (get_term($term)->count === 0) ? 'isDisabled' : '';
                   // Choose icons
                   if (!empty($ymc_terms_icons)) {
                     foreach ($ymc_terms_icons as $key => $val) {
