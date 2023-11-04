@@ -611,6 +611,7 @@ window.addEventListener("load", function() {
         let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies + "]");
         console.log('filteredTermsFromCookiesArr', filteredTermsFromCookiesArr);
 
+        let returnChoosenFromCookies =[];
         filteredTermsFromCookiesArr.forEach(item=>{
           console.log('item form filtered cookies: ', item);
           if(miastoArr.includes(+item)){
@@ -624,17 +625,24 @@ window.addEventListener("load", function() {
               });
             });
 
+            
             passiveOptions.forEach(option => {
               if(option.childNodes[1].dataset.termid == item){
                 console.log('option from cookies for finding parent: ',option);
+                returnChoosenFromCookies.push(option)
               };
-              option.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
-              console.log('miasto from cookies: ',choosenMiastoArr);
+
+              // console.log('miasto from cookies: ',choosenMiastoArr);
               
+            });
+
+            returnChoosenFromCookies.forEach(el => {
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
             })
 
 
-          }
+
+          };
           // else if(inwestycjaArr.includes(+item)){
           //   // inwestycje
           //   tempInwestycjaArr.includes(item) ? removeItemAll(tempInwestycjaArr,item) : tempInwestycjaArr.push(item);
