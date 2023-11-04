@@ -93,7 +93,7 @@ window.addEventListener("load", function() {
           let pokojeArr = [43,34,53,25];
           let pietroArr = [97,78,60,66];
           let terminArr = [49,91,38,122,93];
-          let inneArr = [72,71,82,81];
+          let inneArr = [520,521,522];
           let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
           let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
@@ -147,7 +147,7 @@ window.addEventListener("load", function() {
               });
             });
             menuActiveSpan.innerHTML = choosenTempArr.join(', ');
-          }else if(inwestycjaArr.includes(+choosenOptionID)){
+          }else if(inneArr.includes(+choosenOptionID)){
             // inne
             tempInneArr.includes(choosenOptionID) ? removeItemAll(tempInneArr,choosenOptionID) : tempInneArr.push(choosenOptionID);
 
