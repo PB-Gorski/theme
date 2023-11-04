@@ -628,10 +628,11 @@ window.addEventListener("load", function() {
               if(option.childNodes[1].dataset.termid == item){
                 console.log('option from cookies for finding parent: ',option);
               };
+              option.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
+              console.log('miasto from cookies: ',choosenMiastoArr);
               
             })
-            option.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
-            console.log('miasto from cookies: ',choosenMiastoArr);
+
 
           }
           // else if(inwestycjaArr.includes(+item)){
