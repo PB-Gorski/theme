@@ -524,6 +524,7 @@ window.addEventListener("load", function() {
       let choosenPokojeArr = [];
       let choosenPietroArr = [];
       let choosenTerminArr = [];
+      let choosenInneArr = [];
       let choosenTempArr = [];
       let choosenInneCount = 1;
       function showActiveFilterNameFromCookies(cookiesSearchedIDs){
@@ -544,6 +545,7 @@ window.addEventListener("load", function() {
         let returnChoosenFromCookiesPokoje = [];
         let returnChoosenFromCookiesPietro = [];
         let returnChoosenFromCookiesTermin = [];
+        let returnChoosenFromCookiesInne = [];
         filteredTermsFromCookiesArr.forEach(item=>{
           console.log('item form filtered cookies: ', item);
 
@@ -635,20 +637,6 @@ window.addEventListener("load", function() {
             });
           }else if(terminArr.includes(+item)){
             // termin
-            // if(tempTerminArr.includes(item)){removeItemAll(tempTerminArr,item);}else{tempTerminArr.push(item)};
-
-            // tempTerminArr.forEach(choosenItem =>{
-            //   passiveOptions.forEach(item => {
-            //     if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
-            //   });
-            // });
-            // menuActiveSpan.innerHTML = choosenTempArr.join(', ');
-
-
-
-
-
-            // inwestycje
             tempTerminArr.includes(item) ? removeItemAll(tempTerminArr,item) : tempTerminArr.push(item);
 
             if(tempTerminArr.length > 0 ){choosenTerminCount = tempTerminArr.length;}else if(tempTerminArr.length == 0){choosenTerminCount = 0};
@@ -671,11 +659,32 @@ window.addEventListener("load", function() {
             });            
           }else if(inneArr.includes(+item)){
             // inne
-            tempInneArr.includes(item) ? removeItemAll(tempInneArr,item) : tempInneArr.push(item);
+            // tempInneArr.includes(item) ? removeItemAll(tempInneArr,item) : tempInneArr.push(item);
 
-            if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
+            // if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
 
-            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
+            // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
+
+
+
+            if(tempInneArr.length > 0 ){choosenTerminCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenTerminCount = 0};
+
+            tempInneArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenInneArr.push(item.childNodes[1].dataset.name)}
+              });
+            });
+            
+            passiveOptions.forEach(option => {
+              if(option.childNodes[1].dataset.termid == item){
+                console.log('option from cookies for finding parent: ',option);
+                returnChoosenFromCookiesInne.push(option)
+              };              
+            });
+
+            returnChoosenFromCookiesInne.forEach(el => {
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInne.length;
+            });  
           }else{
             console.log('error');
           };
