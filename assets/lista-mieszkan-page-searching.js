@@ -589,6 +589,8 @@ window.addEventListener("load", function() {
       console.log(filteredTermsFromCookies);
       // console.log(miasto + ',' + inwestycja);
       console.log('filteredTermsFromCookies from frontpage: ',filteredTermsFromCookies);
+      
+      showActiveFilterName();
 
       function runFromCookies(){
         YMCTools({
