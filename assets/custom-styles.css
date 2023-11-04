@@ -94,6 +94,10 @@ figure[class*="wp-block-image"] img,
   gap: 40px;
 }
 ul.wp-block-navigation__container  > li.wp-block-navigation-item{
+  color:#fff;
+  font-size: 18px;
+}
+.header-white ul.wp-block-navigation__container  > li.wp-block-navigation-item{
   color:#2E384D;
   font-size: 18px;
 }
