@@ -140,10 +140,10 @@ window.addEventListener("load", function() {
 
             tempTerminArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenTerminArr.push(item.childNodes[1].dataset.name)}
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
               });
             });
-            menuActiveSpan.innerHTML = choosenTerminArr.join(', ');
+            menuActiveSpan.innerHTML = choosenTempArr.join(', ');
           }else{
             console.log('error');
           };
