@@ -825,6 +825,7 @@ window.addEventListener("load", function() {
           runFromCookies()
         }, 1000);
       };
+      deleteAllCookies();
     }else{
       console.log('no cookies');
     };
