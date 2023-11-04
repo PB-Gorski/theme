@@ -613,7 +613,7 @@ window.addEventListener("load", function() {
         console.log('filteredTermsFromCookiesArr', filteredTermsFromCookiesArr);
 
         let returnChoosenFromCookies =[];
-        let choosenInwestycjaArr =[];
+        let returnChoosenFromCookiesInwestycje =[];
         filteredTermsFromCookiesArr.forEach(item=>{
           console.log('item form filtered cookies: ', item);
           if(miastoArr.includes(+item)){
@@ -652,12 +652,12 @@ window.addEventListener("load", function() {
             passiveOptions.forEach(option => {
               if(option.childNodes[1].dataset.termid == item){
                 console.log('option from cookies for finding parent: ',option);
-                returnChoosenFromCookies.push(option)
+                returnChoosenFromCookiesInwestycje.push(option)
               };              
             });
 
-            returnChoosenFromCookies.forEach(el => {
-              el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' . returnChoosenFromCookies.length;
+            returnChoosenFromCookiesInwestycje.forEach(el => {
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' . returnChoosenFromCookiesInwestycje.length;
             });
 
             // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
