@@ -605,8 +605,8 @@ window.addEventListener("load", function() {
         let pietroArr = [97,78,60,66];
         let terminArr = [49,91,38,122,93];
         let inneArr = [520,521,522];
-        // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
-        // let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
+        let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
+        let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
         let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies + "]");
         console.log('filteredTermsFromCookiesArr', filteredTermsFromCookiesArr);
@@ -623,56 +623,57 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
               });
             });
-            menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
-            console.log('miasto: ',choosenMiastoArr);
+            // menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
+            console.log('miasto from cookies: ',choosenMiastoArr);
 
-          }else if(inwestycjaArr.includes(+item)){
-            // inwestycje
-            tempInwestycjaArr.includes(item) ? removeItemAll(tempInwestycjaArr,item) : tempInwestycjaArr.push(item);
+          }
+          // else if(inwestycjaArr.includes(+item)){
+          //   // inwestycje
+          //   tempInwestycjaArr.includes(item) ? removeItemAll(tempInwestycjaArr,item) : tempInwestycjaArr.push(item);
 
-            if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
+          //   if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
 
-            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
-          }else if(pokojeArr.includes(+item)){
-            // pokoje
-            if(tempPokojeArr.includes(item)){removeItemAll(tempPokojeArr,item);}else{tempPokojeArr.push(item)};
+          //   menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
+          // }else if(pokojeArr.includes(+item)){
+          //   // pokoje
+          //   if(tempPokojeArr.includes(item)){removeItemAll(tempPokojeArr,item);}else{tempPokojeArr.push(item)};
 
-            tempPokojeArr.forEach(choosenItem =>{
-              passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
-              });
-            });
-            menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
-          }else if(pietroArr.includes(+item)){
-            // pietro
-            if(tempPietroArr.includes(item)){removeItemAll(tempPietroArr,item);}else{tempPietroArr.push(item)};
+          //   tempPokojeArr.forEach(choosenItem =>{
+          //     passiveOptions.forEach(item => {
+          //       if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
+          //     });
+          //   });
+          //   menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
+          // }else if(pietroArr.includes(+item)){
+          //   // pietro
+          //   if(tempPietroArr.includes(item)){removeItemAll(tempPietroArr,item);}else{tempPietroArr.push(item)};
 
-            tempPietroArr.forEach(choosenItem =>{
-              passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
-              });
-            });
-            menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
-          }else if(terminArr.includes(+item)){
-            // termin
-            if(tempTerminArr.includes(item)){removeItemAll(tempTerminArr,item);}else{tempTerminArr.push(item)};
+          //   tempPietroArr.forEach(choosenItem =>{
+          //     passiveOptions.forEach(item => {
+          //       if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
+          //     });
+          //   });
+          //   menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
+          // }else if(terminArr.includes(+item)){
+          //   // termin
+          //   if(tempTerminArr.includes(item)){removeItemAll(tempTerminArr,item);}else{tempTerminArr.push(item)};
 
-            tempTerminArr.forEach(choosenItem =>{
-              passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
-              });
-            });
-            menuActiveSpan.innerHTML = choosenTempArr.join(', ');
-          }else if(inneArr.includes(+item)){
-            // inne
-            tempInneArr.includes(item) ? removeItemAll(tempInneArr,item) : tempInneArr.push(item);
+          //   tempTerminArr.forEach(choosenItem =>{
+          //     passiveOptions.forEach(item => {
+          //       if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
+          //     });
+          //   });
+          //   menuActiveSpan.innerHTML = choosenTempArr.join(', ');
+          // }else if(inneArr.includes(+item)){
+          //   // inne
+          //   tempInneArr.includes(item) ? removeItemAll(tempInneArr,item) : tempInneArr.push(item);
 
-            if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
+          //   if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
 
-            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
-          }else{
-            console.log('error');
-          };
+          //   menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
+          // }else{
+          //   console.log('error');
+          // };
         })
 
 
