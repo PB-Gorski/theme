@@ -506,10 +506,11 @@ window.addEventListener("load", function() {
       return "";
     };
 
+    let filteredTermsFromCookies
     if(document.cookie.indexOf('filteredTermsFromCookies=') == 0){
       // cookies exist
       console.log('cookies exist');
-      let filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
+      filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
       // let miasto = getCookie("miasto");
       // let inwestycja = getCookie("inwestycja");
       // let pokoje = getCookie("pokoje");
