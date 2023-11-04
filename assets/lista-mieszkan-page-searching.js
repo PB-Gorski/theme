@@ -558,6 +558,7 @@ window.addEventListener("load", function() {
             // miasto
             if(tempMiastoArr.includes(item)){removeItemAll(tempMiastoArr,item);}else{tempMiastoArr.push(item)};
 
+            choosenMiastoArr = [];
             tempMiastoArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
