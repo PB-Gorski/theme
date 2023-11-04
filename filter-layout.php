@@ -185,7 +185,7 @@ $tax_sort = $taxonomy;
           $terms_icons = null;
           foreach ($terms_selected as $term) {
             if ($tax === get_term($term)->taxonomy) {
-              // $is_disabled = (get_term($term)->count === 0) ? 'isDisabled' : '';
+              // '' = (get_term($term)->count === 0) ? 'isDisabled' : '';
 
               if (!empty($ymc_terms_icons)) {
                 foreach ($ymc_terms_icons as $key => $val) {
@@ -198,7 +198,7 @@ $tax_sort = $taxonomy;
 
               echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
 							  ' . $terms_icons . '
-                              <a class="menu-link ' .  esc_attr($is_disabled) . ' ' .  esc_attr($type_multiple) . '" 
+                              <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . '" 
                               href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
                 esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
             }
@@ -306,7 +306,7 @@ $tax_sort = $taxonomy;
           $terms_icons = null;
           foreach ($terms_selected as $term) {
             if ($tax === get_term($term)->taxonomy) {
-              // $is_disabled = (get_term($term)->count === 0) ? 'isDisabled' : '';
+              // '' = (get_term($term)->count === 0) ? 'isDisabled' : '';
 
               if (!empty($ymc_terms_icons)) {
                 foreach ($ymc_terms_icons as $key => $val) {
@@ -319,7 +319,7 @@ $tax_sort = $taxonomy;
 
               echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
 							  ' . $terms_icons . '
-                              <a class="menu-link ' .  esc_attr($is_disabled) . ' ' .  esc_attr($type_multiple) . '" 
+                              <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . '" 
                               href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
                 esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
             }
@@ -342,7 +342,7 @@ $tax_sort = $taxonomy;
               foreach ($terms_selected as $term) {
                 if ($tax === get_term($term)->taxonomy) {
 
-                  // $is_disabled = (get_term($term)->count === 0) ? 'isDisabled' : '';
+                  // '' = (get_term($term)->count === 0) ? 'isDisabled' : '';
                   // Choose icons
                   if (!empty($ymc_terms_icons)) {
                     foreach ($ymc_terms_icons as $key => $val) {
@@ -355,7 +355,7 @@ $tax_sort = $taxonomy;
 
                   echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
                   ' . $terms_icons . '
-                                <a class="menu-link ' .  esc_attr($is_disabled) . ' ' .  esc_attr($type_multiple) . '" 
+                                <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . '" 
                                 href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
                     esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
                 }
