@@ -605,10 +605,11 @@ window.addEventListener("load", function() {
         let pietroArr = [97,78,60,66];
         let terminArr = [49,91,38,122,93];
         let inneArr = [520,521,522];
-        let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
-        let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
+        // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
+        // let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
         filteredTermsFromCookies.forEach(item=>{
+          console.log('item form filtered cookies: ', item);
           if(miastoArr.includes(+item)){
             console.log('wybrano z kategorii - miasto');
             // miasto
