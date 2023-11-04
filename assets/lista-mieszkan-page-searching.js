@@ -84,6 +84,7 @@ window.addEventListener("load", function() {
         let choosenInwestycjeCount = 1;
         let choosenPokojeArr = [];
         let choosenPietroArr = [];
+        let choosenTempArr = [];
         function showActiveFilterName(){
           let miastoArr = [28,40];
           let inwestycjaArr = [72,71,82,81];
