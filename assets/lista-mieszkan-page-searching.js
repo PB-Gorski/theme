@@ -519,14 +519,14 @@ window.addEventListener("load", function() {
       console.log('filteredTermsFromCookies from frontpage: ',filteredTermsFromCookies);
 
       let choosenMiastoArr = [];
-      let choosenInwestycjeCount = 1;
-      let choosenInwestycjeArr = [];
       let choosenPokojeArr = [];
       let choosenPietroArr = [];
       let choosenTerminArr = [];
       let choosenInneArr = [];
-      let choosenTempArr = [];
-      let choosenInneCount = 1;
+      // let choosenInwestycjeCount = 1;
+      // let choosenInwestycjeArr = [];
+      // let choosenTempArr = [];
+      // let choosenInneCount = 1;
       function showActiveFilterNameFromCookies(cookiesSearchedIDs){
         let miastoArr = [28,40];
         let inwestycjaArr = [72,71,82,81];
@@ -557,7 +557,10 @@ window.addEventListener("load", function() {
             choosenMiastoArr = [];
             tempMiastoArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  choosenMiastoArr.push(item.childNodes[1].dataset.name);
+                  item.childNodes[1].classList.add('active');
+                }
               });
             });
             
@@ -658,15 +661,6 @@ window.addEventListener("load", function() {
               el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesTermin.length;
             });            
           }else if(inneArr.includes(+item)){
-            // inne
-            // tempInneArr.includes(item) ? removeItemAll(tempInneArr,item) : tempInneArr.push(item);
-
-            // if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
-
-            // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
-
-
-
             if(tempInneArr.length > 0 ){choosenTerminCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenTerminCount = 0};
 
             tempInneArr.forEach(choosenItem =>{
