@@ -87,7 +87,7 @@ window.addEventListener("load", function() {
         let choosenPietroArr = [];
         let choosenTempArr = [];
         let choosenInneCount = 1;
-        function showActiveFilterName(){
+        function showActiveFilterName(cookiesSearchedIDs){
           let miastoArr = [28,40];
           let inwestycjaArr = [72,71,82,81];
           let pokojeArr = [43,34,53,25];
@@ -96,6 +96,71 @@ window.addEventListener("load", function() {
           let inneArr = [520,521,522];
           let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
           let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
+
+          filteredTermsFromCookies.forEach(item=>{
+            if(miastoArr.includes(+item)){
+              console.log('wybrano z kategorii - miasto');
+              // miasto
+              if(tempMiastoArr.includes(item)){removeItemAll(tempMiastoArr,item);}else{tempMiastoArr.push(item)};
+  
+              tempMiastoArr.forEach(choosenItem =>{
+                passiveOptions.forEach(item => {
+                  if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
+                });
+              });
+              menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
+              console.log('miasto: ',choosenMiastoArr);
+  
+            }else if(inwestycjaArr.includes(+item)){
+              // inwestycje
+              tempInwestycjaArr.includes(item) ? removeItemAll(tempInwestycjaArr,item) : tempInwestycjaArr.push(item);
+  
+              if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
+  
+              menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
+            }else if(pokojeArr.includes(+item)){
+              // pokoje
+              if(tempPokojeArr.includes(item)){removeItemAll(tempPokojeArr,item);}else{tempPokojeArr.push(item)};
+  
+              tempPokojeArr.forEach(choosenItem =>{
+                passiveOptions.forEach(item => {
+                  if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
+                });
+              });
+              menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
+            }else if(pietroArr.includes(+item)){
+              // pietro
+              if(tempPietroArr.includes(item)){removeItemAll(tempPietroArr,item);}else{tempPietroArr.push(item)};
+  
+              tempPietroArr.forEach(choosenItem =>{
+                passiveOptions.forEach(item => {
+                  if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
+                });
+              });
+              menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
+            }else if(terminArr.includes(+item)){
+              // termin
+              if(tempTerminArr.includes(item)){removeItemAll(tempTerminArr,item);}else{tempTerminArr.push(item)};
+  
+              tempTerminArr.forEach(choosenItem =>{
+                passiveOptions.forEach(item => {
+                  if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
+                });
+              });
+              menuActiveSpan.innerHTML = choosenTempArr.join(', ');
+            }else if(inneArr.includes(+item)){
+              // inne
+              tempInneArr.includes(item) ? removeItemAll(tempInneArr,item) : tempInneArr.push(item);
+  
+              if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
+  
+              menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
+            }else{
+              console.log('error');
+            };
+          })
+
+
 
           if(miastoArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - miasto');
@@ -156,7 +221,8 @@ window.addEventListener("load", function() {
             menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
           }else{
             console.log('error');
-          };
+          };          
+
 
           // menuActiveSpan.dataset.label = choosenOption;
           // menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
