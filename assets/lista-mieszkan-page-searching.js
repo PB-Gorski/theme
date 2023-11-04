@@ -168,7 +168,6 @@ window.addEventListener("load", function() {
         };
         showActiveFilterName();
         if (!foundedPostOnStart.classList.contains('hidden')){foundedPostOnStart.classList.add('hidden')}
-
       });
     });
 

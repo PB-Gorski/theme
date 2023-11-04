@@ -39,7 +39,13 @@ window.addEventListener("load", function() {
     // setting chosen option in active window
     let passiveOptions = document.querySelectorAll('.menu-passive__item');
     let passiveOptionsCustomFilters = document.querySelectorAll('.dropdown__item');
-    let choosenOptions =[]
+    let choosenOptions =[];
+    let tempMiastoArr = [];
+    let tempInwestycjaArr = [];
+    let tempPokojeArr = [];
+    let tempPietroArr = [];
+    let tempTerminArr = [];
+    let tempInneArr = [];
 
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
@@ -70,20 +76,94 @@ window.addEventListener("load", function() {
 
         // document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + filteredPriceFromFrontPage;
         document.cookie = "filteredTermsFromCookies=" + choosenOptions.join();
-
-        // if(filterType == 'Miasto:'){
-        //   document.cookie = "miasto=" + choosenOptions.join();
-        // }else if(filterType == 'Inwestycja:'){
-        //   document.cookie = "inwestycja=" + choosenOptions.join();
-        // }else if(filterType == 'Pokoje:'){
-        //   document.cookie = "pokoje=" + choosenOptions.join();
-        // }else if(filterType == 'Cena od:'){
-        //   document.cookie = "cenaOd=" + choosenOptions.join();
-        // }else if(filterType == 'Cena do:'){
-        //   document.cookie = "cenaDo=" + choosenOptions.join();
-        // }
-        // console.log('filter type: ', filterType);
         console.log('cookie data: ', document.cookie);
+
+        let choosenMiastoArr = [];
+        let choosenInwestycjeCount = 1;
+        let choosenPokojeArr = [];
+        let choosenPietroArr = [];
+        let choosenTempArr = [];
+        let choosenInneCount = 1;
+        function showActiveFilterName(){
+          let miastoArr = [28,40];
+          let inwestycjaArr = [72,71,82,81];
+          let pokojeArr = [43,34,53,25];
+          let pietroArr = [97,78,60,66];
+          let terminArr = [49,91,38,122,93];
+          let inneArr = [520,521,522];
+          let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
+          let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
+
+          if(miastoArr.includes(+choosenOptionID)){
+            console.log('wybrano z kategorii - miasto');
+            // miasto
+            if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
+
+            tempMiastoArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
+              });
+            });
+            menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
+            console.log('miasto: ',choosenMiastoArr);
+
+          }else if(inwestycjaArr.includes(+choosenOptionID)){
+            // inwestycje
+            tempInwestycjaArr.includes(choosenOptionID) ? removeItemAll(tempInwestycjaArr,choosenOptionID) : tempInwestycjaArr.push(choosenOptionID);
+
+            if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
+
+            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
+          }else if(pokojeArr.includes(+choosenOptionID)){
+            // pokoje
+            if(tempPokojeArr.includes(choosenOptionID)){removeItemAll(tempPokojeArr,choosenOptionID);}else{tempPokojeArr.push(choosenOptionID)};
+
+            tempPokojeArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
+              });
+            });
+            menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
+          }else if(pietroArr.includes(+choosenOptionID)){
+            // pietro
+            if(tempPietroArr.includes(choosenOptionID)){removeItemAll(tempPietroArr,choosenOptionID);}else{tempPietroArr.push(choosenOptionID)};
+
+            tempPietroArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
+              });
+            });
+            menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
+          }else if(terminArr.includes(+choosenOptionID)){
+            // termin
+            if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
+
+            tempTerminArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
+              });
+            });
+            menuActiveSpan.innerHTML = choosenTempArr.join(', ');
+          }else if(inneArr.includes(+choosenOptionID)){
+            // inne
+            tempInneArr.includes(choosenOptionID) ? removeItemAll(tempInneArr,choosenOptionID) : tempInneArr.push(choosenOptionID);
+
+            if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
+
+            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
+          }{
+            console.log('error');
+          };
+
+          // menuActiveSpan.dataset.label = choosenOption;
+          // menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
+
+          console.log('item: ', menuActiveSpan.getAttribute('data-label'));
+          console.log('item category: ', menuActiveTitle);
+          console.log('item termid: ', +choosenOptionID);
+
+        };
+        showActiveFilterName();
       });
     });
 
