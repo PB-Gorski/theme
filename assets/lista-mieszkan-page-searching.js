@@ -615,6 +615,7 @@ window.addEventListener("load", function() {
         let returnChoosenFromCookies =[];
         let returnChoosenFromCookiesInwestycje = [];
         let returnChoosenFromCookiesPokoje = [];
+        let returnChoosenFromCookiesPietro = [];
         filteredTermsFromCookiesArr.forEach(item=>{
           console.log('item form filtered cookies: ', item);
           if(miastoArr.includes(+item)){
@@ -664,22 +665,9 @@ window.addEventListener("load", function() {
             // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
           }else if(pokojeArr.includes(+item)){
             // pokoje
-            // if(tempPokojeArr.includes(item)){removeItemAll(tempPokojeArr,item);}else{tempPokojeArr.push(item)};
-
-            // tempPokojeArr.forEach(choosenItem =>{
-            //   passiveOptions.forEach(item => {
-            //     if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
-            //   });
-            // });
-            // menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
-
-
-            // new
-
-
             if(tempPokojeArr.includes(item)){removeItemAll(tempPokojeArr,item);}else{tempPokojeArr.push(item)};
 
-            choosenPokojeArr=  [];
+            choosenPokojeArrv= [];
             tempPokojeArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
@@ -696,17 +684,38 @@ window.addEventListener("load", function() {
             returnChoosenFromCookiesPokoje.forEach(el => {
               el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenPokojeArr.join(', ');
             });
-            console.log('koncowy array: ',choosenPokojeArr);
           }else if(pietroArr.includes(+item)){
             // pietro
+            // if(tempPietroArr.includes(item)){removeItemAll(tempPietroArr,item);}else{tempPietroArr.push(item)};
+
+            // tempPietroArr.forEach(choosenItem =>{
+            //   passiveOptions.forEach(item => {
+            //     if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
+            //   });
+            // });
+            // menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
+
+
+
             if(tempPietroArr.includes(item)){removeItemAll(tempPietroArr,item);}else{tempPietroArr.push(item)};
 
+            choosenPietroArr = [];
             tempPietroArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
               });
             });
-            menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
+            
+            passiveOptions.forEach(option => {
+              if(option.childNodes[1].dataset.termid == item){
+                console.log('option from cookies for finding parent: ',option);
+                returnChoosenFromCookiesPietro.push(option)
+              };              
+            });
+
+            returnChoosenFromCookiesPietro.forEach(el => {
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenPokojeArr.join(', ');
+            });
           }else if(terminArr.includes(+item)){
             // termin
             if(tempTerminArr.includes(item)){removeItemAll(tempTerminArr,item);}else{tempTerminArr.push(item)};
