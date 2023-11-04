@@ -523,6 +523,7 @@ window.addEventListener("load", function() {
       let choosenInwestycjeArr = [];
       let choosenPokojeArr = [];
       let choosenPietroArr = [];
+      let choosenTerminArr = [];
       let choosenTempArr = [];
       let choosenInneCount = 1;
       function showActiveFilterNameFromCookies(cookiesSearchedIDs){
