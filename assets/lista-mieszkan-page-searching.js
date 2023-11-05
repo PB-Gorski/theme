@@ -970,15 +970,18 @@ window.addEventListener("load", function() {
     
 
 
+    let stopSearching = 0;
     wp.hooks.addAction('ymc_after_loaded_data_148_2', 'smartfilter', function(){
       let fromWhatPageInfo = document.referrer;
-      if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/'){
+      if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/' && stopSearching < 1){
         console.log('from osiefle srebrniki');
         YMCTools({
           target: '.data-target-ymc2', 
           terms: '72',      
         }).apiTermUpdate(); 
+        stopSearching++;
       }
+      
     });
   };
 
