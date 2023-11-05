@@ -514,6 +514,11 @@ window.addEventListener("load", function() {
 
       let filteredCustomPriceFromCookies = runSearchingPrice();
       console.log(filteredCustomPriceFromCookies.join());
+
+      let fromWhatPageInfo = document.referrer;
+      if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/'){
+        filteredTermsFromCookies += '72'
+      }
       
       console.log(filteredTermsFromCookies);
       console.log('filteredTermsFromCookies from frontpage: ',filteredTermsFromCookies);
