@@ -310,7 +310,8 @@ window.addEventListener("load", function() {
 
   clickedLink.addEventListener('click', () =>{
     deleteAllCookies();
-    document.cookie = "filteredTermsFromCookies=" + 72
+    document.cookie = "filteredTermsFromCookies=" + '72'
+    console.log(document.cookie);
   })
 
   //  ---------------------------------------------------------------------- 
