@@ -34,7 +34,7 @@
       <!-- wp:group -->
       <div class="wp-block-group inner-cols-wrapper mb-[80px] desktop:h-[100px] desktop:flex">
         <!-- wp:group -->
-        <div class="wp-block-group inner-col1 mb-[30px] desktop:mb-0 desktop:w-[40%] desktop:border-r-[1px] desktop:border-[rgba(138,143,153,0.30)]">
+        <div class="wp-block-group inner-col1 mb-[30px] desktop:mb-0 desktop:w-[40%] ">
           <!-- wp:paragraph -->
           <p class="mb-[10px] text-bgDarkGray" data-aos="fade-up" data-aos-offset="30">Zadzwoń do nas</p>
           <!-- /wp:paragraph -->
