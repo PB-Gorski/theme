@@ -24,15 +24,15 @@
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:paragraph -->
-  <span class="block cursor-default desktop:max-w-[900px] mx-auto" data-aos="fade-right" data-aos-offset="30">
+  <!-- wp:group -->
+  <div class="block cursor-default desktop:max-w-[900px] mx-auto">
     <!-- wp:image -->
-    <figure class="wp-block-image mb-[30px] desktop:max-w-[900px] mx-auto">
+    <figure class="wp-block-image mb-[30px] desktop:max-w-[900px] mx-auto" data-aos="fade-right" data-aos-offset="30">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img-team-1.jpeg" alt="team-image">
     </figure>
     <!-- /wp:image -->
-  </span>
-  <!-- /wp:paragraph -->
+  </div>
+  <!-- /wp:group -->
 
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] desktop:max-w-[680px]">
