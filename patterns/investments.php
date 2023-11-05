@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
-    <div class="wp-block-group pt-[60px] pb-[30px] desktop:pb-[40px] title">
+    <div class="wp-block-group pt-[60px] pb-[30px] desktop:pb-[60px] title">
       <!-- wp:paragraph -->
       <p data-aos="fade-right" data-aos-duration="500" data-aos-offset="30" class="text-[24px] text-center font-bold">Poznaj nasze najnowsze inwestycje</p>
       <!-- /wp:paragraph -->
