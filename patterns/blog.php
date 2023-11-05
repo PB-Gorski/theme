@@ -37,7 +37,7 @@
         <!-- wp:group -->
         <div class="wp-block-group blog-tile w-full inline-block group">
           <!-- wp:paragraph -->
-          <span class="relative group inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="50">
+          <span class="relative group block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="50">
             <!-- wp:group -->
             <div class="wp-block-group wrapper">
               <!-- wp:group -->
