@@ -36,8 +36,8 @@
         <!-- wp:post-template {"className":"mb-[40px] flex desktop:flex-row flex-col justify-between desktop:gap-[30px] gap-[60px]"} -->
         <!-- wp:group -->
         <div class="wp-block-group blog-tile w-full inline-block group">
-          <!-- wp:paragraph -->
-          <span class="relative group block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="50">
+          <!-- wp:group -->
+          <div class="wp-block-group relative group block">
             <!-- wp:group -->
             <div class="wp-block-group wrapper">
               <!-- wp:group -->
@@ -63,8 +63,8 @@
               <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
-          </span>
-          <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
         </div>
         <!-- /wp:group -->
         <!-- /wp:post-template -->
@@ -133,7 +133,7 @@
       <!-- wp:group -->
       <div class="wp-block-group btn-find-more relative w-fit h-[55px] bg-[#3d4b66] text-white flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
         <!-- wp:paragraph -->
-        <p class="w-full h-full p-[10px_20px] font-bold z-[1]"><a href="<?php echo home_url() . '/blog' ?>" class="block w-full h-full">Zobacz wszystkie aktualności</a></p>
+        <p class="w-full h-full font-bold z-[1]"><a href="<?php echo home_url() . '/blog' ?>" class="block p-[10px_20px] w-full h-full">Zobacz wszystkie aktualności</a></p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
