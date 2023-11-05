@@ -32,8 +32,8 @@
     <div class="wp-block-group above-wp-query">
       <!-- wp:query {"query":{"perPage":4,"pages":0,"offset":0,"postType":"post"},"isLink":true} -->
       <!-- wp:group -->
-      <div class="wp-block-group above-post-template-frontpage-blog ul-wrapper-frontpage-blog mb-[40px] flex desktop:flex-row flex-col justify-between desktop:gap-[30px] gap-[60px]">
-        <!-- wp:post-template -->
+      <div class="wp-block-group above-post-template-frontpage-blog ul-wrapper-frontpage-blog ">
+        <!-- wp:post-template {"className":"mb-[40px] flex desktop:flex-row flex-col justify-between desktop:gap-[30px] gap-[60px]"} -->
         <!-- wp:group -->
         <div class="wp-block-group blog-tile w-full inline-block group">
           <!-- wp:paragraph -->
@@ -126,6 +126,8 @@
       ?>
     </ul>
     <!-- /wp:list -->
+
+
     <!-- wp:group -->
     <div class="wp-block-group flex items-center justify-center">
       <!-- wp:group -->
