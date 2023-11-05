@@ -32,18 +32,19 @@
     <div class="wp-block-group above-wp-query">
       <!-- wp:query {"query":{"perPage":4,"pages":0,"offset":0,"postType":"post"},"isLink":true} -->
       <!-- wp:group -->
-      <div class="wp-block-group above-post-template-frontpage-blog ul-wrapper-frontpage-blog mx-auto">
+      <div class="wp-block-group above-post-template-frontpage-blog ul-wrapper-frontpage-blog mb-[40px] flex desktop:flex-row flex-col justify-between desktop:gap-[30px] gap-[60px]">
         <!-- wp:post-template {"className":"swiper-wrapper"} -->
         <!-- wp:group -->
         <div class="wp-block-group blog-tile w-full inline-block group">
-          <a href="<?php the_permalink(); ?>" class="relative group inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="<?php echo $counter2 * 50; ?>">
+          <?php $counter2 = 0; ?>
+          <a class="relative group inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="<?php echo $counter2 * 50; ?>">
             <!-- wp:group -->
             <div class="wp-block-group wrapper">
-              <!-- wp:image -->
-              <figure class="wp-block-image h-[270px] mb-[10px]">
-                <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
-              </figure>
-              <!-- /wp:image -->
+              <!-- wp:group -->
+              <div class="wp-block-group h-[270px] mb-[10px]">
+                <!-- wp:post-featured-image {"isLink":true} /-->
+              </div>
+              <!-- /wp:group -->
 
               <!-- wp:paragraph -->
               <p class="post-date mr-[20px] text-[16px] text-bgDarkGray mb-[15px]"><?php echo get_the_date(); ?></p>
