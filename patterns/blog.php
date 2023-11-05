@@ -37,7 +37,8 @@
         <!-- wp:group -->
         <div class="wp-block-group blog-tile w-full inline-block group">
           <?php $counter2 = 0; ?>
-          <a class="relative group inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="<?php echo $counter2 * 50; ?>">
+          <!-- wp:paragraph -->
+          <span class="relative group inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="<?php echo $counter2 * 50; ?>">
             <!-- wp:group -->
             <div class="wp-block-group wrapper">
               <!-- wp:group -->
@@ -51,7 +52,7 @@
               <!-- /wp:paragraph -->
 
               <!-- wp:paragraph -->
-              <p class="mr-[20px] text-[24px] font-bold mb-[15px] leading-[32px] border-b-[2px] border-b-primaryRed"><?php the_title(); ?></p>
+              <p class="mr-[20px] text-[24px] font-bold mb-[15px] leading-[32px] border-b-[2px] border-b-primaryRed"><!-- wp:post-title {"isLink":true} /--></p>
               <!-- /wp:paragraph -->
 
               <!-- wp:paragraph -->
@@ -59,7 +60,8 @@
               <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
-          </a>
+          </span>
+          <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
         <!-- /wp:post-template -->
