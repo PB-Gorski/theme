@@ -51,9 +51,9 @@
               <p class="post-date mr-[20px] text-[16px] text-bgDarkGray mb-[15px]"><?php echo get_the_date(); ?></p>
               <!-- /wp:paragraph -->
 
-              <!-- wp:paragraph -->
-              <p class="mr-[20px] text-[24px] font-bold mb-[15px] leading-[32px] border-b-[2px] border-b-primaryRed"><!-- wp:post-title {"isLink":true} /--></p>
-              <!-- /wp:paragraph -->
+              <!-- wp:group -->
+              <div class="wp-block-group mr-[20px] text-[24px] font-bold mb-[15px] leading-[32px] border-b-[2px] border-b-primaryRed"><!-- wp:post-title {"isLink":true} /--></div>
+              <!-- /wp:group -->
 
               <!-- wp:paragraph -->
               <p class="relative inline text-primaryRed before:content-[''] before:inline-block cursor-pointer">Czytaj dalej <span class="text-[11px]">&#x25BA;</span></p>
