@@ -64,6 +64,7 @@
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
+        <?php $counter2++; ?>
         <!-- /wp:post-template -->
       </div>
       <!-- /wp:group -->
