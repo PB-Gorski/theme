@@ -793,6 +793,7 @@ window.addEventListener("load", function() {
 
     let fromWhatPageInfo = document.referrer;
     if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/'){
+      console.log('from osiefle srebrniki');
       YMCTools({
         target: '.data-target-ymc2', 
         terms: '72',      
