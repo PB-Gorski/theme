@@ -1,6 +1,15 @@
 window.addEventListener("load", function() {
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('post-type-archive-mieszkania')){
+    let fromWhatPageInfo = document.referrer;
+    if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/'){
+      console.log('from osiefle srebrniki');
+      // YMCTools({
+      //   target: '.data-target-ymc2', 
+      //   terms: '72',      
+      // }).apiTermUpdate(); 
+      document.cookie = "filteredTermsFromCookies=72"
+    }
     // alert('test');
     console.log('lista mieszkan page');
     // wyszukiwanie mieszkan po filtrach (cena)
@@ -979,6 +988,7 @@ window.addEventListener("load", function() {
           target: '.data-target-ymc2', 
           terms: '72',      
         }).apiTermUpdate(); 
+
         stopSearching++;
       }
       
@@ -990,14 +1000,7 @@ window.addEventListener("load", function() {
 
 
 
-  let fromWhatPageInfo = document.referrer;
-  if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/'){
-    console.log('from osiefle srebrniki');
-    YMCTools({
-      target: '.data-target-ymc2', 
-      terms: '72',      
-    }).apiTermUpdate(); 
-  }
+
 
 
 });
