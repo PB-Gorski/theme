@@ -27,7 +27,7 @@
   <!-- wp:group -->
   <div class="block cursor-default desktop:max-w-[900px] mx-auto">
     <!-- wp:image -->
-    <figure class="wp-block-image mb-[30px] desktop:max-w-[900px] mx-auto" data-aos="fade-right" data-aos-offset="30">
+    <figure class="wp-block-image mb-[30px] desktop:max-w-[900px] mx-auto">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img-team-1.jpeg" alt="team-image">
     </figure>
     <!-- /wp:image -->
