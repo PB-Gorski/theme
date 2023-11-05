@@ -26,13 +26,13 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group col2 w-[100%] desktop:w-[55%] pt-[110px] desktop:pt-[160px] fflex flex-col gap-[30px] items-center jusify-center">
+    <div class="wp-block-group col2 w-[100%] desktop:w-[55%] pt-[110px] desktop:py-[60px] fflex flex-col gap-[30px] items-center jusify-center">
       <!-- wp:paragraph -->
-      <p class="text-[28px] desktop:text-[38px] font-bold mb-[20px] desktop:mb-[40px]" data-aos="fade-right" data-aos-offset="30">Potrzebujesz więcej informacji?</p>
+      <p class="text-[28px] desktop:text-[38px] font-bold mb-[90px] desktop:mb-[40px]" data-aos="fade-right" data-aos-offset="30">Potrzebujesz więcej informacji?</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
-      <div class="wp-block-group inner-cols-wrapper mb-[80px] desktop:h-[100px] desktop:flex">
+      <div class="wp-block-group inner-cols-wrapper mb-[10px] desktop:h-[100px] desktop:flex">
         <!-- wp:group -->
         <div class="wp-block-group inner-col1 mb-[30px] desktop:mb-0 desktop:w-[40%] ">
           <!-- wp:paragraph -->
