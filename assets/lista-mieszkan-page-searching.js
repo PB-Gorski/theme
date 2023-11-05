@@ -488,7 +488,7 @@ window.addEventListener("load", function() {
             document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
         }
     };
-    // deleteAllCookies();
+    deleteAllCookies();
 
     function getCookie(cname) {
       let name = cname + "=";
@@ -786,7 +786,7 @@ window.addEventListener("load", function() {
           runFromCookies()
         }, 1000);
       };
-      deleteAllCookies();
+      // deleteAllCookies();
     }else{
       console.log('no cookies');
     };
