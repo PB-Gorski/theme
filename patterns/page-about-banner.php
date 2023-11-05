@@ -82,10 +82,10 @@
       <!-- wp:group -->
       <div class="wp-block-group title text-[36px] desktop:text-[60px] font-bold desktop:pt-[150px] mb-[50px] leading-[44px] desktop:leading-[70px]">
         <!-- wp:paragraph -->
-        <p data-aos="fade-right" data-aos-offset="30">Poznaj naszą historię,</p>
+        <span data-aos="fade-right" data-aos-offset="30">Poznaj naszą historię,</span>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p data-aos="fade-right" data-aos-offset="30">strategię i wartości</p>
+        <span data-aos="fade-right" data-aos-offset="30">strategię i wartości</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
