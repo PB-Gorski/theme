@@ -36,7 +36,6 @@
         <!-- wp:post-template {"className":"swiper-wrapper"} -->
         <!-- wp:group -->
         <div class="wp-block-group blog-tile w-full inline-block group">
-          <?php $counter2 = 0; ?>
           <!-- wp:paragraph -->
           <span class="relative group inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="50">
             <!-- wp:group -->
@@ -77,7 +76,7 @@
 
 
     <!-- wp:list -->
-    <ul class="wp-block-list mb-[40px] flex desktop:flex-row flex-col justify-between desktop:gap-[30px] gap-[60px]">
+    <ul class="wp-block-list _old hidden mb-[40px] flex desktop:flex-row flex-col justify-between desktop:gap-[30px] gap-[60px]">
       <?php
       $args = array(
         'post_type' => 'post',
