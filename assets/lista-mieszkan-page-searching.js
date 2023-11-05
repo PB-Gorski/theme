@@ -493,15 +493,12 @@ window.addEventListener("load", function() {
         }
     };
     deleteAllCookies();
-    let fromWhatPageInfo = document.referrer;
-    if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/'){
-      console.log('from osiefle srebrniki');
-      // YMCTools({
-      //   target: '.data-target-ymc2', 
-      //   terms: '72',      
-      // }).apiTermUpdate(); 
+    if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/' ||
+        document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/lokalizacja-osiedle-srebrniki/' ||
+        document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/galeria-osiedle-srebrniki/' ||
+        document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/kronika-budowy-osiedle-srebrniki/'){
+      console.log('from osiedle srebrniki');
       document.cookie = "filteredTermsFromCookies=72";
-
     }
 
     
