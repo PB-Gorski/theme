@@ -309,7 +309,7 @@ window.addEventListener("load", function() {
   };
 
   clickedLink.addEventListener('click', () =>{
-    deleteAllCookies();
+    // deleteAllCookies();
     document.cookie = "filteredTermsFromCookies=72";
     console.log(document.cookie);
   })
