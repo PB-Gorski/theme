@@ -1,16 +1,11 @@
 window.addEventListener("load", function() {
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('post-type-archive-mieszkania')){
-    let fromWhatPageInfo = document.referrer;
-    if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/'){
-      console.log('from osiefle srebrniki');
-      // YMCTools({
-      //   target: '.data-target-ymc2', 
-      //   terms: '72',      
-      // }).apiTermUpdate(); 
-      document.cookie = "filteredTermsFromCookies=72"
-    }
-    // alert('test');
+
+
+
+
+
     console.log('lista mieszkan page');
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
@@ -498,6 +493,18 @@ window.addEventListener("load", function() {
         }
     };
     deleteAllCookies();
+    let fromWhatPageInfo = document.referrer;
+    if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/'){
+      console.log('from osiefle srebrniki');
+      // YMCTools({
+      //   target: '.data-target-ymc2', 
+      //   terms: '72',      
+      // }).apiTermUpdate(); 
+      document.cookie = "filteredTermsFromCookies=72";
+
+    }
+
+    
 
     function getCookie(cname) {
       let name = cname + "=";
@@ -982,7 +989,7 @@ window.addEventListener("load", function() {
     let stopSearching = 0;
     wp.hooks.addAction('ymc_after_loaded_data_148_2', 'smartfilter', function(){
       // let fromWhatPageInfo = document.referrer;
-      // if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/' && stopSearching == 0){
+      // if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/' && stopSearching < 0){
       //   console.log('from osiefle srebrniki');
       //   YMCTools({
       //     target: '.data-target-ymc2', 
