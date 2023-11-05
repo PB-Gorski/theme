@@ -17,17 +17,17 @@
       <!-- wp:group -->
       <div class="wp-block-group col1 desktop:w-[50%] desktop:pl-[60px]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">40 lat obecności na pomorskim rynku, dziesiątki zrealizowanych inwestycji i wiele spektakularnych przedsięwzięć w trakcie realizacji.</p>
+        <span class="text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">40 lat obecności na pomorskim rynku, dziesiątki zrealizowanych inwestycji i wiele spektakularnych przedsięwzięć w trakcie realizacji.</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
       <div class="wp-block-group col2 desktop:w-[50%] text-[18px] text-bgDarkGray leading-[30px]">
         <!-- wp:paragraph -->
-        <p data-aos="fade-right" data-aos-offset="30">Przedsiębiorstwo Budowlane Górski to jedna z wiodących firm deweloperskich w Trójmieście, która nie boi się wyzwań i bezustannie stara się sprostać oczekiwaniom klientów.</p>
+        <span data-aos="fade-right" data-aos-offset="30">Przedsiębiorstwo Budowlane Górski to jedna z wiodących firm deweloperskich w Trójmieście, która nie boi się wyzwań i bezustannie stara się sprostać oczekiwaniom klientów.</span>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p data-aos="fade-right" data-aos-offset="30">Działalność budowlaną firmy GÓRSKI uzupełnia mecenat nad kulturą oraz wsparcie dla drużyn sportowych.</p>
+        <span data-aos="fade-right" data-aos-offset="30">Działalność budowlaną firmy GÓRSKI uzupełnia mecenat nad kulturą oraz wsparcie dla drużyn sportowych.</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -52,10 +52,10 @@
       <!-- wp:group -->
       <div class="wp-block-group col2 desktop:w-[50%] text-[18px] text-bgDarkGray leading-[30px]">
         <!-- wp:paragraph -->
-        <p class="mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Wieloletnie doświadczenie przedsiębiorstwa owocuje dziś bardzo szeroką, zróżnicowaną ofertą dla klientów.</p>
+        <span class="mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Wieloletnie doświadczenie przedsiębiorstwa owocuje dziś bardzo szeroką, zróżnicowaną ofertą dla klientów.</span>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Wśród realizacji dewelopera znajdują się eleganckie inwestycje w prestiżowych lokalizacjach Trójmiasta takie jak osiedle Browar Gdański, Kamienica Tobiasza, czy apartamenty Angielska Grobla na Starym Mieście w Gdańsku.</p>
+        <span class="text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Wśród realizacji dewelopera znajdują się eleganckie inwestycje w prestiżowych lokalizacjach Trójmiasta takie jak osiedle Browar Gdański, Kamienica Tobiasza, czy apartamenty Angielska Grobla na Starym Mieście w Gdańsku.</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -80,10 +80,10 @@
       <!-- wp:group -->
       <div class="wp-block-group col2 desktop:w-[40%] text-[18px] text-bgDarkGray leading-[30px]">
         <!-- wp:paragraph -->
-        <p class="mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Realizacje PB Górski to nie tylko mieszkania</p>
+        <span class="mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Realizacje PB Górski to nie tylko mieszkania</span>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Deweloper w ostatnim czasie postawił także na inwestycje handlowo-usługowe. Galeria Metropolia to unikalne centrum handlowe zintegrowane z dworcem kolejowym Gdańsk Wrzeszcz, gdzie do dyspozycji klientów oddane zostały różnorodne sklepy znanych marek, największy kompleks kinowy w okolicy, a także hotel.</p>
+        <span class="text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Deweloper w ostatnim czasie postawił także na inwestycje handlowo-usługowe. Galeria Metropolia to unikalne centrum handlowe zintegrowane z dworcem kolejowym Gdańsk Wrzeszcz, gdzie do dyspozycji klientów oddane zostały różnorodne sklepy znanych marek, największy kompleks kinowy w okolicy, a także hotel.</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -108,10 +108,10 @@
       <!-- wp:group -->
       <div class="wp-block-group col2 desktop:pl-[100px] desktop:w-[40%] text-[18px] text-bgDarkGray leading-[30px]">
         <!-- wp:paragraph -->
-        <p class="mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Hotel Quadrille Conference & Spa</p>
+        <span class="mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Hotel Quadrille Conference & Spa</span>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Do najnowszych realizacji firmy należy Pięciogwiazdkowy Hotel Quadrille, XVIII-wieczny zespół parkowo-pałacowy zlokalizowany w Gdyni Orłowie. PB Górski przekształcił ten historyczny obiekt w ekskluzywny hotel butikowy o wyjątkowym designie nawiązującym m.in. do "Alicji w Krainie Czarów". Na całość składają się oryginalne wnętrza, niepowtarzalne pokoje hotelowe, imponująca strefa MediSpa z podziemnym basenem, autorska restauracja Biały Królik, nowocześnie wyposażona sala konferencyjna oraz malowniczy park.</p>
+        <span class="text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Do najnowszych realizacji firmy należy Pięciogwiazdkowy Hotel Quadrille, XVIII-wieczny zespół parkowo-pałacowy zlokalizowany w Gdyni Orłowie. PB Górski przekształcił ten historyczny obiekt w ekskluzywny hotel butikowy o wyjątkowym designie nawiązującym m.in. do "Alicji w Krainie Czarów". Na całość składają się oryginalne wnętrza, niepowtarzalne pokoje hotelowe, imponująca strefa MediSpa z podziemnym basenem, autorska restauracja Biały Królik, nowocześnie wyposażona sala konferencyjna oraz malowniczy park.</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
