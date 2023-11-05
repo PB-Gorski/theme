@@ -35,8 +35,30 @@
       <div class="wp-block-group above-post-template-frontpage-blog ul-wrapper-frontpage-blog mx-auto">
         <!-- wp:post-template {"className":"swiper-wrapper"} -->
         <!-- wp:group -->
-        <div class="wp-block-group swiper-slide22222 group">
-          <!-- wp:post-title {"isLink":true} /-->
+        <div class="wp-block-group blog-tile w-full inline-block group">
+          <a href="<?php the_permalink(); ?>" class="relative group inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="<?php echo $counter2 * 50; ?>">
+            <!-- wp:group -->
+            <div class="wp-block-group wrapper">
+              <!-- wp:image -->
+              <figure class="wp-block-image h-[270px] mb-[10px]">
+                <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
+              </figure>
+              <!-- /wp:image -->
+
+              <!-- wp:paragraph -->
+              <p class="post-date mr-[20px] text-[16px] text-bgDarkGray mb-[15px]"><?php echo get_the_date(); ?></p>
+              <!-- /wp:paragraph -->
+
+              <!-- wp:paragraph -->
+              <p class="mr-[20px] text-[24px] font-bold mb-[15px] leading-[32px] border-b-[2px] border-b-primaryRed"><?php the_title(); ?></p>
+              <!-- /wp:paragraph -->
+
+              <!-- wp:paragraph -->
+              <p class="relative inline text-primaryRed before:content-[''] before:inline-block cursor-pointer">Czytaj dalej <span class="text-[11px]">&#x25BA;</span></p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
+          </a>
         </div>
         <!-- /wp:group -->
         <!-- /wp:post-template -->
