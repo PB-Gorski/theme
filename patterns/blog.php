@@ -32,11 +32,11 @@
     <div class="wp-block-group above-wp-query">
       <!-- wp:query {"query":{"perPage":4,"pages":0,"offset":0,"postType":"post"},"isLink":true} -->
       <!-- wp:group -->
-      <div class="wp-block-group above-post-template-frontpage-blog ul-wrapper-frontpage-blog mx-auto w-[100%]">
+      <div class="wp-block-group above-post-template-frontpage-blog ul-wrapper-frontpage-blog mx-auto">
         <!-- wp:post-template {"className":"swiper-wrapper"} -->
 
         <!-- wp:group -->
-        <div class="wp-block-group swiper-slide22222 group desktop:w-[535px] w-[300px] h-[500px] desktop:h-[740px]">
+        <div class="wp-block-group swiper-slide22222 group">
           <!-- wp:post-title {"isLink":true} /-->
         </div>
         <!-- /wp:group -->
