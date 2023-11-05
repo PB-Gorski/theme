@@ -39,7 +39,7 @@
       <!-- wp:group -->
       <div class="wp-block-group col1 desktop:w-[50%] desktop:pl-[60px]">
         <!-- wp:group -->
-        <div class="wp-block-group inline-block cursor-default" data-aos="fade-right" data-aos-offset="30">
+        <div class="wp-block-group inline-block cursor-default">
           <!-- wp:image -->
           <figure class="wp-block-image w-full h-full">
             <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img1.jpeg" alt="img">
