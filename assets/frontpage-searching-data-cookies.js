@@ -2,7 +2,7 @@ window.addEventListener("load", function() {
   //  frontpage - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('home')){
     console.log('home');
-    document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
+    // document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
     function deleteAllCookies() {
         const cookies = document.cookie.split(";");
     
