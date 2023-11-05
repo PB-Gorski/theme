@@ -38,10 +38,7 @@
         <div class="wp-block-group blog-tile w-full inline-block group">
           <?php $counter2 = 0; ?>
           <!-- wp:paragraph -->
-          <span class="relative group inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="
-          <?php
-          echo $counter2 * 50;
-          $counter2++;  ?>">
+          <span class="relative group inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="50">
             <!-- wp:group -->
             <div class="wp-block-group wrapper">
               <!-- wp:group -->
