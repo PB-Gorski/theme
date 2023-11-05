@@ -514,11 +514,6 @@ window.addEventListener("load", function() {
 
       let filteredCustomPriceFromCookies = runSearchingPrice();
       console.log(filteredCustomPriceFromCookies.join());
-
-      let fromWhatPageInfo = document.referrer;
-      if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/'){
-        filteredTermsFromCookies += '72'
-      }
       
       console.log(filteredTermsFromCookies);
       console.log('filteredTermsFromCookies from frontpage: ',filteredTermsFromCookies);
@@ -795,6 +790,14 @@ window.addEventListener("load", function() {
     }else{
       console.log('no cookies');
     };
+
+    let fromWhatPageInfo = document.referrer;
+    if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/'){
+      YMCTools({
+        target: '.data-target-ymc2', 
+        terms: '72',      
+      }).apiTermUpdate(); 
+    }
 
     // ------------------------------------------------------------------------------
 
