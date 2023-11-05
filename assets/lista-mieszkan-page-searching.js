@@ -493,12 +493,18 @@ window.addEventListener("load", function() {
         }
     };
     deleteAllCookies();
+
+    // handling searching when 
     if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/' ||
         document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/lokalizacja-osiedle-srebrniki/' ||
         document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/galeria-osiedle-srebrniki/' ||
         document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/kronika-budowy-osiedle-srebrniki/'){
-      console.log('from osiedle srebrniki');
-      document.cookie = "filteredTermsFromCookies=72";
+        document.cookie = "filteredTermsFromCookies=72";
+    }else if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/' ||
+              document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/lokalizacja-sw-piotra/' ||
+              document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/galeria-sw-piotra/' ||
+              document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/kronika-budowy-sw-piotra/'){
+              document.cookie = "filteredTermsFromCookies=71";
     }
 
     
