@@ -309,10 +309,11 @@ window.addEventListener("load", function() {
   };
 
   if(this.document.body.classList.contains('page-id-1711')){
+    document.cookie = "filteredTermsFromCookies=72";
     clickedLink.addEventListener('click', () =>{
-      deleteAllCookies();
-      document.cookie = "filteredTermsFromCookies=72";
-      console.log(document.cookie);
+      // deleteAllCookies();
+      // document.cookie = "filteredTermsFromCookies=72";
+      // console.log(document.cookie);
     });
   };
 
