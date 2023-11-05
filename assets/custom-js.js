@@ -295,7 +295,7 @@ window.addEventListener("load", function() {
   });
 
   // cookies from page o-inwestycji
-  const clickedLink = this.document.querySelector('.js-srebrniki-cookie');
+  const clickedLink = document.querySelector('.js-srebrniki-cookie');
 
   function deleteAllCookies() {
     const cookies = document.cookie.split(";");
