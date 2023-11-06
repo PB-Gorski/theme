@@ -81,10 +81,10 @@
       <!-- wp:group -->
       <div class="wp-block-group title text-[36px] desktop:text-[60px] desktop:pt-[290px] mb-[50px] leading-[44px] desktop:leading-[70px]">
         <!-- wp:paragraph -->
-        <p class="font-bold underline underline-offset-[20px]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki</p>
+        <span class="block font-bold underline underline-offset-[20px]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki</span>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="uppercase text-[18px] trancking-[10px]" data-aos="fade-right" data-aos-offset="30">Gdańsk wrzeszcz</p>
+        <span class="block uppercase text-[18px] trancking-[10px]" data-aos="fade-right" data-aos-offset="30">Gdańsk wrzeszcz</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
