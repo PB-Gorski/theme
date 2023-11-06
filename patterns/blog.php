@@ -55,7 +55,7 @@
               <!-- /wp:paragraph -->
 
               <!-- wp:group -->
-              <div class="wp-block-group mr-[20px] text-[24px] font-bold mb-[15px] leading-[32px] border-b-[2px] border-b-primaryRed"><!-- wp:post-title {"isLink":true} /--></div>
+              <div class="wp-block-group mr-[20px] text-[20px] font-bold mb-[15px] leading-[32px] border-b-[2px] border-b-primaryRed"><!-- wp:post-title {"isLink":true} /--></div>
               <!-- /wp:group -->
 
               <!-- wp:paragraph -->
