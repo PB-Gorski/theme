@@ -66,15 +66,15 @@
     <div class="wp-block-group row3 desktop:flex flex-row-reverse gap-[20px] mb-[80px]">
       <!-- wp:group -->
       <div class="wp-block-group col1 desktop:w-[60%] desktop:pl-[60px]">
-        <!-- wp:paragraph -->
-        <a href="#" class="cursor-default inline-block" data-aos="fade-right" data-aos-offset="30">
+        <!-- wp:group -->
+        <div class="wp-block-group cursor-default inline-block" data-aos="fade-right" data-aos-offset="30">
           <!-- wp:image -->
           <figure class="wp-block-image w-full h-full">
             <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img2.jpeg" alt="img">
           </figure>
           <!-- /wp:image -->
-        </a>
-        <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
