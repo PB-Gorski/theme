@@ -104,6 +104,10 @@
             if (is_home()) {
               echo 'blog';
             };
+            if (!is_front_page() && is_home()) {
+              // blog page
+              echo 'blog2';
+            }
             ?>
             <!-- wp:paragraph -->
             <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Wszystkie</a>
