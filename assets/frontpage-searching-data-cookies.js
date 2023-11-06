@@ -433,6 +433,13 @@ window.addEventListener("load", function() {
   });
 
 
+  document.querySelectorAll('.taxonomy-category').forEach(item =>{
+    if (item.childNodes[0].innerHTML == 'Bez kategorii'){
+      item.classList.add('hidden');
+    }
+  })
+
+
 
 
 
