@@ -370,7 +370,7 @@
               </li>
               <!-- /wp:list-item -->
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[40px] leading-[21px]">
+              <li class="flex items-center gap-[20px] leading-[21px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
