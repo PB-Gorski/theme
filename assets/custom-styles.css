@@ -1037,14 +1037,18 @@ background-color: #e8fbff!important;
 }
 .dropdown__item {
   width: 100%;
-  padding: 8px 0px;
+  /* height: 100; */
+  /* padding: 8px 0px; */
 }
 .dropdown__item:hover {
   background-color: #B2F1FF;
 }
 .dropdown__link {
   background-color: transparent;
-  padding-left: 20px;
+  padding-left: 10px 20px 10px 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .dropdown__link:hover {
   background-color: #B2F1FF;
