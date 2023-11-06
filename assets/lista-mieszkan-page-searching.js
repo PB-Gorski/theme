@@ -1007,14 +1007,14 @@ window.addEventListener("load", function() {
 
     btnSearch.addEventListener('click', () =>{
       let searchedFromCookiesIDs = document.querySelectorAll('.active');
-      let searchedReadyArr = []
+      let searchedReadyArr = [];
 
       searchedFromCookiesIDs.forEach(item =>{
         console.log('term from cookies',item.dataset.termid);
         searchedReadyArr.push(item.dataset.termid)
       });
 
-      console.log('logggggg: ',searchedReadyArr);
+      console.log('logggggg: ',searchedReadyArr.join());
 
       deleteAllCookies();
       // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
@@ -1028,7 +1028,7 @@ window.addEventListener("load", function() {
 
       console.log('in btn prices: ', pricesID.join());
       console.log('in btn metraze: ', metrazeID.join());
-      console.log('all terms id searched: ', pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join());
+      console.log('all terms id searched: ', pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join() + ',' + searchedReadyArr.join());
     });
 
     // *******************************************************
