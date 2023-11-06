@@ -1093,7 +1093,7 @@ background-color: #e8fbff!important;
 .tab_mieszkania:hover{
   border-bottom: #b22944 3px solid;
 }
-.tab_mieszkania.active{
+.tab_mieszkania.mieszkania-active{
   color:#2E384D;
   border-bottom: #b22944 3px solid;
 }
