@@ -367,8 +367,10 @@
                   <!-- /wp:group -->
                 </div>
                 <!-- /wp:group -->
+
               </li>
               <!-- /wp:list-item -->
+
               <!-- wp:list-item -->
               <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px]">
                 <!-- wp:group -->
@@ -415,6 +417,7 @@
                   <!-- /wp:group -->
                 </div>
                 <!-- /wp:group -->
+
               </li>
               <!-- /wp:list-item -->
             </ul>
@@ -491,6 +494,7 @@
                   <!-- /wp:group -->
                 </div>
                 <!-- /wp:group -->
+
               </li>
               <!-- /wp:list-item -->
             </ul>
@@ -571,6 +575,7 @@
                   <!-- /wp:group -->
                 </div>
                 <!-- /wp:group -->
+
               </li>
               <!-- /wp:list-item -->
             </ul>
@@ -612,40 +617,6 @@
 
 
 
-                <!-- wp:group -->
-                <div class="wp-block-group right-col-text text-black">
-                  <!-- wp:paragraph -->
-                  <p class="text-[18px] mb-[25px]">Beata Derkacz</p>
-                  <!-- /wp:paragraph -->
-                  <!-- wp:group -->
-                  <div class="wp-block-group flex gap-[40px] text-[16px]">
-                    <!-- wp:group -->
-                    <div class="wp-block-group values">
-                      <!-- wp:group -->
-                      <div class="wp-block-group desktop:flex desktop:gap-[40px]">
-                        <!-- wp:paragraph -->
-                        <p class="block mb-[5px]">tel.</p>
-                        <!-- /wp:paragraph -->
-                        <!-- wp:paragraph -->
-                        <a href="tel:+48691992091" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 691 992 091</a>
-                        <!-- /wp:paragraph -->
-                      </div>
-                      <!-- wp:group -->
-                      <div class="wp-block-group desktop:flex desktop:gap-[16px]">
-                        <!-- wp:paragraph -->
-                        <p class="block mb-[5px]">email:</p>
-                        <!-- /wp:paragraph -->
-                        <!-- wp:paragraph -->
-                        <a href="mailto:derkacz@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">b.derkacz@pbgorski.pl</a>
-                        <!-- /wp:paragraph -->
-                      </div>
-                      <!-- /wp:group -->
-                    </div>
-                    <!-- /wp:group -->
-                  </div>
-                  <!-- /wp:group -->
-                </div>
-                <!-- /wp:group -->
 
               </li>
               <!-- /wp:list-item -->
