@@ -345,7 +345,7 @@
                     <div class="wp-block-group values">
 
                       <!-- wp:group -->
-                      <div class="wp-block-group desktop:flex desktop:space-between">
+                      <div class="wp-block-group desktop:flex desktop:justify-between">
                         <!-- wp:paragraph -->
                         <p class="block mb-[5px]">tel.</p>
                         <!-- /wp:paragraph -->
@@ -356,7 +356,7 @@
 
 
                       <!-- wp:group -->
-                      <div class="wp-block-group desktop:flex desktop:space-between">
+                      <div class="wp-block-group desktop:flex desktop:justify-between">
                         <!-- wp:paragraph -->
                         <p class="block mb-[5px]">email:</p>
                         <!-- /wp:paragraph -->
