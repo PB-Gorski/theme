@@ -556,15 +556,15 @@ add_filter('ymc_filter_custom_layout_1850_3', 'pbgorski_custom_filter_layout3', 
 function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $arrOptions)
 {
 	$layout = '<a href="' . get_the_permalink($post_id) . '" class="list-item-mieszkanie group w-full py-[20px] text-[16px] text-textGray flex justify-between items-center">';
-	$layout .= '<p class="w-[100px]">' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
-	$layout .= '<p class="w-[180px]">' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
-	$layout .= '<p class="w-[100px]">' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
-	$layout .= '<p class="w-[65px]">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
-	$layout .= '<p class="w-[100px]">' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
-	$layout .= '<p class="w-[110px]">' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
-	$layout .= '<p class="w-[100px]">' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
-	$layout .= '<p class="w-[130px]">' . wp_get_object_terms($post_id, 'cena')[0]->name . ' zł</p>';
-	$layout .= '<p class="w-[125px]">' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'cena')[0]->name . ' zł</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
 	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="arrow-red w-[26px] h-[17px]" />';
 	$layout .= '</a>';
 	// $layout .= '<a class="' . esc_attr($arrOptions['class_popup']) . '" data-postid="' . esc_attr($post_id) . '" href="#">Open Popup</a>';
