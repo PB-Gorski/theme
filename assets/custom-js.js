@@ -333,6 +333,7 @@ window.addEventListener("load", function() {
   `
   
   if(document.body.classList.contains('page-id-189') || window.location.href.search('category')>20){
+    console.log('inserted js');
     categoryList.insertAdjacentHTML('afterbegin', link);
   };
 
