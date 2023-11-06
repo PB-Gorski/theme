@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
       <th><label for="your-name" onclick=""></label></th>
       <td class="w-[50%]">
         <!-- [text* your-name id:your-name ] -->
-        <input id="your-name" name="your-name" type="text" placeholder="Imię i nazwisko" class="px-[15px] py-[10px] mb-[10px] w-[500px] w-full h-[60px] text-[#2e384d] placeholder:text-[#757575] focus:border-white active:border-black drop-shadow-lg">
+        <input id="your-name" name="your-name" type="text" placeholder="Imię i nazwisko" class="px-[15px] py-[10px] mb-[10px] text-[#2e384d] placeholder:text-[#757575] focus:border-white active:border-black drop-shadow-lg">
         <!-- <div> [email* your-email id:your-email ] </div> -->
         <input id="your-name" name="your-name" type="text" placeholder="Adres email" class="px-[15px] py-[10px] mb-[10px] w-[500px] w-full h-[60px] text-[#2e384d] placeholder:text-[#757575]">
         <!-- <div> [email* your-email id:your-email ] </div> -->
@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
       <th><label for="your-content" onclick=""></label></th>
       <td class="w-[50%]">
         <!-- [textarea* your-content x5 id:your-content ] -->
-        <textarea id="your-name" cols="50" row="10" name="your-name" type="textarea" placeholder="Treść wiadomości" class="px-[15px] py-[10px] mb-[10px] w-[500px] w-full h-[200px] text-[#2e384d] placeholder:text-[#757575]"></textarea>
+        <textarea id="your-name" cols="50" row="10" name="your-name" type="textarea" placeholder="Treść wiadomości" class="px-[15px] py-[10px] mb-[10px] h-[240px] text-[#2e384d] placeholder:text-[#757575]"></textarea>
       </td>
     </tr>
 
@@ -31,7 +31,7 @@ if (!defined('ABSPATH')) {
 
     <tr>
       <th><label for="your-content" onclick=""></label></th>
-      <td class="flex gap-[6px]">
+      <td class="">
         <!-- [checkbox* your-content x5 id:your-content ] -->
         <input id="check1" cols="50" row="10" name="check1" type="checkbox" class="inline" />
         <p class="ml-[10px] mb-[20px] inline text-white text-[12px] leading-[18px]"> Wyrażam zgodę na przetwarzanie moich danych osobowych, podanych w formularzu kontaktowym, przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku w celu udzielenia odpowiedzi na zapytanie. Podanie danych jest dobrowolne. Oświadczam, że zapoznałem się z klauzulą informacyjną w zakresie ochrony danych osobowych dostępną tutaj</p>
@@ -39,7 +39,7 @@ if (!defined('ABSPATH')) {
     </tr>
     <tr>
       <th><label for="your-content" onclick=""></label></th>
-      <td class="flex gap-[6px]">
+      <td class=" gap-[6px]">
         <!-- [checkbox* your-content x5 id:your-content ] -->
         <input id="check2" name="check2" type="checkbox" class="inline" />
         <p class="ml-[10px] inline text-white text-[12px] leading-[18px]"> Wyrażam zgodę na przetwarzanie moich danych osobowych, podanych w formularzu kontaktowym, przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku w celu przesyłania informacji marketingowych na mój adres email podany w formularzu. Podanie danych jest dobrowolne. Oświadczam, że zapoznałem się z klauzulą informacyjną w zakresie ochrony danych osobowych dostępną tutaj</p>
