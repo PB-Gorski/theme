@@ -522,19 +522,19 @@ window.addEventListener("load", function() {
         document.referrer.search('kronika-budowy-osiedle-srebrniki') > 20){
         document.cookie = "filteredTermsFromCookies=72";
     }else if (document.referrer.search('o-inwestycji-sw-piotra') > 20 ||
-        document.referrer.search('lokalizacja-sw-piotra' > 20 ||
-        document.referrer.search('galeria-sw-piotra') > 20 ||
-        document.referrer.search('kronika-budowy-sw-piotra') > 20)){
+              document.referrer.search('lokalizacja-sw-piotra') > 20 ||
+              document.referrer.search('galeria-sw-piotra') > 20 ||
+              document.referrer.search('kronika-budowy-sw-piotra') > 20){
               document.cookie = "filteredTermsFromCookies=71";
-    }else if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/' ||
-              document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/lokalizacja-torunska-16/' ||
-              document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/galeria-torunska-16/' ||
-              document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/kronika-budowy-torunska-16/'){
+    }else if (document.referrer.search('o-inwestycji-torunska-16') > 20 ||
+              document.referrer.search('lokalizacja-torunska-16') > 20 ||
+              document.referrer.search('galeria-torunska-16') > 20 ||
+              document.referrer.search('kronika-budowy-torunska-16') > 20){
               document.cookie = "filteredTermsFromCookies=82";
-    }else if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/' ||
-              document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/lokalizacja-wiezycka-folwark/' ||
-              document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/galeria-wiezycka-folwark/' ||
-              document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/kronika-budowy-wiezycka-folwark/'){
+    }else if (document.referrer.search('o-inwestycji-wiezycka-folwark') > 20 ||
+              document.referrer.search('lokalizacja-wiezycka-folwark') > 20 ||
+              document.referrer.search('galeria-wiezycka-folwark') > 20 ||
+              document.referrer.search('kronika-budowy-wiezycka-folwark') > 20){
               document.cookie = "filteredTermsFromCookies=81";
     };
     function getCookie(cname) {
