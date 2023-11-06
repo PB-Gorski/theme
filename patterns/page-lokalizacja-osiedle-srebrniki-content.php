@@ -64,16 +64,16 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group tiles-numbers px-[20px] mb-[100px] flex flex-col desktop:flex-row justify-center gap-[30px]">
     <!-- wp:paragraph -->
-    <span class="tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="50">
+    <span class="block tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="50">
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
-        <span class="text-[30px] text-white font-semibold">400 m</span>
+        <span class="block text-[30px] text-white font-semibold">400 m</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:paragraph -->
-      <span class="text-[#8a8f99] text-center">Przedszkole</span>
+      <span class="block text-[#8a8f99] text-center">Przedszkole</span>
       <!-- /wp:paragraph -->
     </span>
     <!-- /wp:paragraph -->
