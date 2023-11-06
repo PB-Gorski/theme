@@ -119,8 +119,11 @@
           </p>
           <!-- /wp:paragraph -->
 
-
-          <!-- wp:core/categories {"showPostCounts":false,"displayAsDropdown":false,"showHierarchy":false} /-->
+          <!-- wp:group -->
+          <div class="wp-block-group inline">
+            <!-- wp:core/categories {"showPostCounts":false,"displayAsDropdown":false,"showHierarchy":false} /-->
+          </div>
+          <!-- /wp:group -->
         </div>
         <!-- /wp:group -->
       </div>
