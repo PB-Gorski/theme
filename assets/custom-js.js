@@ -280,14 +280,14 @@ window.addEventListener("load", function() {
 
   clickBar.forEach(function(item,index) {
     item.addEventListener("click", () => {
-      if (!stepParagraph[index].classList.contains('active')) {
+      if (!stepParagraph[index].classList.contains('contact-active')) {
         clickBar[index].classList.add('text-black');
-        stepParagraph[index].classList.replace('inactive', 'active');
+        stepParagraph[index].classList.replace('contact-inactive', 'contact-active');
         barTitle[index].classList.replace('text-bgDarkGray', 'text-black');
         clickBarIcon[index].innerHTML = '-';
-      } else if (stepParagraph[index].classList.contains('active')) {
+      } else if (stepParagraph[index].classList.contains('contact-active')) {
         clickBar[index].classList.remove('text-black');
-        stepParagraph[index].classList.replace('active', 'inactive');
+        stepParagraph[index].classList.replace('contact-active', 'contact-inactive');
         clickBarIcon[index].innerHTML = '+';
         barTitle[index].classList.replace('text-black', 'text-bgDarkGray');
       }

@@ -311,15 +311,15 @@ background-color: #E80D38;
 }
 
 /* page contact dropdown */
-.inactive {
+.contact-inactive {
   max-height: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
   z-index: -1;
   position: relative;
 }
-.active {
-  max-height: 320px;
+.contact-active {
+  max-height: 400px;
   padding-top: 30px;
   padding-bottom: 30px;
   z-index: 0;
