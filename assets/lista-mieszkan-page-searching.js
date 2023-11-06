@@ -752,6 +752,11 @@ window.addEventListener("load", function() {
           };
         });
 
+        priceMinTest = getCookie("PriceMinFromCookies");
+        priceMaxTest = getCookie("PriceMaxFromCookies");
+
+        console.log('prices from cookies: ',priceMinTest, priceMaxTest);
+
 
 
 
