@@ -6,8 +6,13 @@ window.addEventListener("load", function() {
 
     document.body.addEventListener('click', () => {
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
-        activeItem.style.display = 'none';
+        activeItem.style.display = 'none';  
       });
+      document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
+        activeItem2.classList.remove('dropdown__list_active-metraz');  
+        activeItem2.classList.remove('dropdown__list_active');  
+      });
+      
     });
 
     console.log('home');
