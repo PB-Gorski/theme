@@ -44,5 +44,5 @@ if (!defined('ABSPATH')) {
 </table>
 <div>
   <!-- [submit "Submit"] -->
-  <button type="submit" class="relative bg-primaryRed px-[20px] text-white w-fit h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer"><span class="z-[2]">Wyślij</span></button>
+  <button type="submit" class="relative mx-auto bg-primaryRed px-[20px] text-white w-fit h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer"><span class="z-[1] relative">Wyślij</span></button>
 </div>
