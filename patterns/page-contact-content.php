@@ -465,13 +465,6 @@
                   <!-- wp:group -->
                   <div class="wp-block-group phone flex gap-[40px]">
                     <!-- wp:group -->
-                    <div class="wp-block-group labels">
-
-
-                    </div>
-                    <!-- /wp:group -->
-
-                    <!-- wp:group -->
                     <div class="wp-block-group values text-[16px]">
                       <!-- wp:paragraph -->
                       <p class="block mb-[20px]">tel</p>
