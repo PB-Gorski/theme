@@ -37,7 +37,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group row-content mb-[60px] desktop:flex">
       <!-- wp:group -->
-      <div class="wp-block-group block cursor-default left-col desktop:w-[60%] m-0 mb-[30px]" data-aos="fade-right" data-aos-offset="30">
+      <div class="wp-block-group block cursor-default left-col desktop:w-[60%] m-0 mb-[30px]">
         <!-- wp:image -->
         <figure class="wp-block-image">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/map.png" alt="img">

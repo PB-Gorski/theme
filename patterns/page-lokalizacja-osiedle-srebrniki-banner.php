@@ -82,7 +82,7 @@
       <!-- wp:group -->
       <div class="wp-block-group title text-[36px] desktop:text-[60px] desktop:pt-[290px] mb-[50px] leading-[44px] desktop:leading-[70px]">
         <!-- wp:paragraph -->
-        <span class="block" class="font-bold" data-aos="fade-right" data-aos-offset="30">Gdańsk - Srebrniki</span>
+        <span class="block font-bold" data-aos="fade-right" data-aos-offset="30">Gdańsk - Srebrniki</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
