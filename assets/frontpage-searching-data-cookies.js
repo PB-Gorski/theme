@@ -177,9 +177,9 @@ window.addEventListener("load", function() {
         // let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
         let priceMinValueCookie = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
         let priceMaxValueCookie = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
-        
+
         let filteredPriceFromFrontPage = runSearchingFrontPage() + runSearchingMetrazFrontPage();
-        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + ',' + filteredPriceFromFrontPage;
+        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + ' ' + filteredPriceFromFrontPage;
         document.cookie = "filteredPriceMinFromCookies=" + priceMinValueCookie;
         document.cookie = "filteredPriceMaxFromCookies=" + priceMaxValueCookie;
 
