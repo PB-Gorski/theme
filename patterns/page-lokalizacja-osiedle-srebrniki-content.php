@@ -49,10 +49,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group desktop:pl-[100px] desktop:w-[40%]">
         <!-- wp:paragraph -->
-        <span class="text-[30px] leading-[40px] mb-[40px]" data-aos="fade-right" data-aos-offset="30">Srebrniki to osiedle położone na granicy dzielnic Wrzeszcz oraz Morena, w otoczeniu licznych terenów zielonych.</span>
+        <span class="block text-[30px] leading-[40px] mb-[40px]" data-aos="fade-right" data-aos-offset="30">Srebrniki to osiedle położone na granicy dzielnic Wrzeszcz oraz Morena, w otoczeniu licznych terenów zielonych.</span>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <span class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W najbliższym sąsiedztwie znajduje się nie tylko pełne zaplecze handlowe i edukacyjne, ale także przystanek PKM, który pozwala na dojazd do najważniejszych punktów w całym Trójmieście. </span>
+        <span class="block text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W najbliższym sąsiedztwie znajduje się nie tylko pełne zaplecze handlowe i edukacyjne, ale także przystanek PKM, który pozwala na dojazd do najważniejszych punktów w całym Trójmieście. </span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
