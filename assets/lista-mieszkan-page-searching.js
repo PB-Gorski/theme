@@ -1007,19 +1007,21 @@ window.addEventListener("load", function() {
 
     btnSearch.addEventListener('click', () =>{
       let searchedFromCookiesIDs = document.querySelectorAll('.active');
+      let searchedReadyArr = []
 
       searchedFromCookiesIDs.forEach(item =>{
-        console.log('term from cookies',item.dataset.termid)
+        console.log('term from cookies',item.dataset.termid);
+        searchedReadyArr.push(item.dataset.termid)
       })
 
       deleteAllCookies();
-      document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
+      // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
       let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
 
       YMCTools({
         target: '.data-target-ymc2',
-        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join()       
+        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join() + ',' + searchedReadyArr.join(),      
       }).apiTermUpdate(); 
 
       console.log('in btn prices: ', pricesID.join());
