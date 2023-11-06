@@ -347,7 +347,7 @@
                       <!-- wp:group -->
                       <div class="wp-block-group desktop:flex desktop:space-between">
                         <!-- wp:paragraph -->
-                        <p class="block mb-[20px]">tel.</p>
+                        <p class="block mb-[5px]">tel.</p>
                         <!-- /wp:paragraph -->
                         <!-- wp:paragraph -->
                         <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 607 700 555</a>
@@ -358,7 +358,7 @@
                       <!-- wp:group -->
                       <div class="wp-block-group desktop:flex desktop:space-between">
                         <!-- wp:paragraph -->
-                        <p class="block">email:</p>
+                        <p class="block mb-[5px]">email:</p>
                         <!-- /wp:paragraph -->
                         <!-- wp:paragraph -->
                         <a href="mailto:k.piekarska@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">k.piekarska@pbgorski.pl </a>
