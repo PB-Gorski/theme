@@ -11,12 +11,14 @@ if (!defined('ABSPATH')) {
   <tbody>
     <tr class="">
       <th><label for="your-name" onclick=""></label></th>
-      <td>
+      <td class="w-1/2">
         <!-- [text* your-name id:your-name ] -->
         <input id="your-name" name="your-name" type="text" placeholder="Imię i nazwisko" class="px-[15px] py-[10px] mb-[10px] w-[500px] w-full h-[60px] text-[#2e384d] placeholder:text-[#757575] focus:border-white active:border-black drop-shadow-lg">
+        <!-- <div> [email* your-email id:your-email ] </div> -->
+        <input id="your-name" name="your-name" type="text" placeholder="Adres email" class="px-[15px] py-[10px] mb-[10px] w-[500px] w-full h-[60px] text-[#2e384d] placeholder:text-[#757575]">
       </td>
       <th><label for="your-content" onclick=""></label></th>
-      <td>
+      <td class="w-1/2">
         <!-- [textarea* your-content x5 id:your-content ] -->
         <textarea id="your-name" cols="50" row="10" name="your-name" type="textarea" placeholder="Treść wiadomości" class="px-[15px] py-[10px] mb-[10px] w-[500px] w-full h-[200px] text-[#2e384d] placeholder:text-[#757575]"></textarea>
       </td>
