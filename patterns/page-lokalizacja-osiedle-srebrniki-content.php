@@ -68,12 +68,12 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">400 m</p>
+        <span class="text-[30px] text-white font-semibold">400 m</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] text-center">Przedszkole</p>
+      <span class="text-[#8a8f99] text-center">Przedszkole</span>
       <!-- /wp:paragraph -->
     </span>
     <!-- /wp:paragraph -->
