@@ -323,7 +323,7 @@ window.addEventListener("load", function() {
 
   let categoryList = document.querySelector('.wp-block-categories-list')
   let borderClass = '';
-  if(window.location.href.search('blog')>20){
+  if(window.location.href.search('blog')>20 || window.location.href.search('category')>20 ){
     console.log('blog page');
     borderClass = 'underline-offset-4 decoration-2 decoration-primaryRed';
   }
