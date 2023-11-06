@@ -91,6 +91,12 @@ figure[class*="wp-block-image"] img,
   margin-left: auto;
   margin-right: auto;
 }
+@media only screen and (max-width: 1024px) {
+  .page-kredyty img{
+    object-position: 65%;
+  }
+}
+
 
 
 /* Wordpress default styles */
