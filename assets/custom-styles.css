@@ -532,11 +532,11 @@ label{
   margin-bottom: 0;
 }
 .custom-posts-found{
-  top: 155px;
+  top: 120px;
 }
 @media only screen and (max-width: 1024px) {
   .custom-posts-found{
-    top: 625px;
+    top: 590px;
   }
 }
 .ymc-smart-filter-container .filter-layout3 .posts-found:empty {
