@@ -35,7 +35,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] desktop:max-w-[680px]">
+  <div class="wp-block-group mb-[80px] container mx-auto desktop:px-0 px-[20px] desktop:max-w-[680px]">
     <!-- wp:paragraph -->
     <span class="mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Potwierdzeniem wysokiej jakości świadczonych usług, a także zadowolenia klientów są liczne nagrody i wyróżnienia zdobywane na przestrzeni lat.</span>
     <!-- /wp:paragraph -->
