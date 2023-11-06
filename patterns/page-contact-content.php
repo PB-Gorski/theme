@@ -802,34 +802,34 @@
       <!-- wp:group -->
       <div class="wp-block-group section2 mb-[50px]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Dane Spółki</p>
+        <span class="block text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Dane Spółki</span>
         <!-- /wp:paragraph -->
         <!-- wp:group -->
         <div class="wp-block-group address mb-[30px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <p data-aos="fade-right" data-aos-offset="30">PB Górski Sp. z o.o. SKA</p>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">PB Górski Sp. z o.o. SKA</span>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p data-aos="fade-right" data-aos-offset="30">ul. Joachima Lelewela 37 lok. E</p>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">ul. Joachima Lelewela 37 lok. E</span>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p data-aos="fade-right" data-aos-offset="30">80-442 Gdańsk</p>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">80-442 Gdańsk</span>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
         <div class="wp-block-group mb-[30px] text-[15px] font-semibold">
           <!-- wp:paragraph -->
-          <p data-aos="fade-right" data-aos-offset="30">NIP 5890008712, REGON 190575747, KRS 0000710392, Sąd Rejonowy Gdańsk-Północ w Gdańsku, VII Wydział Gospodarczy Krajowego Rejestru Sądowego</p>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">NIP 5890008712, REGON 190575747, KRS 0000710392, Sąd Rejonowy Gdańsk-Północ w Gdańsku, VII Wydział Gospodarczy Krajowego Rejestru Sądowego</span>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p data-aos="fade-right" data-aos-offset="30">Wysokość kapitału zakładowego i wpłaconego: 24.363.831,64 PLN</p>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">Wysokość kapitału zakładowego i wpłaconego: 24.363.831,64 PLN</span>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
 
         <!-- wp:paragraph -->
-        <p class="text-primaryRed" data-aos="fade-right" data-aos-offset="30">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</p>
+        <span class="block text-primaryRed" data-aos="fade-right" data-aos-offset="30">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
