@@ -97,7 +97,7 @@
         <!-- /wp:paragraph -->
 
         <!-- wp:group -->
-        <div class="wp-block-group flex flex-wrap gap-[20px]">
+        <div class="wp-block-group flex gap-[20px]">
           <!-- wp:paragraph -->
           <p class="inline ">
             <?php
