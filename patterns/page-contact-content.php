@@ -85,13 +85,13 @@
         <!-- wp:group -->
         <div class="wp-block-group when-open mb-[30px] text-primaryRed font-bold">
           <!-- wp:paragraph -->
-          <span data-aos="fade-right" data-aos-offset="30">Poniedziałek - Czwartek: 8:00 - 17:00</span>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">Poniedziałek - Czwartek: 8:00 - 17:00</span>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <span data-aos="fade-right" data-aos-offset="30">Piątek: 8:00 - 16:00</span>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">Piątek: 8:00 - 16:00</span>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <span data-aos="fade-right" data-aos-offset="30">Sobota: 9:00 - 14:00</span>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">Sobota: 9:00 - 14:00</span>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
