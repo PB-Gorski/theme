@@ -1012,7 +1012,9 @@ window.addEventListener("load", function() {
       searchedFromCookiesIDs.forEach(item =>{
         console.log('term from cookies',item.dataset.termid);
         searchedReadyArr.push(item.dataset.termid)
-      })
+      });
+
+      console.log('logggggg: ',searchedReadyArr);
 
       deleteAllCookies();
       // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
