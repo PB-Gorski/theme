@@ -215,10 +215,10 @@
               <!-- wp:group -->
               <div class="wp-block-group bar-title-wrapper w-full text-bgDarkGray flex transition ease-out duration-[500ms]">
                 <!-- wp:paragraph -->
-                <p class="w-[22px] pb-[5px] flex-none click-bar-icon py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
+                <span class="block w-[22px] pb-[5px] flex-none click-bar-icon py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="bar-title font-bold grow pl-[20px] py-[20px] text-[24px] border-b-[1px] border-[#e8e8e8] font-bold self-center transition ease-out duration-[500ms]" data-aos="fade-up" data-aos-offset="30">Biuro Zarządu</p>
+                <span class="block bar-title font-bold grow pl-[20px] py-[20px] text-[24px] border-b-[1px] border-[#e8e8e8] font-bold self-center transition ease-out duration-[500ms]" data-aos="fade-up" data-aos-offset="30">Biuro Zarządu</span>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
