@@ -813,7 +813,7 @@ background-color: #e8fbff!important;
 }
 
 
-.single-mieszkania .entry-content a::before{
+.single-mieszkania .entry-content .btn-download a::before{
   content: '';
   display: inline-block;
   position: absolute;
