@@ -401,7 +401,7 @@
                     <!-- wp:group -->
                     <div class="wp-block-group values">
                       <!-- wp:paragraph -->
-                      <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 691 992 538</a>
+                      <a href="tel:+48691992538" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 691 992 538</a>
                       <!-- /wp:paragraph -->
 
                       <!-- wp:paragraph -->
