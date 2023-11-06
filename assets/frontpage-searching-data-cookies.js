@@ -1,6 +1,8 @@
 window.addEventListener("load", function() {
   //  frontpage - filtrowanie i sortowanie listy mieszkan
-  if(document.body.classList.contains('home')){
+  if(document.body.classList.contains('home') &&
+  document.body.classList.contains('page-parent') &&
+  document.body.classList.contains('page-child')){
     console.log('home');
     // document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
     function deleteAllCookies() {
