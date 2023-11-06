@@ -109,6 +109,9 @@
             } else if (is_page(189)) {
               // blog page
               echo 'blog3';
+            } else if (is_page(1817)) {
+              // blog page
+              echo 'blog4';
             }
             global $post;
             echo $post->ID;
