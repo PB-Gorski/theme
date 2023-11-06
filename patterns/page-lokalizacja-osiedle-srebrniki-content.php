@@ -82,32 +82,21 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph -->
-    <a href="javascript:void(0)" class="tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="150">
-      <!-- wp:group -->
-      <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#7d2645] rounded-full flex flex-col items-center justify-center">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">900 m</p>
-        <!-- /wp:paragraph -->
-      </div>
-      <!-- /wp:group -->
-      <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] text-center">Przedszkole</p>
-      <!-- /wp:paragraph -->
-    </a>
+    <span class="block tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="150">
+      <span class="block circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#7d2645] rounded-full flex flex-col items-center justify-center">
+        <span class="block text-[30px] text-white font-semibold">900 m</span>
+      </span>
+      <span class="block text-[#8a8f99] text-center">Przystanek PKM</span>
+    </span>
     <!-- /wp:paragraph -->
+
     <!-- wp:paragraph -->
-    <a href="javascript:void(0)" class="tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="200">
-      <!-- wp:group -->
-      <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#52304a] rounded-full flex flex-col items-center justify-center">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">20 min</p>
-        <!-- /wp:paragraph -->
-      </div>
-      <!-- /wp:group -->
-      <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] text-center">Przedszkole</p>
-      <!-- /wp:paragraph -->
-    </a>
+    <span class="block tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="200">
+      <span class="block circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#52304a] rounded-full flex flex-col items-center justify-center">
+        <span class="block text-[30px] text-white font-semibold">20 min</span>
+      </span>
+      <span class="block text-[#8a8f99] text-center">Lotnisko</span>
+    </span>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
