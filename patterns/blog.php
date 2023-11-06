@@ -46,13 +46,9 @@
               </div>
               <!-- /wp:group -->
 
-              <!-- wp:paragraph -->
-              <p class="post-date mr-[20px] text-[16px] text-bgDarkGray mb-[15px]"><?php echo get_the_date(); ?></p>
-              <!-- /wp:paragraph -->
-
-              <!-- wp:paragraph -->
-              <p class="post-date mr-[20px] text-[16px] text-bgDarkGray mb-[15px]"><!-- wp:post-date /--></p>
-              <!-- /wp:paragraph -->
+              <!-- wp:group -->
+              <div class="wp-block-group post-date mr-[20px] text-[16px] text-bgDarkGray mb-[15px]"><!-- wp:post-date /--></div>
+              <!-- /wp:group -->
 
               <!-- wp:group -->
               <div class="wp-block-group mr-[20px] text-[20px] font-bold mb-[15px] leading-[32px] border-b-[2px] border-b-primaryRed"><!-- wp:post-title {"isLink":true} /--></div>
