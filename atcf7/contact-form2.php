@@ -11,7 +11,7 @@ if (!defined('ABSPATH')) {
   <tbody>
     <tr class="">
       <th><label for="your-name" onclick=""></label></th>
-      <td class="w-[50%]">
+      <td class="w-[50%] leading-[0px]">
         <!-- [text* your-name id:your-name ] -->
         <input id="your-name" name="your-name" type="text" placeholder="Imię i nazwisko" class="px-[15px] py-[10px] mb-[10px] w-full h-[60px] text-[#2e384d] placeholder:text-[#757575] focus:border-white active:border-black drop-shadow-lg">
         <!-- <div> [email* your-email id:your-email ] </div> -->
