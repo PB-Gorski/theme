@@ -96,10 +96,12 @@
         <span class="block mx-auto mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold" data-aos="fade-right" data-aos-offset="30">Aktualności</span>
         <!-- /wp:paragraph -->
 
-        <?php
-        if (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') {
-          echo 'blog5';
+        <?php if (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') {
+          echo 'border-b-[2px] border-primaryRed';
         };
+
+        echo (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') ? 'test' : null;
+
         ?>
 
         <!-- wp:group -->
