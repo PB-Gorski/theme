@@ -54,6 +54,10 @@
               <div class="wp-block-group mr-[20px] text-[20px] font-bold mb-[15px] leading-[32px] border-b-[2px] border-b-primaryRed"><!-- wp:post-title {"isLink":true} /--></div>
               <!-- /wp:group -->
 
+              <!-- wp:group -->
+              <div class="wp-block-group text-[16px] text-bgDarkGray"><!-- wp:post-terms {"term":"osiedla"} /--></div>
+              <!-- /wp:group -->
+
               <!-- wp:paragraph -->
               <p class="relative inline text-primaryRed before:content-[''] before:inline-block cursor-pointer">Czytaj dalej <span class="text-[11px]">&#x25BA;</span></p>
               <!-- /wp:paragraph -->
