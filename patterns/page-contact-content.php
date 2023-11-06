@@ -387,7 +387,7 @@
                   <p class="text-[18px] mb-[25px]">Bartłomiej Jahn</p>
                   <!-- /wp:paragraph -->
                   <!-- wp:group -->
-                  <div class="wp-block-group phone flex gap-[40px]">
+                  <div class="wp-block-group phone flex gap-[40px] text-[16px]">
                     <!-- wp:group -->
                     <div class="wp-block-group labels">
                       <!-- wp:paragraph -->
