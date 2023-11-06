@@ -322,6 +322,10 @@ window.addEventListener("load", function() {
   //  ---------------------------------------------------------------------- 
 
   let categoryList = document.querySelector('.wp-block-categories-list')
+  if(window.location.href.search('blog')>20){
+    console.log('blog page');
+  }
+  window.location.href
   link =`
   <a href="` +  window.location.origin + `/pl/blog" class="inline-block allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Wszystkie JS</a>
   `
