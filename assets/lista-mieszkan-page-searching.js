@@ -495,10 +495,31 @@ window.addEventListener("load", function() {
     deleteAllCookies();
 
     // handling searching when redirected from page-about-inwestycja
-    if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/' ||
-        document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/lokalizacja-osiedle-srebrniki/' ||
-        document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/galeria-osiedle-srebrniki/' ||
-        document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/kronika-budowy-osiedle-srebrniki/'){
+    // if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/' ||
+    //     document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/lokalizacja-osiedle-srebrniki/' ||
+    //     document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/galeria-osiedle-srebrniki/' ||
+    //     document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/kronika-budowy-osiedle-srebrniki/'){
+    //     document.cookie = "filteredTermsFromCookies=72";
+    // }else if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/' ||
+    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/lokalizacja-sw-piotra/' ||
+    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/galeria-sw-piotra/' ||
+    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/kronika-budowy-sw-piotra/'){
+    //           document.cookie = "filteredTermsFromCookies=71";
+    // }else if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/' ||
+    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/lokalizacja-torunska-16/' ||
+    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/galeria-torunska-16/' ||
+    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/kronika-budowy-torunska-16/'){
+    //           document.cookie = "filteredTermsFromCookies=82";
+    // }else if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/' ||
+    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/lokalizacja-wiezycka-folwark/' ||
+    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/galeria-wiezycka-folwark/' ||
+    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/kronika-budowy-wiezycka-folwark/'){
+    //           document.cookie = "filteredTermsFromCookies=81";
+    // };
+    if (document.referrer.search('o-inwestycji-osiedle-srebrniki' > 20) ||
+        document.referrer.search('lokalizacja-osiedle-srebrniki' > 20) ||
+        document.referrer.search('galeria-osiedle-srebrniki' > 20) ||
+        document.referrer.search('kronika-budowy-osiedle-srebrniki' > 20)){
         document.cookie = "filteredTermsFromCookies=72";
     }else if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/' ||
               document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/lokalizacja-sw-piotra/' ||
@@ -516,7 +537,6 @@ window.addEventListener("load", function() {
               document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/kronika-budowy-wiezycka-folwark/'){
               document.cookie = "filteredTermsFromCookies=81";
     };
-
     function getCookie(cname) {
       let name = cname + "=";
       let decodedCookie = decodeURIComponent(document.cookie);
