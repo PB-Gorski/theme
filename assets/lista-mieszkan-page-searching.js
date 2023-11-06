@@ -1006,6 +1006,12 @@ window.addEventListener("load", function() {
     // *******************************************************
 
     btnSearch.addEventListener('click', () =>{
+      let searchedFromCookiesIDs = document.querySelectorAll('active');
+
+      searchedFromCookiesIDs.forEach(item =>{
+        console.log('term from cookies',item.dataset.termid)
+      })
+
       deleteAllCookies();
       document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
       let pricesID = runSearchingPrice();
