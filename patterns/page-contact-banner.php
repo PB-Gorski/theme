@@ -18,10 +18,10 @@
       <!-- wp:group -->
       <div class="wp-block-group title text-[36px] desktop:text-[60px] font-bold mb-[50px] leading-[50px] desktop:leading-[70px]">
         <!-- wp:paragraph -->
-        <p data-aos="fade-right" data-aos-offset="30">Z chęcią odpowiemy na</p>
+        <span class="block" data-aos="fade-right" data-aos-offset="30">Z chęcią odpowiemy na</span>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p data-aos="fade-right" data-aos-offset="30">wszystkie Twoje pytania.</p>
+        <span class="block" data-aos="fade-right" data-aos-offset="30">wszystkie Twoje pytania.</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
