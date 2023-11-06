@@ -555,7 +555,7 @@ window.addEventListener("load", function() {
     };
 
     let filteredTermsFromCookies = '';
-    if(document.cookie.indexOf('filteredTermsFromCookies=') == 0){
+    if(document.cookie.indexOf('filteredTermsFromCookies=') == 0 || document.cookie.indexOf('PriceMinFromCookies=') == 0 || document.cookie.indexOf('PriceMaxFromCookies=') == 0){
       // cookies exist
       console.log('cookies exist');
       filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
