@@ -96,30 +96,17 @@
         <span class="block mx-auto mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold" data-aos="fade-right" data-aos-offset="30">Aktualności</span>
         <!-- /wp:paragraph -->
 
+        <?php
+        if (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') {
+          echo 'blog5';
+        };
+        ?>
+
         <!-- wp:group -->
         <div class="wp-block-group flex gap-[20px]">
           <!-- wp:paragraph -->
           <p class="inline ">
-            <?php
-            if (is_home()) {
-              echo 'blog';
-            } else if (!is_front_page() && is_home()) {
-              // blog page
-              echo 'blog2';
-            } else if (is_page(189)) {
-              // blog page
-              echo 'blog3';
-            } else if (is_page('1817')) {
-              // blog page
-              echo 'blog4';
-            } else if (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') {
-              echo 'blog5';
-            };
-            global $post;
-            echo $post->ID;
-            echo 'get page link:';
-            echo get_page_link();
-            ?>
+
             <!-- wp:paragraph -->
             <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Wszystkie</a>
             <!-- /wp:paragraph -->
