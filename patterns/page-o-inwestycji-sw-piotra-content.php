@@ -46,7 +46,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group row-content desktop:flex">
       <!-- wp:group -->
-      <div class="wp-block-group block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0 mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">
+      <div class="wp-block-group block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0 mb-[20px] desktop:mb-0">
         <!-- wp:image -->
         <figure class="wp-block-image w-full h-full">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/img1.jpeg" alt="img">
@@ -122,7 +122,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:group -->
     <div class="wp-block-group row-content2 desktop:flex flex-row-reverse">
       <!-- wp:group -->
-      <div class="wp-block-group block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">
+      <div class="wp-block-group block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0">
         <!-- wp:image -->
         <figure class="wp-block-image w-full h-full">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/img2.jpeg" alt="img">
@@ -147,15 +147,15 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
     <!-- wp:group -->
     <div class="wp-block-group row-content3 desktop:flex">
-      <!-- wp:paragraph -->
-      <a href="javascript:void(0)" class="block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">
+      <!-- wp:group -->
+      <div class="wp-block-group block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0">
         <!-- wp:image -->
         <figure class="wp-block-image w-full h-full">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/img3.jpeg" alt="img">
         </figure>
         <!-- /wp:image -->
-      </a>
-      <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
@@ -173,15 +173,15 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
     <!-- wp:group -->
     <div class="wp-block-group row-content4 desktop:flex flex-row-reverse">
-      <!-- wp:paragraph -->
-      <a href="javascript:void(0)" class="block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">
+      <!-- wp:group -->
+      <div class="wp-block-group block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0">
         <!-- wp:image -->
         <figure class="wp-block-image w-full h-full">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/img4.jpeg" alt="img">
         </figure>
         <!-- /wp:image -->
-      </a>
-      <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
