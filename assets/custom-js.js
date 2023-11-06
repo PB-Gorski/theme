@@ -323,7 +323,7 @@ window.addEventListener("load", function() {
 
   let categoryList = document.querySelector('.wp-block-categories-list')
   link =`
-  <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Wszystkie</a>
+  <a href="` +  window.location.origin + ` '/pl/blog" class="inline-block allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Wszystkie JS</a>
   `
   
   if(document.body.classList.contains('page-id-189')){
