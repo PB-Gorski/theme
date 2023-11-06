@@ -454,41 +454,6 @@
                 </div>
                 <!-- /wp:group -->
 
-                <!-- wp:group -->
-                <div class="wp-block-group right-col-text text-black">
-                  <!-- wp:paragraph -->
-                  <p class="text-[18px] mb-[20px]">Bartłomiej Jahn</p>
-                  <!-- /wp:paragraph -->
-                  <!-- wp:group -->
-                  <div class="wp-block-group flex gap-[40px] text-[16px]">
-                    <!-- wp:group -->
-                    <div class="wp-block-group values">
-                      <!-- wp:group -->
-                      <div class="wp-block-group desktop:flex desktop:gap-[40px]">
-                        <!-- wp:paragraph -->
-                        <p class="block mb-[5px]">tel.</p>
-                        <!-- /wp:paragraph -->
-                        <!-- wp:paragraph -->
-                        <a href="tel:+48691992538" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">691 992 538</a>
-                        <!-- /wp:paragraph -->
-                      </div>
-                      <!-- wp:group -->
-                      <div class="wp-block-group desktop:flex desktop:gap-[16px]">
-                        <!-- wp:paragraph -->
-                        <p class="block mb-[5px]">email:</p>
-                        <!-- /wp:paragraph -->
-                        <!-- wp:paragraph -->
-                        <a href="mailto:b.jahn@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">b.jahn@pbgorski.pl</a>
-                        <!-- /wp:paragraph -->
-                      </div>
-                      <!-- /wp:group -->
-                    </div>
-                    <!-- /wp:group -->
-                  </div>
-                  <!-- /wp:group -->
-                </div>
-                <!-- /wp:group -->
-
 
               </li>
               <!-- /wp:list-item -->
