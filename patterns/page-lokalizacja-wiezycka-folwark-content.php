@@ -58,62 +58,41 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group tiles-numbers px-[20px] mb-[100px] flex flex-col desktop:flex-row justify-center gap-[30px]">
+  <div class="wp-block-group tiles-numbers px-[20px] mb-[100px] flex flex-wrap desktop:flex-row justify-center gap-[30px] [&>p]:w-[320px]">
     <!-- wp:paragraph -->
-    <a href="javascript:void(0)" class="tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="50">
-      <!-- wp:group -->
-      <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">500 m</p>
-        <!-- /wp:paragraph -->
-      </div>
-      <!-- /wp:group -->
-      <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] text-center">Szkoła podstawowa</p>
-      <!-- /wp:paragraph -->
-    </a>
+    <span class=" block tile1 flex-1 p-[30px_20px] w-[320px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="50">
+      <span class="block circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
+        <span class="block text-[30px] text-white font-semibold">500 m</span>
+      </span>
+      <span class="block text-[#8a8f99] text-center">Szkoła podstawowa</span>
+    </span>
     <!-- /wp:paragraph -->
+
     <!-- wp:paragraph -->
-    <a href="javascript:void(0)" class="tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="100">
-      <!-- wp:group -->
-      <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#b11a3e] rounded-full flex flex-col items-center justify-center">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">600 m</p>
-        <!-- /wp:paragraph -->
-      </div>
-      <!-- /wp:group -->
-      <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] text-center">Sklep spożywczy</p>
-      <!-- /wp:paragraph -->
-    </a>
+    <span class="block tile1 flex-1 p-[30px_20px] w-[320px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="100">
+      <span class="block circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#b11a3e] rounded-full flex flex-col items-center justify-center">
+        <span class="block text-[30px] text-white font-semibold">600 m</span>
+      </span>
+      <span class="block text-[#8a8f99] text-center">Sklep spożywczy</span>
+    </span>
     <!-- /wp:paragraph -->
+
     <!-- wp:paragraph -->
-    <a href="javascript:void(0)" class="tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="150">
-      <!-- wp:group -->
-      <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#7d2645] rounded-full flex flex-col items-center justify-center">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">700 m</p>
-        <!-- /wp:paragraph -->
-      </div>
-      <!-- /wp:group -->
-      <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] text-center">Przystanek SKM</p>
-      <!-- /wp:paragraph -->
-    </a>
+    <span class="block tile1 flex-1 p-[30px_20px] w-[320px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="150">
+      <span class="block circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#7d2645] rounded-full flex flex-col items-center justify-center">
+        <span class="block text-[30px] text-white font-semibold">700 m</span>
+      </span>
+      <span class="block text-[#8a8f99] text-center">Przystanek PKM</span>
+    </span>
     <!-- /wp:paragraph -->
+
     <!-- wp:paragraph -->
-    <a href="javascript:void(0)" class="tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="200">
-      <!-- wp:group -->
-      <div class="wp-block-group circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#52304a] rounded-full flex flex-col items-center justify-center">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-white font-semibold">20 min</p>
-        <!-- /wp:paragraph -->
-      </div>
-      <!-- /wp:group -->
-      <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] text-center">Lotnisko</p>
-      <!-- /wp:paragraph -->
-    </a>
+    <span class="block tile1 flex-1 p-[30px_20px] w-[320px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="200">
+      <span class="block circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#52304a] rounded-full flex flex-col items-center justify-center">
+        <span class="block text-[30px] text-white font-semibold">20 min.</span>
+      </span>
+      <span class="block text-[#8a8f99] text-center">Lotnisko</span>
+    </span>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
