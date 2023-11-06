@@ -1006,9 +1006,9 @@ window.addEventListener("load", function() {
     // *******************************************************
 
     btnSearch.addEventListener('click', () =>{
+      deleteAllCookies();
       let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
-      deleteAllCookies();
 
       YMCTools({
         target: '.data-target-ymc2',
