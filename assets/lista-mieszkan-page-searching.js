@@ -537,6 +537,7 @@ window.addEventListener("load", function() {
               document.referrer.search('kronika-budowy-wiezycka-folwark') > 20){
               document.cookie = "filteredTermsFromCookies=81";
     };
+
     function getCookie(cname) {
       let name = cname + "=";
       let decodedCookie = decodeURIComponent(document.cookie);
@@ -553,11 +554,12 @@ window.addEventListener("load", function() {
       return "";
     };
 
-    let filteredTermsFromCookies
+    let filteredTermsFromCookies = '';
     if(document.cookie.indexOf('filteredTermsFromCookies=') == 0){
       // cookies exist
       console.log('cookies exist');
       filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
+      console.log('cookies exist2: ',filteredTermsFromCookies);
 
       let filteredCustomPriceFromCookies = runSearchingPrice();
       console.log(filteredCustomPriceFromCookies.join());
@@ -574,7 +576,7 @@ window.addEventListener("load", function() {
       // let choosenInwestycjeArr = [];
       // let choosenTempArr = [];
       // let choosenInneCount = 1;
-      function showActiveFilterNameFromCookies(cookiesSearchedIDs){
+      function showActiveFilterNameFromCookies(){
         let miastoArr = [28,40];
         let inwestycjaArr = [72,71,82,81];
         let pokojeArr = [43,34,53,25];
