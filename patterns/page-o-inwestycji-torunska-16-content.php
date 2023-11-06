@@ -188,6 +188,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       </div>
       <!-- /wp:group -->
 
+      <!-- wp:paragraph -->
+      <a href="<?php echo home_url() . '/mieszkania' ?>" class="group btn-find-more block relative bg-[#3d4b66] text-white w-[210px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer aos-init aos-animate" data-aos="fade-up" data-aos-offset="30">Znajdź mieszkanie</a>
+      <!-- /wp:paragraph -->
+
     </div>
     <!-- /wp:group -->
   </div>
