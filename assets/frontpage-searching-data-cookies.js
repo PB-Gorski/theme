@@ -8,10 +8,12 @@ window.addEventListener("load", function() {
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
         activeItem.style.display = 'none';  
       });
+
       document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
         if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
-          activeItem2.classList.remove('dropdown__list_active-metraz');  
-          activeItem2.classList.remove('dropdown__list_active');  
+          // activeItem2.classList.remove('dropdown__list_active-metraz');  
+          // activeItem2.classList.remove('dropdown__list_active');  
+          activeItem2.style.display = 'none';  
         }
       });
       
