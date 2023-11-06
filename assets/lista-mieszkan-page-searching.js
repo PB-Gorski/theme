@@ -1007,12 +1007,13 @@ window.addEventListener("load", function() {
 
     btnSearch.addEventListener('click', () =>{
       deleteAllCookies();
+      document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
       let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
 
       YMCTools({
         target: '.data-target-ymc2',
-        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join(),      
+        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join()       
       }).apiTermUpdate(); 
 
       console.log('in btn prices: ', pricesID.join());
