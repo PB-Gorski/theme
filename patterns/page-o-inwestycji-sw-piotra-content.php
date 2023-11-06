@@ -121,23 +121,23 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
     <!-- wp:group -->
     <div class="wp-block-group row-content2 desktop:flex flex-row-reverse">
-      <!-- wp:paragraph -->
-      <a href="javascript:void(0)" class="block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">
+      <!-- wp:group -->
+      <div class="wp-block-group block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">
         <!-- wp:image -->
         <figure class="wp-block-image w-full h-full">
           <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/img2.jpeg" alt="img">
         </figure>
         <!-- /wp:image -->
-      </a>
-      <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
         <!-- wp:paragraph -->
-        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Apartamenty z widokiem na morze </p>
+        <span class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Apartamenty z widokiem na morze </span>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W ofercie znajdują się dobrze doświetlone, starannie zaprojektowane mieszkania z dużymi balkonami i loggiami. Apartamentom na ostatnich piętrach przestrzeni dodadzą wysokie przeszklone fasady i komfortowe tarasy. Mieszkańcy najwyższych pięter będą mogli również cieszyć się pięknym widokiem na morze.</p>
+        <span class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W ofercie znajdują się dobrze doświetlone, starannie zaprojektowane mieszkania z dużymi balkonami i loggiami. Apartamentom na ostatnich piętrach przestrzeni dodadzą wysokie przeszklone fasady i komfortowe tarasy. Mieszkańcy najwyższych pięter będą mogli również cieszyć się pięknym widokiem na morze.</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -160,10 +160,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
         <!-- wp:paragraph -->
-        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Pełen komfort życia w centrum miasta</p>
+        <span class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Pełen komfort życia w centrum miasta</span>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Inwestycja zapewnia pełen komfort życia i relaks w samym centrum miasta. W strefie wejściowej zaplanowana jest duża ilość zieleni, a w samym budynku mieszkańcy będą mogli cieszyć się takimi udogodnieniami jak części wspólne w wysokim standardzie, portiernia, dwupoziomowy garaż, siłownia z częścią wypoczynkową oraz zieleń rekreacyjna na dachu garażu.</p>
+        <span class="text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Inwestycja zapewnia pełen komfort życia i relaks w samym centrum miasta. W strefie wejściowej zaplanowana jest duża ilość zieleni, a w samym budynku mieszkańcy będą mogli cieszyć się takimi udogodnieniami jak części wspólne w wysokim standardzie, portiernia, dwupoziomowy garaż, siłownia z częścią wypoczynkową oraz zieleń rekreacyjna na dachu garażu.</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -186,10 +186,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
         <!-- wp:paragraph -->
-        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Tętniące życiem miasto w zasięgu ręki</p>
+        <span class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Tętniące życiem miasto w zasięgu ręki</span>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Położenie apartamentów gwarantuje łatwość poruszania się po trójmiejskiej aglomeracji. Inwestycja jest zlokalizowana w odległości 1 km od stacji SKM i PKP Gdynia Główna i około 5 min od Skweru Kościuszki, plaży miejskiej czy Mariny Gdyńskiej. Św. Piotra to idealne miejsce dla miłośników miejskiego życia - w najbliższej okolicy znajdują się kawiarnie, restauracje, bary, kluby fitness, kina czy teatry. </p>
+        <span class="text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Położenie apartamentów gwarantuje łatwość poruszania się po trójmiejskiej aglomeracji. Inwestycja jest zlokalizowana w odległości 1 km od stacji SKM i PKP Gdynia Główna i około 5 min od Skweru Kościuszki, plaży miejskiej czy Mariny Gdyńskiej. Św. Piotra to idealne miejsce dla miłośników miejskiego życia - w najbliższej okolicy znajdują się kawiarnie, restauracje, bary, kluby fitness, kina czy teatry. </span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
