@@ -1012,7 +1012,7 @@ window.addEventListener("load", function() {
 
       YMCTools({
         target: '.data-target-ymc2',
-        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join() + ',' + filteredTermsFromCookies,            
+        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join(),      
       }).apiTermUpdate(); 
 
       console.log('in btn prices: ', pricesID.join());
