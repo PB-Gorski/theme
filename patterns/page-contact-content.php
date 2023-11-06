@@ -336,10 +336,10 @@
                 <!-- wp:group -->
                 <div class="wp-block-group right-col-text text-black">
                   <!-- wp:paragraph -->
-                  <p class="text-[18px] mb-[25px]">Kinga Piekarska</p>
+                  <p class="text-[18px] mb-[20px]">Kinga Piekarska</p>
                   <!-- /wp:paragraph -->
                   <!-- wp:group -->
-                  <div class="wp-block-group phone flex gap-[40px]">
+                  <div class="wp-block-group flex gap-[40px] text-[16px]">
 
                     <!-- wp:group -->
                     <div class="wp-block-group values">
