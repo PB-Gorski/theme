@@ -15,18 +15,18 @@
     <!-- wp:group -->
     <div class="wp-block-group left-col desktop:w-[50%]">
       <!-- wp:paragraph -->
-      <p class="mb-[30px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Planując zakup nieruchomości najczęściej wspomagamy się kredytem hipotecznym. Po podjęciu decyzji o kupnie mieszkania, przeglądamy ofertę wybierając odpowiadający nam lokal. I co dalej?</p>
+      <span class="block mb-[30px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Planując zakup nieruchomości najczęściej wspomagamy się kredytem hipotecznym. Po podjęciu decyzji o kupnie mieszkania, przeglądamy ofertę wybierając odpowiadający nam lokal. I co dalej?</span>
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
       <div class="wp-block-group section1 mb-[50px]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Oszczędzaj czas</p>
+        <span class="block text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Oszczędzaj czas</span>
         <!-- /wp:paragraph -->
         <!-- wp:group -->
         <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
           <!-- wp:paragraph -->
-          <p data-aos="fade-right" data-aos-offset="30">Aby porównać ofertę kredytów w kilkunastu bankach należy poświęcić dużo czasu na przeglądanie stron w internecie, następnie na wizyty w placówkach i porównywanie poszczególnych ofert. Przychodząc na spotkanie z ekspertem kredytowym PB Górski możesz skrócić cały proces do minimum.</p>
+          <span data-aos="fade-right" data-aos-offset="30">Aby porównać ofertę kredytów w kilkunastu bankach należy poświęcić dużo czasu na przeglądanie stron w internecie, następnie na wizyty w placówkach i porównywanie poszczególnych ofert. Przychodząc na spotkanie z ekspertem kredytowym PB Górski możesz skrócić cały proces do minimum.</span>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -36,12 +36,12 @@
       <!-- wp:group -->
       <div class="wp-block-group section2 mb-[50px]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Najkorzystniejsze oferty</p>
+        <span class="block text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Najkorzystniejsze oferty</span>
         <!-- /wp:paragraph -->
         <!-- wp:group -->
         <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
           <!-- wp:paragraph -->
-          <p data-aos="fade-right" data-aos-offset="30">Ekspert w przystępny sposób przedstawi Ci oferty wiodących banków, wspólnie dokonacie wyboru najkorzystniejszej dla Ciebie opcji, po czym otrzymasz dokładne instrukcje, jakie dokumenty musisz dostarczyć do złożenia wniosku.</p>
+          <span data-aos="fade-right" data-aos-offset="30">Ekspert w przystępny sposób przedstawi Ci oferty wiodących banków, wspólnie dokonacie wyboru najkorzystniejszej dla Ciebie opcji, po czym otrzymasz dokładne instrukcje, jakie dokumenty musisz dostarczyć do złożenia wniosku.</span>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -51,12 +51,12 @@
       <!-- wp:group -->
       <div class="wp-block-group section3 mb-[50px]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Minimum dokumentów</p>
+        <span class="block text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Minimum dokumentów</span>
         <!-- /wp:paragraph -->
         <!-- wp:group -->
         <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
           <!-- wp:paragraph -->
-          <p data-aos="fade-right" data-aos-offset="30">Warto zauważyć, że będą to jedynie dokumenty dotyczące zatrudnienia/zarobków. Całą dokumentację dotyczącą inwestycji dostarczy ekspert, oszczędzając Twój czas. Po pozytywnej decyzji banku możesz udać się na podpisanie umowy kredytowej. Tutaj również będzie towarzyszył Ci nasz przedstawiciel, który odpowie na każde pytanie i rozwieje ewentualne wątpliwości.</p>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">Warto zauważyć, że będą to jedynie dokumenty dotyczące zatrudnienia/zarobków. Całą dokumentację dotyczącą inwestycji dostarczy ekspert, oszczędzając Twój czas. Po pozytywnej decyzji banku możesz udać się na podpisanie umowy kredytowej. Tutaj również będzie towarzyszył Ci nasz przedstawiciel, który odpowie na każde pytanie i rozwieje ewentualne wątpliwości.</span>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -70,20 +70,20 @@
       <!-- wp:group -->
       <div class="wp-block-group section2 mb-[50px]">
         <!-- wp:paragraph -->
-        <p class="text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Umów się na spotkanie</p>
+        <span class="block text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Umów się na spotkanie</span>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <p class="mb-[10px] text-[24px] text-[#7e878c] font-bold" data-aos="fade-right" data-aos-offset="30">Ewa Cel</p>
+        <span class="block mb-[10px] text-[24px] text-[#7e878c] font-bold" data-aos="fade-right" data-aos-offset="30">Ewa Cel</span>
         <!-- /wp:paragraph -->
         <!-- wp:group -->
         <div class="wp-block-group mb-[25px] phone flex gap-[40px]">
           <!-- wp:group -->
           <div class="wp-block-group labels">
             <!-- wp:paragraph -->
-            <p class="block mb-[20px]" data-aos="fade-right" data-aos-offset="30">tel.</p>
+            <span class="block block mb-[20px]" data-aos="fade-right" data-aos-offset="30">tel.</span>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="block mb-[30px]" data-aos="fade-right" data-aos-offset="30">email:</p>
+            <span class="block block mb-[30px]" data-aos="fade-right" data-aos-offset="30">email:</span>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
