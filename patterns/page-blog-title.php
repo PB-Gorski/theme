@@ -103,12 +103,10 @@
             <?php
             if (is_home()) {
               echo 'blog';
-            };
-            if (!is_front_page() && is_home()) {
+            } else if (!is_front_page() && is_home()) {
               // blog page
               echo 'blog2';
-            }
-            if (is_page(189)) {
+            } else if (is_page(189)) {
               // blog page
               echo 'blog3';
             }
@@ -119,11 +117,8 @@
           </p>
           <!-- /wp:paragraph -->
 
-          <!-- wp:group -->
-          <div class="wp-block-group inline">
-            <!-- wp:core/categories {"showPostCounts":false,"displayAsDropdown":false,"showHierarchy":false} /-->
-          </div>
-          <!-- /wp:group -->
+          <!-- wp:core/categories {"showPostCounts":false,"displayAsDropdown":false,"showHierarchy":false} /-->
+
         </div>
         <!-- /wp:group -->
       </div>
