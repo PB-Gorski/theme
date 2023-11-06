@@ -62,7 +62,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group tiles-numbers px-[20px] mb-[100px] flex flex-col desktop:flex-row justify-center gap-[30px]">
+  <div class="wp-block-group tiles-numbers px-[20px] mb-[100px] flex flex-wrap desktop:flex-row justify-center gap-[30px]">
     <!-- wp:paragraph -->
     <span class="block tile1 flex-1 p-[30px_20px] w-full max-w-[325px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="50">
       <span class="block circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
