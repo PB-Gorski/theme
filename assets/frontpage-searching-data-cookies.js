@@ -180,8 +180,8 @@ window.addEventListener("load", function() {
         document.cookie = "filteredPriceMinFromCookies=" + priceMinValueCookie;
         document.cookie = "filteredPriceMaxFromCookies=" + priceMaxValueCookie;
 
-        priceMinValueCookie = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
-        priceMaxValueCookie = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
+        let priceMinValueCookie = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
+        let priceMaxValueCookie = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
 
         // console.log('filter type: ', filterType);
       });
