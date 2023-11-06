@@ -112,9 +112,9 @@
             } else if (is_page('1817')) {
               // blog page
               echo 'blog4';
-            }else if(get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817'){
-              echo 'blog5'
-            }
+            } else if (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') {
+              echo 'blog5';
+            };
             global $post;
             echo $post->ID;
             echo 'get page link:';
