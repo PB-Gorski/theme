@@ -332,7 +332,7 @@ window.addEventListener("load", function() {
   <li><a href="` +  window.location.origin + `/pl/blog" class="inline-block allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer ` + borderClass + `">Wszystkie JS</a></li>
   `
   
-  if(document.body.classList.contains('page-id-189')){
+  if(document.body.classList.contains('page-id-189') || window.location.href.search('category')>20){
     categoryList.insertAdjacentHTML('afterbegin', link);
   };
 
