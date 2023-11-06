@@ -443,52 +443,7 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:list -->
-            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
-              <!-- wp:list-item -->
-              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
-                <!-- wp:group -->
-                <div class="wp-block-group left-col-avatar">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
-                    <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/lipska.jpg" alt="avatar">
-                  </figure>
-                  <!-- /wp:image -->
-                </div>
-                <!-- /wp:group -->
 
-                <!-- wp:group -->
-                <div class="wp-block-group right-col-text text-black">
-                  <!-- wp:paragraph -->
-                  <p class="text-[18px] mb-[25px]">Elżbieta Lipska</p>
-                  <!-- /wp:paragraph -->
-                  <!-- wp:group -->
-                  <div class="wp-block-group phone flex gap-[40px]">
-                    <!-- wp:group -->
-                    <div class="wp-block-group values text-[16px]">
-                      <!-- wp:paragraph -->
-                      <p class="block mb-[20px]">tel</p>
-                      <!-- /wp:paragraph -->
-                      <!-- wp:paragraph -->
-                      <a href="tel:+48691990926" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> (+48) 691 990 926</a>
-                      <!-- /wp:paragraph -->
-
-                      <!-- wp:paragraph -->
-                      <p class="block">email:</p>
-                      <!-- /wp:paragraph -->
-                      <!-- wp:paragraph -->
-                      <a href="mailto:e.lipska@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300"> e.lipska@pbgorski.pl</a>
-                      <!-- /wp:paragraph -->
-                    </div>
-                    <!-- /wp:group -->
-                  </div>
-                  <!-- /wp:group -->
-                </div>
-                <!-- /wp:group -->
-              </li>
-              <!-- /wp:list-item -->
-            </ul>
-            <!-- /wp:list -->
 
 
           </li>
@@ -500,6 +455,7 @@
 
           </li>
           <!-- /wp:list-item -->
+
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
