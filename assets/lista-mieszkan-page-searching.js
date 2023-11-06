@@ -521,10 +521,10 @@ window.addEventListener("load", function() {
         document.referrer.search('galeria-osiedle-srebrniki' > 20) ||
         document.referrer.search('kronika-budowy-osiedle-srebrniki' > 20)){
         document.cookie = "filteredTermsFromCookies=72";
-    }else if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/' ||
-              document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/lokalizacja-sw-piotra/' ||
-              document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/galeria-sw-piotra/' ||
-              document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/kronika-budowy-sw-piotra/'){
+    }else if (document.referrer.search('o-inwestycji-sw-piotra' > 20) ||
+        document.referrer.search('lokalizacja-sw-piotra' > 20) ||
+        document.referrer.search('galeria-sw-piotra' > 20) ||
+        document.referrer.search('kronika-budowy-sw-piotra' > 20)){
               document.cookie = "filteredTermsFromCookies=71";
     }else if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/' ||
               document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/lokalizacja-torunska-16/' ||
