@@ -45,7 +45,7 @@
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
-      <div class="wp-block-group title-wrapper z-[1] relative">
+      <div class="wp-block-group title-wrapper relative">
         <!-- wp:group -->
         <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[10px] desktop:mb-[20px] leading-[45px] desktop:leading-[70px]">
           <!-- wp:post-title /-->
