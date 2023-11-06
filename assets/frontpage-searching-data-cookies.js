@@ -9,8 +9,10 @@ window.addEventListener("load", function() {
         activeItem.style.display = 'none';  
       });
       document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
-        activeItem2.classList.remove('dropdown__list_active-metraz');  
-        activeItem2.classList.remove('dropdown__list_active');  
+        if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
+          activeItem2.classList.remove('dropdown__list_active-metraz');  
+          activeItem2.classList.remove('dropdown__list_active');  
+        }
       });
       
     });
