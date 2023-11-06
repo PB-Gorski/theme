@@ -3,6 +3,12 @@ window.addEventListener("load", function() {
   if(document.body.classList.contains('home') ||
   document.body.classList.contains('page-parent') ||
   document.body.classList.contains('page-child')){
+    document.body.addEventListener('click', () => {
+      document.querySelectorAll('.menu-passive').forEach(activeItem =>{
+        activeItem.style.display = 'none';
+      })
+      
+    })
     console.log('home');
     // document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
     function deleteAllCookies() {
