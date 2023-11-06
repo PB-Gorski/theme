@@ -180,8 +180,9 @@ window.addEventListener("load", function() {
 
         let filteredPriceFromFrontPage = runSearchingFrontPage() + runSearchingMetrazFrontPage();
         document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + ',' + filteredPriceFromFrontPage;
-        // document.cookie = "PriceMinFromCookies=" + priceMinValueCookie2;
-        // document.cookie = "PriceMaxFromCookies=" + priceMaxValueCookie2;
+        
+        document.cookie = "PriceMinFromCookies=" + priceMinValueCookie2;
+        document.cookie = "PriceMaxFromCookies=" + priceMaxValueCookie2;
 
   
 
