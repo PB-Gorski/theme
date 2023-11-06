@@ -86,17 +86,17 @@
         <!-- wp:group -->
         <div class="wp-block-group title text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
           <!-- wp:paragraph -->
-          <p data-aos="fade-right" data-aos-offset="30">Uzyskanie kredytu</p>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">Uzyskanie kredytu</span>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <p data-aos="fade-right" data-aos-offset="30">nie musi być skomplikowane.</p>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">nie musi być skomplikowane.</span>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
         <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <p data-aos="fade-right" data-aos-offset="30">Umów się na spotkanie z naszym ekspertem, który przedstawi Ci najkorzystniejsze oferty.</p>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">Umów się na spotkanie z naszym ekspertem, który przedstawi Ci najkorzystniejsze oferty.</span>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
