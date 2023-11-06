@@ -302,7 +302,6 @@
             <!-- /wp:group -->
           </li>
           <!-- /wp:list-item -->
-
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
@@ -321,9 +320,9 @@
             <!-- /wp:group -->
 
             <!-- wp:list -->
-            <ul class="wp-block-list step-paragraph paragraph-wrapper px-[20px] overflow-hidden transition-height ease-out duration-[500ms] contact-inactive">
+            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
+              <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
@@ -337,31 +336,30 @@
                 <!-- wp:group -->
                 <div class="wp-block-group right-col-text text-black">
                   <!-- wp:paragraph -->
-                  <p class="text-[18px] mb-[20px]">Kinga Piekarska</p>
+                  <p class="text-[18px] mb-[25px]">Kinga Piekarska</p>
                   <!-- /wp:paragraph -->
                   <!-- wp:group -->
-                  <div class="wp-block-group flex gap-[40px] text-[16px]">
+                  <div class="wp-block-group phone flex gap-[40px]">
+                    <!-- wp:group -->
+                    <div class="wp-block-group labels">
+                      <!-- wp:paragraph -->
+                      <p class="block mb-[20px]">tel</p>
+                      <!-- /wp:paragraph -->
+                      <!-- wp:paragraph -->
+                      <p class="block">email:</p>
+                      <!-- /wp:paragraph -->
+                    </div>
+                    <!-- /wp:group -->
+
                     <!-- wp:group -->
                     <div class="wp-block-group values">
-                      <!-- wp:group -->
-                      <div class="wp-block-group desktop:flex desktop:gap-[40px]">
-                        <!-- wp:paragraph -->
-                        <p class="block mb-[5px]">tel.</p>
-                        <!-- /wp:paragraph -->
-                        <!-- wp:paragraph -->
-                        <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 607 700 555</a>
-                        <!-- /wp:paragraph -->
-                      </div>
-                      <!-- wp:group -->
-                      <div class="wp-block-group desktop:flex desktop:gap-[16px]">
-                        <!-- wp:paragraph -->
-                        <p class="block mb-[5px]">email:</p>
-                        <!-- /wp:paragraph -->
-                        <!-- wp:paragraph -->
-                        <a href="mailto:k.piekarska@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">k.piekarska@pbgorski.pl </a>
-                        <!-- /wp:paragraph -->
-                      </div>
-                      <!-- /wp:group -->
+                      <!-- wp:paragraph -->
+                      <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 607 700 555</a>
+                      <!-- /wp:paragraph -->
+
+                      <!-- wp:paragraph -->
+                      <a href="mailto:k.piekarska@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">k.piekarska@pbgorski.pl </a>
+                      <!-- /wp:paragraph -->
                     </div>
                     <!-- /wp:group -->
                   </div>
@@ -371,7 +369,7 @@
               </li>
               <!-- /wp:list-item -->
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px]">
+              <li class="flex items-center gap-[40px] leading-[21px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
@@ -385,47 +383,42 @@
                 <!-- wp:group -->
                 <div class="wp-block-group right-col-text text-black">
                   <!-- wp:paragraph -->
-                  <p class="text-[18px] mb-[20px]">Bartłomiej Jahn</p>
+                  <p class="text-[18px] mb-[25px]">Bartłomiej Jahn</p>
                   <!-- /wp:paragraph -->
                   <!-- wp:group -->
-                  <div class="wp-block-group flex gap-[40px] text-[16px]">
+                  <div class="wp-block-group phone flex gap-[40px]">
+                    <!-- wp:group -->
+                    <div class="wp-block-group labels">
+                      <!-- wp:paragraph -->
+                      <p class="block mb-[20px]">tel</p>
+                      <!-- /wp:paragraph -->
+                      <!-- wp:paragraph -->
+                      <p class="block">email:</p>
+                      <!-- /wp:paragraph -->
+                    </div>
+                    <!-- /wp:group -->
+
                     <!-- wp:group -->
                     <div class="wp-block-group values">
-                      <!-- wp:group -->
-                      <div class="wp-block-group desktop:flex desktop:gap-[40px]">
-                        <!-- wp:paragraph -->
-                        <p class="block mb-[5px]">tel.</p>
-                        <!-- /wp:paragraph -->
-                        <!-- wp:paragraph -->
-                        <a href="tel:+48691992538" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">691 992 538</a>
-                        <!-- /wp:paragraph -->
-                      </div>
-                      <!-- wp:group -->
-                      <div class="wp-block-group desktop:flex desktop:gap-[16px]">
-                        <!-- wp:paragraph -->
-                        <p class="block mb-[5px]">email:</p>
-                        <!-- /wp:paragraph -->
-                        <!-- wp:paragraph -->
-                        <a href="mailto:b.jahn@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300">b.jahn@pbgorski.pl</a>
-                        <!-- /wp:paragraph -->
-                      </div>
-                      <!-- /wp:group -->
+                      <!-- wp:paragraph -->
+                      <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 691 992 538</a>
+                      <!-- /wp:paragraph -->
+
+                      <!-- wp:paragraph -->
+                      <a href="mailto:b.jahn@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[2e384d] transition ease duration-300"> b.jahn@pbgorski.pl </a>
+                      <!-- /wp:paragraph -->
                     </div>
                     <!-- /wp:group -->
                   </div>
                   <!-- /wp:group -->
                 </div>
                 <!-- /wp:group -->
-
-
               </li>
               <!-- /wp:list-item -->
             </ul>
             <!-- /wp:list -->
           </li>
           <!-- /wp:list-item -->
-
-
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
@@ -443,19 +436,129 @@
             </div>
             <!-- /wp:group -->
 
+            <!-- wp:list -->
+            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
+              <!-- wp:list-item -->
+              <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
+                <!-- wp:group -->
+                <div class="wp-block-group left-col-avatar">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
+                    <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/lipska.jpg" alt="avatar">
+                  </figure>
+                  <!-- /wp:image -->
+                </div>
+                <!-- /wp:group -->
 
+                <!-- wp:group -->
+                <div class="wp-block-group right-col-text text-black">
+                  <!-- wp:paragraph -->
+                  <p class="text-[18px] mb-[25px]">Elżbieta Lipska</p>
+                  <!-- /wp:paragraph -->
+                  <!-- wp:group -->
+                  <div class="wp-block-group phone flex gap-[40px]">
+                    <!-- wp:group -->
+                    <div class="wp-block-group labels">
+                      <!-- wp:paragraph -->
+                      <p class="block mb-[20px]">tel</p>
+                      <!-- /wp:paragraph -->
+                      <!-- wp:paragraph -->
+                      <p class="block">email:</p>
+                      <!-- /wp:paragraph -->
+                    </div>
+                    <!-- /wp:group -->
 
+                    <!-- wp:group -->
+                    <div class="wp-block-group values">
+                      <!-- wp:paragraph -->
+                      <a href="tel:+48691990926" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> (+48) 691 990 926</a>
+                      <!-- /wp:paragraph -->
 
+                      <!-- wp:paragraph -->
+                      <a href="mailto:e.lipska@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300"> e.lipska@pbgorski.pl</a>
+                      <!-- /wp:paragraph -->
+                    </div>
+                    <!-- /wp:group -->
+                  </div>
+                  <!-- /wp:group -->
+                </div>
+                <!-- /wp:group -->
+              </li>
+              <!-- /wp:list-item -->
+            </ul>
+            <!-- /wp:list -->
           </li>
           <!-- /wp:list-item -->
-
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
+            <!-- wp:group -->
+            <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
+              <!-- wp:group -->
+              <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
+                <!-- wp:paragraph -->
+                <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział kredytów</span>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
 
+            <!-- wp:list -->
+            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
+              <!-- wp:list-item -->
+              <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
+                <!-- wp:group -->
+                <div class="wp-block-group left-col-avatar">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
+                    <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/cel.jpg" alt="avatar">
+                  </figure>
+                  <!-- /wp:image -->
+                </div>
+                <!-- /wp:group -->
 
+                <!-- wp:group -->
+                <div class="wp-block-group right-col-text text-black">
+                  <!-- wp:paragraph -->
+                  <p class="text-[18px] mb-[25px]">Ewa Cel</p>
+                  <!-- /wp:paragraph -->
+                  <!-- wp:group -->
+                  <div class="wp-block-group phone flex gap-[40px]">
+                    <!-- wp:group -->
+                    <div class="wp-block-group labels">
+                      <!-- wp:paragraph -->
+                      <p class="block mb-[20px]">tel</p>
+                      <!-- /wp:paragraph -->
+                      <!-- wp:paragraph -->
+                      <p class="block">email:</p>
+                      <!-- /wp:paragraph -->
+                    </div>
+                    <!-- /wp:group -->
+
+                    <!-- wp:group -->
+                    <div class="wp-block-group values">
+                      <!-- wp:paragraph -->
+                      <a href="tel:+48690099044" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> (+48) 690 099 044</a>
+                      <!-- /wp:paragraph -->
+
+                      <!-- wp:paragraph -->
+                      <a href="mailto:kredyty@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300"> kredyty@pbgorski.pl</a>
+                      <!-- /wp:paragraph -->
+                    </div>
+                    <!-- /wp:group -->
+                  </div>
+                  <!-- /wp:group -->
+                </div>
+                <!-- /wp:group -->
+              </li>
+              <!-- /wp:list-item -->
+            </ul>
+            <!-- /wp:list -->
           </li>
           <!-- /wp:list-item -->
-
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
