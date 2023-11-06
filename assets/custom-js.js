@@ -320,8 +320,12 @@ window.addEventListener("load", function() {
   };
 
   //  ---------------------------------------------------------------------- 
- 
 
+  let categoryList = document.querySelector('.wp-block-categories-list')
+  
+  if(document.body.classList.contains('page-id-189')){
+    categoryList.insertAdjacentHTML('beforebegin', sortingBarHTML);
+  };
 
 
 
