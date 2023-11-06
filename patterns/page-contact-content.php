@@ -302,6 +302,7 @@
             <!-- /wp:group -->
           </li>
           <!-- /wp:list-item -->
+
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
@@ -320,7 +321,7 @@
             <!-- /wp:group -->
 
             <!-- wp:list -->
-            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
+            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
               <li class="flex items-center gap-[10px] desktop:gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
@@ -427,7 +428,79 @@
 
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
+            <!-- wp:group -->
+            <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
+              <!-- wp:group -->
+              <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
+                <!-- wp:paragraph -->
+                <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział aranżacji</span>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
 
+            <!-- wp:list -->
+            <ul class="wp-block-list step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
+              <!-- wp:list-item -->
+              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
+                <!-- wp:group -->
+                <div class="wp-block-group left-col-avatar">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
+                    <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/lipska.jpg" alt="avatar">
+                  </figure>
+                  <!-- /wp:image -->
+                </div>
+                <!-- /wp:group -->
+
+
+
+
+
+
+                <!-- wp:group -->
+                <div class="wp-block-group right-col-text text-black">
+                  <!-- wp:paragraph -->
+                  <p class="text-[18px] mb-[20px]">Elżbieta Lipska</p>
+                  <!-- /wp:paragraph -->
+                  <!-- wp:group -->
+                  <div class="wp-block-group flex gap-[40px] text-[16px]">
+                    <!-- wp:group -->
+                    <div class="wp-block-group values">
+                      <!-- wp:group -->
+                      <div class="wp-block-group desktop:flex desktop:gap-[40px]">
+                        <!-- wp:paragraph -->
+                        <p class="block mb-[5px]">tel.</p>
+                        <!-- /wp:paragraph -->
+                        <!-- wp:paragraph -->
+                        <a href="tel:+48691990926" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> (+48) 691 990 926</a>
+                        <!-- /wp:paragraph -->
+                      </div>
+                      <!-- wp:group -->
+                      <div class="wp-block-group desktop:flex desktop:gap-[16px]">
+                        <!-- wp:paragraph -->
+                        <p class="block mb-[5px]">email:</p>
+                        <!-- /wp:paragraph -->
+                        <!-- wp:paragraph -->
+                        <a href="mailto:e.lipska@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300"> e.lipska@pbgorski.pl</a>
+                        <!-- /wp:paragraph -->
+                      </div>
+                      <!-- /wp:group -->
+                    </div>
+                    <!-- /wp:group -->
+                  </div>
+                  <!-- /wp:group -->
+                </div>
+                <!-- /wp:group -->
+
+              </li>
+              <!-- /wp:list-item -->
+            </ul>
+            <!-- /wp:list -->
           </li>
           <!-- /wp:list-item -->
 
