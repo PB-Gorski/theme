@@ -99,7 +99,12 @@
         <!-- wp:group -->
         <div class="wp-block-group flex flex-wrap gap-[20px]">
           <!-- wp:paragraph -->
-          <p>
+          <p class="inline ">
+            <?php
+            if (is_home()) {
+              echo 'blog';
+            };
+            ?>
             <!-- wp:paragraph -->
             <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Wszystkie</a>
             <!-- /wp:paragraph -->
