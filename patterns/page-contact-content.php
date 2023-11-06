@@ -226,7 +226,7 @@
             <!-- /wp:group -->
 
             <!-- wp:group -->
-            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] transition-height ease-out duration-[500ms] inactive">
+            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:paragraph -->
               <p class="text-[18px] text-bgDarkGray mb-[35px]">ul. Kościerska 15, 83-300 Kartuzy</p>
               <!-- /wp:paragraph -->
@@ -320,7 +320,7 @@
             <!-- /wp:group -->
 
             <!-- wp:list -->
-            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] inactive">
+            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
               <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
@@ -439,7 +439,7 @@
             <!-- /wp:group -->
 
             <!-- wp:list -->
-            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] inactive">
+            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
               <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
@@ -509,7 +509,7 @@
             <!-- /wp:group -->
 
             <!-- wp:list -->
-            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] inactive">
+            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
               <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
@@ -579,7 +579,7 @@
             <!-- /wp:group -->
 
             <!-- wp:list -->
-            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] inactive">
+            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
               <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
@@ -649,7 +649,7 @@
             <!-- /wp:group -->
 
             <!-- wp:list -->
-            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] inactive">
+            <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
               <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
@@ -723,7 +723,7 @@
             <!-- /wp:group -->
 
             <!-- wp:group -->
-            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] transition-height ease-out duration-[500ms] inactive">
+            <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:paragraph -->
               <p class="text-[18px] text-bgDarkGray mb-[35px]">ul. Budowlanych 19, 80-298 Gdańsk</p>
               <!-- /wp:paragraph -->
