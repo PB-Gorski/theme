@@ -466,21 +466,23 @@
                   <div class="wp-block-group phone flex gap-[40px]">
                     <!-- wp:group -->
                     <div class="wp-block-group labels">
-                      <!-- wp:paragraph -->
-                      <p class="block mb-[20px]">tel</p>
-                      <!-- /wp:paragraph -->
-                      <!-- wp:paragraph -->
-                      <p class="block">email:</p>
-                      <!-- /wp:paragraph -->
+
+
                     </div>
                     <!-- /wp:group -->
 
                     <!-- wp:group -->
                     <div class="wp-block-group values">
                       <!-- wp:paragraph -->
+                      <p class="block mb-[20px]">tel</p>
+                      <!-- /wp:paragraph -->
+                      <!-- wp:paragraph -->
                       <a href="tel:+48690099044" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> (+48) 690 099 044</a>
                       <!-- /wp:paragraph -->
 
+                      <!-- wp:paragraph -->
+                      <p class="block">email:</p>
+                      <!-- /wp:paragraph -->
                       <!-- wp:paragraph -->
                       <a href="mailto:kredyty@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300"> kredyty@pbgorski.pl</a>
                       <!-- /wp:paragraph -->
