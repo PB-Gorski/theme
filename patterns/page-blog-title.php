@@ -102,7 +102,7 @@
           <p class="inline ">
 
             <!-- wp:paragraph -->
-            <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') ? 'border-b-[2px] border-primaryRed' : null; ?>">Wszystkie</a>
+            <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') ? 'hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed' : null; ?>">Wszystkie</a>
             <!-- /wp:paragraph -->
           </p>
           <!-- /wp:paragraph -->
