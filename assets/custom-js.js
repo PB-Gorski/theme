@@ -329,7 +329,7 @@ window.addEventListener("load", function() {
   }
   window.location.href
   link =`
-  <li><a href="` +  window.location.origin + `/pl/blog" class="inline-block allTabBtn leading-[20px] text-[#8a8f99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer ` + borderClass + `">Wszystkie JS</a></li>
+  <li><a href="` +  window.location.origin + `/pl/blog" class="inline-block allTabBtn leading-[20px] text-[#8a8f99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer ` + borderClass + `">Wszystkie</a></li>
   `
   
   if(document.body.classList.contains('page-id-189') || window.location.href.search('category')>20){
