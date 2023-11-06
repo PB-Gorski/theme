@@ -110,7 +110,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group col2 px-[40px] w-fit h-[68px] flex gap-[15px] items-center desktop:border-r-[1px] desktop:border-[rgba(255,255,255,0.2)]">
+        <div class="wp-block-group col2 px-[30px] w-fit h-[68px] flex gap-[15px] items-center desktop:border-r-[1px] desktop:border-[rgba(255,255,255,0.2)]">
           <!-- wp:paragraph -->
           <span id="count2" class="text-[48px] font-bold" data-aos="fade-up" data-aos-offset="30">125</span>
           <!-- /wp:paragraph -->
