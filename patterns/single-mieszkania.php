@@ -213,7 +213,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group group mb-[80px] btn-download relative bg-[#f5f7fa] text-textGray w-full desktop:w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#e9ecf2] before:transition-height before:duration-300 before:ease cursor-pointer">
+        <div class="wp-block-group hidden group mb-[80px] btn-download relative bg-[#f5f7fa] text-textGray w-full desktop:w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#e9ecf2] before:transition-height before:duration-300 before:ease cursor-pointer">
           <!-- wp:paragraph -->
           <p>empty</p>
           <!-- /wp:paragraph -->
