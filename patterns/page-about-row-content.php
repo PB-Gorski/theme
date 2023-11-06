@@ -17,7 +17,7 @@
       <!-- wp:group -->
       <div class="wp-block-group col1 desktop:w-[50%] desktop:pl-[60px]">
         <!-- wp:paragraph -->
-        <span class="block" class="text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">40 lat obecności na pomorskim rynku, dziesiątki zrealizowanych inwestycji i wiele spektakularnych przedsięwzięć w trakcie realizacji.</span>
+        <span class="block text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">40 lat obecności na pomorskim rynku, dziesiątki zrealizowanych inwestycji i wiele spektakularnych przedsięwzięć w trakcie realizacji.</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
