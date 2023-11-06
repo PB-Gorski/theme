@@ -117,7 +117,7 @@ ul.wp-block-navigation__container  > li.wp-block-navigation-item{
 }
 .single .btn-find-more a{
   text-decoration: none!important;
-  color: white!important;
+  color: inherit!important;
 }
 
 /* nav menu */
