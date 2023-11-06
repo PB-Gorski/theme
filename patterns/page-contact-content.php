@@ -309,10 +309,10 @@
               <!-- wp:group -->
               <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
                 <!-- wp:paragraph -->
-                <p class="w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
+                <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział sprzedaży</p>
+                <span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział sprzedaży</span>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -426,10 +426,10 @@
               <!-- wp:group -->
               <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
                 <!-- wp:paragraph -->
-                <p class="w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
+                <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział aranżacji</p>
+                <span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział aranżacji</span>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -496,10 +496,10 @@
               <!-- wp:group -->
               <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
                 <!-- wp:paragraph -->
-                <p class="w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
+                <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział kredytów</p>
+                <span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział kredytów</span>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -566,10 +566,10 @@
               <!-- wp:group -->
               <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
                 <!-- wp:paragraph -->
-                <p class="w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
+                <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Umowy i akty notarialne</p>
+                <span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Umowy i akty notarialne</span>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -636,10 +636,10 @@
               <!-- wp:group -->
               <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
                 <!-- wp:paragraph -->
-                <p class="w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
+                <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział reklamacji</p>
+                <span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział reklamacji</span>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -710,10 +710,10 @@
               <!-- wp:group -->
               <div class="wp-block-group bar-title-wrapper w-full text-bgDarkGray flex transition ease-out duration-[500ms]">
                 <!-- wp:paragraph -->
-                <p class="w-[22px] pb-[5px] flex-none click-bar-icon py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</p>
+                <span class="block w-[22px] pb-[5px] flex-none click-bar-icon py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
                 <!-- wp:paragraph -->
-                <p class="bar-title font-bold grow pl-[20px] py-[20px] text-[24px] border-b-[1px] border-[#e8e8e8] font-bold self-center transition ease-out duration-[500ms]" data-aos="fade-up" data-aos-offset="30">Produkcja i sprzedaż betonu</p>
+                <span class="block bar-title font-bold grow pl-[20px] py-[20px] text-[24px] border-b-[1px] border-[#e8e8e8] font-bold self-center transition ease-out duration-[500ms]" data-aos="fade-up" data-aos-offset="30">Produkcja i sprzedaż betonu</span>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
