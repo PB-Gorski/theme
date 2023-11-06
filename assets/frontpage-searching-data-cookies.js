@@ -175,13 +175,13 @@ window.addEventListener("load", function() {
     passiveOptionsCustomFilters.forEach(item => {
       item.addEventListener('click', () => {
         // let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
-        let priceMinValueCookie = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
-        let priceMaxValueCookie = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
+        let priceMinValueCookie2 = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
+        let priceMaxValueCookie2 = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
 
         let filteredPriceFromFrontPage = runSearchingFrontPage() + runSearchingMetrazFrontPage();
         document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + ',' + filteredPriceFromFrontPage;
-        document.cookie = "filteredPriceMinFromCookies=" + priceMinValueCookie;
-        document.cookie = "filteredPriceMaxFromCookies=" + priceMaxValueCookie;
+        // document.cookie = "PriceMinFromCookies=" + priceMinValueCookie2;
+        // document.cookie = "PriceMaxFromCookies=" + priceMaxValueCookie2;
 
   
 
