@@ -55,10 +55,13 @@
               <!-- /wp:group -->
 
               <!-- wp:group -->
-              <div class="wp-block-group text-[16px] text-bgDarkGray"><!-- wp:post-terms {"term":"osiedla"} /--></div>
+              <div class="wp-block-group 1 text-[16px] text-bgDarkGray"><!-- wp:post-terms {"term":"category"} /--></div>
               <!-- /wp:group -->
               <!-- wp:group -->
-              <div class="wp-block-group text-[16px] text-bgDarkGray"><!-- wp:core/categories {"showPostCounts":false,"displayAsDropdown":false,"showHierarchy":false} /--></div>
+              <div class="wp-block-group 2 text-[16px] text-bgDarkGray"><!-- wp:post-terms /--></div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div class="wp-block-group 3 text-[16px] text-bgDarkGray"><!-- wp:core/categories {"showPostCounts":false,"displayAsDropdown":false,"showHierarchy":false} /--></div>
               <!-- /wp:group -->
 
               <!-- wp:paragraph -->
