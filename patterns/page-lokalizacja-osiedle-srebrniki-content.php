@@ -125,22 +125,22 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group plan-osiedla-wrapper mb-[100px] mx-auto max-w-[690px] w-full px-[20px] desktop:px-0">
     <!-- wp:paragraph -->
-    <p class="mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki to świetnie skomunikowane z całym Gdańskiem osiedle. Położone pomiędzy Wrzeszczem, a Moreną z dobrym dostępem do kolejki PKM. Otoczone zielenią i terenami rekreacyjnymi. Idealne dla rodxzin z dziećmi, jak i dla studentów (10 minut od kampusu Politechniki Gdańskiej).</p>
+    <span class="mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki to świetnie skomunikowane z całym Gdańskiem osiedle. Położone pomiędzy Wrzeszczem, a Moreną z dobrym dostępem do kolejki PKM. Otoczone zielenią i terenami rekreacyjnymi. Idealne dla rodxzin z dziećmi, jak i dla studentów (10 minut od kampusu Politechniki Gdańskiej).</span>
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph -->
-    <p class="mb-[60px] text-[30px] text-center" data-aos="fade-right" data-aos-offset="30">Plan osiedla "Srebrniki"</p>
+    <span class="mb-[60px] text-[30px] text-center" data-aos="fade-right" data-aos-offset="30">Plan osiedla "Srebrniki"</span>
     <!-- /wp:paragraph -->
 
-    <!-- wp:paragraph -->
-    <a href="javascript:void(0)" class="block cursor-default" data-aos="fade-right" data-aos-offset="30">
+    <!-- wp:group -->
+    <div class="wp-block-group block cursor-default">
       <!-- wp:image -->
       <figure class="wp-block-image">
         <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/plan-osiedla.jpeg" alt="plan-osiedla">
       </figure>
       <!-- /wp:image -->
-    </a>
-    <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
 
