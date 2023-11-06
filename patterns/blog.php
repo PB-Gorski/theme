@@ -47,7 +47,7 @@
               <!-- /wp:group -->
 
               <!-- wp:group -->
-              <div class="wp-block-group post-date mr-[20px] text-[16px] text-bgDarkGray mb-[15px]"><!-- wp:post-date /--></div>
+              <div class="wp-block-group post-date mr-[20px] text-[16px] text-bgDarkGray mb-[5px]"><!-- wp:post-date /--></div>
               <!-- /wp:group -->
 
               <!-- wp:group -->
@@ -55,7 +55,7 @@
               <!-- /wp:group -->
 
               <!-- wp:group -->
-              <div class="wp-block-group text-[16px] text-bgDarkGray"><!-- wp:post-terms {"term":"category"} /--></div>
+              <div class="wp-block-group mb-[15px] text-[16px] text-bgDarkGray"><!-- wp:post-terms {"term":"category"} /--></div>
               <!-- /wp:group -->
 
               <!-- wp:paragraph -->
