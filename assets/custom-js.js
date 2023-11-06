@@ -325,7 +325,7 @@ window.addEventListener("load", function() {
   let borderClass = '';
   if(window.location.href.search('blog')>20){
     console.log('blog page');
-    borderClass = 'border-b-[2px] border-primaryRed';
+    borderClass = 'underline-offset-4 decoration-2 decoration-primaryRed';
   }
   window.location.href
   link =`
