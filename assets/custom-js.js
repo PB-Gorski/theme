@@ -30,11 +30,11 @@ window.addEventListener("load", function() {
 
   hoverMenuItem.addEventListener('mouseover',()=>{
     modal.classList.replace('opacity-0', 'opacity-100');
-    modal.classList.replace('z-[-1]', 'z-[1]');
+    modal.classList.replace('z-[-1]', 'z-[3]');
   });
   modal.addEventListener('mouseleave',()=>{
     modal.classList.replace('opacity-100', 'opacity-0');
-    modal.classList.replace('z-[1]', 'z-[-1]');
+    modal.classList.replace('z-[3]', 'z-[-1]');
   });
   tabBtns.forEach((tabBtn,index) => {
     tabBtn.addEventListener('click', () => {
