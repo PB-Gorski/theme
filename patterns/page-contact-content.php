@@ -441,7 +441,7 @@
             <!-- wp:list -->
             <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
+              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
@@ -517,7 +517,7 @@
             <!-- wp:list -->
             <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
+              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
@@ -597,7 +597,7 @@
             <!-- wp:list -->
             <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
+              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
