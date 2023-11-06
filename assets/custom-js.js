@@ -322,12 +322,14 @@ window.addEventListener("load", function() {
   //  ---------------------------------------------------------------------- 
 
   let categoryList = document.querySelector('.wp-block-categories-list')
+  let borderClass = '';
   if(window.location.href.search('blog')>20){
     console.log('blog page');
+    borderClass = 'border-b-[2px] border-primaryRed';
   }
   window.location.href
   link =`
-  <li><a href="` +  window.location.origin + `/pl/blog" class="inline-block allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Wszystkie JS</a></li>
+  <li><a href="` +  window.location.origin + `/pl/blog" class="inline-block allTabBtn text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer ` + borderClass + `">Wszystkie JS</a></li>
   `
   
   if(document.body.classList.contains('page-id-189')){
