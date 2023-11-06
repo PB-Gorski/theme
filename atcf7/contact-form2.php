@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
  * */
 ?>
 
-<table class="w-full">
+<table class="w-full cta2">
   <tbody>
     <tr class="">
       <th><label for="your-name" onclick=""></label></th>
