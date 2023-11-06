@@ -327,7 +327,7 @@ window.addEventListener("load", function() {
   `
   
   if(document.body.classList.contains('page-id-189')){
-    categoryList.insertAdjacentHTML('beforebegin', link);
+    categoryList.insertAdjacentHTML('afterbegin', link);
   };
 
 
