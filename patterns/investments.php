@@ -75,7 +75,12 @@
                     <!-- /wp:paragraph -->
 
                     <!-- wp:paragraph -->
-                    <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold"><?php print_r(get_term($tax, 'inwestycja')); ?></p>
+                    <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold">
+                      <?php
+                      if ($tax->name == 'Osiedle Srebrniki') echo 'Gdańsk';
+                      elseif ($tax->name == 'Św. Piotra') echo 'Gdynia'
+                      ?>
+                    </p>
                     <!-- /wp:paragraph -->
 
                     <!-- wp:group -->
