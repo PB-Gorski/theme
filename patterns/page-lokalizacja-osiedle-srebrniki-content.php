@@ -66,10 +66,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- wp:paragraph -->
     <span class="block tile1 flex-1 p-[30px_20px] max-w-[375px] bg-[#f5f7fa]" data-aos="fade-up" data-aos-offset="30" data-aos-delay="50">
 
-      <span class=" circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
-        <!-- wp:paragraph -->
+      <span class="block circle mx-auto w-[170px] h-[170px] mb-[60px] bg-[#e90d38] rounded-full flex flex-col items-center justify-center">
+
         <span class="block text-[30px] text-white font-semibold">400 m</span>
-        <!-- /wp:paragraph -->
+
       </span>
 
       <!-- wp:paragraph -->
