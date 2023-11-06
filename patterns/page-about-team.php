@@ -13,13 +13,13 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] desktop:max-w-[680px]">
     <!-- wp:paragraph -->
-    <span class="mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Rozmach i różnorodność inwestycji prowadzonych przez firmę Górski pokazuje odwagę i konsekwencję w wieloletnim działaniu przedsiębiorstwa.</span>
+    <span class="block mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Rozmach i różnorodność inwestycji prowadzonych przez firmę Górski pokazuje odwagę i konsekwencję w wieloletnim działaniu przedsiębiorstwa.</span>
     <!-- /wp:paragraph -->
     <!-- wp:paragraph -->
-    <span class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Dziś aktywność dewelopera nie ogranicza się tylko do działań budowlanych. Firma GÓRSKI wspiera także sportowe talenty, sponsoruje wydarzenia sportowe i kulturalne.</span>
+    <span class="block mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Dziś aktywność dewelopera nie ogranicza się tylko do działań budowlanych. Firma GÓRSKI wspiera także sportowe talenty, sponsoruje wydarzenia sportowe i kulturalne.</span>
     <!-- /wp:paragraph -->
     <!-- wp:paragraph -->
-    <span class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Założycielem spółki PB Górski, ze stuprocentowym polskim kapitałem, jest Bogdan Górski, który dzięki swojej determinacji i ciężkiej pracy w przeciągu przeszło 40 lat stworzył prężną firmę budowlaną i deweloperską. Dzięki temu, przez wiele lat, firma zdążyła rozwinąć m.in. własną, niezależną bazę dystrybucyjną, która ułatwia cały proces realizacji inwestycji. Obecnie PB Górski jest w posiadaniu własnej żwirowni, maszyn do rozdrabniania kruszywa, jest także producentem betonu.</span>
+    <span class="block mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Założycielem spółki PB Górski, ze stuprocentowym polskim kapitałem, jest Bogdan Górski, który dzięki swojej determinacji i ciężkiej pracy w przeciągu przeszło 40 lat stworzył prężną firmę budowlaną i deweloperską. Dzięki temu, przez wiele lat, firma zdążyła rozwinąć m.in. własną, niezależną bazę dystrybucyjną, która ułatwia cały proces realizacji inwestycji. Obecnie PB Górski jest w posiadaniu własnej żwirowni, maszyn do rozdrabniania kruszywa, jest także producentem betonu.</span>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
