@@ -53,7 +53,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group w-full h-[560px] relative py-[60px]">
+  <div class="wp-block-group w-full h-[430px] relative py-[60px]">
     <!-- wp:paragraph -->
     <a href="#" class="inline-block w-full h-full cursor-default absolute top-0 left-0 z-[-1]" data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-offset="0">
       <!-- wp:figure -->
