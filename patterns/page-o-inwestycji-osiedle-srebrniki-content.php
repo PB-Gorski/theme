@@ -58,7 +58,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:px-[100px] desktop:w-1/2">
         <!-- wp:paragraph -->
-        <p class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki to zielona enklawa położona na granicy dwóch dzielnic Gdańska - Wrzeszcza i Moreny</p>
+        <span class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki to zielona enklawa położona na granicy dwóch dzielnic Gdańska - Wrzeszcza i Moreny</span>
         <!-- /wp:paragraph -->
 
         <!-- wp:group -->
@@ -66,10 +66,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- wp:group -->
           <div class="wp-block-group info-box1 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
-            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LOKALIZACJA</p>
+            <span class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LOKALIZACJA</span>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="text-[24px]" data-aos="fade-right" data-aos-offset="30">Gdańsk</p>
+            <span class="text-[24px]" data-aos="fade-right" data-aos-offset="30">Gdańsk</span>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
             <a href="<?php echo home_url() . '/lokalizacja' ?>" class="inline-block text-[14px] text-[#8a8f99] underline" data-aos="fade-right" data-aos-offset="30">więcej o lokalizacji</a>
@@ -80,10 +80,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- wp:group -->
           <div class="wp-block-group info-box2 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
-            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">TERMIN UKOŃCZENIA (BUDYNEK 1)</p>
+            <span class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">TERMIN UKOŃCZENIA (BUDYNEK 1)</span>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="text-[24px]" data-aos="fade-right" data-aos-offset="30">IV kwartał 2020</p>
+            <span class="text-[24px]" data-aos="fade-right" data-aos-offset="30">IV kwartał 2020</span>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
@@ -92,10 +92,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <div class="wp-block-group info-box3 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
 
-            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LICZBA MIESZKAŃ W SPRZEDAŻY</p>
+            <span class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LICZBA MIESZKAŃ W SPRZEDAŻY</span>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="text-[24px]" data-aos="fade-right" data-aos-offset="30">450 w pierwszym etapie</p>
+            <span class="text-[24px]" data-aos="fade-right" data-aos-offset="30">450 w pierwszym etapie</span>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
@@ -103,10 +103,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- wp:group -->
           <div class="wp-block-group info-box4 mb-[35px] desktop:mb-[30px]">
             <!-- wp:paragraph -->
-            <p class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">POWIERZCHNIA MIESZKAŃ</p>
+            <span class="mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">POWIERZCHNIA MIESZKAŃ</span>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="text-[24px]" data-aos="fade-right" data-aos-offset="30">27 m<sup>2</sup> - 113 m<sup>2</sup></p>
+            <span class="text-[24px]" data-aos="fade-right" data-aos-offset="30">27 m<sup>2</sup> - 113 m<sup>2</sup></span>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
