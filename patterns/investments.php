@@ -74,6 +74,10 @@
                     <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold"><?php echo $tax->name; ?></p>
                     <!-- /wp:paragraph -->
 
+                    <!-- wp:paragraph -->
+                    <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold"><?php print_r(get_term($tax, 'inwestycja')); ?></p>
+                    <!-- /wp:paragraph -->
+
                     <!-- wp:group -->
                     <div class="wp-block-group flex">
                       <!-- wp:group -->
