@@ -120,11 +120,9 @@
                 ?>
                   <!-- wp:list-item -->
                   <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
-                    <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38]">
-                      <!-- wp:paragraph -->
-                      <p class=""><?php echo $tax->name; ?></p>
-                      <!-- /wp:paragraph -->
-                    </a>
+                    <!-- wp:paragraph -->
+                    <p class=""><a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38]"><?php echo $tax->name; ?></a></p>
+                    <!-- /wp:paragraph -->
                   </li>
                   <!-- /wp:list-item -->
                 <?php
