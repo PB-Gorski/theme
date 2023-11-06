@@ -718,6 +718,33 @@ background-color: #e8fbff!important;
   width: 26px!important;
   height: 17px!important;
 }
+.list-item-mieszkanie p:first-child{
+  width: 100px;
+}
+.list-item-mieszkanie p:nth-child(2){
+  width: 180px;
+}
+.list-item-mieszkanie p:nth-child(3){
+  width: 100px;
+}
+.list-item-mieszkanie p:nth-child(5){
+  width: 65px;
+}
+.list-item-mieszkanie p:nth-child(6){
+  width: 100px;
+}
+.list-item-mieszkanie p:nth-child(7){
+  width: 110px;
+}
+.list-item-mieszkanie p:nth-child(8){
+  width: 100px;
+}
+.list-item-mieszkanie p:nth-child(9){
+  width: 130px;
+}
+.list-item-mieszkanie p:nth-child(10){
+  width: 125px;
+}
 .container-posts {
   overflow-x: scroll;
 }
