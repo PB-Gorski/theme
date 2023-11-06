@@ -170,14 +170,18 @@ window.addEventListener("load", function() {
       });
     });
 
+    priceMinValueCookie = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
+    priceMaxValueCookie = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
+
     passiveOptionsCustomFilters.forEach(item => {
       item.addEventListener('click', () => {
         // let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
         let filteredPriceFromFrontPage = runSearchingFrontPage() + runSearchingMetrazFrontPage();
         document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + ',' + filteredPriceFromFrontPage;
+        document.cookie = "filteredPriceMinFromCookies=" + priceMinValueCookie;
+        document.cookie = "filteredPriceMaxFromCookies=" + priceMaxValueCookie;
 
         // console.log('filter type: ', filterType);
-        console.log('cookie data: ', document.cookie);
       });
     });
 
