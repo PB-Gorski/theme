@@ -28,7 +28,7 @@
     <!-- wp:group -->
     <div class="wp-block-group col2 w-[100%] desktop:w-[55%] py-[60px] fflex flex-col gap-[30px] items-center jusify-center">
       <!-- wp:paragraph -->
-      <p class="text-[28px] desktop:text-[38px] font-bold mb-[90px] desktop:mb-[40px]" data-aos="fade-right" data-aos-offset="30">Potrzebujesz więcej informacji?</p>
+      <p class="text-[28px] desktop:text-[38px] font-bold mb-[60px] desktop:mb-[40px]" data-aos="fade-right" data-aos-offset="30">Potrzebujesz więcej informacji?</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:group -->
