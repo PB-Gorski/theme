@@ -45,7 +45,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <div class="wp-block-group row-content-container px-[20px] desktop:px-0">
     <!-- wp:group -->
     <div class="wp-block-group row-content desktop:flex">
-      <!-- wp:paragraph -->
+
       <a href="javascript:void(0)" class="block cursor-default left-col desktop:w-1/2 m-0 mb-[20px] desktop:mb-0 mb-[20px] desktop:mb-0" data-aos="fade-right" data-aos-offset="30">
         <!-- wp:image -->
         <figure class="wp-block-image w-full h-full">
@@ -53,7 +53,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         </figure>
         <!-- /wp:image -->
       </a>
-      <!-- /wp:paragraph -->
+
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:px-[100px] desktop:w-1/2">
