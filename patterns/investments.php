@@ -75,10 +75,12 @@
                     <!-- /wp:paragraph -->
 
                     <!-- wp:paragraph -->
-                    <p class="mr-[20px] text-[30px] desktop:text-[36px] font-bold">
+                    <p class="mr-[20px] text-bgDarkGray text-[16px] desktop:text-[18px]">
                       <?php
                       if ($tax->name == 'Osiedle Srebrniki') echo 'Gdańsk';
-                      elseif ($tax->name == 'Św. Piotra') echo 'Gdynia'
+                      elseif ($tax->name == 'Św. Piotra') echo 'Gdynia';
+                      elseif ($tax->name == 'Toruńska 16') echo 'Gdańsk';
+                      elseif ($tax->name == 'Wieżycka Folwark ') echo 'Gdańsk';
                       ?>
                     </p>
                     <!-- /wp:paragraph -->
