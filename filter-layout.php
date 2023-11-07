@@ -353,8 +353,12 @@ $tax_sort = $taxonomy;
                     }
                   }
 
-                  if ((get_term($term)->slug) == 'maisto') {
+                  if ((get_term($term)->slug) == 'miasto') {
                     echo 'get_term($term)->slug)';
+                    $type_multiple = '0';
+                  };
+                  if ((get_taxonomy($select_term)->label == 'Miasto')) {
+                    echo 'get_taxonomy label';
                     $type_multiple = '0';
                   };
                   echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
