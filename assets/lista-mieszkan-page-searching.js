@@ -231,6 +231,7 @@ window.addEventListener("load", function() {
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
     const searchBar = document.querySelector('.filter-entry');
+    const heightAnimation = document.querySelector('.js-heightAnimation');
     // const postsFound = document.querySelector('.js-post-found');
     const dropDownFIltersArr = document.querySelectorAll('.dropdown-filter');
     
@@ -254,10 +255,10 @@ window.addEventListener("load", function() {
           dropDownFIltersArr[10].classList.toggle('z-[1]')
           dropDownFIltersArr[11].classList.toggle('z-[1]')
         }else{
-          searchBar.classList.toggle('h-[720px]');
+          heightAnimation.classList.toggle('h-[720px]');
         };
         foundedPostOnStart.classList.toggle('top-[720px]')
-        document.querySelector('#filter-layout3-filter-layout3').classList.toggle('h-[840px]')
+        // document.querySelector('#filter-layout3-filter-layout3').classList.toggle('h-[840px]')
       });
     };
 
