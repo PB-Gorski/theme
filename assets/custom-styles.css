@@ -351,11 +351,13 @@ input,
 textarea{
   padding-left: 15px;
 }
-.cta2 input{
+.cta2 input,
+.cta2 textarea{
   width: 100%;
 }
 @media only screen and (max-width: 480px) {
-  .cta2 input{
+  .cta2 input,
+  .cta2 textarea{
     width: 330px;
   }
 }
