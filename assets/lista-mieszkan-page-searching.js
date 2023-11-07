@@ -101,25 +101,13 @@ window.addEventListener("load", function() {
             // miasto
             if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
 
-            // tempMiastoArr = choosenOptionID;
-
             tempMiastoArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr = (item.childNodes[1].dataset.name)}
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
               });
             });
-
-            // menuActiveSpan.innerHTML = tempMiastoArr;
-            
-            if(choosenMiastoArr.length > 0){
-              menuActiveSpan.innerHTML = choosenMiastoArr;
-            }else{
-              menuActiveSpan.innerHTML = 'Wybierz';
-            }
-
-            console.log('miasto2: ',choosenMiastoArr);
-
-
+            menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
+            console.log('miasto: ',choosenMiastoArr);
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
             tempInwestycjaArr.includes(choosenOptionID) ? removeItemAll(tempInwestycjaArr,choosenOptionID) : tempInwestycjaArr.push(choosenOptionID);
