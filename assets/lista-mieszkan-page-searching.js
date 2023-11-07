@@ -254,6 +254,7 @@ window.addEventListener("load", function() {
           dropDownFIltersArr[9].classList.toggle('z-[1]')
           dropDownFIltersArr[10].classList.toggle('z-[1]')
           dropDownFIltersArr[11].classList.toggle('z-[1]')
+          foundedPostOnStart.classList.toggle('top-[240px]')
         }else{
           heightAnimation.classList.toggle('h-[720px]');
           foundedPostOnStart.classList.toggle('top-[1315px]')
