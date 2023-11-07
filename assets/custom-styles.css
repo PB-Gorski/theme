@@ -873,7 +873,7 @@ background-color: #e8fbff!important;
 @media only screen and (max-width: 480px) {
   .single-mieszkania .entry-content a{
     position: relative!important;
-    top: auto;
+    top: 230px;
     right: auto;
   
     background-color: #f5f7fa;
