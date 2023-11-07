@@ -382,7 +382,7 @@
       <!-- wp:group -->
       <div class="wp-block-group btn-wrapper-header flex items-center gap-[10px]">
         <!-- wp:group -->
-        <div class="wp-block-group group btn-find-more relative bg-transparent p-[15px] h-[48px] flex items-center justify-center border-[2px] border-textGray rounded-full cursor-pointer group mb-[20px] relative bg-[#f5f7fa] text-textGray w-full desktop:w-[230px] h-[55px] flex items-center justify-center before:rounded-full before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] hover:text-white before:bg-textGray before:transition-height before:duration-300 before:ease cursor-pointer">
+        <div class="wp-block-group group btn-find-more relative bg-transparent p-[15px] h-[48px] flex items-center justify-center border-[2px] border-textGray rounded-full cursor-pointer group relative bg-[#f5f7fa] text-textGray w-full desktop:w-[230px] h-[55px] flex items-center justify-center before:rounded-full before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] hover:text-white before:bg-textGray before:transition-height before:duration-300 before:ease cursor-pointer">
           <!-- wp:paragraph -->
           <a href="<?php echo home_url() . '/mieszkania'; ?>" class="z-[1]">Znajdź mieszkanie</a>
           <!-- /wp:paragraph -->
