@@ -437,6 +437,18 @@ label{
   grid-row: 6 / span 1;
 }
 @media only screen and (max-width: 1024px) {
+  .ymc-smart-filter-container .filter-layout3 div:nth-child(10) {
+    grid-column: 1 / span 4;
+    grid-row: 7 / span 1;
+  }
+  .ymc-smart-filter-container .filter-layout3 div:nth-child(11) {
+    grid-column: 1 / span 4;
+    grid-row: 8 / span 1;
+  }
+  .ymc-smart-filter-container .filter-layout3 div:nth-child(12) {
+    grid-column: 1 / span 4;
+    grid-row: 9 / span 1;
+  }
   .ymc-smart-filter-container .filter-layout3 div:nth-child(13) {
     grid-column: 1 / span 4;
     grid-row: 10 / span 1;
