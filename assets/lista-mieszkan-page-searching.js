@@ -138,14 +138,14 @@ window.addEventListener("load", function() {
             menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
-            if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
+            // if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
 
-            tempTerminArr.forEach(choosenItem =>{
-              passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
-              });
-            });
-            menuActiveSpan.innerHTML = choosenTempArr.join(', ');
+            // tempTerminArr.forEach(choosenItem =>{
+            //   passiveOptions.forEach(item => {
+            //     if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
+            //   });
+            // });
+            // menuActiveSpan.innerHTML = choosenTempArr.join(', ');
           }else if(inneArr.includes(+choosenOptionID)){
             // inne
             tempInneArr.includes(choosenOptionID) ? removeItemAll(tempInneArr,choosenOptionID) : tempInneArr.push(choosenOptionID);
