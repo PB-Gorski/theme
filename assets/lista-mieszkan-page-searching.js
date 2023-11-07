@@ -101,7 +101,7 @@ window.addEventListener("load", function() {
             // miasto
             if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
 
-            tempMiastoArr = choosenOptionID;
+            // tempMiastoArr = choosenOptionID;
 
             tempMiastoArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
