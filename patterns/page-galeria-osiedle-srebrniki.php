@@ -472,27 +472,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                 </div>
                 <!-- /wp:group -->
                 <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
-
-                </div>
-                <!-- /wp:group -->
-                <!-- wp:group -->
-                <div class="wp-block-group swiper-slide swiper-slide-hover">
+                <div class="wp-block-group swiper-slide block desktop:hidden">
 
                 </div>
                 <!-- /wp:group -->
