@@ -420,6 +420,8 @@ window.addEventListener("load", function() {
   document.body.addEventListener('click', () => {
     document.querySelectorAll('.menu-passive').forEach(activeItem =>{
       activeItem.style.display = 'none';  
+      console.log('click1');
+
     });
 
     document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
@@ -431,10 +433,11 @@ window.addEventListener("load", function() {
     });
     
   });
-    document.querySelectorAll('.menu-active').forEach(activeItem =>{
-      activeItem.addEventListener('click', () =>{
-        document.querySelectorAll('.menu-passive').forEach(activeItem =>{
-          activeItem.style.display = 'none';  
+    document.querySelectorAll('.menu-active').forEach(activeMenu =>{
+      activeMenu.addEventListener('click', () =>{
+        document.querySelectorAll('.menu-passive').forEach(activeItemPassive =>{
+          activeItemPassive.style.display = 'none';  
+          console.log('click2');
         });
       })
     });
