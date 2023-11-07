@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
     <tr class="flex flex-col desktop:flex-row gap-[20px]">
       <td class="w-[100%] desktop:w-[50%] leading-[0px]">
         <!-- [text* your-name id:your-name ] -->
-        <input id="your-name" name="your-name" type="text" placeholder="Imię i nazwisko" class="px-[15px] py-[10px] w-full h-[60px] text-[#2e384d] placeholder:text-[#757575] focus:border-white active:border-black drop-shadow-lg">
+        <input id="your-name" name="your-name" type="text" placeholder="Imię i nazwisko" class="px-[15px] py-[10px] w-[320px] h-[60px] text-[#2e384d] placeholder:text-[#757575] focus:border-white active:border-black drop-shadow-lg">
         <!-- <div> [email* your-email id:your-email ] </div> -->
         <input id="your-name" name="your-name" type="text" placeholder="Adres email" class="px-[15px] py-[10px] w-[500px] w-full h-[60px] text-[#2e384d] placeholder:text-[#757575]">
         <!-- <div> [email* your-email id:your-email ] </div> -->
