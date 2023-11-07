@@ -473,29 +473,17 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
                 <!-- /wp:group -->
                 <!-- wp:group -->
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/okolica/img3.jpg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
+
                 </div>
                 <!-- /wp:group -->
                 <!-- wp:group -->
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/okolica/img3.jpg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
+
                 </div>
                 <!-- /wp:group -->
                 <!-- wp:group -->
                 <div class="wp-block-group swiper-slide swiper-slide-hover">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image h-full w-full">
-                    <img src="https://pbgorski.webo.design/pl/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/galeria/okolica/img3.jpg" alt="slide">
-                  </figure>
-                  <!-- /wp:image -->
+
                 </div>
                 <!-- /wp:group -->
                 <!-- wp:group -->
