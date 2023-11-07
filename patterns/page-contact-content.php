@@ -322,7 +322,7 @@
             <!-- wp:list -->
             <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
+              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
@@ -334,7 +334,7 @@
                 <!-- /wp:group -->
 
                 <!-- wp:group -->
-                <div class="wp-block-group right-col-text text-black">
+                <div class="wp-block-group right-col-text text-black text-[16px]">
                   <!-- wp:paragraph -->
                   <p class="text-[18px] mb-[25px]">Kinga Piekarska</p>
                   <!-- /wp:paragraph -->
@@ -369,7 +369,7 @@
               </li>
               <!-- /wp:list-item -->
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[40px] leading-[21px]">
+              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
@@ -381,7 +381,7 @@
                 <!-- /wp:group -->
 
                 <!-- wp:group -->
-                <div class="wp-block-group right-col-text text-black">
+                <div class="wp-block-group right-col-text text-black text-[16px]">
                   <!-- wp:paragraph -->
                   <p class="text-[18px] mb-[25px]">Bartłomiej Jahn</p>
                   <!-- /wp:paragraph -->
@@ -439,7 +439,7 @@
             <!-- wp:list -->
             <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
+              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
@@ -451,7 +451,7 @@
                 <!-- /wp:group -->
 
                 <!-- wp:group -->
-                <div class="wp-block-group right-col-text text-black">
+                <div class="wp-block-group right-col-text text-black text-[16px]">
                   <!-- wp:paragraph -->
                   <p class="text-[18px] mb-[25px]">Elżbieta Lipska</p>
                   <!-- /wp:paragraph -->
@@ -509,7 +509,7 @@
             <!-- wp:list -->
             <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
+              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
@@ -521,7 +521,7 @@
                 <!-- /wp:group -->
 
                 <!-- wp:group -->
-                <div class="wp-block-group right-col-text text-black">
+                <div class="wp-block-group right-col-text text-black text-[16px]">
                   <!-- wp:paragraph -->
                   <p class="text-[18px] mb-[25px]">Ewa Cel</p>
                   <!-- /wp:paragraph -->
@@ -574,7 +574,7 @@
             <!-- wp:list -->
             <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
+              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
@@ -586,7 +586,7 @@
                 <!-- /wp:group -->
 
                 <!-- wp:group -->
-                <div class="wp-block-group right-col-text text-black">
+                <div class="wp-block-group right-col-text text-black text-[16px]">
                   <!-- wp:paragraph -->
                   <p class="text-[18px] mb-[25px]">Beata Derkacz</p>
                   <!-- /wp:paragraph -->
@@ -639,7 +639,7 @@
             <!-- wp:list -->
             <ul class="wp-block-group step-paragraph paragraph-wrapper px-[20px] overflow-hidden   transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[40px] leading-[21px] mb-[30px]">
+              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
@@ -651,7 +651,7 @@
                 <!-- /wp:group -->
 
                 <!-- wp:group -->
-                <div class="wp-block-group right-col-text text-black">
+                <div class="wp-block-group right-col-text text-black text-[16px]">
                   <!-- wp:paragraph -->
                   <p class="text-[18px] mb-[25px]">
                     Marta Wielicka</p>
