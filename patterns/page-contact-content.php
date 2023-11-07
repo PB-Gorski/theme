@@ -671,7 +671,7 @@
                     <!-- wp:group -->
                     <div class="wp-block-group values">
                       <!-- wp:paragraph -->
-                      <p class="block mb-[20px]">tel.</p>
+                      <p class="block mb-[10px]">tel.</p>
                       <!-- /wp:paragraph -->
                       <!-- wp:paragraph -->
                       <a href="tel:583407900" class="mb-[20px] inline-block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> (+48) 58 340-79-00, </a>
@@ -682,8 +682,6 @@
                       <!-- wp:paragraph -->
                       <p class="block">email:</p>
                       <!-- /wp:paragraph -->
-
-
                       <!-- wp:paragraph -->
                       <a href="mailto:reklamacje@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#2e384d] transition ease duration-300"> reklamacje@pbgorski.pl</a>
                       <!-- /wp:paragraph -->
