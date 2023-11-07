@@ -417,30 +417,7 @@ window.addEventListener("load", function() {
     // -------------------------------------------------------------------------------------
   };
 
-  document.body.addEventListener('click', () => {
-    document.querySelectorAll('.menu-passive').forEach(activeItem =>{
-      activeItem.style.display = 'none';  
-      console.log('click1');
 
-    });
-
-    document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
-      if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
-        // activeItem2.classList.remove('dropdown__list_active-metraz');  
-        // activeItem2.classList.remove('dropdown__list_active');  
-        // activeItem2.style.display = 'none';  
-      }
-    });
-    
-  });
-    document.querySelectorAll('.menu-active').forEach(activeMenu =>{
-      activeMenu.addEventListener('click', () =>{
-        document.querySelectorAll('.menu-passive').forEach(activeItemPassive =>{
-          activeItemPassive.style.display = 'block'? activeItemPassive.style.display = 'none' : null;  
-          console.log('click2');
-        });
-      })
-    });
     
 
 
