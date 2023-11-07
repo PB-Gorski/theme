@@ -642,11 +642,14 @@ label{
 }
 .custom-posts-found{
   top: 120px;
-  gap: 6px
+  gap: 6px;
+  transition: all 0.3s ease;
 }
 @media only screen and (max-width: 1024px) {
   .custom-posts-found{
     top: 540px;
+    gap: 6px;
+    transition: all 0.3s ease;
   }
 }
 .ymc-smart-filter-container .filter-layout3 .posts-found:empty {
