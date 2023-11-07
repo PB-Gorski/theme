@@ -1060,7 +1060,9 @@ window.addEventListener("load", function() {
       //   stopSearching++;
       // }
 
-      document.querySelector('.arrow-down').innerHTML = ''
+      document.querySelectorAll('.arrow-down').forEach(span =>{
+        span.innerHTML = ''
+      });
       
     });
   };
