@@ -28,7 +28,7 @@ $tax_sort = $taxonomy;
       </div>
     </div>
 
-    <div class="js-heightAnimation filterContainer transition-height h-[1315px] h-[720px]">
+    <div class="js-heightAnimation filterContainer transition-height h-[1315px] h-[720px] desktop:h-auto">
       <div class="filter-entry container mx-auto justify-center" data-terms="<?php echo esc_attr($all_terms); ?>">
         <?php
         $type_multiple = ((bool) $ymc_multiple_filter) ? 'multiple' : '';
