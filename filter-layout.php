@@ -354,7 +354,8 @@ $tax_sort = $taxonomy;
                   }
 
                   if ((get_term($term)->slug) == 'maisto') {
-                    $type_multiple = false;
+                    echo 'get_term($term)->slug)';
+                    $type_multiple = '0';
                   };
                   echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
                   ' . $terms_icons . '
