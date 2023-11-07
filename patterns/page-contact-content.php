@@ -211,9 +211,9 @@
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
-            <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
+            <div class="wp-block-group w-full click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
-              <div class="wp-block-group bar-title-wrapper w-full text-bgDarkGray flex transition ease-out duration-[500ms]">
+              <div class="wp-block-group bar-title-wrapper w-full w-full text-bgDarkGray flex transition ease-out duration-[500ms]">
                 <!-- wp:paragraph -->
                 <span class="block w-[22px] pb-[5px] flex-none click-bar-icon py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
@@ -305,9 +305,9 @@
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
-            <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
+            <div class="wp-block-group w-full click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
-              <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
+              <div class="wp-block-group bar-title-wrapper w-full text-bgDarkGray flex">
                 <!-- wp:paragraph -->
                 <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
@@ -417,9 +417,9 @@
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
-            <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
+            <div class="wp-block-group w-full click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
-              <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
+              <div class="wp-block-group bar-title-wrapper w-full text-bgDarkGray flex">
                 <!-- wp:paragraph -->
                 <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
@@ -489,9 +489,9 @@
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
-            <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
+            <div class="wp-block-group w-full click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
-              <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
+              <div class="wp-block-group bar-title-wrapper w-full text-bgDarkGray flex">
                 <!-- wp:paragraph -->
                 <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
@@ -554,9 +554,9 @@
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
-            <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
+            <div class="wp-block-group w-full click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
-              <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
+              <div class="wp-block-group bar-title-wrapper w-full text-bgDarkGray flex">
                 <!-- wp:paragraph -->
                 <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
@@ -619,9 +619,9 @@
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
-            <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
+            <div class="wp-block-group w-full click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
-              <div class="wp-block-group bar-title-wrapper text-bgDarkGray flex">
+              <div class="wp-block-group bar-title-wrapper w-full text-bgDarkGray flex">
                 <!-- wp:paragraph -->
                 <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
@@ -687,9 +687,9 @@
           <!-- wp:list-item -->
           <li class="list-content-wrapper transition ease-out duration-[500ms]">
             <!-- wp:group -->
-            <div class="wp-block-group click-bar group flex justify-between items-center cursor-pointer">
+            <div class="wp-block-group w-full click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
-              <div class="wp-block-group bar-title-wrapper w-full text-bgDarkGray flex transition ease-out duration-[500ms]">
+              <div class="wp-block-group bar-title-wrapper w-full w-full text-bgDarkGray flex transition ease-out duration-[500ms]">
                 <!-- wp:paragraph -->
                 <span class="block w-[22px] pb-[5px] flex-none click-bar-icon py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[16px] desktop:text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
