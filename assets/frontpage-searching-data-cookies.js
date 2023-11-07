@@ -436,7 +436,7 @@ window.addEventListener("load", function() {
     document.querySelectorAll('.menu-active').forEach(activeMenu =>{
       activeMenu.addEventListener('click', () =>{
         document.querySelectorAll('.menu-passive').forEach(activeItemPassive =>{
-          activeItemPassive.style.display = 'none';  
+          activeItemPassive.style.display = 'block'? activeItemPassive.style.display = 'none' : null;  
           console.log('click2');
         });
       })
