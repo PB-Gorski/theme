@@ -254,7 +254,7 @@ window.addEventListener("load", function() {
           dropDownFIltersArr[10].classList.toggle('z-[1]')
           dropDownFIltersArr[11].classList.toggle('z-[1]')
         }else{
-          searchBar.classList.toggle('h-[450px]');
+          searchBar.classList.toggle('h-[720px]');
         };
         foundedPostOnStart.classList.toggle('top-[720px]')
         document.querySelector('#filter-layout3-filter-layout3').classList.toggle('h-[840px]')
