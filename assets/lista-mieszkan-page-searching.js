@@ -626,7 +626,7 @@ window.addEventListener("load", function() {
             });
 
             returnChoosenFromCookies.forEach(el => {
-              // el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
             });
           }else if(inwestycjaArr.includes(+item)){
             // inwestycje
@@ -1059,6 +1059,8 @@ window.addEventListener("load", function() {
 
       //   stopSearching++;
       // }
+
+      document.querySelector('.arrow-down').innerHTML = ''
       
     });
   };
