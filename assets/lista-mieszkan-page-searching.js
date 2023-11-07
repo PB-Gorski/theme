@@ -1048,7 +1048,7 @@ window.addEventListener("load", function() {
 
 
     let stopSearching = 0;
-    wp.hooks.addAction('ymc_after_loaded_data_148_2', 'smartfilter', function(){
+    wp.hooks.addAction('ymc_before_loaded_data_148_2', 'smartfilter', function(){
       // let fromWhatPageInfo = document.referrer;
       // if (fromWhatPageInfo == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/' && stopSearching < 0){
       //   console.log('from osiefle srebrniki');
