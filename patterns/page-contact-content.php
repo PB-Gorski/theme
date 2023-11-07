@@ -384,7 +384,7 @@
                 <!-- /wp:group -->
 
                 <!-- wp:group -->
-                <div class="wp-block-group right-col-text text-black">
+                <div class="wp-block-group right-col-text text-black text-[16px]">
                   <!-- wp:paragraph -->
                   <p class="text-[18px] mb-[25px]">Bartłomiej Jahn</p>
                   <!-- /wp:paragraph -->
