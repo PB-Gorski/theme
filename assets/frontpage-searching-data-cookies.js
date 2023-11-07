@@ -431,6 +431,14 @@ window.addEventListener("load", function() {
     });
     
   });
+    document.querySelectorAll('.menu-active').forEach(activeItem =>{
+      activeItem.addEventListener('click', () =>{
+        document.querySelectorAll('.menu-passive').forEach(activeItem =>{
+          activeItem.style.display = 'none';  
+        });
+      })
+    });
+    
 
 
   document.querySelectorAll('.taxonomy-category').forEach(item =>{
