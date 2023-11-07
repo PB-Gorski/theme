@@ -582,6 +582,9 @@ label{
   /* margin-left: auto;
   margin-right: auto; */
 }
+.filter-entry{
+  height: 120px;
+}
 .filterContainer{
   transition: all 0.3s ease;
   height: auto;
