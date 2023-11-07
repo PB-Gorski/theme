@@ -599,7 +599,7 @@ label{
 }
 @media only screen and (max-width: 1024px) {
   .filter-entry{
-    height: auto;
+    height: 980px;
   }
 }
 .filterContainer{
