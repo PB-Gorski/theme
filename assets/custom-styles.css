@@ -853,6 +853,7 @@ background-color: #e8fbff!important;
 .post-edit-link{
   display: none!important;
 }
+/* btn download */
 .single-mieszkania .entry-content a{
   position: absolute!important;
   top: 230px;
@@ -871,16 +872,15 @@ background-color: #e8fbff!important;
 }
 @media only screen and (max-width: 480px) {
   .single-mieszkania .entry-content a{
-    position: absolute!important;
-    top: auto;
-    right: auto;
-    bottom: -230px;
-    left: 0px;
+    position: relative!important;
+    top: 230px;
+    right: -270px;
   
     background-color: #f5f7fa;
+    color: inherit;
     font-weight: bold;
     text-align: center;
-    width: 100%;
+    width: fit-content;
     height: 55px;
     padding: 15px 20px;
     display: flex;
