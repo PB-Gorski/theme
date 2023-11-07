@@ -346,7 +346,7 @@
                       <p class="block mb-[20px]">tel</p>
                       <!-- /wp:paragraph -->
                       <!-- wp:paragraph -->
-                      <a href="tel:+48607700555" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 607 700 555</a>
+                      <a href="tel:+48607700555" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 607 700 555</a>
                       <!-- /wp:paragraph -->
 
                       <!-- wp:paragraph -->
