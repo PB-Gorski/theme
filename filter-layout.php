@@ -357,6 +357,8 @@ $tax_sort = $taxonomy;
                     $type_multiple = '';
                   } else if ((get_taxonomy($select_term)->label) == 'Termin') {
                     $type_multiple = '';
+                  } else if ((get_taxonomy($select_term)->label) == 'Inne') {
+                    $type_multiple = '';
                   } else {
                     $type_multiple = 'multiple';
                   };
