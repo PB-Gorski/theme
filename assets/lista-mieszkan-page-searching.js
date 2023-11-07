@@ -106,7 +106,8 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
               });
             });
-            menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
+
+            // menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
             console.log('miasto: ',choosenMiastoArr);
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
