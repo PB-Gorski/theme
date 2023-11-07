@@ -456,7 +456,7 @@
                   <p class="text-[18px] mb-[25px]">Elżbieta Lipska</p>
                   <!-- /wp:paragraph -->
                   <!-- wp:group -->
-                  <div class="wp-block-group phone flex gap-[40px]">
+                  <div class="wp-block-group phone">
                     <!-- wp:group -->
                     <div class="wp-block-group labels">
 
