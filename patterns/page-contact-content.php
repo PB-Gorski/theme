@@ -391,7 +391,7 @@
                     <div class="wp-block-group values">
                       <!-- wp:paragraph -->
                       <!-- wp:paragraph -->
-                      <p class="block mb-[20px]">tel</p>
+                      <p class="block mb-[10px]">tel</p>
                       <!-- /wp:paragraph -->
                       <a href="tel:+48691992538" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 691 992 538</a>
                       <!-- /wp:paragraph -->
@@ -462,7 +462,7 @@
                     <!-- wp:group -->
                     <div class="wp-block-group values">
                       <!-- wp:paragraph -->
-                      <p class="block mb-[20px]">tel</p>
+                      <p class="block mb-[10px]">tel</p>
                       <!-- /wp:paragraph -->
                       <!-- wp:paragraph -->
                       <a href="tel:+48691990926" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> (+48) 691 990 926</a>
