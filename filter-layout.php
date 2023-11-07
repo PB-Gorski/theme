@@ -355,6 +355,8 @@ $tax_sort = $taxonomy;
 
                   if ((get_term($term)->slug) == 'miasto') {
                     $type_multiple = '0';
+                  } else {
+                    $type_multiple = '1';
                   };
                   // if ((get_taxonomy($select_term)->label) == 'Miasto') {
                   //   echo 'get_taxonomy label';
