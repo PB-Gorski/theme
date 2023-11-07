@@ -567,7 +567,6 @@ label{
     height: 120px;
     transition: height 0.3s ease-out;
     row-gap: 2px;
-    /* z-index: 0; */
     position: relative;
   }
 }
@@ -597,6 +596,11 @@ label{
 }
 .filter-entry{
   height: 120px;
+}
+@media only screen and (max-width: 1024px) {
+  .filter-entry{
+    height: auto;
+  }
 }
 .filterContainer{
   transition: all 0.3s ease;
