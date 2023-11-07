@@ -373,7 +373,7 @@
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
-                  <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
+                  <figure class="wp-block-image m-0 w-[100px] max-h-[100px] rounded-full">
                     <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/jahn.jpg" alt="avatar">
                   </figure>
                   <!-- /wp:image -->
