@@ -582,13 +582,11 @@ label{
   /* margin-left: auto;
   margin-right: auto; */
 }
-.post-entry.post-custom-layout.post-custom-layout-148.post-custom-layout-148-2,
 #filter-layout3-filter-layout3{
-  transition: all 0.3s ease;
+  transition: height 0.3s ease;
 }
 .post-entry.post-custom-layout.post-custom-layout-148.post-custom-layout-148-2{
   background-color: white;
-  transition: all 0.3s ease;
 }
 .filter-layout3-148{
   padding-top: 10px;
