@@ -109,8 +109,10 @@ window.addEventListener("load", function() {
               });
             });
 
+            // menuActiveSpan.innerHTML = tempMiastoArr;
+            
             if(choosenMiastoArr.length > 0){
-              menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
+              menuActiveSpan.innerHTML = choosenMiastoArr;
             }else{
               menuActiveSpan.innerHTML = 'Wybierz';
             }
