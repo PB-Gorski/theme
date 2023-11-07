@@ -101,9 +101,11 @@ window.addEventListener("load", function() {
             // miasto
             if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
 
+            tempMiastoArr = choosenOptionID;
+
             tempMiastoArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr = (item.childNodes[1].dataset.name)}
               });
             });
 
@@ -112,8 +114,8 @@ window.addEventListener("load", function() {
             }else{
               menuActiveSpan.innerHTML = 'Wybierz';
             }
-            
-            console.log('miasto: ',choosenMiastoArr);
+
+            console.log('miasto2: ',choosenMiastoArr);
 
 
           }else if(inwestycjaArr.includes(+choosenOptionID)){
