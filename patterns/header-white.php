@@ -389,7 +389,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group group btn-call-header-desktop relative bg-transparent text-primaryRed w-[48px] h-[48px] flex items-center justify-center border-[2px] border-primaryRed rounded-full cursor-pointer">
+        <div class="wp-block-group group btn-call-header-desktop relative bg-transparent text-primaryRed w-[48px] h-[48px] flex items-center justify-center border-[2px] border-primaryRed rounded-full cursor-pointer transition ease duration-[300ms]">
           <!-- wp:paragraph -->
           <a href="<?php echo home_url() . '/contact' ?>">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#b22944" height="28px" width="28px" version="1.1" id="Capa_1" viewBox="0 0 482.6 482.6" xml:space="preserve">
@@ -434,7 +434,7 @@
     <!-- wp:group -->
     <div class="header-right-col flex">
       <!-- wp:group -->
-      <div class="wp-block-group group btn-call-header-mobile relative bg-transparent text-primaryRed w-[48px] h-[48px] flex items-center justify-center border-[2px] border-primaryRed rounded-full cursor-pointer">
+      <div class="wp-block-group group btn-call-header-mobile relative bg-transparent text-primaryRed w-[48px] h-[48px] flex items-center justify-center border-[2px] border-primaryRed rounded-full cursor-pointer transition ease duration-[300ms]">
         <!-- wp:paragraph -->
         <a href="<?php echo home_url() . '/contact' ?>">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#b22944" height="28px" width="28px" version="1.1" id="Capa_1" viewBox="0 0 482.6 482.6" xml:space="preserve">
