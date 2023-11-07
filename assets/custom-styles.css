@@ -139,6 +139,7 @@ ul.wp-block-navigation__container  > li.wp-block-navigation-item{
   color: inherit!important;
 }
 
+
 /* nav menu */
 .wp-block-navigation__container > li:nth-child(1):hover + .modal{
 background-color: #b22944;
@@ -349,6 +350,14 @@ background-color: #b22944;
 input,
 textarea{
   padding-left: 15px;
+}
+.cta2 input{
+  width: 100%;
+}
+@media only screen and (max-width: 480px) {
+  .cta2 input{
+    width: 330px;
+  }
 }
 .page-template-page-contact textarea{
   height: 200px;
