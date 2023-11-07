@@ -700,8 +700,24 @@ label{
   display: block;
   /* max-height: 180px; */
   max-height: 300px;
+  max-width: 300px;
   overflow-y: scroll;
   box-shadow: 0 10px 40px 0 rgba(0,0,0,.1);
+}
+@media only screen and (max-width: 1024px) {
+  .menu-passive{
+    background-color: white!important;
+    color: #2E384D!important;
+    font-size: 18px!important;
+    padding: 0!important;
+    z-index: 4!important;
+    display: block;
+    /* max-height: 180px; */
+    max-height: 300px;
+    max-width: auto;
+    overflow-y: scroll;
+    box-shadow: 0 10px 40px 0 rgba(0,0,0,.1);
+  }
 }
 .menu-link{
   color: #2E384D!important;
