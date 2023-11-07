@@ -1096,7 +1096,11 @@ window.addEventListener("load", function() {
       activeMenu.addEventListener('click', () =>{
         document.querySelectorAll('.menu-passive').forEach(activeItemPassive =>{
           // console.log('click2');
-          activeItemPassive.classList.toggle('hidden')
+          if(!activeItemPassive.classList.contains('hidden')){
+            activeItemPassive.classList.add('hidden')
+          }else if(activeItemPassive.classList.contains('hidden')){
+            activeItemPassive.classList.remove('hidden')
+          }
         });
       })
     });
