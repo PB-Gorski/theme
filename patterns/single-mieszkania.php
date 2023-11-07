@@ -182,7 +182,7 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:group -->
-    <div class="wp-block-group two-col-layout desktop:mb-[30px] mb-[60px] desktop:flex justify-center desktop:px-[50px]">
+    <div class="wp-block-group two-col-layout desktop:mb-[30px] mb-[80px] desktop:flex justify-center desktop:px-[50px]">
       <!-- wp:group -->
       <div class="wp-block-group left-col desktop:w-[60%]">
         <!-- wp:post-content /-->
