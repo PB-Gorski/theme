@@ -429,7 +429,7 @@ label{
   } */
 }
 .ymc-smart-filter-container .filter-layout3 div:nth-child(6) {
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 1;
   grid-row: 6 / span 1;
 }
 .ymc-smart-filter-container .filter-layout3 div:nth-child(7) {
