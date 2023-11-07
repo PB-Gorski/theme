@@ -4,7 +4,8 @@ window.addEventListener("load", function() {
   const btnOpenMenu = document.querySelector(".btn-open-menu");
   const mainNavMenu = document.querySelector(".mobile-nav-menu");
   const logo = document.querySelector(".logo-mobile");
-  const btnCall = document.querySelector(".btn-call-header");
+  const btnCall = document.querySelector(".btn-call-header-desktop");
+  const btnCall2 = document.querySelector(".btn-call-header-mobile");
 
   btnOpenMenu.addEventListener("click", () => {
     if (mainNavMenu.classList.contains("opacity-[0]")) {
@@ -15,6 +16,7 @@ window.addEventListener("load", function() {
       btnOpenMenu.classList.add("menu-active");
       logo.classList.add("opacity-0");
       btnCall.classList.add("opacity-0");
+      btnCall2.classList.add("opacity-0");
     } else if (mainNavMenu.classList.contains("opacity-[1]")) {
       mainNavMenu.classList.remove("opacity-[1]");
       mainNavMenu.classList.add("opacity-[0]");
@@ -23,6 +25,7 @@ window.addEventListener("load", function() {
       btnOpenMenu.classList.remove("menu-active");
       logo.classList.remove("opacity-0");
       btnCall.classList.remove("opacity-0");
+      btnCall2.classList.remove("opacity-0");
     }
   });
 
