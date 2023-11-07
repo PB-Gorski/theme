@@ -21,7 +21,7 @@ window.addEventListener("load", function() {
         let choosenOption = item.childNodes[1].dataset.name;
         let choosenOptionID = item.childNodes[1].dataset.termid;
         let stopAdding = false;
-        optionSpan.innerText = choosenOption;
+        // optionSpan.innerText = choosenOption;
 
         let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
         choosenOptionsArr.forEach(option => {
@@ -99,13 +99,13 @@ window.addEventListener("load", function() {
           if(miastoArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - miasto');
             // miasto
-            if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
+            // if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
 
-            tempMiastoArr.forEach(choosenItem =>{
-              passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
-              });
-            });
+            // tempMiastoArr.forEach(choosenItem =>{
+            //   passiveOptions.forEach(item => {
+            //     if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
+            //   });
+            // });
 
             // menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
             console.log('miasto: ',choosenMiastoArr);
