@@ -667,18 +667,11 @@
                     Marta Wielicka</p>
                   <!-- /wp:paragraph -->
                   <!-- wp:group -->
-                  <div class="wp-block-group phone flex gap-[40px]">
-                    <!-- wp:group -->
-                    <div class="wp-block-group labels">
-
-
-                    </div>
-                    <!-- /wp:group -->
-
+                  <div class="wp-block-group phone text-[16px]">
                     <!-- wp:group -->
                     <div class="wp-block-group values">
                       <!-- wp:paragraph -->
-                      <p class="block mb-[20px]">tel</p>
+                      <p class="block mb-[20px]">tel.</p>
                       <!-- /wp:paragraph -->
                       <!-- wp:paragraph -->
                       <a href="tel:583407900" class="mb-[20px] inline-block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> (+48) 58 340-79-00, </a>
