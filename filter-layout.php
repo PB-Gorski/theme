@@ -354,7 +354,6 @@ $tax_sort = $taxonomy;
                   }
 
                   if ((get_taxonomy($select_term)->label) == 'Miasto') {
-                    echo 'miasto2';
                     $type_multiple = '';
                   } else {
                     $type_multiple = 'multiple';
