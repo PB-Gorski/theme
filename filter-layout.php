@@ -353,13 +353,6 @@ $tax_sort = $taxonomy;
                     }
                   }
 
-                  if ((get_term($term)->slug) == 'miasto') {
-                    echo 'miasto';
-                    $type_multiple = '';
-                  } else {
-                    $type_multiple = 'multiple';
-                  };
-
                   if ((get_taxonomy($select_term)->label) == 'Miasto') {
                     echo 'miasto2';
                     $type_multiple = '';
