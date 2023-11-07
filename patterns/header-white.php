@@ -432,7 +432,7 @@
 
 
     <!-- wp:group -->
-    <div class="header-right-col flex gap-[10px]">
+    <div class="header-right-col flex">
       <!-- wp:group -->
       <div class="wp-block-group group btn-call-header relative bg-transparent text-primaryRed w-[48px] h-[48px] flex items-center justify-center border-[2px] border-primaryRed rounded-full cursor-pointer">
         <!-- wp:paragraph -->
@@ -472,9 +472,6 @@
         <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
-
-
-
     </div>
     <!-- /wp:group -->
 
