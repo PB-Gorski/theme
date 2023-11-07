@@ -61,7 +61,7 @@ $tax_sort = $taxonomy;
         foreach ($result_tax as $tax) {
           $select_term = apply_filters('ymc_select_term_dropdown', $tax);
           if (get_taxonomy($select_term)->label == 'Cena') { ?>
-            <div class="dropdown-filter customPrice price-min flex-col bg-white h-fit">
+            <div class="dropdown-filter customPrice price-min flex-col bg-white">
               <p class="dropdown-filter-title">Cena od:</p>
               <div class="dropdown__value dropdown__value-price dropdown__value-min font-bold"><span>0</span></div>
               <ul class="dropdown__list">
@@ -112,7 +112,7 @@ $tax_sort = $taxonomy;
                 </li>
               </ul>
             </div>
-            <div class="dropdown-filter customPrice price-max flex-col bg-white h-fit">
+            <div class="dropdown-filter customPrice price-max flex-col bg-white">
               <p class="dropdown-filter-title">Cena do:</p>
               <div class="dropdown__value dropdown__value-price dropdown__value-max font-bold"><span>Max</span></div>
               <ul class="dropdown__list">
@@ -209,7 +209,7 @@ $tax_sort = $taxonomy;
             echo '</div>';
             echo '</div>';
           } else  if (get_taxonomy($select_term)->label == 'Metraz') { ?>
-            <div class="dropdown-filter customMetraz metraz-min flex-col bg-white h-fit">
+            <div class="dropdown-filter customMetraz metraz-min flex-col bg-white">
               <p class="dropdown-filter-title">Metraż od:</p>
               <div class="dropdown__value dropdown__value-metraz dropdown__value-min-metraz dropdown__value-min-metraz font-bold"><span>0</span></div>
               <ul class="dropdown__list dropdown__list-metraz">
@@ -252,7 +252,7 @@ $tax_sort = $taxonomy;
               </ul>
             </div>
 
-            <div class="dropdown-filter customMetraz metraz-max flex-col bg-white h-fit">
+            <div class="dropdown-filter customMetraz metraz-max flex-col bg-white">
               <p class="dropdown-filter-title">Metraz do:</p>
               <div class="dropdown__value dropdown__value-metraz dropdown__value-max-metraz dropdown__value-max-metraz font-bold">Max</div>
               <ul class="dropdown__list dropdown__list-metraz">
@@ -331,7 +331,7 @@ $tax_sort = $taxonomy;
             echo '</div>';
           } else {
             ?>
-            <div class="dropdown-filter flex-col bg-white h-fit">
+            <div class="dropdown-filter flex-col bg-white">
               <p class="dropdown-filter-title"><?php echo get_taxonomy($select_term)->label . ':' ?></p>
               <div class="menu-active font-bold">
                 <span data-label="single" class="flex flex-row gap-[5px]">Wybierz<?php get_taxonomy($select_term)->label ?></span><span class="arrow-down"></span>
