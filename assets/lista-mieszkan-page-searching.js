@@ -242,6 +242,7 @@ window.addEventListener("load", function() {
         if(window.innerWidth > 480){
           searchBar.classList.toggle('desktop:h-[240px]');
           searchBar.classList.toggle('gap-y-[0px]');
+          searchBar.classList.toggle('z-[2]');
           dropDownFIltersArr[6].classList.toggle('opacity-100')
           dropDownFIltersArr[7].classList.toggle('opacity-100')
           dropDownFIltersArr[9].classList.toggle('opacity-100')
