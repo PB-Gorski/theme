@@ -256,8 +256,8 @@ window.addEventListener("load", function() {
           dropDownFIltersArr[11].classList.toggle('z-[1]')
           foundedPostOnStart.classList.toggle('top-[240px]')
         }else{
-          heightAnimation.classList.toggle('h-[1200px]');
-          foundedPostOnStart.classList.toggle('top-[1315px]')
+          heightAnimation.classList.toggle('h-[1000px]');
+          foundedPostOnStart.classList.toggle('top-[100px]')
         };
         // document.querySelector('#filter-layout3-filter-layout3').classList.toggle('h-[840px]')
       });
