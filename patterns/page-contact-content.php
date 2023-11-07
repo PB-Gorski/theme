@@ -343,7 +343,7 @@
                     <!-- wp:group -->
                     <div class="wp-block-group values">
                       <!-- wp:paragraph -->
-                      <p class="block mb-[20px]">tel</p>
+                      <p class="block mb-[10px]">tel</p>
                       <!-- /wp:paragraph -->
                       <!-- wp:paragraph -->
                       <a href="tel:+48607700555" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 607 700 555</a>
