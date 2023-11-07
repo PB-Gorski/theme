@@ -11,12 +11,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       slidesPerView: 3.2,
       spaceBetween: 20,
       keyboardControl: true,
-      breakpoints: {
-        768: {
-          slidesPerView: 1.2,
-          spaceBetween: 40,
-        },
-      },
     });
 
     // click per slider
