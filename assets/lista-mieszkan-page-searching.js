@@ -247,11 +247,11 @@ window.addEventListener("load", function() {
           dropDownFIltersArr[9].classList.toggle('opacity-100')
           dropDownFIltersArr[10].classList.toggle('opacity-100')
           dropDownFIltersArr[11].classList.toggle('opacity-100')
-          dropDownFIltersArr[6].classList.toggle('z-[3]')
-          dropDownFIltersArr[7].classList.toggle('z-[3]')
-          dropDownFIltersArr[9].classList.toggle('z-[3]')
-          dropDownFIltersArr[10].classList.toggle('z-[3]')
-          dropDownFIltersArr[11].classList.toggle('z-[3]')
+          // dropDownFIltersArr[6].classList.toggle('z-[3]')
+          // dropDownFIltersArr[7].classList.toggle('z-[3]')
+          // dropDownFIltersArr[9].classList.toggle('z-[3]')
+          // dropDownFIltersArr[10].classList.toggle('z-[3]')
+          // dropDownFIltersArr[11].classList.toggle('z-[3]')
         }else{
           searchBar.classList.toggle('h-[450px]');
         };
