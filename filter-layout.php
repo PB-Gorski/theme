@@ -3,7 +3,7 @@
 $ymc_filter_layout = 'filter-layout3';
 $terms_selected = $terms;
 $c_target = 'filter-layout3';
-$ymc_multiple_filter = '0';
+$ymc_multiple_filter = '1';
 $ymc_sort_terms = 'manual';
 $tax_sort = $taxonomy;
 ?>
@@ -353,6 +353,9 @@ $tax_sort = $taxonomy;
                     }
                   }
 
+                  if ((get_term($term)->slug) == 'maisto') {
+                    $type_multiple = false;
+                  };
                   echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
                   ' . $terms_icons . '
                                 <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . '" 
