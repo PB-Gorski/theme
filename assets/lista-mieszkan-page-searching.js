@@ -256,7 +256,8 @@ window.addEventListener("load", function() {
         }else{
           searchBar.classList.toggle('h-[450px]');
         };
-        foundedPostOnStart.classList.toggle('top-[240px]')
+        foundedPostOnStart.classList.toggle('top-[720px]')
+        document.querySelector('#filter-layout3-filter-layout3').classList.toggle('h-[840px]')
       });
     };
 
