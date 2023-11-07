@@ -664,7 +664,7 @@
                       <p class="block mb-[10px]">tel.</p>
                       <!-- /wp:paragraph -->
                       <!-- wp:paragraph -->
-                      <a href="tel:583407900" class="mb-[20px] inline-block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> (+48) 58 340-79-00, </a>
+                      <a href="tel:583407900" class="mb-[10px] inline-block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> (+48) 58 340-79-00, </a>
                       <!-- /wp:paragraph -->
                       <!-- wp:paragraph -->
                       <a href="tel:+48693034715" class="mb-[20px] inline-block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300"> 693 034 715</a>
