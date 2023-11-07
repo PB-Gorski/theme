@@ -21,7 +21,7 @@ window.addEventListener("load", function() {
         let choosenOption = item.childNodes[1].dataset.name;
         let choosenOptionID = item.childNodes[1].dataset.termid;
         let stopAdding = false;
-        // optionSpan.innerText = choosenOption;
+        optionSpan.innerText = choosenOption;
 
         let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
         choosenOptionsArr.forEach(option => {
@@ -203,7 +203,7 @@ window.addEventListener("load", function() {
       target = e.target.textContent;
       e.target.parentNode.parentNode.previousElementSibling.textContent = '';
       let spanTarget = document.createElement("span");
-      spanTarget.innerText = target;
+      // spanTarget.innerText = target;
       e.target.parentNode.parentNode.previousElementSibling.appendChild(spanTarget);
 
       dropDownList.forEach(el =>{
