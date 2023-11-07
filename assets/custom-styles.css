@@ -642,6 +642,7 @@ label{
 }
 .custom-posts-found{
   top: 120px;
+  gap: 6px
 }
 @media only screen and (max-width: 1024px) {
   .custom-posts-found{
