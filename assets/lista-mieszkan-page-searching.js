@@ -257,7 +257,7 @@ window.addEventListener("load", function() {
           foundedPostOnStart.classList.toggle('top-[240px]')
         }else{
           heightAnimation.classList.toggle('h-[1000px]');
-          foundedPostOnStart.classList.toggle('top-[100px]')
+          foundedPostOnStart.classList.toggle('top-[1000px]')
         };
         // document.querySelector('#filter-layout3-filter-layout3').classList.toggle('h-[840px]')
       });
