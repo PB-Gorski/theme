@@ -391,17 +391,6 @@
                   <!-- wp:group -->
                   <div class="wp-block-group phone flex gap-[40px]">
                     <!-- wp:group -->
-                    <div class="wp-block-group labels">
-                      <!-- wp:paragraph -->
-                      <p class="block mb-[20px]">tel</p>
-                      <!-- /wp:paragraph -->
-                      <!-- wp:paragraph -->
-                      <p class="block">email:</p>
-                      <!-- /wp:paragraph -->
-                    </div>
-                    <!-- /wp:group -->
-
-                    <!-- wp:group -->
                     <div class="wp-block-group values">
                       <!-- wp:group -->
                       <div class="wp-block-group values">
