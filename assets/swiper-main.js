@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       keyboardControl: true,
       breakpoints: {
         768: {
-          slidesPerView: 1.5,
+          slidesPerView: 1.2,
           spaceBetween: 40,
         },
       },
