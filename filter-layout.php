@@ -355,7 +355,7 @@ $tax_sort = $taxonomy;
 
                   if ((get_term($term)->slug) == 'miasto') {
                     echo 'miasto';
-                    $type_multiple = '0';
+                    $type_multiple = '';
                   } else {
                     $type_multiple = 'multiple';
                   };
