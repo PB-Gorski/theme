@@ -352,12 +352,16 @@ textarea{
   padding-left: 15px;
 }
 .cta2 input,
-.cta2 textarea{
+.cta2 textarea,
+.cta2 #your-name,
+.cta2 #your-phone{
   width: 100%;
 }
 @media only screen and (max-width: 480px) {
   .cta2 input,
-  .cta2 textarea{
+  .cta2 textarea,
+  .cta2 #your-name,
+  .cta2 #your-phone{
     width: 330px;
   }
 }
