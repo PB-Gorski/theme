@@ -595,9 +595,9 @@ window.addEventListener("load", function() {
         console.log('json check: ', filteredTermsFromCookies.substring(1).slice(0, -1) );
         console.log('json check after parse: ', filteredTermsFromCookies);
 
-        console.log('last string: ',filteredTermsFromCookies.slice(-1)); 
+        console.log('last string array: ',Array.from(filteredTermsFromCookies)); 
         
-        let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies.slice(-1) != ',' ? filteredTermsFromCookies : filteredTermsFromCookies.slice(0, -1) + "]");
+        let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies.slice(-1) != ',' ? Array.from(filteredTermsFromCookies) : filteredTermsFromCookies.slice(0, -1) + "]");
   
         console.log('filteredTermsFromCookiesArr', filteredTermsFromCookiesArr);
         console.log('filteredTermsFromCookies*:', filteredTermsFromCookies);
