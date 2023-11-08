@@ -693,7 +693,7 @@ label{
 }
 
 .dropdown-filter.customPrice{
-  height: 120px;
+  /* height: 120px; */
   align-self: flex-start!important;
 }
 .dropdown-filter > .menu-active{
