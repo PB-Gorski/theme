@@ -107,6 +107,7 @@ window.addEventListener("load", function() {
             };
 
             if (tempMiastoArr.length == 0){
+              menuActiveSpan.innerHTML = '';
               menuActiveSpan.innerHTML = 'Wybierz:';
               console.log('Wybierz');
             }else{
