@@ -638,8 +638,9 @@ window.addEventListener("load", function() {
                   choosenMiastoArr.push(item.childNodes[1].dataset.name);
                   item.childNodes[1].classList.add('active');
                 }
-                item.parentNode.previousElementSibling.childNodes[1];
-                menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
+
+                // item.parentNode.previousElementSibling.childNodes[1];
+                // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
 
               });
             });
