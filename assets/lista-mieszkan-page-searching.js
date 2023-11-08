@@ -606,6 +606,8 @@ window.addEventListener("load", function() {
         console.log('filteredTermsFromCookiesArr', filteredTermsFromCookiesArr);
         console.log('filteredTermsFromCookies*:', filteredTermsFromCookies);
 
+        console.log('slice test: ',tempArr.join().split(','));
+
         let returnChoosenFromCookies =[];
         let returnChoosenFromCookiesInwestycje = [];
         let returnChoosenFromCookiesPokoje = [];
