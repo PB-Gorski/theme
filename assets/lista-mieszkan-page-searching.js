@@ -557,7 +557,7 @@ window.addEventListener("load", function() {
       console.log('cookies exist');
       filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
       // filteredPriceMinFromCookies = getCookie("filteredPriceMinFromCookies");
-      filteredPriceMaxFromCookies = getCookie("filteredPriceMaxFromCookies");
+      filteredPriceMaxFromCookies = getCookie("PriceMaxFromCookies");
       console.log('cookies exist2: ',filteredPriceMaxFromCookies);
       // console.log('cookies exist min: ',filteredPriceMinFromCookies);
       // console.log('cookies exist2 max: ',filteredPriceMaxFromCookies);
