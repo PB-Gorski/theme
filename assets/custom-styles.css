@@ -317,7 +317,7 @@ background-color: #b22944;
 }
 @media only screen and (max-width: 480px) {
   .btn-wrapper{
-    height: 80px;
+    height: 90px;
     width: 164px;
     background-color: white;
     display: flex;
