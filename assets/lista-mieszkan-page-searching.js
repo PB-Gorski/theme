@@ -217,7 +217,7 @@ window.addEventListener("load", function() {
       if (tempMiastoArr.length == 0){
         menuActiveSpan.innerHTML = '';
         menuActiveSpan.innerHTML = 'Wybierz:';
-        console.log('Wybierz');
+        console.log('Wybierz (z hooka after loaded)');
       }else{
         console.log('wybrano miasto');
       }
