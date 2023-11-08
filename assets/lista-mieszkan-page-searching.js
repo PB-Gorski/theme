@@ -768,11 +768,8 @@ window.addEventListener("load", function() {
         document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies;
         document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies;
         document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML = filteredMetrazMinFromCookies;
-        console.log('before write', filteredMetrazMaxFromCookies);
-        // setTimeout(() => {
-          document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies;
+        document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies == 10000000 ? 'Max' :  filteredMetrazMaxFromCookies;
           
-        // }, 1000);
         console.log('after write', filteredMetrazMaxFromCookies);
 
 
@@ -898,7 +895,7 @@ window.addEventListener("load", function() {
       }
     
       priceValueArr.forEach(priceValue => {
-        priceMaxValue.isNaN ? priceMaxValue = 'Max' : priceMaxValue = priceMaxValue;
+        priceMaxValue.isNaN ? priceMaxValue = 10000000 : priceMaxValue = priceMaxValue;
         console.log('price max value ',priceMaxValue);
         if (priceValue <= priceMaxValue && priceValue >= priceMinValue){
           newArr.push(priceValue);
