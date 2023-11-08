@@ -593,7 +593,7 @@ window.addEventListener("load", function() {
         console.log('json check: ', filteredTermsFromCookies.substring(1));
         console.log('json check after parse: ', filteredTermsFromCookies);
 
-        let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies + "]");
+        let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies.substring(1) + "]");
   
         console.log('filteredTermsFromCookiesArr', filteredTermsFromCookiesArr);
         console.log('filteredTermsFromCookies*:', filteredTermsFromCookies.replace(',',''));
