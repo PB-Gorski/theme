@@ -480,7 +480,6 @@ window.addEventListener("load", function() {
     // ------------------------------------------------------------------------------
 
     // cookie data handle
-    document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
     function deleteAllCookies() {
         const cookies = document.cookie.split(";");
     

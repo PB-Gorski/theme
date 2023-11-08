@@ -192,7 +192,7 @@ window.addEventListener("load", function() {
         let metrazMinValueCookie = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
 
         let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
-        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() +  ',' + filteredPriceFromFrontPage;
+        document.cookie = "filteredTermsFromCookies=" + (choosenOptions ? (choosenOptions.join() + ',') : '') + filteredPriceFromFrontPage;
 
         document.cookie = "PriceMinFromCookies=" + priceMinValueCookie2;
         document.cookie = "PriceMaxFromCookies=" + priceMaxValueCookie2;
