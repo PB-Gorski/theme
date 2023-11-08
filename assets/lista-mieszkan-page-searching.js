@@ -108,7 +108,9 @@ window.addEventListener("load", function() {
 
             if (tempMiastoArr.length == 0){
               menuActiveSpan.innerHTML = 'Wybierz:';
-              console.log('Wybierz:');
+              console.log('Wybierz');
+            }else{
+              console.log('wybrano miasto');
             }
 
             console.log('miastoArr: ',tempMiastoArr.length);
