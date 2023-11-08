@@ -591,7 +591,6 @@ window.addEventListener("load", function() {
         let inneArr = [520,521,522];
         // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
         // let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
-// etest
 
 
         console.log('json check: ', filteredTermsFromCookies.substring(1).slice(0, -1) );
