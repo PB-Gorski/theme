@@ -803,6 +803,8 @@ border-width: 0 2px 2px 0;
 }
 .filter-custom-layout-1850.filter-custom-layout-1850-3{
   background-color: #ebeef2;
+  z-index: 1;
+  position: relative;
 }
 
 /* filter layout ymc end */
