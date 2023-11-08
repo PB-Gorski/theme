@@ -21,7 +21,7 @@ window.addEventListener("load", function() {
         let choosenOption = item.childNodes[1].dataset.name;
         let choosenOptionID = item.childNodes[1].dataset.termid;
         let stopAdding = false;
-        // optionSpan.innerText = choosenOption;
+        optionSpan.innerText = choosenOption;
 
         let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
         choosenOptionsArr.forEach(option => {
