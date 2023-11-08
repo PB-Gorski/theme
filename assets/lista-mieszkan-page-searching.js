@@ -107,11 +107,11 @@ window.addEventListener("load", function() {
             //   });
             // });
             let tempArr = []
-            if(tempMiastoArr.includes(choosenOptionID)){
-              removeItemAll(tempMiastoArr,choosenOptionID)
-            }else{
-              tempMiastoArr = choosenOptionID;
-            };
+            // if(tempMiastoArr.includes(choosenOptionID)){
+            //   removeItemAll(tempMiastoArr,choosenOptionID)
+            // }else{
+            // };
+            tempMiastoArr = choosenOptionID;
 
             console.log('miastoArr: ',tempMiastoArr);
 
