@@ -601,7 +601,7 @@ window.addEventListener("load", function() {
         let returnChoosenFromCookiesTermin = [];
         let returnChoosenFromCookiesInne = [];
         filteredTermsFromCookiesArr.forEach(item=>{
-          console.log('item form filtered cookies: ', item);
+          // console.log('item form filtered cookies: ', item);
 
           if(miastoArr.includes(+item)){
             console.log('wybrano z kategorii - miasto');
