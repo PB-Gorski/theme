@@ -898,7 +898,7 @@ background-color: #e8fbff!important;
   overflow-x: scroll;
 }
 .ymc-smart-filter-container .container-posts .post-custom-layout .post-item {
-  padding: 0 20px!important;
+  /* padding: 0 20px!important; */
   border: none;
   border-bottom: 1px solid #b5b5b5;
   width: 100%;
