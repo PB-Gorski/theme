@@ -98,24 +98,27 @@ window.addEventListener("load", function() {
 
           if(miastoArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - miasto');
-            // miasto
-            // if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
+            miasto
+            if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
 
-            // tempMiastoArr.forEach(choosenItem =>{
-            //   passiveOptions.forEach(item => {
-            //     if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
-            //   });
-            // });
+            tempMiastoArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
+              });
+            });
+
             let tempArr = []
-            // if(tempMiastoArr.includes(choosenOptionID)){
-            //   removeItemAll(tempMiastoArr,choosenOptionID)
-            // }else{
-            // };
+            if(tempMiastoArr.includes(choosenOptionID)){
+              removeItemAll(tempMiastoArr,choosenOptionID)
+              console.log('true');
+            }else{
+              console.log('false');
+            };
             tempMiastoArr = choosenOptionID;
 
             console.log('miastoArr: ',tempMiastoArr);
 
-            menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
+            // menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
             console.log('miasto: ',choosenMiastoArr);
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
