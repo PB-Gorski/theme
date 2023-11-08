@@ -558,7 +558,7 @@ window.addEventListener("load", function() {
       filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
       filteredPriceMinFromCookies = getCookie("PriceMinFromCookies");
       filteredPriceMaxFromCookies = getCookie("PriceMaxFromCookies");
-      filteredMetrazMaxFromCookies = getCookie("MetrazMinFromCookies");
+      filteredMetrazMinFromCookies = getCookie("MetrazMinFromCookies");
       filteredMetrazMaxFromCookies = getCookie("MetrazMaxFromCookies");
       console.log('cookies exist2: ',filteredPriceMaxFromCookies);
       // console.log('cookies exist min: ',filteredPriceMinFromCookies);
@@ -759,8 +759,8 @@ window.addEventListener("load", function() {
 
         document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies;
         document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies;
-        document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML = filteredPriceMinFromCookies;
-        document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredPriceMaxFromCookies;
+        document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML = filteredMetrazMinFromCookies;
+        document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies;
 
 
 
