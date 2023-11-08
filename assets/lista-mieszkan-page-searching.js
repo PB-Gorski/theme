@@ -175,6 +175,14 @@ window.addEventListener("load", function() {
           console.log('item category: ', menuActiveTitle);
           console.log('item termid: ', +choosenOptionID);
 
+          if (tempMiastoArr.length == 0){
+            menuActiveSpan.innerHTML = '';
+            menuActiveSpan.innerHTML = 'Wybierz:';
+            console.log('Wybierz');
+          }else{
+            console.log('wybrano miasto');
+          }
+
         };
         showActiveFilterName();
         if (!foundedPostOnStart.classList.contains('hidden')){foundedPostOnStart.classList.add('hidden')}
