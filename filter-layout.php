@@ -254,7 +254,7 @@ $tax_sort = $taxonomy;
 
             <div class="dropdown-filter customMetraz metraz-max flex-col bg-white">
               <p class="dropdown-filter-title">Metraz do:</p>
-              <div class="dropdown__value dropdown__value-metraz dropdown__value-max-metraz dropdown__value-max-metraz font-bold">Max</div>
+              <div class="dropdown__value dropdown__value-metraz dropdown__value-max-metraz dropdown__value-max-metraz font-bold"><span>Max</span></div>
               <ul class="dropdown__list dropdown__list-metraz">
                 <li class="dropdown__item">
                   <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">10</span>

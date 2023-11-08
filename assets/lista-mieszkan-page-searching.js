@@ -762,10 +762,10 @@ window.addEventListener("load", function() {
         document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies;
         document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML = filteredMetrazMinFromCookies;
         console.log('before write', filteredMetrazMaxFromCookies);
-        setTimeout(() => {
-          document.querySelector('.dropdown__value-max-metraz').childNodes[0] = filteredMetrazMaxFromCookies;
+        // setTimeout(() => {
+          document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies;
           
-        }, 1000);
+        // }, 1000);
         console.log('after write', filteredMetrazMaxFromCookies);
 
 
