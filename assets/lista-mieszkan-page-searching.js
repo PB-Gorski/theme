@@ -614,7 +614,7 @@ window.addEventListener("load", function() {
 
         console.log('*****', filteredTermsFromCookies.split(','));
         
-t
+
 
 
         let returnChoosenFromCookies =[];
@@ -623,7 +623,7 @@ t
         let returnChoosenFromCookiesPietro = [];
         let returnChoosenFromCookiesTermin = [];
         let returnChoosenFromCookiesInne = [];
-        tempArr.join().split(',').forEach(item=>{
+        tempArr.join(',').split(',').forEach(item=>{
           // console.log('item form filtered cookies: ', item);
 
           if(miastoArr.includes(+item)){
