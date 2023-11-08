@@ -569,6 +569,7 @@ window.addEventListener("load", function() {
       
       console.log(filteredTermsFromCookies);
       console.log('filteredTermsFromCookies from frontpage: ',filteredTermsFromCookies);
+      console.log('max metraz***: ',filteredMetrazMaxFromCookies);
 
       let choosenMiastoArr = [];
       let choosenPokojeArr = [];
