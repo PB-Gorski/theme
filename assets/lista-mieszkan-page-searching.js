@@ -1041,7 +1041,7 @@ window.addEventListener("load", function() {
 
       YMCTools({
         target: '.data-target-ymc2',
-        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join() + ',' + searchedReadyArr.join(),      
+        terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join(),      
       }).apiTermUpdate(); 
 
       console.log('in btn prices: ', pricesID.join());
