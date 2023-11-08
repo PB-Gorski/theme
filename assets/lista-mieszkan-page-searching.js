@@ -781,8 +781,8 @@ window.addEventListener("load", function() {
 
         // console.log('prices from cookies: ',priceMinUpdate, priceMaxUpdate);
 
-        document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies == '' ? 0 : filteredPriceMinFromCookies;
-        document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == '' ? 'Max' : (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  filteredPriceMaxFromCookies);
+        document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies == '' ? 0 : filteredPriceMinFromCookies.toLocaleString();
+        document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == '' ? 'Max' : (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  filteredPriceMaxFromCookies.toLocaleString());
         
         
         document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML = filteredMetrazMinFromCookies;
