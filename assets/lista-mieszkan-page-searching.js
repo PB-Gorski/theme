@@ -82,7 +82,7 @@ window.addEventListener("load", function() {
             setTimeout(() => {
               if (tempMiastoArr.length == 0){
                 menuActiveSpan.innerHTML = '';
-                menuActiveSpan.innerHTML = 'Wybierz:';
+                menuActiveSpan.innerHTML = 'Wybierz';
                 console.log('Wybierz');
               }else{
                 console.log('wybrano miasto');
