@@ -556,7 +556,7 @@ window.addEventListener("load", function() {
       // cookies exist
       console.log('cookies exist');
       filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
-      // filteredPriceMinFromCookies = getCookie("filteredPriceMinFromCookies");
+      filteredPriceMinFromCookies = getCookie("PriceMinFromCookies");
       filteredPriceMaxFromCookies = getCookie("PriceMaxFromCookies");
       console.log('cookies exist2: ',filteredPriceMaxFromCookies);
       // console.log('cookies exist min: ',filteredPriceMinFromCookies);
@@ -754,7 +754,7 @@ window.addEventListener("load", function() {
 
         // console.log('prices from cookies: ',priceMinUpdate, priceMaxUpdate);
 
-        // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = priceMinUpdate;
+        document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies;
         document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies;
 
 
