@@ -649,7 +649,7 @@ label{
 
 #filter-layout3-filter-layout3{
   transition: height 0.3s ease;
-  height: 490px;
+  height: 532px;
 }
 .post-entry.post-custom-layout.post-custom-layout-148.post-custom-layout-148-2{
   background-color: white;
@@ -719,6 +719,16 @@ label{
   justify-content: space-between;
   padding: 10px 15px!important;
   overflow-y: hidden;
+}
+@media only screen and (max-width: 1024px) {
+  .dropdown-filter > .menu-active{
+    border: none!important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 15px!important;
+    overflow-y: hidden;
+  }
 }
 .menu-passive{
   background-color: white!important;
