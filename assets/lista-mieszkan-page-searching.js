@@ -106,6 +106,14 @@ window.addEventListener("load", function() {
             //     if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
             //   });
             // });
+            let tempArr = []
+            if(tempMiastoArr.includes(choosenOptionID)){
+              removeItemAll(tempMiastoArr,choosenOptionID)
+            }else{
+              tempMiastoArr.push(choosenOptionID)
+            };
+
+            console.log('miastoArr: ',choosenOptions);
 
             menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
             console.log('miasto: ',choosenMiastoArr);
