@@ -315,6 +315,15 @@ background-color: #b22944;
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 480px) {
+  .btn-wrapper{
+    height: 80px;
+    width: 164px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+}
 .btn-more:before{
   display: inline-block;
   content: "";
