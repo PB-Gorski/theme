@@ -107,6 +107,7 @@ window.addEventListener("load", function() {
             //   });
             // });
             
+            tempMiastoArr = choosenOptionID;
             let tempArr = []
             if(tempMiastoArr.includes(choosenOptionID)){
               removeItemAll(tempMiastoArr,choosenOptionID)
@@ -114,7 +115,7 @@ window.addEventListener("load", function() {
             }else{
               console.log('false');
             };
-            tempMiastoArr = choosenOptionID;
+            
             if (tempMiastoArr == choosenOptionID){
               tempMiastoArr = 0
             }
