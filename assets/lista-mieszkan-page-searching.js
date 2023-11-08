@@ -115,6 +115,9 @@ window.addEventListener("load", function() {
               console.log('false');
             };
             tempMiastoArr = choosenOptionID;
+            if (tempMiastoArr == choosenOptionID){
+              tempMiastoArr = 0
+            }
 
             console.log('miastoArr: ',tempMiastoArr);
 
