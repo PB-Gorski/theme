@@ -898,7 +898,7 @@ window.addEventListener("load", function() {
       });
 
       let filteredTermsID = [];
-      // console.log('filtered new arr html elements: ', newArrHTMLList);
+      console.log('filtered new arr html elements: ', newArrHTMLList);
 
       if(priceMinValue == 0 && priceMaxValue == 10000000){
         console.log('price not changed');
