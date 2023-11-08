@@ -185,7 +185,7 @@
       <p>RODO</p>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <p>Polityka Cookies</p>
+      <p><a href="<?php echo home_url() . '/polityka-cookies' ?>">Polityka Cookies</a></p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
