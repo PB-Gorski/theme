@@ -181,12 +181,14 @@ window.addEventListener("load", function() {
         let priceMinValueCookie2 = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
         let priceMaxValueCookie2 = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
         let metrazMaxValueCookie = document.querySelector('.dropdown__value-max-metraz').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
+        let metrazMinValueCookie = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
 
         let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
         document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + ',' + filteredPriceFromFrontPage;
 
         document.cookie = "PriceMinFromCookies=" + priceMinValueCookie2;
         document.cookie = "PriceMaxFromCookies=" + priceMaxValueCookie2;
+        document.cookie = "MetrazMinFromCookies=" + metrazMinValueCookie;
         document.cookie = "MetrazMaxFromCookies=" + metrazMaxValueCookie;
 
   
