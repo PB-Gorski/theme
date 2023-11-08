@@ -766,7 +766,7 @@ window.addEventListener("load", function() {
         // console.log('prices from cookies: ',priceMinUpdate, priceMaxUpdate);
 
         document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies;
-        document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == 10000000 ? 'Max' :  null;;
+        document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == 10000000 ? 'Max' :  filteredPriceMaxFromCookies;;
         document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML = filteredMetrazMinFromCookies;
         document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies
           
