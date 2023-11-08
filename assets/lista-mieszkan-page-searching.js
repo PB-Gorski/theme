@@ -610,6 +610,9 @@ window.addEventListener("load", function() {
 
         let arr = [ 'a,b,c', 'd,e,f', 'g,h,i' ];
         console.log('slice test2: ', [].concat(...tempArr.map(a=>a.split(','))) )
+
+        console.log('*****', filteredTermsFromCookies.split(','));
+        
 t
 
 
