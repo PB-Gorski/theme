@@ -608,6 +608,11 @@ window.addEventListener("load", function() {
 
         console.log('slice test: ',tempArr.join(',').split(','));
 
+        let arr = [ 'a,b,c', 'd,e,f', 'g,h,i' ];
+        console.log('slice test2: ', [].concat(...tempArr.map(a=>a.split(','))) )
+t
+
+
         let returnChoosenFromCookies =[];
         let returnChoosenFromCookiesInwestycje = [];
         let returnChoosenFromCookiesPokoje = [];
