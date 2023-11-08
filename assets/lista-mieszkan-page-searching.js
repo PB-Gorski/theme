@@ -588,7 +588,7 @@ window.addEventListener("load", function() {
         let pietroArr = [97,78,60,66];
         let terminArr = [49,91,38,122,93];
         let inneArr = [520,521,522];
-        let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
+        // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
         // let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
 
@@ -638,6 +638,8 @@ window.addEventListener("load", function() {
                   choosenMiastoArr.push(item.childNodes[1].dataset.name);
                   item.childNodes[1].classList.add('active');
                 }
+                menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
+
               });
             });
             
