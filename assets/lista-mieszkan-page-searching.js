@@ -596,12 +596,11 @@ window.addEventListener("load", function() {
 
         console.log('json check: ', filteredTermsFromCookies.substring(1).slice(0, -1) );
         console.log('json check after parse: ', filteredTermsFromCookies);
-        console.log('json length: ', filteredTermsFromCookies.length);
 
-        let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies.substring(1).slice(0, -1) + "]");
+        let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies.slice(0, -1) + "]");
   
         console.log('filteredTermsFromCookiesArr', filteredTermsFromCookiesArr);
-        console.log('filteredTermsFromCookies*:', filteredTermsFromCookies.replace(',',''));
+        console.log('filteredTermsFromCookies*:', filteredTermsFromCookies);
 
         let returnChoosenFromCookies =[];
         let returnChoosenFromCookiesInwestycje = [];
