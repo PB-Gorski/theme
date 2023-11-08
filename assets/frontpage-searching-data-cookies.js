@@ -44,7 +44,7 @@ window.addEventListener("load", function() {
         dropDownFIltersArr[11].classList.toggle('z-[1]');
         heightAnimation2.classList.toggle('h-auto');
       }else{
-        searchBar.classList.toggle('h-auto');
+        heightAnimation2.classList.toggle('h-auto');
       };
     });
 
