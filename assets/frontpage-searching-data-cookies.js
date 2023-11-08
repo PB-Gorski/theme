@@ -194,7 +194,7 @@ window.addEventListener("load", function() {
         let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
         console.log(choosenOptions);
         console.log('test***',choosenOptions.length != 0 ? (choosenOptions.join() + ',') : '');
-        document.cookie = "filteredTermsFromCookies=" + (choosenOptions ? (choosenOptions.join() + ',') : '') + filteredPriceFromFrontPage;
+        document.cookie = "filteredTermsFromCookies=" + (choosenOptions.length != 0 ? (choosenOptions.join() + ',') : '') + filteredPriceFromFrontPage;
 
         document.cookie = "PriceMinFromCookies=" + priceMinValueCookie2;
         document.cookie = "PriceMaxFromCookies=" + priceMaxValueCookie2;
