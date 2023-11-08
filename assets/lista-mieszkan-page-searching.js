@@ -91,7 +91,7 @@ window.addEventListener("load", function() {
             console.log('miastoArr: ',tempMiastoArr.length);
             console.log('active span: ',menuActiveSpan);
 
-            // menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
+            menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
             console.log('miasto: ',choosenMiastoArr);
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
@@ -479,7 +479,7 @@ window.addEventListener("load", function() {
 
     // ------------------------------------------------------------------------------
 
-    // cookie data handle
+    // cookies data handle
     function deleteAllCookies() {
         const cookies = document.cookie.split(";");
     
@@ -588,7 +588,7 @@ window.addEventListener("load", function() {
         let pietroArr = [97,78,60,66];
         let terminArr = [49,91,38,122,93];
         let inneArr = [520,521,522];
-        // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
+        let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
         // let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
 
@@ -651,6 +651,7 @@ window.addEventListener("load", function() {
             returnChoosenFromCookies.forEach(el => {
               el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
             });
+            menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
           }else if(inwestycjaArr.includes(+item)){
             // inwestycje
             tempInwestycjaArr.includes(item) ? removeItemAll(tempInwestycjaArr,item) : tempInwestycjaArr.push(item);
