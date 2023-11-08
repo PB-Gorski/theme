@@ -113,7 +113,7 @@ window.addEventListener("load", function() {
               tempMiastoArr = choosenOptionID;
             };
 
-            console.log('miastoArr: ',choosenOptions);
+            console.log('miastoArr: ',tempMiastoArr);
 
             menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
             console.log('miasto: ',choosenMiastoArr);
