@@ -79,13 +79,17 @@ window.addEventListener("load", function() {
               tempMiastoArr.push(choosenOptionID)
             };
 
-            if (tempMiastoArr.length == 0){
-              menuActiveSpan.innerHTML = '';
-              menuActiveSpan.innerHTML = 'Wybierz:';
-              console.log('Wybierz');
-            }else{
-              console.log('wybrano miasto');
-            }
+            setTimeout(() => {
+              if (tempMiastoArr.length == 0){
+                menuActiveSpan.innerHTML = '';
+                menuActiveSpan.innerHTML = 'Wybierz:';
+                console.log('Wybierz');
+              }else{
+                console.log('wybrano miasto');
+              }
+            }, 1000);
+
+
 
             console.log('miastoArr: ',tempMiastoArr.length);
             console.log('active span: ',menuActiveSpan);
@@ -214,13 +218,7 @@ window.addEventListener("load", function() {
       };
       counterPostsLoad++;
       // console.log('posts found counter after ++: ', counterPostsLoad);
-      if (tempMiastoArr.length == 0){
-        menuActiveSpan.innerHTML = '';
-        menuActiveSpan.innerHTML = 'Wybierz:';
-        console.log('Wybierz (z hooka after loaded)');
-      }else{
-        console.log('wybrano miasto');
-      }
+
     });
 
 
