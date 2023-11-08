@@ -138,7 +138,7 @@ window.addEventListener("load", function() {
 
             menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
           }else{
-            console.log('error');
+            // console.log('error');
           };          
 
 
@@ -749,7 +749,7 @@ window.addEventListener("load", function() {
               el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInne.length;
             });  
           }else{
-            console.log('error');
+            // console.log('error');
           };
         });
 
