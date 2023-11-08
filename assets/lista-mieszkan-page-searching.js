@@ -106,6 +106,10 @@ window.addEventListener("load", function() {
               tempMiastoArr.push(choosenOptionID)
             };
 
+            if (tempMiastoArr.length == 0){
+              menuActiveSpan.innerHTML = 'Wybierz:';
+            }
+
             tempMiastoArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
