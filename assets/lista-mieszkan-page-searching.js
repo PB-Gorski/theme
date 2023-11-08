@@ -225,6 +225,7 @@ window.addEventListener("load", function() {
     const btnMore = document.querySelector('.btn-more');
     const searchBar = document.querySelector('.filter-entry');
     const heightAnimation = document.querySelector('.js-heightAnimation');
+    const heightAnimation2 = document.querySelector('.filter-layout3');
     // const postsFound = document.querySelector('.js-post-found');
     const dropDownFIltersArr = document.querySelectorAll('.dropdown-filter');
     
@@ -248,6 +249,7 @@ window.addEventListener("load", function() {
           dropDownFIltersArr[10].classList.toggle('z-[1]')
           dropDownFIltersArr[11].classList.toggle('z-[1]')
           foundedPostOnStart.classList.toggle('top-[240px]')
+          heightAnimation2.classList.toggle('h-[490px]')
         }else{
           heightAnimation.classList.toggle('h-[1000px]');
           foundedPostOnStart.classList.toggle('top-[1000px]')
