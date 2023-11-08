@@ -99,7 +99,14 @@ window.addEventListener("load", function() {
           if(miastoArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - miasto');
             // miasto
-            if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
+            if(tempMiastoArr.includes(choosenOptionID)){
+              removeItemAll(tempMiastoArr,choosenOptionID);
+            }else{
+              tempMiastoArr =[];
+              tempMiastoArr.push(choosenOptionID)
+            };
+
+
 
             tempMiastoArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
