@@ -681,13 +681,14 @@ label{
   .dropdown-filter{
     margin: 0;
     width: 100%;
-    /* height: auto; */
+    height: 80px;
     color: #2E384D!important;
     align-items: flex-start!important;
     /* max-width: 167px!important; */
     align-self: flex-start;
     border-right: 2px solid#ebeef2;
     border-bottom: 2px solid#ebeef2;
+    /* z-index: 1; */
   }
 }
 
