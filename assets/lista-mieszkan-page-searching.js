@@ -590,7 +590,9 @@ window.addEventListener("load", function() {
         // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
         // let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
-        console.log('json check: ', filteredTermsFromCookies.substring(1));
+
+
+        console.log('json check: ', filteredTermsFromCookies.substring(1).slice(0, -1) );
         console.log('json check after parse: ', filteredTermsFromCookies);
         console.log('json length: ', filteredTermsFromCookies.length);
 
