@@ -761,7 +761,9 @@ window.addEventListener("load", function() {
         document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies;
         document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies;
         document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML = filteredMetrazMinFromCookies;
+        console.log('before write', filteredMetrazMaxFromCookies);
         document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies;
+        console.log('after write', filteredMetrazMaxFromCookies);
 
 
 
