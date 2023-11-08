@@ -755,7 +755,7 @@ window.addEventListener("load", function() {
         // console.log('prices from cookies: ',priceMinUpdate, priceMaxUpdate);
 
         // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = priceMinUpdate;
-        document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = priceMaxUpdate;
+        document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies;
 
 
 
