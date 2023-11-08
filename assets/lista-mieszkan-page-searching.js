@@ -114,6 +114,7 @@ window.addEventListener("load", function() {
             }
 
             console.log('miastoArr: ',tempMiastoArr.length);
+            console.log('active span: ',menuActiveSpan);
 
             // menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
             console.log('miasto: ',choosenMiastoArr);
