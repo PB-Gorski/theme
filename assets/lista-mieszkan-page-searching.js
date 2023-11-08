@@ -111,28 +111,7 @@ window.addEventListener("load", function() {
               console.log('Wybierz:');
             }
 
-            tempMiastoArr.forEach(choosenItem =>{
-              passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
-              });
-            });
-
-            // tempMiastoArr = choosenOptionID;
-            // let tempArr = []
-            // if(tempMiastoArr.includes(choosenOptionID)){
-            //   removeItemAll(tempMiastoArr,choosenOptionID)
-            //   console.log('true');
-            // }else{
-            //   console.log('false');
-            // };
-            
-            // if (tempMiastoArr == choosenOptionID){
-            //   tempMiastoArr = choosenOptionID
-            // }else{
-
-            // }
-
-            console.log('miastoArr: ',tempMiastoArr);
+            console.log('miastoArr: ',tempMiastoArr.length);
 
             // menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
             console.log('miasto: ',choosenMiastoArr);
