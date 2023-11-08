@@ -435,10 +435,17 @@ label{
 .ymc-smart-filter-container .filter-layout3 div{
   margin: 0!important;
 }
-.post-custom-layout-148-2.post-entry{
-  /* max-width: 1170px!important;
+/* .post-custom-layout-148-2.post-entry{
+  max-width: 1170px!important;
   margin-left: auto!important;
-  margin-right: auto!important; */
+  margin-right: auto!important;
+  
+} */
+.post-custom-layout-148-2.post-entry article{
+  max-width: 1170px!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+
 }
 @media only screen and (min-width: 1024px) {
   .ymc-smart-filter-container .filter-layout3 div.dropdown-filter:nth-child(1),
