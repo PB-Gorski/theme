@@ -878,15 +878,19 @@ background-color: #e8fbff!important;
 }
 .list-item-mieszkanie p:nth-child(5){
   width: 65px;
+  text-align: center;
 }
 .list-item-mieszkanie p:nth-child(6){
   width: 100px;
+  text-align: center;
 }
 .list-item-mieszkanie p:nth-child(7){
   width: 110px;
+  text-align: center;
 }
 .list-item-mieszkanie p:nth-child(8){
   width: 100px;
+  text-align: center;
 }
 .list-item-mieszkanie p:nth-child(9){
   width: 130px;
