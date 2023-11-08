@@ -596,8 +596,12 @@ window.addEventListener("load", function() {
         console.log('json check after parse: ', filteredTermsFromCookies);
 
         console.log('last string array: ',Array.from(filteredTermsFromCookies)); 
+        if(filteredTermsFromCookies.slice(-1) != ','){
+          let tempArr = [];
+          tempArr.push(filteredTermsFromCookies)
+        }
         
-        let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies.slice(-1) != ',' ? Array.from(filteredTermsFromCookies) : filteredTermsFromCookies.slice(0, -1) + "]");
+        let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies.slice(-1) != ',' ? tempArr : filteredTermsFromCookies.slice(0, -1) + "]");
   
         console.log('filteredTermsFromCookiesArr', filteredTermsFromCookiesArr);
         console.log('filteredTermsFromCookies*:', filteredTermsFromCookies);
