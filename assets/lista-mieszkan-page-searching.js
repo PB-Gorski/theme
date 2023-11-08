@@ -249,8 +249,7 @@ window.addEventListener("load", function() {
           dropDownFIltersArr[10].classList.toggle('z-[1]');
           dropDownFIltersArr[11].classList.toggle('z-[1]');
           foundedPostOnStart.classList.toggle('top-[240px]');
-          heightAnimation2.classList.toggle('h-auto');
-        }else{
+          heightAnimation2.classList.style.height = 'auto';
           heightAnimation.classList.toggle('h-[1000px]');
           foundedPostOnStart.classList.toggle('top-[1000px]');
         };
