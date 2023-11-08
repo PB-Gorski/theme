@@ -595,6 +595,7 @@ window.addEventListener("load", function() {
         console.log('json check: ', filteredTermsFromCookies.substring(1).slice(0, -1) );
         console.log('json check after parse: ', filteredTermsFromCookies);
 
+        console.log('last string: ',filteredTermsFromCookies.slice(-1);); 
         let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies.slice(0, -1) + "]");
   
         console.log('filteredTermsFromCookiesArr', filteredTermsFromCookiesArr);
