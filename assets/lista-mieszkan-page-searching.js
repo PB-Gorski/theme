@@ -601,6 +601,7 @@ window.addEventListener("load", function() {
           tempArr.push(filteredTermsFromCookies)
         }
         console.log(tempArr);
+        let filteredTermsFromCookiesArr;
         // let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies.slice(-1) != ',' ? tempArr : filteredTermsFromCookies.slice(0, -1) + "]");
   
         console.log('filteredTermsFromCookiesArr', filteredTermsFromCookiesArr);
