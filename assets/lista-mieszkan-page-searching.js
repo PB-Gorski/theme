@@ -587,8 +587,9 @@ window.addEventListener("load", function() {
         // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
         // let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
-        let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies + "]");
+        // let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies + "]");
         console.log('filteredTermsFromCookiesArr', filteredTermsFromCookiesArr);
+        console.log('filteredTermsFromCookies*:', filteredTermsFromCookies);
 
         let returnChoosenFromCookies =[];
         let returnChoosenFromCookiesInwestycje = [];
