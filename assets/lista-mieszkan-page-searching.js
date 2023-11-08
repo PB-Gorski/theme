@@ -108,6 +108,7 @@ window.addEventListener("load", function() {
 
             if (tempMiastoArr.length == 0){
               menuActiveSpan.innerHTML = 'Wybierz:';
+              console.log('Wybierz:');
             }
 
             tempMiastoArr.forEach(choosenItem =>{
