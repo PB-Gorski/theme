@@ -113,12 +113,6 @@ window.addEventListener("load", function() {
 
           if(miastoArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - miasto');
-            // miasto
-            // menuActiveSpan.nextElementSibling.style.opacity = 0;
-            // setTimeout(() => {
-            //   menuActiveSpan.nextElementSibling.innerHTML = '';
-            // }, 10);
-            // menuActiveSpan.nextElementSibling.style.opacity = 1;
 
             if(tempMiastoArr.includes(choosenOptionID)){
               removeItemAll(tempMiastoArr,choosenOptionID);
@@ -126,24 +120,16 @@ window.addEventListener("load", function() {
               tempMiastoArr =[];
               tempMiastoArr.push(choosenOptionID)
             };
-            console.log('temp miasto test3:',tempMiastoArr);
             setTimeout(() => {
-              if (tempMiastoArr.length == 0){
-                menuActiveSpan.innerHTML = 'Wybierz';
-                // menuActiveSpan.nextElementSibling.innerHTML = '';
-                console.log('Wybierz');
-              }
+              if (tempMiastoArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
             }, 10);
 
-            console.log('miastoArr: ',tempMiastoArr.length);
-            console.log('active span: ',menuActiveSpan);
+            wp.hooks.addAction('ymc_complete_loaded_data_FilterID_LayoutID', 'smartfilter', 'callback(class_name, status)',function(){
+              console.log('test hooks');
+            });
 
-            // setTimeout(() => {
-              menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
-              // menuActiveSpan.nextElementSibling.innerHTML = '';
-            // }, 5);
 
-            console.log('miasto: ',choosenMiastoArr);
+            menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
             tempInwestycjaArr.includes(choosenOptionID) ? removeItemAll(tempInwestycjaArr,choosenOptionID) : tempInwestycjaArr.push(choosenOptionID);
