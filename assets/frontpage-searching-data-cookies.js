@@ -114,11 +114,11 @@ window.addEventListener("load", function() {
           if(miastoArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - miasto');
             // miasto
-            menuActiveSpan.nextElementSibling.style.opacity = 0;
-            setTimeout(() => {
-              menuActiveSpan.nextElementSibling.innerHTML = '';
-            }, 10);
-            menuActiveSpan.nextElementSibling.style.opacity = 1;
+            // menuActiveSpan.nextElementSibling.style.opacity = 0;
+            // setTimeout(() => {
+            //   menuActiveSpan.nextElementSibling.innerHTML = '';
+            // }, 10);
+            // menuActiveSpan.nextElementSibling.style.opacity = 1;
 
             if(tempMiastoArr.includes(choosenOptionID)){
               removeItemAll(tempMiastoArr,choosenOptionID);
@@ -127,20 +127,22 @@ window.addEventListener("load", function() {
               tempMiastoArr.push(choosenOptionID)
             };
 
-            setTimeout(() => {
+            // setTimeout(() => {
               if (tempMiastoArr.length == 0){
                 menuActiveSpan.innerHTML = 'Wybierz';
                 menuActiveSpan.nextElementSibling.innerHTML = '';
                 console.log('Wybierz');
+              }else{
+                
               }
-            }, 0);
+            // }, 0);
 
             console.log('miastoArr: ',tempMiastoArr.length);
             console.log('active span: ',menuActiveSpan);
 
             // setTimeout(() => {
-            //   menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
-            //   menuActiveSpan.nextElementSibling.innerHTML = '';
+              menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
+              // menuActiveSpan.nextElementSibling.innerHTML = '';
             // }, 5);
 
             console.log('miasto: ',choosenMiastoArr);
