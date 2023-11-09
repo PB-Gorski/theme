@@ -192,7 +192,14 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
               });
             });
-            menuActiveSpan.innerHTML = choosenTempArr.join(', ');
+            // menuActiveSpan.innerHTML = choosenTempArr.join(', ');
+            setTimeout(() => {
+              if (choosenTempArr.length == 0){
+                menuActiveSpan.innerHTML = 'Wybierz';
+                menuActiveSpan.nextElementSibling.innerHTML = '';
+                console.log('Wybierz');
+              }
+            }, 5);
           }else if(inneArr.includes(+choosenOptionID)){
             // inne
             setTimeout(() => {
@@ -208,22 +215,22 @@ window.addEventListener("load", function() {
             // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
 
 
-            // setTimeout(() => {
-            //   if (tempInneArr.length == 0){
-            //     menuActiveSpan.innerHTML = 'Wybierz';
-            //     menuActiveSpan.nextElementSibling.innerHTML = '';
-            //     console.log('Wybierz');
-            //   }
-            // }, 5);
-
-            wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-            if (tempInneArr.length == 0){
+            setTimeout(() => {
+              if (tempInneArr.length == 0){
                 menuActiveSpan.innerHTML = 'Wybierz';
                 menuActiveSpan.nextElementSibling.innerHTML = '';
                 console.log('Wybierz');
               }
+            }, 5);
+
+            // wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
+            // if (tempInneArr.length == 0){
+            //     menuActiveSpan.innerHTML = 'Wybierz';
+            //     menuActiveSpan.nextElementSibling.innerHTML = '';
+            //     console.log('Wybierz');
+            //   }
         
-            });
+            // });
 
           }else{
             // console.log('error');
