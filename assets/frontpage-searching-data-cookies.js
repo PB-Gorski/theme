@@ -499,7 +499,7 @@ window.addEventListener("load", function() {
     document.body.addEventListener('click', () => {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
-        activeItem.classList.add('remove')
+        activeItem.classList.toggle('remove')
       });  
     });
 
