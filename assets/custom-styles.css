@@ -953,12 +953,12 @@ background-color: #e8fbff!important;
   border-bottom: 1px solid #b5b5b5;
   width: 100%;
 }
-.ymc-smart-filter-container .container-posts .post-custom-layout .post-item p:nth-child(6) {
+/* .ymc-smart-filter-container .container-posts .post-custom-layout .post-item p:nth-child(6) {
   padding: 0px 0px 0px 20px!important;
   border: none;
   border-bottom: 1px solid #b5b5b5;
   width: 100%;
-}
+} */
 .arrow-red{
   opacity: 0!important;
 }
