@@ -127,13 +127,13 @@ window.addEventListener("load", function() {
               tempMiastoArr.push(choosenOptionID)
             };
 
-            // setTimeout(() => {
-            //   if (tempMiastoArr.length == 0){
-            //     menuActiveSpan.innerHTML = 'Wybierz';
-            //     menuActiveSpan.nextElementSibling.innerHTML = '';
-            //     console.log('Wybierz');
-            //   }
-            // }, 5);
+            setTimeout(() => {
+              if (tempMiastoArr.length == 0){
+                menuActiveSpan.innerHTML = 'Wybierz';
+                menuActiveSpan.nextElementSibling.innerHTML = '';
+                console.log('Wybierz');
+              }
+            }, 5);
 
             console.log('miastoArr: ',tempMiastoArr.length);
             console.log('active span: ',menuActiveSpan);
@@ -207,7 +207,23 @@ window.addEventListener("load", function() {
 
             // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
 
-            menuActiveSpan.innerHTML = (choosenInneCount.join(', ')!='' ? 'Wybrano: ' +  choosenInneCount.join(', ') : 'Wybierz');
+
+            // setTimeout(() => {
+            //   if (tempMiastoArr.length == 0){
+            //     menuActiveSpan.innerHTML = 'Wybierz';
+            //     menuActiveSpan.nextElementSibling.innerHTML = '';
+            //     console.log('Wybierz');
+            //   }
+            // }, 5);
+
+            wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
+            if (tempMiastoArr.length == 0){
+                menuActiveSpan.innerHTML = 'Wybierz';
+                menuActiveSpan.nextElementSibling.innerHTML = '';
+                console.log('Wybierz');
+              }
+        
+            });
 
           }else{
             // console.log('error');
