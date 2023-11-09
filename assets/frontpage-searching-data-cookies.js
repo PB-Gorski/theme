@@ -490,10 +490,10 @@ window.addEventListener("load", function() {
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
         if(activeItem.style.display == 'block'){
           // activeItem.style.display = 'none';  
-          activeItem.classList.toggle('hidden')  
+          activeItem.classList.add('hidden')  
           activeItem.style.display == 'none'
         }else if(activeItem.style.display == 'none' && activeItem.classList.contains('hidden')  ){
-          activeItem.classList.toggle('hidden') 
+          activeItem.classList.remove('hidden') 
           activeItem.style.display == 'block'
 
         }
