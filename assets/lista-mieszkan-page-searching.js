@@ -1140,7 +1140,7 @@ window.addEventListener("load", function() {
         };
 
         if(activeItemPassive.classList.contains('hidden')){
-          activeItemPassive.previousElementSibling.childNodes[1].classList.toggle('test-x')
+          activeItemPassive.previousElementSibling.childNodes[2].classList.toggle('hidden')
         };
       });
     })
