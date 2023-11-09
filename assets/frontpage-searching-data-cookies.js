@@ -217,7 +217,7 @@ window.addEventListener("load", function() {
             // }, 5);
 
             wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-            if (tempMiastoArr.length == 0){
+            if (tempInneArr.length == 0){
                 menuActiveSpan.innerHTML = 'Wybierz';
                 menuActiveSpan.nextElementSibling.innerHTML = '';
                 console.log('Wybierz');
