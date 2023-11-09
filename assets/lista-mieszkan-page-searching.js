@@ -1139,7 +1139,7 @@ window.addEventListener("load", function() {
           activeItemPassive.classList.remove('hidden')
         };
 
-        if(activeItemPassive.classList.contains('hidden')){
+        if(!activeItemPassive.classList.contains('hidden')){
           activeItemPassive.previousElementSibling.childNodes[2].classList.remove('arrow-down');
           activeItemPassive.previousElementSibling.childNodes[2].innerHTML = 'x';
         }else{
