@@ -166,14 +166,28 @@ window.addEventListener("load", function() {
             menuActiveSpan.innerHTML = 'Wybrano1: ' + (choosenPokojeArr.join(', ')!=' ' ? choosenPokojeArr.join(', ') : 'Wybrano2: 0');
           }else if(pietroArr.includes(+choosenOptionID)){
             // pietro
-            if(tempPietroArr.includes(choosenOptionID)){removeItemAll(tempPietroArr,choosenOptionID);}else{tempPietroArr.push(choosenOptionID)};
+            if(tempPietroArr.includes(item)){removeItemAll(tempPietroArr,item);}else{tempPietroArr.push(item)};
 
+            choosenPietroArr = [];
             tempPietroArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  choosenPietroArr.push(item.childNodes[1].dataset.name);
+                  item.childNodes[1].classList.add('active');
+                }
               });
             });
-            menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
+            
+            passiveOptions.forEach(option => {
+              if(option.childNodes[1].dataset.termid == item){
+                console.log('option from cookies for finding parent: ',option);
+                returnChoosenFromCookiesPietro.push(option)
+              };              
+            });
+
+            returnChoosenFromCookiesPietro.forEach(el => {
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenPietroArr.join(', ');
+            });
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
             if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
