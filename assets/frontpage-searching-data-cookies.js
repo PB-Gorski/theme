@@ -491,6 +491,7 @@ window.addEventListener("load", function() {
         if(activeItem.style.display == 'block'){
           // activeItem.style.display = 'none';  
           activeItem.classList.toggle('hidden')  
+          activeItem.style.display == 'none'
         }
 
 
