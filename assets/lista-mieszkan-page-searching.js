@@ -655,7 +655,7 @@ window.addEventListener("load", function() {
             returnChoosenFromCookies.forEach(el => {
               el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
             });
-            menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
+            // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
           }else if(inwestycjaArr.includes(+item)){
             // inwestycje
             tempInwestycjaArr.includes(item) ? removeItemAll(tempInwestycjaArr,item) : tempInwestycjaArr.push(item);
