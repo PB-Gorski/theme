@@ -112,28 +112,31 @@ window.addEventListener("load", function() {
           let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
           if(miastoArr.includes(+choosenOptionID)){
+
             console.log('wybrano z kategorii - miasto');
             // miasto
-            if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
+            if(tempMiastoArr.includes(choosenOptionID)){
+              removeItemAll(tempMiastoArr,choosenOptionID);
+            }else{
+              tempMiastoArr =[];
+              tempMiastoArr.push(choosenOptionID)
+            };
 
-            tempMiastoArr.forEach(choosenItem =>{
-              passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
-              });
-            });
-
+            setTimeout(() => {
+              if (tempMiastoArr.length == 0){
+                menuActiveSpan.innerHTML = 'Wybierz';
+                console.log('Wybierz');
+              }
+            }, 1000);
             
 
-            menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
-            console.log('miasto: ',choosenMiastoArr);
 
-            if (tempMiastoArr.length == 0){
-              menuActiveSpan.innerHTML = '';
-              menuActiveSpan.innerHTML = 'Wybierz';
-              console.log('Wybierz');
-            }else{
-              console.log('wybrano miasto');
-            }
+
+            console.log('miastoArr: ',tempMiastoArr.length);
+            console.log('active span: ',menuActiveSpan);
+
+            menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
+            console.log('miasto: ',choosenMiastoArr);
 
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
