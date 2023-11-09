@@ -101,7 +101,7 @@ window.addEventListener("load", function() {
         let choosenPietroArr = [];
         let choosenTempArr = [];
         let choosenInneCount = 1;
-        function showActiveFilterName(){
+        function showActiveFilterName(cookiesSearchedIDs){
           let miastoArr = [28,40];
           let inwestycjaArr = [72,71,82,81];
           let pokojeArr = [43,34,53,25];
@@ -112,33 +112,30 @@ window.addEventListener("load", function() {
           let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
           if(miastoArr.includes(+choosenOptionID)){
+            console.log('wybrano z kategorii - miasto');
+            // miasto
+            if(tempMiastoArr.includes(choosenOptionID)){
+              removeItemAll(tempMiastoArr,choosenOptionID);
+            }else{
+              tempMiastoArr =[];
+              tempMiastoArr.push(choosenOptionID)
+            };
 
-            // console.log('wybrano z kategorii - miasto');
-            // // miasto
-            // if(tempMiastoArr.includes(choosenOptionID)){
-            //   removeItemAll(tempMiastoArr,choosenOptionID);
-            // }else{
-            //   tempMiastoArr =[];
-            //   tempMiastoArr.push(choosenOptionID)
-            // };
-
-            // // hook after load do sprawdzenia
-            // setTimeout(() => {
-            //   if (tempMiastoArr.length == 0){
-            //     menuActiveSpan.innerHTML = 'Wybierz';
-            //     console.log('Wybierz');
-            //   }
-            // }, 1000);
+            setTimeout(() => {
+              if (tempMiastoArr.length == 0){
+                menuActiveSpan.innerHTML = 'Wybierz';
+                console.log('Wybierz');
+              }
+            }, 1000);
             
 
 
 
-            // console.log('miastoArr: ',tempMiastoArr.length);
-            // console.log('active span: ',menuActiveSpan);
+            console.log('miastoArr: ',tempMiastoArr.length);
+            console.log('active span: ',menuActiveSpan);
 
-            // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
-            // console.log('miasto: ',choosenMiastoArr);
-
+            menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
+            console.log('miasto: ',choosenMiastoArr);
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
             tempInwestycjaArr.includes(choosenOptionID) ? removeItemAll(tempInwestycjaArr,choosenOptionID) : tempInwestycjaArr.push(choosenOptionID);
@@ -168,14 +165,14 @@ window.addEventListener("load", function() {
             menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
-            if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
+            // if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
 
-            tempTerminArr.forEach(choosenItem =>{
-              passiveOptions.forEach(item => {
-                if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
-              });
-            });
-            menuActiveSpan.innerHTML = choosenTempArr.join(', ');
+            // tempTerminArr.forEach(choosenItem =>{
+            //   passiveOptions.forEach(item => {
+            //     if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
+            //   });
+            // });
+            // menuActiveSpan.innerHTML = choosenTempArr.join(', ');
           }else if(inneArr.includes(+choosenOptionID)){
             // inne
             tempInneArr.includes(choosenOptionID) ? removeItemAll(tempInneArr,choosenOptionID) : tempInneArr.push(choosenOptionID);
@@ -184,15 +181,24 @@ window.addEventListener("load", function() {
 
             menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
           }else{
-            console.log('error');
-          };
+            // console.log('error');
+          };          
+
 
           // menuActiveSpan.dataset.label = choosenOption;
           // menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
 
-          console.log('item: ', menuActiveSpan.getAttribute('data-label'));
+          // console.log('item: ', menuActiveSpan.getAttribute('data-label'));
           console.log('item category: ', menuActiveTitle);
           console.log('item termid: ', +choosenOptionID);
+
+          if (tempMiastoArr.length == 0){
+            menuActiveSpan.innerHTML = '';
+            menuActiveSpan.innerHTML = 'Wybierz:';
+            console.log('Wybierz');
+          }else{
+            console.log('wybrano miasto');
+          }
 
         };
         showActiveFilterName();
@@ -458,7 +464,7 @@ window.addEventListener("load", function() {
     //     }
     //   });
     // });
-    
+
     // const searchBarTest = document.querySelector('#inwestycje')
     // document.querySelectorAll('.menu-active').forEach(activeMenu =>{
     //   activeMenu.addEventListener('click', () =>{
