@@ -367,7 +367,7 @@ window.addEventListener("load", function() {
         };
       });
     };
-// test
+      // test
     let counterMetraz = 0;
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
       if (counterMetraz == 2){
@@ -1127,7 +1127,6 @@ window.addEventListener("load", function() {
     });
   };
 
-  // -------------------------------------------------------------------------------------
 
 
   const searchBarTest = document.querySelector('#inwestycje')
@@ -1181,6 +1180,11 @@ window.addEventListener("load", function() {
 
 
   });
+
+
+  // -------------------------------------------------------------------------------------
+
+
 
 
 
