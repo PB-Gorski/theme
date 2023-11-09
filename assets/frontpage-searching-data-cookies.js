@@ -174,7 +174,7 @@ window.addEventListener("load", function() {
               });
             });
             console.log('test43:',choosenPietroArr.join(', '));
-            menuActiveSpan.innerHTML = 'Wybrano: ' + (choosenPietroArr.join(', ')!=' ' ? choosenPietroArr.join(', ') : 'Wybrano2: 0');
+            menuActiveSpan.innerHTML = 'Wybrano: ' + (choosenPietroArr.join(', ')!='' ? choosenPietroArr.join(', ') : 'Wybrano2: 0');
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
             if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
