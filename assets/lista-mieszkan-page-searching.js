@@ -1157,6 +1157,15 @@ window.addEventListener("load", function() {
     console.log('body click');
     document.querySelectorAll('.menu-passive').forEach(activeItem =>{
       activeItem.style.display = 'none';  
+
+
+      if(!activeItem.classList.contains('hidden')){
+        activeItem.previousElementSibling.childNodes[2].classList.remove('arrow-down');
+        activeItem.previousElementSibling.childNodes[2].innerHTML = 'x';
+      }else{
+        activeItem.previousElementSibling.childNodes[2].classList.add('arrow-down');
+        activeItem.previousElementSibling.childNodes[2].innerHTML = '';
+      };
     });
 
     // document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
