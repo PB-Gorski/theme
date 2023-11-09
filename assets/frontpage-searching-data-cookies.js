@@ -122,6 +122,7 @@ window.addEventListener("load", function() {
               tempMiastoArr.push(choosenOptionID)
             };
 
+            // hook after load do sprawdzenia
             setTimeout(() => {
               if (tempMiastoArr.length == 0){
                 menuActiveSpan.innerHTML = 'Wybierz';
