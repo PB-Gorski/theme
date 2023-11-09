@@ -430,12 +430,18 @@ window.addEventListener("load", function() {
     }; 
     // console.log('run searching metraz',runSearchingMetrazFrontPage());
 
-    let menuPassive = document.querySelectorAll('.menu-active');
+    let menuActive = document.querySelectorAll('.menu-active');
     const searchBarTest = document.querySelector('#inwestycje')
-    menuPassive.forEach(menu => {
+    menuActive.forEach(menu => {
       menu.addEventListener('click', () => { 
-        searchBarTest.classList.toggle('z-[1]');
-        searchBarTest.classList.toggle('z-[0]');
+        if(searchBarTest.classList.contains('z-[1]')){
+          searchBarTest.classList.remove('z-[1]');
+          searchBarTest.classList.add('z-[0]');
+
+        }else{
+          searchBarTest.classList.remove('z-[0]');
+          searchBarTest.classList.add('z-[1]');
+        }
       });
     });
     
