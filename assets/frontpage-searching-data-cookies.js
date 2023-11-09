@@ -170,60 +170,13 @@ window.addEventListener("load", function() {
               if (tempTerminArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
             }, 10);
             menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
-
-            // setTimeout(() => {
-            //   menuActiveSpan.nextElementSibling.style.opacity = 0;
-            //   menuActiveSpan.nextElementSibling.innerHTML = '';
-            //   menuActiveSpan.nextElementSibling.style.opacity = 1;
-            // }, 10);
-
-            // if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
-
-            // tempTerminArr.forEach(choosenItem =>{
-            //   passiveOptions.forEach(item => {
-            //     if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
-            //   });
-            // });
-            // // menuActiveSpan.innerHTML = choosenTempArr.join(', ');
-            // setTimeout(() => {
-            //   if (choosenTempArr.length == 0){
-            //     menuActiveSpan.innerHTML = 'Wybierz';
-            //     menuActiveSpan.nextElementSibling.innerHTML = '';
-            //     console.log('Wybierz');
-            //   }
-            // }, 5);
           }else if(inneArr.includes(+choosenOptionID)){
             // inne
-            setTimeout(() => {
-              menuActiveSpan.nextElementSibling.style.opacity = 0;
-              menuActiveSpan.nextElementSibling.innerHTML = '';
-              menuActiveSpan.nextElementSibling.style.opacity = 1;
-            }, 10);
-
-            tempInneArr.includes(choosenOptionID) ? removeItemAll(tempInneArr,choosenOptionID) : tempInneArr.push(choosenOptionID);
-
-            if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
-
-            // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
-
-
-            setTimeout(() => {
-              if (tempInneArr.length == 0){
-                menuActiveSpan.innerHTML = 'Wybierz';
-                menuActiveSpan.nextElementSibling.innerHTML = '';
-                console.log('Wybierz');
-              }
-            }, 5);
-
-            // wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-            // if (tempInneArr.length == 0){
-            //     menuActiveSpan.innerHTML = 'Wybierz';
-            //     menuActiveSpan.nextElementSibling.innerHTML = '';
-            //     console.log('Wybierz');
-            //   }
-        
-            // });
-
+            if(tempInneArr.includes(choosenOptionID)){
+              removeItemAll(tempInneArr,choosenOptionID);
+            }else{
+              tempInneArr =[];tempInneArr.push(choosenOptionID)
+            };
           }else{
             // console.log('error');
           };          
