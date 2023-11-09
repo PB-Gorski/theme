@@ -1139,6 +1139,7 @@ window.addEventListener("load", function() {
 
     document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
       if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
+        closeDropDownCouter++;
         if(closeDropDownCouter>0){
 
           activeItem2.classList.remove('dropdown__list_active-metraz');  
@@ -1148,7 +1149,7 @@ window.addEventListener("load", function() {
       }
     });
 
-    closeDropDownCouter++;
+    
     console.log(closeDropDownCouter);
   });
 
