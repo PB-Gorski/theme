@@ -162,7 +162,7 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
               });
             });
-            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenPokojeArr.join(', ')=='' ? choosenPokojeArr.join(', ') : '0';
+            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenPokojeArr.join(', ')!='' ? choosenPokojeArr.join(', ') : '0';
           }else if(pietroArr.includes(+choosenOptionID)){
             // pietro
             if(tempPietroArr.includes(choosenOptionID)){removeItemAll(tempPietroArr,choosenOptionID);}else{tempPietroArr.push(choosenOptionID)};
