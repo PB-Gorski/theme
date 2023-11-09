@@ -500,7 +500,7 @@ window.addEventListener("load", function() {
           activeItem.style.display == 'block'
 
         }else if(activeItem.style.display == 'block' && activeItem.classList.contains('hidden')  ){
-          activeItem.classList.add('hidden') 
+          // activeItem.classList.remove('hidden') 
           activeItem.style.display == 'none'
 
         }
