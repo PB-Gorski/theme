@@ -491,6 +491,7 @@ window.addEventListener("load", function() {
  
 
         if(activeItem.style.display == ''){
+          console.log('pusty');
           // activeItem.style.display = 'none';  
           // activeItem.classList.add('hidden')  
           // activeItem.style.display == 'none'
