@@ -490,7 +490,7 @@ window.addEventListener("load", function() {
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
  
 
-        if(activeItem.style.display == 'block'){
+        if(activeItem.style.display == ''){
           // activeItem.style.display = 'none';  
           // activeItem.classList.add('hidden')  
           // activeItem.style.display == 'none'
