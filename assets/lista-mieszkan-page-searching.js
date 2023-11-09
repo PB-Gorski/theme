@@ -189,10 +189,10 @@ window.addEventListener("load", function() {
       dropDownEl.addEventListener('click', (e) =>{
         if(e.target.nextElementSibling){
           e.target.nextElementSibling.classList.toggle('dropdown__list_active');
-          e.target.classList.toggle('x');
+          e.target.classList.toggle('toggle-x');
         }else if(e.target.parentNode.nextElementSibling){
           e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active');
-          e.target.classList.toggle('x');
+          e.target.classList.toggle('toggle-x');
         }
       });
     });

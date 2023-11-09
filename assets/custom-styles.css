@@ -1232,6 +1232,11 @@ background-color: #e8fbff!important;
   margin-left: 5px;
   font-size: 11px;
 }
+.toggle-x:after{
+  content: 'x';
+  margin-left: 18px;
+  font-size: 11px;
+}
 .dropdown__list {
   display: none;
   position: absolute;
