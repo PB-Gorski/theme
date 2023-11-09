@@ -630,7 +630,7 @@ window.addEventListener("load", function() {
             console.log('wybrano z kategorii - miasto');
             // miasto
             let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
-            console.log(menuActiveSpan);
+            console.log('active span: ',menuActiveSpan);
 
 
             if(tempMiastoArr.includes(item)){removeItemAll(tempMiastoArr,item);}else{tempMiastoArr.push(item)};
