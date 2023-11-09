@@ -503,6 +503,13 @@ window.addEventListener("load", function() {
       });  
     });
 
+    document.addEventListener('click', (e)=> {
+      if(e.target.closest('.menu-passive')) return 
+      
+      document.querySelector('.menu-passive').classList.add('hidden')
+    
+    })
+
     
 
     // -------------------------------------------------------------------------------------
