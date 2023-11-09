@@ -494,13 +494,13 @@ window.addEventListener("load", function() {
         if(activeItem.style.display == 'block'){
           // activeItem.style.display = 'none';  
           // activeItem.classList.add('hidden')  
-          activeItem.style.display == 'none'
+          // activeItem.style.display == 'none'
         }else if(activeItem.style.display == 'none' && activeItem.classList.contains('hidden')  ){
           activeItem.classList.remove('hidden') 
           activeItem.style.display == 'block'
 
         }else if(activeItem.style.display == 'block' && activeItem.classList.contains('hidden')  ){
-          // activeItem.classList.remove('hidden') 
+          activeItem.classList.remove('hidden') 
           activeItem.style.display == 'none'
 
         }
