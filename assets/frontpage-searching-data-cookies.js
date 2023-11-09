@@ -430,6 +430,13 @@ window.addEventListener("load", function() {
     }; 
     // console.log('run searching metraz',runSearchingMetrazFrontPage());
 
+    let menuPassive = document.querySelectorAll('menu-passive');
+    const searchBarTest = document.querySelector('#inwestycje')
+    menuPassive.forEach(menu => {
+      menu.addEventListener('click', () => { 
+        searchBarTest.classList.toggle('z-[0]');
+      })
+    })
     
 
     // -------------------------------------------------------------------------------------
