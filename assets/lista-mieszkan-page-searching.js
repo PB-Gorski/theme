@@ -86,6 +86,7 @@ window.addEventListener("load", function() {
                 console.log('Wybierz');
               }
             }, 1000);
+            
 
 
 

@@ -121,8 +121,19 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
               });
             });
+
+            
+
             menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
             console.log('miasto: ',choosenMiastoArr);
+
+            if (tempMiastoArr.length == 0){
+              menuActiveSpan.innerHTML = '';
+              menuActiveSpan.innerHTML = 'Wybierz:';
+              console.log('Wybierz');
+            }else{
+              console.log('wybrano miasto');
+            }
 
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
