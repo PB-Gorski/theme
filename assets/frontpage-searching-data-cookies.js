@@ -127,7 +127,7 @@ window.addEventListener("load", function() {
                 menuActiveSpan.nextElementSibling.innerHTML = '';
                 console.log('Wybierz');
               }
-            }, 800);
+            }, 400);
             
 
 
