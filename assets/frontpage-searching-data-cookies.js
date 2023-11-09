@@ -130,9 +130,6 @@ window.addEventListener("load", function() {
                 console.log('Wybierz');
               }
             }, 5);
-            
-
-
 
             console.log('miastoArr: ',tempMiastoArr.length);
             console.log('active span: ',menuActiveSpan);
@@ -142,7 +139,6 @@ window.addEventListener("load", function() {
               menuActiveSpan.nextElementSibling.innerHTML = '';
             }, 5);
 
-      
             console.log('miasto: ',choosenMiastoArr);
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
@@ -174,7 +170,7 @@ window.addEventListener("load", function() {
               });
             });
             console.log('test43:',choosenPietroArr.join(', '));
-            menuActiveSpan.innerHTML = 'Wybrano: ' + (choosenPietroArr.join(', ')!='' ? choosenPietroArr.join(', ') : 'Wybrano2: 0');
+            menuActiveSpan.innerHTML = (choosenPietroArr.join(', ')!='' ? 'Wybrano: ' +  choosenPietroArr.join(', ') : 'Wybierz');
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
             if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
