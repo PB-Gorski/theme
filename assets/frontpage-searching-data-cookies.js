@@ -117,21 +117,11 @@ window.addEventListener("load", function() {
             if(tempMiastoArr.includes(choosenOptionID)){
               removeItemAll(tempMiastoArr,choosenOptionID);
             }else{
-              tempMiastoArr =[];
-              tempMiastoArr.push(choosenOptionID)
+              tempMiastoArr =[];tempMiastoArr.push(choosenOptionID)
             };
             setTimeout(() => {
               if (tempMiastoArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
             }, 10);
-
-            wp.hooks.addAction('ymc_complete_loaded_data_FilterID_LayoutID', 'smartfilter', function(){
-              console.log('test hooks');
-            });
-            wp.hooks.addAction('ymc_stop_loading_data', 'smartfilter', function(el){
-              console.log('test hooks2');
-          });   
-
-
             menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
