@@ -814,7 +814,9 @@ window.addEventListener("load", function() {
           document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies == '' ? 0 : Number(filteredPriceMinFromCookies).toLocaleString();
           console.log('price max fdafsd: ',filteredPriceMaxFromCookies);
   
-          document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == NaN ? 'Max' : priceMaxUpdate;
+          document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == '' ? 'Max' : (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  Number(filteredPriceMaxFromCookies));
+
+          // filteredPriceMaxFromCookies == NaN ? 'Max' : priceMaxUpdate;
           // (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  Number(filteredPriceMaxFromCookies).toLocaleString());
           
           
