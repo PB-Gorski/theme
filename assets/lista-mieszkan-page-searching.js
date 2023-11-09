@@ -823,7 +823,7 @@ window.addEventListener("load", function() {
         document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML = filteredMetrazMinFromCookies == '' ? 0 : Number(filteredMetrazMinFromCookies);
         
 
-        document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies == 'NaN' ? 'Max' : (filteredMetrazMaxFromCookies == 10000000 ? 'Max' :  Number(filteredMetrazMaxFromCookies));
+        document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies == 'NaN' ? 'Max' : (filteredMetrazMaxFromCookies == 10000000 ? 'Max' :  filteredMetrazMaxFromCookies == '' ? 'Max' : Number(filteredMetrazMaxFromCookies).toLocaleString());
 
 
         
