@@ -126,7 +126,7 @@ window.addEventListener("load", function() {
               tempMiastoArr =[];
               tempMiastoArr.push(choosenOptionID)
             };
-
+            console.log('temp miasto test3:',tempMiastoArr);
             // setTimeout(() => {
               if (tempMiastoArr.length == 0){
                 menuActiveSpan.innerHTML = 'Wybierz';
