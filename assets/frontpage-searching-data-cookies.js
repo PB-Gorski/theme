@@ -488,11 +488,11 @@ window.addEventListener("load", function() {
     document.body.addEventListener('click', () => {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
-        // setTimeout(() => {
+        setTimeout(() => {
           if(activeItem.style.display == 'block'){
             activeItem.style.display = 'none';  
           }
-        // }, 100);
+        }, 1000);
 
       });
   
