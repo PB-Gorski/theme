@@ -492,20 +492,24 @@ window.addEventListener("load", function() {
 
         if(activeItem.style.display == ''){
           console.log('pusty');
+          return;
           // activeItem.style.display = 'none';  
           // activeItem.classList.add('hidden')  
           // activeItem.style.display == 'none'
         }else if(activeItem.style.display == 'none'){
           // activeItem.classList.remove('hidden') 
           activeItem.style.display == 'block!important'
+          return;
 
         }else if(activeItem.style.display == 'block'  ){
           // activeItem.classList.remove('hidden') 
-          activeItem.style.display == 'none!important'
+          activeItem.style.display == 'none!important';
+          return;
 
         }else{
           // activeItem.classList.add('hidden');
           activeItem.style.display == 'none!important';
+          return;
         }
 
 
