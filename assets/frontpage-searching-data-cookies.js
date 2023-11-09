@@ -22,7 +22,7 @@ window.addEventListener("load", function() {
 
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
-    const searchBar = document.querySelector('.filter-entry');
+    const searchBar = document.querySelector('.filter-custom-layout-1850-3');
     const heightAnimation = document.querySelector('.js-heightAnimation');
     const heightAnimation2 = document.querySelector('.filter-layout3');
     const dropDownFIltersArr = document.querySelectorAll('.dropdown-filter');
