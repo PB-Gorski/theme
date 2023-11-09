@@ -69,9 +69,7 @@ window.addEventListener("load", function() {
         dropDownFIltersArr[9].classList.toggle('pointer-events-auto');
         dropDownFIltersArr[10].classList.toggle('pointer-events-auto');
         dropDownFIltersArr[11].classList.toggle('pointer-events-auto');
-        dropDownFIltersArr[12].classList.toggle('pointer-events-auto');
         dropDownFIltersArr[13].classList.toggle('pointer-events-auto');
-        dropDownFIltersArr[14].classList.toggle('pointer-events-auto');
         heightAnimation2.classList.toggle('h-auto');
       }else{
         heightAnimation2.classList.toggle('h-auto');
