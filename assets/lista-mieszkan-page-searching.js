@@ -817,7 +817,7 @@ window.addEventListener("load", function() {
 
         console.log('price max fdafsd: ',filteredPriceMaxFromCookies);
 
-        document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == 'NaN' ? 'Max' : (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  Number(filteredPriceMaxFromCookies));
+        document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == 'NaN' ? 'Max' : (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  Number(filteredPriceMaxFromCookies).toLocaleString());
 
         // document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == '' ? 'Max' : (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  Number(filteredPriceMaxFromCookies));
 
@@ -828,7 +828,7 @@ window.addEventListener("load", function() {
         document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML = filteredMetrazMinFromCookies == '' ? 0 : Number(filteredMetrazMinFromCookies);
         
 
-        document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies == '' ? 'Max' : (filteredMetrazMaxFromCookies == 10000000 ? 'Max' :  Number(filteredMetrazMaxFromCookies));
+        document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies == 'NaN' ? 'Max' : (filteredMetrazMaxFromCookies == 10000000 ? 'Max' :  Number(filteredMetrazMaxFromCookies));
 
 
         
