@@ -794,8 +794,12 @@ window.addEventListener("load", function() {
         document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == '' ? 'Max' : (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  Number(filteredPriceMaxFromCookies).toLocaleString());
         
         
-        document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML = filteredMetrazMinFromCookies;
-        document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies == 10000000 ? 'Max' :  filteredMetrazMaxFromCookies;
+        document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML = filteredMetrazMinFromCookies == '' ? 0 : Number(filteredMetrazMinFromCookies);
+        
+
+        document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies == '' ? 'Max' : (filteredMetrazMaxFromCookies == 10000000 ? 'Max' :  Number(filteredMetrazMaxFromCookies));
+        
+        
           
         console.log('after write', filteredMetrazMaxFromCookies);
 
