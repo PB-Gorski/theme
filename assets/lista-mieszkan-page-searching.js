@@ -620,7 +620,7 @@ window.addEventListener("load", function() {
         let returnChoosenFromCookiesPietro = [];
         let returnChoosenFromCookiesTermin = [];
         let returnChoosenFromCookiesInne = [];
-        filteredTermsFromCookies.join(',').split(',').forEach(item=>{
+        tempArr.join(',').split(',').join(',').split(',').forEach(item=>{
           // console.log('item form filtered cookies: ', item);
 
           if(miastoArr.includes(+item)){
