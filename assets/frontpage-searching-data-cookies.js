@@ -488,11 +488,10 @@ window.addEventListener("load", function() {
     document.body.addEventListener('click', () => {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
-        setTimeout(() => {
-          if(activeItem.style.display == 'block'){
-            activeItem.style.display = 'none';  
-          }
-        }, 1000);
+        if(activeItem.style.display == 'block'){
+          activeItem.style.display = 'none';  
+        }
+
 
       });
   
