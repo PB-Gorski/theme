@@ -16,7 +16,7 @@ window.addEventListener("load", function() {
     let counter2 = 0;
 
     
-    document.querySelector('#Banner').addEventListener('click', () => {
+    document.body.addEventListener('click', () => {
       console.log('body click2');
       document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
         if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
