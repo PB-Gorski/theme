@@ -166,7 +166,6 @@ window.addEventListener("load", function() {
             menuActiveSpan.innerHTML = 'Wybrano1: ' + (choosenPokojeArr.join(', ')!=' ' ? choosenPokojeArr.join(', ') : 'Wybrano2: 0');
           }else if(pietroArr.includes(+choosenOptionID)){
             // pietro
-            // pietro
             if(tempPietroArr.includes(choosenOptionID)){removeItemAll(tempPietroArr,choosenOptionID);}else{tempPietroArr.push(choosenOptionID)};
 
             tempPietroArr.forEach(choosenItem =>{
