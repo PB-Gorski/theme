@@ -1117,40 +1117,40 @@ window.addEventListener("load", function() {
 
 
 
-    document.querySelectorAll('.menu-active').forEach(activeMenu =>{
-      activeMenu.addEventListener('click', () =>{
-        document.querySelectorAll('.menu-passive').forEach(activeItemPassive =>{
-          // console.log('click2');
-          if(activeItemPassive.style.display == 'block'){
-            activeItemPassive.classList.toggle('hidden')
-          }else if(!activeItemPassive.style.display == 'block'){
-            activeItemPassive.classList.remove('hidden')
-          }
-        });
-      })
-    });
-    let closeDropDownCouter = 0
-    document.body.addEventListener('click', () => {
-      console.log('body click');
-      document.querySelectorAll('.menu-passive').forEach(activeItem =>{
-        activeItem.style.display = 'none';  
-      });
-  
-      let closeDropDownCouter = 0
-      document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
-        if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
-          if(closeDropDownCouter>0){
-
-            activeItem2.classList.remove('dropdown__list_active-metraz');  
-            activeItem2.classList.remove('dropdown__list_active');  
-            activeItem2.style.display = 'none';  
-          }
+  document.querySelectorAll('.menu-active').forEach(activeMenu =>{
+    activeMenu.addEventListener('click', () =>{
+      document.querySelectorAll('.menu-passive').forEach(activeItemPassive =>{
+        // console.log('click2');
+        if(activeItemPassive.style.display == 'block'){
+          activeItemPassive.classList.toggle('hidden')
+        }else if(!activeItemPassive.style.display == 'block'){
+          activeItemPassive.classList.remove('hidden')
         }
       });
-
-      closeDropDownCouter++;
-      console.log(closeDropDownCouter);
+    })
+  });
+  
+  document.body.addEventListener('click', () => {
+    console.log('body click');
+    document.querySelectorAll('.menu-passive').forEach(activeItem =>{
+      activeItem.style.display = 'none';  
     });
+
+    let closeDropDownCouter = 0
+    document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
+      if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
+        if(closeDropDownCouter>0){
+
+          activeItem2.classList.remove('dropdown__list_active-metraz');  
+          activeItem2.classList.remove('dropdown__list_active');  
+          activeItem2.style.display = 'none';  
+        }
+      }
+    });
+
+    closeDropDownCouter++;
+    console.log(closeDropDownCouter);
+  });
 
 
 
