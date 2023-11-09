@@ -1140,7 +1140,9 @@ window.addEventListener("load", function() {
         };
 
         if(activeItemPassive.classList.contains('hidden')){
-          activeItemPassive.previousElementSibling.childNodes[2].classList.toggle('hidden')
+          activeItemPassive.previousElementSibling.childNodes[2].classList.add('hidden')
+        }else{
+          activeItemPassive.previousElementSibling.childNodes[2].classList.remove('hidden')
         };
       });
     })
