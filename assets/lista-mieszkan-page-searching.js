@@ -15,6 +15,20 @@ window.addEventListener("load", function() {
     // let passiveOptions = document.querySelectorAll('.menu-passive__item')
     let counter2 = 0;
 
+    document.body.addEventListener('click', () => {
+      console.log('body click2');
+      document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
+        if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
+          activeItem2.classList.remove('dropdown__list_active-metraz');  
+          activeItem2.classList.remove('dropdown__list_active');  
+          // activeItem2.style.display = 'none';  
+        }
+      });
+  
+      
+      console.log(closeDropDownCouter);
+    });
+
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
         let optionSpan = document.createElement('span');
@@ -1130,26 +1144,20 @@ window.addEventListener("load", function() {
     })
   });
   
-  let closeDropDownCouter = 0
-  let tempCloseDropDownCouter = 0
+
   document.body.addEventListener('click', () => {
     console.log('body click');
     document.querySelectorAll('.menu-passive').forEach(activeItem =>{
       activeItem.style.display = 'none';  
     });
 
-    document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
-      if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
-        tempCloseDropDownCouter = closeDropDownCouter
-        closeDropDownCouter++;
-        if(closeDropDownCouter = tempCloseDropDownCouter - 1){
-
-          activeItem2.classList.remove('dropdown__list_active-metraz');  
-          activeItem2.classList.remove('dropdown__list_active');  
-          activeItem2.style.display = 'none';  
-        }
-      }
-    });
+    // document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
+    //   if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
+    //     activeItem2.classList.remove('dropdown__list_active-metraz');  
+    //     activeItem2.classList.remove('dropdown__list_active');  
+    //     activeItem2.style.display = 'none';  
+    //   }
+    // });
 
     
     console.log(closeDropDownCouter);
