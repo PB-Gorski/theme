@@ -15,18 +15,22 @@ window.addEventListener("load", function() {
     // let passiveOptions = document.querySelectorAll('.menu-passive__item')
     let counter2 = 0;
 
-    
-    document.querySelector('#Banner').addEventListener('click', () => {
-      console.log('body click2');
-      document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
-        if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
-          console.log('has active');
-          activeItem2.classList.remove('dropdown__list_active-metraz');  
-          activeItem2.classList.remove('dropdown__list_active');  
-          // activeItem2.style.display = 'none';  
-        }
+    let clickFields = [document.querySelector('#Banner'), document.querySelector('#inwestycje'), document.querySelector('#content')]
+
+    clickFields.forEach(field =>{
+      field.addEventListener('click', () => {
+        console.log('body click2');
+        document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
+          if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
+            console.log('has active');
+            activeItem2.classList.remove('dropdown__list_active-metraz');  
+            activeItem2.classList.remove('dropdown__list_active');  
+            // activeItem2.style.display = 'none';  
+          }
+        });
       });
-    });
+    })
+  
 
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
