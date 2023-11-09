@@ -1131,14 +1131,14 @@ window.addEventListener("load", function() {
     const searchBarTest = document.querySelector('#inwestycje')
     document.querySelectorAll('.menu-active').forEach(activeMenu =>{
       activeMenu.addEventListener('click', () =>{
-        // searchBarTest.classList.toggle('z-[0]');
+        searchBarTest.classList.toggle('z-[0]');
         document.querySelectorAll('.menu-passive').forEach(activeItemPassive =>{
           // console.log('click2');
-          // if(activeItemPassive.style.display == 'block'){
-          //   activeItemPassive.classList.toggle('hidden')
-          // }else if(!activeItemPassive.style.display == 'block'){
-          //   activeItemPassive.classList.remove('hidden')
-          // };
+          if(activeItemPassive.style.display == 'block'){
+            activeItemPassive.classList.toggle('hidden')
+          }else if(!activeItemPassive.style.display == 'block'){
+            activeItemPassive.classList.remove('hidden')
+          };
   
           if(!activeItemPassive.classList.contains('hidden')){
             activeItemPassive.previousElementSibling.childNodes[2].classList.remove('arrow-down');
