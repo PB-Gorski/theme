@@ -130,7 +130,7 @@ window.addEventListener("load", function() {
             // setTimeout(() => {
               if (tempMiastoArr.length == 0){
                 menuActiveSpan.innerHTML = 'Wybierz';
-                menuActiveSpan.nextElementSibling.innerHTML = '';
+                // menuActiveSpan.nextElementSibling.innerHTML = '';
                 console.log('Wybierz');
               }else{
                 
