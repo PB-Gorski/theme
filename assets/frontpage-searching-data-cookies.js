@@ -162,6 +162,7 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
               });
             });
+            console.log('342rfdsvcddads: ', choosenPokojeArr.join(', '));
             menuActiveSpan.innerHTML = 'Wybrano: ' + choosenPokojeArr.join(', ')!='' ? choosenPokojeArr.join(', ') : '0';
           }else if(pietroArr.includes(+choosenOptionID)){
             // pietro
