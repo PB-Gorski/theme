@@ -123,6 +123,7 @@ window.addEventListener("load", function() {
 
             setTimeout(() => {
               if (tempMiastoArr.length == 0){
+                menuActiveSpan.nextElementSibling.style.opacity = 0;
                 menuActiveSpan.innerHTML = 'Wybierz';
                 menuActiveSpan.nextElementSibling.innerHTML = '';
                 console.log('Wybierz');
@@ -137,6 +138,7 @@ window.addEventListener("load", function() {
 
             setTimeout(() => {
               menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
+              menuActiveSpan.nextElementSibling.style.opacity = 0;
               menuActiveSpan.nextElementSibling.innerHTML = '';
             }, 5);
 
