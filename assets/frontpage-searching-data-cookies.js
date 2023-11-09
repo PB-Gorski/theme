@@ -163,7 +163,7 @@ window.addEventListener("load", function() {
               });
             });
             console.log('342rfdsvcddads: ', choosenPokojeArr.join(', '),'test');
-            menuActiveSpan.innerHTML = 'Wybrano: ' + (choosenPokojeArr.join(', ')!=' ' ? choosenPokojeArr.join(', ') : 'Wybrano: 0');
+            menuActiveSpan.innerHTML = 'Wybrano1: ' + (choosenPokojeArr.join(', ')!=' ' ? choosenPokojeArr.join(', ') : 'Wybrano2: 0');
           }else if(pietroArr.includes(+choosenOptionID)){
             // pietro
             if(tempPietroArr.includes(choosenOptionID)){removeItemAll(tempPietroArr,choosenOptionID);}else{tempPietroArr.push(choosenOptionID)};
