@@ -114,11 +114,11 @@ window.addEventListener("load", function() {
           if(miastoArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - miasto');
             // miasto
+            menuActiveSpan.nextElementSibling.style.opacity = 0;
             setTimeout(() => {
-              menuActiveSpan.nextElementSibling.style.opacity = 0;
               menuActiveSpan.nextElementSibling.innerHTML = '';
-              menuActiveSpan.nextElementSibling.style.opacity = 1;
-            }, 0);
+            }, 10);
+            menuActiveSpan.nextElementSibling.style.opacity = 1;
 
             if(tempMiastoArr.includes(choosenOptionID)){
               removeItemAll(tempMiastoArr,choosenOptionID);
