@@ -917,10 +917,13 @@ background-color: #e8fbff!important;
   width: 100px;
 }
 .list-item-mieszkanie p:nth-child(2){
-  width: 150px;
+  width: 160px;
 }
 .list-item-mieszkanie p:nth-child(3){
   width: 100px;
+}
+.list-item-mieszkanie p:nth-child(3){
+  width: 30px;
 }
 .list-item-mieszkanie p:nth-child(5){
   width: 100px;

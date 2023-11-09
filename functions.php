@@ -559,7 +559,7 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
-	$layout .= '<p class="w-[30px]">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
