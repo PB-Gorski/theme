@@ -627,7 +627,7 @@ window.addEventListener("load", function() {
             console.log('wybrano z kategorii - miasto');
             // miasto
             // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
-            console.log('active span: ',item);
+
 
             if(tempMiastoArr.includes(item)){removeItemAll(tempMiastoArr,item);}else{tempMiastoArr.push(item)};
 
@@ -645,12 +645,16 @@ window.addEventListener("load", function() {
               });
             });
             
+            let activeSpan;
             passiveOptions.forEach(option => {
               if(option.childNodes[1].dataset.termid == item){
                 console.log('option from cookies for finding parent: ',option);
+                activeSpan = option.parentNode.previousElementSibling.childNodes[1];
                 returnChoosenFromCookies.push(option)
               };              
             });
+
+            console.log('active span: ', activeSpan);
 
             returnChoosenFromCookies.forEach(el => {
               el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
@@ -780,7 +784,6 @@ window.addEventListener("load", function() {
             // console.log('error');
           };
         });
-        test
         priceMinUpdate = getCookie("PriceMinFromCookies");
         priceMaxUpdate = getCookie("PriceMaxFromCookies");
 
