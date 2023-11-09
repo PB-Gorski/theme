@@ -337,6 +337,7 @@ window.addEventListener("load", function() {
           console.log(e.target);
           console.log('dropdown span');
           e.target.nextElementSibling.classList.toggle('dropdown__list_active-metraz');
+          e.target.classList.toggle('toggle-x');
           // e.target.classList.toggle('dropdown__list_active-metraz');
         };
         // else if(e.target.parentNode.nextElementSibling){
