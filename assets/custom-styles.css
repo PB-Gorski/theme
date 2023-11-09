@@ -922,8 +922,9 @@ background-color: #e8fbff!important;
 .list-item-mieszkanie p:nth-child(3){
   width: 100px;
 }
-.list-item-mieszkanie p:nth-child(3){
-  width: 30px;
+.list-item-mieszkanie p:nth-child(5){
+  width: 100px;
+  text-align: center;
 }
 .list-item-mieszkanie p:nth-child(5){
   width: 100px;
