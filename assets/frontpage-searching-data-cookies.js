@@ -105,7 +105,7 @@ window.addEventListener("load", function() {
           let miastoArr = [28,40];
           let inwestycjaArr = [72,71,82,81];
           let pokojeArr = [43,34,53,25];
-          let pietroArr = [97,78,60,66];
+          let pietroArr = [36,97,78,60,66];
           let terminArr = [49,91,38,122,93];
           let inneArr = [520,521,522];
           let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
