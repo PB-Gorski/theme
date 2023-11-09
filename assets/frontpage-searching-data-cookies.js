@@ -489,8 +489,9 @@ window.addEventListener("load", function() {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
         // setTimeout(() => {
-          if(activeItem.style.display == 'block')
-          activeItem.style.display = 'none';  
+          if(activeItem.style.display == 'block'){
+            activeItem.style.display = 'none';  
+          }
         // }, 100);
 
       });
