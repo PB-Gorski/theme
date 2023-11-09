@@ -197,16 +197,16 @@ window.addEventListener("load", function() {
           // menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
 
           // console.log('item: ', menuActiveSpan.getAttribute('data-label'));
-          console.log('item category: ', menuActiveTitle);
-          console.log('item termid: ', +choosenOptionID);
+          // console.log('item category: ', menuActiveTitle);
+          // console.log('item termid: ', +choosenOptionID);
 
-          if (tempMiastoArr.length == 0){
-            menuActiveSpan.innerHTML = '';
-            menuActiveSpan.innerHTML = 'Wybierz:';
-            console.log('Wybierz');
-          }else{
-            console.log('wybrano miasto');
-          }
+          // if (tempMiastoArr.length == 0){
+          //   menuActiveSpan.innerHTML = '';
+          //   menuActiveSpan.innerHTML = 'Wybierz:';
+          //   console.log('Wybierz');
+          // }else{
+          //   console.log('wybrano miasto');
+          // }
 
         };
         showActiveFilterName();
