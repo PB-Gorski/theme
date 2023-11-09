@@ -26,6 +26,7 @@ window.addEventListener("load", function() {
     const searchBar2 = document.querySelector('.filter-custom-layout-1850-3');
     const heightAnimation = document.querySelector('.js-heightAnimation');
     const heightAnimation2 = document.querySelector('.filter-layout3');
+    const sectionInwestycje = document.querySelector('#inwestycje');
     const dropDownFIltersArr = document.querySelectorAll('.dropdown-filter');
 
     
@@ -44,6 +45,7 @@ window.addEventListener("load", function() {
         dropDownFIltersArr[9].classList.toggle('z-[1]');
         dropDownFIltersArr[10].classList.toggle('z-[1]');
         dropDownFIltersArr[11].classList.toggle('z-[1]');
+        sectionInwestycje.classList.toggle('z-[1]');
         heightAnimation2.classList.toggle('h-auto');
       }else{
         heightAnimation2.classList.toggle('h-auto');
