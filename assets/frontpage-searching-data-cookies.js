@@ -488,8 +488,7 @@ window.addEventListener("load", function() {
     document.body.addEventListener('click', () => {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
-        activeItem.classList.add('hidden');
-        activeItem.style.display == 'none';
+ 
 
         if(activeItem.style.display == 'block'){
           // activeItem.style.display = 'none';  
@@ -503,6 +502,9 @@ window.addEventListener("load", function() {
           activeItem.classList.remove('hidden') 
           activeItem.style.display == 'none'
 
+        }else{
+          activeItem.classList.add('hidden');
+          activeItem.style.display == 'none';
         }
 
 
