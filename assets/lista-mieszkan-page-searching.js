@@ -1149,6 +1149,7 @@ window.addEventListener("load", function() {
       });
 
       closeDropDownCouter++;
+      console.log(closeDropDownCouter);
     });
 
 
