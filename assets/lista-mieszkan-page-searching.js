@@ -1140,9 +1140,11 @@ window.addEventListener("load", function() {
         };
 
         if(activeItemPassive.classList.contains('hidden')){
-          activeItemPassive.previousElementSibling.childNodes[2].classList.add('hidden')
+          activeItemPassive.previousElementSibling.childNodes[2].classList.remove('arrow-down');
+          activeItemPassive.previousElementSibling.childNodes[2].innerHTML = 'x';
         }else{
-          activeItemPassive.previousElementSibling.childNodes[2].classList.remove('hidden')
+          activeItemPassive.previousElementSibling.childNodes[2].classList.add('arrow-down');
+          activeItemPassive.previousElementSibling.childNodes[2].innerHTML = '';
         };
       });
     })
