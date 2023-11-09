@@ -1234,8 +1234,8 @@ background-color: #e8fbff!important;
 }
 .toggle-x:after{
   content: 'x';
-  margin-left: 18px;
-  font-size: 11px;
+  margin-left: 5px;
+  font-size: 18px;
 }
 .dropdown__list {
   display: none;
