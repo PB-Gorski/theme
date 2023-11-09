@@ -629,6 +629,10 @@ window.addEventListener("load", function() {
           if(miastoArr.includes(+item)){
             console.log('wybrano z kategorii - miasto');
             // miasto
+            let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
+            console.log(menuActiveSpan);
+
+
             if(tempMiastoArr.includes(item)){removeItemAll(tempMiastoArr,item);}else{tempMiastoArr.push(item)};
 
             choosenMiastoArr = [];
