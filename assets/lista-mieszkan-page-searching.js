@@ -121,6 +121,7 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
               });
             });
+            console.log('altualne pietro432ewfsdvdfe');
             menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
