@@ -121,13 +121,13 @@ window.addEventListener("load", function() {
               tempMiastoArr.push(choosenOptionID)
             };
 
-            setTimeout(() => {
+            // setTimeout(() => {
               if (tempMiastoArr.length == 0){
                 menuActiveSpan.innerHTML = 'Wybierz';
                 menuActiveSpan.nextElementSibling.innerHTML = '';
                 console.log('Wybierz');
               }
-            }, 20);
+            // }, 20);
             
 
 
@@ -135,10 +135,10 @@ window.addEventListener("load", function() {
             console.log('miastoArr: ',tempMiastoArr.length);
             console.log('active span: ',menuActiveSpan);
 
-            setTimeout(() => {
+            // setTimeout(() => {
               menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
               menuActiveSpan.nextElementSibling.innerHTML = '';
-            }, 10);
+            // }, 10);
 
       
             console.log('miasto: ',choosenMiastoArr);
