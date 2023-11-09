@@ -17,6 +17,25 @@ window.addEventListener("load", function() {
 
 
 
+    document.body.addEventListener('click', () => {
+      console.log('body click');
+      document.querySelectorAll('.menu-passive').forEach(activeItem =>{
+        // activeItem.style.display = 'none';  
+  
+  
+        if( !activeItem.style.display == 'none' ){
+          console.log('block');
+          activeItem.previousElementSibling.childNodes[2].classList.remove('arrow-down');
+          activeItem.previousElementSibling.childNodes[2].innerHTML = 'x';
+        }else{
+          console.log('none');
+          activeItem.previousElementSibling.childNodes[2].classList.add('arrow-down');
+          activeItem.previousElementSibling.childNodes[2].innerHTML = '';
+        };
+      });    
+    });
+
+
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
         let optionSpan = document.createElement('span');
@@ -1159,15 +1178,15 @@ window.addEventListener("load", function() {
       activeItem.style.display = 'none';  
 
 
-      if( !activeItem.style.display == 'none' ){
-        console.log('block');
-        activeItem.previousElementSibling.childNodes[2].classList.remove('arrow-down');
-        activeItem.previousElementSibling.childNodes[2].innerHTML = 'x';
-      }else{
-        console.log('none');
-        activeItem.previousElementSibling.childNodes[2].classList.add('arrow-down');
-        activeItem.previousElementSibling.childNodes[2].innerHTML = '';
-      };
+      // if( !activeItem.style.display == 'none' ){
+      //   console.log('block');
+      //   activeItem.previousElementSibling.childNodes[2].classList.remove('arrow-down');
+      //   activeItem.previousElementSibling.childNodes[2].innerHTML = 'x';
+      // }else{
+      //   console.log('none');
+      //   activeItem.previousElementSibling.childNodes[2].classList.add('arrow-down');
+      //   activeItem.previousElementSibling.childNodes[2].innerHTML = '';
+      // };
     });
 
     // document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
