@@ -353,6 +353,16 @@ $tax_sort = $taxonomy;
                     }
                   }
 
+                  if ((get_taxonomy($select_term)->label) == 'Miasto') {
+                    $type_multiple = '';
+                  } else if ((get_taxonomy($select_term)->label) == 'Termin') {
+                    $type_multiple = '';
+                  } else if ((get_taxonomy($select_term)->label) == 'inne') {
+                    $type_multiple = '';
+                  } else {
+                    $type_multiple = 'multiple';
+                  };
+
                   echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
                   ' . $terms_icons . '
                                 <a class="menu-link ' .  esc_attr($is_disabled) . ' ' .  esc_attr($type_multiple) . '" 
