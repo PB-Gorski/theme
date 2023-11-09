@@ -495,11 +495,11 @@ window.addEventListener("load", function() {
           // activeItem.style.display = 'none';  
           // activeItem.classList.add('hidden')  
           // activeItem.style.display == 'none'
-        }else if(activeItem.style.display == 'none!important'){
+        }else if(activeItem.style.display == 'none'){
           // activeItem.classList.remove('hidden') 
           activeItem.style.display == 'block!important'
 
-        }else if(activeItem.style.display == 'block!important'  ){
+        }else if(activeItem.style.display == 'block'  ){
           // activeItem.classList.remove('hidden') 
           activeItem.style.display == 'none!important'
 
