@@ -620,171 +620,171 @@ window.addEventListener("load", function() {
         let returnChoosenFromCookiesPietro = [];
         let returnChoosenFromCookiesTermin = [];
         let returnChoosenFromCookiesInne = [];
-        // tempArr.join(',').split(',').forEach(item=>{
-        //   // console.log('item form filtered cookies: ', item);
+        filteredTermsFromCookies.join(',').split(',').forEach(item=>{
+          // console.log('item form filtered cookies: ', item);
 
-        //   if(miastoArr.includes(+item)){
-        //     console.log('wybrano z kategorii - miasto');
-        //     // miasto
-        //     let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
-        //     console.log('active span: ',menuActiveSpan);
+          if(miastoArr.includes(+item)){
+            console.log('wybrano z kategorii - miasto');
+            // miasto
+            let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
+            console.log('active span: ',menuActiveSpan);
 
-        //     if(tempMiastoArr.includes(item)){removeItemAll(tempMiastoArr,item);}else{tempMiastoArr.push(item)};
+            if(tempMiastoArr.includes(item)){removeItemAll(tempMiastoArr,item);}else{tempMiastoArr.push(item)};
 
-        //     choosenMiastoArr = [];
-        //     tempMiastoArr.forEach(choosenItem =>{
-        //       passiveOptions.forEach(item => {
-        //         if(item.childNodes[1].dataset.termid == choosenItem){
-        //           choosenMiastoArr.push(item.childNodes[1].dataset.name);
-        //           item.childNodes[1].classList.add('active');
-        //         }
+            choosenMiastoArr = [];
+            tempMiastoArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  choosenMiastoArr.push(item.childNodes[1].dataset.name);
+                  item.childNodes[1].classList.add('active');
+                }
 
-        //         // item.parentNode.previousElementSibling.childNodes[1];
-        //         // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
+                // item.parentNode.previousElementSibling.childNodes[1];
+                // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
 
-        //       });
-        //     });
+              });
+            });
             
-        //     passiveOptions.forEach(option => {
-        //       if(option.childNodes[1].dataset.termid == item){
-        //         console.log('option from cookies for finding parent: ',option);
-        //         returnChoosenFromCookies.push(option)
-        //       };              
-        //     });
+            passiveOptions.forEach(option => {
+              if(option.childNodes[1].dataset.termid == item){
+                console.log('option from cookies for finding parent: ',option);
+                returnChoosenFromCookies.push(option)
+              };              
+            });
 
-        //     returnChoosenFromCookies.forEach(el => {
-        //       el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
-        //     });
-        //     // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
-        //   }else if(inwestycjaArr.includes(+item)){
-        //     // inwestycje
-        //     tempInwestycjaArr.includes(item) ? removeItemAll(tempInwestycjaArr,item) : tempInwestycjaArr.push(item);
+            returnChoosenFromCookies.forEach(el => {
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
+            });
+            // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
+          }else if(inwestycjaArr.includes(+item)){
+            // inwestycje
+            tempInwestycjaArr.includes(item) ? removeItemAll(tempInwestycjaArr,item) : tempInwestycjaArr.push(item);
 
-        //     if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
+            if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
 
-        //     tempInwestycjaArr.forEach(choosenItem =>{
-        //       passiveOptions.forEach(item => {
-        //         if(item.childNodes[1].dataset.termid == choosenItem){
-        //           choosenMiastoArr.push(item.childNodes[1].dataset.name);
-        //           item.childNodes[1].classList.add('active');
-        //         }
-        //       });
-        //     });
+            tempInwestycjaArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  choosenMiastoArr.push(item.childNodes[1].dataset.name);
+                  item.childNodes[1].classList.add('active');
+                }
+              });
+            });
             
-        //     passiveOptions.forEach(option => {
-        //       if(option.childNodes[1].dataset.termid == item){
-        //         console.log('option from cookies for finding parent: ',option);
-        //         returnChoosenFromCookiesInwestycje.push(option)
-        //       };              
-        //     });
+            passiveOptions.forEach(option => {
+              if(option.childNodes[1].dataset.termid == item){
+                console.log('option from cookies for finding parent: ',option);
+                returnChoosenFromCookiesInwestycje.push(option)
+              };              
+            });
 
-        //     returnChoosenFromCookiesInwestycje.forEach(el => {
-        //       el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInwestycje.length;
-        //     });
-        //   }else if(pokojeArr.includes(+item)){
-        //     // pokoje
-        //     if(tempPokojeArr.includes(item)){removeItemAll(tempPokojeArr,item);}else{tempPokojeArr.push(item)};
+            returnChoosenFromCookiesInwestycje.forEach(el => {
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInwestycje.length;
+            });
+          }else if(pokojeArr.includes(+item)){
+            // pokoje
+            if(tempPokojeArr.includes(item)){removeItemAll(tempPokojeArr,item);}else{tempPokojeArr.push(item)};
 
-        //     choosenPokojeArrv= [];
-        //     tempPokojeArr.forEach(choosenItem =>{
-        //       passiveOptions.forEach(item => {
-        //         if(item.childNodes[1].dataset.termid == choosenItem){
-        //           choosenPokojeArr.push(item.childNodes[1].dataset.name);
-        //           item.childNodes[1].classList.add('active');
-        //         }
-        //       });
-        //     });
+            choosenPokojeArrv= [];
+            tempPokojeArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  choosenPokojeArr.push(item.childNodes[1].dataset.name);
+                  item.childNodes[1].classList.add('active');
+                }
+              });
+            });
             
-        //     passiveOptions.forEach(option => {
-        //       if(option.childNodes[1].dataset.termid == item){
-        //         console.log('option from cookies for finding parent: ',option);
-        //         returnChoosenFromCookiesPokoje.push(option)
-        //       };              
-        //     });
+            passiveOptions.forEach(option => {
+              if(option.childNodes[1].dataset.termid == item){
+                console.log('option from cookies for finding parent: ',option);
+                returnChoosenFromCookiesPokoje.push(option)
+              };              
+            });
 
-        //     returnChoosenFromCookiesPokoje.forEach(el => {
-        //       el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenPokojeArr.join(', ');
-        //     });
-        //   }else if(pietroArr.includes(+item)){
-        //     // pietro
-        //     if(tempPietroArr.includes(item)){removeItemAll(tempPietroArr,item);}else{tempPietroArr.push(item)};
+            returnChoosenFromCookiesPokoje.forEach(el => {
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenPokojeArr.join(', ');
+            });
+          }else if(pietroArr.includes(+item)){
+            // pietro
+            if(tempPietroArr.includes(item)){removeItemAll(tempPietroArr,item);}else{tempPietroArr.push(item)};
 
-        //     choosenPietroArr = [];
-        //     tempPietroArr.forEach(choosenItem =>{
-        //       passiveOptions.forEach(item => {
-        //         if(item.childNodes[1].dataset.termid == choosenItem){
-        //           choosenPietroArr.push(item.childNodes[1].dataset.name);
-        //           item.childNodes[1].classList.add('active');
-        //         }
-        //       });
-        //     });
+            choosenPietroArr = [];
+            tempPietroArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  choosenPietroArr.push(item.childNodes[1].dataset.name);
+                  item.childNodes[1].classList.add('active');
+                }
+              });
+            });
             
-        //     passiveOptions.forEach(option => {
-        //       if(option.childNodes[1].dataset.termid == item){
-        //         console.log('option from cookies for finding parent: ',option);
-        //         returnChoosenFromCookiesPietro.push(option)
-        //       };              
-        //     });
+            passiveOptions.forEach(option => {
+              if(option.childNodes[1].dataset.termid == item){
+                console.log('option from cookies for finding parent: ',option);
+                returnChoosenFromCookiesPietro.push(option)
+              };              
+            });
 
-        //     returnChoosenFromCookiesPietro.forEach(el => {
-        //       el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenPietroArr.join(', ');
-        //     });
-        //   }else if(terminArr.includes(+item)){
-        //     // termin
-        //     tempTerminArr.includes(item) ? removeItemAll(tempTerminArr,item) : tempTerminArr.push(item);
+            returnChoosenFromCookiesPietro.forEach(el => {
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenPietroArr.join(', ');
+            });
+          }else if(terminArr.includes(+item)){
+            // termin
+            tempTerminArr.includes(item) ? removeItemAll(tempTerminArr,item) : tempTerminArr.push(item);
 
-        //     if(tempTerminArr.length > 0 ){choosenTerminCount = tempTerminArr.length;}else if(tempTerminArr.length == 0){choosenTerminCount = 0};
+            if(tempTerminArr.length > 0 ){choosenTerminCount = tempTerminArr.length;}else if(tempTerminArr.length == 0){choosenTerminCount = 0};
 
-        //     tempTerminArr.forEach(choosenItem =>{
-        //       passiveOptions.forEach(item => {
-        //         if(item.childNodes[1].dataset.termid == choosenItem){
-        //           choosenTerminArr.push(item.childNodes[1].dataset.name);
-        //           item.childNodes[1].classList.add('active');
-        //         };
-        //       });
-        //     });
+            tempTerminArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  choosenTerminArr.push(item.childNodes[1].dataset.name);
+                  item.childNodes[1].classList.add('active');
+                };
+              });
+            });
             
-        //     passiveOptions.forEach(option => {
-        //       if(option.childNodes[1].dataset.termid == item){
-        //         console.log('option from cookies for finding parent: ',option);
-        //         returnChoosenFromCookiesTermin.push(option)
-        //       };              
-        //     });
+            passiveOptions.forEach(option => {
+              if(option.childNodes[1].dataset.termid == item){
+                console.log('option from cookies for finding parent: ',option);
+                returnChoosenFromCookiesTermin.push(option)
+              };              
+            });
 
-        //     returnChoosenFromCookiesTermin.forEach(el => {
-        //       el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesTermin.length;
-        //     });            
-        //   }else if(inneArr.includes(+item)){
-        //     if(tempInneArr.length > 0 ){choosenTerminCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenTerminCount = 0};
+            returnChoosenFromCookiesTermin.forEach(el => {
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesTermin.length;
+            });            
+          }else if(inneArr.includes(+item)){
+            if(tempInneArr.length > 0 ){choosenTerminCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenTerminCount = 0};
 
-        //     tempInneArr.forEach(choosenItem =>{
-        //       passiveOptions.forEach(item => {
-        //         if(item.childNodes[1].dataset.termid == choosenItem){
-        //           choosenInneArr.push(item.childNodes[1].dataset.name);
-        //           item.childNodes[1].classList.add('active');
-        //         };
-        //       });
-        //     });
+            tempInneArr.forEach(choosenItem =>{
+              passiveOptions.forEach(item => {
+                if(item.childNodes[1].dataset.termid == choosenItem){
+                  choosenInneArr.push(item.childNodes[1].dataset.name);
+                  item.childNodes[1].classList.add('active');
+                };
+              });
+            });
             
-        //     passiveOptions.forEach(option => {
-        //       if(option.childNodes[1].dataset.termid == item){
-        //         console.log('option from cookies for finding parent: ',option);
-        //         returnChoosenFromCookiesInne.push(option)
-        //       };              
-        //     });
+            passiveOptions.forEach(option => {
+              if(option.childNodes[1].dataset.termid == item){
+                console.log('option from cookies for finding parent: ',option);
+                returnChoosenFromCookiesInne.push(option)
+              };              
+            });
 
-        //     returnChoosenFromCookiesInne.forEach(el => {
-        //       el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInne.length;
-        //     });  
-        //   }else{
-        //     // console.log('error');
-        //   };
-        // });
-        // test
-        // priceMinUpdate = getCookie("PriceMinFromCookies");
-        // priceMaxUpdate = getCookie("PriceMaxFromCookies");
+            returnChoosenFromCookiesInne.forEach(el => {
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInne.length;
+            });  
+          }else{
+            // console.log('error');
+          };
+        });
+        test
+        priceMinUpdate = getCookie("PriceMinFromCookies");
+        priceMaxUpdate = getCookie("PriceMaxFromCookies");
 
-        // console.log('prices from cookies: ',priceMinUpdate, priceMaxUpdate);
+        console.log('prices from cookies: ',priceMinUpdate, priceMaxUpdate);
 
         document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies == '' ? 0 : Number(filteredPriceMinFromCookies).toLocaleString();
         document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == '' ? 'Max' : (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  Number(filteredPriceMaxFromCookies).toLocaleString());
