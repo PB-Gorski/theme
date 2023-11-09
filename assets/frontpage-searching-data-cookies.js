@@ -135,8 +135,12 @@ window.addEventListener("load", function() {
             console.log('miastoArr: ',tempMiastoArr.length);
             console.log('active span: ',menuActiveSpan);
 
-            menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
-            menuActiveSpan.nextElementSibling.innerHTML = '';
+            setTimeout(() => {
+              menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
+              menuActiveSpan.nextElementSibling.innerHTML = '';
+            }, 800);
+
+      
             console.log('miasto: ',choosenMiastoArr);
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
