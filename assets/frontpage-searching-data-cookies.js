@@ -162,8 +162,10 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
               });
             });
-            console.log('342rfdsvcddads: ', choosenPokojeArr.join(', '),'test');
-            menuActiveSpan.innerHTML = 'Wybrano1: ' + (choosenPokojeArr.join(', ')!=' ' ? choosenPokojeArr.join(', ') : 'Wybrano2: 0');
+            // console.log('342rfdsvcddads: ', choosenPokojeArr.join(', '),'test');
+            // menuActiveSpan.innerHTML = 'Wybrano: ' + (choosenPokojeArr.join(', ')!=' ' ? choosenPokojeArr.join(', ') : 'Wybrano: 0');
+
+            menuActiveSpan.innerHTML = (choosenPokojeArr.join(', ')!='' ? 'Wybrano: ' +  choosenPokojeArr.join(', ') : 'Wybierz');
           }else if(pietroArr.includes(+choosenOptionID)){
             // pietro
             if(tempPietroArr.includes(choosenOptionID)){removeItemAll(tempPietroArr,choosenOptionID);}else{tempPietroArr.push(choosenOptionID)};
