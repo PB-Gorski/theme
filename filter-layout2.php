@@ -356,6 +356,7 @@ $tax_sort = $taxonomy;
 
                     if ((get_taxonomy($select_term)->label) == 'Miasto') {
                       $type_multiple = '';
+                      echo 'test';
                     } else if ((get_taxonomy($select_term)->label) == 'Termin') {
                       $type_multiple = '';
                     } else if ((get_taxonomy($select_term)->label) == 'inne') {
