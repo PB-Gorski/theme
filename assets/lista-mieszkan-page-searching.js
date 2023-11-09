@@ -366,7 +366,7 @@ window.addEventListener("load", function() {
         };
       });
     };
-
+// test
     let counterMetraz = 0;
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
       if (counterMetraz == 2){
