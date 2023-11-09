@@ -66,10 +66,11 @@ window.addEventListener("load", function() {
         dropDownFIltersArr[10].classList.toggle('z-[1]');
         dropDownFIltersArr[11].classList.toggle('z-[0]');
 
+        dropDownFIltersArr[6].classList.toggle('pointer-events-auto');
+        dropDownFIltersArr[7].classList.toggle('pointer-events-auto');
         dropDownFIltersArr[9].classList.toggle('pointer-events-auto');
         dropDownFIltersArr[10].classList.toggle('pointer-events-auto');
         dropDownFIltersArr[11].classList.toggle('pointer-events-auto');
-        dropDownFIltersArr[13].classList.toggle('pointer-events-auto');
         heightAnimation2.classList.toggle('h-auto');
       }else{
         heightAnimation2.classList.toggle('h-auto');
