@@ -595,7 +595,6 @@ window.addEventListener("load", function() {
         console.log('json check: ', filteredTermsFromCookies.substring(1).slice(0, -1) );
         console.log('json check after parse: ', filteredTermsFromCookies);
 
-        console.log('last string array: ',Array.from(filteredTermsFromCookies)); 
         let tempArr = [];
         if(filteredTermsFromCookies.slice(-1) != ','){
           tempArr.push(filteredTermsFromCookies)
@@ -609,12 +608,9 @@ window.addEventListener("load", function() {
 
         console.log('slice test: ',tempArr.join(',').split(','));
 
-        let arr = [ 'a,b,c', 'd,e,f', 'g,h,i' ];
         console.log('slice test2: ', [].concat(...tempArr.map(a=>a.split(','))) )
 
         console.log('*****', filteredTermsFromCookies.split(','));
-        
-
 
 
         let returnChoosenFromCookies =[];
