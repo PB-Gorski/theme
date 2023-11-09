@@ -499,8 +499,9 @@ window.addEventListener("load", function() {
     document.body.addEventListener('click', () => {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
-        // activeItem.style.display == 'none';
-        activeItem.classList.toggle('hidden')
+        activeItem.classList.toggle('pointer-events-none')
+        activeItem.style.display == 'none!important';
+        // activeItem.classList.toggle('hidden')
 
       });
   
