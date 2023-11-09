@@ -1131,6 +1131,7 @@ window.addEventListener("load", function() {
   });
   
   let closeDropDownCouter = 0
+  let tempCloseDropDownCouter = 0
   document.body.addEventListener('click', () => {
     console.log('body click');
     document.querySelectorAll('.menu-passive').forEach(activeItem =>{
@@ -1139,8 +1140,9 @@ window.addEventListener("load", function() {
 
     document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
       if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
+        tempCloseDropDownCouter = closeDropDownCouter
         closeDropDownCouter++;
-        if(closeDropDownCouter>0){
+        if(closeDropDownCouter = tempCloseDropDownCouter - 1){
 
           activeItem2.classList.remove('dropdown__list_active-metraz');  
           activeItem2.classList.remove('dropdown__list_active');  
