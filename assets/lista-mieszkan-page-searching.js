@@ -111,7 +111,7 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
               });
             });
-            menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
+            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenPokojeArr.join(', ');
           }else if(pietroArr.includes(+choosenOptionID)){
             // pietro
             if(tempPietroArr.includes(choosenOptionID)){removeItemAll(tempPietroArr,choosenOptionID);}else{tempPietroArr.push(choosenOptionID)};
