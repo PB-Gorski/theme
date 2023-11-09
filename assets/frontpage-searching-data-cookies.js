@@ -176,6 +176,8 @@ window.addEventListener("load", function() {
             setTimeout(() => {
               menuActiveSpan.nextElementSibling.style.opacity = 0;
               menuActiveSpan.nextElementSibling.innerHTML = '';
+              menuActiveSpan.nextElementSibling.style.opacity = 1;
+
             }, 10);
 
             if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
