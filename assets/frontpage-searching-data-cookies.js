@@ -44,7 +44,7 @@ window.addEventListener("load", function() {
         dropDownFIltersArr[7].classList.toggle('z-[1]');
         dropDownFIltersArr[9].classList.toggle('z-[1]');
         dropDownFIltersArr[10].classList.toggle('z-[1]');
-        dropDownFIltersArr[11].classList.toggle('z-[1]');
+        dropDownFIltersArr[11].classList.toggle('z-[0]');
         sectionInwestycje.classList.toggle('z-[1]');
         heightAnimation2.classList.toggle('h-auto');
       }else{
