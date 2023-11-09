@@ -22,7 +22,8 @@ window.addEventListener("load", function() {
 
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
-    const searchBar = document.querySelector('.filter-custom-layout-1850-3');
+    const searchBar = document.querySelector('.filter-entry');
+    const searchBar2 = document.querySelector('.filter-custom-layout-1850-3');
     const heightAnimation = document.querySelector('.js-heightAnimation');
     const heightAnimation2 = document.querySelector('.filter-layout3');
     const dropDownFIltersArr = document.querySelectorAll('.dropdown-filter');
@@ -30,7 +31,8 @@ window.addEventListener("load", function() {
     
     btnMore.addEventListener('click',()=>{
       if(window.innerWidth > 480){
-        searchBar.classList.toggle('h-[240px]');
+        searchBar.classList.toggle('desktop:h-[240px]');
+        searchBar2.classList.toggle('desktop:h-[240px]');
         searchBar.classList.toggle('gap-y-[0px]');
         dropDownFIltersArr[6].classList.toggle('opacity-100');
         dropDownFIltersArr[7].classList.toggle('opacity-100');
