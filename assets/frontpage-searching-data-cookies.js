@@ -138,7 +138,7 @@ window.addEventListener("load", function() {
             setTimeout(() => {
               menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
               menuActiveSpan.nextElementSibling.innerHTML = '';
-            }, 200);
+            }, 100);
 
       
             console.log('miasto: ',choosenMiastoArr);
