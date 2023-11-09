@@ -173,8 +173,11 @@ window.addEventListener("load", function() {
             menuActiveSpan.innerHTML = (choosenPietroArr.join(', ')!='' ? 'Wybrano: ' +  choosenPietroArr.join(', ') : 'Wybierz');
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
-            menuActiveSpan.nextElementSibling.style.opacity = 0;
-            menuActiveSpan.nextElementSibling.innerHTML = '';
+            setTimeout(() => {
+              menuActiveSpan.nextElementSibling.style.opacity = 0;
+              menuActiveSpan.nextElementSibling.innerHTML = '';
+              
+            }, 10);
 
             if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
 
