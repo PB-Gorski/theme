@@ -127,7 +127,7 @@ window.addEventListener("load", function() {
                 menuActiveSpan.nextElementSibling.innerHTML = '';
                 console.log('Wybierz');
               }
-            }, 1000);
+            }, 800);
             
 
 
@@ -136,6 +136,7 @@ window.addEventListener("load", function() {
             console.log('active span: ',menuActiveSpan);
 
             menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
+            menuActiveSpan.nextElementSibling.innerHTML = '';
             console.log('miasto: ',choosenMiastoArr);
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
