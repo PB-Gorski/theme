@@ -1159,7 +1159,7 @@ window.addEventListener("load", function() {
       activeItem.style.display = 'none';  
 
 
-      if(!activeItem.classList.contains('hidden')){
+      if( !activeItem.style.display == 'none' ){
         activeItem.previousElementSibling.childNodes[2].classList.remove('arrow-down');
         activeItem.previousElementSibling.childNodes[2].innerHTML = 'x';
       }else{
