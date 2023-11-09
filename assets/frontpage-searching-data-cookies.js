@@ -495,17 +495,17 @@ window.addEventListener("load", function() {
           // activeItem.style.display = 'none';  
           // activeItem.classList.add('hidden')  
           // activeItem.style.display == 'none'
-        }else if(activeItem.style.display == 'none'){
+        }else if(activeItem.style.display == 'none!important'){
           // activeItem.classList.remove('hidden') 
-          activeItem.style.display == 'block'
+          activeItem.style.display == 'block!important'
 
-        }else if(activeItem.style.display == 'block'  ){
+        }else if(activeItem.style.display == 'block!important'  ){
           // activeItem.classList.remove('hidden') 
-          activeItem.style.display == 'none'
+          activeItem.style.display == 'none!important'
 
         }else{
           // activeItem.classList.add('hidden');
-          activeItem.style.display == 'none';
+          activeItem.style.display == 'none!important';
         }
 
 
