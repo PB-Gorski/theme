@@ -262,7 +262,7 @@ window.addEventListener("load", function() {
           dropDownFIltersArr[9].classList.toggle('z-[1]');
           dropDownFIltersArr[10].classList.toggle('z-[1]');
           dropDownFIltersArr[11].classList.toggle('z-[1]');
-          sectionInwestycje.classList.toggle('z-[1]');
+          // sectionInwestycje.classList.toggle('z-[1]');
           foundedPostOnStart.classList.toggle('top-[240px]');
           heightAnimation2.classList.toggle('h-auto');
         }else{
