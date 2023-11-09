@@ -1117,15 +1117,13 @@ window.addEventListener("load", function() {
   document.body.addEventListener('click', () => {
     document.querySelectorAll('.menu-passive').forEach(activeItem =>{
       activeItem.style.display = 'none';  
-      // console.log('click1');
-
     });
 
     document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
       if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
-        // activeItem2.classList.remove('dropdown__list_active-metraz');  
-        // activeItem2.classList.remove('dropdown__list_active');  
-        // activeItem2.style.display = 'none';  
+        activeItem2.classList.remove('dropdown__list_active-metraz');  
+        activeItem2.classList.remove('dropdown__list_active');  
+        activeItem2.style.display = 'none';  
       }
     });
     
