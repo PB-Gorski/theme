@@ -15,7 +15,7 @@ window.addEventListener("load", function() {
     // let passiveOptions = document.querySelectorAll('.menu-passive__item')
     let counter2 = 0;
 
-    let clickFields = [document.querySelector('#Banner'), document.querySelector('#inwestycje'), document.querySelector('#content')]
+    let clickFields = [document.querySelector('#Banner'),document.querySelector('#content')]
 
     clickFields.forEach(field =>{
       field.addEventListener('click', () => {
