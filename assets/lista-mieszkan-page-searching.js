@@ -24,9 +24,6 @@ window.addEventListener("load", function() {
           // activeItem2.style.display = 'none';  
         }
       });
-  
-      
-      console.log(closeDropDownCouter);
     });
 
     passiveOptions.forEach(item => {
