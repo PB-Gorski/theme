@@ -780,7 +780,7 @@ window.addEventListener("load", function() {
             // console.log('error');
           };
         });
-
+        // test
         // priceMinUpdate = getCookie("PriceMinFromCookies");
         // priceMaxUpdate = getCookie("PriceMaxFromCookies");
 
