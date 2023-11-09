@@ -238,6 +238,7 @@ window.addEventListener("load", function() {
     const searchBar = document.querySelector('.filter-entry');
     const heightAnimation = document.querySelector('.js-heightAnimation');
     const heightAnimation2 = document.querySelector('.filter-layout3');
+    const sectionInwestycje = document.querySelector('#inwestycje');
     // const postsFound = document.querySelector('.js-post-found');
     const dropDownFIltersArr = document.querySelectorAll('.dropdown-filter');
     
@@ -260,6 +261,7 @@ window.addEventListener("load", function() {
           dropDownFIltersArr[9].classList.toggle('z-[1]');
           dropDownFIltersArr[10].classList.toggle('z-[1]');
           dropDownFIltersArr[11].classList.toggle('z-[1]');
+          sectionInwestycje.classList.toggle('z-[1]');
           foundedPostOnStart.classList.toggle('top-[240px]');
           heightAnimation2.classList.toggle('h-auto');
         }else{
