@@ -127,7 +127,7 @@ window.addEventListener("load", function() {
                 menuActiveSpan.nextElementSibling.innerHTML = '';
                 console.log('Wybierz');
               }
-            }, 400);
+            }, 200);
             
 
 
@@ -138,7 +138,7 @@ window.addEventListener("load", function() {
             setTimeout(() => {
               menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
               menuActiveSpan.nextElementSibling.innerHTML = '';
-            }, 800);
+            }, 200);
 
       
             console.log('miasto: ',choosenMiastoArr);
