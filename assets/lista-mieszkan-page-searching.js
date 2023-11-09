@@ -810,6 +810,7 @@ window.addEventListener("load", function() {
         console.log('prices from cookies: ',priceMinUpdate, priceMaxUpdate);
 
         document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies == '' ? 0 : Number(filteredPriceMinFromCookies).toLocaleString();
+        console.log('price max fdafsd: ',filteredPriceMaxFromCookies9);
         document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == NaN ? 'Max' : (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  Number(filteredPriceMaxFromCookies).toLocaleString());
         
         
