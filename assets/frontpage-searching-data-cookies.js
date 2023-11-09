@@ -488,31 +488,11 @@ window.addEventListener("load", function() {
     document.body.addEventListener('click', () => {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
- 
         activeItem.style.display == 'none!important';
-        if(activeItem.style.display == ''){
-          console.log('pusty');
-          return;
-          // activeItem.style.display = 'none';  
-          // activeItem.classList.add('hidden')  
-          // activeItem.style.display == 'none'
-        }else if(activeItem.style.display == 'none'){
-          // activeItem.classList.remove('hidden') 
-          activeItem.style.display == 'block!important'
-          return;
-
-        }else if(activeItem.style.display == 'block'  ){
-          // activeItem.classList.remove('hidden') 
+        activeItem.addEventListener('click',()=>{
           activeItem.style.display == 'none!important';
-          return;
+        })
 
-        }else{
-          // activeItem.classList.add('hidden');
-          activeItem.style.display == 'none!important';
-          return;
-        }
-
-        
       });
   
       // document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
