@@ -118,7 +118,7 @@ window.addEventListener("load", function() {
               menuActiveSpan.nextElementSibling.style.opacity = 0;
               menuActiveSpan.nextElementSibling.innerHTML = '';
               menuActiveSpan.nextElementSibling.style.opacity = 1;
-            }, 10);
+            }, 0);
 
             if(tempMiastoArr.includes(choosenOptionID)){
               removeItemAll(tempMiastoArr,choosenOptionID);
@@ -133,7 +133,7 @@ window.addEventListener("load", function() {
                 menuActiveSpan.nextElementSibling.innerHTML = '';
                 console.log('Wybierz');
               }
-            }, 5);
+            }, 0);
 
             console.log('miastoArr: ',tempMiastoArr.length);
             console.log('active span: ',menuActiveSpan);
