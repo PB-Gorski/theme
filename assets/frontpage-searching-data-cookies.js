@@ -208,22 +208,22 @@ window.addEventListener("load", function() {
             // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
 
 
-            // setTimeout(() => {
-            //   if (tempMiastoArr.length == 0){
-            //     menuActiveSpan.innerHTML = 'Wybierz';
-            //     menuActiveSpan.nextElementSibling.innerHTML = '';
-            //     console.log('Wybierz');
-            //   }
-            // }, 5);
-
-            wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-            if (tempInneArr.length == 0){
+            setTimeout(() => {
+              if (tempInneArr.length == 0){
                 menuActiveSpan.innerHTML = 'Wybierz';
                 menuActiveSpan.nextElementSibling.innerHTML = '';
                 console.log('Wybierz');
               }
+            }, 5);
+
+            // wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
+            // if (tempInneArr.length == 0){
+            //     menuActiveSpan.innerHTML = 'Wybierz';
+            //     menuActiveSpan.nextElementSibling.innerHTML = '';
+            //     console.log('Wybierz');
+            //   }
         
-            });
+            // });
 
           }else{
             // console.log('error');
