@@ -434,9 +434,10 @@ window.addEventListener("load", function() {
     const searchBarTest = document.querySelector('#inwestycje')
     menuPassive.forEach(menu => {
       menu.addEventListener('click', () => { 
+        searchBarTest.classList.toggle('z-[1]');
         searchBarTest.classList.toggle('z-[0]');
-      })
-    })
+      });
+    });
     
 
     // -------------------------------------------------------------------------------------
