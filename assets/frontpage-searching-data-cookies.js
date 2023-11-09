@@ -173,7 +173,7 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
               });
             });
-
+            console.log('test43:',choosenPietroArr.join(', '));
             menuActiveSpan.innerHTML = 'Wybrano: ' + (choosenPietroArr.join(', ')!=' ' ? choosenPietroArr.join(', ') : 'Wybrano2: 0');
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
