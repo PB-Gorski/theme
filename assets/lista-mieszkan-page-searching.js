@@ -1130,13 +1130,13 @@ window.addEventListener("load", function() {
     })
   });
   
+  let closeDropDownCouter
   document.body.addEventListener('click', () => {
     console.log('body click');
     document.querySelectorAll('.menu-passive').forEach(activeItem =>{
       activeItem.style.display = 'none';  
     });
 
-    let closeDropDownCouter = 0
     document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
       if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
         if(closeDropDownCouter>0){
