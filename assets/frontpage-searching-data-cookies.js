@@ -148,6 +148,8 @@ window.addEventListener("load", function() {
 
             if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
 
+            console.log('inwestycje count ', choosenInwestycjeCount);
+
             menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
           }else if(pokojeArr.includes(+choosenOptionID)){
             // pokoje
