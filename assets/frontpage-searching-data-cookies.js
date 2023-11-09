@@ -489,7 +489,8 @@ window.addEventListener("load", function() {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
         if(activeItem.style.display == 'block'){
-          activeItem.style.display = 'none';  
+          // activeItem.style.display = 'none';  
+          activeItem.classList.toggle('hidden')  
         }
 
 
