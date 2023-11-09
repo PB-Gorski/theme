@@ -1137,7 +1137,11 @@ window.addEventListener("load", function() {
           activeItemPassive.classList.toggle('hidden')
         }else if(!activeItemPassive.style.display == 'block'){
           activeItemPassive.classList.remove('hidden')
-        }
+        };
+
+        if(activeItemPassive.classList.contains('hidden')){
+          activeItemPassive.previousElementSibling.childNodes[1].classList.toggle('test-x')
+        };
       });
     })
   });
