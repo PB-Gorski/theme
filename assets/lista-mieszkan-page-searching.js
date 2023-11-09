@@ -1129,7 +1129,7 @@ window.addEventListener("load", function() {
         });
       })
     });
-
+    let closeDropDownCouter = 0
     document.body.addEventListener('click', () => {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
