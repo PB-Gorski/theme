@@ -174,6 +174,7 @@ window.addEventListener("load", function() {
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
             menuActiveSpan.nextElementSibling.style.opacity = 0;
+            menuActiveSpan.nextElementSibling.innerHTML = '';
 
             if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
 
