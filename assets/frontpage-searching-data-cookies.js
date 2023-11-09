@@ -114,6 +114,8 @@ window.addEventListener("load", function() {
           if(miastoArr.includes(+choosenOptionID)){
             console.log('wybrano z kategorii - miasto');
             // miasto
+            menuActiveSpan.nextElementSibling.style.opacity = 0;
+
             if(tempMiastoArr.includes(choosenOptionID)){
               removeItemAll(tempMiastoArr,choosenOptionID);
             }else{
@@ -123,7 +125,6 @@ window.addEventListener("load", function() {
 
             setTimeout(() => {
               if (tempMiastoArr.length == 0){
-                menuActiveSpan.nextElementSibling.style.opacity = 0;
                 menuActiveSpan.innerHTML = 'Wybierz';
                 menuActiveSpan.nextElementSibling.innerHTML = '';
                 console.log('Wybierz');
@@ -138,7 +139,6 @@ window.addEventListener("load", function() {
 
             setTimeout(() => {
               menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
-              menuActiveSpan.nextElementSibling.style.opacity = 0;
               menuActiveSpan.nextElementSibling.innerHTML = '';
             }, 5);
 
