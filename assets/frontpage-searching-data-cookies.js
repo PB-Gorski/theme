@@ -124,7 +124,7 @@ window.addEventListener("load", function() {
               if (tempMiastoArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
             }, 10);
 
-            wp.hooks.addAction('ymc_complete_loaded_data_FilterID_LayoutID', 'smartfilter', 'callback(class_name, status)',function(){
+            wp.hooks.addAction('ymc_complete_loaded_data_FilterID_LayoutID', 'smartfilter', function(){
               console.log('test hooks');
             });
             wp.hooks.addAction('ymc_stop_loading_data', 'smartfilter', function(el){
