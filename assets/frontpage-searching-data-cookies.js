@@ -502,11 +502,19 @@ window.addEventListener("load", function() {
         console.log('test');
       });  
     });
+
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       console.log('test2');
       passive.addEventListener('click', (e) => {
         e.target.parentNode.parentNode.style.display = 'none';
-        e.target.parentNode.parentNode.add('test');
+      })
+    });  
+      
+    document.querySelectorAll('.menu-active').forEach(menuActive =>{
+      menuActive.addEventListener('click', ()=>{
+        document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
+          customDrop.classList.remove('dropdown__list_active')
+        });
       })
     });  
     
