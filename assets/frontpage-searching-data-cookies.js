@@ -506,6 +506,9 @@ window.addEventListener("load", function() {
       passive.addEventListener('click', (e) => {
         e.target.parentNode.parentNode.style.display = 'none';
       })
+      if(passive.style.display == 'block'){
+        passive.previousElementSibling.childNodes[1].classList.add('newAfter')
+      }
     });  
       
     document.querySelectorAll('.menu-active').forEach(menuActive =>{

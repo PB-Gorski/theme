@@ -1350,3 +1350,7 @@ background-color: #e8fbff!important;
   display: none!important;
 }
 
+.newAfter::after{
+  content: 'x';
+}
+
