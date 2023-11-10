@@ -498,7 +498,7 @@ window.addEventListener("load", function() {
 
     document.body.addEventListener('click', () => {
       console.log('body click');
-      document.querySelectorAll('.menu-passive').forEach(activeItem =>{
+      document.querySelectorAll('.menu-active').forEach(activeItem =>{
           console.log('block');
           activeItem.previousElementSibling.childNodes[1].classList.toggle('newAfter')
       });  
