@@ -505,6 +505,7 @@ window.addEventListener("load", function() {
       passive.addEventListener('click', (e) => {
         e.target.parentNode.parentNode.style.display = 'none';
         e.target.parentNode.parentNode.previousElementSibling.childNodes[4].classList.toggle('newAfter');
+        console.log('parent parent: ',e.target.parentNode.parentNode);
 
       })
   
