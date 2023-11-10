@@ -1166,7 +1166,7 @@ window.addEventListener("load", function() {
     document.body.addEventListener('click', () => {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
-        activeItem.style.display = 'none';  
+        // activeItem.style.display = 'none';  
   
   
         // if( !activeItem.style.display == 'none' ){
@@ -1195,7 +1195,7 @@ window.addEventListener("load", function() {
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
         e.target.parentNode.parentNode.style.display = 'none';
-        e.target.parentNode.parentNode.previousElementSibling.childNodes[3].classList.toggle('newAfter');
+        e.target.parentNode.parentNode.previousElementSibling.childNodes[1].classList.toggle('newAfter');
         console.log('parent parent: ',e.target.parentNode.parentNode);
       })
     });  
@@ -1208,7 +1208,7 @@ window.addEventListener("load", function() {
 
         e.target.classList.replace('arrow-down', 'newAfter');
         e.target.classList.replace('newAfter', 'arrow-down');
-        
+
         e.target.classList.toggle('newAfter');
         e.target.classList.toggle('arrow-down');
       })
