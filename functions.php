@@ -869,12 +869,12 @@ add_filter('ymc_filter_custom_layout_1850_5', 'pbgorski_custom_filter_layout5', 
 
 // ---------------------------------------------------------------------------------------
 
-// 1850_9 filter layout
-function pbgorski_custom_filter_layout9($layout, $terms, $taxonomy, $multiple, $target, $options)
+// 1850_8 filter layout
+function pbgorski_custom_filter_layout8($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout2.php';
 	$filter_id = '1850';
-	$layout_id = '9';
+	$layout_id = '8';
 	$layout  = ''; //Override demo message
 	ob_start();
 	if (file_exists($filepath_filter)) {
@@ -884,7 +884,7 @@ function pbgorski_custom_filter_layout9($layout, $terms, $taxonomy, $multiple, $
 	ob_end_clean();
 	return $layout;
 }
-add_filter('ymc_filter_custom_layout_1850_9', 'pbgorski_custom_filter_layout9', 10, 6);
+add_filter('ymc_filter_custom_layout_1850_8', 'pbgorski_custom_filter_layout8', 10, 6);
 
 // ---------------------------------------------------------------------------------------
 
