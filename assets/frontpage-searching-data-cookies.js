@@ -526,11 +526,11 @@ window.addEventListener("load", function() {
           }
         });
 
-        document.querySelectorAll('.dropdown__list').forEach((passive,index) =>{
+        document.querySelectorAll('.dropdown__list').forEach((passive2,index) =>{
           for(let i = 0 ; i != index ; i++ ){
-            if(passive.classList.contains('dropdown__list_active')){
+            if(passive2.classList.contains('dropdown__list_active')){
               console.log('contains active');
-              passive.classList.toggle('dropdown__list_active')
+              passive2.classList.toggle('dropdown__list_active')
             }
             // if(passive.style.display == 'block'){
             //   passive.style.display = 'none';
