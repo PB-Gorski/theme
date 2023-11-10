@@ -527,8 +527,9 @@ window.addEventListener("load", function() {
         });
 
         document.querySelectorAll('.dropdown__list').forEach((passive,index) =>{
-          for(let i = 0 ; i != index ; i++ ){
+          for(let i = 0 ; i = index ; i++ ){
             if(passive.classList.contains('dropdown__list_active')){
+              console.log('contains active');
               passive.classList.remove('dropdown__list_active')
             }
             // if(passive.style.display == 'block'){
