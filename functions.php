@@ -610,7 +610,7 @@ function pbgorski_custom_filter_layout148_3($layout, $terms, $taxonomy, $multipl
 }
 add_filter('ymc_filter_custom_layout_148_3', 'pbgorski_custom_filter_layout148_3', 10, 6);
 
-// 148_2 post layout
+// 148_3 post layout
 function my_custom_post_layout148_3($layout, $post_id, $filter_id, $increment_post, $arrOptions)
 {
 	$layout = '<a href="' . get_the_permalink($post_id) . '" class="list-item-mieszkanie group container mx-auto w-full py-[20px] text-[16px] text-textGray flex justify-between items-center">';
@@ -630,6 +630,198 @@ function my_custom_post_layout148_3($layout, $post_id, $filter_id, $increment_po
 add_filter('ymc_post_custom_layout_148_3', 'my_custom_post_layout148_3', 10, 5);
 
 // ---------------------------------------------------------------------------------------
+
+// 148_4 filter layout
+function pbgorski_custom_filter_layout148_4($layout, $terms, $taxonomy, $multiple, $target, $options)
+{
+	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
+	$filter_id = '148';
+	$layout_id = '4';
+	$layout  = ''; //Override demo message
+	ob_start();
+	if (file_exists($filepath_filter)) {
+		require $filepath_filter;
+		$layout .= ob_get_contents();
+	}
+	ob_end_clean();
+	return $layout;
+}
+add_filter('ymc_filter_custom_layout_148_4', 'pbgorski_custom_filter_layout148_3', 10, 6);
+
+// 148_4 post layout
+function my_custom_post_layout148_4($layout, $post_id, $filter_id, $increment_post, $arrOptions)
+{
+	$layout = '<a href="' . get_the_permalink($post_id) . '" class="list-item-mieszkanie group container mx-auto w-full py-[20px] text-[16px] text-textGray flex justify-between items-center">';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
+	$layout .= '<p class="w-[35px]">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'cena')[0]->name . ' zł</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
+	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="arrow-red w-[26px] h-[17px]" />';
+	$layout .= '</a>';
+	return $layout;
+}
+add_filter('ymc_post_custom_layout_148_4', 'my_custom_post_layout148_4', 10, 5);
+
+// ---------------------------------------------------------------------------------------
+
+// 148_5 filter layout
+function pbgorski_custom_filter_layout148_5($layout, $terms, $taxonomy, $multiple, $target, $options)
+{
+	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
+	$filter_id = '148';
+	$layout_id = '5';
+	$layout  = ''; //Override demo message
+	ob_start();
+	if (file_exists($filepath_filter)) {
+		require $filepath_filter;
+		$layout .= ob_get_contents();
+	}
+	ob_end_clean();
+	return $layout;
+}
+add_filter('ymc_filter_custom_layout_148_5', 'pbgorski_custom_filter_layout148_5', 10, 6);
+
+// 148_5 post layout
+function my_custom_post_layout148_5($layout, $post_id, $filter_id, $increment_post, $arrOptions)
+{
+	$layout = '<a href="' . get_the_permalink($post_id) . '" class="list-item-mieszkanie group container mx-auto w-full py-[20px] text-[16px] text-textGray flex justify-between items-center">';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
+	$layout .= '<p class="w-[35px]">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'cena')[0]->name . ' zł</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
+	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="arrow-red w-[26px] h-[17px]" />';
+	$layout .= '</a>';
+	return $layout;
+}
+add_filter('ymc_post_custom_layout_148_5', 'my_custom_post_layout148_5', 10, 5);
+
+// ---------------------------------------------------------------------------------------
+
+// 148_6 filter layout
+function pbgorski_custom_filter_layout148_6($layout, $terms, $taxonomy, $multiple, $target, $options)
+{
+	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
+	$filter_id = '148';
+	$layout_id = '6';
+	$layout  = ''; //Override demo message
+	ob_start();
+	if (file_exists($filepath_filter)) {
+		require $filepath_filter;
+		$layout .= ob_get_contents();
+	}
+	ob_end_clean();
+	return $layout;
+}
+add_filter('ymc_filter_custom_layout_148_6', 'pbgorski_custom_filter_layout148_6', 10, 6);
+
+// 148_6 post layout
+function my_custom_post_layout148_6($layout, $post_id, $filter_id, $increment_post, $arrOptions)
+{
+	$layout = '<a href="' . get_the_permalink($post_id) . '" class="list-item-mieszkanie group container mx-auto w-full py-[20px] text-[16px] text-textGray flex justify-between items-center">';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
+	$layout .= '<p class="w-[35px]">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'cena')[0]->name . ' zł</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
+	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="arrow-red w-[26px] h-[17px]" />';
+	$layout .= '</a>';
+	return $layout;
+}
+add_filter('ymc_post_custom_layout_148_6', 'my_custom_post_layout148_6', 10, 5);
+
+// ---------------------------------------------------------------------------------------
+
+// 148_7 filter layout
+function pbgorski_custom_filter_layout148_7($layout, $terms, $taxonomy, $multiple, $target, $options)
+{
+	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
+	$filter_id = '148';
+	$layout_id = '7';
+	$layout  = ''; //Override demo message
+	ob_start();
+	if (file_exists($filepath_filter)) {
+		require $filepath_filter;
+		$layout .= ob_get_contents();
+	}
+	ob_end_clean();
+	return $layout;
+}
+add_filter('ymc_filter_custom_layout_148_7', 'pbgorski_custom_filter_layout148_7', 10, 6);
+
+// 148_7 post layout
+function my_custom_post_layout148_7($layout, $post_id, $filter_id, $increment_post, $arrOptions)
+{
+	$layout = '<a href="' . get_the_permalink($post_id) . '" class="list-item-mieszkanie group container mx-auto w-full py-[20px] text-[16px] text-textGray flex justify-between items-center">';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
+	$layout .= '<p class="w-[35px]">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'cena')[0]->name . ' zł</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
+	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="arrow-red w-[26px] h-[17px]" />';
+	$layout .= '</a>';
+	return $layout;
+}
+add_filter('ymc_post_custom_layout_148_7', 'my_custom_post_layout148_7', 10, 5);
+
+// ---------------------------------------------------------------------------------------
+
+// 148_8 filter layout
+function pbgorski_custom_filter_layout148_8($layout, $terms, $taxonomy, $multiple, $target, $options)
+{
+	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
+	$filter_id = '148';
+	$layout_id = '8';
+	$layout  = ''; //Override demo message
+	ob_start();
+	if (file_exists($filepath_filter)) {
+		require $filepath_filter;
+		$layout .= ob_get_contents();
+	}
+	ob_end_clean();
+	return $layout;
+}
+add_filter('ymc_filter_custom_layout_148_8', 'pbgorski_custom_filter_layout148_8', 10, 6);
+
+// 148_7 post layout
+function my_custom_post_layout148_8($layout, $post_id, $filter_id, $increment_post, $arrOptions)
+{
+	$layout = '<a href="' . get_the_permalink($post_id) . '" class="list-item-mieszkanie group container mx-auto w-full py-[20px] text-[16px] text-textGray flex justify-between items-center">';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
+	$layout .= '<p class="w-[35px]">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'cena')[0]->name . ' zł</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
+	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="arrow-red w-[26px] h-[17px]" />';
+	$layout .= '</a>';
+	return $layout;
+}
+add_filter('ymc_post_custom_layout_148_8', 'my_custom_post_layout148_8', 10, 5);
+
+// ---------------------------------------------------------------------------------------
+
+
 
 
 
