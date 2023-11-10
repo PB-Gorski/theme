@@ -517,6 +517,15 @@ window.addEventListener("load", function() {
         });
       })
     });  
+    dropdown__value
+    document.querySelectorAll('.dropdown__value').forEach(dropValue =>{
+      dropValue.addEventListener('click', ()=>{
+        document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
+          customDrop.classList.remove('dropdown__list_active')
+        });
+      })
+    }); 
+
     
 
 
