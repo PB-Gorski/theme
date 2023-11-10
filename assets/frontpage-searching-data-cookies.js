@@ -525,6 +525,16 @@ window.addEventListener("load", function() {
             passive.style.display = 'none';
           }
         });
+
+        document.querySelectorAll('.dropdown__list').forEach((passive,index) =>{
+          for(let i = 0 ; i != index ; i++ ){
+            passive.classList.add('inne')
+            if(passive.style.display == 'block'){
+              passive.style.display = 'none';
+            }
+          }
+        
+        });
       }); 
 
 
