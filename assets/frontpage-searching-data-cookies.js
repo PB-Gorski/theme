@@ -517,11 +517,13 @@ window.addEventListener("load", function() {
     });  
 
     let c = 0;
-    document.querySelectorAll('.dropdown__value').forEach(dropValue =>{
+    document.querySelectorAll('.dropdown__value').forEach(customDropValue =>{
       // cleaning default dropdowns
-      dropValue.addEventListener('click', ()=>{
+      customDropValue.addEventListener('click', ()=>{
         document.querySelectorAll('.menu-passive__item').forEach(passive =>{
-          passive.style.display = 'none';
+          if(passive.style.display == 'block'){
+            passive.style.display = 'none';
+          }
         });
       }); 
 
