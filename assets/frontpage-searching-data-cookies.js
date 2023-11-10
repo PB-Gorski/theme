@@ -525,58 +525,8 @@ window.addEventListener("load", function() {
             passive.style.display = 'none';
           }
         });
-
-        document.querySelectorAll('.dropdown__list').forEach((passive2,index) =>{
-          for(let i = 0 ; i != index ; i++ ){
-            if(passive2.classList.contains('dropdown__list_active')){
-              console.log('contains active');
-              passive2.classList.toggle('dropdown__list_active')
-            }
-            // if(passive.style.display == 'block'){
-            //   passive.style.display = 'none';
-            // }
-          }
-        
-        });
-      }); 
-
-
-        console.log('drop value');
-        allDropsArrr = document.querySelectorAll('.dropdown__list')
-        document.querySelectorAll('.dropdown__list').forEach((customDrop,index) =>{
-          console.log('index: ', index);
-
-            // if(customDrop.classList.contains('dropdown__list_active')){
-            //   customDrop.classList.remove('dropdown__list_active')
-            // }
-        });
-
-
-        var toggleExtras = document.querySelectorAll(".dropdown__value");
-
-        Array.prototype.forEach.call(toggleExtras, function (toggleExtra, index) {
-          toggleExtra.addEventListener('click', function () {
-          console.log('index2',index);
-          
-        });
-
-
-
       })
     }); 
-    // let thirdNav = document.querySelectorAll('.dropdown__value')
-    // for (var i = 0; i < thirdNav.length; i++){
-    //   thirdNav[i].addEventListener("click", ()=>{
-    //     console.log('third fun');
-    //     const elements = Array.from(thirdNav).filter(el => el !== this)
-    //     elements.forEach(el => el.classList.add('test'))
-    //   });
-    // }
-
-
-    
-
-
 
     
 
