@@ -1352,5 +1352,6 @@ background-color: #e8fbff!important;
 
 .newAfter::after{
   content: 'x';
+  font-size: 14px;
 }
 
