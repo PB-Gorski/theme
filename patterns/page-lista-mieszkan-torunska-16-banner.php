@@ -70,14 +70,6 @@
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
-        <!-- wp:group -->
-        <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
-          <!-- wp:paragraph -->
-          <p class="max-w-[550px] text-white opacity-[0.75]" data-aos="fade-right" data-aos-offset="30">Określ parametry, aby znaleźć mieszkanie dokładnie
-            takie, jakiego potrzebujesz.</p>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
     </div>
