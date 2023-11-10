@@ -741,6 +741,9 @@ label{
     overflow-y: hidden;
   }
 }
+.active_window{
+  padding: 10px 15px!important;
+}
 .menu-passive{
   background-color: white!important;
   color: #2E384D!important;
