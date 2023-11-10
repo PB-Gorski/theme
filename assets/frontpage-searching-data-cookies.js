@@ -538,7 +538,7 @@ window.addEventListener("load", function() {
     }); 
     let thirdNav = document.querySelectorAll('.dropdown__list')
     for (var i = 0; i < thirdNav.length; i++){
-        thirdNav[i].addEventListener("click", thirdNavFuntion);
+        thirdNav[i].addEventListener("click", thirdNavFuntion());
     }
 
     function thirdNavFuntion() {
