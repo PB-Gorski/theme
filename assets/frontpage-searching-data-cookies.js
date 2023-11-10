@@ -505,8 +505,8 @@ window.addEventListener("load", function() {
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       console.log('test2');
       passive.addEventListener('click', (e) => {
-        e.target.parentNode.style.display = 'none';
-        e.target.parentNode.classList('hidden') = 'none';
+        e.target.parentNode.parentNode.style.display = 'none';
+        e.target.parentNode.parentNode.add('test');
       })
     });  
     
