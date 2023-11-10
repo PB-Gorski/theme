@@ -528,7 +528,6 @@ window.addEventListener("load", function() {
             //   customDrop.classList.remove('dropdown__list_active')
             // }
         });
-        c=0;
 
 
         var toggleExtras = document.querySelectorAll(".dropdown__value");
@@ -536,6 +535,14 @@ window.addEventListener("load", function() {
         Array.prototype.forEach.call(toggleExtras, function (toggleExtra, index) {
             toggleExtra.addEventListener('click', function () {
           console.log('index2',index);
+          document.querySelectorAll('.dropdown__list').forEach((customDrop,idx) =>{
+            if(index = idx)
+            console.log(customDrop);
+  
+              // if(customDrop.classList.contains('dropdown__list_active')){
+              //   customDrop.classList.remove('dropdown__list_active')
+              // }
+          });
           })
         });
 
