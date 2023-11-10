@@ -429,9 +429,9 @@ label{
 
 /* --------------------------------------------------------------------------------------- */
 /* taxonomy filter YMC */
-#ymc-smart-filter-container-2 > div.container-posts.container-post-layout1{
+/* #ymc-smart-filter-container-2 > div.container-posts.container-post-layout1{
   display: none;
-}
+} */
 .ymc-smart-filter-container{
   max-width: 100%!important;
 }

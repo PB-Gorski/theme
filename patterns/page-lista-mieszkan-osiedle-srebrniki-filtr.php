@@ -21,7 +21,6 @@
       <!-- /wp:list-item -->
     </ul>
     <!-- /wp:list -->
-
   </div>
   <!-- /wp:group -->
 </div>
