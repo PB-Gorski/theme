@@ -513,10 +513,8 @@ window.addEventListener("load", function() {
         document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
           customDrop.classList.remove('dropdown__list_active')
         });
-        document.querySelectorAll('.menu-active').forEach(activeItem =>{
           console.log('block');
           e.target.childNodes[3].classList.toggle('newAfter')
-        });  
       })
     });  
 
