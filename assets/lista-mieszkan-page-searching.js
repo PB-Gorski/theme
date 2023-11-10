@@ -1211,6 +1211,7 @@ window.addEventListener("load", function() {
         // e.target.classList.replace('arrow-down', 'newAfter');
         // e.target.classList.replace('newAfter', 'arrow-down');
         e.target.classList.toggle('newAfter');
+        e.target.classList.toggle('arrow-down');
       })
     });  
 
