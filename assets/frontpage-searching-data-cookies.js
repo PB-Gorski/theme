@@ -532,15 +532,17 @@ window.addEventListener("load", function() {
 
         // allDropsArrr
 
-        var thirdNav = document.querySelectorAll('.dropdown__list')
+        let thirdNav = document.querySelectorAll('.dropdown__list')
         for (var i = 0; i < thirdNav.length; i++){
             thirdNav[i].addEventListener("click", thirdNavFuntion);
         }
 
         function thirdNavFuntion() {
+          console.log('third fun');
           const elements = Array.from(thirdNav).filter(el => el !== this)
           elements.forEach(el => el.parentElement.className = "hidden")
         }
+
       })
     }); 
 
