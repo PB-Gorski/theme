@@ -524,6 +524,7 @@ window.addEventListener("load", function() {
         document.querySelectorAll('.dropdown__list').forEach((customDrop,index) =>{
           console.log('c: ', c, 'index: ', index);
           if (c!=index){
+            console.log('c=index',c,index);
 
             if(customDrop.classList.contains('dropdown__list_active')){
               customDrop.classList.remove('dropdown__list_active')
