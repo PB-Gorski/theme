@@ -507,6 +507,7 @@ window.addEventListener("load", function() {
         e.target.parentNode.parentNode.style.display = 'none';
       })
       if(passive.style.display == 'block'){
+        console.log('block');
         passive.previousElementSibling.childNodes[1].classList.add('newAfter')
       }
     });  
