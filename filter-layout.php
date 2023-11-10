@@ -1,8 +1,8 @@
 <?php if (!defined('ABSPATH')) exit;
 
-$ymc_filter_layout = 'filter-layout4';
+$ymc_filter_layout = 'filter-layout3';
 $terms_selected = $terms;
-$c_target = 'filter-layout4';
+$c_target = 'filter-layout3';
 $ymc_multiple_filter = '1';
 $ymc_sort_terms = 'manual';
 $tax_sort = $taxonomy;
