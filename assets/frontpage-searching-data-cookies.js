@@ -520,7 +520,7 @@ window.addEventListener("load", function() {
     document.querySelectorAll('.dropdown__value').forEach(customDropValue =>{
       // cleaning default dropdowns
       customDropValue.addEventListener('click', ()=>{
-        document.querySelectorAll('.menu-passive__item').forEach(passive =>{
+        document.querySelectorAll('.menu-passive').forEach(passive =>{
           if(passive.style.display == 'block'){
             passive.style.display = 'none';
           }
