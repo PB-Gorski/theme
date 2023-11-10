@@ -520,11 +520,11 @@ window.addEventListener("load", function() {
       dropValue.addEventListener('click', (e)=>{
         console.log('drop value');
         allDropsArrr = document.querySelectorAll('.dropdown__list')
-        document.querySelectorAll('.dropdown__list').forEach((customDrop,index) =>{
-          if(customDrop.classList.contains('dropdown__list_active')){
-            customDrop.classList.remove('dropdown__list_active')
-          }
-        });
+        // document.querySelectorAll('.dropdown__list').forEach((customDrop,index) =>{
+        //   if(customDrop.classList.contains('dropdown__list_active')){
+        //     customDrop.classList.remove('dropdown__list_active')
+        //   }
+        // });
 
 
 
