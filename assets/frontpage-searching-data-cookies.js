@@ -535,7 +535,7 @@ window.addEventListener("load", function() {
         thirdNav[i].addEventListener("click", ()=>{
           console.log('third fun');
           const elements = Array.from(thirdNav).filter(el => el !== this)
-          elements.forEach(el => el.parentElement.className = "test")
+          elements.forEach(el => el.parentElement.classList.add = "test")
         });
     }
 
