@@ -499,12 +499,10 @@ window.addEventListener("load", function() {
     document.body.addEventListener('click', () => {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
-        console.log('test');
       });  
     });
 
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
-      console.log('test2');
       passive.addEventListener('click', (e) => {
         e.target.parentNode.parentNode.style.display = 'none';
       })
@@ -517,9 +515,10 @@ window.addEventListener("load", function() {
         });
       })
     });  
-    dropdown__value
+
     document.querySelectorAll('.dropdown__value').forEach(dropValue =>{
       dropValue.addEventListener('click', ()=>{
+        console.log('drop value');
         document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
           customDrop.classList.remove('dropdown__list_active')
         });
