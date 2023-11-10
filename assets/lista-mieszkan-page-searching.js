@@ -1192,11 +1192,6 @@ window.addEventListener("load", function() {
     });
 
 
-    document.body.addEventListener('click', () => {
-      console.log('body click');
-
-    });
-
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
         e.target.parentNode.parentNode.style.display = 'none';
