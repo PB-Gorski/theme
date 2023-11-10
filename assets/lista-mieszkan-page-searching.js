@@ -1187,6 +1187,39 @@ window.addEventListener("load", function() {
       //     activeItem2.style.display = 'none';  
       //   }
       // });
+
+
+    document.body.addEventListener('click', () => {
+      console.log('body click');
+      document.querySelectorAll('.menu-passive').forEach(activeItem =>{
+      });  
+    });
+
+    document.querySelectorAll('.menu-passive__item').forEach(passive =>{
+      passive.addEventListener('click', (e) => {
+        e.target.parentNode.parentNode.style.display = 'none';
+      })
+    });  
+      
+    document.querySelectorAll('.menu-active').forEach(menuActive =>{
+      menuActive.addEventListener('click', ()=>{
+        document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
+          customDrop.classList.remove('dropdown__list_active')
+        });
+      })
+    });  
+
+    let c = 0;
+    document.querySelectorAll('.dropdown__value').forEach(customDropValue =>{
+      // cleaning default dropdowns
+      customDropValue.addEventListener('click', ()=>{
+        document.querySelectorAll('.menu-passive').forEach(passive =>{
+          if(passive.style.display == 'block'){
+            passive.style.display = 'none';
+          }
+        });
+      })
+    }); 
   
   
     });
