@@ -580,15 +580,6 @@ function pbgorski_custom_filter_layout3($layout, $terms, $taxonomy, $multiple, $
 }
 add_filter('ymc_filter_custom_layout_1850_3', 'pbgorski_custom_filter_layout3', 10, 6);
 
-// 1850 layout
-function my_custom_post_layout2($layout, $post_id, $filter_id, $increment_post, $arrOptions)
-{
-	$layout = '';
-	return $layout;
-}
-add_filter('ymc_post_custom_layout_1850_2', 'my_custom_post_layout2', 10, 5);
-add_filter('ymc_posts_selected_FilterID_LayoutID', 'ymc_posts_selected', 10, 2);
-
 // 1850 filter layout
 function pbgorski_custom_filter_layout5($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
