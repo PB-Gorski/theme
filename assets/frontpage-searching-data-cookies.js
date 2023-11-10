@@ -531,6 +531,7 @@ window.addEventListener("load", function() {
           }
           c++
         });
+        c=0;
 
 
 
