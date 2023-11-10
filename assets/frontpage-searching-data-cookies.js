@@ -514,7 +514,8 @@ window.addEventListener("load", function() {
           customDrop.classList.remove('dropdown__list_active')
         });
           console.log('block');
-          e.target.childNodes[3].classList.toggle('newAfter')
+          console.log(e.target);
+          // e.target.childNodes[3].classList.toggle('newAfter')
       })
     });  
 
