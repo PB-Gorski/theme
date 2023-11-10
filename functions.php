@@ -884,7 +884,7 @@ function pbgorski_custom_filter_layout9($layout, $terms, $taxonomy, $multiple, $
 	ob_end_clean();
 	return $layout;
 }
-add_filter('ymc_filter_custom_layout_1850_6', 'pbgorski_custom_filter_layout6', 10, 6);
+add_filter('ymc_filter_custom_layout_1850_9', 'pbgorski_custom_filter_layout9', 10, 6);
 
 // ---------------------------------------------------------------------------------------
 
