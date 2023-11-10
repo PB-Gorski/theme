@@ -518,7 +518,6 @@ window.addEventListener("load", function() {
 
     document.querySelectorAll('.dropdown__value').forEach(dropValue =>{
       dropValue.addEventListener('click', (e)=>{
-        e.preventDefault();
         console.log('drop value');
         allDropsArrr = document.querySelectorAll('.dropdown__list')
         // document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
@@ -527,16 +526,11 @@ window.addEventListener("load", function() {
         //   }
         // });
 
-        // const elements = Array.from(allDropsArrr).filter(el => el !== this)
-        // elements.forEach(el => el.parentElement.className = "")
-
-        // allDropsArrr
-
 
 
       })
     }); 
-    let thirdNav = document.querySelectorAll('.dropdown__list')
+    let thirdNav = document.querySelectorAll('.dropdown__value')
     for (var i = 0; i < thirdNav.length; i++){
         thirdNav[i].addEventListener("click", ()=>{
           console.log('third fun');
