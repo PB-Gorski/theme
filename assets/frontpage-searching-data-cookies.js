@@ -515,7 +515,7 @@ window.addEventListener("load", function() {
         });
           console.log('block');
           console.log(e.target);
-          // e.target.childNodes[3].classList.toggle('newAfter')
+          e.target.classList.toggle('newAfter')
       })
     });  
 
