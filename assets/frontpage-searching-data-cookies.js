@@ -513,8 +513,8 @@ window.addEventListener("load", function() {
         document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
           customDrop.classList.remove('dropdown__list_active')
         });
-        
-        e.target.classList.toggle('newAfter');
+
+        e.target.classList.toggle('arrow-down');
       })
     });  
 
