@@ -499,6 +499,10 @@ window.addEventListener("load", function() {
     document.body.addEventListener('click', () => {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
+        if(activeItem.style.display == 'block'){
+          console.log('block');
+          activeItem.previousElementSibling.childNodes[1].classList.add('newAfter')
+        }
       });  
     });
 
@@ -506,10 +510,7 @@ window.addEventListener("load", function() {
       passive.addEventListener('click', (e) => {
         e.target.parentNode.parentNode.style.display = 'none';
       })
-      if(passive.style.display == 'block'){
-        console.log('block');
-        passive.previousElementSibling.childNodes[1].classList.add('newAfter')
-      }
+  
     });  
       
     document.querySelectorAll('.menu-active').forEach(menuActive =>{
