@@ -504,7 +504,7 @@ window.addEventListener("load", function() {
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
         e.target.parentNode.parentNode.style.display = 'none';
-        e.target.parentNode.parentNode.previousElementSibling.childNodes[3].classList.toggle('newAfter');
+        e.target.parentNode.parentNode.previousElementSibling.childNodes[2].classList.toggle('newAfter');
         console.log('parent parent: ',e.target.parentNode.parentNode);
 
       })
