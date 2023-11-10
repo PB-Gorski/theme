@@ -520,7 +520,10 @@ window.addEventListener("load", function() {
       dropValue.addEventListener('click', ()=>{
         console.log('drop value');
         document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
-          customDrop.classList.remove('dropdown__list_active')
+          if(customDrop.classList.contains('dropdown__list_active')){
+            customDrop.classList.remove('dropdown__list_active')
+
+          }
         });
       })
     }); 
