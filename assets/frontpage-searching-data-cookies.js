@@ -536,8 +536,9 @@ window.addEventListener("load", function() {
             toggleExtra.addEventListener('click', function () {
           console.log('index2',index);
           document.querySelectorAll('.dropdown__list').forEach((customDrop,idx) =>{
-            if(index = idx)
+            if(index = idx){
             console.log(customDrop);
+            }
   
               // if(customDrop.classList.contains('dropdown__list_active')){
               //   customDrop.classList.remove('dropdown__list_active')
