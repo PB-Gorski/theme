@@ -520,32 +520,41 @@ window.addEventListener("load", function() {
     document.querySelectorAll('.dropdown__value').forEach(dropValue =>{
       dropValue.addEventListener('click', (e)=>{
         console.log('drop value');
-        allDropsArrr = document.querySelectorAll('.dropdown__list')
-        document.querySelectorAll('.dropdown__list').forEach((customDrop,index) =>{
-          console.log('c: ', c, 'index: ', index);
-          if (c=index){
-            console.log('c=index',c,index);
+        // allDropsArrr = document.querySelectorAll('.dropdown__list')
+        // document.querySelectorAll('.dropdown__list').forEach((customDrop,index) =>{
+        //   console.log('c: ', c, 'index: ', index);
+        //   if (c=index){
+        //     console.log('c=index',c,index);
 
-            if(customDrop.classList.contains('dropdown__list_active')){
-              customDrop.classList.remove('dropdown__list_active')
-            }
-          }
-          c++
+        //     if(customDrop.classList.contains('dropdown__list_active')){
+        //       customDrop.classList.remove('dropdown__list_active')
+        //     }
+        //   }
+        //   c++
+        // });
+        // c=0;
+
+
+        var toggleExtras = document.querySelectorAll(".dropdown__value");
+
+        Array.prototype.forEach.call(toggleExtras, function (toggleExtra, index) {
+            toggleExtra.addEventListener('click', function () {
+          console.log(index);
+          })
         });
-        c=0;
 
 
 
       })
     }); 
-    let thirdNav = document.querySelectorAll('.dropdown__value')
-    for (var i = 0; i < thirdNav.length; i++){
-      thirdNav[i].addEventListener("click", ()=>{
-        console.log('third fun');
-        const elements = Array.from(thirdNav).filter(el => el !== this)
-        elements.forEach(el => el.classList.add('test'))
-      });
-    }
+    // let thirdNav = document.querySelectorAll('.dropdown__value')
+    // for (var i = 0; i < thirdNav.length; i++){
+    //   thirdNav[i].addEventListener("click", ()=>{
+    //     console.log('third fun');
+    //     const elements = Array.from(thirdNav).filter(el => el !== this)
+    //     elements.forEach(el => el.classList.add('test'))
+    //   });
+    // }
 
 
     
