@@ -520,11 +520,11 @@ window.addEventListener("load", function() {
       dropValue.addEventListener('click', (e)=>{
         console.log('drop value');
         allDropsArrr = document.querySelectorAll('.dropdown__list')
-        // document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
-        //   if(customDrop.classList.contains('dropdown__list_active')){
-        //     customDrop.classList.remove('dropdown__list_active')
-        //   }
-        // });
+        document.querySelectorAll('.dropdown__list').forEach((customDrop,index) =>{
+          if(customDrop.classList.contains('dropdown__list_active')){
+            customDrop.classList.remove('dropdown__list_active')
+          }
+        });
 
 
 
@@ -535,7 +535,7 @@ window.addEventListener("load", function() {
         thirdNav[i].addEventListener("click", ()=>{
           console.log('third fun');
           const elements = Array.from(thirdNav).filter(el => el !== this)
-          elements.forEach(el => el.parentElement.classList.add = "test")
+          elements.forEach(el => el.parentElement.classList.add('test'))
         });
     }
 
