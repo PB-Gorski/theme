@@ -500,7 +500,7 @@ window.addEventListener("load", function() {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
           console.log('block');
-          activeItem.previousElementSibling.childNodes[1].classList.toggle('newAfter')
+          // activeItem.previousElementSibling.childNodes[1].classList.toggle('newAfter')
       });  
     });
 
