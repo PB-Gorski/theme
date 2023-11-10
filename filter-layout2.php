@@ -1,6 +1,6 @@
 <?php if (!defined('ABSPATH')) exit;
 
-$ymc_filter_layout = 'filter-layout3';
+$ymc_filter_layout = 'filter-layout4';
 $terms_selected = $terms;
 $c_target = 'filter-layout4';
 $ymc_multiple_filter = '1';
