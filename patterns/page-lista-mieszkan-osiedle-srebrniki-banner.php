@@ -56,7 +56,7 @@
   <div class="wp-block-group w-full h-[480px] desktop:h-[600px] relative py-[60px]">
     <!-- wp:image -->
     <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
-      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/osiedle-srebrniki-bg2.jpeg" alt="banner-bg">
+      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/osiedle-srebrniki-bg2.jpeg" alt="banner-bg">
     </figure>
     <!-- /wp:image -->
     <!-- wp:group -->
