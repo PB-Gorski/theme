@@ -525,10 +525,10 @@ window.addEventListener("load", function() {
             passive.style.display = 'none';
           }
         });
-        
+
         document.querySelectorAll('.dropdown__list').forEach((passive,index) =>{
           for(let i = 0 ; i != index ; i++ ){
-            if(passive.contains(dropdown__list_active)){
+            if(passive.contains('dropdown__list_active')){
               passive.classList.remove('dropdown__list_active')
             }
             // if(passive.style.display == 'block'){
