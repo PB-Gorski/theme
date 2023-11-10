@@ -1197,9 +1197,7 @@ window.addEventListener("load", function() {
         e.target.parentNode.parentNode.style.display = 'none';
         e.target.parentNode.parentNode.previousElementSibling.childNodes[3].classList.toggle('newAfter');
         console.log('parent parent: ',e.target.parentNode.parentNode);
-
       })
-  
     });  
       
     document.querySelectorAll('.menu-active').forEach(menuActive =>{
