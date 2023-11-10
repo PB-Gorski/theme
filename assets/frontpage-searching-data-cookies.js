@@ -521,16 +521,16 @@ window.addEventListener("load", function() {
         e.preventDefault();
         console.log('drop value');
         allDropsArrr = document.querySelectorAll('.dropdown__list')
-        document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
-          if(customDrop.classList.contains('dropdown__list_active')){
-            customDrop.classList.remove('dropdown__list_active')
-          }
-        });
+        // document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
+        //   if(customDrop.classList.contains('dropdown__list_active')){
+        //     customDrop.classList.remove('dropdown__list_active')
+        //   }
+        // });
 
-        const elements = Array.from(allDropsArrr).filter(el => el !== this)
-        elements.forEach(el => el.parentElement.className = "")
+        // const elements = Array.from(allDropsArrr).filter(el => el !== this)
+        // elements.forEach(el => el.parentElement.className = "")
 
-        allDropsArrr
+        // allDropsArrr
 
         var thirdNav = document.querySelectorAll('.dropdown__list')
         for (var i = 0; i < thirdNav.length; i++){
