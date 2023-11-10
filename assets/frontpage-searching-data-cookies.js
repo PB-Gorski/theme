@@ -518,7 +518,14 @@ window.addEventListener("load", function() {
 
     let c = 0;
     document.querySelectorAll('.dropdown__value').forEach(dropValue =>{
+      // cleaning default dropdowns
       dropValue.addEventListener('click', (e)=>{
+        document.querySelectorAll('.menu-passive__item').forEach(passive =>{
+          passive.style.display = 'none';
+          })
+        }); 
+
+
         console.log('drop value');
         allDropsArrr = document.querySelectorAll('.dropdown__list')
         document.querySelectorAll('.dropdown__list').forEach((customDrop,index) =>{
