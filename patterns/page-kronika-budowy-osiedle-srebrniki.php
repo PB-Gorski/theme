@@ -90,7 +90,7 @@
       <a href="<?php echo home_url() . '/lokalizacja-sw-piotra' ?>" class="text-[#8a8f99]" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/mieszkania' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
+      <a href="<?php echo home_url() . '/lista-mieszkan-osiedle-srebrniki' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/galeria-osiedle-srebrniki' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Galeria</a>
