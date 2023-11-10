@@ -1131,9 +1131,9 @@ window.addEventListener("load", function() {
       //   stopSearching++;
       // }
 
-      document.querySelectorAll('.arrow-down').forEach(span =>{
-        span.innerHTML = ''
-      });
+      // document.querySelectorAll('.arrow-down').forEach(span =>{
+      //   span.innerHTML = ''
+      // });
 
       
     });
