@@ -1196,6 +1196,7 @@ window.addEventListener("load", function() {
       passive.addEventListener('click', (e) => {
         e.target.parentNode.parentNode.style.display = 'none';
         console.log('parent parent: ',e.target.parentNode.parentNode);
+        console.log('parent parent: ',e.target.parentNode.parentNode.previousElementSibling.childNodes[1]);
         e.target.parentNode.parentNode.previousElementSibling.childNodes[1].classList.toggle('newAfter');
       })
     });  
