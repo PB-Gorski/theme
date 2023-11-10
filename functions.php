@@ -575,9 +575,7 @@ function pbgorski_custom_filter_layout3($layout, $terms, $taxonomy, $multiple, $
 		require $filepath_filter;
 		$layout .= ob_get_contents();
 	}
-
 	ob_end_clean();
-
 	return $layout;
 }
 add_filter('ymc_filter_custom_layout_1850_3', 'pbgorski_custom_filter_layout3', 10, 6);
@@ -604,9 +602,7 @@ function pbgorski_custom_filter_layout5($layout, $terms, $taxonomy, $multiple, $
 		require $filepath_filter;
 		$layout .= ob_get_contents();
 	}
-
 	ob_end_clean();
-
 	return $layout;
 }
 add_filter('ymc_filter_custom_layout_1850_5', 'pbgorski_custom_filter_layout5', 10, 6);
