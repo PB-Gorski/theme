@@ -334,11 +334,11 @@ $tax_sort = $taxonomy;
             <div class="dropdown-filter flex-col bg-white">
               <p class="dropdown-filter-title"><?php echo get_taxonomy($select_term)->label . ':' ?></p>
               <div class="menu-active font-bold">
-                <i class="btn-close">x</i>
+                <!-- <i class="btn-close">x</i> -->
                 <span data-label="single" class="flex flex-row gap-[5px]">Wybierz<?php get_taxonomy($select_term)->label ?></span><span class="arrow-down"></span>
               </div>
               <div class="menu-passive">
-                <i class="btn-close">x</i>
+                <!-- <i class="btn-close">x</i> -->
                 <?php
                 $terms_icons = null;
                 foreach ($terms_selected as $term) {
