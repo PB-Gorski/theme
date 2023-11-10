@@ -529,9 +529,9 @@ window.addEventListener("load", function() {
         document.querySelectorAll('.dropdown__list').forEach((passive,index) =>{
           for(let i = 0 ; i != index ; i++ ){
             passive.classList.remove('dropdown__list_active')
-            if(passive.style.display == 'block'){
-              passive.style.display = 'none';
-            }
+            // if(passive.style.display == 'block'){
+            //   passive.style.display = 'none';
+            // }
           }
         
         });
