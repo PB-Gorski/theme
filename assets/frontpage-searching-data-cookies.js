@@ -501,7 +501,7 @@ window.addEventListener("load", function() {
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
         if(activeItem.style.display == 'block'){
           console.log('block');
-          activeItem.previousElementSibling.childNodes[1].classList.add('newAfter')
+          activeItem.previousElementSibling.childNodes[1].classList.toggle('newAfter')
         }
       });  
     });
