@@ -66,7 +66,7 @@
         <!-- wp:group -->
         <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
           <!-- wp:paragraph -->
-          <p data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki - Zobacz dostępne mieszkania</p>
+          <p data-aos="fade-right" data-aos-offset="30">Znajdź mieszkanie</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
