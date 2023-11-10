@@ -530,9 +530,7 @@ function pbgorski_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $t
 		require $filepath_filter;
 		$layout .= ob_get_contents();
 	}
-
 	ob_end_clean();
-
 	return $layout;
 }
 add_filter('ymc_filter_custom_layout_148_1', 'pbgorski_custom_filter_layout', 10, 6);
@@ -552,8 +550,6 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
 	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="arrow-red w-[26px] h-[17px]" />';
 	$layout .= '</a>';
-	// $layout .= '<a class="' . esc_attr($arrOptions['class_popup']) . '" data-postid="' . esc_attr($post_id) . '" href="#">Open Popup</a>';
-
 	return $layout;
 }
 add_filter('ymc_post_custom_layout_148_1', 'my_custom_post_layout', 10, 5);
@@ -570,7 +566,6 @@ function pbgorski_custom_filter_layout3($layout, $terms, $taxonomy, $multiple, $
 	$layout_id = '3';
 	$layout  = ''; //Override demo message
 	ob_start();
-
 	if (file_exists($filepath_filter)) {
 		require $filepath_filter;
 		$layout .= ob_get_contents();
@@ -588,7 +583,6 @@ function pbgorski_custom_filter_layout5($layout, $terms, $taxonomy, $multiple, $
 	$layout_id = '5';
 	$layout  = ''; //Override demo message
 	ob_start();
-
 	if (file_exists($filepath_filter)) {
 		require $filepath_filter;
 		$layout .= ob_get_contents();
