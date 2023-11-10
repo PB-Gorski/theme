@@ -591,6 +591,35 @@ function my_custom_post_layout2($layout, $post_id, $filter_id, $increment_post, 
 add_filter('ymc_post_custom_layout_1850_2', 'my_custom_post_layout2', 10, 5);
 add_filter('ymc_posts_selected_FilterID_LayoutID', 'ymc_posts_selected', 10, 2);
 
+// 1850 filter layout
+function pbgorski_custom_filter_layout5($layout, $terms, $taxonomy, $multiple, $target, $options)
+{
+	$filepath_filter = get_stylesheet_directory() . '/filter-layout2.php';
+	$filter_id = '1850';
+	$layout_id = '5';
+	$layout  = ''; //Override demo message
+	ob_start();
+
+	if (file_exists($filepath_filter)) {
+		require $filepath_filter;
+		$layout .= ob_get_contents();
+	}
+
+	ob_end_clean();
+
+	return $layout;
+}
+add_filter('ymc_filter_custom_layout_1850_5', 'pbgorski_custom_filter_layout5', 10, 6);
+
+// 1850 layout
+// function my_custom_post_layout2($layout, $post_id, $filter_id, $increment_post, $arrOptions)
+// {
+// 	$layout = '';
+// 	return $layout;
+// }
+// add_filter('ymc_post_custom_layout_1850_2', 'my_custom_post_layout2', 10, 5);
+// add_filter('ymc_posts_selected_FilterID_LayoutID', 'ymc_posts_selected', 10, 2);
+
 
 
 
