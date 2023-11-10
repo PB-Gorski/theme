@@ -337,7 +337,7 @@ $tax_sort = $taxonomy;
               <span class="arrow-down w-full flex justify-between items-center">Wybierz<?php get_taxonomy($select_term)->label ?></span>
             </div>
             <div class="menu-passive">
-              <i class="btn-close">x</i>
+              <!-- <i class="btn-close">x</i> -->
               <?php
               $terms_icons = null;
               foreach ($terms_selected as $term) {
