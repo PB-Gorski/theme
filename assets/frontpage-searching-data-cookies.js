@@ -498,10 +498,7 @@ window.addEventListener("load", function() {
 
     document.body.addEventListener('click', () => {
       console.log('body click');
-      document.querySelectorAll('.menu-active').forEach(activeItem =>{
-        console.log('block');
-        activeItem.childNodes[3].classList.toggle('newAfter')
-      });  
+
     });
 
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
@@ -516,6 +513,10 @@ window.addEventListener("load", function() {
         document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
           customDrop.classList.remove('dropdown__list_active')
         });
+        document.querySelectorAll('.menu-active').forEach(activeItem =>{
+          console.log('block');
+          activeItem.childNodes[3].classList.toggle('newAfter')
+        });  
       })
     });  
 
