@@ -516,15 +516,21 @@ window.addEventListener("load", function() {
       })
     });  
 
+    let c = 0;
     document.querySelectorAll('.dropdown__value').forEach(dropValue =>{
       dropValue.addEventListener('click', (e)=>{
         console.log('drop value');
         allDropsArrr = document.querySelectorAll('.dropdown__list')
-        // document.querySelectorAll('.dropdown__list').forEach((customDrop,index) =>{
-        //   if(customDrop.classList.contains('dropdown__list_active')){
-        //     customDrop.classList.remove('dropdown__list_active')
-        //   }
-        // });
+        document.querySelectorAll('.dropdown__list').forEach((customDrop,index) =>{
+          console.log('c: ', c, 'index: ', index);
+          if (c!=index){
+
+            if(customDrop.classList.contains('dropdown__list_active')){
+              customDrop.classList.remove('dropdown__list_active')
+            }
+          }
+          c++
+        });
 
 
 
@@ -532,11 +538,11 @@ window.addEventListener("load", function() {
     }); 
     let thirdNav = document.querySelectorAll('.dropdown__value')
     for (var i = 0; i < thirdNav.length; i++){
-        thirdNav[i].addEventListener("click", ()=>{
-          console.log('third fun');
-          const elements = Array.from(thirdNav).filter(el => el !== this)
-          elements.forEach(el => el.parentElement.classList.add('test'))
-        });
+      thirdNav[i].addEventListener("click", ()=>{
+        console.log('third fun');
+        const elements = Array.from(thirdNav).filter(el => el !== this)
+        elements.forEach(el => el.classList.add('test'))
+      });
     }
 
 
