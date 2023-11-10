@@ -523,7 +523,7 @@ window.addEventListener("load", function() {
         allDropsArrr = document.querySelectorAll('.dropdown__list')
         document.querySelectorAll('.dropdown__list').forEach((customDrop,index) =>{
           console.log('c: ', c, 'index: ', index);
-          if (c!=index){
+          if (c=index){
             console.log('c=index',c,index);
 
             if(customDrop.classList.contains('dropdown__list_active')){
