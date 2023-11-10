@@ -517,12 +517,12 @@ window.addEventListener("load", function() {
     });  
 
     document.querySelectorAll('.dropdown__value').forEach(dropValue =>{
-      dropValue.addEventListener('click', ()=>{
+      dropValue.addEventListener('click', (e)=>{
+        e.preventDefault();
         console.log('drop value');
         document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
           if(customDrop.classList.contains('dropdown__list_active')){
             customDrop.classList.remove('dropdown__list_active')
-
           }
         });
       })
