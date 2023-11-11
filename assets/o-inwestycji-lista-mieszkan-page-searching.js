@@ -718,18 +718,22 @@ window.addEventListener("load", function() {
             // }
 
             if(filteredTermsFromCookies == '72'){
-              console.log('Osiedle Srebrniki2');
               returnChoosenFromCookiesInwestycje.forEach(el => {
-                console.log(el);
+                // inwestycja filtr
                 el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Osiedle Srebrniki';
                 el.parentNode.previousElementSibling.classList.add('pointer-events-none');
+                // miasto filtr
                 el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'Gdańsk';
                 el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
               });
             }else if(filteredTermsFromCookies == '71'){
-              console.log('Sw Piotra2');
               returnChoosenFromCookiesInwestycje.forEach(el => {
+                // inwestycja filtr
                 el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Św. Piotra';
+                el.parentNode.previousElementSibling.classList.add('pointer-events-none');
+                // miasto filtr
+                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'Gdynia';
+                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
               });
             }
 
