@@ -677,6 +677,7 @@ window.addEventListener("load", function() {
             console.log('active span: ', activeSpan);
 
             if(filteredTermsFromCookies == '72'){
+              console.log('gdansk na sztywno');
               returnChoosenFromCookies.forEach(el => {
                 el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Gdańsk';
               });
