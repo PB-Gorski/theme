@@ -646,7 +646,7 @@ window.addEventListener("load", function() {
         filteredTermsFromCookies.split(',').forEach(item=>{
           console.log('item form filtered cookies: ', item);
 
-          if(miastoArr.includes(+item) || miastoArr.includes('72')){
+          if(miastoArr.includes(+item) || miastoArr.includes(72)){
             console.log('wybrano z kategorii - miasto');
             // miasto
             // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
