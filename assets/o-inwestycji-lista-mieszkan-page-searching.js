@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
-  if(document.body.classList.contains('post-type-archive-mieszkania') || 
+  if(document.body.classList.contains('') || 
     document.body.classList.contains('page-id-1926')) 
   
   {
