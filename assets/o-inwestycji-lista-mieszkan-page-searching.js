@@ -919,9 +919,17 @@ window.addEventListener("load", function() {
       };      
       showActiveFilterNameFromCookies();
 
+      // filter ID by page id
+      let filterID = '';
+      if(document.body.classList.contains('page-id-1926')){
+        filterID = 'data-target-ymc3';
+      }else if(document.body.classList.contains('page-id-1932')){
+        filterID = 'data-target-ymc4';
+      }
+
       function runFromCookies(){
         YMCTools({
-          target: '.data-target-ymc3', 
+          target: filterID, 
           terms: filteredTermsFromCookies,      
         }).apiTermUpdate(); 
         console.log('after YMC api update');
