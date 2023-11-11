@@ -676,6 +676,7 @@ window.addEventListener("load", function() {
 
             console.log('active span: ', activeSpan);
 
+            console.log('test23132: ',filteredTermsFromCookies);
             if(filteredTermsFromCookies == '72'){
               console.log('gdansk na sztywno');
               returnChoosenFromCookies.forEach(el => {
@@ -690,6 +691,7 @@ window.addEventListener("load", function() {
             // returnChoosenFromCookies.forEach(el => {
             //   el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
             // });
+            
             // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
           }else if(inwestycjaArr.includes(+item)){
             // inwestycje

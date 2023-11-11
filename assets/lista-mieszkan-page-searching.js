@@ -60,7 +60,7 @@ window.addEventListener("load", function() {
         let choosenPietroArr = [];
         let choosenTempArr = [];
         let choosenInneCount = 1;
-        function showActiveFilterName(cookiesSearchedIDs){
+        function showActiveFilterName(){
           let miastoArr = [28,40];
           let inwestycjaArr = [72,71,82,81];
           let pokojeArr = [43,34,53,25];
