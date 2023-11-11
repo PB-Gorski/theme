@@ -695,6 +695,9 @@ label{
     transition: all 0.3s ease;
   }
 }
+.page-id-1926 .custom-posts-found{
+  display: hidden;
+}
 .ymc-smart-filter-container .filter-layout3 .posts-found:empty {
   display: block!important;
 }
