@@ -676,9 +676,19 @@ window.addEventListener("load", function() {
 
             console.log('active span: ', activeSpan);
 
-            returnChoosenFromCookies.forEach(el => {
-              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
-            });
+            if(filteredTermsFromCookies == '72'){
+              returnChoosenFromCookies.forEach(el => {
+                el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Gdańsk';
+              });
+            }else if(filteredTermsFromCookies == '71'){
+              returnChoosenFromCookies.forEach(el => {
+                el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Gdynia';
+              });
+            }
+
+            // returnChoosenFromCookies.forEach(el => {
+            //   el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
+            // });
             // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
           }else if(inwestycjaArr.includes(+item)){
             // inwestycje
