@@ -695,6 +695,7 @@ label{
     transition: all 0.3s ease;
   }
 }
+.page-id-1926 .posts-found,
 .page-id-1926 .custom-posts-found{
   display: hidden;
 }
