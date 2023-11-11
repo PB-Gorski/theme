@@ -923,7 +923,9 @@ window.addEventListener("load", function() {
       let filterID = '';
       if(document.body.classList.contains('page-id-1926')){
         filterID = 'data-target-ymc3';
+        console.log('ymc3');
       }else if(document.body.classList.contains('page-id-1932')){
+        console.log('ymc4');
         filterID = 'data-target-ymc4';
       }
 
