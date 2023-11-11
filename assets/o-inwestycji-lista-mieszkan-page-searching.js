@@ -248,7 +248,7 @@ window.addEventListener("load", function() {
     // const postsFound = document.querySelector('.js-post-found');
     const dropDownFIltersArr = document.querySelectorAll('.dropdown-filter');
     
-    if(document.body.classList.contains('')){
+    if(true){
       if(window.innerWidth < 480){
         searchBar.classList.toggle('active-search-more');
       }
