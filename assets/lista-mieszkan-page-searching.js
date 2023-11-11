@@ -95,6 +95,14 @@ window.addEventListener("load", function() {
 
             menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
             console.log('miasto: ',choosenMiastoArr);
+
+            if (tempMiastoArr.length == 0){
+              menuActiveSpan.innerHTML = '';
+              menuActiveSpan.innerHTML = 'Wybierz:';
+              console.log('Wybierz');
+            }else{
+              console.log('wybrano miasto');
+            }
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
             tempInwestycjaArr.includes(choosenOptionID) ? removeItemAll(tempInwestycjaArr,choosenOptionID) : tempInwestycjaArr.push(choosenOptionID);
@@ -153,13 +161,7 @@ window.addEventListener("load", function() {
           console.log('item category: ', menuActiveTitle);
           console.log('item termid: ', +choosenOptionID);
 
-          if (tempMiastoArr.length == 0){
-            menuActiveSpan.innerHTML = '';
-            menuActiveSpan.innerHTML = 'Wybierz:';
-            console.log('Wybierz');
-          }else{
-            console.log('wybrano miasto');
-          }
+
 
         };
         showActiveFilterName();
