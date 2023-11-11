@@ -723,6 +723,7 @@ window.addEventListener("load", function() {
                 console.log(el);
                 el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Osiedle Srebrniki';
                 el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'Gdańsk';
+                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
               });
             }else if(filteredTermsFromCookies == '71'){
               console.log('Sw Piotra2');
