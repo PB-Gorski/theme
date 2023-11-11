@@ -646,7 +646,7 @@ window.addEventListener("load", function() {
         filteredTermsFromCookies.split(',').forEach(item=>{
           console.log('item form filtered cookies: ', item);
 
-          if(miastoArr.includes(+item) || miastoArr.includes(72)){
+          if(miastoArr.includes(+item)){
             console.log('wybrano z kategorii - miasto');
             // miasto
             // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
@@ -725,6 +725,7 @@ window.addEventListener("load", function() {
             if(filteredTermsFromCookies == '72'){
               console.log('Osiedle Srebrniki2');
               returnChoosenFromCookiesInwestycje.forEach(el => {
+                console.log(el);
                 el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Osiedle Srebrniki';
               });
             }else if(filteredTermsFromCookies == '71'){
