@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group">
     <!-- wp:group -->
-    <div class="wp-block-group test row-links mt-[40px] mb-[80px] pt-[30px] flex flex-wrap justify-center items-center gap-[20px]">
+    <div class="wp-block-group test row-links mb-[80px] pt-[30px] flex flex-wrap justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/o-inwestycji' ?>" class="text-[#8a8f99] hover:text-[#3e4759]" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
       <!-- /wp:paragraph -->
