@@ -91,9 +91,6 @@ window.addEventListener("load", function() {
                 console.log('Wybierz');
               }
             }, 1000);
-            
-
-
 
             console.log('miastoArr: ',tempMiastoArr.length);
             console.log('active span: ',menuActiveSpan);
@@ -656,7 +653,6 @@ window.addEventListener("load", function() {
 
 
             if(tempMiastoArr.includes(item)){removeItemAll(tempMiastoArr,item);}else{tempMiastoArr.push(item)};
-
             choosenMiastoArr = [];
             tempMiastoArr.forEach(choosenItem =>{
               passiveOptions.forEach(item => {
@@ -664,10 +660,8 @@ window.addEventListener("load", function() {
                   choosenMiastoArr.push(item.childNodes[1].dataset.name);
                   item.childNodes[1].classList.add('active');
                 }
-
                 // item.parentNode.previousElementSibling.childNodes[1];
                 // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
-
               });
             });
             
@@ -707,6 +701,12 @@ window.addEventListener("load", function() {
                 returnChoosenFromCookiesInwestycje.push(option)
               };              
             });
+
+            if(returnChoosenFromCookiesInwestycje == '72'){
+              console.log('Osiedle Srebrniki');
+            }else if(returnChoosenFromCookiesInwestycje == '71'){
+              console.log('Sw Piotra');
+            }
 
             returnChoosenFromCookiesInwestycje.forEach(el => {
               el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInwestycje.length;
