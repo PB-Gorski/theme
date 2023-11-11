@@ -702,15 +702,23 @@ window.addEventListener("load", function() {
               };              
             });
 
-            if(returnChoosenFromCookiesInwestycje[0] == '72'){
-              console.log('Osiedle Srebrniki');
-            }else if(returnChoosenFromCookiesInwestycje[0] == '71'){
-              console.log('Sw Piotra');
-            }
+            // nok
+            // if(returnChoosenFromCookiesInwestycje[0] == '72'){
+            //   console.log('Osiedle Srebrniki');
+            // }else if(returnChoosenFromCookiesInwestycje[0] == '71'){
+            //   console.log('Sw Piotra');
+            // }
+
             if(filteredTermsFromCookies == '72'){
               console.log('Osiedle Srebrniki2');
+              returnChoosenFromCookiesInwestycje.forEach(el => {
+                el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Osiedle Srebrniki';
+              });
             }else if(filteredTermsFromCookies == '71'){
               console.log('Sw Piotra2');
+              returnChoosenFromCookiesInwestycje.forEach(el => {
+                el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Św. Piotra';
+              });
             }
 
             returnChoosenFromCookiesInwestycje.forEach(el => {
