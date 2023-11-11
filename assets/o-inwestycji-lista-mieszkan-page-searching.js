@@ -540,22 +540,22 @@ window.addEventListener("load", function() {
         document.referrer.search('lokalizacja-osiedle-srebrniki') > 20 ||
         document.referrer.search('galeria-osiedle-srebrniki') > 20 ||
         document.referrer.search('kronika-budowy-osiedle-srebrniki') > 20){
-        document.cookie = "filteredTermsFromCookies=72";
+        document.cookie = "filteredTermsFromCookies=72; path=/;";
     }else if (document.referrer.search('o-inwestycji-sw-piotra') > 20 ||
               document.referrer.search('lokalizacja-sw-piotra') > 20 ||
               document.referrer.search('galeria-sw-piotra') > 20 ||
               document.referrer.search('kronika-budowy-sw-piotra') > 20){
-              document.cookie = "filteredTermsFromCookies=71";
+              document.cookie = "filteredTermsFromCookies=71; path=/;";
     }else if (document.referrer.search('o-inwestycji-torunska-16') > 20 ||
               document.referrer.search('lokalizacja-torunska-16') > 20 ||
               document.referrer.search('galeria-torunska-16') > 20 ||
               document.referrer.search('kronika-budowy-torunska-16') > 20){
-              document.cookie = "filteredTermsFromCookies=82";
+              document.cookie = "filteredTermsFromCookies=82; path=/;";
     }else if (document.referrer.search('o-inwestycji-wiezycka-folwark') > 20 ||
               document.referrer.search('lokalizacja-wiezycka-folwark') > 20 ||
               document.referrer.search('galeria-wiezycka-folwark') > 20 ||
               document.referrer.search('kronika-budowy-wiezycka-folwark') > 20){
-              document.cookie = "filteredTermsFromCookies=81";
+              document.cookie = "filteredTermsFromCookies=81; path=/;";
     };
 
     function getCookie(cname) {
