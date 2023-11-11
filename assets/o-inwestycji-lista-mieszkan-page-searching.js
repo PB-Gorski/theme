@@ -2,7 +2,8 @@ window.addEventListener("load", function() {
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('page-parent') || 
   document.body.classList.contains('page-child') ||
-    document.body.classList.contains('page-id-1926')) 
+    document.body.classList.contains('page-id-1926') ||
+    document.body.classList.contains('page-id-1932')) 
   
   {
     console.log('o inwestyci lista mieszkan page');
