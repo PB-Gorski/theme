@@ -261,11 +261,18 @@ window.addEventListener("load", function() {
           dropDownFIltersArr[9].classList.toggle('opacity-100');
           dropDownFIltersArr[10].classList.toggle('opacity-100');
           dropDownFIltersArr[11].classList.toggle('opacity-100');
+
           dropDownFIltersArr[6].classList.toggle('z-[1]');
           dropDownFIltersArr[7].classList.toggle('z-[1]');
           dropDownFIltersArr[9].classList.toggle('z-[1]');
           dropDownFIltersArr[10].classList.toggle('z-[1]');
           dropDownFIltersArr[11].classList.toggle('z-[1]');
+
+          dropDownFIltersArr[6].classList.toggle('pointer-events-auto');
+          dropDownFIltersArr[7].classList.toggle('pointer-events-auto');
+          dropDownFIltersArr[9].classList.toggle('pointer-events-auto');
+          dropDownFIltersArr[10].classList.toggle('pointer-events-auto');
+          dropDownFIltersArr[11].classList.toggle('pointer-events-auto');
           // sectionInwestycje.classList.toggle('z-[1]');
           foundedPostOnStart.classList.toggle('top-[240px]');
           heightAnimation2.classList.toggle('h-auto');
