@@ -4,7 +4,7 @@ window.addEventListener("load", function() {
     document.body.classList.contains('page-id-1926')) 
   
   {
-    console.log('lista mieszkan page');
+    console.log('o inwestyci lista mieszkan page');
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
     let choosenOptions =[];
