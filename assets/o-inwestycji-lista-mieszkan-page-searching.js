@@ -1143,8 +1143,19 @@ window.addEventListener("load", function() {
       let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
 
+
+      // filter ID by page id
+      let filterID = '';
+      if(document.body.classList.contains('page-id-1926')){
+        filterID = '.data-target-ymc3';
+        console.log('ymc3',filterID);
+      }else if(document.body.classList.contains('page-id-1932')){
+        console.log('ymc4', filterID);
+        filterID = '.data-target-ymc4';
+      }
+
       YMCTools({
-        target: '.data-target-ymc2',
+        target: filterID,
         terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join(),      
       }).apiTermUpdate(); 
 
