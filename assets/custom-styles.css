@@ -848,7 +848,7 @@ border-width: 0 2px 2px 0;
 #ymc-smart-filter-container-3 > div.container-posts.container-post-custom-layout{
   display: none;
 }
-.filter-custom-layout-1850.filter-custom-layout-1850-3{
+.filter-custom-layout-1850.filter-custom-layout-1850-7{
   height: 120px;
   background-color: #ebeef2;
   z-index: 1;
@@ -856,7 +856,7 @@ border-width: 0 2px 2px 0;
   transition: all 0.3s ease;
 }
 @media only screen and (max-width: 1024px) {
-  .filter-custom-layout-1850.filter-custom-layout-1850-3{
+  .filter-custom-layout-1850.filter-custom-layout-1850-7{
     height: auto;
     background-color: #ebeef2;
     z-index: 0;
