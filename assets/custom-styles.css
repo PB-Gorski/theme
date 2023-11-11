@@ -696,7 +696,9 @@ label{
   }
 }
 .page-id-1926 .posts-found,
-.page-id-1926 .custom-posts-found{
+.page-id-1926 .custom-posts-found
+.page-id-1932 .posts-found,
+.page-id-1932 .custom-posts-found{
   display: none;
 }
 .ymc-smart-filter-container .filter-layout3 .posts-found:empty {
