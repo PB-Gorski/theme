@@ -1,6 +1,9 @@
 window.addEventListener("load", function() {
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
-  if(document.body.classList.contains('post-type-archive-mieszkania')){
+  if(document.body.classList.contains('post-type-archive-mieszkania') || 
+    document.body.classList.contains('page-id-1926')) 
+  
+  {
     console.log('lista mieszkan page');
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
