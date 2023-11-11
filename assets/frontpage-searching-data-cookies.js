@@ -1,8 +1,8 @@
 window.addEventListener("load", function() {
   //  frontpage - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('home') ||
-  document.body.classList.contains('page-parent') ||
-  document.body.classList.contains('page-child')){
+  document.body.classList.contains('_page-parent') ||
+  document.body.classList.contains('_page-child')){
 
 
 
