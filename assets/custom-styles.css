@@ -858,13 +858,18 @@ border-width: 0 2px 2px 0;
 .home .ymc-smart-filter-container {
   min-height: 120px;
 }
+/* hide post layout */
 .page-id-29 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout,
 /* osiedle srebrniki: */
 .page-id-1711 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout,
 .page-id-1835 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout,
 .page-id-1837 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout,
 .page-id-161 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout
-
+/* sw piotra */
+.page-id-1714 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout,
+.page-id-1714 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout,
+.page-id-1821 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout,
+.page-id-1844 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout
 {
   display: none;
 }
