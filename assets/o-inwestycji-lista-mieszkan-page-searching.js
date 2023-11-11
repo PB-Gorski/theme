@@ -721,9 +721,9 @@ window.addEventListener("load", function() {
               });
             }
 
-            returnChoosenFromCookiesInwestycje.forEach(el => {
-              el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInwestycje.length;
-            });
+            // returnChoosenFromCookiesInwestycje.forEach(el => {
+            //   el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInwestycje.length;
+            // });
           }else if(pokojeArr.includes(+item)){
             // pokoje
             if(tempPokojeArr.includes(item)){removeItemAll(tempPokojeArr,item);}else{tempPokojeArr.push(item)};
