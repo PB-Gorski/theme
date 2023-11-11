@@ -676,21 +676,9 @@ window.addEventListener("load", function() {
 
             console.log('active span: ', activeSpan);
 
-            console.log('test23132: ',filteredTermsFromCookies);
-            if(filteredTermsFromCookies == '72'){
-              console.log('gdansk na sztywno');
-              returnChoosenFromCookies.forEach(el => {
-                el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Gdańsk';
-              });
-            }else if(filteredTermsFromCookies == '71'){
-              returnChoosenFromCookies.forEach(el => {
-                el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Gdynia';
-              });
-            }
-
-            // returnChoosenFromCookies.forEach(el => {
-            //   el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
-            // });
+            returnChoosenFromCookies.forEach(el => {
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = choosenMiastoArr.join(', ');
+            });
             
             // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
           }else if(inwestycjaArr.includes(+item)){
@@ -727,6 +715,7 @@ window.addEventListener("load", function() {
               returnChoosenFromCookiesInwestycje.forEach(el => {
                 console.log(el);
                 el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Osiedle Srebrniki';
+                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'Gdańsk';
               });
             }else if(filteredTermsFromCookies == '71'){
               console.log('Sw Piotra2');
