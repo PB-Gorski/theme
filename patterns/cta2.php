@@ -34,17 +34,7 @@
       <span class="block text-[28px] desktop:text-[38px] font-bold mb-[60px] desktop:mb-[40px]" data-aos="fade-right" data-aos-offset="30">Napisz!</span>
       <!-- /wp:paragraph -->
 
-      <div class="wp-block-contact-form-7-contact-form-selector">[contact-form-7 id="dfa8bcf" title="Wpis - mieszkanie"]</div>
-      <!-- /wp:contact-form-7/contact-form-selector -->
-      <!-- wp:list -->
-      <ul class="contact-form">
-        <!-- wp:list-item -->
-        <li>
-          <?php echo do_shortcode('[contact-form-7 id="dfa8bcf" title="Wpis - mieszkanie"]'); ?>
-        </li>
-        <!-- /wp:list-item -->
-      </ul>
-      <!-- /wp:list -->
+
 
 
       <!-- wp:paragraph -->
