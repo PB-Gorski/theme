@@ -707,7 +707,7 @@ label{
   display: none!important;
 }
 .ymc-smart-filter-container .filter-layout3 .posts-found:empty {
-  display: block!important;
+  display: block;
 }
 .dropdown-filter{
   margin: 0;
