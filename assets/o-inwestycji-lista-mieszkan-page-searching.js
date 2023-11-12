@@ -4,7 +4,7 @@ window.addEventListener("load", function() {
   document.body.classList.contains('page-child') ||
     document.body.classList.contains('page-id-1926') ||
     document.body.classList.contains('page-id-1723') ||
-    document.body.classList.contains('page-id-1734') ||
+    document.body.classList.contains('page-id-1934') ||
     document.body.classList.contains('page-id-1932')) 
   
   {
