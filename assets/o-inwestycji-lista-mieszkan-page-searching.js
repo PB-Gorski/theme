@@ -1162,10 +1162,19 @@ window.addEventListener("load", function() {
       let filterID = '';
       if(document.body.classList.contains('page-id-1926')){
         filterID = '.data-target-ymc3';
-        console.log('ymc3',filterID);
       }else if(document.body.classList.contains('page-id-1932')){
-        console.log('ymc4', filterID);
         filterID = '.data-target-ymc4';
+      }else if(document.body.classList.contains('page-id-1723')){
+        filterID = '.data-target-ymc7';
+      }else if(document.body.classList.contains('page-id-1934')){
+        console.log('ymc5', filterID);
+        filterID = '.data-target-ymc5';
+      }else if(document.body.classList.contains('page-id-1717')){
+        console.log('ymc7', filterID);
+        filterID = '.data-target-ymc7';
+      }else if(document.body.classList.contains('page-id-1936')){
+        console.log('ymc6', filterID);
+        filterID = '.data-target-ymc6';
       }
 
       YMCTools({
