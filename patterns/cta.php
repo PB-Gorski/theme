@@ -15,6 +15,7 @@
     <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/frontpage/cta-bg.jpeg" alt="cta-bg">
   </figure>
   <!-- /wp:image -->
+
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full flex">
     <!-- wp:group -->

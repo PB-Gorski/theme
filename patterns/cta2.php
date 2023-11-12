@@ -31,12 +31,21 @@
       <span class="block text-[28px] desktop:text-[38px] font-bold mb-[60px] desktop:mb-[40px]" data-aos="fade-right" data-aos-offset="30">Chcesz dowiedzieć się więcej o tym mieszkaniu?</span>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <span class="block text-[28px] desktop:text-[38px] font-bold mb-[60px] desktop:mb-[40px]" data-aos="fade-right" data-aos-offset="30">Napisz!?</span>
+      <span class="block text-[28px] desktop:text-[38px] font-bold mb-[60px] desktop:mb-[40px]" data-aos="fade-right" data-aos-offset="30">Napisz!</span>
       <!-- /wp:paragraph -->
 
       <div class="wp-block-contact-form-7-contact-form-selector">[contact-form-7 id="dfa8bcf" title="Wpis - mieszkanie"]</div>
       <!-- /wp:contact-form-7/contact-form-selector -->
-      <?php echo do_shortcode('[contact-form-7 id="dfa8bcf" title="Wpis - mieszkanie"]'); ?>
+      <!-- wp:list -->
+      <ul class="contact-form">
+        <!-- wp:list-item -->
+        <li>
+          <?php echo do_shortcode('[contact-form-7 id="dfa8bcf" title="Wpis - mieszkanie"]'); ?>
+        </li>
+        <!-- /wp:list-item -->
+      </ul>
+      <!-- /wp:list -->
+
 
       <!-- wp:paragraph -->
       <span class="group btn-find-more block relative bg-[#3d4b66] text-white w-[210px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer" data-aos="fade-right" data-aos-offset="30"><span class="font-bold text-white z-[1]"><a href="<?php echo home_url() . '/contact' ?>"> Wyślij</a></span></span>
