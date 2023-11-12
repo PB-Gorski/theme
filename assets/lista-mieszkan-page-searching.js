@@ -119,7 +119,11 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
               });
             });
-            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenPokojeArr.join(', ');
+            if(choosenPokojeArr.length == 0){
+              menuActiveSpan.innerHTML = 'Wybierz'
+            }else{
+              menuActiveSpan.innerHTML = 'Wybrano: ' + choosenPokojeArr.join(', ');
+            }
           }else if(pietroArr.includes(+choosenOptionID)){
             // pietro
             if(tempPietroArr.includes(choosenOptionID)){removeItemAll(tempPietroArr,choosenOptionID);}else{tempPietroArr.push(choosenOptionID)};
