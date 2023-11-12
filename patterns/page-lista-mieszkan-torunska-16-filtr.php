@@ -26,9 +26,6 @@
       <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/galeria-torunska-16' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Galeria</a>
       <!-- /wp:paragraph -->
-      <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/kronika-budowy-torunska-16' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Kronika budowy</a>
-      <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
 
