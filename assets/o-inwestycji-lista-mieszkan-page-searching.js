@@ -561,12 +561,12 @@ window.addEventListener("load", function() {
               document.referrer.search('lokalizacja-torunska-16') > 20 ||
               document.referrer.search('galeria-torunska-16') > 20 ||
               document.referrer.search('kronika-budowy-torunska-16') > 20){
-              document.cookie = "filteredTermsFromCookies=82; path=/;";
+              document.cookie = "filteredTermsFromCookies=82;";
     }else if (document.referrer.search('o-inwestycji-wiezycka-folwark') > 20 ||
               document.referrer.search('lokalizacja-wiezycka-folwark') > 20 ||
               document.referrer.search('galeria-wiezycka-folwark') > 20 ||
               document.referrer.search('kronika-budowy-wiezycka-folwark') > 20){
-              document.cookie = "filteredTermsFromCookies=81; path=/;";
+              document.cookie = "filteredTermsFromCookies=81;";
     };
 
     function getCookie(cname) {
