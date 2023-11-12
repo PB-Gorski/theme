@@ -706,9 +706,9 @@ label{
 .page-id-1932 .custom-posts-found{
   display: none;
 }
-/* .ymc-smart-filter-container .filter-layout3 .posts-found:empty {
+.ymc-smart-filter-container .filter-layout3 .posts-found:empty {
   display: block;
-} */
+}
 .dropdown-filter{
   margin: 0;
   width: 100%;
