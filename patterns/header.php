@@ -431,7 +431,7 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="header-right-col flex">
+    <div class="wp-block-group header-right-col flex">
       <!-- wp:group -->
       <div class="wp-block-group group btn-call-header-mobile relative bg-transparent text-primaryRed w-[48px] h-[48px] flex items-center justify-center border-[2px] border-primaryRed rounded-full cursor-pointer transition duration-[300ms] ease">
         <!-- wp:paragraph -->
