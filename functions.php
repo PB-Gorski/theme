@@ -542,7 +542,7 @@ function my_custom_post_layout($layout, $post_id, $filter_id, $increment_post, $
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
-	$layout .= '<p class="w-[35px]" style="width:35px">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p " >' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
@@ -580,7 +580,7 @@ function my_custom_post_layout2($layout, $post_id, $filter_id, $increment_post, 
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
-	$layout .= '<p class="w-[35px]" style="width:35px">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
@@ -618,7 +618,7 @@ function my_custom_post_layout148_3($layout, $post_id, $filter_id, $increment_po
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
-	$layout .= '<p class="w-[35px]" style="width:35px">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
@@ -656,7 +656,7 @@ function my_custom_post_layout148_4($layout, $post_id, $filter_id, $increment_po
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
-	$layout .= '<p class="w-[35px]" style="width:35px">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
@@ -694,7 +694,7 @@ function my_custom_post_layout148_5($layout, $post_id, $filter_id, $increment_po
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
-	$layout .= '<p class="w-[35px]" style="width:35px">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
@@ -732,7 +732,7 @@ function my_custom_post_layout148_6($layout, $post_id, $filter_id, $increment_po
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
-	$layout .= '<p class="w-[35px]" style="width:35px">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
@@ -770,7 +770,7 @@ function my_custom_post_layout148_7($layout, $post_id, $filter_id, $increment_po
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
-	$layout .= '<p class="w-[35px]" style="width:35px">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
@@ -808,7 +808,7 @@ function my_custom_post_layout148_8($layout, $post_id, $filter_id, $increment_po
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'inwestycja')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'budynek')[0]->name . '</p>';
-	$layout .= '<p class="w-[35px]" style="width:35px">' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'nr')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
