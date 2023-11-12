@@ -881,6 +881,10 @@ border-width: 0 2px 2px 0;
 .page-id-1723 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout,
 .page-id-1725 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout,
 .page-id-1831 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout
+/* wiezycka folwark */
+.page-id-1717 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout,
+.page-id-1727 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout,
+.page-id-1846 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout
 {
   display: none;
 }
