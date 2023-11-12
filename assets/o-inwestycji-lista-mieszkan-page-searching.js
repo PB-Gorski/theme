@@ -5,6 +5,7 @@ window.addEventListener("load", function() {
     document.body.classList.contains('page-id-1926') ||
     document.body.classList.contains('page-id-1723') ||
     document.body.classList.contains('page-id-1934') ||
+    document.body.classList.contains('page-id-1717') ||
     document.body.classList.contains('page-id-1932')) 
   
   {
@@ -958,6 +959,9 @@ window.addEventListener("load", function() {
       }else if(document.body.classList.contains('page-id-1934')){
         console.log('ymc5', filterID);
         filterID = '.data-target-ymc5';
+      }else if(document.body.classList.contains('page-id-1717')){
+        console.log('ymc7', filterID);
+        filterID = '.data-target-ymc7';
       }
 
       function runFromCookies(){
