@@ -4,6 +4,7 @@ window.addEventListener("load", function() {
   document.body.classList.contains('page-child') ||
     document.body.classList.contains('page-id-1926') ||
     document.body.classList.contains('page-id-1723') ||
+    document.body.classList.contains('page-id-1734') ||
     document.body.classList.contains('page-id-1932')) 
   
   {
@@ -950,13 +951,13 @@ window.addEventListener("load", function() {
       let filterID = '';
       if(document.body.classList.contains('page-id-1926')){
         filterID = '.data-target-ymc3';
-        console.log('ymc3',filterID);
       }else if(document.body.classList.contains('page-id-1932')){
-        console.log('ymc4', filterID);
         filterID = '.data-target-ymc4';
       }else if(document.body.classList.contains('page-id-1723')){
-        console.log('ymc7', filterID);
         filterID = '.data-target-ymc7';
+      }else if(document.body.classList.contains('page-id-1934')){
+        console.log('ymc5', filterID);
+        filterID = '.data-target-ymc5';
       }
 
       function runFromCookies(){
