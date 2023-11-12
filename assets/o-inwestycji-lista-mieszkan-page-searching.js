@@ -962,6 +962,9 @@ window.addEventListener("load", function() {
       }else if(document.body.classList.contains('page-id-1717')){
         console.log('ymc7', filterID);
         filterID = '.data-target-ymc7';
+      }else if(document.body.classList.contains('page-id-1936')){
+        console.log('ymc6', filterID);
+        filterID = '.data-target-ymc6';
       }
 
       function runFromCookies(){
