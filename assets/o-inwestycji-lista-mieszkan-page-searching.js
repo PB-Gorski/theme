@@ -749,6 +749,15 @@ window.addEventListener("load", function() {
                 el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'Gdańsk';
                 el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
               });
+            }else if(filteredTermsFromCookies == '81'){
+              returnChoosenFromCookiesInwestycje.forEach(el => {
+                // inwestycja filtr
+                el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wieżycka Folawark';
+                el.parentNode.previousElementSibling.classList.add('pointer-events-none');
+                // miasto filtr
+                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'Gdańsk';
+                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
+              });
             }
 
             // returnChoosenFromCookiesInwestycje.forEach(el => {
