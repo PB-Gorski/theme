@@ -416,9 +416,7 @@ window.addEventListener("load", function() {
     </ul>
     `;
 
-    if(document.body.classList.contains('page-id-1926')){
-      listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
-    };
+    listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
 
     function sortListDir(j) {
       let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
