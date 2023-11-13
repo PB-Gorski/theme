@@ -184,16 +184,16 @@
                     <!-- /wp:paragraph -->
 
                     <!-- wp:paragraph -->
-                    <p class="text-[24px] font-bold">
+                    <p class="text-[24px] font-bold">8000
                       <?php
-                      if ($tax->name == 'Osiedle Srebrniki zł/m<sup>2</sup>') {
-                        echo '11 797zł';
-                      } else if ($tax->name == 'Św. Piotra zł/m<sup>2</sup>') {
-                        echo '13 650zł';
-                      } else if ($tax->name == 'Toruńska 16 zł/m<sup>2</sup>') {
-                        echo '18 375zł';
-                      } else if ($tax->name == 'Wieżycka Folawark zł/m<sup>2</sup>') {
-                        echo '8 930zł';
+                      if ($tax->name == 'Osiedle Srebrniki') {
+                        echo '11 797zł zł/m<sup>2</sup>';
+                      } else if ($tax->name == 'Św. Piotra') {
+                        echo '13 650zł zł/m<sup>2</sup>';
+                      } else if ($tax->name == 'Toruńska 16') {
+                        echo '18 375zł zł/m<sup>2</sup>';
+                      } else if ($tax->name == 'Wieżycka Folawark') {
+                        echo '8 930zł zł/m<sup>2</sup>';
                       }
                       ?>
                     </p>
