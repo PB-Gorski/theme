@@ -225,7 +225,7 @@ window.addEventListener("load", function() {
       });
     };  
 
-    const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
+    const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');
     let counterPostsLoad = 0;
 
     wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
@@ -1154,16 +1154,23 @@ window.addEventListener("load", function() {
       document.cookie = "filteredTermsFromCookies=;";
       console.log('cookies cleared');
     });
-    let postsFoundFromAfterHook = '';
-    let postsFoundFromAfterHook2 = '';
+    // let postsFoundFromAfterHook = '';
+    // let postsFoundFromAfterHook2 = '';
     wp.hooks.addAction('ymc_after_loaded_data_148_2', 'smartfilter', function(class_name, response){
       console.log('Container class: ' + class_name);
       console.log('Post count: ' + response.post_count);
       postsFoundFromAfterHook = response.post_count;
       console.log('Number of found posts: ' + response.found);
       postsFoundFromAfterHook2 = response.found;
+
+      foundedPostOnStart.childNodes[0].innerHTML = response.found;
     });
+    let postsFoundFromAfterHook = '';
+    let postsFoundFromAfterHook2 = '';
+
     console.log('moj test: ', postsFoundFromAfterHook,postsFoundFromAfterHook2);
+    setTimeout(() => {
+    }, timeout);
 
 
     const searchBarTest = document.querySelector('#inwestycje')
