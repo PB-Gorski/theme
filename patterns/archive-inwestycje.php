@@ -142,7 +142,7 @@
         $alias = strtr($alias, ' ', '-');
       ?>
         <!-- wp:list-item -->
-        <li class="invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
+        <li class="invest-tile max-w-full test-foreach desktop:h-[450px] mb-[80px]">
           <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="relative group inline-block cursor-default desktop:max-w-full w-full h-full" data-aos="fade-up" data-aos-offset="30">
             <!-- wp:group -->
             <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
@@ -217,7 +217,7 @@
           $counter++;
         ?>
           <!-- wp:list-item -->
-          <li class="hidden invest-tile max-w-full test desktop:h-[450px] mb-[80px]">
+          <li class="hidden invest-tile max-w-full test-while desktop:h-[450px] mb-[80px]">
             <div class="relative group p-[25px] desktop:max-w-full max-w-[310px] h-full">
               <!-- wp:group -->
               <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
