@@ -66,6 +66,9 @@ $tax_sort = $taxonomy;
               <div class="dropdown__value dropdown__value-price dropdown__value-min font-bold flex items-center"><span>0</span></div>
               <ul class="dropdown__list">
                 <li class="dropdown__item">
+                  <span class="dropdown__link menu-link cursor-pointer">0</span>
+                </li>
+                <li class="dropdown__item">
                   <span class="dropdown__link menu-link cursor-pointer">50 000</span>
                 </li>
                 <li class="dropdown__item">
@@ -161,6 +164,9 @@ $tax_sort = $taxonomy;
                 <li class="dropdown__item">
                   <span class="dropdown__link menu-link cursor-pointer">2 500 000</span>
                 </li>
+                <li class="dropdown__item">
+                  <span class="dropdown__link menu-link cursor-pointer">Max</span>
+                </li>
               </ul>
             </div>
 
@@ -213,6 +219,9 @@ $tax_sort = $taxonomy;
               <p class="dropdown-filter-title">Metraż od:</p>
               <div class="dropdown__value dropdown__value-metraz dropdown__value-min-metraz dropdown__value-min-metraz font-bold"><span>0</span></div>
               <ul class="dropdown__list dropdown__list-metraz">
+                <li class="dropdown__item">
+                  <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">0</span>
+                </li>
                 <li class="dropdown__item">
                   <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">10</span>
                 </li>
@@ -291,6 +300,9 @@ $tax_sort = $taxonomy;
                 </li>
                 <li class="dropdown__item">
                   <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">250</span>
+                </li>
+                <li class="dropdown__item">
+                  <span class="dropdown__link dropdown__link-metraz  menu-link cursor-pointer">Max</span>
                 </li>
               </ul>
             </div>
