@@ -105,7 +105,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
       <ul class="wp-block-list mb-[40px]">
         <?php
         $counter = 1;
-        $i = 0;
+        $i = 1;
         $taxonomies = get_terms(array(
           'taxonomy' => 'inwestycja',
           'hide_empty' => false,
@@ -171,7 +171,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                   <!-- wp:group -->
                   <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center gap-[15px]">
                     <!-- wp:paragraph -->
-                    <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php echo $taxInwestycjeName; ?></p>
+                    <p class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php echo $my_term->name; ?></p>
                     <!-- /wp:paragraph -->
 
                     <!-- wp:group -->
@@ -179,7 +179,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                       <!-- wp:group -->
                       <div class="wp-block-group available-apartments pr-[35px] flex items-center gap-[25px] border-r-[1px] border-[#ebecee]">
                         <!-- wp:paragraph -->
-                        <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
+                        <p class="text-[48px] text-primaryRed font-bold"><?php echo $my_term->count; ?></p>
                         <!-- /wp:paragraph -->
                         <!-- wp:group -->
                         <div class="wp-block-group leading-[24px]">
