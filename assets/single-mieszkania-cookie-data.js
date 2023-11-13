@@ -3,7 +3,7 @@ window.addEventListener("load", function() {
   if(document.body.classList.contains('single-mieszkania')){
     console.log('single mieszkania');
 
-    let inwestycjaName = document.querySelector('taxonomy-inwestycja').childNodes[0].innerHTML;
+    let inwestycjaName = document.querySelector('.taxonomy-inwestycja').childNodes[0].innerHTML;
 
     console.log('Strona inwestyji: ',inwestycjaName);
 
