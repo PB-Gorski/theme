@@ -56,6 +56,17 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
           $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 42, 20));
           foreach ($cats as $cat) {
             $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
+
+            $alias = $catNoSpaces;
+            $alias = strtolower($alias);
+            $alias = str_replace(' ', '-', $alias);
+            $alias = preg_replace('/[^0-9a-ąćęłńóśźżś\-]+/', '', $alias);
+
+            $alias = preg_replace('/[\-]+/', '-', $alias);
+            $alias = trim($alias, '-');
+            $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
+            $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
+            $alias = strtr($alias, ' ', '-');
           ?>
             <!-- wp:list-item -->
             <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory == $catNoSpaces) ? 'tab-active' : ''; ?>"><a href="<?php echo home_url() . '/inwestycje-' . $catNoSpaces; ?>"><?php echo $cat->name; ?></a></li>
