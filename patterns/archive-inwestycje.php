@@ -83,9 +83,20 @@
           <?php
           foreach ($cats as $cat) {
             $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
+
+            $alias = $catNoSpaces;
+            $alias = strtolower($alias);
+            $alias = str_replace(' ', '-', $alias);
+            $alias = preg_replace('/[^0-9a-ąćęłńóśźżś\-]+/', '', $alias);
+
+            $alias = preg_replace('/[\-]+/', '-', $alias);
+            $alias = trim($alias, '-');
+            $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
+            $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
+            $alias = strtr($alias, ' ', '-');
           ?>
             <!-- wp:list-item -->
-            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory == $catNoSpaces) ? 'tab-active' : ''; ?>"><a href="<?php echo home_url() . '/inwestycje-' . $catNoSpaces; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30"><?php echo $cat->name; ?></a></li>
+            <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory == $catNoSpaces) ? 'tab-active' : ''; ?>"><a href="<?php echo home_url() . '/inwestycje-' . $alias; ?>" class="inline-block" data-aos="fade-right" data-aos-offset="30"><?php echo $cat->name; ?></a></li>
             <!-- /wp:list-item -->
           <?php }; ?>
         </ul>
@@ -140,8 +151,6 @@
         $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
         $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
         $alias = strtr($alias, ' ', '-');
-        echo 'alias: ' . $alias;
-        echo 'tax no spaces: ' . $taxNoSpaces2;
       ?>
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test-foreach desktop:h-[450px] mb-[80px]">
