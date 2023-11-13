@@ -148,6 +148,9 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
             echo '</br>';
             echo 'alias: ' . $alias;
             echo '</br>';
+            echo 'my_term: ';
+            print_r($my_term);
+
         ?>
             '
             <!-- wp:list-item -->
