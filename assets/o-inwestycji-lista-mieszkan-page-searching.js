@@ -563,7 +563,7 @@ window.addEventListener("load", function() {
     };
     
     // back from single mieszkania
-    if(document.cookie.indexOf('filteredTermsFromCookies=') == 0) {
+    if(document.cookie.indexOf('filteredTermsFromCookies=') > 0) {
       console.log('cookie mieszkania true');
       let cookieFromSingleMieszkania = getCookie('filteredTermsFromCookies')
       if (cookieFromSingleMieszkania =='72'){
