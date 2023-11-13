@@ -140,6 +140,8 @@
         $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
         $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
         $alias = strtr($alias, ' ', '-');
+        echo 'alias: ' . $alias;
+        echo 'tax no spaces: ' . $taxNoSpaces2;
       ?>
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test-foreach desktop:h-[450px] mb-[80px]">
