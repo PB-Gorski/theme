@@ -26,12 +26,6 @@
           <!-- wp:paragraph -->
           <p data-aos="fade-right" data-aos-offset="30">Wieżycka Folwark - zobacz dostępne mieszkania</p>
           <!-- /wp:paragraph -->
-          <!-- wp:title -->
-          <h1 data-aos="fade-right" data-aos-offset="30">h1 title Wieżycka Folwark - zobacz dostępne mieszkania</h1>
-          <!-- /wp:title -->
-          <!-- wp:paragraph -->
-          <h1> h1 paragraph Wieżycka Folwark - zobacz dostępne mieszkania</h1>
-          <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
       </div>
