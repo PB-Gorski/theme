@@ -155,7 +155,7 @@
         <!-- wp:list-item -->
         <li class="invest-tile max-w-full test-foreach desktop:h-[450px] mb-[80px]">
           <!-- wp:group -->
-          <div class="relative group inline-block cursor-default desktop:max-w-full w-full h-full">
+          <div class="wp-block-group relative group inline-block cursor-default desktop:max-w-full w-full h-full">
             <!-- wp:group -->
             <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
               <!-- wp:image -->
