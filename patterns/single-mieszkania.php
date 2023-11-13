@@ -39,7 +39,7 @@
       <!-- wp:group -->
       <div class="wp-block-group group mb-[20px] btn-back desktop:mb-[40px] w-fit flex items-center gap-[8px]">
         <!-- wp:paragraph -->
-        <p class="text-[18px] text-white hover:opacity-[1] opacity-[0.5] transition duration-300 ease"><a href="#" class="js-backToList">&larr; Wyszukiwanie</a></p>
+        <p class="text-[18px] text-white"><a href="#" class="js-backToList hover:opacity-[1] opacity-[0.5] transition duration-[300ms] ease">&larr; Wyszukiwanie</a></p>
         <!-- wp:paragraph -->
       </div>
       <!-- /wp:group -->
