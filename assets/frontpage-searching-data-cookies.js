@@ -246,7 +246,7 @@ window.addEventListener("load", function() {
     const dropDowns = Array.from(document.querySelectorAll('.dropdown__link'));
     let priceValueArr = [];
     let newArr = [];
-    let newArrHTMLList = [];
+    let newArrPriceHTMLList = [];
     let target;
 
     mainDropDown.forEach(dropDownEl =>{
