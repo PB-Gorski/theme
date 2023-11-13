@@ -316,19 +316,19 @@ window.addEventListener("load", function() {
       newArr.forEach(elem => {
         for(j = 2 ; j < priceValueArrNodeList.length ; j++){
           if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
-            newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+            newArrPriceHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
           };
         };
       });
 
-      let filteredTermsID = [];
-      console.log('filtered new arr html elements: ', newArrHTMLList);
+      let filteredPriceTermsID = [];
+      console.log('filtered new arr html elements: ', newArrPriceHTMLList);
 
-      newArrHTMLList.forEach(el2 =>{
-        filteredTermsID.push(el2.dataset.termid);
+      newArrPriceHTMLList.forEach(el2 =>{
+        filteredPriceTermsID.push(el2.dataset.termid);
       });
 
-      console.log(filteredTermsID.join(','));
+      console.log(filteredPriceTermsID.join(','));
 
       for (i = 2 ; i < priceValueArrNodeList.length ; i++){
         if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
@@ -339,10 +339,10 @@ window.addEventListener("load", function() {
 
       priceValueArr = [];
       newArr = [];
-      newArrHTMLList = [];
+      newArrPriceHTMLList = [];
       priceValueArrNodeList = [];
 
-      return filteredTermsID;
+      return filteredPriceTermsID;
     }; 
     // console.log(filteredPriceFromFrontPage);
   
