@@ -226,7 +226,7 @@ window.addEventListener("load", function() {
     };  
 
     const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');
-    let counterPostsLoad = 0;
+
 
 
 
@@ -1139,6 +1139,7 @@ window.addEventListener("load", function() {
     // });
     // let postsFoundFromAfterHook = '';
     // let postsFoundFromAfterHook2 = '';
+    let counterPostsLoad = 0;
     wp.hooks.addAction('ymc_after_loaded_data_148_2', 'smartfilter', function(class_name, response){
       document.cookie = "filteredTermsFromCookies=;";
       console.log('cookies cleared');
@@ -1154,7 +1155,7 @@ window.addEventListener("load", function() {
       foundedPostOnStart.innerHTML = response.found;
 
       console.log('posts loaded before if');
-      if (counterPostsLoad == 2){
+      if (counterPostsLoad == 3){
         console.log('posts loaded inside if');
         foundedPostOnStart.classList.add('hidden');
       };
