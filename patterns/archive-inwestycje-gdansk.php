@@ -140,7 +140,6 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
             $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
             $alias = strtr($alias, ' ', '-');
         ?>
-            '
             <!-- wp:list-item -->
             <li class="invest-tile current max-w-full test desktop:h-[450px] mb-[80px]">
               <!-- wp:group -->
