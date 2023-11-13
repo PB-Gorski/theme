@@ -234,7 +234,7 @@ window.addEventListener("load", function() {
         foundedPostOnStart.classList.add('hidden');
       };
       counterPostsLoad++;
-      // console.log('posts found counter after ++: ', counterPostsLoad);
+      console.log('posts found counter after ++: ', counterPostsLoad);
 
     });
 
@@ -1029,7 +1029,7 @@ window.addEventListener("load", function() {
       newArrMetraz = [];
       newArrHTMLListMetraz = [];
       const dropDownFiltersMetraz = document.querySelectorAll(".dropdown-filter");
-      foundedPostOnStart.classList.add('hidden');
+      // foundedPostOnStart.classList.add('hidden');
       let metrazValueArrNodeList = dropDownFiltersMetraz[8].childNodes[1].childNodes;
       metrazMinValue = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
       metrazMaxValue = document.querySelector('.dropdown__value-max-metraz').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
