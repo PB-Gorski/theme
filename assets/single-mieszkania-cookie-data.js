@@ -5,7 +5,9 @@ window.addEventListener("load", function() {
 
     let inwestycjaName = document.querySelector('.taxonomy-inwestycja').childNodes[0].innerHTML;
 
-    console.log('Strona inwestyji: ',inwestycjaName);
+    console.log('Strona inwestycji: ',inwestycjaName);
+
+    document.cookie = "filteredTermsFromCookies=72;";
 
   
   
