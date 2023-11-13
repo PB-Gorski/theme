@@ -8,7 +8,7 @@ window.addEventListener("load", function() {
 
     console.log('Strona inwestycji: ',inwestycjaName);
 
-    document.cookie = "filteredTermsFromCookies=72";
+    document.cookie ='filteredTermsFromCookies=72; path=/'
 
     btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-osiedle-srebrniki/lista-mieszkan-osiedle-srebrniki/'
 
