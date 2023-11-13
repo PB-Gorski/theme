@@ -285,7 +285,7 @@ window.addEventListener("load", function() {
     function runSearchingFrontPage(){
       priceValueArr = [];
       newArr = [];
-      newArrHTMLList = [];
+      newArrPriceHTMLList = [];
 
       const dropDownFilters = document.querySelectorAll(".dropdown-filter");
       let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
