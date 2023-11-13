@@ -184,7 +184,7 @@
                     <!-- /wp:paragraph -->
 
                     <!-- wp:paragraph -->
-                    <p class="text-[24px] font-bold">8000
+                    <p class="text-[24px] font-bold">
                       <?php
                       if ($tax->name == 'Osiedle Srebrniki') {
                         echo '11 797zł zł/m<sup>2</sup>';
