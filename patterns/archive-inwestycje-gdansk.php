@@ -128,6 +128,17 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
             $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
             $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
             $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
+
+            $alias = $taxInwestycjeName;
+            $alias = strtolower($alias);
+            $alias = str_replace(' ', '-', $alias);
+            $alias = preg_replace('/[^0-9a-ąćęłńóśźżś\-]+/', '', $alias);
+
+            $alias = preg_replace('/[\-]+/', '-', $alias);
+            $alias = trim($alias, '-');
+            $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
+            $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
+            $alias = strtr($alias, ' ', '-');
         ?>
             <!-- wp:list-item -->
             <li class="invest-tile current max-w-full test desktop:h-[450px] mb-[80px]">
@@ -192,7 +203,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                     <!-- wp:group -->
                     <div class="wp-block-group group btn-read-more mt-[10px] relative bg-[#3d4b66] text-[18px] text-white font-bold w-[230px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
                       <!-- wp:paragraph -->
-                      <p class="z-[1]">Poznaj inwestycję &rarr;</p>
+                      <p class="z-[1]"><a href="<?php echo home_url() . '/o-inwestycji' . $alias; ?>">Poznaj inwestycję &rarr;</a></p>
                       <!-- /wp:paragraph -->
                     </div>
                     <!-- /wp:group -->
