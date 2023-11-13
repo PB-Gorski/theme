@@ -36,11 +36,13 @@
 
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-[50px] px-[20px]">
-      <!-- wp:paragraph -->
-      <p class="group mb-[20px] btn-back desktop:mb-[40px] w-fit flex items-center gap-[8px]">
-        <span class="text-[18px] text-white hover:opacity-[1] opacity-[0.5] transition duration-300 ease"><a href="" class="js-backToList">&larr; Wyszukiwanie</a></span>
-      </p>
-      <!-- /wp:paragraph -->
+      <!-- wp:group -->
+      <div class="wp-block-group group mb-[20px] btn-back desktop:mb-[40px] w-fit flex items-center gap-[8px]">
+        <!-- wp:paragraph -->
+        <p class="text-[18px] text-white hover:opacity-[1] opacity-[0.5] transition duration-300 ease"><a href="#" class="js-backToList">&larr; Wyszukiwanie</a></p>
+        <!-- wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
 
       <!-- wp:group -->
       <div class="wp-block-group title-wrapper relative">
