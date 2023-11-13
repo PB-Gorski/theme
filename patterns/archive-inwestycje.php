@@ -182,15 +182,21 @@
                     <!-- wp:paragraph -->
                     <p class="mb-[4px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">CENA JUŻ OD</p>
                     <!-- /wp:paragraph -->
-                    <?php
-                    if ($tax->name == 'Osiedle Srebrniki') {
-                      echo '11 797zł';
-                    } else if ($tax->name == 'Św. Piotra') {
-                      echo '13 650zł';
-                    }
-                    ?>
+
                     <!-- wp:paragraph -->
-                    <p class="text-[24px] font-bold">8000 zł/m<sup>2</sup></p>
+                    <p class="text-[24px] font-bold">
+                      <?php
+                      if ($tax->name == 'Osiedle Srebrniki zł/m<sup>2</sup>') {
+                        echo '11 797zł';
+                      } else if ($tax->name == 'Św. Piotra zł/m<sup>2</sup>') {
+                        echo '13 650zł';
+                      } else if ($tax->name == 'Toruńska 16 zł/m<sup>2</sup>') {
+                        echo '18 375zł';
+                      } else if ($tax->name == 'Wieżycka Folawark zł/m<sup>2</sup>') {
+                        echo '8 930zł';
+                      }
+                      ?>
+                    </p>
                     <!-- /wp:paragraph -->
                   </div>
                   <!-- /wp:group -->
