@@ -158,10 +158,15 @@ background-color: #b22944;
 }
 .tab-active{
   border-bottom: #b22944 2px solid;
+  text-decoration: underline ;
 }
 .sub-title a{
   color: white;
   text-decoration: underline;
+  text-decoration-color: #b22944;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px ;
+
 }
 
 /* mobile navbar action */
