@@ -139,11 +139,15 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
             $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
             $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
             $alias = strtr($alias, ' ', '-');
-
+            echo '</br>';
             echo 'taxInwestycjeName: ' . $taxInwestycjeName;
+            echo '</br>';
             echo 'currentTermCount: ' . $currentTermCount;
+            echo '</br>';
             echo 'taxNoSpaces: ' . $taxNoSpaces;
+            echo '</br>';
             echo 'alias: ' . $alias;
+            echo '</br>';
         ?>
             '
             <!-- wp:list-item -->
