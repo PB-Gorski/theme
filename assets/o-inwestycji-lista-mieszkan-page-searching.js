@@ -232,17 +232,6 @@ window.addEventListener("load", function() {
     const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
     let counterPostsLoad = 0;
 
-    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-      if (counterPostsLoad == 1){
-        console.log('posts loaded2');
-        foundedPostOnStart.classList.add('hidden');
-      };
-      counterPostsLoad++;
-      // console.log('posts found counter after ++: ', counterPostsLoad);
-
-    });
-
-
     // btnSearch.addEventListener('click', runSearchingPrice);
 
     // search more options handle
@@ -387,19 +376,6 @@ window.addEventListener("load", function() {
         };
       });
     };
-      // test
-    let counterMetraz = 0;
-    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-      if (counterMetraz == 2){
-        console.log('posts loaded2');
-        foundedPostOnStart.classList.add('hidden');
-      };
-      counterMetraz++;
-    });
-
-
-
-
 
 
     // const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
@@ -867,10 +843,6 @@ window.addEventListener("load", function() {
 
         console.log('prices from cookies: ',priceMinUpdate, priceMaxUpdate);
 
-        // wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-    
-        // });
-        
         document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies == '' ? 0 : Number(filteredPriceMinFromCookies).toLocaleString();
 
         console.log('price max fdafsd: ',filteredPriceMaxFromCookies);
@@ -1286,6 +1258,27 @@ window.addEventListener("load", function() {
       // });
 
   
+    });
+
+    wp.hooks.addAction('ymc_after_loaded_data_148_3', 'smartfilter', function(class_name, response){
+      document.cookie = "filteredTermsFromCookies=;";
+      console.log('cookies cleared');
+
+      // console.log('Container class: ' + class_name);
+      // console.log('Post count: ' + response.post_count);
+      // postsFoundFromAfterHook = response.post_count;
+      // console.log('Number of found posts: ' + response.found);
+      // postsFoundFromAfterHook2 = response.found;
+      
+      // foundedPostOnStart.innerHTML = 'Znaleziono ' +  response.found + ' ofert pasujących do Twoich kryteriów ' + '<span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' + foundedPostOnStart.dataset.allposts + ')</span></p>';
+
+      // console.log('posts loaded before if');
+      // if (counterPostsLoad == 3){
+      //   console.log('posts loaded inside if');
+      //   foundedPostOnStart.classList.add('hidden');
+      // };
+      // counterPostsLoad++;
+      // console.log('posts found counter after ++: ', counterPostsLoad);
     });
 
 
