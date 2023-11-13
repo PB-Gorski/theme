@@ -160,7 +160,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                         <p class="mb-[4px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">CENA JUŻ OD</p>
                         <!-- /wp:paragraph -->
                         <!-- wp:paragraph -->
-                        <p class="text-[24px] font-bold">8000 zł/m<sup>2</sup></p>
+                        <p class="text-[24px] font-bold">13 650 zł/m<sup>2</sup></p>
                         <!-- /wp:paragraph -->
                       </div>
                       <!-- /wp:group -->
