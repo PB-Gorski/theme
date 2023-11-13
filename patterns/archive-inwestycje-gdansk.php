@@ -105,7 +105,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
       <ul class="wp-block-list mb-[40px]">
         <?php
         $counter = 1;
-        $i = 1;
+        $i = 0;
         $taxonomies = get_terms(array(
           'taxonomy' => 'inwestycja',
           'hide_empty' => false,
