@@ -298,6 +298,8 @@ window.addEventListener("load", function() {
         priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
         priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
       }
+
+      console.log('3123 new 4312341 price valueArr: ',priceValueArr);
     
       priceValueArr.forEach(priceValue => {
         priceMaxValue.isNaN ? priceMaxValue = 10000000 : priceMaxValue = priceMaxValue;
