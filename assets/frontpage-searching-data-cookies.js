@@ -302,6 +302,7 @@ window.addEventListener("load", function() {
       priceValueArr.forEach(priceValue => {
         priceMaxValue.isNaN ? priceMaxValue = 10000000 : priceMaxValue = priceMaxValue;
         console.log('price max value ',priceMaxValue);
+        console.log('price min value3123123 ',priceMinValue);
         if (priceValue <= priceMaxValue && priceValue >= priceMinValue){
           newArr.push(priceValue);
         };
