@@ -228,15 +228,7 @@ window.addEventListener("load", function() {
     const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');
     let counterPostsLoad = 0;
 
-    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-      if (counterPostsLoad == 3){
-        console.log('posts loaded2');
-        foundedPostOnStart.classList.add('hidden');
-      };
-      counterPostsLoad++;
-      console.log('posts found counter after ++: ', counterPostsLoad);
 
-    });
 
 
     // btnSearch.addEventListener('click', runSearchingPrice);
@@ -383,15 +375,7 @@ window.addEventListener("load", function() {
         };
       });
     };
-      // test
-    let counterMetraz = 0;
-    wp.hooks.addAction('ymc_after_loaded_data_148_2', 'smartfilter', function(){
-      if (counterMetraz == 2){
-        console.log('posts loaded2');
-        foundedPostOnStart.classList.add('hidden');
-      };
-      counterMetraz++;
-    });
+
 
 
 
@@ -821,10 +805,6 @@ window.addEventListener("load", function() {
         priceMaxUpdate = getCookie("PriceMaxFromCookies");
 
         console.log('prices from cookies: ',priceMinUpdate, priceMaxUpdate);
-
-        // wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-    
-        // });
         
         document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies == '' ? 0 : Number(filteredPriceMinFromCookies).toLocaleString();
 
@@ -1166,6 +1146,26 @@ window.addEventListener("load", function() {
       postsFoundFromAfterHook2 = response.found;
 
       foundedPostOnStart.innerHTML = response.found;
+    });
+
+    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
+      if (counterPostsLoad == 3){
+        console.log('posts loaded2');
+        foundedPostOnStart.classList.add('hidden');
+      };
+      counterPostsLoad++;
+      console.log('posts found counter after ++: ', counterPostsLoad);
+
+    });
+
+    // test
+    let counterMetraz = 0;
+    wp.hooks.addAction('ymc_after_loaded_data_148_2', 'smartfilter', function(){
+      if (counterMetraz == 2){
+        console.log('posts loaded2');
+        foundedPostOnStart.classList.add('hidden');
+      };
+      counterMetraz++;
     });
 
 
