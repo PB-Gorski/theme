@@ -1118,7 +1118,7 @@ window.addEventListener("load", function() {
       postsFoundFromAfterHook2 = response.found;
 
       
-      foundedPostOnStart.innerHTML = 'Znaleziono ' +  response.found + ' ofert pasujących do Twoich kryteriów' + 'all: ' + foundedPostOnStart.dataset.allPostsś;
+      foundedPostOnStart.innerHTML = 'Znaleziono ' +  response.found + ' ofert pasujących do Twoich kryteriów ' + '<span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' + foundedPostOnStart.dataset.allposts + ')</span></p>';
 
       console.log('posts loaded before if');
       if (counterPostsLoad == 3){
