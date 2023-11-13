@@ -569,11 +569,17 @@ window.addEventListener("load", function() {
       if (cookieFromSingleMieszkania =='72'){
         console.log('cookie mieszkania true - osiedle srebrniki');
         document.cookie = "filteredTermsFromCookies=72;";
+      }else if (cookieFromSingleMieszkania =='71'){
+        console.log('cookie mieszkania true - sw piotra');
+        document.cookie = "filteredTermsFromCookies=71;";
+      }else if (cookieFromSingleMieszkania =='71'){
+        console.log('cookie mieszkania true - torunska 16');
+        document.cookie = "filteredTermsFromCookies=82;";
+      }else if (cookieFromSingleMieszkania =='71'){
+        console.log('cookie mieszkania true -  wiezycka folwark');
+        document.cookie = "filteredTermsFromCookies=81;";
       }
     }
-
-
-
 
     let filteredTermsFromCookies = '';
     if(document.cookie.indexOf('filteredTermsFromCookies=') == 0 || document.cookie.indexOf('PriceMinFromCookies=') == 0 || document.cookie.indexOf('PriceMaxFromCookies=') == 0){

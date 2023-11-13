@@ -8,12 +8,22 @@ window.addEventListener("load", function() {
 
     console.log('Strona inwestycji: ',inwestycjaName);
 
-    document.cookie ='filteredTermsFromCookies=72; path=/'
-
-    btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-osiedle-srebrniki/lista-mieszkan-osiedle-srebrniki/'
 
 
-  
+
+    if(inwestycjaName == 'Osiedle Srebrniki'){
+      document.cookie ='filteredTermsFromCookies=72; path=/';
+      btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-osiedle-srebrniki/lista-mieszkan-osiedle-srebrniki/';
+    }else if(inwestycjaName == 'Św. Piotra'){
+      document.cookie ='filteredTermsFromCookies=71; path=/';
+      btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-osiedle-srebrniki/lista-mieszkan-osiedle-srebrniki/';
+    }else if(inwestycjaName == 'Toruńska 16'){
+      document.cookie ='filteredTermsFromCookies=82; path=/';
+      btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-osiedle-srebrniki/lista-mieszkan-osiedle-srebrniki/';
+    }else if(inwestycjaName == 'Wieżycka Folwark'){
+      document.cookie ='filteredTermsFromCookies=81; path=/';
+      btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-osiedle-srebrniki/lista-mieszkan-osiedle-srebrniki/';
+    }
   
   
   
