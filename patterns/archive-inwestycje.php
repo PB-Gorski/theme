@@ -192,7 +192,7 @@
                         echo '13 650zł zł/m<sup>2</sup>';
                       } else if ($tax->name == 'Toruńska 16') {
                         echo '18 375zł zł/m<sup>2</sup>';
-                      } else if ($tax->name == 'Wieżycka Folawark') {
+                      } else if ($tax->name == 'Wieżycka Folwark') {
                         echo '8 930zł zł/m<sup>2</sup>';
                       }
                       ?>
