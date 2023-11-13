@@ -1150,7 +1150,7 @@ window.addEventListener("load", function() {
 
       
     });
-    wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
+    wp.hooks.addAction('ymc_after_loaded_data_148_2', 'smartfilter', function(){
       document.cookie = "filteredTermsFromCookies=;";
       console.log('cookies cleared');
     });
