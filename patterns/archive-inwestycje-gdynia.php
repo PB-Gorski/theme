@@ -131,7 +131,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
         ?>
             <!-- wp:list-item -->
             <li class="invest-tile current max-w-full test desktop:h-[450px] mb-[80px]">
-              <a href="<?php echo home_url() . '/o-inwestycji' . ''; ?>" class="relative group inline-block cursor-default desktop:max-w-full w-full h-full" data-aos="fade-up" data-aos-offset="30">
+              <div class="relative group inline-block cursor-default desktop:max-w-full w-full h-full" data-aos="fade-up" data-aos-offset="30">
                 <!-- wp:group -->
                 <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
                   <!-- wp:image -->
@@ -190,7 +190,8 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                   <!-- /wp:group -->
                 </div>
                 <!-- /wp:group -->
-              </a>
+              </div>
+              <!-- /wp:group -->
             </li>
             <!-- /wp:list-item -->
         <?php
