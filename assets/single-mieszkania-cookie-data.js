@@ -18,11 +18,9 @@ window.addEventListener("load", function() {
       document.cookie ='filteredTermsFromCookies=71; path=/';
       btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-sw-piotra/lista-mieszkan-sw-piotra/';
     }else if(inwestycjaName == 'Toruńska 16'){
-      console.log('torunska');
       document.cookie ='filteredTermsFromCookies=82; path=/';
       btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-torunska-16/lista-mieszkan-torunska-16/';
     }else if(inwestycjaName == 'Wieżycka Folwark'){
-      console.log('wiezycka');
       document.cookie ='filteredTermsFromCookies=81; path=/';
       btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-wiezycka-folwark/lista-mieszkan-wiezycka-folwark/';
     }
