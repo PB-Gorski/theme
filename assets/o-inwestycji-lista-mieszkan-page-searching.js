@@ -1261,8 +1261,8 @@ window.addEventListener("load", function() {
     });
 
     wp.hooks.addAction('ymc_after_loaded_data_148_3', 'smartfilter', function(class_name, response){
-      document.cookie = "filteredTermsFromCookies=;";
-      console.log('cookies cleared');
+      // document.cookie = "filteredTermsFromCookies=;";
+      // console.log('cookies cleared');
 
       // console.log('Container class: ' + class_name);
       // console.log('Post count: ' + response.post_count);
