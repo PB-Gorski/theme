@@ -70,9 +70,9 @@
 
                   <!-- wp:group -->
                   <div class="wp-block-group content flex flex-col items-start justify-center gap-[15px]">
-                    <!-- wp:paragraph -->
-                    <p class="mr-[20px] text-[28px] desktop:text-[30px] font-bold border-b-[2px] border-b-primaryRed"><?php echo $tax->name; ?></p>
-                    <!-- /wp:paragraph -->
+                    <!-- wp:heading {"level":3} -->
+                    <h3 class="mr-[20px] text-[28px] desktop:text-[30px] font-bold border-b-[2px] border-b-primaryRed"><?php echo $tax->name; ?></h3>
+                    <!-- /wp:heading {"level":3} -->
 
                     <!-- wp:paragraph -->
                     <p class="mr-[20px] text-bgDarkGray text-[16px] desktop:text-[18px]">
