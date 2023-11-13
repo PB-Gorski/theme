@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: archive-inwestycje-gdansk
- * Slug: archive-inwestycje-gdansk
+ * Title: archive-inwestycje-gdańsk
+ * Slug: archive-inwestycje-gdańsk
  * Categories: text, banner
  * Viewport Width: 1280
  */
