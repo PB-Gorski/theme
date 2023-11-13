@@ -1117,7 +1117,7 @@ window.addEventListener("load", function() {
       console.log('Number of found posts: ' + response.found);
       postsFoundFromAfterHook2 = response.found;
 
-      foundedPostOnStart.innerHTML = 'Znaleziono ' +  response.found + 'ofert pasujących do Twoich kryteriów';
+      foundedPostOnStart.innerHTML = 'Znaleziono ' +  response.found + ' ofert pasujących do Twoich kryteriów';
 
       console.log('posts loaded before if');
       if (counterPostsLoad == 3){
