@@ -154,7 +154,7 @@ window.addEventListener("load", function() {
             // console.log('342rfdsvcddads: ', choosenPokojeArr.join(', '),'test');
             // menuActiveSpan.innerHTML = 'Wybrano: ' + (choosenPokojeArr.join(', ')!=' ' ? choosenPokojeArr.join(', ') : 'Wybrano: 0');
 
-            menuActiveSpan.innerHTML = (choosenPokojeArr.join(', ')!='' ? 'Wybrano: ' +  choosenPokojeArr.join(', ') : 'Wybierz');
+            menuActiveSpan.innerHTML = (choosenPokojeArr.join(', ')!='' ? choosenPokojeArr.join(', ') : 'Wybierz');
           }else if(pietroArr.includes(+choosenOptionID)){
             // pietro
 

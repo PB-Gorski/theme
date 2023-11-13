@@ -864,14 +864,16 @@ border-width: 0 2px 2px 0;
   display: none;
 } */
 
-/* YMC Flter Frontpage */
+/* YMC Flter */
 .filter-custom-layout-1850-2 {
   background-color: #ebeef2
 }
 .home .ymc-smart-filter-container {
   min-height: 120px;
 }
+
 /* hide post layout */
+/* home */
 .page-id-29 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout,
 /* osiedle srebrniki: */
 .page-id-1711 #ymc-smart-filter-container-7 > div.container-posts.container-post-custom-layout,
