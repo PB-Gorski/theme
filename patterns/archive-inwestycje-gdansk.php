@@ -150,6 +150,9 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
             echo '</br>';
             echo 'my_term: ';
             print_r($my_term);
+            echo '</br>';
+            echo 'taxonomies[i]: ';
+            print_r($taxonomies[$i]);
 
         ?>
             '
