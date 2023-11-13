@@ -169,7 +169,7 @@ window.addEventListener("load", function() {
 
         };
         showActiveFilterName();
-        if (!foundedPostOnStart.classList.contains('hidden')){foundedPostOnStart.classList.add('hidden')}
+        // if (!foundedPostOnStart.classList.contains('hidden')){foundedPostOnStart.classList.add('hidden')}
       });
     });
 
@@ -1117,7 +1117,8 @@ window.addEventListener("load", function() {
       console.log('Number of found posts: ' + response.found);
       postsFoundFromAfterHook2 = response.found;
 
-      foundedPostOnStart.innerHTML = 'Znaleziono ' +  response.found + ' ofert pasujących do Twoich kryteriów';
+      
+      foundedPostOnStart.innerHTML = 'Znaleziono ' +  response.found + ' ofert pasujących do Twoich kryteriów' + 'all: ' + foundedPostOnStart.dataset.allPostsś;
 
       console.log('posts loaded before if');
       if (counterPostsLoad == 3){
