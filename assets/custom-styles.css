@@ -157,15 +157,15 @@ background-color: #b22944;
   width: 7px;
 }
 .tab-active{
-  border-bottom: #b22944 2px solid;
-  text-decoration: underline ;
-}
-.sub-title a{
-  color: white;
+  /* border-bottom: #b22944 2px solid; */
   text-decoration: underline;
   text-decoration-color: #b22944;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px ;
+}
+.sub-title a{
+  color: white;
+
 
 }
 
