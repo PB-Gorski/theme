@@ -122,7 +122,7 @@ window.addEventListener("load", function() {
             if(choosenPokojeArr.length == 0){
               menuActiveSpan.innerHTML = 'Wybierz'
             }else{
-              menuActiveSpan.innerHTML = 'Wybrano: ' + choosenPokojeArr.join(', ');
+              menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
             }
           }else if(pietroArr.includes(+choosenOptionID)){
             // pietro
