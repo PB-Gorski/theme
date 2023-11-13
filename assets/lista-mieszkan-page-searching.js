@@ -1103,37 +1103,28 @@ window.addEventListener("load", function() {
 
     // *******************************************************
 
-    let counterPostsLoad = 0;
+    // let counterPostsLoad = 0;
 
     wp.hooks.addAction('ymc_after_loaded_data_148_2', 'smartfilter', function(class_name, response){
       document.cookie = "filteredTermsFromCookies=;";
       console.log('cookies cleared');
-
-
 
       console.log('Container class: ' + class_name);
       console.log('Post count: ' + response.post_count);
       postsFoundFromAfterHook = response.post_count;
       console.log('Number of found posts: ' + response.found);
       postsFoundFromAfterHook2 = response.found;
-
       
       foundedPostOnStart.innerHTML = 'Znaleziono ' +  response.found + ' ofert pasujących do Twoich kryteriów ' + '<span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' + foundedPostOnStart.dataset.allposts + ')</span></p>';
 
       console.log('posts loaded before if');
-      if (counterPostsLoad == 3){
-        console.log('posts loaded inside if');
-        foundedPostOnStart.classList.add('hidden');
-      };
-      counterPostsLoad++;
-      console.log('posts found counter after ++: ', counterPostsLoad);
+      // if (counterPostsLoad == 3){
+      //   console.log('posts loaded inside if');
+      //   foundedPostOnStart.classList.add('hidden');
+      // };
+      // counterPostsLoad++;
+      // console.log('posts found counter after ++: ', counterPostsLoad);
     });
-
-    // wp.hooks.addAction('ymc_after_loaded_data_148_1', 'smartfilter', function(){
-
-
-    // });
-
 
     const searchBarTest = document.querySelector('#inwestycje')
     document.querySelectorAll('.menu-active').forEach(activeMenu =>{
