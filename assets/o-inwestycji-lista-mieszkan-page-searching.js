@@ -982,17 +982,25 @@ window.addEventListener("load", function() {
         }).apiTermUpdate(); 
         console.log('after YMC api update');
       };
+
       wp.hooks.addAction('ymc_before_loaded_data_1850_7', 'smartfilter', function(class_name, response){
-        document.cookie = "filteredTermsFromCookies=; path=/";
+        document.cookie = "filteredTermsFromCookies=;";
         console.log('with path');
       });
 
-      if(filteredTermsFromCookies != null){
+      // if(filteredTermsFromCookies != null){
+      //   setTimeout(() => {
+      //     document.cookie = "filteredTermsFromCookies=;";
+      //     runFromCookies()
+      //   }, 1000);
+      // };
+      if(document.cookie.indexOf('filteredTermsFromCookies=') > 0) {
         setTimeout(() => {
-          document.cookie = "filteredTermsFromCookies=; path=/";
+          document.cookie = "filteredTermsFromCookies=;";
           runFromCookies()
         }, 1000);
       };
+      
       deleteAllCookies();
     }else{
       console.log('no cookies');
