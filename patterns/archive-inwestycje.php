@@ -62,9 +62,9 @@
 
       <!-- wp:group -->
       <div class="wp-block-group right-col desktop:w-[30%]">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] text-[#8a8f99]" data-aos="fade-right" data-aos-duration="500" data-aos-offset="30"><?php echo wp_count_terms('inwestycja'); ?> inwestycje / <?php echo wp_count_posts('mieszkania')->publish; ?> lokali</p>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading {"level":4} -->
+        <h4><span class="text-[30px] text-[#8a8f99]" data-aos="fade-right" data-aos-duration="500" data-aos-offset="30"><?php echo wp_count_terms('inwestycja'); ?> inwestycje / <?php echo wp_count_posts('mieszkania')->publish; ?> lokali</span></h4>
+        <!-- /wp:heading -->
       </div>
       <!-- /wp:group -->
     </div>
