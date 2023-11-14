@@ -1294,7 +1294,7 @@ window.addEventListener("load", function() {
       // document.cookie = "filteredTermsFromCookies=; path=";
       // document.cookie = "filteredTermsFromCookies=; path=/";
       // document.cookie = "filteredTermsFromCookies=; path=/pl";
-      console.log('cookies cleared');
+      // console.log('cookies cleared');
     });
     wp.hooks.addAction('ymc_before_loaded_data_148_2', 'smartfilter', function(class_name, response){
       // document.cookie = "filteredTermsFromCookies=;";
@@ -1308,7 +1308,7 @@ window.addEventListener("load", function() {
       // document.cookie = "filteredTermsFromCookies=; path=";
       // document.cookie = "filteredTermsFromCookies=; path=/";
       // document.cookie = "filteredTermsFromCookies=; path=/pl";
-      console.log('cookies cleared');
+      // console.log('cookies cleared');
     });
 
     // o inwestycji
@@ -1317,21 +1317,21 @@ window.addEventListener("load", function() {
       // document.cookie = "filteredTermsFromCookies=; path=";
       // document.cookie = "filteredTermsFromCookies=; path=/";
       // document.cookie = "filteredTermsFromCookies=; path=/pl";
-      console.log('cookies cleared');
+      // console.log('cookies cleared');
     };
     if(document.body.classList.contains('page-id-1926')){
       // document.cookie = "filteredTermsFromCookies=;";
       // document.cookie = "filteredTermsFromCookies=; path=";
       // document.cookie = "filteredTermsFromCookies=; path=/";
       // document.cookie = "filteredTermsFromCookies=; path=/pl";
-      console.log('cookies cleared');
+      // console.log('cookies cleared');
     };
     if(document.body.classList.contains('post-type-archive-mieszkania')){
       // document.cookie = "filteredTermsFromCookies=;";
       // document.cookie = "filteredTermsFromCookies=; path=";
       // document.cookie = "filteredTermsFromCookies=; path=/";
       // document.cookie = "filteredTermsFromCookies=; path=/pl";
-      console.log('cookies cleared');
+      // console.log('cookies cleared');
     };
 
 
