@@ -1304,10 +1304,10 @@ window.addEventListener("load", function() {
       console.log('cookies cleared');
     });
     wp.hooks.addAction('ymc_before_loaded_data_148_3', 'smartfilter', function(class_name, response){
-      document.cookie = "filteredTermsFromCookies=;";
-      document.cookie = "filteredTermsFromCookies=; path=";
-      document.cookie = "filteredTermsFromCookies=; path=/";
-      document.cookie = "filteredTermsFromCookies=; path=/pl";
+      // document.cookie = "filteredTermsFromCookies=;";
+      // document.cookie = "filteredTermsFromCookies=; path=";
+      // document.cookie = "filteredTermsFromCookies=; path=/";
+      // document.cookie = "filteredTermsFromCookies=; path=/pl";
       console.log('cookies cleared');
     });
 
