@@ -544,9 +544,11 @@ window.addEventListener("load", function() {
               document.referrer.search('galeria-wiezycka-folwark') > 20 ||
               document.referrer.search('kronika-budowy-wiezycka-folwark') > 20){
               document.cookie = "filteredTermsFromCookies=81;";
-    }else{
-      document.cookie = "filteredTermsFromCookies=;";
-    };
+    }
+
+    wp.hooks.addAction('ymc_after_loaded_data_148_3', 'smartfilter', function(class_name, response){
+      document.cookie = "filteredTermsFromCookies=0;";
+    });
 
     function getCookie(cname) {
       let name = cname + "=";
