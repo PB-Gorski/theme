@@ -544,6 +544,8 @@ window.addEventListener("load", function() {
               document.referrer.search('galeria-wiezycka-folwark') > 20 ||
               document.referrer.search('kronika-budowy-wiezycka-folwark') > 20){
               document.cookie = "filteredTermsFromCookies=81;";
+    }else{
+      document.cookie = "filteredTermsFromCookies=81;";
     };
 
     function getCookie(cname) {
