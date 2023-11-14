@@ -80,12 +80,12 @@ window.addEventListener("load", function() {
               tempMiastoArr.push(choosenOptionID)
             };
 
-            // wp.hooks.addAction('ymc_before_loaded_data_148_2', 'smartfilter', function(class_name, response){
-            //   if (tempMiastoArr.length == 0){
-            //     menuActiveSpan.innerHTML = 'Wybierz';
-            //     console.log('Wybierz');
-            //   }
-            // });
+            wp.hooks.addAction('ymc_before_loaded_data_148_2', 'smartfilter', function(class_name, response){
+              if (tempMiastoArr.length == 0){
+                menuActiveSpan.innerHTML = 'Wybierz';
+                console.log('Wybierz');
+              }
+            });
 
             // setTimeout(() => {
             //   if (tempMiastoArr.length == 0){
@@ -94,8 +94,6 @@ window.addEventListener("load", function() {
             //   }
             // }, 1000);
             
-
-
 
             console.log('miastoArr: ',tempMiastoArr.length);
             console.log('active span: ',menuActiveSpan);
@@ -923,10 +921,16 @@ window.addEventListener("load", function() {
       };
 
       if(filteredTermsFromCookies != null){
-        setTimeout(() => {
-          runFromCookies()
-        }, 1000);
+        wp.hooks.addAction('ymc_before_loaded_data_148_2', 'smartfilter', function(class_name, response){
+          runFromCookies();
+        });
+
+        // setTimeout(() => {
+        //   runFromCookies();
+        // }, 1000);
       };
+
+
       deleteAllCookies();
     }else{
       console.log('no cookies');
