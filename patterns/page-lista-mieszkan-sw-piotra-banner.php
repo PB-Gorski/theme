@@ -23,9 +23,9 @@
       <div class="wp-block-group title-wrapper">
         <!-- wp:group -->
         <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
-          <!-- wp:paragraph -->
-          <p data-aos="fade-right" data-aos-offset="30">Św. Piotra - Zobacz dostępne mieszkania</p>
-          <!-- /wp:paragraph -->
+          <!-- wp:heading {"level":1} -->
+          <h1><span data-aos="fade-right" data-aos-offset="30">Św. Piotra - Zobacz dostępne mieszkania</span></h1>
+          <!-- /wp:heading -->
         </div>
         <!-- /wp:group -->
       </div>
