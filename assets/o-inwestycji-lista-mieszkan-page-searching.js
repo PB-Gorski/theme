@@ -1006,7 +1006,7 @@ window.addEventListener("load", function() {
       newArr = [];
       newArrHTMLList = [];
 
-      foundedPostOnStart.classList.add('hidden');
+      // foundedPostOnStart.classList.add('hidden');
       // foundedPostOnStart.classList.add('hidden2');
       const dropDownFilters = document.querySelectorAll(".dropdown-filter");
       let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
