@@ -996,11 +996,11 @@ window.addEventListener("load", function() {
       // };
       if(document.cookie.indexOf('filteredTermsFromCookies=') > 0) {
         setTimeout(() => {
-          document.cookie = "filteredTermsFromCookies=;";
+          // document.cookie = "filteredTermsFromCookies=;";
           runFromCookies()
         }, 1000);
       };
-      
+
       deleteAllCookies();
     }else{
       console.log('no cookies');
