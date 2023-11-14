@@ -546,10 +546,7 @@ window.addEventListener("load", function() {
               document.cookie = "filteredTermsFromCookies=81;";
     }
 
-    wp.hooks.addAction('ymc_before_loaded_data_1850_7', 'smartfilter', function(class_name, response){
-      document.cookie = "filteredTermsFromCookies=; path=/";
-      console.log('with path');
-    });
+
 
     function getCookie(cname) {
       let name = cname + "=";
@@ -985,9 +982,14 @@ window.addEventListener("load", function() {
         }).apiTermUpdate(); 
         console.log('after YMC api update');
       };
+      wp.hooks.addAction('ymc_before_loaded_data_1850_7', 'smartfilter', function(class_name, response){
+        document.cookie = "filteredTermsFromCookies=; path=/";
+        console.log('with path');
+      });
 
       if(filteredTermsFromCookies != null){
         setTimeout(() => {
+          document.cookie = "filteredTermsFromCookies=; path=/";
           runFromCookies()
         }, 1000);
       };
