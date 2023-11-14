@@ -6,11 +6,6 @@ window.addEventListener("load", function() {
     let inwestycjaName = document.querySelector('.taxonomy-inwestycja').childNodes[0].innerHTML;
     let btnBackToMieszkaniaList = document.querySelector('.js-backToList');
 
-    console.log('Strona inwestycji: ',inwestycjaName);
-
-
-
-
     if(inwestycjaName == 'Osiedle Srebrniki'){
       document.cookie ='filteredTermsFromCookies=72; path=/';
       btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-osiedle-srebrniki/lista-mieszkan-osiedle-srebrniki/';
