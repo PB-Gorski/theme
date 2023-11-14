@@ -126,9 +126,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2 flex flex-col justify-center">
-        <!-- wp:paragraph -->
-        <span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Apartamenty w pobliżu Motławy</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading -->
+        <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Apartamenty w pobliżu Motławy</span></h2>
+        <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W dwóch budynkach będzie jedynie 29 apartamentów, co gwarantuje prywatność oraz spokój. Mieszkania charakteryzuje optymalny rozkład pokoi, umożliwiający dostowanie przestrzeni do swoich potrzeb. Przestronne balkony, winda, podziemny garaż - to wszystko czeka na mieszkańców Toruńskiej 16, zlokalizowanej w pobliżu Motławy. </span>
         <!-- /wp:paragraph -->
@@ -152,9 +152,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
-        <!-- wp:paragraph -->
-        <span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Zamieszkaj w centrum Gdańska</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading -->
+        <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Zamieszkaj w centrum Gdańska</span></h2>
+        <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Toruńska 16 to miejsce idealne dla osób ceniących mieszkanie w centrum miasta. Spacerem w kilkanaście minut dojdziemy do Głównego Miasta, przystanku SKM czy galerii handlowej. Wszędzie będzie blisko!</span>
         <!-- /wp:paragraph -->
@@ -178,9 +178,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
-        <!-- wp:paragraph -->
-        <span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Sprawdź dostępne mieszkania</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading -->
+        <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Sprawdź dostępne mieszkania</span></h2>
+        <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Znajdź odpowiednie mieszkanie już teraz - wybierz dogodny metraż dla siebie i rodziny.</span>
         <!-- /wp:paragraph -->
