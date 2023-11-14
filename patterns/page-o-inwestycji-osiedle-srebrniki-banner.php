@@ -19,9 +19,16 @@
 
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[80px] z-[0] relative text-white">
-      <!-- wp:heading {"level":1} -->
-      <h1 class="wp-block-heading title text-[36px] desktop:text-[60px] desktop:pt-[290px] mb-[50px] leading-[44px] desktop:leading-[70px]"><span class="block font-bold underline underline-offset-[20px]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki</span><span class="block uppercase text-[18px] trancking-[10px]" data-aos="fade-right" data-aos-offset="30">Gdańsk wrzeszcz</span></h1>
-      <!-- /wp:heading -->
+      <!-- wp:group -->
+      <div class="wp-block-group title text-[36px] desktop:text-[60px] desktop:pt-[290px] mb-[50px] leading-[44px] desktop:leading-[70px]">
+        <!-- wp:paragraph -->
+        <span class="block font-bold underline underline-offset-[20px]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki</span>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <span class="block uppercase text-[18px] trancking-[10px]" data-aos="fade-right" data-aos-offset="30">Gdańsk wrzeszcz</span>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
   </div>
