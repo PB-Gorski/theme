@@ -138,9 +138,9 @@ window.addEventListener("load", function() {
               if (tempMiastoArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
             });
             
-            setTimeout(() => {
-              // if (tempMiastoArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
-            }, 10);
+            // setTimeout(() => {
+            //   if (tempMiastoArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
+            // }, 10);
             menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
           }else if(inwestycjaArr.includes(+choosenOptionID)){
             // inwestycje
@@ -188,9 +188,9 @@ window.addEventListener("load", function() {
             wp.hooks.addAction('ymc_before_loaded_data_1850_7', 'smartfilter', function(class_name, response){
               if (tempTerminArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
             });
-            setTimeout(() => {
-              // if (tempTerminArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
-            }, 10);
+            // setTimeout(() => {
+            //   if (tempTerminArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
+            // }, 10);
             menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
           }else if(inneArr.includes(+choosenOptionID)){
             // inne
