@@ -14,9 +14,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 <div id="Content" class="wp-block-group content relative">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
-    <!-- wp:paragraph -->
-    <span class="block py-[30px] desktop:py-[60px] text-[36px] desktop:text-[60px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Poznaj inwestycję</span>
-    <!-- /wp:paragraph -->
+    <!-- wp:heading {"level":1} -->
+    <h1><span class="block py-[30px] desktop:py-[60px] text-[36px] desktop:text-[60px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Poznaj inwestycję</span></h1>
+    <!-- /wp:heading -->
 
     <!-- wp:group -->
     <div class="wp-block-group test row-links mb-[50px] flex flex-wrap justify-center items-center gap-[20px]">
