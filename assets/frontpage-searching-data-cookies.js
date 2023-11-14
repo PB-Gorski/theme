@@ -1,3 +1,8 @@
+//TODO: Structural refactor and naming convention needed
+//TODO: Remove hard coded connection to pages with have apartament listing.
+//TODO: Remove loop to have only one event listener that catch only few elements
+//TODO: Remove function from "load" and "click" and "loop" scope for optmisation. Refactor
+
 window.addEventListener("load", function() {
   //  frontpage - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('home') ||
@@ -7,13 +12,13 @@ window.addEventListener("load", function() {
 
 
 
- 
+
 
     console.log('home');
     // document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
     function deleteAllCookies() {
         const cookies = document.cookie.split(";");
-    
+
         for (let i = 0; i < cookies.length; i++) {
             const cookie = cookies[i];
             const eqPos = cookie.indexOf("=");
@@ -32,7 +37,7 @@ window.addEventListener("load", function() {
     const sectionInwestycje = document.querySelector('#inwestycje');
     const dropDownFIltersArr = document.querySelectorAll('.dropdown-filter');
 
-    
+
     btnMore.addEventListener('click',()=>{
       if(window.innerWidth > 480){
         searchBar.classList.toggle('desktop:h-[240px]');
@@ -189,7 +194,7 @@ window.addEventListener("load", function() {
             };
           }else{
             // console.log('error');
-          };          
+          };
 
 
           // menuActiveSpan.dataset.label = choosenOption;
@@ -232,7 +237,7 @@ window.addEventListener("load", function() {
         document.cookie = "MetrazMinFromCookies=" + metrazMinValueCookie;
         document.cookie = "MetrazMaxFromCookies=" + metrazMaxValueCookie;
 
-  
+
 
         // console.log('filter type: ', filterType);
       });
@@ -280,7 +285,7 @@ window.addEventListener("load", function() {
           el.classList.remove('dropdown__list_active')
         };
       });
-    };  
+    };
 
     function runSearchingFrontPage(){
       priceValueArr = [];
@@ -291,7 +296,7 @@ window.addEventListener("load", function() {
       let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
       priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
       priceMaxValue = document.querySelector('.dropdown__value-max').childNodes[0].innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
-      
+
       console.log('no spaces', priceMinValue,priceMaxValue);
 
       for (i = 1 ; i < priceValueArrNodeList.length ; i++){
@@ -300,7 +305,7 @@ window.addEventListener("load", function() {
       }
 
       console.log('3123 new 4312341 price valueArr: ',priceValueArr);
-    
+
       priceValueArr.forEach(priceValue => {
         priceMaxValue.isNaN ? priceMaxValue = 10000000 : priceMaxValue = priceMaxValue;
         console.log('price max value ',priceMaxValue);
@@ -310,7 +315,7 @@ window.addEventListener("load", function() {
         };
       });
       console.log('prices from range: ', priceValueArr);
-      
+
       // console.log('new price arr: ',newArr);
 
       newArr.forEach(elem => {
@@ -343,9 +348,9 @@ window.addEventListener("load", function() {
       priceValueArrNodeList = [];
 
       return filteredPriceTermsID;
-    }; 
+    };
     // console.log(filteredPriceFromFrontPage);
-  
+
 
     // -------------------------------------------------------------------------------------
 
@@ -404,14 +409,14 @@ window.addEventListener("load", function() {
       let metrazValueArrNodeList = dropDownFilters[8].childNodes[1].childNodes;
       metrazMinValue = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
       metrazMaxValue = document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
-      
+
       console.log('no spaces', metrazMinValue,metrazMaxValue);
 
       for (i = 1 ; i < metrazValueArrNodeList.length ; i++){
         metrazValueArr.push(parseInt(metrazValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
         metrazValueArrNodeList[i].childNodes[1].dataset.name = parseInt(metrazValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
       }
-    
+
       metrazValueArr.forEach(priceValue => {
         metrazMaxValue.isNaN ? metrazMaxValue = 10000000 : metrazMaxValue = metrazMaxValue;
         console.log('price max value ',metrazMaxValue);
@@ -420,7 +425,7 @@ window.addEventListener("load", function() {
         };
       });
       console.log('prices from range: ', metrazValueArr);
-      
+
       // console.log('new price arr: ',newArr);
 
       newArr.forEach(elem => {
@@ -454,16 +459,16 @@ window.addEventListener("load", function() {
 
       // YMCTools({
       //   target: '.data-target-ymc1',
-      //   terms: filteredTermsID.join(),            
-      // }).apiTermUpdate(); 
+      //   terms: filteredTermsID.join(),
+      // }).apiTermUpdate();
       return filteredTermsIDMetraz;
-    }; 
+    };
     // console.log('run searching metraz',runSearchingMetrazFrontPage());
 
     // let menuActive = document.querySelectorAll('.menu-active');
     // const searchBarTest = document.querySelector('#inwestycje')
     // menuActive.forEach(menu => {
-    //   menu.addEventListener('click', () => { 
+    //   menu.addEventListener('click', () => {
     //     if(searchBarTest.classList.contains('z-[1]')){
     //       searchBarTest.classList.remove('z-[1]');
     //       searchBarTest.classList.add('z-[0]');
@@ -486,7 +491,7 @@ window.addEventListener("load", function() {
     //       }else if(!activeItemPassive.style.display == 'block'){
     //         activeItemPassive.classList.remove('hidden')
     //       };
-  
+
     //       if(!activeItemPassive.classList.contains('hidden')){
     //         activeItemPassive.previousElementSibling.childNodes[2].classList.remove('arrow-down');
     //         activeItemPassive.previousElementSibling.childNodes[2].innerHTML = 'x';
@@ -511,9 +516,9 @@ window.addEventListener("load", function() {
         console.log('parent parent: ',e.target.parentNode.parentNode);
 
       })
-  
-    });  
-      
+
+    });
+
     document.querySelectorAll('.menu-active').forEach(menuActive =>{
       menuActive.addEventListener('click', (e)=>{
         document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
@@ -524,7 +529,7 @@ window.addEventListener("load", function() {
         // e.target.classList.replace('newAfter', 'arrow-down');
         e.target.classList.toggle('newAfter');
       })
-    });  
+    });
 
     let c = 0;
     document.querySelectorAll('.dropdown__value').forEach(customDropValue =>{
@@ -536,15 +541,15 @@ window.addEventListener("load", function() {
           }
         });
       })
-    }); 
+    });
 
-    
+
 
     // -------------------------------------------------------------------------------------
   };
 
 
-    
+
 
 
   document.querySelectorAll('.taxonomy-category').forEach(item =>{
