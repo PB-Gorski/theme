@@ -45,7 +45,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group desktop:pl-[100px] desktop:w-[40%]">
         <!-- wp:heading {"level":4} -->
-        <h4><span class="text-[30px] leading-[40px] mb-[40px]" data-aos="fade-right" data-aos-offset="30">Św. Piotra to prestiżowa inwestycja położona w samym sercu Gdyni - na Placu Kaszubskim.</span></h4>
+        <h4><span class="block text-[30px] leading-[40px] mb-[40px]" data-aos="fade-right" data-aos-offset="30">Św. Piotra to prestiżowa inwestycja położona w samym sercu Gdyni - na Placu Kaszubskim.</span></h4>
         <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <p class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W najbliższym sąsiedztwie znajduje się nie tylko pełne zaplecze handlowe i edukacyjne, ale także przystanek PKM, który pozwala na dojazd do najważniejszych punktów w całym Trójmieście. </p>
@@ -99,8 +99,8 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
   <!-- wp:group -->
   <div class="wp-block-group plan-osiedla-wrapper mb-[100px] mx-auto max-w-[690px] w-full px-[20px] desktop:px-0">
-        <!-- wp:heading {"level":5} -->
-        <h5><span class="mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Zaledwie 5 minut będzie dzielić mieszkańców Św. Piotra od Skweru Kościuszki, plaży miejskiej czy Mariny Gdyńskiej. Św. Piotra to także idealne miejsce dla miłośników miejskiego życia - w najbliższej okolicy znajduje się zróżnicowana oferta kawiarni, restauracji i barów, a także kluby fitness, kina i teatry.</span></h5>
+    <!-- wp:heading {"level":5} -->
+    <h5><span class="mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Zaledwie 5 minut będzie dzielić mieszkańców Św. Piotra od Skweru Kościuszki, plaży miejskiej czy Mariny Gdyńskiej. Św. Piotra to także idealne miejsce dla miłośników miejskiego życia - w najbliższej okolicy znajduje się zróżnicowana oferta kawiarni, restauracji i barów, a także kluby fitness, kina i teatry.</span></h5>
     <!-- /wp:heading -->
   </div>
   <!-- /wp:group -->
