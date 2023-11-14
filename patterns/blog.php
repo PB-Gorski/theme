@@ -14,8 +14,8 @@
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
     <div class="wp-block-group title mb-[20px] desktop:mb-[40px]">
-      <!-- wp:paragraph -->
-      <span data-aos="fade-right" data-aos-offset="30" class="block text-[24px] text-center font-bold">Aktualności</span>
+      <!-- wp:heading {"level":5} -->
+      <h5><span data-aos="fade-right" data-aos-offset="30" class="block text-[24px] text-center font-bold">Aktualności</span></h5>
       <!-- /wp:paragraph -->
       <!-- wp:group -->
       <div class="wp-block-group mx-auto w-[130px] border-b-primaryRed border-b-[2px]">
@@ -51,7 +51,7 @@
               <!-- /wp:group -->
 
               <!-- wp:group -->
-              <div class="wp-block-group mr-[20px] text-[20px] font-bold mb-[15px] leading-[32px] border-b-[2px] border-b-primaryRed"><!-- wp:post-title {"isLink":true} /--></div>
+              <div class="wp-block-group mr-[20px] text-[20px] font-bold mb-[15px] leading-[32px] border-b-[2px] border-b-primaryRed"><!-- wp:post-title {"isLink":true,"level":5} /--></div>
               <!-- /wp:group -->
 
               <!-- wp:group -->
