@@ -158,9 +158,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
-        <!-- wp:paragraph -->
-        <span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Pełen komfort życia w centrum miasta</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading -->
+        <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Pełen komfort życia w centrum miasta</span></h2>
+        <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Inwestycja zapewnia pełen komfort życia i relaks w samym centrum miasta. W strefie wejściowej zaplanowana jest duża ilość zieleni, a w samym budynku mieszkańcy będą mogli cieszyć się takimi udogodnieniami jak części wspólne w wysokim standardzie, portiernia, dwupoziomowy garaż, siłownia z częścią wypoczynkową oraz zieleń rekreacyjna na dachu garażu.</span>
         <!-- /wp:paragraph -->
@@ -184,9 +184,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
-        <!-- wp:paragraph -->
-        <span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Tętniące życiem miasto w zasięgu ręki</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading -->
+        <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Tętniące życiem miasto w zasięgu ręki</span></h2>
+        <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Położenie apartamentów gwarantuje łatwość poruszania się po trójmiejskiej aglomeracji. Inwestycja jest zlokalizowana w odległości 1 km od stacji SKM i PKP Gdynia Główna i około 5 min od Skweru Kościuszki, plaży miejskiej czy Mariny Gdyńskiej. Św. Piotra to idealne miejsce dla miłośników miejskiego życia - w najbliższej okolicy znajdują się kawiarnie, restauracje, bary, kluby fitness, kina czy teatry. </span>
         <!-- /wp:paragraph -->
