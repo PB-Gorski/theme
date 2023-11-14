@@ -1295,7 +1295,11 @@ window.addEventListener("load", function() {
       console.log('cookies cleared');
     });
 
-    if(document.body.classList.contains('page-id1711')){
+    if(document.body.classList.contains('page-id-1711')){
+      document.cookie = "filteredTermsFromCookies=; path=/";
+      console.log('cookies cleared');
+    };
+    if(document.body.classList.contains('page-id-1926')){
       document.cookie = "filteredTermsFromCookies=; path=/";
       console.log('cookies cleared');
     };
