@@ -1319,10 +1319,10 @@ window.addEventListener("load", function() {
       console.log('cookies cleared');
     };
     if(document.body.classList.contains('page-id-1926')){
-      document.cookie = "filteredTermsFromCookies=;";
-      document.cookie = "filteredTermsFromCookies=; path=";
-      document.cookie = "filteredTermsFromCookies=; path=/";
-      document.cookie = "filteredTermsFromCookies=; path=/pl";
+      // document.cookie = "filteredTermsFromCookies=;";
+      // document.cookie = "filteredTermsFromCookies=; path=";
+      // document.cookie = "filteredTermsFromCookies=; path=/";
+      // document.cookie = "filteredTermsFromCookies=; path=/pl";
       console.log('cookies cleared');
     };
     if(document.body.classList.contains('post-type-archive-mieszkania')){
