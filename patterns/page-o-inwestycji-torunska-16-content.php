@@ -14,11 +14,11 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 <div id="Content" class="wp-block-group content relative">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
-        <!-- wp:heading {"level":1} -->
-        <h1><span class="block py-[30px] desktop:py-0 desktop:pt-[60px] text-[36px] desktop:text-[60px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Toruńska 16</span></h1>
+    <!-- wp:heading {"level":1} -->
+    <h1><span class="block py-[30px] desktop:py-0 desktop:pt-[60px] text-[36px] desktop:text-[60px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Toruńska 16</span></h1>
     <!-- /wp:heading -->
-        <!-- wp:heading {"level":5} -->
-        <h5><span class="block pb-[30px] desktop:pb-[60px] text-[20px] text-[#8a8f99] desktop:text-[24px] text-center" data-aos="fade-right" data-aos-offset="30">Kameralna inwestycja zlokalizowana w Śródmieściu Gdańska</span></h5>
+    <!-- wp:heading {"level":5} -->
+    <h5><span class="block pb-[30px] desktop:pb-[60px] text-[20px] text-[#8a8f99] desktop:text-[24px] text-center" data-aos="fade-right" data-aos-offset="30">Kameralna inwestycja zlokalizowana w Śródmieściu Gdańska</span></h5>
     <!-- /wp:heading -->
 
     <!-- wp:group -->
