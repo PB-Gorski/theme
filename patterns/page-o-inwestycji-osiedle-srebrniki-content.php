@@ -57,9 +57,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:px-[100px] desktop:w-1/2">
-        <!-- wp:paragraph -->
-        <span class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki to zielona enklawa położona na granicy dwóch dzielnic Gdańska - Wrzeszcza i Moreny</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading {"level":4} -->
+        <h4><span class="mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki to zielona enklawa położona na granicy dwóch dzielnic Gdańska - Wrzeszcza i Moreny</span></h4>
+        <!-- /wp:heading -->
 
         <!-- wp:group -->
         <div class="wp-block-group mt-[40px] mb-[30px] desktop:mb-[100px] desktop:grid grid-rows-2 grid-cols-2 gap-[30px]">
