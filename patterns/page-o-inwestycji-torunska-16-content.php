@@ -93,7 +93,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
             <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">29</span></h5>
             <!-- /wp:heading -->
           </div>
-          <!-- /wp:group -->q
+          <!-- /wp:group -->
 
           <!-- wp:group -->
           <div class="wp-block-group info-box4 mb-[35px] desktop:mb-[30px]">
