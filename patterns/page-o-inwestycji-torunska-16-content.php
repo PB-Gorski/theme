@@ -56,9 +56,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:px-[100px] desktop:w-1/2 flex flex-col justify-center">
-        <!-- wp:paragraph -->
-        <span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">W ramach inwestycji powstaną 2 kameralne budynki</span>
-        <!-- /wp:paragraph -->
+    <!-- wp:heading {"level":4} -->
+    <h4><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">W ramach inwestycji powstaną 2 kameralne budynki</span></h4>
+        <!-- /wp:heading -->
 
         <!-- wp:group -->
         <div class="wp-block-group mb-[30px] desktop:mb-[100px] desktop:mb-0 desktop:grid grid-rows-2 grid-cols-2 gap-[30px]">
