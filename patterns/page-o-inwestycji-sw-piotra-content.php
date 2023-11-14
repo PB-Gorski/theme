@@ -132,9 +132,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
-        <!-- wp:paragraph -->
-        <span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Apartamenty z widokiem na morze </span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading -->
+        <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Apartamenty z widokiem na morze </span></h2>
+        <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W ofercie znajdują się dobrze doświetlone, starannie zaprojektowane mieszkania z dużymi balkonami i loggiami. Apartamentom na ostatnich piętrach przestrzeni dodadzą wysokie przeszklone fasady i komfortowe tarasy. Mieszkańcy najwyższych pięter będą mogli również cieszyć się pięknym widokiem na morze.</span>
         <!-- /wp:paragraph -->
