@@ -80,19 +80,19 @@ window.addEventListener("load", function() {
               tempMiastoArr.push(choosenOptionID)
             };
 
-            wp.hooks.addAction('ymc_before_loaded_data_148_2', 'smartfilter', function(class_name, response){
-              if (tempMiastoArr.length == 0){
-                menuActiveSpan.innerHTML = 'Wybierz';
-                console.log('Wybierz');
-              }
-            });
+            // wp.hooks.addAction('ymc_before_loaded_data_148_2', 'smartfilter', function(class_name, response){
+            //   if (tempMiastoArr.length == 0){
+            //     menuActiveSpan.innerHTML = 'Wybierz';
+            //     console.log('Wybierz');
+            //   }
+            // });
 
-            setTimeout(() => {
-              // if (tempMiastoArr.length == 0){
-              //   menuActiveSpan.innerHTML = 'Wybierz';
-              //   console.log('Wybierz');
-              // }
-            }, 1000);
+            // setTimeout(() => {
+            //   if (tempMiastoArr.length == 0){
+            //     menuActiveSpan.innerHTML = 'Wybierz';
+            //     console.log('Wybierz');
+            //   }
+            // }, 1000);
             
 
 
