@@ -67,9 +67,9 @@
       <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[80px] z-[0] relative text-white">
         <!-- wp:group -->
         <div class="wp-block-group title text-[36px] desktop:text-[60px] desktop:pt-[290px] mb-[50px] leading-[44px] desktop:leading-[70px]">
-          <!-- wp:paragraph -->
-          <p class="font-bold underline underline-offset-[20px]">Kronika budowy</p>
-          <!-- /wp:paragraph -->
+          <!-- wp:heading {"level":1} -->
+          <h1><span class="font-bold underline underline-offset-[20px]">Kronika budowy</span></h1>
+          <!-- /wp:heading -->
         </div>
         <!-- /wp:group -->
       </div>
