@@ -33,9 +33,9 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
     <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[20px] desktop:flex items-center">
       <!-- wp:group -->
       <div class="wp-block-group left-col desktop:w-[70%]">
-        <!-- wp:paragraph -->
-        <p class="container mx-auto desktop:px-0 px-[20px] my-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">Gdańsk - Inwestycje</p>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading {"level":1} -->
+        <h1 class="container mx-auto desktop:px-0 px-[20px] my-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]">Gdańsk - Inwestycje</h1>
+        <!-- /wp:heading -->
 
         <!-- wp:list -->
         <ul class="wp-block-list container mx-auto desktop:px-0 px-[20px] pb-[50px] flex flex-wrap items-center gap-[20px] text-[18px] font-medium">
