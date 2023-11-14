@@ -134,8 +134,12 @@ window.addEventListener("load", function() {
             }else{
               tempMiastoArr =[];tempMiastoArr.push(choosenOptionID)
             };
-            setTimeout(() => {
+            wp.hooks.addAction('ymc_before_loaded_data_1850_7', 'smartfilter', function(class_name, response){
               if (tempMiastoArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
+            });
+            
+            setTimeout(() => {
+              // if (tempMiastoArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
             }, 10);
             menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
           }else if(inwestycjaArr.includes(+choosenOptionID)){
@@ -181,8 +185,11 @@ window.addEventListener("load", function() {
             }else{
               tempTerminArr =[];tempTerminArr.push(choosenOptionID)
             };
-            setTimeout(() => {
+            wp.hooks.addAction('ymc_before_loaded_data_1850_7', 'smartfilter', function(class_name, response){
               if (tempTerminArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
+            });
+            setTimeout(() => {
+              // if (tempTerminArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
             }, 10);
             menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
           }else if(inneArr.includes(+choosenOptionID)){
