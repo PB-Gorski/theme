@@ -983,23 +983,23 @@ window.addEventListener("load", function() {
         console.log('after YMC api update');
       };
 
-      wp.hooks.addAction('ymc_before_loaded_data_1850_7', 'smartfilter', function(class_name, response){
+      wp.hooks.addAction('ymc_before_loaded_data_1850_7', 'smartfilter', function(){
         document.cookie = "filteredTermsFromCookies=;";
         console.log('with path');
       });
 
-      // if(filteredTermsFromCookies != null){
-      //   setTimeout(() => {
-      //     document.cookie = "filteredTermsFromCookies=;";
-      //     runFromCookies()
-      //   }, 1000);
-      // };
-      if(document.cookie.indexOf('filteredTermsFromCookies=') > 0) {
+      if(filteredTermsFromCookies != null){
         setTimeout(() => {
-          // document.cookie = "filteredTermsFromCookies=;";
+          document.cookie = "filteredTermsFromCookies=;";
           runFromCookies()
         }, 1000);
       };
+      // if(document.cookie.indexOf('filteredTermsFromCookies=') > 0) {
+      //   setTimeout(() => {
+      //     // document.cookie = "filteredTermsFromCookies=;";
+      //     runFromCookies()
+      //   }, 1000);
+      // };
 
       deleteAllCookies();
     }else{
