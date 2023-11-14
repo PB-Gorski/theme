@@ -14,9 +14,10 @@
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
     <div class="wp-block-group pt-[60px] pb-[30px] desktop:pb-[60px] title">
-      <!-- wp:paragraph -->
-      <span data-aos="fade-right" data-aos-duration="500" data-aos-offset="30" class="block text-[24px] text-center font-bold">Poznaj nasze najnowsze inwestycje</span>
-      <!-- /wp:paragraph -->
+      <!-- wp:heading {"level":5} -->
+      <h5><span data-aos="fade-right" data-aos-duration="500" data-aos-offset="30" class="block text-[24px] text-center font-bold">Poznaj nasze najnowsze inwestycje</span></h5>
+      <!-- /wp:heading -->
+
       <!-- wp:group -->
       <div class="wp-block-group mx-auto w-[130px] border-b-primaryRed border-b-[2px]">
         <!-- wp:paragraph -->
@@ -127,9 +128,9 @@
     <div class="wp-block-group flex items-center justify-center">
       <!-- wp:group -->
       <div class="wp-block-group btn-find-more relative w-fit h-[55px] p-[10px_20px] bg-[#3d4b66] text-white flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
-        <!-- wp:heading {"level":5} -->
-        <h5 class="w-block-heading font-bold z-[1]"><a href="<?php echo home_url() . '/inwestycje' ?>">Zobacz wszystkie inwestycje</a></h5>
-        <!-- /wp:heading -->
+        <!-- wp:paragraph -->
+        <p class="font-bold z-[1]"><a href="<?php echo home_url() . '/inwestycje' ?>">Zobacz wszystkie inwestycje</a></p>
+        <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
     </div>
