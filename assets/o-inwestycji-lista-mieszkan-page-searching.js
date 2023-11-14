@@ -1283,29 +1283,29 @@ window.addEventListener("load", function() {
 
     wp.hooks.addAction('ymc_after_loaded_data_148_2', 'smartfilter', function(class_name, response){
       document.cookie = "filteredTermsFromCookies=; path=/";
-      document.cookie = "filteredTermsFromCookies=; path=/";
+      document.cookie = "filteredTermsFromCookies=; path=/pl";
       console.log('cookies cleared');
     });
 
     wp.hooks.addAction('ymc_after_loaded_data_148_3', 'smartfilter', function(class_name, response){
       document.cookie = "filteredTermsFromCookies=; path=/";
-      document.cookie = "filteredTermsFromCookies=; path=/";
+      document.cookie = "filteredTermsFromCookies=; path=/pl";
       console.log('cookies cleared');
     });
     wp.hooks.addAction('ymc_before_loaded_data_148_3', 'smartfilter', function(class_name, response){
       document.cookie = "filteredTermsFromCookies=; path=/";
-      document.cookie = "filteredTermsFromCookies=; path=/";
+      document.cookie = "filteredTermsFromCookies=; path=/pl";
       console.log('cookies cleared');
     });
 
     if(document.body.classList.contains('page-id-1711')){
       document.cookie = "filteredTermsFromCookies=; path=/";
-      document.cookie = "filteredTermsFromCookies=; path=/";
+      document.cookie = "filteredTermsFromCookies=; path=/pl";
       console.log('cookies cleared');
     };
     if(document.body.classList.contains('page-id-1926')){
       document.cookie = "filteredTermsFromCookies=; path=/";
-      document.cookie = "filteredTermsFromCookies=; path=/";
+      document.cookie = "filteredTermsFromCookies=; path=/pl";
       console.log('cookies cleared');
     };
 
