@@ -547,7 +547,7 @@ window.addEventListener("load", function() {
     }
 
     wp.hooks.addAction('ymc_after_loaded_data_148_3', 'smartfilter', function(class_name, response){
-      document.cookie = "filteredTermsFromCookies=0;";
+      document.cookie = "filteredTermsFromCookies=0; path=/";
     });
 
     function getCookie(cname) {
