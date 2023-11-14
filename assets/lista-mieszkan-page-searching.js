@@ -921,9 +921,9 @@ window.addEventListener("load", function() {
       };
 
       if(filteredTermsFromCookies != null){
-        wp.hooks.addAction('ymc_before_loaded_data_148_2', 'smartfilter', function(class_name, response){
+        // wp.hooks.addAction('ymc_before_loaded_data_148_2', 'smartfilter', function(class_name, response){
           runFromCookies();
-        });
+        // });
 
         // setTimeout(() => {
         //   runFromCookies();
