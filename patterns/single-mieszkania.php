@@ -40,7 +40,7 @@
       <div class="wp-block-group group mb-[20px] btn-back desktop:mb-[40px] w-fit flex items-center gap-[8px]">
         <!-- wp:paragraph -->
         <p class="text-[18px] text-[#bcbcbc] hover:text-white transition duration-[300ms] ease z-[1]"><a href="#" class="js-backToList">&larr; Wyszukiwanie</a></p>
-        <!-- wp:paragraph -->
+        <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
 
