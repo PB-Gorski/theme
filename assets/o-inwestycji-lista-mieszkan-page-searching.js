@@ -985,7 +985,7 @@ window.addEventListener("load", function() {
       };
 
       wp.hooks.addAction('ymc_before_loaded_data_1850_7', 'smartfilter', function(){
-        document.cookie = "filteredTermsFromCookies=;";
+        document.cookie = "filteredTermsFromCookies=; path=/";
         console.log('with path');
       });
 
