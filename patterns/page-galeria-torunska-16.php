@@ -69,9 +69,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[80px] z-[0] relative text-white">
         <!-- wp:group -->
         <div class="wp-block-group title text-[36px] desktop:text-[60px] desktop:pt-[160px] mb-[50px] leading-[44px] desktop:leading-[70px]">
-          <!-- wp:paragraph -->
-          <p class="font-bold" data-aos="fade-right" data-aos-offset="30">Galeria Toruńska 16</p>
-          <!-- /wp:paragraph -->
+          <!-- wp:heading -->
+          <h1><span class="font-bold" data-aos="fade-right" data-aos-offset="30">Galeria Toruńska 16</span></h1>
+          <!-- /wp:heading -->
         </div>
         <!-- /wp:group -->
       </div>
