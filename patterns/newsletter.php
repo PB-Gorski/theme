@@ -26,7 +26,7 @@
       <div class="wp-block-group input mb-[15px] desktop:flex">
 
         <!-- wp:shortcode -->
-
+        [contact-form-7 id="e479141" title="newsletter"]
         <!-- /wp:shortcode -->
 
         <!-- wp:core/shortcode -->
