@@ -926,6 +926,7 @@ window.addEventListener("load", function() {
 
         setTimeout(() => {
           runFromCookies();
+          document.cookie = 'filteredTermsFromCookies=; path=/pl';
         }, 1000);
       };
 
