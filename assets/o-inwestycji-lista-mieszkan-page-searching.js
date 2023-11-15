@@ -564,8 +564,7 @@ window.addEventListener("load", function() {
       return "";
     };
     
-    document.cookie = 'filteredTermsFromCookies' +"=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
-    document.cookie = 'filteredTermsFromCookies' +"=; Path=/pl; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+
     // back from single mieszkania
     if(document.cookie.indexOf('filteredTermsFromCookies=') >= 0) {
       console.log('cookie mieszkania true');
