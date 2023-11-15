@@ -990,9 +990,9 @@ window.addEventListener("load", function() {
 
       if(filteredTermsFromCookies != null){
         setTimeout(() => {
-          document.cookie = "filteredTermsFromCookies=;";
-          document.cookie = 'filteredTermsFromCookies=; path=/'
-          document.cookie = 'filteredTermsFromCookies=; path=/pl'
+          // document.cookie = "filteredTermsFromCookies=;";
+          // document.cookie = 'filteredTermsFromCookies=; path=/'
+          // document.cookie = 'filteredTermsFromCookies=; path=/pl'
           runFromCookies()
         }, 1000);
       };
