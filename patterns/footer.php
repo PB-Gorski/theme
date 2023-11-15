@@ -195,11 +195,13 @@
       <p>Wdrożone przez </p>
       <!-- /wp:paragraph -->
 
+      <!-- wp:navigation-link {"label":"Webo","url":"https://webo.pl/"} -->
       <!-- wp:image -->
       <figure class="wp-block-image footer-logo w-[75px]">
         <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/frontpage/logo-webo.png'; ?>" alt="logo-webo" />
       </figure>
       <!-- /wp:image -->
+      <!-- /wp:navigation-link -->
     </div>
     <!-- /wp:group -->
 
