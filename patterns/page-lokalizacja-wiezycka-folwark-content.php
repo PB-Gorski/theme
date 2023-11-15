@@ -44,9 +44,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group desktop:pl-[100px] desktop:w-[45%] flex flex-col items-center justify-center">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] leading-[40px] mb-[40px]" data-aos="fade-right" data-aos-offset="30">Wieżycka Folwark to wyjątkowe osiedle położone w dzielnicy Zakoniczyn, w sąsiedztwie zabytkowego dworku Wendtów</p>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading {"level:4"} -->
+        <h4><span class="text-[30px] leading-[40px] mb-[40px]" data-aos="fade-right" data-aos-offset="30">Wieżycka Folwark to wyjątkowe osiedle położone w dzielnicy Zakoniczyn, w sąsiedztwie zabytkowego dworku Wendtów</span></h4>
+        <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <p class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W pobliżu znajdują się placówki edukacyjne, tereny rekreacyjne, parki. To idealna lokalizacja do spędzania czasu w gronie rodziny i przyjaciół. Mieszkania na parterze dodatkowo posiadają ogródki.</p>
         <!-- /wp:paragraph -->
@@ -99,12 +99,12 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
   <!-- wp:group -->
   <div class="wp-block-group plan-osiedla-wrapper mb-[100px] mx-auto max-w-[690px] w-full px-[20px] desktop:px-0">
-    <!-- wp:paragraph -->
-    <p class="mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Lokalizacja osiedla Wieżycka Folwark gwarantuje łatwe dotarcie zarówno do centrum Gdańska (15 minut), jak Gdyni (30 minut) a także zapewnia dostęp do pełnej infrastruktury w pobliżu miejsca zamieszkania (sklepy, punkty usługowe, szkoły, przedszkola, przychodnia).</p>
-    <!-- /wp:paragraph -->
-    <!-- wp:paragraph -->
-    <p class="mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Bez względu na to, czy pracujesz w Gdańsku, czy w Gdyni dotrzesz tam bez problemu. Pobliska obwodnica zapewnia łatwy dojazd do całego Trójmiasta, autostrady A1, lotniska, na Półwysep Helski bądź na Kaszuby. Zlokalizowane przy zjazdach z obwodnicy centra handlowe umożliwiają zrobienie wszelkich zakupów, od spożywczych po meblowe.</p>
-    <!-- /wp:paragraph -->
+    <!-- wp:heading {"level":5} -->
+    <h5><span class="block mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Lokalizacja osiedla Wieżycka Folwark gwarantuje łatwe dotarcie zarówno do centrum Gdańska (15 minut), jak Gdyni (30 minut) a także zapewnia dostęp do pełnej infrastruktury w pobliżu miejsca zamieszkania (sklepy, punkty usługowe, szkoły, przedszkola, przychodnia).</span></h5>
+    <!-- /wp:heading -->
+    <!-- wp:heading {"level":5} -->
+    <h5><span class="block mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Bez względu na to, czy pracujesz w Gdańsku, czy w Gdyni dotrzesz tam bez problemu. Pobliska obwodnica zapewnia łatwy dojazd do całego Trójmiasta, autostrady A1, lotniska, na Półwysep Helski bądź na Kaszuby. Zlokalizowane przy zjazdach z obwodnicy centra handlowe umożliwiają zrobienie wszelkich zakupów, od spożywczych po meblowe.</span></h5>
+    <!-- /wp:heading -->
   </div>
   <!-- /wp:group -->
 </div>
