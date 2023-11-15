@@ -19,7 +19,7 @@ window.addEventListener("load", function() {
       
       btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-torunska-16/lista-mieszkan-torunska-16/';
     }else if(inwestycjaName == 'Wieżycka Folwark'){
-      document.cookie ='filteredTermsFromCookies=81; path=/';
+      document.cookie ='filteredTermsFromCookies=81; path=/pl';
       btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-wiezycka-folwark/lista-mieszkan-wiezycka-folwark/';
     }
 
