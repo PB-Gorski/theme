@@ -911,7 +911,6 @@ window.addEventListener("load", function() {
 
       };      
       showActiveFilterNameFromCookies();
-
       function runFromCookies(){
         YMCTools({
           target: '.data-target-ymc2', 
