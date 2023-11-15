@@ -19,6 +19,8 @@ window.addEventListener("load", function() {
       document.cookie ='filteredTermsFromCookies=81; path=/';
       btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-wiezycka-folwark/lista-mieszkan-wiezycka-folwark/';
     }
+
+    // document.cookie = 'filteredTermsFromCookies' +"=; Path=/pl/mieszkania; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
   
   
   
