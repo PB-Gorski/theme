@@ -27,6 +27,9 @@ window.addEventListener("load", function() {
         }
     };
     deleteAllCookies();
+    document.cookie = "filteredTermsFromCookies=;";
+    document.cookie = 'filteredTermsFromCookies=; path=/';
+    document.cookie = 'filteredTermsFromCookies=; path=/pl';
 
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
