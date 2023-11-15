@@ -1006,7 +1006,7 @@ window.addEventListener("load", function() {
 
       wp.hooks.addAction('ymc_after_loaded_data_148_4', 'smartfilter', function(){
         setTimeout(() => {
-          runFromCookies();
+
           document.cookie = "filteredTermsFromCookies=;";
           document.cookie = 'filteredTermsFromCookies=; path=/';
           document.cookie = 'filteredTermsFromCookies=; path=/pl';
