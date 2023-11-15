@@ -988,12 +988,13 @@ window.addEventListener("load", function() {
         console.log('with path');
       });
 
+
       if(filteredTermsFromCookies != null){
         setTimeout(() => {
           runFromCookies();
-          document.cookie = "filteredTermsFromCookies=;";
-          document.cookie = 'filteredTermsFromCookies=; path=/';
-          document.cookie = 'filteredTermsFromCookies=; path=/pl';
+          // document.cookie = "filteredTermsFromCookies=;";
+          // document.cookie = 'filteredTermsFromCookies=; path=/';
+          // document.cookie = 'filteredTermsFromCookies=; path=/pl';
         }, 1000);
       };
       // if(document.cookie.indexOf('filteredTermsFromCookies=') > 0) {
@@ -1002,6 +1003,12 @@ window.addEventListener("load", function() {
       //     runFromCookies()
       //   }, 1000);
       // };
+
+      wp.hooks.addAction('ymc_after_loaded_data_148_4', 'smartfilter', function(){
+        document.cookie = "filteredTermsFromCookies=;";
+         document.cookie = 'filteredTermsFromCookies=; path=/'
+         document.cookie = 'filteredTermsFromCookies=; path=/pl'
+     });
 
       deleteAllCookies();
     }else{
