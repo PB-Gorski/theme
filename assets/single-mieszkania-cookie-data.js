@@ -13,7 +13,8 @@ window.addEventListener("load", function() {
       document.cookie ='filteredTermsFromCookies=71; path=/';
       btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-sw-piotra/lista-mieszkan-sw-piotra/';
     }else if(inwestycjaName == 'Toruńska 16'){
-      document.cookie ='filteredTermsFromCookies=82; path=/';
+      document.cookie ='filteredTermsFromCookies=82;';
+      
       btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-torunska-16/lista-mieszkan-torunska-16/';
     }else if(inwestycjaName == 'Wieżycka Folwark'){
       document.cookie ='filteredTermsFromCookies=81; path=/';
