@@ -90,7 +90,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
           <!-- wp:group -->
           <div class="wp-block-group info-box3 mb-[35px] desktop:mb-[30px]">
          <!-- wp:heading {"level":6} -->
-         <h5><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LICZBA MIESZKAŃ (ETAP I)</span></h5>
+         <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LICZBA MIESZKAŃ (ETAP I)</span></h6>
             <!-- /wp:heading -->
          <!-- wp:heading {"level":5} -->
          <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">78</span></h5>
