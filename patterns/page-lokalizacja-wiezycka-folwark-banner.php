@@ -23,7 +23,7 @@
       <!-- wp:group -->
       <div class="wp-block-group title text-[36px] desktop:text-[60px] desktop:pt-[160px] mb-[50px] leading-[44px] desktop:leading-[70px]">
         <!-- wp:heading {"level":1} -->
-        <h1><span class="font-bold" data-aos="fade-right" data-aos-offset="30">Gdańsk Zakoniczyn - malownicze położenie z dogodnym dojazdem</span></h1>
+        <h1><span class="font-bold max-w-[800px]" data-aos="fade-right" data-aos-offset="30">Gdańsk Zakoniczyn - malownicze położenie z dogodnym dojazdem</span></h1>
         <!-- /wp:heading -->
       </div>
       <!-- /wp:group -->
