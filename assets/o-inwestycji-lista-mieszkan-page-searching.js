@@ -990,10 +990,10 @@ window.addEventListener("load", function() {
 
       if(filteredTermsFromCookies != null){
         setTimeout(() => {
-          runFromCookies()
+          runFromCookies();
           document.cookie = "filteredTermsFromCookies=;";
-          document.cookie = 'filteredTermsFromCookies=; path=/'
-          document.cookie = 'filteredTermsFromCookies=; path=/pl'
+          document.cookie = 'filteredTermsFromCookies=; path=/';
+          document.cookie = 'filteredTermsFromCookies=; path=/pl';
         }, 1000);
       };
       // if(document.cookie.indexOf('filteredTermsFromCookies=') > 0) {
