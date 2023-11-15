@@ -45,7 +45,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group desktop:pl-[100px] desktop:w-[45%] flex flex-col items-center justify-center">
         <!-- wp:heading {"level":4} -->
-        <h4><span class="text-[30px] leading-[40px] mb-[40px]" data-aos="fade-right" data-aos-offset="30">Wieżycka Folwark to wyjątkowe osiedle położone w dzielnicy Zakoniczyn, w sąsiedztwie zabytkowego dworku Wendtów</span></h4>
+        <h4><span class="block text-[30px] leading-[40px] mb-[40px]" data-aos="fade-right" data-aos-offset="30">Wieżycka Folwark to wyjątkowe osiedle położone w dzielnicy Zakoniczyn, w sąsiedztwie zabytkowego dworku Wendtów</span></h4>
         <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <p class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W pobliżu znajdują się placówki edukacyjne, tereny rekreacyjne, parki. To idealna lokalizacja do spędzania czasu w gronie rodziny i przyjaciół. Mieszkania na parterze dodatkowo posiadają ogródki.</p>
