@@ -41,9 +41,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group desktop:pl-[100px] desktop:w-[40%]">
-        <!-- wp:paragraph -->
-        <p class="text-[30px] leading-[40px] mb-[40px]" data-aos="fade-right" data-aos-offset="30">Toruńska 16 to kameralne osiedle, gwarantujące pełen komfort mieszkania w centrum miasta</p>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading {"level":4} -->
+        <h4><span class="block text-[30px] leading-[40px] mb-[40px]" data-aos="fade-right" data-aos-offset="30">Toruńska 16 to kameralne osiedle, gwarantujące pełen komfort mieszkania w centrum miasta</span></h4>
+        <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <p class="text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W pobliżu znajduje się Główne Miasto, restauracje, kawiarnie, placówki edukacyjne, tereny rekreacyjne. To idealna lokalizacja dla osób ceniących sobie miejskie życie.</p>
         <!-- /wp:paragraph -->
@@ -96,12 +96,12 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
   <!-- wp:group -->
   <div class="wp-block-group plan-osiedla-wrapper mb-[100px] mx-auto max-w-[690px] w-full px-[20px] desktop:px-0">
-    <!-- wp:paragraph -->
-    <p class="mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Zaledwie 15 minut spacerem będzie dzielić mieszkańców Toruńskiej 16 od ścisłego centrum Gdańska. Położenie zapewnia dostęp do pełnej infrastruktury w pobliżu miejsca zamieszkania (sklepy, punkty usługowe, szkoły, przedszkola, przychodnia).</p>
-    <!-- /wp:paragraph -->
-    <!-- wp:paragraph -->
-    <p class="mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Zróżnicowana oferta kulturalna będzie w zasięgu ręki.</p>
-    <!-- /wp:paragraph -->
+    <!-- wp:heading {"level":5} -->
+    <h5><span class="block mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Zaledwie 15 minut spacerem będzie dzielić mieszkańców Toruńskiej 16 od ścisłego centrum Gdańska. Położenie zapewnia dostęp do pełnej infrastruktury w pobliżu miejsca zamieszkania (sklepy, punkty usługowe, szkoły, przedszkola, przychodnia).</span></h5>
+    <!-- /wp:heading -->
+    <!-- wp:heading {"level":5} -->
+    <h5><span class="block mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Zróżnicowana oferta kulturalna będzie w zasięgu ręki.</span></h5>
+    <!-- /wp:heading -->
   </div>
   <!-- /wp:group -->
 </div>
