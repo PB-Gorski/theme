@@ -913,9 +913,10 @@ window.addEventListener("load", function() {
       showActiveFilterNameFromCookies();
 
       function runFromCookies(){
+        let test = runSearchingMetraz()
         YMCTools({
           target: '.data-target-ymc2', 
-          terms: filteredTermsFromCookies,      
+          terms: metrazeID.join(),      
         }).apiTermUpdate(); 
         console.log('after YMC api update');
       };
