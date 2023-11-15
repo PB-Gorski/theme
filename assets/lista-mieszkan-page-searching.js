@@ -1123,6 +1123,7 @@ window.addEventListener("load", function() {
     // let counterPostsLoad = 0;
 
     wp.hooks.addAction('ymc_after_loaded_data_148_2', 'smartfilter', function(class_name, response){
+      foundedPostOnStart.innerHTML = 'Znaleziono ' +  response.found + ' ofert pasujących do Twoich kryteriów ' + '<span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' + foundedPostOnStart.dataset.allposts + ')</span></p>';
       document.cookie = "filteredTermsFromCookies=;";
       console.log('cookies cleared');
 
@@ -1132,7 +1133,7 @@ window.addEventListener("load", function() {
       console.log('Number of found posts: ' + response.found);
       postsFoundFromAfterHook2 = response.found;
       
-      foundedPostOnStart.innerHTML = 'Znaleziono ' +  response.found + ' ofert pasujących do Twoich kryteriów ' + '<span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' + foundedPostOnStart.dataset.allposts + ')</span></p>';
+
 
       console.log('posts loaded before if');
       // if (counterPostsLoad == 3){
