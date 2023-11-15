@@ -14,12 +14,12 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 <div id="Content" class="wp-block-group content relative">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
-    <!-- wp:paragraph -->
-    <span class="block py-[30px] desktop:py-0 desktop:pt-[60px] text-[36px] desktop:text-[60px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Wieżycka Folwark</span>
-    <!-- /wp:paragraph -->
-    <!-- wp:paragraph -->
-    <span class="block pb-[30px] mx-auto max-w-[700px] desktop:pb-[60px] text-[20px] text-[#8a8f99] desktop:text-[24px] text-center" data-aos="fade-right" data-aos-offset="30">Wyjątkowe osiedle zlokalizowane w południowej części Gdańska, w sąsiedztwie zabytkowego dworku Wendtów</span>
-    <!-- /wp:paragraph -->
+    <!-- wp:heading {"level":1} -->
+    <h1><span class="block py-[30px] desktop:py-0 desktop:pt-[60px] text-[36px] desktop:text-[60px] text-center font-bold" data-aos="fade-right" data-aos-offset="30">Wieżycka Folwark</span></h1>
+    <!-- /wp:heading -->
+    <!-- wp:heading {"level":5} -->
+    <h5><span class="block pb-[30px] mx-auto max-w-[700px] desktop:pb-[60px] text-[20px] text-[#8a8f99] desktop:text-[24px] text-center" data-aos="fade-right" data-aos-offset="30">Wyjątkowe osiedle zlokalizowane w południowej części Gdańska, w sąsiedztwie zabytkowego dworku Wendtów</span></h5>
+    <!-- /wp:heading -->
 
     <!-- wp:group -->
     <div class="wp-block-group test row-links mb-[50px] flex flex-wrap justify-center items-center gap-[20px]">
@@ -59,42 +59,42 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:px-[100px] desktop:w-1/2 flex flex-col justify-center">
-        <!-- wp:paragraph -->
-        <span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">W ramach inwestycji zrealizowanych zostanie 12 budynków wielorodzinnych</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading {"level":4} -->
+        <h4><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">W ramach inwestycji zrealizowanych zostanie 12 budynków wielorodzinnych</span></h4>
+        <!-- /wp:heading -->
 
         <!-- wp:group -->
         <div class="wp-block-group mb-[30px] desktop:mb-[100px] desktop:mb-0 desktop:grid grid-rows-3 grid-cols-2 gap-[30px]">
           <!-- wp:group -->
           <div class="wp-block-group info-box1 mb-[35px] desktop:mb-[30px]">
-            <!-- wp:paragraph -->
-            <span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LOKALIZACJA</span>
-            <!-- /wp:paragraph -->
-            <!-- wp:paragraph -->
-            <span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">Gdańsk Zakoniczyn</span>
-            <!-- /wp:paragraph -->
+         <!-- wp:heading {"level":6} -->
+         <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LOKALIZACJA</span></h6>
+            <!-- /wp:heading -->
+         <!-- wp:heading {"level":5} -->
+         <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">Gdańsk Zakoniczyn</span></h6>
+            <!-- /wp:heading -->
           </div>
           <!-- /wp:group -->
 
           <!-- wp:group -->
           <div class="wp-block-group info-box2 mb-[35px] desktop:mb-[30px]">
-            <!-- wp:paragraph -->
-            <span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">TERMIN UKOŃCZENIA (ETAP 1)</span>
-            <!-- /wp:paragraph -->
-            <!-- wp:paragraph -->
-            <span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">II kwartał 2023</span>
-            <!-- /wp:paragraph -->
+         <!-- wp:heading {"level":6} -->
+         <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">TERMIN UKOŃCZENIA (ETAP 1)</span></h6>
+            <!-- /wp:heading -->
+         <!-- wp:heading {"level":5} -->
+         <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">II kwartał 2023</span></h5>
+            <!-- /wp:heading -->
           </div>
           <!-- /wp:group -->
 
           <!-- wp:group -->
           <div class="wp-block-group info-box3 mb-[35px] desktop:mb-[30px]">
-            <!-- wp:paragraph -->
-            <span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LICZBA MIESZKAŃ (ETAP I)</span>
-            <!-- /wp:paragraph -->
-            <!-- wp:paragraph -->
+         <!-- wp:heading {"level":6} -->
+         <h5><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LICZBA MIESZKAŃ (ETAP I)</span></h5>
+            <!-- /wp:heading -->
+            <!-- wp:heading -->
             <span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">78</span>
-            <!-- /wp:paragraph -->
+            <!-- /wp:heading -->
           </div>
           <!-- /wp:group -->
           <!-- wp:group -->
