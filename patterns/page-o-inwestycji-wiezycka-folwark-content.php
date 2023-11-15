@@ -67,64 +67,64 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <div class="wp-block-group mb-[30px] desktop:mb-[100px] desktop:mb-0 desktop:grid grid-rows-3 grid-cols-2 gap-[30px]">
           <!-- wp:group -->
           <div class="wp-block-group info-box1 mb-[35px] desktop:mb-[30px]">
-         <!-- wp:heading {"level":6} -->
-         <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LOKALIZACJA</span></h6>
+            <!-- wp:heading {"level":6} -->
+            <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LOKALIZACJA</span></h6>
             <!-- /wp:heading -->
-         <!-- wp:heading {"level":5} -->
-         <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">Gdańsk Zakoniczyn</span></h6>
-            <!-- /wp:heading -->
+            <!-- wp:heading {"level":5} -->
+            <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">Gdańsk Zakoniczyn</span></h6>
+              <!-- /wp:heading -->
           </div>
           <!-- /wp:group -->
 
           <!-- wp:group -->
           <div class="wp-block-group info-box2 mb-[35px] desktop:mb-[30px]">
-         <!-- wp:heading {"level":6} -->
-         <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">TERMIN UKOŃCZENIA (ETAP 1)</span></h6>
+            <!-- wp:heading {"level":6} -->
+            <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">TERMIN UKOŃCZENIA (ETAP 1)</span></h6>
             <!-- /wp:heading -->
-         <!-- wp:heading {"level":5} -->
-         <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">II kwartał 2023</span></h5>
+            <!-- wp:heading {"level":5} -->
+            <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">II kwartał 2023</span></h5>
             <!-- /wp:heading -->
           </div>
           <!-- /wp:group -->
 
           <!-- wp:group -->
           <div class="wp-block-group info-box3 mb-[35px] desktop:mb-[30px]">
-         <!-- wp:heading {"level":6} -->
-         <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LICZBA MIESZKAŃ (ETAP I)</span></h6>
+            <!-- wp:heading {"level":6} -->
+            <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LICZBA MIESZKAŃ (ETAP I)</span></h6>
             <!-- /wp:heading -->
-         <!-- wp:heading {"level":5} -->
-         <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">78</span></h5>
-            <!-- /wp:heading -->
-          </div>
-          <!-- /wp:group -->
-          <!-- wp:group -->
-          <div class="wp-block-group info-box3 mb-[35px] desktop:mb-[30px]">
-         <!-- wp:heading {"level":6} -->
-         <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">POWIERZCHNIA MIESZKAŃ</span></h6>
-            <!-- /wp:heading -->
-         <!-- wp:heading {"level":5} -->
-         <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">38 m<sup>2</sup> - 79 m<sup>2</sup></span></h5>
+            <!-- wp:heading {"level":5} -->
+            <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">78</span></h5>
             <!-- /wp:heading -->
           </div>
           <!-- /wp:group -->
           <!-- wp:group -->
           <div class="wp-block-group info-box3 mb-[35px] desktop:mb-[30px]">
-         <!-- wp:heading {"level":6} -->
-         <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">OSIEDLE</span></h6>
+            <!-- wp:heading {"level":6} -->
+            <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">POWIERZCHNIA MIESZKAŃ</span></h6>
             <!-- /wp:heading -->
-         <!-- wp:heading {"level":5} -->
-         <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">12 budynków</span></h5>
+            <!-- wp:heading {"level":5} -->
+            <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">38 m<sup>2</sup> - 79 m<sup>2</sup></span></h5>
+            <!-- /wp:heading -->
+          </div>
+          <!-- /wp:group -->
+          <!-- wp:group -->
+          <div class="wp-block-group info-box3 mb-[35px] desktop:mb-[30px]">
+            <!-- wp:heading {"level":6} -->
+            <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">OSIEDLE</span></h6>
+            <!-- /wp:heading -->
+            <!-- wp:heading {"level":5} -->
+            <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">12 budynków</span></h5>
             <!-- /wp:heading -->
           </div>
           <!-- /wp:group -->
 
           <!-- wp:group -->
           <div class="wp-block-group info-box4 mb-[35px] desktop:mb-[30px]">
-         <!-- wp:heading {"level":6} -->
-         <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LICZBA MIESZKAŃ</span></h6>
+            <!-- wp:heading {"level":6} -->
+            <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LICZBA MIESZKAŃ</span></h6>
             <!-- /wp:heading -->
-         <!-- wp:heading {"level":5} -->
-         <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">289</span></h5>
+            <!-- wp:heading {"level":5} -->
+            <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">289</span></h5>
             <!-- /wp:heading -->
           </div>
           <!-- /wp:group -->
@@ -149,9 +149,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2 flex flex-col justify-center">
-        <!-- wp:paragraph -->
-        <span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Inwestycja w sąsiedztwie zabytkowego dworku Wendtów będzie powstawać etapami</span>
-        <!-- /wp:paragraph -->
+         <!-- wp:heading -->
+         <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Inwestycja w sąsiedztwie zabytkowego dworku Wendtów będzie powstawać etapami</span></h2>
+        <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Obecnie realizowany jest etap pierwszy, czyli budowa budynków 4, 5 i 6. Docelowo powstanie 12 budynków wielorodzinnych, które swoją architekturą idealnie wpasują się w klimat dawnego folwarku. Niska zabudowa gwarantuje prywatność, spokój i możliwość zacieśniania relacji sąsiedzkich.</span>
         <!-- /wp:paragraph -->
@@ -174,9 +174,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
-        <!-- wp:paragraph -->
-        <span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Malownicze położenie z dogodnym dojazdem</span>
-        <!-- /wp:paragraph -->
+         <!-- wp:heading -->
+         <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Malownicze położenie z dogodnym dojazdem</span></h2>
+        <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">To okolica, która od lat intensywnie rozwija się a wokół nie brakuje terenów zielonych. Osiedle sąsiaduje z zabytkowym parkiem i wzgórzami a jednocześnie dojazd do obwodnicy Trójmiasta zajmuje tylko 5 minut, do centrum Gdańska kwadrans. Świetnie odnajdą się tu zarówno rodziny z dziećmi, jak i osoby ceniące sobie bliskość terenów rekreacyjnych. </span>
         <!-- /wp:paragraph -->
@@ -200,9 +200,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
       <!-- wp:group -->
       <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
-        <!-- wp:paragraph -->
-        <span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Sprawdź dostępne mieszkania</span>
-        <!-- /wp:paragraph -->
+         <!-- wp:heading -->
+         <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Sprawdź dostępne mieszkania</span></h2>
+        <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Znajdź odpowiednie mieszkanie już teraz - wybierz dogodny metraż dla siebie i rodziny.</span>
         <!-- /wp:paragraph -->
