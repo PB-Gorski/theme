@@ -22,7 +22,7 @@
       <!-- wp:group -->
       <div class="wp-block-group title-wrapper">
         <!-- wp:group -->
-        <div class="wp-block-group max-w-[800px] title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
+        <div class="wp-block-group max-w-[880px] title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
           <!-- wp:heading {"level":1} -->
           <h1><span data-aos="fade-right" data-aos-offset="30">Wieżycka Folwark - zobacz dostępne mieszkania</span></h1>
           <!-- /wp:heading -->
