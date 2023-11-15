@@ -24,6 +24,9 @@
     <div class="wp-block-group col2 desktop:w-[50%]">
       <!-- wp:group -->
       <div class="wp-block-group input mb-[15px] desktop:flex">
+
+        <?php echo do_shortcode('[contact-form-7 id="e479141" title="newsletter"]'); ?>
+
         <!-- wp:paragraph -->
         <p class="w-full mb-[20px] desktop:w-[370px] h-[60px] bg-white text-white text-[40px] leading-[150%]">input</p>
         <!-- /wp:paragraph -->
