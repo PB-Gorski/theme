@@ -13,7 +13,9 @@ window.addEventListener("load", function() {
       document.cookie ='filteredTermsFromCookies=71; path=/';
       btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-sw-piotra/lista-mieszkan-sw-piotra/';
     }else if(inwestycjaName == 'Toruńska 16'){
-      document.cookie ='filteredTermsFromCookies=82;';
+      document.cookie = 'filteredTermsFromCookies' +"=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+      document.cookie = 'filteredTermsFromCookies' +"=; Path=/pl; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+      document.cookie ='filteredTermsFromCookies=82; path=/';
       
       btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-torunska-16/lista-mieszkan-torunska-16/';
     }else if(inwestycjaName == 'Wieżycka Folwark'){
