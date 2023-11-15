@@ -921,12 +921,12 @@ window.addEventListener("load", function() {
 
       if(filteredTermsFromCookies != null){
         // wp.hooks.addAction('ymc_before_loaded_data_148_2', 'smartfilter', function(class_name, response){
-          runFromCookies();
+          // runFromCookies();
         // });
 
-        // setTimeout(() => {
-        //   runFromCookies();
-        // }, 1000);
+        setTimeout(() => {
+          runFromCookies();
+        }, 1000);
       };
 
 
