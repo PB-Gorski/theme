@@ -173,6 +173,31 @@
       <!-- /wp:list-item -->
     </ul>
     <!-- /wp:list -->
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Administrator przetwarza dane osobowe użytkowników odwiedzających profile administratora prowadzone w mediach społecznościowych (np. Facebook). Dane te są przetwarzane wyłącznie w związku z prowadzeniem profilu, w tym w celu informowania użytkowników o aktywności Administratora oraz promowaniu różnego rodzaju wydarzeń, usług oraz produktów, a także w celu komunikacji z użytkownikami za pośrednictwem funkcjonalności dostępnych w mediach społecznościowych. Podstawą prawną przetwarzania danych osobowych przez Administratora w tym celu jest jego uzasadniony interes (art. 6 ust. 1 lit. f RODO) polegający na promowaniu własnej marki oraz budowaniu i utrzymaniu społeczności związanej z marką.</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">
+      Przedsiębiorstwo Budowlane Górski może korzystać z systemów służących do zautomatyzowanego podejmowania decyzji. Następujące decyzje są podejmowane w sposób zautomatyzowny: profilowanie wykonywane jest w oparciu o posiadane dane, w szczególności takie jak: dane dotyczące świadczonych usług, dane transmisyjne, dane o lokalizacji, informacje pozyskane za pomocą tzw. plików cookies. Profilowanie ma wpływ na informacje marketingowe oraz oferty, jakie Państwo będą otrzymywać (oferta dopasowana do Państwa potrzeb).</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">VII Prawa osób, których dane osobowe dotyczą.</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Zgodnie z RODO przysługują Państwu – jako osobom, których dane osobowe dotyczą - następujące prawa związane z przetwarzaniem danych osobowych:</p>
+    <!-- /wp:paragraph -->
+    <ul class="wp-block-list text-[18px] text-bgDarkGray leading-[30px]">
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">1. Prawo dostępu do danych<span>Osoba, której dane dotyczą, ma prawo do otrzymania od administratora potwierdzenia czy przetwarzane są jej dane osobowe, a jeżeli to ma miejsce, ma prawo do informacji, jakie jej dane osobowe i w jakich celach są przetwarzane oraz uzyskania ich kopii.</span></li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">2. Wykorzystaniem narzędzi analitycznych i służących zanonimizowanemu śledzeniu zachowań użytkowników, w szczególności takich jak Google Analytics, Gemius Traffic, Chartbeat</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">3. Wykorzystaniem platform reklamowych służących pozyskaniu środków na utrzymanie serwisów internetowych (w szczególności: Google adsense).</li>
+      <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
   </div>
   <!-- /wp:group -->
 </div>
