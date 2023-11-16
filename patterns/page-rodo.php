@@ -46,14 +46,16 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph -->
-    <p class="block text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">„Cookie” to mały plik tekstowy, który strona internetowa zapisuje na komputerze lub urządzeniu przenośnym internauty w chwili, gdy ten ją przegląda. Strona ta może w ten sposób zapamiętać na dłużej czynności i preferencje internauty (takie jak nazwa użytkownika, język, rozmiar czcionki i inne opcje). Dzięki temu użytkownik nie musi wpisywać tych samych informacji za każdym razem, gdy powróci na tę stronę lub przejdzie z jednej strony na inną.</p>
-    <!-- /wp:paragraph -->
-
-    <!-- wp:paragraph -->
     <p class="mb-[30px] text-[18px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">II Inspektor ochrony danych</p>
     <!-- /wp:paragraph -->
     <!-- wp:paragraph -->
     <p class="block text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Przedsiębiorstwo Budowlane Górski wyznaczyło Inspektora ochrony danych w osobie pana Marcina Sokoła. W razie jakichkolwiek wątpliwości związanych z przetwarzaniem dotyczących Państwa danych osobowych, prosimy o kontakt z Inspektorem ochrony danych, listownie na adres Przedsiębiorstwa Budowlanego Górski z dopiskiem „Inspektor Ochrony Danych”, bądź na adres e-mail: iod@pbgorski.pl.</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">III Cele przetwarzania danych osobowych</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="block text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Przedsiębiorstwo Budowlane Górski przetwarza powierzone przez Państwa dane osobowe tzn. w szczególności zbiera je, utrwala, przechowuje, usuwa lub niszczy. Państwa dane osobowe są przetwarzane w następujących celach:</p>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
