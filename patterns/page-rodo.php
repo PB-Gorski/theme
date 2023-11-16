@@ -81,10 +81,10 @@
       <li>7. Dochodzenie roszczeń</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li>8. prowadzenie działań związanych z zapewnieniem bezpieczeństwa danych.</li>
+      <li>8. Prowadzenie działań związanych z zapewnieniem bezpieczeństwa danych.</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li>9. archiwizacja.</li>
+      <li>9. Archiwizacja.</li>
       <!-- /wp:list-item -->
     </ul>
     <!-- /wp:list -->
