@@ -379,6 +379,8 @@ input::placeholder{
 }
 .wpcf7 form.sent .wpcf7-response-output {
   color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .cta2 textarea,
 .cta2 #your-name,
