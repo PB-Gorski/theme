@@ -49,7 +49,7 @@
     <p class="mb-[30px] text-[18px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">II Inspektor ochrony danych</p>
     <!-- /wp:paragraph -->
     <!-- wp:paragraph -->
-    <p class="block text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Przedsiębiorstwo Budowlane Górski wyznaczyło Inspektora ochrony danych w osobie pana Marcina Sokoła. W razie jakichkolwiek wątpliwości związanych z przetwarzaniem dotyczących Państwa danych osobowych, prosimy o kontakt z Inspektorem ochrony danych, listownie na adres Przedsiębiorstwa Budowlanego Górski z dopiskiem „Inspektor Ochrony Danych”, bądź na adres e-mail: iod@pbgorski.pl.</p>
+    <p class="block mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Przedsiębiorstwo Budowlane Górski wyznaczyło Inspektora ochrony danych w osobie pana Marcina Sokoła. W razie jakichkolwiek wątpliwości związanych z przetwarzaniem dotyczących Państwa danych osobowych, prosimy o kontakt z Inspektorem ochrony danych, listownie na adres Przedsiębiorstwa Budowlanego Górski z dopiskiem „Inspektor Ochrony Danych”, bądź na adres e-mail: iod@pbgorski.pl.</p>
     <!-- /wp:paragraph -->
     <!-- wp:paragraph -->
     <p class="mb-[30px] text-[18px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">III Cele przetwarzania danych osobowych</p>
