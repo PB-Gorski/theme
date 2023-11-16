@@ -14,9 +14,6 @@ if (!defined('ABSPATH')) {
         <!-- <div> [email* your-email id:your-email ] </div> -->
         <input id="your-email" name="your-email" type="text" placeholder="Email" class="px-[15px] py-[10px] w-[330px] desktop:w-full h-[60px] text-[#2e384d] placeholder:text-[#757575]">
       </td>
-      <td class="w-[100%] desktop:w-[50%]">
-        <textarea id="your-name" cols="50" row="10" name="your-name" type="textarea" placeholder="Treść wiadomości" class="px-[15px] py-[10px] mb-[10px] w-[330px] desktop:w-full h-[240px] text-[#2e384d] placeholder:text-[#757575]"></textarea>
-      </td>
     </tr>
 
     <tr class="w-full">
