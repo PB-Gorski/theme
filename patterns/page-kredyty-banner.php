@@ -30,9 +30,9 @@
         <!-- /wp:heading -->
         <!-- wp:group -->
         <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
-          <!-- wp:paragraph -->
-          <span class="block" data-aos="fade-right" data-aos-offset="30">Umów się na spotkanie z naszym ekspertem, który przedstawi Ci najkorzystniejsze oferty.</span>
-          <!-- /wp:paragraph -->
+          <!-- wp:heading {"level":5} -->
+          <h5><span class="block" data-aos="fade-right" data-aos-offset="30">Umów się na spotkanie z naszym ekspertem, który przedstawi Ci najkorzystniejsze oferty.</span></h5>
+          <!-- /wp:heading -->
         </div>
         <!-- /wp:group -->
       </div>
