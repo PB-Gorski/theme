@@ -509,12 +509,12 @@
             <div class="wp-block-group w-full click-bar group flex justify-between items-center cursor-pointer">
               <!-- wp:group -->
               <div class="wp-block-group bar-title-wrapper w-full text-bgDarkGray flex">
-                <!-- wp:heading {"level":5} -->
-                <h5><span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span></h5>
-                <!-- /wp:heading -->
                 <!-- wp:paragraph -->
-                <span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Umowy i akty notarialne</span>
+                <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
+                <!-- wp:heading {"level":5} -->
+                <h5><span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Umowy i akty notarialne</span></h5>
+                <!-- /wp:heading -->
               </div>
               <!-- /wp:group -->
             </div>
