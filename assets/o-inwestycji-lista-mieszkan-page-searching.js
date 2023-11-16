@@ -1,4 +1,8 @@
 window.addEventListener("load", function() {
+  if(document.body.classList.contains('page-parent')){
+    document.cookie = 'filteredTermsFromCookies' +"=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+    document.cookie = 'filteredTermsFromCookies' +"=; Path=/pl; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+  }
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('page-parent') || 
   document.body.classList.contains('page-child') ||
@@ -6,9 +10,10 @@ window.addEventListener("load", function() {
     document.body.classList.contains('page-id-1723') ||
     document.body.classList.contains('page-id-1934') ||
     document.body.classList.contains('page-id-1936') ||
-    document.body.classList.contains('page-id-1932')) 
-  
-  {
+    document.body.classList.contains('page-id-1932')) {
+
+
+
     console.log('o inwestyci lista mieszkan page');
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
@@ -1405,6 +1410,9 @@ window.addEventListener("load", function() {
     // -------------------------------------------------------------------------------------
 
   };
+
+
+
 
 
 
