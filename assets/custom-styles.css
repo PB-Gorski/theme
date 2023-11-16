@@ -371,8 +371,8 @@ input::placeholder{
   margin-bottom: auto;
   color: #8A8F99;
 }
-.wpcf7-response-output{
-  color:#b22944;
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output{
+  color: white;
   border-color: white!important;
 }
 .cta2 textarea,
