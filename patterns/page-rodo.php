@@ -60,31 +60,31 @@
     <!-- wp:list -->
     <ul class="wp-block-list text-[18px] text-bgDarkGray leading-[30px]">
       <!-- wp:list-item -->
-      <li>1. Zawarcie i realizacja umowy</li>
+      <li class="mb-[10px]">1. Zawarcie i realizacja umowy</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li>2. Udzielanie odpowiedzi na pisma, reklamacje i wnioski</li>
+      <li class="mb-[10px]">2. Udzielanie odpowiedzi na pisma, reklamacje i wnioski</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li>3. Wypełnianie obowiązku prawnego ciążącego na Przedsiębiorstwie Budowlanym Górski (np. wystawianie i przechowywanie faktur oraz dokumentów księgowych, udzielanie odpowiedzi na reklamacje w terminie i w formie prawem przewidzianym).</li>
+      <li class="mb-[10px]">3. Wypełnianie obowiązku prawnego ciążącego na Przedsiębiorstwie Budowlanym Górski (np. wystawianie i przechowywanie faktur oraz dokumentów księgowych, udzielanie odpowiedzi na reklamacje w terminie i w formie prawem przewidzianym).</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li>4. Sprzedaż produktów i usług oferowanych przez Przedsiębiorstwo Budowane Górski</li>
+      <li class="mb-[10px]">4. Sprzedaż produktów i usług oferowanych przez Przedsiębiorstwo Budowane Górski</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li>5. Prowadzenie analiz i statystyk oraz na potrzeby prowadzonej działalności gospodarczej</li>
+      <li class="mb-[10px]">5. Prowadzenie analiz i statystyk oraz na potrzeby prowadzonej działalności gospodarczej</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li>6. Prowadzenie działań marketingowych podejmowanych przez Przedsiębiorstwo Budowlane Górski samodzielnie lub we współpracy z innymi podmiotami</li>
+      <li class="mb-[10px]">6. Prowadzenie działań marketingowych podejmowanych przez Przedsiębiorstwo Budowlane Górski samodzielnie lub we współpracy z innymi podmiotami</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li>7. Dochodzenie roszczeń</li>
+      <li class="mb-[10px]">7. Dochodzenie roszczeń</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li>8. Prowadzenie działań związanych z zapewnieniem bezpieczeństwa danych.</li>
+      <li class="mb-[10px]">8. Prowadzenie działań związanych z zapewnieniem bezpieczeństwa danych.</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li>9. Archiwizacja.</li>
+      <li class="mb-[10px]">9. Archiwizacja.</li>
       <!-- /wp:list-item -->
     </ul>
     <!-- /wp:list -->
@@ -99,19 +99,22 @@
     <!-- wp:paragraph -->
     <p class="mb-[30px] text-[18px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">IV Podstawa prawna przetwarzania</p>
     <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Przedsiębiorstwo Budowlane Górski może przetwarzać Państwa dane osobowe:</p>
+    <!-- /wp:paragraph -->
     <!-- wp:list -->
     <ul class="wp-block-list text-[18px] text-bgDarkGray leading-[30px]">
       <!-- wp:list-item -->
-      <li>1. W celu wykonania zawartej umowy deweloperskiej, umowy sprzedaży, umowy o świadczenie usługi budowlanej lub innej umowy związanej z działalnością gospodarczą Przedsiębiorstwa Budowlanego Górski lub w celu podjęcia działań na żądanie osoby, której dane dotyczą przed zawarciem umowy, w szczególności w celu udzielenia odpowiedzi na email przesłany przez formularz kontaktowy (art. 6 ust 1 lit. b RODO)</li>
+      <li class="mb-[10px]">1. W celu wykonania zawartej umowy deweloperskiej, umowy sprzedaży, umowy o świadczenie usługi budowlanej lub innej umowy związanej z działalnością gospodarczą Przedsiębiorstwa Budowlanego Górski lub w celu podjęcia działań na żądanie osoby, której dane dotyczą przed zawarciem umowy, w szczególności w celu udzielenia odpowiedzi na email przesłany przez formularz kontaktowy (art. 6 ust 1 lit. b RODO)</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li>2. W celu wypełnienia obowiązków wynikających z przepisów powszechnie obowiązującego prawa np. z zakresu przepisów ustaw podatkowych, ustawy o rachunkowości lub kodeksu cywilnego (art. 6 ust 1 lit. c RODO)</li>
+      <li class="mb-[10px]">2. W celu wypełnienia obowiązków wynikających z przepisów powszechnie obowiązującego prawa np. z zakresu przepisów ustaw podatkowych, ustawy o rachunkowości lub kodeksu cywilnego (art. 6 ust 1 lit. c RODO)</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li>3. Gdy jest to niezbędne dla realizacji prawnie uzasadnionych interesów Przedsiębiorstwa Budowlanego Górski jak np. ustalenia i dochodzenia roszczeń z związku z prowadzoną działalnością, w tym windykacji lub obrony przed roszczeniami (art. 6 ust 1 lit. f RODO)</li>
+      <li class="mb-[10px]">3. Gdy jest to niezbędne dla realizacji prawnie uzasadnionych interesów Przedsiębiorstwa Budowlanego Górski jak np. ustalenia i dochodzenia roszczeń z związku z prowadzoną działalnością, w tym windykacji lub obrony przed roszczeniami (art. 6 ust 1 lit. f RODO)</li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li>4. Ponadto, jeśli udzielicie Państwo zgody na wykorzystywanie swoich danych osobowych, treść tej zgody będzie określać, w jakim celu Przedsiębiorstwo Budowlane Górski jako administrator będzie przetwarzać te dane (art. 6 ust 1 lit. a RODO)</li>
+      <li class="mb-[10px]">4. Ponadto, jeśli udzielicie Państwo zgody na wykorzystywanie swoich danych osobowych, treść tej zgody będzie określać, w jakim celu Przedsiębiorstwo Budowlane Górski jako administrator będzie przetwarzać te dane (art. 6 ust 1 lit. a RODO)</li>
       <!-- /wp:list-item -->
     </ul>
     <!-- /wp:list -->
