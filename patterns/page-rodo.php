@@ -147,6 +147,19 @@
       <!-- /wp:list-item -->
     </ul>
     <!-- /wp:list -->
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">W związku z powyższym, dane osobowe będą przechowywane przez Przedsiębiorstwo Budowlane Górski do czasu zakończenia działań podejmowanych na Państwa żądanie przed zawarciem umowy, do czasu wykonania obowiązków umownych lub ustawowych, odwołania udzielonej zgody na przetwarzanie lub upływu okresu przedawnienia roszczeń wynikających z zawartych umów, nie więcej jednak niż przez 10 lat (zgodnie z art. 118 k.c.) od daty wymagalności danego roszczenia, a w przypadku dochodzenia przez nas roszczeń lub zawiadamiania właściwych organów – przez czas trwania takich postępowań.</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">VI Odbiorcy/kategorie odbiorców danych osobowych</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Odbiorcami przekazanych przez Państwa danych osobowych mogą być podmioty, którym administrator powierzył przetwarzanie danych (tzw. procesorzy np. obsługa IT, firmy pocztowe i kurierskie, podmioty współpracujące), banki, ubezpieczyciele, notariusze, wykonawcy robót budowlanych w budynku, którego dotyczy zawarta umowa,, a także kancelarie prawne i podmioty lub organy uprawnione na podstawie przepisów prawa.</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Państwa dane mogą być przekazane do państw trzecich (m.in. USA) w związku z:</p>
+    <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
 </div>
