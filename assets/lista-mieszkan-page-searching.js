@@ -366,7 +366,7 @@ window.addEventListener("load", function() {
     });
 
     dropDownsMetraz.forEach(item => {
-      item.addEventListener('click', () => {
+      item.addEventListener('click', (e) => {
         choiseMetraz(e);
         item.parentNode.parentNode.previousElementSibling.classList.remove('toggle-x');
       })
