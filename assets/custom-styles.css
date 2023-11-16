@@ -365,7 +365,7 @@ textarea{
   padding-left: 15px;
   color: #2E384D;
 }
-.page-template-page-contact{
+.page-template-page-contact .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
   color: #2E384D;
 }
 input::placeholder{
