@@ -376,6 +376,7 @@ input::placeholder{
   border-color: white!important;
   padding-top: 15px;
   padding-bottom: 15px;
+  text-align: center;
 }
 .wpcf7 form.sent .wpcf7-response-output {
   color: white;
