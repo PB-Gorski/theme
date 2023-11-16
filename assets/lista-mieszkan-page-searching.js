@@ -227,8 +227,8 @@ window.addEventListener("load", function() {
 
 
     dropDowns.forEach(item => {
-      item.addEventListener('click',()=>{
-        choise();
+      item.addEventListener('click',(e)=>{
+        choise(e);
         item.classList.remove('toggle-x');
       });
     });
