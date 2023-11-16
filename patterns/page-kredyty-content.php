@@ -14,15 +14,15 @@
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[50px] desktop:flex gap-[50px]">
     <!-- wp:group -->
     <div class="wp-block-group left-col desktop:w-[50%]">
-      <!-- wp:paragraph -->
-      <span class="block mb-[30px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Planując zakup nieruchomości najczęściej wspomagamy się kredytem hipotecznym. Po podjęciu decyzji o kupnie mieszkania, przeglądamy ofertę wybierając odpowiadający nam lokal. I co dalej?</span>
-      <!-- /wp:paragraph -->
+      <!-- wp:heading {"level":5} -->
+      <h5><span class="block mb-[30px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Planując zakup nieruchomości najczęściej wspomagamy się kredytem hipotecznym. Po podjęciu decyzji o kupnie mieszkania, przeglądamy ofertę wybierając odpowiadający nam lokal. I co dalej?</span></h5>
+      <!-- /wp:heading -->
 
       <!-- wp:group -->
       <div class="wp-block-group section1 mb-[50px]">
-        <!-- wp:paragraph -->
-        <span class="block text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Oszczędzaj czas</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading {"level":4} -->
+        <h4><span class="block text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Oszczędzaj czas</span></h4>
+        <!-- /wp:heading -->
         <!-- wp:group -->
         <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
           <!-- wp:paragraph -->
@@ -35,9 +35,9 @@
 
       <!-- wp:group -->
       <div class="wp-block-group section2 mb-[50px]">
-        <!-- wp:paragraph -->
-        <span class="block text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Najkorzystniejsze oferty</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading {"level":4} -->
+        <h4><span class="block text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Najkorzystniejsze oferty</span></h4>
+        <!-- /wp:heading -->
         <!-- wp:group -->
         <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
           <!-- wp:paragraph -->
@@ -50,16 +50,16 @@
 
       <!-- wp:group -->
       <div class="wp-block-group section3 mb-[50px]">
-        <!-- wp:paragraph -->
-        <span class="block text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Minimum dokumentów</span>
-        <!-- /wp:paragraph -->
-        <!-- wp:group -->
-        <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
-          <!-- wp:paragraph -->
-          <span class="block" data-aos="fade-right" data-aos-offset="30">Warto zauważyć, że będą to jedynie dokumenty dotyczące zatrudnienia/zarobków. Całą dokumentację dotyczącą inwestycji dostarczy ekspert, oszczędzając Twój czas. Po pozytywnej decyzji banku możesz udać się na podpisanie umowy kredytowej. Tutaj również będzie towarzyszył Ci nasz przedstawiciel, który odpowie na każde pytanie i rozwieje ewentualne wątpliwości.</span>
+        <!-- wp:heading {"level":5} -->
+        <h5><span class="block text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Minimum dokumentów</span>
           <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:group -->
+          <!-- wp:group -->
+          <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
+            <!-- wp:paragraph -->
+            <span class="block" data-aos="fade-right" data-aos-offset="30">Warto zauważyć, że będą to jedynie dokumenty dotyczące zatrudnienia/zarobków. Całą dokumentację dotyczącą inwestycji dostarczy ekspert, oszczędzając Twój czas. Po pozytywnej decyzji banku możesz udać się na podpisanie umowy kredytowej. Tutaj również będzie towarzyszył Ci nasz przedstawiciel, który odpowie na każde pytanie i rozwieje ewentualne wątpliwości.</span>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
     </div>
@@ -69,12 +69,12 @@
     <div class="wp-block-group right-col desktop:w-[50%]">
       <!-- wp:group -->
       <div class="wp-block-group section2 mb-[50px]">
-        <!-- wp:paragraph -->
-        <span class="block text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Umów się na spotkanie</span>
-        <!-- /wp:paragraph -->
-        <!-- wp:paragraph -->
-        <span class="block mb-[10px] text-[24px] text-[#7e878c] font-bold" data-aos="fade-right" data-aos-offset="30">Ewa Cel</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading {"level":5} -->
+        <h5><span class="block text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Umów się na spotkanie</span></h5>
+        <!-- /wp:heading -->
+        <!-- wp:heading {"level":5} -->
+        <h5><span class="block mb-[10px] text-[24px] text-[#7e878c] font-bold" data-aos="fade-right" data-aos-offset="30">Ewa Cel</span></h5>
+        <!-- /wp:heading -->
         <!-- wp:group -->
         <div class="wp-block-group mb-[25px] phone flex gap-[40px]">
           <!-- wp:group -->
