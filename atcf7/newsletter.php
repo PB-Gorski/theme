@@ -16,8 +16,8 @@ if (!defined('ABSPATH')) {
       <button type="submit" class="group btn-find-more relative bg-primaryRed text-white w-full desktop:w-[170px] h-[60px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-300 before:ease cursor-pointer"><span class="z-[1] relative">Zapisz się</span></button>
     </div>
   </div>
-  <div class="">
-    <input id="check1" cols="50" row="10" name="check1" type="checkbox" class="w-full" />
+  <div class="flex">
+    <input id="check1" cols="50" row="10" name="check1" type="checkbox" />
     <p class="ml-[10px] mb-[20px] w-full text-white text-[14px] leading-[28px]">Wyrażam zgodę na otrzymywanie informacji handlowych w tym marketingowych od PB Górski Sp. z o.o. SKA drogą elektroniczną (za pośrednictwem adresu e-mail). Więcej informacji o administracji danych.Więcej.</p>
   </div>
   <!-- <input type="submit" value="Submit"> -->
