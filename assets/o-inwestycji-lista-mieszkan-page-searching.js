@@ -995,7 +995,7 @@ window.addEventListener("load", function() {
       });
 
 
-      if(filteredTermsFromCookies != null){
+      if(filteredTermsFromCookies > 0 ){
         setTimeout(() => {
           runFromCookies();
           // document.cookie = "filteredTermsFromCookies=;";
