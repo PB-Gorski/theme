@@ -186,6 +186,7 @@
     <!-- wp:paragraph -->
     <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Zgodnie z RODO przysługują Państwu – jako osobom, których dane osobowe dotyczą - następujące prawa związane z przetwarzaniem danych osobowych:</p>
     <!-- /wp:paragraph -->
+    <!-- wp:list -->
     <ul class="wp-block-list text-[18px] text-bgDarkGray leading-[30px]">
       <!-- wp:list-item -->
       <li class="mb-[10px]">
@@ -198,13 +199,19 @@
       </li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
-      <li class="mb-[10px]">2. Wykorzystaniem narzędzi analitycznych i służących zanonimizowanemu śledzeniu zachowań użytkowników, w szczególności takich jak Google Analytics, Gemius Traffic, Chartbeat</li>
-      <!-- /wp:list-item -->
-      <!-- wp:list-item -->
-      <li class="mb-[10px]">3. Wykorzystaniem platform reklamowych służących pozyskaniu środków na utrzymanie serwisów internetowych (w szczególności: Google adsense).</li>
+      <li class="mb-[10px]">
+        <!-- wp:paragraph -->
+        <p>2. Prawo do sprostowania danych</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class="ml-[40px]">Osoba, której dane dotyczą, ma prawo do żądania od administratora sprostowania dotyczących jej danych, które są nieprawidłowe, a także ich uzupełnienia.</p>
+        <!-- /wp:paragraph -->
+      </li>
       <!-- /wp:list-item -->
     </ul>
     <!-- /wp:list -->
+
+
   </div>
   <!-- /wp:group -->
 </div>
