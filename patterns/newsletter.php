@@ -24,19 +24,9 @@
     <div class="wp-block-group col2 desktop:w-[50%]">
       <!-- wp:group -->
       <div class="wp-block-group input mb-[15px] desktop:flex">
-
         <!-- wp:shortcode -->
         <?php echo do_shortcode('[contact-form-7 id="e479141" title="newsletter"]'); ?>
         <!-- /wp:shortcode -->
-
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group -->
-      <div class="wp-block-group input checkbox">
-        <!-- wp:paragraph -->
-        <p class="text-white text-[14px] leading-[28px]">Wyrażam zgodę na otrzymywanie informacji handlowych w tym marketingowych od PB Górski Sp. z o.o. SKA drogą elektroniczną (za pośrednictwem adresu e-mail). Więcej informacji o administracji danych.Więcej.</p>
-        <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
     </div>
