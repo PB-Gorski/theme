@@ -29,7 +29,7 @@
 
   <!-- wp:group -->
   <div class="wp-block-group content container mx-auto desktop:px-0 px-[20px]">
-    <!-- wp:heading -->
+    <!-- wp:heading {"level":4} -->
     <h4><span class="block text-[30px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">Pliki cookie</span></h4>
     <!-- /wp:heading -->
     <!-- wp:paragraph -->
