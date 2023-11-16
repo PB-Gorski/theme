@@ -30,10 +30,6 @@
   <!-- wp:group -->
   <div class="wp-block-group content container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:paragraph -->
-    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Jako administrator Państwa danych osobowych, działając zgodnie z art. 13 ust. 1 i ust. 2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych) (Dz.U.UE.L.2016.119.1 z dnia 04.05.2016), dalej zwanym RODO, poniżej przedstawiamy Państwu informacje z zakresu ochrony danych osobowych.</p>
-    <!-- /wp:paragraph -->
-
-    <!-- wp:paragraph -->
     <p class="mb-[30px] text-[18px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">I Administrator danych osobowych</p>
     <!-- /wp:paragraph -->
     <!-- wp:paragraph -->
