@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
 <div class="newsletter wrapper">
   <div class="leading-[0px] flex">
     <!-- <div> [email* your-email id:your-email ] </div> -->
-    <input id="your-email" name="your-email" type="text" placeholder="Email" class="mb-[20px] desktop:w-[370px] h-[60px] bg-white text-white text-[40px] leading-[150%] placeholder:text-[12px] placeholder:font-normal">
+    <input id="your-email" name="your-email" type="text" placeholder="Email" class="mb-[20px] desktop:w-[370px] h-[60px] bg-white text-[40px] leading-[150%] placeholder:text-[12px] placeholder:font-normal">
     <div>
       <!-- [submit "Submit"] -->
       <button type="submit" class="group relative bg-primaryRed text-white w-[170px] h-[60px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-red-950 before:transition-height before:duration-300 before:ease cursor-pointer"><span class="z-[1] relative">Zapisz się</span></button>
