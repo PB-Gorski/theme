@@ -57,6 +57,37 @@
     <!-- wp:paragraph -->
     <p class="block text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Przedsiębiorstwo Budowlane Górski przetwarza powierzone przez Państwa dane osobowe tzn. w szczególności zbiera je, utrwala, przechowuje, usuwa lub niszczy. Państwa dane osobowe są przetwarzane w następujących celach:</p>
     <!-- /wp:paragraph -->
+    <!-- wp:list -->
+    <ul class="wp-block-list text-[18px] text-bgDarkGray leading-[30px]">
+      <!-- wp:list-item -->
+      <li>1. Zawarcie i realizacja umowy</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li>2. Udzielanie odpowiedzi na pisma, reklamacje i wnioski</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li>3. Wypełnianie obowiązku prawnego ciążącego na Przedsiębiorstwie Budowlanym Górski (np. wystawianie i przechowywanie faktur oraz dokumentów księgowych, udzielanie odpowiedzi na reklamacje w terminie i w formie prawem przewidzianym).</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li>4. Sprzedaż produktów i usług oferowanych przez Przedsiębiorstwo Budowane Górski</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li>5. Prowadzenie analiz i statystyk oraz na potrzeby prowadzonej działalności gospodarczej</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li>6. Prowadzenie działań marketingowych podejmowanych przez Przedsiębiorstwo Budowlane Górski samodzielnie lub we współpracy z innymi podmiotami</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li>7. Dochodzenie roszczeń</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li>8. prowadzenie działań związanych z zapewnieniem bezpieczeństwa danych.</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li>9. archiwizacja.</li>
+      <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
   </div>
   <!-- /wp:group -->
 </div>
