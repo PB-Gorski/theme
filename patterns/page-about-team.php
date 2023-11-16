@@ -12,9 +12,9 @@
 <div id="content" class="wp-block-group team relative">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] desktop:max-w-[680px]">
-    <!-- wp:paragraph -->
-    <span class="block mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Rozmach i różnorodność inwestycji prowadzonych przez firmę Górski pokazuje odwagę i konsekwencję w wieloletnim działaniu przedsiębiorstwa.</span>
-    <!-- /wp:paragraph -->
+    <!-- wp:heading {"level":4} -->
+    <h4><span class="block mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Rozmach i różnorodność inwestycji prowadzonych przez firmę Górski pokazuje odwagę i konsekwencję w wieloletnim działaniu przedsiębiorstwa.</span></h4>
+    <!-- /wp:heading -->
     <!-- wp:paragraph -->
     <span class="block mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Dziś aktywność dewelopera nie ogranicza się tylko do działań budowlanych. Firma GÓRSKI wspiera także sportowe talenty, sponsoruje wydarzenia sportowe i kulturalne.</span>
     <!-- /wp:paragraph -->

@@ -51,9 +51,9 @@
       <!-- /wp:group -->
       <!-- wp:group -->
       <div class="wp-block-group col2 desktop:w-[50%] text-[18px] text-bgDarkGray leading-[30px]">
-        <!-- wp:paragraph -->
-        <span class="block mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Wieloletnie doświadczenie przedsiębiorstwa owocuje dziś bardzo szeroką, zróżnicowaną ofertą dla klientów.</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading {"level":4} -->
+        <h4><span class="block mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Wieloletnie doświadczenie przedsiębiorstwa owocuje dziś bardzo szeroką, zróżnicowaną ofertą dla klientów.</span></h4>
+        <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Wśród realizacji dewelopera znajdują się eleganckie inwestycje w prestiżowych lokalizacjach Trójmiasta takie jak osiedle Browar Gdański, Kamienica Tobiasza, czy apartamenty Angielska Grobla na Starym Mieście w Gdańsku.</span>
         <!-- /wp:paragraph -->
@@ -79,9 +79,9 @@
       <!-- /wp:group -->
       <!-- wp:group -->
       <div class="wp-block-group col2 desktop:w-[40%] text-[18px] text-bgDarkGray leading-[30px]">
-        <!-- wp:paragraph -->
-        <span class="block mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Realizacje PB Górski to nie tylko mieszkania</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading {"level":4} -->
+        <h4><span class="block mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Realizacje PB Górski to nie tylko mieszkania</span></h4>
+        <!-- /wp:heading -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Deweloper w ostatnim czasie postawił także na inwestycje handlowo-usługowe. Galeria Metropolia to unikalne centrum handlowe zintegrowane z dworcem kolejowym Gdańsk Wrzeszcz, gdzie do dyspozycji klientów oddane zostały różnorodne sklepy znanych marek, największy kompleks kinowy w okolicy, a także hotel.</span>
         <!-- /wp:paragraph -->
@@ -107,9 +107,9 @@
       <!-- /wp:group -->
       <!-- wp:group -->
       <div class="wp-block-group col2 desktop:pl-[100px] desktop:w-[40%] text-[18px] text-bgDarkGray leading-[30px]">
-        <!-- wp:paragraph -->
-        <span class="block mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Hotel Quadrille Conference & Spa</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading {"level":4} -->
+        <h4><span class="block mb-[30px] text-[30px] text-textGray leading-[44px]" data-aos="fade-right" data-aos-offset="30">Hotel Quadrille Conference & Spa</span></h4>
+        <!-- /wp:hading -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Do najnowszych realizacji firmy należy Pięciogwiazdkowy Hotel Quadrille, XVIII-wieczny zespół parkowo-pałacowy zlokalizowany w Gdyni Orłowie. PB Górski przekształcił ten historyczny obiekt w ekskluzywny hotel butikowy o wyjątkowym designie nawiązującym m.in. do "Alicji w Krainie Czarów". Na całość składają się oryginalne wnętrza, niepowtarzalne pokoje hotelowe, imponująca strefa MediSpa z podziemnym basenem, autorska restauracja Biały Królik, nowocześnie wyposażona sala konferencyjna oraz malowniczy park.</span>
         <!-- /wp:paragraph -->
