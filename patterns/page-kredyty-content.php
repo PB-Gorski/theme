@@ -52,7 +52,7 @@
       <div class="wp-block-group section3 mb-[50px]">
         <!-- wp:heading {"level":5} -->
         <h5><span class="block text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Minimum dokumentów</span>
-          <!-- /wp:paragraph -->
+          <!-- /wp:heding -->
           <!-- wp:group -->
           <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
             <!-- wp:paragraph -->
