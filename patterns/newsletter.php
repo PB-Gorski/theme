@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="newsletter" class="wp-block-group newsletter py-[60px] relative bg-[#3d4b67] transition-height ease duration-[300ms]">
+<div id="newsletter" class="wp-block-group newsletter py-[60px] relative bg-[#3d4b67]">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full desktop:flex items-center gap-[80px]">
     <!-- wp:group -->
