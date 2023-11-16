@@ -262,7 +262,7 @@
     <!-- /wp:list -->
 
     <!-- wp:paragraph -->
-    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">ZW celi skorzystania z powyższych praw, należy skontaktować się z Inspektorem ochrony danych listownie na adres Przedsiębiorstwa Budowlanego Górski z dopiskiem „Inspektor Ochrony Danych”, bądź na adres e-mail: <a href="mailto:iod@pbgorski.pl">iod@pbgorski.pl.</a></p>
+    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">W celu skorzystania z powyższych praw, należy skontaktować się z Inspektorem ochrony danych listownie na adres Przedsiębiorstwa Budowlanego Górski z dopiskiem „Inspektor Ochrony Danych”, bądź na adres e-mail: <a href="mailto:iod@pbgorski.pl" class="underline">iod@pbgorski.pl.</a></p>
     <!-- /wp:paragraph -->
 
 
