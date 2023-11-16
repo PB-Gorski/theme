@@ -14,7 +14,7 @@
   <!-- wp:group -->
   <div class="wp-block-group mb-[90px] title w-full bg-[#f5f7fa] relative py-[80px]">
     <!-- wp:group -->
-    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[50px]">
+    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:group -->
       <div class="wp-block-group title text-[36px] desktop:text-[60px] font-bold mb-[50px] leading-[50px] desktop:leading-[70px]">
         <!-- wp:heading {"level":1} -->
