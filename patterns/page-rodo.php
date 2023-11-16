@@ -99,8 +99,28 @@
     <!-- wp:paragraph -->
     <p class="mb-[30px] text-[18px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">IV Podstawa prawna przetwarzania</p>
     <!-- /wp:paragraph -->
+    <!-- wp:list -->
+    <ul class="wp-block-list text-[18px] text-bgDarkGray leading-[30px]">
+      <!-- wp:list-item -->
+      <li>1. W celu wykonania zawartej umowy deweloperskiej, umowy sprzedaży, umowy o świadczenie usługi budowlanej lub innej umowy związanej z działalnością gospodarczą Przedsiębiorstwa Budowlanego Górski lub w celu podjęcia działań na żądanie osoby, której dane dotyczą przed zawarciem umowy, w szczególności w celu udzielenia odpowiedzi na email przesłany przez formularz kontaktowy (art. 6 ust 1 lit. b RODO)</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li>2. W celu wypełnienia obowiązków wynikających z przepisów powszechnie obowiązującego prawa np. z zakresu przepisów ustaw podatkowych, ustawy o rachunkowości lub kodeksu cywilnego (art. 6 ust 1 lit. c RODO)</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li>3. Gdy jest to niezbędne dla realizacji prawnie uzasadnionych interesów Przedsiębiorstwa Budowlanego Górski jak np. ustalenia i dochodzenia roszczeń z związku z prowadzoną działalnością, w tym windykacji lub obrony przed roszczeniami (art. 6 ust 1 lit. f RODO)</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li>4. Ponadto, jeśli udzielicie Państwo zgody na wykorzystywanie swoich danych osobowych, treść tej zgody będzie określać, w jakim celu Przedsiębiorstwo Budowlane Górski jako administrator będzie przetwarzać te dane (art. 6 ust 1 lit. a RODO)</li>
+      <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
     <!-- wp:paragraph -->
-    <p class="mb-[20px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">IV Podstawa prawna przetwarzania</p>
+    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Podanie przez Państwa danych osobowych jest dobrowolne, jednak może być warunkiem koniecznym do zawarcia umowy lub jej prawidłowego wykonania np. umowy deweloperskiej, umowy sprzedaży, umowy o usługi budowlane.</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">V Czas przechowywania danych osobowych</p>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
