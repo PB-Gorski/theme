@@ -188,7 +188,14 @@
     <!-- /wp:paragraph -->
     <ul class="wp-block-list text-[18px] text-bgDarkGray leading-[30px]">
       <!-- wp:list-item -->
-      <li class="mb-[10px]">1. Prawo dostępu do danych<span>Osoba, której dane dotyczą, ma prawo do otrzymania od administratora potwierdzenia czy przetwarzane są jej dane osobowe, a jeżeli to ma miejsce, ma prawo do informacji, jakie jej dane osobowe i w jakich celach są przetwarzane oraz uzyskania ich kopii.</span></li>
+      <li class="mb-[10px]">
+        <!-- wp:paragraph -->
+        <p>1. Prawo dostępu do danych</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class="ml-[40px]">Osoba, której dane dotyczą, ma prawo do otrzymania od administratora potwierdzenia czy przetwarzane są jej dane osobowe, a jeżeli to ma miejsce, ma prawo do informacji, jakie jej dane osobowe i w jakich celach są przetwarzane oraz uzyskania ich kopii.</p>
+        <!-- /wp:paragraph -->
+      </li>
       <!-- /wp:list-item -->
       <!-- wp:list-item -->
       <li class="mb-[10px]">2. Wykorzystaniem narzędzi analitycznych i służących zanonimizowanemu śledzeniu zachowań użytkowników, w szczególności takich jak Google Analytics, Gemius Traffic, Chartbeat</li>
