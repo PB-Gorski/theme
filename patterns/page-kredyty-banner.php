@@ -25,7 +25,7 @@
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:group -->
       <div class="wp-block-group title-wrapper max-w-[500px]">
-        <!-- wp:heading "level":1 -->
+        <!-- wp:heading {"level":1} -->
         <h1 class="wp-block-heading title text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]"><span class="block" data-aos="fade-right" data-aos-offset="30">Uzyskanie kredytu</span><span class="block" data-aos="fade-right" data-aos-offset="30">nie musi być skomplikowane.</span></h1>
         <!-- /wp:heading -->
         <!-- wp:group -->
