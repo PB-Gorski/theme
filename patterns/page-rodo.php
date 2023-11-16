@@ -88,6 +88,20 @@
       <!-- /wp:list-item -->
     </ul>
     <!-- /wp:list -->
+
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Mogą Państwo również wyrazić zgodę na przetwarzanie Państwa danych w innych celach, wyraźnie określonych w treści udzielonej zgody.</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Informujemy przy tym, że Przedsiębiorstwo Budowlane Górski przetwarza Państwa dane z wykorzystaniem odpowiednich środków technicznych i organizacyjnych niezbędnych do zapewnienia bezpieczeństwa tych danych.</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">IV Podstawa prawna przetwarzania</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="mb-[20px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">IV Podstawa prawna przetwarzania</p>
+    <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
 </div>
