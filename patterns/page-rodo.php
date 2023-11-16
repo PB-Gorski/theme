@@ -125,6 +125,28 @@
     <!-- wp:paragraph -->
     <p class="mb-[30px] text-[18px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">V Czas przechowywania danych osobowych</p>
     <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Okres przetwarzania Państwa danych osobowych jest uzależniony od celu, w jakim dane są przetwarzane. Okres, przez który Państwa dane osobowe będą przechowywane, jest obliczany w oparciu o następujące kryteria:</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:list -->
+    <ul class="wp-block-list text-[18px] text-bgDarkGray leading-[30px]">
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">1. Przepisy prawa, które mogą obligować Przedsiębiorstwo Budowlane Górski do przetwarzania danych przez określony czas (np. ustawa o rachunkowości, kodeks cywilny)</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">2. Okres, przez jaki są realizowane umowy</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">3. Okres, przez jaki podejmowane są działania na Państwa żądanie przed zawarciem umowy (np. przez okres udzielania odpowiedzi na Państwa pytania i wnioski)</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">4. Okres, który jest niezbędny do obrony interesów administratora</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">5. Okres, na jaki została udzielona zgoda.</li>
+      <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
   </div>
   <!-- /wp:group -->
 </div>
