@@ -366,7 +366,10 @@ window.addEventListener("load", function() {
     });
 
     dropDownsMetraz.forEach(item => {
-      item.addEventListener('click', choiseMetraz)
+      item.addEventListener('click', () => {
+        choiseMetraz(e);
+        item.parentNode.parentNode.previousElementSibling.classList.remove('toggle-x');
+      })
     });
 
 
