@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
  * */
 ?>
 
-<table class="w-full cta2">
+<table class="w-full newsletter">
   <tbody>
     <tr class="flex flex-col desktop:flex-row gap-[20px]">
       <td class="w-[100%] desktop:w-[50%] leading-[0px]">
