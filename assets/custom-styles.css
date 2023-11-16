@@ -365,6 +365,9 @@ textarea{
   padding-left: 15px;
   color: #2E384D;
 }
+.page-template-page-contact{
+  color: #2E384D;
+}
 input::placeholder{
   font-size: 16px;
   margin-top: auto;
