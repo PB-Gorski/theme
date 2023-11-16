@@ -28,7 +28,7 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group content container mx-auto desktop:px-0 px-[20px]">
+  <div class="wp-block-group content container mx-auto max-w-[900px] desktop:px-0 px-[20px]">
     <!-- wp:paragraph -->
     <p class="mb-[30px] text-[18px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">I Administrator danych osobowych</p>
     <!-- /wp:paragraph -->
