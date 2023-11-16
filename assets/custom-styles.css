@@ -426,7 +426,8 @@ label{
   display: none;
 }
 @media only screen and (max-width: 800px) {
-.btn-newsletter{
+.btn-newsletter,
+.input-newsletter{
   width: 100%!important;
 }
 }
