@@ -373,6 +373,7 @@ input::placeholder{
 }
 .wpcf7-response-output{
   color:#b22944;
+  border-color: white;
 }
 .cta2 textarea,
 .cta2 #your-name,
