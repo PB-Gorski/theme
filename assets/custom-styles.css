@@ -363,12 +363,13 @@ background-color: #b22944;
 input,
 textarea{
   padding-left: 15px;
+  color: #2E384D;
 }
 input::placeholder{
   font-size: 16px;
   margin-top: auto;
   margin-bottom: auto;
-  color: #2E384D;
+  color: #8A8F99;
 }
 .cta2 textarea,
 .cta2 #your-name,
