@@ -364,6 +364,9 @@ input,
 textarea{
   padding-left: 15px;
 }
+input::placeholder{
+  font-size: 12px;
+}
 .cta2 textarea,
 .cta2 #your-name,
 .cta2 #your-phone{
