@@ -208,8 +208,62 @@
         <!-- /wp:paragraph -->
       </li>
       <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">
+        <!-- wp:paragraph -->
+        <p>3. Prawa do usunięcia danych („prawo do bycia zapomnianym”)</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class="ml-[40px]">Osoba, której dane dotyczą, ma prawo do żądania od administratora usunięcia dotyczących jej danych, wskazując okoliczności to uzasadniające np. dane osobowe nie są już niezbędne do realizacji umowy, dla której zostały zebrane, lub osoba, której dane dotyczą, cofnęła zgodę na przetwarzanie a nie występują inne podstawy prawne do dalszego przetwarzania danych, lub dane są przetwarzane niezgodnie z prawem.</p>
+        <!-- /wp:paragraph -->
+      </li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">
+        <!-- wp:paragraph -->
+        <p>4. Prawa do ograniczenia przetwarzania danych</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class="ml-[40px]">Osoba, której dane dotyczą, ma prawo żądania od administratora ograniczenia przetwarzania danych np. gdy administrator nie potrzebuje pewnych danych, nie występują przesłanki do dalszego ich przetwarzania a osoba, której dane dotyczą wnosi o wstrzymanie operacji na danych lub nieusuwanie danych.</p>
+        <!-- /wp:paragraph -->
+      </li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">
+        <!-- wp:paragraph -->
+        <p>5. Prawa do przenoszenia danych</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class="ml-[40px]">Osoba, której dane dotyczą, ma prawo otrzymać w ustrukturyzowanym, powszechnie używanym formacie nadającym się do odczytu maszynowego dane osobowe jej dotyczące, które dostarczyła do administratora oraz ma prawo przesłać te dane osobowe innemu administratorowi.</p>
+        <!-- /wp:paragraph -->
+      </li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">
+        <!-- wp:paragraph -->
+        <p>6. Prawo do sprzeciwu</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class="ml-[40px]">Osoba, której dane dotyczą, ma prawo w dowolnym momencie wnieść sprzeciw wobec przetwarzania jej danych ze względu na jej szczególną sytuację – w przypadkach gdy przetwarzanie danych następuje na podstawie prawnie uzasadnionego interesu administratora, w tym profilowania, a także wnieść sprzeciw wobec przetwarzania jej danych do celów marketingowych.</p>
+        <!-- /wp:paragraph -->
+      </li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">
+        <!-- wp:paragraph -->
+        <p>7. Prawo do cofnięcia zgody na przetwarzanie danych</p>
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <p class="ml-[40px]">Jeżeli przetwarzanie danych osobowych odbywa się na podstawie zgody, wówczas osobie, której dane dotyczą, przysługuje prawo do cofnięcia zgody w dowolnym momencie (bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem).</p>
+        <!-- /wp:paragraph -->
+      </li>
+      <!-- /wp:list-item -->
     </ul>
     <!-- /wp:list -->
+
+    <!-- wp:paragraph -->
+    <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">ZW celi skorzystania z powyższych praw, należy skontaktować się z Inspektorem ochrony danych listownie na adres Przedsiębiorstwa Budowlanego Górski z dopiskiem „Inspektor Ochrony Danych”, bądź na adres e-mail: <a href="mailto:iod@pbgorski.pl">iod@pbgorski.pl.</a></p>
+    <!-- /wp:paragraph -->
 
 
   </div>
