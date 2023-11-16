@@ -229,7 +229,7 @@ window.addEventListener("load", function() {
     dropDowns.forEach(item => {
       item.addEventListener('click',(e)=>{
         choise(e);
-        item.classList.remove('toggle-x');
+        item.parentNode.parentNode.previousElementSibling.classList.remove('toggle-x');
       });
     });
 
