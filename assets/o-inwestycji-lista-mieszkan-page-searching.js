@@ -215,8 +215,16 @@ window.addEventListener("load", function() {
     });
 
 
+    // dropDowns.forEach(item => {
+    //   item.addEventListener('click', choise)
+    // });
+
+
     dropDowns.forEach(item => {
-      item.addEventListener('click', choise)
+      item.addEventListener('click',(e)=>{
+        choise(e);
+        item.parentNode.parentNode.previousElementSibling.classList.remove('toggle-x');
+      });
     });
 
     function choise(e){
@@ -361,8 +369,15 @@ window.addEventListener("load", function() {
       });
     });
 
+    // dropDownsMetraz.forEach(item => {
+    //   item.addEventListener('click', choiseMetraz)
+    // });
+
     dropDownsMetraz.forEach(item => {
-      item.addEventListener('click', choiseMetraz)
+      item.addEventListener('click', () => {
+        choiseMetraz(e);
+        item.parentNode.parentNode.previousElementSibling.classList.remove('toggle-x');
+      })
     });
 
 

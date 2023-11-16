@@ -276,9 +276,7 @@ window.addEventListener("load", function() {
       });
     });
 
-    dropDowns.forEach(item => {
-      item.addEventListener('click', choise)
-    });
+
 
     function choise(e){
       e.preventDefault();
@@ -296,6 +294,18 @@ window.addEventListener("load", function() {
         };
       });
     };
+
+
+    // dropDowns.forEach(item => {
+    //   item.addEventListener('click', choise)
+    // });
+
+    dropDowns.forEach(item => {
+      item.addEventListener('click',(e)=>{
+        choise(e);
+        item.parentNode.parentNode.previousElementSibling.classList.remove('toggle-x');
+      });
+    });
 
     function runSearchingFrontPage(){
       priceValueArr = [];
@@ -391,9 +401,7 @@ window.addEventListener("load", function() {
       });
     });
 
-    dropDownsMetraz.forEach(item => {
-      item.addEventListener('click', choiseMetraz)
-    });
+
 
     function choiseMetraz(e){
       e.preventDefault();
@@ -409,6 +417,15 @@ window.addEventListener("load", function() {
         };
       });
     };
+    // dropDownsMetraz.forEach(item => {
+    //   item.addEventListener('click', choiseMetraz)
+    // });
+    dropDownsMetraz.forEach(item => {
+      item.addEventListener('click', () => {
+        choiseMetraz(e);
+        item.parentNode.parentNode.previousElementSibling.classList.remove('toggle-x');
+      })
+    });
 
     function runSearchingMetrazFrontPage(){
       metrazValueArr = [];
