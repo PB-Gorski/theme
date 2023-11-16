@@ -15,16 +15,9 @@
   <div class="wp-block-group w-full bg-[#f5f7fa] relative py-[80px]">
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[50px]">
-      <!-- wp:group -->
-      <div class="wp-block-group title text-[36px] desktop:text-[60px] font-bold mb-[50px] leading-[50px] desktop:leading-[70px]">
-        <!-- wp:paragraph -->
-        <span class="desktop:block inline" data-aos="fade-right" data-aos-offset="30">Z chęcią odpowiemy na</span>
-        <!-- /wp:paragraph -->
-        <!-- wp:paragraph -->
-        <span class="desktop:block inline" data-aos="fade-right" data-aos-offset="30">wszystkie Twoje pytania.</span>
-        <!-- /wp:paragraph -->
-      </div>
-      <!-- /wp:group -->
+      <!-- wp:heading {"level":1} -->
+      <h1 class="wp-block-heading title text-[36px] desktop:text-[60px] font-bold mb-[50px] leading-[50px] desktop:leading-[70px]"><span class="desktop:block inline" data-aos="fade-right" data-aos-offset="30">Z chęcią odpowiemy na</span><span class="desktop:block inline" data-aos="fade-right" data-aos-offset="30">wszystkie Twoje pytania.</span></h1>
+      <!-- /wp:heading -->
 
       <!-- wp:group -->
       <div class="wp-block-group text-[#959ba6] test text-[30px]">
