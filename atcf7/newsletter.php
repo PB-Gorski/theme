@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
     <tr class="flex flex-col desktop:flex-row gap-[20px]">
       <td class="w-[100%] desktop:w-[50%] leading-[0px]">
         <!-- <div> [email* your-email id:your-email ] </div> -->
-        <input id="your-email" name="your-email" type="text" placeholder="Email" class="px-[15px] py-[10px] w-[330px] desktop:w-full h-[60px] text-[#2e384d] placeholder:text-[#757575]">
+        <input id="your-email" name="your-email" type="text" placeholder="Email" class="w-full mb-[20px] desktop:w-[370px] h-[60px] bg-white text-white text-[40px] leading-[150%]">
       </td>
     </tr>
 
@@ -26,6 +26,6 @@ if (!defined('ABSPATH')) {
   </tbody>
   <div>
     <!-- [submit "Submit"] -->
-    <button type="submit" class="relative mx-auto bg-primaryRed px-[20px] text-white w-fit h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer"><span class="z-[1] relative">Wyślij</span></button>
+    <button type="submit" class="group btn-find-more relative bg-primaryRed text-white w-full desktop:w-[170px] h-[60px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-300 before:ease cursor-pointer"><span class="z-[1] relative">Zapisz się</span></button>
   </div>
 </table>
