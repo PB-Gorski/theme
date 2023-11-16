@@ -12,7 +12,7 @@
 <div id="polityka-cookies" class="wp-block-group polityka-cookies relative">
 
   <!-- wp:group -->
-  <div class="wp-block-group title w-full bg-[#f5f7fa] relative py-[80px]">
+  <div class="wp-block-group mb-[90px] title w-full bg-[#f5f7fa] relative py-[80px]">
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pl-[50px]">
       <!-- wp:group -->
@@ -30,10 +30,10 @@
   <!-- wp:group -->
   <div class="wp-block-group content container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:heading -->
-    <h4><span class="block text-[30px] text-textGray mb-[15px] font-bold" data-aos="fade-right" data-aos-offset="30">Pliki cookie</span></h4>
+    <h4><span class="block text-[30px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">Pliki cookie</span></h4>
     <!-- /wp:heading -->
     <!-- wp:paragraph -->
-    <p class="mb-[40px]"><span class="block" data-aos="fade-right" data-aos-offset="30">Aby zapewnić sprawne funkcjonowanie tego portalu, czasami umieszczamy na komputerze użytkownika (bądź innym urządzeniu) małe pliki – tzw. cookies („ciasteczka”). Podobnie postępuje większość dużych witryn internetowych.</span></p>
+    <p class="mb-[40px]"><span class="block text-[18px] text-bgDarkGray leading-[30px] aos-init aos-animate" data-aos="fade-right" data-aos-offset="30">Aby zapewnić sprawne funkcjonowanie tego portalu, czasami umieszczamy na komputerze użytkownika (bądź innym urządzeniu) małe pliki – tzw. cookies („ciasteczka”). Podobnie postępuje większość dużych witryn internetowych.</span></p>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
