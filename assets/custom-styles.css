@@ -381,6 +381,7 @@ input::placeholder{
   color: white;
   padding-top: 15px;
   padding-bottom: 15px;
+  text-align: center;
 }
 .cta2 textarea,
 .cta2 #your-name,
