@@ -51,15 +51,15 @@
       <!-- wp:group -->
       <div class="wp-block-group section3 mb-[50px]">
         <!-- wp:heading {"level":5} -->
-        <h5><span class="block text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Minimum dokumentów</span>
-          <!-- /wp:heading -->
-          <!-- wp:group -->
-          <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
-            <!-- wp:paragraph -->
-            <span class="block" data-aos="fade-right" data-aos-offset="30">Warto zauważyć, że będą to jedynie dokumenty dotyczące zatrudnienia/zarobków. Całą dokumentację dotyczącą inwestycji dostarczy ekspert, oszczędzając Twój czas. Po pozytywnej decyzji banku możesz udać się na podpisanie umowy kredytowej. Tutaj również będzie towarzyszył Ci nasz przedstawiciel, który odpowie na każde pytanie i rozwieje ewentualne wątpliwości.</span>
-            <!-- /wp:paragraph -->
-          </div>
-          <!-- /wp:group -->
+        <h5><span class="block text-[30px] text-textGray mb-[10px] font-bold" data-aos="fade-right" data-aos-offset="30">Minimum dokumentów</span></h5>
+        <!-- /wp:heading -->
+        <!-- wp:group -->
+        <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
+          <!-- wp:paragraph -->
+          <span class="block" data-aos="fade-right" data-aos-offset="30">Warto zauważyć, że będą to jedynie dokumenty dotyczące zatrudnienia/zarobków. Całą dokumentację dotyczącą inwestycji dostarczy ekspert, oszczędzając Twój czas. Po pozytywnej decyzji banku możesz udać się na podpisanie umowy kredytowej. Tutaj również będzie towarzyszył Ci nasz przedstawiciel, który odpowie na każde pytanie i rozwieje ewentualne wątpliwości.</span>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
     </div>
