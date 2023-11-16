@@ -269,9 +269,11 @@ window.addEventListener("load", function() {
         if(e.target.nextElementSibling){
           console.log('span');
           e.target.nextElementSibling.classList.toggle('dropdown__list_active');
+          e.target.classList.toggle('toggle-x');
         }else if(e.target.parentNode.nextElementSibling){
           console.log('span container');
           e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active');
+          e.target.classList.toggle('toggle-x');
         }
       });
     });
@@ -393,6 +395,7 @@ window.addEventListener("load", function() {
           console.log(e.target);
           console.log('dropdown span');
           e.target.nextElementSibling.classList.toggle('dropdown__list_active-metraz');
+          e.target.classList.toggle('toggle-x');
         }
         else if(e.target.parentNode.nextElementSibling){
           console.log('dropdown span container');
