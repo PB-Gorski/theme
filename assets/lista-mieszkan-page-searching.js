@@ -225,13 +225,12 @@ window.addEventListener("load", function() {
       });
     };  
 
-    function clearArrow(){
-      
-    }
-
 
     dropDowns.forEach(item => {
-      item.addEventListener('click', choise)
+      item.addEventListener('click',()=>{
+        choise;
+        item.classList.remove('toggle-x');
+      });
     });
 
 
