@@ -35,6 +35,18 @@
     <!-- wp:paragraph -->
     <p class="mb-[40px]"><span class="block text-[18px] text-bgDarkGray leading-[30px] aos-init aos-animate" data-aos="fade-right" data-aos-offset="30">Aby zapewnić sprawne funkcjonowanie tego portalu, czasami umieszczamy na komputerze użytkownika (bądź innym urządzeniu) małe pliki – tzw. cookies („ciasteczka”). Podobnie postępuje większość dużych witryn internetowych.</span></p>
     <!-- /wp:paragraph -->
+    <!-- wp:heading {"level":4} -->
+    <h4><span class="block text-[30px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">Czym są pliki cookie?</span></h4>
+    <!-- /wp:heading -->
+    <!-- wp:paragraph -->
+    <p class="mb-[40px]"><span class="block text-[18px] text-bgDarkGray leading-[30px] aos-init aos-animate" data-aos="fade-right" data-aos-offset="30">„Cookie” to mały plik tekstowy, który strona internetowa zapisuje na komputerze lub urządzeniu przenośnym internauty w chwili, gdy ten ją przegląda. Strona ta może w ten sposób zapamiętać na dłużej czynności i preferencje internauty (takie jak nazwa użytkownika, język, rozmiar czcionki i inne opcje). Dzięki temu użytkownik nie musi wpisywać tych samych informacji za każdym razem, gdy powróci na tę stronę lub przejdzie z jednej strony na inną.</span></p>
+    <!-- /wp:paragraph -->
+    <!-- wp:heading {"level":4} -->
+    <h4><span class="block text-[30px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">Jak kontrolować pliki cookie?</span></h4>
+    <!-- /wp:heading -->
+    <!-- wp:paragraph -->
+    <p class="mb-[40px]"><span class="block text-[18px] text-bgDarkGray leading-[30px] aos-init aos-animate" data-aos="fade-right" data-aos-offset="30">Pliki cookie można samodzielnie kontrolować i usuwać. Można usunąć wszystkie pliki cookie zamieszczone na swoim komputerze, a w większości przeglądarek wybrać ustawienie, które uniemożliwia instalowanie tych plików. W takim przypadku może się okazać konieczne dostosowanie niektórych preferencji przy każdej wizycie na danej stronie, a część opcji i usług może być niedostępna.</span></p>
+    <!-- /wp:paragraph -->
   </div>
   <!-- /wp:group -->
 </div>
