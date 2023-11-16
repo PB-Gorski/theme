@@ -22,10 +22,10 @@ if (!defined('ABSPATH')) {
         <p class="ml-[10px] mb-[20px] w-full text-white text-[12px] leading-[18px]"> Wyrażam zgodę na przetwarzanie moich danych osobowych, podanych w formularzu kontaktowym, przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku w celu udzielenia odpowiedzi na zapytanie. Podanie danych jest dobrowolne. Oświadczam, że zapoznałem się z klauzulą informacyjną w zakresie ochrony danych osobowych dostępną tutaj</p>
       </td>
     </tr>
-    </tr>
+    <input type="submit" value="Submit">
   </tbody>
+  <div>
+    <!-- [submit "Submit"] -->
+    <button type="submit" class="relative mx-auto bg-primaryRed px-[20px] text-white w-fit h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer"><span class="z-[1] relative">Wyślij</span></button>
+  </div>
 </table>
-<div>
-  <!-- [submit "Submit"] -->
-  <button type="submit" class="relative mx-auto bg-primaryRed px-[20px] text-white w-fit h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer"><span class="z-[1] relative">Wyślij</span></button>
-</div>
