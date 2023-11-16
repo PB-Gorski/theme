@@ -182,10 +182,10 @@
       <p>Wszelkie prawa zastrzeżone</p>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <p>RODO</p>
+      <p class="hover:text-textGray"><a href="<?php echo home_url() . '/rodo' ?>">RODO</a></p>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <p><a href="<?php echo home_url() . '/polityka-cookies' ?>">Polityka Cookies</a></p>
+      <p class="hover:text-textGray"><a href="<?php echo home_url() . '/polityka-cookies' ?>">Polityka Cookies</a></p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
