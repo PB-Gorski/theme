@@ -734,9 +734,9 @@
 
       <!-- wp:group -->
       <div class="wp-block-group section2 mb-[50px]">
-        <!-- wp:paragraph -->
-        <span class="block text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Dane Spółki</span>
-        <!-- /wp:paragraph -->
+        <!-- wp:heading {"level":4} -->
+        <h4><span class="block text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Dane Spółki</span></h4>
+        <!-- /wp:heading -->
         <!-- wp:group -->
         <div class="wp-block-group address mb-[30px] text-[#8a8f99]">
           <!-- wp:paragraph -->
