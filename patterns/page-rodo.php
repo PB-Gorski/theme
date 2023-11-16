@@ -160,6 +160,19 @@
     <!-- wp:paragraph -->
     <p class="mb-[30px] text-[18px] text-bgDarkGray leading-[30px]" data-aos="fade-right" data-aos-offset="30">Państwa dane mogą być przekazane do państw trzecich (m.in. USA) w związku z:</p>
     <!-- /wp:paragraph -->
+    <!-- wp:list -->
+    <ul class="wp-block-list text-[18px] text-bgDarkGray leading-[30px]">
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">1. Działaniami podejmowanymi na serwisach społecznościowych oraz wykorzystaniem wtyczek i innych narzędzi pochodzących z tych serwisów (m.in. Facebook, Twitter, Google+)</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">2. Wykorzystaniem narzędzi analitycznych i służących zanonimizowanemu śledzeniu zachowań użytkowników, w szczególności takich jak Google Analytics, Gemius Traffic, Chartbeat</li>
+      <!-- /wp:list-item -->
+      <!-- wp:list-item -->
+      <li class="mb-[10px]">3. Wykorzystaniem platform reklamowych służących pozyskaniu środków na utrzymanie serwisów internetowych (w szczególności: Google adsense).</li>
+      <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
   </div>
   <!-- /wp:group -->
 </div>
