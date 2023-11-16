@@ -365,7 +365,9 @@ textarea{
   padding-left: 15px;
 }
 input::placeholder{
-  font-size: 12px;
+  font-size: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .cta2 textarea,
 .cta2 #your-name,
