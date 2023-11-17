@@ -29,9 +29,6 @@
 
   <!-- wp:group -->
   <div class="wp-block-group content container mx-auto desktop:px-0 px-[20px]">
-    <!-- wp:heading {"level":4} -->
-    <h4><span class="block text-[30px] text-textGray font-bold" data-aos="fade-right" data-aos-offset="30">Pliki cookie</span></h4>
-    <!-- /wp:heading -->
     <!-- wp:paragraph -->
     <p class="mb-[40px]"><span class="block text-[18px] text-bgDarkGray leading-[30px] aos-init aos-animate" data-aos="fade-right" data-aos-offset="30">INFORMACJA O WEZWANIU AKCJONARIUSZY DO ZŁOŻENIA DOKUMENTÓW AKCJI SPÓŁKI </span></p>
     <!-- /wp:paragraph -->
