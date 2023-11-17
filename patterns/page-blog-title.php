@@ -6,6 +6,33 @@
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
+
+?>
+<?php
+echo (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') ? 'hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed' : null;
+if (!is_front_page() && is_home()) {
+  echo 'blog page';
+};
+?>
+<?php if (is_blog()) {
+  echo 'You are on a blog page';
+}
+global $wp_query;
+
+if (isset($wp_query) && (bool) $wp_query->is_posts_page) {
+  //static blog page
+  echo 'blog page3';
+}
+
+// Get body classes as array
+$body_classes = get_body_class();
+echo $body_classes;
+// Check if "blog" class exists in the array
+if (in_array("page-template-page-blog", $body_classes)) {
+  // Do stuff
+  echo 'body_class check';
+}
+
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
@@ -38,32 +65,7 @@
             } ?>
             
             ">
-              <?php
-              echo (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') ? 'hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed' : null;
-              if (!is_front_page() && is_home()) {
-                echo 'blog page';
-              };
-              ?>
-              <?php if (is_blog()) {
-                echo 'You are on a blog page';
-              }
-              global $wp_query;
 
-              if (isset($wp_query) && (bool) $wp_query->is_posts_page) {
-                //static blog page
-                echo 'blog page3';
-              }
-
-              // Get body classes as array
-              $body_classes = get_body_class();
-              echo $body_classes;
-              // Check if "blog" class exists in the array
-              if (in_array("page-template-page-blog", $body_classes)) {
-                // Do stuff
-                echo 'body_class check';
-              }
-
-              ?>
 
 
               Wszystkie2</a>
