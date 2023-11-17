@@ -61,9 +61,9 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group socials flex items-center gap-[3px]">
+      <div class="wp-block-group socials flex items-center gap-[6px]">
         <!-- wp:group -->
-        <div class="wp-block-group btn-fb bg-[#2d384c] text-white w-[30px] h-[30px] text-center rounded-[5px]">
+        <div class="wp-block-group btn-fb bg-[#2d384c] text-white text-[27px] font-semibold w-[30px] h-[30px] text-center rounded-[5px]">
           <!-- wp:paragraph -->
           <p>f</p>
           <!-- /wp:paragraph -->
