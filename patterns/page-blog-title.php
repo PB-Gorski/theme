@@ -35,6 +35,7 @@ print_r(get_post_class());
 echo 'echo class_exsis: ';
 print_r(class_exists('page'));
 echo class_exists('page');
+echo get_post_class()[0] == 1817 ? 'ok' : 'nok';
 // Check if "blog" class exists in the array
 if (in_array("page-template-page-blog", $body_classes)) {
   // Do stuff
@@ -109,7 +110,7 @@ if (!is_front_page() && is_home()) {
           <!-- wp:paragraph -->
           <p class="inline ">
             <!-- wp:paragraph -->
-            <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn _old hidden text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') ? 'hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed' : null; ?>">Wszystkie</a>
+            <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn _old hidden text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo (get_post_class()[0] == 1817) ? 'hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed' : null; ?>">Wszystkie</a>
             <!-- /wp:paragraph -->
           </p>
           <!-- /wp:paragraph -->
