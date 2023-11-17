@@ -32,6 +32,9 @@ print_r(body_class());
 echo '</br>';
 echo 'echo post_classes2: ';
 print_r(get_post_class());
+echo 'echo class_exsis: ';
+print_r(class_exists('page'));
+echo class_exists('page');
 // Check if "blog" class exists in the array
 if (in_array("page-template-page-blog", $body_classes)) {
   // Do stuff
