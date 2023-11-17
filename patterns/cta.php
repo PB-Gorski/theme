@@ -27,9 +27,9 @@
     <!-- /wp:group -->
 
     <!-- wp:group -->
-    <div class="wp-block-group col2 w-[100%] desktop:w-[55%] py-[60px]">
+    <div class="wp-block-group col2 w-[100%] desktop:w-[55%] py-[60px] flex items-center jusify-center">
       <!-- wp:group -->
-      <div class="wp-block-group flex items-center jusify-center">
+      <div class="wp-block-group">
         <!-- wp:heading -->
         <h2><span class="block text-[28px] desktop:text-[38px] font-bold mb-[60px] desktop:mb-[40px]" data-aos="fade-right" data-aos-offset="30">Potrzebujesz więcej informacji?</span></h2>
         <!-- /wp:heading -->
