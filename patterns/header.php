@@ -544,7 +544,7 @@
         <!-- wp:group -->
         <div class="wp-block-group group btn-find-more relative bg-[#3d4b66] text-[18px] text-white font-bold w-[230px] h-[55px] flex items-center justify-center cursor-pointer">
           <!-- wp:paragraph -->
-          <p class="z-[1]"><a href="<?php echo home_url() . '/mieszkania' ?>">Znajdź mieszkanie</a></p>
+          <p class="z-[1]"><a href="<?php echo home_url() . '/mieszkania' ?>">Znajdź mieszka2nie</a></p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
