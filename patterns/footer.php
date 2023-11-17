@@ -70,7 +70,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:paragraph -->
-        <p class="text-[#8a8f99] text-[16px]">Odwiedź nas na facebooku</p>
+        <p class="text-[#8a8f99] text-[16px]"><a href="https://www.facebook.com/pbgorskideweloper/">Odwiedź nas na facebooku</a></p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
