@@ -89,7 +89,17 @@
               ?>
               <?php if (is_blog()) {
                 echo 'You are on a blog page';
-              } ?>
+              }
+              global $wp_query;
+
+              if (isset($wp_query) && (bool) $wp_query->is_posts_page) {
+                //static blog page
+                echo 'blog page3';
+              }
+
+              ?>
+
+
               Wszystkie</a>
             <!-- /wp:paragraph -->
           </p>
