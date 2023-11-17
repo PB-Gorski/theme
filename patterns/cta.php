@@ -31,7 +31,7 @@
       <!-- wp:group -->
       <div class="wp-block-group">
         <!-- wp:heading -->
-        <h2><span class="block text-[28px] desktop:text-[38px] font-bold mb-[40px]" data-aos="fade-right" data-aos-offset="30">Potrzebujesz więcej informacji?</span></h2>
+        <h2><span class="block text-[28px] desktop:text-[38px] font-bold mb-[20px]" data-aos="fade-right" data-aos-offset="30">Potrzebujesz więcej informacji?</span></h2>
         <!-- /wp:heading -->
 
         <!-- wp:group -->
