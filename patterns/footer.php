@@ -91,12 +91,12 @@
           <ul class="wp-block-list text-[#8a8f99] text-[14px]">
             <!-- wp:list-item -->
             <li class="mb-[10px]">
-              <a href="#">Gdańsk</a>
+              <a href="<?php echo home_url() . '/inwestycje-gdansk'; ?>">Gdańsk</a>
             </li>
             <!-- /wp:list-item -->
             <!-- wp:list-item -->
             <li>
-              <a href="#">Gdynia</a>
+              <a href="<?php echo home_url() . '/inwestycje-gdynia'; ?>">Gdynia</a>
             </li>
             <!-- /wp:list-item -->
           </ul>
