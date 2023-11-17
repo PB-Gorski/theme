@@ -7,48 +7,6 @@
  * Viewport Width: 1280
  */
 ?>
-<?php
-if (!is_front_page() && is_home()) {
-  echo 'blog page';
-};
-?>
-<?php if (is_blog()) {
-  echo 'You are on a blog page';
-}
-global $wp_query;
-
-if (isset($wp_query) && (bool) $wp_query->is_posts_page) {
-  //static blog page
-  echo 'blog page3';
-}
-
-// Get body classes as array
-$body_classes = get_body_class();
-echo 'echo body_classes: ';
-print_r($body_classes);
-echo '</br>';
-echo 'echo body_classes2: ';
-print_r(body_class());
-echo '</br>';
-echo 'echo post_classes2: ';
-print_r(get_post_class()[0]);
-echo 'echo class_exsis: ';
-print_r(class_exists('page'));
-echo class_exists('page');
-echo get_post_class()[0] == 'post-1817' ? 'ok' : 'nok';
-// Check if "blog" class exists in the array
-if (in_array("page-template-page-blog", $body_classes)) {
-  // Do stuff
-  echo 'body_class check';
-}
-
-?>
-<?php
-
-if (!is_front_page() && is_home()) {
-  echo 'blog page';
-};
-?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="blog-post" class="wp-block-group page-blog-test relative">
@@ -107,10 +65,7 @@ if (!is_front_page() && is_home()) {
 
         <!-- wp:group -->
         <div class="wp-block-group flex gap-[20px]">
-
-
           <!-- wp:core/categories {"showPostCounts":false,"displayAsDropdown":false,"showHierarchy":false} /-->
-
         </div>
         <!-- /wp:group -->
       </div>
