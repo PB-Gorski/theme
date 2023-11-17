@@ -31,7 +31,7 @@ echo 'echo body_classes2: ';
 print_r(body_class());
 echo '</br>';
 echo 'echo post_classes2: ';
-print_r(get_post_class());
+print_r(get_post_class()[0]);
 echo 'echo class_exsis: ';
 print_r(class_exists('page'));
 echo class_exists('page');
