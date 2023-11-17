@@ -31,11 +31,11 @@
       <!-- wp:group -->
       <div class="wp-block-group flex items-center jusify-center">
         <!-- wp:heading -->
-        <h2><span class="text-[28px] desktop:text-[38px] font-bold mb-[60px] desktop:mb-[40px]" data-aos="fade-right" data-aos-offset="30">Potrzebujesz więcej informacji?</span></h2>
+        <h2><span class="block text-[28px] desktop:text-[38px] font-bold mb-[60px] desktop:mb-[40px]" data-aos="fade-right" data-aos-offset="30">Potrzebujesz więcej informacji?</span></h2>
         <!-- /wp:heading -->
 
         <!-- wp:group -->
-        <div class="wp-block-group inner-cols-wrapper mb-[10px] desktop:h-[100px] desktop:flex">
+        <div class="wp-block-group inner-cols-wrapper mb-[50px] desktop:h-[100px] desktop:flex">
           <!-- wp:group -->
           <div class="wp-block-group inner-col1 mb-[30px] desktop:mb-0 desktop:w-[40%] ">
             <!-- wp:paragraph -->
