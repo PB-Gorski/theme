@@ -135,9 +135,7 @@
       <!-- wp:group -->
       <div class="wp-block-group left-col desktop:w-[60%]">
         <!-- wp:post-content /-->
-        <!-- wp:shortcode -->
-        <?php echo do_shortcode('[pdf_attachment file="1" name=" Pobierz kartę lokalu"]'); ?>
-        <!-- /wp:shortcode -->
+
       </div>
       <!-- /wp:group -->
 
