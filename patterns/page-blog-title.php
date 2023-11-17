@@ -108,7 +108,7 @@
               ?>
 
 
-              Wszystkie</a>
+              Wszystkie2</a>
             <!-- /wp:paragraph -->
           </p>
           <!-- /wp:paragraph -->
