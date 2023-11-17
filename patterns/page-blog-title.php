@@ -6,7 +6,6 @@
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
-
 ?>
 <?php
 echo (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') ? 'hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed' : null;
@@ -34,9 +33,61 @@ if (in_array("page-template-page-blog", $body_classes)) {
 }
 
 ?>
+<?php
+echo (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') ? 'hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed' : null;
+if (!is_front_page() && is_home()) {
+  echo 'blog page';
+};
+?>
+<?php if (is_blog()) {
+  echo 'You are on a blog page';
+} ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="blog-post" class="wp-block-group page-blog-test relative">
+  <!-- wp:group -->
+  <div class="wp-block-group call-back-modal-bg hidden desktop:block opacity-0 z-[-1] bg-[rgba(61,75,102,0.5)] fixed top-0 left-0 w-screen h-screen transition duration-300 ease">
+  </div>
+  <!-- /wp:group -->
+  <!-- wp:group -->
+  <div class="wp-block-group call-back-modal hidden desktop:block opacity-0 w-[850px] h-[370px] p-[45px_60px] bg-white fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] z-[-1] transition duration-300 ease">
+    <!-- wp:group -->
+    <div class="wp-block-group btn-close absolute top-[-5px] right-[15px] cursor-pointer">
+      <!-- wp:paragraph -->
+      <p class="text-[40px] text-bgDarkGray opacity-[50%]">×</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+    <!-- wp:paragraph -->
+    <p class="text-[40px] text-center font-bold">Zamów darmowe połączenie</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:paragraph -->
+    <p class="text-center text-bgDarkGray mb-[35px]">Zostaw numer, nasz konsultant oddzwoni do Ciebie</p>
+    <!-- /wp:paragraph -->
+    <!-- wp:group -->
+    <div class="wp-block-group input mb-[25px] flex">
+      <!-- wp:paragraph -->
+      <p class="w-[370px] h-[60px] bg-white text-bgDarkGray text-[14px] leading-[150%]">Numer telefonu</p>
+      <!-- /wp:paragraph -->
+      <!-- wp:group -->
+      <div class="wp-block-group group btn relative bg-[#e80d38] text-white w-[370px] h-[60px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-btnHoverRed before:transition-height before:duration-300 before:ease cursor-pointer">
+        <!-- wp:paragraph -->
+        <p class="font-bold z-[1]">Zamawiam rozmowę</p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+    <!-- wp:group -->
+    <div class="wp-block-group input checkbox">
+      <!-- wp:paragraph -->
+      <p class="text-bgDarkGray text-[12px] leading-[22px]">Wyrażam zgodę na używanie przez PB Górski sp. z o.o. S.K.A. telekomunikacyjnych urządzeń końcowych dla celów marketingu bezpośredniego, tj. aby przedstawić oferty PB Górski sp. z o.o. S.K.A. telefonicznie. Jednocześnie informujemy, że rozmowa będzie nagrywana. Administratorem Danych Osobowych jest PB Górski sp. z o.o. S.K.A. z siedzibą w Gdańsku (80-312) ul. Wita Stwosza 31A/31. tutaj</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+
   <!-- wp:group -->
   <div class="wp-block-group title-wrapper py-[20px] desktop:py-[48px] bg-[#f5f7fa]">
     <!-- wp:group -->
@@ -44,7 +95,7 @@ if (in_array("page-template-page-blog", $body_classes)) {
       <!-- wp:group -->
       <div class="wp-block-group">
         <!-- wp:heading {"level":1} -->
-        <h1><span class="block mx-auto mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold" data-aos="fade-right" data-aos-offset="30">Aktualności2</span></h1>
+        <h1><span class="block mx-auto mb-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold" data-aos="fade-right" data-aos-offset="30">Aktualności</span></h1>
         <!-- /wp:heading -->
 
         <!-- wp:group -->
@@ -52,23 +103,7 @@ if (in_array("page-template-page-blog", $body_classes)) {
           <!-- wp:paragraph -->
           <p class="inline ">
             <!-- wp:paragraph -->
-            <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn _old hidden text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer 
-
-            <?php
-            echo (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') ? 'hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed' : null;
-            if (!is_front_page() && is_home()) {
-              echo 'blog page';
-            };
-            ?>
-            <?php if (is_blog()) {
-              echo 'You are on a blog page';
-            } ?>
-            
-            ">
-
-
-
-              Wszystkie2</a>
+            <a href="<?php echo get_home_url() . '/blog'; ?>" class="inline-block allTabBtn _old hidden text-[#8A8F99] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') ? 'hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed' : null; ?>">Wszystkie</a>
             <!-- /wp:paragraph -->
           </p>
           <!-- /wp:paragraph -->
