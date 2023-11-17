@@ -99,6 +99,7 @@
 
               // Get body classes as array
               $body_classes = get_body_class();
+              echo $body_classes;
               // Check if "blog" class exists in the array
               if (in_array("page-template-page-blog", $body_classes)) {
                 // Do stuff
