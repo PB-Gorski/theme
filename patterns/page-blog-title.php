@@ -80,7 +80,17 @@
               echo 'You are on a blog page';
             } ?>
             
-            ">Wszystkie</a>
+            ">
+              <?php
+              echo (get_page_link() == 'https://pbgorski.webo.design/pl/?page_id=1817') ? 'hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed' : null;
+              if (!is_front_page() && is_home()) {
+                echo 'blog page';
+              };
+              ?>
+              <?php if (is_blog()) {
+                echo 'You are on a blog page';
+              } ?>
+              Wszystkie</a>
             <!-- /wp:paragraph -->
           </p>
           <!-- /wp:paragraph -->
