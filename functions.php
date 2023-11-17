@@ -918,3 +918,8 @@ function ymc_posts_selected($layouts, $founded_post)
 	return $layouts;
 }
 add_filter('ymc_posts_selected_148_2', 'ymc_posts_selected', 10, 2);
+
+function is_blog()
+{
+	return (is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
+}
