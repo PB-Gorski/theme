@@ -112,12 +112,12 @@
           <ul class="wp-block-list text-[#8a8f99] text-[14px]">
             <!-- wp:list-item -->
             <li class="mb-[10px]">
-              <a href="#">Kredyty</a>
+              <a href="<?php echo home_url() . '/kredyty'; ?>">Kredyty</a>
             </li>
             <!-- /wp:list-item -->
             <!-- wp:list-item -->
             <li>
-              <a href="#">Znajdź mieszkanie</a>
+              <a href="<?php echo home_url() . '/mieszkania'; ?>">Znajdź mieszkanie</a>
             </li>
             <!-- /wp:list-item -->
           </ul>
@@ -135,12 +135,12 @@
             <ul class="wp-block-list text-[#8a8f99] text-[14px]">
               <!-- wp:list-item -->
               <li class="mb-[10px]">
-                <a href="#">Aktualności</a>
+                <a href="<?php echo home_url() . '/blog'; ?>">Aktualności</a>
               </li>
               <!-- /wp:list-item -->
               <!-- wp:list-item -->
               <li>
-                <a href="#">Kontakt</a>
+                <a href="<?php echo home_url() . '/blog'; ?>">Kontakt</a>
               </li>
               <!-- /wp:list-item -->
             </ul>
