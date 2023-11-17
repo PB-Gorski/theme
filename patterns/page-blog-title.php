@@ -26,6 +26,8 @@ if (isset($wp_query) && (bool) $wp_query->is_posts_page) {
 $body_classes = get_body_class();
 echo 'echo body_classes: ';
 print_r($body_classes);
+echo 'echo body_classes2: ';
+print_r(body_class());
 // Check if "blog" class exists in the array
 if (in_array("page-template-page-blog", $body_classes)) {
   // Do stuff
@@ -39,9 +41,6 @@ if (!is_front_page() && is_home()) {
   echo 'blog page';
 };
 ?>
-<?php if (is_blog()) {
-  echo 'You are on a blog page';
-} ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="blog-post" class="wp-block-group page-blog-test relative">
