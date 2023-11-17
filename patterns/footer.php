@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group col1 mb-[25px] desktop:mb-0 desktop:w-[30%]">
       <!-- wp:group -->
-      <div class="wp-block-group logo mr-[80px] mb-[25px]">
+      <div class="wp-block-group logo mr-[80px] mb-[15px]">
         <!-- wp:paragraph -->
         <a href="<?php home_url(); ?>">
           <!-- wp:image -->
