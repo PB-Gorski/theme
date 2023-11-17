@@ -85,12 +85,12 @@
         <!-- wp:group -->
         <div class="wp-block-group inner-col1 mb-[40px] desktop:mb-0">
           <!-- wp:paragraph -->
-          <p class="mb-[32px] text-[16px] font-bold">Miasta inwestycji</p>
+          <p class="mb-[25px] text-[16px] font-bold">Miasta inwestycji</p>
           <!-- /wp:paragraph -->
           <!-- wp:list -->
           <ul class="wp-block-list text-[#8a8f99] text-[14px]">
             <!-- wp:list-item -->
-            <li class="mb-[10px]">
+            <li class="mb-[10px] hover:text-textGray transition ease duration-[300ms]">
               <a href="<?php echo home_url() . '/inwestycje-gdansk'; ?>">Gdańsk</a>
             </li>
             <!-- /wp:list-item -->
@@ -106,17 +106,17 @@
         <!-- wp:group -->
         <div class="wp-block-group inner-col2 mb-[40px] desktop:mb-0">
           <!-- wp:paragraph -->
-          <p class="mb-[32px] text-[16px] font-bold">Dla klientów</p>
+          <p class="mb-[25px] text-[16px] font-bold">Dla klientów</p>
           <!-- /wp:paragraph -->
           <!-- wp:list -->
           <ul class="wp-block-list text-[#8a8f99] text-[14px]">
             <!-- wp:list-item -->
-            <li class="mb-[10px]">
+            <li class="mb-[10px] hover:text-textGray transition ease duration-[300ms]">
               <a href="<?php echo home_url() . '/kredyty'; ?>">Kredyty</a>
             </li>
             <!-- /wp:list-item -->
             <!-- wp:list-item -->
-            <li>
+            <li class="hover:text-textGray transition ease duration-[300ms]">
               <a href="<?php echo home_url() . '/mieszkania'; ?>">Znajdź mieszkanie</a>
             </li>
             <!-- /wp:list-item -->
@@ -127,7 +127,7 @@
         <!-- wp:group -->
         <div class="wp-block-group inner-col3 mb-[40px] desktop:mb-0">
           <!-- wp:paragraph -->
-          <p class="mb-[32px] text-[16px] font-bold">Przedsiębiorstwo Budowlane Górski</p>
+          <p class="mb-[25px] text-[16px] font-bold">Przedsiębiorstwo Budowlane Górski</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group two-lists flex gap-[50px]">
@@ -139,7 +139,7 @@
               </li>
               <!-- /wp:list-item -->
               <!-- wp:list-item -->
-              <li>
+              <li class="hover:text-textGray transition ease duration-[300ms]">
                 <a href="<?php echo home_url() . '/contact'; ?>">Kontakt</a>
               </li>
               <!-- /wp:list-item -->
@@ -148,7 +148,7 @@
             <!-- wp:list -->
             <ul class="wp-block-list text-[#8a8f99] text-[14px]">
               <!-- wp:list-item -->
-              <li class="mb-[10px]">
+              <li class="mb-[10px] hover:text-textGray transition ease duration-[300ms]">
                 <a href="<?php echo home_url() . '/dla-akcjonariuszy' ?>">Dla Akcjonariuszy</a>
               </li>
               <!-- /wp:list-item -->
@@ -182,10 +182,10 @@
       <p>Wszelkie prawa zastrzeżone</p>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <p class="hover:text-textGray"><a href="<?php echo home_url() . '/rodo' ?>">RODO</a></p>
+      <p class="hover:text-textGray transition ease duration-[300ms]"><a href="<?php echo home_url() . '/rodo' ?>">RODO</a></p>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <p class="hover:text-textGray"><a href="<?php echo home_url() . '/polityka-cookies' ?>">Polityka Cookies</a></p>
+      <p class="hover:text-textGray transition ease duration-[300ms]"><a href="<?php echo home_url() . '/polityka-cookies' ?>">Polityka Cookies</a></p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
