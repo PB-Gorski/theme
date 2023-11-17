@@ -85,7 +85,7 @@
         <!-- wp:group -->
         <div class="wp-block-group inner-col1 mb-[40px] desktop:mb-0">
           <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[16px] font-bold">Miasta inwestycji</p>
+          <p class="mb-[32px] text-[16px] font-bold">Miasta inwestycji</p>
           <!-- /wp:paragraph -->
           <!-- wp:list -->
           <ul class="wp-block-list text-[#8a8f99] text-[14px]">
@@ -106,7 +106,7 @@
         <!-- wp:group -->
         <div class="wp-block-group inner-col2 mb-[40px] desktop:mb-0">
           <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[16px] font-bold">Dla klientów</p>
+          <p class="mb-[32px] text-[16px] font-bold">Dla klientów</p>
           <!-- /wp:paragraph -->
           <!-- wp:list -->
           <ul class="wp-block-list text-[#8a8f99] text-[14px]">
@@ -127,14 +127,14 @@
         <!-- wp:group -->
         <div class="wp-block-group inner-col3 mb-[40px] desktop:mb-0">
           <!-- wp:paragraph -->
-          <p class="mb-[20px] text-[16px] font-bold">Przedsiębiorstwo Budowlane Górski</p>
+          <p class="mb-[32px] text-[16px] font-bold">Przedsiębiorstwo Budowlane Górski</p>
           <!-- /wp:paragraph -->
           <!-- wp:group -->
           <div class="wp-block-group two-lists flex gap-[50px]">
             <!-- wp:list -->
             <ul class="wp-block-list text-[#8a8f99] text-[14px]">
               <!-- wp:list-item -->
-              <li class="mb-[10px]">
+              <li class="mb-[10px] hover:text-textGray transition ease duration-[300ms]">
                 <a href="<?php echo home_url() . '/blog'; ?>">Aktualności</a>
               </li>
               <!-- /wp:list-item -->
