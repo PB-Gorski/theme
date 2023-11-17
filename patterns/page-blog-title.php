@@ -97,6 +97,14 @@
                 echo 'blog page3';
               }
 
+              // Get body classes as array
+              $body_classes = get_body_class();
+              // Check if "blog" class exists in the array
+              if (in_array("page-template-page-blog", $body_classes)) {
+                // Do stuff
+                echo 'body_class check';
+              }
+
               ?>
 
 
