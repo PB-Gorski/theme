@@ -140,7 +140,7 @@
               <!-- /wp:list-item -->
               <!-- wp:list-item -->
               <li>
-                <a href="<?php echo home_url() . '/contakt'; ?>">Kontakt</a>
+                <a href="<?php echo home_url() . '/contact'; ?>">Kontakt</a>
               </li>
               <!-- /wp:list-item -->
             </ul>
