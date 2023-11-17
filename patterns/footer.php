@@ -149,7 +149,7 @@
             <ul class="wp-block-list text-[#8a8f99] text-[14px]">
               <!-- wp:list-item -->
               <li class="mb-[10px]">
-                <a href="#">Dla Akcjonariuszy</a>
+                <a href="<?php echo home_url() . '/dla-akcjonariuszy' ?>">Dla Akcjonariuszy</a>
               </li>
               <!-- /wp:list-item -->
             </ul>
