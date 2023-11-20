@@ -144,6 +144,10 @@
         <!-- wp:shortcode -->
         [pdf_attachment file="1" name=" Pobierz kartę lokalu"]
         <!-- /wp:shortcode -->
+        <!-- wp:shortcode -->
+        <?php echo do_shortcode('[pdf_attachment file="1" name=" Pobierz kartę lokalu"]'); ?>
+        <!-- /wp:shortcode -->
+
         <!-- wp:paragraph -->
         <p class="uppercase text-[10px] text-[#a1a7b2]">cena lokalu</p>
         <!-- /wp:paragraph -->
