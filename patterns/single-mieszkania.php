@@ -141,6 +141,9 @@
 
       <!-- wp:group -->
       <div class="wp-block-group right-col desktop:w-[40%] desktop:pl-[40px] desktop:pt-[50px] pt-0">
+        <!-- wp:shortcode -->
+        [pdf_attachment file="1" name=" Pobierz kartę lokalu"]
+        <!-- /wp:shortcode -->
         <!-- wp:paragraph -->
         <p class="uppercase text-[10px] text-[#a1a7b2]">cena lokalu</p>
         <!-- /wp:paragraph -->
