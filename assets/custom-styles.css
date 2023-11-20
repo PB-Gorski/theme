@@ -1064,6 +1064,9 @@ background-color: #e8fbff!important;
   display: none!important;
 }
 /* btn download */
+.btn-download-mieszkanie a{
+  position: relative;
+}
 .single-mieszkania .entry-content a{
   position: absolute!important;
   top: 230px;
