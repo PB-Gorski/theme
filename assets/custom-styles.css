@@ -1064,11 +1064,17 @@ background-color: #e8fbff!important;
   display: none!important;
 }
 /* btn download */
-.btn-download-mieszkanie a,
 .btn-download-mieszkanie p{
   height: 100%;
   width: 100%;
+}
+.btn-download-mieszkanie a{
+  height: 100%;
+  width: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .single-mieszkania .entry-content a{
   position: absolute!important;
