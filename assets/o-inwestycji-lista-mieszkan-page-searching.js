@@ -998,8 +998,9 @@ window.addEventListener("load", function() {
       // }
       if(pageID.classList.contains('banner-lista-mieszkan-osiedle-srebrniki')){
         filterID = '.data-target-ymc3';
-      }else if(document.body.classList.contains('page-id-1932')){
+      }else if(pageID.classList.contains('banner-lista-mieszkan-sw-piotra')){
         filterID = '.data-target-ymc4';
+        console.log('sw piotra test22222');
       }else if(document.body.classList.contains('page-id-1723')){
         filterID = '.data-target-ymc7';
       }else if(document.body.classList.contains('page-id-1934')){
