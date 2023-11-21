@@ -1,5 +1,4 @@
 //TODO: Structural refactor and naming convention needed
-//TODO: Remove hard coded connection to pages with have apartament listing.
 //TODO: Remove loop to have only one event listener that catch only few elements
 //TODO: Remove function from "load" and "click" and "loop" scope for optmisation. Refactor
 
@@ -8,11 +7,6 @@ window.addEventListener("load", function() {
   if(document.body.classList.contains('home') ||
   document.body.classList.contains('_page-parent') ||
   document.body.classList.contains('_page-child')){
-
-
-
-
-
 
     console.log('home');
     // document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
