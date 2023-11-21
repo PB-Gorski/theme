@@ -7,11 +7,11 @@ window.addEventListener("load", function() {
   let mainPageID = document.querySelector('#Banner');
   if(document.body.classList.contains('page-parent') || 
   document.body.classList.contains('page-child') ||
-    mainPageID.classList.contains('banner-lista-mieszkan-osiedle-srebrniki') ||
-    mainPageID.classList.contains('banner-o-inwestycji-torunska-16') ||
-    mainPageID.classList.contains('banner-lista-mieszkan-torunska-16') ||
-    mainPageID.classList.contains('banner-lista-mieszkan-wiezycka-folwark') ||
-    mainPageID.classList.contains('banner-lista-mieszkan-sw-piotra')) {
+    mainPageID?.classList.contains('banner-lista-mieszkan-osiedle-srebrniki') ||
+    mainPageID?.classList.contains('banner-o-inwestycji-torunska-16') ||
+    mainPageID?.classList.contains('banner-lista-mieszkan-torunska-16') ||
+    mainPageID?.classList.contains('banner-lista-mieszkan-wiezycka-folwark') ||
+    mainPageID?.classList.contains('banner-lista-mieszkan-sw-piotra')) {
 
 
 
