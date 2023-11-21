@@ -1007,7 +1007,8 @@ window.addEventListener("load", function() {
       }else if(pageID.classList.contains('banner-lista-mieszkan-torunska-16')){
         filterID = '.data-target-ymc5';
         console.log('torunska test22222');
-      }else if(document.body.classList.contains('page-id-1717')){
+      }else if(pageID.classList.contains('banner-o-inwestycji-wiezycka-folwark')){
+        console.log('sw folwark o inwest st22222');
         filterID = '.data-target-ymc7';
       }else if(pageID.classList.contains('banner-lista-mieszkan-wiezycka-folwark')){
         filterID = '.data-target-ymc6';
