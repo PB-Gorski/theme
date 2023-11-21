@@ -4,13 +4,14 @@ window.addEventListener("load", function() {
     document.cookie = 'filteredTermsFromCookies' +"=; Path=/pl; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
   }
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
+  let mainPageID = document.querySelector('#Banner');
   if(document.body.classList.contains('page-parent') || 
   document.body.classList.contains('page-child') ||
-    document.body.classList.contains('page-id-1926') ||
-    document.body.classList.contains('page-id-1723') ||
-    document.body.classList.contains('page-id-1934') ||
-    document.body.classList.contains('page-id-1936') ||
-    document.body.classList.contains('page-id-1932')) {
+    mainPageID.classList.contains('banner-lista-mieszkan-osiedle-srebrniki') ||
+    mainPageID.classList.contains('banner-o-inwestycji-torunska-16') ||
+    mainPageID.classList.contains('banner-lista-mieszkan-torunska-16') ||
+    mainPageID.classList.contains('banner-lista-mieszkan-wiezycka-folwark') ||
+    mainPageID.classList.contains('banner-lista-mieszkan-sw-piotra')) {
 
 
 
