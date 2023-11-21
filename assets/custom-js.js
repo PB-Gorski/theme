@@ -339,7 +339,7 @@ window.addEventListener("load", function() {
   `;
   
   let pageBlogID = document.querySelector('#blog-post');
-  if(pageBlogID.classList.contains('page-id-189') || window.location.href.search('category')>20){
+  if(pageBlogID.classList.contains('page-blog-title') || window.location.href.search('category')>20){
     console.log('inserted js');
     categoryList.insertAdjacentHTML('afterbegin', link);
   };
