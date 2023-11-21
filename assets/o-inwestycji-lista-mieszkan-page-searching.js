@@ -1234,23 +1234,49 @@ window.addEventListener("load", function() {
 
 
       // filter ID by page id
+      let pageID = document.querySelector('#Banner');
       let filterID = '';
-      if(document.body.classList.contains('page-id-1926')){
+      // if(document.body.classList.contains('page-id-1926')){
+      //   filterID = '.data-target-ymc3';
+      // }else if(document.body.classList.contains('page-id-1932')){
+      //   filterID = '.data-target-ymc4';
+      // }else if(document.body.classList.contains('page-id-1723')){
+      //   filterID = '.data-target-ymc7';
+      // }else if(document.body.classList.contains('page-id-1934')){
+      //   console.log('ymc5', filterID);
+      //   filterID = '.data-target-ymc5';
+      // }else if(document.body.classList.contains('page-id-1717')){
+      //   console.log('ymc7', filterID);
+      //   filterID = '.data-target-ymc7';
+      // }else if(document.body.classList.contains('page-id-1936')){
+      //   console.log('ymc6', filterID);
+      //   filterID = '.data-target-ymc6';
+      // }
+      
+
+      if(pageID.classList.contains('banner-lista-mieszkan-osiedle-srebrniki')){
         filterID = '.data-target-ymc3';
-      }else if(document.body.classList.contains('page-id-1932')){
+      }else if(pageID.classList.contains('banner-lista-mieszkan-sw-piotra')){
         filterID = '.data-target-ymc4';
-      }else if(document.body.classList.contains('page-id-1723')){
+        console.log('sw piotra test22222');
+      }else if(pageID.classList.contains('banner-o-inwestycji-torunska-16')){
+        console.log('sw torunska o inwest st22222');
         filterID = '.data-target-ymc7';
-      }else if(document.body.classList.contains('page-id-1934')){
-        console.log('ymc5', filterID);
+      }else if(pageID.classList.contains('banner-lista-mieszkan-torunska-16')){
         filterID = '.data-target-ymc5';
-      }else if(document.body.classList.contains('page-id-1717')){
-        console.log('ymc7', filterID);
+        console.log('torunska test22222');
+      }else if(pageID.classList.contains('banner-o-inwestycji-wiezycka-folwark')){
+        console.log('sw folwark o inwest st22222');
         filterID = '.data-target-ymc7';
-      }else if(document.body.classList.contains('page-id-1936')){
-        console.log('ymc6', filterID);
+      }else if(pageID.classList.contains('banner-lista-mieszkan-wiezycka-folwark')){
         filterID = '.data-target-ymc6';
+        console.log('folwrk test22222');
       }
+
+
+
+
+
 
       YMCTools({
         target: filterID,
