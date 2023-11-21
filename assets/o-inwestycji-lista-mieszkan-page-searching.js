@@ -1001,7 +1001,8 @@ window.addEventListener("load", function() {
       }else if(pageID.classList.contains('banner-lista-mieszkan-sw-piotra')){
         filterID = '.data-target-ymc4';
         console.log('sw piotra test22222');
-      }else if(document.body.classList.contains('page-id-1723')){
+      }else if(pageID.classList.contains('banner-o-inwestycji-torunska-16')){
+        console.log('sw torunska o inwest st22222');
         filterID = '.data-target-ymc7';
       }else if(pageID.classList.contains('banner-lista-mieszkan-torunska-16')){
         filterID = '.data-target-ymc5';
