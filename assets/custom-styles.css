@@ -1152,15 +1152,15 @@ background-color: #e8fbff!important;
 }
 
 /* page blog */
-.page-blog-test .wp-block-categories-list{
+.page-blog-title .wp-block-categories-list{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-.page-blog-test .wp-block-categories-list li{
+.page-blog-title .wp-block-categories-list li{
   color: #8a8f99;
 }
-.page-blog-test .wp-block-categories-list li:hover{
+.page-blog-title .wp-block-categories-list li:hover{
   color: #2E384D;
   text-decoration: underline 2px;
   text-underline-offset: 4px;
