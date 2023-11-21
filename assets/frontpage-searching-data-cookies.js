@@ -199,23 +199,6 @@ window.addEventListener("load", function() {
           }else{
             // console.log('error');
           };
-
-
-          // menuActiveSpan.dataset.label = choosenOption;
-          // menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
-
-          // console.log('item: ', menuActiveSpan.getAttribute('data-label'));
-          // console.log('item category: ', menuActiveTitle);
-          // console.log('item termid: ', +choosenOptionID);
-
-          // if (tempMiastoArr.length == 0){
-          //   menuActiveSpan.innerHTML = '';
-          //   menuActiveSpan.innerHTML = 'Wybierz:';
-          //   console.log('Wybierz');
-          // }else{
-          //   console.log('wybrano miasto');
-          // }
-
         };
         showActiveFilterName();
       });
@@ -487,50 +470,9 @@ window.addEventListener("load", function() {
       // }).apiTermUpdate();
       return filteredTermsIDMetraz;
     };
-    // console.log('run searching metraz',runSearchingMetrazFrontPage());
-
-    // let menuActive = document.querySelectorAll('.menu-active');
-    // const searchBarTest = document.querySelector('#inwestycje')
-    // menuActive.forEach(menu => {
-    //   menu.addEventListener('click', () => {
-    //     if(searchBarTest.classList.contains('z-[1]')){
-    //       searchBarTest.classList.remove('z-[1]');
-    //       searchBarTest.classList.add('z-[0]');
-
-    //     }else{
-    //       searchBarTest.classList.remove('z-[0]');
-    //       searchBarTest.classList.add('z-[1]');
-    //     }
-    //   });
-    // });
-
-    // const searchBarTest = document.querySelector('#inwestycje')
-    // document.querySelectorAll('.menu-active').forEach(activeMenu =>{
-    //   activeMenu.addEventListener('click', () =>{
-    //     searchBarTest.classList.toggle('z-[0]');
-    //     document.querySelectorAll('.menu-passive').forEach(activeItemPassive =>{
-    //       // console.log('click2');
-    //       if(activeItemPassive.style.display == 'block'){
-    //         activeItemPassive.classList.toggle('hidden')
-    //       }else if(!activeItemPassive.style.display == 'block'){
-    //         activeItemPassive.classList.remove('hidden')
-    //       };
-
-    //       if(!activeItemPassive.classList.contains('hidden')){
-    //         activeItemPassive.previousElementSibling.childNodes[2].classList.remove('arrow-down');
-    //         activeItemPassive.previousElementSibling.childNodes[2].innerHTML = 'x';
-    //       }else{
-    //         activeItemPassive.previousElementSibling.childNodes[2].classList.add('arrow-down');
-    //         activeItemPassive.previousElementSibling.childNodes[2].innerHTML = '';
-    //       };
-    //     });
-    //   })
-    // });
-
 
     document.body.addEventListener('click', () => {
       console.log('body click');
-
     });
 
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
@@ -538,9 +480,7 @@ window.addEventListener("load", function() {
         e.target.parentNode.parentNode.style.display = 'none';
         e.target.parentNode.parentNode.previousElementSibling.childNodes[1].classList.toggle('newAfter');
         console.log('parent parent: ',e.target.parentNode.parentNode);
-
-      })
-
+      });
     });
 
     document.querySelectorAll('.menu-active').forEach(menuActive =>{
@@ -548,9 +488,6 @@ window.addEventListener("load", function() {
         document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
           customDrop.classList.remove('dropdown__list_active')
         });
-
-        // e.target.classList.replace('arrow-down', 'newAfter');
-        // e.target.classList.replace('newAfter', 'arrow-down');
         e.target.classList.toggle('newAfter');
       })
     });
@@ -572,18 +509,12 @@ window.addEventListener("load", function() {
     // -------------------------------------------------------------------------------------
   };
 
-
-
-
-
   document.querySelectorAll('.taxonomy-category').forEach(item =>{
     if (item.childNodes[0].innerHTML == 'Bez kategorii'){
       item.classList.add('hidden');
     }
   });
 
-  // document.cookie = 'filteredTermsFromCookies' + "=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
-  // document.cookie = 'filteredTermsFromCookies' + "=; Path=/pl; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
 
 
 

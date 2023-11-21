@@ -26,9 +26,7 @@ window.addEventListener("load", function() {
     let tempTerminArr = [];
     let tempInneArr = [];
     let passiveOptions = document.querySelectorAll('.menu-passive__item')
-    // let passiveOptions = document.querySelectorAll('.menu-passive__item')
     let counter2 = 0;
-
 
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
@@ -215,12 +213,6 @@ window.addEventListener("load", function() {
       });
     });
 
-
-    // dropDowns.forEach(item => {
-    //   item.addEventListener('click', choise)
-    // });
-
-
     dropDowns.forEach(item => {
       item.addEventListener('click',(e)=>{
         choise(e);
@@ -294,57 +286,6 @@ window.addEventListener("load", function() {
       });
     };
 
-    // wyszukiwanie mieszkan po filtrach (metraz)
-    // setting chosen option in active window
-    // let passiveOptionsMetraz = document.querySelectorAll('.menu-passive__item');
-    // let counter2 = 0;
-    // passiveOptions.forEach(item => {
-    //   item.addEventListener('click', () => {
-    //     let optionSpan = document.createElement('span');
-    //     let choosenOption = item.childNodes[1].dataset.name;
-    //     let stopAdding = false;
-    //     optionSpan.innerText = choosenOption;
-
-    //     let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
-    //     choosenOptionsArr.forEach(option => {
-    //       if(option.innerText == choosenOption){
-    //         console.log('have child span');
-    //         stopAdding = true;
-    //         console.log('choosen option text for cleaning', choosenOption);
-    //         console.log('clear existing span');
-    //         option.remove('span');
-    //       };
-    //     });
-
-    //     if(!stopAdding){
-    //       console.log('check for start ', item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName);
-    //       if(item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName === undefined){
-    //         console.log('undefined span 0');
-    //       }else{
-    //         console.log('span wypelniony');
-    //       }
-
-    //       if(counter>2){
-            
-    //         console.log('conter>1');
-    //         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan);
-    //         console.log(counter2);
-    //       }else{
-    //         console.log('else');
-
-    //         let optionSpan2 = document.createElement('span');
-    //         let choosenOption2 = item.childNodes[1].dataset.name;
-    //         optionSpan2.innerText = choosenOption2;
-    //         item.parentNode.previousElementSibling.childNodes[0].innerText = '';
-    //         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan2);
-    //         counter2++;
-    //       };
-    //     }
-    //     stopAdding = false;
-    //     console.log(stopAdding);
-    //   });
-    // });
-
     // metraz selects
     const mainDropDownMetraz = document.querySelectorAll('.dropdown__value-metraz');
     const dropDownListMetraz = document.querySelectorAll('.dropdown__list-metraz');
@@ -370,18 +311,12 @@ window.addEventListener("load", function() {
       });
     });
 
-    // dropDownsMetraz.forEach(item => {
-    //   item.addEventListener('click', choiseMetraz)
-    // });
-
     dropDownsMetraz.forEach(item => {
       item.addEventListener('click', (e) => {
         choiseMetraz(e);
         item.parentNode.parentNode.previousElementSibling.classList.remove('toggle-x');
       })
     });
-
-
 
     function choiseMetraz(e){
       e.preventDefault();
@@ -565,7 +500,7 @@ window.addEventListener("load", function() {
               document.referrer.search('galeria-wiezycka-folwark') > 20 ||
               document.referrer.search('kronika-budowy-wiezycka-folwark') > 20){
               document.cookie = "filteredTermsFromCookies=81;";
-    }
+    };
 
 
 
@@ -1047,13 +982,11 @@ window.addEventListener("load", function() {
 
       wp.hooks.addAction('ymc_after_loaded_data_148_4', 'smartfilter', function(){
         setTimeout(() => {
-
           document.cookie = "filteredTermsFromCookies=;";
           document.cookie = 'filteredTermsFromCookies=; path=/';
           document.cookie = 'filteredTermsFromCookies=; path=/pl';
           console.log('test cookies');
         }, 1000);
-
      });
 
       deleteAllCookies();
@@ -1064,9 +997,6 @@ window.addEventListener("load", function() {
 
 
     // ------------------------------------------------------------------------------
-
-    // priceMinValue = cenaOd;
-    // priceMaxValue = cenaDo;
 
     function runSearchingPrice(){
       priceValueArr = [];
@@ -1274,11 +1204,6 @@ window.addEventListener("load", function() {
         console.log('folwrk test22222');
       }
 
-
-
-
-
-
       YMCTools({
         target: filterID,
         terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join(),      
@@ -1291,14 +1216,6 @@ window.addEventListener("load", function() {
 
     // *******************************************************
 
-
-
-
-
-  
-    
-
-
     wp.hooks.addAction('ymc_before_loaded_data_148_2', 'smartfilter', function(){
 
     });
@@ -1310,19 +1227,6 @@ window.addEventListener("load", function() {
         // searchBarTest.classList.toggle('z-[0]');
         document.querySelectorAll('.menu-passive').forEach(activeItemPassive =>{
           // console.log('click2');
-          // if(activeItemPassive.style.display == 'block'){
-          //   activeItemPassive.classList.toggle('hidden')
-          // }else if(!activeItemPassive.style.display == 'block'){
-          //   activeItemPassive.classList.remove('hidden')
-          // };
-  
-          // if(!activeItemPassive.classList.contains('hidden')){
-          //   activeItemPassive.previousElementSibling.childNodes[2].classList.remove('arrow-down');
-          //   activeItemPassive.previousElementSibling.childNodes[2].innerHTML = 'x';
-          // }else{
-          //   activeItemPassive.previousElementSibling.childNodes[2].classList.add('arrow-down');
-          //   activeItemPassive.previousElementSibling.childNodes[2].innerHTML = '';
-          // };
         });
       })
     });
@@ -1332,28 +1236,7 @@ window.addEventListener("load", function() {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
         // activeItem.style.display = 'none';  
-  
-  
-        // if( !activeItem.style.display == 'none' ){
-        //   console.log('block');
-        //   activeItem.previousElementSibling.childNodes[2].classList.remove('arrow-down');
-        //   activeItem.previousElementSibling.childNodes[2].innerHTML = 'x';
-        // }else{
-        //   console.log('none');
-        //   activeItem.previousElementSibling.childNodes[2].classList.add('arrow-down');
-        //   activeItem.previousElementSibling.childNodes[2].innerHTML = '';
-        // };
       });
-  
-      // document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
-      //   if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
-      //     activeItem2.classList.remove('dropdown__list_active-metraz');  
-      //     activeItem2.classList.remove('dropdown__list_active');  
-      //     activeItem2.style.display = 'none';  
-      //   }
-      // });
-
-  
     });
 
     wp.hooks.addAction('ymc_after_loaded_data_148_3', 'smartfilter', function(class_name, response){
@@ -1469,7 +1352,6 @@ window.addEventListener("load", function() {
 
     // end if page
     // -------------------------------------------------------------------------------------
-
   };
 
 
