@@ -1003,12 +1003,14 @@ window.addEventListener("load", function() {
         console.log('sw piotra test22222');
       }else if(document.body.classList.contains('page-id-1723')){
         filterID = '.data-target-ymc7';
-      }else if(document.body.classList.contains('page-id-1934')){
+      }else if(pageID.classList.contains('banner-lista-mieszkan-torunska-16')){
         filterID = '.data-target-ymc5';
+        console.log('torunska test22222');
       }else if(document.body.classList.contains('page-id-1717')){
         filterID = '.data-target-ymc7';
-      }else if(document.body.classList.contains('page-id-1936')){
+      }else if(pageID.classList.contains('banner-lista-mieszkan-wiezycka-folwark')){
         filterID = '.data-target-ymc6';
+        console.log('folwrk test22222');
       }
 
       function runFromCookies(){
