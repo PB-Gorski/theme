@@ -22,7 +22,7 @@ figure div{
     height: 210px!important;
 }
 @media only screen and (min-width: 1024px){
-    .editor-styles-wrapper #filter-layout3-filter-layout3>.filter-entry {
+    .editor-styles-wrapper #filter-layout3-filter-layout3 > .filter-entry {
         height: 210px!important;
         position: relative;
         row-gap: 2px;
