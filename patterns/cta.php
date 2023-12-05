@@ -55,7 +55,7 @@
           <div class="wp-block-group inner-col1 w-[350px] mb-[60px] desktop:mb-[30px] desktop:mb-0 text-center">
             <!-- wp:paragraph -->
             <p class="mx-auto mb-[10px] w-fit desktop:mb-[30px] block" data-aos="fade-up" data-aos-offset="30">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Warstwa_1" x="0px" y="0px" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Warstwa_1" x="0px" y="0px" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve" class="w-[80px] h-[80px]">
                 <g class="st0">
                   <path class="st1" d="M21.12,53.06l0-13.46c0-3.7,2.73-7.03,6.42-7.3c2.12-0.15,4.04,0.66,5.4,2.01c1.25,1.25,2.03,2.98,2.03,4.89   v13.85h9.23c3.82,0,6.92-3.1,6.92-6.92v-25.3c0-1.5-0.74-2.91-1.96-3.79L29.36,3.2c-0.78-0.55-1.85-0.55-2.63,0L6.93,17.05   c-1.22,0.88-1.96,2.29-1.96,3.79v25.3c0,3.82,3.1,6.92,6.92,6.92H21.12z" />
                   <line class="st1" x1="25.74" y1="18.44" x2="30.35" y2="18.44" />
@@ -84,7 +84,7 @@
           <div class="wp-block-group inner-col1 w-[350px] mb-[60px] desktop:mb-[30px] desktop:mb-0 text-center">
             <!-- wp:paragraph -->
             <p class="mx-auto mb-[10px] w-fit desktop:mb-[30px] block" data-aos="fade-up" data-aos-offset="30">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Warstwa_1" x="0px" y="0px" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Warstwa_1" x="0px" y="0px" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve" class="w-[80px] h-[80px]">
                 <g class="st0">
                   <path class="st1" d="M21.12,53.06l0-13.46c0-3.7,2.73-7.03,6.42-7.3c2.12-0.15,4.04,0.66,5.4,2.01c1.25,1.25,2.03,2.98,2.03,4.89   v13.85h9.23c3.82,0,6.92-3.1,6.92-6.92v-25.3c0-1.5-0.74-2.91-1.96-3.79L29.36,3.2c-0.78-0.55-1.85-0.55-2.63,0L6.93,17.05   c-1.22,0.88-1.96,2.29-1.96,3.79v25.3c0,3.82,3.1,6.92,6.92,6.92H21.12z" />
                   <line class="st1" x1="25.74" y1="18.44" x2="30.35" y2="18.44" />
