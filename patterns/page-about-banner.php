@@ -44,7 +44,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group col2 w-fit h-[68px] flex gap-[25px] desktop:gap-[15px] items-center desktop:border-r-[1px] desktop:border-[rgba(255,255,255,0.2)]">
+        <div class="wp-block-group col2 desktop:px-[20px] w-fit h-[68px] flex gap-[25px] desktop:gap-[15px] items-center desktop:border-r-[1px] desktop:border-[rgba(255,255,255,0.2)]">
           <!-- wp:paragraph -->
           <span id="count2" class="text-[48px] font-bold" data-aos="fade-up" data-aos-offset="30">125</span>
           <!-- /wp:paragraph -->
@@ -61,7 +61,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group col3 w-fit h-[68px] flex gap-[25px] desktop:gap-[15px] items-center">
+        <div class="wp-block-group col3 desktop:px-[20px] w-fit h-[68px] flex gap-[25px] desktop:gap-[15px] items-center">
           <!-- wp:paragraph -->
           <span id="count3" class="text-[48px] font-bold" data-aos="fade-up" data-aos-offset="30">4000</span>
           <!-- /wp:paragraph -->
