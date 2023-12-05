@@ -63,15 +63,19 @@
       <!-- wp:group -->
       <div class="wp-block-group socials flex items-center gap-[6px]">
         <!-- wp:group -->
-        <div class="wp-block-group btn-fb bg-[#2d384c] text-white text-[27px] font-semibold w-[30px] h-[30px] text-center rounded-[5px]">
+        <div class="wp-block-group socials flex items-center gap-[6px]">
+          <!-- wp:group -->
+          <div class="wp-block-group btn-fb bg-[#2d384c] text-white text-[27px] font-semibold w-[30px] h-[30px] text-center rounded-[5px]">
+            <!-- wp:paragraph -->
+            <p>f</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
           <!-- wp:paragraph -->
-          <p>f</p>
+          <p class="text-[#8a8f99] hover:text-textGray text-[16px] transition ease duration-[300ms]"><a href="https://www.facebook.com/pbgorskideweloper/">Odwiedź nas na facebooku</a></p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
-        <!-- wp:paragraph -->
-        <p class="text-[#8a8f99] hover:text-textGray text-[16px] transition ease duration-[300ms]"><a href="https://www.facebook.com/pbgorskideweloper/">Odwiedź nas na facebooku</a></p>
-        <!-- /wp:paragraph -->
         <!-- wp:group -->
         <div class="wp-block-group flex gap-[10px]">
           <!-- wp:paragraph -->
