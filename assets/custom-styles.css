@@ -1180,6 +1180,7 @@ background-color: #e8fbff!important;
 }
 .page-numbers.current{
   color:#2e384d;
+  font-weight: 500;
 }
 .page-numbers:hover{
   color: #95002E;
