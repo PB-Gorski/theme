@@ -237,7 +237,7 @@
                     $alias3 = trim($alias3, '-');
                     $alias3 = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias3);
                     $alias3 = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias3);
-                    $alias3 = strtr($alias3, ' ', '-');
+                    $alias3 = strtr($taxInwestycjeName, ' ', '-');
                 ?>
 
                     <!-- wp:list-item -->
