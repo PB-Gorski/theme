@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) {
   </div>
   <div class="flex" style="max-width:560px">
     <input id="check1" cols="50" row="10" name="check1" type="checkbox" />
-    <p class="ml-[10px] mb-[20px] text-white text-[13px] leading-[28px]">Wyrażam zgodę na otrzymywanie informacji handlowych w tym marketingowych od PB Górski Sp. z o.o. SKA drogą elektroniczną (za pośrednictwem adresu e-mail). <a href="<?php echo home_url() . '/rodo' ?>">Więcej informacji o administracji danych.</a></p>
+    <p class="ml-[10px] mb-[20px] text-white text-[13px] leading-[28px]">Wyrażam zgodę na otrzymywanie informacji handlowych w tym marketingowych od PB Górski Sp. z o.o. SKA drogą elektroniczną (za pośrednictwem adresu e-mail). <a href="<?php echo home_url() . '/rodo' ?>" class="hover:text-primaryRed">Więcej informacji o administracji danych.</a></p>
   </div>
   <!-- <input type="submit" value="Submit"> -->
 
