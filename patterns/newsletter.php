@@ -22,7 +22,7 @@
     <!-- /wp:heading -->
 
     <!-- wp:group -->
-    <div class="wp-block-group mb-[15px] desktop:flex justifu">
+    <div class="wp-block-group mb-[15px] desktop:flex justify-center items-center">
       <!-- wp:shortcode -->
       <?php echo do_shortcode('[contact-form-7 id="e479141" title="newsletter"]'); ?>
       <!-- /wp:shortcode -->
