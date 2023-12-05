@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
 ?>
 
 <div class="newsletter wrapper">
-  <div class="mx-auto desktop:flex text-center">
+  <div class="mx-auto desktop:flex justify-center items-center text-center">
     <!-- <div> [email* your-email id:your-email ] </div> -->
     <input id="your-email" name="your-email" type="text" placeholder="Adres e-mail" class="input-newsletter mb-[20px] w-[370px] h-[55px] bg-white text-[20px] leading-[150%]">
     <div>
