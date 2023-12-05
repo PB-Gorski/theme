@@ -1175,7 +1175,11 @@ background-color: #e8fbff!important;
   text-decoration-color: #b22944;
 }
 .page-numbers{
+  color:#8a8f99;
   transition: color 0.3s ease;
+}
+.page-numbers.current{
+  color:#2e384d;
 }
 .page-numbers:hover{
   color: #95002E;
