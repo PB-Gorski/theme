@@ -121,7 +121,7 @@
                   <!-- wp:list-item -->
                   <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
                     <!-- wp:paragraph -->
-                    <p class=""><a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38]"><?php echo $tax->name; ?></a></p>
+                    <p class=""><a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed"><?php echo $tax->name; ?></a></p>
                     <!-- /wp:paragraph -->
                   </li>
                   <!-- /wp:list-item -->
@@ -151,7 +151,7 @@
                 </li>
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
-                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
                   <a href="<?php echo home_url() . '/lokale' ?>">Lista lokali użytkowych &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
@@ -222,7 +222,7 @@
                 ?>
 
                     <!-- wp:list-item -->
-                    <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                    <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
                       <a href="#"><?php echo $taxInwestycjeName; ?></a>
                     </li>
                     <!-- /wp:list-item -->
@@ -236,7 +236,7 @@
               <!-- wp:group -->
               <div class="wp-block-group">
                 <!-- wp:paragraph -->
-                <a href="#" class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">Gdański: <span class="font-medium">Wszystkie inwestycje &rarr;</span></a>
+                <a href="#" class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Gdański: <span class="font-medium">Wszystkie inwestycje &rarr;</span></a>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -256,12 +256,12 @@
               <!-- wp:list -->
               <ul class="wp-block-list text-textGray font-bold">
                 <!-- wp:list-item -->
-                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
                   <a href="#">Lista mieszkań &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
-                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
                   <a href="#">Lista lokali uytkowych &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
@@ -331,7 +331,7 @@
                 ?>
 
                     <!-- wp:list-item -->
-                    <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                    <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
                       <a href="#"><?php echo $taxInwestycjeName; ?></a>
                     </li>
                     <!-- /wp:list-item -->
@@ -358,12 +358,12 @@
               <!-- wp:list -->
               <ul class="wp-block-list text-textGray font-bold">
                 <!-- wp:list-item -->
-                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
                   <a href="#">Lista mieszkań &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
-                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
                   <a href="#">Lista lokali uytkowych &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
