@@ -137,7 +137,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Postaw na nowoczesną architekturę</span></h2>
         <!-- /wp:heading -->
         <!-- wp:paragraph -->
-        <span class="block text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W ofercie znajdują się przestronne i doświetlone mieszkania oraz lokale usługowe o wygodnych rozkładach z możliwością aranżacji według własnych potrzeb. W każdym budynku znajduje się cichobieżna winda. Mieszkania na parterze posiadają ogródki, a lokale położone na najwyższych piętrach widok na Zatokę Gdańską. Ofertę multimedialną na terenie osiedla zapewnia <a href="https://www.upc.pl/">https://www.upc.pl/</a></span>
+        <span class="block text-[18px] text-[#8a8f99] text-primaryRed" data-aos="fade-right" data-aos-offset="30">W ofercie znajdują się przestronne i doświetlone mieszkania oraz lokale usługowe o wygodnych rozkładach z możliwością aranżacji według własnych potrzeb. W każdym budynku znajduje się cichobieżna winda. Mieszkania na parterze posiadają ogródki, a lokale położone na najwyższych piętrach widok na Zatokę Gdańską. Ofertę multimedialną na terenie osiedla zapewnia <a href="https://www.upc.pl/">https://www.upc.pl/</a></span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -166,7 +166,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <span class="block text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki położone jest z dala zgiełku głównych ulic, z dostępem do licznych terenów rekreacyjnych. Jednocześnie położenie na granicy gdańskich dzielnic Wrzeszcza oraz Moreny zapewnia nie tylko pełne zaplecze handlowe, ale również świetne skomunikowanie (w bezpośrednim sąsiedztwie tramwaje, autobusy, przystanek PKM).</span>
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
-        <a href="<?php echo home_url() . '/lokalizacja'; ?>" class="cursor-pointer" data-aos="fade-right" data-aos-offset="30">Więcej o lokalizacji &rarr;</a>
+        <a href="<?php echo home_url() . '/lokalizacja'; ?>" class="cursor-pointer text-primaryRed" data-aos="fade-right" data-aos-offset="30">Więcej o lokalizacji &rarr;</a>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
