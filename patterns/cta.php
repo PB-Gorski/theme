@@ -27,30 +27,6 @@
             <!-- wp:paragraph -->
             <p class="mx-auto mb-[10px] w-fit desktop:mb-[30px] block" data-aos="fade-up" data-aos-offset="30">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Warstwa_1" x="0px" y="0px" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve" class="w-[80px] h-[80px]">
-                <style type="text/css">
-                  .st0 {
-                    fill: none;
-                    stroke: #95002E;
-                    stroke-width: 4.6166;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-miterlimit: 10;
-                  }
-
-                  .st1 {
-                    display: none;
-                  }
-
-                  .st2 {
-                    display: inline;
-                    fill: none;
-                    stroke: #95002E;
-                    stroke-width: 4.6166;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-miterlimit: 10;
-                  }
-                </style>
                 <g>
                   <path class="st0" d="M21.12,53.06l0-13.46c0-3.7,2.73-7.03,6.42-7.3c2.12-0.15,4.04,0.66,5.4,2.01c1.25,1.25,2.03,2.98,2.03,4.89   v13.85h9.23c3.82,0,6.92-3.1,6.92-6.92v-25.3c0-1.5-0.74-2.91-1.96-3.79L29.36,3.2c-0.78-0.55-1.85-0.55-2.63,0L6.93,17.05   c-1.22,0.88-1.96,2.29-1.96,3.79v25.3c0,3.82,3.1,6.92,6.92,6.92H21.12z" />
                   <line class="st0" x1="25.74" y1="18.44" x2="30.35" y2="18.44" />
@@ -63,36 +39,6 @@
                 <g class="st1">
                   <path class="st2" d="M44.2,46.39H11.89c-5.1,0-9.23-4.13-9.23-9.23V18.69c0-5.1,4.13-9.23,9.23-9.23H44.2   c5.1,0,9.23,4.13,9.23,9.23v18.47C53.44,42.26,49.3,46.39,44.2,46.39z" />
                   <path class="st2" d="M11.89,18.69l10.79,7.71c3.21,2.29,7.52,2.29,10.73,0l10.79-7.71" />
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
                 </g>
               </svg>
             </p>
