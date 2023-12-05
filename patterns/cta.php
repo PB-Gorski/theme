@@ -30,7 +30,7 @@
               </svg></p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="mb-[15px] text-bgDarkGray" data-aos="fade-up" data-aos-offset="30">Odwiedź nas</p>
+            <p class="mb-[10px]" data-aos="fade-up" data-aos-offset="30">Odwiedź nas</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
             <p class="relative text-[22px] font-medium inline-block border-b-primaryRed border-b-[2px] cursor-pointer" data-aos="fade-up" data-aos-offset="30"><a href="https://maps.app.goo.gl/CkQVYxRxJZ6ZihVm7">ul. Joachima Lelewela 37 lok. E,<br>80-442 Gdańsk</a></p>
@@ -45,7 +45,7 @@
               </svg></p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="mb-[15px] text-bgDarkGray" data-aos="fade-up" data-aos-offset="30">Zadzwoń do nas</p>
+            <p class="mb-[10px]" data-aos="fade-up" data-aos-offset="30">Zadzwoń do nas</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
             <p class="relative text-[22px] font-medium inline-block border-b-primaryRed border-b-[2px] cursor-pointer" data-aos="fade-up" data-aos-offset="30"><a href="tel:48583407900">(58) 340 79 00</a></p>
@@ -60,7 +60,7 @@
               </svg></p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <p class="mb-[15px] text-bgDarkGray" data-aos="fade-up" data-aos-offset="30">Wyślij zapytanie</p>
+            <p class="mb-[10px]" data-aos="fade-up" data-aos-offset="30">Wyślij zapytanie</p>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
             <p class="relative text-[22px] font-medium inline-block border-b-primaryRed border-b-[2px] cursor-pointer" data-aos="fade-up" data-aos-offset="30"><a href="mailto:sprzedaz@pbgorski.pl">sprzedaz@pbgorski.pl</a></p>
