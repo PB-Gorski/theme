@@ -119,7 +119,7 @@
                   $alias = strtr($alias, ' ', '-');
                 ?>
                   <!-- wp:list-item -->
-                  <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                  <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
                     <!-- wp:paragraph -->
                     <p class=""><a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-[#e80d38]"><?php echo $tax->name; ?></a></p>
                     <!-- /wp:paragraph -->
@@ -146,7 +146,7 @@
               <!-- wp:list -->
               <ul class="wp-block-list text-textGray font-bold">
                 <!-- wp:list-item -->
-                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-[7px] hover:decoration-2 hover:decoration-[#e80d38] cursor-pointer">
+                <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-[7px] hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
                   <a href="<?php echo home_url() . '/mieszkania' ?>">Lista mieszkań &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
