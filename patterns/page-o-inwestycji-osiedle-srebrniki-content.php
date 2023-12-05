@@ -137,7 +137,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Postaw na nowoczesną architekturę</span></h2>
         <!-- /wp:heading -->
         <!-- wp:paragraph -->
-        <span class="block text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W ofercie znajdują się przestronne i doświetlone mieszkania oraz lokale usługowe o wygodnych rozkładach z możliwością aranżacji według własnych potrzeb. W każdym budynku znajduje się cichobieżna winda. Mieszkania na parterze posiadają ogródki, a lokale położone na najwyższych piętrach widok na Zatokę Gdańską. Ofertę multimedialną na terenie osiedla zapewnia <a href="https://www.upc.pl/" class="inline relative before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[50%] hover:before:min-h-[100%] before:bg-[#b3f1ff] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">https://www.upc.pl/</a></span>
+        <span class="block text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W ofercie znajdują się przestronne i doświetlone mieszkania oraz lokale usługowe o wygodnych rozkładach z możliwością aranżacji według własnych potrzeb. W każdym budynku znajduje się cichobieżna winda. Mieszkania na parterze posiadają ogródki, a lokale położone na najwyższych piętrach widok na Zatokę Gdańską. Ofertę multimedialną na terenie osiedla zapewnia <a href="https://www.upc.pl/">https://www.upc.pl/</a></span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
