@@ -77,7 +77,7 @@
     <!-- wp:group -->
     <div class="wp-block-group flex items-center justify-center">
       <!-- wp:group -->
-      <div class="wp-block-group btn-find-more relative w-fit h-[55px] bg-[#3d4b66] text-white flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
+      <div class="wp-block-group btn-find-more relative w-fit h-[55px] bg-[#3d4b66] text-white flex items-center justify-center border-b-[2px] border-b-[#2e384d] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
         <!-- wp:paragraph -->
         <p class="w-full h-full font-bold z-[1]"><a href="<?php echo home_url() . '/blog' ?>" class="block p-[10px_20px] w-full h-full flex items-center justify-center">Zobacz wszystkie aktualności</a></p>
         <!-- /wp:paragraph -->
