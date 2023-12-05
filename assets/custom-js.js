@@ -1,4 +1,10 @@
 window.addEventListener("load", function() {
+  AOS.init({
+    offset: 40,
+    duration: 600,
+    once: true,
+  });
+  console.log("js ready");
   const body = document.body;
   // navbar mobile handling
   const btnOpenMenu = document.querySelector(".btn-open-menu");
