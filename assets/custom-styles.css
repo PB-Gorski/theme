@@ -1188,6 +1188,7 @@ background-color: #e8fbff!important;
 .wp-block-query-pagination-next,
 .wp-block-query-pagination-previous{
   color:#8a8f99;
+  transition: color 0.3s ease;
 }
 .wp-block-query-pagination-next:hover,
 .wp-block-query-pagination-previous:hover{
