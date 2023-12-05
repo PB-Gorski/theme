@@ -1174,6 +1174,12 @@ background-color: #e8fbff!important;
   text-underline-offset: 4px;
   text-decoration-color: #b22944;
 }
+.page-numbers{
+  transition: color 0.3s ease;
+}
+.page-numbers:hover{
+  color: #95002E;
+}
 
 
 
