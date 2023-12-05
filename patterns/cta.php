@@ -13,7 +13,7 @@
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full">
     <!-- wp:group -->
-    <div class="wp-block-group py-[60px] flex items-center justify-center">
+    <div class="wp-block-group py-[40px] flex items-center justify-center">
       <!-- wp:group -->
       <div class="wp-block-group">
         <!-- wp:heading -->
