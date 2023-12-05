@@ -26,7 +26,7 @@
           <div class="wp-block-group inner-col1 w-[350px] mb-[60px] desktop:mb-[30px] desktop:mb-0 text-center">
             <!-- wp:paragraph -->
             <p class="mx-auto mb-[10px] w-fit desktop:mb-[30px] block" data-aos="fade-up" data-aos-offset="30">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Warstwa_1" x="0px" y="0px" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Warstwa_1" x="0px" y="0px" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve" class="w-[80px] h-[80px]">
                 <style type="text/css">
                   .st0 {
                     fill: none;
