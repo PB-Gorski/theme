@@ -11,17 +11,9 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="cta" class="wp-block-group cta h-[560px] relative">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full flex">
+  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full">
     <!-- wp:group -->
-    <div class="wp-block-group hidden desktop:block col1 w-[45%]">
-      <!-- wp:paragraph -->
-      <p class="hidden">empty space</p>
-      <!-- /wp:paragraph -->
-    </div>
-    <!-- /wp:group -->
-
-    <!-- wp:group -->
-    <div class="wp-block-group col2 w-[100%] desktop:w-[55%] py-[60px] flex items-center jusify-center">
+    <div class="wp-block-group py-[60px] flex items-center jusify-center">
       <!-- wp:group -->
       <div class="wp-block-group">
         <!-- wp:heading -->
