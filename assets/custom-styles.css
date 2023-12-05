@@ -1409,12 +1409,12 @@ background-color: #e8fbff!important;
 }
 .tab_mieszkania{
   height: 100%;
-  width: 125px;
   color: #8a8f99;
   border-bottom: #ebeef2 3px solid;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
   cursor: pointer;
 }
 .tab_mieszkania:hover{
