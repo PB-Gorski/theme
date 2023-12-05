@@ -171,12 +171,12 @@ $tax_sort = $taxonomy;
             </div>
 
             <div class="btn-wrapper bg-white h-[120px] flex items-center justify-center" style="width:100%;border-right:2px solid #ebeef2;border-bottom:2px solid #ebeef2">
-              <div class="wp-block-group btn-more relative mt-[5px] bg-[#ebeef2] flex gap-[10px] justify-center items-center cursor-pointer border-b-[3px] border-b-[#e1e1e1] border-b-[2px]" style="height:50px;width:140px;">
+              <div class="wp-block-group btn-more relative mt-[5px] bg-[#ebeef2] flex gap-[10px] justify-center items-center cursor-pointer" style="height:50px;width:140px;border-bottom:2px solid #e1e1e1">
                 <p class="desktop:text-[18px] text-[16px] font-bold z-[1]">Więcej opcji</p>
               </div>
             </div>
             <div class="btn-search btn-wrapper bg-white h-[120px] flex items-center justify-center" style="width:100%;border-bottom:2px solid #ebeef2">
-              <div class="wp-block-group group btn-search mt-[5px] relative bg-primaryRed text-white h-[50px] flex items-center justify-center gap-[15px] border-b-[2px] border-b-[#9C0927] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer" style="height:50px;width:140px">
+              <div class="wp-block-group group btn-search mt-[5px] relative bg-primaryRed text-white h-[50px] flex items-center justify-center gap-[15px] border-b-[2px] border-b-[#9C0927] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer" style="height:50px;width:140px;border-bottom:2px solid #9C0927">
                 <p class="w-full h-full flex items-center justify-center desktop:text-[18px] text-[16px] font-bold z-[1] text-white">Szukaj</p>
               </div>
             </div>
