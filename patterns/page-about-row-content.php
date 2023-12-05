@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group row1 desktop:flex gap-[100px] mb-[80px]">
       <!-- wp:group -->
-      <div class="wp-block-group col1 desktop:w-[50%] desktop:pl-[60px]">
+      <div class="wp-block-group col1 desktop:w-[50%]">
         <!-- wp:heading {"level":4} -->
         <h4><span class="block text-[26px] text-textGray font-medium leading-[44px]" data-aos="fade-right" data-aos-offset="30">40 lat obecności na pomorskim rynku, dziesiątki zrealizowanych inwestycji i wiele spektakularnych przedsięwzięć w trakcie realizacji.</span></h4>
         <!-- /wp:heading -->
@@ -37,7 +37,7 @@
     <!-- wp:group -->
     <div class="wp-block-group row2 desktop:flex gap-[100px] mb-[80px]">
       <!-- wp:group -->
-      <div class="wp-block-group col1 desktop:w-[50%] desktop:pl-[60px]">
+      <div class="wp-block-group col1 desktop:w-[50%]">
         <!-- wp:group -->
         <div class="wp-block-group inline-block cursor-default">
           <!-- wp:image -->
@@ -65,7 +65,7 @@
     <!-- wp:group -->
     <div class="wp-block-group row3 desktop:flex flex-row-reverse gap-[20px] mb-[80px]">
       <!-- wp:group -->
-      <div class="wp-block-group col1 desktop:w-[60%] desktop:pl-[60px]">
+      <div class="wp-block-group col1 desktop:w-[60%]">
         <!-- wp:group -->
         <div class="wp-block-group cursor-default inline-block">
           <!-- wp:image -->
@@ -93,7 +93,7 @@
     <!-- wp:group -->
     <div class="wp-block-group row4 desktop:flex gap-[20px] mb-[80px]">
       <!-- wp:group -->
-      <div class="wp-block-group col1 desktop:w-[60%] desktop:pl-[60px]">
+      <div class="wp-block-group col1 desktop:w-[60%]">
         <!-- wp:group -->
         <div class="wp-block-group inline-block cursor-default">
           <!-- wp:image -->
