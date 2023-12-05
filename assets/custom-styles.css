@@ -1450,6 +1450,6 @@ background-color: #e8fbff!important;
 }
 
 /* frontpage blog section */
-.wp-block-post .post .type-post{
-  width: 100%;
+.wp-block-post.post.type-post{
+  width: 100%!important;
 }
