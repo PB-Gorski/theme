@@ -1403,6 +1403,14 @@ background-color: #e8fbff!important;
   left: 50%;
   transform: translateX(-50%);
 }
+.search_tabs{
+  gap: 30px;
+}
+@media only screen and (max-width: 1024px) {
+  .search_tabs{
+    gap: 80px;
+  }
+}
 .arrow-down:after {
   content: '\25bc';
   font-size: 11px;
