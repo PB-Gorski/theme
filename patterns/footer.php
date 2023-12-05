@@ -77,7 +77,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group flex gap-[6px]">
+        <div class="wp-block-group flex items-center gap-[6px]">
           <!-- wp:paragraph -->
           <p>
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
