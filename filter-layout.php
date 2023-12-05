@@ -16,7 +16,7 @@ $tax_sort = $taxonomy;
   <?php if (is_array($terms_selected)) :
     $all_terms = implode(',', $terms_selected);
   ?>
-    <div class="search_tabs container flex justify-center items-center gap-[30px] desktop:gap-[80px]">
+    <div class="search_tabs container flex justify-center items-center">
       <div class="tab_mieszkania mieszkania-active">
         <p class="text-[20px] font-semibold">Mieszkania</p>
       </div>
