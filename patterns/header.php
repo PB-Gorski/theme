@@ -107,20 +107,20 @@
                   $taxNoSpaces = str_replace(' ', '-', strtolower($tax->name));
                   $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
-                  $alias3 = $taxNoSpaces2;
-                  $alias3 = strtolower($alias3);
-                  $alias3 = str_replace(' ', '-', $alias3);
-                  $alias3 = preg_replace('/[^0-9a-ąćęłńóśźżś\-]+/', '', $alias3);
+                  $alias = $taxNoSpaces2;
+                  $alias = strtolower($alias);
+                  $alias = str_replace(' ', '-', $alias);
+                  $alias = preg_replace('/[^0-9a-ąćęłńóśźżś\-]+/', '', $alias);
 
-                  $alias3 = preg_replace('/[\-]+/', '-', $alias3);
-                  $alias3 = trim($alias3, '-');
-                  $alias3 = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias3);
-                  $alias3 = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias3);
-                  $alias3 = strtr($alias3, ' ', '-');
+                  $alias = preg_replace('/[\-]+/', '-', $alias);
+                  $alias = trim($alias, '-');
+                  $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
+                  $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
+                  $alias = strtr($alias, ' ', '-');
                 ?>
                   <!-- wp:list-item -->
                   <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-                    <a href="<?php echo home_url() . '/o-inwestycji-' . $alias3; ?>" class="inline-block">
+                    <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block">
                       <!-- wp:paragraph -->
                       <p class=""><?php echo $tax->name; ?></p>
                       <!-- /wp:paragraph -->
@@ -222,16 +222,21 @@
                     $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
                     $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
-                    $alias = $taxNoSpaces2;
-                    $alias = strtolower($alias);
-                    $alias = str_replace(' ', '-', $alias);
-                    $alias = preg_replace('/[^0-9a-ąćęłńóśźżś\-]+/', '', $alias);
+                    // $taxInwestycjeName = $my_term->name;
+                    // $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
+                    // $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
+                    // $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
-                    $alias = preg_replace('/[\-]+/', '-', $alias);
-                    $alias = trim($alias, '-');
-                    $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
-                    $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
-                    $alias = strtr($alias, ' ', '-');
+                    $alias3 = $taxNoSpaces2;
+                    $alias3 = strtolower($alias3);
+                    $alias3 = str_replace(' ', '-', $alias3);
+                    $alias3 = preg_replace('/[^0-9a-ąćęłńóśźżś\-]+/', '', $alias3);
+
+                    $alias3 = preg_replace('/[\-]+/', '-', $alias3);
+                    $alias3 = trim($alias3, '-');
+                    $alias3 = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias3);
+                    $alias3 = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias3);
+                    $alias3 = strtr($alias3, ' ', '-');
                 ?>
 
                     <!-- wp:list-item -->
