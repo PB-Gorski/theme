@@ -386,7 +386,7 @@
         <!-- wp:group -->
         <div class="wp-block-group group btn-find-more w-fit relative bg-transparent text-[17px] text-white flex items-center justify-center border-[2px] border-white rounded-full cursor-pointer overflow-hidden before:content-[''] before:inline-block before:z-[-1] before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] hover:text-textGray before:bg-white before:transition-height before:duration-300 before:ease ">
           <!-- wp:paragraph -->
-          <a href="<?php echo home_url() . '/mieszkania'; ?>" class="h-full w-fit px-[25px] py-[15px] flex items-center justify-center z-[1]">Znajdź mieszkanie</a>
+          <a href="<?php echo home_url() . '/mieszkania'; ?>" class="h-full w-fit px-[25px] py-[10px] flex items-center justify-center z-[1]">Znajdź mieszkanie</a>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
