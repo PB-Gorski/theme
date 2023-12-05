@@ -16,7 +16,7 @@
   </figure>
   <!-- /wp:image -->
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full text-center">
+  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] h-full">
     <!-- wp:heading {"level":3} -->
     <h3 class="wp-block-heading mb-[20px] desktop:mb-[40px] mt-0 text-white text-[25px] font-semibold desktop:text-[36px] leading-[150%] text-center">Dowiedz się pierwszy o najnowszych ofertach</h3>
     <!-- /wp:heading -->
