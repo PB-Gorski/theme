@@ -269,7 +269,7 @@
                 <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
                 <!-- wp:heading {"level":5} -->
-                <h5><span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział sprzedaży</span></h5>
+                <h5 class="w-full"><span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział sprzedaży</span></h5>
                 <!-- /wp:heading -->
               </div>
               <!-- /wp:group -->
@@ -376,7 +376,7 @@
                 <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
                 <!-- wp:heading {"level":5} -->
-                <h5><span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział aranżacji</span></h5>
+                <h5 class="w-full"><span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział aranżacji</span></h5>
                 <!-- /wp:heading -->
               </div>
               <!-- /wp:group -->
@@ -448,7 +448,7 @@
                 <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
                 <!-- wp:heading {"level":5} -->
-                <h5><span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział kredytów</span></h5>
+                <h5 class="w-full"><span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział kredytów</span></h5>
                 <!-- /wp:heading -->
               </div>
               <!-- /wp:group -->
@@ -513,7 +513,7 @@
                 <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
                 <!-- wp:heading {"level":5} -->
-                <h5><span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Umowy i akty notarialne</span></h5>
+                <h5 class="w-full"><span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Umowy i akty notarialne</span></h5>
                 <!-- /wp:heading -->
               </div>
               <!-- /wp:group -->
@@ -578,7 +578,7 @@
                 <span class="block w-[22px] click-bar-icon flex-none pb-[5px] py-[20px] border-b-[1px] border-[#e8e8e8] group-hover:text-primaryYellow uppercase text-[35px] font-semibold leading-[30px] transition ease-out duration-500" data-aos="fade-up" data-aos-offset="30">+</span>
                 <!-- /wp:paragraph -->
                 <!-- wp:heading {"level":5} -->
-                <h5><span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział reklamacji</span></h5>
+                <h5 class="w-full"><span class="block pl-[20px] py-[20px] border-b-[1px] border-[#e8e8e8] font-bold text-[24px] grow font-bold self-center" data-aos="fade-up" data-aos-offset="30">Dział reklamacji</span></h5>
                 <!-- /wp:heading -->
               </div>
               <!-- /wp:group -->
