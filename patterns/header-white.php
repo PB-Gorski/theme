@@ -339,11 +339,22 @@
                     $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
                     $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
                     $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
+
+                    $alias2 = $taxNoSpaces2;
+                    $alias2 = strtolower($alias2);
+                    $alias2 = str_replace(' ', '-', $alias2);
+                    $alias2 = preg_replace('/[^0-9a-ąćęłńóśźżś\-]+/', '', $alias2);
+
+                    $alias2 = preg_replace('/[\-]+/', '-', $alias2);
+                    $alias2 = trim($alias2, '-');
+                    $alias2 = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias2);
+                    $alias2 = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias2);
+                    $alias2 = strtr($alias2, ' ', '-');
                 ?>
 
                     <!-- wp:list-item -->
                     <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-                      <a href="#"><?php echo $taxInwestycjeName; ?></a>
+                      <a href="<?php echo home_url() . '/o-inwestycji-' . $alias2; ?>"><?php echo $taxInwestycjeName; ?></a>
                     </li>
                     <!-- /wp:list-item -->
                 <?php
