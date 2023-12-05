@@ -1449,3 +1449,7 @@ background-color: #e8fbff!important;
   font-size: 14px;
 }
 
+/* frontpage blog section */
+.wp-block-post .post .type-post{
+  width: 100%;
+}
