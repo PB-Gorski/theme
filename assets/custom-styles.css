@@ -1453,3 +1453,27 @@ background-color: #e8fbff!important;
 .wp-block-post.post.type-post{
   width: 100%!important;
 }
+
+/* cta svg */
+.st0 {
+  fill: none;
+  stroke: #95002E;
+  stroke-width: 4.6166;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+.st1 {
+  display: none;
+}
+
+.st2 {
+  display: inline;
+  fill: none;
+  stroke: #95002E;
+  stroke-width: 4.6166;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
