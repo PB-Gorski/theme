@@ -95,7 +95,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group plan-osiedla-wrapper container mb-[100px] mx-auto max-w-[690px] w-full px-[20px] desktop:px-0">
+  <div class="wp-block-group plan-osiedla-wrapper container mb-[100px] mx-auto w-full px-[20px] desktop:px-0">
     <!-- wp:heading {"level":5} -->
     <h5><span class="block mb-[60px] text-[24px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Zaledwie 15 minut spacerem będzie dzielić mieszkańców Toruńskiej 16 od ścisłego centrum Gdańska. Położenie zapewnia dostęp do pełnej infrastruktury w pobliżu miejsca zamieszkania (sklepy, punkty usługowe, szkoły, przedszkola, przychodnia).</span></h5>
     <!-- /wp:heading -->
