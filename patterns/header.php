@@ -217,11 +217,6 @@
                 );
                 if (!empty($my_terms)) :
                   foreach ($my_terms as $my_term) :
-                    // $taxInwestycjeName = $my_term->name;
-                    // $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
-                    // $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
-                    // $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
-
                     $taxInwestycjeName = $my_term->name;
                     $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
                     $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
