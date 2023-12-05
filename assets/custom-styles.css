@@ -1415,6 +1415,7 @@ background-color: #e8fbff!important;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.3 ease;
 }
 .tab_mieszkania:hover{
   border-bottom: #b22944 3px solid;
