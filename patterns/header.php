@@ -217,15 +217,16 @@
                 );
                 if (!empty($my_terms)) :
                   foreach ($my_terms as $my_term) :
+                    // $taxInwestycjeName = $my_term->name;
+                    // $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
+                    // $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
+                    // $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
+
                     $taxInwestycjeName = $my_term->name;
                     $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
                     $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
                     $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
-                    // $taxInwestycjeName = $my_term->name;
-                    // $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
-                    // $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
-                    // $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
                     $alias3 = $taxNoSpaces2;
                     $alias3 = strtolower($alias3);
@@ -254,7 +255,7 @@
               <!-- wp:group -->
               <div class="wp-block-group">
                 <!-- wp:paragraph -->
-                <a href="<?php echo home_url(); ?>/inwestycje-gdansk/" class="text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Gdański: <span class="font-medium">Wszystkie inwestycje &rarr;</span></a>
+                <a href="<?php echo home_url(); ?>/inwestycje-gdansk/" class="text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Gdańsk: <span class="font-medium">Wszystkie inwestycje &rarr;</span></a>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -342,7 +343,7 @@
                 );
                 if (!empty($my_terms)) :
                   foreach ($my_terms as $my_term) :
-                    $taxInwestycjeName = $my_term->name;
+                    $taxInwestycjeName2 = $my_term->name;
                     $currentTermCount = (get_term($taxonomies[$i], 'inwestycja'))->count;
                     $taxNoSpaces = str_replace(' ', '-', strtolower($taxonomies[$i]->name));
                     $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
@@ -361,7 +362,7 @@
 
                     <!-- wp:list-item -->
                     <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-                      <a href="<?php echo home_url() . '/o-inwestycji-' . $alias2; ?>"><?php echo $taxInwestycjeName; ?></a>
+                      <a href="<?php echo home_url() . '/o-inwestycji-' . $alias2; ?>"><?php echo $taxInwestycjeName2; ?></a>
                     </li>
                     <!-- /wp:list-item -->
                 <?php
