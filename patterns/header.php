@@ -238,7 +238,7 @@
               <!-- wp:group -->
               <div class="wp-block-group">
                 <!-- wp:paragraph -->
-                <a href="#" class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Gdański: <span class="font-medium">Wszystkie inwestycje &rarr;</span></a>
+                <a href="#" class="text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Gdański: <span class="font-medium">Wszystkie inwestycje &rarr;</span></a>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
