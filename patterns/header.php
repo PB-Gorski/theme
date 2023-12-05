@@ -10,7 +10,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Menu-desktop" class="wp-block-group nav-desktop w-full h-auto desktop:h-[330px] bg-gradient-to-b from-[rgba(0,0,0,0.8)] to-[rgba(255,255,255,0)] absolute z-[1] hidden desktop:block">
   <!-- wp:group -->
-  <div class="wp-block-group px-[20px] desktop:px-[50px] mx-auto h-[100px] flex items-center text-white">
+  <div class="wp-block-group px-[20px] desktop:px-[40px] mx-auto h-[100px] flex items-center text-white">
     <!-- wp:group -->
     <div class="wp-block-group logo mr-[40px]">
       <!-- wp:paragraph -->
@@ -384,7 +384,7 @@
       <!-- wp:group -->
       <div class="wp-block-group btn-wrapper-header flex items-center gap-[10px]">
         <!-- wp:group -->
-        <div class="wp-block-group group btn-find-more w-full desktop:w-[230px] h-[55px] relative bg-transparent text-white flex items-center justify-center border-[2px] border-white rounded-full cursor-pointer overflow-hidden before:content-[''] before:inline-block before:z-[-1] before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] hover:text-textGray before:bg-white before:transition-height before:duration-300 before:ease ">
+        <div class="wp-block-group group btn-find-more w-full desktop:w-[230px] h-[55px] relative bg-transparent text-[17px] text-white flex items-center justify-center border-[2px] border-white rounded-full cursor-pointer overflow-hidden before:content-[''] before:inline-block before:z-[-1] before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] hover:text-textGray before:bg-white before:transition-height before:duration-300 before:ease ">
           <!-- wp:paragraph -->
           <a href="<?php echo home_url() . '/mieszkania'; ?>" class="h-full w-full p-[15px] flex items-center justify-center z-[1]">Znajdź mieszkanie</a>
           <!-- /wp:paragraph -->
