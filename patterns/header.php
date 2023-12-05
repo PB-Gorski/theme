@@ -334,7 +334,7 @@
 
                     <!-- wp:list-item -->
                     <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-                      <a href="#"><?php echo $taxInwestycjeName; ?></a>
+                      <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>"><?php echo $taxInwestycjeName; ?></a>
                     </li>
                     <!-- /wp:list-item -->
                 <?php
