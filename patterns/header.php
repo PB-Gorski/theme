@@ -10,7 +10,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Menu-desktop" class="wp-block-group nav-desktop w-full h-auto desktop:h-[330px] bg-gradient-to-b from-[rgba(0,0,0,0.8)] to-[rgba(255,255,255,0)] absolute z-[1] hidden desktop:block">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto h-[100px] flex items-center text-white">
+  <div class="wp-block-group px-[20px] desktop:px-[50px] mx-auto h-[100px] flex items-center text-white">
     <!-- wp:group -->
     <div class="wp-block-group logo mr-[40px]">
       <!-- wp:paragraph -->
