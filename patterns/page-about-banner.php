@@ -27,7 +27,7 @@
       <!-- wp:group -->
       <div class="wp-block-group desktop:flex">
         <!-- wp:group -->
-        <div class="wp-block-group col1 pl-[40px] desktop:pl-0 pr-[40px] w-fit h-[68px] flex gap-[15px] items-center border-r-[1px] border-[rgba(255,255,255,0.2)]">
+        <div class="wp-block-group col1 pl-[20px] desktop:pl-0 pr-[40px] w-fit h-[68px] flex gap-[15px] items-center border-r-[1px] border-[rgba(255,255,255,0.2)]">
           <!-- wp:paragraph -->
           <span id="count1" class="text-[48px] font-bold" data-aos="fade-up" data-aos-offset="30">40</span>
           <!-- /wp:paragraph -->
