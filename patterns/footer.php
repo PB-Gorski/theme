@@ -61,7 +61,7 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group socials flex items-center gap-[6px]">
+      <div class="wp-block-group socials">
         <!-- wp:group -->
         <div class="wp-block-group socials flex items-center gap-[6px]">
           <!-- wp:group -->
