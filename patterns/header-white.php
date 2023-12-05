@@ -257,7 +257,7 @@
               <ul class="wp-block-list text-textGray font-bold">
                 <!-- wp:list-item -->
                 <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-                  <a href="#">Lista mieszkań &rarr;</a>
+                  <a href="<?php echo home_url(); ?>/mieszkania">Lista mieszkań &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
@@ -359,7 +359,7 @@
               <ul class="wp-block-list text-textGray font-bold">
                 <!-- wp:list-item -->
                 <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-                  <a href="#">Lista mieszkań &rarr;</a>
+                  <a href="<?php echo home_url(); ?>/mieszkania/">Lista mieszkań &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
