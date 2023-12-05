@@ -228,7 +228,7 @@
                     $taxNoSpaces2 = str_replace('.', '', strtolower($taxNoSpaces));
 
 
-                    $alias3 = $taxNoSpaces2;
+                    $alias3 = $taxInwestycjeName;
                     $alias3 = strtolower($alias3);
                     $alias3 = str_replace(' ', '-', $alias3);
                     $alias3 = preg_replace('/[^0-9a-ąćęłńóśźżś\-]+/', '', $alias3);
@@ -237,7 +237,7 @@
                     $alias3 = trim($alias3, '-');
                     $alias3 = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias3);
                     $alias3 = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias3);
-                    $alias3 = strtr($taxInwestycjeName, ' ', '-');
+                    $alias3 = strtr($alias3, ' ', '-');
                 ?>
 
                     <!-- wp:list-item -->
