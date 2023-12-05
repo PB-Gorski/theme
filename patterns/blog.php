@@ -74,60 +74,6 @@
     </div>
     <!-- /wp:group -->
 
-
-    <!-- wp:list -->
-    <ul class="wp-block-list _old hidden mb-[40px] flex desktop:flex-row flex-col justify-between desktop:gap-[30px] gap-[60px]">
-      <?php
-      $args = array(
-        'post_type' => 'post',
-        'posts_per_page' => 4,
-        'order' => 'DESC'
-      );
-      $post_query = new WP_Query($args);
-      $counter2 = 0;
-
-      if ($post_query->have_posts()) {
-        while ($post_query->have_posts()) {
-          $post_query->the_post();
-          $postImageUrl = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portrait');
-          $counter2++;
-      ?>
-          <!-- wp:list-item -->
-          <li class="blog-tile w-full inline-block group">
-            <a href="<?php the_permalink(); ?>" class="relative group inline-block" data-aos="fade-up" data-aos-offset="30" data-aos-delay="<?php echo $counter2 * 50; ?>">
-              <!-- wp:group -->
-              <div class="wp-block-group wrapper">
-                <!-- wp:image -->
-                <figure class="wp-block-image h-[270px] mb-[10px]">
-                  <img src="<?php echo $postImageUrl[0]; ?>" alt="services-background-image">
-                </figure>
-                <!-- /wp:image -->
-
-                <!-- wp:paragraph -->
-                <p class="post-date mr-[20px] text-[16px] text-bgDarkGray mb-[15px]"><?php echo get_the_date(); ?></p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:paragraph -->
-                <p class="mr-[20px] text-[24px] font-bold mb-[15px] leading-[32px] border-b-[2px] border-b-primaryRed"><?php the_title(); ?></p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:paragraph -->
-                <p class="relative inline text-primaryRed before:content-[''] before:inline-block cursor-pointer">Czytaj dalej <span class="text-[11px]">&#x25BA;</span></p>
-                <!-- /wp:paragraph -->
-              </div>
-              <!-- /wp:group -->
-            </a>
-          </li>
-          <!-- /wp:list-item -->
-      <?php
-        };
-      };
-      wp_reset_query();
-      ?>
-    </ul>
-    <!-- /wp:list -->
-
-
     <!-- wp:group -->
     <div class="wp-block-group flex items-center justify-center">
       <!-- wp:group -->
