@@ -1024,6 +1024,11 @@ window.addEventListener("load", function() {
 
     // *******************************************************
 
+    YMCTools({
+      target: '.data-target-ymc2',
+      terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join(),      
+    }).apiTermUpdate();     
+
     btnSearch.addEventListener('click', () =>{
       let searchedFromCookiesIDs = document.querySelectorAll('.active');
       let searchedReadyArr = [];
