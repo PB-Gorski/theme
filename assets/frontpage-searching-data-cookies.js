@@ -306,7 +306,7 @@ window.addEventListener("load", function() {
 
 
       // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
-      // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
+
       // document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value;
 
       const dropDownFilters = document.querySelectorAll(".dropdown-filter");
