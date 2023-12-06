@@ -215,7 +215,7 @@ window.addEventListener("load", function() {
       document.querySelector('.btn-search').addEventListener('click', () => {
         document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
         document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value;
-        runSearchingFrontPage();
+        // runSearchingFrontPage();
         // let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
 
         // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
