@@ -9,6 +9,7 @@ window.addEventListener("load", function() {
   document.body.classList.contains('_page-child')){
     document.querySelector('.btn-search').addEventListener('click',()=>{
       document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
+      runSearchingFrontPage();
     })
 
     console.log('home');
