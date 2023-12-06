@@ -1334,10 +1334,10 @@ background-color: #e8fbff!important;
   cursor: pointer;
   width: 100%;
 }
-.dropdown__value > span:after,
+/* .dropdown__value > span:after,
 .dropdown__link:after{
-  content: ' zł'!important;
-}
+  content: ' zł';
+} */
 .dropdown__value-metraz > span:after,
 .dropdown__list-metraz >li > span:after{
   content: ' m²'!important;
