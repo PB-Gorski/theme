@@ -217,8 +217,7 @@ window.addEventListener("load", function() {
 
         // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
 
-        let priceMinValueCookie2 = document.querySelector('.dropdown__value-min').childNodes[1].value == '' ? 0 : parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
-
+        let priceMinValueCookie2 = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
 
         let priceMaxValueCookie2 = document.querySelector('.dropdown__value-max').childNodes[1].value == '' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
 
