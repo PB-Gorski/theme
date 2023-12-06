@@ -9,6 +9,7 @@ window.addEventListener("load", function() {
   document.body.classList.contains('_page-child')){
     document.querySelector('.btn-search').addEventListener('click',()=>{
       document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
+      document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value;
       runSearchingFrontPage();
     })
 
@@ -209,16 +210,18 @@ window.addEventListener("load", function() {
     });
 
 
-
+    // passiveOptionsCustomFilters for dropdown but for now we use input value
     // passiveOptionsCustomFilters.forEach(item => {
       document.querySelector('.btn-search').addEventListener('click', () => {
         // let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
 
         // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
 
-        let priceMinValueCookie2 = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
+        let priceMinValueCookie2 = document.querySelector('.dropdown__value-min').childNodes[1].value == '' ? 0 : parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
 
-        let priceMaxValueCookie2 = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
+
+        let priceMaxValueCookie2 = document.querySelector('.dropdown__value-max').childNodes[1].value == '' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
+
         let metrazMaxValueCookie = document.querySelector('.dropdown__value-max-metraz').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
         let metrazMinValueCookie = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
 
