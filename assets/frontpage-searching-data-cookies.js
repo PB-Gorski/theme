@@ -316,7 +316,7 @@ window.addEventListener("load", function() {
       
       priceMaxValue = document.querySelector('.dropdown__value-max').childNodes[0].innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
 
-      console.log('no spaces', priceMinValue,priceMaxValue);
+      console.log('no spaces', priceMinValue, priceMaxValue);
 
       for (i = 1 ; i < priceValueArrNodeList.length ; i++){
         priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
