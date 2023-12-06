@@ -210,7 +210,8 @@ window.addEventListener("load", function() {
       item.addEventListener('click', () => {
         // let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
         // let priceMinValueCookie2 = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
-        let priceMinValueCookie2 = parseInt(document.getElementById('inputPriceMin').value.split(' ').join(''));
+        let priceMinValueCookie2 = document.getElementById('inputPriceMin').value;
+        
         let priceMaxValueCookie2 = document.querySelector('.dropdown__value-max').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
         let metrazMaxValueCookie = document.querySelector('.dropdown__value-max-metraz').innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
         let metrazMinValueCookie = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
