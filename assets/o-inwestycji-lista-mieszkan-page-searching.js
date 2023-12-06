@@ -935,7 +935,7 @@ window.addEventListener("load", function() {
       // priceMinValue = document.querySelector('.dropdown__value-min').innerHTML == NaN ? 0 : parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
       priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
       
-      // console.log('no spaces', priceMinValue,priceMaxValue);
+      console.log('no spaces prices', priceMinValue,priceMaxValue);
 
       for (i = 1 ; i < priceValueArrNodeList.length ; i++){
         priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
