@@ -926,8 +926,11 @@ window.addEventListener("load", function() {
       newArrHTMLList = [];
 
       // value from input
-      document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
-      document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value
+      // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
+      // document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value
+
+      document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.querySelector('.dropdown__value-min').childNodes[1].value == '' ? 0 : document.getElementById('inputPriceMin').value;
+      document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.querySelector('.dropdown__value-max').childNodes[1].value == '' ? 10000000 : document.getElementById('inputPriceMax').value;
 
       const dropDownFilters = document.querySelectorAll(".dropdown-filter");
       let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
