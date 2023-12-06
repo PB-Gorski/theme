@@ -816,6 +816,7 @@ window.addEventListener("load", function() {
             // console.log('error');
           };
         });
+
         priceMinUpdate = getCookie("PriceMinFromCookies");
         priceMaxUpdate = getCookie("PriceMaxFromCookies");
 
@@ -825,95 +826,17 @@ window.addEventListener("load", function() {
 
         console.log('price max fdafsd: ',filteredPriceMaxFromCookies);
 
-        document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == 'NaN' ? 'Max' : (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  filteredPriceMaxFromCookies == '' ? 'Max' : Number(filteredPriceMaxFromCookies).toLocaleString());
+        document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = filteredPriceMaxFromCookies == 'NaN' ? document.getElementById('inputPriceMax').value : (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  filteredPriceMaxFromCookies == '' ? document.getElementById('inputPriceMax').value : Number(filteredPriceMaxFromCookies).toLocaleString());
         
         
         document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML = filteredMetrazMinFromCookies == '' ? 0 : Number(filteredMetrazMinFromCookies);
         
 
         document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies == 'NaN' ? 'Max' : (filteredMetrazMaxFromCookies == 10000000 ? 'Max' :  filteredMetrazMaxFromCookies == '' ? 'Max' : Number(filteredMetrazMaxFromCookies).toLocaleString());
-
-
-        
-        
           
         console.log('after write', filteredMetrazMaxFromCookies);
-
-
-
-
-
-
-        // if(miastoArr.includes(+choosenOptionID)){
-        //   console.log('wybrano z kategorii - miasto');
-        //   // miasto
-        //   if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
-
-        //   tempMiastoArr.forEach(choosenItem =>{
-        //     passiveOptions.forEach(item => {
-        //       if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
-        //     });
-        //   });
-        //   menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
-        //   console.log('miasto: ',choosenMiastoArr);
-
-        // }else if(inwestycjaArr.includes(+choosenOptionID)){
-        //   // inwestycje
-        //   tempInwestycjaArr.includes(choosenOptionID) ? removeItemAll(tempInwestycjaArr,choosenOptionID) : tempInwestycjaArr.push(choosenOptionID);
-
-        //   if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
-
-        //   menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
-        // }else if(pokojeArr.includes(+choosenOptionID)){
-        //   // pokoje
-        //   if(tempPokojeArr.includes(choosenOptionID)){removeItemAll(tempPokojeArr,choosenOptionID);}else{tempPokojeArr.push(choosenOptionID)};
-
-        //   tempPokojeArr.forEach(choosenItem =>{
-        //     passiveOptions.forEach(item => {
-        //       if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
-        //     });
-        //   });
-        //   menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
-        // }else if(pietroArr.includes(+choosenOptionID)){
-        //   // pietro
-        //   if(tempPietroArr.includes(choosenOptionID)){removeItemAll(tempPietroArr,choosenOptionID);}else{tempPietroArr.push(choosenOptionID)};
-
-        //   tempPietroArr.forEach(choosenItem =>{
-        //     passiveOptions.forEach(item => {
-        //       if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
-        //     });
-        //   });
-        //   menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
-        // }else if(terminArr.includes(+choosenOptionID)){
-        //   // termin
-        //   if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
-
-        //   tempTerminArr.forEach(choosenItem =>{
-        //     passiveOptions.forEach(item => {
-        //       if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
-        //     });
-        //   });
-        //   menuActiveSpan.innerHTML = choosenTempArr.join(', ');
-        // }else if(inneArr.includes(+choosenOptionID)){
-        //   // inne
-        //   tempInneArr.includes(choosenOptionID) ? removeItemAll(tempInneArr,choosenOptionID) : tempInneArr.push(choosenOptionID);
-
-        //   if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
-
-        //   menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
-        // }else{
-        //   console.log('error');
-        // };          
-
-
-        // menuActiveSpan.dataset.label = choosenOption;
-        // menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
-
-        // console.log('item: ', menuActiveSpan.getAttribute('data-label'));
-        // console.log('item category: ', menuActiveTitle);
-        // console.log('item termid: ', +choosenOptionID);
-
-      };      
+      };  
+          
       showActiveFilterNameFromCookies();
 
       // filter ID by page id
