@@ -7,11 +7,11 @@ window.addEventListener("load", function() {
   if(document.body.classList.contains('home') ||
   document.body.classList.contains('_page-parent') ||
   document.body.classList.contains('_page-child')){
-    document.querySelector('.btn-search').addEventListener('click',()=>{
-      document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
-      document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value;
-      runSearchingFrontPage();
-    })
+    // document.querySelector('.btn-search').addEventListener('click',()=>{
+    //   document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
+    //   document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value;
+    //   runSearchingFrontPage();
+    // })
 
     console.log('home');
     // document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
@@ -213,6 +213,9 @@ window.addEventListener("load", function() {
     // passiveOptionsCustomFilters for dropdown but for now we use input value
     // passiveOptionsCustomFilters.forEach(item => {
       document.querySelector('.btn-search').addEventListener('click', () => {
+        document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
+        document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value;
+        runSearchingFrontPage();
         // let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
 
         // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
@@ -300,6 +303,7 @@ window.addEventListener("load", function() {
       priceValueArr = [];
       newArr = [];
       newArrPriceHTMLList = [];
+
 
       // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
       // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
