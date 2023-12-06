@@ -214,7 +214,7 @@ window.addEventListener("load", function() {
     // passiveOptionsCustomFilters.forEach(item => {
       document.querySelector('.btn-search').addEventListener('click', () => {
         document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
-        document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value;
+        document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.querySelector('.dropdown__value-max').childNodes[1].value == '' ? 10000000 : document.getElementById('inputPriceMax').value;
         // runSearchingFrontPage();
         // let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
 
