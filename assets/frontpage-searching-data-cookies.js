@@ -210,8 +210,8 @@ window.addEventListener("load", function() {
 
 
 
-    passiveOptionsCustomFilters.forEach(item => {
-      item.addEventListener('click', () => {
+    // passiveOptionsCustomFilters.forEach(item => {
+      document.querySelector('.btn-search').addEventListener('click', () => {
         // let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
 
         // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
@@ -236,7 +236,7 @@ window.addEventListener("load", function() {
 
         // console.log('filter type: ', filterType);
       });
-    });
+    // });
 
 
     // frontpage custom dropdowns handle
