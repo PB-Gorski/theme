@@ -117,7 +117,7 @@ $tax_sort = $taxonomy;
           <div class="dropdown-filter customPrice price-max flex-col bg-white">
             <p class="dropdown-filter-title">Cena do:</p>
             <div class="dropdown__value dropdown__value-price dropdown__value-max font-bold after:content-['']"><span class="hidden"></span><input type="text" id="inputPriceMax" placeholder="Max" class="w-full"></div>
-            <ul class="dropdown__list">
+            <ul class="dropdown__list hidden">
               <li class="dropdown__item">
                 <span class="dropdown__link menu-link cursor-pointer">50 000</span>
               </li>
