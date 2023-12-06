@@ -5,7 +5,7 @@ window.addEventListener("load", function() {
   }
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   let mainPageID = document.querySelector('#Banner');
-  if(document.body.classList.contains('_page-parent') || 
+  if(document.body.classList.contains('page-parent') || 
   document.body.classList.contains('page-child') ||
     mainPageID?.classList.contains('banner-lista-mieszkan-osiedle-srebrniki') ||
     mainPageID?.classList.contains('banner-o-inwestycji-torunska-16') ||
