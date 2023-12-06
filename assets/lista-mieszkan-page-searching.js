@@ -830,89 +830,12 @@ window.addEventListener("load", function() {
         
 
         document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies == 'NaN' ? 'Max' : (filteredMetrazMaxFromCookies == 10000000 ? 'Max' :  filteredMetrazMaxFromCookies == '' ? 'Max' : Number(filteredMetrazMaxFromCookies).toLocaleString());
-
-
-        
-        
           
         console.log('after write', filteredMetrazMaxFromCookies);
+      };   
 
-
-
-
-
-
-        // if(miastoArr.includes(+choosenOptionID)){
-        //   console.log('wybrano z kategorii - miasto');
-        //   // miasto
-        //   if(tempMiastoArr.includes(choosenOptionID)){removeItemAll(tempMiastoArr,choosenOptionID);}else{tempMiastoArr.push(choosenOptionID)};
-
-        //   tempMiastoArr.forEach(choosenItem =>{
-        //     passiveOptions.forEach(item => {
-        //       if(item.childNodes[1].dataset.termid == choosenItem){choosenMiastoArr.push(item.childNodes[1].dataset.name)}
-        //     });
-        //   });
-        //   menuActiveSpan.innerHTML = choosenMiastoArr.join(', ');
-        //   console.log('miasto: ',choosenMiastoArr);
-
-        // }else if(inwestycjaArr.includes(+choosenOptionID)){
-        //   // inwestycje
-        //   tempInwestycjaArr.includes(choosenOptionID) ? removeItemAll(tempInwestycjaArr,choosenOptionID) : tempInwestycjaArr.push(choosenOptionID);
-
-        //   if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
-
-        //   menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
-        // }else if(pokojeArr.includes(+choosenOptionID)){
-        //   // pokoje
-        //   if(tempPokojeArr.includes(choosenOptionID)){removeItemAll(tempPokojeArr,choosenOptionID);}else{tempPokojeArr.push(choosenOptionID)};
-
-        //   tempPokojeArr.forEach(choosenItem =>{
-        //     passiveOptions.forEach(item => {
-        //       if(item.childNodes[1].dataset.termid == choosenItem){choosenPokojeArr.push(item.childNodes[1].dataset.name)}
-        //     });
-        //   });
-        //   menuActiveSpan.innerHTML = choosenPokojeArr.join(', ');
-        // }else if(pietroArr.includes(+choosenOptionID)){
-        //   // pietro
-        //   if(tempPietroArr.includes(choosenOptionID)){removeItemAll(tempPietroArr,choosenOptionID);}else{tempPietroArr.push(choosenOptionID)};
-
-        //   tempPietroArr.forEach(choosenItem =>{
-        //     passiveOptions.forEach(item => {
-        //       if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
-        //     });
-        //   });
-        //   menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
-        // }else if(terminArr.includes(+choosenOptionID)){
-        //   // termin
-        //   if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
-
-        //   tempTerminArr.forEach(choosenItem =>{
-        //     passiveOptions.forEach(item => {
-        //       if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
-        //     });
-        //   });
-        //   menuActiveSpan.innerHTML = choosenTempArr.join(', ');
-        // }else if(inneArr.includes(+choosenOptionID)){
-        //   // inne
-        //   tempInneArr.includes(choosenOptionID) ? removeItemAll(tempInneArr,choosenOptionID) : tempInneArr.push(choosenOptionID);
-
-        //   if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
-
-        //   menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
-        // }else{
-        //   console.log('error');
-        // };          
-
-
-        // menuActiveSpan.dataset.label = choosenOption;
-        // menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
-
-        // console.log('item: ', menuActiveSpan.getAttribute('data-label'));
-        // console.log('item category: ', menuActiveTitle);
-        // console.log('item termid: ', +choosenOptionID);
-
-      };      
       showActiveFilterNameFromCookies();
+
       function runFromCookies(){
         YMCTools({
           target: '.data-target-ymc2', 
@@ -1158,20 +1081,6 @@ window.addEventListener("load", function() {
       activeMenu.addEventListener('click', () =>{
         // searchBarTest.classList.toggle('z-[0]');
         document.querySelectorAll('.menu-passive').forEach(activeItemPassive =>{
-          // console.log('click2');
-          // if(activeItemPassive.style.display == 'block'){
-          //   activeItemPassive.classList.toggle('hidden')
-          // }else if(!activeItemPassive.style.display == 'block'){
-          //   activeItemPassive.classList.remove('hidden')
-          // };
-  
-          // if(!activeItemPassive.classList.contains('hidden')){
-          //   activeItemPassive.previousElementSibling.childNodes[2].classList.remove('arrow-down');
-          //   activeItemPassive.previousElementSibling.childNodes[2].innerHTML = 'x';
-          // }else{
-          //   activeItemPassive.previousElementSibling.childNodes[2].classList.add('arrow-down');
-          //   activeItemPassive.previousElementSibling.childNodes[2].innerHTML = '';
-          // };
         });
       })
     });
@@ -1180,29 +1089,8 @@ window.addEventListener("load", function() {
     document.body.addEventListener('click', () => {
       console.log('body click');
       document.querySelectorAll('.menu-passive').forEach(activeItem =>{
-        // activeItem.style.display = 'none';  
-  
-  
-        // if( !activeItem.style.display == 'none' ){
-        //   console.log('block');
-        //   activeItem.previousElementSibling.childNodes[2].classList.remove('arrow-down');
-        //   activeItem.previousElementSibling.childNodes[2].innerHTML = 'x';
-        // }else{
-        //   console.log('none');
-        //   activeItem.previousElementSibling.childNodes[2].classList.add('arrow-down');
-        //   activeItem.previousElementSibling.childNodes[2].innerHTML = '';
-        // };
-      });
-  
-      // document.querySelectorAll('.dropdown__list').forEach(activeItem2 =>{
-      //   if(activeItem2.classList.contains('dropdown__list_active-metraz') || activeItem2.classList.contains('dropdown__list_active')){
-      //     activeItem2.classList.remove('dropdown__list_active-metraz');  
-      //     activeItem2.classList.remove('dropdown__list_active');  
-      //     activeItem2.style.display = 'none';  
-      //   }
-      // });
 
-  
+      });
     });
 
 
