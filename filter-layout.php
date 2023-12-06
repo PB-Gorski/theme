@@ -63,7 +63,7 @@ $tax_sort = $taxonomy;
           if (get_taxonomy($select_term)->label == 'Cena') { ?>
             <div class="dropdown-filter customPrice price-min flex-col bg-white">
               <p class="dropdown-filter-title">Cena od:</p>
-              <div class="dropdown__value dropdown__value-price dropdown__value-min font-bold flex items-center"><span class="hidden after:hidden"></span><input type="text" id="inputPriceMin" placeholder="Min" class="w-full"></div>
+              <div class="dropdown__value dropdown__value-price dropdown__value-min font-bold flex items-center after:content-['']"><span class="hidden"></span><input type="text" id="inputPriceMin" placeholder="Min" class="w-full"></div>
               <ul class="dropdown__list hidden">
                 <li class="dropdown__item">
                   <span class="dropdown__link menu-link cursor-pointer">0</span>
@@ -117,7 +117,7 @@ $tax_sort = $taxonomy;
             </div>
             <div class="dropdown-filter customPrice price-max flex-col bg-white">
               <p class="dropdown-filter-title">Cena do:</p>
-              <div class="dropdown__value dropdown__value-price dropdown__value-max font-bold"><span class="hidden">Max</span><input type="text" id="inputPriceMax" placeholder="Max" class="w-full"></div>
+              <div class="dropdown__value dropdown__value-price dropdown__value-max font-bold after:content-['']"><span class="hidden">Max</span><input type="text" id="inputPriceMax" placeholder="Max" class="w-full"></div>
               <ul class="dropdown__list hidden">
                 <li class="dropdown__item">
                   <span class="dropdown__link menu-link cursor-pointer">50 000</span>
