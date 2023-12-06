@@ -16,12 +16,13 @@ window.addEventListener("load", function() {
 
     deleteAllCookies();
     // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
-    let pricesID = runSearchingPrice();
-    let metrazeID = runSearchingMetraz();
+    // let pricesID = runSearchingPrice();
+    // let metrazeID = runSearchingMetraz();
 
     YMCTools({
       target: '.data-target-ymc2',
-      terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join(),      
+      // terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join(),      
+      terms: choosenOptions.join(),      
     }).apiTermUpdate(); 
 
     // wyszukiwanie mieszkan po filtrach (cena)
