@@ -2,6 +2,28 @@ window.addEventListener("load", function() {
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('post-type-archive-mieszkania')){
     console.log('glowna lista mieszkan page');
+
+    // for first run
+    let searchedFromCookiesIDs = document.querySelectorAll('.active');
+    let searchedReadyArr = [];
+
+    searchedFromCookiesIDs.forEach(item =>{
+      console.log('term from cookies',item.dataset.termid);
+      searchedReadyArr.push(item.dataset.termid)
+    });
+
+    console.log('logggggg: ',searchedReadyArr.join());
+
+    deleteAllCookies();
+    // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
+    let pricesID = runSearchingPrice();
+    let metrazeID = runSearchingMetraz();
+
+    YMCTools({
+      target: '.data-target-ymc2',
+      terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join(),      
+    }).apiTermUpdate(); 
+
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
     let choosenOptions =[];
@@ -1024,26 +1046,7 @@ window.addEventListener("load", function() {
 
     // *******************************************************
     
-    // for first run
-    let searchedFromCookiesIDs = document.querySelectorAll('.active');
-    let searchedReadyArr = [];
 
-    searchedFromCookiesIDs.forEach(item =>{
-      console.log('term from cookies',item.dataset.termid);
-      searchedReadyArr.push(item.dataset.termid)
-    });
-
-    console.log('logggggg: ',searchedReadyArr.join());
-
-    deleteAllCookies();
-    // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
-    let pricesID = runSearchingPrice();
-    let metrazeID = runSearchingMetraz();
-
-    YMCTools({
-      target: '.data-target-ymc2',
-      terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join(),      
-    }).apiTermUpdate(); 
 
     btnSearch.addEventListener('click', () =>{
       let searchedFromCookiesIDs = document.querySelectorAll('.active');
