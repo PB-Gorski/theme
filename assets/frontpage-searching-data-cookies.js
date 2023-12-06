@@ -314,7 +314,7 @@ window.addEventListener("load", function() {
 
       priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
       
-      priceMaxValue = document.querySelector('.dropdown__value-max').childNodes[1].value == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
+      priceMaxValue = document.querySelector('.dropdown__value-max').childNodes[1].value == '' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
 
       console.log('no spaces', priceMinValue,priceMaxValue);
 
