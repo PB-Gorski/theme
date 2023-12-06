@@ -63,7 +63,7 @@ $tax_sort = $taxonomy;
           <div class="dropdown-filter customPrice price-min flex-col bg-white">
             <p class="dropdown-filter-title">Cena od:</p>
             <div class="dropdown__value dropdown__value-price dropdown__value-min font-bold after-content-['']"><span></span><input type="text" id="inputPriceMin" placeholder="Min" class="w-full"></div>
-            <ul class="dropdown__list hidden">
+            <ul class="dropdown__list">
               <li class="dropdown__item">
                 <span class="dropdown__link menu-link cursor-pointer">0</span>
               </li>
