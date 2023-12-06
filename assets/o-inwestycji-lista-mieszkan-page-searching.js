@@ -822,7 +822,8 @@ window.addEventListener("load", function() {
 
         console.log('prices from cookies: ',priceMinUpdate, priceMaxUpdate);
 
-        document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies == '' ? 0 : Number(filteredPriceMinFromCookies).toLocaleString();
+        // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies == '' ? 0 : Number(filteredPriceMinFromCookies).toLocaleString();
+        document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value == '' ? 0 : document.getElementById('inputPriceMax').value;
 
         console.log('price max fdafsd: ',filteredPriceMaxFromCookies);
 
