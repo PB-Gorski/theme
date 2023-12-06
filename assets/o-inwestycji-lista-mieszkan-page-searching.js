@@ -926,6 +926,8 @@ window.addEventListener("load", function() {
       newArr = [];
       newArrHTMLList = [];
 
+      document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value
+
       // foundedPostOnStart.classList.add('hidden');
       // foundedPostOnStart.classList.add('hidden2');
       const dropDownFilters = document.querySelectorAll(".dropdown-filter");
