@@ -7,6 +7,9 @@ window.addEventListener("load", function() {
   if(document.body.classList.contains('home') ||
   document.body.classList.contains('_page-parent') ||
   document.body.classList.contains('_page-child')){
+    document.querySelector('.btn-ssearch').addEventListener('click',()=>{
+      document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
+    })
 
     console.log('home');
     // document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
