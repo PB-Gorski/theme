@@ -63,7 +63,7 @@ $tax_sort = $taxonomy;
           if (get_taxonomy($select_term)->label == 'Cena') { ?>
             <div class="dropdown-filter customPrice price-min flex-col bg-white">
               <p class="dropdown-filter-title">Cena od:</p>
-              <div class="dropdown__value dropdown__value-price dropdown__value-min font-bold flex items-center"><span>0</span><input type="text" id="inputPriceMin" name="inputPriceMin"></div>
+              <div class="dropdown__value dropdown__value-price dropdown__value-min font-bold flex items-center"><span><input type="text" id="inputPriceMin"></span></div>
               <ul class="dropdown__list">
                 <li class="dropdown__item">
                   <span class="dropdown__link menu-link cursor-pointer">0</span>
