@@ -109,7 +109,7 @@ window.addEventListener("load", function() {
         console.log('new arr after check: ', choosenOptions);
 
         // document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + filteredPriceFromFrontPage;
-        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + '; path=/';
+        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join();
         console.log('cookie data: ', document.cookie);
 
         let choosenMiastoArr = [];
