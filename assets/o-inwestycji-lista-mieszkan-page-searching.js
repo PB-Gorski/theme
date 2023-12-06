@@ -1075,6 +1075,20 @@ window.addEventListener("load", function() {
     // *******************************************************
 
     btnSearch.addEventListener('click', () =>{
+      document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.querySelector('.dropdown__value-min').childNodes[1].value == '' ? 0 : document.getElementById('inputPriceMin').value;
+      document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.querySelector('.dropdown__value-max').childNodes[1].value == '' ? 10000000 : document.getElementById('inputPriceMax').value;
+      // runSearchingFrontPage();
+      // let filterType = item.parentNode.previousElementSibling.previousElementSibling.textContent;
+
+      // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
+
+      let priceMinValueCookie2 = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
+
+      let priceMaxValueCookie2 = document.querySelector('.dropdown__value-max').childNodes[1].value == '' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
+
+      document.cookie = "PriceMinFromCookies=" + priceMinValueCookie2;
+      document.cookie = "PriceMaxFromCookies=" + priceMaxValueCookie2;
+
       let searchedFromCookiesIDs = document.querySelectorAll('.active');
       let searchedReadyArr = [];
 
