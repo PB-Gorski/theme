@@ -1023,7 +1023,8 @@ window.addEventListener("load", function() {
     };
 
     // *******************************************************
-
+    let pricesID = runSearchingPrice();
+    let metrazeID = runSearchingMetraz();
     YMCTools({
       target: '.data-target-ymc2',
       terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join(),      
