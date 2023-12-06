@@ -483,11 +483,7 @@ window.addEventListener("load", function() {
       newArr = [];
       newArrHTMLList = [];
       metrazValueArrNodeList = [];
-
-      // YMCTools({
-      //   target: '.data-target-ymc1',
-      //   terms: filteredTermsID.join(),
-      // }).apiTermUpdate();
+      
       return filteredTermsIDMetraz;
     };
 
