@@ -109,7 +109,7 @@ window.addEventListener("load", function() {
         console.log('new arr after check: ', choosenOptions);
 
         // document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + filteredPriceFromFrontPage;
-        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join();
+        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + '; path=/';
         console.log('cookie data: ', document.cookie);
 
         let choosenMiastoArr = [];
@@ -230,7 +230,7 @@ window.addEventListener("load", function() {
         let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
         console.log(choosenOptions);
         console.log('test***',choosenOptions.length != 0 ? (choosenOptions.join() + ',') : '');
-        document.cookie = "filteredTermsFromCookies=" + (choosenOptions.length != 0 ? (choosenOptions.join() + ',') : '') + filteredPriceFromFrontPage + '; path=/';
+        document.cookie = "filteredTermsFromCookies=" + (choosenOptions.length != 0 ? (choosenOptions.join() + ',') : '') + filteredPriceFromFrontPage;
 
         document.cookie = "PriceMinFromCookies=" + priceMinValueCookie2;
         document.cookie = "PriceMaxFromCookies=" + priceMaxValueCookie2;
