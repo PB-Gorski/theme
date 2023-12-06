@@ -957,6 +957,7 @@ window.addEventListener("load", function() {
       let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
 
       document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
+      document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
 
 
       priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
