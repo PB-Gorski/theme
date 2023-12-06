@@ -7,11 +7,11 @@ window.addEventListener("load", function() {
   if(document.body.classList.contains('home') ||
   document.body.classList.contains('_page-parent') ||
   document.body.classList.contains('_page-child')){
-    document.querySelector('.btn-search').addEventListener('click',()=>{
-      document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
-      document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value;
-      runSearchingFrontPage();
-    })
+    // document.querySelector('.btn-search').addEventListener('click',()=>{
+    //   document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
+    //   document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value;
+    //   runSearchingFrontPage();
+    // })
 
     console.log('home');
     // document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
@@ -305,15 +305,16 @@ window.addEventListener("load", function() {
       newArrPriceHTMLList = [];
 
 
-      document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
-      document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value;
+      // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
+      // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
+      // document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value;
 
       const dropDownFilters = document.querySelectorAll(".dropdown-filter");
       let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
 
       priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
       
-      priceMaxValue = document.querySelector('.dropdown__value-max').childNodes[1].value == '' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
+      priceMaxValue = document.querySelector('.dropdown__value-max').childNodes[0].innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
 
       console.log('no spaces', priceMinValue,priceMaxValue);
 
