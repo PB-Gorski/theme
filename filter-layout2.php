@@ -21,10 +21,10 @@ $tax_sort = $taxonomy;
         <p class="text-[20px] font-semibold">Mieszkania</p>
       </div>
       <div class="tab_mieszkania">
-        <p class="text-[20px] font-semibold">Lokale</p>
+        <p class="text-[20px] font-semibold">Lokale użytkowe</p>
       </div>
       <div class=" tab_mieszkania">
-        <p class="text-[20px] font-semibold">Biura</p>
+        <p class="text-[20px] font-semibold">Miejsca postojowe</p>
       </div>
     </div>
 
