@@ -367,7 +367,7 @@ $tax_sort = $taxonomy;
 
                   if ((get_taxonomy($select_term)->label) == 'Miasto') {
                     $type_multiple = '';
-                  } else if ((get_taxonomy($select_term)->label) == 'Termin') {
+                  } else if ((get_taxonomy($select_term)->label) == 'Termin zakończenia') {
                     $type_multiple = '';
                   } else if ((get_taxonomy($select_term)->label) == 'inne') {
                     $type_multiple = '';
