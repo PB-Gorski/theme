@@ -35,7 +35,7 @@
       <div class="wp-block-group above-post-template-frontpage-blog ul-wrapper-frontpage-blog ">
         <!-- wp:post-template {"className":"mb-[40px] flex desktop:flex-row flex-col justify-between desktop:gap-[30px] gap-[60px]"} -->
         <!-- wp:group -->
-        <div class="wp-block-group blog-tile w-full inline-block group" data-aos="fade-right" data-aos-offset="30">
+        <div class="wp-block-group aos-fade-up blog-tile w-full inline-block group">
           <!-- wp:group -->
           <div class="wp-block-group relative group block">
             <!-- wp:group -->
