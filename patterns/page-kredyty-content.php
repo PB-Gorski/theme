@@ -26,7 +26,7 @@
         <!-- wp:group -->
         <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
           <!-- wp:paragraph -->
-          <span data-aos="fade-right" data-aos-offset="30">Aby porównać ofertę kredytów w kilkunastu bankach należy poświęcić dużo czasu na przeglądanie stron w internecie, następnie na wizyty w placówkach i porównywanie poszczególnych ofert. Przychodząc na spotkanie z ekspertem kredytowym PB Górski możesz skrócić cały proces do minimum.</span>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">Aby porównać ofertę kredytów w kilkunastu bankach należy poświęcić dużo czasu na przeglądanie stron w internecie, następnie na wizyty w placówkach i porównywanie poszczególnych ofert. Przychodząc na spotkanie z ekspertem kredytowym PB Górski możesz skrócić cały proces do minimum.</span>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -41,7 +41,7 @@
         <!-- wp:group -->
         <div class="wp-block-group mb-[30px] text-[#8a8f99] leading-[30px]">
           <!-- wp:paragraph -->
-          <span data-aos="fade-right" data-aos-offset="30">Ekspert w przystępny sposób przedstawi Ci oferty wiodących banków, wspólnie dokonacie wyboru najkorzystniejszej dla Ciebie opcji, po czym otrzymasz dokładne instrukcje, jakie dokumenty musisz dostarczyć do złożenia wniosku.</span>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">Ekspert w przystępny sposób przedstawi Ci oferty wiodących banków, wspólnie dokonacie wyboru najkorzystniejszej dla Ciebie opcji, po czym otrzymasz dokładne instrukcje, jakie dokumenty musisz dostarczyć do złożenia wniosku.</span>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
