@@ -1429,10 +1429,15 @@ background-color: #e8fbff!important;
 }
 .search_tabs{
   gap: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 }
 @media only screen and (max-width: 1024px) {
   .search_tabs{
-    gap: 30px;
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .arrow-down:after {

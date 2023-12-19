@@ -16,15 +16,15 @@ $tax_sort = $taxonomy;
   <?php if (is_array($terms_selected)) :
     $all_terms = implode(',', $terms_selected);
   ?>
-    <div class="search_tabs container flex justify-center items-center">
+    <div class="search_tabs container flex justify-center items-center text-[18px] desktop:text-[20px] font-semibold">
       <div class="tab_mieszkania mieszkania-active">
-        <p class="text-[20px] font-semibold">Mieszkania</p>
+        <p class="">Mieszkania</p>
       </div>
       <div class="tab_mieszkania">
-        <p class="text-[20px] font-semibold">Lokale użytkowe</p>
+        <p class="">Lokale użytkowe</p>
       </div>
-      <div class=" tab_mieszkania">
-        <p class="text-[20px] font-semibold">Miejsca postojowe</p>
+      <div class="tab_mieszkania">
+        <p class="">Miejsca postojowe</p>
       </div>
     </div>
 
