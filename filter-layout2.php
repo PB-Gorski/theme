@@ -24,7 +24,7 @@ $tax_sort = $taxonomy;
         $classes = get_body_class();
         if (in_array('home', $classes)) {
           // your markup
-          echo 'custom home'
+          echo 'custom home';
         } else {
           // some other markup
         }
