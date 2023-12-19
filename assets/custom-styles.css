@@ -136,7 +136,8 @@ ul.wp-block-navigation__container  > li.wp-block-navigation-item{
   text-decoration-color: #b22944;
   cursor: pointer;
 }
-.single.single-mieszkania a{
+.single.single-mieszkania a,
+.single.single-lokale a{
   color: inherit!important;
 }
 .single .btn-find-more a{
