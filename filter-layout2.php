@@ -19,8 +19,6 @@ $tax_sort = $taxonomy;
     <div class="search_tabs container flex justify-center items-center">
       <div class="tab_mieszkania search_tab-active">
         <?php
-        echo body_class();
-        echo wp_get_document_title();
         $classes = get_body_class();
         if (in_array('home', $classes)) {
           // your markup
