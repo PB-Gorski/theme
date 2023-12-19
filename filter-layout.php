@@ -17,7 +17,7 @@ $tax_sort = $taxonomy;
     $all_terms = implode(',', $terms_selected);
   ?>
     <div class="search_tabs container flex justify-center items-center">
-      <div class="tab_mieszkania mieszkania-active">
+      <div class="tab_mieszkania tab-active">
         <p class=""><a href="<?php echo home_url() . '/mieszkania'; ?>">Mieszkania</a></p>
       </div>
       <div class="tab_mieszkania">
