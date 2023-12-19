@@ -31,6 +31,8 @@ $tax_sort = $taxonomy;
         if (is_post_type_archive('mieszkania')) {
           echo 'mieszkania';
         } else echo 'not' ?>
+
+
         <p class=""><a href="<?php echo home_url() ?>/mieszkania">Mieszkania</a></p>
       </div>
       <div class="tab_mieszkania">
