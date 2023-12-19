@@ -21,6 +21,13 @@ $tax_sort = $taxonomy;
         <?php
         echo body_class();
         echo wp_get_document_title();
+        $classes = get_body_class();
+        if (in_array('home', $classes)) {
+          // your markup
+          echo 'custom home'
+        } else {
+          // some other markup
+        }
         if (is_post_type_archive('mieszkania')) {
           echo 'mieszkania';
         } else echo 'not' ?>
