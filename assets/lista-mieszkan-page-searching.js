@@ -1057,6 +1057,17 @@ window.addEventListener("load", function() {
       let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
 
+      // filter ID by page id
+      let pageID = document.querySelector('#Banner');
+      let filterID = '';
+      if(pageID.classList.contains('banner-lista-mieszkan')){
+        filterID = '.data-target-ymc2';
+        console.log('ymc2');
+      }else if(pageID.classList.contains('banner-lista-lokali')){
+        filterID = '.data-target-ymc1';
+        console.log('ymc1');
+      }
+
       YMCTools({
         target: filterID,
         terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join(),      
