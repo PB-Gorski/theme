@@ -18,7 +18,7 @@ $tax_sort = $taxonomy;
   ?>
     <div class="search_tabs container flex justify-center items-center">
       <div class="tab_mieszkania mieszkania-active">
-        <p class="">Mieszkania</p>
+        <p class=""><a href="<?php echo home_url() . '/mieszkania'; ?>">Mieszkania</a></p>
       </div>
       <div class="tab_mieszkania">
         <p class=""><a href="<?php echo home_url() . '/lokale'; ?>">Lokale użytkowe</a></p>
