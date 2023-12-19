@@ -3,6 +3,17 @@ window.addEventListener("load", function() {
   if(document.body.classList.contains('post-type-archive-mieszkania') || document.body.classList.contains('post-type-archive-lokale')){
     console.log('glowna lista mieszkan page');
 
+    // filter ID by page id
+    let pageID = document.querySelector('#Banner');
+    let filterID = '';
+    if(pageID.classList.contains('banner-lista-mieszkan')){
+      filterID = '.data-target-ymc2';
+      console.log('ymc2');
+    }else if(pageID.classList.contains('banner-lista-lokali')){
+      filterID = '.data-target-ymc1';
+      console.log('ymc1');
+    }
+
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
     let choosenOptions =[];
@@ -838,17 +849,6 @@ window.addEventListener("load", function() {
       };   
 
       showActiveFilterNameFromCookies();
-
-      // filter ID by page id
-      let pageID = document.querySelector('#Banner');
-      let filterID = '';
-      if(pageID.classList.contains('banner-lista-mieszkan')){
-        filterID = '.data-target-ymc2';
-        console.log('ymc2');
-      }else if(pageID.classList.contains('banner-lista-lokali')){
-        filterID = '.data-target-ymc1';
-        console.log('ymc1');
-      }
 
       function runFromCookies(){
         YMCTools({
