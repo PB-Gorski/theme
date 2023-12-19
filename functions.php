@@ -951,13 +951,21 @@ add_filter('ymc_filter_custom_layout_1850_8', 'pbgorski_custom_filter_layout8', 
 
 // ---------------------------------------------------------------------------------------
 
-// posts selected
+// posts selected 148
 function ymc_posts_selected($layouts, $founded_post)
 {
 	$layouts = '<p class="text-[24px] text-center aos-init aos-animate">Znaleziono ' . $founded_post . ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' . wp_count_posts('mieszkania')->publish . ')</span></p>';
 	return $layouts;
 }
 add_filter('ymc_posts_selected_148_2', 'ymc_posts_selected', 10, 2);
+
+// posts selected 2323
+function ymc_posts_selected2323_1($layouts, $founded_post)
+{
+	$layouts = '<p class="text-[24px] text-center aos-init aos-animate">Znaleziono ' . $founded_post . ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' . wp_count_posts('lokale')->publish . ')</span></p>';
+	return $layouts;
+}
+add_filter('ymc_posts_selected_2323_1', 'ymc_posts_selected2323_1', 10, 2);
 
 function is_blog()
 {
