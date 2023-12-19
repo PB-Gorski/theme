@@ -959,14 +959,6 @@ function ymc_posts_selected($layouts, $founded_post)
 }
 add_filter('ymc_posts_selected_148_2', 'ymc_posts_selected', 10, 2);
 
-// posts selected 2323
-function ymc_posts_selected2323_1($layouts, $founded_post)
-{
-	$layouts = '<p class="text-[24px] text-center aos-init aos-animate">Znaleziono ' . $founded_post . ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' . wp_count_posts('lokale')->publish . ')</span></p>';
-	return $layouts;
-}
-add_filter('ymc_posts_selected_2323_1', 'ymc_posts_selected2323_1', 10, 2);
-
 function is_blog()
 {
 	return (is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
