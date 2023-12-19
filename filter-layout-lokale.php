@@ -20,7 +20,7 @@ $tax_sort = $taxonomy;
       <div class="tab_mieszkania search_tab-active">
         <p class=""><a href="<?php echo home_url() . '/mieszkania'; ?>">Mieszkania</a></p>
       </div>
-      <div class="tab_mieszkania">
+      <div class="tab_mieszkania search_tab-active">
         <p class=""><a href="<?php echo home_url() . '/lokale'; ?>">Lokale użytkowe</a></p>
       </div>
       <div class=" tab_mieszkania">
@@ -406,7 +406,7 @@ $tax_sort = $taxonomy;
     echo wp_count_posts('lokale')->publish
     ?>
 
-    <p data-allPosts="<?php echo wp_count_posts('mieszkania')->publish; ?>" class="js-foundedPostOnStart custom-posts-found container mx-auto px-[20px] desktop:px-0 bg-white w-full flex items-center justify-center gap-[6px] desktop:text-center z-[0] absolute translate-x-[-50%] desktop:text-[24px] text-[18px] text-center" style="left:50%;width:100%;height:110px" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo wp_count_posts('mieszkania')->publish; ?> ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('mieszkania')->publish; ?>)</span></p>
+    <p data-allPosts="<?php echo wp_count_posts('lokale')->publish; ?>" class="js-foundedPostOnStart custom-posts-found container mx-auto px-[20px] desktop:px-0 bg-white w-full flex items-center justify-center gap-[6px] desktop:text-center z-[0] absolute translate-x-[-50%] desktop:text-[24px] text-[18px] text-center" style="left:50%;width:100%;height:110px" data-aos="fade-up" data-aos-offset="30">Znaleziono <?php echo wp_count_posts('lokale')->publish; ?> ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń <?php echo wp_count_posts('lokale')->publish; ?>)</span></p>
     <div class="posts-found js-post-found bg-white z-[-1]"></div>
   <?php endif; ?>
   <?php do_action("ymc_after_filter_layout_" . $layout_id . '_' . $c_target); ?>

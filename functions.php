@@ -562,7 +562,7 @@ add_filter('ymc_post_custom_layout_2323_1', 'my_custom_post_layoutlayout2323_1',
 // 148_1 filter layout
 function pbgorski_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
-	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
+	$filepath_filter = get_stylesheet_directory() . '/filter-layout-lokale.php';
 	$filter_id = '148';
 	$layout_id = '1';
 	$layout  = ''; //Override demo message
