@@ -1432,12 +1432,16 @@ background-color: #e8fbff!important;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+  font-weight: 600;
+  font-size: 20px;
 }
 @media only screen and (max-width: 1024px) {
   .search_tabs{
     gap: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    font-weight: 600;
+    font-size: 20px;
   }
 }
 .arrow-down:after {

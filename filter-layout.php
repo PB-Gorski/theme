@@ -18,13 +18,13 @@ $tax_sort = $taxonomy;
   ?>
     <div class="search_tabs container flex justify-center items-center">
       <div class="tab_mieszkania mieszkania-active">
-        <p class="text-[20px] font-semibold">Mieszkania</p>
+        <p class="">Mieszkania</p>
       </div>
       <div class="tab_mieszkania">
-        <p class="text-[20px] font-semibold"><a href="<?php echo home_url() . '/lokale'; ?>">Lokale użytkowe</a></p>
+        <p class=""><a href="<?php echo home_url() . '/lokale'; ?>">Lokale użytkowe</a></p>
       </div>
       <div class=" tab_mieszkania">
-        <p class="text-[20px] font-semibold">Miejsca postojowe</p>
+        <p class="">Miejsca postojowe</p>
       </div>
     </div>
 
