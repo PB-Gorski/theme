@@ -82,9 +82,6 @@
             <!-- wp:paragraph -->
             <span class="block mb-[20px]" data-aos="fade-right" data-aos-offset="30">tel.</span>
             <!-- /wp:paragraph -->
-            <!-- wp:paragraph -->
-            <span class="block mb-[20px]" data-aos="fade-right" data-aos-offset="30">tel.</span>
-            <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
 
@@ -96,10 +93,6 @@
             <!-- wp:paragraph -->
             <a href="tel:+48583407900" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300" data-aos="fade-right" data-aos-offset="30">(+48) 58 340-79-00</a>
             <!-- /wp:paragraph -->
-            <!-- wp:paragraph -->
-            <a href="tel:+483047101" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300" data-aos="fade-right" data-aos-offset="30">(+48) 58 304-71-01</a>
-            <!-- /wp:paragraph -->
-
           </div>
           <!-- /wp:group -->
         </div>
