@@ -16,7 +16,7 @@
     <a href="#" class="inline-block w-full h-full cursor-default absolute top-0 left-0 z-[-1]" data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-offset="0">
       <!-- wp:figure -->
       <figure class="wp-block-image w-full h-full page-kredyty">
-        <img src="" alt="banner-bg">
+        <img src="/" alt="banner-bg">
       </figure>
       <!-- /wp:figure -->
     </a>
@@ -24,7 +24,7 @@
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px]">
       <!-- wp:group -->
-      <div class="wp-block-group title-wrapper max-w-[500px]">
+      <div class="wp-block-group title-wrapper">
         <!-- wp:heading {"level":1} -->
         <h1 class="wp-block-heading title text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]"><span class="block" data-aos="fade-right" data-aos-offset="30">Uzyskanie kredytu</span><span class="block" data-aos="fade-right" data-aos-offset="30">nie musi być skomplikowane.</span></h1>
         <!-- /wp:heading -->
