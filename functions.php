@@ -534,7 +534,7 @@ function pbgorski_custom_filter_layout2323_1($layout, $terms, $taxonomy, $multip
 	ob_end_clean();
 	return $layout;
 }
-add_filter('ymc_filter_custom_layout_2323_1', 'pbgorski_custom_filter_layoutlayout2323_1', 10, 6);
+add_filter('ymc_filter_custom_layout_2323_1', 'pbgorski_custom_filter_layout2323_1', 10, 6);
 
 // 148_1 post layout
 function my_custom_post_layoutlayout2323_1($layout, $post_id, $filter_id, $increment_post, $arrOptions)
