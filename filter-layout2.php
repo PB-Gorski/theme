@@ -18,19 +18,6 @@ $tax_sort = $taxonomy;
   ?>
     <div class="search_tabs container flex justify-center items-center">
       <div class="tab_mieszkania search_tab-active">
-        <?php
-        $classes = get_body_class();
-        if (in_array('home', $classes)) {
-          // your markup
-          echo 'custom home';
-        } else {
-          // some other markup
-        }
-        if (is_post_type_archive('mieszkania')) {
-          echo 'mieszkania';
-        } else echo 'not' ?>
-
-
         <p class=""><a href="<?php echo home_url() ?>/mieszkania">Mieszkania</a></p>
       </div>
       <div class="tab_mieszkania">
