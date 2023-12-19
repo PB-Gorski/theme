@@ -15,7 +15,7 @@
     <!-- wp:paragraph -->
     <a href="#" class="inline-block w-full h-full cursor-default absolute top-0 left-0 z-[-1]" data-aos="fade-zoom-in" data-aos-easing="ease" data-aos-offset="0">
       <!-- wp:figure -->
-      <figure class="wp-block-image w-full h-full page-kredyty">
+      <figure class="wp-block-image  w-full h-full page-kredyty">
         <img src="/" alt="banner-bg">
       </figure>
       <!-- /wp:figure -->
