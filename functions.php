@@ -519,7 +519,7 @@ add_action('init', 'cptui_register_my_cpts_lokale', -1);
 
 
 
-// 148_1 filter layout
+// 2323_1 filter layout
 function pbgorski_custom_filter_layout2323_1($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
@@ -536,7 +536,7 @@ function pbgorski_custom_filter_layout2323_1($layout, $terms, $taxonomy, $multip
 }
 add_filter('ymc_filter_custom_layout_2323_1', 'pbgorski_custom_filter_layout2323_1', 10, 6);
 
-// 148_1 post layout
+// 2323_1 post layout
 function my_custom_post_layoutlayout2323_1($layout, $post_id, $filter_id, $increment_post, $arrOptions)
 {
 	$layout = '<a href="' . get_the_permalink($post_id) . '" class="list-item-mieszkanie group container mx-auto w-full py-[20px] text-[16px] text-textGray flex justify-between items-center">';
