@@ -17,8 +17,11 @@ $tax_sort = $taxonomy;
     $all_terms = implode(',', $terms_selected);
   ?>
     <div class="search_tabs container flex justify-center items-center">
-      <div class="tab_mieszkania <?php if (is_post_type_archive('mieszkania')) echo 'mieszkania';
-                                  else echo 'not' ?> search_tab-active">
+      <div class="tab_mieszkania search_tab-active">
+        <?php
+        if (is_post_type_archive('mieszkania')) {
+          echo 'mieszkania';
+        } else echo 'not' ?>
         <p class=""><a href="<?php echo home_url() ?>/mieszkania">Mieszkania</a></p>
       </div>
       <div class="tab_mieszkania">
