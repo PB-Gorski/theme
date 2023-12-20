@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="content" class="wp-block-group content relative">
   <!-- wp:group -->
-  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[50px] desktop:flex gap-[50px]">
+  <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[50px] desktop:flex gap-[120px]">
     <!-- wp:group -->
     <div class="wp-block-group left-col desktop:w-[50%]">
       <!-- wp:heading {"level":5} -->
