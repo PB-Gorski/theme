@@ -39,7 +39,7 @@
       <!-- wp:group -->
       <div class="wp-block-group col1 desktop:w-[50%]">
         <!-- wp:group -->
-        <div class="wp-block-group inline-block cursor-default">
+        <div class="wp-block-group aos-fade-right inline-block cursor-default">
           <!-- wp:image -->
           <figure class="wp-block-image w-full h-full">
             <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img1.jpeg" alt="img">
@@ -67,7 +67,7 @@
       <!-- wp:group -->
       <div class="wp-block-group col1 desktop:w-[60%]">
         <!-- wp:group -->
-        <div class="wp-block-group cursor-default inline-block">
+        <div class="wp-block-group aos-fade-right cursor-default inline-block">
           <!-- wp:image -->
           <figure class="wp-block-image w-full h-full">
             <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img2.jpeg" alt="img">
@@ -95,7 +95,7 @@
       <!-- wp:group -->
       <div class="wp-block-group col1 desktop:w-[60%]">
         <!-- wp:group -->
-        <div class="wp-block-group inline-block cursor-default">
+        <div class="wp-block-group aos-fade-right inline-block cursor-default">
           <!-- wp:image -->
           <figure class="wp-block-image w-full h-full">
             <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img3.jpeg" alt="img">
