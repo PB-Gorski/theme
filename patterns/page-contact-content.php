@@ -78,7 +78,7 @@
       <!-- wp:group -->
       <div class="wp-block-group section2">
         <!-- wp:heading {"level":4} -->
-        <h4><span class="text-[30px] text-textGray mb-[10px] desktop:mb-[30px] font-bold block" data-aos="fade-right" data-aos-offset="30">Biuro Obsługi Klienta</span></h4>
+        <h4><span class="text-[30px] text-textGray mb-[0px] desktop:mb-[30px] font-bold block" data-aos="fade-right" data-aos-offset="30">Biuro Obsługi Klienta</span></h4>
         <!-- /wp:heading -->
         <!-- wp:group -->
         <div class="wp-block-group address mb-[30px] text-[#8a8f99]">
