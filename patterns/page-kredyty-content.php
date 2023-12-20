@@ -70,7 +70,7 @@
       <!-- wp:group -->
       <div class="wp-block-group section2 mb-[50px]">
         <!-- wp:heading {"level":5} -->
-        <h5><span class="block text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Umów się na spotkanie</span></h5>
+        <h5><span class="block text-[26px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Umów się na spotkanie</span></h5>
         <!-- /wp:heading -->
         <!-- wp:heading {"level":5} -->
         <h5><span class="block mb-[10px] text-[24px] text-[#7e878c] font-bold" data-aos="fade-right" data-aos-offset="30">Ewa Cel</span></h5>
