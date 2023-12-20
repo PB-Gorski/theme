@@ -769,7 +769,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:group -->
-        <div class="wp-block-group mb-[30px] text-[15px] font-semibold">
+        <div class="wp-block-group mb-[30px] text-[15px] text-[#8a8f99]">
           <!-- wp:paragraph -->
           <span class="block" data-aos="fade-right" data-aos-offset="30">NIP 5890008712, REGON 190575747, KRS 0000710392, Sąd Rejonowy Gdańsk-Północ w Gdańsku, VII Wydział Gospodarczy Krajowego Rejestru Sądowego</span>
           <!-- /wp:paragraph -->
