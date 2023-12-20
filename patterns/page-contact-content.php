@@ -32,7 +32,7 @@
         <!-- wp:group -->
         <div class="wp-block-group phone mb-[30px] font-semibold">
           <!-- wp:paragraph -->
-          <a href="tel:+48607700555" class="block" data-aos="fade-right" data-aos-offset="30">kom. (+48) 607-700-555</a>
+          <span class="font-normaln text-[#8a8f99] mr-[50px]">kom.</span><a href="tel:+48607700555" class="block" data-aos="fade-right" data-aos-offset="30"> (+48) 607-700-555</a>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
           <a href="tel:+48691990112" class="block" data-aos="fade-right" data-aos-offset="30">kom. (+48) 691-990-112</a>
@@ -67,7 +67,7 @@
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group section2 mb-[50px]">
+      <div class="wp-block-group section2">
         <!-- wp:heading {"level":4} -->
         <h4><span class="text-[30px] text-textGray mb-[30px] font-bold block" data-aos="fade-right" data-aos-offset="30">Biuro Obsługi Klienta</span></h4>
         <!-- /wp:heading -->
