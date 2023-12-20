@@ -244,7 +244,7 @@
               <!-- wp:list -->
               <ul class="wp-block-list font-bold">
                 <!-- wp:list-item -->
-                <li>
+                <li class="mb-[10px]">
                   <a href="https://www.google.com/maps/place/Deweloper+PB+G%C3%B3rski+Sp.+z+o.o.+S.K.A/@54.3836995,18.6080757,17.6z/data=!4m5!3m4!1s0x0:0xc1029ad51bc7ce0c!8m2!3d54.4041492!4d18.5669008" class="font-bold flex gap-[10px]">
                     <!-- wp:image -->
                     <figure class="wp-block-image w-[20px] m-0">
