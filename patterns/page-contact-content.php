@@ -53,22 +53,22 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:paragraph -->
-        <span class="text-primaryRed" data-aos="fade-right" data-aos-offset="30">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</span>
+        <span class="text-primaryRed block" data-aos="fade-right" data-aos-offset="30">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
       <!-- wp:group -->
       <div class="wp-block-group section2 mb-[50px]">
         <!-- wp:heading {"level":4} -->
-        <h4><span class="text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Biuro Obsługi Klienta</span></h4>
+        <h4><span class="text-[30px] text-textGray mb-[30px] font-bold block" data-aos="fade-right" data-aos-offset="30">Biuro Obsługi Klienta</span></h4>
         <!-- /wp:heading -->
         <!-- wp:group -->
         <div class="wp-block-group address mb-[30px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <span data-aos="fade-right" data-aos-offset="30">ul. Joachima Lelewela 6 lok. 1,</span>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">ul. Joachima Lelewela 6 lok. 1,</span>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <span data-aos="fade-right" data-aos-offset="30">80-442 Gdańsk-Wrzeszcz</span>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">80-442 Gdańsk-Wrzeszcz</span>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -77,10 +77,10 @@
           <!-- wp:group -->
           <div class="wp-block-group labels">
             <!-- wp:paragraph -->
-            <span class="block mb-[30px]" data-aos="fade-right" data-aos-offset="30">email:</span>
+            <span class="block mb-[5px]" data-aos="fade-right" data-aos-offset="30">email:</span>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <span class="block mb-[20px]" data-aos="fade-right" data-aos-offset="30">tel.</span>
+            <span class="block mb-[5px]" data-aos="fade-right" data-aos-offset="30">tel.</span>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
@@ -88,10 +88,10 @@
           <!-- wp:group -->
           <div class="wp-block-group values">
             <!-- wp:paragraph -->
-            <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[30px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300" data-aos="fade-right" data-aos-offset="30">sprzedaz@pbgorski.pl</a>
+            <a href="mailto:sprzedaz@pbgorski.pl" class="mb-[5px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300" data-aos="fade-right" data-aos-offset="30">sprzedaz@pbgorski.pl</a>
             <!-- /wp:paragraph -->
             <!-- wp:paragraph -->
-            <a href="tel:+48583407900" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300" data-aos="fade-right" data-aos-offset="30">(+48) 58 340-79-00</a>
+            <a href="tel:+48583407900" class="mb-[5px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300" data-aos="fade-right" data-aos-offset="30">(+48) 58 340-79-00</a>
             <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
@@ -100,18 +100,18 @@
         <!-- wp:group -->
         <div class="wp-block-group when-open mb-[30px] text-primaryRed font-bold">
           <!-- wp:paragraph -->
-          <span data-aos="fade-right" data-aos-offset="30">Poniedziałek - Czwartek: 8:00 - 17:00</span>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">Poniedziałek - Czwartek: 8:00 - 17:00</span>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <span data-aos="fade-right" data-aos-offset="30">Piątek: 8:00 - 16:00</span>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">Piątek: 8:00 - 16:00</span>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <span data-aos="fade-right" data-aos-offset="30">Soboty pracujące: 9:00 - 14:00</span>
+          <span class="block" data-aos="fade-right" data-aos-offset="30">Soboty pracujące: 9:00 - 14:00</span>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
         <!-- wp:paragraph -->
-        <span class="text-primaryRed" data-aos="fade-right" data-aos-offset="30">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</span>
+        <span class="text-primaryRed block" data-aos="fade-right" data-aos-offset="30">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -127,7 +127,7 @@
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
-            <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Zobacz na GoogleMaps</p>
+            <p class="aos-fade-right underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Zobacz na GoogleMaps</p>
             <!-- /wp:paragraph -->
           </a>
           <!-- /wp:paragraph -->
@@ -142,7 +142,7 @@
             </figure>
             <!-- /wp:image -->
             <!-- wp:paragraph -->
-            <p class="underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Pokaż trasę dojazdu</p>
+            <p class="aos-fade-right underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">Pokaż trasę dojazdu</p>
             <!-- /wp:paragraph -->
           </a>
         </li>
