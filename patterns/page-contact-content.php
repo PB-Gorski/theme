@@ -32,10 +32,10 @@
         <!-- wp:group -->
         <div class="wp-block-group phone mb-[30px] font-semibold">
           <!-- wp:paragraph -->
-          <span class="aos-fade-right font-normaln text-[#8a8f99] mr-[50px]">kom.</span><a href="tel:+48607700555" class="inline aos-fade-right"> (+48) 607-700-555</a>
+          <span class="aos-fade-right font-normal text-[#8a8f99] mr-[50px]">kom.</span><a href="tel:+48607700555" class="inline aos-fade-right"> (+48) 607-700-555</a>
           <!-- /wp:paragraph -->
           <!-- wp:paragraph -->
-          <a href="tel:+48691990112" class="block" data-aos="fade-right" data-aos-offset="30">kom. (+48) 691-990-112</a>
+          <span class="aos-fade-right font-normal text-[#8a8f99] mr-[50px]">kom.</span><a href="tel:+48691990112" class="inline aos-fade-right">kom. (+48) 691-990-112</a>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
