@@ -356,6 +356,7 @@ background-color: #b22944;
   padding-bottom: 0px;
   z-index: -1;
   position: relative;
+  opacity: 0;
 }
 .contact-active {
   max-height: auto;
@@ -363,6 +364,7 @@ background-color: #b22944;
   padding-bottom: 30px;
   z-index: 0;
   position: relative;
+  opacity: 1;
 }
 
 /* contact form */
