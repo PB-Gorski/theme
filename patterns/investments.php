@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="inwestycje" class="wp-block-group inwestycje bg-white mb-[80px] relative z-[0]">
+<div id="inwestycje" class="wp-block-group inwestycje bg-white mb-[50px] desktop:mb-[80px] relative z-[0]">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
@@ -29,7 +29,7 @@
     <!-- /wp:group -->
 
     <!-- wp:list -->
-    <ul class="wp-block-list inwestycje-posts mb-[40px] flex desktop:flex-row flex-col justify-between desktop:gap-[30px] gap-y-[80px] desktop:gap-y-auto">
+    <ul class="wp-block-list inwestycje-posts mb-[60px] flex desktop:flex-row flex-col justify-between desktop:gap-[30px] gap-y-[80px] desktop:gap-y-auto">
       <?php
       $counter = 0;
       $i = 0;
