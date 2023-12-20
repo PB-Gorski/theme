@@ -57,13 +57,15 @@
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
+
       <!-- wp:group -->
-      <div class="wp-block-group separator my-[20px] w-full h-[2px] bg-[#8a8f99]">
+      <div class="wp-block-group separator my-[20px] w-full h-[1px] bg-[#9a9a9a]">
         <!-- wp:paragraph -->
         <p class="hidden">separator</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
+
       <!-- wp:group -->
       <div class="wp-block-group section2 mb-[50px]">
         <!-- wp:heading {"level":4} -->
@@ -122,6 +124,15 @@
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
+
+      <!-- wp:group -->
+      <div class="wp-block-group separator my-[20px] w-full h-[1px] bg-[#9a9a9a]">
+        <!-- wp:paragraph -->
+        <p class="hidden">separator</p>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+
       <!-- wp:list -->
       <ul class="wp-block-list font-bold">
         <!-- wp:list-item -->
