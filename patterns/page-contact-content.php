@@ -301,7 +301,7 @@
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
-                  <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
+                  <figure class="wp-block-image m-0 w-[100px] h-[100px] rounded-full">
                     <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/piekarska.jpg" alt="avatar">
                   </figure>
                   <!-- /wp:image -->
@@ -340,11 +340,11 @@
               <!-- /wp:list-item -->
 
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px]">
+              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
-                  <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
+                  <figure class="wp-block-image m-0 w-[100px] h-[100px] rounded-full">
                     <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/jahn.jpg" alt="avatar">
                   </figure>
                   <!-- /wp:image -->
@@ -383,11 +383,11 @@
               <!-- /wp:list-item -->
 
               <!-- wp:list-item -->
-              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px]">
+              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px] mb-[30px]">
                 <!-- wp:group -->
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
-                  <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
+                  <figure class="wp-block-image m-0 w-[100px] h-[100px] rounded-full">
                     <img src="/" alt="avatar">
                   </figure>
                   <!-- /wp:image -->
