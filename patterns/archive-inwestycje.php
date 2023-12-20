@@ -17,7 +17,7 @@
       <!-- wp:group -->
       <div class="wp-block-group left-col desktop:w-[70%]">
         <!-- wp:heading {"level":1} -->
-        <h1 class="wp-block-heading container mx-auto desktop:px-0 px-[20px] my-[40px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]"><span data-aos="fade-right" data-aos-offset="30">Wszystkie inwestycje</span></h1>
+        <h1 class="wp-block-heading container mx-auto desktop:px-0 px-[20px] my-[30px] text-[36px] desktop:text-[60px] text-[#2e384c] font-bold leading-[44px]"><span data-aos="fade-right" data-aos-offset="30">Wszystkie inwestycje</span></h1>
         <!-- /wp:heading -->
 
         <!-- wp:list -->
