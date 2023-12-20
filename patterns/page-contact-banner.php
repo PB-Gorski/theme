@@ -20,7 +20,7 @@
       <!-- /wp:heading -->
 
       <!-- wp:group -->
-      <div class="wp-block-group text-[#959ba6] test text-[30px]">
+      <div class="wp-block-group text-[#959ba6] text-[30px] flex desktop:items-center gap-[40px] flex-col desktop:flex-row">
         <!-- wp:paragraph -->
         <p>
           <a href="mailto:sprzedaz@pbgorski.pl" class="inline-block underline relative hover:text-[#2e384d] transition duration-[300ms] ease after:content-[''] after:absolute after:top-[-10px] after:right-[-20px] after:w-[2px] after:h-[70px] after:m-auto after:bg-[#e1e3e8] after:rotate-[25deg]" data-aos="fade-right" data-aos-offset="30">sprzedaz@pbgorski.pl</a>
@@ -28,7 +28,7 @@
         <!-- /wp:paragraph -->
 
         <!-- wp:group -->
-        <div class="wp-block-group links-phones mt-[15px]">
+        <div class="wp-block-group links-phones">
           <!-- wp:heading {"level":4} -->
           <h4 class="inline-block"><a href="tel:+48583407900" class="inline-block underline hover:text-[#2e384d] transition duration-[300ms] ease" data-aos="fade-right" data-aos-offset="30">(+48) 58 340 79 00,</a></h4>
           <!-- /wp:heading -->
