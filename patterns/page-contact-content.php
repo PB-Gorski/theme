@@ -344,6 +344,48 @@
                 <div class="wp-block-group left-col-avatar">
                   <!-- wp:image -->
                   <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
+                    <img src="/" alt="avatar">
+                  </figure>
+                  <!-- /wp:image -->
+                </div>
+                <!-- /wp:group -->
+
+                <!-- wp:group -->
+                <div class="wp-block-group right-col-text text-black text-[16px]">
+                  <!-- wp:paragraph -->
+                  <p class="text-[18px] mb-[25px]">Sonia Romel</p>
+                  <!-- /wp:paragraph -->
+                  <!-- wp:group -->
+                  <div class="wp-block-group phone flex gap-[40px]">
+                    <!-- wp:group -->
+                    <div class="wp-block-group values">
+                      <!-- wp:paragraph -->
+                      <!-- wp:paragraph -->
+                      <p class="block mb-[10px]">tel</p>
+                      <!-- /wp:paragraph -->
+                      <a href="tel:+48691990112" class="mb-[20px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">691 990 112</a>
+                      <!-- /wp:paragraph -->
+
+                      <!-- wp:paragraph -->
+                      <p class="block">email:</p>
+                      <!-- /wp:paragraph -->
+                      <!-- wp:paragraph -->
+                      <a href="mailto:s.romel@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[2e384d] transition ease duration-300">s.romel@pbgorski.pl</a>
+                      <!-- /wp:paragraph -->
+                    </div>
+                    <!-- /wp:group -->
+                  </div>
+                  <!-- /wp:group -->
+                </div>
+                <!-- /wp:group -->
+              </li>
+              <!-- /wp:list-item -->
+              <!-- wp:list-item -->
+              <li class="flex items-center gap-[20px] desktop:gap-[40px] leading-[21px]">
+                <!-- wp:group -->
+                <div class="wp-block-group left-col-avatar">
+                  <!-- wp:image -->
+                  <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
                     <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/jahn.jpg" alt="avatar">
                   </figure>
                   <!-- /wp:image -->
