@@ -358,7 +358,7 @@ background-color: #b22944;
   position: relative;
 }
 .contact-active {
-  max-height: 400px;
+  max-height: auto;
   padding-top: 30px;
   padding-bottom: 30px;
   z-index: 0;
