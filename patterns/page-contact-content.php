@@ -203,14 +203,14 @@
             <!-- wp:group -->
             <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:paragraph -->
-              <p class="text-[18px] text-bgDarkGray mb-[35px]">y</p>
+              <p class="text-[18px] text-bgDarkGray mb-[35px]">ul. Kościerska 15, 83-300 Kartuzy</p>
               <!-- /wp:paragraph -->
               <!-- wp:group -->
               <div class="wp-block-group text-black">
                 <!-- wp:group -->
-                <div class="wp-block-group mb-[25px] text-[#8a8f99] phone flex gap-[40px]">
+                <div class="wp-block-group mb-[25px] phone flex gap-[40px]">
                   <!-- wp:group -->
-                  <div class="wp-block-group labels">
+                  <div class="wp-block-group labels text-[#8a8f99]">
                     <!-- wp:paragraph -->
                     <p class="block mb-[10px]">tel</p>
                     <!-- /wp:paragraph -->
