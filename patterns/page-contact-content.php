@@ -15,9 +15,9 @@
     <!-- wp:group -->
     <div class="wp-block-group left-col desktop:w-[50%]">
       <!-- wp:group -->
-      <div class="wp-block-group section1 mb-[50px]">
+      <div class="wp-block-group section1">
         <!-- wp:heading {"level":4} -->
-        <h4><span class="block text-[30px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Biuro Sprzedaży Mieszkań / Siedziba Firmy</span></h4>
+        <h4><span class="block text-[30px] text-textGray mb-[0px] font-bold" data-aos="fade-right" data-aos-offset="30">Biuro Sprzedaży Mieszkań / <br>Siedziba Firmy</span></h4>
         <!-- /wp:heading -->
         <!-- wp:group -->
         <div class="wp-block-group address mb-[30px] text-[#8a8f99]">
@@ -54,6 +54,13 @@
         <!-- /wp:group -->
         <!-- wp:paragraph -->
         <span class="text-primaryRed block" data-aos="fade-right" data-aos-offset="30">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</span>
+        <!-- /wp:paragraph -->
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:group -->
+      <div class="wp-block-group separator my-[20px] w-full h-[2px] bg-[#8a8f99]">
+        <!-- wp:paragraph -->
+        <p class="hidden">separator</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
