@@ -52,6 +52,7 @@
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
+
         <!-- wp:group -->
         <div class="wp-block-group aos-fade-right when-open2 mb-[30px] text-primaryRed font-bold">
           <!-- wp:paragraph -->
@@ -59,6 +60,7 @@
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
+
         <!-- wp:paragraph -->
         <span class="text-primaryRed block" data-aos="fade-right" data-aos-offset="30">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</span>
         <!-- /wp:paragraph -->
@@ -126,6 +128,15 @@
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
+
+        <!-- wp:group -->
+        <div class="wp-block-group aos-fade-right when-open2 mb-[30px] text-primaryRed font-bold">
+          <!-- wp:paragraph -->
+          <p>Dnia 27 i 30 grudnia 2023 r. biura PB Górski nieczynne<br>W dniach 28 i 29 grudnia pracujemy w godzinach 8.00 - 16.00</p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+
         <!-- wp:paragraph -->
         <span class="text-primaryRed block" data-aos="fade-right" data-aos-offset="30">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</span>
         <!-- /wp:paragraph -->
