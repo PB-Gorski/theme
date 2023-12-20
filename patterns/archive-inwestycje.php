@@ -109,7 +109,7 @@
         $alias = strtr($alias, ' ', '-');
       ?>
         <!-- wp:list-item -->
-        <li class="invest-tile max-w-full test-foreach desktop:h-[450px] mb-[80px]">
+        <li class="invest-tile aos-fade-right max-w-full test-foreach desktop:h-[450px] mb-[80px]">
           <!-- wp:group -->
           <div class="wp-block-group relative group inline-block cursor-default desktop:max-w-full w-full h-full">
             <!-- wp:group -->
