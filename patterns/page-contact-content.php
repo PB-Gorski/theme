@@ -203,7 +203,7 @@
             <!-- wp:group -->
             <div class="wp-block-group step-paragraph paragraph-wrapper overflow-hidden leading-[21px] px-[20px] transition-height ease-out duration-[500ms] contact-inactive">
               <!-- wp:paragraph -->
-              <p class="text-[18px] text-bgDarkGray mb-[35px]">ul. Kościerska 15, 83-300 Kartuzy</p>
+              <p class="text-[18px] text-bgDarkGray mb-[35px]">y</p>
               <!-- /wp:paragraph -->
               <!-- wp:group -->
               <div class="wp-block-group text-black">
@@ -212,13 +212,13 @@
                   <!-- wp:group -->
                   <div class="wp-block-group labels">
                     <!-- wp:paragraph -->
-                    <p class="block mb-[20px]">tel</p>
+                    <p class="block mb-[10px]">tel</p>
                     <!-- /wp:paragraph -->
                     <!-- wp:paragraph -->
-                    <p class="block mb-[20px]">fax:</p>
+                    <p class="block mb-[10px]">fax:</p>
                     <!-- /wp:paragraph -->
                     <!-- wp:paragraph -->
-                    <p class="block">email:</p>
+                    <p class="block mb-[10px]">email:</p>
                     <!-- /wp:paragraph -->
                   </div>
                   <!-- /wp:group -->
@@ -232,7 +232,7 @@
                     <a href="tel:+48586853147" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">(+48) 58 685-31-47</a>
                     <!-- /wp:paragraph -->
                     <!-- wp:paragraph -->
-                    <a href="mailto:sekretariat@pbgorski.pl" class="block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">sekretariat@pbgorski.pl</a>
+                    <a href="mailto:sekretariat@pbgorski.pl" class="mb-[10px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300">sekretariat@pbgorski.pl</a>
                     <!-- /wp:paragraph -->
                   </div>
                   <!-- /wp:group -->
@@ -778,10 +778,6 @@
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
-
-        <!-- wp:paragraph -->
-        <span class="block text-primaryRed" data-aos="fade-right" data-aos-offset="30">Wizyty na budowie – po wcześniejszym uzgodnieniu terminu.</span>
-        <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
     </div>
