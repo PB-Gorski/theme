@@ -21,7 +21,7 @@
         <!-- /wp:heading -->
 
         <!-- wp:group -->
-        <div class="wp-block-group flex gap-[20px]">
+        <div class="wp-block-group aos-fade-right flex gap-[20px]">
           <!-- wp:core/categories {"showPostCounts":false,"displayAsDropdown":false,"showHierarchy":false} /-->
         </div>
         <!-- /wp:group -->
