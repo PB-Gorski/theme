@@ -348,6 +348,13 @@ window.addEventListener("load", function() {
     categoryList.insertAdjacentHTML('afterbegin', link);
   };
 
+  let noCategoryHTML = document.querySelectorAll('.cat-item');
+  noCategoryHTML.forEach(item =>{
+    if(item.childNodes[0].innerHTML == 'Bez kategorii'){
+      item.style.display = 'none';
+    }
+  })
+
 
   
 
