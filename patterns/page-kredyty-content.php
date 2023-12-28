@@ -77,7 +77,7 @@
         <!-- wp:group -->
         <div class="wp-block-group flex gap-[30px]">
           <!-- wp:group -->
-          <div class="wp-block-group left-col-avatar">
+          <div class="wp-block-group left-col-avatar aos-fade-right">
             <!-- wp:image -->
             <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
               <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/cel.jpg" alt="avatar">
