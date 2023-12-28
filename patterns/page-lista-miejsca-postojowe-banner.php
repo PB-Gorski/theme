@@ -42,7 +42,7 @@
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
-  <div class="search_tabs container flex justify-center items-center">
+  <div class="search_tabs container flex justify-center items-center top-auto bottom-0">
     <div class="tab_mieszkania">
       <p class=""><a href="<?php echo home_url() ?>/mieszkania">Mieszkania</a></p>
     </div>
