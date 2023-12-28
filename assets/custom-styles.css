@@ -1063,6 +1063,9 @@ background-color: #e8fbff!important;
 .post-item-parking > div > div:last-child > a::after{
   content: ' zł';
 }
+.post-item-parking > div > div > a{
+  pointer-events: none;
+}
 /* .ymc-smart-filter-container .container-posts .post-custom-layout .post-item p:nth-child(6) {
   padding: 0px 0px 0px 20px!important;
   border: none;
