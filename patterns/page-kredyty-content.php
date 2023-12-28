@@ -72,31 +72,51 @@
         <!-- wp:heading {"level":5} -->
         <h5><span class="block text-[26px] text-textGray mb-[30px] font-bold" data-aos="fade-right" data-aos-offset="30">Umów się na spotkanie</span></h5>
         <!-- /wp:heading -->
-        <!-- wp:heading {"level":5} -->
-        <h5><span class="block mb-[10px] text-[24px] text-[#7e878c] font-bold" data-aos="fade-right" data-aos-offset="30">Ewa Cel</span></h5>
-        <!-- /wp:heading -->
+
+
         <!-- wp:group -->
-        <div class="wp-block-group mb-[25px] phone flex gap-[40px]">
+        <div class="wp-block-group flex gap-[30px]">
           <!-- wp:group -->
-          <div class="wp-block-group labels">
-            <!-- wp:paragraph -->
-            <span class="block block mb-[5px]" data-aos="fade-right" data-aos-offset="30">tel.</span>
-            <!-- /wp:paragraph -->
-            <!-- wp:paragraph -->
-            <span class="block block mb-[5px]" data-aos="fade-right" data-aos-offset="30">email:</span>
-            <!-- /wp:paragraph -->
+          <div class="wp-block-group left-col-avatar">
+            <!-- wp:image -->
+            <figure class="wp-block-image m-0 max-w-[100px] max-h-[100px] rounded-full">
+              <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-contact/cel.jpg" alt="avatar">
+            </figure>
+            <!-- /wp:image -->
           </div>
           <!-- /wp:group -->
 
           <!-- wp:group -->
-          <div class="wp-block-group values">
+          <div class="wp-block-group right-col-contact">
+            <!-- wp:heading {"level":5} -->
+            <h5><span class="block mb-[10px] text-[24px] text-[#7e878c] font-bold" data-aos="fade-right" data-aos-offset="30">Ewa Cel</span></h5>
+            <!-- /wp:heading -->
+            <!-- wp:group -->
+            <div class="wp-block-group mb-[25px] phone flex gap-[40px]">
+              <!-- wp:group -->
+              <div class="wp-block-group labels">
+                <!-- wp:paragraph -->
+                <span class="block block mb-[5px]" data-aos="fade-right" data-aos-offset="30">tel.</span>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <span class="block block mb-[5px]" data-aos="fade-right" data-aos-offset="30">email:</span>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
 
-            <!-- wp:paragraph -->
-            <a href="tel:+48690099044" class="mb-[5px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300" data-aos="fade-right" data-aos-offset="30">690 099 044</a>
-            <!-- /wp:paragraph -->
-            <!-- wp:paragraph -->
-            <a href="mailto:kredyty@pbgorski.pl" class="mb-[5px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300" data-aos="fade-right" data-aos-offset="30">kredyty@pbgorski.pl</a>
-            <!-- /wp:paragraph -->
+              <!-- wp:group -->
+              <div class="wp-block-group values">
+
+                <!-- wp:paragraph -->
+                <a href="tel:+48690099044" class="mb-[5px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300" data-aos="fade-right" data-aos-offset="30">690 099 044</a>
+                <!-- /wp:paragraph -->
+                <!-- wp:paragraph -->
+                <a href="mailto:kredyty@pbgorski.pl" class="mb-[5px] block font-bold underline decoration-2 hover:decoration-[#acafb8] transition ease duration-300" data-aos="fade-right" data-aos-offset="30">kredyty@pbgorski.pl</a>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
           </div>
           <!-- /wp:group -->
         </div>
