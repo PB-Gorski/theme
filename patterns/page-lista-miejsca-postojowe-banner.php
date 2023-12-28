@@ -47,9 +47,9 @@
   <div class="wp-block-group search_tabs container flex justify-center items-center top-auto bottom-0">
     <!-- /wp:group -->
     <div class="wp-block-group tab_mieszkania">
-      <!-- /wp:paragraph -->
-      <p class=""><a href="<?php echo home_url() ?>/mieszkania">Mieszkania</a></p>
       <!-- wp:paragraph -->
+      <p class=""><a href="<?php echo home_url() ?>/mieszkania">Mieszkania</a></p>
+      <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
     <!-- wp:group -->
