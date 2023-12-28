@@ -42,16 +42,31 @@
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
-  <div class="search_tabs container flex justify-center items-center top-auto bottom-0">
-    <div class="tab_mieszkania">
+
+  <!-- wp:group -->
+  <div class="wp-block-group search_tabs container flex justify-center items-center top-auto bottom-0">
+    <!-- /wp:group -->
+    <div class="wp-block-group tab_mieszkania">
+      <!-- /wp:paragraph -->
       <p class=""><a href="<?php echo home_url() ?>/mieszkania">Mieszkania</a></p>
+      <!-- wp:paragraph -->
     </div>
-    <div class="tab_mieszkania">
+    <!-- /wp:group -->
+    <!-- wp:group -->
+    <div class="wp-block-group tab_mieszkania">
+      <!-- wp:paragraph -->
       <p class=""><a href="<?php echo home_url() ?>/lokale">Lokale użytkowe</a></p>
+      <!-- /wp:paragraph -->
     </div>
-    <div class="tab_mieszkania search_tab-active">
+    <!-- /wp:group -->
+    <!-- wp:group -->
+    <div class="wp-block-group tab_mieszkania search_tab-active">
+      <!-- wp:paragraph -->
       <p class=""><a href="<?php echo home_url() ?>/lista-miejsca-postojowe">Miejsca postojowe</a></p>
+      <!-- /wp:paragraph -->
     </div>
+    <!-- /wp:group -->
   </div>
+  <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
