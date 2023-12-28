@@ -17,6 +17,7 @@
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/lista-mieszkan-bg.jpeg" alt="banner-bg">
     </figure>
     <!-- /wp:image -->
+
     <!-- wp:group -->
     <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pt-[100px]">
       <!-- wp:group -->
@@ -28,11 +29,11 @@
           <!-- /wp:heading -->
         </div>
         <!-- /wp:group -->
+
         <!-- wp:group -->
         <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <p class="max-w-[550px] text-white opacity-[0.75] hidden" data-aos="fade-right" data-aos-offset="30">Określ parametry, aby znaleźć lokal dokładnie
-            taki, jakiego potrzebujesz.</p>
+          <p class="max-w-[550px] text-white opacity-[0.75] hidden" data-aos="fade-right" data-aos-offset="30">Określ parametry, aby znaleźć lokal dokładnie taki, jakiego potrzebujesz.</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -45,13 +46,14 @@
 
   <!-- wp:group -->
   <div class="wp-block-group search_tabs container flex justify-center items-center top-auto bottom-0">
-    <!-- /wp:group -->
+    <!-- wp:group -->
     <div class="wp-block-group tab_mieszkania">
       <!-- wp:paragraph -->
       <p class=""><a href="<?php echo home_url() ?>/mieszkania">Mieszkania</a></p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
+
     <!-- wp:group -->
     <div class="wp-block-group tab_mieszkania">
       <!-- wp:paragraph -->
@@ -59,6 +61,7 @@
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
+
     <!-- wp:group -->
     <div class="wp-block-group tab_mieszkania search_tab-active">
       <!-- wp:paragraph -->
