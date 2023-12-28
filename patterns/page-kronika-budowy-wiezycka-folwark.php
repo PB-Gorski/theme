@@ -36,6 +36,8 @@
   </div>
   <!-- /wp:group -->
 
+  <!-- wp:pattern {"slug":"searchbar-mieszkania"} /-->
+
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] relative">
     <!-- wp:group -->
