@@ -1060,7 +1060,7 @@ background-color: #e8fbff!important;
   border-bottom: 1px solid #b5b5b5;
   width: 100%;
 }
-.post-item-parking > div:last-child > div > a::after{
+.post-item-parking > div > div:last-child > a::after{
   content: ' zł';
 }
 /* .ymc-smart-filter-container .container-posts .post-custom-layout .post-item p:nth-child(6) {
