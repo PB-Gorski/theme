@@ -12,13 +12,24 @@
 			<div class="wp-block-group container mx-auto desktop:px-0 px-[20px] py-[80px]">
 			<!-- wp:post-content /-->
 
-			<ul class="wp-block-list aos-fade-right container mx-auto all-taxonomy-list w-full px-[20px] bg-[#2f384d] py-[22px] flex flex-wrap items-center justify-between text-[13px] font-bold z-0 relative">
-				<div class="flex gap-[20px] desktop:gap-[200px]">
-					<li class="uppercase text-[#8a8f99] relative after:content-['']">miasto</li>
-					<li class="uppercase text-[#8a8f99] relative after:content-['']">inwestycja</li>
+			<!-- wp:group -->
+			<div class="wp-block-group aos-fade-right container mx-auto all-taxonomy-list w-full px-[20px] bg-[#2f384d] py-[22px] flex flex-wrap items-center justify-between text-[13px] font-bold z-0 relative">
+				<!-- wp:group -->
+				<div class="wp-block-group flex gap-[20px] desktop:gap-[200px]">
+					<!-- wp:group -->
+					<div class="wp-block-group uppercase text-[#8a8f99] relative after:content-['']">miasto</div>
+					<!-- /wp:group -->
+					<!-- wp:group -->
+					<div class="wp-block-group uppercase text-[#8a8f99] relative after:content-['']">inwestycja</div>
+					<!-- /wp:group -->
 				</div>
-				<li class="w-[65px] uppercase text-[#8a8f99] relative after:content-['']">cena</li>
-			</ul>
+				<!-- /wp:group -->
+
+				<!-- wp:group -->
+				<div class="wp-block-group w-[65px] uppercase text-[#8a8f99] relative after:content-['']">cena</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
 
 			<!-- wp:query {"query":{"perPage":0,"pages":0,"offset":0,"postType":"miejsca-postojowe"},"isLink":true} -->
 				<!-- wp:post-template -->
@@ -26,10 +37,12 @@
 					<div class="wp-block-group aos-fade-right  post-item post-item-parking">
 						<!-- wp:group -->
 						<div class="wp-block-group list-item-mieszkanie group container mx-auto w-full py-[20px] text-[16px] text-textGray flex justify-between items-center"> 
-							<div class="flex gap-[20px] desktop:gap-[200px]">
+							<!-- wp:group -->
+							<div class="wp-block-group flex gap-[20px] desktop:gap-[200px]">
 								<!-- wp:post-terms {"term":"miasto"} /-->
 								<!-- wp:post-terms {"term":"inwestycja"} /-->
 							</div>
+							<!-- /wp:group -->
 							<!-- wp:post-terms {"term":"cena"} /-->
 						</div>
 						<!-- /wp:group -->
