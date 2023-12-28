@@ -24,7 +24,7 @@ $tax_sort = $taxonomy;
         <p class=""><a href="<?php echo home_url() . '/lokale'; ?>">Lokale użytkowe</a></p>
       </div>
       <div class=" tab_mieszkania">
-        <p class="">Miejsca postojowe</p>
+        <p class=""><a href="<?php echo home_url() ?>/lista-miejsca-postojowe">Miejsca postojowe</a></p>
       </div>
     </div>
 
