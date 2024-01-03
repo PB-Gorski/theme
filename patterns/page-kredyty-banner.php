@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Banner" class="wp-block-group banner-kredyty relative">
+<div id="Banner" class="wp-block-group banner-kredyty relative bg-[#f6f7fb]">
   <!-- wp:group -->
   <div class="wp-block-group w-full relative py-[60px]">
     <!-- wp:paragraph -->
