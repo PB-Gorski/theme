@@ -104,7 +104,7 @@
                 <!-- /wp:paragraph -->
 
                 <!-- wp:paragraph -->
-                <p class="mr-[8px] relative inline flex items-center text-primaryRed before:content-[''] before:inline-block cursor-pointer">Czytaj dalej<span class="text-[11px]">&#x25BA;</span>
+                <p class="mr-[8px] relative inline flex items-center text-primaryRed cursor-pointer">Czytaj dalej<span class="text-[11px]">&#x25BA;</span>
                 </p>
                 <!-- /wp:paragraph -->
               </div>
