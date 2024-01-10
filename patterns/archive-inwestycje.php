@@ -120,6 +120,11 @@
               </figure>
               <!-- /wp:image -->
 
+              <?php
+              echo 'test';
+              the_field('inwestycja-img');
+              ?>
+
               <!-- wp:group -->
               <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center gap-[15px]">
                 <!-- wp:heading -->
