@@ -124,7 +124,8 @@
               <?php
               echo 'test';
               print_r(get_field('inwestycja_img'));
-              the_field('inwestycja_img');
+              the_field('inwestycja_img')[0];
+              the_field('inwestycja_img')['url'];
               ?>
 
               <!-- wp:group -->
