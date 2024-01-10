@@ -114,17 +114,14 @@
           <div class="wp-block-group relative group inline-block cursor-default desktop:max-w-full w-full h-full">
             <!-- wp:group -->
             <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
+              <?php print_r(term_description($tax->term_id)); ?>
               <!-- wp:image -->
-              <figure class="wp-block-image desktop:w-[50%] h-[330px] desktop:h-full mb-[30px] lowercase">
+              <figure class="wp-block-image hidden desktop:w-[50%] h-[330px] desktop:h-full mb-[30px] lowercase">
                 <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $taxNoSpaces2 . '.jpeg'; ?>" alt="inwestycje-img">
               </figure>
               <!-- /wp:image -->
 
-              <?php
-              echo 'test';
-              print_r(term_description($tax->term_id));
 
-              ?>
 
               <!-- wp:group -->
               <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center gap-[15px]">
