@@ -36,6 +36,7 @@
       $taxonomies = get_terms(array(
         'taxonomy' => 'inwestycja',
         'hide_empty' => false,
+        'order' => 'DESC',
       ));
       foreach ($taxonomies as $tax) {
         $counter++;
@@ -99,7 +100,7 @@
                           <p class="text-[18px] text-bgDarkGray">dostępnych</p>
                           <!-- /wp:paragraph -->
                           <!-- wp:paragraph -->
-                          <p class="text-[18px] text-bgDarkGray">lokali</p>
+                          <p class="text-[18px] text-bgDarkGray">mieszkań</p>
                           <!-- /wp:paragraph -->
                         </div>
                         <!-- /wp:group -->
