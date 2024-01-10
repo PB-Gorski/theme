@@ -139,7 +139,7 @@
                       <p class="text-[18px] text-bgDarkGray">dostępnych</p>
                       <!-- /wp:paragraph -->
                       <!-- wp:paragraph -->
-                      <p class="text-[18px] text-bgDarkGray">lokali</p>
+                      <p class="text-[18px] text-bgDarkGray">mieszkań</p>
                       <!-- /wp:paragraph -->
                     </div>
                     <!-- /wp:group -->
