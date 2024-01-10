@@ -121,9 +121,9 @@
               <!-- /wp:image -->
 
               <?php
-              term_description();
-              term_description($tax->name);
-              term_description($tax->term_id);
+              print_r(term_description());
+              print_r(term_description($tax->name));
+              print_r(term_description($tax->term_id));
 
               ?>
 
