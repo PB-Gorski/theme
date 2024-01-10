@@ -120,8 +120,14 @@
                 <?php
                 if (term_description($tax->term_id)) {
                   print_r(term_description($tax->term_id));
-                } else {
-                  echo 'else test';
+                } else { ?>
+
+                  <!-- wp:image -->
+                  <figure class="wp-block-image hidden desktop:w-[50%] h-[330px] desktop:h-full mb-[30px] lowercase">
+                    <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg'; ?>" alt="inwestycje-img">
+                  </figure>
+                  <!-- /wp:image -->
+                <?php
                 };
 
                 ?>
