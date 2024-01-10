@@ -119,7 +119,7 @@
               <div class="wp-block-group desktop:w-[50%] h-[330px] desktop:h-full mb-[30px]">
                 <!-- wp:paragraph -->
                 <p class="w-full h-full">
-                  <span class="desktop:w-full h-[330px] desktop:h-full [&>p]:w-full [&>p]:h-full [&>p>picture]:w-full [&>p>picture]:h-full [&>p>picture>img]:w-full [&>p>picture>img]:h-full">
+                  <span class="desktop:w-full h-[330px] desktop:h-full block [&>img]:w-full [&>img]:h-full">
                     <?php
                     if (term_description($tax->term_id)) {
                       print_r(term_description($tax->term_id));
