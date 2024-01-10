@@ -119,7 +119,13 @@
                 <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $taxNoSpaces2 . '.jpeg'; ?>" alt="inwestycje-img">
               </figure>
               <!-- /wp:image -->
-              <!-- wp:term-description {"align":"full"} /-->
+
+              <?php
+              term_description();
+              term_description($tax->name);
+              term_description($tax->term_id);
+
+              ?>
 
               <!-- wp:group -->
               <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center gap-[15px]">
