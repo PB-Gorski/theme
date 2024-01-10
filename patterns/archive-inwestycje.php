@@ -132,7 +132,7 @@
                     <?php }; ?>
                   </span>
                 </p>
-                <!-- wp:paragraph -->
+                <!-- /wp:paragraph -->
 
               </div>
               <!-- /wp:group -->
