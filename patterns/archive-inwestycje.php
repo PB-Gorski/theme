@@ -114,14 +114,20 @@
           <div class="wp-block-group relative group inline-block cursor-default desktop:max-w-full w-full h-full">
             <!-- wp:group -->
             <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
-              <?php
-              if (term_description($tax->term_id)) {
-                print_r(term_description($tax->term_id));
-              } else {
-                echo 'else test';
-              };
 
-              ?>
+              <!-- wp:group -->
+              <div class="wp-block-group desktop:w-[50%] h-[330px] desktop:h-full mb-[30px] lowercase">
+                <?php
+                if (term_description($tax->term_id)) {
+                  print_r(term_description($tax->term_id));
+                } else {
+                  echo 'else test';
+                };
+
+                ?>
+              </div>
+              <!-- /wp:group -->
+
               <!-- wp:image -->
               <figure class="wp-block-image hidden desktop:w-[50%] h-[330px] desktop:h-full mb-[30px] lowercase">
                 <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $taxNoSpaces2 . '.jpeg'; ?>" alt="inwestycje-img">
