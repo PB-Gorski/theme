@@ -121,13 +121,6 @@
               <!-- /wp:image -->
               <!-- wp:term-description {"align":"full"} /-->
 
-              <?php
-              echo 'test';
-              print_r(get_field('inwestycja_img'));
-              the_field('inwestycja_img')[0];
-              the_field('inwestycja_img')['url'];
-              ?>
-
               <!-- wp:group -->
               <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center gap-[15px]">
                 <!-- wp:heading -->
