@@ -119,10 +119,11 @@
                 <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $taxNoSpaces2 . '.jpeg'; ?>" alt="inwestycje-img">
               </figure>
               <!-- /wp:image -->
+              <!-- wp:term-description {"align":"full"} /-->
 
               <?php
               echo 'test';
-              the_field('inwestycja-img');
+              the_field('inwestycja_img');
               ?>
 
               <!-- wp:group -->
