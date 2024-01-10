@@ -117,25 +117,28 @@
 
               <!-- wp:group -->
               <div class="wp-block-group desktop:w-[50%] h-[330px] desktop:h-full mb-[30px] [&>p]:w-full [&>p]:h-full [&>p>picture]:w-full [&>p>picture]:h-full [&>p>picture>img]:w-full [&>p>picture>img]:h-full">
-                <?php
-                if (term_description($tax->term_id)) {
-                  print_r(term_description($tax->term_id));
-                } else { ?>
+                <!-- wp:paragraph -->
+                <p>
+                  <span>
+                    <?php
+                    if (term_description($tax->term_id)) {
+                      print_r(term_description($tax->term_id));
+                    } else { ?>
+                      <!-- wp:image -->
+                      <figure class="wp-block-image desktop:w-full h-[330px] desktop:h-full mb-[30px]">
+                        <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg'; ?>" alt="inwestycje-img">
+                      </figure>
+                      <!-- /wp:image -->
+                    <?php }; ?>
+                  </span>
+                </p>
+                <!-- wp:paragraph -->
 
-                  <!-- wp:image -->
-                  <figure class="wp-block-image desktop:w-full h-[330px] desktop:h-full mb-[30px]">
-                    <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg'; ?>" alt="inwestycje-img">
-                  </figure>
-                  <!-- /wp:image -->
-                <?php
-                };
-
-                ?>
               </div>
               <!-- /wp:group -->
 
               <!-- wp:image -->
-              <figure class="wp-block-image hidden desktop:w-[50%] h-[330px] desktop:h-full mb-[30px] lowercase">
+              <figure class="wp-block-image _old hidden desktop:w-[50%] h-[330px] desktop:h-full mb-[30px] lowercase">
                 <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $taxNoSpaces2 . '.jpeg'; ?>" alt="inwestycje-img">
               </figure>
               <!-- /wp:image -->
