@@ -123,7 +123,7 @@
                 } else { ?>
 
                   <!-- wp:image -->
-                  <figure class="wp-block-image desktop:w-[50%] h-[330px] desktop:h-full mb-[30px]">
+                  <figure class="wp-block-image desktop:w-full h-[330px] desktop:h-full mb-[30px]">
                     <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg'; ?>" alt="inwestycje-img">
                   </figure>
                   <!-- /wp:image -->
