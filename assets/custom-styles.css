@@ -1184,6 +1184,9 @@ background-color: #e8fbff!important;
 .single .entry-content > .modula > a{
   position: static!important;
 }
+.pic{
+  width: fit-content!important;
+}
 .single .entry-content h4{
   margin-bottom: 30px;
 }
