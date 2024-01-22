@@ -77,7 +77,7 @@
                     <!-- /wp:heading {"level":3} -->
 
                     <!-- wp:paragraph -->
-                    <p class="mr-[20px] text-bgDarkGray text-[16px] desktop:text-[18px]">
+                    <p class="mr-[20px] test text-bgDarkGray text-[16px] desktop:text-[18px]">
                       <?php
                       if ($tax->name == 'Osiedle Srebrniki') echo 'Gdańsk';
                       elseif ($tax->name == 'Św. Piotra') echo 'Gdynia';
