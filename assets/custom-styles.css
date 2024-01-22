@@ -630,6 +630,7 @@ label{
   }
   .ymc-smart-filter-container .filter-layout3 div.dropdown-filter:nth-child(13) > p {
     padding-bottom: 0px!important;
+    padding-top: 15px!important;
   }
   @media only screen and (min-width: 1441px) {
     .ymc-smart-filter-container .filter-layout3 div.dropdown-filter:nth-child(13) > p {
@@ -800,10 +801,7 @@ label{
 .active_window{
   padding: 10px 15px!important;
 }
-.active_window:nth-child(13){
-  padding: 10px 15px!important;
-  background-color: red;
-}
+
 .menu-passive{
   background-color: white!important;
   color: #2E384D!important;
