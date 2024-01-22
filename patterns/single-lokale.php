@@ -175,7 +175,7 @@
     <!-- wp:group -->
     <div class="wp-block-group two-col-layout mb-[30px] desktop:flex justify-center desktop:px-[50px]">
       <!-- wp:group -->
-      <div class="wp-block-group left-col desktop:w-[60%]">
+      <div class="wp-block-group left-col desktop:w-[55%]">
         <!-- wp:post-content /-->
       </div>
       <!-- /wp:group -->
