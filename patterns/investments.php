@@ -79,6 +79,13 @@
                     <!-- wp:paragraph -->
                     <p class="mr-[20px] text-bgDarkGray text-[16px] desktop:text-[18px]">
                       <?php
+                      $cities = get_terms(array(
+                        'taxonomy' => 'miasto',
+                        'hide_empty' => false,
+                        'order' => 'DESC',
+                      ));
+                      echo '<br>';
+                      print_r($cities);
                       print_r($tax);
                       if ($tax->name == 'Osiedle Srebrniki') echo 'Gdańsk';
                       elseif ($tax->name == 'Św. Piotra') echo 'Gdynia';
