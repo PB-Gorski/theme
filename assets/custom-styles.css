@@ -1186,6 +1186,7 @@ background-color: #e8fbff!important;
 }
 .pic{
   width: fit-content!important;
+  inset: 0!important;
 }
 .single .entry-content h4{
   margin-bottom: 30px;
