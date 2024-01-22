@@ -79,7 +79,7 @@
                     <!-- wp:paragraph -->
                     <p class="mr-[20px] text-bgDarkGray text-[16px] desktop:text-[18px]">
                       <?php
-                      print_r($tax)
+                      print_r($tax);
                       if ($tax->name == 'Osiedle Srebrniki') echo 'Gdańsk';
                       elseif ($tax->name == 'Św. Piotra') echo 'Gdynia';
                       elseif ($tax->name == 'Toruńska 16') echo 'Gdańsk';
