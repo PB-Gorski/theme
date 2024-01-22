@@ -629,7 +629,7 @@ label{
     border-right: 2px solid #ebeef2;
   }
   .ymc-smart-filter-container .filter-layout3 div.dropdown-filter:nth-child(13) > p {
-    padding-bottom: 0px!important;
+    /* padding-bottom: 0px!important; */
   }
   .ymc-smart-filter-container .filter-layout3 div.dropdown-filter:nth-child(14) {
     border-right: 2px solid white;
