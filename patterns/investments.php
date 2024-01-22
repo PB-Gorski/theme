@@ -82,7 +82,7 @@
                       if ($tax->name == 'Osiedle Srebrniki') echo 'Gdańsk';
                       elseif ($tax->name == 'Św. Piotra') echo 'Gdynia';
                       elseif ($tax->name == 'Toruńska 16') echo 'Gdańsk';
-                      elseif ($tax->name == 'Wieżycka Folwark ') echo 'Gdańsk';
+                      elseif ($tax->name == 'Wieżycka Folwark') echo 'Gdańsk';
                       ?>
                     </p>
                     <!-- /wp:paragraph -->
