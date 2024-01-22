@@ -1185,7 +1185,7 @@ background-color: #e8fbff!important;
   position: static!important;
 }
 .pic{
-  height: fit-content!important;
+  height: 100%!important;
   inset: 0!important;
 }
 .single .entry-content h4{
