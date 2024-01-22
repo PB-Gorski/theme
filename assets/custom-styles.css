@@ -631,7 +631,7 @@ label{
   .ymc-smart-filter-container .filter-layout3 div.dropdown-filter:nth-child(13) > p {
     padding-bottom: 0px!important;
   }
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 1441px) {
     .ymc-smart-filter-container .filter-layout3 div.dropdown-filter:nth-child(13) > p {
       padding-bottom: 20px!important;
     }
