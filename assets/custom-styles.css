@@ -800,6 +800,10 @@ label{
 .active_window{
   padding: 10px 15px!important;
 }
+.active_window:nth-child(13){
+  padding: 10px 15px!important;
+  background-color: red;
+}
 .menu-passive{
   background-color: white!important;
   color: #2E384D!important;
