@@ -122,11 +122,13 @@
                   <span class="desktop:w-full h-[330px] desktop:h-full block [&>img]:w-full [&>img]:h-full">
                     <?php
                     if (term_description($tax->term_id)) { ?>
-                      <span>
+                      <!-- wp:paragraph -->
+                      <p>
                         <?php
                         print_r(term_description($tax->term_id));
                         ?>
-                      </span>
+                      </p>
+                      <!-- /wp:paragraph -->
                     <?php
                     } else { ?>
                       <!-- wp:image -->
