@@ -123,11 +123,9 @@
                     <?php
                     if (term_description($tax->term_id)) { ?>
                       <!-- wp:paragraph -->
-                      <p>
-                        <?php
-                        print_r(term_description($tax->term_id));
-                        ?>
-                      </p>
+                      <?php
+                      print_r(term_description($tax->term_id));
+                      ?>
                       <!-- /wp:paragraph -->
                     <?php
                     } else { ?>
