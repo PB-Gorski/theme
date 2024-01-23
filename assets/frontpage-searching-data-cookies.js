@@ -521,9 +521,14 @@ window.addEventListener("load", function() {
       })
     });
 
-
-
     // -------------------------------------------------------------------------------------
+
+    terminZakonczeniaAll = document.querySelectorAll('.menu-passive__item');
+
+    terminZakonczeniaAll.forEach('click', (e) =>{
+      console.log(e.target);
+    })
+
   };
 
   document.querySelectorAll('.taxonomy-category').forEach(item =>{
@@ -531,6 +536,10 @@ window.addEventListener("load", function() {
       item.classList.add('hidden');
     }
   });
+
+  // -------------------------------------------------------------------------------------
+
+
 
 
 
