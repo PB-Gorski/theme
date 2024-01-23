@@ -121,7 +121,13 @@
                 <p class="w-full h-full">
                   <span class="desktop:w-full h-[330px] desktop:h-full block [&>img]:w-full [&>img]:h-full">
                     <?php
-                    if (term_description($tax->term_id)) {
+                    if (term_description($tax->term_id)) { ?>
+                      <span>
+                        <?php
+                        print_r(term_description($tax->term_id));
+                        ?>
+                      </span>
+                    <?php
                     } else { ?>
                       <!-- wp:image -->
                       <figure class="wp-block-image desktop:w-full h-[330px] desktop:h-full mb-[30px]">
