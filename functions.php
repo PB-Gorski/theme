@@ -963,3 +963,12 @@ function is_blog()
 {
 	return (is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
 }
+
+function ymc_sort_posts($layouts)
+{
+	$layouts .= '<div class="menu-passive__item">
+							 <a class="menu-link" data-order="' . esc_attr('desc') . '" data-orderby="' . esc_attr('name') . '" href="#">' .
+		esc_html__('Sort by Name', 'ymc-smart-filter') . '</a></div>';
+	return $layouts;
+}
+add_filter('ymc_sort_posts_by_1850_7', 'ymc_sort_posts', 10, 1);
