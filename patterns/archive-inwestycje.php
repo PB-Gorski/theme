@@ -119,12 +119,11 @@
               <div class="wp-block-group desktop:w-[50%] h-[330px] desktop:h-full mb-[30px]">
                 <!-- wp:paragraph -->
                 <p class="w-full h-full">
-                  <span class="term-investment-img imgdesktop:w-full h-[330px] desktop:h-full block">
+                  <span class="term-investment-img desktop:w-full h-[330px] desktop:h-full block">
                     <?php
                     if (term_description($tax->term_id)) { ?>
                       <!-- wp:paragraph -->
                       <?php
-                      print_r(term_description($tax->term_id));
                       echo term_description($tax->term_id);
                       ?>
                       <!-- /wp:paragraph -->
