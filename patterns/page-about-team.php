@@ -25,9 +25,9 @@
   <!-- /wp:group -->
 
   <!-- wp:group -->
-  <div class="wp-block-group aos-fade-right flex gap-[20px] block cursor-default desktop:max-w-[900px] mx-auto">
+  <div class="wp-block-group aos-fade-right flex gap-[20px] block cursor-default desktop:max-w-[1200px] mx-auto">
     <!-- wp:image -->
-    <figure class="wp-block-image mb-[30px] desktop:max-w-[900px] mx-auto">
+    <figure class="wp-block-image mb-[30px] desktop:max-w-[1140px] mx-auto">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/pbg-2.jpg" alt="team-image">
     </figure>
     <!-- /wp:image -->
