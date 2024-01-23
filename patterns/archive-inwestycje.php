@@ -122,11 +122,7 @@
                   <span class="term-investment-img desktop:w-full h-[330px] desktop:h-full block">
                     <?php
                     if (term_description($tax->term_id)) { ?>
-                      <!-- wp:paragraph -->
-                      <?php
-                      echo term_description($tax->term_id);
-                      ?>
-                      <!-- /wp:paragraph -->
+                      <?php echo term_description($tax->term_id); ?>
                     <?php
                     } else { ?>
                       <!-- wp:image -->
