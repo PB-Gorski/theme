@@ -117,25 +117,25 @@
 
               <!-- wp:group -->
               <div class="wp-block-group desktop:w-[50%] h-[330px] desktop:h-full mb-[30px]">
-                <!-- wp:paragraph -->
-                <p class="w-full h-full">
-                  <!-- <span class="term-investment-img desktop:w-full h-[330px] desktop:h-full block"> -->
-                  <?php
-                  if (term_description($tax->term_id)) { ?>
-                    <!-- wp:paragraph -->
-                    <?php echo term_description($tax->term_id); ?>
-                    <!-- /wp:paragraph -->
-                  <?php
-                  } else { ?>
-                    <!-- wp:image -->
-                <figure class="wp-block-image desktop:w-full h-[330px] desktop:h-full mb-[30px]">
-                  <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg'; ?>" alt="inwestycje-img">
-                </figure>
-                <!-- /wp:image -->
-              <?php }; ?>
-              <!-- </span> -->
-              </p>
-              <!-- /wp:paragraph -->
+
+                <!-- <p class="w-full h-full"> -->
+                <!-- <span class="term-investment-img desktop:w-full h-[330px] desktop:h-full block"> -->
+                <?php
+                if (term_description($tax->term_id)) { ?>
+                  <!-- wp:paragraph -->
+                  <?php echo term_description($tax->term_id); ?>
+                  <!-- /wp:paragraph -->
+                <?php
+                } else { ?>
+                  <!-- wp:image -->
+                  <figure class="wp-block-image desktop:w-full h-[330px] desktop:h-full mb-[30px]">
+                    <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg'; ?>" alt="inwestycje-img">
+                  </figure>
+                  <!-- /wp:image -->
+                <?php }; ?>
+                <!-- </span> -->
+                <!-- </p> -->
+
 
               </div>
               <!-- /wp:group -->
