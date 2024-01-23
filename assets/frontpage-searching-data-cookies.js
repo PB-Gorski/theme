@@ -525,9 +525,7 @@ window.addEventListener("load", function() {
 
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
-        e.target.parentNode.parentNode.style.display = 'none';
-        e.target.parentNode.parentNode.previousElementSibling.childNodes[1].classList.toggle('newAfter');
-        console.log('clicked target: ',e.target);
+        console.log('clicked target: ',e.target.dataset.termid);
       });
     });
 
