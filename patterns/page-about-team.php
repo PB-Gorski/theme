@@ -28,7 +28,17 @@
   <div class="wp-block-group aos-fade-right block cursor-default desktop:max-w-[900px] mx-auto">
     <!-- wp:image -->
     <figure class="wp-block-image mb-[30px] desktop:max-w-[900px] mx-auto">
-      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/img-team-1.jpeg" alt="team-image">
+      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/pbg-2.webp" alt="team-image">
+    </figure>
+    <!-- /wp:image -->
+    <!-- wp:image -->
+    <figure class="wp-block-image mb-[30px] desktop:max-w-[900px] mx-auto">
+      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/pbg-1.webp" alt="team-image">
+    </figure>
+    <!-- /wp:image -->
+    <!-- wp:image -->
+    <figure class="wp-block-image mb-[30px] desktop:max-w-[900px] mx-auto">
+      <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-about/pbg-3.webp" alt="team-image">
     </figure>
     <!-- /wp:image -->
   </div>
