@@ -116,7 +116,7 @@
             <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
 
               <!-- wp:group -->
-              <div class="wp-block-group desktop:w-[50%] h-[330px] desktop:h-full mb-[30px]">
+              <div class="wp-block-group term_investment_img desktop:w-[50%] h-[330px] desktop:h-full mb-[30px]">
                 <?php
                 if (term_description($tax->term_id)) { ?>
                   <!-- wp:paragraph -->
