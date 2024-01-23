@@ -66,7 +66,7 @@
                 <div class="wp-block-group wrapper w-full h-full">
                   <!-- wp:image -->
                   <figure class="wp-block-image h-[330px] desktop:max-h-full mb-[10px] lowercase">
-                    <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $taxNoSpaces2 . '.jpeg'; ?>" alt="inwestycje-img">
+                    <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $alias . '.jpeg'; ?>" alt="inwestycje-img">
                   </figure>
                   <!-- /wp:image -->
 
