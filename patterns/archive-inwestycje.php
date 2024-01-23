@@ -122,7 +122,6 @@
                   <span class="desktop:w-full h-[330px] desktop:h-full block [&>img]:w-full [&>img]:h-full">
                     <?php
                     if (term_description($tax->term_id)) {
-                      print_r(term_description($tax->term_id));
                     } else { ?>
                       <!-- wp:image -->
                       <figure class="wp-block-image desktop:w-full h-[330px] desktop:h-full mb-[30px]">
