@@ -86,7 +86,7 @@
               <!-- /wp:group -->
 
               <!-- wp:list -->
-              <ul class="wp-block-list text-textGray flex flex-wrap gap-x-[140px] gap-y-[10px]">
+              <ul class="wp-block-list text-textGray grid grid-rows-3 grid-cols-3 gap-y-[10px]">
                 <?php
                 $args = array(
                   'post_type' => 'mieszkania',
