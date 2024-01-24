@@ -31,7 +31,7 @@
       <!-- wp:navigation /-->
 
       <!-- wp:group -->
-      <div class="wp-block-group modal w-full h-[209px] py-[20px] bg-bgLightGray opacity-0 absolute top-[100px] left-0 z-[-1] transition ease duration-300">
+      <div class="wp-block-group modal w-full h-fit py-[20px] bg-bgLightGray opacity-0 absolute top-[100px] left-0 z-[-1] transition ease duration-300">
         <!-- wp:group -->
         <div class="wp-block-group container mx-auto">
           <!-- wp:list -->
@@ -185,7 +185,7 @@
               <!-- /wp:group -->
 
               <!-- wp:list -->
-              <ul class="wp-block-list mb-[20px] text-textGray flex flex-wrap gap-x-[120px]">
+              <ul class="wp-block-list mb-[20px] text-textGray grid grid-rows-3 grid-cols-3 gap-y-[10px]">
                 <?php
                 $args2 = array(
                   'numberposts' => -1,
