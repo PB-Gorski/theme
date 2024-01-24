@@ -127,6 +127,15 @@
                     </a>
                   </li>
                   <!-- /wp:list-item -->
+                  <!-- wp:list-item -->
+                  <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+                    <a href="https://bulvarapartments.pl/" class="inline-block">
+                      <!-- wp:paragraph -->
+                      <p class="">Bulvar Apartments</p>
+                      <!-- /wp:paragraph -->
+                    </a>
+                  </li>
+                  <!-- /wp:list-item -->
                 <?php
                   $i++;
                 }; ?>
