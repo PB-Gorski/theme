@@ -128,6 +128,15 @@
                 <?php
                   $i++;
                 }; ?>
+                <!-- wp:list-item -->
+                <li class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
+                  <a href="https://bulvarapartments.pl/" class="inline-block">
+                    <!-- wp:paragraph -->
+                    <p class="">Bulvar Apartments</p>
+                    <!-- /wp:paragraph -->
+                  </a>
+                </li>
+                <!-- /wp:list-item -->
               </ul>
               <!-- /wp:list -->
             </div>
@@ -273,7 +282,7 @@
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
                 <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-                  <a href="#">Lista lokali uytkowych &rarr;</a>
+                  <a href="#">Lista lokali użytkowych &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
               </ul>
@@ -386,7 +395,7 @@
                 <!-- /wp:list-item -->
                 <!-- wp:list-item -->
                 <li class="text-textGray mb-[10px] hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">
-                  <a href="#">Lista lokali uytkowych &rarr;</a>
+                  <a href="#">Lista lokali użytkowych &rarr;</a>
                 </li>
                 <!-- /wp:list-item -->
               </ul>
