@@ -166,7 +166,7 @@
           <!-- wp:group -->
           <div class="wp-block-group headerTab tab2 gdansk hidden text-[18px] flex">
             <!-- wp:group -->
-            <div class="wp-block-group col1 w-[60%]">
+            <div class="wp-block-group col1 w-[60%] border-r-[1px] border-[rgba(138,143,153,0.30)]">
               <!-- wp:group -->
               <div class="wp-block-group title1 mb-[20px]">
                 <!-- wp:paragraph -->
@@ -247,7 +247,7 @@
               <!-- wp:group -->
               <div class="wp-block-group">
                 <!-- wp:paragraph -->
-                <a href="<?php echo home_url(); ?>/inwestycje-gdansk/" class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Gdański: <span class="font-medium">Wszystkie inwestycje &rarr;</span></a>
+                <a href="<?php echo home_url(); ?>/inwestycje-gdansk/" class="hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer">Gdańsk: <span class="font-medium">Wszystkie inwestycje &rarr;</span></a>
                 <!-- /wp:paragraph -->
               </div>
               <!-- /wp:group -->
@@ -286,7 +286,7 @@
           <!-- wp:group -->
           <div class="wp-block-group headerTab tab3 hidden text-[18px] flex">
             <!-- wp:group -->
-            <div class="wp-block-group col1 w-[60%]">
+            <div class="wp-block-group col1 w-[60%] border-r-[1px] border-[rgba(138,143,153,0.30)]">
               <!-- wp:group -->
               <div class="wp-block-group title1 mb-[20px]">
                 <!-- wp:paragraph -->

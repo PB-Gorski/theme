@@ -168,7 +168,7 @@
           <!-- wp:group -->
           <div class="wp-block-group headerTab tab2 gdansk hidden text-[18px] flex">
             <!-- wp:group -->
-            <div class="wp-block-group col1 w-[60%]">
+            <div class="wp-block-group col1 w-[60%] border-r-[1px] border-[rgba(138,143,153,0.30)]">
               <!-- wp:group -->
               <div class="wp-block-group title1 mb-[20px]">
                 <!-- wp:paragraph -->
@@ -289,7 +289,7 @@
           <!-- wp:group -->
           <div class="wp-block-group headerTab tab3 hidden text-[18px] flex">
             <!-- wp:group -->
-            <div class="wp-block-group col1 w-[60%]">
+            <div class="wp-block-group col1 w-[60%] border-r-[1px] border-[rgba(138,143,153,0.30)]">
               <!-- wp:group -->
               <div class="wp-block-group title1 mb-[20px]">
                 <!-- wp:paragraph -->
