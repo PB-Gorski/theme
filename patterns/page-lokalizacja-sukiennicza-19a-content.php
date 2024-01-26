@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: lokalizacja-osiedle-srebrniki-content
- * Slug: lokalizacja-osiedle-srebrniki-content
+ * Title: lokalizacja-sukiennicza-19a-content
+ * Slug: lokalizacja-sukiennicza-19a-content
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
@@ -20,16 +20,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <a href="<?php echo home_url() . '/o-inwestycji' ?>" class="text-[#8a8f99] hover:text-[#3e4759]" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lokalizacja-osiedle-srebrniki' ?>" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
+      <a href="<?php echo home_url() . '/lokalizacja-sukiennicza-19a' ?>" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lista-mieszkan-osiedle-srebrniki' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
-      <!-- /wp:paragraph -->
-      <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/galeria-osiedle-srebrniki' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Galeria</a>
-      <!-- /wp:paragraph -->
-      <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/kronika-budowy' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Kronika budowy</a>
+      <a href="<?php echo home_url() . '/galeria-sukiennicza-19a' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Galeria</a>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
@@ -45,10 +39,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- wp:group -->
       <div class="wp-block-group desktop:pl-[100px] desktop:w-[40%]">
         <!-- wp:heading {"level":4} -->
-        <h4><span class="block text-[30px] leading-[40px] mb-[40px]" data-aos="fade-right" data-aos-offset="30">Srebrniki to osiedle położone na granicy dzielnic Wrzeszcz oraz Morena, w otoczeniu licznych terenów zielonych.</span></h4>
+        <h4><span class="block text-[30px] leading-[40px] mb-[40px]" data-aos="fade-right" data-aos-offset="30">Topowa lokalizacja i wyjątkowe otoczenie.</span></h4>
         <!-- /wp:heading -->
         <!-- wp:paragraph -->
-        <span class="block text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">W najbliższym sąsiedztwie znajduje się nie tylko pełne zaplecze handlowe i edukacyjne, ale także przystanek PKM, który pozwala na dojazd do najważniejszych punktów w całym Trójmieście. </span>
+        <span class="block text-[18px] text-[#8a8f99]" data-aos="fade-right" data-aos-offset="30">Zaletą lokalizacji jest bliskość Głównego Miasta oraz najciekawszego turystycznie bulwaru spacerowego nad Motławą.</span>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
@@ -64,7 +58,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <div class="wp-block-group block cursor-default">
       <!-- wp:image -->
       <figure class="wp-block-image max-w-[690px] mx-auto">
-        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sukiennicza-19a/map.jpg" alt="plan-osiedla">
+        <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sukiennicza-19a/map.jpg" alt="mapa-okolicy">
       </figure>
       <!-- /wp:image -->
     </div>
