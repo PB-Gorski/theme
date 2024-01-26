@@ -12,10 +12,6 @@
   .apply-btn-more-hover {
     @apply before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#e1e1e1] before:transition-height before:duration-300 before:ease cursor-pointer;
   }
-  .hover_link_inwestycji {
-    @apply text-[#8a8f99] hover:text-textGray;
-  }
-  
 }
 
 /* general */
@@ -1568,7 +1564,17 @@ background-color: #e8fbff!important;
   height: 100%;
 }
 
+/* page o inwestycji */
 .page-template-page-o-inwestycji-default .container-post-custom-layout,
 .page-template-default .container-post-custom-layout{
   display: none;
+}
+.row-links p{
+  color: #8a8f99;
+}
+.row-links p{
+  color: #8a8f99;
+}
+.row-links p:hover{
+  color: #2E384D;
 }
