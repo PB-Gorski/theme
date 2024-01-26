@@ -44,3 +44,11 @@ figure div{
 .ymc-filter-1850{
     height: 400px;
 }
+.filter-entry{
+    height: 290px;
+}
+.dropdown-filter,
+.btn-wrapper,
+.btn-search{
+    height: 180px;
+}
