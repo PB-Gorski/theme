@@ -38,6 +38,9 @@ figure div{
   opacity:1!important;
   transition: opacity 0.3s ease;
 }
+.ymc-smart-filter-container .filter-layout3 div:nth-child(13){
+    padding-bottom: 0px;
+}
 .inwestycje .container > div{
     padding-top: 220px!important;
 }
@@ -48,7 +51,6 @@ figure div{
     height: 290px!important;
 }
 .dropdown-filter,
-.btn-wrapper,
-.btn-search{
+.btn-wrapper{
     height: 146px!important;
 }
