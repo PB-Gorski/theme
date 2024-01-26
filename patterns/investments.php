@@ -64,8 +64,30 @@
               <div class="wp-block-group relative group desktop:max-w-full  h-full">
                 <!-- wp:group -->
                 <div class="wp-block-group wrapper w-full h-full">
+
+
+                  <!-- wp:group -->
+                  <div class="wp-block-group term_investment_img desktop:w-[50%] h-[330px] desktop:h-full mb-[30px]">
+                    <?php
+                    if (term_description($tax->term_id)) { ?>
+                      <!-- wp:paragraph -->
+                      <?php echo term_description($tax->term_id); ?>
+                      <!-- /wp:paragraph -->
+                    <?php
+                    } else { ?>
+                      <!-- wp:image -->
+                      <figure class="wp-block-image desktop:w-full h-[330px] desktop:h-full mb-[30px]">
+                        <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg'; ?>" alt="inwestycje-img">
+                      </figure>
+                      <!-- /wp:image -->
+                    <?php }; ?>
+                  </div>
+                  <!-- /wp:group -->
+
+
+
                   <!-- wp:image -->
-                  <figure class="wp-block-image h-[330px] desktop:max-h-full mb-[10px] lowercase">
+                  <figure class="wp-block-image hidden h-[330px] desktop:max-h-full mb-[10px] lowercase">
                     <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $alias . '.jpeg'; ?>" alt="inwestycje-img">
                   </figure>
                   <!-- /wp:image -->
