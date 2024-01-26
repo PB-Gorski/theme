@@ -38,8 +38,8 @@ figure div{
   opacity:1!important;
   transition: opacity 0.3s ease;
 }
-.ymc-smart-filter-container .filter-layout3 div:nth-child(13) .dropdown-filter-title{
-    padding-bottom: 0px!important;
+.ymc-smart-filter-container .filter-layout3 div:nth-child(13) .menu-active{
+    margin-top: -20px!important;
 }
 .inwestycje .container > div{
     padding-top: 220px!important;
