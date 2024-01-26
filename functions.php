@@ -950,7 +950,8 @@ function pbgorski_custom_filter_layout8($layout, $terms, $taxonomy, $multiple, $
 add_filter('ymc_filter_custom_layout_1850_8', 'pbgorski_custom_filter_layout8', 10, 6);
 
 // ---------------------------------------------------------------------------------------
-// 1850_8 filter layout
+
+// 1850_7 filter layout - Filters on sukiennicza-19a fix attempt
 function pbgorski_custom_post_layout7($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout2.php';
