@@ -67,7 +67,7 @@
 
 
                   <!-- wp:group -->
-                  <div class="wp-block-group term_investment_img desktop:w-[50%] h-[330px] desktop:h-full mb-[30px]">
+                  <div class="wp-block-group term_investment_img h-[330px] desktop:max-h-full mb-[10px]">
                     <?php
                     if (term_description($tax->term_id)) { ?>
                       <!-- wp:paragraph -->
