@@ -39,7 +39,7 @@ figure div{
   transition: opacity 0.3s ease;
 }
 .ymc-smart-filter-container .filter-layout3 div:nth-child(13) .dropdown-filter-title{
-    padding-bottom: 0px;
+    padding-bottom: 0px!important;
 }
 .inwestycje .container > div{
     padding-top: 220px!important;
