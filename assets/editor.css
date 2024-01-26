@@ -23,7 +23,7 @@ figure div{
 }
 @media only screen and (min-width: 1024px){
     .editor-styles-wrapper #filter-layout3-filter-layout3 > .filter-entry {
-        height: 210px!important;
+        height: 290!important;
         position: relative;
         row-gap: 2px;
         transition: height .3s ease-out;
@@ -44,11 +44,11 @@ figure div{
 .ymc-filter-1850{
     height: 400px;
 }
-.filter-entry{
-    height: 290px;
-}
+/* .filter-entry{
+    height: 290px!important;
+} */
 .dropdown-filter,
 .btn-wrapper,
 .btn-search{
-    height: 180px;
+    height: 146px!important;
 }
