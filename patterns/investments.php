@@ -76,7 +76,7 @@
                     <?php
                     } else { ?>
                       <!-- wp:image -->
-                      <figure class="wp-block-image desktop:w-full h-[330px] desktop:h-full mb-[30px]">
+                      <figure class="wp-block-image h-[330px] desktop:max-h-full mb-[10px]">
                         <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg'; ?>" alt="inwestycje-img">
                       </figure>
                       <!-- /wp:image -->
@@ -87,7 +87,7 @@
 
 
                   <!-- wp:image -->
-                  <figure class="wp-block-image hidden h-[330px] desktop:max-h-full mb-[10px] lowercase">
+                  <figure class="wp-block-image hidden h-[330px] desktop:max-h-full mb-[10px]">
                     <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $alias . '.jpeg'; ?>" alt="inwestycje-img">
                   </figure>
                   <!-- /wp:image -->
