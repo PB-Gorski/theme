@@ -950,6 +950,24 @@ function pbgorski_custom_filter_layout8($layout, $terms, $taxonomy, $multiple, $
 add_filter('ymc_filter_custom_layout_1850_8', 'pbgorski_custom_filter_layout8', 10, 6);
 
 // ---------------------------------------------------------------------------------------
+// 1850_8 filter layout
+function pbgorski_custom_post_layout7($layout, $terms, $taxonomy, $multiple, $target, $options)
+{
+	$filepath_filter = get_stylesheet_directory() . '/filter-layout2.php';
+	$filter_id = '1850';
+	$layout_id = '7';
+	$layout  = ''; //Override demo message
+	ob_start();
+	if (file_exists($filepath_filter)) {
+		require $filepath_filter;
+		$layout .= ob_get_contents();
+	}
+	ob_end_clean();
+	return $layout;
+}
+add_filter('ymc_filter_custom_layout_1850_7', 'pbgorski_custom_filter_layout7', 10, 6);
+
+// ---------------------------------------------------------------------------------------
 
 // posts selected 148
 function ymc_posts_selected($layouts, $founded_post)
