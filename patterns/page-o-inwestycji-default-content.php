@@ -22,20 +22,20 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <div class="wp-block-group test row-links mb-[50px] flex flex-wrap justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
       <p class="text-textGray">
-        <a href="<?php echo home_url() . '/o-inwestycji-default-name' ?>" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
+        <a href="<?php echo home_url() . '/o-inwestycji-default' ?>" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
       </p>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lokalizacja-default-name' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
+      <a href="<?php echo home_url() . '/lokalizacja-default' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lista-mieszkan-default-name' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
+      <a href="<?php echo home_url() . '/lista-mieszkan-default' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/galeria-default-name' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Galeria</a>
+      <a href="<?php echo home_url() . '/galeria-default' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Galeria</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/kronika-budowy-default-name' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Kronika budowy</a>
+      <a href="<?php echo home_url() . '/kronika-budowy-default' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Kronika budowy</a>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
