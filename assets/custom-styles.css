@@ -1574,6 +1574,7 @@ background-color: #e8fbff!important;
 }
 .row-links p{
   color: #8a8f99;
+  transition: color 0.3s ease;
 }
 .row-links p:hover{
   color: #2E384D;
