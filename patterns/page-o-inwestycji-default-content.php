@@ -19,14 +19,14 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <!-- /wp:heading -->
 
     <!-- wp:group -->
-    <div class="wp-block-group test row-links mb-[50px] flex flex-wrap justify-center items-center gap-[20px] transition duration-300">
+    <div class="wp-block-group test row-links mb-[50px] flex flex-wrap justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
       <p class="text-textGray">
         <a href="<?php echo home_url() . '/o-inwestycji-default' ?>" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
       </p>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <p class="text-[#8a8f99] hover:text-textGray">
+      <p class="text-[#8a8f99] hover:text-textGray transition duration-300">
         <a href="<?php echo home_url() . '/lokalizacja-default' ?>" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
       </p>
       <!-- /wp:paragraph -->
