@@ -63,7 +63,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- /wp:heading -->
 
         <!-- wp:group -->
-        <div class="wp-block-group mt-[40px] mb-[30px] desktop:mb-[100px] desktop:grid grid-rows-2 grid-cols-2 gap-[30px]">
+        <div class="wp-block-group mt-[40px] mb-[30px] desktop:grid grid-rows-2 grid-cols-2 gap-[30px]">
           <!-- wp:group -->
           <div class="wp-block-group info-box1 mb-[35px] desktop:mb-[30px]">
             <!-- wp:heading {"level":6} -->
@@ -134,7 +134,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
+      <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[50px_100px_20px] desktop:w-1/2">
         <!-- wp:heading {"level":2} -->
         <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Historia i nowoczesność</span></h2>
         <!-- /wp:heading -->
@@ -173,7 +173,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
+      <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[50px_100px_20px] desktop:w-1/2">
         <!-- wp:heading -->
         <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Z historii miejsca…</span></h2>
         <!-- /wp:heading -->
@@ -212,7 +212,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- /wp:group -->
 
       <!-- wp:group -->
-      <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[140px_100px] desktop:w-1/2">
+      <div class="wp-block-group mb-[40px] desktop:mb-0 desktop:p-[50px_100px_20px] desktop:w-1/2">
         <!-- wp:heading -->
         <h2><span class="block mb-[40px] text-[30px] desktop:text-[34px] leading-[36px] desktop:leading-[44px]" data-aos="fade-right" data-aos-offset="30">Tajemnice gdańskiego zamczyska</span></h2>
         <!-- /wp:heading -->
