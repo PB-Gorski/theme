@@ -486,21 +486,45 @@ window.addEventListener("load", function() {
     // getting term id for investition
     currentInvestName = document.referrer.slice(document.referrer.match('o-inwestycji')['index']).replace('o-inwestycji-','').slice(-30,-1);
 
-    allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1];
+    allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
 
-    console.log('########################################');
-    console.log(allInvestmentsElements.childNodes[5].childNodes[3].childNodes[1]);
-    console.log('########################################');
+    allInvestmentsElements.forEach(el => {
+      if (el.childNodes[1] !== undefined) {
+        investName = el.childNodes[1].dataset.name
+        investID = el.childNodes[1].dataset.termid
+
+        investName=investName.replace(' ','-').replace('.','');
+        investName=investName.replace("ę","e");
+        investName=investName.replace("ó","o");
+        investName=investName.replace("ą","a");
+        investName=investName.replace("ś","s");
+        investName=investName.replace("Ś","s");
+        investName=investName.replace("ł","l");
+        investName=investName.replace("ż","z");
+        investName=investName.replace("ź","z");
+        investName=investName.replace("ć","c");
+        investName=investName.replace("ń","n");
+        investName = investName.toLowerCase();
+        
+        console.log(investName);
+
+        if (document.referrer.search(investName) > 5 ||
+        document.referrer.search('lokalizacja-' + investName) > 20 ||
+        document.referrer.search('galeria-' + investName) > 20 ||
+        document.referrer.search('kronika-budowy-' + investName) > 20){
+        document.cookie = "filteredTermsFromCookies=" + investID + ";";
+        console.log('##############################');
+        console.log('ok');
+        console.log('##############################');
+        };
+      };
+
+
+    });
 
 
 
-
-    if (document.referrer.search(investName) > 5 ||
-    document.referrer.search('lokalizacja-osiedle-srebrniki') > 20 ||
-    document.referrer.search('galeria-osiedle-srebrniki') > 20 ||
-    document.referrer.search('kronika-budowy-osiedle-srebrniki') > 20){
-      document.cookie = "filteredTermsFromCookies=72;";
-    };
+    
 
 
     if (document.referrer.search('o-inwestycji-osiedle-srebrniki') > 20 ||
