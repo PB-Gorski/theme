@@ -538,6 +538,9 @@ window.addEventListener("load", function() {
       }else if (cookieFromSingleMieszkania == '81'){
         console.log('cookie mieszkania true -  wiezycka folwark');
         document.cookie = "filteredTermsFromCookies=81;";
+      }else if (cookieFromSingleMieszkania == '680'){
+        console.log('cookie mieszkania true -  zatorze');
+        document.cookie = "filteredTermsFromCookies=;";
       }
     }
 
