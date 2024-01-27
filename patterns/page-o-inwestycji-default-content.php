@@ -31,13 +31,19 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       </p>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lista-mieszkan-default' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
+      <p class="text-[#8a8f99] hover:text-textGray transition duration-300">
+        <a href="<?php echo home_url() . '/lista-mieszkan-default' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
+      </p>
+      <!-- /wp:paragraph -->
+      <p class="text-[#8a8f99] hover:text-textGray transition duration-300">
+        <!-- wp:paragraph -->
+        <a href="<?php echo home_url() . '/galeria-default' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Galeria</a>
+      </p>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/galeria-default' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Galeria</a>
-      <!-- /wp:paragraph -->
-      <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/kronika-budowy-default' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Kronika budowy</a>
+      <p class="text-[#8a8f99] hover:text-textGray transition duration-300">
+        <a href="<?php echo home_url() . '/kronika-budowy-default' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Kronika budowy</a>
+      </p>
       <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
