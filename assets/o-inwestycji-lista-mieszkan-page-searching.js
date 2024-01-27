@@ -509,7 +509,7 @@ window.addEventListener("load", function() {
         console.log(investName);
         console.log(investID);
 
-        if (document.referrer.search(investName) > 5 ||
+        if (document.referrer.search('o-inwestycji-' + investName) > 5 ||
         document.referrer.search('lokalizacja-' + investName) > 20 ||
         document.referrer.search('galeria-' + investName) > 20 ||
         document.referrer.search('kronika-budowy-' + investName) > 20){
