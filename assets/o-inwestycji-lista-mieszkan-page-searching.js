@@ -592,7 +592,7 @@ window.addEventListener("load", function() {
         console.log('dynamic cookie mieszkania true - ' + investName);
         document.cookie = "filteredTermsFromCookies=" + investID + ";";
       }
-      
+
       // if (cookieFromSingleMieszkania == investID){
       //   console.log('dynamic cookie mieszkania true - ' + investName);
       //   document.cookie = "filteredTermsFromCookies=" + investID + ";";
@@ -927,6 +927,9 @@ window.addEventListener("load", function() {
       filterID = '.data-target-ymc' + currentYmcFilterID;
 
       function runFromCookies(){
+        console.log(filterID);
+        console.log('dynamic');
+        console.log(filteredTermsFromCookies);
         YMCTools({
           target: filterID, 
           terms: filteredTermsFromCookies,      
