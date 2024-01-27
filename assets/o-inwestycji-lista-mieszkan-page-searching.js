@@ -914,9 +914,7 @@ window.addEventListener("load", function() {
        console.log(currentYmcFilterID);
        console.log('@@@@@@@@@@@@@@@@@@');
 
-      if(pageID.classList.contains('banner-lista-mieszkan-osiedle-srebrniki')){
-        filterID = '.data-target-ymc' + currentYmcFilterID;
-      }
+      filterID = '.data-target-ymc' + currentYmcFilterID;
 
 
       // if(pageID.classList.contains('banner-lista-mieszkan-osiedle-srebrniki')){
