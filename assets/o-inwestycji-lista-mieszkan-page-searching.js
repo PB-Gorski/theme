@@ -891,31 +891,9 @@ window.addEventListener("load", function() {
           
       showActiveFilterNameFromCookies();
 
-      // filter ID by page id
+      // filter ID
       let pageID = document.querySelector('#Banner');
       let filterID = '';
-      // if(document.body.classList.contains('page-id-1926')){
-      //   filterID = '.data-target-ymc3';
-      // }else if(document.body.classList.contains('page-id-1932')){
-      //   filterID = '.data-target-ymc4';
-      // }else if(document.body.classList.contains('page-id-1723')){
-      //   filterID = '.data-target-ymc7';
-      // }else if(document.body.classList.contains('page-id-1934')){
-      //   filterID = '.data-target-ymc5';
-      // }else if(document.body.classList.contains('page-id-1717')){
-      //   filterID = '.data-target-ymc7';
-      // }else if(document.body.classList.contains('page-id-1936')){
-      //   filterID = '.data-target-ymc6';
-      // }
-
-      // dynamic ymc filter id
-      currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
-       console.log('@@@@@@@@@@@@@@@@@@');
-       console.log(currentYmcFilterID);
-       console.log('@@@@@@@@@@@@@@@@@@');
-
-      filterID = '.data-target-ymc' + currentYmcFilterID;
-
 
       // if(pageID.classList.contains('banner-lista-mieszkan-osiedle-srebrniki')){
       //   filterID = '.data-target-ymc3';
@@ -935,6 +913,11 @@ window.addEventListener("load", function() {
       //   filterID = '.data-target-ymc6';
       //   console.log('folwrk test22222');
       // }
+
+
+      // dynamic ymc filter id
+      currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
+      filterID = '.data-target-ymc' + currentYmcFilterID;
 
       function runFromCookies(){
         YMCTools({
