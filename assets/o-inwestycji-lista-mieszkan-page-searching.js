@@ -486,13 +486,12 @@ window.addEventListener("load", function() {
     // getting term id for investition
     currentInvestName = document.referrer.slice(document.referrer.match('o-inwestycji')['index']).replace('o-inwestycji-','').slice(-30,-1);
 
-    allInvestmentsElements = document.querySelectorAll('.dropdown-filter');
+    allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1];
 
-    allInvestmentsElements.forEach(el => {
-      console.log('########################################');
-      console.log(el.childNodes[5].childNodes[3].childNodes[1]);
-      console.log('########################################');
-    })
+    console.log('########################################');
+    console.log(allInvestmentsElements.childNodes[5].childNodes[3].childNodes[1]);
+    console.log('########################################');
+
 
 
 
