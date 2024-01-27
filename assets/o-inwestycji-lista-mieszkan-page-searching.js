@@ -506,21 +506,19 @@ window.addEventListener("load", function() {
         investName=investName.replace("ń","n");
         investName = investName.toLowerCase();
         
-        console.log(investName);
-        console.log(investID);
+
 
         if (document.referrer.search('o-inwestycji-' + investName) > 5 ||
         document.referrer.search('lokalizacja-' + investName) > 20 ||
         document.referrer.search('galeria-' + investName) > 20 ||
         document.referrer.search('kronika-budowy-' + investName) > 20){
-        document.cookie = "filteredTermsFromCookies=" + investID + ";";
-        console.log('##############################');
-        console.log('ok');
-        console.log('##############################');
+          document.cookie = "filteredTermsFromCookies=" + investID + ";";
+          console.log('##############################');
+          console.log(investName);
+          console.log(investID);
+          console.log('##############################');
         };
       };
-
-
     });
 
 
