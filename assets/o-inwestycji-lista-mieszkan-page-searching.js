@@ -507,6 +507,7 @@ window.addEventListener("load", function() {
         investName = investName.toLowerCase();
         
         console.log(investName);
+        console.log(investID);
 
         if (document.referrer.search(investName) > 5 ||
         document.referrer.search('lokalizacja-' + investName) > 20 ||
