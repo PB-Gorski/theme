@@ -501,6 +501,11 @@ window.addEventListener("load", function() {
               document.referrer.search('galeria-wiezycka-folwark') > 20 ||
               document.referrer.search('kronika-budowy-wiezycka-folwark') > 20){
               document.cookie = "filteredTermsFromCookies=81;";
+    }else if (document.referrer.search('o-inwestycji-wiezycka-folwark') > 20 ||
+    document.referrer.search('lokalizacja-zatorze') > 20 ||
+    document.referrer.search('galeria-zatorze') > 20 ||
+    document.referrer.search('kronika-budowy-zatorze') > 20){
+    document.cookie = "filteredTermsFromCookies=680;";
     };
 
 
