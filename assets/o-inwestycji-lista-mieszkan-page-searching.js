@@ -910,6 +910,9 @@ window.addEventListener("load", function() {
 
       // dynamic ymc filter id
       currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
+       console.log('@@@@@@@@@@@@@@@@@@');
+       console.log(currentYmcFilterID);
+       console.log('@@@@@@@@@@@@@@@@@@');
 
       if(pageID.classList.contains('banner-lista-mieszkan-osiedle-srebrniki')){
         filterID = '.data-target-ymc' + currentYmcFilterID;
