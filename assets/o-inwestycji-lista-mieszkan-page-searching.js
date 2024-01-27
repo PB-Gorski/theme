@@ -485,8 +485,10 @@ window.addEventListener("load", function() {
 
     // dynamic term id for investition
     currentInvestName = document.referrer.slice(document.referrer.match('o-inwestycji')['index']).replace('o-inwestycji-','').slice(-30,-1);
+    // currentInvestID
 
     allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
+
 
     allInvestmentsElements.forEach(el => {
       if (el.childNodes[1] !== undefined) {
@@ -588,7 +590,7 @@ window.addEventListener("load", function() {
         document.cookie = "filteredTermsFromCookies=81;";
       }else if (cookieFromSingleMieszkania == '680'){
         console.log('cookie mieszkania true - zatorze');
-        document.cookie = "filteredTermsFromCookies=;";
+        document.cookie = "filteredTermsFromCookies=" + investID + ";";
       }
     }
 
