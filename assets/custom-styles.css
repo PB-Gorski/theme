@@ -1565,8 +1565,7 @@ background-color: #e8fbff!important;
 }
 
 /* page o inwestycji */
-.page-template-page-o-inwestycji-default .container-post-custom-layout,
-.page-template-default .container-post-custom-layout{
+.page-template-page-o-inwestycji-default .container-post-custom-layout{
   display: none;
 }
 /* .row-links p{
