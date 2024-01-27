@@ -493,21 +493,19 @@ window.addEventListener("load", function() {
         investName = el.childNodes[1].dataset.name
         investID = el.childNodes[1].dataset.termid
 
-        investName=investName.replace(' ','-').replace('.','');
-        investName=investName.replace("ę","e");
-        investName=investName.replace("ó","o");
-        investName=investName.replace("ą","a");
-        investName=investName.replace("ś","s");
-        investName=investName.replace("Ś","s");
-        investName=investName.replace("ł","l");
-        investName=investName.replace("ż","z");
-        investName=investName.replace("ź","z");
-        investName=investName.replace("ć","c");
-        investName=investName.replace("ń","n");
+        investName = investName.replace(' ','-').replace('.','');
+        investName = investName.replace("ę","e");
+        investName = investName.replace("ó","o");
+        investName = investName.replace("ą","a");
+        investName = investName.replace("ś","s");
+        investName = investName.replace("Ś","s");
+        investName = investName.replace("ł","l");
+        investName = investName.replace("ż","z");
+        investName = investName.replace("ź","z");
+        investName = investName.replace("ć","c");
+        investName = investName.replace("ń","n");
         investName = investName.toLowerCase();
         
-
-
         if (document.referrer.search('o-inwestycji-' + investName) > 5 ||
         document.referrer.search('lokalizacja-' + investName) > 20 ||
         document.referrer.search('galeria-' + investName) > 20 ||
@@ -526,32 +524,32 @@ window.addEventListener("load", function() {
     
 
 
-    if (document.referrer.search('o-inwestycji-osiedle-srebrniki') > 20 ||
-        document.referrer.search('lokalizacja-osiedle-srebrniki') > 20 ||
-        document.referrer.search('galeria-osiedle-srebrniki') > 20 ||
-        document.referrer.search('kronika-budowy-osiedle-srebrniki') > 20){
-          document.cookie = "filteredTermsFromCookies=72;";
-    }else if (document.referrer.search('o-inwestycji-sw-piotra') > 20 ||
-              document.referrer.search('lokalizacja-sw-piotra') > 20 ||
-              document.referrer.search('galeria-sw-piotra') > 20 ||
-              document.referrer.search('kronika-budowy-sw-piotra') > 20){
-                document.cookie = "filteredTermsFromCookies=71;";
-    }else if (document.referrer.search('o-inwestycji-torunska-16') > 20 ||
-              document.referrer.search('lokalizacja-torunska-16') > 20 ||
-              document.referrer.search('galeria-torunska-16') > 20 ||
-              document.referrer.search('kronika-budowy-torunska-16') > 20){
-                document.cookie = "filteredTermsFromCookies=82;";
-    }else if (document.referrer.search('o-inwestycji-wiezycka-folwark') > 20 ||
-              document.referrer.search('lokalizacja-wiezycka-folwark') > 20 ||
-              document.referrer.search('galeria-wiezycka-folwark') > 20 ||
-              document.referrer.search('kronika-budowy-wiezycka-folwark') > 20){
-                document.cookie = "filteredTermsFromCookies=81;";
-    }else if (document.referrer.search('o-inwestycji-nokzatorze') > 20 ||
-    document.referrer.search('lokalizacja-zatorze') > 20 ||
-    document.referrer.search('galeria-zatorze') > 20 ||
-    document.referrer.search('kronika-budowy-zatorze') > 20){
-      document.cookie = "filteredTermsFromCookies=680;";
-    };
+    // if (document.referrer.search('o-inwestycji-osiedle-srebrniki') > 20 ||
+    //     document.referrer.search('lokalizacja-osiedle-srebrniki') > 20 ||
+    //     document.referrer.search('galeria-osiedle-srebrniki') > 20 ||
+    //     document.referrer.search('kronika-budowy-osiedle-srebrniki') > 20){
+    //       document.cookie = "filteredTermsFromCookies=72;";
+    // }else if (document.referrer.search('o-inwestycji-sw-piotra') > 20 ||
+    //           document.referrer.search('lokalizacja-sw-piotra') > 20 ||
+    //           document.referrer.search('galeria-sw-piotra') > 20 ||
+    //           document.referrer.search('kronika-budowy-sw-piotra') > 20){
+    //             document.cookie = "filteredTermsFromCookies=71;";
+    // }else if (document.referrer.search('o-inwestycji-torunska-16') > 20 ||
+    //           document.referrer.search('lokalizacja-torunska-16') > 20 ||
+    //           document.referrer.search('galeria-torunska-16') > 20 ||
+    //           document.referrer.search('kronika-budowy-torunska-16') > 20){
+    //             document.cookie = "filteredTermsFromCookies=82;";
+    // }else if (document.referrer.search('o-inwestycji-wiezycka-folwark') > 20 ||
+    //           document.referrer.search('lokalizacja-wiezycka-folwark') > 20 ||
+    //           document.referrer.search('galeria-wiezycka-folwark') > 20 ||
+    //           document.referrer.search('kronika-budowy-wiezycka-folwark') > 20){
+    //             document.cookie = "filteredTermsFromCookies=81;";
+    // }else if (document.referrer.search('o-inwestycji-nokzatorze') > 20 ||
+    // document.referrer.search('lokalizacja-zatorze') > 20 ||
+    // document.referrer.search('galeria-zatorze') > 20 ||
+    // document.referrer.search('kronika-budowy-zatorze') > 20){
+    //   document.cookie = "filteredTermsFromCookies=680;";
+    // };
 
 
 
