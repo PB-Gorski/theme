@@ -32,7 +32,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
       <p class="text-[#8a8f99] hover:text-textGray transition duration-300">
-        <a href="<?php echo home_url() . '/lista-mieszkan-default' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
+        <a href="<?php echo home_url() . '/lista-mieszkan-default' ?>" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
       </p>
       <!-- /wp:paragraph -->
       <p class="text-[#8a8f99] hover:text-textGray transition duration-300">
