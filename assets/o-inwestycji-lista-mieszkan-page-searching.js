@@ -481,31 +481,54 @@ window.addEventListener("load", function() {
     //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/kronika-budowy-wiezycka-folwark/'){
     //           document.cookie = "filteredTermsFromCookies=81";
     // };
+
+
+    // getting term id for investition
+    currentInvestName = document.referrer.slice(document.referrer.match('o-inwestycji')['index']).replace('o-inwestycji-','').slice(-30,-1);
+
+    allInvestmentsElements = document.querySelectorAll('.dropdown-filter');
+
+    allInvestmentsElements.forEach(el => {
+      console.log('########################################');
+      console.log(el.childNodes[5].childNodes[3].childNodes[1]);
+      console.log('########################################');
+    })
+
+
+
+    if (document.referrer.search(investName) > 5 ||
+    document.referrer.search('lokalizacja-osiedle-srebrniki') > 20 ||
+    document.referrer.search('galeria-osiedle-srebrniki') > 20 ||
+    document.referrer.search('kronika-budowy-osiedle-srebrniki') > 20){
+      document.cookie = "filteredTermsFromCookies=72;";
+    };
+
+
     if (document.referrer.search('o-inwestycji-osiedle-srebrniki') > 20 ||
         document.referrer.search('lokalizacja-osiedle-srebrniki') > 20 ||
         document.referrer.search('galeria-osiedle-srebrniki') > 20 ||
         document.referrer.search('kronika-budowy-osiedle-srebrniki') > 20){
-        document.cookie = "filteredTermsFromCookies=72;";
+          document.cookie = "filteredTermsFromCookies=72;";
     }else if (document.referrer.search('o-inwestycji-sw-piotra') > 20 ||
               document.referrer.search('lokalizacja-sw-piotra') > 20 ||
               document.referrer.search('galeria-sw-piotra') > 20 ||
               document.referrer.search('kronika-budowy-sw-piotra') > 20){
-              document.cookie = "filteredTermsFromCookies=71;";
+                document.cookie = "filteredTermsFromCookies=71;";
     }else if (document.referrer.search('o-inwestycji-torunska-16') > 20 ||
               document.referrer.search('lokalizacja-torunska-16') > 20 ||
               document.referrer.search('galeria-torunska-16') > 20 ||
               document.referrer.search('kronika-budowy-torunska-16') > 20){
-              document.cookie = "filteredTermsFromCookies=82;";
+                document.cookie = "filteredTermsFromCookies=82;";
     }else if (document.referrer.search('o-inwestycji-wiezycka-folwark') > 20 ||
               document.referrer.search('lokalizacja-wiezycka-folwark') > 20 ||
               document.referrer.search('galeria-wiezycka-folwark') > 20 ||
               document.referrer.search('kronika-budowy-wiezycka-folwark') > 20){
-              document.cookie = "filteredTermsFromCookies=81;";
-    }else if (document.referrer.search('o-inwestycji-zatorze') > 20 ||
+                document.cookie = "filteredTermsFromCookies=81;";
+    }else if (document.referrer.search('o-inwestycji-nokzatorze') > 20 ||
     document.referrer.search('lokalizacja-zatorze') > 20 ||
     document.referrer.search('galeria-zatorze') > 20 ||
     document.referrer.search('kronika-budowy-zatorze') > 20){
-    document.cookie = "filteredTermsFromCookies=680;";
+      document.cookie = "filteredTermsFromCookies=680;";
     };
 
 
@@ -544,7 +567,7 @@ window.addEventListener("load", function() {
         console.log('cookie mieszkania true -  wiezycka folwark');
         document.cookie = "filteredTermsFromCookies=81;";
       }else if (cookieFromSingleMieszkania == '680'){
-        console.log('cookie mieszkania true -  zatorze');
+        console.log('cookie mieszkania true - zatorze');
         document.cookie = "filteredTermsFromCookies=;";
       }
     }
