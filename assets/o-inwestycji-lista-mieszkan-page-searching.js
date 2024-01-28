@@ -762,7 +762,7 @@ window.addEventListener("load", function() {
 
             console.log('555555555555555');
             console.log(globalCurrentInvestID);
-            investElFormName = document.querySelector('[data-termid=' + globalCurrentInvestID + ']').innerText;
+            investElFormName = document.querySelector(`[data-termid="` + globalCurrentInvestID + `"]`).innerText;
             if(filteredTermsFromCookies == String(globalCurrentInvestID)){
               console.log('444444444444444' + investID);
               returnChoosenFromCookiesInwestycje.forEach(el => {
