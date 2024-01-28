@@ -527,8 +527,8 @@ window.addEventListener("load", function() {
                 console.log('Number of found posts: ' + response.found);
             });
 
-          currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
-          globalCurrentCityName = currentCityName;
+          // currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
+          // globalCurrentCityName = currentCityName;
           cityIDsArr = [];
         
           allCityElements.forEach(el => {
