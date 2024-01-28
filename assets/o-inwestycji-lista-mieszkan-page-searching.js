@@ -698,6 +698,7 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){
                   choosenMiastoArr.push(item.childNodes[1].dataset.name);
                   item.childNodes[1].classList.add('active');
+                  console.log('11111!!!!!!!!!!!! added active in miasto');
                 }
                 // item.parentNode.previousElementSibling.childNodes[1];
                 // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
@@ -731,6 +732,7 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){
                   choosenMiastoArr.push(item.childNodes[1].dataset.name);
                   item.childNodes[1].classList.add('active');
+                  console.log('11111!!!!!!!!!!!! added active in inwestycje');
                 }
               });
             });
