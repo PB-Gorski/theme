@@ -474,6 +474,7 @@ window.addEventListener("load", function() {
     // dynamic filtr data
     allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
     investIDsArr = [];
+    globalCurrentInvestID = 0;
   
     allInvestmentsElements.forEach(el => {
       if (el.childNodes[1] !== undefined) {
@@ -500,6 +501,8 @@ window.addEventListener("load", function() {
         document.referrer.search('galeria-' + investName) > 20 ||
         document.referrer.search('kronika-budowy-' + investName) > 20){
           document.cookie = "filteredTermsFromCookies=" + investID + ";";
+          globalCurrentInvestID = investID;
+
         };
       };
     });
@@ -755,7 +758,7 @@ window.addEventListener("load", function() {
 
 
 
-            console.log('555555555555555' + investID);
+            console.log('555555555555555' + globalCurrentInvestID);
             if(filteredTermsFromCookies == investID){
               console.log('444444444444444' + investID);
               returnChoosenFromCookiesInwestycje.forEach(el => {
