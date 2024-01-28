@@ -773,7 +773,8 @@ window.addEventListener("load", function() {
 
 
             console.log('555555555555555');
-            console.log(globalCurrentInvestID);
+            console.log(globalCurrentCityID);
+            console.log('555555555555555');
             investElFormName = document.querySelector(`[data-termid="` + globalCurrentInvestID + `"]`).innerText;
             cityElFormName = document.querySelector(`[data-termid="` + globalCurrentCityID + `"]`).innerText;
             if(filteredTermsFromCookies == String(globalCurrentInvestID)){
