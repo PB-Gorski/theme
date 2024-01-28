@@ -581,8 +581,9 @@ window.addEventListener("load", function() {
     // back from single mieszkania
     if(document.cookie.indexOf('filteredTermsFromCookies=') >= 0) {
       console.log('cookie mieszkania true');
-      console.log('1@@@@@@@@@@@@@@@@@' + investName);
-      console.log('2@@@@@@@@@@@@@@@@@' + investID);
+      console.log('1@@@@@@@@@@@@@@@@@');
+      console.log(investName);
+      console.log(investID);
       let cookieFromSingleMieszkania = getCookie('filteredTermsFromCookies')
       if (cookieFromSingleMieszkania == '72'){
         console.log('cookie mieszkania true - osiedle srebrniki');
