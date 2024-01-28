@@ -801,7 +801,8 @@ window.addEventListener("load", function() {
             console.log(globalCurrentCityID);
             console.log('555555555555555');
             investElFormName = document.querySelector(`[data-termid="` + globalCurrentInvestID + `"]`).innerText;
-            // cityElFormName = document.querySelector(`[data-termid="` + globalCurrentCityID + `"]`).innerText;
+            cityElFormName = ''; 
+            // = document.querySelector(`[data-termid="` + globalCurrentCityID + `"]`).innerText;
             if(filteredTermsFromCookies == String(globalCurrentInvestID)){
               console.log('444444444444444' + globalCurrentInvestID);
               returnChoosenFromCookiesInwestycje.forEach(el => {
