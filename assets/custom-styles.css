@@ -1568,3 +1568,6 @@ background-color: #e8fbff!important;
 .page-template-default .page-parent > .ymc-smart-filter-container > .container-posts .container-post-custom-layout {
   display: none;
 }
+.ymc-smart-filter-container > div.container-posts.container-post-custom-layout{
+  display: none!important;
+}
