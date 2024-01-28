@@ -507,9 +507,21 @@ window.addEventListener("load", function() {
           globalCurrentInvestID = investID;
           globalCurrentInvestName = investName;
 
-              // dynamic term id for city
-          allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
+        
 
+
+
+          
+
+        };
+      };
+    });
+
+
+          // dynamic term id for city
+          allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
+          currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
+          globalCurrentCityName = currentCityName;
           cityIDsArr = [];
         
           allCityElements.forEach(el => {
@@ -531,25 +543,8 @@ window.addEventListener("load", function() {
               cityName = cityName.replace("ć","c");
               cityName = cityName.replace("ń","n");
               cityName = cityName.toLowerCase();
-
-              if (document.referrer.search('o-inwestycji-' + globalCurrentInvestName) > 5 ||
-              document.referrer.search('lokalizacja-' + globalCurrentInvestName) > 20 ||
-              document.referrer.search('galeria-' + globalCurrentInvestName) > 20 ||
-              document.referrer.search('kronika-budowy-' + globalCurrentInvestName) > 20){
-                console.log('6666666666666');
-                console.log(cityID);
-                console.log('6666666666666');
-                globalCurrentCityID = cityID;
-                globalCurrentCityName = cityName;
-              };
-
-
             };
           });
-
-        };
-      };
-    });
 
 
 
