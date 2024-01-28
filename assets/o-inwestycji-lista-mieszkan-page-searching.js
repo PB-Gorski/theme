@@ -579,12 +579,12 @@ window.addEventListener("load", function() {
     
 
     // back from single mieszkania
-    if(document.cookie.indexOf('filteredTermsFromCookies=') >= 0) {
-      console.log('cookie mieszkania true');
-      console.log('1@@@@@@@@@@@@@@@@@');
-      console.log(investName);
-      console.log(investID);
-      let cookieFromSingleMieszkania = getCookie('filteredTermsFromCookies')
+    // if(document.cookie.indexOf('filteredTermsFromCookies=') >= 0) {
+    //   console.log('cookie mieszkania true');
+    //   console.log('1@@@@@@@@@@@@@@@@@');
+    //   console.log(investName);
+    //   console.log(investID);
+    //   let cookieFromSingleMieszkania = getCookie('filteredTermsFromCookies')
       // if (cookieFromSingleMieszkania == '72'){
       //   console.log('cookie mieszkania true - osiedle srebrniki');
       //   document.cookie = "filteredTermsFromCookies=72;";
@@ -607,7 +607,7 @@ window.addEventListener("load", function() {
       //   console.log("filteredTermsFromCookies=" + investID + ";");
       //   document.cookie = "filteredTermsFromCookies=" + investID + ";";
       // }
-    }
+    // }
 
     let filteredTermsFromCookies = '';
     if(document.cookie.indexOf('filteredTermsFromCookies=') == 0 || document.cookie.indexOf('PriceMinFromCookies=') == 0 || document.cookie.indexOf('PriceMaxFromCookies=') == 0){
