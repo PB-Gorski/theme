@@ -518,6 +518,9 @@ window.addEventListener("load", function() {
     });
 
 
+          // dynamic ymc filter id
+          currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
+
           // dynamic term id for city
           allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
 
@@ -1002,8 +1005,7 @@ window.addEventListener("load", function() {
       // }
 
 
-      // dynamic ymc filter id
-      currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
+
       filterID = '.data-target-ymc' + currentYmcFilterID;
 
       function runFromCookies(){
