@@ -723,6 +723,8 @@ window.addEventListener("load", function() {
             // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
           }else if(inwestycjaArr.includes(+item)){
             // inwestycje
+            console.log('wybrano z kategorii - inwestycje');
+
             tempInwestycjaArr.includes(item) ? removeItemAll(tempInwestycjaArr,item) : tempInwestycjaArr.push(item);
 
             if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
