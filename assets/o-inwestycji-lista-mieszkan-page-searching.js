@@ -547,6 +547,11 @@ window.addEventListener("load", function() {
       };
     });
 
+    console.log('33333333333');
+    console.log(globalCurrentCityID);
+    console.log(globalCurrentCityName);
+    console.log('33333333333');
+
 
 
     // if (document.referrer.search('o-inwestycji-osiedle-srebrniki') > 20 ||
@@ -778,7 +783,7 @@ window.addEventListener("load", function() {
             investElFormName = document.querySelector(`[data-termid="` + globalCurrentInvestID + `"]`).innerText;
             cityElFormName = document.querySelector(`[data-termid="` + globalCurrentCityID + `"]`).innerText;
             if(filteredTermsFromCookies == String(globalCurrentInvestID)){
-              console.log('444444444444444' + investID);
+              console.log('444444444444444' + globalCurrentInvestID);
               returnChoosenFromCookiesInwestycje.forEach(el => {
                 // inwestycja filtr
                 el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
