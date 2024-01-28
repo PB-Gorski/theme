@@ -760,12 +760,13 @@ window.addEventListener("load", function() {
 
 
 
-            console.log('555555555555555' + globalCurrentInvestID);
-            if(filteredTermsFromCookies == investID){
+            console.log('555555555555555');
+            console.log(globalCurrentInvestID);
+            if(filteredTermsFromCookies == String(globalCurrentInvestID)){
               console.log('444444444444444' + investID);
               returnChoosenFromCookiesInwestycje.forEach(el => {
                 // inwestycja filtr
-                el.parentNode.previousElementSibling.childNodes[1].innerHTML = globalCurrentInvestName;
+                el.parentNode.previousElementSibling.childNodes[1].innerHTML = String(globalCurrentInvestName);
                 el.parentNode.previousElementSibling.classList.add('pointer-events-none');
                 // miasto filtr
                 el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'city' + cityName;
