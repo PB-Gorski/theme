@@ -521,7 +521,7 @@ window.addEventListener("load", function() {
           // dynamic term id for city
           allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
 
-          wp.hooks.addAction('ymc_after_loaded_data_148-4_1', 'smartfilter', function(class_name, response){
+          wp.hooks.addAction('ymc_after_loaded_data_148_4', 'smartfilter', function(class_name, response){
                 console.log('Container class: ' + class_name);
                 console.log('Post count: ' + response.post_count);
                 console.log('Number of found posts: ' + response.found);
@@ -810,7 +810,7 @@ window.addEventListener("load", function() {
                 el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
                 el.parentNode.previousElementSibling.classList.add('pointer-events-none');
                 // miasto filtr
-                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'city' + cityElFormName;
+                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'Miasto' + cityElFormName;
                 el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
               });
             }
