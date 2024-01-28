@@ -814,7 +814,7 @@ window.addEventListener("load", function() {
                 el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
                 el.parentNode.previousElementSibling.classList.add('pointer-events-none');
                 // miasto filtr
-                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'Miasto' + cityElFormName;
+                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = globalCurrentCityName;
                 el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
               });
             }
