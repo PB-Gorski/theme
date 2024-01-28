@@ -484,7 +484,7 @@ window.addEventListener("load", function() {
 
 
     // dynamic term id for investition
-    currentInvestName = document.referrer.slice(document.referrer.match('o-inwestycji')['index']).replace('o-inwestycji-','').slice(-30,-1);
+    // currentInvestName = document.referrer.slice(document.referrer.match('o-inwestycji')['index']).replace('o-inwestycji-','').slice(-30,-1);
     // currentInvestID
 
     allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
