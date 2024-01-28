@@ -5,13 +5,52 @@ window.addEventListener("load", function() {
   }
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   let mainPageID = document.querySelector('#Banner');
+
   if(document.body.classList.contains('_page-parent') || 
-  document.body.classList.contains('page-child') ||
+    document.body.classList.contains('page-child') ||
     mainPageID?.classList.contains('banner-lista-mieszkan-osiedle-srebrniki') ||
     mainPageID?.classList.contains('banner-o-inwestycji-torunska-16') ||
     mainPageID?.classList.contains('banner-lista-mieszkan-torunska-16') ||
     mainPageID?.classList.contains('banner-lista-mieszkan-wiezycka-folwark') ||
     mainPageID?.classList.contains('banner-lista-mieszkan-sw-piotra')) {
+
+
+      allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
+      investIDsArr = [];
+  
+      // dynamic filtr data
+      allInvestmentsElements.forEach(el => {
+        if (el.childNodes[1] !== undefined) {
+          investName = el.childNodes[1].dataset.name
+          investID = el.childNodes[1].dataset.termid
+  
+          investIDsArr.push(investID)
+  
+          investName = investName.replace(' ','-').replace('.','');
+          investName = investName.replace("ę","e");
+          investName = investName.replace("ó","o");
+          investName = investName.replace("ą","a");
+          investName = investName.replace("ś","s");
+          investName = investName.replace("Ś","s");
+          investName = investName.replace("ł","l");
+          investName = investName.replace("ż","z");
+          investName = investName.replace("ź","z");
+          investName = investName.replace("ć","c");
+          investName = investName.replace("ń","n");
+          investName = investName.toLowerCase();
+          
+          if (document.referrer.search('o-inwestycji-' + investName) > 5 ||
+          document.referrer.search('lokalizacja-' + investName) > 20 ||
+          document.referrer.search('galeria-' + investName) > 20 ||
+          document.referrer.search('kronika-budowy-' + investName) > 20){
+            document.cookie = "filteredTermsFromCookies=" + investID + ";";
+            console.log('##############################');
+            console.log(investName);
+            console.log(investID);
+            console.log('##############################');
+          };
+        };
+      });
 
 
 
@@ -74,7 +113,8 @@ window.addEventListener("load", function() {
         let choosenInneCount = 1;
         function showActiveFilterName(cookiesSearchedIDs){
           let miastoArr = [28,40];
-          let inwestycjaArr = [72,71,82,81,680];
+          // let inwestycjaArr = [72,71,82,81,680];
+          let inwestycjaArr = investIDsArr;
           // let pokojeArr = [43,34,53,25];
           let pokojeArr = [640,641,642,643,644,645,646];
           let pietroArr = [97,78,60,66];
@@ -487,44 +527,6 @@ window.addEventListener("load", function() {
     // currentInvestName = document.referrer.slice(document.referrer.match('o-inwestycji')['index']).replace('o-inwestycji-','').slice(-30,-1);
     // currentInvestID
 
-    allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
-
-
-    allInvestmentsElements.forEach(el => {
-      if (el.childNodes[1] !== undefined) {
-        investName = el.childNodes[1].dataset.name
-        investID = el.childNodes[1].dataset.termid
-
-        investName = investName.replace(' ','-').replace('.','');
-        investName = investName.replace("ę","e");
-        investName = investName.replace("ó","o");
-        investName = investName.replace("ą","a");
-        investName = investName.replace("ś","s");
-        investName = investName.replace("Ś","s");
-        investName = investName.replace("ł","l");
-        investName = investName.replace("ż","z");
-        investName = investName.replace("ź","z");
-        investName = investName.replace("ć","c");
-        investName = investName.replace("ń","n");
-        investName = investName.toLowerCase();
-        
-        if (document.referrer.search('o-inwestycji-' + investName) > 5 ||
-        document.referrer.search('lokalizacja-' + investName) > 20 ||
-        document.referrer.search('galeria-' + investName) > 20 ||
-        document.referrer.search('kronika-budowy-' + investName) > 20){
-          document.cookie = "filteredTermsFromCookies=" + investID + ";";
-          console.log('##############################');
-          console.log(investName);
-          console.log(investID);
-          console.log('##############################');
-        };
-      };
-    });
-
-
-
-    
-
 
     // if (document.referrer.search('o-inwestycji-osiedle-srebrniki') > 20 ||
     //     document.referrer.search('lokalizacja-osiedle-srebrniki') > 20 ||
@@ -630,7 +632,8 @@ window.addEventListener("load", function() {
       // let choosenInneCount = 1;
       function showActiveFilterNameFromCookies(){
         let miastoArr = [28,40];
-        let inwestycjaArr = [72,71,82,81,680];
+        // let inwestycjaArr = [72,71,82,81,680];
+        let inwestycjaArr = investIDsArr;
         // let pokojeArr = [43,34,53,25];
         let pokojeArr = [640,641,642,643,644,645,646];
         let pietroArr = [97,78,60,66];
