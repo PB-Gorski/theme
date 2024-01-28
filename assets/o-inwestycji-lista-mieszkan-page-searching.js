@@ -540,6 +540,9 @@ window.addEventListener("load", function() {
         document.referrer.search('galeria-' + globalCurrentInvestName) > 20 ||
         document.referrer.search('kronika-budowy-' + globalCurrentInvestName) > 20){
           // document.cookie = "filteredTermsFromCookies=" + cityID + ";";
+          console.log('6666666666666');
+          console.log(cityID);
+          console.log('6666666666666');
           globalCurrentCityID = cityID;
           globalCurrentCityName = cityName;
 
