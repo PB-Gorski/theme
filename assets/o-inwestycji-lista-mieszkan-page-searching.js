@@ -507,43 +507,51 @@ window.addEventListener("load", function() {
           globalCurrentInvestID = investID;
           globalCurrentInvestName = investName;
 
+              // dynamic term id for city
+          allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
+          
+          cityIDsArr = [];
+        
+          allCityElements.forEach(el => {
+            if (el.childNodes[1] !== undefined) {
+              cityID = el.childNodes[1].dataset.termid
+              cityName = el.childNodes[1].dataset.name
+
+              cityIDsArr.push(Number(cityID))
+        
+              cityName = cityName.replace(' ','-').replace('.','');
+              cityName = cityName.replace("ę","e");
+              cityName = cityName.replace("ó","o");
+              cityName = cityName.replace("ą","a");
+              cityName = cityName.replace("ś","s");
+              cityName = cityName.replace("Ś","s");
+              cityName = cityName.replace("ł","l");
+              cityName = cityName.replace("ż","z");
+              cityName = cityName.replace("ź","z");
+              cityName = cityName.replace("ć","c");
+              cityName = cityName.replace("ń","n");
+              cityName = cityName.toLowerCase();
+
+              console.log('6666666666666');
+              console.log(cityID);
+              console.log('6666666666666');
+              globalCurrentCityID = cityID;
+              globalCurrentCityName = cityName;
+
+
+            };
+          });
+
         };
       };
     });
 
-    // dynamic term id for city
-    allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
-    cityIDsArr = [];
-  
-    allCityElements.forEach(el => {
-      if (el.childNodes[1] !== undefined) {
-        cityID = el.childNodes[1].dataset.termid
-        cityName = el.childNodes[1].dataset.name
 
-        cityIDsArr.push(Number(cityID))
-  
-        cityName = cityName.replace(' ','-').replace('.','');
-        cityName = cityName.replace("ę","e");
-        cityName = cityName.replace("ó","o");
-        cityName = cityName.replace("ą","a");
-        cityName = cityName.replace("ś","s");
-        cityName = cityName.replace("Ś","s");
-        cityName = cityName.replace("ł","l");
-        cityName = cityName.replace("ż","z");
-        cityName = cityName.replace("ź","z");
-        cityName = cityName.replace("ć","c");
-        cityName = cityName.replace("ń","n");
-        cityName = cityName.toLowerCase();
-
-
-      };
-    });
 
     if (document.referrer.search('o-inwestycji-' + globalCurrentInvestName) > 5 ||
     document.referrer.search('lokalizacja-' + globalCurrentInvestName) > 20 ||
     document.referrer.search('galeria-' + globalCurrentInvestName) > 20 ||
     document.referrer.search('kronika-budowy-' + globalCurrentInvestName) > 20){
-      // document.cookie = "filteredTermsFromCookies=" + cityID + ";";
       console.log('6666666666666');
       console.log(cityID);
       console.log('6666666666666');
