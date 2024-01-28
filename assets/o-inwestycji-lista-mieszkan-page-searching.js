@@ -524,6 +524,7 @@ window.addEventListener("load", function() {
           wp.hooks.addAction('ymc_after_loaded_data_148_4', 'smartfilter', function(class_name, response){
                 console.log('1111111111111111 from hook:');
                 currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
+                console.log(currentCityName);
             });
 
           
