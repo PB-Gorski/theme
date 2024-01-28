@@ -207,7 +207,7 @@ $tax_sort = $taxonomy;
 							  ' . $terms_icons . '
                               <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . '" 
                               href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
-                  esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
+                  esc_html(get_term($term)->name) . '</a></div>';
               }
 
               $terms_icons = null;
@@ -334,7 +334,7 @@ $tax_sort = $taxonomy;
 							  ' . $terms_icons . '
                               <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . '" 
                               href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
-                  esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
+                  esc_html(get_term($term)->name) . '</a></div>';
               }
 
               $terms_icons = null;
@@ -380,7 +380,7 @@ $tax_sort = $taxonomy;
                   ' . $terms_icons . '
                                 <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . '" 
                                 href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
-                      esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
+                      esc_html(get_term($term)->name) . '</a></div>';
                   }
                   $terms_icons = null;
                 } ?>
