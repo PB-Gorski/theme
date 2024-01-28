@@ -602,11 +602,11 @@ window.addEventListener("load", function() {
       //   document.cookie = "filteredTermsFromCookies=" + investID + ";";
       // }
 
-      if (cookieFromSingleMieszkania == investID){
-        console.log('dynamic cookie mieszkania true - ' + investName);
-        console.log("filteredTermsFromCookies=" + investID + ";");
-        document.cookie = "filteredTermsFromCookies=" + investID + ";";
-      }
+      // if (cookieFromSingleMieszkania == investID){
+      //   console.log('dynamic cookie mieszkania true - ' + investName);
+      //   console.log("filteredTermsFromCookies=" + investID + ";");
+      //   document.cookie = "filteredTermsFromCookies=" + investID + ";";
+      // }
     }
 
     let filteredTermsFromCookies = '';
