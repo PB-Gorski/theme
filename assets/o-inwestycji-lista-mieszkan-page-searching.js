@@ -525,6 +525,7 @@ window.addEventListener("load", function() {
                 console.log('1111111111111111 from hook:');
                 currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
                 console.log(currentCityName);
+                globalCurrentCityName = currentCityName;
             });
 
           
