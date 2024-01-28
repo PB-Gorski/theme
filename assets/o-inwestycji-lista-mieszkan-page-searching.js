@@ -52,6 +52,10 @@ window.addEventListener("load", function() {
         };
       });
 
+      console.log('$$$$$$$$$$$$');
+      console.log(investIDsArr);
+      console.log('$$$$$$$$$$$$');
+
 
 
     console.log('o inwestyci lista mieszkan page');
