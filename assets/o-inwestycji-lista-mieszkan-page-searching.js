@@ -585,27 +585,27 @@ window.addEventListener("load", function() {
       console.log(investName);
       console.log(investID);
       let cookieFromSingleMieszkania = getCookie('filteredTermsFromCookies')
-      if (cookieFromSingleMieszkania == '72'){
-        console.log('cookie mieszkania true - osiedle srebrniki');
-        document.cookie = "filteredTermsFromCookies=72;";
-      }else if (cookieFromSingleMieszkania == '71'){
-        console.log('cookie mieszkania true - sw piotra');
-        document.cookie = "filteredTermsFromCookies=71;";
-      }else if (cookieFromSingleMieszkania == '82'){
-        console.log('cookie mieszkania true - torunska 16');
-        document.cookie = "filteredTermsFromCookies=82;";
-      }else if (cookieFromSingleMieszkania == '81'){
-        console.log('cookie mieszkania true -  wiezycka folwark');
-        document.cookie = "filteredTermsFromCookies=81;";
-      }else if (cookieFromSingleMieszkania == investID){
-        console.log('dynamic cookie mieszkania true - ' + investName);
-        document.cookie = "filteredTermsFromCookies=" + investID + ";";
-      }
-
-      // if (cookieFromSingleMieszkania == investID){
+      // if (cookieFromSingleMieszkania == '72'){
+      //   console.log('cookie mieszkania true - osiedle srebrniki');
+      //   document.cookie = "filteredTermsFromCookies=72;";
+      // }else if (cookieFromSingleMieszkania == '71'){
+      //   console.log('cookie mieszkania true - sw piotra');
+      //   document.cookie = "filteredTermsFromCookies=71;";
+      // }else if (cookieFromSingleMieszkania == '82'){
+      //   console.log('cookie mieszkania true - torunska 16');
+      //   document.cookie = "filteredTermsFromCookies=82;";
+      // }else if (cookieFromSingleMieszkania == '81'){
+      //   console.log('cookie mieszkania true -  wiezycka folwark');
+      //   document.cookie = "filteredTermsFromCookies=81;";
+      // }else if (cookieFromSingleMieszkania == investID){
       //   console.log('dynamic cookie mieszkania true - ' + investName);
       //   document.cookie = "filteredTermsFromCookies=" + investID + ";";
       // }
+
+      if (cookieFromSingleMieszkania == investID){
+        console.log('dynamic cookie mieszkania true - ' + investName);
+        document.cookie = "filteredTermsFromCookies=" + investID + ";";
+      }
     }
 
     let filteredTermsFromCookies = '';
