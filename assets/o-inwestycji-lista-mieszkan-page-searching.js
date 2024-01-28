@@ -548,6 +548,7 @@ window.addEventListener("load", function() {
     });
 
     console.log('33333333333');
+    console.log(globalCurrentInvestName);
     console.log(globalCurrentCityID);
     console.log(globalCurrentCityName);
     console.log('33333333333');
