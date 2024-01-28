@@ -535,10 +535,10 @@ window.addEventListener("load", function() {
         cityName = cityName.replace("ń","n");
         cityName = cityName.toLowerCase();
 
-        if (document.referrer.search('o-inwestycji-' + investName) > 5 ||
-        document.referrer.search('lokalizacja-' + investName) > 20 ||
-        document.referrer.search('galeria-' + investName) > 20 ||
-        document.referrer.search('kronika-budowy-' + investName) > 20){
+        if (document.referrer.search('o-inwestycji-' + globalCurrentInvestName) > 5 ||
+        document.referrer.search('lokalizacja-' + globalCurrentInvestName) > 20 ||
+        document.referrer.search('galeria-' + globalCurrentInvestName) > 20 ||
+        document.referrer.search('kronika-budowy-' + globalCurrentInvestName) > 20){
           // document.cookie = "filteredTermsFromCookies=" + cityID + ";";
           globalCurrentCityID = cityID;
           globalCurrentCityName = cityName;
