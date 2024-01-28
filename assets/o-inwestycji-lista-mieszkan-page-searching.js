@@ -475,6 +475,7 @@ window.addEventListener("load", function() {
     allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
     investIDsArr = [];
     globalCurrentInvestID = 0;
+    globalCurrentInvestName = '';
   
     allInvestmentsElements.forEach(el => {
       if (el.childNodes[1] !== undefined) {
@@ -502,6 +503,7 @@ window.addEventListener("load", function() {
         document.referrer.search('kronika-budowy-' + investName) > 20){
           document.cookie = "filteredTermsFromCookies=" + investID + ";";
           globalCurrentInvestID = investID;
+          globalCurrentInvestName = investName;
 
         };
       };
@@ -763,7 +765,7 @@ window.addEventListener("load", function() {
               console.log('444444444444444' + investID);
               returnChoosenFromCookiesInwestycje.forEach(el => {
                 // inwestycja filtr
-                el.parentNode.previousElementSibling.childNodes[1].innerHTML = investName;
+                el.parentNode.previousElementSibling.childNodes[1].innerHTML = globalCurrentInvestName;
                 el.parentNode.previousElementSibling.classList.add('pointer-events-none');
                 // miasto filtr
                 el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'city' + cityName;
