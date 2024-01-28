@@ -529,6 +529,18 @@ window.addEventListener("load", function() {
                 currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
                 console.log(currentCityName);
                 globalCurrentCityName = currentCityName;
+
+                if(filteredTermsFromCookies == String(globalCurrentInvestID)){
+                  console.log('444444444444444' + globalCurrentInvestID);
+                  returnChoosenFromCookiesInwestycje.forEach(el => {
+                    // inwestycja filtr
+                    el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
+                    el.parentNode.previousElementSibling.classList.add('pointer-events-none');
+                    // miasto filtr
+                    el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = globalCurrentCityName;
+                    el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
+                  });
+                }
             });
 
           
