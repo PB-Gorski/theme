@@ -506,68 +506,39 @@ window.addEventListener("load", function() {
           document.cookie = "filteredTermsFromCookies=" + investID + ";";
           globalCurrentInvestID = investID;
           globalCurrentInvestName = investName;
-
-        
-
-
-
-          
-
         };
       };
     });
 
 
-          // dynamic ymc filter id
-          currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
+    // dynamic ymc filter id
+    currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
 
-          // dynamic term id for city
-          allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
+    // dynamic term id for city
+    allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
+    cityIDsArr = [];
+  
+    allCityElements.forEach(el => {
+      if (el.childNodes[1] !== undefined) {
+        cityID = el.childNodes[1].dataset.termid
+        cityName = el.childNodes[1].dataset.name
 
-          // wp.hooks.addAction('ymc_after_loaded_data_148_' + currentYmcFilterID, 'smartfilter', function(class_name, response){
-          //       console.log('1111111111111111 from hook:');
-          //       currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
-          //       console.log(currentCityName);
-          //       globalCurrentCityName = currentCityName;
-
-          //       if(filteredTermsFromCookies == String(globalCurrentInvestID)){
-          //         console.log('444444444444444' + globalCurrentInvestID);
-          //         returnChoosenFromCookiesInwestycje.forEach(el => {
-          //           // inwestycja filtr
-          //           el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
-          //           el.parentNode.previousElementSibling.classList.add('pointer-events-none');
-          //           // miasto filtr
-          //           el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = globalCurrentCityName;
-          //           el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
-          //         });
-          //       }
-          //   });
-
-          
-          // globalCurrentCityName = currentCityName;
-          cityIDsArr = [];
-        
-          allCityElements.forEach(el => {
-            if (el.childNodes[1] !== undefined) {
-              cityID = el.childNodes[1].dataset.termid
-              cityName = el.childNodes[1].dataset.name
-
-              cityIDsArr.push(Number(cityID))
-        
-              cityName = cityName.replace(' ','-').replace('.','');
-              cityName = cityName.replace("ę","e");
-              cityName = cityName.replace("ó","o");
-              cityName = cityName.replace("ą","a");
-              cityName = cityName.replace("ś","s");
-              cityName = cityName.replace("Ś","s");
-              cityName = cityName.replace("ł","l");
-              cityName = cityName.replace("ż","z");
-              cityName = cityName.replace("ź","z");
-              cityName = cityName.replace("ć","c");
-              cityName = cityName.replace("ń","n");
-              cityName = cityName.toLowerCase();
-            };
-          });
+        cityIDsArr.push(Number(cityID))
+  
+        cityName = cityName.replace(' ','-').replace('.','');
+        cityName = cityName.replace("ę","e");
+        cityName = cityName.replace("ó","o");
+        cityName = cityName.replace("ą","a");
+        cityName = cityName.replace("ś","s");
+        cityName = cityName.replace("Ś","s");
+        cityName = cityName.replace("ł","l");
+        cityName = cityName.replace("ż","z");
+        cityName = cityName.replace("ź","z");
+        cityName = cityName.replace("ć","c");
+        cityName = cityName.replace("ń","n");
+        cityName = cityName.toLowerCase();
+      };
+    });
 
 
 
@@ -822,7 +793,7 @@ window.addEventListener("load", function() {
 
 
 
-
+            // dynamic active names in filter
             wp.hooks.addAction('ymc_after_loaded_data_148_' + currentYmcFilterID, 'smartfilter', function(class_name, response){
               console.log('1111111111111111 from hook:');
               currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
@@ -843,19 +814,19 @@ window.addEventListener("load", function() {
           });
 
 
-
-
-            if(filteredTermsFromCookies == String(globalCurrentInvestID)){
-              console.log('444444444444444' + globalCurrentInvestID);
-              returnChoosenFromCookiesInwestycje.forEach(el => {
-                // inwestycja filtr
-                el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
-                el.parentNode.previousElementSibling.classList.add('pointer-events-none');
-                // miasto filtr
-                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = globalCurrentCityName;
-                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
-              });
-            }
+            
+            // old active names in filter
+            // if(filteredTermsFromCookies == String(globalCurrentInvestID)){
+            //   console.log('444444444444444' + globalCurrentInvestID);
+            //   returnChoosenFromCookiesInwestycje.forEach(el => {
+            //     // inwestycja filtr
+            //     el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
+            //     el.parentNode.previousElementSibling.classList.add('pointer-events-none');
+            //     // miasto filtr
+            //     el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = globalCurrentCityName;
+            //     el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
+            //   });
+            // }
 
             // if(filteredTermsFromCookies == '72'){
             //   returnChoosenFromCookiesInwestycje.forEach(el => {
