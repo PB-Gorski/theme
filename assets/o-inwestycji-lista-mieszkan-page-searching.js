@@ -476,6 +476,8 @@ window.addEventListener("load", function() {
     investIDsArr = [];
     globalCurrentInvestID = 0;
     globalCurrentInvestName = '';
+    globalCurrentCityID = 0;
+    globalCurrentCityName = '';
   
     allInvestmentsElements.forEach(el => {
       if (el.childNodes[1] !== undefined) {
@@ -532,6 +534,16 @@ window.addEventListener("load", function() {
         cityName = cityName.replace("ć","c");
         cityName = cityName.replace("ń","n");
         cityName = cityName.toLowerCase();
+
+        if (document.referrer.search('o-inwestycji-' + cityName) > 5 ||
+        document.referrer.search('lokalizacja-' + cityName) > 20 ||
+        document.referrer.search('galeria-' + cityName) > 20 ||
+        document.referrer.search('kronika-budowy-' + cityName) > 20){
+          document.cookie = "filteredTermsFromCookies=" + cityID + ";";
+          globalCurrentCityID = cityID;
+          globalCurrentCityName = cityName;
+
+        };
       };
     });
 
@@ -763,6 +775,7 @@ window.addEventListener("load", function() {
             console.log('555555555555555');
             console.log(globalCurrentInvestID);
             investElFormName = document.querySelector(`[data-termid="` + globalCurrentInvestID + `"]`).innerText;
+            cityElFormName = document.querySelector(`[data-termid="` + globalCurrentCityID + `"]`).innerText;
             if(filteredTermsFromCookies == String(globalCurrentInvestID)){
               console.log('444444444444444' + investID);
               returnChoosenFromCookiesInwestycje.forEach(el => {
@@ -770,7 +783,7 @@ window.addEventListener("load", function() {
                 el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
                 el.parentNode.previousElementSibling.classList.add('pointer-events-none');
                 // miasto filtr
-                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'city' + cityName;
+                el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'city' + cityElFormName;
                 el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
               });
             }
