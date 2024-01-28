@@ -522,12 +522,11 @@ window.addEventListener("load", function() {
           allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
 
           wp.hooks.addAction('ymc_after_loaded_data_148_4', 'smartfilter', function(class_name, response){
-                console.log('Container class: ' + class_name);
-                console.log('Post count: ' + response.post_count);
-                console.log('Number of found posts: ' + response.found);
+                console.log('1111111111111111 from hook:');
+                currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
             });
 
-          // currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
+          
           // globalCurrentCityName = currentCityName;
           cityIDsArr = [];
         
