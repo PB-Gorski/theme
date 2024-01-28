@@ -553,22 +553,22 @@ window.addEventListener("load", function() {
 
 
 
-    if (document.referrer.search('o-inwestycji-' + globalCurrentInvestName) > 5 ||
-    document.referrer.search('lokalizacja-' + globalCurrentInvestName) > 20 ||
-    document.referrer.search('galeria-' + globalCurrentInvestName) > 20 ||
-    document.referrer.search('kronika-budowy-' + globalCurrentInvestName) > 20){
-      console.log('6666666666666');
-      console.log(cityID);
-      console.log('6666666666666');
-      globalCurrentCityID = cityID;
-      globalCurrentCityName = cityName;
-    };
+    // if (document.referrer.search('o-inwestycji-' + globalCurrentInvestName) > 5 ||
+    // document.referrer.search('lokalizacja-' + globalCurrentInvestName) > 20 ||
+    // document.referrer.search('galeria-' + globalCurrentInvestName) > 20 ||
+    // document.referrer.search('kronika-budowy-' + globalCurrentInvestName) > 20){
+    //   console.log('6666666666666');
+    //   console.log(cityID);
+    //   console.log('6666666666666');
+    //   globalCurrentCityID = cityID;
+    //   globalCurrentCityName = cityName;
+    // };
 
-    console.log('33333333333');
-    console.log(globalCurrentInvestName);
-    console.log(globalCurrentCityID);
-    console.log(globalCurrentCityName);
-    console.log('33333333333');
+    // console.log('33333333333');
+    // console.log(globalCurrentInvestName);
+    // console.log(globalCurrentCityID);
+    // console.log(globalCurrentCityName);
+    // console.log('33333333333');
 
 
 
