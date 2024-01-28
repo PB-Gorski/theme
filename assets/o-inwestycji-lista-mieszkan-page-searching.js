@@ -755,7 +755,9 @@ window.addEventListener("load", function() {
 
 
 
+            console.log('555555555555555' + investID);
             if(filteredTermsFromCookies == investID){
+              console.log('444444444444444' + investID);
               returnChoosenFromCookiesInwestycje.forEach(el => {
                 // inwestycja filtr
                 el.parentNode.previousElementSibling.childNodes[1].innerHTML = investName;
