@@ -505,7 +505,7 @@ window.addEventListener("load", function() {
         investName = el.childNodes[1].dataset.name
         investID = el.childNodes[1].dataset.termid
   
-        investIDsArr.push(investID)
+        investIDsArr.push(Number(investID))
   
         investName = investName.replace(' ','-').replace('.','');
         investName = investName.replace("ę","e");
@@ -642,10 +642,9 @@ window.addEventListener("load", function() {
       // let choosenInneCount = 1;
       function showActiveFilterNameFromCookies(){
         let miastoArr = [28,40];
-        let inwestycjaArr = [72,71,82,81,680];
-        let inwestycjaArr2 = investIDsArr;
+        // let inwestycjaArr = [72,71,82,81,680];
+        let inwestycjaArr = investIDsArr;
         console.log('22222222222222');
-        console.log(inwestycjaArr2);
         console.log(inwestycjaArr);
         console.log('22222222222222');
         // let pokojeArr = [43,34,53,25];
