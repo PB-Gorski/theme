@@ -642,11 +642,11 @@ window.addEventListener("load", function() {
       // let choosenInneCount = 1;
       function showActiveFilterNameFromCookies(){
         let miastoArr = [28,40];
-        // let inwestycjaArr = [72,71,82,81,680];
-        let inwestycjaArr = investIDsArr;
-        console.log('22222222222222');
-        console.log(inwestycjaArr);
-        console.log('22222222222222');
+        let inwestycjaArr = [72,71,82,81,680];
+        // let inwestycjaArr = investIDsArr;
+        // console.log('22222222222222');
+        // console.log(inwestycjaArr);
+        // console.log('22222222222222');
         // let pokojeArr = [43,34,53,25];
         let pokojeArr = [640,641,642,643,644,645,646];
         let pietroArr = [97,78,60,66];
