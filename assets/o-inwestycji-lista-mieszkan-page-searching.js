@@ -509,7 +509,7 @@ window.addEventListener("load", function() {
 
               // dynamic term id for city
           allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
-          
+
           cityIDsArr = [];
         
           allCityElements.forEach(el => {
@@ -532,11 +532,16 @@ window.addEventListener("load", function() {
               cityName = cityName.replace("ń","n");
               cityName = cityName.toLowerCase();
 
-              console.log('6666666666666');
-              console.log(cityID);
-              console.log('6666666666666');
-              globalCurrentCityID = cityID;
-              globalCurrentCityName = cityName;
+              if (document.referrer.search('o-inwestycji-' + investName) > 5 ||
+              document.referrer.search('lokalizacja-' + investName) > 20 ||
+              document.referrer.search('galeria-' + investName) > 20 ||
+              document.referrer.search('kronika-budowy-' + investName) > 20){
+                console.log('6666666666666');
+                console.log(cityID);
+                console.log('6666666666666');
+                globalCurrentCityID = cityID;
+                globalCurrentCityName = cityName;
+              };
 
 
             };
