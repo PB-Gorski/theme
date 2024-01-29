@@ -810,7 +810,7 @@ window.addEventListener("load", function() {
               console.log(globalFoundedPostsCount);
               console.log('**********************');
 
-              document.querySelector('.js-oInwestycji').innerText = globalFoundedPostsCount;
+              document.querySelector('.js-oInwestycji').innerText = 'Znaleziono ' + globalFoundedPostsCount + 'ofert pasujących do Twoich kryteriów';
 
               if(filteredTermsFromCookies == String(globalCurrentInvestID)){
                 console.log('444444444444444' + globalCurrentInvestID);
