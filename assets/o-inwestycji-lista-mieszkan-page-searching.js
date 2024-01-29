@@ -1249,7 +1249,7 @@ window.addEventListener("load", function() {
 
       YMCTools({
         target: filterID,
-        terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join() +  '640',   
+        terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join() +  ',640',   
         
       }).apiTermUpdate(); 
       console.log('after YMC api update');
