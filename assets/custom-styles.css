@@ -1572,3 +1572,11 @@ background-color: #e8fbff!important;
 .page-parent .ymc-smart-filter-container > div.container-posts.container-post-custom-layout{
   display: none!important;
 }
+/* o inwestycji - galeria */
+.page-galeria .ymc-smart-filter-container > div.container-posts.container-post-custom-layout{
+  display: none!important;
+}
+/* o inwestycji - kronika budowy */
+.page-kronika-budowy .ymc-smart-filter-container > div.container-posts.container-post-custom-layout{
+  display: none!important;
+}

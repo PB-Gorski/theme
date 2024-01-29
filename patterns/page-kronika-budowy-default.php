@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Content" class="wp-block-group content relative">
   <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-  <div id="Banner" class="wp-block-group page-kronika-budowy-osiedle-srebrniki test relative">
+  <div id="Banner" class="wp-block-group page-kronika relative">
     <!-- wp:group -->
     <div class="wp-block-group w-full bg-banner h-[250px] desktop:h-[770px] relative flex desktop:block items-center">
       <!-- wp:image -->
