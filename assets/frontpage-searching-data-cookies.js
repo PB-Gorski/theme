@@ -6,7 +6,7 @@ window.addEventListener("load", function() {
   //  frontpage - filtrowanie i sortowanie listy mieszkan
   if(document.body.classList.contains('home') ||
   document.body.classList.contains('page-parent') ||
-  document.body.classList.contains('_page-child')){
+  document.body.classList.contains('page-child')){
     // document.querySelector('.btn-search').addEventListener('click',()=>{
     //   document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
     //   document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value;
