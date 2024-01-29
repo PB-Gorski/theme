@@ -392,14 +392,6 @@ window.addEventListener("load", function() {
       });
     };
 
-
-
-
-
-
-
-    // const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
-
     // ------------------------------------------------------------------------------
 
     // sortowanie listy mieszkan
@@ -889,8 +881,6 @@ window.addEventListener("load", function() {
       newArr = [];
       newArrHTMLList = [];
 
-      // foundedPostOnStart.classList.add('hidden');
-      // foundedPostOnStart.classList.add('hidden2');
       const dropDownFilters = document.querySelectorAll(".dropdown-filter");
       let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
 
@@ -973,7 +963,6 @@ window.addEventListener("load", function() {
       newArrMetraz = [];
       newArrHTMLListMetraz = [];
       const dropDownFiltersMetraz = document.querySelectorAll(".dropdown-filter");
-      // foundedPostOnStart.classList.add('hidden');
       let metrazValueArrNodeList = dropDownFiltersMetraz[8].childNodes[1].childNodes;
       metrazMinValue = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
       metrazMaxValue = document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
@@ -1096,12 +1085,24 @@ window.addEventListener("load", function() {
 
 
       console.log('posts loaded before if');
-      // if (counterPostsLoad == 3){
-      //   console.log('posts loaded inside if');
-      //   foundedPostOnStart.classList.add('hidden');
-      // };
-      // counterPostsLoad++;
-      // console.log('posts found counter after ++: ', counterPostsLoad);
+    });
+
+    let globalFoundedPostsCount;
+    // dynamic ymc filter id
+    currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
+    console.log('current filter id **********************');
+    console.log(currentYmcFilterID);
+    
+    wp.hooks.addAction('ymc_after_loaded_data_148_' + currentYmcFilterID, 'smartfilter', function(class_name, response){
+      globalFoundedPostsCount = response.post_count
+      console.log('Number of found posts: ' + response.found);
+      globalCurrentCityName = currentCityName;
+
+      console.log('global**********************');
+      console.log(globalFoundedPostsCount);
+      console.log('**********************');
+
+      document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' ofert pasujących do Twoich kryteriów';
     });
 
     const searchBarTest = document.querySelector('#inwestycje')
