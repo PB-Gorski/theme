@@ -66,8 +66,8 @@ window.addEventListener("load", function() {
           let miastoArr = [28,40];
 
           console.log('$$$$$$$$$$$ ' + cityIDsArr);
-          // let inwestycjaArr = [72,71,82,81,680];
-          let inwestycjaArr = investIDsArr;
+          let inwestycjaArr = [72,71,82,81,680];
+          // let inwestycjaArr = investIDsArr;
 
           // let pokojeArr = [43,34,53,25];
           let pokojeArr = [640,641,642,643,644,645,646];
@@ -677,8 +677,8 @@ window.addEventListener("load", function() {
         let miastoArr = [28,40];
 
         console.log('2$$$$$$$$$$$ ' + cityIDsArr);
-        // let inwestycjaArr = [72,71,82,81,680];
-        let inwestycjaArr = investIDsArr;
+        let inwestycjaArr = [72,71,82,81,680];
+        // let inwestycjaArr = investIDsArr;
 
         // let pokojeArr = [43,34,53,25];
         let pokojeArr = [640,641,642,643,644,645,646];
