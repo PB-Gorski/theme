@@ -744,34 +744,6 @@ window.addEventListener("load", function() {
             });
 
 
-            // dynamic active names in filter
-            wp.hooks.addAction('ymc_after_loaded_data_148_2', 'smartfilter', function(class_name, response){
-              console.log('Container class: ' + class_name);
-              console.log('Post count: ' + response.post_count);
-              globalFoundedPostsCount = response.post_count
-              console.log('Number of found posts: ' + response.found);
-              console.log('**********************');
-              console.log('1111111111111111 from hook:');
-              currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
-              console.log(currentCityName);
-              globalCurrentCityName = currentCityName;
-
-
-
-              if(filteredTermsFromCookies == String(globalCurrentInvestID)){
-                console.log('444444444444444' + globalCurrentInvestID);
-                returnChoosenFromCookiesInwestycje.forEach(el => {
-                  // inwestycja filtr
-                  el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
-                  el.parentNode.previousElementSibling.classList.add('pointer-events-none');
-                  // miasto filtr
-                  el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = globalCurrentCityName;
-                  el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
-                });
-              }
-            });
-
-
             returnChoosenFromCookiesInwestycje.forEach(el => {
               el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInwestycje.length;
             });
