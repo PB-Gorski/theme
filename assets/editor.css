@@ -58,12 +58,13 @@ figure div{
 /* page o inwestycji - galeria */
 .gallery-top{
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 .swiper-wrapper{
     display: flex;
     gap: 40px
 }
 .swiper-slide-hover{
-    transform: scale(1)!important;
+    /* transform: scale(1); */
 }
 
