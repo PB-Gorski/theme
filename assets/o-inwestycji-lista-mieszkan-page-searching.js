@@ -837,58 +837,6 @@ window.addEventListener("load", function() {
             console.log('**********************');
 
 
-            
-            // old active names in filter
-            // if(filteredTermsFromCookies == String(globalCurrentInvestID)){
-            //   console.log('444444444444444' + globalCurrentInvestID);
-            //   returnChoosenFromCookiesInwestycje.forEach(el => {
-            //     // inwestycja filtr
-            //     el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
-            //     el.parentNode.previousElementSibling.classList.add('pointer-events-none');
-            //     // miasto filtr
-            //     el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = globalCurrentCityName;
-            //     el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
-            //   });
-            // }
-
-            // if(filteredTermsFromCookies == '72'){
-            //   returnChoosenFromCookiesInwestycje.forEach(el => {
-            //     // inwestycja filtr
-            //     el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Osiedle Srebrniki';
-            //     el.parentNode.previousElementSibling.classList.add('pointer-events-none');
-            //     // miasto filtr
-            //     el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'Gdańsk';
-            //     el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
-            //   });
-            // }else if(filteredTermsFromCookies == '71'){
-            //   returnChoosenFromCookiesInwestycje.forEach(el => {
-            //     // inwestycja filtr
-            //     el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Św. Piotra';
-            //     el.parentNode.previousElementSibling.classList.add('pointer-events-none');
-            //     // miasto filtr
-            //     el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'Gdynia';
-            //     el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
-            //   });
-            // }else if(filteredTermsFromCookies == '82'){
-            //   returnChoosenFromCookiesInwestycje.forEach(el => {
-            //     // inwestycja filtr
-            //     el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Toruńska 16';
-            //     el.parentNode.previousElementSibling.classList.add('pointer-events-none');
-            //     // miasto filtr
-            //     el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'Gdańsk';
-            //     el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
-            //   });
-            // }else if(filteredTermsFromCookies == '81'){
-            //   returnChoosenFromCookiesInwestycje.forEach(el => {
-            //     // inwestycja filtr
-            //     el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wieżycka Folwark';
-            //     el.parentNode.previousElementSibling.classList.add('pointer-events-none');
-            //     // miasto filtr
-            //     el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = 'Gdańsk';
-            //     el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
-            //   });
-            // }
-
             // returnChoosenFromCookiesInwestycje.forEach(el => {
             //   el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInwestycje.length;
             // });
@@ -1045,7 +993,7 @@ window.addEventListener("load", function() {
           target: filterID, 
           terms: filteredTermsFromCookies,      
         }).apiTermUpdate(); 
-        console.log('after YMC api update');
+        console.log('after YMC api update1');
       };
 
       wp.hooks.addAction('ymc_before_loaded_data_1850_7', 'smartfilter', function(){
@@ -1303,6 +1251,7 @@ window.addEventListener("load", function() {
         target: filterID,
         terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join(),      
       }).apiTermUpdate(); 
+      console.log('after YMC api update2');
 
       console.log('in btn prices: ', pricesID.join());
       console.log('in btn metraze: ', metrazeID.join());
