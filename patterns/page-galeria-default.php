@@ -40,7 +40,6 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 
   <!-- wp:pattern {"slug":"searchbar-mieszkania"} /-->
 
-
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px] relative">
     <!-- wp:group -->
