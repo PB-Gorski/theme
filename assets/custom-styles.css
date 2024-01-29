@@ -1566,7 +1566,7 @@ background-color: #e8fbff!important;
 
 /* page o inwestycji posts hide */
 .home .ymc-smart-filter-container > div.container-posts.container-post-custom-layout,
-.page-o_inwestycji .ymc-smart-filter-container .container-posts .container-post-custom-layout,
+.page-o_inwestycji .ymc-smart-filter-container > div.container-posts.container-post-custom-layout,
 .page-lokalizacja .ymc-smart-filter-container > div.container-posts.container-post-custom-layout,
 .page-galeria .ymc-smart-filter-container > div.container-posts.container-post-custom-layout,
 .page-kronika_budowy .ymc-smart-filter-container > div.container-posts.container-post-custom-layout{
