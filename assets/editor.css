@@ -54,3 +54,16 @@ figure div{
 .btn-wrapper{
     height: 146px!important;
 }
+
+/* page o inwestycji - galeria */
+.gallery-top{
+    overflow-y: scroll;
+}
+.swiper-wrapper{
+    display: flex;
+    gap: 40px
+}
+.swiper-slide-hover{
+    transform: scale(1)!important;
+}
+
