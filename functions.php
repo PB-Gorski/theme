@@ -969,6 +969,24 @@ function pbgorski_custom_post_layout7($layout, $terms, $taxonomy, $multiple, $ta
 add_filter('ymc_filter_custom_layout_1850_7', 'pbgorski_custom_filter_layout7', 10, 6);
 
 // ---------------------------------------------------------------------------------------
+// 1850_9 filter layout - Filters on sukiennicza-19a fix attempt
+function pbgorski_custom_post_layout9($layout, $terms, $taxonomy, $multiple, $target, $options)
+{
+	$filepath_filter = get_stylesheet_directory() . '/filter-layout2.php';
+	$filter_id = '1850';
+	$layout_id = '9';
+	$layout  = ''; //Override demo message
+	ob_start();
+	if (file_exists($filepath_filter)) {
+		require $filepath_filter;
+		$layout .= ob_get_contents();
+	}
+	ob_end_clean();
+	return $layout;
+}
+add_filter('ymc_filter_custom_layout_1850_9', 'pbgorski_custom_filter_layout9', 10, 6);
+
+// ---------------------------------------------------------------------------------------
 
 // posts selected 148
 function ymc_posts_selected($layouts, $founded_post)
