@@ -594,6 +594,37 @@ window.addEventListener("load", function() {
       console.log('filteredTermsFromCookies from frontpage: ',filteredTermsFromCookies);
       console.log('max metraz***: ',filteredMetrazMaxFromCookies);
 
+              // dynamic term id for investition
+        // currentInvestName = document.referrer.slice(document.referrer.match('o-inwestycji')['index']).replace('o-inwestycji-','').slice(-30,-1);
+        // currentInvestID
+
+        // dynamic filtr data
+        allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
+        investIDsArr = [];
+
+        allInvestmentsElements.forEach(el => {
+          if (el.childNodes[1] !== undefined) {
+            investName = el.childNodes[1].dataset.name
+            investID = el.childNodes[1].dataset.termid
+
+            investIDsArr.push(Number(investID))
+          };
+        });
+        console.log('$$$$$$$$$$$$$ invest arr ids ', investIDsArr);
+
+        // dynamic term id for city
+        allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
+        cityIDsArr = [];
+      
+        allCityElements.forEach(el => {
+          if (el.childNodes[1] !== undefined) {
+            cityID = el.childNodes[1].dataset.termid
+            cityName = el.childNodes[1].dataset.name
+
+            cityIDsArr.push(Number(cityID))
+          };
+        });
+
       let choosenMiastoArr = [];
       let choosenPokojeArr = [];
       let choosenPietroArr = [];
