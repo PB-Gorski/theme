@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: lokalizacja-default-banner
- * Slug: lokalizacja-default-banner
+ * Title: lokalizacja-default
+ * Slug: lokalizacja-default
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
