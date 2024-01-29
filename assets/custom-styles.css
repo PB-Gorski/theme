@@ -1564,19 +1564,11 @@ background-color: #e8fbff!important;
   height: 100%;
 }
 
-/* page o inwestycji */
-.page-template-default .page-parent > .ymc-smart-filter-container > .container-posts .container-post-custom-layout {
-  display: none;
-}
+/* page o inwestycji posts hide */
 .home .ymc-smart-filter-container > div.container-posts.container-post-custom-layout,
-.page-parent .ymc-smart-filter-container > div.container-posts.container-post-custom-layout{
-  display: none!important;
-}
-/* o inwestycji - galeria */
-.page-galeria .ymc-smart-filter-container > div.container-posts.container-post-custom-layout{
-  display: none!important;
-}
-/* o inwestycji - kronika budowy */
-.page-kronika-budowy .ymc-smart-filter-container > div.container-posts.container-post-custom-layout{
+.page-o_inwestycji_content .ymc-smart-filter-container > .container-posts .container-post-custom-layout
+.page-lokalizacja_content .ymc-smart-filter-container > div.container-posts.container-post-custom-layout,
+.page-galeria .ymc-smart-filter-container > div.container-posts.container-post-custom-layout,
+.page-kronika_budowy .ymc-smart-filter-container > div.container-posts.container-post-custom-layout{
   display: none!important;
 }

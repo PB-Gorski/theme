@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Kronika Budowy Page" class="wp-block-group page-kronika relative">
+<div id="Kronika Budowy Page" class="wp-block-group page-kronika_budowy relative">
   <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
   <div id="Banner" class="wp-block-group relative">
     <!-- wp:group -->

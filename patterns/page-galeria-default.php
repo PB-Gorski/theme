@@ -2,7 +2,7 @@
 
 /**
  * Title: page-galeria-default
- * Slug: page-galeria-osiedle-srebrniki
+ * Slug: page-galeria-default
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
