@@ -1096,8 +1096,6 @@ window.addEventListener("load", function() {
     wp.hooks.addAction('ymc_after_loaded_data_148_' + currentYmcFilterID, 'smartfilter', function(class_name, response){
       globalFoundedPostsCount = response.post_count
       console.log('Number of found posts: ' + response.found);
-      globalCurrentCityName = currentCityName;
-
       console.log('global**********************');
       console.log(globalFoundedPostsCount);
       console.log('**********************');
