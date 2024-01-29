@@ -64,7 +64,11 @@ window.addEventListener("load", function() {
         let choosenInneCount = 1;
         function showActiveFilterName(){
           let miastoArr = [28,40];
-          let inwestycjaArr = [72,71,82,81];
+
+          console.log('$$$$$$$$$$$ ' + cityIDsArr);
+          // let inwestycjaArr = [72,71,82,81,680];
+          let inwestycjaArr = investIDsArr;
+
           // let pokojeArr = [43,34,53,25];
           let pokojeArr = [640,641,642,643,644,645,646];
           let pietroArr = [97,78,60,66];
@@ -516,6 +520,70 @@ window.addEventListener("load", function() {
     };
     deleteAllCookies();
 
+    // dynamic term id for investition
+    // currentInvestName = document.referrer.slice(document.referrer.match('o-inwestycji')['index']).replace('o-inwestycji-','').slice(-30,-1);
+    // currentInvestID
+
+    // dynamic filtr data
+    allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
+    investIDsArr = [];
+    globalCurrentInvestID = 0;
+    globalCurrentInvestName = '';
+    globalCurrentCityID = 0;
+    globalCurrentCityName = '';
+  
+    allInvestmentsElements.forEach(el => {
+      if (el.childNodes[1] !== undefined) {
+        investName = el.childNodes[1].dataset.name
+        investID = el.childNodes[1].dataset.termid
+
+        investIDsArr.push(Number(investID))
+  
+        investName = investName.replace(' ','-').replace('.','');
+        investName = investName.replace("ę","e");
+        investName = investName.replace("ó","o");
+        investName = investName.replace("ą","a");
+        investName = investName.replace("ś","s");
+        investName = investName.replace("Ś","s");
+        investName = investName.replace("ł","l");
+        investName = investName.replace("ż","z");
+        investName = investName.replace("ź","z");
+        investName = investName.replace("ć","c");
+        investName = investName.replace("ń","n");
+        investName = investName.toLowerCase();
+      };
+    });
+
+
+    // dynamic ymc filter id
+    currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
+
+    // dynamic term id for city
+    allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
+    cityIDsArr = [];
+  
+    allCityElements.forEach(el => {
+      if (el.childNodes[1] !== undefined) {
+        cityID = el.childNodes[1].dataset.termid
+        cityName = el.childNodes[1].dataset.name
+
+        cityIDsArr.push(Number(cityID))
+  
+        cityName = cityName.replace(' ','-').replace('.','');
+        cityName = cityName.replace("ę","e");
+        cityName = cityName.replace("ó","o");
+        cityName = cityName.replace("ą","a");
+        cityName = cityName.replace("ś","s");
+        cityName = cityName.replace("Ś","s");
+        cityName = cityName.replace("ł","l");
+        cityName = cityName.replace("ż","z");
+        cityName = cityName.replace("ź","z");
+        cityName = cityName.replace("ć","c");
+        cityName = cityName.replace("ń","n");
+        cityName = cityName.toLowerCase();
+      };
+    });
+
     // handling searching when redirected from page-about-inwestycja
     // if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/' ||
     //     document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/lokalizacja-osiedle-srebrniki/' ||
@@ -607,7 +675,11 @@ window.addEventListener("load", function() {
       // let choosenInneCount = 1;
       function showActiveFilterNameFromCookies(){
         let miastoArr = [28,40];
-        let inwestycjaArr = [72,71,82,81];
+
+        console.log('2$$$$$$$$$$$ ' + cityIDsArr);
+        // let inwestycjaArr = [72,71,82,81,680];
+        let inwestycjaArr = investIDsArr;
+
         // let pokojeArr = [43,34,53,25];
         let pokojeArr = [640,641,642,643,644,645,646];
         let pietroArr = [97,78,60,66];
