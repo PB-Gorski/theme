@@ -815,10 +815,8 @@ window.addEventListener("load", function() {
               }else if(globalFoundedPostsCount == 2 || globalFoundedPostsCount == 3 || globalFoundedPostsCount == 4){
                 document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' oferty pasujących do Twoich kryteriów';
               }else if(globalFoundedPostsCount > 4 || globalFoundedPostsCount == 3 || globalFoundedPostsCount == 4){
-                document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' ofertt pasujących do Twoich kryteriów';
+                document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' ofert pasujących do Twoich kryteriów';
               };
-
-              // document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' ofert pasujących do Twoich kryteriów';
 
               if(filteredTermsFromCookies == String(globalCurrentInvestID)){
                 console.log('444444444444444' + globalCurrentInvestID);
