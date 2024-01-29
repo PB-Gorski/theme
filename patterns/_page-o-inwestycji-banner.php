@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: o-inwestycji-banner
- * Slug: o-inwestycji-banner
+ * Title: nok_o-inwestycji-banner
+ * Slug: nok_o-inwestycji-banner
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
