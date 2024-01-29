@@ -38,6 +38,20 @@
 
   <!-- wp:pattern {"slug":"searchbar-mieszkania"} /-->
 
+  <!-- wp:group -->
+  <div class="wp-block-group lokalizacja_default test">
+    <!-- wp:list -->
+    <ul class="wp-block-list js-lista-mieszkan-list w-full bg-white">
+      <!-- wp:list-item -->
+      <li class="short-code-ymc-filter applyContainer1 applyContainer2">
+        <?php echo do_shortcode('[ymc_filter id="1850"]'); ?>
+      </li>
+      <!-- /wp:list-item -->
+    </ul>
+    <!-- /wp:list -->
+  </div>
+  <!-- /wp:group -->
+
   <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
   <div id="Content" class="wp-block-group content relative">
     <!-- wp:group -->
