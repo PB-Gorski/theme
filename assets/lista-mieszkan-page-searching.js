@@ -54,7 +54,7 @@ window.addEventListener("load", function() {
         }else{
           choosenOptions.push(choosenOptionID)
         };
-        console.log(choosenOptions);
+        console.log('choosenOptions: ', choosenOptions);
 
 
         // dynamic term id for investition
@@ -590,7 +590,7 @@ window.addEventListener("load", function() {
       let filteredCustomPriceFromCookies = runSearchingPrice();
       console.log(filteredCustomPriceFromCookies.join());
       
-      console.log(filteredTermsFromCookies);
+      console.log('filteredTermsFromCookies', filteredTermsFromCookies);
       console.log('filteredTermsFromCookies from frontpage: ',filteredTermsFromCookies);
       console.log('max metraz***: ',filteredMetrazMaxFromCookies);
 
