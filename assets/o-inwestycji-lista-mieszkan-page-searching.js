@@ -991,7 +991,7 @@ window.addEventListener("load", function() {
       function runFromCookies(){
         YMCTools({
           target: filterID, 
-          terms: filteredTermsFromCookies,      
+          terms: filteredTermsFromCookies + String(globalCurrentInvestID),      
         }).apiTermUpdate(); 
         console.log('after YMC api update1');
       };
@@ -1249,9 +1249,10 @@ window.addEventListener("load", function() {
 
       YMCTools({
         target: filterID,
-        terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join(),      
+        terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join() + ',' + String(globalCurrentInvestID).join(),   
+        
       }).apiTermUpdate(); 
-      console.log('after YMC api update2');
+      console.log('after YMC api update');
 
       console.log('in btn prices: ', pricesID.join());
       console.log('in btn metraze: ', metrazeID.join());
