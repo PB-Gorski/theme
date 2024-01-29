@@ -1175,7 +1175,8 @@ window.addEventListener("load", function() {
       newArrMetraz = [];
       newArrHTMLListMetraz = [];
       const dropDownFiltersMetraz = document.querySelectorAll(".dropdown-filter");
-      foundedPostOnStart.classList.add('hidden');
+      // test
+      // foundedPostOnStart.classList.add('hidden');
       let metrazValueArrNodeList = dropDownFiltersMetraz[8].childNodes[1].childNodes;
       metrazMinValue = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
       metrazMaxValue = document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
