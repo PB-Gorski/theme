@@ -792,11 +792,13 @@ window.addEventListener("load", function() {
             // = document.querySelector(`[data-termid="` + globalCurrentCityID + `"]`).innerText;
 
 
-
+            // founded posts
+            let globalFoundedPostsCount;
             // dynamic active names in filter
             wp.hooks.addAction('ymc_after_loaded_data_148_' + currentYmcFilterID, 'smartfilter', function(class_name, response){
               console.log('Container class: ' + class_name);
               console.log('Post count: ' + response.post_count);
+              globalFoundedPostsCount = response.post_count
               console.log('Number of found posts: ' + response.found);
               console.log('**********************');
               console.log('1111111111111111 from hook:');
@@ -815,7 +817,10 @@ window.addEventListener("load", function() {
                   el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].classList.add('pointer-events-none');
                 });
               }
-          });
+            });
+            console.log('**********************');
+            console.log(globalFoundedPostsCount);
+            console.log('**********************');
 
 
             
