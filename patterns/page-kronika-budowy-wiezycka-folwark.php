@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Content" class="wp-block-group content inwestycje_hidden_filtr_posts relative">
+<div id="Content" class="wp-block-group content relative">
   <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
   <div id="Banner" class="wp-block-group page-kronika-budowy-wiezycka-folwark test relative">
     <!-- wp:group -->
