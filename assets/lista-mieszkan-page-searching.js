@@ -1106,9 +1106,7 @@ window.addEventListener("load", function() {
         document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' oferty pasujących do Twoich kryteriów';
       }else if(globalFoundedPostsCount > 4 || globalFoundedPostsCount == 3 || globalFoundedPostsCount == 4){
         document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' ofertt pasujących do Twoich kryteriów';
-      }
-
-      document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' ofert pasujących do Twoich kryteriów';
+      };
     });
 
     const searchBarTest = document.querySelector('#inwestycje')
