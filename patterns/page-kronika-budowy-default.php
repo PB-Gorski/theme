@@ -2,7 +2,7 @@
 
 /**
  * Title: kronika-budowy-default
- * Slug: kronika-budowy-osiedle-srebrniki
+ * Slug: kronika-budowy-default
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
