@@ -57,7 +57,7 @@ figure div{
 
 /* page o inwestycji - galeria */
 .gallery-top{
-    overflow-y: scroll;
+    overflow-x: scroll;
 }
 .swiper-wrapper{
     display: flex;
