@@ -32,6 +32,8 @@ window.addEventListener("load", function() {
     let tempInneArr = [];
     let passiveOptions = document.querySelectorAll('.menu-passive__item')
     let counter2 = 0;
+    const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
+
 
     passiveOptions.forEach(item => {
       item.addEventListener('click', () => {
@@ -244,7 +246,6 @@ window.addEventListener("load", function() {
       });
     };  
 
-    const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
     let counterPostsLoad = 0;
 
     // btnSearch.addEventListener('click', runSearchingPrice);
