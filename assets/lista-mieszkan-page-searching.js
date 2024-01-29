@@ -330,56 +330,6 @@ window.addEventListener("load", function() {
       });
     };
 
-    // wyszukiwanie mieszkan po filtrach (metraz)
-    // setting chosen option in active window
-    // let passiveOptionsMetraz = document.querySelectorAll('.menu-passive__item');
-    // let counter2 = 0;
-    // passiveOptions.forEach(item => {
-    //   item.addEventListener('click', () => {
-    //     let optionSpan = document.createElement('span');
-    //     let choosenOption = item.childNodes[1].dataset.name;
-    //     let stopAdding = false;
-    //     optionSpan.innerText = choosenOption;
-
-    //     let choosenOptionsArr = item.parentNode.previousElementSibling.childNodes[0].childNodes;
-    //     choosenOptionsArr.forEach(option => {
-    //       if(option.innerText == choosenOption){
-    //         console.log('have child span');
-    //         stopAdding = true;
-    //         console.log('choosen option text for cleaning', choosenOption);
-    //         console.log('clear existing span');
-    //         option.remove('span');
-    //       };
-    //     });
-
-    //     if(!stopAdding){
-    //       console.log('check for start ', item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName);
-    //       if(item.parentNode.previousElementSibling.childNodes[0].childNodes[0].tagName === undefined){
-    //         console.log('undefined span 0');
-    //       }else{
-    //         console.log('span wypelniony');
-    //       }
-
-    //       if(counter>2){
-            
-    //         console.log('conter>1');
-    //         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan);
-    //         console.log(counter2);
-    //       }else{
-    //         console.log('else');
-
-    //         let optionSpan2 = document.createElement('span');
-    //         let choosenOption2 = item.childNodes[1].dataset.name;
-    //         optionSpan2.innerText = choosenOption2;
-    //         item.parentNode.previousElementSibling.childNodes[0].innerText = '';
-    //         item.parentNode.previousElementSibling.childNodes[0].appendChild(optionSpan2);
-    //         counter2++;
-    //       };
-    //     }
-    //     stopAdding = false;
-    //     console.log(stopAdding);
-    //   });
-    // });
 
     // metraz selects
     const mainDropDownMetraz = document.querySelectorAll('.dropdown__value-metraz');
