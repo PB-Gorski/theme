@@ -11,7 +11,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Content" class="wp-block-group content relative">
+<div id="Content" class="wp-block-group content inwestycje_hidden_filtr_posts relative">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:group -->
@@ -54,7 +54,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group -->
   <div class="wp-block-group plan-osiedla-wrapper container mb-[100px] mx-auto w-full px-[20px] desktop:px-0">
 
-  <!-- wp:group -->
+    <!-- wp:group -->
     <div class="wp-block-group block cursor-default">
       <!-- wp:image -->
       <figure class="wp-block-image max-w-[690px] mx-auto">

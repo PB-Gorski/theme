@@ -11,7 +11,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Content" class="wp-block-group content relative">
+<div id="Content" class="wp-block-group content inwestycje_hidden_filtr_posts relative">
   <!-- wp:group -->
   <div class="wp-block-group container mx-auto desktop:px-0 px-[20px]">
     <!-- wp:heading {"level":1} -->
@@ -224,10 +224,10 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
         <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Na ich podstawie można dowiedzieć się, jak stroiły się mieszkanki i jakimi zajęciami parali się mieszkańcy wczesnośredniowiecznego grodu. Ponadto pojawiła się część miecza i szkielety zwierząt.</span>
-        <!-- /wp:paragraph -->  
+        <!-- /wp:paragraph -->
         <!-- wp:paragraph -->
         <span class="block text-[18px] text-[#8a8f99] mb-[30px]" data-aos="fade-right" data-aos-offset="30">Z archeologicznego punktu widzenia jest to jedno z najciekawszych miejsc w obrębie historycznego Gdańska w związku z czym w 2022 roku Muzeum Archeologiczne w Gdańsku m.in. przy wsparciu Intuo wydało katalog „Tajemnice gdańskiego zamczyska”.</span>
-        <!-- /wp:paragraph -->                 
+        <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
 
