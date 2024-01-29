@@ -795,6 +795,10 @@ window.addEventListener("load", function() {
 
             // dynamic active names in filter
             wp.hooks.addAction('ymc_after_loaded_data_148_' + currentYmcFilterID, 'smartfilter', function(class_name, response){
+              console.log('Container class: ' + class_name);
+              console.log('Post count: ' + response.post_count);
+              console.log('Number of found posts: ' + response.found);
+              console.log('**********************');
               console.log('1111111111111111 from hook:');
               currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
               console.log(currentCityName);
