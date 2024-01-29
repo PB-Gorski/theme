@@ -659,7 +659,7 @@ window.addEventListener("load", function() {
         if(filteredTermsFromCookies.slice(-1) != ','){
           tempArr.push(filteredTermsFromCookies)
         }
-        console.log(tempArr);
+        console.log('tempArr: ', tempArr);
         let filteredTermsFromCookiesArr;
         // let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies.slice(-1) != ',' ? tempArr : filteredTermsFromCookies.slice(0, -1) + "]");
   
