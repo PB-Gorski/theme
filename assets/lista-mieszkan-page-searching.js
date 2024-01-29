@@ -793,17 +793,7 @@ window.addEventListener("load", function() {
               console.log(currentCityName);
               globalCurrentCityName = currentCityName;
 
-              console.log('global**********************');
-              console.log(globalFoundedPostsCount);
-              console.log('**********************');
 
-              if(globalFoundedPostsCount == 1){
-                document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' ofertę pasującą do Twoich kryteriów';
-              }else if(globalFoundedPostsCount == 2 || globalFoundedPostsCount == 3 || globalFoundedPostsCount == 4){
-                document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' oferty pasujące do Twoich kryteriów';
-              }else if(globalFoundedPostsCount > 4 || globalFoundedPostsCount == 3 || globalFoundedPostsCount == 4){
-                document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' ofert pasujących do Twoich kryteriów';
-              };
 
               if(filteredTermsFromCookies == String(globalCurrentInvestID)){
                 console.log('444444444444444' + globalCurrentInvestID);
