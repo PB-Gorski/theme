@@ -806,6 +806,10 @@ window.addEventListener("load", function() {
               console.log(currentCityName);
               globalCurrentCityName = currentCityName;
 
+              console.log('global**********************');
+              console.log(globalFoundedPostsCount);
+              console.log('**********************');
+
               if(filteredTermsFromCookies == String(globalCurrentInvestID)){
                 console.log('444444444444444' + globalCurrentInvestID);
                 returnChoosenFromCookiesInwestycje.forEach(el => {
