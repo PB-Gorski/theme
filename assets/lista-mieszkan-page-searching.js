@@ -553,7 +553,7 @@ window.addEventListener("load", function() {
         investName = investName.toLowerCase();
       };
     });
-    console.log('$$$$$$$$$$$$$ invest arr ids ' + investIDsArr);
+    console.log('$$$$$$$$$$$$$ invest arr ids ', investIDsArr);
 
 
     // dynamic ymc filter id
