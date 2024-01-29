@@ -11,7 +11,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Content" class="wp-block-group content relative">
+<div id="Galeria Page" class="wp-block-group content relative">
   <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
   <div id="Banner" class="wp-block-group page-lokalizacja relative">
     <!-- wp:group -->
