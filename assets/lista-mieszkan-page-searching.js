@@ -538,19 +538,6 @@ window.addEventListener("load", function() {
         investID = el.childNodes[1].dataset.termid
 
         investIDsArr.push(Number(investID))
-  
-        investName = investName.replace(' ','-').replace('.','');
-        investName = investName.replace("ę","e");
-        investName = investName.replace("ó","o");
-        investName = investName.replace("ą","a");
-        investName = investName.replace("ś","s");
-        investName = investName.replace("Ś","s");
-        investName = investName.replace("ł","l");
-        investName = investName.replace("ż","z");
-        investName = investName.replace("ź","z");
-        investName = investName.replace("ć","c");
-        investName = investName.replace("ń","n");
-        investName = investName.toLowerCase();
       };
     });
     console.log('$$$$$$$$$$$$$ invest arr ids ', investIDsArr);
@@ -569,65 +556,10 @@ window.addEventListener("load", function() {
         cityName = el.childNodes[1].dataset.name
 
         cityIDsArr.push(Number(cityID))
-  
-        cityName = cityName.replace(' ','-').replace('.','');
-        cityName = cityName.replace("ę","e");
-        cityName = cityName.replace("ó","o");
-        cityName = cityName.replace("ą","a");
-        cityName = cityName.replace("ś","s");
-        cityName = cityName.replace("Ś","s");
-        cityName = cityName.replace("ł","l");
-        cityName = cityName.replace("ż","z");
-        cityName = cityName.replace("ź","z");
-        cityName = cityName.replace("ć","c");
-        cityName = cityName.replace("ń","n");
-        cityName = cityName.toLowerCase();
       };
     });
 
-    // handling searching when redirected from page-about-inwestycja
-    // if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/' ||
-    //     document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/lokalizacja-osiedle-srebrniki/' ||
-    //     document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/galeria-osiedle-srebrniki/' ||
-    //     document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-osiedle-srebrniki/kronika-budowy-osiedle-srebrniki/'){
-    //     document.cookie = "filteredTermsFromCookies=72";
-    // }else if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/' ||
-    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/lokalizacja-sw-piotra/' ||
-    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/galeria-sw-piotra/' ||
-    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-sw-piotra/kronika-budowy-sw-piotra/'){
-    //           document.cookie = "filteredTermsFromCookies=71";
-    // }else if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/' ||
-    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/lokalizacja-torunska-16/' ||
-    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/galeria-torunska-16/' ||
-    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-torunska-16/kronika-budowy-torunska-16/'){
-    //           document.cookie = "filteredTermsFromCookies=82";
-    // }else if (document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/' ||
-    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/lokalizacja-wiezycka-folwark/' ||
-    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/galeria-wiezycka-folwark/' ||
-    //           document.referrer == 'https://pbgorski.webo.design/pl/o-inwestycji-wiezycka-folwark/kronika-budowy-wiezycka-folwark/'){
-    //           document.cookie = "filteredTermsFromCookies=81";
-    // };
-    // if (document.referrer.search('o-inwestycji-osiedle-srebrniki') > 20 ||
-    //     document.referrer.search('lokalizacja-osiedle-srebrniki') > 20 ||
-    //     document.referrer.search('galeria-osiedle-srebrniki') > 20 ||
-    //     document.referrer.search('kronika-budowy-osiedle-srebrniki') > 20){
-    //     document.cookie = "filteredTermsFromCookies=72";
-    // }else if (document.referrer.search('o-inwestycji-sw-piotra') > 20 ||
-    //           document.referrer.search('lokalizacja-sw-piotra') > 20 ||
-    //           document.referrer.search('galeria-sw-piotra') > 20 ||
-    //           document.referrer.search('kronika-budowy-sw-piotra') > 20){
-    //           document.cookie = "filteredTermsFromCookies=71";
-    // }else if (document.referrer.search('o-inwestycji-torunska-16') > 20 ||
-    //           document.referrer.search('lokalizacja-torunska-16') > 20 ||
-    //           document.referrer.search('galeria-torunska-16') > 20 ||
-    //           document.referrer.search('kronika-budowy-torunska-16') > 20){
-    //           document.cookie = "filteredTermsFromCookies=82";
-    // }else if (document.referrer.search('o-inwestycji-wiezycka-folwark') > 20 ||
-    //           document.referrer.search('lokalizacja-wiezycka-folwark') > 20 ||
-    //           document.referrer.search('galeria-wiezycka-folwark') > 20 ||
-    //           document.referrer.search('kronika-budowy-wiezycka-folwark') > 20){
-    //           document.cookie = "filteredTermsFromCookies=81";
-    // };
+  
 
     function getCookie(cname) {
       let name = cname + "=";
