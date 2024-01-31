@@ -282,18 +282,11 @@ window.addEventListener("load", function() {
 
 
 
-
-    
-
-
-
-
-
     // btnSearch.addEventListener('click', runSearchingPrice);
 
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
-    const searchBar = document.querySelector('.ymc-smart-filter-container');
+    const searchBar = document.querySelector('.filter-entry');
     const heightAnimation = document.querySelector('.js-heightAnimation');
     const heightAnimation2 = document.querySelector('.filter-layout3');
     const sectionInwestycje = document.querySelector('#inwestycje');
@@ -1082,7 +1075,7 @@ window.addEventListener("load", function() {
           el.childNodes[7].innerText = 'Zapytaj'
         };
         
-      });
+      });t
       
 
 
