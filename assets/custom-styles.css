@@ -104,7 +104,8 @@ figure[class*="wp-block-image"] img,
 }
 .single-mieszkania .wp-block-post-featured-image img,
 .single-lokale .wp-block-post-featured-image img {
-  width: 50%;
+  width: 50%!important;
+  height: 50%!important;
   /* margin-left: auto;
   margin-right: auto; */
 }
