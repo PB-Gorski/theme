@@ -362,8 +362,8 @@ window.addEventListener("load", function() {
   let cenaSinglePost = document.querySelector('.taxonomy-cena');
   let cenaSinglePostWrapper = document.querySelector('.price');
 
-  if(cenaSinglePost?.childNodes[0].innerText == 'Zapytaj'){
-    cenaSinglePostWrapper?.childNodes[3].innerText = ''
+  if(cenaSinglePost.childNodes[0].innerText == 'Zapytaj'){
+    cenaSinglePostWrapper.childNodes[3].innerText = ''
   };
 
 
