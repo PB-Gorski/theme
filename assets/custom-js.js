@@ -353,7 +353,19 @@ window.addEventListener("load", function() {
     if(item.childNodes[0].innerHTML == 'Bez kategorii'){
       item.style.display = 'none';
     }
-  })
+  });
+
+  
+  let currentPriceArr = document.querySelectorAll('.list-item-mieszkanie');
+
+  currentPriceArr.forEach(el => {
+    if(el.childNodes[7].innerText == 'Zapytaj zł'){
+      el.childNodes[7].innerText = 'Zapytaj'
+    };
+    
+  });
+
+
 
 
   
