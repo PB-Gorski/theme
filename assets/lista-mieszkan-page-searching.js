@@ -1075,7 +1075,7 @@ window.addEventListener("load", function() {
           el.childNodes[7].innerText = 'Zapytaj'
         };
         
-      });t
+      });
       
 
 
