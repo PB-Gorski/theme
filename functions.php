@@ -547,7 +547,7 @@ function my_custom_post_layoutlayout2323_1($layout, $post_id, $filter_id, $incre
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
-	$layout .= '<p>' . wp_get_object_terms($post_id, 'cena')[0]->name . ' zł2</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'cena')[0]->name . ' zł</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
 	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="arrow-red w-[26px] h-[17px]" />';
 	$layout .= '</a>';
@@ -625,7 +625,7 @@ function my_custom_post_layout2($layout, $post_id, $filter_id, $increment_post, 
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
-	$layout .= '<p>' . wp_get_object_terms($post_id, 'cena')[0]->name . ' zł</p>';
+	$layout .= '<p>' . wp_get_object_terms($post_id, 'cena')[0]->name . ' zł2</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
 	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="arrow-red w-[26px] h-[17px]" />';
 	$layout .= '</a>';
