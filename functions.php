@@ -618,12 +618,12 @@ add_filter('ymc_filter_custom_layout_148_2', 'pbgorski_custom_filter_layout2', 1
 function my_custom_post_layout2($layout, $post_id, $filter_id, $increment_post, $arrOptions)
 {
 	// $layout .= '<p>' . wp_get_object_terms($post_id, 'cena')[0]->name . 'zł</p>';
-	$currentCena = wp_get_object_terms($post_id, 'cena')[0]->name;
-	if ($currentCena == 'Zapytaj') {
-		$cenaUpdate = 'Zapytaj';
-	} else {
-		$cenaUpdate = wp_get_object_terms($post_id, 'cena')[0]->name + ' zł';
-	};
+	// $currentCena = wp_get_object_terms($post_id, 'cena')[0]->name;
+	// if ($currentCena == 'Zapytaj') {
+	// 	$cenaUpdate = 'Zapytaj';
+	// } else {
+	// 	$cenaUpdate = wp_get_object_terms($post_id, 'cena')[0]->name + ' zł';
+	// };
 
 	$layout = '<a href="' . get_the_permalink($post_id) . '" class="list-item-mieszkanie group container mx-auto w-full py-[20px] text-[16px] text-textGray flex justify-between items-center">';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
@@ -633,7 +633,7 @@ function my_custom_post_layout2($layout, $post_id, $filter_id, $increment_post, 
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
-	$layout .= '<p>' . $cenaUpdate . '</p>';
+	// $layout .= '<p>' . $cenaUpdate . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
 	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="arrow-red w-[26px] h-[17px]" />';
 	$layout .= '</a>';
@@ -663,12 +663,12 @@ add_filter('ymc_filter_custom_layout_148_3', 'pbgorski_custom_filter_layout148_3
 // 148_3 post layout
 function my_custom_post_layout148_3($layout, $post_id, $filter_id, $increment_post, $arrOptions)
 {
-	$currentCena = wp_get_object_terms($post_id, 'cena')[0]->name;
-	if ($currentCena == 'Zapytaj') {
-		$cenaUpdate = 'Zapytaj';
-	} else {
-		$cenaUpdate = wp_get_object_terms($post_id, 'cena')[0]->name + ' zł';
-	};
+	// $currentCena = wp_get_object_terms($post_id, 'cena')[0]->name;
+	// if ($currentCena == 'Zapytaj') {
+	// 	$cenaUpdate = 'Zapytaj';
+	// } else {
+	// 	$cenaUpdate = wp_get_object_terms($post_id, 'cena')[0]->name + ' zł';
+	// };
 
 	$layout = '<a href="' . get_the_permalink($post_id) . '" class="list-item-mieszkanie group container mx-auto w-full py-[20px] text-[16px] text-textGray flex justify-between items-center">';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'miasto')[0]->name . '</p>';
@@ -678,7 +678,7 @@ function my_custom_post_layout148_3($layout, $post_id, $filter_id, $increment_po
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pokoje')[0]->name . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'metraz')[0]->name . ' m<sup>2</sup></p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'pietro')[0]->name . '</p>';
-	$layout .= '<p>' . $cenaUpdate . '</p>';
+	// $layout .= '<p>' . $cenaUpdate . '</p>';
 	$layout .= '<p>' . wp_get_object_terms($post_id, 'termin')[0]->name . '</p>';
 	$layout .= '<img src="' . home_url() . '/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/arrow-red.png" alt="arrow-red" class="arrow-red w-[26px] h-[17px]" />';
 	$layout .= '</a>';
