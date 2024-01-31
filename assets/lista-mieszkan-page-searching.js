@@ -1067,6 +1067,15 @@ window.addEventListener("load", function() {
       postsFoundFromAfterHook = response.post_count;
       console.log('Number of found posts: ' + response.found);
       postsFoundFromAfterHook2 = response.found;
+
+      let currentPriceArr = document.querySelectorAll('.list-item-mieszkanie');
+
+      currentPriceArr.forEach(el => {
+        if(el.childNodes[7].innerText == 'Zapytaj zł'){
+          el.childNodes[7].innerText = 'Zapytaj'
+        };
+        
+      });
       
 
 
