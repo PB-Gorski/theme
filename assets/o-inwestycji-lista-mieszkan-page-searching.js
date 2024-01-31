@@ -798,6 +798,15 @@ window.addEventListener("load", function() {
             let globalFoundedPostsCount;
             // dynamic active names in filter
             wp.hooks.addAction('ymc_after_loaded_data_148_' + currentYmcFilterID, 'smartfilter', function(class_name, response){
+              let currentPriceArr = document.querySelectorAll('.list-item-mieszkanie');
+
+              currentPriceArr.forEach(el => {
+                if(el.childNodes[7].innerText == 'Zapytaj zł'){
+                  el.childNodes[7].innerText = 'Zapytaj'
+                };
+                
+              });
+              
               console.log('Container class: ' + class_name);
               console.log('Post count: ' + response.post_count);
               globalFoundedPostsCount = response.post_count
