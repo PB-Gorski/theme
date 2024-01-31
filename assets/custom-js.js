@@ -356,15 +356,13 @@ window.addEventListener("load", function() {
   });
 
   
-  let currentPriceArr = document.querySelectorAll('.list-item-mieszkanie');
 
-  currentPriceArr.forEach(el => {
-    if(el.childNodes[7].innerText == 'Zapytaj zł'){
-      el.childNodes[7].innerText = 'Zapytaj'
-    };
-    
-  });
+  let cenaSinglePost = document.querySelector('.taxonomy-cena');
+  let cenaSinglePostWrapper = document.querySelector('.price');
 
+  if(cenaSinglePost?.childNodes[0].innerText == 'Zapytaj'){
+    cenaSinglePostWrapper?.childNodes[3].innerText = ''
+  };
 
 
 
