@@ -618,10 +618,6 @@ add_filter('ymc_filter_custom_layout_148_2', 'pbgorski_custom_filter_layout2', 1
 function my_custom_post_layout2($layout, $post_id, $filter_id, $increment_post, $arrOptions)
 {
 	$currentCena = wp_get_object_terms($post_id, 'cena')[0]->name;
-
-	$currentCena == 'Zapytaj' ? 'Zapytaj1' : wp_get_object_terms($post_id, 'cena')[0]->name;
-
-	echo '****************';
 	if ($currentCena == 'Zapytaj') {
 		$cenaUpdate = 'Zapytaj';
 	} else {
