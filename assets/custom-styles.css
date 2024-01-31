@@ -86,12 +86,12 @@ figure[class*="wp-block-image"] img,
 }
 .single-mieszkania .wp-block-post-featured-image,
 .single-lokale .wp-block-post-featured-image{
-  width: 100%;
+  /* width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -1; */
 }
 .single-mieszkania .wp-block-post-featured-image img,
 .single-lokale .wp-block-post-featured-image img{
