@@ -104,9 +104,9 @@ figure[class*="wp-block-image"] img,
 }
 .single-mieszkania .wp-block-post-featured-image img,
 .single-lokale .wp-block-post-featured-image img {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 50%;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 @media only screen and (max-width: 1024px) {
   .page-kredyty img{
