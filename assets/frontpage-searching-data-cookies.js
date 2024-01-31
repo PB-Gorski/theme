@@ -33,7 +33,7 @@ window.addEventListener("load", function() {
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
     const searchBar = document.querySelector('.filter-entry');
-    const searchBar2 = document.querySelector('.filter-custom-layout-1850');
+    const searchBar2 = document.querySelector('.ymc-smart-filter-container');
     const heightAnimation = document.querySelector('.js-heightAnimation');
     const heightAnimation2 = document.querySelector('.filter-layout3');
     const sectionInwestycje = document.querySelector('#inwestycje');
@@ -174,7 +174,7 @@ window.addEventListener("load", function() {
             }else{
               tempMiastoArr =[];tempMiastoArr.push(choosenOptionID)
             };
-            wp.hooks.addAction('ymc_before_loaded_data_1850_7', 'smartfilter', function(class_name, response){
+            wp.hooks.addAction('ymc_before_loaded_data_1850_8', 'smartfilter', function(class_name, response){
               if (tempMiastoArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
             });
             
@@ -225,7 +225,7 @@ window.addEventListener("load", function() {
             }else{
               tempTerminArr =[];tempTerminArr.push(choosenOptionID)
             };
-            wp.hooks.addAction('ymc_before_loaded_data_1850_7', 'smartfilter', function(class_name, response){
+            wp.hooks.addAction('ymc_before_loaded_data_1850_8', 'smartfilter', function(class_name, response){
               if (tempTerminArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
             });
             // setTimeout(() => {
