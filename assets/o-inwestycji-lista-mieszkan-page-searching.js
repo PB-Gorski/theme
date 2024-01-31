@@ -806,6 +806,15 @@ window.addEventListener("load", function() {
                 };
                 
               });
+
+              let cenaSinglePost = document.querySelector('.taxonomy-cena');
+              let cenaSinglePostWrapper = document.querySelector('.price');
+
+              if(cenaSinglePost?.childNodes[0].innerText == 'Zapytaj'){
+                cenaSinglePostWrapper.childNodes[3].innerText = ''
+              };
+
+              cenaSinglePost
               
               console.log('Container class: ' + class_name);
               console.log('Post count: ' + response.post_count);
