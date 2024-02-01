@@ -1009,7 +1009,7 @@ function is_blog()
 function exclude_category($query)
 {
 	if ($query->is_home()) {
-		$query->set('cat', '510');
+		$query->not_set('cat', '510');
 	}
 	return $query;
 }
