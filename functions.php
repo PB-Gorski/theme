@@ -1006,10 +1006,26 @@ function is_blog()
 
 /* Exclude a Category from Search Results */
 
+// function exclude_category($query)
+// {
+// 	if ($query->is_home()) {
+// 		$query->set('cat', '510');
+// 	}
+// 	return $query;
+// }
+// add_filter('pre_get_posts', 'exclude_category');
+
 function exclude_category($query)
 {
 	if ($query->is_home()) {
-		$query->set('cat', '510');
+		$query->set($args['tax_query'] = array(
+			array(
+				'taxonomy' => 'category',
+				'terms' => array('cat', 'osiedle-srebrniki'),
+				'field' => 'slug',
+				'operator' => 'NOT IN',
+			),
+		));
 	}
 	return $query;
 }
