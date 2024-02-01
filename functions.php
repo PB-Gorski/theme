@@ -1009,7 +1009,7 @@ function is_blog()
 function exclude_category($query)
 {
 	if ($query->is_home()) {
-		$query->set('category__not_in', array(510));
+		$query->set('category__not_in', array(1047));
 	}
 	return $query;
 }
