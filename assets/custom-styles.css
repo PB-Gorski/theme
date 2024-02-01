@@ -1565,3 +1565,8 @@ background-color: #e8fbff!important;
 .page-kronika_budowy .ymc-smart-filter-container > div.container-posts.container-post-custom-layout{
   display: none!important;
 }
+
+/* page contact map */
+.wpmapblockrender .leaflet-container{
+  height: 100%!important;
+}
