@@ -1002,3 +1002,19 @@ function is_blog()
 {
 	return (is_archive() || is_author() || is_category() || is_home() || is_single() || is_tag()) && 'post' == get_post_type();
 }
+
+
+/* Exclude a Category from Search Results */
+
+add_filter('pre_get_posts', 'search_exc_cats');
+function search_exc_cats($query)
+{
+
+	if ($query->is_admin)
+		return $query;
+
+	if ($query->is_search) {
+		$query->set('category__not_in', array(510)); // Cat ID
+	}
+	return $query;
+}
