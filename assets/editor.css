@@ -74,3 +74,7 @@ figure div{
     position: unset;
     z-index: unset;
 }
+
+.block-editor-rich-text__editable.rich-text{
+    flex: 0;
+}
