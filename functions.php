@@ -1018,14 +1018,20 @@ function is_blog()
 function exclude_category($query)
 {
 	if ($query->is_home()) {
-		$query->set($args['tax_query'] = array(
+		$query->set(
 			array(
-				'taxonomy' => 'category',
-				'terms' => array('cat', 'osiedle-srebrniki'),
-				'field' => 'slug',
-				'operator' => 'NOT IN',
-			),
-		));
+				'post_type'  => 'news',        // only query News post type
+				'tax_query' => array(
+					array(
+						'taxonomy'  => 'news-cat',
+						'field'     => 'slug',
+						'terms'     => 'media', // exclude items media items in the news-cat custom taxonomy
+						'operator'  => 'NOT IN'
+					)
+
+				),
+			)
+		);
 	}
 	return $query;
 }
