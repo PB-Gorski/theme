@@ -65,3 +65,12 @@ figure div{
     gap: 40px
 }
 
+
+.editor-styles-wrapper .contact-inactive{
+    max-height: unset;
+    opacity: unset;
+    padding-bottom: unset;
+    padding-top: unset;
+    position: unset;
+    z-index: unset;
+}
