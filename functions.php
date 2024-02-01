@@ -1006,32 +1006,10 @@ function is_blog()
 
 /* Exclude a Category from Search Results */
 
-// function exclude_category($query)
-// {
-// 	if ($query->is_home()) {
-// 		$query->set('cat', '510');
-// 	}
-// 	return $query;
-// }
-// add_filter('pre_get_posts', 'exclude_category');
-
 function exclude_category($query)
 {
 	if ($query->is_home()) {
-		$query->set(
-			array(
-				'post_type'  => 'news',        // only query News post type
-				'tax_query' => array(
-					array(
-						'taxonomy'  => 'news-cat',
-						'field'     => 'slug',
-						'terms'     => 'media', // exclude items media items in the news-cat custom taxonomy
-						'operator'  => 'NOT IN'
-					)
-
-				),
-			)
-		);
+		$query->set('cat', '510');
 	}
 	return $query;
 }
