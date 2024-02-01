@@ -14,7 +14,7 @@ window.addEventListener("load", function() {
     // })
 
     console.log('home');
-    // document.cookie = "miasto=; inwestycja=; pokoje=; cenaOd=; cenaDo=;";
+
     function deleteAllCookies() {
         const cookies = document.cookie.split(";");
 

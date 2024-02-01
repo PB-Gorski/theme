@@ -367,6 +367,18 @@ window.addEventListener("load", function() {
     };
   };
 
+  if(document.body.classList.contains('page-child')){
+    let cenaArticle = document.querySelectorAll('.post-item');
+
+    cenaArticle.forEach(el => {
+      if(el.childNodes[0].childNodes[7].innerText == 'Zapytajzł'){
+        el.childNodes[0].childNodes[7].innerText = 'Zapytaj'
+      };
+    });
+  };
+
+
+
 
 
   
