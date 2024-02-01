@@ -1006,15 +1006,11 @@ function is_blog()
 
 /* Exclude a Category from Search Results */
 
-add_filter('pre_get_posts', 'search_exc_cats');
-function search_exc_cats($query)
+function exclude_category($query)
 {
-
-	if ($query->is_admin)
-		return $query;
-
-	if ($query->is_search) {
-		$query->set('category__not_in', array(510)); // Cat ID
+	if ($query->is_home()) {
+		$query->set('cat', '510');
 	}
 	return $query;
 }
+add_filter('pre_get_posts', 'exclude_category');
