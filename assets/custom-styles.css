@@ -1567,6 +1567,6 @@ background-color: #e8fbff!important;
 }
 
 /* page contact map */
-.wpmapblockrender .leaflet-container{
+.wpmapblockrender.leaflet-container{
   height: 100%!important;
 }

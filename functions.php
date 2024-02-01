@@ -1014,3 +1014,13 @@ function exclude_category($query)
 	return $query;
 }
 add_filter('pre_get_posts', 'exclude_category');
+
+// function modify_get_categories_taxonomy_defaults($taxonomy, $args)
+// {
+
+// 	// Update the $taxonomy variable according to your website requirements and return this variable. You can modify the $taxonomy variable conditionally too if you want.
+
+// 	return $taxonomy;
+// }
+// // add the filter
+// add_filter("get_categories_taxonomy", "modify_get_categories_taxonomy_defaults", 10, 2);
