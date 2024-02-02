@@ -79,7 +79,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
             <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LOKALIZACJA</span></h6>
             <!-- /wp:heading -->
             <!-- wp:heading {"level":5} -->
-            <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">Podaj miasto</span></h5>
+            <h5><span class="investCity block text-[24px]" data-aos="fade-right" data-aos-offset="30">Podaj miasto</span></h5>
             <!-- /wp:heading -->
             <!-- wp:paragraph -->
             <a href="<?php echo home_url() . '/lokalizacja' ?>" class="inline-block text-[14px] text-[#8a8f99] underline" data-aos="fade-right" data-aos-offset="30">więcej o lokalizacji</a>
