@@ -511,6 +511,9 @@ window.addEventListener("load", function() {
         }else if(window.location.href .search('o-inwestycji-' + investName) > 5){
           console.log('&&&&&&&&&&&&&&&&&&');
           console.log('strona inwestycji');
+        }else{
+          console.log('&&&&&&&&&&&&&&&&&&');
+          console.log('fail');
         };
       };
     });
