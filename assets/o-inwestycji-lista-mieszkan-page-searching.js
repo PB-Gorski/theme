@@ -6,10 +6,12 @@ window.addEventListener("load", function() {
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   let mainPageID = document.querySelector('#Banner');
 
-  let globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','');
+  let globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','').replace('-',' ');
 
   if (window.location.href.search('o-inwestycji-') > 5){
     console.log('inwestycja: ' + globalInvestFromLink);
+    activeName = document.querySelector('.filter-entry').childNodes[3].childNodes[3].childNodes[1];
+    activeName.innerText = globalInvestFromLink;
   };
 
 
