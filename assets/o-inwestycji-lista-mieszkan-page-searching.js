@@ -508,6 +508,9 @@ window.addEventListener("load", function() {
           document.cookie = "filteredTermsFromCookies=" + investID + ";";
           globalCurrentInvestID = investID;
           globalCurrentInvestName = investName;
+        }else if(window.location.href .search('o-inwestycji-' + investName) > 5){
+          console.log('&&&&&&&&&&&&&&&&&&');
+          console.log('strona inwestycji');
         };
       };
     });
