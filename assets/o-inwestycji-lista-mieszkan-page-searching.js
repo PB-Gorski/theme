@@ -13,7 +13,7 @@ window.addEventListener("load", function() {
     document.querySelector('.filter-entry').childNodes[3].childNodes[3].childNodes[1].innerText = globalInvestFromLink;
 
     currentInvestCity = document.querySelector('.investCity').innerText;
-    document.querySelector('.filter-entry').childNodes[1].childNodes[3].childNodes[1].innerText = currentCityName;
+    document.querySelector('.filter-entry').childNodes[1].childNodes[3].childNodes[1].innerText = currentInvestCity;
 
   };
 
