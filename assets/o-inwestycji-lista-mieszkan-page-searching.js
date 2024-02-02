@@ -12,9 +12,15 @@ window.addEventListener("load", function() {
   if (window.location.href.search('o-inwestycji-') > 5){
     console.log('inwestycja: ' + globalInvestFromLink);
     document.querySelector('.filter-entry').childNodes[3].childNodes[3].childNodes[1].innerText = globalInvestFromLink;
+    document.querySelector('.filter-entry').childNodes[3].classList.add('pointer-events-none');
+
+    
 
     currentInvestCity = document.querySelector('.investCity').innerText;
     document.querySelector('.filter-entry').childNodes[1].childNodes[3].childNodes[1].innerText = currentInvestCity;
+    document.querySelector('.filter-entry').childNodes[1].classList.add('pointer-events-none');
+
+
 
   };
 
