@@ -6,6 +6,7 @@ window.addEventListener("load", function() {
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   let mainPageID = document.querySelector('#Banner');
 
+  // lock filter with invest
   let globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','').replace('-',' ');
 
   if (window.location.href.search('o-inwestycji-') > 5){
