@@ -9,7 +9,10 @@ window.addEventListener("load", function() {
   // lock filter with invest
   let globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','').replace('-',' ');
 
-  if (window.location.href.search('o-inwestycji-') > 5){
+  if (window.location.href.search('o-inwestycji-') > 5 || 
+  window.location.href.search('lokalizacja-') > 5 || 
+  window.location.href.search('galeria-') > 5 || 
+  window.location.href.search('kronika-budowy-') > 5){
     console.log('inwestycja: ' + globalInvestFromLink);
     document.querySelector('.filter-entry').childNodes[3].childNodes[3].childNodes[1].innerText = globalInvestFromLink;
     document.querySelector('.filter-entry').childNodes[3].classList.add('pointer-events-none');
