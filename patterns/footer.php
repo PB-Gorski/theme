@@ -215,7 +215,7 @@
 
       <!-- wp:paragraph -->
       <span>
-        <a href="https://webo.pl/">
+        <a href="https://webo.pl/" target="_blank">
           <!-- wp:paragraph -->
           <p>
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="16" viewBox="0 0 50 16" fill="none">
