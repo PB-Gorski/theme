@@ -7,6 +7,15 @@ window.addEventListener("load", function() {
   let mainPageID = document.querySelector('#Banner');
 
 
+  let globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','');
+
+  if (window.location.href.search('o-inwestycji-') > 5){
+    console.log('inwestycja: ' + globalInvestFromLink);
+  }
+
+  
+
+
   if(document.body.classList.contains('_page-parent') || 
     document.body.classList.contains('page-child') ||
     mainPageID?.classList.contains('banner-lista-mieszkan-osiedle-srebrniki') ||
@@ -508,21 +517,11 @@ window.addEventListener("load", function() {
           document.cookie = "filteredTermsFromCookies=" + investID + ";";
           globalCurrentInvestID = investID;
           globalCurrentInvestName = investName;
-        }else if(window.location.href .search('o-inwestycji-' + investName) > 5){
-          console.log('&&&&&&&&&&&&&&&&&&');
-          console.log('strona inwestycji');
-        }else{
-          console.log('&&&&&&&&&&&&&&&&&&');
-          console.log('fail');
         };
       };
     });
 
-    let globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','');
 
-    if (window.location.href.search('o-inwestycji-') > 5){
-      console.log('inwestycja: ' + globalInvestFromLink);
-    }
 
 
 
