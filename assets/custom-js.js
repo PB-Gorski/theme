@@ -1,4 +1,4 @@
-window.addEventListener("load", function() {
+_window.addEventListener("load", function() {
   AOS.init({
     offset: 40,
     duration: 600,
