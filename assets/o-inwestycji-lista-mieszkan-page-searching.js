@@ -518,6 +518,21 @@ window.addEventListener("load", function() {
       };
     });
 
+    if (document.referrer.search('o-inwestycji-' + investName) > 5 ||
+    document.referrer.search('lokalizacja-' + investName) > 20 ||
+    document.referrer.search('galeria-' + investName) > 20 ||
+    document.referrer.search('kronika-budowy-' + investName) > 20){
+      document.cookie = "filteredTermsFromCookies=" + investID + ";";
+      globalCurrentInvestID = investID;
+      globalCurrentInvestName = investName;
+    }else if(window.location.href .search('o-inwestycji-' + investName) > 5){
+      console.log('&&&&&&&&&&&&&&&&&&');
+      console.log('strona inwestycji');
+    }else{
+      console.log('&&&&&&&&&&&&&&&&&&');
+      console.log('fail');
+    };
+
 
     // dynamic ymc filter id
     currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
