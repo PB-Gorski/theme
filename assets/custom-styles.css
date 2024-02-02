@@ -1543,7 +1543,7 @@ background-color: #e8fbff!important;
 }
 .term_investment_img > p > picture > img{
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover!important;
 }
 
