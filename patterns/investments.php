@@ -67,7 +67,7 @@
 
 
                   <!-- wp:group -->
-                  <div class="wp-block-group term_investment_img h-[330px] desktop:max-h-full mb-[10px]">
+                  <div class="wp-block-group term_investment_img h-auto desktop:max-h-full mb-[10px]">
                     <?php
                     if (term_description($tax->term_id)) { ?>
                       <!-- wp:paragraph -->
@@ -76,7 +76,7 @@
                     <?php
                     } else { ?>
                       <!-- wp:image -->
-                      <figure class="wp-block-image h-[330px] desktop:max-h-full mb-[10px]">
+                      <figure class="wp-block-image h-auto desktop:max-h-full mb-[10px]">
                         <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg'; ?>" alt="inwestycje-img">
                       </figure>
                       <!-- /wp:image -->
