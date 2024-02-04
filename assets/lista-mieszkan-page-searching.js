@@ -1190,7 +1190,7 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
             passive.parentElement.childNodes[3].childNodes[1].classList.toggle('newAfter');
           }
 
-          // passive.previousElementSibling.childNodes[0].classList.toggle('newAfter');
+          // passive.previousElementSibling.childNodes[0].classList.remove('newAfter');
           console.log('current X change');
         };
       });
