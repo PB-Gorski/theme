@@ -1166,7 +1166,7 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
     });  
       
     document.querySelectorAll('.menu-active').forEach(menuActive =>{
-      menuActive.addEventListener('click', (e)=>{
+      menuActive.addEventListener('click', (e) => {
         document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
           customDrop.classList.remove('dropdown__list_active')
         });
