@@ -17,7 +17,7 @@ window.addEventListener("load", function() {
     document.querySelector('.filter-entry').childNodes[3].childNodes[3].childNodes[1].innerText = globalInvestFromLink;
     document.querySelector('.filter-entry').childNodes[3].classList.add('pointer-events-none');
 
-    currentInvestCity = document?.querySelector('.investCity').innerText;
+    currentInvestCity = document.querySelector('.investCity')?.innerText;
     document.querySelector('.filter-entry').childNodes[1].childNodes[3].childNodes[1].innerText = currentInvestCity;
     document.querySelector('.filter-entry').childNodes[1].classList.add('pointer-events-none');
   };
