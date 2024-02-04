@@ -879,6 +879,8 @@ window.addEventListener("load", function() {
 
 
 
+      
+
     };
 
 
@@ -958,8 +960,11 @@ window.addEventListener("load", function() {
       newArrHTMLList = [];
       priceValueArrNodeList = [];
 
+
+// after page load search
+currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
       YMCTools({
-        target: '.data-target-ymc1',
+        target: '.data-target-ymc' + currentYmcFilterID,
         terms: filteredTermsID.join() + ',' + choosenOptions.join(),            
       }).apiTermUpdate(); 
 
