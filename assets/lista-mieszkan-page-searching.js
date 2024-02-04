@@ -1206,29 +1206,6 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
       });
     });
 
-    document.querySelectorAll('.menu-passive').forEach(passive =>{
-      console.log(passive);
-      // console.log(passive.parentElement.childNodes[3].childNodes[1]);
-
-
-
-      if(passive.parentElement.childNodes[3]){
-        passive.parentElement.childNodes[3].childNodes[1].classList.remove('newAfter');
-        passive.parentElement.childNodes[3].childNodes[1].classList.add('arrow-down');
-      };
-
-      if(passive.style.display == 'block'){
-        passive.parentElement.childNodes[3].childNodes[1].classList.remove('arrow-down');
-        passive.parentElement.childNodes[3].childNodes[1].classList.add('newAfter');
-        console.log('new after added');
-      };
-
-
-
-      // passive.previousElementSibling.childNodes[0].classList.toggle('newAfter');
-      console.log('current X change');
-  });
-
     let c = 0;
     document.querySelectorAll('.dropdown__value').forEach(customDropValue =>{
       // cleaning default dropdowns
