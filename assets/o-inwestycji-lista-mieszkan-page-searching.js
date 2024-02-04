@@ -797,6 +797,9 @@ window.addEventListener("load", function() {
                 document.querySelector('.js-oInwestycji').innerHTML = 'Nie znaleziono ofert';
               };
 
+              console.log('^^^^^^^^^^^^^^^^^^^');
+              console.log(investElFormName);
+
 
               if(filteredTermsFromCookies == String(globalCurrentInvestID)){
                 console.log('444444444444444' + globalCurrentInvestID);
