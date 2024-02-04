@@ -1174,8 +1174,8 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
         // e.target.classList.replace('arrow-down', 'newAfter');
         // e.target.classList.replace('newAfter', 'arrow-down');
 
-        e.target.classList.remove('arrow-down');
-        e.target.classList.add('newAfter');
+        // e.target.classList.remove('arrow-down');
+        // e.target.classList.add('newAfter');
       })
     });  
 
@@ -1194,9 +1194,6 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
             passive.parentElement.childNodes[3].childNodes[1].classList.add('arrow-down');
             console.log('new after added');
           };
-
-          passive.parentElement.childNodes[3].childNodes[1].classList.remove('newAfter');
-          passive.parentElement.childNodes[3].childNodes[1].classList.add('arrow-down');
 
           // passive.previousElementSibling.childNodes[0].classList.toggle('newAfter');
       });
