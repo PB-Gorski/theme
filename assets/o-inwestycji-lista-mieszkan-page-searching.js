@@ -754,7 +754,7 @@ window.addEventListener("load", function() {
             console.log('currentYmcFilterID: ', currentYmcFilterID);
             console.log('555555555555555');
             investElFormName = document.querySelector(`[data-termid="` + globalCurrentInvestID + `"]`).innerText;
-            investElFormName2 = document.querySelector('.post-custom-layout').childNodes[0].childNodes[0].childNodes[1].innerText;
+
             cityElFormName = ''; 
             // = document.querySelector(`[data-termid="` + globalCurrentCityID + `"]`).innerText;
 
@@ -764,6 +764,7 @@ window.addEventListener("load", function() {
             // dynamic active names in filter mieszkania
             wp.hooks.addAction('ymc_after_loaded_data_148_' + currentYmcFilterID, 'smartfilter', function(class_name, response){
               let currentPriceArr = document.querySelectorAll('.list-item-mieszkanie');
+              investElFormName2 = document.querySelector('.post-custom-layout').childNodes[0].childNodes[0].childNodes[1].innerText;
 
               currentPriceArr.forEach(el => {
                 if(el.childNodes[7].innerText == 'Zapytaj zł' || el.childNodes[7].innerText == 'Zapytajzł'){
