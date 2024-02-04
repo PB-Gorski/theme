@@ -765,7 +765,7 @@ window.addEventListener("load", function() {
               let currentPriceArr = document.querySelectorAll('.list-item-mieszkanie');
 
               currentPriceArr.forEach(el => {
-                if(el.childNodes[7].innerText == 'Zapytaj zł'){
+                if(el.childNodes[7].innerText == 'Zapytaj zł' || el.childNodes[7].innerText == 'Zapytajzł'){
                   el.childNodes[7].innerText = 'Zapytaj'
                 };
                 
