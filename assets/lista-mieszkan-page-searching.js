@@ -1175,7 +1175,7 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
         // e.target.classList.replace('newAfter', 'arrow-down');
 
         e.target.classList.toggle('newAfter');
-        e.target.classList.toggle('arrow-down');
+        // e.target.classList.toggle('arrow-down');
       })
     });  
 
