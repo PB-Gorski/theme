@@ -777,7 +777,7 @@ window.addEventListener("load", function() {
               console.log('Number of found posts: ' + response.found);
               console.log('**********************');
               console.log('1111111111111111 from hook:');
-              currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
+              currentCityName = document.querySelector('.list-item-mieszkanie')?.childNodes[0].innerText;
               console.log(currentCityName);
               globalCurrentCityName = currentCityName;
 
@@ -826,7 +826,7 @@ window.addEventListener("load", function() {
               console.log('Number of found posts: ' + response.found);
               console.log('**********************');
               console.log('1111111111111111 from hook:');
-              currentCityName = document.querySelector('.list-item-mieszkanie').childNodes[0].innerText;
+              currentCityName = document.querySelector('.list-item-mieszkanie')?.childNodes[0].innerText;
               console.log(currentCityName);
               globalCurrentCityName = currentCityName;
 
