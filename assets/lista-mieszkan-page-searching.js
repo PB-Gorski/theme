@@ -1187,10 +1187,10 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
           // console.log(passive.parentElement.childNodes[3].childNodes[1]);
 
           if(passive != undefined){
-            passive.parentElement.childNodes[3].childNodes[1].classList.toggle('newAfter');
+            passive.parentElement.childNodes[3].childNodes[1].classList.remove('newAfter');
           }
 
-          // passive.previousElementSibling.childNodes[0].classList.remove('newAfter');
+          // passive.previousElementSibling.childNodes[0].classList.toggle('newAfter');
           console.log('current X change');
         };
       });
