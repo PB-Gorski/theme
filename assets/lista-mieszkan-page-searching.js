@@ -854,6 +854,11 @@ window.addEventListener("load", function() {
     }else{
       console.log('no cookies');
 
+      let globalFoundedPostsCount;
+      currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
+      console.log('current filter id **********************');
+      console.log(currentYmcFilterID);
+
       wp.hooks.addAction('ymc_after_loaded_data_148_' + currentYmcFilterID, 'smartfilter', function(class_name, response){
         globalFoundedPostsCount = response.post_count
         console.log('Number of found posts: ' + response.found);
