@@ -375,7 +375,7 @@ window.addEventListener("load", function() {
     `;
 
     // test
-    // listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
+    listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
 
     function sortListDir(j) {
       let list, i, switching, b, shouldSwitch, dir, switchcount = 0;
