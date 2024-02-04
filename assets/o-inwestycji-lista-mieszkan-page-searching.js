@@ -7,13 +7,17 @@ window.addEventListener("load", function() {
   let mainPageID = document.querySelector('#Banner');
 
   // lock filter with invest
+  let globalInvestFromLink
   if (window.location.pathname.search('lokalizacja') > 10){
-    let globalInvestFromLink = window.location.pathname.slice(window.location.pathname.search('lokalizacja-')).replace('lokalizacja-', '').replace('-',' ').replace('/','')
+    globalInvestFromLink = window.location.pathname.slice(window.location.pathname.search('lokalizacja-')).replace('lokalizacja-', '').replace('-',' ').replace('/','')
   }else if(window.location.pathname.search('galeria') > 10){
-    let globalInvestFromLink = window.location.pathname.slice(window.location.pathname.search('galeria-')).replace('galeria-', '').replace('-',' ').replace('/','')
+    globalInvestFromLink = window.location.pathname.slice(window.location.pathname.search('galeria-')).replace('galeria-', '').replace('-',' ').replace('/','')
   }else if(window.location.pathname.search('kronika') > 10){
-    let globalInvestFromLink = window.location.pathname.slice(window.location.pathname.search('kronika-budowy')).replace('kronika-budowy', '').replace('-',' ').replace('/','')
-  }
+    globalInvestFromLink = window.location.pathname.slice(window.location.pathname.search('kronika-budowy')).replace('kronika-budowy', '').replace('-',' ').replace('/','')
+  }else if(window.location.pathname.search('o-inwestycji') > 10){
+    globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','').replace('-',' ');
+
+  };
   // let globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','').replace('-',' ');
 
 
