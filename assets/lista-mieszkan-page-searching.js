@@ -1182,7 +1182,7 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
     document.body.addEventListener('click', (e) => {
       console.log('body click2');
       if(passive.style.display == 'block'){
-        passive.parentElement.childNodes[3].childNodes[1].classList.remove('newAfter');
+        passive.parentElement.childNodes[3].childNodes[1].classList.add('newAfter');
       };
       document.querySelectorAll('.menu-passive').forEach(passive =>{
           console.log(passive);
