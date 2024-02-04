@@ -1174,8 +1174,8 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
         // e.target.classList.replace('arrow-down', 'newAfter');
         // e.target.classList.replace('newAfter', 'arrow-down');
 
-        e.target.classList.add('arrow-down');
         e.target.classList.remove('newAfter');
+        e.target.classList.add('arrow-down');
       })
     });  
 
@@ -1185,8 +1185,8 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
       document.querySelectorAll('.menu-passive').forEach(passive =>{
 
           if(passive.parentElement.childNodes[3]){
-            passive.parentElement.childNodes[3].childNodes[1].classList.remove('arrow-down');
-            passive.parentElement.childNodes[3].childNodes[1].classList.add('newAfter');
+            // passive.parentElement.childNodes[3].childNodes[1].classList.remove('arrow-down');
+            // passive.parentElement.childNodes[3].childNodes[1].classList.add('newAfter');
           };
 
           if(passive.style.display == 'block'){
