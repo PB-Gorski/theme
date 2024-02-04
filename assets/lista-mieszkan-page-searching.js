@@ -1182,17 +1182,15 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
     document.body.addEventListener('click', (e) => {
       console.log('body click2');
       document.querySelectorAll('.menu-passive').forEach(passive =>{
-        if(passive.style.display == 'none'){
           console.log(passive);
           // console.log(passive.parentElement.childNodes[3].childNodes[1]);
 
-          if(passive !== undefined){
+          if(passive.parentElement.childNodes[3]){
             passive.parentElement.childNodes[3].childNodes[1].classList.remove('newAfter');
-          }
+          };
 
           // passive.previousElementSibling.childNodes[0].classList.toggle('newAfter');
           console.log('current X change');
-        };
       });
     });
 
