@@ -753,7 +753,8 @@ window.addEventListener("load", function() {
             console.log(globalCurrentCityID);
             console.log('currentYmcFilterID: ', currentYmcFilterID);
             console.log('555555555555555');
-            investElFormName = document.querySelector(`[data-termid="` + globalCurrentInvestID + `"]`).innerText.slice(0,-1);
+            investElFormName = document.querySelector(`[data-termid="` + globalCurrentInvestID + `"]`).innerText;
+            investElFormName2 = document.querySelector('.post-custom-layout').childNodes[0].childNodes[0].childNodes[1].innerText;
             cityElFormName = ''; 
             // = document.querySelector(`[data-termid="` + globalCurrentCityID + `"]`).innerText;
 
@@ -800,7 +801,7 @@ window.addEventListener("load", function() {
                 console.log('444444444444444' + globalCurrentInvestID);
                 returnChoosenFromCookiesInwestycje.forEach(el => {
                   // inwestycja filtr
-                  el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
+                  el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName2;
                   el.parentNode.previousElementSibling.classList.add('pointer-events-none');
                   // miasto filtr
                   el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = globalCurrentCityName;
