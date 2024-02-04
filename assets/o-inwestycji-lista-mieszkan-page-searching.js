@@ -25,15 +25,7 @@ window.addEventListener("load", function() {
 
   if(document.body.classList.contains('_page-parent') || 
     document.body.classList.contains('page-child') ||
-    mainPageID?.classList.contains('banner-lista-mieszkan-osiedle-srebrniki') ||
-    mainPageID?.classList.contains('banner-o-inwestycji-torunska-16') ||
-    mainPageID?.classList.contains('banner-lista-mieszkan-torunska-16') ||
-    mainPageID?.classList.contains('banner-lista-mieszkan-wiezycka-folwark') ||
-    mainPageID?.classList.contains('banner-lista-mieszkan-sw-piotra')) {
-
-
- 
-
+    document.body.classList.contains('post-type-archive-lokale')) {
 
 
     console.log('o inwestyci lista mieszkan page');
