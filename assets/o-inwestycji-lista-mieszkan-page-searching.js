@@ -8,15 +8,14 @@ window.addEventListener("load", function() {
 
   // lock filter with invest
   let globalInvestFromLink
-  if (window.location.pathname.search('lokalizacja') > 10){
+  if (window.location.pathname.search('lokalizacja') > 1){
     globalInvestFromLink = window.location.pathname.slice(window.location.pathname.search('lokalizacja-')).replace('lokalizacja-', '').replace('-',' ').replace('/','')
-  }else if(window.location.pathname.search('galeria') > 10){
+  }else if(window.location.pathname.search('galeria') > 1){
     globalInvestFromLink = window.location.pathname.slice(window.location.pathname.search('galeria-')).replace('galeria-', '').replace('-',' ').replace('/','')
-  }else if(window.location.pathname.search('kronika') > 10){
+  }else if(window.location.pathname.search('kronika') > 1){
     globalInvestFromLink = window.location.pathname.slice(window.location.pathname.search('kronika-budowy')).replace('kronika-budowy', '').replace('-',' ').replace('/','')
-  }else if(window.location.pathname.search('o-inwestycji') > 10){
+  }else if(window.location.pathname.search('o-inwestycji') > 1){
     globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','').replace('-',' ');
-
   };
   // let globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','').replace('-',' ');
 
