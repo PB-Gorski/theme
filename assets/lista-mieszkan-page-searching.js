@@ -853,6 +853,26 @@ window.addEventListener("load", function() {
       deleteAllCookies();
     }else{
       console.log('no cookies');
+
+      wp.hooks.addAction('ymc_after_loaded_data_148_' + currentYmcFilterID, 'smartfilter', function(class_name, response){
+        globalFoundedPostsCount = response.post_count
+        console.log('Number of found posts: ' + response.found);
+        console.log('global2**********************');
+        console.log(globalFoundedPostsCount);
+        console.log('**********************');
+        
+        if(globalFoundedPostsCount == 1){
+          document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' ofertę pasującą do Twoich kryteriów';
+        }else if(globalFoundedPostsCount == 2 || globalFoundedPostsCount == 3 || globalFoundedPostsCount == 4){
+          document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' oferty pasujące do Twoich kryteriów';
+        }else if(globalFoundedPostsCount > 4 || globalFoundedPostsCount == 3 || globalFoundedPostsCount == 4){
+          document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' ofert pasujących do Twoich kryteriów';
+        }else if(globalFoundedPostsCount < 1){
+          document.querySelector('.js-oInwestycji').innerHTML = 'Nie znaleziono ofert';
+        };
+  
+      });
+
     };
 
 
