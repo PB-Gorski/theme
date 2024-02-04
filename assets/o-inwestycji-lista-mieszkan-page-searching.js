@@ -7,7 +7,16 @@ window.addEventListener("load", function() {
   let mainPageID = document.querySelector('#Banner');
 
   // lock filter with invest
-  let globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','').replace('-',' ');
+  if (window.location.pathname.search('lokalizacja') > 10){
+    let globalInvestFromLink = window.location.pathname.slice(window.location.pathname.search('lokalizacja-')).replace('lokalizacja-', '').replace('-',' ').replace('/','')
+  }else if(window.location.pathname.search('galeria') > 10){
+    let globalInvestFromLink = window.location.pathname.slice(window.location.pathname.search('galeria-')).replace('galeria-', '').replace('-',' ').replace('/','')
+  }else if(window.location.pathname.search('kronika') > 10){
+    let globalInvestFromLink = window.location.pathname.slice(window.location.pathname.search('kronika-budowy')).replace('kronika-budowy', '').replace('-',' ').replace('/','')
+  }
+  // let globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','').replace('-',' ');
+
+
 
   if (window.location.href.search('o-inwestycji-') > 5 || 
   window.location.href.search('lokalizacja-') > 5 || 
@@ -763,6 +772,7 @@ window.addEventListener("load", function() {
             let globalFoundedPostsCount;
             // dynamic active names in filter mieszkania
             wp.hooks.addAction('ymc_after_loaded_data_148_' + currentYmcFilterID, 'smartfilter', function(class_name, response){
+
               let currentPriceArr = document.querySelectorAll('.list-item-mieszkanie');
               // investElFormName2 = document.querySelector('.post-custom-layout').childNodes[0].childNodes[0].childNodes[1].innerText;
 
