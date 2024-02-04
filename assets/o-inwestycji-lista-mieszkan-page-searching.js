@@ -799,13 +799,14 @@ window.addEventListener("load", function() {
 
               console.log('^^^^^^^^^^^^^^^^^^^');
               console.log(investElFormName);
+              console.log('^^^^^^^^^^^^^^^^^^^');
 
 
               if(filteredTermsFromCookies == String(globalCurrentInvestID)){
                 console.log('444444444444444' + globalCurrentInvestID);
                 returnChoosenFromCookiesInwestycje.forEach(el => {
                   // inwestycja filtr
-                  // el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
+                  el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
                   el.parentNode.previousElementSibling.classList.add('pointer-events-none');
                   // miasto filtr
                   el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = globalCurrentCityName;

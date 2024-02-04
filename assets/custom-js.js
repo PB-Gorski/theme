@@ -371,7 +371,7 @@ window.addEventListener("load", function() {
     let cenaArticle = document.querySelectorAll('.post-item');
 
     cenaArticle.forEach(el => {
-      if(el.childNodes[0].childNodes[7].innerText == 'Zapytajzł'){
+      if(el?.childNodes[0].childNodes[7].innerText == 'Zapytajzł'){
         el.childNodes[0].childNodes[7].innerText = 'Zapytaj'
       };
     });
