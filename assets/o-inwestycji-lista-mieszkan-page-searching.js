@@ -15,10 +15,11 @@ window.addEventListener("load", function() {
   }else if(window.location.pathname.search('kronika') > 1){
     globalInvestFromLink = window.location.pathname.slice(window.location.pathname.search('kronika-budowy')).replace('kronika-budowy', '').replace('-',' ').replace('/','')
   }else if(window.location.pathname.search('o-inwestycji') > 1){
-    globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','').replace('-',' ');
+    globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','').replace('-',' ')
   };
   // let globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','').replace('-',' ');
 
+  globalInvestFromLink = globalInvestFromLink.charAt(0).toUpperCase() + globalInvestFromLink.slice(1)
 
 
   if (window.location.href.search('o-inwestycji-') > 5 || 
