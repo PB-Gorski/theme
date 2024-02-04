@@ -764,7 +764,7 @@ window.addEventListener("load", function() {
             // dynamic active names in filter mieszkania
             wp.hooks.addAction('ymc_after_loaded_data_148_' + currentYmcFilterID, 'smartfilter', function(class_name, response){
               let currentPriceArr = document.querySelectorAll('.list-item-mieszkanie');
-              investElFormName2 = document.querySelector('.post-custom-layout').childNodes[0].childNodes[0].childNodes[1].innerText;
+              // investElFormName2 = document.querySelector('.post-custom-layout').childNodes[0].childNodes[0].childNodes[1].innerText;
 
               currentPriceArr.forEach(el => {
                 if(el.childNodes[7].innerText == 'Zapytaj zł' || el.childNodes[7].innerText == 'Zapytajzł'){
@@ -802,7 +802,7 @@ window.addEventListener("load", function() {
                 console.log('444444444444444' + globalCurrentInvestID);
                 returnChoosenFromCookiesInwestycje.forEach(el => {
                   // inwestycja filtr
-                  el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName2;
+                  el.parentNode.previousElementSibling.childNodes[1].innerHTML = investElFormName;
                   el.parentNode.previousElementSibling.classList.add('pointer-events-none');
                   // miasto filtr
                   el.parentNode.previousElementSibling.parentNode.previousElementSibling.childNodes[3].childNodes[1].innerHTML = globalCurrentCityName;
