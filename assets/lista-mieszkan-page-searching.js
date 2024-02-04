@@ -1181,6 +1181,9 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
 
     document.body.addEventListener('click', (e) => {
       console.log('body click2');
+      if(passive.style.display == 'block'){
+        passive.parentElement.childNodes[3].childNodes[1].classList.remove('newAfter');
+      };
       document.querySelectorAll('.menu-passive').forEach(passive =>{
           console.log(passive);
           // console.log(passive.parentElement.childNodes[3].childNodes[1]);
@@ -1190,9 +1193,7 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
             passive.parentElement.childNodes[3].childNodes[1].classList.add('arrow-down');
           };
 
-          if(passive.style.display == 'block'){
-            passive.parentElement.childNodes[3].childNodes[1].classList.remove('newAfter');
-          };
+ 
 
           // passive.previousElementSibling.childNodes[0].classList.toggle('newAfter');
           console.log('current X change');
