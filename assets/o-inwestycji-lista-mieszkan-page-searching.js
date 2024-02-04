@@ -753,7 +753,7 @@ window.addEventListener("load", function() {
             console.log(globalCurrentCityID);
             console.log('currentYmcFilterID: ', currentYmcFilterID);
             console.log('555555555555555');
-            investElFormName = document.querySelector(`[data-termid="` + globalCurrentInvestID + `"]`).innerText;
+            investElFormName = document.querySelector(`[data-termid="` + globalCurrentInvestID + `"]`).innerText.slice(0,-2);
             cityElFormName = ''; 
             // = document.querySelector(`[data-termid="` + globalCurrentCityID + `"]`).innerText;
 
