@@ -1179,6 +1179,14 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
       })
     });  
 
+    document.body.addEventListener('click', () => {
+      console.log('body click');
+      document.querySelectorAll('.active_window').forEach(activeWindowsEl =>{
+        activeWindowsEl.classList.toggle('newAfter');
+        console.log('new body click toggle');
+      });
+    });
+
     let c = 0;
     document.querySelectorAll('.dropdown__value').forEach(customDropValue =>{
       // cleaning default dropdowns
