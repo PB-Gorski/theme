@@ -1181,12 +1181,14 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
 
     document.body.addEventListener('click', (e) => {
       console.log('body click2');
-      if(passive.style.display == 'block'){
-        passive.parentElement.childNodes[3].childNodes[1].classList.add('newAfter');
-      };
+
       document.querySelectorAll('.menu-passive').forEach(passive =>{
           console.log(passive);
           // console.log(passive.parentElement.childNodes[3].childNodes[1]);
+
+          if(passive.style.display == 'block'){
+            passive.parentElement.childNodes[3].childNodes[1].classList.add('newAfter');
+          };
 
           if(passive.parentElement.childNodes[3]){
             passive.parentElement.childNodes[3].childNodes[1].classList.remove('newAfter');
