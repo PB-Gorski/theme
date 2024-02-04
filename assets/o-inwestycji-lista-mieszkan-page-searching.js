@@ -751,6 +751,7 @@ window.addEventListener("load", function() {
 
             console.log('555555555555555');
             console.log(globalCurrentCityID);
+            console.log('currentYmcFilterID: ', currentYmcFilterID);
             console.log('555555555555555');
             investElFormName = document.querySelector(`[data-termid="` + globalCurrentInvestID + `"]`).innerText;
             cityElFormName = ''; 
