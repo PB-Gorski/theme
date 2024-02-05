@@ -176,13 +176,13 @@
                     <p class="text-[24px] font-bold">
                       <?php
                       if ($tax->name == 'Osiedle Srebrniki') {
-                        echo '11 797zł zł/m<sup>2</sup>';
+                        echo '11 797 zł/m<sup>2</sup>';
                       } else if ($tax->name == 'Św. Piotra') {
-                        echo '13 650zł zł/m<sup>2</sup>';
+                        echo '13 650 zł/m<sup>2</sup>';
                       } else if ($tax->name == 'Toruńska 16') {
-                        echo '18 375zł zł/m<sup>2</sup>';
+                        echo '18 375 zł/m<sup>2</sup>';
                       } else if ($tax->name == 'Wieżycka Folwark') {
-                        echo '8 930zł zł/m<sup>2</sup>';
+                        echo '8 930 zł/m<sup>2</sup>';
                       }
                       ?>
                     </p>
