@@ -8,7 +8,7 @@
  */
 ?>
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Banner" class="wp-block-group banner h-[50vh] desktop:h-[90vh] relative">
+<div id="Banner" class="wp-block-group banner h-[50vh] desktop:h-[80vh] relative">
   <!-- wp:group -->
   <div class="wp-block-group w-full h-full bg-banner relative flex desktop:block items-center">
 
