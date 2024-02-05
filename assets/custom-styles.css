@@ -1450,6 +1450,7 @@ background-color: #e8fbff!important;
   top: -70px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 .search_tabs{
   gap: 80px;

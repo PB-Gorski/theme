@@ -13,7 +13,7 @@
   <div class="wp-block-group w-full h-full bg-banner relative flex desktop:block items-center">
 
     <!-- wp:group -->
-    <div class="wp-block-group banner w-full h-full bg-black opacity-50 z-[1] relative"></div>
+    <div class="wp-block-group banner w-full h-full bg-black opacity-30 z-[1] relative"></div>
     <!-- /wp:group -->
 
     <!-- wp:image -->
@@ -23,7 +23,7 @@
     <!-- /wp:image -->
 
     <!-- wp:group -->
-    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] z-[0] relative text-white">
+    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] z-[2] relative text-white">
       <!-- wp:group -->
       <div class="wp-block-group title text-[36px] desktop:text-[60px] desktop:pt-[290px] mb-[50px] leading-[44px] desktop:leading-[70px]">
         <!-- wp:paragraph -->
