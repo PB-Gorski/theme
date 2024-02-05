@@ -43,10 +43,10 @@
     <!-- wp:group -->
     <div class="wp-block-group row-links my-[40px] flex flex-wrap justify-center items-center gap-[20px]">
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/o-inwestycji-sw-piotra' ?>" class="text-[#8a8f99] hover:text-[#3e4759]" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
+      <a href="<?php echo home_url() . '/o-inwestycji-osiedle-srebrniki' ?>" class="text-[#8a8f99] hover:text-[#3e4759]" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lokalizacja-sw-piotra' ?>" class="text-[#8a8f99]" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
+      <a href="<?php echo home_url() . '/lokalizacja-osiedle-srebrniki' ?>" class="text-[#8a8f99]" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/lista-mieszkan-osiedle-srebrniki' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
