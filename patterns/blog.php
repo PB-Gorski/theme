@@ -41,7 +41,7 @@
             <!-- wp:group -->
             <div class="wp-block-group wrapper">
               <!-- wp:group -->
-              <div class="wp-block-group h-[260px] wide:h-[320px] mb-[10px]">
+              <div class="wp-block-group mb-[10px]">
                 <!-- wp:post-featured-image {"isLink":true} /-->
               </div>
               <!-- /wp:group -->
