@@ -139,10 +139,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
             $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
             $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
             $alias = strtr($alias, ' ', '-');
-
-            print_r(get_term($taxonomies[$i], 'inwestycja'));
         ?>
-
             <!-- wp:list-item -->
             <li class="invest-tile current max-w-full test desktop:h-[450px] mb-[80px]">
               <!-- wp:group -->
@@ -170,7 +167,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                   <!-- wp:group -->
                   <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center gap-[15px]">
                     <!-- wp:heading -->
-                    <h2 class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php echo $taxInwestycjeName; ?></h2>
+                    <h2 class="mr-[20px] text-[30px] desktop:text-[40px] font-bold"><?php echo $my_term->name; ?></h2>
                     <!-- /wp:heading -->
 
                     <!-- wp:group -->
@@ -178,7 +175,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                       <!-- wp:group -->
                       <div class="wp-block-group available-apartments pr-[35px] flex items-center gap-[25px] border-r-[1px] border-[#ebecee]">
                         <!-- wp:paragraph -->
-                        <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
+                        <p class="text-[48px] text-primaryRed font-bold"><?php echo $my_term->count; ?></p>
                         <!-- /wp:paragraph -->
                         <!-- wp:group -->
                         <div class="wp-block-group leading-[24px]">
@@ -198,7 +195,19 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                         <p class="mb-[4px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]">CENA JUŻ OD</p>
                         <!-- /wp:paragraph -->
                         <!-- wp:paragraph -->
-                        <p class="text-[24px] font-bold">13 650 zł/m<sup>2</sup></p>
+                        <p class="text-[24px] font-bold">
+                          <?php
+                          if ($taxInwestycjeName == 'Osiedle Srebrniki') {
+                            echo '11 797zł zł/m<sup>2</sup>';
+                          } else if ($taxInwestycjeName == 'Toruńska 16') {
+                            echo '18 375zł zł/m<sup>2</sup>';
+                          } else if ($taxInwestycjeName == 'Wieżycka Folwark') {
+                            echo '8 930zł zł/m<sup>2</sup>';
+                          } else {
+                            echo 'Podaj kwote zł/m<sup>2</sup>';
+                          };
+                          ?>
+                        </p>
                         <!-- /wp:paragraph -->
                       </div>
                       <!-- /wp:group -->
@@ -232,5 +241,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
+
+
 </div>
 <!-- /wp:group -->
