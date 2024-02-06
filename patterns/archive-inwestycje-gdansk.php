@@ -191,6 +191,8 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                             echo '18 375zł zł/m<sup>2</sup>';
                           } else if ($taxInwestycjeName == 'Wieżycka Folwark') {
                             echo '8 930zł zł/m<sup>2</sup>';
+                          } else {
+                            echo 'Podaj kwote zł/m<sup>2</sup>';
                           };
                           ?>
                         </p>

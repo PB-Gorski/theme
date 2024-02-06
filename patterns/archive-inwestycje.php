@@ -183,7 +183,9 @@
                         echo '18 375 zł/m<sup>2</sup>';
                       } else if ($tax->name == 'Wieżycka Folwark') {
                         echo '8 930 zł/m<sup>2</sup>';
-                      }
+                      } else {
+                        echo 'Podaj kwote zł/m<sup>2</sup>';
+                      };
                       ?>
                     </p>
                     <!-- /wp:paragraph -->
