@@ -14,6 +14,10 @@
   <div id="Banner" class="wp-block-group page-kronika-budowy-sw-piotra test relative">
     <!-- wp:group -->
     <div class="wp-block-group w-full bg-banner h-[250px] desktop:h-[770px] relative flex desktop:block items-center">
+      <!-- wp:group -->
+      <div class="wp-block-group banner w-full h-full bg-black opacity-30 z-[1] absolute top-0 left-0"></div>
+      <!-- /wp:group -->
+
       <!-- wp:image -->
       <figure class="wp-block-image w-full h-full absolute top-0 left-0">
         <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/sw-piotra-bg.jpg" alt="banner-background">

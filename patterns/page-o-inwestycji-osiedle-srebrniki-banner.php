@@ -11,7 +11,6 @@
 <div id="Banner" class="wp-block-group banner h-[50vh] desktop:h-[80vh] relative">
   <!-- wp:group -->
   <div class="wp-block-group w-full h-full bg-banner relative flex desktop:block items-center">
-
     <!-- wp:group -->
     <div class="wp-block-group banner w-full h-full bg-black opacity-30 z-[1] absolute top-0 left-0"></div>
     <!-- /wp:group -->
