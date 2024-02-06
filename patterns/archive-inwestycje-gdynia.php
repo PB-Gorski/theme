@@ -140,7 +140,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
             $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
             $alias = strtr($alias, ' ', '-');
 
-            echo get_term($taxonomies[$i], 'inwestycja')
+            print_r(get_term($taxonomies[$i], 'inwestycja'));
         ?>
 
             <!-- wp:list-item -->
