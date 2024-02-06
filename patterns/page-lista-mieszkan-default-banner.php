@@ -24,7 +24,7 @@
         <!-- wp:group -->
         <div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[20px] leading-[45px] desktop:leading-[70px]">
           <!-- wp:heading {"level":1} -->
-          <h1><span data-aos="fade-right" data-aos-offset="30">Osiedle X - Zobacz dostępne mieszkania</span></h1>
+          <h1><span data-aos="fade-right" data-aos-offset="30">Osiedle Srebrniki - Zobacz dostępne mieszkania</span></h1>
           <!-- /wp:heading -->
         </div>
         <!-- /wp:group -->
