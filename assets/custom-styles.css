@@ -643,29 +643,52 @@ label{
   height: auto!important;
 } */
 
-#filter-layout3-filter-layout3 > .js-heightAnimation{
+#filter-layout3-filter-layout3 .js-heightAnimation{
+  overflow: hidden;
   height: 540px;
   transition: height 0.3s ease-out;
 }
-#filter-layout3-filter-layout3 > .js-heightAnimation.expanded{
+
+#filter-layout3-filter-layout3 .js-heightAnimation.transitioning{
+  overflow: hidden !important;
+}
+
+#filter-layout3-filter-layout3 .js-heightAnimation.expanded{
+  overflow: visible;
   height: 1000px;
 }
 
-#filter-layout3-filter-layout3 > .filter-entry {
+#filter-layout3-filter-layout3 .filter-entry {
   height: 990px;
 }
 
 @media only screen and (min-width: 1024px) {
-  #filter-layout3-filter-layout3 > .js-heightAnimation{
+  #filter-layout3-filter-layout3 .js-heightAnimation{
     height: 120px;
   }
-  #filter-layout3-filter-layout3 > .js-heightAnimation.expanded{
+  #filter-layout3-filter-layout3 .js-heightAnimation.expanded{
     height: 240px;
   }
-  #filter-layout3-filter-layout3 > .filter-entry {
+  #filter-layout3-filter-layout3 .filter-entry {
     height: 240px;
   }  
+  #filter-layout3-filter-layout3 .js-heightAnimation.expanded .filter-entry .btn-search ~ div {
+    opacity: 100%;
+    pointer-events: all;
+  }
 }
+
+#filter-layout3-filter-layout3 .js-heightAnimation .filter-entry .btn-search ~ div {
+  pointer-events: none;
+}
+
+#filter-layout3-filter-layout3 .js-heightAnimation.expanded .filter-entry .btn-search ~ div {
+  opacity: 100%;
+  pointer-events: all;
+  z-index: 1;
+}
+
+
 
 
 @media only screen and (min-width: 1024px) {

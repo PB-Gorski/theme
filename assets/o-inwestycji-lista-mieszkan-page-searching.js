@@ -287,6 +287,13 @@ window.addEventListener("load", function() {
       btnMore.addEventListener('click',()=>{
         heightAnimation.classList.toggle('expanded');
 
+        heightAnimation.addEventListener('transitionstart', ()=>{
+          heightAnimation.classList.add('transitioning')
+        })
+        heightAnimation.addEventListener('transitionend', ()=>{
+          heightAnimation.classList.remove('transitioning')
+        })
+
         // if(window.innerWidth > 480){
         //   searchBar.classList.toggle('desktop:h-[240px]');
         //   searchBar.classList.toggle('gap-y-[0px]');
