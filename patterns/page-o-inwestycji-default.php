@@ -25,7 +25,7 @@
       <!-- /wp:image -->
 
       <!-- wp:group -->
-      <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] z-[0] relative text-white">
+      <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] z-[2] relative text-white">
         <!-- wp:group -->
         <div class="wp-block-group title text-[36px] desktop:text-[60px] desktop:pt-[290px] mb-[50px] leading-[44px] desktop:leading-[70px]">
           <!-- wp:paragraph -->
