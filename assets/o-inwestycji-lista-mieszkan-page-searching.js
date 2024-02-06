@@ -274,16 +274,8 @@ window.addEventListener("load", function() {
 
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
-    // const searchBar = document.querySelector('.filter-entry');
     const heightAnimation = document.querySelector('.js-heightAnimation');
-    // const heightAnimation2 = document.querySelector('.filter-layout3');
-    // const sectionInwestycje = document.querySelector('#inwestycje');
-    // // const postsFound = document.querySelector('.js-post-found');
-    // const dropDownFIltersArr = document.querySelectorAll('.dropdown-filter');
-    
-      // if(window.innerWidth < 480){
-      //   searchBar.classList.toggle('active-search-more');
-      // }
+
       btnMore.addEventListener('click',()=>{
         heightAnimation.classList.toggle('expanded');
 
@@ -294,35 +286,6 @@ window.addEventListener("load", function() {
           heightAnimation.classList.remove('transitioning')
         })
 
-        // if(window.innerWidth > 480){
-        //   searchBar.classList.toggle('desktop:h-[240px]');
-        //   searchBar.classList.toggle('gap-y-[0px]');
-        //   searchBar.classList.toggle('z-[2]');
-        //   dropDownFIltersArr[6].classList.toggle('opacity-100');
-        //   dropDownFIltersArr[7].classList.toggle('opacity-100');
-        //   dropDownFIltersArr[9].classList.toggle('opacity-100');
-        //   dropDownFIltersArr[10].classList.toggle('opacity-100');
-        //   dropDownFIltersArr[11].classList.toggle('opacity-100');
-
-        //   dropDownFIltersArr[6].classList.toggle('z-[1]');
-        //   dropDownFIltersArr[7].classList.toggle('z-[1]');
-        //   dropDownFIltersArr[9].classList.toggle('z-[1]');
-        //   dropDownFIltersArr[10].classList.toggle('z-[1]');
-        //   dropDownFIltersArr[11].classList.toggle('z-[1]');
-
-        //   dropDownFIltersArr[6].classList.toggle('pointer-events-auto');
-        //   dropDownFIltersArr[7].classList.toggle('pointer-events-auto');
-        //   dropDownFIltersArr[9].classList.toggle('pointer-events-auto');
-        //   dropDownFIltersArr[10].classList.toggle('pointer-events-auto');
-        //   dropDownFIltersArr[11].classList.toggle('pointer-events-auto');
-        //   // sectionInwestycje.classList.toggle('z-[1]');
-        //   foundedPostOnStart.classList.toggle('top-[240px]');
-        //   heightAnimation2.classList.toggle('h-auto');
-        // }else{
-        //   heightAnimation.classList.toggle('h-[1000px]');
-        //   foundedPostOnStart.classList.toggle('top-[1000px]');
-        // };
-        // document.querySelector('#filter-layout3-filter-layout3').classList.toggle('h-[840px]')
       });
 
     // metraz selects
