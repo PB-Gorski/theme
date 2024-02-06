@@ -149,9 +149,9 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                   <!-- wp:group -->
                   <div class="wp-block-group term_investment_img desktop:w-[50%] h-[330px] desktop:h-full mb-[30px]">
                     <?php
-                    if (term_description($tax->term_id)) { ?>
+                    if (term_description($my_term->term_id)) { ?>
                       <!-- wp:paragraph -->
-                      <?php echo term_description($tax->term_id); ?>
+                      <?php echo term_description($my_term->term_id); ?>
                       <!-- /wp:paragraph -->
                     <?php
                     } else { ?>
