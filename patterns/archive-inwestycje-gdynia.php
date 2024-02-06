@@ -87,7 +87,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
         $count = $query->found_posts;
         ?>
         <!-- wp:heading {"level":4} -->
-        <h4 class="text-[30px] text-[#8a8f99]"><?php print_r(count($my_terms)); ?> inwestycje / <?php echo $count - 1; ?> lokali</h4>
+        <h4 class="text-[30px] text-[#8a8f99]"><?php print_r(count($my_terms)); ?> inwestycje / <?php echo $count; ?> lokali</h4>
         <!-- /wp:heading -->
       </div>
       <!-- /wp:group -->
@@ -146,11 +146,23 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
               <div class="wp-block-group relative group inline-block cursor-default desktop:max-w-full w-full h-full">
                 <!-- wp:group -->
                 <div class="wp-block-group wrapper w-full h-full desktop:flex <?php echo (!($counter % 2)) ? 'flex-row-reverse' : ''; ?> gap-[50px]">
-                  <!-- wp:image -->
-                  <figure class="wp-block-image desktop:w-[50%] h-[330px] desktop:h-full mb-[30px] lowercase">
-                    <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $taxNoSpaces2 . '.jpeg'; ?>" alt="inwestycje-img">
-                  </figure>
-                  <!-- /wp:image -->
+                  <!-- wp:group -->
+                  <div class="wp-block-group term_investment_img desktop:w-[50%] h-[330px] desktop:h-full mb-[30px]">
+                    <?php
+                    if (term_description($my_term->term_id)) { ?>
+                      <!-- wp:paragraph -->
+                      <?php echo term_description($my_term->term_id); ?>
+                      <!-- /wp:paragraph -->
+                    <?php
+                    } else { ?>
+                      <!-- wp:image -->
+                      <figure class="wp-block-image desktop:w-full h-[330px] desktop:h-full mb-[30px]">
+                        <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg'; ?>" alt="inwestycje-img">
+                      </figure>
+                      <!-- /wp:image -->
+                    <?php }; ?>
+                  </div>
+                  <!-- /wp:group -->
 
                   <!-- wp:group -->
                   <div class="wp-block-group content desktop:w-[50%] flex flex-col items-start justify-center gap-[15px]">
