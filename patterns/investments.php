@@ -139,7 +139,6 @@
               <!-- /wp:group -->
             </a>
             <!-- /wp:paragraph -->
-            </span>
           </li>
           <!-- /wp:list-item -->
       <?php
