@@ -639,12 +639,7 @@ label{
   }
 }
 
-/* #filter-layout3-filter-layout3 > .filter-entry.active-search-more {
-  height: auto!important;
-} */
-
 #filter-layout3-filter-layout3 .js-heightAnimation{
-  overflow: hidden;
   height: 540px;
   transition: height 0.3s ease-out;
 }
@@ -682,6 +677,10 @@ label{
   pointer-events: none;
 }
 
+#filter-layout3-filter-layout3 .js-heightAnimation:not(.expanded, .transitioning) .filter-entry .btn-search ~ div {
+  display: none;
+}
+
 #filter-layout3-filter-layout3 .js-heightAnimation.expanded .filter-entry .btn-search ~ div {
   opacity: 100%;
   pointer-events: all;
@@ -715,43 +714,10 @@ label{
   max-width: 100%!important;
 }
 .filter-layout3-148 > .filter-entry{
-  /* height: 300px; */
   margin-bottom: 40px;
   transition: height 0.3s ease-out;
-
-  /* max-width: 1170px; */
-  /* margin-left: auto;
-  margin-right: auto; */
-}
-/* .filter-entry{
-  height: 120px;
-}
-@media only screen and (max-width: 1024px) {
-  .filter-entry{
-    height: 990px;
-  }
-}
-.filterContainer{
-  transition: all 0.3s ease;
-  height: auto;
-}
-@media only screen and (max-width: 1024px) {
-  .filterContainer{
-    transition: all 0.3s ease;
-    height: 540px;
-  }
 }
 
-#filter-layout3-filter-layout3{
-  transition: height 0.3s ease;
-  height: auto;
-}
-@media only screen and (max-width: 1024px) {
-  #filter-layout3-filter-layout3{
-    transition: height 0.3s ease;
-    height: 540px;
-  }
-} */
 .post-entry.post-custom-layout.post-custom-layout-148.post-custom-layout-148-2,
 .post-entry.post-custom-layout.post-custom-layout-148.post-custom-layout-148-3{
   background-color: white;
