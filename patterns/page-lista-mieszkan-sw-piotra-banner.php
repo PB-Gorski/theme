@@ -22,7 +22,7 @@
     </figure>
     <!-- /wp:image -->
     <!-- wp:group -->
-    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pt-[100px] z-[2]">
+    <div class="wp-block-group text-content container mx-auto desktop:px-0 px-[20px] desktop:pt-[100px] relative z-[2]">
       <!-- wp:group -->
       <div class="wp-block-group title-wrapper">
         <!-- wp:group -->
