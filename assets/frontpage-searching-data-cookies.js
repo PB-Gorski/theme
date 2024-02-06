@@ -32,40 +32,41 @@ window.addEventListener("load", function() {
 
     // search more options handle
     const btnMore = document.querySelector('.btn-more');
-    const searchBar = document.querySelector('.filter-entry');
-    const searchBar2 = document.querySelector('.ymc-smart-filter-container');
+    // const searchBar = document.querySelector('.filter-entry');
+    // const searchBar2 = document.querySelector('.ymc-smart-filter-container');
     const heightAnimation = document.querySelector('.js-heightAnimation');
-    const heightAnimation2 = document.querySelector('.filter-layout3');
-    const sectionInwestycje = document.querySelector('#inwestycje');
-    const dropDownFIltersArr = document.querySelectorAll('.dropdown-filter');
+    // const heightAnimation2 = document.querySelector('.filter-layout3');
+    // const sectionInwestycje = document.querySelector('#inwestycje');
+    // const dropDownFIltersArr = document.querySelectorAll('.dropdown-filter');
 
 
     btnMore.addEventListener('click',()=>{
-      if(window.innerWidth > 480){
-        searchBar.classList.toggle('desktop:h-[240px]');
-        searchBar2.classList.toggle('h-[240px]');
-        searchBar.classList.toggle('gap-y-[0px]');
-        dropDownFIltersArr[6].classList.toggle('opacity-100');
-        dropDownFIltersArr[7].classList.toggle('opacity-100');
-        dropDownFIltersArr[9].classList.toggle('opacity-100');
-        dropDownFIltersArr[10].classList.toggle('opacity-100');
-        dropDownFIltersArr[11].classList.toggle('opacity-100');
+      heightAnimation.classList.toggle('expanded');
+      // if(window.innerWidth > 480){
+      //   searchBar.classList.toggle('desktop:h-[240px]');
+      //   searchBar2.classList.toggle('h-[240px]');
+      //   searchBar.classList.toggle('gap-y-[0px]');
+      //   dropDownFIltersArr[6].classList.toggle('opacity-100');
+      //   dropDownFIltersArr[7].classList.toggle('opacity-100');
+      //   dropDownFIltersArr[9].classList.toggle('opacity-100');
+      //   dropDownFIltersArr[10].classList.toggle('opacity-100');
+      //   dropDownFIltersArr[11].classList.toggle('opacity-100');
 
-        dropDownFIltersArr[6].classList.toggle('z-[1]');
-        dropDownFIltersArr[7].classList.toggle('z-[1]');
-        dropDownFIltersArr[9].classList.toggle('z-[1]');
-        dropDownFIltersArr[10].classList.toggle('z-[1]');
-        dropDownFIltersArr[11].classList.toggle('z-[1]');
+      //   dropDownFIltersArr[6].classList.toggle('z-[1]');
+      //   dropDownFIltersArr[7].classList.toggle('z-[1]');
+      //   dropDownFIltersArr[9].classList.toggle('z-[1]');
+      //   dropDownFIltersArr[10].classList.toggle('z-[1]');
+      //   dropDownFIltersArr[11].classList.toggle('z-[1]');
 
-        dropDownFIltersArr[6].classList.toggle('pointer-events-auto');
-        dropDownFIltersArr[7].classList.toggle('pointer-events-auto');
-        dropDownFIltersArr[9].classList.toggle('pointer-events-auto');
-        dropDownFIltersArr[10].classList.toggle('pointer-events-auto');
-        dropDownFIltersArr[11].classList.toggle('pointer-events-auto');
-        heightAnimation2.classList.toggle('h-auto');
-      }else{
-        heightAnimation2.classList.toggle('h-auto');
-      };
+      //   dropDownFIltersArr[6].classList.toggle('pointer-events-auto');
+      //   dropDownFIltersArr[7].classList.toggle('pointer-events-auto');
+      //   dropDownFIltersArr[9].classList.toggle('pointer-events-auto');
+      //   dropDownFIltersArr[10].classList.toggle('pointer-events-auto');
+      //   dropDownFIltersArr[11].classList.toggle('pointer-events-auto');
+      //   heightAnimation2.classList.toggle('h-auto');
+      // }else{
+      //   heightAnimation2.classList.toggle('h-auto');
+      // };
     });
 
     // wyszukiwanie mieszkan po filtrach (cena)
