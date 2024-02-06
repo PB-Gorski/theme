@@ -72,19 +72,7 @@
 
                       <!-- wp:group -->
                       <div class="wp-block-group term_investment_img h-auto desktop:max-h-full mb-[10px]">
-                        <?php
-                        if (term_description($tax->term_id)) { ?>
-                          <!-- wp:paragraph -->
-                          <?php echo term_description($tax->term_id); ?>
-                          <!-- /wp:paragraph -->
-                        <?php
-                        } else { ?>
-                          <!-- wp:image -->
-                          <figure class="wp-block-image h-auto desktop:max-h-full mb-[10px]">
-                            <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg'; ?>" alt="inwestycje-img">
-                          </figure>
-                          <!-- /wp:image -->
-                        <?php }; ?>
+
                       </div>
                       <!-- /wp:group -->
 
@@ -104,12 +92,7 @@
 
                         <!-- wp:paragraph -->
                         <p class="mr-[20px] text-bgDarkGray text-[16px] desktop:text-[18px]">
-                          <?php
-                          if ($tax->name == 'Osiedle Srebrniki') echo 'Gdańsk';
-                          elseif ($tax->name == 'Św. Piotra') echo 'Gdynia';
-                          elseif ($tax->name == 'Toruńska 16') echo 'Gdańsk';
-                          elseif ($tax->name == 'Wieżycka Folwark') echo 'Gdańsk';
-                          ?>
+
                         </p>
                         <!-- /wp:paragraph -->
 
