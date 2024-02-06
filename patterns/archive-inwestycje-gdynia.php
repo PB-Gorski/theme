@@ -198,7 +198,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                         <p class="text-[24px] font-bold">
                           <?php
                           if ($taxInwestycjeName == 'Św. Piotra') {
-                            echo '13 650zł zł/m<sup>2</sup>';
+                            echo '13 650 zł/m<sup>2</sup>';
                           } else {
                             echo 'Podaj kwote zł/m<sup>2</sup>';
                           };
