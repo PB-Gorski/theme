@@ -59,9 +59,10 @@
       ?>
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full w-full inline-block">
-            <!-- wp:paragraph -->
-            <p>
-              <span>
+            <!-- wp:group -->
+            <div class="wp-block-group">
+              <!-- wp:paragraph -->
+              <p>
                 <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block w-full">
                   <!-- wp:group -->
                   <div class="wp-block-group relative group desktop:max-w-full  h-full">
@@ -140,9 +141,10 @@
                   </div>
                   <!-- /wp:group -->
                 </a>
-              </span>
-            </p>
-            <!-- /wp:paragraph -->
+              </p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:wp-group -->
           </li>
           <!-- /wp:list-item -->
       <?php
