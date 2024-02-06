@@ -654,6 +654,8 @@ label{
 }
 
 #filter-layout3-filter-layout3 .filter-entry {
+  position: relative;
+  z-index: 1;
   height: 990px;
 }
 
@@ -667,24 +669,20 @@ label{
   #filter-layout3-filter-layout3 .filter-entry {
     height: 240px;
   }  
-  #filter-layout3-filter-layout3 .js-heightAnimation.expanded .filter-entry .btn-search ~ div {
-    opacity: 100%;
-    pointer-events: all;
-  }
 }
 
 #filter-layout3-filter-layout3 .js-heightAnimation .filter-entry .btn-search ~ div {
   pointer-events: none;
 }
 
-#filter-layout3-filter-layout3 .js-heightAnimation:not(.expanded, .transitioning) .filter-entry .btn-search ~ div {
-  display: none;
+#filter-layout3-filter-layout3 .js-heightAnimation:not(.expanded) .filter-entry .btn-search ~ div {
+  pointer-events: none;
+  opacity: 0;
 }
 
 #filter-layout3-filter-layout3 .js-heightAnimation.expanded .filter-entry .btn-search ~ div {
   opacity: 100%;
   pointer-events: all;
-  z-index: 1;
 }
 
 
