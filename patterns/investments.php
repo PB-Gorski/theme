@@ -60,71 +60,75 @@
           <!-- wp:list-item -->
           <li class="invest-tile max-w-full w-full inline-block">
             <!-- wp:paragraph -->
-            <p><a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block w-full">
-                <!-- wp:group -->
-                <div class="wp-block-group relative group desktop:max-w-full  h-full">
+            <p>
+              <span>
+                <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block w-full">
                   <!-- wp:group -->
-                  <div class="wp-block-group wrapper w-full h-full">
-
-
+                  <div class="wp-block-group relative group desktop:max-w-full  h-full">
                     <!-- wp:group -->
-                    <div class="wp-block-group term_investment_img h-auto desktop:max-h-full mb-[10px]">
-                      <?php
-                      if (term_description($tax->term_id)) { ?>
-                        <!-- wp:paragraph -->
-                        <?php echo term_description($tax->term_id); ?>
-                        <!-- /wp:paragraph -->
-                      <?php
-                      } else { ?>
-                        <!-- wp:image -->
-                        <figure class="wp-block-image h-auto desktop:max-h-full mb-[10px]">
-                          <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg'; ?>" alt="inwestycje-img">
-                        </figure>
-                        <!-- /wp:image -->
-                      <?php }; ?>
-                    </div>
-                    <!-- /wp:group -->
+                    <div class="wp-block-group wrapper w-full h-full">
 
-
-
-                    <!-- wp:image -->
-                    <figure class="wp-block-image hidden h-[330px] desktop:max-h-full mb-[10px]">
-                      <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $alias . '.jpeg'; ?>" alt="inwestycje-img">
-                    </figure>
-                    <!-- /wp:image -->
-
-                    <!-- wp:group -->
-                    <div class="wp-block-group content flex flex-col items-start justify-center gap-[15px]">
-                      <!-- wp:heading {"level":3} -->
-                      <h3 class="mr-[20px] text-[28px] desktop:text-[30px] font-bold border-b-[2px] border-b-primaryRed"><?php echo $tax->name; ?></h3>
-                      <!-- /wp:heading {"level":3} -->
-
-                      <!-- wp:paragraph -->
-                      <p class="mr-[20px] text-bgDarkGray text-[16px] desktop:text-[18px]">
-                        <?php
-                        if ($tax->name == 'Osiedle Srebrniki') echo 'Gdańsk';
-                        elseif ($tax->name == 'Św. Piotra') echo 'Gdynia';
-                        elseif ($tax->name == 'Toruńska 16') echo 'Gdańsk';
-                        elseif ($tax->name == 'Wieżycka Folwark') echo 'Gdańsk';
-                        ?>
-                      </p>
-                      <!-- /wp:paragraph -->
 
                       <!-- wp:group -->
-                      <div class="wp-block-group flex">
-                        <!-- wp:group -->
-                        <div class="wp-block-group available-apartments pr-[35px] flex items-center gap-[25px]">
+                      <div class="wp-block-group term_investment_img h-auto desktop:max-h-full mb-[10px]">
+                        <?php
+                        if (term_description($tax->term_id)) { ?>
                           <!-- wp:paragraph -->
-                          <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
+                          <?php echo term_description($tax->term_id); ?>
                           <!-- /wp:paragraph -->
+                        <?php
+                        } else { ?>
+                          <!-- wp:image -->
+                          <figure class="wp-block-image h-auto desktop:max-h-full mb-[10px]">
+                            <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-blog/default-post-image.jpg'; ?>" alt="inwestycje-img">
+                          </figure>
+                          <!-- /wp:image -->
+                        <?php }; ?>
+                      </div>
+                      <!-- /wp:group -->
+
+
+
+                      <!-- wp:image -->
+                      <figure class="wp-block-image hidden h-[330px] desktop:max-h-full mb-[10px]">
+                        <img src="<?php echo home_url() . '/wp-content/themes/pbgorski/assets/img/page-inwestycje/' . $alias . '.jpeg'; ?>" alt="inwestycje-img">
+                      </figure>
+                      <!-- /wp:image -->
+
+                      <!-- wp:group -->
+                      <div class="wp-block-group content flex flex-col items-start justify-center gap-[15px]">
+                        <!-- wp:heading {"level":3} -->
+                        <h3 class="mr-[20px] text-[28px] desktop:text-[30px] font-bold border-b-[2px] border-b-primaryRed"><?php echo $tax->name; ?></h3>
+                        <!-- /wp:heading {"level":3} -->
+
+                        <!-- wp:paragraph -->
+                        <p class="mr-[20px] text-bgDarkGray text-[16px] desktop:text-[18px]">
+                          <?php
+                          if ($tax->name == 'Osiedle Srebrniki') echo 'Gdańsk';
+                          elseif ($tax->name == 'Św. Piotra') echo 'Gdynia';
+                          elseif ($tax->name == 'Toruńska 16') echo 'Gdańsk';
+                          elseif ($tax->name == 'Wieżycka Folwark') echo 'Gdańsk';
+                          ?>
+                        </p>
+                        <!-- /wp:paragraph -->
+
+                        <!-- wp:group -->
+                        <div class="wp-block-group flex">
                           <!-- wp:group -->
-                          <div class="wp-block-group leading-[24px]">
+                          <div class="wp-block-group available-apartments pr-[35px] flex items-center gap-[25px]">
                             <!-- wp:paragraph -->
-                            <p class="text-[18px] text-bgDarkGray">dostępnych</p>
+                            <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
                             <!-- /wp:paragraph -->
-                            <!-- wp:paragraph -->
-                            <p class="text-[18px] text-bgDarkGray">mieszkań</p>
-                            <!-- /wp:paragraph -->
+                            <!-- wp:group -->
+                            <div class="wp-block-group leading-[24px]">
+                              <!-- wp:paragraph -->
+                              <p class="text-[18px] text-bgDarkGray">dostępnych</p>
+                              <!-- /wp:paragraph -->
+                              <!-- wp:paragraph -->
+                              <p class="text-[18px] text-bgDarkGray">mieszkań</p>
+                              <!-- /wp:paragraph -->
+                            </div>
+                            <!-- /wp:group -->
                           </div>
                           <!-- /wp:group -->
                         </div>
@@ -135,9 +139,9 @@
                     <!-- /wp:group -->
                   </div>
                   <!-- /wp:group -->
-                </div>
-                <!-- /wp:group -->
-              </a></p>
+                </a>
+              </span>
+            </p>
             <!-- /wp:paragraph -->
           </li>
           <!-- /wp:list-item -->
