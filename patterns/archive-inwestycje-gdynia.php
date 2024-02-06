@@ -139,7 +139,10 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
             $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
             $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
             $alias = strtr($alias, ' ', '-');
+
+            echo get_term($taxonomies[$i], 'inwestycja')
         ?>
+
             <!-- wp:list-item -->
             <li class="invest-tile current max-w-full test desktop:h-[450px] mb-[80px]">
               <!-- wp:group -->
@@ -172,17 +175,10 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
 
                     <!-- wp:group -->
                     <div class="wp-block-group flex">
-                      <?php
-                      $query = new WP_Query(array(
-                        'miasto' => 'gdansk',
-                        'post_status' => 'publish'
-                      ));
-                      $count2 = $query->found_posts;
-                      ?>
                       <!-- wp:group -->
                       <div class="wp-block-group available-apartments pr-[35px] flex items-center gap-[25px] border-r-[1px] border-[#ebecee]">
                         <!-- wp:paragraph -->
-                        <p class="text-[48px] text-primaryRed font-bold"><?php echo $count2; ?></p>
+                        <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
                         <!-- /wp:paragraph -->
                         <!-- wp:group -->
                         <div class="wp-block-group leading-[24px]">
