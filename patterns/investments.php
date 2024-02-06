@@ -61,6 +61,8 @@
           <li class="invest-tile max-w-full w-full inline-block">
             <!-- wp:group -->
             <div class="wp-block-group">
+              <!-- wp:paragraph -->
+
               <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block w-full">
                 <!-- wp:group -->
                 <div class="wp-block-group relative group desktop:max-w-full  h-full">
@@ -139,6 +141,7 @@
                 </div>
                 <!-- /wp:group -->
               </a>
+              <!-- wp:paragraph -->
             </div>
             <!-- /wp:group -->
           </li>
