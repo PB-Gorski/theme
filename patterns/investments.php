@@ -140,7 +140,7 @@
                 <!-- /wp:group -->
               </a>
             </div>
-            <!-- /wp:wp-group -->
+            <!-- /wp:group -->
           </li>
           <!-- /wp:list-item -->
       <?php
