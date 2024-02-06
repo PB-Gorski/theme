@@ -141,7 +141,7 @@
                 </div>
                 <!-- /wp:group -->
               </a>
-              <!-- wp:paragraph -->
+              <!-- /wp:paragraph -->
             </div>
             <!-- /wp:group -->
           </li>
