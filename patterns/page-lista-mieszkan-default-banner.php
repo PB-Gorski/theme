@@ -2,7 +2,7 @@
 
 /**
  * Title: lista-mieszkan-default-banner
- * Slug: lista-mieszkan-osiedle-srebrniki-banner
+ * Slug: lista-mieszkan-default--banner
  * Categories: Banner, Front Page
  * Viewport Width: 1280
  */
