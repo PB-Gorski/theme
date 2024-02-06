@@ -197,12 +197,8 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
                         <!-- wp:paragraph -->
                         <p class="text-[24px] font-bold">
                           <?php
-                          if ($taxInwestycjeName == 'Osiedle Srebrniki') {
-                            echo '11 797zł zł/m<sup>2</sup>';
-                          } else if ($taxInwestycjeName == 'Toruńska 16') {
-                            echo '18 375zł zł/m<sup>2</sup>';
-                          } else if ($taxInwestycjeName == 'Wieżycka Folwark') {
-                            echo '8 930zł zł/m<sup>2</sup>';
+                          if ($taxInwestycjeName == 'Św Piotra') {
+                            echo '13 650zł zł/m<sup>2</sup>';
                           } else {
                             echo 'Podaj kwote zł/m<sup>2</sup>';
                           };
