@@ -172,10 +172,17 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
 
                     <!-- wp:group -->
                     <div class="wp-block-group flex">
+                      <?php
+                      $query = new WP_Query(array(
+                        'miasto' => 'gdansk',
+                        'post_status' => 'publish'
+                      ));
+                      $count2 = $query->found_posts;
+                      ?>
                       <!-- wp:group -->
                       <div class="wp-block-group available-apartments pr-[35px] flex items-center gap-[25px] border-r-[1px] border-[#ebecee]">
                         <!-- wp:paragraph -->
-                        <p class="text-[48px] text-primaryRed font-bold"><?php echo $currentTermCount; ?></p>
+                        <p class="text-[48px] text-primaryRed font-bold"><?php echo $count2; ?></p>
                         <!-- /wp:paragraph -->
                         <!-- wp:group -->
                         <div class="wp-block-group leading-[24px]">
