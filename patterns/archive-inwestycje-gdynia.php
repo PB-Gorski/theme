@@ -87,7 +87,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
         $count = $query->found_posts;
         ?>
         <!-- wp:heading {"level":4} -->
-        <h4 class="text-[30px] text-[#8a8f99]"><?php print_r(count($my_terms)); ?> inwestycje / <?php echo $count - 1; ?> lokali</h4>
+        <h4 class="text-[30px] text-[#8a8f99]"><?php print_r(count($my_terms)); ?> inwestycje / <?php echo $count; ?> lokali</h4>
         <!-- /wp:heading -->
       </div>
       <!-- /wp:group -->
