@@ -81,8 +81,11 @@ h4 {
     object-position: 40%;
   }
 }
+.banner-lista-mieszkan figure[class*=wp-block-image] img,
 .banner figure[class*=wp-block-image] img {
   object-fit: cover!important;
+  height: 100%!important;
+  width: 100%!important;
 }
 .wp-block-post-featured-image{
   height: 100%;
