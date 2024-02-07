@@ -1,276 +1,397 @@
 <!-- wp:group -->
 <div id="PB Górski theme" class="wp-block-group overflow-x-hidden">
+  <!-- wp:template-part {"slug":"front-page/header-white"} /-->
 
-	<!-- wp:template-part {"slug":"front-page/header-white"} /-->
+  <!-- wp:group -->
+  <div id="main" class="wp-block-group">
+    <!-- wp:group -->
+    <div id="Page content" class="wp-block-group page-content-wrapper">
+      <!-- wp:query {"query":{"inherit":true}} -->
+      <!-- wp:post-template -->
+      <!-- wp:pattern {"slug":"_single-mieszkania"} /-->
 
-	<!-- wp:group -->
-	<div id="main" class="wp-block-group ">
-		<!-- wp:group -->
-		<div id="Page content" class="wp-block-group page-content-wrapper">      			
-			<!-- wp:query {"query":{"inherit":true}} -->
-				<!-- wp:post-template -->
-				<!-- wp:pattern {"slug":"_single-mieszkania"} /-->
+      <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
+      <div
+        id="Wpis"
+        class="wp-block-group mieszkania-page-post ooverflow-hidden relative"
+      >
+        <!-- wp:group -->
+        <div
+          class="wp-block-group hidden flex gap-[30px] items-center h-[47px] p-[5px_60px] rounded-full border-[2px] border-[rgba(255,255,255,0.33)]"
+        >
+          <!-- wp:image -->
+          <figure class="wp-block-image m-0">
+            <img
+              src="/wp-content/themes/pbgorski/assets/img/frontpage/phone-2.png"
+              alt="phone-icon"
+            />
+          </figure>
+          <!-- /wp:image -->
+          <!-- wp:paragraph -->
+          <a href="tel:+48583407900" class="text-white">(+48) 58 340-79-00</a>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
 
-				<!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-				<div id="Wpis" class="wp-block-group mieszkania-page-post ooverflow-hidden relative">
-					<!-- wp:group -->
-					<div class="wp-block-group hidden flex gap-[30px] items-center h-[47px] p-[5px_60px] rounded-full border-[2px] border-[rgba(255,255,255,0.33)]">
-						<!-- wp:image -->
-						<figure class="wp-block-image m-0">
-							<img src="/wp-content/themes/pbgorski/assets/img/frontpage/phone-2.png" alt="phone-icon">
-						</figure>
-						<!-- /wp:image -->
-						<!-- wp:paragraph -->
-						<a href="tel:+48583407900" class="text-white ">(+48) 58 340-79-00</a>
-						<!-- /wp:paragraph -->
-					</div>
-					<!-- /wp:group -->
+        <!-- wp:group -->
+        <div
+          class="wp-block-group banner w-full h-[460px] relative py-[60px] pt-[30px] desktop:pt-[60px] before:content-[''] before:inline-block before:w-full before:h-full before:bg-[#091224] before:absolute before:top-0 before:left-0 before:opacity-[25%]"
+        >
+          <!-- wp:image -->
+          <figure
+            class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1] overflow-hidden"
+          >
+            <img
+              src="/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/lista-mieszkan-bg.jpeg"
+              alt="banner-bg "
+            />
+          </figure>
+          <!-- /wp:image -->
 
-					<!-- wp:group -->
-					<div class="wp-block-group banner w-full h-[460px] relative py-[60px] pt-[30px] desktop:pt-[60px] before:content-[''] before:inline-block before:w-full before:h-full before:bg-[#091224] before:absolute before:top-0 before:left-0 before:opacity-[25%]">
-						<!-- wp:image -->
-						<figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
-							<img src="/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/lista-mieszkan-bg.jpeg" alt="banner-bg ">
-						</figure>
-						<!-- /wp:image -->
+          <!-- wp:group -->
+          <div
+            class="wp-block-group text-content container mx-auto desktop:px-[0px] px-[20px]"
+          >
+            <!-- wp:group -->
+            <div
+              class="wp-block-group group mb-[20px] btn-back desktop:mb-[40px] w-fit flex items-center gap-[8px]"
+            >
+              <!-- wp:paragraph -->
+              <p
+                class="text-[18px] text-[#bcbcbc] hover:text-white transition duration-[300ms] ease z-[1]"
+              >
+                <a href="javascript:history.back()" class="_js-backToList"
+                  >&larr; Wyszukiwanie</a
+                >
+              </p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
 
-						<!-- wp:group -->
-						<div class="wp-block-group text-content container mx-auto desktop:px-[0px] px-[20px]">
-							<!-- wp:group -->
-							<div class="wp-block-group group mb-[20px] btn-back desktop:mb-[40px] w-fit flex items-center gap-[8px]">
-								<!-- wp:paragraph -->
-								<p class="text-[18px] text-[#bcbcbc] hover:text-white transition duration-[300ms] ease z-[1]"><a href="javascript:history.back()" class="_js-backToList">&larr; Wyszukiwanie</a></p>
-								<!-- /wp:paragraph -->
-							</div>
-							<!-- /wp:group -->
+            <!-- wp:group -->
+            <div class="wp-block-group title-wrapper relative">
+              <!-- wp:group -->
+              <div
+                class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[10px] desktop:mb-[20px] leading-[45px] desktop:leading-[70px]"
+              >
+                <!-- wp:post-title /-->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div
+                class="wp-block-group sub-title desktop:text-[24px] text-[20px] text-[#8a8f99] flex gap-[4px]"
+              >
+                <!-- wp:paragraph -->
+                <p class="max-w-[550px] text-white font-medium opacity-[0.5]">
+                  W inwestycji
+                </p>
+                <!-- /wp:paragraph -->
 
-							<!-- wp:group -->
-							<div class="wp-block-group title-wrapper relative">
-								<!-- wp:group -->
-								<div class="wp-block-group title text-white text-[36px] desktop:text-[60px] font-bold mb-[10px] desktop:mb-[20px] leading-[45px] desktop:leading-[70px]">
-									<!-- wp:post-title /-->
-								</div>
-								<!-- /wp:group -->
-								<!-- wp:group -->
-								<div class="wp-block-group sub-title desktop:text-[24px] text-[20px] text-[#8a8f99] flex gap-[4px]">
-									<!-- wp:paragraph -->
-									<p class="max-w-[550px] text-white font-medium opacity-[0.5] ">W inwestycji </p>
-									<!-- /wp:paragraph -->
+                <!-- wp:group -->
+                <div class="wp-block-group text-white">
+                  <!-- wp:post-terms {"term":"inwestycja"} /-->
+                </div>
+                <!-- /wp:group -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
 
-									<!-- wp:group -->
-									<div class="wp-block-group text-white">
-										<!-- wp:post-terms {"term":"inwestycja"} /-->
-									</div>
-									<!-- /wp:group -->
-								</div>
-								<!-- /wp:group -->
-							</div>
-							<!-- /wp:group -->
-						</div>
-						<!-- /wp:group -->
+          <!-- wp:group -->
+          <div
+            class="wp-block-group bar-info max-w-[1260px] wide:max-w-[1445px] w-full mx-auto desktop:h-[120px] bg-[#2e384d] desktop:px-[50px] text-white text-[24px] absolute bottom-[-60px] left-[50%] translate-x-[-50%] flex justify-center items-center"
+          >
+            <!-- wp:group -->
+            <div
+              class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] py-[30px] desktop:py-0 flex items-center desktop:gap-[110px] flex-wrap"
+            >
+              <!-- wp:group -->
+              <div
+                class="wp-block-group col mb-[15px] basis-1/2 desktop:basis-auto"
+              >
+                <!-- wp:paragraph -->
+                <p
+                  class="mb-[5px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]"
+                >
+                  odbiór
+                </p>
+                <!-- /wp:paragraph -->
+                <!-- wp:group -->
+                <div class="wp-block-group text-[20px]">
+                  <!-- wp:post-terms {"term":"termin"} /-->
+                </div>
+                <!-- /wp:group -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div
+                class="wp-block-group col mb-[15px] basis-1/2 desktop:basis-auto"
+              >
+                <!-- wp:paragraph -->
+                <p
+                  class="mb-[5px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]"
+                >
+                  powierzchnia
+                </p>
+                <!-- /wp:paragraph -->
+                <!-- wp:group -->
+                <div class="wp-block-group wrapper flex gap-[4px]">
+                  <!-- wp:post-terms {"term":"metraz"} /-->
 
-						<!-- wp:group -->
-						<div class="wp-block-group bar-info max-w-[1260px] wide:max-w-[1445px] w-full mx-auto desktop:h-[120px] bg-[#2e384d] desktop:px-[50px] text-white text-[24px] absolute bottom-[-60px] left-[50%] translate-x-[-50%] flex justify-center items-center">
-							<!-- wp:group -->
-							<div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] py-[30px] desktop:py-0 flex items-center desktop:gap-[110px] flex-wrap">
-								<!-- wp:group -->
-								<div class="wp-block-group col mb-[15px] basis-1/2 desktop:basis-auto">
-									<!-- wp:paragraph -->
-									<p class="mb-[5px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">odbiór</p>
-									<!-- /wp:paragraph -->
-									<!-- wp:group -->
-									<div class="wp-block-group text-[20px]">
-										<!-- wp:post-terms {"term":"termin"} /-->
-									</div>
-									<!-- /wp:group -->
-								</div>
-								<!-- /wp:group -->
-								<!-- wp:group -->
-								<div class="wp-block-group col mb-[15px] basis-1/2 desktop:basis-auto">
-									<!-- wp:paragraph -->
-									<p class="mb-[5px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">powierzchnia</p>
-									<!-- /wp:paragraph -->
-									<!-- wp:group -->
-									<div class="wp-block-group wrapper flex gap-[4px]">
-										<!-- wp:post-terms {"term":"metraz"} /-->
+                  <!-- wp:paragraph -->
+                  <p>m<sup>2</sup></p>
+                  <!-- /wp:paragraph -->
+                </div>
+                <!-- /wp:group -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div
+                class="wp-block-group col mb-[15px] basis-1/2 desktop:basis-auto"
+              >
+                <!-- wp:paragraph -->
+                <p
+                  class="mb-[5px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]"
+                >
+                  kondygnacja
+                </p>
+                <!-- /wp:paragraph -->
+                <!-- wp:post-terms {"term":"pietro"} /-->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div
+                class="wp-block-group col mb-[15px] basis-1/2 desktop:basis-auto"
+              >
+                <!-- wp:paragraph -->
+                <p
+                  class="mb-[5px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]"
+                >
+                  liczba pokoi
+                </p>
+                <!-- /wp:paragraph -->
+                <!-- wp:post-terms {"term":"pokoje"} /-->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
 
-										<!-- wp:paragraph -->
-										<p>m<sup>2</sup></p>
-										<!-- /wp:paragraph -->
-									</div>
-									<!-- /wp:group -->
-								</div>
-								<!-- /wp:group -->
-								<!-- wp:group -->
-								<div class="wp-block-group col mb-[15px] basis-1/2 desktop:basis-auto">
-									<!-- wp:paragraph -->
-									<p class="mb-[5px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">kondygnacja</p>
-									<!-- /wp:paragraph -->
-									<!-- wp:post-terms {"term":"pietro"} /-->
-								</div>
-								<!-- /wp:group -->
-								<!-- wp:group -->
-								<div class="wp-block-group col mb-[15px] basis-1/2 desktop:basis-auto">
-									<!-- wp:paragraph -->
-									<p class="mb-[5px] uppercase text-[10px] text-[rgba(255,255,255,0.6)]">liczba pokoi</p>
-									<!-- /wp:paragraph -->
-									<!-- wp:post-terms {"term":"pokoje"} /-->
-								</div>
-								<!-- /wp:group -->
-							</div>
-							<!-- /wp:group -->
-						</div>
-						<!-- /wp:group -->
-					</div>
-					<!-- /wp:group -->
+        <!-- wp:group -->
+        <div
+          class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] pt-[140px] pb-[100px]"
+        >
+          <!-- wp:paragraph -->
+          <p class="desktop:mb-[60px] mb-0 text-[24px] font-medium">
+            Przykładowa aranżacja
+            <span
+              class="text-[#828894] font-normal desktop:text-[24px] text-[18px]"
+              >(kliknij zdjęcie by powiększyć)</span
+            >
+          </p>
+          <!-- /wp:paragraph -->
 
-					<!-- wp:group -->
-					<div class="wp-block-group container mx-auto relative desktop:px-0 px-[20px] pt-[140px] pb-[100px]">
-						<!-- wp:paragraph -->
-						<p class="desktop:mb-[60px] mb-0 text-[24px] font-medium">Przykładowa aranżacja <span class="text-[#828894] font-normal desktop:text-[24px] text-[18px]">(kliknij zdjęcie by powiększyć)</span></p>
-						<!-- /wp:paragraph -->
+          <!-- wp:group -->
+          <div
+            class="wp-block-group two-col-layout desktop:mb-[30px] mb-[80px] desktop:flex justify-center"
+          >
+            <!-- wp:group -->
+            <div class="wp-block-group left-col desktop:w-[55%]">
+              <!-- wp:post-content /-->
+              <!-- wp:post-featured-image /-->
+            </div>
+            <!-- /wp:group -->
 
-						<!-- wp:group -->
-						<div class="wp-block-group two-col-layout desktop:mb-[30px] mb-[80px] desktop:flex justify-center">
-							<!-- wp:group -->
-							<div class="wp-block-group left-col desktop:w-[55%]">
-								<!-- wp:post-content /-->
-								<!-- wp:post-featured-image /-->
-							</div>
-							<!-- /wp:group -->
+            <!-- wp:group -->
+            <div
+              class="wp-block-group right-col desktop:w-[40%] desktop:pt-[50px] pt-0"
+            >
+              <!-- wp:paragraph -->
+              <p class="uppercase text-[10px] text-[#a1a7b2]">cena lokalu</p>
+              <!-- /wp:paragraph -->
+              <!-- wp:group -->
+              <div class="wp-block-group price text-[36px] flex gap-[4px]">
+                <!-- wp:post-terms {"term":"cena"} /-->
+                <!-- wp:paragraph -->
+                <p class="text-[36px] flex gap-[4px]">zł</p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:paragraph -->
+              <p class="text-[18pxpx] mb-[20px] text-primaryRed">
+                <a href="/kredyty"> Zapytaj o kredyt</a>
+              </p>
+              <!-- /wp:paragraph -->
+              <!-- wp:group -->
+              <div
+                class="wp-block-group btn-download-mieszkanie group mb-[20px] btn-download flex gap-[8px] items-center justify-center relative bg-[#f5f7fa] text-textGray font-bold w-full desktop:w-[230px] h-[55px] flex items-center justify-center border-b-[3px] border-b-[#cecece] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#e9ecf2] before:transition-height before:duration-300 before:ease cursor-pointer"
+              >
+                <!-- wp:paragraph -->
+                <p class="w-[20px] h-fit z-[1]">
+                  <svg
+                    class="w-[20px]"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 36 36"
+                    class="injected-svg inject-svg"
+                  >
+                    <path
+                      fill="transparent"
+                      d="M7 32V4h14.59L29 11.41V32H7z"
+                    ></path>
+                    <path
+                      fill="#2e384d"
+                      d="M21.17 5L28 11.83V31H8V5h13.17M22 3H6v30h24V11l-8-8z"
+                    ></path>
+                    <path fill="#2e384d" d="M29 13h-9V4h2v7h7v2z"></path>
+                  </svg>
+                </p>
+                <!-- /wp:paragraph  -->
 
-							<!-- wp:group -->
-							<div class="wp-block-group right-col desktop:w-[40%] desktop:pt-[50px] pt-0">
-								<!-- wp:paragraph -->
-								<p class="uppercase text-[10px] text-[#a1a7b2]">cena lokalu</p>
-								<!-- /wp:paragraph -->
-								<!-- wp:group -->
-								<div class="wp-block-group price text-[36px] flex gap-[4px]">
-									<!-- wp:post-terms {"term":"cena"} /-->
-									<!-- wp:paragraph -->
-									<p class="text-[36px] flex gap-[4px]"> zł</p>
-									<!-- /wp:paragraph -->
-								</div>
-								<!-- /wp:group -->
-								<!-- wp:paragraph -->
-								<p class="text-[18pxpx] mb-[20px] text-primaryRed"><a href="/kredyty"> Zapytaj o kredyt</a></p>
-								<!-- /wp:paragraph -->
-								<!-- wp:group -->
-								<div class="wp-block-group btn-download-mieszkanie group mb-[20px] btn-download flex gap-[8px] items-center justify-center relative bg-[#f5f7fa] text-textGray font-bold w-full desktop:w-[230px] h-[55px] flex items-center justify-center border-b-[3px] border-b-[#cecece] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#e9ecf2] before:transition-height before:duration-300 before:ease cursor-pointer">
-									<!-- wp:paragraph -->
-									<p class="w-[20px] h-fit z-[1]">
-										<svg class="w-[20px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="injected-svg inject-svg"><path fill="transparent" d="M7 32V4h14.59L29 11.41V32H7z"></path><path fill="#2e384d" d="M21.17 5L28 11.83V31H8V5h13.17M22 3H6v30h24V11l-8-8z"></path><path fill="#2e384d" d="M29 13h-9V4h2v7h7v2z"></path></svg>
-									</p>
-									<!-- /wp:paragraph  -->
+                <!-- wp:shortcode  -->
+                [pdf_attachment file="1" name=" Pobierz kartę lokalu"]
+                <!-- /wp:shortcode -->
+              </div>
+              <!-- /wp:group -->
+              <!-- wp:group -->
+              <div
+                class="wp-block-group group btn-find-more relative mb-[15px] bg-[#3d4b66] text-white w-full desktop:w-[230px] h-[55px] flex items-center justify-center border-b-[3px] border-b-[#2e384d] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer"
+              >
+                <!-- wp:paragraph -->
+                <p class="font-bold z-[1]">
+                  <a href="#cta2">Zapytaj o mieszkanie</a>
+                </p>
+                <!-- /wp:paragraph -->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
 
-									<!-- wp:shortcode  -->
-									[pdf_attachment file="1" name=" Pobierz kartę lokalu"]
-									<!-- /wp:shortcode -->
-								</div>
-								<!-- /wp:group -->
-								<!-- wp:group -->
-								<div class="wp-block-group group btn-find-more relative mb-[15px] bg-[#3d4b66] text-white w-full desktop:w-[230px] h-[55px] flex items-center justify-center border-b-[3px] border-b-[#2e384d] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease cursor-pointer">
-									<!-- wp:paragraph -->
-									<p class="font-bold z-[1]"><a href="#cta2">Zapytaj o mieszkanie</a></p>
-									<!-- /wp:paragraph -->
-								</div>
-								<!-- /wp:group -->
-							
-							</div>
-							<!-- /wp:group -->
-						</div>
-						<!-- /wp:group -->
+          <!-- wp:group -->
+          <div class="wp-block-group apartment-info desktop:pl-[50px]">
+            <!-- wp:paragraph -->
+            <p class="mb-[50px] text-[24px]">
+              Lokalizacja mieszkania na kondygnacji
+            </p>
+            <!-- /wp:paragraph -->
 
-						<!-- wp:group -->
-						<div class="wp-block-group apartment-info desktop:pl-[50px]">
-							<!-- wp:paragraph -->
-							<p class="mb-[50px] text-[24px]">Lokalizacja mieszkania na kondygnacji</p>
-							<!-- /wp:paragraph -->
+            <!-- wp:group -->
+            <div
+              class="wp-block-group desktop:mb-[30px] mb-[20px] flex gap-[50px]"
+            >
+              <!-- wp:group -->
+              <div class="wp-block-group text-[30px]">
+                <!-- wp:paragraph -->
+                <p class="uppercase text-[10px] text-[#a1a7b2]">budynek</p>
+                <!-- /wp:paragraph -->
+                <!-- wp:post-terms {"term":"budynek"} /-->
+              </div>
+              <!-- /wp:group -->
 
-							<!-- wp:group -->
-							<div class="wp-block-group desktop:mb-[30px] mb-[20px] flex gap-[50px]">
-								<!-- wp:group -->
-								<div class="wp-block-group text-[30px]">
-									<!-- wp:paragraph -->
-									<p class="uppercase text-[10px] text-[#a1a7b2]">budynek</p>
-									<!-- /wp:paragraph -->
-									<!-- wp:post-terms {"term":"budynek"} /-->
-								</div>
-								<!-- /wp:group -->
+              <!-- wp:group -->
+              <div
+                class="wp-block-group text-[30px] desktop:text-[30px] text-[24px]"
+              >
+                <!-- wp:paragraph -->
+                <p class="uppercase text-[10px] text-[#a1a7b2]">klatka</p>
+                <!-- /wp:paragraph -->
+                <!-- wp:post-terms {"term":"nr"} /-->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
 
-								<!-- wp:group -->
-								<div class="wp-block-group text-[30px] desktop:text-[30px] text-[24px]">
-									<!-- wp:paragraph -->
-									<p class="uppercase text-[10px] text-[#a1a7b2]">klatka</p>
-									<!-- /wp:paragraph -->
-									<!-- wp:post-terms {"term":"nr"} /-->
-								</div>
-								<!-- /wp:group -->
-							</div>
-							<!-- /wp:group -->
+            <!-- wp:group -->
+            <div
+              class="wp-block-group text-[30px] desktop:text-[30px] text-[24px]"
+            >
+              <!-- wp:paragraph -->
+              <p class="uppercase text-[10px] text-[#a1a7b2]">kondygnacja</p>
+              <!-- /wp:paragraph -->
 
-							<!-- wp:group -->
-							<div class="wp-block-group text-[30px] desktop:text-[30px] text-[24px]">
-								<!-- wp:paragraph -->
-								<p class="uppercase text-[10px] text-[#a1a7b2]">kondygnacja</p>
-								<!-- /wp:paragraph -->
+              <!-- wp:group -->
+              <div class="wp-block-group flex gap-[8px]">
+                <!-- wp:paragraph -->
+                <p class="text-[30px]">Piętro</p>
+                <!-- /wp:paragraph -->
+                <!-- wp:post-terms {"term":"pietro"} /-->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+      <!-- /wp:post-template -->
+      <!-- /wp:query -->
 
-								<!-- wp:group -->
-								<div class="wp-block-group flex gap-[8px]">
-									<!-- wp:paragraph -->
-									<p class=" text-[30px]">Piętro</p>
-									<!-- /wp:paragraph -->
-									<!-- wp:post-terms {"term":"pietro"} /-->
-								</div>
-								<!-- /wp:group -->
-							</div>
-							<!-- /wp:group -->
+      <!-- wp:group -->
+      <div
+        class="wp-block-group cta2 py-[30px] w-full h-fit text-white relative"
+      >
+        <!-- wp:image -->
+        <figure
+          class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1] overflow-hidden"
+        >
+          <img
+            src="/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/cta2.jpeg"
+            alt="cta2-img"
+          />
+        </figure>
+        <!-- /wp:image -->
 
-						</div>
-						<!-- /wp:group -->
+        <!-- wp:paragraph -->
+        <span
+          class="block text-[28px] text-center desktop:text-[36px] font-medium"
+          data-aos="fade-right"
+          data-aos-offset="30"
+          >Chcesz dowiedzieć się więcej o tym mieszkaniu?</span
+        >
+        <!-- /wp:paragraph -->
+        <!-- wp:paragraph -->
+        <span
+          class="block text-[28px] text-center desktop:text-[36px] font-medium mb-[60px] desktop:mb-[40px]"
+          data-aos="fade-right"
+          data-aos-offset="30"
+          >Napisz!</span
+        >
+        <!-- /wp:paragraph -->
 
-					</div>
-					<!-- /wp:group -->
-				</div>
-				<!-- /wp:group -->
-				<!-- /wp:post-template -->
-			<!-- /wp:query -->
+        <!-- wp:group -->
+        <div
+          id="cta2"
+          class="wp-block-group cta2 container mx-auto px-[20px] deskto:px-0"
+        >
+          <!-- wp:contact-form-7/contact-form-selector {"id":1917,"hash":"dfa8bcf","title":"Wpis - mieszkanie"} -->
 
-			<!-- wp:group -->
-			<div class="wp-block-group cta2 py-[30px] w-full h-fit text-white relative">
-				<!-- wp:image -->
-				<figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
-					<img src="/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/cta2.jpeg" alt="cta2-img">
-				</figure>
-				<!-- /wp:image -->
+          <!-- wp:group -->
+          <div
+            class="wp-block-group wp-block-contact-form-7-contact-form-selector"
+          >
+            [contact-form-7 id="dfa8bcf" title="Wpis - mieszkanie"]
+          </div>
+          <!-- /wp:contact-form-7/contact-form-selector -->
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
 
-				<!-- wp:paragraph -->
-				<span class="block text-[28px] text-center desktop:text-[36px] font-medium" data-aos="fade-right" data-aos-offset="30">Chcesz dowiedzieć się więcej o tym mieszkaniu?</span>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph -->
-				<span class="block text-[28px] text-center desktop:text-[36px] font-medium mb-[60px] desktop:mb-[40px]" data-aos="fade-right" data-aos-offset="30">Napisz!</span>
-				<!-- /wp:paragraph -->
-
-				<!-- wp:group -->
-				<div id="cta2" class="wp-block-group cta2 container mx-auto px-[20px] deskto:px-0">
-					<!-- wp:contact-form-7/contact-form-selector {"id":1917,"hash":"dfa8bcf","title":"Wpis - mieszkanie"} -->
-					
-					<!-- wp:group -->
-					<div class="wp-block-group wp-block-contact-form-7-contact-form-selector">[contact-form-7 id="dfa8bcf" title="Wpis - mieszkanie"]</div>
-					<!-- /wp:contact-form-7/contact-form-selector -->
-					<!-- /wp:group -->
-				</div>
-				<!-- /wp:group -->
-			</div>
-			<!-- /wp:group -->
-				
-
-			<!-- wp:template-part {"slug":"front-page/cta"} /-->
-			<!-- wp:template-part {"slug":"front-page/newsletter"} /-->
-			<!-- wp:template-part {"slug":"front-page/footer"} /-->
-		</div>
-		<!-- /wp:group -->
-	</div>
-	<!-- /wp:group -->
+      <!-- wp:template-part {"slug":"front-page/cta"} /-->
+      <!-- wp:template-part {"slug":"front-page/newsletter"} /-->
+      <!-- wp:template-part {"slug":"front-page/footer"} /-->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
 </div>
 <!-- /wp:group -->

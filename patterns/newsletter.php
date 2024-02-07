@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="newsletter" class="wp-block-group newsletter py-[30px] relative bg-[#3d4b67f5]">
   <!-- wp:image -->
-  <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
+  <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1] overflow-hidden">
     <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/frontpage/newsletter-bg.jpeg" alt="banner-background">
   </figure>
   <!-- /wp:image -->

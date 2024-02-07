@@ -16,7 +16,7 @@
       <div class="wp-block-group banner w-full h-full bg-black opacity-30 z-[1] absolute top-0 left-0"></div>
       <!-- /wp:group -->
       <!-- wp:image -->
-      <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
+      <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1] overflow-hidden">
         <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/osiedle-srebrniki-bg2.jpeg" alt="banner-bg">
       </figure>
       <!-- /wp:image -->
