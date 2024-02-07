@@ -410,10 +410,11 @@ window.addEventListener("load", function () {
       }
     });
   }
+  //MAP
+  r = document.querySelectorAll(".wpv-me-map-container-google");
+  if (r) {
+    jQuery(".wme-marker").click();
+  }
 
   //  ----------------------------------------------------------------------
-});
-
-google.maps.event.addListenerOnce(map, "idle", function () {
-  jQuery(".wme-marker").click();
 });
