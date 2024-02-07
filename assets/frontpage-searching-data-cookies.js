@@ -168,7 +168,8 @@ window.addEventListener("load", function() {
 
             console.log('inwestycje count ', choosenInwestycjeCount);
 
-            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
+            // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
+            menuActiveSpan.innerHTML = choosenInwestycjeCount == 0 ? 'Wybierz' : 'Wybrano: ' + choosenInwestycjeCount;
           }else if(pokojeArr.includes(+choosenOptionID)){
             // pokoje
             if(tempPokojeArr.includes(choosenOptionID)){removeItemAll(tempPokojeArr,choosenOptionID);}else{tempPokojeArr.push(choosenOptionID)};
