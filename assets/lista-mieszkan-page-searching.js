@@ -986,7 +986,7 @@ window.addEventListener("load", function() {
       for (i = 0 ; i < metrazValueArrNodeList.length ; i++){
         metrazValueArrNodeList[i].childNodes[1].classList.remove('active');
         
-        let metrazTermId = priceValueArrNodeList[i].childNodes[1].dataset.termid
+        let metrazTermId = metrazValueArrNodeList[i].childNodes[1].dataset.termid
         if(choosenOptions.includes(metrazTermId)){
           removeItemAll(choosenOptions,metrazTermId)
         }
