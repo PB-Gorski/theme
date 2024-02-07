@@ -13,7 +13,7 @@
   <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
   <div id="Banner" class="wp-block-group page-kronika-budowy-osiedle-srebrniki test relative">
     <!-- wp:group -->
-    <div class="wp-block-group w-full bg-banner h-[50vh] desktop:h-[80vh] relative flex desktop:block items-center">
+    <div class="wp-block-group banner-lista-mieszkan w-full bg-banner h-[50vh] desktop:h-[80vh] relative flex desktop:block items-center">
       <!-- wp:group -->
       <div class="wp-block-group banner w-full h-full bg-black opacity-30 z-[1] absolute top-0 left-0"></div>
       <!-- /wp:group -->
