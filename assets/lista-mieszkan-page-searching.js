@@ -1032,6 +1032,8 @@ window.addEventListener("load", function() {
 
 
     btnSearch.addEventListener('click', () =>{
+      let pricesID = runSearchingPrice();
+      let metrazeID = runSearchingMetraz();
       let searchedFromCookiesIDs = document.querySelectorAll('.active');
       let searchedReadyArr = [];
 
@@ -1044,8 +1046,6 @@ window.addEventListener("load", function() {
 
       deleteAllCookies();
       // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
-      let pricesID = runSearchingPrice();
-      let metrazeID = runSearchingMetraz();
 
       // filter ID by page id
       let pageID = document.querySelector('#Banner');
