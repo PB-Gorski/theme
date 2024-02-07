@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Banner" class="wp-block-group banner-lista-mieszkan-osiedle-srebrniki relative">
+<div id="Banner" class="wp-block-group banner-lista-mieszkan-osiedle-srebrniki banner-lista-mieszkan relative">
   < <!-- wp:group -->
     <div class="wp-block-group w-full h-[50vh] desktop:h-[80vh] relative py-[60px]">
       <!-- wp:group -->

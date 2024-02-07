@@ -9,7 +9,7 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Banner" class="wp-block-group banner-lista-mieszkan-default relative">
+<div id="Banner" class="wp-block-group banner-lista-mieszkan-default banner-lista-mieszkan relative">
   <!-- wp:group -->
   <div class="wp-block-group w-full h-[480px] desktop:h-[80vh] relative py-[60px]">
     <!-- wp:image -->

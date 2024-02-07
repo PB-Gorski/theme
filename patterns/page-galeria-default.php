@@ -15,7 +15,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
   <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
   <div id="Banner" class="wp-block-group relative">
     <!-- wp:group -->
-    <div class="wp-block-group w-full h-[250px] desktop:h-[770px] bg-banner relative flex desktop:block items-center">
+    <div class="wp-block-group banner-lista-mieszkan w-full h-[250px] desktop:h-[770px] bg-banner relative flex desktop:block items-center">
       <!-- wp:group -->
       <div class="wp-block-group banner w-full h-full bg-black opacity-30 z-[1] absolute top-0 left-0"></div>
       <!-- /wp:group -->
