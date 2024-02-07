@@ -427,11 +427,7 @@ label{
 .check1 p{
   display: flex;
 }
-@media only screen and (max-width: 480px) {
-  .left-col-map div{
-    height: 450px!important;
-  }
-}
+
 
 .wp-block-post.mieszkania.type-mieszkania{
   border-bottom: 1px solid #e6eaf0;
@@ -1581,4 +1577,10 @@ background-color: #e8fbff!important;
 /* page contact map */
 .wpmapblockrender.leaflet-container{
   height: 100%!important;
+}
+
+@media only screen and (max-width: 480px) {
+  .wpmapblockrender.leaflet-container{
+    height: 480px!important;
+  }
 }
