@@ -864,7 +864,7 @@ window.addEventListener("load", function() {
     // priceMinValue = cenaOd;
     // priceMaxValue = cenaDo;
 
-    function runSearchingPrice(){
+    function runSearchingPrice(searchEnabled = true){
       priceValueArr = [];
       newArr = [];
       newArrHTMLList = [];
@@ -936,11 +936,14 @@ window.addEventListener("load", function() {
 
 
 // after page load search
-currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
-      YMCTools({
-        target: '.data-target-ymc' + currentYmcFilterID,
-        terms: filteredTermsID.join() + ',' + choosenOptions.join(),            
-      }).apiTermUpdate(); 
+if (searchEnabled) {
+  
+  currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
+        YMCTools({
+          target: '.data-target-ymc' + currentYmcFilterID,
+          terms: filteredTermsID.join() + ',' + choosenOptions.join(),            
+        }).apiTermUpdate(); 
+}
 
       // console.log('all filtered id price: ', filteredTermsID.join());
       // console.log('all filtered choosen options: ', choosenOptions.join());
@@ -1034,7 +1037,7 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
 
       deleteAllCookies();
       // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
-      let pricesID = runSearchingPrice();
+      let pricesID = runSearchingPrice(false);
       let metrazeID = runSearchingMetraz();
 
       // filter ID by page id
