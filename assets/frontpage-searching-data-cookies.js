@@ -36,10 +36,12 @@ window.addEventListener("load", function() {
     btnMore.addEventListener('click',()=>{
       heightAnimation.classList.toggle('expanded');
       
-      heightAnimation.addEventListener('transitionstart', ()=>{
+      heightAnimation.addEventListener('transitionstart', (e)=>{
+        e.stopPropagation()
         heightAnimation.classList.add('transitioning')
       })
-      heightAnimation.addEventListener('transitionend', ()=>{
+      heightAnimation.addEventListener('transitionend', (e)=>{
+        e.stopPropagation()
         heightAnimation.classList.remove('transitioning')
       })
     });

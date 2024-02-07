@@ -279,10 +279,12 @@ window.addEventListener("load", function() {
       btnMore.addEventListener('click',()=>{
         heightAnimation.classList.toggle('expanded');
 
-        heightAnimation.addEventListener('transitionstart', ()=>{
+        heightAnimation.addEventListener('transitionstart', (e)=>{
+          e.stopPropagation()
           heightAnimation.classList.add('transitioning')
         })
-        heightAnimation.addEventListener('transitionend', ()=>{
+        heightAnimation.addEventListener('transitionend', (e)=>{
+          e.stopPropagation()
           heightAnimation.classList.remove('transitioning')
         })
 
@@ -1225,7 +1227,7 @@ window.addEventListener("load", function() {
 
       // filter ID by page id
       let pageID = document.querySelector('#Banner');
-      let filterID = '';
+      let filterID = '.ymc-smart-filter-container';
       // if(document.body.classList.contains('page-id-1926')){
       //   filterID = '.data-target-ymc3';
       // }else if(document.body.classList.contains('page-id-1932')){

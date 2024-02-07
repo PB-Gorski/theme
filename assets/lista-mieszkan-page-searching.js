@@ -293,10 +293,12 @@ window.addEventListener("load", function() {
       btnMore.addEventListener('click',() => {
         heightAnimation.classList.toggle('expanded');
         
-        heightAnimation.addEventListener('transitionstart', ()=>{
+        heightAnimation.addEventListener('transitionstart', (e)=>{
+          e.stopPropagation()
           heightAnimation.classList.add('transitioning')
         })
-        heightAnimation.addEventListener('transitionend', ()=>{
+        heightAnimation.addEventListener('transitionend', (e)=>{
+          e.stopPropagation()
           heightAnimation.classList.remove('transitioning')
         })
       });
@@ -792,7 +794,7 @@ window.addEventListener("load", function() {
 
       // filter ID by page id
       let pageID = document.querySelector('#Banner');
-      let filterID = '';
+      let filterID = '.ymc-smart-filter-container';
       if(pageID.classList.contains('banner-lista-mieszkan')){
         filterID = '.data-target-ymc2';
         console.log('ymc2');
@@ -1037,7 +1039,7 @@ currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes
 
       // filter ID by page id
       let pageID = document.querySelector('#Banner');
-      let filterID = '';
+      let filterID = '.ymc-smart-filter-container';
       if(pageID.classList.contains('banner-lista-mieszkan')){
         filterID = '.data-target-ymc2';
         console.log('ymc2');
