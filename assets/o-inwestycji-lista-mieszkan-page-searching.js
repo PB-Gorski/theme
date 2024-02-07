@@ -1058,22 +1058,16 @@ window.addEventListener("load", function() {
       newArr = [];
       newArrHTMLList = [];
 
-      // value from input
-      // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.getElementById('inputPriceMin').value;
-      // document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.getElementById('inputPriceMax').value
+      const dropDownFilters = document.querySelectorAll(".dropdown-filter");
+      let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
 
       document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = document.querySelector('.dropdown__value-min').childNodes[1].value == '' ? 0 : document.getElementById('inputPriceMin').value;
       document.querySelector('.dropdown__value-max').childNodes[0].innerHTML = document.querySelector('.dropdown__value-max').childNodes[1].value == '' ? 10000000 : document.getElementById('inputPriceMax').value;
-
-      const dropDownFilters = document.querySelectorAll(".dropdown-filter");
-      let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
+      
       priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
-      // priceMinValue = document.querySelector('.dropdown__value-min').innerHTML == NaN ? 0 : parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
       priceMaxValue = parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
       
-      console.log('no spaces prices', priceMinValue,priceMaxValue);
-
-      for (i = 1 ; i < priceValueArrNodeList.length ; i++){
+      for (i = 0 ; i < priceValueArrNodeList.length ; i++){
         priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
         priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
       }
@@ -1087,12 +1081,23 @@ window.addEventListener("load", function() {
       });
       console.log('prices from range: ', priceValueArr);
       
-      // console.log('new price arr: ',newArr);
+      // clear active classes and chosen options
+      for (i = 0 ; i < priceValueArrNodeList.length ; i++){
+        priceValueArrNodeList[i].childNodes[1].classList.remove('active');
+        
+        let priceTermId = priceValueArrNodeList[i].childNodes[1].dataset.termid
+        if(choosenOptions.includes(priceTermId)){
+          removeItemAll(choosenOptions,priceTermId)
+        }
+      };
 
       newArr.forEach(elem => {
-        for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+        for(j = 0 ; j < priceValueArrNodeList.length ; j++){
           if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
             newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+
+            //add active class for filters to recegonize on auto-search
+            priceValueArrNodeList[j].childNodes[1].classList.add('active')
           };
         };
       });
@@ -1112,26 +1117,11 @@ window.addEventListener("load", function() {
 
       console.log('new filtered id', filteredTermsID.join(','));
 
-      for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-        if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
-          priceValueArrNodeList[i].childNodes[1].classList.remove('active');
-          // console.log(priceValueArrNodeList[i].childNodes[1]);
-        };
-      };
-
       priceValueArr = [];
       newArr = [];
       newArrHTMLList = [];
       priceValueArrNodeList = [];
 
-      // YMCTools({
-      //   target: '.data-target-ymc1',
-      //   terms: filteredTermsID.join() + ',' + choosenOptions.join(),            
-      // }).apiTermUpdate(); 
-
-      // console.log('all filtered id price: ', filteredTermsID.join());
-      // console.log('all filtered choosen options: ', choosenOptions.join());
-      // console.log('all filtered: ',filteredTermsID.join() + ',' + choosenOptions.join());
       return filteredTermsID;
     };
 
@@ -1141,15 +1131,13 @@ window.addEventListener("load", function() {
       newArrMetraz = [];
       newArrHTMLListMetraz = [];
       const dropDownFiltersMetraz = document.querySelectorAll(".dropdown-filter");
-      // test
-      // foundedPostOnStart.classList.add('hidden');
       let metrazValueArrNodeList = dropDownFiltersMetraz[8].childNodes[1].childNodes;
       metrazMinValue = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
       metrazMaxValue = document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
       
       console.log('no spaces', metrazMinValue,metrazMaxValue);
 
-      for (i = 1 ; i < metrazValueArrNodeList.length ; i++){
+      for (i = 0 ; i < metrazValueArrNodeList.length ; i++){
         metrazValueArr.push(parseInt(metrazValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
         metrazValueArrNodeList[i].childNodes[1].dataset.name = parseInt(metrazValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
       }
@@ -1165,10 +1153,20 @@ window.addEventListener("load", function() {
       
       // console.log('new metraz arr: ',newArr);
 
+      for (i = 0 ; i < metrazValueArrNodeList.length ; i++){
+        metrazValueArrNodeList[i].childNodes[1].classList.remove('active');
+        
+        let metrazTermId = metrazValueArrNodeList[i].childNodes[1].dataset.termid
+        if(choosenOptions.includes(metrazTermId)){
+          removeItemAll(choosenOptions,metrazTermId)
+        }
+      }
+
       newArrMetraz.forEach(elem => {
-        for(j = 2 ; j < metrazValueArrNodeList.length ; j++){
+        for(j = 0 ; j < metrazValueArrNodeList.length ; j++){
           if (parseInt(metrazValueArrNodeList[j].childNodes[1].dataset.name) == elem){
             newArrHTMLListMetraz.push(metrazValueArrNodeList[j].childNodes[1]);
+            metrazValueArrNodeList[j].childNodes[1].classList.add('active')
           };
         };
       });
@@ -1191,12 +1189,6 @@ window.addEventListener("load", function() {
 
       console.log('metraze po ifie', filteredTermsIDMetraz.join(','));
 
-      for (i = 2 ; i < metrazValueArrNodeList.length ; i++){
-        if(metrazValueArrNodeList[i].childNodes[1].classList.contains('active')){
-          metrazValueArrNodeList[i].childNodes[1].classList.remove('active');
-          // console.log(metrazValueArrNodeList[i].childNodes[1]);
-        }
-      }
 
       metrazValueArr = [];
       newArrMetraz = [];
@@ -1209,6 +1201,8 @@ window.addEventListener("load", function() {
     // *******************************************************
 
     btnSearch.addEventListener('click', () =>{
+      let pricesID = runSearchingPrice();
+      let metrazeID = runSearchingMetraz();
       let searchedFromCookiesIDs = document.querySelectorAll('.active');
       let searchedReadyArr = [];
 
@@ -1221,49 +1215,11 @@ window.addEventListener("load", function() {
 
       deleteAllCookies();
       // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
-      let pricesID = runSearchingPrice();
-      let metrazeID = runSearchingMetraz();
 
 
       // filter ID by page id
       let pageID = document.querySelector('#Banner');
       let filterID = '.ymc-smart-filter-container';
-      // if(document.body.classList.contains('page-id-1926')){
-      //   filterID = '.data-target-ymc3';
-      // }else if(document.body.classList.contains('page-id-1932')){
-      //   filterID = '.data-target-ymc4';
-      // }else if(document.body.classList.contains('page-id-1723')){
-      //   filterID = '.data-target-ymc7';
-      // }else if(document.body.classList.contains('page-id-1934')){
-      //   console.log('ymc5', filterID);
-      //   filterID = '.data-target-ymc5';
-      // }else if(document.body.classList.contains('page-id-1717')){
-      //   console.log('ymc7', filterID);
-      //   filterID = '.data-target-ymc7';
-      // }else if(document.body.classList.contains('page-id-1936')){
-      //   console.log('ymc6', filterID);
-      //   filterID = '.data-target-ymc6';
-      // }
-      
-
-      if(pageID.classList.contains('banner-lista-mieszkan-osiedle-srebrniki')){
-        filterID = '.data-target-ymc3';
-      }else if(pageID.classList.contains('banner-lista-mieszkan-sw-piotra')){
-        filterID = '.data-target-ymc4';
-        console.log('sw piotra test22222');
-      }else if(pageID.classList.contains('banner-o-inwestycji-torunska-16')){
-        console.log('sw torunska o inwest st22222');
-        filterID = '.data-target-ymc7';
-      }else if(pageID.classList.contains('banner-lista-mieszkan-torunska-16')){
-        filterID = '.data-target-ymc5';
-        console.log('torunska test22222');
-      }else if(pageID.classList.contains('banner-o-inwestycji-wiezycka-folwark')){
-        console.log('sw folwark o inwest st22222');
-        filterID = '.data-target-ymc7';
-      }else if(pageID.classList.contains('banner-lista-mieszkan-wiezycka-folwark')){
-        filterID = '.data-target-ymc6';
-        console.log('folwrk test22222');
-      }
 
       YMCTools({
         target: filterID,

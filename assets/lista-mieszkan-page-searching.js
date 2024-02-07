@@ -877,17 +877,11 @@ window.addEventListener("load", function() {
 
 
       priceMinValue = document.querySelector('.dropdown__value-min').childNodes[1].value == '' ? 0 : parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
-
-      // priceMinValue = document.querySelector('.dropdown__value-min').innerHTML == NaN ? 0 : parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
       priceMaxValue = document.querySelector('.dropdown__value-max').childNodes[1].value == '' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
       
-      // console.log('no spaces', priceMinValue,priceMaxValue);
-
       for (i = 0 ; i < priceValueArrNodeList.length ; i++){
         priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
         priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
-      
-
       }
     
       priceValueArr.forEach(priceValue => {
@@ -940,18 +934,6 @@ window.addEventListener("load", function() {
       newArrHTMLList = [];
       priceValueArrNodeList = [];
 
-
-// after page load search
-  
-  // currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
-  //       YMCTools({
-  //         target: '.data-target-ymc' + currentYmcFilterID,
-  //         terms: filteredTermsID.join() + ',' + choosenOptions.join(),            
-  //       }).apiTermUpdate(); 
-
-      // console.log('all filtered id price: ', filteredTermsID.join());
-      // console.log('all filtered choosen options: ', choosenOptions.join());
-      // console.log('all filtered: ',filteredTermsID.join() + ',' + choosenOptions.join());
       return filteredTermsID;
     };
 
