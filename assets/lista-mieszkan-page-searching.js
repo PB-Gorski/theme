@@ -294,11 +294,11 @@ window.addEventListener("load", function() {
         heightAnimation.classList.toggle('expanded');
         
         heightAnimation.addEventListener('transitionstart', (e)=>{
-          e.stopPropagation()
+          if (e.target !== heightAnimation) return
           heightAnimation.classList.add('transitioning')
         })
         heightAnimation.addEventListener('transitionend', (e)=>{
-          e.stopPropagation()
+          if (e.target !== heightAnimation) return
           heightAnimation.classList.remove('transitioning')
         })
       });
