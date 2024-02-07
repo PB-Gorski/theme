@@ -158,7 +158,7 @@ window.addEventListener("load", function() {
             // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
             // menuActiveSpan.innerHTML = 'Wybrano2: ' + choosenInwestycjeCount;
 
-            choosenInwestycjeCount == 0 ? 'Wybrano' : 'Wybrano: ' + choosenInwestycjeCount;
+            menuActiveSpan.innerHTML = choosenInwestycjeCount == 0 ? 'Wybrano' : 'Wybrano: ' + choosenInwestycjeCount;
             
           }else if(pokojeArr.includes(+choosenOptionID)){
             // pokoje
