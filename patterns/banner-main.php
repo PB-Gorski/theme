@@ -15,7 +15,7 @@
     <!-- wp:group -->
     <div class="wp-block-group aos-zoom-out h-full w-full">
       <!-- wp:core/video -->
-      <figure class="wp-block-video banner-video h-full"><video autoplay="true" loop muted preload src="https://www.pbgorski.pl/assets/front/videos/header/hp.mp4?1699011570"></video>
+      <figure class="wp-block-video banner-video h-full"><video autoplay="true" loop muted preload src="https://www.pbgorski.pl/wp-content/uploads/2024/02/hp.mp4?20240207"></video>
       </figure>
       <!-- /wp:core/video -->
     </div>
