@@ -886,6 +886,8 @@ window.addEventListener("load", function() {
       for (i = 0 ; i < priceValueArrNodeList.length ; i++){
         priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
         priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
+      
+
       }
     
       priceValueArr.forEach(priceValue => {
@@ -897,9 +899,14 @@ window.addEventListener("load", function() {
       });
       console.log('prices from range: ', priceValueArr);
       
-      // clear active classes
+      // clear active classes and chosen options
       for (i = 0 ; i < priceValueArrNodeList.length ; i++){
         priceValueArrNodeList[i].childNodes[1].classList.remove('active');
+        
+        let priceTermId = priceValueArrNodeList[i].childNodes[1].dataset.termid
+        if(choosenOptions.includes(priceTermId)){
+          removeItemAll(choosenOptions,priceTermId)
+        }
       };
 
       newArr.forEach(elem => {
@@ -978,7 +985,11 @@ window.addEventListener("load", function() {
 
       for (i = 0 ; i < metrazValueArrNodeList.length ; i++){
         metrazValueArrNodeList[i].childNodes[1].classList.remove('active');
-        // console.log(metrazValueArrNodeList[i].childNodes[1]);
+        
+        let metrazTermId = priceValueArrNodeList[i].childNodes[1].dataset.termid
+        if(choosenOptions.includes(metrazTermId)){
+          removeItemAll(choosenOptions,metrazTermId)
+        }
       }
 
       newArrMetraz.forEach(elem => {
