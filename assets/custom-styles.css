@@ -65,11 +65,6 @@ h4 {
   text-decoration: none!important;
 }
 /* images */
-
-.banner figure[class*=wp-block-image] img {
-  object-fit: cover!important;
-}
-
 .home .inwestycje-posts .term_investment_img>p img{
   height: 300px;
 }
@@ -85,6 +80,9 @@ figure[class*="wp-block-image"] img,
   figure[class*="wp-block-image cta-img"] img {
     object-position: 40%;
   }
+}
+.banner figure[class*=wp-block-image] img {
+  object-fit: cover!important;
 }
 .wp-block-post-featured-image{
   height: 100%;
