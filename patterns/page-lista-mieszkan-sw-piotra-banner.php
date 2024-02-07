@@ -9,15 +9,15 @@
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
-<div id="Banner" class="wp-block-group banner-lista-mieszkan-sw-piotra relative">
+<div id="Banner" class="wp-block-group banner-lista-mieszkan-sw-piotra banner-lista-mieszkan relative">
   <!-- wp:group -->
   <div class="wp-block-group w-full h-[480px] desktop:h-[600px] relative py-[60px]">
     <!-- wp:group -->
-    <div class="wp-block-group banner banner-lista-mieszkan w-full h-full bg-black opacity-30 z-[1] absolute top-0 left-0"></div>
+    <div class="wp-block-group banner w-full h-full bg-black opacity-30 z-[1] absolute top-0 left-0"></div>
     <!-- /wp:group -->
 
     <!-- wp:image -->
-    <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1] overflow-hidden">
+    <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1]">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-sw-piotra/sw-piotra-bg2.jpeg" alt="banner-bg">
     </figure>
     <!-- /wp:image -->
