@@ -184,7 +184,7 @@
                       } else if ($tax->name == 'Wieżycka Folwark') {
                         echo '8 930 zł/m<sup>2</sup>';
                       } else {
-                        echo 'Podaj kwote zł/m<sup>2</sup>';
+                        echo '__ ______ zł/m<sup>2</sup>';
                       };
                       ?>
                     </p>

@@ -94,7 +94,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
             <!-- /wp:heading -->
 
             <!-- wp:heading {"level":5} -->
-            <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">Podaj termin ukończenia</span></h5>
+            <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">____ ________ ____</span></h5>
             <!-- /wp:heading -->
           </div>
           <!-- /wp:group -->
@@ -105,7 +105,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
             <h6><span class="block mb-[10px] uppercase text-[#8a8f99] text-[11px] tracking-[1px]" data-aos="fade-right" data-aos-offset="30">LICZBA MIESZKAŃ W SPRZEDAŻY</span></h6>
             <!-- /wp:heading -->
             <!-- wp:heading {"level":5} -->
-            <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">Podaj liczbę mieszkań</span></h5>
+            <h5><span class="block text-[24px]" data-aos="fade-right" data-aos-offset="30">____ ________ ____</span></h5>
             <!-- /wp:heading -->
           </div>
           <!-- /wp:group -->
