@@ -1591,7 +1591,7 @@ background-color: #e8fbff!important;
 }
 
 
-#newsletter .wp-block-image.absolute{
+#newsletter .wp-block-image.absolute img{
   object-fit: cover;
   width: 100%;
   height: 100%;
