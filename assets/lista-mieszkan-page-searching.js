@@ -883,7 +883,7 @@ window.addEventListener("load", function() {
       
       // console.log('no spaces', priceMinValue,priceMaxValue);
 
-      for (i = 1 ; i < priceValueArrNodeList.length ; i++){
+      for (i = 0 ; i < priceValueArrNodeList.length ; i++){
         priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
         priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
       }
@@ -897,12 +897,18 @@ window.addEventListener("load", function() {
       });
       console.log('prices from range: ', priceValueArr);
       
-      // console.log('new price arr: ',newArr);
+      // clear active classes
+      for (i = 0 ; i < priceValueArrNodeList.length ; i++){
+        priceValueArrNodeList[i].childNodes[1].classList.remove('active');
+      };
 
       newArr.forEach(elem => {
-        for(j = 2 ; j < priceValueArrNodeList.length ; j++){
+        for(j = 0 ; j < priceValueArrNodeList.length ; j++){
           if (parseInt(priceValueArrNodeList[j].childNodes[1].dataset.name) == elem){
             newArrHTMLList.push(priceValueArrNodeList[j].childNodes[1]);
+
+            //add active class for filters to recegonize on auto-search
+            priceValueArrNodeList[j].childNodes[1].classList.add('active')
           };
         };
       });
@@ -921,13 +927,6 @@ window.addEventListener("load", function() {
       }
 
       console.log('new filtered id', filteredTermsID.join(','));
-
-      for (i = 2 ; i < priceValueArrNodeList.length ; i++){
-        if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
-          priceValueArrNodeList[i].childNodes[1].classList.remove('active');
-          // console.log(priceValueArrNodeList[i].childNodes[1]);
-        };
-      };
 
       priceValueArr = [];
       newArr = [];
@@ -961,7 +960,7 @@ window.addEventListener("load", function() {
       
       console.log('no spaces', metrazMinValue,metrazMaxValue);
 
-      for (i = 1 ; i < metrazValueArrNodeList.length ; i++){
+      for (i = 0 ; i < metrazValueArrNodeList.length ; i++){
         metrazValueArr.push(parseInt(metrazValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
         metrazValueArrNodeList[i].childNodes[1].dataset.name = parseInt(metrazValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
       }
@@ -977,10 +976,16 @@ window.addEventListener("load", function() {
       
       // console.log('new metraz arr: ',newArr);
 
+      for (i = 0 ; i < metrazValueArrNodeList.length ; i++){
+        metrazValueArrNodeList[i].childNodes[1].classList.remove('active');
+        // console.log(metrazValueArrNodeList[i].childNodes[1]);
+      }
+
       newArrMetraz.forEach(elem => {
-        for(j = 2 ; j < metrazValueArrNodeList.length ; j++){
+        for(j = 0 ; j < metrazValueArrNodeList.length ; j++){
           if (parseInt(metrazValueArrNodeList[j].childNodes[1].dataset.name) == elem){
             newArrHTMLListMetraz.push(metrazValueArrNodeList[j].childNodes[1]);
+            metrazValueArrNodeList[j].childNodes[1].classList.add('active')
           };
         };
       });
@@ -1002,13 +1007,6 @@ window.addEventListener("load", function() {
       // });
 
       console.log('metraze po ifie', filteredTermsIDMetraz.join(','));
-
-      for (i = 2 ; i < metrazValueArrNodeList.length ; i++){
-        if(metrazValueArrNodeList[i].childNodes[1].classList.contains('active')){
-          metrazValueArrNodeList[i].childNodes[1].classList.remove('active');
-          // console.log(metrazValueArrNodeList[i].childNodes[1]);
-        }
-      }
 
       metrazValueArr = [];
       newArrMetraz = [];
