@@ -155,7 +155,11 @@ window.addEventListener("load", function() {
 
             if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
 
-            menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
+            // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
+            menuActiveSpan.innerHTML = 'Wybrano2: ' + choosenInwestycjeCount;
+
+            choosenInwestycjeCount == 0 ? 'Wybrano' : 'Wybrano: ' + choosenInwestycjeCount;
+            
           }else if(pokojeArr.includes(+choosenOptionID)){
             // pokoje
             if(tempPokojeArr.includes(choosenOptionID)){removeItemAll(tempPokojeArr,choosenOptionID);}else{tempPokojeArr.push(choosenOptionID)};
