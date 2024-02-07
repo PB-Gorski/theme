@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group page-lokalizacja relative">
   <!-- wp:group -->
-  <div class="wp-block-group w-full h-[250px] desktop:h-[770px] bg-banner relative flex desktop:block items-center">
+  <div class="wp-block-group banner-lista-mieszkan w-full h-[250px] desktop:h-[770px] bg-banner relative flex desktop:block items-center">
     <!-- wp:image -->
     <figure class="wp-block-image w-full h-full absolute top-0 left-0">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-o-inwestycji-osiedle-srebrniki/osiedle-srebrniki-bg.jpeg" alt="banner-background">
