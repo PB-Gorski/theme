@@ -69,7 +69,7 @@ figure[class*="wp-block-image"] img,
 .wp-block-post-featured-image img {
   height: 100%!important;
   width: 100%!important;
-  object-fit: cover!important;
+  object-fit: contain!important;
   margin: 0!important;
 }
 @media only screen and (max-width: 480px) {
