@@ -81,6 +81,7 @@ h4 {
     object-position: 40%;
   }
 }
+.bg-banner figure[class*=wp-block-image] img,
 .banner-lista-mieszkan figure[class*=wp-block-image] img,
 .banner figure[class*=wp-block-image] img {
   object-fit: cover!important;
