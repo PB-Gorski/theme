@@ -1001,7 +1001,7 @@ add_filter('ymc_posts_selected_148_2', 'ymc_posts_selected', 10, 2);
 // posts selected 2323_1
 function ymc_posts_selected2323($layouts, $founded_post)
 {
-	$layouts = '<p class="text-[24px] text-center aos-init aos-animate">Znaleziono ' . $founded_post . ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' . wp_count_posts('mieszkania')->publish . ')</span></p>';
+	$layouts = '<p class="js-after-search-click text-[24px] text-center aos-init aos-animate">Znaleziono ' . $founded_post . ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' . wp_count_posts('lokale')->publish . ')</span></p>';
 	return $layouts;
 }
 add_filter('ymc_posts_selected_2323_1', 'ymc_posts_selected2323', 10, 2);
