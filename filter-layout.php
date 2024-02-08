@@ -371,7 +371,7 @@ $tax_sort = $taxonomy;
                     } else if ((get_taxonomy($select_term)->label) == 'Termin') {
                       $type_multiple = '';
                     } else if ((get_taxonomy($select_term)->label) == 'inne') {
-                      $type_multiple = '';
+                      $type_multiple = 'multiple';
                     } else {
                       $type_multiple = 'multiple';
                     };

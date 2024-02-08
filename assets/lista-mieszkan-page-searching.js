@@ -108,7 +108,7 @@ window.addEventListener("load", function() {
           let pietroArr = [97,78,60,66];
           let terminArr = [49,91,38,122,93];
           let inneArr = [520,521,522,650];
-          let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
+          let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
           let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
           if(miastoArr.includes(+choosenOptionID)){
@@ -185,7 +185,7 @@ window.addEventListener("load", function() {
             });
             console.log('altualne pietro432ewfsdvdfe');
             // menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
-            menuActiveSpan.innerHTML = 'Wybrano1: ' + (choosenPietroArr.join(', ')!=' ' ? choosenPietroArr.join(', ') : 'Wybrano2: 0');
+            menuActiveSpan.innerHTML = 'Wybrano: ' + (choosenPietroArr.join(', ')!=' ' ? choosenPietroArr.join(', ') : 'Wybrano: 0');
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
             // if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
@@ -203,7 +203,8 @@ window.addEventListener("load", function() {
             if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
 
             // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
-            menuActiveSpan.innerHTML = choosenInneCount == 0 ? 'Wybierz' : '';
+            menuActiveSpan.innerHTML = choosenInneCount == 0 ? 'Wybierz' : 'Wybrano: ' + choosenInneCount;
+
             console.log('choosenInneCount*************');
             console.log(choosenInneCount);
             choosenInneCount == 0 ? console.log('choosen 0') : console.log('choosen else');
