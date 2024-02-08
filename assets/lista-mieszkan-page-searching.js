@@ -1181,12 +1181,30 @@ window.addEventListener("load", function() {
       })
     }); 
 
-    if(document.body.classList.contains('post-type-archive-lokale')){ 
-      if (document.querySelector('.js-after-search-click')){
-        document.querySelector('.js-foundedPostOnStart').classList.replace('z-[1]', 'z-[0]');
-        console.log('z replace test');
-      }
-    }
+
+    wp.hooks.addAction('ymc_after_loaded_data_2323_' + currentYmcFilterID, 'smartfilter', function(class_name, response){
+      globalFoundedPostsCount = response.post_count
+      console.log('Number of found posts: ' + response.found);
+      console.log('global for 2323**********************');
+      console.log(globalFoundedPostsCount);
+      console.log('**********************');
+
+      if(document.body.classList.contains('post-type-archive-lokale')){ 
+        if (document.querySelector('.js-after-search-click')){
+          document.querySelector('.js-foundedPostOnStart').classList.replace('z-[1]', 'z-[0]');
+          console.log('z replace test');
+        };
+      };
+      
+
+    });
+
+    // if(document.body.classList.contains('post-type-archive-lokale')){ 
+    //   if (document.querySelector('.js-after-search-click')){
+    //     document.querySelector('.js-foundedPostOnStart').classList.replace('z-[1]', 'z-[0]');
+    //     console.log('z replace test');
+    //   };
+    // };
 
   
 
