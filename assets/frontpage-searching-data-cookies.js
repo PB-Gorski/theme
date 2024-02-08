@@ -218,6 +218,7 @@ window.addEventListener("load", function() {
             }else{
               tempInneArr =[];tempInneArr.push(choosenOptionID)
             };
+            menuActiveSpan.innerHTML = choosenInneCount == 0 ? 'Wybierz' : 'Wybrano: ' + choosenInneCount;
           }else{
             // console.log('error');
           };
