@@ -673,7 +673,7 @@ window.addEventListener("load", function() {
 
 
             returnChoosenFromCookiesInwestycje.forEach(el => {
-              el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInwestycje.length;
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano2: ' + returnChoosenFromCookiesInwestycje.length;
             });
           }else if(pokojeArr.includes(+item)){
             // pokoje
