@@ -1084,6 +1084,31 @@ window.addEventListener("load", function() {
       console.log('posts loaded before if');
     });
 
+    wp.hooks.addAction('ymc_after_loaded_data_2323_2', 'smartfilter', function(class_name, response){
+      foundedPostOnStart.innerHTML = 'Znaleziono ' +  response.found + ' ofert pasujących do Twoich kryteriów ' + '<span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' + foundedPostOnStart.dataset.allposts + ')</span></p>';
+      document.cookie = "filteredTermsFromCookies=;";
+      console.log('cookies cleared');
+
+      console.log('Container class: ' + class_name);
+      console.log('Post count: ' + response.post_count);
+      postsFoundFromAfterHook = response.post_count;
+      console.log('Number of found posts: ' + response.found);
+      postsFoundFromAfterHook2 = response.found;
+
+      let currentPriceArr = document.querySelectorAll('.list-item-mieszkanie');
+
+      currentPriceArr.forEach(el => {
+        if(el.childNodes[7].innerText == 'Zapytaj zł'){
+          el.childNodes[7].innerText = 'Zapytaj'
+        };
+        
+      });
+      
+
+
+      console.log('posts loaded before if');
+    });
+
     let globalFoundedPostsCount;
     // dynamic ymc filter id
     currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
