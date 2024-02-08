@@ -257,7 +257,8 @@ window.addEventListener("load", function () {
               choosenInneCount = 0;
             }
 
-            menuActiveSpan.innerHTML = "Wybrano: " + choosenInneCount;
+            // menuActiveSpan.innerHTML = "Wybrano: " + choosenInneCount;
+            menuActiveSpan.innerHTML = choosenInneCount == 0 ? 'Wybierz' : 'Wybrano: ' + choosenInneCount;
           } else {
             // console.log('error');
           }
