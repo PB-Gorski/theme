@@ -405,7 +405,7 @@ $tax_sort = $taxonomy;
 
     <p class="js-oInwestycji hidden text-textGray container mx-auto px-[20px] desktop:px-0 bg-white w-full flex items-center justify-center gap-[6px] desktop:text-center z-[0] absolute translate-x-[-50%] desktop:text-[24px] text-[18px] text-center" style="left:50%;width:100%;height:110px">Wyszukiwanie...</p>
 
-    <div class="posts-found js-post-found bg-white z-[-1]"></div>
+    <div class="posts-found js-post-found bg-white z-[0]"></div>
   <?php endif; ?>
   <?php do_action("ymc_after_filter_layout_" . $layout_id . '_' . $c_target); ?>
 </div>
