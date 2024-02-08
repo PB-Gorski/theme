@@ -377,7 +377,7 @@ window.addEventListener("load", function() {
     </ul>
     `;
 
-    if(document.body.classList.contains('post-type-archive-mieszkania') || document.body.classList.contains('post-type-archive-lokale')){
+    if(document.body.classList.contains('post-type-archive-mieszkania') || document.body.classList.contains('_post-type-archive-lokale')){
       listaMieszkanContainer.insertAdjacentHTML('beforebegin', sortingBarHTML);
     };
 
