@@ -158,7 +158,7 @@ window.addEventListener("load", function() {
             // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
             // menuActiveSpan.innerHTML = 'Wybrano2: ' + choosenInwestycjeCount;
 
-            menuActiveSpan.innerHTML = choosenInwestycjeCount == 0 ? 'Wybierz' : 'Wybrano: ' + choosenInwestycjeCount;
+            menuActiveSpan.innerHTML = choosenInwestycjeCount == 0 ? 'Wybierz' : 'Wybrano2: ' + choosenInwestycjeCount;
             
           }else if(pokojeArr.includes(+choosenOptionID)){
             // pokoje
@@ -673,7 +673,7 @@ window.addEventListener("load", function() {
 
 
             returnChoosenFromCookiesInwestycje.forEach(el => {
-              el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano2: ' + returnChoosenFromCookiesInwestycje.length;
+              el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInwestycje.length;
             });
           }else if(pokojeArr.includes(+item)){
             // pokoje
