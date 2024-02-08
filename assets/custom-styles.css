@@ -83,6 +83,7 @@ h4 {
 }
 .bg-banner figure[class*=wp-block-image] img,
 .banner-lista-mieszkan figure[class*=wp-block-image] img,
+.banner-lista-mieszkan-default figure[class*=wp-block-image] img,
 .banner figure[class*=wp-block-image] img {
   object-fit: cover!important;
   height: 100%!important;
