@@ -677,11 +677,13 @@ label{
   #filter-layout3-filter-layout3 .filter-entry {
     height: 240px;
   }
+  #filter-layout3-filter-layout3 .js-heightAnimation .filter-entry .btn-search ~ div {
+    z-index: 3;
+  }
 }
 
 #filter-layout3-filter-layout3 .js-heightAnimation .filter-entry .btn-search ~ div {
   pointer-events: none;
-  z-index: 3;
 }
 
 #filter-layout3-filter-layout3 .js-heightAnimation:not(.expanded) .filter-entry .btn-search ~ div {
