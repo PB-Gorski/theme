@@ -204,10 +204,6 @@ window.addEventListener("load", function() {
 
             // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
             menuActiveSpan.innerHTML = choosenInneCount == 0 ? 'Wybierz' : 'Wybrano: ' + choosenInneCount;
-
-            console.log('choosenInneCount*************');
-            console.log(choosenInneCount);
-            choosenInneCount == 0 ? console.log('choosen 0') : console.log('choosen else');
           }else{
             // console.log('error');
           };          

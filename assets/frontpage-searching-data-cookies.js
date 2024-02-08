@@ -140,7 +140,7 @@ window.addEventListener("load", function() {
           let pokojeArr = [640,641,642,643,644,645,646];
           let pietroArr = [36,97,78,60,66];
           let terminArr = [49,91,38,122,93];
-          let inneArr = [520,521,522];
+          let inneArr = [520,521,522,650];
           let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1]
           let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
