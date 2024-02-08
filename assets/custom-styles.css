@@ -662,7 +662,7 @@ label{
 
 #filter-layout3-filter-layout3 .filter-entry {
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
   height: 990px;
 }
 
@@ -680,6 +680,7 @@ label{
 
 #filter-layout3-filter-layout3 .js-heightAnimation .filter-entry .btn-search ~ div {
   pointer-events: none;
+  z-index: 3;
 }
 
 #filter-layout3-filter-layout3 .js-heightAnimation:not(.expanded) .filter-entry .btn-search ~ div {
@@ -946,7 +947,7 @@ border-width: 0 2px 2px 0;
 .filter-custom-layout-148.filter-custom-layout-148-6,
 .filter-custom-layout-148.filter-custom-layout-148-4{
   background-color: #ebeef2;
-  z-index: 1;
+  /* z-index: 1; */
   position: relative;
   transition: all 0.3s ease;
 }
