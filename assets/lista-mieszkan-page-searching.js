@@ -203,7 +203,7 @@ window.addEventListener("load", function() {
             if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
 
             // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
-            menuActiveSpan.innerHTML = choosenInneCount == 0 ? 'Wybierz' : 'Wybrano: ' + choosenInneCount;
+            menuActiveSpan.innerHTML = choosenInneCount == 0 ? 'Wybierz' : '';
             console.log('choosenInneCount*************');
             console.log(choosenInneCount);
           }else{
