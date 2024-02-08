@@ -1189,6 +1189,16 @@ window.addEventListener("load", function() {
       console.log(globalFoundedPostsCount);
       console.log('**********************');
 
+      if(globalFoundedPostsCount == 1){
+        document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' ofertę pasującą do Twoich kryteriów';
+      }else if(globalFoundedPostsCount == 2 || globalFoundedPostsCount == 3 || globalFoundedPostsCount == 4){
+        document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' oferty pasujące do Twoich kryteriów';
+      }else if(globalFoundedPostsCount > 4 || globalFoundedPostsCount == 3 || globalFoundedPostsCount == 4){
+        document.querySelector('.js-oInwestycji').innerHTML = 'Znaleziono ' + globalFoundedPostsCount + ' ofert pasujących do Twoich kryteriów';
+      }else if(globalFoundedPostsCount < 1){
+        document.querySelector('.js-oInwestycji').innerHTML = 'Nie znaleziono ofert';
+      };
+
       if(document.body.classList.contains('post-type-archive-lokale')){ 
         if (document.querySelector('.js-after-search-click')){
           document.querySelector('.js-foundedPostOnStart').classList.replace('z-[1]', 'z-[0]');
