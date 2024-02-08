@@ -213,11 +213,24 @@ window.addEventListener("load", function() {
             menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
           }else if(inneArr.includes(+choosenOptionID)){
             // inne
-            if(tempInneArr.includes(choosenOptionID)){
-              removeItemAll(tempInneArr,choosenOptionID);
-            }else{
-              tempInneArr =[];tempInneArr.push(choosenOptionID)
-            };
+            tempInneArr.includes(choosenOptionID) ? removeItemAll(tempInneArr,choosenOptionID) : tempInneArr.push(choosenOptionID);
+
+            if(tempInneArr.length > 0 ){choosenInneCount = tempInneArr.length;}else if(tempInneArr.length == 0){choosenInneCount = 0};
+
+            // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInneCount;
+            menuActiveSpan.innerHTML = choosenInneCount == 0 ? 'Wybierz' : 'Wybrano: ' + choosenInneCount;
+
+
+
+            // // old test
+            // if(tempInneArr.includes(choosenOptionID)){
+            //   removeItemAll(tempInneArr,choosenOptionID);
+            // }else{
+            //   tempInneArr =[];tempInneArr.push(choosenOptionID)
+            // };
+
+
+
             menuActiveSpan.innerHTML = choosenInneCount == 0 ? 'Wybierz' : 'Wybrano: ' + choosenInneCount;
             console.log('choosenInneCount************:');
             console.log(choosenInneCount);
