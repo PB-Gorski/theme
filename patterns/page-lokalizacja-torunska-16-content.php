@@ -35,7 +35,7 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
     <div class="wp-block-group row-content mb-[60px] desktop:flex">
       <!-- wp:group -->
       <div class="wp-block-group block cursor-default left-col desktop:w-[60%] m-0 mb-[30px]">
-        <?php do_shortcode("[mapengine id='2740']") ?>
+        [mapengine id='2740']
       </div>
       <!-- /wp:group -->
 
