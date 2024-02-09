@@ -1768,6 +1768,11 @@ background-color: #e8fbff!important;
   }
 }
 
+.cta2 .wp-block-image img{
+  object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
 .wpcf7 form.sent .wpcf7-response-output{
   color: #000;
