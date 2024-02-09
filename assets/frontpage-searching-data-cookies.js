@@ -201,7 +201,7 @@ window.addEventListener("load", function() {
             if(tempTerminArr.includes(choosenOptionID)){
               removeItemAll(tempTerminArr,choosenOptionID);
             }else{
-              tempTerminArr =[];tempTerminArr.push(choosenOptionID)
+              tempTerminArr.push(choosenOptionID)
             };
 
             menuActiveSpan.innerHTML = tempTerminArr.length == 0 ? 'Wybierz' : `Wybrano: ${tempTerminArr.length}`;
