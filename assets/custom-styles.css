@@ -1601,3 +1601,65 @@ background-color: #e8fbff!important;
   width: 100%;
   height: 100%;
 }
+
+
+/* Contact Form */
+@layer components {
+  .contact-form .wpcf7-text{
+    @apply px-[15px];
+    @apply py-[10px];
+    @apply mb-[10px];
+    @apply w-[500px];
+    @apply w-full;
+    @apply h-[60px];
+    @apply text-[#2e384d];
+    @apply placeholder:text-[#757575];
+  }
+
+  .contact-form .wpcf7-textarea{
+    @apply px-[15px];
+    @apply py-[10px];
+    @apply mb-[10px];
+    @apply w-[500px];
+    @apply w-full;
+    @apply h-[200px];
+    @apply text-[#2e384d];
+    @apply placeholder:text-[#757575];
+  }
+
+  .contact-form .wpcf7-checkbox{
+
+  }
+
+  .contact-form .wpcf7-submit{
+    @apply relative;
+    @apply mt-[40px];
+    @apply bg-[#3d4b66];
+    @apply text-white;
+    @apply w-full;
+    @apply h-[55px];
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    @apply z-[1];
+    @apply before:content-[''];
+    @apply before:inline-block;
+    @apply before:absolute;
+    @apply before:bottom-0;
+    @apply before:left-0;
+    @apply before:w-full;
+    @apply before:min-h-[0%];
+    @apply hover:before:min-h-[100%];
+    @apply before:bg-[#2e384d];
+    @apply before:transition-height;
+    @apply before:duration-300;
+    @apply before:ease-in-out;
+    @apply before:z-[-1];
+    @apply cursor-pointer;
+  }
+}
+
+.wpcf7 form.sent .wpcf7-response-output{
+  color: #000;
+    background: #fff;
+}
