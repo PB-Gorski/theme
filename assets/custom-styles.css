@@ -1778,3 +1778,7 @@ background-color: #e8fbff!important;
   color: #000;
   background: #fff;
 }
+
+.single-mieszkania .wp-block-post-content + .wp-block-post-featured-image{
+  display: none;
+}
