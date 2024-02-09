@@ -39,18 +39,18 @@ if (!defined('ABSPATH')) {
     </tr>
     <tr>
       <th></th>
-      <td class="flex gap-[6px]">
-        [checkbox* check1 class:inline id:check1 ]
-        <input id="check1" cols="50" row="10" name="check1" type="checkbox" class="inline" />
-        <label for="check1" class="ml-[10px] mb-[20px] inline text-[#8a8f99] text-[12px] leading-[18px]"> Wyrażam zgodę na przetwarzanie moich danych osobowych, podanych w formularzu kontaktowym, przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku w celu udzielenia odpowiedzi na zapytanie. Podanie danych jest dobrowolne. Oświadczam, że zapoznałem się z klauzulą informacyjną w zakresie ochrony danych osobowych dostępną tutaj</label>
+      <td>
+        <label class="text-[#8a8f99] text-[12px] leading-[18px] flex gap-[6px] mb-[20px]">
+          [checkbox* check1 class:inline id:check1]<input id="check1" cols="50" row="10" name="check1" type="checkbox" class="inline" /><span class="ml-[10px] inline text-[#8a8f99] text-[12px] leading-[18px]"> Wyrażam zgodę na przetwarzanie moich danych osobowych, podanych w formularzu kontaktowym, przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku w celu udzielenia odpowiedzi na zapytanie. Podanie danych jest dobrowolne. Oświadczam, że zapoznałem się z klauzulą informacyjną w zakresie ochrony danych osobowych dostępną tutaj</span>
+        </label>
       </td>
     </tr>
     <tr>
       <th></th>
       <td class="flex gap-[6px]">
-        [checkbox* check2 class:inline id:check2 ]
-        <input id="check2" name="check2" type="checkbox" class="inline" />
-        <label for="check2" class="ml-[10px] inline text-[#8a8f99] text-[12px] leading-[18px]"> Wyrażam zgodę na przetwarzanie moich danych osobowych, podanych w formularzu kontaktowym, przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku w celu przesyłania informacji marketingowych na mój adres email podany w formularzu. Podanie danych jest dobrowolne. Oświadczam, że zapoznałem się z klauzulą informacyjną w zakresie ochrony danych osobowych dostępną tutaj</label>
+        <label class="text-[#8a8f99] text-[12px] leading-[18px] flex gap-[6px] mb-[20px]">
+          [checkbox* check2 class:inline id:check2 ]<input id="check2" name="check2" type="checkbox" class="inline" /><span class="ml-[10px] inline text-[#8a8f99] text-[12px] leading-[18px]"> Wyrażam zgodę na przetwarzanie moich danych osobowych, podanych w formularzu kontaktowym, przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku w celu przesyłania informacji marketingowych na mój adres email podany w formularzu. Podanie danych jest dobrowolne. Oświadczam, że zapoznałem się z klauzulą informacyjną w zakresie ochrony danych osobowych dostępną tutaj</span>
+        </label>
       </td>
     </tr>
     <tr>
