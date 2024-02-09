@@ -774,7 +774,7 @@ window.addEventListener("load", function() {
 
         console.log('prices from cookies: ',priceMinUpdate, priceMaxUpdate);
         
-        document.querySelector('.dropdown__value-min #inputPriceMin').value = filteredPriceMinFromCookies == '' || filteredPriceMinFromCookies == 0 ? 'Min' : filteredPriceMinFromCookies;
+        document.querySelector('.dropdown__value-min #inputPriceMin').value = filteredPriceMinFromCookies == '' || filteredPriceMinFromCookies == 0 ? '' : filteredPriceMinFromCookies;
 
         document.querySelector('.dropdown__value-max #inputPriceMax').value = filteredPriceMaxFromCookies == 'NaN' ? 'Max' : (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  filteredPriceMaxFromCookies == '' ? 'Max' : filteredPriceMaxFromCookies);
         
