@@ -1649,7 +1649,7 @@ background-color: #e8fbff!important;
     @apply before:bg-[#2e384d];
     @apply before:transition-height;
     @apply before:duration-300;
-    @apply before:ease;
+    @apply before:ease-in-out;
     @apply before:z-[-1];
     @apply cursor-pointer;
   }
