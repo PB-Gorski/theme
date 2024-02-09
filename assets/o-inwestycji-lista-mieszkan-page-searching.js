@@ -1,4 +1,6 @@
 window.addEventListener("load", function () {
+  if (document.body.classList.contains('post-type-archive-lokale')) return
+  
   if (document.body.classList.contains("page-parent")) {
     document.cookie =
       "filteredTermsFromCookies" +
