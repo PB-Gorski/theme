@@ -10,7 +10,7 @@ function parse_inner_blocks(&$parsed_block)
 						continue;
 					}
 
-					if (str_contains($inner_content, 'contact-form')) {
+					if (str_contains($inner_content, 'contact-form-7')) {
 						$inner_content = do_shortcode($inner_content);
 					}
 				}
