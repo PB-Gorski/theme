@@ -1603,7 +1603,7 @@ background-color: #e8fbff!important;
 }
 
 
-/* Contact Form */
+/* Contact Form - Main form */
 @layer components {
   .contact-form .wpcf7-text{
     @apply px-[15px];
@@ -1657,6 +1657,26 @@ background-color: #e8fbff!important;
     @apply before:z-[-1];
     @apply cursor-pointer;
   }
+}
+
+
+/* Contact Form - Newsletter */
+@layer components {
+  .newsletter .wpcf7-text{
+    @apply input-newsletter mb-[20px] h-[55px] bg-white text-[20px] leading-[150%];
+  }
+
+  /* <input id="your-email" name="your-email" type="text" placeholder="Adres e-mail" class="input-newsletter mb-[20px] h-[55px] bg-white text-[20px] leading-[150%]" style="width:390px"> */
+  .newsletter .wpcf7-checkbox{
+
+  }
+
+
+  .newsletter .wpcf7-submit{
+    @apply btn-newsletter group relative bg-primaryRed text-white w-[170px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#95102b] before:transition-height before:duration-300 before:ease cursor-pointer;
+  }
+  //border-bottom:3px solid #95102b
+  /* <button type="submit" class="btn-newsletter group relative bg-primaryRed text-white w-[170px] h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#95102b] before:transition-height before:duration-300 before:ease cursor-pointer" style="border-bottom:3px solid #95102b"><span class="z-[1] relative">Zapisz się</span></button> */
 }
 
 .wpcf7 form.sent .wpcf7-response-output{
