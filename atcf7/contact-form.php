@@ -61,7 +61,7 @@ if (!defined('ABSPATH')) {
     </tr>
   </tbody>
 </table>
-<div>
+<div class="contact-form">
   [submit "Wyślij wiadomość"]
   <!-- <button type="submit" class="relative mt-[40px] bg-[#3d4b66] text-white w-full h-[55px] flex items-center justify-center z-[1] before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#2e384d] before:transition-height before:duration-300 before:ease before:z-[-1] cursor-pointer">Wyślij wiadomość</button> -->
 </div>
