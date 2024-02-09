@@ -10,7 +10,9 @@ function parse_inner_blocks(&$parsed_block)
 						continue;
 					}
 
-					$inner_content = do_shortcode($inner_content);
+					if (str_contains($inner_content, 'contact-form')) {
+						$inner_content = do_shortcode($inner_content);
+					}
 				}
 			}
 			if (isset($inner_block['innerBlocks'])) {
