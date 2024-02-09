@@ -24,7 +24,7 @@
     <!-- wp:group -->
     <div class="wp-block-group mb-[15px] desktop:flex justify-center items-center">
       <!-- wp:shortcode -->
-      <?php echo do_shortcode('[contact-form-7 id="e042380" title="newsletter"]'); ?>
+      <?php echo do_shortcode('[contact-form-7 id="c041531" title="Newsletter - formularz"]'); ?>
       <!-- /wp:shortcode -->
     </div>
     <!-- /wp:group -->
