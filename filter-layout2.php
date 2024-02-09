@@ -369,7 +369,7 @@ $tax_sort = $taxonomy;
                     if ((get_taxonomy($select_term)->label) == 'Miasto') {
                       $type_multiple = '';
                     } else if ((get_taxonomy($select_term)->label) == 'Termin') {
-                      $type_multiple = '';
+                      $type_multiple = 'multiple';
                     } else if ((get_taxonomy($select_term)->label) == 'inne') {
                       $type_multiple = 'multiple';
                     } else {
