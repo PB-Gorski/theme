@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
 <div class="newsletter wrapper">
   <div class="mx-auto desktop:flex justify-center items-start">
     [email* your-email id:your-email]
-    <div class="[&>]:z-[1] [&>]:relative">
+    <div>
       [submit "Zapisz się"]
     </div>
   </div>
