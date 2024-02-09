@@ -776,7 +776,7 @@ window.addEventListener("load", function() {
         
         document.querySelector('.dropdown__value-min #inputPriceMin').value = filteredPriceMinFromCookies == '' || filteredPriceMinFromCookies == 0 ? '' : filteredPriceMinFromCookies;
 
-        document.querySelector('.dropdown__value-max #inputPriceMax').value = filteredPriceMaxFromCookies == 'NaN' ? 'Max' : (filteredPriceMaxFromCookies == 10000000 ? 'Max' :  filteredPriceMaxFromCookies == '' ? 'Max' : filteredPriceMaxFromCookies);
+        document.querySelector('.dropdown__value-max #inputPriceMax').value = filteredPriceMaxFromCookies == 'NaN' ? '' : (filteredPriceMaxFromCookies == 10000000 ? '' :  filteredPriceMaxFromCookies == '' ? '' : filteredPriceMaxFromCookies);
         
         
         document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML = filteredMetrazMinFromCookies == '' ? 0 : Number(filteredMetrazMinFromCookies);
