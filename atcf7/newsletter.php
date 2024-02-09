@@ -14,8 +14,8 @@ if (!defined('ABSPATH')) {
       [submit "Submit"]
     </div>
   </div>
-  <div class="flex" style="max-width:560px">
+  <label class="flex" style="max-width:560px">
     [checkbox* checkNewsletter class:inline id:checkNewsletter]<input id="checkNewsletter" cols="50" row="10" name="checkNewsletter" type="checkbox" />
     <p class="ml-[10px] mb-[20px] text-white text-[13px] leading-[28px]">Wyrażam zgodę na otrzymywanie informacji handlowych w tym marketingowych od PB Górski Sp. z o.o. SKA drogą elektroniczną (za pośrednictwem adresu e-mail). <a href="/rodo" class="hover:text-primaryRed">Więcej informacji o administracji danych.</a></p>
-  </div>
+  </label>
 </div>
