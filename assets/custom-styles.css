@@ -1627,6 +1627,10 @@ background-color: #e8fbff!important;
     @apply placeholder:text-[#757575];
   }
 
+  .contact-form .wpcf7-checkbox{
+
+  }
+
   .contact-form .wpcf7-submit{
     @apply relative;
     @apply mt-[40px];
