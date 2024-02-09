@@ -33,12 +33,12 @@ if (!defined('ABSPATH')) {
     <tr>
       <th><label for="your-content" onclick=""></label></th>
       <td>
-        [textarea* your-phone id:your-phone placeholder "Numer telefonu"]
+        [textarea* your-content id:your-content placeholder "Treść wiadomości"]
         <!-- <textarea id="your-name" cols="50" row="10" name="your-name" type="textarea" placeholder="Treść wiadomości" class="px-[15px] py-[10px] mb-[10px] w-[500px] w-full h-[200px] text-[#2e384d] placeholder:text-[#757575]"></textarea> -->
       </td>
     </tr>
     <tr>
-      <th><label for="your-content" onclick=""></label></th>
+      <th><label for="check1" onclick=""></label></th>
       <td class="flex gap-[6px]">
         [checkbox* check1 class:inline x5 id:check1 ]
         <!-- <input id="check1" cols="50" row="10" name="check1" type="checkbox" class="inline" /> -->
@@ -46,7 +46,7 @@ if (!defined('ABSPATH')) {
       </td>
     </tr>
     <tr>
-      <th><label for="your-content" onclick=""></label></th>
+      <th><label for="check2" onclick=""></label></th>
       <td class="flex gap-[6px]">
         [checkbox* check2 class:inline x5 id:check2 ]
         <!-- <input id="check2" name="check2" type="checkbox" class="inline" /> -->
@@ -54,7 +54,7 @@ if (!defined('ABSPATH')) {
       </td>
     </tr>
     <tr>
-      <th><label for="your-content" onclick=""></label></th>
+      <th><label></label></th>
       <td>
         <p class="ml-[12px] my-[20px] text-[#8a8f99] text-[12px] leading-[18px]">Informujemy, że administratorem Państwa danych osobowych podanych w powyższym formularzu jest Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku (80-312) ul. Wita Stwosza 31A/31. Państwa dane przetwarzane będą w celu udzielenia odpowiedzi na zapytanie oraz, w przypadku wyrażenia zgody na cele marketingowe, do przesyłania treści marketingowych, zgodnie z art. 6 ust. 1 lit. a) i b) ogólnego rozporządzenia o ochronie danych osobowych. Udzielona przez Państwa zgoda może zostać cofnięta w dowolnym momencie przez wysłanie wiadomości e-mail na adres iod@pbgorski.pl spod adresu, którego zgoda dotyczy. Pełne informacje o zasadach przetwarzania danych osobowych przez Przedsiębiorstwo Budowlane Górski spółka z ograniczoną odpowiedzialnością spółka komandytowo-akcyjna z siedzibą w Gdańsku dostępne są w zakładce RODO</p>
       </td>
