@@ -517,13 +517,6 @@ window.addEventListener("load", function() {
       // console.log('cookies exist min: ',filteredPriceMinFromCookies);
       // console.log('cookies exist2 max: ',filteredPriceMaxFromCookies);
 
-      let filteredCustomPriceFromCookies = runSearchingPrice();
-      console.log(filteredCustomPriceFromCookies.join());
-      
-      console.log('filteredTermsFromCookies', filteredTermsFromCookies);
-      console.log('filteredTermsFromCookies from frontpage: ',filteredTermsFromCookies);
-      console.log('max metraz***: ',filteredMetrazMaxFromCookies);
-
               // dynamic term id for investition
         // currentInvestName = document.referrer.slice(document.referrer.match('o-inwestycji')['index']).replace('o-inwestycji-','').slice(-30,-1);
         // currentInvestID
@@ -790,6 +783,14 @@ window.addEventListener("load", function() {
 
         document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML = filteredMetrazMaxFromCookies == 'NaN' ? 'Max' : (filteredMetrazMaxFromCookies == 10000000 ? 'Max' :  filteredMetrazMaxFromCookies == '' ? 'Max' : Number(filteredMetrazMaxFromCookies).toLocaleString());
           
+        let filteredCustomPriceFromCookies = runSearchingPrice();
+      
+        console.log(filteredCustomPriceFromCookies.join());
+        console.log('filteredTermsFromCookies', filteredTermsFromCookies);
+        console.log('filteredTermsFromCookies from frontpage: ',filteredTermsFromCookies);
+        console.log('max metraz***: ',filteredMetrazMaxFromCookies);
+  
+
         console.log('after write', filteredMetrazMaxFromCookies);
       };   
 
