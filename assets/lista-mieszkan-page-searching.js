@@ -188,14 +188,15 @@ window.addEventListener("load", function() {
             menuActiveSpan.innerHTML = 'Wybrano: ' + (choosenPietroArr.join(', ')!=' ' ? choosenPietroArr.join(', ') : 'Wybrano: 0');
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
-            // if(tempTerminArr.includes(choosenOptionID)){removeItemAll(tempTerminArr,choosenOptionID);}else{tempTerminArr.push(choosenOptionID)};
 
-            // tempTerminArr.forEach(choosenItem =>{
-            //   passiveOptions.forEach(item => {
-            //     if(item.childNodes[1].dataset.termid == choosenItem){choosenTempArr.push(item.childNodes[1].dataset.name)}
-            //   });
-            // });
-            // menuActiveSpan.innerHTML = choosenTempArr.join(', ');
+            if(tempTerminArr.includes(choosenOptionID)){
+              removeItemAll(tempTerminArr,choosenOptionID);
+            }else{
+              tempTerminArr =[];tempTerminArr.push(choosenOptionID)
+            };
+
+            menuActiveSpan.innerHTML = tempTerminArr.length == 0 ? 'Wybierz' : `Wybrano: ${tempTerminArr.length}`;
+            
           }else if(inneArr.includes(+choosenOptionID)){
             // inne
             tempInneArr.includes(choosenOptionID) ? removeItemAll(tempInneArr,choosenOptionID) : tempInneArr.push(choosenOptionID);

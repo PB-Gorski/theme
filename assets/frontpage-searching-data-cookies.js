@@ -197,20 +197,15 @@ window.addEventListener("load", function() {
             menuActiveSpan.innerHTML = (choosenPietroArr.join(', ')!='' ? 'Wybrano: ' +  choosenPietroArr.join(', ') : 'Wybierz');
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
-            console.log('wybrano z kategorii - miasto');
 
             if(tempTerminArr.includes(choosenOptionID)){
               removeItemAll(tempTerminArr,choosenOptionID);
             }else{
               tempTerminArr =[];tempTerminArr.push(choosenOptionID)
             };
-            wp.hooks.addAction('ymc_before_loaded_data_1850_8', 'smartfilter', function(class_name, response){
-              if (tempTerminArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
-            });
-            // setTimeout(() => {
-            //   if (tempTerminArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
-            // }, 10);
-            menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(', ');
+
+            menuActiveSpan.innerHTML = tempTerminArr.length == 0 ? 'Wybierz' : `Wybrano: ${tempTerminArr.length}`;
+
           }else if(inneArr.includes(+choosenOptionID)){
             // inne
             tempInneArr.includes(choosenOptionID) ? removeItemAll(tempInneArr,choosenOptionID) : tempInneArr.push(choosenOptionID);
