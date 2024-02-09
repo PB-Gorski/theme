@@ -1,4 +1,46 @@
 <?php
+//fix do_shortcode
+function parse_inner_blocks(&$parsed_block)
+{
+	if (isset($parsed_block['innerBlocks'])) {
+		foreach ($parsed_block['innerBlocks'] as $key => &$inner_block) {
+			if (!empty($inner_block['innerContent'])) {
+				foreach ($inner_block['innerContent'] as &$inner_content) {
+					if (empty($inner_content)) {
+						continue;
+					}
+
+					$inner_content = do_shortcode($inner_content);
+				}
+			}
+			if (isset($inner_block['innerBlocks'])) {
+				$inner_block = parse_inner_blocks($inner_block);
+			}
+		}
+	}
+
+	return $parsed_block;
+}
+
+add_filter('render_block_data', function ($parsed_block) {
+
+	if (isset($parsed_block['innerContent'])) {
+		foreach ($parsed_block['innerContent'] as &$inner_content) {
+			if (empty($inner_content)) {
+				continue;
+			}
+
+			$inner_content = do_shortcode($inner_content);
+		}
+	}
+
+	$parsed_block = parse_inner_blocks($parsed_block);
+
+	return $parsed_block;
+}, 10, 1);
+// /fix do_shortcode
+
+
 if (!function_exists('pb_gorski_blocks_theme_support')) :
 	function pb_gorski_blocks_theme_support()
 	{
