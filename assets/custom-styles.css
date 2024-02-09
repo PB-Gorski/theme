@@ -1658,3 +1658,8 @@ background-color: #e8fbff!important;
     @apply cursor-pointer;
   }
 }
+
+.wpcf7 form.sent .wpcf7-response-output{
+  color: #000;
+    background: #fff;
+}
