@@ -23,13 +23,9 @@
 
     <!-- wp:group -->
     <div class="wp-block-group mb-[15px] desktop:flex justify-center items-center">
-
-      <!-- wp:contact-form-7/contact-form-selector {"id":8efafb8,"hash":"8efafb8","title":"Newsletter - formularz"} -->
-      <div class="wp-block-contact-form-7-contact-form-selector">
-        [contact-form-7 id="8efafb8" title="Newsletter - formularz"]
-      </div>
-      <!-- /wp:contact-form-7/contact-form-selector -->
-
+      <!-- wp:shortcode -->
+      <?php echo do_shortcode('[contact-form-7 id="8efafb8" title="Newsletter - formularz"]'); ?>
+      <!-- /wp:shortcode -->
     </div>
     <!-- /wp:group -->
   </div>
