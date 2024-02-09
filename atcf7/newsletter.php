@@ -9,9 +9,9 @@ if (!defined('ABSPATH')) {
 
 <div class="newsletter wrapper">
   <div class="mx-auto desktop:flex justify-center items-start">
-    [email* email-newsletter id:email-newsletter]
+    [email* your-email id:your-email]
     <div>
-      [submit class:group "Submit"]
+      [submit "Submit"]
     </div>
   </div>
   <label class="flex" style="max-width:560px">
