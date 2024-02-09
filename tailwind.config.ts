@@ -12,10 +12,9 @@ module.exports = {
   theme: {
     container: {
       screens: {
-        lg: '960px',
-				'xl': '1170px',
-				'2xl': '1445px',
-
+        lg: "960px",
+        xl: "1170px",
+        "2xl": "1445px",
       },
     },
     screens: {
@@ -26,15 +25,17 @@ module.exports = {
       fullhd: "1920px",
     },
     extend: {
-			colors: {
-				primaryRed: '#b22944',
-        textGray: '#2E384D',
-        bgLightGray:'#EBEEF2',
-        btnHoverRed: '#D00C32',
-        bgDarkGray: '#8A8F99',
-        lightBlue: '#CCF6FF',
-			},
-			
-		},
+      colors: {
+        primaryRed: "#b22944",
+        textGray: "#2E384D",
+        bgLightGray: "#EBEEF2",
+        btnHoverRed: "#D00C32",
+        bgDarkGray: "#8A8F99",
+        lightBlue: "#CCF6FF",
+      },
+      transitionProperty: {
+        height: "height",
+      },
+    },
   },
 } satisfies Config;
