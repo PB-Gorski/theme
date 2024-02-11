@@ -189,6 +189,7 @@ $tax_sort = $taxonomy;
             echo '</br>';
             echo '**********';
             echo '</br>';
+            echo home_url();
             echo str_replace(home_url(), '', $escaped_url);
             echo '</br>';
             echo '**********';
