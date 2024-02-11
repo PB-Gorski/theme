@@ -182,7 +182,7 @@ $tax_sort = $taxonomy;
             </div>
 
             <?php
-            $url =  "https{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+            $url =  "https://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
 
             $escaped_url = htmlspecialchars($url, ENT_QUOTES, 'UTF-8');
             echo $escaped_url;
@@ -191,10 +191,16 @@ $tax_sort = $taxonomy;
             echo '1**********';
             echo '</br>';
             echo home_url();
+            echo '</br>';
             echo '2**********';
+            echo '</br>';
             echo $url;
             echo '</br>';
+            echo '3**********';
+            echo '</br>';
             echo str_replace(home_url(), 'test', $escaped_url);
+            echo '</br>';
+            echo '3**********';
             echo '</br>';
             echo '2**********';
             echo '</br>';
