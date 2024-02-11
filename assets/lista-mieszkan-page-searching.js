@@ -1052,7 +1052,7 @@ window.addEventListener("load", function() {
 
       YMCTools({
         target: filterID,
-        terms: searchedFromActiveIDs.join() + ',' + choosenOptions.join(),      
+        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join() + ',' + searchedFromActiveIDs.join(),      
       }).apiTermUpdate(); 
 
       console.log('in btn prices: ', pricesID.join());
