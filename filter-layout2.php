@@ -189,7 +189,7 @@ $tax_sort = $taxonomy;
               echo 'str pos  page o inwestycji';
             };
 
-            if (str_contains(home_url(), 'o-inwestycji') == false) {
+            if (str_contains(home_url(), 'o-inwestycji')) {
               echo 'str_contains home';
             } else {
               echo 'str_contains page o inwestycji';
