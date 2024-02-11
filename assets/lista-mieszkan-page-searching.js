@@ -1020,15 +1020,15 @@ window.addEventListener("load", function() {
     btnSearch.addEventListener('click', () =>{
       let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
-      let searchedFromActiveIDs = document.querySelectorAll('.active');
-      let searchedReadyArr = [];
+      let searchedFromActiveHTML = document.querySelectorAll('.active');
+      let searchedFromActiveIDs = [];
 
-      searchedFromActiveIDs.forEach(item =>{
+      searchedFromActiveHTML.forEach(item =>{
         // console.log('term from cookies',item.dataset.termid);
-        searchedReadyArr.push(item.dataset.termid)
+        searchedFromActiveIDs.push(item.dataset.termid)
       });
 
-      console.log('logggggg: ',searchedReadyArr.join());
+      console.log('logggggg: ',searchedFromActiveIDs.join());
 
       deleteAllCookies();
       // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
@@ -1047,19 +1047,20 @@ window.addEventListener("load", function() {
       // old
       // YMCTools({
       //   target: filterID,
-      //   terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedReadyArr.join(),      
+      //   terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedFromActiveIDs.join(),      
       // }).apiTermUpdate(); 
+
       YMCTools({
         target: filterID,
-        terms: searchedReadyArr.join() + ',' + choosenOptions.join(),      
+        terms: searchedFromActiveIDs.join() + ',' + choosenOptions.join(),      
       }).apiTermUpdate(); 
 
       console.log('in btn prices: ', pricesID.join());
       console.log('in btn metraze: ', metrazeID.join());
-      console.log('all terms id searched: ', pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join() + ',' + searchedReadyArr.join());
+      console.log('all terms id searched: ', pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join() + ',' + searchedFromActiveIDs.join());
       console.log('all terms id searched2: ', pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join());
-      console.log('all terms id searched3: ', searchedReadyArr.join() + ',' + pricesID.join() + ',' + metrazeID.join(),);
-      console.log('all terms id searched4: ', searchedReadyArr.join() + ',' + choosenOptions.join());
+      console.log('all terms id searched3: ', searchedFromActiveIDs.join() + ',' + pricesID.join() + ',' + metrazeID.join(),);
+      console.log('all terms id searched4: ', searchedFromActiveIDs.join() + ',' + choosenOptions.join());
     });
 
     // *******************************************************
