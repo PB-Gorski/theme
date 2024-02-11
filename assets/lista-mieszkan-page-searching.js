@@ -1058,6 +1058,7 @@ window.addEventListener("load", function() {
       console.log('in btn metraze: ', metrazeID.join());
       console.log('all terms id searched: ', pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join() + ',' + searchedReadyArr.join());
       console.log('all terms id searched2: ', pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join());
+      console.log('all terms id searched3: ', searchedReadyArr.join() + ',' + pricesID.join() + ',' + metrazeID.join(),);
     });
 
     // *******************************************************
