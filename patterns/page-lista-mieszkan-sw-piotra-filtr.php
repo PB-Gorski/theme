@@ -12,26 +12,6 @@
 <div id="content" class="wp-block-group content bg-[#ebeef2] relative">
   <!-- wp:group -->
   <div class="wp-block-group">
-    <!-- wp:group -->
-    <div class="wp-block-group test row-links mb-[80px] pt-[30px] flex flex-wrap justify-center items-center gap-[20px]">
-      <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/o-inwestycji-sw-piotra' ?>" class="text-[#8a8f99] hover:text-[#3e4759]" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
-      <!-- /wp:paragraph -->
-      <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lokalizacja-sw-piotra' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
-      <!-- /wp:paragraph -->
-      <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/lista-mieszkan-sw-piotra' ?>" class="" data-aos="fade-up" data-aos-offset="30">Lista mieszkań</a>
-      <!-- /wp:paragraph -->
-      <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/galeria-sw-piotra' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Galeria</a>
-      <!-- /wp:paragraph -->
-      <!-- wp:paragraph -->
-      <a href="<?php echo home_url() . '/kronika-budowy-sw-piotra' ?>" class="text-[#8a8f99] hover:text-textGray" data-aos="fade-up" data-aos-offset="30">Kronika budowy</a>
-      <!-- /wp:paragraph -->
-    </div>
-    <!-- /wp:group -->
-
     <!-- wp:list -->
     <ul class="wp-block-list js-lista-mieszkan-list w-full bg-white">
       <!-- wp:list-item -->
