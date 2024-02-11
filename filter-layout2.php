@@ -200,6 +200,9 @@ $tax_sort = $taxonomy;
             echo '</br>';
             echo '**********';
             echo '</br>';
+            echo get_home_url();
+            echo get_home_path();
+
             ?>
 
             <?php
