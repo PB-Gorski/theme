@@ -421,7 +421,7 @@ $tax_sort = $taxonomy;
       ));
 
       if ($children) {
-        echo '<ul class="wp-block-group test row-links pt-[30px] flex flex-wrap justify-center items-center gap-[20px] is-layout-flow wp-block-group-is-layout-flow !mb-[30px]" style="margin-bottom:30px!important;">' . $children . '</ul>';
+        echo '<ul class="wp-block-group test row-links pt-[30px] flex flex-wrap justify-center items-center gap-[20px] is-layout-flow wp-block-group-is-layout-flow !pb-[30px]">' . $children . '</ul>';
       }
       ?>
     <?php
