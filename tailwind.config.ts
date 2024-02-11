@@ -3,8 +3,13 @@ import type { Config } from "tailwindcss";
 module.exports = {
   important: true,
   content: [
+    "./filter-layout.php",
+    "./filter-layout2.php",
+    "./filter-layout-lokale.php",
+    "./functions.php",
     "./assets/**/*.{js,ts}",
     "./parts/**/*.{html,php}",
+    "./atcf7/**/*.{html,php}",
     "./patterns/**/*.{html,php}",
     "./templates/**/*.{html,php}",
   ],
