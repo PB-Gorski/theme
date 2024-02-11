@@ -184,12 +184,11 @@ $tax_sort = $taxonomy;
 
             if (strpos($url, 'o-inwestycji') == false) {
               // homepage
-              $searchBtnLink = '/lista-mieszkan' . $currentInvest;
+              $searchBtnLink = '/lista-mieszkan';
             } else {
               // page o inwestycji
-              $searchBtnLink = '/lista-mieszkan';
+              $searchBtnLink = '/lista-mieszkan' . $currentInvest;
             };
-            echo $searchBtnLink;
             ?>
 
             <div class="btn-search btn-wrapper bg-white h-[120px] flex items-center justify-center" style="width:100%;border-bottom:2px solid #ebeef2">
