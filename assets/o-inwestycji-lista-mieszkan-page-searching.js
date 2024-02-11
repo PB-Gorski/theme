@@ -973,6 +973,8 @@ window.addEventListener("load", function () {
 
                 console.log("^^^^^^^^^^^^^^^^^^^");
                 console.log(investElFormName);
+                console.log(globalCurrentInvestName);
+
                 console.log("^^^^^^^^^^^^^^^^^^^");
 
                 if (filteredTermsFromCookies == String(globalCurrentInvestID)) {
