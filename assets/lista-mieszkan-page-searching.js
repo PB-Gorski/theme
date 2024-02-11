@@ -1020,10 +1020,10 @@ window.addEventListener("load", function() {
     btnSearch.addEventListener('click', () =>{
       let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
-      let searchedFromCookiesIDs = document.querySelectorAll('.active');
+      let searchedFromActiveIDs = document.querySelectorAll('.active');
       let searchedReadyArr = [];
 
-      searchedFromCookiesIDs.forEach(item =>{
+      searchedFromActiveIDs.forEach(item =>{
         // console.log('term from cookies',item.dataset.termid);
         searchedReadyArr.push(item.dataset.termid)
       });
@@ -1051,7 +1051,7 @@ window.addEventListener("load", function() {
       // }).apiTermUpdate(); 
       YMCTools({
         target: filterID,
-        terms: searchedReadyArr.join() + ',' + pricesID.join() + ',' + metrazeID.join(),      
+        terms: searchedReadyArr.join() + ',' + choosenOptions.join(),      
       }).apiTermUpdate(); 
 
       console.log('in btn prices: ', pricesID.join());
@@ -1059,6 +1059,7 @@ window.addEventListener("load", function() {
       console.log('all terms id searched: ', pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join() + ',' + searchedReadyArr.join());
       console.log('all terms id searched2: ', pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join());
       console.log('all terms id searched3: ', searchedReadyArr.join() + ',' + pricesID.join() + ',' + metrazeID.join(),);
+      console.log('all terms id searched4: ', searchedReadyArr.join() + ',' + choosenOptions.join());
     });
 
     // *******************************************************
