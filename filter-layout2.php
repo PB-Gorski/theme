@@ -175,25 +175,20 @@ $tax_sort = $taxonomy;
                 <p class="desktop:text-[18px] text-[16px] font-bold z-[1]">Więcej opcji</p>
               </div>
             </div>
-            <div class="btn-search btn-wrapper bg-white h-[120px] flex items-center justify-center" style="width:100%;border-bottom:2px solid #ebeef2">
-              <div class="wp-block-group group btn-search mt-[5px] relative bg-primaryRed text-white h-[50px] flex items-center justify-center gap-[15px] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer" style="height:50px;width:160px;border-bottom:3px solid #95102b">
-                <p class="w-full h-full test13 flex items-center justify-center desktop:text-[18px] text-[16px] font-bold z-[1] text-white"><a href="<?php echo home_url() . '/lista-mieszkan-osiedle-srebrniki' ?>" class="w-full h-full flex items-center justify-center">Szukaj</a></p>
-              </div>
-            </div>
 
             <?php
             $url =  "https://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
-
             $escaped_url = htmlspecialchars($url, ENT_QUOTES, 'UTF-8');
-            echo $escaped_url;
-
-            echo '3**********';
-            echo '</br>';
-            echo str_replace('/', '', (str_replace(home_url() . '/o-inwestycji-', '', $escaped_url)));
-            echo '</br>';
-            echo '3**********';
-
+            $currentInvest = str_replace('/', '', (str_replace(home_url() . '/o-inwestycji-', '', $escaped_url)));
             ?>
+
+            <div class="btn-search btn-wrapper bg-white h-[120px] flex items-center justify-center" style="width:100%;border-bottom:2px solid #ebeef2">
+              <div class="wp-block-group group btn-search mt-[5px] relative bg-primaryRed text-white h-[50px] flex items-center justify-center gap-[15px] before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#9C0927] before:transition-height before:duration-300 before:ease cursor-pointer" style="height:50px;width:160px;border-bottom:3px solid #95102b">
+                <p class="w-full h-full test13 flex items-center justify-center desktop:text-[18px] text-[16px] font-bold z-[1] text-white"><a href="<?php echo home_url() . '/lista-mieszkan-' . $currentInvest ?>" class="w-full h-full flex items-center justify-center">Szukaj</a></p>
+              </div>
+            </div>
+
+
 
             <?php
             echo '<div class="dropdown-filter defaultPrice hidden">';
