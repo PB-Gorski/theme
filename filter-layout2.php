@@ -182,6 +182,29 @@ $tax_sort = $taxonomy;
             </div>
 
             <?php
+            echo '<br>';
+            echo '***********';
+            print_r($terms_selected);
+            echo '<br>';
+            echo '***********';
+            print_r($terms_selected);
+            echo '<br>';
+            echo '***********';
+            get_taxonomy($select_term)->label;
+            echo '<br>';
+            echo '***********';
+            print_r($terms_selected);
+            echo '<br>';
+            echo '***********';
+
+            $url =  "//{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+
+            $escaped_url = htmlspecialchars($url, ENT_QUOTES, 'UTF-8');
+            echo '<a href="' . $escaped_url . '">' . $escaped_url . '</a>';
+
+            ?>
+
+            <?php
             echo '<div class="dropdown-filter defaultPrice hidden">';
             echo '<div class="menu-active">';
             echo '<span>' . get_taxonomy($select_term)->label . '</span> <i class="arrow down"></i>';
