@@ -606,6 +606,10 @@ add_filter('ymc_post_custom_layout_2323_1', 'my_custom_post_layoutlayout2323_1',
 // 148_1 filter layout
 function pbgorski_custom_filter_layout($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
+	$scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
+	$url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$page_parent_id = wp_get_post_parent_id(url_to_postid($url));
+
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
 	$filter_id = '148';
 	$layout_id = '1';
@@ -644,6 +648,10 @@ add_filter('ymc_post_custom_layout_148_1', 'my_custom_post_layout', 10, 5);
 // 148_2 filter layout
 function pbgorski_custom_filter_layout2($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
+	$scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
+	$url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$page_parent_id = wp_get_post_parent_id(url_to_postid($url));
+
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
 	$filter_id = '148';
 	$layout_id = '2';
@@ -682,6 +690,10 @@ add_filter('ymc_post_custom_layout_148_2', 'my_custom_post_layout2', 10, 5);
 // 148_3 filter layout
 function pbgorski_custom_filter_layout148_3($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
+	$scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
+	$url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$page_parent_id = wp_get_post_parent_id(url_to_postid($url));
+
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
 	$filter_id = '148';
 	$layout_id = '3';
@@ -720,6 +732,10 @@ add_filter('ymc_post_custom_layout_148_3', 'my_custom_post_layout148_3', 10, 5);
 // 148_4 filter layout
 function pbgorski_custom_filter_layout148_4($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
+	$scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
+	$url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$page_parent_id = wp_get_post_parent_id(url_to_postid($url));
+
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
 	$filter_id = '148';
 	$layout_id = '4';
@@ -758,7 +774,6 @@ add_filter('ymc_post_custom_layout_148_4', 'my_custom_post_layout148_4', 10, 5);
 // 148_5 filter layout
 function pbgorski_custom_filter_layout148_5($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
-
 	$scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
 	$url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	$page_parent_id = wp_get_post_parent_id(url_to_postid($url));
@@ -801,6 +816,10 @@ add_filter('ymc_post_custom_layout_148_5', 'my_custom_post_layout148_5', 10, 5);
 // 148_6 filter layout
 function pbgorski_custom_filter_layout148_6($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
+	$scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
+	$url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$page_parent_id = wp_get_post_parent_id(url_to_postid($url));
+
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
 	$filter_id = '148';
 	$layout_id = '6';
@@ -839,6 +858,10 @@ add_filter('ymc_post_custom_layout_148_6', 'my_custom_post_layout148_6', 10, 5);
 // 148_7 filter layout
 function pbgorski_custom_filter_layout148_7($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
+	$scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
+	$url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$page_parent_id = wp_get_post_parent_id(url_to_postid($url));
+
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
 	$filter_id = '148';
 	$layout_id = '7';
@@ -877,6 +900,10 @@ add_filter('ymc_post_custom_layout_148_7', 'my_custom_post_layout148_7', 10, 5);
 // 148_8 filter layout
 function pbgorski_custom_filter_layout148_8($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
+	$scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
+	$url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$page_parent_id = wp_get_post_parent_id(url_to_postid($url));
+
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
 	$filter_id = '148';
 	$layout_id = '8';
