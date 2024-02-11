@@ -633,7 +633,7 @@ window.addEventListener("load", function () {
           document.referrer.search("galeria-" + investName) > 20 ||
           document.referrer.search("kronika-budowy-" + investName) > 20
         ) {
-          document.cookie = "filteredTermsFromCookies=" + investID + ";";
+          document.cookie = "filteredTermsFromCookies=" + investID + ',642' + ";";
           globalCurrentInvestID = investID;
           globalCurrentInvestName = investName;
         }
