@@ -1547,7 +1547,7 @@ window.addEventListener("load", function () {
       let searchedReadyArr = [];
 
       searchedFromCookiesIDs.forEach((item) => {
-        console.log("term from cookies", item.dataset.termid);
+        // console.log("term from cookies", item.dataset.termid);
         searchedReadyArr.push(item.dataset.termid);
       });
 
