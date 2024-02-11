@@ -189,6 +189,7 @@ $tax_sort = $taxonomy;
               // page o inwestycji
               $searchBtnLink = '/lista-mieszkan';
             };
+            echo $searchBtnLink;
             ?>
 
             <div class="btn-search btn-wrapper bg-white h-[120px] flex items-center justify-center" style="width:100%;border-bottom:2px solid #ebeef2">
