@@ -728,7 +728,8 @@ window.addEventListener("load", function () {
     ) {
       // cookies exist
       console.log("cookies exist");
-      filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
+      // test22
+      filteredTermsFromCookies = getCookie("filteredTermsFromCookies") + '642';
       filteredPriceMinFromCookies = getCookie("PriceMinFromCookies");
       filteredPriceMaxFromCookies = getCookie("PriceMaxFromCookies");
       filteredMetrazMinFromCookies = getCookie("MetrazMinFromCookies");
