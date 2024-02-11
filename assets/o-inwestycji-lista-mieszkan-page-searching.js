@@ -982,7 +982,8 @@ window.addEventListener("load", function () {
                 console.log("^^^^^^^^^^^^^^^^^^^");
 
                 if (filteredTermsFromCookies == String(globalCurrentInvestID)) {
-                  console.log("444444444444444" + globalCurrentInvestID);
+                  console.log("444444444444444 globalCurrentInvestID: " + globalCurrentInvestID);
+                  console.log("444444444444444 filteredTermsFromCookies: " + filteredTermsFromCookies);
                   returnChoosenFromCookiesInwestycje.forEach((el) => {
                     // inwestycja filtr
                     el.parentNode.previousElementSibling.childNodes[1].innerHTML =
