@@ -183,7 +183,7 @@ $tax_sort = $taxonomy;
             $currentInvest = '-' . str_replace('/', '', (str_replace(home_url() . '/o-inwestycji-', '', $escaped_url)));
             print_r($currentInvest);
             echo '<br>';
-            if (is_front_page()) {
+            if (is_home()) {
               echo 'fronpage';
             } else {
               echo 'not fronpage';
