@@ -408,28 +408,22 @@ $tax_sort = $taxonomy;
     <?php
     if ($page_parent_id) :
     ?>
-      <div class="wp-block-group test row-links mb-[80px] pt-[30px] flex flex-wrap justify-center items-center gap-[20px] is-layout-flow wp-block-group-is-layout-flow" style="
-     margin-bottom: 30px!important;
-    ">
+      <?php
 
-        <?php
+      $walker = new Investment_Subpages();
+      $children = wp_list_pages(array(
+        'title_li' => '',
+        'title_li' => '',
+        'sort_column' => 'menu_order',
+        'child_of' => $page_parent_id,
+        'walker' => $walker,
+        'echo' => 0
+      ));
 
-        $walker = new Investment_Subpages();
-        $children = wp_list_pages(array(
-          'title_li' => '',
-          'title_li' => '',
-          'sort_column' => 'menu_order',
-          'child_of' => $page_parent_id,
-          'walker' => $walker,
-          'echo' => 0
-        ));
-
-        if ($children) {
-          echo '<ul>' . $children . '</ul>';
-        }
-        ?>
-
-      </div>
+      if ($children) {
+        echo '<ul class="wp-block-group test row-links pt-[30px] flex flex-wrap justify-center items-center gap-[20px] is-layout-flow wp-block-group-is-layout-flow !mb-[30px]">' . $children . '</ul>';
+      }
+      ?>
     <?php
     endif;
     ?>
