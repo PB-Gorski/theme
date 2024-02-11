@@ -553,7 +553,7 @@ window.addEventListener("load", function() {
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
         console.log('clicked target: ',e.target.dataset.termid);
-        document.cookie = "filteredTermsFromCookies=" + e.target.dataset.termid;
+        document.cookie = "filteredTermsFromCookies=";
       });
     });
 
