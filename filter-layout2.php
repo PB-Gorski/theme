@@ -186,11 +186,17 @@ $tax_sort = $taxonomy;
 
             $escaped_url = htmlspecialchars($url, ENT_QUOTES, 'UTF-8');
             echo $escaped_url;
+
             echo '</br>';
             echo '**********';
             echo '</br>';
             echo home_url();
+            echo '2**********';
+            echo $url;
+            echo '</br>';
             echo str_replace(home_url(), '', $escaped_url);
+            echo '</br>';
+            echo '2**********';
             echo '</br>';
             echo '**********';
             echo '</br>';
