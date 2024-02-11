@@ -1580,6 +1580,9 @@ window.addEventListener("load", function () {
           "," +
           searchedReadyArr.join()
       );
+
+      console.log('globalCurrentInvestID'); 
+      console.log(globalCurrentInvestID); 
     });
 
     // *******************************************************
