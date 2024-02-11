@@ -198,7 +198,7 @@ $tax_sort = $taxonomy;
             echo '</br>';
             echo '3**********';
             echo '</br>';
-            echo str_replace(home_url(), 'test', $escaped_url);
+            echo str_replace(home_url() . '/o-inwestycji-', '', $escaped_url);
             echo '</br>';
             echo '3**********';
             echo '</br>';
