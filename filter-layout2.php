@@ -184,7 +184,7 @@ $tax_sort = $taxonomy;
 
             if (strpos($url, 'o-inwestycji') == false) {
               // homepage
-              $searchBtnLink = '/lista-mieszkan';
+              $searchBtnLink = '/mieszkania';
             } else {
               // page o inwestycji
               $searchBtnLink = '/lista-mieszkan' . $currentInvest;
