@@ -758,6 +758,11 @@ add_filter('ymc_post_custom_layout_148_4', 'my_custom_post_layout148_4', 10, 5);
 // 148_5 filter layout
 function pbgorski_custom_filter_layout148_5($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
+
+	$scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
+	$url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$page_parent_id = wp_get_post_parent_id(url_to_postid($url));
+
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout.php';
 	$filter_id = '148';
 	$layout_id = '5';
@@ -937,11 +942,6 @@ add_filter('ymc_filter_custom_layout_1850_3', 'pbgorski_custom_filter_layout1850
 // 1850_5 filter layout
 function pbgorski_custom_filter_layout5($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
-
-	$scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
-	$url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	$page_parent_id = wp_get_post_parent_id(url_to_postid($url));
-
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout2.php';
 	$filter_id = '1850';
 	$layout_id = '5';
