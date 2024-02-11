@@ -434,7 +434,7 @@ $tax_sort = $taxonomy;
     <?php
     endif;
     ?>
-    <div class="posts-found js-post-found bg-white z-[-1] empty:!h-0"></div>
+    <div class="posts-found js-post-found bg-white z-[-1] empty:!h-0 absolute empty:relative"></div>
   <?php endif; ?>
   <?php do_action("ymc_after_filter_layout_" . $layout_id . '_' . $c_target); ?>
 </div>
