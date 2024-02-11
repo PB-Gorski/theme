@@ -183,13 +183,13 @@ $tax_sort = $taxonomy;
             $currentInvest = '-' . str_replace('/', '', (str_replace(home_url() . '/o-inwestycji-', '', $escaped_url)));
             print_r($currentInvest);
             echo '<br>';
-            if (strpos(home_url(), 'o-inwestycji') == false) {
+            if (strpos($url, 'o-inwestycji') == false) {
               echo 'str pos home';
             } else {
               echo 'str pos  page o inwestycji';
             };
 
-            if (str_contains(home_url(), 'o-inwestycji')) {
+            if (str_contains($url, 'o-inwestycji')) {
               echo 'str_contains home';
             } else {
               echo 'str_contains page o inwestycji';
