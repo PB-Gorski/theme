@@ -188,7 +188,7 @@ $tax_sort = $taxonomy;
             echo $escaped_url;
 
             echo '</br>';
-            echo '**********';
+            echo '1**********';
             echo '</br>';
             echo home_url();
             echo '2**********';
@@ -198,10 +198,9 @@ $tax_sort = $taxonomy;
             echo '</br>';
             echo '2**********';
             echo '</br>';
-            echo '**********';
+            echo '3**********';
             echo '</br>';
-            echo get_home_url();
-            echo get_home_path();
+
 
             ?>
 
