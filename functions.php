@@ -1111,4 +1111,17 @@ class Investment_Subpages extends Walker_Page
 		$output .= '<a class="aos-init aos-animate ' . ($page->ID == $page_id  ? '' : 'text-[#8a8f99] hover:text-textGray') . '" href="' . get_permalink($page->ID) . '">' . apply_filters('the_title', $page->post_title, $page->ID) . '</a>';
 		$output .= '</li>';
 	}
+
+	function start_lvl(&$output, $depth = 0, $args = array())
+	{
+		if (isset($args['item_spacing']) && 'preserve' === $args['item_spacing']) {
+			$t = "\t";
+			$n = "\n";
+		} else {
+			$t = '';
+			$n = '';
+		}
+		$indent  = str_repeat($t, $depth);
+		$output .= "{$n}{$indent}<ul class='flex flex-wrap justify-center items-center gap-[20px]'>{$n}";
+	}
 }

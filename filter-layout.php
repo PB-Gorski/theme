@@ -411,11 +411,18 @@ $tax_sort = $taxonomy;
       <?php
 
       $walker = new Investment_Subpages();
+      $pages = get_pages(array('child_of' => $page_parent_id));
+
+      $page_ids = array();
+      foreach ($pages as $page) {
+        $page_ids[] = $page->ID;
+      }
+
       $children = wp_list_pages(array(
         'title_li' => '',
         'title_li' => '',
+        'include' => $page_parent_id . ',' . implode(',', $page_ids),
         'sort_column' => 'menu_order',
-        'child_of' => $page_parent_id,
         'walker' => $walker,
         'echo' => 0
       ));
