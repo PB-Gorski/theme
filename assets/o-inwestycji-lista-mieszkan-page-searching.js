@@ -892,14 +892,17 @@ window.addEventListener("load", function () {
             console.log("555555555555555");
             investElFormName = document
               .querySelector(`[data-termid="` + globalCurrentInvestID + `"]`)
-              .innerText.slice(
-                0,
-                document
-                  .querySelector(
-                    `[data-termid="` + globalCurrentInvestID + `"]`
-                  )
-                  .innerText.indexOf(" ")
-              );
+              .innerText;
+            // investElFormName = document
+            //   .querySelector(`[data-termid="` + globalCurrentInvestID + `"]`)
+            //   .innerText.slice(
+            //     0,
+            //     document
+            //       .querySelector(
+            //         `[data-termid="` + globalCurrentInvestID + `"]`
+            //       )
+            //       .innerText.indexOf(" ")
+            //   );
 
             cityElFormName = "";
             // = document.querySelector(`[data-termid="` + globalCurrentCityID + `"]`).innerText;
