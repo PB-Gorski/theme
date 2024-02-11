@@ -421,13 +421,13 @@ $tax_sort = $taxonomy;
       ));
 
       if ($children) {
-        echo '<ul class="wp-block-group test row-links pt-[30px] flex flex-wrap justify-center items-center gap-[20px] is-layout-flow wp-block-group-is-layout-flow !mb-[30px]">' . $children . '</ul>';
+        echo '<ul class="wp-block-group test row-links pt-[30px] flex flex-wrap justify-center items-center gap-[20px] is-layout-flow wp-block-group-is-layout-flow !mb-[30px]" style="magin-bottom:30px!important;">' . $children . '</ul>';
       }
       ?>
     <?php
     endif;
     ?>
-    <div class="posts-found js-post-found bg-white z-[-1] !empty:h-0"></div>
+    <div class="posts-found js-post-found bg-white z-[-1] empty:!h-0"></div>
   <?php endif; ?>
   <?php do_action("ymc_after_filter_layout_" . $layout_id . '_' . $c_target); ?>
 </div>
