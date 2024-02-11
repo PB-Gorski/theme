@@ -937,6 +937,11 @@ add_filter('ymc_filter_custom_layout_1850_3', 'pbgorski_custom_filter_layout1850
 // 1850_5 filter layout
 function pbgorski_custom_filter_layout5($layout, $terms, $taxonomy, $multiple, $target, $options)
 {
+
+	$scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
+	$url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$page_parent_id = wp_get_post_parent_id(url_to_postid($url));
+
 	$filepath_filter = get_stylesheet_directory() . '/filter-layout2.php';
 	$filter_id = '1850';
 	$layout_id = '5';
@@ -1063,3 +1068,20 @@ add_filter('pre_get_posts', 'exclude_category');
 // }
 // // add the filter
 // add_filter("get_categories_taxonomy", "modify_get_categories_taxonomy_defaults", 10, 2);
+
+
+
+class Investment_Subpages extends Walker_Page
+{
+
+	function start_el(&$output, $page, $depth = 0, $args = array(), $current_page = 0)
+	{
+		$scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
+		$url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+		$page_id = url_to_postid($url);
+
+		$output .= '<li class="ListNav-item">';
+		$output .= '<a class="aos-init aos-animate ' . ($page->ID == $page_id  ? '' : 'text-[#8a8f99] hover:text-textGray') . '" href="' . get_permalink($page->ID) . '">' . apply_filters('the_title', $page->post_title, $page->ID) . '</a>';
+		$output .= '</li>';
+	}
+}
