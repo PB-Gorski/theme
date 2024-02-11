@@ -1024,7 +1024,7 @@ window.addEventListener("load", function() {
       let searchedReadyArr = [];
 
       searchedFromCookiesIDs.forEach(item =>{
-        console.log('term from cookies',item.dataset.termid);
+        // console.log('term from cookies',item.dataset.termid);
         searchedReadyArr.push(item.dataset.termid)
       });
 
@@ -1051,7 +1051,7 @@ window.addEventListener("load", function() {
       // }).apiTermUpdate(); 
       YMCTools({
         target: filterID,
-        terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join(),      
+        terms: searchedReadyArr.join() + ',' + pricesID.join() + ',' + metrazeID.join(),      
       }).apiTermUpdate(); 
 
       console.log('in btn prices: ', pricesID.join());
