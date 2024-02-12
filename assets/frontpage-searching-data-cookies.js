@@ -87,7 +87,7 @@ window.addEventListener("load", function() {
         console.log('new arr after check: ', choosenOptions);
 
         // document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + filteredPriceFromFrontPage;
-        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + '; path=/pl';
+        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + '; path=/';
         console.log('cookie data: ', document.cookie);
 
         // dynamic filtr data
