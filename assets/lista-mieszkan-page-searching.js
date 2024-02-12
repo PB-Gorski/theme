@@ -1031,7 +1031,7 @@ window.addEventListener("load", function() {
 
       console.log('logggggg: ',searchedFromActiveIDs.join());
 
-      // deleteAllCookies();
+      deleteAllCookies();
       // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
 
       // filter ID by page id
