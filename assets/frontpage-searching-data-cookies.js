@@ -258,7 +258,7 @@ window.addEventListener("load", function() {
         let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
         console.log(choosenOptions);
         console.log('test***',choosenOptions.length != 0 ? (choosenOptions.join() + ',') : '');
-        document.cookie = "filteredTermsFromCookies=72," + (choosenOptions.length != 0 ? (choosenOptions.join() + ',') : '') + filteredPriceFromFrontPage + '; path=/pl';
+        document.cookie = "filteredTermsFromCookies=" + (choosenOptions.length != 0 ? (choosenOptions.join() + ',') : '') + filteredPriceFromFrontPage + '; path=/pl';
 
         document.cookie = "PriceMinFromCookies=" + priceMinValueCookie2;
         document.cookie = "PriceMaxFromCookies=" + priceMaxValueCookie2;
