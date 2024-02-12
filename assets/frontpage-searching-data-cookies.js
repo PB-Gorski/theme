@@ -256,6 +256,7 @@ window.addEventListener("load", function() {
         let metrazMinValueCookie = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
 
         let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
+        console.log('choosenOptions: ');
         console.log(choosenOptions);
         console.log('test***',choosenOptions.length != 0 ? (choosenOptions.join() + ',') : '');
         document.cookie = "filteredTermsFromCookies=" + (choosenOptions.length != 0 ? (choosenOptions.join() + ',') : '') + filteredPriceFromFrontPage + '; path=/pl';
@@ -267,7 +268,8 @@ window.addEventListener("load", function() {
 
 
 
-        // console.log('filter type: ', filterType);
+        console.log('document.cookie: ');
+        console.log(document.cookie);
       });
     // });
 
