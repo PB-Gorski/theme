@@ -87,7 +87,7 @@ window.addEventListener("load", function() {
         console.log('new arr after check: ', choosenOptions);
 
         // document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + filteredPriceFromFrontPage;
-        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + '; path=/';
+        document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + '; path=/pl';
         console.log('cookie data: ', document.cookie);
 
         // dynamic filtr data
@@ -553,7 +553,7 @@ window.addEventListener("load", function() {
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
         console.log('clicked target: ',e.target.dataset.termid);
-        document.cookie = "filteredTermsFromCookies=";
+        // document.cookie = "filteredTermsFromCookies=";
       });
     });
 
