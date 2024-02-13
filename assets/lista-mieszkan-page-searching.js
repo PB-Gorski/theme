@@ -811,9 +811,16 @@ window.addEventListener("load", function() {
       }
 
       function runFromCookies(){
+        let searchedFromActiveHTML = document.querySelectorAll('.active');
+        let searchedFromActiveIDs = [];
+  
+        searchedFromActiveHTML.forEach(item =>{
+          // console.log('term from cookies',item.dataset.termid);
+          searchedFromActiveIDs.push(item.dataset.termid)
+        });
         YMCTools({
           target: filterID, 
-          terms: filteredTermsFromCookies,      
+          terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
         }).apiTermUpdate(); 
         console.log('after YMC api update');
       };
