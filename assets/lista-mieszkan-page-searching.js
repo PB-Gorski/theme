@@ -815,14 +815,14 @@ window.addEventListener("load", function() {
         let searchedFromActiveIDs = [];
   
         searchedFromActiveHTML.forEach(item =>{
-          // console.log('term from cookies',item.dataset.termid);
           searchedFromActiveIDs.push(item.dataset.termid)
         });
+
         YMCTools({
           target: filterID, 
           terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
         }).apiTermUpdate(); 
-        console.log('after YMC api update');
+        console.log('after YMC api update from runFromCookies()');
       };
 
       if(filteredTermsFromCookies != null){
