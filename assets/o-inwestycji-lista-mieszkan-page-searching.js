@@ -949,13 +949,12 @@ window.addEventListener("load", function () {
                   };
                 filter2323FirstRun = false;
 
-                currentCityName = document.querySelector(
-                  ".list-item-mieszkanie"
-                )?.childNodes[0].innerText;
-                console.log(currentCityName);
-                // globalCurrentCityName = currentCityName;
-                globalCurrentCityName =
-                  currentCityName == undefined ? "Wybierz" : currentCityName;
+                // currentCityName = document.querySelector(
+                //   ".list-item-mieszkanie"
+                // )?.childNodes[0].innerText;
+                // console.log(currentCityName);
+                // globalCurrentCityName =
+                //   currentCityName == undefined ? "Wybierz" : currentCityName;
 
 
 
