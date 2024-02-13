@@ -1303,9 +1303,16 @@ window.addEventListener("load", function () {
       filterID = ".data-target-ymc" + currentYmcFilterID;
 
       function runFromCookies() {
+        let searchedFromActiveHTML = document.querySelectorAll('.active');
+        let searchedFromActiveIDs = [];
+  
+        searchedFromActiveHTML.forEach(item =>{
+          searchedFromActiveIDs.push(item.dataset.termid)
+        });
+
         YMCTools({
           target: filterID,
-          terms: filteredTermsFromCookies,
+          terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
         }).apiTermUpdate();
         console.log("after YMC api update1");
       }
