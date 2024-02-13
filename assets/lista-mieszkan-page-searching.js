@@ -185,7 +185,9 @@ window.addEventListener("load", function() {
             });
             console.log('altualne pietro432ewfsdvdfe');
             // menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
-            menuActiveSpan.innerHTML = 'Wybrano: ' + (choosenPietroArr.join(', ')!=' ' ? choosenPietroArr.join(', ') : 'Wybrano: 0');
+            // old
+            // menuActiveSpan.innerHTML = 'Wybrano: ' + (choosenPietroArr.join(', ')!=' ' ? choosenPietroArr.join(', ') : 'Wybrano: 0');
+            menuActiveSpan.innerHTML = (choosenPietroArr.join(', ')!='' ? 'Wybrano: ' +  choosenPietroArr.join(', ') : 'Wybierz');
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
 

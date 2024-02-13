@@ -233,11 +233,13 @@ window.addEventListener("load", function () {
             });
             console.log("altualne pietro");
             // menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
-            menuActiveSpan.innerHTML =
-              "Wybrano1: " +
-              (choosenPietroArr.join(", ") != " "
-                ? choosenPietroArr.join(", ")
-                : "Wybrano2: 0");
+            // old
+            // menuActiveSpan.innerHTML =
+            //   "Wybrano1: " +
+            //   (choosenPietroArr.join(", ") != " "
+            //     ? choosenPietroArr.join(", ")
+            //     : "Wybrano2: 0");
+            menuActiveSpan.innerHTML = (choosenPietroArr.join(', ')!='' ? 'Wybrano: ' +  choosenPietroArr.join(', ') : 'Wybierz');
           } else if (terminArr.includes(+choosenOptionID)) {
             // termin
 
