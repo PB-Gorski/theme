@@ -1035,7 +1035,7 @@ window.addEventListener("load", function () {
                   globalCurrentCityName =
                     currentCityName == undefined ? "Wybierz" : currentCityName;
                   };
-                filter2323FirstRun = true
+                filter2323FirstRun = !filter2323FirstRun;
 
                 console.log("global**********************");
                 console.log(globalFoundedPostsCount);
