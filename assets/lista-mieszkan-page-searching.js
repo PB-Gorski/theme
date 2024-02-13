@@ -1048,15 +1048,15 @@ window.addEventListener("load", function() {
       }
 
       // old
-      YMCTools({
-        target: filterID,
-        terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedFromActiveIDs.join(),      
-      }).apiTermUpdate(); 
-
       // YMCTools({
       //   target: filterID,
-      //   terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join() + ',' + searchedFromActiveIDs.join(),      
+      //   terms: choosenOptions.join() + ',' + pricesID.join() + ',' + metrazeID.join() + ',' + searchedFromActiveIDs.join(),      
       // }).apiTermUpdate(); 
+
+      YMCTools({
+        target: filterID,
+        terms: pricesID.join() + ',' + metrazeID.join() + ',' + choosenOptions.join() + ',' + searchedFromActiveIDs.join(),      
+      }).apiTermUpdate(); 
 
       console.log('in btn prices: ', pricesID.join());
       console.log('in btn metraze: ', metrazeID.join());
