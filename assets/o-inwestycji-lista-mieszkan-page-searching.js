@@ -937,6 +937,18 @@ window.addEventListener("load", function () {
                 console.log("Number of found posts: " + response.found);
                 console.log("**********************");
                 console.log("1111111111111111 from hook:");
+
+
+                if(!filter2323FirstRun){
+                  currentCityName = document.querySelector(
+                    ".list-item-mieszkanie"
+                  )?.childNodes[0].innerText;
+                  console.log(currentCityName);
+                  globalCurrentCityName =
+                    currentCityName == undefined ? "Wybierz" : currentCityName;
+                  };
+                filter2323FirstRun = false;
+
                 currentCityName = document.querySelector(
                   ".list-item-mieszkanie"
                 )?.childNodes[0].innerText;
@@ -944,6 +956,10 @@ window.addEventListener("load", function () {
                 // globalCurrentCityName = currentCityName;
                 globalCurrentCityName =
                   currentCityName == undefined ? "Wybierz" : currentCityName;
+
+
+
+
 
                 console.log("global**********************");
                 console.log(globalFoundedPostsCount);
