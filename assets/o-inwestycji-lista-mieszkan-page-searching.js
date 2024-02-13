@@ -913,6 +913,7 @@ window.addEventListener("load", function () {
             // founded posts
             let globalFoundedPostsCount;
             // dynamic active names in filter mieszkania
+            filter2323FirstRun = false;
             wp.hooks.addAction(
               "ymc_after_loaded_data_148_" + currentYmcFilterID,
               "smartfilter",
@@ -938,7 +939,7 @@ window.addEventListener("load", function () {
                 console.log("**********************");
                 console.log("1111111111111111 from hook:");
 
-                filter2323FirstRun = false;
+                
                 if(!filter2323FirstRun){
                   currentCityName = document.querySelector(
                     ".list-item-mieszkanie"
@@ -947,7 +948,7 @@ window.addEventListener("load", function () {
                   globalCurrentCityName =
                     currentCityName == undefined ? "Wybierz" : currentCityName;
                   };
-                filter2323FirstRun = false;
+                filter2323FirstRun = true;
 
                 // currentCityName = document.querySelector(
                 //   ".list-item-mieszkanie"
@@ -1042,15 +1043,13 @@ window.addEventListener("load", function () {
                 console.log("Number of found posts: " + response.found);
                 console.log("**********************");
                 console.log("1111111111111111 from hook:");
-                if(!filter2323FirstRun){
-                  currentCityName = document.querySelector(
-                    ".list-item-mieszkanie"
-                  )?.childNodes[0].innerText;
-                  console.log(currentCityName);
-                  globalCurrentCityName =
-                    currentCityName == undefined ? "Wybierz" : currentCityName;
-                  };
-                filter2323FirstRun = !filter2323FirstRun;
+                currentCityName = document.querySelector(
+                  ".list-item-mieszkanie"
+                )?.childNodes[0].innerText;
+                console.log(currentCityName);
+                globalCurrentCityName =
+                  currentCityName == undefined ? "Wybierz" : currentCityName;
+
 
                 console.log("global**********************");
                 console.log(globalFoundedPostsCount);
