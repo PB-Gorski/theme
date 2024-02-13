@@ -485,7 +485,7 @@ window.addEventListener("load", function() {
         };
         console.log('deleteAllCookies() done');
     };
-    // deleteAllCookies();
+    deleteAllCookies();
 
   
 
