@@ -517,9 +517,6 @@ window.addEventListener("load", function() {
       return filteredTermsIDMetraz;
     };
 
-    document.body.addEventListener('click', () => {
-      console.log('body click');
-    });
 
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
@@ -538,7 +535,6 @@ window.addEventListener("load", function() {
       })
     });
 
-    let c = 0;
     document.querySelectorAll('.dropdown__value').forEach(customDropValue =>{
       // cleaning default dropdowns
       customDropValue.addEventListener('click', ()=>{
