@@ -938,7 +938,7 @@ window.addEventListener("load", function () {
                 console.log("**********************");
                 console.log("1111111111111111 from hook:");
 
-
+                filter2323FirstRun = false;
                 if(!filter2323FirstRun){
                   currentCityName = document.querySelector(
                     ".list-item-mieszkanie"
@@ -1020,7 +1020,7 @@ window.addEventListener("load", function () {
             );
 
             // dynamic active names in filter lokale
-            filter2323FirstRun = false;
+            // filter2323FirstRun = false;
             wp.hooks.addAction(
               
               "ymc_after_loaded_data_2323_" + currentYmcFilterID,
