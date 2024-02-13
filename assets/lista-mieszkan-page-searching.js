@@ -1153,21 +1153,10 @@ window.addEventListener("load", function() {
         });
       })
     });
-    
-  
-    document.body.addEventListener('click', () => {
-      console.log('body click');
-      document.querySelectorAll('.menu-passive').forEach(activeItem =>{
-
-      });
-    });
-
 
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
         e.target.parentNode.parentNode.style.display = 'none';
-        // console.log('parent parent: ',e.target.parentNode.parentNode);
-        // console.log('parent parent: ',e.target.parentNode.parentNode.previousElementSibling.childNodes[1]);
         e.target.parentNode.parentNode.previousElementSibling.childNodes[1].classList.toggle('newAfter');
       })
     });  
@@ -1178,35 +1167,21 @@ window.addEventListener("load", function() {
           customDrop.classList.remove('dropdown__list_active')
         });
 
-        // e.target.classList.replace('arrow-down', 'newAfter');
-        // e.target.classList.replace('newAfter', 'arrow-down');
-
         e.target.classList.remove('newAfter');
         e.target.classList.add('arrow-down');
       })
     });  
 
     document.body.addEventListener('click', () => {
-      console.log('body click2');
-
       document.querySelectorAll('.menu-passive').forEach(passive =>{
-
-          if(passive.parentElement.childNodes[3]){
-            // passive.parentElement.childNodes[3].childNodes[1].classList.remove('arrow-down');
-            // passive.parentElement.childNodes[3].childNodes[1].classList.add('newAfter');
-          };
-
           if(passive.style.display == 'block'){
             passive.parentElement.childNodes[3].childNodes[1].classList.remove('newAfter');
             passive.parentElement.childNodes[3].childNodes[1].classList.add('arrow-down');
             console.log('new after added');
           };
-
-          // passive.previousElementSibling.childNodes[0].classList.toggle('newAfter');
       });
     });
 
-    let c = 0;
     document.querySelectorAll('.dropdown__value').forEach(customDropValue =>{
       // cleaning default dropdowns
       customDropValue.addEventListener('click', ()=>{
