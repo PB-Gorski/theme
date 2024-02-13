@@ -1005,7 +1005,9 @@ window.addEventListener("load", function () {
             );
 
             // dynamic active names in filter lokale
+            filter2323FirstRun = false;
             wp.hooks.addAction(
+              
               "ymc_after_loaded_data_2323_" + currentYmcFilterID,
               "smartfilter",
               function (class_name, response) {
@@ -1025,12 +1027,15 @@ window.addEventListener("load", function () {
                 console.log("Number of found posts: " + response.found);
                 console.log("**********************");
                 console.log("1111111111111111 from hook:");
-                currentCityName = document.querySelector(
-                  ".list-item-mieszkanie"
-                )?.childNodes[0].innerText;
-                console.log(currentCityName);
-                globalCurrentCityName =
-                  currentCityName == undefined ? "Wybierz" : currentCityName;
+                if(!filter2323FirstRun){
+                  currentCityName = document.querySelector(
+                    ".list-item-mieszkanie"
+                  )?.childNodes[0].innerText;
+                  console.log(currentCityName);
+                  globalCurrentCityName =
+                    currentCityName == undefined ? "Wybierz" : currentCityName;
+                    filter2323FirstRun = true
+                };
 
                 console.log("global**********************");
                 console.log(globalFoundedPostsCount);
