@@ -1737,28 +1737,38 @@ window.addEventListener("load", function () {
         e.target.parentNode.parentNode.previousElementSibling.childNodes[1].classList.toggle('newAfter');
       })
     });  
-
-    document.querySelectorAll(".menu-active").forEach((menuActive) => {
-      menuActive.addEventListener("click", (e) => {
-        document.querySelectorAll(".dropdown__list").forEach((customDrop) => {
-          customDrop.classList.remove("dropdown__list_active");
+      
+    document.querySelectorAll('.menu-active').forEach(menuActive =>{
+      menuActive.addEventListener('click', (e) => {
+        document.querySelectorAll('.dropdown__list').forEach(customDrop =>{
+          customDrop.classList.remove('dropdown__list_active')
         });
 
-        e.target.classList.toggle("newAfter");
-        e.target.classList.toggle("arrow-down");
+        e.target.classList.remove('newAfter');
+        e.target.classList.add('arrow-down');
+      })
+    });  
+
+    document.body.addEventListener('click', () => {
+      document.querySelectorAll('.menu-passive').forEach(passive =>{
+          if(passive.style.display == 'block'){
+            passive.parentElement.childNodes[3].childNodes[1].classList.remove('newAfter');
+            passive.parentElement.childNodes[3].childNodes[1].classList.add('arrow-down');
+            console.log('new after added');
+          };
       });
     });
 
-    document.querySelectorAll(".dropdown__value").forEach((customDropValue) => {
+    document.querySelectorAll('.dropdown__value').forEach(customDropValue =>{
       // cleaning default dropdowns
-      customDropValue.addEventListener("click", () => {
-        document.querySelectorAll(".menu-passive").forEach((passive) => {
-          if (passive.style.display == "block") {
-            passive.style.display = "none";
+      customDropValue.addEventListener('click', ()=>{
+        document.querySelectorAll('.menu-passive').forEach(passive =>{
+          if(passive.style.display == 'block'){
+            passive.style.display = 'none';
           }
         });
-      });
-    });
+      })
+    }); 
 
     // end if page
     // -------------------------------------------------------------------------------------
