@@ -1532,6 +1532,13 @@ background-color: #e8fbff!important;
   font-size: 14px;
 }
 
+.page-parent .dropdown-filter:nth-child(1) .arrow-down::after,
+.page-child .dropdown-filter:nth-child(1) .arrow-down::after,
+.page-parent .dropdown-filter:nth-child(2) .arrow-down::after,
+.page-child .dropdown-filter:nth-child(2) .arrow-down::after{
+  content: '';
+}
+
 /* frontpage blog section */
 .wp-block-post.post.type-post{
   width: 100%!important;
@@ -1594,7 +1601,6 @@ background-color: #e8fbff!important;
     height: 480px!important;
   }
 }
-
 
 #newsletter .wp-block-image.absolute img{
   object-fit: cover!important;
