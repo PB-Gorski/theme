@@ -17,6 +17,21 @@
   </div>
   <!-- /wp:group -->
 
+  <?php
+  $taxonomies = get_terms(array(
+    'taxonomy' => 'miasto',
+    'hide_empty' => false,
+  ));
+
+  if (true) {
+    foreach ($taxonomies as $taxonomy) {
+      print_r(get_category_link($taxonomy->term_id));
+      echo '<br>';
+      echo $taxonomy->name;
+    };
+  };
+  ?>
+
   <!-- wp:group -->
   <div class="wp-block-group banner-lista-mieszkan w-full h-[50vh] desktop:h-[80vh] bg-banner relative flex desktop:block items-center">
     <!-- wp:group -->
