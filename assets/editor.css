@@ -74,3 +74,7 @@ figure div{
     position: unset;
     z-index: unset;
 }
+
+.editor-styles-wrapper .z-\[-1\]{
+    z-index: 0!important;
+}
