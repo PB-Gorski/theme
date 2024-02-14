@@ -25,11 +25,13 @@
 
   if (true) {
     foreach ($taxonomies as $taxonomy) {
-      print_r(get_category_link($taxonomy->term_id));
       echo '<br>';
       echo $taxonomy->name;
+      echo '<br>';
     };
   };
+  echo '<br>';
+  print_r($taxonomies);
   ?>
 
   <!-- wp:group -->
