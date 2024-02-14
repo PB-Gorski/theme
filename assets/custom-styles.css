@@ -1536,7 +1536,7 @@ background-color: #e8fbff!important;
 .page-child .dropdown-filter:nth-child(1) .arrow-down::after,
 .page-parent .dropdown-filter:nth-child(2) .arrow-down::after,
 .page-child .dropdown-filter:nth-child(2) .arrow-down::after{
-  content: '';
+  display: none;
 }
 
 /* frontpage blog section */
