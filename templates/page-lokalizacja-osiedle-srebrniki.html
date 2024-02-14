@@ -7,8 +7,13 @@
 	<div id="main" class="wp-block-group ">
 		<!-- wp:group -->
 		<div id="Page content" class="wp-block-group page-content-wrapper inwestycje_hidden_filtr_posts" >
-			<!-- wp:post-terms {"term":"inwestycja", "isLink":false, "className":"hidden"} /-->
-			<!-- wp:post-terms {"term":"miasto", "isLink":false} /-->
+			<!-- wp:group -->
+			<div class="wp-block-group meta-data">
+				<!-- wp:post-terms {"term":"inwestycja", "className":"hidden meta-inwestycja"} /-->
+				<!-- wp:post-terms {"term":"miasto", "className":"hidden meta-miasto"} /-->
+			</div>
+			<!-- /wp:group -->
+
       <!-- wp:pattern {"slug":"lokalizacja-osiedle-srebrniki-banner"} /-->
 			<!-- wp:pattern {"slug":"searchbar-mieszkania"} /-->
       <!-- wp:pattern {"slug":"lokalizacja-osiedle-srebrniki-content"} /-->
