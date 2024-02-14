@@ -13,7 +13,11 @@
   <!-- wp:group -->
   <div class="wp-block-group banner-lista-mieszkan w-full h-[480px] desktop:h-[80vh] relative py-[60px]">
     <!-- wp:group -->
-    <div class="wp-block-group banner w-full h-full bg-black opacity-30 z-[1] absolute top-0 left-0"></div>
+    <div class="wp-block-group banner w-full h-full bg-black opacity-30 z-[1] absolute top-0 left-0">
+      <!-- wp:paragraph -->
+      <p class="hidden">dark overlay for banner</p>
+      <!-- /wp:paragraph -->
+    </div>
     <!-- /wp:group -->
 
     <!-- wp:image -->
