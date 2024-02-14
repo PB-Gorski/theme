@@ -10,29 +10,6 @@
 
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group page-lokalizacja relative">
-  <!-- wp:group -->
-  <div class="wp-block-group meta-data2">
-    <!-- wp:post-terms {"term":"inwestycja"} /-->
-    <!-- wp:post-terms {"term":"miasto"} /-->
-  </div>
-  <!-- /wp:group -->
-
-  <?php
-  $taxonomies = get_terms(array(
-    'taxonomy' => 'miasto',
-    'hide_empty' => false,
-  ));
-
-  if (true) {
-    foreach ($taxonomies as $taxonomy) {
-      echo '<br>';
-      echo $taxonomy->name;
-      echo '<br>';
-    };
-  };
-  echo '<br>';
-  print_r($taxonomies);
-  ?>
 
   <!-- wp:group -->
   <div class="wp-block-group banner-lista-mieszkan w-full h-[50vh] desktop:h-[80vh] bg-banner relative flex desktop:block items-center">
