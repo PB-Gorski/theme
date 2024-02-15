@@ -25,11 +25,9 @@
 
         echo "<span id='term-data' ";
         foreach ($terms as $term) {
-          $terms_miasta = get_field('miasto_inwestycji', $term);
+          $term_city = get_field('miasto_inwestycji', $term);
 
-          foreach ($terms_miasta as $term_city) {
-            echo " data-investment-city-id='" . $term_city->term_id . "' ' data-investment-city-name='" . $term_city->name . "' ";
-          }
+          echo " data-investment-city-id='" . $term_city->term_id . "' data-investment-city-name='" . $term_city->name . "' ";
         }
 
         foreach ($terms as $term) {
