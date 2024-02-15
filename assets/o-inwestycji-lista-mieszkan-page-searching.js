@@ -1791,13 +1791,14 @@ window.addEventListener("load", function () {
   
         let filterID4 = '.data-target-ymc' + currentYmcFilterID3;
         console.log('filterID4: ', filterID4);
-  
-        YMCTools({
-          target: filterID4,
-          terms: choosenOptions.join() +
-          "," +
-          investIDFromDataAttr,
-        }).apiTermUpdate();
+        setTimeout(() => {
+          YMCTools({
+            target: filterID4,
+            terms: choosenOptions.join() +
+            "," +
+            investIDFromDataAttr,
+          }).apiTermUpdate();
+        }, 1000);
       });
     });
 
