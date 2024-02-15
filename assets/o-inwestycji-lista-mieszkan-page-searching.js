@@ -626,7 +626,17 @@ window.addEventListener("load", function () {
     globalCurrentCityID = investCityId ?? 0;
     globalCurrentCityName = investCityName ?? "";
 
-    if (document.querySelector('#term-data')){
+    if(
+      document.referrer.search("o-inwestycji-" + investName) > 5 ||
+      document.referrer.search("lokalizacja-" + investName) > 20 ||
+      document.referrer.search("galeria-" + investName) > 20 ||
+      document.referrer.search("kronika-budowy-" + investName) > 20
+    ) {
+        console.log('!document.referrer!');
+        document.cookie = "filteredTermsFromCookies=" + investID + ";";
+        globalCurrentInvestID = investID;
+        globalCurrentInvestName = investName;
+    }else if(document.querySelector('#term-data')){
       let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
       let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
 
@@ -639,17 +649,7 @@ window.addEventListener("load", function () {
         globalCurrentInvestID = investIDFromDataAttr;
         globalCurrentInvestName = investNameFromDataAttr;
       };
-    }else if(
-      document.referrer.search("o-inwestycji-" + investName) > 5 ||
-      document.referrer.search("lokalizacja-" + investName) > 20 ||
-      document.referrer.search("galeria-" + investName) > 20 ||
-      document.referrer.search("kronika-budowy-" + investName) > 20
-    ) {
-        console.log('!document.referrer!');
-        document.cookie = "filteredTermsFromCookies=" + investID + ";";
-        globalCurrentInvestID = investID;
-        globalCurrentInvestName = investName;
-    };
+    }
 
     if (false) {
       allInvestmentsElements.forEach((el) => {
