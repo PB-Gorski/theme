@@ -1747,7 +1747,7 @@ window.addEventListener("load", function () {
         searchedReadyArr.push(item.dataset.termid);
       });
 
-      console.log("logggggg: ", searchedReadyArr.join());
+      console.log("searchedReadyArr: ", searchedReadyArr.join());
 
       let filterID4 = '.data-target-ymc' + currentYmcFilterID3;
       console.log('filterID4: ', filterID4);
@@ -1766,6 +1766,18 @@ window.addEventListener("load", function () {
           investIDFromDataAttr,
       );
     });
+
+    passiveOptions.forEach((item) => {
+      item.addEventListener("click", () => {
+        YMCTools({
+          target: filterID4,
+          terms: choosenOptions.join() +
+          "," +
+          investIDFromDataAttr,
+        }).apiTermUpdate();
+      });
+    });
+
 
     // *******************************************************
 
