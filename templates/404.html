@@ -1,59 +1,58 @@
 <!-- wp:group -->
 <div id="PB Górski theme" class="wp-block-group overflow-x-hidden">
-	<!-- wp:list -->
-	<ul>
-		<!-- wp:list-item -->
-		<li>
-			<script>
-				AOS.init({
-					duration: 600,
-					easing: 'ease',
-					once: true
-				});
-			</script>
-		</li>
-		<!-- /wp:list-item -->
-	</ul>
-	<!-- /wp:list -->
+  <!-- wp:list -->
+  <ul>
+    <!-- wp:list-item -->
+    <li>
+      <script>
+        AOS.init({
+          duration: 600,
+          easing: "ease",
+          once: true,
+        });
+      </script>
+    </li>
+    <!-- /wp:list-item -->
+  </ul>
+  <!-- /wp:list -->
 
-	<!-- wp:template-part {"slug":"front-page/header-white"} /-->
+  <!-- wp:template-part {"slug":"header-white"} /-->
 
-	<!-- wp:group -->
-	<div id="main" class="wp-block-group ">
-		<!-- wp:group -->
-		<div id="Page content" class="wp-block-group page-content-wrapper">
-			<!-- wp:group -->
-			<div class="wp-block-group container mx-auto px-[20px] deskto:px-0 flex items-center gap-[20px]">
-				<!-- wp:paragraph -->
-				<p
-					class="section-title uppercase text-right text-[90px] font-medium"
-				>
-					404
-				</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:group -->
-				<div class="wp-block-group">
-					<!-- wp:paragraph -->
-					<p
-						class="uppercase desktop:text-[40px] text-[24px] desktop:leading-[42px] leading-[30px]"
-					>
-						Strona nie została <br />
-						<span
-							class="relative desktop:text-[50px] text-[24px] uppercase"
-							>znaleziona</span
-						>
-					</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:group -->
-			</div>
-			<!-- /wp:group -->
-			<!-- wp:template-part {"slug":"front-page/cta"} /-->
-			<!-- wp:template-part {"slug":"front-page/newsletter"} /-->
-			<!-- wp:template-part {"slug":"front-page/footer"} /-->
-		</div>
-		<!-- /wp:group -->
-	</div>
-	<!-- /wp:group -->
+  <!-- wp:group -->
+  <div id="main" class="wp-block-group">
+    <!-- wp:group -->
+    <div id="Page content" class="wp-block-group page-content-wrapper">
+      <!-- wp:group -->
+      <div
+        class="wp-block-group container mx-auto px-[20px] deskto:px-0 flex items-center gap-[20px]"
+      >
+        <!-- wp:paragraph -->
+        <p class="section-title uppercase text-right text-[90px] font-medium">
+          404
+        </p>
+        <!-- /wp:paragraph -->
+        <!-- wp:group -->
+        <div class="wp-block-group">
+          <!-- wp:paragraph -->
+          <p
+            class="uppercase desktop:text-[40px] text-[24px] desktop:leading-[42px] leading-[30px]"
+          >
+            Strona nie została <br />
+            <span class="relative desktop:text-[50px] text-[24px] uppercase"
+              >znaleziona</span
+            >
+          </p>
+          <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+      <!-- wp:template-part {"slug":"cta"} /-->
+      <!-- wp:template-part {"slug":"newsletter"} /-->
+      <!-- wp:template-part {"slug":"footer"} /-->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
 </div>
 <!-- /wp:group -->
