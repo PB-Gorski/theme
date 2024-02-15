@@ -1770,13 +1770,34 @@ window.addEventListener("load", function () {
     let filterID5 = '.data-target-ymc' + currentYmcFilterID3;
     passiveOptions.forEach((item) => {
       item.addEventListener("click", () => {
-        setTimeout(() => {
-          YMCTools({
-            target: filterID5,
-            terms: investIDFromDataAttr
-          }).apiTermUpdate();
-          console.log("after YMC api update1");
-        }, 1000);
+        // setTimeout(() => {
+        //   YMCTools({
+        //     target: filterID5,
+        //     terms: investIDFromDataAttr
+        //   }).apiTermUpdate();
+        //   console.log("after YMC api update1");
+        // }, 1000);
+
+        let pricesID = runSearchingPrice();
+        let metrazeID = runSearchingMetraz();
+        let searchedFromCookiesIDs = document.querySelectorAll(".active");
+        let searchedReadyArr = [];
+  
+        searchedFromCookiesIDs.forEach((item) => {
+          searchedReadyArr.push(item.dataset.termid);
+        });
+  
+        console.log("searchedReadyArr: ", searchedReadyArr.join());
+  
+        let filterID4 = '.data-target-ymc' + currentYmcFilterID3;
+        console.log('filterID4: ', filterID4);
+  
+        YMCTools({
+          target: filterID4,
+          terms: choosenOptions.join() +
+          "," +
+          investIDFromDataAttr,
+        }).apiTermUpdate();
       });
     });
 
