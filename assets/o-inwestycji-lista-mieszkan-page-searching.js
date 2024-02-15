@@ -1719,26 +1719,26 @@ window.addEventListener("load", function () {
       "smartfilter",
       function () {
         console.log('wp hook after laoded data test!!!');
-        YMCTools({
-          target: filterID,
-          terms: investIDFromDataAttr
-        }).apiTermUpdate();
-        console.log("after YMC api update1");
       }
     );
 
-    wp.hooks.addAction('ymc_after_loaded_data_148_3', 'smartfilter', function(class_name, response){
+    let currentYmcFilterID3 = document
+    .querySelector(".short-code-ymc-filter")
+    .childNodes[1].getAttribute("id")
+    .replace("ymc-smart-filter-container-", "");
+
+    wp.hooks.addAction('ymc_after_loaded_data_148_' + currentYmcFilterID3, 'smartfilter', function(class_name, response){
       console.log('Container class: ' + class_name);
       console.log('Post count: ' + response.post_count);
       console.log('Number of found posts: ' + response.found);
    });
 
     setTimeout(() => {
-      // YMCTools({
-      //   target: filterID,
-      //   terms: investIDFromDataAttr
-      // }).apiTermUpdate();
-      // console.log("after YMC api update1");
+      YMCTools({
+        target: filterID,
+        terms: investIDFromDataAttr
+      }).apiTermUpdate();
+      console.log("after YMC api update1");
     }, 2000);
 
 
