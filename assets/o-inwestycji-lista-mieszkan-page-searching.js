@@ -1733,7 +1733,7 @@ window.addEventListener("load", function () {
         terms: investIDFromDataAttr
       }).apiTermUpdate();
       console.log("after YMC api update1");
-    }, 1000);
+    }, 1500);
 
 
 
