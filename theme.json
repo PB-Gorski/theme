@@ -5,7 +5,7 @@
   "settings": {},
   "templateParts": [
     {
-      "name": "header-main",
+      "name": "header",
       "title": "Header",
       "area": "header"
     },
