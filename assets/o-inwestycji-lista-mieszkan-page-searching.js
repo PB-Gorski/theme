@@ -46,10 +46,21 @@ window.addEventListener("load", function () {
       globalInvestFromLink.slice(1);
   }
 
+  let investTermId = 0
+  let investTermName = ''
+  let investCityId = 0
+  let investCityName = ''
+
   let termDataContainer = document.getElementById('term-data')
-  let investTermId = termDataContainer.dataset.investmentId 
-  let investTermName = termDataContainer.dataset.investmentName 
-  let investCityId = termDataContainer.dataset.investmentCityId
+  if (termDataContainer) {
+    investTermId = termDataContainer.dataset.investmentId 
+    investTermName = termDataContainer.dataset.investmentName     
+    document.querySelector(`[data-termid='${investTermId}']`)?.click()
+
+    investCityId = termDataContainer.dataset.investmentCityId
+    investCityName = termDataContainer.dataset.investmentCityName
+    document.querySelector(`[data-termid='${investCityId}']`)?.click()
+  }
 
   if (
     window.location.href.search("o-inwestycji-") > 5 ||
@@ -609,9 +620,9 @@ window.addEventListener("load", function () {
       document.querySelectorAll(".dropdown-filter")[1].childNodes[5].childNodes;
     investIDsArr = [];
     globalCurrentInvestID = investTermId ?? 0;
-    globalCurrentInvestName = "";
+    globalCurrentInvestName = investTermName ?? "";
     globalCurrentCityID = investCityId ?? 0;
-    globalCurrentCityName = "";
+    globalCurrentCityName = investCityName ?? "";
 
     if (globalCurrentInvestID == 0 ) {
       allInvestmentsElements.forEach((el) => {
