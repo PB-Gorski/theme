@@ -1719,6 +1719,11 @@ window.addEventListener("load", function () {
       "smartfilter",
       function () {
         console.log('wp hook after laoded data test!!!');
+        YMCTools({
+          target: filterID,
+          terms: investIDFromDataAttr
+        }).apiTermUpdate();
+        console.log("after YMC api update1");
       }
     );
 
@@ -1729,11 +1734,11 @@ window.addEventListener("load", function () {
    });
 
     setTimeout(() => {
-      YMCTools({
-        target: filterID,
-        terms: investIDFromDataAttr
-      }).apiTermUpdate();
-      console.log("after YMC api update1");
+      // YMCTools({
+      //   target: filterID,
+      //   terms: investIDFromDataAttr
+      // }).apiTermUpdate();
+      // console.log("after YMC api update1");
     }, 2000);
 
 
