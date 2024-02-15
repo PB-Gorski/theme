@@ -649,7 +649,6 @@ window.addEventListener("load", function () {
         document.cookie = "filteredTermsFromCookies=" + investID + ";";
         globalCurrentInvestID = investID;
         globalCurrentInvestName = investName;
-      };
     };
 
     if (false) {

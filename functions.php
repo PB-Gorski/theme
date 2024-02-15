@@ -1075,6 +1075,7 @@ function ymc_posts_selected($layouts, $founded_post)
 add_filter('ymc_posts_selected_148_3', 'ymc_posts_selected', 10, 2);
 
 
+
 /* Exclude a Category from Search Results */
 
 function exclude_category($query)
