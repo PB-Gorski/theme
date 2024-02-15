@@ -23,7 +23,7 @@
         $page_id = url_to_postid($url);
         $terms = wp_get_object_terms($page_id, 'inwestycja');
 
-        echo "<span ";
+        echo "<span id='term-data' ";
         foreach ($terms as $term) {
           $terms_miasta = get_field('miasto_inwestycji', $term);
 

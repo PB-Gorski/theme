@@ -46,17 +46,21 @@ window.addEventListener("load", function () {
       globalInvestFromLink.slice(1);
   }
 
+  let termDataContainer = document.getElementById('term-data')
+  let investTermId = termDataContainer.dataset.investmentId 
+  let investTermName = termDataContainer.dataset.investmentName 
+  let investCityId = termDataContainer.dataset.investmentCityId
+
   if (
     window.location.href.search("o-inwestycji-") > 5 ||
     window.location.href.search("lokalizacja-") > 5 ||
     window.location.href.search("galeria-") > 5 ||
     window.location.href.search("kronika-budowy-") > 5
   ) {
-    console.log("inwestycja: " + globalInvestFromLink);
+    console.log("inwestycja: " + investTermName ?? globalInvestFromLink);
     document.querySelector(
       ".filter-entry"
-    ).childNodes[3].childNodes[3].childNodes[1].innerText =
-      globalInvestFromLink;
+    ).childNodes[3].childNodes[3].childNodes[1].innerText = investTermName ?? globalInvestFromLink;
     document
       .querySelector(".filter-entry")
       .childNodes[3].classList.add("pointer-events-none");
@@ -604,43 +608,46 @@ window.addEventListener("load", function () {
     allInvestmentsElements =
       document.querySelectorAll(".dropdown-filter")[1].childNodes[5].childNodes;
     investIDsArr = [];
-    globalCurrentInvestID = 0;
+    globalCurrentInvestID = investTermId ?? 0;
     globalCurrentInvestName = "";
-    globalCurrentCityID = 0;
+    globalCurrentCityID = investCityId ?? 0;
     globalCurrentCityName = "";
 
-    allInvestmentsElements.forEach((el) => {
-      if (el.childNodes[1] !== undefined) {
-        investName = el.childNodes[1].dataset.name;
-        investID = el.childNodes[1].dataset.termid;
-
-        investIDsArr.push(Number(investID));
-
-        investName = investName.replace(" ", "-").replace(".", "");
-        investName = investName.replace("ę", "e");
-        investName = investName.replace("ó", "o");
-        investName = investName.replace("ą", "a");
-        investName = investName.replace("ś", "s");
-        investName = investName.replace("Ś", "s");
-        investName = investName.replace("ł", "l");
-        investName = investName.replace("ż", "z");
-        investName = investName.replace("ź", "z");
-        investName = investName.replace("ć", "c");
-        investName = investName.replace("ń", "n");
-        investName = investName.toLowerCase();
-
-        if (
-          document.referrer.search("o-inwestycji-" + investName) > 5 ||
-          document.referrer.search("lokalizacja-" + investName) > 20 ||
-          document.referrer.search("galeria-" + investName) > 20 ||
-          document.referrer.search("kronika-budowy-" + investName) > 20
-        ) {
-          document.cookie = "filteredTermsFromCookies=" + investID + ";";
-          globalCurrentInvestID = investID;
-          globalCurrentInvestName = investName;
+    if (globalCurrentInvestID == 0 ) {
+      allInvestmentsElements.forEach((el) => {
+        if (el.childNodes[1] !== undefined) {
+          investName = el.childNodes[1].dataset.name;
+          investID = el.childNodes[1].dataset.termid;
+  
+          investIDsArr.push(Number(investID));
+  
+          investName = investName.replace(" ", "-").replace(".", "");
+          investName = investName.replace("ę", "e");
+          investName = investName.replace("ó", "o");
+          investName = investName.replace("ą", "a");
+          investName = investName.replace("ś", "s");
+          investName = investName.replace("Ś", "s");
+          investName = investName.replace("ł", "l");
+          investName = investName.replace("ż", "z");
+          investName = investName.replace("ź", "z");
+          investName = investName.replace("ć", "c");
+          investName = investName.replace("ń", "n");
+          investName = investName.toLowerCase();
+  
+          if (
+            document.referrer.search("o-inwestycji-" + investName) > 5 ||
+            document.referrer.search("lokalizacja-" + investName) > 20 ||
+            document.referrer.search("galeria-" + investName) > 20 ||
+            document.referrer.search("kronika-budowy-" + investName) > 20
+          ) {
+            document.cookie = "filteredTermsFromCookies=" + investID + ";";
+            globalCurrentInvestID = investID;
+            globalCurrentInvestName = investName;
+          }
         }
-      }
-    });
+      });
+    }
+
 
     // dynamic ymc filter id
     currentYmcFilterID = document
