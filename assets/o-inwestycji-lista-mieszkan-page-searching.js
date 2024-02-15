@@ -659,7 +659,7 @@ window.addEventListener("load", function () {
           // };
 
           let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
-          let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName.toLowerCase();
+          let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
 
           console.log('data attr test');
           console.log(investIDFromDataAttr);
