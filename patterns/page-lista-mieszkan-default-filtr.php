@@ -24,7 +24,7 @@
 
         $terms = wp_get_object_terms(url_to_postid($url), 'inwestycja');
         foreach ($terms as $term) {
-          echo "<span data-investment-id='" . $term->ID . "'></span>";
+          echo "<span data-investment-id='" . $term->term_id . "'></span>";
         }
         ?>
       </li>
