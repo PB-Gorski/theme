@@ -1072,7 +1072,7 @@ function ymc_posts_selected($layouts, $founded_post)
 	$layouts = '<p class="text-[24px] text-center aos-init aos-animate">Znaleziono ' . $founded_post . ' ofert pasujących do Twoich kryteriów <span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' . wp_count_posts('mieszkania')->publish . ')</span></p>';
 	return $layouts;
 }
-add_filter('ymc_posts_selected_148', 'ymc_posts_selected', 10, 2);
+add_filter('ymc_posts_selected_148_3', 'ymc_posts_selected', 10, 2);
 
 
 /* Exclude a Category from Search Results */
