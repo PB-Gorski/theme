@@ -1714,11 +1714,15 @@ window.addEventListener("load", function () {
       // console.log("after YMC api update2");
     }
 
-    YMCTools({
-      target: filterID,
-      terms: investIDFromDataAttr
-    }).apiTermUpdate();
-    console.log("after YMC api update1");
+    setTimeout(() => {
+      YMCTools({
+        target: filterID,
+        terms: investIDFromDataAttr
+      }).apiTermUpdate();
+      console.log("after YMC api update1");
+    }, 2000);
+
+
 
 
     // *******************************************************
