@@ -626,7 +626,7 @@ window.addEventListener("load", function () {
     globalCurrentCityID = investCityId ?? 0;
     globalCurrentCityName = investCityName ?? "";
 
-    if (globalCurrentInvestID == 0 ) {
+    if (true ) {
       allInvestmentsElements.forEach((el) => {
         if (el.childNodes[1] !== undefined) {
           investName = el.childNodes[1].dataset.name;
