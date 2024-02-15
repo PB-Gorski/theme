@@ -17,16 +17,13 @@
       <!-- wp:list-item -->
       <li class="short-code-ymc-filter applyContainer1 applyContainer2">
         <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
-          <?php 
-            $terms = get_terms([
-              'taxonomy' => 'inwestycje',
-              'hide_empty' => false,
-            ]);
+        <?php
+        $term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
 
-            foreach ($terms as $term){
-              echo "<span data-investment-id='".$term->term_id."'></span>";
-            }
-          ?>
+        foreach ($terms as $term) {
+          echo "<span data-investment-id='" . $term->term_id . "'></span>";
+        }
+        ?>
       </li>
       <!-- /wp:list-item -->
     </ul>
