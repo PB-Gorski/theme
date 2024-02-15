@@ -1767,7 +1767,7 @@ window.addEventListener("load", function () {
       );
     });
 
-    let filterID5 = '.data-target-ymc' + currentYmcFilterID3;
+    // let filterID5 = '.data-target-ymc' + currentYmcFilterID3;
     passiveOptions.forEach((item) => {
       item.addEventListener("click", () => {
         // setTimeout(() => {
