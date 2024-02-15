@@ -660,6 +660,11 @@ window.addEventListener("load", function () {
 
           let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
           let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName.toLowerCase();
+
+          console.log('data attr test');
+          console.log(investIDFromDataAttr);
+          console.log(investNameFromDataAttr);
+          console.log('data attr test');
           if (true) {
             document.cookie = "filteredTermsFromCookies=" + investIDFromDataAttr + ";";
             globalCurrentInvestID = investIDFromDataAttr;
