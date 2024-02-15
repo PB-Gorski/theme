@@ -1596,57 +1596,7 @@ window.addEventListener("load", function () {
 
     // *******************************************************
 
-    btnSearch.addEventListener("click", () => {
-      let pricesID = runSearchingPrice();
-      let metrazeID = runSearchingMetraz();
-      let searchedFromCookiesIDs = document.querySelectorAll(".active");
-      let searchedReadyArr = [];
 
-      searchedFromCookiesIDs.forEach((item) => {
-        // console.log("term from cookies", item.dataset.termid);
-        searchedReadyArr.push(item.dataset.termid);
-      });
-
-      console.log("logggggg: ", searchedReadyArr.join());
-
-      deleteAllCookies();
-      // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
-
-      // filter ID by page id
-      let pageID = document.querySelector("#Banner");
-      let filterID = ".ymc-smart-filter-container";
-
-      YMCTools({
-        target: filterID,
-        terms:
-          choosenOptions.join() +
-          "," +
-          pricesID.join() +
-          "," +
-          metrazeID.join() +
-          "," +
-          searchedReadyArr.join(),
-      }).apiTermUpdate();
-      console.log("after YMC api update");
-
-      console.log("in btn prices: ", pricesID.join());
-      console.log("in btn metraze: ", metrazeID.join());
-      console.log(
-        "all terms id searched: ",
-        pricesID.join() +
-          "," +
-          metrazeID.join() +
-          "," +
-          choosenOptions.join() +
-          "," +
-          searchedReadyArr.join()
-      );
-
-      console.log('globalCurrentInvestID'); 
-      console.log(globalCurrentInvestID); 
-    });
-
-    // *******************************************************
 
     let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
     let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
@@ -1788,6 +1738,60 @@ window.addEventListener("load", function () {
 
 
 
+
+    // *******************************************************
+
+    btnSearch.addEventListener("click", () => {
+      let pricesID = runSearchingPrice();
+      let metrazeID = runSearchingMetraz();
+      let searchedFromCookiesIDs = document.querySelectorAll(".active");
+      let searchedReadyArr = [];
+
+      searchedFromCookiesIDs.forEach((item) => {
+        // console.log("term from cookies", item.dataset.termid);
+        searchedReadyArr.push(item.dataset.termid);
+      });
+
+      console.log("logggggg: ", searchedReadyArr.join());
+
+      deleteAllCookies();
+      // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
+
+      // filter ID by page id
+      let pageID = document.querySelector("#Banner");
+      let filterID = ".ymc-smart-filter-container";
+
+      YMCTools({
+        target: filterID,
+        terms:
+          choosenOptions.join() +
+          "," +
+          pricesID.join() +
+          "," +
+          metrazeID.join() +
+          "," +
+          searchedReadyArr.join()+
+          "," +
+          investIDFromDataAttr,
+      }).apiTermUpdate();
+      console.log("after YMC api update");
+
+      console.log("in btn prices: ", pricesID.join());
+      console.log("in btn metraze: ", metrazeID.join());
+      console.log(
+        "all terms id searched: ",
+        pricesID.join() +
+          "," +
+          metrazeID.join() +
+          "," +
+          choosenOptions.join() +
+          "," +
+          searchedReadyArr.join()
+      );
+
+      console.log('globalCurrentInvestID'); 
+      console.log(globalCurrentInvestID); 
+    });
 
     // *******************************************************
 
