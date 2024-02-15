@@ -1649,6 +1649,14 @@ window.addEventListener("load", function () {
     let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
     let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
 
+    // dynamic ymc filter id
+    let currentYmcFilterID = document
+      .querySelector(".short-code-ymc-filter")
+      .childNodes[1].getAttribute("id")
+      .replace("ymc-smart-filter-container-", "");
+      
+    let filterID = ".data-target-ymc" + currentYmcFilterID;
+
     investName = investIDFromDataAttr
     investID = investNameFromDataAttr
 
