@@ -20,9 +20,9 @@
         <?php
         $scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
         $url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-        echo url_to_postid($url);
+        $page_id = url_to_postid($url);
 
-        $terms = wp_get_object_terms(url_to_postid($url), 'inwestycja');
+        $terms = wp_get_object_terms($page_id, 'inwestycja');
         foreach ($terms as $term) {
           echo "<span data-investment-id='" . $term->term_id . "'></span>";
         }
