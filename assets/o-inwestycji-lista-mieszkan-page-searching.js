@@ -1716,7 +1716,7 @@ window.addEventListener("load", function () {
 
     YMCTools({
       target: filterID,
-      terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
+      terms: filteredTermsFromCookies
     }).apiTermUpdate();
     console.log("after YMC api update1");
 
