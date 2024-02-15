@@ -626,7 +626,22 @@ window.addEventListener("load", function () {
     globalCurrentCityID = investCityId ?? 0;
     globalCurrentCityName = investCityName ?? "";
 
-    if (true ) {
+    if (document.querySelector('#term-data')){
+      let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
+      let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
+
+      console.log('data attr test');
+      console.log(investIDFromDataAttr);
+      console.log(investNameFromDataAttr);
+      console.log('data attr test');
+      if (true) {
+        document.cookie = "filteredTermsFromCookies=" + investIDFromDataAttr + ";";
+        globalCurrentInvestID = investIDFromDataAttr;
+        globalCurrentInvestName = investNameFromDataAttr;
+      };
+    }
+
+    if (false) {
       allInvestmentsElements.forEach((el) => {
         if (el.childNodes[1] !== undefined) {
           investName = el.childNodes[1].dataset.name;
@@ -648,7 +663,7 @@ window.addEventListener("load", function () {
           investName = investName.toLowerCase();
   
 
-          if (document.querySelector('#term-data')){
+          if (document.querySelector('#_term-data')){
             let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
             let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
 
@@ -679,7 +694,7 @@ window.addEventListener("load", function () {
 
         };
       });
-    }
+    };
 
 
     // dynamic ymc filter id
