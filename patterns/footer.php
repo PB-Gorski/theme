@@ -8,7 +8,7 @@
  */
 ?>
 
-<!-- wp:group -->
+<!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="footer" class="wp-block-group footer pt-[60px] relative">
   <!-- wp:group -->
   <div class="wp-block-group footer1 container mx-auto mb-[20px] desktop:px-0 px-[20px] h-full desktop:flex">
