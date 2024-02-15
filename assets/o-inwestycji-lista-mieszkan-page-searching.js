@@ -658,17 +658,19 @@ window.addEventListener("load", function () {
           //   globalCurrentInvestName = investName;
           // };
 
-          let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
-          let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
+          if (document.querySelector('#term-data')){
+            let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
+            let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
 
-          console.log('data attr test');
-          console.log(investIDFromDataAttr);
-          console.log(investNameFromDataAttr);
-          console.log('data attr test');
-          if (true) {
-            document.cookie = "filteredTermsFromCookies=" + investIDFromDataAttr + ";";
-            globalCurrentInvestID = investIDFromDataAttr;
-            globalCurrentInvestName = investNameFromDataAttr;
+            console.log('data attr test');
+            console.log(investIDFromDataAttr);
+            console.log(investNameFromDataAttr);
+            console.log('data attr test');
+            if (true) {
+              document.cookie = "filteredTermsFromCookies=" + investIDFromDataAttr + ";";
+              globalCurrentInvestID = investIDFromDataAttr;
+              globalCurrentInvestName = investNameFromDataAttr;
+            };
           };
 
 
