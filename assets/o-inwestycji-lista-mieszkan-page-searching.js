@@ -1646,6 +1646,27 @@ window.addEventListener("load", function () {
 
     // *******************************************************
 
+    let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
+    let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
+
+    investName = investIDFromDataAttr
+    investID = investNameFromDataAttr
+
+    investIDsArr.push(Number(investID));
+
+    investName = investName.replace(" ", "-").replace(".", "");
+    investName = investName.replace("ę", "e");
+    investName = investName.replace("ó", "o");
+    investName = investName.replace("ą", "a");
+    investName = investName.replace("ś", "s");
+    investName = investName.replace("Ś", "s");
+    investName = investName.replace("ł", "l");
+    investName = investName.replace("ż", "z");
+    investName = investName.replace("ź", "z");
+    investName = investName.replace("ć", "c");
+    investName = investName.replace("ń", "n");
+    investName = investName.toLowerCase();
+
     if(
       document.referrer.search("o-inwestycji-" + investName) > 5 ||
       document.referrer.search("lokalizacja-" + investName) > 20 ||
@@ -1664,9 +1685,6 @@ window.addEventListener("load", function () {
         console.log("after YMC api update1");
 
     }else if(document.querySelector('#term-data')){
-      let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
-      let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
-
       console.log('data attr test');
       console.log(investIDFromDataAttr);
       console.log(investNameFromDataAttr);
