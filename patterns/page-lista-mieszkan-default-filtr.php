@@ -17,6 +17,16 @@
       <!-- wp:list-item -->
       <li class="short-code-ymc-filter applyContainer1 applyContainer2">
         <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
+          <?php 
+            $terms = get_terms([
+              'taxonomy' => 'inwestycja',
+              'hide_empty' => false,
+            ]);
+
+            foreach ($terms as $term){
+              echo "<span data-investment-id='".$term->ID."'></span>";
+            }
+          ?>
       </li>
       <!-- /wp:list-item -->
     </ul>
