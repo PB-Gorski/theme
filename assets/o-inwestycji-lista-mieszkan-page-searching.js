@@ -1679,7 +1679,7 @@ window.addEventListener("load", function () {
 
     if(
       document.referrer.search("_o-inwestycji-" + investName) > 5 ||
-      document.referrer.search("l_okalizacja-" + investName) > 20 ||
+      document.referrer.search("_lokalizacja-" + investName) > 20 ||
       document.referrer.search("_galeria-" + investName) > 20 ||
       document.referrer.search("_kronika-budowy-" + investName) > 20
     ) {
@@ -1688,11 +1688,11 @@ window.addEventListener("load", function () {
         globalCurrentInvestID = investID;
         globalCurrentInvestName = investName;
 
-        YMCTools({
-          target: filterID,
-          terms: investID
-        }).apiTermUpdate();
-        console.log("after YMC api update from referer");
+        // YMCTools({
+        //   target: filterID,
+        //   terms: investID
+        // }).apiTermUpdate();
+        // console.log("after YMC api update from referer");
 
 
 
@@ -1714,6 +1714,14 @@ window.addEventListener("load", function () {
       // console.log("after YMC api update2");
     }
 
+    wp.hooks.addAction(
+      "ymc_after_loaded_data_148_3",
+      "smartfilter",
+      function () {
+        console.log('wp hook after laoded data test!!!');
+      }
+    );
+
     setTimeout(() => {
       YMCTools({
         target: filterID,
@@ -1721,6 +1729,7 @@ window.addEventListener("load", function () {
       }).apiTermUpdate();
       console.log("after YMC api update1");
     }, 2000);
+
 
 
 
