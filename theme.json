@@ -10,6 +10,11 @@
       "area": "header"
     },
     {
+      "name": "header-white",
+      "title": "Header (white)",
+      "area": "header"
+    },
+    {
       "name": "footer",
       "title": "Footer",
       "area": "footer"
