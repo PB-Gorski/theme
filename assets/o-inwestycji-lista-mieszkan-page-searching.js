@@ -1082,7 +1082,7 @@ window.addEventListener("load", function () {
                     );
                   });
                 }
-                runFromCookies();
+                // runFromCookies();
               }
             );
 
@@ -1375,7 +1375,7 @@ window.addEventListener("load", function () {
 
       if (filteredTermsFromCookies > 0) {
         setTimeout(() => {
-          // runFromCookies();
+          runFromCookies();
           // document.cookie = "filteredTermsFromCookies=;";
           // document.cookie = 'filteredTermsFromCookies=; path=/';
           // document.cookie = 'filteredTermsFromCookies=; path=/pl';
