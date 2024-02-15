@@ -1650,12 +1650,12 @@ window.addEventListener("load", function () {
     let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
 
     // dynamic ymc filter id
-    let currentYmcFilterID = document
+    let currentYmcFilterID2 = document
       .querySelector(".short-code-ymc-filter")
       .childNodes[1].getAttribute("id")
       .replace("ymc-smart-filter-container-", "");
-      
-    let filterID = ".data-target-ymc" + currentYmcFilterID;
+
+    let filterID = ".data-target-ymc" + currentYmcFilterID2;
 
     investName = investIDFromDataAttr
     investID = investNameFromDataAttr
@@ -1707,7 +1707,7 @@ window.addEventListener("load", function () {
         target: filterID,
         terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
       }).apiTermUpdate();
-      console.log("after YMC api update1");
+      console.log("after YMC api update2");
     }
 
 
