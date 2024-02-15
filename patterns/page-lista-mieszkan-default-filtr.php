@@ -28,7 +28,7 @@
           $terms_miasta = get_field('miasto_inwestycji', $term);
 
           foreach ($terms_miasta as $term_city) {
-            echo " data-investment-city-id='" . $term_city . "' ";
+            echo " data-investment-city-id='" . $term_city . "' ' data-investment-city-name='" . $term->name . "' ";
           }
         }
 
