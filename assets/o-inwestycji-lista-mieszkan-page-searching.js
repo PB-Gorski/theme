@@ -646,18 +646,6 @@ window.addEventListener("load", function () {
           investName = investName.toLowerCase();
   
 
-          // old
-          // if (
-          //   document.referrer.search("o-inwestycji-" + investName) > 5 ||
-          //   document.referrer.search("lokalizacja-" + investName) > 20 ||
-          //   document.referrer.search("galeria-" + investName) > 20 ||
-          //   document.referrer.search("kronika-budowy-" + investName) > 20
-          // ) {
-          //   document.cookie = "filteredTermsFromCookies=" + investID + ";";
-          //   globalCurrentInvestID = investID;
-          //   globalCurrentInvestName = investName;
-          // };
-
           if (document.querySelector('#term-data')){
             let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
             let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
@@ -670,6 +658,18 @@ window.addEventListener("load", function () {
               document.cookie = "filteredTermsFromCookies=" + investIDFromDataAttr + ";";
               globalCurrentInvestID = investIDFromDataAttr;
               globalCurrentInvestName = investNameFromDataAttr;
+            };
+          }else{
+            // old
+            if (
+              document.referrer.search("o-inwestycji-" + investName) > 5 ||
+              document.referrer.search("lokalizacja-" + investName) > 20 ||
+              document.referrer.search("galeria-" + investName) > 20 ||
+              document.referrer.search("kronika-budowy-" + investName) > 20
+            ) {
+              document.cookie = "filteredTermsFromCookies=" + investID + ";";
+              globalCurrentInvestID = investID;
+              globalCurrentInvestName = investName;
             };
           };
 
