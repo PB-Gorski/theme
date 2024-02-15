@@ -626,30 +626,7 @@ window.addEventListener("load", function () {
     globalCurrentCityID = investCityId ?? 0;
     globalCurrentCityName = investCityName ?? "";
 
-    if(
-      document.referrer.search("o-inwestycji-" + investName) > 5 ||
-      document.referrer.search("lokalizacja-" + investName) > 20 ||
-      document.referrer.search("galeria-" + investName) > 20 ||
-      document.referrer.search("kronika-budowy-" + investName) > 20
-    ) {
-        console.log('!document.referrer!');
-        document.cookie = "filteredTermsFromCookies=" + investID + ";";
-        globalCurrentInvestID = investID;
-        globalCurrentInvestName = investName;
-    }else if(document.querySelector('#term-data')){
-      let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
-      let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
 
-      console.log('data attr test');
-      console.log(investIDFromDataAttr);
-      console.log(investNameFromDataAttr);
-      console.log('data attr test');
-      if (true) {
-        document.cookie = "filteredTermsFromCookies=" + investIDFromDataAttr + ";";
-        globalCurrentInvestID = investIDFromDataAttr;
-        globalCurrentInvestName = investNameFromDataAttr;
-      };
-    }
 
     if (false) {
       allInvestmentsElements.forEach((el) => {
@@ -1357,11 +1334,11 @@ window.addEventListener("load", function () {
           searchedFromActiveIDs.push(item.dataset.termid)
         });
 
-        YMCTools({
-          target: filterID,
-          terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
-        }).apiTermUpdate();
-        console.log("after YMC api update1");
+        // YMCTools({
+        //   target: filterID,
+        //   terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
+        // }).apiTermUpdate();
+        // console.log("after YMC api update1");
       }
 
       wp.hooks.addAction(
@@ -1669,11 +1646,48 @@ window.addEventListener("load", function () {
 
     // *******************************************************
 
-    wp.hooks.addAction(
-      "ymc_before_loaded_data_148_2",
-      "smartfilter",
-      function () {}
-    );
+    if(
+      document.referrer.search("o-inwestycji-" + investName) > 5 ||
+      document.referrer.search("lokalizacja-" + investName) > 20 ||
+      document.referrer.search("galeria-" + investName) > 20 ||
+      document.referrer.search("kronika-budowy-" + investName) > 20
+    ) {
+        console.log('!document.referrer!');
+        document.cookie = "filteredTermsFromCookies=" + investID + ";";
+        globalCurrentInvestID = investID;
+        globalCurrentInvestName = investName;
+
+        YMCTools({
+          target: filterID,
+          terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
+        }).apiTermUpdate();
+        console.log("after YMC api update1");
+
+    }else if(document.querySelector('#term-data')){
+      let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
+      let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
+
+      console.log('data attr test');
+      console.log(investIDFromDataAttr);
+      console.log(investNameFromDataAttr);
+      console.log('data attr test');
+      if (true) {
+        document.cookie = "filteredTermsFromCookies=" + investIDFromDataAttr + ";";
+        globalCurrentInvestID = investIDFromDataAttr;
+        globalCurrentInvestName = investNameFromDataAttr;
+      };
+
+      YMCTools({
+        target: filterID,
+        terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
+      }).apiTermUpdate();
+      console.log("after YMC api update1");
+    }
+
+
+    // *******************************************************
+
+
 
     const searchBarTest = document.querySelector("#inwestycje");
     document.querySelectorAll(".menu-active").forEach((activeMenu) => {
@@ -1686,104 +1700,6 @@ window.addEventListener("load", function () {
           });
       });
     });
-
-    document.body.addEventListener("click", () => {
-      console.log("body click");
-      document.querySelectorAll(".menu-passive").forEach((activeItem) => {
-        // activeItem.style.display = 'none';
-      });
-    });
-
-    wp.hooks.addAction(
-      "ymc_after_loaded_data_148_3",
-      "smartfilter",
-      function (class_name, response) {
-        // document.cookie = "filteredTermsFromCookies=;";
-        // console.log('cookies cleared');
-        // console.log('Container class: ' + class_name);
-        // console.log('Post count: ' + response.post_count);
-        // postsFoundFromAfterHook = response.post_count;
-        // console.log('Number of found posts: ' + response.found);
-        // postsFoundFromAfterHook2 = response.found;
-        // foundedPostOnStart.innerHTML = 'Znaleziono ' +  response.found + ' ofert pasujących do Twoich kryteriów ' + '<span class="text-[16px] text-[#8a8f99]">(wszystkich ogłoszeń ' + foundedPostOnStart.dataset.allposts + ')</span></p>';
-        // console.log('posts loaded before if');
-        // if (counterPostsLoad == 3){
-        //   console.log('posts loaded inside if');
-        //   foundedPostOnStart.classList.add('hidden');
-        // };
-        // counterPostsLoad++;
-        // console.log('posts found counter after ++: ', counterPostsLoad);
-      }
-    );
-
-    wp.hooks.addAction(
-      "ymc_after_loaded_data_148_2",
-      "smartfilter",
-      function (class_name, response) {
-        // document.cookie = "filteredTermsFromCookies=;";
-        // document.cookie = "filteredTermsFromCookies=; path=";
-        // document.cookie = "filteredTermsFromCookies=; path=/";
-        // document.cookie = "filteredTermsFromCookies=; path=/pl";
-        // console.log('cookies cleared');
-      }
-    );
-
-    wp.hooks.addAction(
-      "ymc_after_loaded_data_148_3",
-      "smartfilter",
-      function (class_name, response) {
-        // document.cookie = "filteredTermsFromCookies=;";
-        // document.cookie = "filteredTermsFromCookies=; path=";
-        // document.cookie = "filteredTermsFromCookies=; path=/";
-        // document.cookie = "filteredTermsFromCookies=; path=/pl";
-        // console.log('cookies cleared');
-      }
-    );
-    wp.hooks.addAction(
-      "ymc_before_loaded_data_148_2",
-      "smartfilter",
-      function (class_name, response) {
-        // document.cookie = "filteredTermsFromCookies=;";
-        // document.cookie = "filteredTermsFromCookies=; path=";
-        // document.cookie = "filteredTermsFromCookies=; path=/";
-        // document.cookie = "filteredTermsFromCookies=; path=/pl";
-        // console.log('cookies cleared');
-      }
-    );
-    wp.hooks.addAction(
-      "ymc_before_loaded_data_148_3",
-      "smartfilter",
-      function (class_name, response) {
-        // document.cookie = "filteredTermsFromCookies=;";
-        // document.cookie = "filteredTermsFromCookies=; path=";
-        // document.cookie = "filteredTermsFromCookies=; path=/";
-        // document.cookie = "filteredTermsFromCookies=; path=/pl";
-        // console.log('cookies cleared');
-      }
-    );
-
-    // o inwestycji
-    if (document.body.classList.contains("page-id-1711")) {
-      // document.cookie = "filteredTermsFromCookies=;";
-      // document.cookie = "filteredTermsFromCookies=; path=";
-      // document.cookie = "filteredTermsFromCookies=; path=/";
-      // document.cookie = "filteredTermsFromCookies=; path=/pl";
-      // console.log('cookies cleared');
-    }
-    if (document.body.classList.contains("page-id-1926")) {
-      // document.cookie = "filteredTermsFromCookies=;";
-      // document.cookie = "filteredTermsFromCookies=; path=";
-      // document.cookie = "filteredTermsFromCookies=; path=/";
-      // document.cookie = "filteredTermsFromCookies=; path=/pl";
-      // console.log('cookies cleared');
-    }
-    if (document.body.classList.contains("post-type-archive-mieszkania")) {
-      // document.cookie = "filteredTermsFromCookies=;";
-      // document.cookie = "filteredTermsFromCookies=; path=";
-      // document.cookie = "filteredTermsFromCookies=; path=/";
-      // document.cookie = "filteredTermsFromCookies=; path=/pl";
-      // console.log('cookies cleared');
-    }
 
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
