@@ -1770,12 +1770,13 @@ window.addEventListener("load", function () {
     let filterID5 = '.data-target-ymc' + currentYmcFilterID3;
     passiveOptions.forEach((item) => {
       item.addEventListener("click", () => {
-        YMCTools({
-          target: filterID5,
-          terms: choosenOptions.join() +
-          "," +
-          investIDFromDataAttr,
-        }).apiTermUpdate();
+        setTimeout(() => {
+          YMCTools({
+            target: filterID,
+            terms: investIDFromDataAttr
+          }).apiTermUpdate();
+          console.log("after YMC api update1");
+        }, 1000);
       });
     });
 
