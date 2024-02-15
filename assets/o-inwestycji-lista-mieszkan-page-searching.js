@@ -1072,6 +1072,7 @@ window.addEventListener("load", function () {
                     );
                   });
                 }
+                runFromCookies();
               }
             );
 
@@ -1336,25 +1337,6 @@ window.addEventListener("load", function () {
       let pageID = document.querySelector("#Banner");
       let filterID = "";
 
-      // if(pageID.classList.contains('banner-lista-mieszkan-osiedle-srebrniki')){
-      //   filterID = '.data-target-ymc3';
-      // }else if(pageID.classList.contains('banner-lista-mieszkan-sw-piotra')){
-      //   filterID = '.data-target-ymc4';
-      //   console.log('sw piotra test22222');
-      // }else if(pageID.classList.contains('banner-o-inwestycji-torunska-16')){
-      //   console.log('sw torunska o inwest st22222');
-      //   filterID = '.data-target-ymc7';
-      // }else if(pageID.classList.contains('banner-lista-mieszkan-torunska-16')){
-      //   filterID = '.data-target-ymc5';
-      //   console.log('torunska test22222');
-      // }else if(pageID.classList.contains('banner-o-inwestycji-wiezycka-folwark')){
-      //   console.log('sw folwark o inwest st22222');
-      //   filterID = '.data-target-ymc7';
-      // }else if(pageID.classList.contains('banner-lista-mieszkan-wiezycka-folwark')){
-      //   filterID = '.data-target-ymc6';
-      //   console.log('folwrk test22222');
-      // }
-
       filterID = ".data-target-ymc" + currentYmcFilterID;
 
       function runFromCookies() {
@@ -1383,11 +1365,11 @@ window.addEventListener("load", function () {
 
       if (filteredTermsFromCookies > 0) {
         setTimeout(() => {
-          runFromCookies();
+          // runFromCookies();
           // document.cookie = "filteredTermsFromCookies=;";
           // document.cookie = 'filteredTermsFromCookies=; path=/';
           // document.cookie = 'filteredTermsFromCookies=; path=/pl';
-        }, 1000);
+        }, 2000);
       }
       // if(document.cookie.indexOf('filteredTermsFromCookies=') > 0) {
       //   setTimeout(() => {
