@@ -363,7 +363,7 @@ function pb_gorski_blocks_register_styles()
 	wp_enqueue_script('customJS', get_theme_file_uri('/assets/custom-js.js'), array(), '2.1');
 	wp_enqueue_script('customJS2', get_theme_file_uri('/assets/frontpage-searching-data-cookies.js'),  array(), '2.1');
 	wp_enqueue_script('customJS3', get_theme_file_uri('/assets/lista-mieszkan-page-searching.js'),  array(), '2.1');
-	wp_enqueue_script('customJS4', get_theme_file_uri('/assets/o-inwestycji-lista-mieszkan-page-searching.js'), array(), '2.1');
+	wp_enqueue_script('customJS4', get_theme_file_uri('/assets/o-inwestycji-lista-mieszkan-page-searching.js'), array(), '2.2');
 	wp_enqueue_script('customJS5', get_theme_file_uri('/assets/single-mieszkania-cookie-data.js'), array(), '2.1');
 }
 add_action('wp_enqueue_scripts', 'pb_gorski_blocks_register_styles');
