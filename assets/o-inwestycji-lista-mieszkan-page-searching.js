@@ -1772,7 +1772,7 @@ window.addEventListener("load", function () {
       item.addEventListener("click", () => {
         setTimeout(() => {
           YMCTools({
-            target: filterID,
+            target: filterID5,
             terms: investIDFromDataAttr
           }).apiTermUpdate();
           console.log("after YMC api update1");
