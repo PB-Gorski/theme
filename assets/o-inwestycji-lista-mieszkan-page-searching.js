@@ -1688,11 +1688,11 @@ window.addEventListener("load", function () {
         globalCurrentInvestID = investID;
         globalCurrentInvestName = investName;
 
-        // YMCTools({
-        //   target: filterID,
-        //   terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
-        // }).apiTermUpdate();
-        // console.log("after YMC api update1");
+        YMCTools({
+          target: filterID,
+          terms: investID
+        }).apiTermUpdate();
+        console.log("after YMC api update from referer");
 
 
 
