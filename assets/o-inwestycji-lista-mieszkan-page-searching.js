@@ -1748,21 +1748,16 @@ window.addEventListener("load", function () {
       let searchedReadyArr = [];
 
       searchedFromCookiesIDs.forEach((item) => {
-        // console.log("term from cookies", item.dataset.termid);
         searchedReadyArr.push(item.dataset.termid);
       });
 
       console.log("logggggg: ", searchedReadyArr.join());
 
-      deleteAllCookies();
-      // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
-
-      // filter ID by page id
-      let pageID = document.querySelector("#Banner");
-      let filterID = ".ymc-smart-filter-container";
+      let filterID4 = '.data-target-ymc' + currentYmcFilterID3;
+      console.log('filterID4: ', filterID4);
 
       YMCTools({
-        target: filterID,
+        target: filterID4,
         terms:
           choosenOptions.join() +
           "," +
@@ -1770,14 +1765,11 @@ window.addEventListener("load", function () {
           "," +
           metrazeID.join() +
           "," +
-          searchedReadyArr.join()+
+          searchedReadyArr.join() +
           "," +
           investIDFromDataAttr,
       }).apiTermUpdate();
-      console.log("after YMC api update");
-
-      console.log("in btn prices: ", pricesID.join());
-      console.log("in btn metraze: ", metrazeID.join());
+      console.log("after YMC api update from btn search");
       console.log(
         "all terms id searched: ",
         pricesID.join() +
@@ -1786,11 +1778,10 @@ window.addEventListener("load", function () {
           "," +
           choosenOptions.join() +
           "," +
-          searchedReadyArr.join()
+          searchedReadyArr.join() +
+          "," +
+          investIDFromDataAttr,
       );
-
-      console.log('globalCurrentInvestID'); 
-      console.log(globalCurrentInvestID); 
     });
 
     // *******************************************************
