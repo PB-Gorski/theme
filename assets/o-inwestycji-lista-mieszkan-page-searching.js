@@ -1688,11 +1688,13 @@ window.addEventListener("load", function () {
         globalCurrentInvestID = investID;
         globalCurrentInvestName = investName;
 
-        YMCTools({
-          target: filterID,
-          terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
-        }).apiTermUpdate();
-        console.log("after YMC api update1");
+        // YMCTools({
+        //   target: filterID,
+        //   terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
+        // }).apiTermUpdate();
+        // console.log("after YMC api update1");
+
+
 
     }else if(document.querySelector('#term-data')){
       console.log('data attr test');
@@ -1705,12 +1707,18 @@ window.addEventListener("load", function () {
         globalCurrentInvestName = investNameFromDataAttr;
       };
 
-      YMCTools({
-        target: filterID,
-        terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
-      }).apiTermUpdate();
-      console.log("after YMC api update2");
+      // YMCTools({
+      //   target: filterID,
+      //   terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
+      // }).apiTermUpdate();
+      // console.log("after YMC api update2");
     }
+
+    YMCTools({
+      target: filterID,
+      terms: filteredTermsFromCookies + ',' + searchedFromActiveIDs.join(),
+    }).apiTermUpdate();
+    console.log("after YMC api update1");
 
 
     // *******************************************************
