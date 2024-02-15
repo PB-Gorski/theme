@@ -1665,7 +1665,7 @@ window.addEventListener("load", function () {
     }
 
     wp.hooks.addAction(
-      "ymc_after_loaded_data_148_3",
+      "ymc_after_loaded_data_148_" + currentYmcFilterID3,
       "smartfilter",
       function () {
         console.log('wp hook after laoded data test!!!');
