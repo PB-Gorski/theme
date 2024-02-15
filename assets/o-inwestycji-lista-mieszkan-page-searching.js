@@ -685,10 +685,12 @@ window.addEventListener("load", function () {
 
 
     // dynamic ymc filter id
+    if(document.querySelector(".short-code-ymc-filter")){
     currentYmcFilterID = document
       .querySelector(".short-code-ymc-filter")
       .childNodes[1].getAttribute("id")
       .replace("ymc-smart-filter-container-", "");
+    };
 
     // dynamic term id for city
     allCityElements =
