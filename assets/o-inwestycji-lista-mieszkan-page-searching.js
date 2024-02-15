@@ -1746,38 +1746,7 @@ window.addEventListener("load", function () {
         }
       });
 
-      console.log("Container class: " + class_name);
-      console.log("Post count: " + response.post_count);
       globalFoundedPostsCount = response.post_count;
-      console.log("Number of found posts: " + response.found);
-      console.log("**********************");
-      console.log("1111111111111111 from hook:");
-
-      
-      if(!filter2323FirstRun){
-        currentCityName = document.querySelector(
-          ".list-item-mieszkanie"
-        )?.childNodes[0].innerText;
-        console.log(currentCityName);
-        globalCurrentCityName =
-          currentCityName == undefined ? "Wybierz" : currentCityName;
-        };
-      filter2323FirstRun = true;
-
-      // currentCityName = document.querySelector(
-      //   ".list-item-mieszkanie"
-      // )?.childNodes[0].innerText;
-      // console.log(currentCityName);
-      // globalCurrentCityName =
-      //   currentCityName == undefined ? "Wybierz" : currentCityName;
-
-
-
-
-
-      console.log("global**********************");
-      console.log(globalFoundedPostsCount);
-      console.log("**********************");
 
       if (globalFoundedPostsCount == 1) {
         document.querySelector(".js-oInwestycji").innerHTML =
