@@ -1678,10 +1678,10 @@ window.addEventListener("load", function () {
     investName = investName.toLowerCase();
 
     if(
-      document.referrer.search("o-inwestycji-" + investName) > 5 ||
-      document.referrer.search("lokalizacja-" + investName) > 20 ||
-      document.referrer.search("galeria-" + investName) > 20 ||
-      document.referrer.search("kronika-budowy-" + investName) > 20
+      document.referrer.search("_o-inwestycji-" + investName) > 5 ||
+      document.referrer.search("l_okalizacja-" + investName) > 20 ||
+      document.referrer.search("_galeria-" + investName) > 20 ||
+      document.referrer.search("_kronika-budowy-" + investName) > 20
     ) {
         console.log('!document.referrer!');
         document.cookie = "filteredTermsFromCookies=" + investID + ";";
@@ -1714,7 +1714,6 @@ window.addEventListener("load", function () {
       // console.log("after YMC api update2");
     }
 
-    filteredTermsFromCookies = investID + ',' + investIDFromDataAttr;
     YMCTools({
       target: filterID,
       terms: filteredTermsFromCookies
