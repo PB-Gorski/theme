@@ -19,12 +19,12 @@
         <?php echo do_shortcode('[ymc_filter id="148"]'); ?>
           <?php 
             $terms = get_terms([
-              'taxonomy' => 'inwestycja',
+              'taxonomy' => 'inwestycje',
               'hide_empty' => false,
             ]);
 
             foreach ($terms as $term){
-              echo "<span data-investment-id='".$term->ID."'></span>";
+              echo "<span data-investment-id='".$term->term_id."'></span>";
             }
           ?>
       </li>
