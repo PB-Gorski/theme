@@ -1659,8 +1659,8 @@ window.addEventListener("load", function () {
 
     let filterID = ".data-target-ymc" + currentYmcFilterID2;
 
-    investName = investIDFromDataAttr
-    investID = investNameFromDataAttr
+    investName = investNameFromDataAttr;
+    investID = investIDFromDataAttr;
 
     investIDsArr.push(Number(investID));
 
