@@ -47,9 +47,9 @@ window.addEventListener("load", function () {
   }
 
   let investTermId = 0
-  let investTermName = ''
+  let investTermName
   let investCityId = 0
-  let investCityName = ''
+  let investCityName
 
   let termDataContainer = document.getElementById('term-data')
   if (termDataContainer) {
@@ -79,7 +79,7 @@ window.addEventListener("load", function () {
     currentInvestCity = document.querySelector(".investCity")?.innerText;
     document.querySelector(
       ".filter-entry"
-    ).childNodes[1].childNodes[3].childNodes[1].innerText = currentInvestCity;
+    ).childNodes[1].childNodes[3].childNodes[1].innerText = investCityName ?? currentInvestCity;
     document
       .querySelector(".filter-entry")
       .childNodes[1].classList.add("pointer-events-none");
