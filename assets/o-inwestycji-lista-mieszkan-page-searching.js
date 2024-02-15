@@ -1722,6 +1722,12 @@ window.addEventListener("load", function () {
       }
     );
 
+    wp.hooks.addAction('ymc_after_loaded_data_148_3', 'smartfilter', function(class_name, response){
+      console.log('Container class: ' + class_name);
+      console.log('Post count: ' + response.post_count);
+      console.log('Number of found posts: ' + response.found);
+   });
+
     setTimeout(() => {
       YMCTools({
         target: filterID,
