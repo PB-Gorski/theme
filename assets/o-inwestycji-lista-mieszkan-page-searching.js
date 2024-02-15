@@ -306,18 +306,20 @@ window.addEventListener("load", function () {
     let newArrHTMLList = [];
     let target;
 
-    document.querySelector("#Banner").addEventListener("click", () => {
-      console.log("body click2");
-      document.querySelectorAll(".dropdown__list").forEach((activeItem2) => {
-        if (
-          activeItem2.classList.contains("dropdown__list_active-metraz") ||
-          activeItem2.classList.contains("dropdown__list_active")
-        ) {
-          activeItem2.classList.remove("dropdown__list_active-metraz");
-          activeItem2.classList.remove("dropdown__list_active");
-        }
+    if(document.querySelector("#Banner")){
+      document.querySelector("#Banner").addEventListener("click", () => {
+        console.log("body click2");
+        document.querySelectorAll(".dropdown__list").forEach((activeItem2) => {
+          if (
+            activeItem2.classList.contains("dropdown__list_active-metraz") ||
+            activeItem2.classList.contains("dropdown__list_active")
+          ) {
+            activeItem2.classList.remove("dropdown__list_active-metraz");
+            activeItem2.classList.remove("dropdown__list_active");
+          }
+        });
       });
-    });
+    };
 
     mainDropDown.forEach((dropDownEl) => {
       dropDownEl.addEventListener("click", (e) => {
