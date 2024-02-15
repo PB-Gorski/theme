@@ -1731,6 +1731,81 @@ window.addEventListener("load", function () {
       console.log('Container class: ' + class_name);
       console.log('Post count: ' + response.post_count);
       console.log('Number of found posts: ' + response.found);
+
+      let currentPriceArr = document.querySelectorAll(
+        ".list-item-mieszkanie"
+      );
+      // investElFormName2 = document.querySelector('.post-custom-layout').childNodes[0].childNodes[0].childNodes[1].innerText;
+
+      currentPriceArr.forEach((el) => {
+        if (
+          el.childNodes[7].innerText == "Zapytaj zł" ||
+          el.childNodes[7].innerText == "Zapytajzł"
+        ) {
+          el.childNodes[7].innerText = "Zapytaj";
+        }
+      });
+
+      console.log("Container class: " + class_name);
+      console.log("Post count: " + response.post_count);
+      globalFoundedPostsCount = response.post_count;
+      console.log("Number of found posts: " + response.found);
+      console.log("**********************");
+      console.log("1111111111111111 from hook:");
+
+      
+      if(!filter2323FirstRun){
+        currentCityName = document.querySelector(
+          ".list-item-mieszkanie"
+        )?.childNodes[0].innerText;
+        console.log(currentCityName);
+        globalCurrentCityName =
+          currentCityName == undefined ? "Wybierz" : currentCityName;
+        };
+      filter2323FirstRun = true;
+
+      // currentCityName = document.querySelector(
+      //   ".list-item-mieszkanie"
+      // )?.childNodes[0].innerText;
+      // console.log(currentCityName);
+      // globalCurrentCityName =
+      //   currentCityName == undefined ? "Wybierz" : currentCityName;
+
+
+
+
+
+      console.log("global**********************");
+      console.log(globalFoundedPostsCount);
+      console.log("**********************");
+
+      if (globalFoundedPostsCount == 1) {
+        document.querySelector(".js-oInwestycji").innerHTML =
+          "Znaleziono " +
+          globalFoundedPostsCount +
+          " ofertę pasującą do Twoich kryteriów";
+      } else if (
+        globalFoundedPostsCount == 2 ||
+        globalFoundedPostsCount == 3 ||
+        globalFoundedPostsCount == 4
+      ) {
+        document.querySelector(".js-oInwestycji").innerHTML =
+          "Znaleziono " +
+          globalFoundedPostsCount +
+          " oferty pasujące do Twoich kryteriów";
+      } else if (
+        globalFoundedPostsCount > 4 ||
+        globalFoundedPostsCount == 3 ||
+        globalFoundedPostsCount == 4
+      ) {
+        document.querySelector(".js-oInwestycji").innerHTML =
+          "Znaleziono " +
+          globalFoundedPostsCount +
+          " ofert pasujących do Twoich kryteriów";
+      } else if (globalFoundedPostsCount < 1) {
+        document.querySelector(".js-oInwestycji").innerHTML =
+          "Nie znaleziono ofert";
+      }
    });
 
     setTimeout(() => {
@@ -1739,7 +1814,7 @@ window.addEventListener("load", function () {
         terms: investIDFromDataAttr
       }).apiTermUpdate();
       console.log("after YMC api update1");
-    }, 2000);
+    }, 1000);
 
 
 
