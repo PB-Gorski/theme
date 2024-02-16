@@ -1756,7 +1756,9 @@ window.addEventListener("load", function () {
         target: filterID4,
         terms: choosenOptions.join() +
         "," +
-        investIDFromDataAttr,
+        investIDFromDataAttr +
+        "," +
+        filteredTermsIDMetraz.join(","),
       }).apiTermUpdate();
       console.log("after YMC api update from btn search");
       console.log(
@@ -1764,6 +1766,8 @@ window.addEventListener("load", function () {
           choosenOptions.join() +
           "," +
           investIDFromDataAttr,
+          "," +
+          filteredTermsIDMetraz.join(","),
       );
     });
 
