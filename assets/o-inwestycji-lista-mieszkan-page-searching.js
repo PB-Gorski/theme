@@ -1751,6 +1751,10 @@ window.addEventListener("load", function () {
 
       let filterID4 = '.data-target-ymc' + currentYmcFilterID3;
       console.log('filterID4: ', filterID4);
+        
+      console.log("searchedReadyArr: ", searchedReadyArr.join());
+      console.log("metrazeID!!!: ", metrazeID.join());
+      console.log("metraze po ifie2!!!: ", filteredTermsIDMetraz.join());
 
       YMCTools({
         target: filterID4,
