@@ -1744,19 +1744,17 @@ window.addEventListener("load", function () {
       let metrazeID = runSearchingMetraz();
       let searchedFromCookiesIDs = document.querySelectorAll(".active");
       let searchedReadyArr = [];
+      let filterID4 = '.data-target-ymc' + currentYmcFilterID3;
 
       searchedFromCookiesIDs.forEach((item) => {
         searchedReadyArr.push(item.dataset.termid);
       });
 
       console.log("searchedReadyArr: ", searchedReadyArr.join());
-
-      let filterID4 = '.data-target-ymc' + currentYmcFilterID3;
-      console.log('filterID4: ', filterID4);
         
       // console.log("searchedReadyArr: ", searchedReadyArr.join());
       console.log("metrazeID!!!: ", metrazeID.join());
-      // console.log("metrazeID2!!!: ", metrazeID2);
+      console.log("pricesID!!!: ", pricesID.join());
 
       YMCTools({
         target: filterID4,
