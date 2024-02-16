@@ -284,12 +284,12 @@ window.addEventListener("load", function () {
 
   /* CountUp Activation */
   if (this.document.body.classList.contains("page-template-page-about")) {
-    let count1 = new countUp("count1", 0, 40, 0, 1.5, options);
-    let count2 = new countUp("count2", 0, 125, 0, 1.5, options);
-    let count3 = new countUp("count3", 0, 4000, 0, 1, options);
     const options = {
       separator: "",
     };
+    let count1 = new countUp("count1", 0, 40, 0, 1.5, options);
+    let count2 = new countUp("count2", 0, 125, 0, 1.5, options);
+    let count3 = new countUp("count3", 0, 4000, 0, 1, options);
     count1.start();
     count2.start();
     count3.start();
