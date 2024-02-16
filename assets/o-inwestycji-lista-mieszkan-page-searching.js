@@ -1740,6 +1740,7 @@ window.addEventListener("load", function () {
     btnSearch.addEventListener("click", () => {
       let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
+      metrazeID2
       let searchedFromCookiesIDs = document.querySelectorAll(".active");
       let searchedReadyArr = [];
 
@@ -1758,11 +1759,7 @@ window.addEventListener("load", function () {
 
       YMCTools({
         target: filterID4,
-        terms: choosenOptions.join() +
-        "," +
-        investIDFromDataAttr +
-        "," +
-        filteredTermsIDMetraz.join(","),
+        terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + filteredTermsIDMetraz.join() + "," + searchedReadyArr.join()
       }).apiTermUpdate();
       console.log("after YMC api update from btn search");
       console.log(
