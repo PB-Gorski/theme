@@ -1750,33 +1750,16 @@ window.addEventListener("load", function () {
         searchedReadyArr.push(item.dataset.termid);
       });
 
-      console.log("searchedReadyArr: ", searchedReadyArr.join());
-        
-      // console.log("searchedReadyArr: ", searchedReadyArr.join());
-      console.log("metrazeID!!!: ", metrazeID.join());
-      console.log("pricesID!!!: ", pricesID.join());
-
       YMCTools({
         target: filterID4,
         terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + metrazeID.join() + "," + pricesID.join(),
       }).apiTermUpdate();
       console.log("after YMC api update from btn search");
-      console.log("#all terms id searched#: ", choosenOptions.join() + "," + investIDFromDataAttr + "," + metrazeID.join() + "," + pricesID.join(),
-      );
     });
 
-    // let filterID5 = '.data-target-ymc' + currentYmcFilterID3;
     passiveOptions.forEach((item) => {
       item.addEventListener("click", () => {
-        // setTimeout(() => {
-        //   YMCTools({
-        //     target: filterID5,
-        //     terms: investIDFromDataAttr
-        //   }).apiTermUpdate();
-        //   console.log("after YMC api update1");
-        // }, 1000);
-
-        let pricesID = runSearchingPrice();
+        let pricesID2 = runSearchingPrice();
         let metrazeID2 = runSearchingMetraz();
         let searchedFromCookiesIDs = document.querySelectorAll(".active");
         let searchedReadyArr = [];
@@ -1785,18 +1768,16 @@ window.addEventListener("load", function () {
           searchedReadyArr.push(item.dataset.termid);
         });
   
-        // console.log("searchedReadyArr: ", searchedReadyArr.join());
-        // console.log("metrazeID!!!: ", metrazeID.join());
-        // console.log("metrazeID2!!!: ", metrazeID2);
-  
         let filterID4 = '.data-target-ymc' + currentYmcFilterID3;
         console.log('filterID4: ', filterID4);
         setTimeout(() => {
           YMCTools({
             target: filterID4,
-            terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + metrazeID2.join(),
+            terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + metrazeID2.join() + "," + pricesID2.join(),
           }).apiTermUpdate();
         }, 1000);
+        console.log("after YMC api update from passiveOption");
+
       });
     });
 
