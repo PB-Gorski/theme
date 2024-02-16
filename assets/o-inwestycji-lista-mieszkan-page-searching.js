@@ -1761,7 +1761,7 @@ window.addEventListener("load", function () {
 
       YMCTools({
         target: filterID4,
-        terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + searchedReadyArr.join() + "," + metrazeID2,
+        terms: metrazeID2,
       }).apiTermUpdate();
       console.log("after YMC api update from btn search");
       console.log("all terms id searched: ", choosenOptions.join() + "," + investIDFromDataAttr + "," + searchedReadyArr.join() + metrazeID2,
