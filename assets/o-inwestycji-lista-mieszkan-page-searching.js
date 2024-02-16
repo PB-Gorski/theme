@@ -1761,7 +1761,7 @@ window.addEventListener("load", function () {
 
       YMCTools({
         target: filterID4,
-        terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + searchedReadyArr.join() + metrazeID2,
+        terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + searchedReadyArr.join() + "," + metrazeID2,
       }).apiTermUpdate();
       console.log("after YMC api update from btn search");
       console.log("all terms id searched: ", choosenOptions.join() + "," + investIDFromDataAttr + "," + searchedReadyArr.join() + metrazeID2,
@@ -1788,9 +1788,9 @@ window.addEventListener("load", function () {
           searchedReadyArr.push(item.dataset.termid);
         });
   
-        console.log("searchedReadyArr: ", searchedReadyArr.join());
-        console.log("metrazeID!!!: ", metrazeID.join());
-        console.log("metrazeID2!!!: ", metrazeID2);
+        // console.log("searchedReadyArr: ", searchedReadyArr.join());
+        // console.log("metrazeID!!!: ", metrazeID.join());
+        // console.log("metrazeID2!!!: ", metrazeID2);
   
         let filterID4 = '.data-target-ymc' + currentYmcFilterID3;
         console.log('filterID4: ', filterID4);
@@ -1799,9 +1799,7 @@ window.addEventListener("load", function () {
             target: filterID4,
             terms: choosenOptions.join() +
             "," +
-            investIDFromDataAttr +
-            "," +
-            filteredTermsIDMetraz.join(",")
+            investIDFromDataAttr,
           }).apiTermUpdate();
         }, 1000);
       });
