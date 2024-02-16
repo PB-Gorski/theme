@@ -1788,6 +1788,7 @@ window.addEventListener("load", function () {
         });
   
         console.log("searchedReadyArr: ", searchedReadyArr.join());
+        console.log("metrazeID!!!: ", metrazeID.join());
   
         let filterID4 = '.data-target-ymc' + currentYmcFilterID3;
         console.log('filterID4: ', filterID4);
