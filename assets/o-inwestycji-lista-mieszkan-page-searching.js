@@ -1758,7 +1758,6 @@ window.addEventListener("load", function () {
       console.log("searchedReadyArr: ", searchedReadyArr.join());
       console.log("metrazeID!!!: ", metrazeID.join());
       console.log("metrazeID2!!!: ", metrazeID2);
-      console.log("metraze po ifie2!!!: ", filteredTermsIDMetraz.join());
 
       YMCTools({
         target: filterID4,
