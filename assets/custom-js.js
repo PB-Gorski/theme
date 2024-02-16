@@ -120,7 +120,7 @@ window.addEventListener("load", function () {
     this.options = options || {
       useEasing: true, // toggle easing
       useGrouping: true, // 1,000,000 vs 1000000
-      separator: "", // character to use as a separator
+      separator: ",", // character to use as a separator
       decimal: ",", // character to use as a decimal
     };
 
@@ -284,9 +284,12 @@ window.addEventListener("load", function () {
 
   /* CountUp Activation */
   if (this.document.body.classList.contains("page-template-page-about")) {
-    let count1 = new countUp("count1", 0, 40, 0, 1.5);
-    let count2 = new countUp("count2", 0, 125, 0, 1.5);
-    let count3 = new countUp("count3", 0, 4000, 0, 1);
+    let count1 = new countUp("count1", 0, 40, 0, 1.5, options);
+    let count2 = new countUp("count2", 0, 125, 0, 1.5, options);
+    let count3 = new countUp("count3", 0, 4000, 0, 1, options);
+    const options = {
+      separator: "",
+    };
     count1.start();
     count2.start();
     count3.start();
