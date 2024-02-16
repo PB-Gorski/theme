@@ -1799,7 +1799,7 @@ window.addEventListener("load", function () {
             "," +
             investIDFromDataAttr +
             "," +
-            metrazeID.join(),
+            filteredTermsIDMetraz.join(",")
           }).apiTermUpdate();
         }, 1000);
       });
