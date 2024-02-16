@@ -1742,7 +1742,6 @@ window.addEventListener("load", function () {
     btnSearch.addEventListener("click", () => {
       let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
-      metrazeID2
       let searchedFromCookiesIDs = document.querySelectorAll(".active");
       let searchedReadyArr = [];
 
@@ -1755,13 +1754,13 @@ window.addEventListener("load", function () {
       let filterID4 = '.data-target-ymc' + currentYmcFilterID3;
       console.log('filterID4: ', filterID4);
         
-      console.log("searchedReadyArr: ", searchedReadyArr.join());
+      // console.log("searchedReadyArr: ", searchedReadyArr.join());
       console.log("metrazeID!!!: ", metrazeID.join());
-      console.log("metrazeID2!!!: ", metrazeID2);
+      // console.log("metrazeID2!!!: ", metrazeID2);
 
       YMCTools({
         target: filterID4,
-        terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + metrazeID2,
+        terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + metrazeID.join(),
       }).apiTermUpdate();
       console.log("after YMC api update from btn search");
       console.log("all terms id searched: ", choosenOptions.join() + "," + investIDFromDataAttr + "," + searchedReadyArr.join() + metrazeID2,
@@ -1780,7 +1779,7 @@ window.addEventListener("load", function () {
         // }, 1000);
 
         let pricesID = runSearchingPrice();
-        let metrazeID = runSearchingMetraz();
+        let metrazeID2 = runSearchingMetraz();
         let searchedFromCookiesIDs = document.querySelectorAll(".active");
         let searchedReadyArr = [];
   
@@ -1797,9 +1796,7 @@ window.addEventListener("load", function () {
         setTimeout(() => {
           YMCTools({
             target: filterID4,
-            terms: choosenOptions.join() +
-            "," +
-            investIDFromDataAttr,
+            terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + metrazeID2.join(),
           }).apiTermUpdate();
         }, 1000);
       });
