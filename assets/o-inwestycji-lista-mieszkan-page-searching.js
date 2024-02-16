@@ -1490,6 +1490,7 @@ window.addEventListener("load", function () {
       return filteredTermsID;
     }
 
+    let metrazeID2 = '';
     function runSearchingMetraz() {
       console.log("run");
       metrazValueArr = [];
@@ -1585,6 +1586,7 @@ window.addEventListener("load", function () {
       // });
 
       console.log("metraze po ifie", filteredTermsIDMetraz.join(","));
+      metrazeID2 = filteredTermsIDMetraz.join(",");
 
       metrazValueArr = [];
       newArrMetraz = [];
@@ -1755,11 +1757,12 @@ window.addEventListener("load", function () {
         
       console.log("searchedReadyArr: ", searchedReadyArr.join());
       console.log("metrazeID!!!: ", metrazeID.join());
+      console.log("metrazeID2!!!: ", metrazeID2.join());
       console.log("metraze po ifie2!!!: ", filteredTermsIDMetraz.join());
 
       YMCTools({
         target: filterID4,
-        terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + filteredTermsIDMetraz.join() + "," + searchedReadyArr.join()
+        terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + filteredTermsIDMetraz.join() + "," + searchedReadyArr.join() + metrazeID2,
       }).apiTermUpdate();
       console.log("after YMC api update from btn search");
       console.log(
@@ -1794,6 +1797,7 @@ window.addEventListener("load", function () {
   
         console.log("searchedReadyArr: ", searchedReadyArr.join());
         console.log("metrazeID!!!: ", metrazeID.join());
+        console.log("metrazeID2!!!: ", metrazeID2);
   
         let filterID4 = '.data-target-ymc' + currentYmcFilterID3;
         console.log('filterID4: ', filterID4);
