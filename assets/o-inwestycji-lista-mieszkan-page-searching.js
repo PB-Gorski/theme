@@ -1797,7 +1797,9 @@ window.addEventListener("load", function () {
             target: filterID4,
             terms: choosenOptions.join() +
             "," +
-            investIDFromDataAttr,
+            investIDFromDataAttr +
+            "," +
+            metrazeID.join(),
           }).apiTermUpdate();
         }, 1000);
       });
