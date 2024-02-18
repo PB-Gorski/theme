@@ -613,10 +613,6 @@ window.addEventListener("load", function () {
     }
     deleteAllCookies();
 
-    // dynamic term id for investition
-    // currentInvestName = document.referrer.slice(document.referrer.match('o-inwestycji')['index']).replace('o-inwestycji-','').slice(-30,-1);
-    // currentInvestID
-
     // dynamic filtr data
     allInvestmentsElements =
       document.querySelectorAll(".dropdown-filter")[1].childNodes[5].childNodes;
@@ -625,64 +621,6 @@ window.addEventListener("load", function () {
     globalCurrentInvestName = investTermName ?? "";
     globalCurrentCityID = investCityId ?? 0;
     globalCurrentCityName = investCityName ?? "";
-
-
-
-    if (false) {
-      allInvestmentsElements.forEach((el) => {
-        if (el.childNodes[1] !== undefined) {
-          investName = el.childNodes[1].dataset.name;
-          investID = el.childNodes[1].dataset.termid;
-  
-          investIDsArr.push(Number(investID));
-  
-          investName = investName.replace(" ", "-").replace(".", "");
-          investName = investName.replace("ę", "e");
-          investName = investName.replace("ó", "o");
-          investName = investName.replace("ą", "a");
-          investName = investName.replace("ś", "s");
-          investName = investName.replace("Ś", "s");
-          investName = investName.replace("ł", "l");
-          investName = investName.replace("ż", "z");
-          investName = investName.replace("ź", "z");
-          investName = investName.replace("ć", "c");
-          investName = investName.replace("ń", "n");
-          investName = investName.toLowerCase();
-  
-
-          if (document.querySelector('#_term-data')){
-            let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
-            let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
-
-            console.log('data attr test');
-            console.log(investIDFromDataAttr);
-            console.log(investNameFromDataAttr);
-            console.log('data attr test');
-            if (true) {
-              document.cookie = "filteredTermsFromCookies=" + investIDFromDataAttr + ";";
-              globalCurrentInvestID = investIDFromDataAttr;
-              globalCurrentInvestName = investNameFromDataAttr;
-            };
-          }else{
-            // old
-            if (
-              document.referrer.search("o-inwestycji-" + investName) > 5 ||
-              document.referrer.search("lokalizacja-" + investName) > 20 ||
-              document.referrer.search("galeria-" + investName) > 20 ||
-              document.referrer.search("kronika-budowy-" + investName) > 20
-            ) {
-              console.log('!document.referrer!');
-              document.cookie = "filteredTermsFromCookies=" + investID + ";";
-              globalCurrentInvestID = investID;
-              globalCurrentInvestName = investName;
-            };
-          };
-
-
-        };
-      });
-    };
-
 
     // dynamic ymc filter id
     if(document.querySelector(".short-code-ymc-filter")){
@@ -1610,6 +1548,7 @@ window.addEventListener("load", function () {
       .replace("ymc-smart-filter-container-", "");
 
     let filterID = ".data-target-ymc" + currentYmcFilterID2;
+    // --------
 
     investName = investNameFromDataAttr;
     investID = investIDFromDataAttr;
