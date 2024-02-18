@@ -65,7 +65,7 @@ window.addEventListener("load", function () {
     window.location.href.search("galeria-") > 5 ||
     window.location.href.search("kronika-budowy-") > 5
   ) {
-    console.log("inwestycja: " + investTermName ?? globalInvestFromLink);
+    console.log("inwestycja: ", investTermName, globalInvestFromLink);
     document.querySelector(
       ".filter-entry"
     ).childNodes[3].childNodes[3].childNodes[1].innerText = investTermName ?? globalInvestFromLink;
