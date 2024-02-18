@@ -10,8 +10,6 @@ window.addEventListener("load", function () {
       "=; Path=/pl; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
   }
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
-  let mainPageID = document.querySelector("#Banner");
-
   // lock filter with invest
   let globalInvestFromLink;
   if (window.location.pathname.search("lokalizacja") > 1) {
@@ -37,19 +35,18 @@ window.addEventListener("load", function () {
       .replace("pl/o-inwestycji-", "")
       .replaceAll("/", "")
       .replace("-", " ");
-  }
-  // let globalInvestFromLink = window.location.pathname.replace('pl/o-inwestycji-','').replaceAll('/','').replace('-',' ');
+  };
 
   if (globalInvestFromLink) {
     globalInvestFromLink =
       globalInvestFromLink.charAt(0).toUpperCase() +
       globalInvestFromLink.slice(1);
-  }
+  };
 
   let investTermId = 0
-  let investTermName
+  let investTermName;
   let investCityId = 0
-  let investCityName
+  let investCityName;
 
   let termDataContainer = document.getElementById('term-data')
   if (termDataContainer) {
@@ -101,8 +98,6 @@ window.addEventListener("load", function () {
     let tempTerminArr = [];
     let tempInneArr = [];
     let passiveOptions = document.querySelectorAll(".menu-passive__item");
-    let counter2 = 0;
-    const foundedPostOnStart = document.querySelector(".js-foundedPostOnStart");
 
     passiveOptions.forEach((item) => {
       item.addEventListener("click", () => {
@@ -275,24 +270,16 @@ window.addEventListener("load", function () {
               choosenInneCount = tempInneArr.length;
             } else if (tempInneArr.length == 0) {
               choosenInneCount = 0;
-            }
+            };
 
-            // menuActiveSpan.innerHTML = "Wybrano: " + choosenInneCount;
             menuActiveSpan.innerHTML = choosenInneCount == 0 ? 'Wybierz' : 'Wybrano: ' + choosenInneCount;
           } else {
             // console.log('error');
           }
-
-          // menuActiveSpan.dataset.label = choosenOption;
-          // menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
-
-          // console.log('item: ', menuActiveSpan.getAttribute('data-label'));
           console.log("item category: ", menuActiveTitle);
           console.log("item termid: ", +choosenOptionID);
         }
         showActiveFilterName();
-        // test
-        // if (!foundedPostOnStart?.classList.contains('hidden')){foundedPostOnStart.classList.add('hidden')}
       });
     });
 
@@ -440,9 +427,6 @@ window.addEventListener("load", function () {
         }
       });
     }
-
-    // const foundedPostOnStart = document.querySelector('.js-foundedPostOnStart');;
-
     // ------------------------------------------------------------------------------
 
     // sortowanie listy mieszkan
