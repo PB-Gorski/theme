@@ -99,6 +99,7 @@ window.addEventListener("load", function () {
     let tempInneArr = [];
     let passiveOptions = document.querySelectorAll(".menu-passive__item");
 
+    //filter option list
     passiveOptions.forEach((item) => {
       item.addEventListener("click", () => {
         let optionSpan = document.createElement("span");
@@ -130,6 +131,7 @@ window.addEventListener("load", function () {
           }
           return arr;
         }
+        // ---------
 
         if (choosenOptions.includes(choosenOptionID)) {
           removeItemAll(choosenOptions, choosenOptionID);
@@ -145,12 +147,9 @@ window.addEventListener("load", function () {
         let choosenTempArr = [];
         let choosenInneCount = 1;
         function showActiveFilterName(cookiesSearchedIDs) {
-          // let miastoArr = [28,40];
           let miastoArr = cityIDsArr;
           console.log("2$$$$$$$$$$$ " + cityIDsArr);
-          // let inwestycjaArr = [72,71,82,81,680];
           let inwestycjaArr = investIDsArr;
-          // let pokojeArr = [43,34,53,25];
           let pokojeArr = [640, 641, 642, 643, 644, 645, 646];
           let pietroArr = [97, 78, 60, 66];
           let terminArr = [49, 91, 38, 122, 93];
@@ -176,21 +175,21 @@ window.addEventListener("load", function () {
               if (tempMiastoArr.length == 0) {
                 menuActiveSpan.innerHTML = "Wybierz";
                 console.log("Wybierz");
-              }
+              };
             }, 1000);
 
             console.log("miastoArr: ", tempMiastoArr.length);
             console.log("active span: ", menuActiveSpan);
 
-            menuActiveSpan.innerHTML =
-              menuActiveSpan.innerHTML + choosenMiastoArr.join(", ");
+            menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + choosenMiastoArr.join(", ");
+
             if (tempMiastoArr.length == 0) {
               menuActiveSpan.innerHTML = "";
               menuActiveSpan.innerHTML = "Wybierz:";
               console.log("Wybierz");
             } else {
               console.log("wybrano miasto");
-            }
+            };
             console.log("miasto: ", choosenMiastoArr);
           } else if (inwestycjaArr.includes(+choosenOptionID)) {
             // inwestycje
@@ -202,9 +201,8 @@ window.addEventListener("load", function () {
               choosenInwestycjeCount = tempInwestycjaArr.length;
             } else if (tempInwestycjaArr.length == 0) {
               choosenInwestycjeCount = 0;
-            }
+            };
 
-            // menuActiveSpan.innerHTML = "Wybrano2: " + choosenInwestycjeCount;
             menuActiveSpan.innerHTML = choosenInwestycjeCount == 0 ? 'Wybierz' : 'Wybrano: ' + choosenInwestycjeCount;
           } else if (pokojeArr.includes(+choosenOptionID)) {
             // pokoje
@@ -212,7 +210,7 @@ window.addEventListener("load", function () {
               removeItemAll(tempPokojeArr, choosenOptionID);
             } else {
               tempPokojeArr.push(choosenOptionID);
-            }
+            };
 
             tempPokojeArr.forEach((choosenItem) => {
               passiveOptions.forEach((item) => {
@@ -242,17 +240,10 @@ window.addEventListener("load", function () {
               });
             });
             console.log("altualne pietro");
-            // menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
-            // old
-            // menuActiveSpan.innerHTML =
-            //   "Wybrano1: " +
-            //   (choosenPietroArr.join(", ") != " "
-            //     ? choosenPietroArr.join(", ")
-            //     : "Wybrano2: 0");
+
             menuActiveSpan.innerHTML = (choosenPietroArr.join(', ')!='' ? 'Wybrano: ' +  choosenPietroArr.join(', ') : 'Wybierz');
           } else if (terminArr.includes(+choosenOptionID)) {
             // termin
-
             if(tempTerminArr.includes(choosenOptionID)){
               removeItemAll(tempTerminArr,choosenOptionID);
             }else{
@@ -346,11 +337,7 @@ window.addEventListener("load", function () {
           el.classList.remove("dropdown__list_active");
         }
       });
-    }
-
-    let counterPostsLoad = 0;
-
-    // btnSearch.addEventListener('click', runSearchingPrice);
+    };
 
     // search more options handle
     const btnMore = document.querySelector(".btn-more");
@@ -393,12 +380,7 @@ window.addEventListener("load", function () {
             "dropdown__list_active-metraz"
           );
           e.target.classList.toggle("toggle-x");
-          // e.target.classList.toggle('dropdown__list_active-metraz');
-        }
-        // else if(e.target.parentNode.nextElementSibling){
-        //   console.log('dropdown span container');
-        //   e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active-metraz');
-        // }
+        };
       });
     });
 
@@ -541,7 +523,6 @@ window.addEventListener("load", function () {
       btn.addEventListener("click", () => {
         indexFrom1 = index + 1;
         let currentFiltr = indexFrom1 + index;
-        // currentFiltr = indexFrom1;
         console.log("current filtr: ", currentFiltr);
 
         sortListDir(index);
@@ -565,7 +546,7 @@ window.addEventListener("load", function () {
               btnsSort[currentFiltr - counter].classList.remove(
                 "sort-arrow-down"
               );
-            }
+            };
           } else if (i != currentFiltr) {
             console.log("i rozny od current filtr");
             if (btnsSort[i - counter]) {
@@ -573,15 +554,13 @@ window.addEventListener("load", function () {
                 "sort-arrow-up",
                 "sort-arrow-down"
               );
-            }
-          }
+            };
+          };
           counter++;
-        }
-
+        };
         counter = 1;
       });
     });
-
     // ------------------------------------------------------------------------------
 
     // cookies data handle
@@ -655,38 +634,7 @@ window.addEventListener("load", function () {
         }
       }
       return "";
-    }
-
-    // back from single mieszkania
-    // if(document.cookie.indexOf('filteredTermsFromCookies=') >= 0) {
-    //   console.log('cookie mieszkania true');
-    //   console.log('1@@@@@@@@@@@@@@@@@');
-    //   console.log(investName);
-    //   console.log(investID);
-    //   let cookieFromSingleMieszkania = getCookie('filteredTermsFromCookies')
-    // if (cookieFromSingleMieszkania == '72'){
-    //   console.log('cookie mieszkania true - osiedle srebrniki');
-    //   document.cookie = "filteredTermsFromCookies=72;";
-    // }else if (cookieFromSingleMieszkania == '71'){
-    //   console.log('cookie mieszkania true - sw piotra');
-    //   document.cookie = "filteredTermsFromCookies=71;";
-    // }else if (cookieFromSingleMieszkania == '82'){
-    //   console.log('cookie mieszkania true - torunska 16');
-    //   document.cookie = "filteredTermsFromCookies=82;";
-    // }else if (cookieFromSingleMieszkania == '81'){
-    //   console.log('cookie mieszkania true -  wiezycka folwark');
-    //   document.cookie = "filteredTermsFromCookies=81;";
-    // }else if (cookieFromSingleMieszkania == investID){
-    //   console.log('dynamic cookie mieszkania true - ' + investName);
-    //   document.cookie = "filteredTermsFromCookies=" + investID + ";";
-    // }
-
-    // if (cookieFromSingleMieszkania == investID){
-    //   console.log('dynamic cookie mieszkania true - ' + investName);
-    //   console.log("filteredTermsFromCookies=" + investID + ";");
-    //   document.cookie = "filteredTermsFromCookies=" + investID + ";";
-    // }
-    // }
+    };
 
     let filteredTermsFromCookies = "";
     if (
@@ -703,8 +651,6 @@ window.addEventListener("load", function () {
       filteredMetrazMinFromCookies = getCookie("MetrazMinFromCookies");
       filteredMetrazMaxFromCookies = getCookie("MetrazMaxFromCookies");
       console.log("cookies exist2: ", filteredPriceMaxFromCookies);
-      // console.log('cookies exist min: ',filteredPriceMinFromCookies);
-      // console.log('cookies exist2 max: ',filteredPriceMaxFromCookies);
 
       let filteredCustomPriceFromCookies = runSearchingPrice();
       console.log(filteredCustomPriceFromCookies.join());
@@ -721,17 +667,10 @@ window.addEventListener("load", function () {
       let choosenPietroArr = [];
       let choosenTerminArr = [];
       let choosenInneArr = [];
-      // let choosenInwestycjeCount = 1;
-      // let choosenInwestycjeArr = [];
-      // let choosenTempArr = [];
-      // let choosenInneCount = 1;
+
       function showActiveFilterNameFromCookies() {
-        // let miastoArr = [28,40];
         let miastoArr = cityIDsArr;
-        console.log("$$$$$$$$$$$ " + cityIDsArr);
-        // let inwestycjaArr = [72,71,82,81,680];
         let inwestycjaArr = investIDsArr;
-        // let pokojeArr = [43,34,53,25];
         let pokojeArr = [640, 641, 642, 643, 644, 645, 646];
         let pietroArr = [97, 78, 60, 66];
         let terminArr = [49, 91, 38, 122, 93];
@@ -751,14 +690,10 @@ window.addEventListener("load", function () {
         }
         console.log(tempArr);
         let filteredTermsFromCookiesArr;
-        // let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies.slice(-1) != ',' ? tempArr : filteredTermsFromCookies.slice(0, -1) + "]");
 
         console.log("filteredTermsFromCookiesArr", filteredTermsFromCookiesArr);
-
         console.log("filteredTermsFromCookies*:", filteredTermsFromCookies);
-
         console.log("slice test: ", tempArr.join(",").split(","));
-
         console.log(
           "slice test2: ",
           [].concat(...tempArr.map((a) => a.split(",")))
@@ -779,8 +714,6 @@ window.addEventListener("load", function () {
           if (miastoArr.includes(+item)) {
             console.log("wybrano z kategorii - miasto");
             // miasto
-            // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
-
             if (tempMiastoArr.includes(item)) {
               removeItemAll(tempMiastoArr, item);
             } else {
@@ -793,9 +726,7 @@ window.addEventListener("load", function () {
                   choosenMiastoArr.push(item.childNodes[1].dataset.name);
                   item.childNodes[1].classList.add("active");
                   console.log("11111!!!!!!!!!!!! added active in miasto");
-                }
-                // item.parentNode.previousElementSibling.childNodes[1];
-                // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
+                };
               });
             });
 
@@ -815,12 +746,9 @@ window.addEventListener("load", function () {
               el.parentNode.previousElementSibling.childNodes[1].innerHTML =
                 choosenMiastoArr.join(", ");
             });
-
-            // menuActiveSpan.innerHTML = menuActiveSpan.innerHTML + item.childNodes[1].dataset.name;
           } else if (inwestycjaArr.includes(+item)) {
             // inwestycje
             console.log("wybrano z kategorii - inwestycje");
-
             tempInwestycjaArr.includes(item)
               ? removeItemAll(tempInwestycjaArr, item)
               : tempInwestycjaArr.push(item);
@@ -836,8 +764,8 @@ window.addEventListener("load", function () {
                 if (item.childNodes[1].dataset.termid == choosenItem) {
                   choosenMiastoArr.push(item.childNodes[1].dataset.name);
                   item.childNodes[1].classList.add("active");
-                  console.log("11111!!!!!!!!!!!! added active in inwestycje");
-                }
+                  console.log("added active in inwestycje");
+                };
               });
             });
 
@@ -848,33 +776,14 @@ window.addEventListener("load", function () {
               }
             });
 
-            // nok
-            // if(returnChoosenFromCookiesInwestycje[0] == '72'){
-            //   console.log('Osiedle Srebrniki');
-            // }else if(returnChoosenFromCookiesInwestycje[0] == '71'){
-            //   console.log('Sw Piotra');
-            // }
-
-            console.log("555555555555555");
-            console.log(globalCurrentCityID);
+            console.log("globalCurrentCityID: ", globalCurrentCityID);
             console.log("currentYmcFilterID: ", currentYmcFilterID);
-            console.log("555555555555555");
+
             investElFormName = document
               .querySelector(`[data-termid="` + globalCurrentInvestID + `"]`)
               .innerText;
-            // investElFormName = document
-            //   .querySelector(`[data-termid="` + globalCurrentInvestID + `"]`)
-            //   .innerText.slice(
-            //     0,
-            //     document
-            //       .querySelector(
-            //         `[data-termid="` + globalCurrentInvestID + `"]`
-            //       )
-            //       .innerText.indexOf(" ")
-            //   );
 
             cityElFormName = "";
-            // = document.querySelector(`[data-termid="` + globalCurrentCityID + `"]`).innerText;
 
             // founded posts
             let globalFoundedPostsCount;
@@ -887,7 +796,6 @@ window.addEventListener("load", function () {
                 let currentPriceArr = document.querySelectorAll(
                   ".list-item-mieszkanie"
                 );
-                // investElFormName2 = document.querySelector('.post-custom-layout').childNodes[0].childNodes[0].childNodes[1].innerText;
 
                 currentPriceArr.forEach((el) => {
                   if (
@@ -898,12 +806,10 @@ window.addEventListener("load", function () {
                   }
                 });
 
-                console.log("Container class: " + class_name);
                 console.log("Post count: " + response.post_count);
                 globalFoundedPostsCount = response.post_count;
                 console.log("Number of found posts: " + response.found);
-                console.log("**********************");
-                console.log("1111111111111111 from hook:");
+                console.log("from hook");
 
                 
                 if(!filter2323FirstRun){
@@ -916,20 +822,7 @@ window.addEventListener("load", function () {
                   };
                 filter2323FirstRun = true;
 
-                // currentCityName = document.querySelector(
-                //   ".list-item-mieszkanie"
-                // )?.childNodes[0].innerText;
-                // console.log(currentCityName);
-                // globalCurrentCityName =
-                //   currentCityName == undefined ? "Wybierz" : currentCityName;
-
-
-
-
-
-                console.log("global**********************");
-                console.log(globalFoundedPostsCount);
-                console.log("**********************");
+                console.log('globalFoundedPostsCount: ', globalFoundedPostsCount);
 
                 if (globalFoundedPostsCount == 1) {
                   document.querySelector(".js-oInwestycji").innerHTML =
@@ -962,7 +855,6 @@ window.addEventListener("load", function () {
                 console.log("^^^^^^^^^^^^^^^^^^^");
                 console.log(investElFormName);
                 console.log(globalCurrentInvestName);
-
                 console.log("^^^^^^^^^^^^^^^^^^^");
 
                 if (filteredTermsFromCookies == String(globalCurrentInvestID)) {
@@ -988,9 +880,7 @@ window.addEventListener("load", function () {
             );
 
             // dynamic active names in filter lokale
-            // filter2323FirstRun = false;
             wp.hooks.addAction(
-              
               "ymc_after_loaded_data_2323_" + currentYmcFilterID,
               "smartfilter",
               function (class_name, response) {
@@ -1004,12 +894,10 @@ window.addEventListener("load", function () {
                   }
                 });
 
-                console.log("Container class: " + class_name);
+                console.log("from hook:");
                 console.log("Post count: " + response.post_count);
                 globalFoundedPostsCount = response.post_count;
                 console.log("Number of found posts: " + response.found);
-                console.log("**********************");
-                console.log("1111111111111111 from hook:");
                 currentCityName = document.querySelector(
                   ".list-item-mieszkanie"
                 )?.childNodes[0].innerText;
@@ -1017,10 +905,8 @@ window.addEventListener("load", function () {
                 globalCurrentCityName =
                   currentCityName == undefined ? "Wybierz" : currentCityName;
 
-
-                console.log("global**********************");
+                console.log("globalFoundedPostsCount**********************");
                 console.log(globalFoundedPostsCount);
-                console.log("**********************");
 
                 if (globalFoundedPostsCount == 1) {
                   document.querySelector(".js-oInwestycji").innerHTML =
@@ -1070,20 +956,15 @@ window.addEventListener("load", function () {
               }
             );
 
-            console.log("**********************");
-            console.log(globalFoundedPostsCount);
-            console.log("**********************");
+            console.log('after hook globalFoundedPostsCount: ', globalFoundedPostsCount);
 
-            // returnChoosenFromCookiesInwestycje.forEach(el => {
-            //   el.parentNode.previousElementSibling.childNodes[1].innerHTML = 'Wybrano: ' + returnChoosenFromCookiesInwestycje.length;
-            // });
           } else if (pokojeArr.includes(+item)) {
             // pokoje
             if (tempPokojeArr.includes(item)) {
               removeItemAll(tempPokojeArr, item);
             } else {
               tempPokojeArr.push(item);
-            }
+            };
 
             choosenPokojeArrv = [];
             tempPokojeArr.forEach((choosenItem) => {
@@ -1204,7 +1085,6 @@ window.addEventListener("load", function () {
 
         console.log("prices from cookies: ", priceMinUpdate, priceMaxUpdate);
 
-        // document.querySelector('.dropdown__value-min').childNodes[0].innerHTML = filteredPriceMinFromCookies == '' ? 0 : Number(filteredPriceMinFromCookies).toLocaleString();
         document.querySelector(".dropdown__value-min").childNodes[0].innerHTML =
           document.getElementById("inputPriceMax").value == ""
             ? 0
@@ -1245,7 +1125,6 @@ window.addEventListener("load", function () {
       showActiveFilterNameFromCookies();
 
       // filter ID
-      let pageID = document.querySelector("#Banner");
       let filterID = "";
 
       filterID = ".data-target-ymc" + currentYmcFilterID;
@@ -1277,17 +1156,8 @@ window.addEventListener("load", function () {
       if (filteredTermsFromCookies > 0) {
         setTimeout(() => {
           runFromCookies();
-          // document.cookie = "filteredTermsFromCookies=;";
-          // document.cookie = 'filteredTermsFromCookies=; path=/';
-          // document.cookie = 'filteredTermsFromCookies=; path=/pl';
         }, 2000);
       }
-      // if(document.cookie.indexOf('filteredTermsFromCookies=') > 0) {
-      //   setTimeout(() => {
-      //     // document.cookie = "filteredTermsFromCookies=;";
-      //     runFromCookies()
-      //   }, 1000);
-      // };
 
       wp.hooks.addAction(
         "ymc_after_loaded_data_148_4",
@@ -1414,7 +1284,7 @@ window.addEventListener("load", function () {
 
     let metrazeID2 = '';
     function runSearchingMetraz() {
-      console.log("run");
+      console.log("run runSearchingMetraz");
       metrazValueArr = [];
       newArrMetraz = [];
       newArrHTMLListMetraz = [];
@@ -1503,10 +1373,6 @@ window.addEventListener("load", function () {
         });
       }
 
-      // newArrHTMLListMetraz.forEach(el2 =>{
-      //   filteredTermsIDMetraz.push(el2.dataset.termid);
-      // });
-
       console.log("metraze po ifie", filteredTermsIDMetraz.join(","));
       metrazeID2 = filteredTermsIDMetraz.join(",");
 
@@ -1517,10 +1383,7 @@ window.addEventListener("load", function () {
 
       return filteredTermsIDMetraz;
     }
-
     // *******************************************************
-
-
 
     let investIDFromDataAttr = document.querySelector('#term-data').dataset.investmentId;
     let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
@@ -1610,7 +1473,6 @@ window.addEventListener("load", function () {
       let currentPriceArr = document.querySelectorAll(
         ".list-item-mieszkanie"
       );
-      // investElFormName2 = document.querySelector('.post-custom-layout').childNodes[0].childNodes[0].childNodes[1].innerText;
 
       currentPriceArr.forEach((el) => {
         if (
@@ -1659,7 +1521,6 @@ window.addEventListener("load", function () {
       }).apiTermUpdate();
       console.log("after YMC api update1");
     }, 2000);
-
     // *******************************************************
 
     btnSearch.addEventListener("click", () => {
@@ -1703,11 +1564,7 @@ window.addEventListener("load", function () {
 
       });
     });
-
-
     // *******************************************************
-
-
 
     const searchBarTest = document.querySelector("#inwestycje");
     document.querySelectorAll(".menu-active").forEach((activeMenu) => {
@@ -1751,5 +1608,5 @@ window.addEventListener("load", function () {
 
     // end if page
     // -------------------------------------------------------------------------------------
-  }
+  };
 });
