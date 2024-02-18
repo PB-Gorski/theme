@@ -1566,18 +1566,6 @@ window.addEventListener("load", function () {
     });
     // *******************************************************
 
-    const searchBarTest = document.querySelector("#inwestycje");
-    document.querySelectorAll(".menu-active").forEach((activeMenu) => {
-      activeMenu.addEventListener("click", () => {
-        // searchBarTest.classList.toggle('z-[0]');
-        document
-          .querySelectorAll(".menu-passive")
-          .forEach((activeItemPassive) => {
-            // console.log('click2');
-          });
-      });
-    });
-
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
         e.target.parentNode.parentNode.style.display = 'none';
