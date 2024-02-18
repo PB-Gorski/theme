@@ -113,8 +113,6 @@ window.addEventListener("load", function () {
         choosenOptionsArr.forEach((option) => {
           if (option.innerText == choosenOption) {
             stopAdding = true;
-            console.log("choosen option text for cleaning", choosenOption);
-            console.log("clear existing span");
             option.remove("span");
           }
         });
