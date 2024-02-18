@@ -136,7 +136,6 @@ window.addEventListener("load", function () {
         } else {
           choosenOptions.push(choosenOptionID);
         }
-        console.log(choosenOptions);
 
         let choosenMiastoArr = [];
         let choosenInwestycjeCount = 1;
@@ -673,8 +672,6 @@ window.addEventListener("load", function () {
         let pietroArr = [97, 78, 60, 66];
         let terminArr = [49, 91, 38, 122, 93];
         let inneArr = [520, 521, 522, 650];
-        // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
-        // let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
         console.log(
           "json check: ",
