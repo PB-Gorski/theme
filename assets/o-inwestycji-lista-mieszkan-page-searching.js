@@ -9,8 +9,7 @@ window.addEventListener("load", function () {
       "filteredTermsFromCookies" +
       "=; Path=/pl; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
   }
-
-  // filtrowanie i sortowanie listy mieszkan
+  //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   // lock filter with invest
   let globalInvestFromLink;
   if (window.location.pathname.search("lokalizacja") > 1) {
@@ -89,6 +88,7 @@ window.addEventListener("load", function () {
     document.body.classList.contains("post-type-archive-lokale")
   ) {
     console.log("o inwestyci lista mieszkan page");
+    // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
     let choosenOptions = [];
     let tempMiastoArr = [];
@@ -98,33 +98,6 @@ window.addEventListener("load", function () {
     let tempTerminArr = [];
     let tempInneArr = [];
     let passiveOptions = document.querySelectorAll(".menu-passive__item");
-
-    // dynamic city terms id
-    allCityElements = document.querySelectorAll(".dropdown-filter")[0].childNodes[5].childNodes;
-    cityIDsArr = [];
-
-    allCityElements.forEach((el) => {
-      if (el.childNodes[1] !== undefined) {
-        cityID = el.childNodes[1].dataset.termid;
-        cityName = el.childNodes[1].dataset.name;
-
-        cityIDsArr.push(Number(cityID));
-
-        cityName = cityName.replace(" ", "-").replace(".", "");
-        cityName = cityName.replace("ę", "e");
-        cityName = cityName.replace("ó", "o");
-        cityName = cityName.replace("ą", "a");
-        cityName = cityName.replace("ś", "s");
-        cityName = cityName.replace("Ś", "s");
-        cityName = cityName.replace("ł", "l");
-        cityName = cityName.replace("ż", "z");
-        cityName = cityName.replace("ź", "z");
-        cityName = cityName.replace("ć", "c");
-        cityName = cityName.replace("ń", "n");
-        cityName = cityName.toLowerCase();
-      }
-    });
-
 
     //filter option list
     passiveOptions.forEach((item) => {
@@ -140,6 +113,8 @@ window.addEventListener("load", function () {
         choosenOptionsArr.forEach((option) => {
           if (option.innerText == choosenOption) {
             stopAdding = true;
+            console.log("choosen option text for cleaning", choosenOption);
+            console.log("clear existing span");
             option.remove("span");
           }
         });
@@ -163,6 +138,7 @@ window.addEventListener("load", function () {
         } else {
           choosenOptions.push(choosenOptionID);
         }
+        console.log(choosenOptions);
 
         let choosenMiastoArr = [];
         let choosenInwestycjeCount = 1;
@@ -172,6 +148,7 @@ window.addEventListener("load", function () {
         let choosenInneCount = 1;
         function showActiveFilterName(cookiesSearchedIDs) {
           let miastoArr = cityIDsArr;
+          console.log("2$$$$$$$$$$$ " + cityIDsArr);
           let inwestycjaArr = investIDsArr;
           let pokojeArr = [640, 641, 642, 643, 644, 645, 646];
           let pietroArr = [97, 78, 60, 66];
@@ -616,6 +593,33 @@ window.addEventListener("load", function () {
       .replace("ymc-smart-filter-container-", "");
     };
 
+    // dynamic term id for city
+    allCityElements =
+      document.querySelectorAll(".dropdown-filter")[0].childNodes[5].childNodes;
+    cityIDsArr = [];
+
+    allCityElements.forEach((el) => {
+      if (el.childNodes[1] !== undefined) {
+        cityID = el.childNodes[1].dataset.termid;
+        cityName = el.childNodes[1].dataset.name;
+
+        cityIDsArr.push(Number(cityID));
+
+        cityName = cityName.replace(" ", "-").replace(".", "");
+        cityName = cityName.replace("ę", "e");
+        cityName = cityName.replace("ó", "o");
+        cityName = cityName.replace("ą", "a");
+        cityName = cityName.replace("ś", "s");
+        cityName = cityName.replace("Ś", "s");
+        cityName = cityName.replace("ł", "l");
+        cityName = cityName.replace("ż", "z");
+        cityName = cityName.replace("ź", "z");
+        cityName = cityName.replace("ć", "c");
+        cityName = cityName.replace("ń", "n");
+        cityName = cityName.toLowerCase();
+      }
+    });
+
     function getCookie(cname) {
       let name = cname + "=";
       let decodedCookie = decodeURIComponent(document.cookie);
@@ -671,6 +675,8 @@ window.addEventListener("load", function () {
         let pietroArr = [97, 78, 60, 66];
         let terminArr = [49, 91, 38, 122, 93];
         let inneArr = [520, 521, 522, 650];
+        // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
+        // let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
         console.log(
           "json check: ",
