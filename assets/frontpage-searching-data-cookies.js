@@ -382,6 +382,9 @@ window.addEventListener("load", function() {
         filteredPriceTermsID.push(el2.dataset.termid);
       });
 
+      const customStaticPriceId = 677 // cena 'Zapytaj'
+      filteredPriceTermsID.push(customStaticPriceId)
+
       console.log(filteredPriceTermsID.join(','));
 
       for (i = 2 ; i < priceValueArrNodeList.length ; i++){

@@ -1272,6 +1272,9 @@ window.addEventListener("load", function () {
         });
       }
 
+      const customStaticPriceId = 677 // cena 'Zapytaj'
+      filteredTermsID.push(customStaticPriceId)
+
       console.log("new filtered id", filteredTermsID.join(","));
 
       priceValueArr = [];
