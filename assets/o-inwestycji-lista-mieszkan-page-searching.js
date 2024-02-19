@@ -654,9 +654,9 @@ window.addEventListener("load", function () {
       console.log("cookies exist2: ", filteredPriceMaxFromCookies);
 
       let filteredCustomPriceFromCookies = runSearchingPrice();
-      console.log(filteredCustomPriceFromCookies.join());
+      console.log('filteredCustomPriceFromCookies2', filteredCustomPriceFromCookies.join());
 
-      console.log(filteredTermsFromCookies);
+      console.log('filteredTermsFromCookies2', filteredTermsFromCookies);
       console.log(
         "filteredTermsFromCookies from frontpage: ",
         filteredTermsFromCookies
@@ -1524,7 +1524,7 @@ window.addEventListener("load", function () {
     setTimeout(() => {
       YMCTools({
         target: filterID,
-        terms: investIDFromDataAttr
+        terms: investIDFromDataAttr + ',' + filteredTermsFromCookies.join(),
       }).apiTermUpdate();
       console.log("after YMC api update1");
     }, 2000);
