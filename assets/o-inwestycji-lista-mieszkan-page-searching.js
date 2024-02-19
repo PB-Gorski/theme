@@ -893,7 +893,8 @@ window.addEventListener("load", function () {
                 currentPriceArr.forEach((el) => {
                   if (el.childNodes[7].innerText == "Zapytaj zł") {
                     el.childNodes[7].innerText = "Zapytaj";
-                  }
+                  };
+                  el.childNodes[7].innerText.replace('zł', ' zł')
                 });
 
                 console.log("from hook:");
