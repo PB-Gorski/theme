@@ -205,7 +205,7 @@ $tax_sort = $taxonomy;
 
                 echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
 							  ' . $terms_icons . '
-                              <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . ((677 == get_term($term)->id)? ' active ':' ') . '"
+                              <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . (('zapytaj'== get_term($term)->slug)? ' active ':' ') . '"
                               href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
                   esc_html(get_term($term)->name) . '</a></div>';
               }
