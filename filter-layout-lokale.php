@@ -205,7 +205,7 @@ $tax_sort = $taxonomy;
 
                 echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
 							  ' . $terms_icons . '
-                              <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . '" 
+                              <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . '"
                               href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
                   esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
               }
@@ -214,7 +214,7 @@ $tax_sort = $taxonomy;
             }
             echo '</div>';
             echo '</div>';
-          } else  if (get_taxonomy($select_term)->label == 'Metraz') { ?>
+          } else  if (get_taxonomy($select_term)->slug == 'metraz') { ?>
             <div class="dropdown-filter customMetraz metraz-min flex-col bg-white">
               <p class="dropdown-filter-title">Metraż od:</p>
               <div class="dropdown__value dropdown__value-metraz dropdown__value-min-metraz dropdown__value-min-metraz font-bold"><span>0</span></div>
@@ -332,7 +332,7 @@ $tax_sort = $taxonomy;
 
                 echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
 							  ' . $terms_icons . '
-                              <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . '" 
+                              <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . '"
                               href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
                   esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
               }
@@ -378,7 +378,7 @@ $tax_sort = $taxonomy;
 
                     echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
                   ' . $terms_icons . '
-                                <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . '" 
+                                <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . '"
                                 href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
                       esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
                   }
