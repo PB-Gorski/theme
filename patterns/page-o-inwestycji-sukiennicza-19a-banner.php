@@ -39,9 +39,9 @@
   <!-- /wp:group -->
 
   <!-- wp:list -->
-  <ul class="test">
+  <ul class="term_data_container">
     <!-- wp:list-item -->
-    <li class="test">
+    <li>
       <?php
       $scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
       $url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -51,16 +51,13 @@
       echo "<span id='term-data' ";
       foreach ($terms as $term) {
         $term_city = get_field('miasto_inwestycji', $term);
-
         echo " data-investment-city-id='" . $term_city->term_id . "' data-investment-city-name='" . $term_city->name . "' ";
       }
 
       foreach ($terms as $term) {
         echo " data-investment-id='" . $term->term_id . "' data-investment-name='" . $term->name . "' ";
       }
-
       echo "></span>";
-
       ?>
     </li>
     <!-- /wp:list-item -->
