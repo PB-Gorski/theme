@@ -98,8 +98,6 @@ window.addEventListener("load", function () {
     let tempTerminArr = [];
     let tempInneArr = [];
     let passiveOptions = document.querySelectorAll(".menu-passive__item");
-    let searchedFromCookiesIDs = document.querySelectorAll(".active");
-    choosenOptions.push(searchedFromCookiesIDs);
 
     //filter option list
     passiveOptions.forEach((item) => {
@@ -648,6 +646,7 @@ window.addEventListener("load", function () {
       console.log("cookies exist");
       // test22
       // deleteAllCookies();
+      choosenOptions = getCookie("filteredTermsFromCookies");s
       filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
       filteredPriceMinFromCookies = getCookie("PriceMinFromCookies");
       filteredPriceMaxFromCookies = getCookie("PriceMaxFromCookies");
