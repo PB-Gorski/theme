@@ -646,7 +646,8 @@ window.addEventListener("load", function () {
       console.log("cookies exist");
       // test22
       // deleting multiple cookies with the same names
-      deleteAllCookies()
+      // deleteAllCookies()
+      document.cookie = 'filteredTermsFromCookies=; path=/pl/o-inwestycji-sukiennicza-19a	';
       filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
       filteredPriceMinFromCookies = getCookie("PriceMinFromCookies");
       filteredPriceMaxFromCookies = getCookie("PriceMaxFromCookies");
