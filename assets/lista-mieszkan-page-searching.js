@@ -909,11 +909,14 @@ window.addEventListener("load", function() {
       
       // clear active classes and chosen options
       for (i = 0 ; i < priceValueArrNodeList.length ; i++){
-        priceValueArrNodeList[i].childNodes[1].classList.remove('active');
-        
         let priceTermId = priceValueArrNodeList[i].childNodes[1].dataset.termid
-        if(choosenOptions.includes(priceTermId)){
-          removeItemAll(choosenOptions,priceTermId)
+        
+        if (priceTermId !== 677) {
+          priceValueArrNodeList[i].childNodes[1].classList.remove('active');
+          
+          if(choosenOptions.includes(priceTermId)){
+            removeItemAll(choosenOptions,priceTermId)
+          }
         }
       };
 
