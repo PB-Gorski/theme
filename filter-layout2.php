@@ -232,7 +232,7 @@ $tax_sort = $taxonomy;
             }
             echo '</div>';
             echo '</div>';
-          } else  if (get_taxonomy($select_term)->slug == 'metraz') { ?>
+          } else  if (get_taxonomy($select_term)->name == 'metraz') { ?>
             <div class="dropdown-filter customMetraz metraz-min flex-col bg-white">
               <p class="dropdown-filter-title">Metraż od:</p>
               <div class="dropdown__value dropdown__value-metraz dropdown__value-min dropdown__value-min-metraz font-bold flex items-center"><span>0</span></div>
