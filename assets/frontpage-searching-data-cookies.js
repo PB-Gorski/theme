@@ -551,12 +551,19 @@ window.addEventListener("load", function() {
 
     // -------------------------------------------------------------------------------------
 
+    let choosenOptionsTemp = [];
+
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
         console.log('clicked target: ',e.target.dataset.termid);
-        // document.cookie = "filteredTermsFromCookies=";
+        choosenOptionsTemp.push(e.target.dataset.termid)
+        console.log('choosenOptionsTemp: ', choosenOptionsTemp);
+        console.log('choosenOptionsTemp2: ', choosenOptionsTemp.join());
+        
+        document.cookie = "filteredTermsFromCookies=" + choosenOptionsTemp.join();
       });
     });
+
 
   };
 

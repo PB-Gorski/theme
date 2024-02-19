@@ -646,15 +646,15 @@ window.addEventListener("load", function () {
       console.log("cookies exist");
       // test22
       // deleting multiple cookies with the same names
-      let choosenOptionsTemp = [];
-      document.querySelectorAll('.menu-passive__item').forEach(passive =>{
-        passive.addEventListener('click', (e) => {
-          choosenOptionsTemp.push(e.target.dataset.termid)
-          console.log('clicked target: ',e.target.dataset.termid);
-        });
-      });
-      console.log('choosenOptionsTemp: ', choosenOptionsTemp);
-      console.log('choosenOptionsTemp2: ', choosenOptionsTemp.join());
+      // let choosenOptionsTemp = [];
+      // document.querySelectorAll('.menu-passive__item').forEach(passive =>{
+      //   passive.addEventListener('click', (e) => {
+      //     choosenOptionsTemp.push(e.target.dataset.termid)
+      //     console.log('clicked target: ',e.target.dataset.termid);
+      //   });
+      // });
+      // console.log('choosenOptionsTemp: ', choosenOptionsTemp);
+      // console.log('choosenOptionsTemp2: ', choosenOptionsTemp.join());
 
       filteredTermsFromCookies = getCookie("filteredTermsFromCookies") + ',' + choosenOptionsTemp.join();
       filteredPriceMinFromCookies = getCookie("PriceMinFromCookies");
