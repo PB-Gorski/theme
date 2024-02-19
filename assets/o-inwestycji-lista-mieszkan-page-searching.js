@@ -138,7 +138,7 @@ window.addEventListener("load", function () {
         } else {
           choosenOptions.push(choosenOptionID);
         }
-        console.log(choosenOptions);
+        console.log('choosenOptions1', choosenOptions);
 
         let choosenMiastoArr = [];
         let choosenInwestycjeCount = 1;
@@ -646,9 +646,17 @@ window.addEventListener("load", function () {
       console.log("cookies exist");
       // test22
       // deleting multiple cookies with the same names
-      document.cookie = 'filteredTermsFromCookies=; path=/pl/o-inwestycji-sukiennicza-19a	';
-      deleteAllCookies()
-      filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
+      let choosenOptionsTemp = [];
+      document.querySelectorAll('.menu-passive__item').forEach(passive =>{
+        passive.addEventListener('click', (e) => {
+          choosenOptionsTemp.push(e.target.dataset.termid)
+          console.log('clicked target: ',e.target.dataset.termid);
+        });
+      });
+      console.log('choosenOptionsTemp: ', choosenOptionsTemp);
+      console.log('choosenOptionsTemp2: ', choosenOptionsTemp.join());
+
+      filteredTermsFromCookies = getCookie("filteredTermsFromCookies") + ',' + choosenOptionsTemp.join();
       filteredPriceMinFromCookies = getCookie("PriceMinFromCookies");
       filteredPriceMaxFromCookies = getCookie("PriceMaxFromCookies");
       filteredMetrazMinFromCookies = getCookie("MetrazMinFromCookies");
@@ -1547,6 +1555,7 @@ window.addEventListener("load", function () {
         target: filterID4,
         terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + metrazeID.join() + "," + pricesID.join(),
       }).apiTermUpdate();
+      console.log("choosenOptions2", choosenOptions);
       console.log("after YMC api update from btn search");
     });
 
