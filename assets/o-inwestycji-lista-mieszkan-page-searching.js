@@ -1549,7 +1549,7 @@ window.addEventListener("load", function () {
 
       YMCTools({
         target: filterID4,
-        terms: searchedReadyArr.join() + "," + investIDFromDataAttr + "," + metrazeID.join() + "," + pricesID.join(),
+        terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + metrazeID.join() + "," + pricesID.join(),
       }).apiTermUpdate();
       console.log("choosenOptions2", choosenOptions.join());
       console.log("searchedReadyArr", searchedReadyArr.join());
