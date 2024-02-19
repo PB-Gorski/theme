@@ -99,7 +99,7 @@ window.addEventListener("load", function () {
     let tempInneArr = [];
     let passiveOptions = document.querySelectorAll(".menu-passive__item");
     let searchedFromCookiesIDs = document.querySelectorAll(".active");
-    choosenOptions = searchedFromCookiesIDs;
+    choosenOptions.push(searchedFromCookiesIDs);
 
     //filter option list
     passiveOptions.forEach((item) => {
