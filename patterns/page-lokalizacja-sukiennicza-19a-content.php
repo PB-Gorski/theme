@@ -20,6 +20,9 @@ $currentPage = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[R
       <a href="<?php echo home_url() . '/o-inwestycji-sukiennicza-19a' ?>" class="text-[#8a8f99] hover:text-[#3e4759]" data-aos="fade-up" data-aos-offset="30">O inwestycji</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
+      <a href="<?php echo home_url() . '/lista-mieszkan-sukiennicza-19a' ?>" class="text-[#8a8f99] hover:text-[#3e4759]" data-aos="fade-up" data-aos-offset="30">Apartamenty</a>
+      <!-- /wp:paragraph -->
+      <!-- wp:paragraph -->
       <a href="<?php echo home_url() . '/lokalizacja-sukiennicza-19a' ?>" data-aos="fade-up" data-aos-offset="30">Lokalizacja</a>
       <!-- /wp:paragraph -->
       <!-- wp:paragraph -->
