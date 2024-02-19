@@ -645,6 +645,8 @@ window.addEventListener("load", function () {
       // cookies exist
       console.log("cookies exist");
       // test22
+      // deleting multiple cookies with the same names
+      deleteAllCookies()
       filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
       filteredPriceMinFromCookies = getCookie("PriceMinFromCookies");
       filteredPriceMaxFromCookies = getCookie("PriceMaxFromCookies");
