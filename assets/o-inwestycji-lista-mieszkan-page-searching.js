@@ -1536,7 +1536,7 @@ window.addEventListener("load", function () {
       deleteAllCookies();
       document.cookie = "filteredTermsFromCookies=;";
       document.cookie = "filteredTermsFromCookies=; path=/";
-      document.cookie = "filteredTermsFromCookies=; path=/pl/o-inwestycji-sukiennicza-19a	";
+      // document.cookie = "filteredTermsFromCookies=; path=/pl/o-inwestycji-sukiennicza-19a	";
       document.cookie = "filteredTermsFromCookies=; path=/pl";
     }, 2000);
     // *******************************************************
