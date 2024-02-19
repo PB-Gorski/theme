@@ -1518,7 +1518,11 @@ window.addEventListener("load", function () {
       } else if (globalFoundedPostsCount < 1) {
         document.querySelector(".js-oInwestycji").innerHTML =
           "Nie znaleziono ofert";
-      }
+      };
+
+      deleteAllCookies();
+      document.cookie = "filteredTermsFromCookies=; path=/";
+      document.cookie = "filteredTermsFromCookies=; path=/pl";
    });
 
     setTimeout(() => {
