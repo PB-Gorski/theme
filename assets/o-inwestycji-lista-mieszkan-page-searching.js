@@ -1533,6 +1533,11 @@ window.addEventListener("load", function () {
         terms: investIDFromDataAttr + ',' + filteredTermsFromCookies,
       }).apiTermUpdate();
       console.log("after YMC api update1");
+      deleteAllCookies();
+      document.cookie = "filteredTermsFromCookies=;";
+      document.cookie = "filteredTermsFromCookies=; path=/";
+      document.cookie = "filteredTermsFromCookies=; path=/pl/o-inwestycji-sukiennicza-19a	";
+      document.cookie = "filteredTermsFromCookies=; path=/pl";
     }, 2000);
     // *******************************************************
 
