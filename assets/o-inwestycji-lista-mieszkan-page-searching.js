@@ -1524,7 +1524,7 @@ window.addEventListener("load", function () {
     setTimeout(() => {
       YMCTools({
         target: filterID,
-        terms: investIDFromDataAttr + ',' + filteredTermsFromCookies.join(),
+        terms: investIDFromDataAttr + ',' + filteredTermsFromCookies,
       }).apiTermUpdate();
       console.log("after YMC api update1");
     }, 2000);
