@@ -1552,6 +1552,7 @@ window.addEventListener("load", function () {
         terms: searchedReadyArr.join() + "," + investIDFromDataAttr + "," + metrazeID.join() + "," + pricesID.join(),
       }).apiTermUpdate();
       console.log("choosenOptions2", choosenOptions);
+      console.log("searchedReadyArr", searchedReadyArr);
       console.log("all searched from btn search", choosenOptions.join() + "," + investIDFromDataAttr + "," + metrazeID.join() + "," + pricesID.join());
       console.log("after YMC api update from btn search");
     });
