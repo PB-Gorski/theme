@@ -63,7 +63,7 @@ $tax_sort = $taxonomy;
           if (get_taxonomy($select_term)->label == 'Cena') { ?>
             <div class="dropdown-filter customPrice price-min flex-col bg-white">
               <p class="dropdown-filter-title">Cena od:</p>
-              <div class="dropdown__value dropdown__value-price dropdown__value-min font-bold after:content-['']"><span class="hidden"></span><input type="text" id="inputPriceMin" placeholder="Min" class="w-full"></div>
+              <div class="dropdown__value dropdown__value-price dropdown__value-min font-bold after:content-['']"><span class="hidden"></span><input type="number" id="inputPriceMin" placeholder="Min" class="w-full"></div>
               <ul class="dropdown__list hidden">
                 <li class="dropdown__item">
                   <span class="dropdown__link menu-link cursor-pointer">0</span>
@@ -117,7 +117,7 @@ $tax_sort = $taxonomy;
             </div>
             <div class="dropdown-filter customPrice price-max flex-col bg-white">
               <p class="dropdown-filter-title">Cena do:</p>
-              <div class="dropdown__value dropdown__value-price dropdown__value-max font-bold after:content-['']"><span class="hidden"></span><input type="text" id="inputPriceMax" placeholder="Max" class="w-full"></div>
+              <div class="dropdown__value dropdown__value-price dropdown__value-max font-bold after:content-['']"><span class="hidden"></span><input type="number" id="inputPriceMax" placeholder="Max" class="w-full"></div>
               <ul class="dropdown__list hidden">
                 <li class="dropdown__item">
                   <span class="dropdown__link menu-link cursor-pointer">50 000</span>
@@ -223,7 +223,7 @@ $tax_sort = $taxonomy;
 
                 echo '<div class="menu-passive__item item-' . esc_attr(get_term($term)->slug) . '">
                   ' . $terms_icons . '
-                                <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . (('zapytaj'== get_term($term)->slug)? ' active ':' ') . '"
+                                <a class="menu-link ' .  esc_attr('') . ' ' .  esc_attr($type_multiple) . (('zapytaj' == get_term($term)->slug) ? ' active ' : ' ') . '"
                                 href="#" data-selected="' . esc_attr(get_term($term)->slug) . '" data-termid="' . esc_attr($term) . '" data-name="' . esc_attr(get_term($term)->name) . '">' .
                   esc_html(get_term($term)->name) . ' <span class="count">' . esc_html(get_term($term)->count) . '</span></a></div>';
               }
