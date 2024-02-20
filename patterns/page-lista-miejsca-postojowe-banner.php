@@ -27,7 +27,6 @@
           <!-- wp:heading {"level":1} -->
           <h1><span data-aos="fade-right" data-aos-offset="30">Znajdź miejsce postojowe</span></h1>
           <!-- /wp:heading -->
-          <!-- wp:paragraph -->
         </div>
         <!-- /wp:group -->
 
