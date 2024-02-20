@@ -115,8 +115,6 @@
                       $page_id = url_to_postid($url);
                       $terms = wp_get_object_terms($page_id, 'inwestycja');
 
-                      print_r($terms);
-
                       ?>
                     </p>
                     <!-- /wp:paragraph -->
