@@ -107,6 +107,22 @@
                         elseif ($tax->name == 'Św. Piotra') echo 'Gdynia';
                         elseif ($tax->name == 'Toruńska 16') echo 'Gdańsk';
                         elseif ($tax->name == 'Wieżycka Folwark') echo 'Gdańsk';
+
+                        $scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
+                        $url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                        $page_id = url_to_postid($url);
+                        $terms = wp_get_object_terms($page_id, 'inwestycja');
+
+                        echo "<span id='term-data' ";
+                        foreach ($terms as $term) {
+                          $term_city = get_field('miasto_inwestycji', $term);
+                          echo " data-investment-city-id='" . $term_city->term_id . "' data-investment-city-name='" . $term_city->name . "' ";
+                        }
+
+                        foreach ($terms as $term) {
+                          echo " data-investment-id='" . $term->term_id . "' data-investment-name='" . $term->name . "' ";
+                        }
+                        echo "></span>";
                         ?>
                       </p>
                       <!-- /wp:paragraph -->
