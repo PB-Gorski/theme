@@ -27,6 +27,9 @@
           <!-- wp:heading {"level":1} -->
           <h1><span data-aos="fade-right" data-aos-offset="30">Znajdź miejsce postojowe</span></h1>
           <!-- /wp:heading -->
+          <!-- wp:paragraph -->
+          <p class="max-w-[550px] text-white opacity-[0.75]" data-aos="fade-right" data-aos-offset="30">Posiadamy na sprzedaż miejsca postojowe w halach garażowych w budynkach już zrealizowanych. Miejsca są dostępne od zaraz.</p>
+          <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
 
