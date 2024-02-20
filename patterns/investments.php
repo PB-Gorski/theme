@@ -63,7 +63,7 @@
             <div class="wp-block-group">
               <!-- wp:paragraph -->
               <p class="font-bold absolute top-0 left-0 w-full h-full opacity-0 z-[1]">
-                <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block w-full">Link test</a>
+                <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block w-full h-full">Link test</a>
               </p>
               <!-- /wp:paragraph -->
 
