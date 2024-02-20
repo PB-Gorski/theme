@@ -9,6 +9,47 @@
       <!-- wp:pattern {"slug":"banner-main"} /-->
       <!-- wp:pattern {"slug":"searchbar-mieszkania"} /-->
       <!-- wp:pattern {"slug":"inwestycje"} /-->
+
+      <!-- wp:query {"query":{"perPage":0,"pages":0,"offset":0,"postType":"inwestycje"},"isLink":true} -->
+				<!-- wp:post-template -->
+					<!-- wp:group {"isLink":false} -->
+					<div class="wp-block-group aos-fade-right  post-item post-item-parking">
+						<!-- wp:group -->
+						<div class="wp-block-group list-item-mieszkanie group container mx-auto w-full py-[20px] text-[16px] text-textGray flex justify-between items-center">
+							<!-- wp:group -->
+							<div class="wp-block-group flex gap-[20px] desktop:gap-[200px]">
+								<!-- wp:post-terms {"term":"miasto"} /-->
+								<!-- wp:post-title {"level":6} /-->
+							</div>
+							<!-- /wp:group -->
+							<!-- wp:post-terms {"term":"cena"} /-->
+						</div>
+						<!-- /wp:group -->
+					</div>
+					<!-- /wp:group -->
+				<!-- /wp:post-template -->
+			<!-- /wp:query -->
+
+      <!-- wp:query {"query":{"perPage":0,"pages":0,"offset":0,"term":"inwestycje"},"isLink":true} -->
+				<!-- wp:post-template -->
+					<!-- wp:group {"isLink":false} -->
+					<div class="wp-block-group aos-fade-right  post-item post-item-parking">
+						<!-- wp:group -->
+						<div class="wp-block-group list-item-mieszkanie group container mx-auto w-full py-[20px] text-[16px] text-textGray flex justify-between items-center">
+							<!-- wp:group -->
+							<div class="wp-block-group flex gap-[20px] desktop:gap-[200px]">
+								<!-- wp:post-terms {"term":"miasto"} /-->
+								<!-- wp:post-title {"level":6} /-->
+							</div>
+							<!-- /wp:group -->
+							<!-- wp:post-terms {"term":"cena"} /-->
+						</div>
+						<!-- /wp:group -->
+					</div>
+					<!-- /wp:group -->
+				<!-- /wp:post-template -->
+			<!-- /wp:query -->
+
       <!-- wp:pattern {"slug":"blog"} /-->
       <!-- wp:template-part {"slug":"cta"} /-->
       <!-- wp:template-part {"slug":"newsletter"} /-->
