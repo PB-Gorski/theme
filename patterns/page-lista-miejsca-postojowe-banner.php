@@ -27,11 +27,11 @@
           <!-- wp:heading {"level":1} -->
           <h1><span data-aos="fade-right" data-aos-offset="30">Znajdź miejsce postojowe</span></h1>
           <!-- /wp:heading -->
-          <!-- wp:paragraph -->
-          <p class="sub-title text-[24px] text-[#8a8f99] font-normal leading-[38px] max-w-[550px] text-white opacity-[0.75]" data-aos="fade-right" data-aos-offset="30">Określ parametry, aby znaleźć lokal dokładnie taki, jakiego potrzebujesz.</p>
-          <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
+        <!-- wp:paragraph -->
+        <p class="sub-title text-[24px] text-[#8a8f99] font-normal leading-[38px] max-w-[550px] text-white opacity-[0.75]" data-aos="fade-right" data-aos-offset="30">Określ parametry, aby znaleźć lokal dokładnie taki, jakiego potrzebujesz.</p>
+        <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
     </div>
