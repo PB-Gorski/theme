@@ -61,9 +61,11 @@
           <li class="invest-tile max-w-full w-full inline-block">
             <!-- wp:group -->
             <div class="wp-block-group">
-              <span>
+              <!-- wp:paragraph -->
+              <p class="font-bold z-[1]">
                 <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block w-full">Link test</a>
-              </span>
+              </p>
+              <!-- /wp:paragraph -->
 
 
               <!-- wp:group -->
