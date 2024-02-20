@@ -143,7 +143,7 @@ window.addEventListener("load", function () {
             // setTimeout(() => {
             //   if (tempMiastoArr.length == 0){
             //     menuActiveSpan.innerHTML = 'Wybierz';
-            //     // console.log('Wybierz');
+            //      console.log('Wybierz');
             //   }
             // }, 1000);
 
@@ -385,7 +385,7 @@ window.addEventListener("load", function () {
           // e.target.classList.toggle('dropdown__list_active-metraz');
         }
         // else if(e.target.parentNode.nextElementSibling){
-        //   // console.log('dropdown span container');
+        //    console.log('dropdown span container');
         //   e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active-metraz');
         // }
       });
@@ -1549,7 +1549,7 @@ window.addEventListener("load", function () {
         // if(document.body.classList.contains('post-type-archive-lokale')){
         //   if (document.querySelector('.js-after-search-click')){
         //     document.querySelector('.js-foundedPostOnStart').classList.replace('z-[1]', 'z-[0]');
-        //     // console.log('z replace test');
+        //      console.log('z replace test');
         //   };
         // };
       }
@@ -1558,7 +1558,7 @@ window.addEventListener("load", function () {
     // if(document.body.classList.contains('post-type-archive-lokale')){
     //   if (document.querySelector('.js-after-search-click')){
     //     document.querySelector('.js-foundedPostOnStart').classList.replace('z-[1]', 'z-[0]');
-    //     // console.log('z replace test');
+    //       console.log('z replace test');
     //   };
     // };
 

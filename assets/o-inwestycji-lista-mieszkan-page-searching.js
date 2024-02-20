@@ -1469,7 +1469,7 @@ window.addEventListener("load", function () {
     //   "ymc_after_loaded_data_148_" + currentYmcFilterID3,
     //   "smartfilter",
     //   function () {
-    //     // console.log('wp hook after laoded data test!!!');
+    //     console.log('wp hook after laoded data test!!!');
     //   }
     // );
 
@@ -1576,12 +1576,12 @@ window.addEventListener("load", function () {
 
         let filterID4 = '.data-target-ymc' + currentYmcFilterID3;
         // console.log('filterID4: ', filterID4);
-        setTimeout(() => {
+        // setTimeout(() => {
           YMCTools({
             target: filterID4,
             terms: choosenOptions.join() + "," + investIDFromDataAttr + "," + metrazeID2.join() + "," + pricesID2.join(),
           }).apiTermUpdate();
-        }, 1000);
+        // }, 1000);
         // console.log("after YMC api update from passiveOption");
 
       });
