@@ -12,7 +12,7 @@ window.addEventListener("load", function() {
     //   runSearchingFrontPage();
     // })
 
-    console.log('home');
+    // console.log('home');
 
     function deleteAllCookies() {
         const cookies = document.cookie.split(";");
@@ -35,7 +35,7 @@ window.addEventListener("load", function() {
 
     btnMore.addEventListener('click',()=>{
       heightAnimation.classList.toggle('expanded');
-      
+
       heightAnimation.addEventListener('transitionstart', (e)=>{
         if (e.target !== heightAnimation) return
         heightAnimation.classList.add('transitioning')
@@ -84,11 +84,11 @@ window.addEventListener("load", function() {
         };
 
         // choosenOptions.push(choosenOption)
-        console.log('new arr after check: ', choosenOptions);
+        // console.log('new arr after check: ', choosenOptions);
 
         // document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + filteredPriceFromFrontPage;
         document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + '; path=/pl';
-        console.log('cookie data: ', document.cookie);
+        // console.log('cookie data: ', document.cookie);
 
         // dynamic filtr data
         allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
@@ -97,7 +97,7 @@ window.addEventListener("load", function() {
         globalCurrentInvestName = '';
         globalCurrentCityID = 0;
         globalCurrentCityName = '';
-      
+
         allInvestmentsElements.forEach(el => {
           if (el.childNodes[1] !== undefined) {
             investName = el.childNodes[1].dataset.name
@@ -106,7 +106,7 @@ window.addEventListener("load", function() {
             investIDsArr.push(Number(investID))
           };
         });
-        console.log('$$$$$$$$$$$$$ invest arr ids ', investIDsArr);
+        // console.log('$$$$$$$$$$$$$ invest arr ids ', investIDsArr);
 
 
         // dynamic ymc filter id
@@ -115,7 +115,7 @@ window.addEventListener("load", function() {
         // dynamic term id for city
         allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
         cityIDsArr = [];
-      
+
         allCityElements.forEach(el => {
           if (el.childNodes[1] !== undefined) {
             cityID = el.childNodes[1].dataset.termid
@@ -145,7 +145,7 @@ window.addEventListener("load", function() {
           let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
           if(miastoArr.includes(+choosenOptionID)){
-            console.log('wybrano z kategorii - miasto');
+            // console.log('wybrano z kategorii - miasto');
 
             if(tempMiastoArr.includes(choosenOptionID)){
               removeItemAll(tempMiastoArr,choosenOptionID);
@@ -155,7 +155,7 @@ window.addEventListener("load", function() {
             wp.hooks.addAction('ymc_before_loaded_data_1850_8', 'smartfilter', function(class_name, response){
               if (tempMiastoArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
             });
-            
+
             // setTimeout(() => {
             //   if (tempMiastoArr.length == 0){menuActiveSpan.innerHTML = 'Wybierz';}
             // }, 10);
@@ -166,7 +166,7 @@ window.addEventListener("load", function() {
 
             if(tempInwestycjaArr.length > 0 ){choosenInwestycjeCount = tempInwestycjaArr.length;}else if(tempInwestycjaArr.length == 0){choosenInwestycjeCount = 0};
 
-            console.log('inwestycje count ', choosenInwestycjeCount);
+            // console.log('inwestycje count ', choosenInwestycjeCount);
 
             // menuActiveSpan.innerHTML = 'Wybrano: ' + choosenInwestycjeCount;
             menuActiveSpan.innerHTML = choosenInwestycjeCount == 0 ? 'Wybierz' : 'Wybrano: ' + choosenInwestycjeCount;
@@ -193,7 +193,7 @@ window.addEventListener("load", function() {
                 if(item.childNodes[1].dataset.termid == choosenItem){choosenPietroArr.push(item.childNodes[1].dataset.name)}
               });
             });
-            console.log('test43:',choosenPietroArr.join(', '));
+            // console.log('test43:',choosenPietroArr.join(', '));
             menuActiveSpan.innerHTML = (choosenPietroArr.join(', ')!='' ? 'Wybrano: ' +  choosenPietroArr.join(', ') : 'Wybierz');
           }else if(terminArr.includes(+choosenOptionID)){
             // termin
@@ -217,7 +217,7 @@ window.addEventListener("load", function() {
 
 
 
-            // // old test
+            // /old test
             // if(tempInneArr.includes(choosenOptionID)){
             //   removeItemAll(tempInneArr,choosenOptionID);
             // }else{
@@ -227,8 +227,8 @@ window.addEventListener("load", function() {
 
 
             menuActiveSpan.innerHTML = choosenInneCount == 0 ? 'Wybierz' : 'Wybrano: ' + choosenInneCount;
-            console.log('choosenInneCount************:');
-            console.log(choosenInneCount);
+            // console.log('choosenInneCount************:');
+            // console.log(choosenInneCount);
           }else{
             // console.log('error');
           };
@@ -256,9 +256,9 @@ window.addEventListener("load", function() {
         let metrazMinValueCookie = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
 
         let filteredPriceFromFrontPage = runSearchingFrontPage() + ',' + runSearchingMetrazFrontPage();
-        console.log('choosenOptions: ');
-        console.log(choosenOptions);
-        console.log('test***',choosenOptions.length != 0 ? (choosenOptions.join() + ',') : '');
+        // console.log('choosenOptions: ');
+        // console.log(choosenOptions);
+        // console.log('test***',choosenOptions.length != 0 ? (choosenOptions.join() + ',') : '');
         document.cookie = "filteredTermsFromCookies=" + (choosenOptions.length != 0 ? (choosenOptions.join() + ',') : '') + filteredPriceFromFrontPage + '; path=/pl';
 
         document.cookie = "PriceMinFromCookies=" + priceMinValueCookie2;
@@ -268,8 +268,8 @@ window.addEventListener("load", function() {
 
 
 
-        console.log('document.cookie: ');
-        console.log(document.cookie);
+        // console.log('document.cookie: ');
+        // console.log(document.cookie);
       });
     // });
 
@@ -287,11 +287,11 @@ window.addEventListener("load", function() {
     mainDropDown.forEach(dropDownEl =>{
       dropDownEl.addEventListener('click', (e) =>{
         if(e.target.nextElementSibling){
-          console.log('span');
+          // console.log('span');
           e.target.nextElementSibling.classList.toggle('dropdown__list_active');
           e.target.classList.toggle('toggle-x');
         }else if(e.target.parentNode.nextElementSibling){
-          console.log('span container');
+          // console.log('span container');
           e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active');
           e.target.classList.toggle('toggle-x');
         }
@@ -343,17 +343,17 @@ window.addEventListener("load", function() {
       let priceValueArrNodeList = dropDownFilters[5].childNodes[1].childNodes;
 
       priceMinValue = parseInt(document.querySelector('.dropdown__value-min').childNodes[0].innerHTML.split(' ').join(''));
-      
+
       priceMaxValue = document.querySelector('.dropdown__value-max').childNodes[0].innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max').childNodes[0].innerHTML.split(' ').join(''));
 
-      console.log('no spaces', priceMinValue, priceMaxValue);
+      // console.log('no spaces', priceMinValue, priceMaxValue);
 
       for (i = 1 ; i < priceValueArrNodeList.length ; i++){
         priceValueArr.push(parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
         priceValueArrNodeList[i].childNodes[1].dataset.name = parseInt(priceValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join(''));
       }
 
-      console.log('3123 new 4312341 price valueArr: ',priceValueArr);
+      // console.log('3123 new 4312341 price valueArr: ',priceValueArr);
 
       priceValueArr.forEach(priceValue => {
         priceMaxValue.isNaN ? priceMaxValue = 10000000 : priceMaxValue = priceMaxValue;
@@ -363,7 +363,7 @@ window.addEventListener("load", function() {
           newArr.push(priceValue);
         };
       });
-      console.log('prices from range: ', priceValueArr);
+      // console.log('prices from range: ', priceValueArr);
 
       // console.log('new price arr: ',newArr);
 
@@ -376,7 +376,7 @@ window.addEventListener("load", function() {
       });
 
       let filteredPriceTermsID = [];
-      console.log('filtered new arr html elements: ', newArrPriceHTMLList);
+      // console.log('filtered new arr html elements: ', newArrPriceHTMLList);
 
       newArrPriceHTMLList.forEach(el2 =>{
         filteredPriceTermsID.push(el2.dataset.termid);
@@ -385,7 +385,7 @@ window.addEventListener("load", function() {
       const customStaticPriceId = 677 // cena 'Zapytaj'
       filteredPriceTermsID.push(customStaticPriceId)
 
-      console.log(filteredPriceTermsID.join(','));
+      // console.log(filteredPriceTermsID.join(','));
 
       for (i = 2 ; i < priceValueArrNodeList.length ; i++){
         if(priceValueArrNodeList[i].childNodes[1].classList.contains('active')){
@@ -422,13 +422,13 @@ window.addEventListener("load", function() {
     mainDropDownMetraz.forEach(dropDownEl =>{
       dropDownEl.addEventListener('click', (e) =>{
         if(e.target.nextElementSibling){
-          console.log(e.target);
-          console.log('dropdown span');
+          // console.log(e.target);
+          // console.log('dropdown span');
           e.target.nextElementSibling.classList.toggle('dropdown__list_active-metraz');
           e.target.classList.toggle('toggle-x');
         }
         else if(e.target.parentNode.nextElementSibling){
-          console.log('dropdown span container');
+          // console.log('dropdown span container');
           e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active-metraz');
         }
       });
@@ -470,7 +470,7 @@ window.addEventListener("load", function() {
       metrazMinValue = parseInt(document.querySelector('.dropdown__value-min-metraz').childNodes[0].innerHTML.split(' ').join(''));
       metrazMaxValue = document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML == 'Max' ? 10000000 : parseInt(document.querySelector('.dropdown__value-max-metraz').childNodes[0].innerHTML.split(' ').join(''));
 
-      console.log('no spaces', metrazMinValue,metrazMaxValue);
+      // console.log('no spaces', metrazMinValue,metrazMaxValue);
 
       for (i = 1 ; i < metrazValueArrNodeList.length ; i++){
         metrazValueArr.push(parseInt(metrazValueArrNodeList[i].childNodes[1].dataset.name.split(' ').join('')));
@@ -479,12 +479,12 @@ window.addEventListener("load", function() {
 
       metrazValueArr.forEach(priceValue => {
         metrazMaxValue.isNaN ? metrazMaxValue = 10000000 : metrazMaxValue = metrazMaxValue;
-        console.log('price max value ',metrazMaxValue);
+        // console.log('price max value ',metrazMaxValue);
         if (priceValue <= metrazMaxValue && priceValue >= metrazMinValue){
           newArr.push(priceValue);
         };
       });
-      console.log('prices from range: ', metrazValueArr);
+      // console.log('prices from range: ', metrazValueArr);
 
       // console.log('new price arr: ',newArr);
 
@@ -497,13 +497,13 @@ window.addEventListener("load", function() {
       });
 
       let filteredTermsIDMetraz = [];
-      console.log('filtered new arr html elements: ', newArrHTMLList);
+      // console.log('filtered new arr html elements: ', newArrHTMLList);
 
       newArrHTMLList.forEach(el2 =>{
         filteredTermsIDMetraz.push(el2.dataset.termid);
       });
 
-      console.log(filteredTermsIDMetraz.join(','));
+      // console.log(filteredTermsIDMetraz.join(','));
 
       for (i = 2 ; i < metrazValueArrNodeList.length ; i++){
         if(metrazValueArrNodeList[i].childNodes[1].classList.contains('active')){
@@ -525,7 +525,7 @@ window.addEventListener("load", function() {
       passive.addEventListener('click', (e) => {
         e.target.parentNode.parentNode.style.display = 'none';
         e.target.parentNode.parentNode.previousElementSibling.childNodes[1].classList.toggle('newAfter');
-        console.log('parent parent: ',e.target.parentNode.parentNode);
+        // console.log('parent parent: ',e.target.parentNode.parentNode);
       });
     });
 
@@ -555,11 +555,11 @@ window.addEventListener("load", function() {
 
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
-        console.log('clicked target: ',e.target.dataset.termid);
+        // console.log('clicked target: ',e.target.dataset.termid);
         choosenOptionsTemp.push(e.target.dataset.termid)
-        console.log('choosenOptionsTemp: ', choosenOptionsTemp);
-        console.log('choosenOptionsTemp2: ', choosenOptionsTemp.join());
-        
+        // console.log('choosenOptionsTemp: ', choosenOptionsTemp);
+        // console.log('choosenOptionsTemp2: ', choosenOptionsTemp.join());
+
         document.cookie = "filteredTermsFromCookies=" + choosenOptionsTemp.join();
       });
     });

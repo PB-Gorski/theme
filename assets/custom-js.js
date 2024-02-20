@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
     duration: 600,
     once: true,
   });
-  console.log("js ready");
+  // console.log("js ready");
   const body = document.body;
   // navbar mobile handling
   const btnOpenMenu = document.querySelector(".btn-open-menu");
@@ -236,7 +236,7 @@ window.addEventListener("load", function () {
       if (!isNaN(self.endVal) && !isNaN(self.startVal)) {
         self.rAF = requestAnimationFrame(self.count);
       } else {
-        console.log("countUp error: startVal or endVal is not a number");
+        // console.log("countUp error: startVal or endVal is not a number");
         self.d.innerHTML = "--";
       }
       return false;
@@ -363,7 +363,7 @@ window.addEventListener("load", function () {
   let categoryList = document.querySelector(".wp-block-categories-list");
   let borderClass = "";
   if (window.location.href.search("blog") > 20) {
-    console.log("blog page");
+    // console.log("blog page");
     borderClass =
       "underline-offset-4 decoration-2 decoration-primaryRed border-b-[2px] border-primaryRed";
   }
@@ -382,7 +382,7 @@ window.addEventListener("load", function () {
     pageBlogID?.classList.contains("page-blog-title") ||
     window.location.href.search("category") > 20
   ) {
-    console.log("inserted js");
+    // console.log("inserted js");
     categoryList.insertAdjacentHTML("afterbegin", link);
   }
 

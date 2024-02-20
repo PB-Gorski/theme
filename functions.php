@@ -1109,7 +1109,7 @@ add_filter('pre_get_posts', 'exclude_category');
 
 // 	return $taxonomy;
 // }
-// // add the filter
+// add the filter
 // add_filter("get_categories_taxonomy", "modify_get_categories_taxonomy_defaults", 10, 2);
 
 

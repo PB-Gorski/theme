@@ -1,7 +1,7 @@
 window.addEventListener("load", function() {
   //  single mieszkania - cookie dla strony o inwestycji lista mieszkan
   if(document.body.classList.contains('_single-mieszkania')){
-    console.log('single mieszkania');
+    // console.log('single mieszkania');
 
     let inwestycjaName = document.querySelector('.taxonomy-inwestycja').childNodes[0].innerHTML;
     let btnBackToMieszkaniaList = document.querySelector('.js-backToList');
@@ -20,7 +20,7 @@ window.addEventListener("load", function() {
       document.cookie = 'filteredTermsFromCookies' +"=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
       document.cookie = 'filteredTermsFromCookies' +"=; Path=/pl; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
       document.cookie ='filteredTermsFromCookies=82; path=/';
-      
+
       btnBackToMieszkaniaList.href = window.location.origin + '/pl/o-inwestycji-torunska-16/lista-mieszkan-torunska-16/';
     }else if(inwestycjaName == 'Wieżycka Folwark'){
       document.cookie = 'filteredTermsFromCookies' +"=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
@@ -30,13 +30,13 @@ window.addEventListener("load", function() {
     }
 
     // document.cookie = 'filteredTermsFromCookies' +"=; Path=/pl/mieszkania; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
-  
-  
-  
-  
-  
+
+
+
+
+
   }// end if
-  
+
 
 
 });

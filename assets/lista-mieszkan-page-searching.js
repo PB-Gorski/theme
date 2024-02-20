@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
     document.body.classList.contains("post-type-archive-mieszkania") ||
     document.body.classList.contains("post-type-archive-lokale")
   ) {
-    console.log("glowna lista mieszkan page");
+    // console.log("glowna lista mieszkan page");
 
     // wyszukiwanie mieszkan po filtrach (cena)
     // setting chosen option in active window
@@ -32,9 +32,9 @@ window.addEventListener("load", function () {
         choosenOptionsArr.forEach((option) => {
           if (option.innerText == choosenOption) {
             stopAdding = true;
-            console.log("choosen option text for cleaning", choosenOption);
-            console.log("clear existing span");
-            option.remove("span");
+            // console.log("choosen option text for cleaning", choosenOption);
+            // console.log("clear existing span");
+            // option.remove("span");
           }
         });
 
@@ -56,7 +56,7 @@ window.addEventListener("load", function () {
         } else {
           choosenOptions.push(choosenOptionID);
         }
-        console.log("choosenOptions: ", choosenOptions);
+        // console.log("choosenOptions: ", choosenOptions);
 
         // dynamic term id for investition
         // currentInvestName = document.referrer.slice(document.referrer.match('o-inwestycji')['index']).replace('o-inwestycji-','').slice(-30,-1);
@@ -76,7 +76,7 @@ window.addEventListener("load", function () {
             investIDsArr.push(Number(investID));
           }
         });
-        console.log("$$$$$$$$$$$$$ invest arr ids ", investIDsArr);
+        // console.log("$$$$$$$$$$$$$ invest arr ids ", investIDsArr);
 
         // dynamic term id for city
         allCityElements =
@@ -103,7 +103,7 @@ window.addEventListener("load", function () {
           // let miastoArr = [28,40];
           let miastoArr = cityIDsArr;
 
-          console.log("$$$$$$$$$$$ " + cityIDsArr);
+          // console.log("$$$$$$$$$$$ " + cityIDsArr);
           // let inwestycjaArr = [72,71,82,81,681];
           let inwestycjaArr = investIDsArr;
 
@@ -120,7 +120,7 @@ window.addEventListener("load", function () {
               .toLowerCase();
 
           if (miastoArr.includes(+choosenOptionID)) {
-            console.log("wybrano z kategorii - miasto");
+            // console.log("wybrano z kategorii - miasto");
             // miasto
             if (tempMiastoArr.includes(choosenOptionID)) {
               removeItemAll(tempMiastoArr, choosenOptionID);
@@ -135,7 +135,7 @@ window.addEventListener("load", function () {
               function (class_name, response) {
                 if (tempMiastoArr.length == 0) {
                   menuActiveSpan.innerHTML = "Wybierz";
-                  console.log("Wybierz");
+                  // console.log("Wybierz");
                 }
               }
             );
@@ -143,23 +143,23 @@ window.addEventListener("load", function () {
             // setTimeout(() => {
             //   if (tempMiastoArr.length == 0){
             //     menuActiveSpan.innerHTML = 'Wybierz';
-            //     console.log('Wybierz');
+            //     // console.log('Wybierz');
             //   }
             // }, 1000);
 
-            console.log("miastoArr: ", tempMiastoArr.length);
-            console.log("active span: ", menuActiveSpan);
+            // console.log("miastoArr: ", tempMiastoArr.length);
+            // console.log("active span: ", menuActiveSpan);
 
             menuActiveSpan.innerHTML =
               menuActiveSpan.innerHTML + choosenMiastoArr.join(", ");
-            console.log("miasto: ", choosenMiastoArr);
+            // console.log("miasto: ", choosenMiastoArr);
 
             if (tempMiastoArr.length == 0) {
               menuActiveSpan.innerHTML = "";
               menuActiveSpan.innerHTML = "Wybierz:";
-              console.log("Wybierz");
+              // console.log("Wybierz");
             } else {
-              console.log("wybrano miasto");
+              // console.log("wybrano miasto");
             }
           } else if (inwestycjaArr.includes(+choosenOptionID)) {
             // inwestycje
@@ -215,7 +215,7 @@ window.addEventListener("load", function () {
                 }
               });
             });
-            console.log("altualne pietro432ewfsdvdfe");
+            // console.log("altualne pietro432ewfsdvdfe");
             // menuActiveSpan.innerHTML = choosenPietroArr.join(', ');
             // old
             // menuActiveSpan.innerHTML = 'Wybrano: ' + (choosenPietroArr.join(', ')!=' ' ? choosenPietroArr.join(', ') : 'Wybrano: 0');
@@ -261,8 +261,8 @@ window.addEventListener("load", function () {
           // menuActiveSpan.innerHTML = menuActiveSpan.getAttribute('data-label');
 
           // console.log('item: ', menuActiveSpan.getAttribute('data-label'));
-          console.log("item category: ", menuActiveTitle);
-          console.log("item termid: ", +choosenOptionID);
+          // console.log("item category: ", menuActiveTitle);
+          // console.log("item termid: ", +choosenOptionID);
         }
         showActiveFilterName();
         // if (!foundedPostOnStart.classList.contains('hidden')){foundedPostOnStart.classList.add('hidden')}
@@ -280,7 +280,7 @@ window.addEventListener("load", function () {
     let target;
 
     document.querySelector("#Banner").addEventListener("click", () => {
-      console.log("body click2");
+      // console.log("body click2");
       document.querySelectorAll(".dropdown__list").forEach((activeItem2) => {
         if (
           activeItem2.classList.contains("dropdown__list_active-metraz") ||
@@ -376,8 +376,8 @@ window.addEventListener("load", function () {
     mainDropDownMetraz.forEach((dropDownEl) => {
       dropDownEl.addEventListener("click", (e) => {
         if (e.target.nextElementSibling) {
-          console.log(e.target);
-          console.log("dropdown span");
+          // console.log(e.target);
+          // console.log("dropdown span");
           e.target.nextElementSibling.classList.toggle(
             "dropdown__list_active-metraz"
           );
@@ -385,7 +385,7 @@ window.addEventListener("load", function () {
           // e.target.classList.toggle('dropdown__list_active-metraz');
         }
         // else if(e.target.parentNode.nextElementSibling){
-        //   console.log('dropdown span container');
+        //   // console.log('dropdown span container');
         //   e.target.parentNode.nextElementSibling.classList.toggle('dropdown__list_active-metraz');
         // }
       });
@@ -536,7 +536,7 @@ window.addEventListener("load", function () {
         indexFrom1 = index + 1;
         let currentFiltr = indexFrom1 + index;
         // currentFiltr = indexFrom1;
-        console.log("current filtr: ", currentFiltr);
+        // console.log("current filtr: ", currentFiltr);
 
         sortListDir(index);
         counter = 1;
@@ -561,7 +561,7 @@ window.addEventListener("load", function () {
               );
             }
           } else if (i != currentFiltr) {
-            console.log("i rozny od current filtr");
+            // console.log("i rozny od current filtr");
             if (btnsSort[i - counter]) {
               btnsSort[i - counter].classList.remove(
                 "sort-arrow-up",
@@ -588,7 +588,7 @@ window.addEventListener("load", function () {
         const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
         document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
       }
-      console.log("deleteAllCookies() done");
+      // console.log("deleteAllCookies() done");
     }
     deleteAllCookies();
 
@@ -615,13 +615,13 @@ window.addEventListener("load", function () {
       document.cookie.indexOf("PriceMaxFromCookies=") == 0
     ) {
       // cookies exist
-      console.log("cookies exist");
+      // console.log("cookies exist");
       filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
       filteredPriceMinFromCookies = getCookie("PriceMinFromCookies");
       filteredPriceMaxFromCookies = getCookie("PriceMaxFromCookies");
       filteredMetrazMinFromCookies = getCookie("MetrazMinFromCookies");
       filteredMetrazMaxFromCookies = getCookie("MetrazMaxFromCookies");
-      console.log("cookies exist2: ", filteredPriceMaxFromCookies);
+      // console.log("cookies exist2: ", filteredPriceMaxFromCookies);
       // console.log('cookies exist min: ',filteredPriceMinFromCookies);
       // console.log('cookies exist2 max: ',filteredPriceMaxFromCookies);
 
@@ -643,7 +643,7 @@ window.addEventListener("load", function () {
           investIDsArr.push(Number(investID));
         }
       });
-      console.log("$$$$$$$$$$$$$ invest arr ids ", investIDsArr);
+      // console.log("$$$$$$$$$$$$$ invest arr ids ", investIDsArr);
 
       // dynamic term id for city
       allCityElements =
@@ -672,10 +672,10 @@ window.addEventListener("load", function () {
       function showActiveFilterNameFromCookies() {
         let miastoArr = cityIDsArr;
 
-        console.log("2$$$$$$$$$$$ " + cityIDsArr);
+        // console.log("2$$$$$$$$$$$ " + cityIDsArr);
         // let inwestycjaArr = [72,71,82,81,681];
 
-        console.log("111111111$$$$$$$$$$$$$ invest arr ids ", investIDsArr);
+        // console.log("111111111$$$$$$$$$$$$$ invest arr ids ", investIDsArr);
         let inwestycjaArr = investIDsArr;
 
         // let pokojeArr = [43,34,53,25];
@@ -686,32 +686,32 @@ window.addEventListener("load", function () {
         // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
         // let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
-        console.log(
+        // console.log(
           "json check: ",
           filteredTermsFromCookies.substring(1).slice(0, -1)
         );
-        console.log("json check after parse: ", filteredTermsFromCookies);
+        // console.log("json check after parse: ", filteredTermsFromCookies);
 
         let tempArr = [];
         if (filteredTermsFromCookies.slice(-1) != ",") {
           tempArr.push(filteredTermsFromCookies);
         }
-        console.log("tempArr: ", tempArr);
+        // console.log("tempArr: ", tempArr);
         let filteredTermsFromCookiesArr;
         // let filteredTermsFromCookiesArr = JSON.parse("[" + filteredTermsFromCookies.slice(-1) != ',' ? tempArr : filteredTermsFromCookies.slice(0, -1) + "]");
 
-        console.log("filteredTermsFromCookiesArr", filteredTermsFromCookiesArr);
+        // console.log("filteredTermsFromCookiesArr", filteredTermsFromCookiesArr);
 
-        console.log("filteredTermsFromCookies*:", filteredTermsFromCookies);
+        // console.log("filteredTermsFromCookies*:", filteredTermsFromCookies);
 
-        console.log("slice test: ", tempArr.join(",").split(","));
+        // console.log("slice test: ", tempArr.join(",").split(","));
 
-        console.log(
+        // console.log(
           "slice test2: ",
           [].concat(...tempArr.map((a) => a.split(",")))
         );
 
-        console.log("*****", filteredTermsFromCookies.split(","));
+        // console.log("*****", filteredTermsFromCookies.split(","));
 
         let returnChoosenFromCookies = [];
         let returnChoosenFromCookiesInwestycje = [];
@@ -724,7 +724,7 @@ window.addEventListener("load", function () {
           // console.log('item form filtered cookies: ', item);
 
           if (miastoArr.includes(+item)) {
-            console.log("wybrano z kategorii - miasto");
+            // console.log("wybrano z kategorii - miasto");
             // miasto
             // let menuActiveSpan = item.parentNode.previousElementSibling.childNodes[1];
 
@@ -750,14 +750,14 @@ window.addEventListener("load", function () {
             let activeSpan;
             passiveOptions.forEach((option) => {
               if (option.childNodes[1].dataset.termid == item) {
-                console.log("option from cookies for finding parent: ", option);
+                // console.log("option from cookies for finding parent: ", option);
                 activeSpan =
                   option.parentNode.previousElementSibling.childNodes[1];
                 returnChoosenFromCookies.push(option);
               }
             });
 
-            console.log("active span: ", activeSpan);
+            // console.log("active span: ", activeSpan);
 
             returnChoosenFromCookies.forEach((el) => {
               el.parentNode.previousElementSibling.childNodes[1].innerHTML =
@@ -787,7 +787,7 @@ window.addEventListener("load", function () {
 
             passiveOptions.forEach((option) => {
               if (option.childNodes[1].dataset.termid == item) {
-                console.log("option from cookies for finding parent: ", option);
+                // console.log("option from cookies for finding parent: ", option);
                 returnChoosenFromCookiesInwestycje.push(option);
               }
             });
@@ -816,7 +816,7 @@ window.addEventListener("load", function () {
 
             passiveOptions.forEach((option) => {
               if (option.childNodes[1].dataset.termid == item) {
-                console.log("option from cookies for finding parent: ", option);
+                // console.log("option from cookies for finding parent: ", option);
                 returnChoosenFromCookiesPokoje.push(option);
               }
             });
@@ -845,7 +845,7 @@ window.addEventListener("load", function () {
 
             passiveOptions.forEach((option) => {
               if (option.childNodes[1].dataset.termid == item) {
-                console.log("option from cookies for finding parent: ", option);
+                // console.log("option from cookies for finding parent: ", option);
                 returnChoosenFromCookiesPietro.push(option);
               }
             });
@@ -877,7 +877,7 @@ window.addEventListener("load", function () {
 
             passiveOptions.forEach((option) => {
               if (option.childNodes[1].dataset.termid == item) {
-                console.log("option from cookies for finding parent: ", option);
+                // console.log("option from cookies for finding parent: ", option);
                 returnChoosenFromCookiesTermin.push(option);
               }
             });
@@ -904,7 +904,7 @@ window.addEventListener("load", function () {
 
             passiveOptions.forEach((option) => {
               if (option.childNodes[1].dataset.termid == item) {
-                console.log("option from cookies for finding parent: ", option);
+                // console.log("option from cookies for finding parent: ", option);
                 returnChoosenFromCookiesInne.push(option);
               }
             });
@@ -920,7 +920,7 @@ window.addEventListener("load", function () {
         priceMinUpdate = getCookie("PriceMinFromCookies");
         priceMaxUpdate = getCookie("PriceMaxFromCookies");
 
-        console.log("prices from cookies: ", priceMinUpdate, priceMaxUpdate);
+        // console.log("prices from cookies: ", priceMinUpdate, priceMaxUpdate);
 
         document.querySelector(".dropdown__value-min #inputPriceMin").value =
           filteredPriceMinFromCookies == "" || filteredPriceMinFromCookies == 0
@@ -956,15 +956,15 @@ window.addEventListener("load", function () {
 
         let filteredCustomPriceFromCookies = runSearchingPrice();
 
-        console.log(filteredCustomPriceFromCookies.join());
-        console.log("filteredTermsFromCookies", filteredTermsFromCookies);
-        console.log(
+        // console.log(filteredCustomPriceFromCookies.join());
+        // console.log("filteredTermsFromCookies", filteredTermsFromCookies);
+        // console.log(
           "filteredTermsFromCookies from frontpage: ",
           filteredTermsFromCookies
         );
-        console.log("max metraz***: ", filteredMetrazMaxFromCookies);
+        // console.log("max metraz***: ", filteredMetrazMaxFromCookies);
 
-        console.log("after write", filteredMetrazMaxFromCookies);
+        // console.log("after write", filteredMetrazMaxFromCookies);
       }
 
       showActiveFilterNameFromCookies();
@@ -974,10 +974,10 @@ window.addEventListener("load", function () {
       let filterID = ".ymc-smart-filter-container";
       if (pageID.classList.contains("banner-lista-mieszkan")) {
         filterID = ".data-target-ymc2";
-        console.log("ymc2");
+        // console.log("ymc2");
       } else if (pageID.classList.contains("banner-lista-lokali")) {
         filterID = ".data-target-ymc1";
-        console.log("ymc1");
+        // console.log("ymc1");
       }
 
       function runFromCookies() {
@@ -992,7 +992,7 @@ window.addEventListener("load", function () {
           target: filterID,
           terms: filteredTermsFromCookies + "," + searchedFromActiveIDs.join(),
         }).apiTermUpdate();
-        console.log("after YMC api update from runFromCookies()");
+        // console.log("after YMC api update from runFromCookies()");
       }
 
       if (filteredTermsFromCookies != null) {
@@ -1009,25 +1009,25 @@ window.addEventListener("load", function () {
 
       deleteAllCookies();
     } else {
-      console.log("no cookies");
+      // console.log("no cookies");
 
       let globalFoundedPostsCount;
       currentYmcFilterID = document
         .querySelector(".short-code-ymc-filter")
         .childNodes[1].getAttribute("id")
         .replace("ymc-smart-filter-container-", "");
-      console.log("current filter id **********************");
-      console.log(currentYmcFilterID);
+      // console.log("current filter id **********************");
+      // console.log(currentYmcFilterID);
 
       wp.hooks.addAction(
         "ymc_after_loaded_data_148_" + currentYmcFilterID,
         "smartfilter",
         function (class_name, response) {
           globalFoundedPostsCount = response.post_count;
-          console.log("Number of found posts: " + response.found);
-          console.log("global2**********************");
-          console.log(globalFoundedPostsCount);
-          console.log("**********************");
+          // console.log("Number of found posts: " + response.found);
+          // console.log("global2**********************");
+          // console.log(globalFoundedPostsCount);
+          // console.log("**********************");
 
           if (globalFoundedPostsCount == 1) {
             document.querySelector(".js-oInwestycji").innerHTML =
@@ -1116,12 +1116,12 @@ window.addEventListener("load", function () {
         priceMaxValue.isNaN
           ? (priceMaxValue = 10000000)
           : (priceMaxValue = priceMaxValue);
-        console.log("price max value ", priceMaxValue);
+        // console.log("price max value ", priceMaxValue);
         if (priceValue <= priceMaxValue && priceValue >= priceMinValue) {
           newArr.push(priceValue);
         }
       });
-      console.log("prices from range: ", priceValueArr);
+      // console.log("prices from range: ", priceValueArr);
 
       // clear active classes and chosen options
       for (i = 0; i < priceValueArrNodeList.length; i++) {
@@ -1151,13 +1151,13 @@ window.addEventListener("load", function () {
       });
 
       let filteredTermsID = [];
-      console.log("filtered new arr html elements: ", newArrHTMLList);
+      // console.log("filtered new arr html elements: ", newArrHTMLList);
 
       if (priceMinValue == 0 && priceMaxValue == 10000000) {
-        console.log("price not changed");
+        // console.log("price not changed");
         filteredTermsID = [];
       } else {
-        console.log("price changed");
+        // console.log("price changed");
         newArrHTMLList.forEach((el2) => {
           filteredTermsID.push(el2.dataset.termid);
         });
@@ -1166,7 +1166,7 @@ window.addEventListener("load", function () {
       const customStaticPriceId = 677; // cena 'Zapytaj'
       filteredTermsID.push(customStaticPriceId);
 
-      console.log("new filtered id", filteredTermsID.join(","));
+      // console.log("new filtered id", filteredTermsID.join(","));
 
       priceValueArr = [];
       newArr = [];
@@ -1177,7 +1177,7 @@ window.addEventListener("load", function () {
     }
 
     function runSearchingMetraz() {
-      console.log("run");
+      // console.log("run");
       metrazValueArr = [];
       newArrMetraz = [];
       newArrHTMLListMetraz = [];
@@ -1202,7 +1202,7 @@ window.addEventListener("load", function () {
                 .join("")
             );
 
-      console.log("no spaces", metrazMinValue, metrazMaxValue);
+      // console.log("no spaces", metrazMinValue, metrazMaxValue);
 
       for (i = 0; i < metrazValueArrNodeList.length; i++) {
         metrazValueArr.push(
@@ -1223,12 +1223,12 @@ window.addEventListener("load", function () {
         metrazMaxValue.isNaN
           ? (metrazMaxValue = 10000000)
           : (metrazMaxValue = metrazMaxValue);
-        console.log("metraz max value ", metrazMaxValue);
+        // console.log("metraz max value ", metrazMaxValue);
         if (metrazValue <= metrazMaxValue && metrazValue >= metrazMinValue) {
           newArrMetraz.push(metrazValue);
         }
       });
-      console.log("metraz from range: ", metrazValueArr);
+      // console.log("metraz from range: ", metrazValueArr);
 
       // console.log('new metraz arr: ',newArr);
 
@@ -1257,10 +1257,10 @@ window.addEventListener("load", function () {
       let filteredTermsIDMetraz = [];
 
       if (metrazMinValue == 0 && metrazMaxValue == 10000000) {
-        console.log("metraz not changed");
+        // console.log("metraz not changed");
         filteredTermsIDMetraz = [];
       } else {
-        console.log("metraz changed");
+        // console.log("metraz changed");
         newArrHTMLListMetraz.forEach((el2) => {
           filteredTermsIDMetraz.push(el2.dataset.termid);
         });
@@ -1270,7 +1270,7 @@ window.addEventListener("load", function () {
       //   filteredTermsIDMetraz.push(el2.dataset.termid);
       // });
 
-      console.log("metraze po ifie", filteredTermsIDMetraz.join(","));
+      // console.log("metraze po ifie", filteredTermsIDMetraz.join(","));
 
       metrazValueArr = [];
       newArrMetraz = [];
@@ -1293,7 +1293,7 @@ window.addEventListener("load", function () {
         searchedFromActiveIDs.push(item.dataset.termid);
       });
 
-      console.log("logggggg: ", searchedFromActiveIDs.join());
+      // console.log("logggggg: ", searchedFromActiveIDs.join());
 
       deleteAllCookies();
       // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
@@ -1303,10 +1303,10 @@ window.addEventListener("load", function () {
       let filterID = ".ymc-smart-filter-container";
       if (pageID.classList.contains("banner-lista-mieszkan")) {
         filterID = ".data-target-ymc2";
-        console.log("ymc2");
+        // console.log("ymc2");
       } else if (pageID.classList.contains("banner-lista-lokali")) {
         filterID = ".data-target-ymc1";
-        console.log("ymc1");
+        // console.log("ymc1");
       }
 
       // old
@@ -1327,9 +1327,9 @@ window.addEventListener("load", function () {
           searchedFromActiveIDs.join(),
       }).apiTermUpdate();
 
-      console.log("in btn prices: ", pricesID.join());
-      console.log("in btn metraze: ", metrazeID.join());
-      console.log(
+      // console.log("in btn prices: ", pricesID.join());
+      // console.log("in btn metraze: ", metrazeID.join());
+      // console.log(
         "all terms id searched: ",
         pricesID.join() +
           "," +
@@ -1339,11 +1339,11 @@ window.addEventListener("load", function () {
           "," +
           searchedFromActiveIDs.join()
       );
-      console.log(
+      // console.log(
         "all terms id searched2: ",
         pricesID.join() + "," + metrazeID.join() + "," + choosenOptions.join()
       );
-      console.log(
+      // console.log(
         "all terms id searched3: ",
         searchedFromActiveIDs.join() +
           "," +
@@ -1351,7 +1351,7 @@ window.addEventListener("load", function () {
           "," +
           metrazeID.join()
       );
-      console.log(
+      // console.log(
         "all terms id searched4: ",
         searchedFromActiveIDs.join() + "," + choosenOptions.join()
       );
@@ -1373,12 +1373,12 @@ window.addEventListener("load", function () {
           foundedPostOnStart.dataset.allposts +
           ")</span></p>";
         document.cookie = "filteredTermsFromCookies=;";
-        console.log("cookies cleared");
+        // console.log("cookies cleared");
 
-        console.log("Container class: " + class_name);
-        console.log("Post count: " + response.post_count);
+        // console.log("Container class: " + class_name);
+        // console.log("Post count: " + response.post_count);
         postsFoundFromAfterHook = response.post_count;
-        console.log("Number of found posts: " + response.found);
+        // console.log("Number of found posts: " + response.found);
         postsFoundFromAfterHook2 = response.found;
 
         let currentPriceArr = document.querySelectorAll(
@@ -1391,7 +1391,7 @@ window.addEventListener("load", function () {
           }
         });
 
-        console.log("posts loaded before if");
+        // console.log("posts loaded before if");
       }
     );
 
@@ -1407,12 +1407,12 @@ window.addEventListener("load", function () {
           foundedPostOnStart.dataset.allposts +
           ")</span></p>";
         document.cookie = "filteredTermsFromCookies=;";
-        console.log("cookies cleared");
+        // console.log("cookies cleared");
 
-        console.log("Container class: " + class_name);
-        console.log("Post count: " + response.post_count);
+        // console.log("Container class: " + class_name);
+        // console.log("Post count: " + response.post_count);
         postsFoundFromAfterHook = response.post_count;
-        console.log("Number of found posts: " + response.found);
+        // console.log("Number of found posts: " + response.found);
         postsFoundFromAfterHook2 = response.found;
 
         let currentPriceArr = document.querySelectorAll(
@@ -1425,7 +1425,7 @@ window.addEventListener("load", function () {
           }
         });
 
-        console.log("posts loaded before if");
+        // console.log("posts loaded before if");
       }
     );
 
@@ -1435,18 +1435,18 @@ window.addEventListener("load", function () {
       .querySelector(".short-code-ymc-filter")
       .childNodes[1].getAttribute("id")
       .replace("ymc-smart-filter-container-", "");
-    console.log("current filter id **********************");
-    console.log(currentYmcFilterID);
+    // console.log("current filter id **********************");
+    // console.log(currentYmcFilterID);
 
     wp.hooks.addAction(
       "ymc_after_loaded_data_148_" + currentYmcFilterID,
       "smartfilter",
       function (class_name, response) {
         globalFoundedPostsCount = response.post_count;
-        console.log("Number of found posts: " + response.found);
-        console.log("global**********************");
-        console.log(globalFoundedPostsCount);
-        console.log("**********************");
+        // console.log("Number of found posts: " + response.found);
+        // console.log("global**********************");
+        // console.log(globalFoundedPostsCount);
+        // console.log("**********************");
 
         if (globalFoundedPostsCount == 1) {
           document.querySelector(".js-oInwestycji").innerHTML =
@@ -1484,7 +1484,7 @@ window.addEventListener("load", function () {
         e.target.parentNode.parentNode.previousElementSibling.childNodes[1].classList.toggle(
           "newAfter"
         );
-        console.log("parent parent: ", e.target.parentNode.parentNode);
+        // console.log("parent parent: ", e.target.parentNode.parentNode);
       });
     });
 
@@ -1513,10 +1513,10 @@ window.addEventListener("load", function () {
       "smartfilter",
       function (class_name, response) {
         globalFoundedPostsCount = response.post_count;
-        console.log("Number of found posts: " + response.found);
-        console.log("global for 2323**********************");
-        console.log(globalFoundedPostsCount);
-        console.log("**********************");
+        // console.log("Number of found posts: " + response.found);
+        // console.log("global for 2323**********************");
+        // console.log(globalFoundedPostsCount);
+        // console.log("**********************");
 
         if (globalFoundedPostsCount == 1) {
           document.querySelector(".js-oInwestycji").innerHTML =
@@ -1549,7 +1549,7 @@ window.addEventListener("load", function () {
         // if(document.body.classList.contains('post-type-archive-lokale')){
         //   if (document.querySelector('.js-after-search-click')){
         //     document.querySelector('.js-foundedPostOnStart').classList.replace('z-[1]', 'z-[0]');
-        //     console.log('z replace test');
+        //     // console.log('z replace test');
         //   };
         // };
       }
@@ -1558,7 +1558,7 @@ window.addEventListener("load", function () {
     // if(document.body.classList.contains('post-type-archive-lokale')){
     //   if (document.querySelector('.js-after-search-click')){
     //     document.querySelector('.js-foundedPostOnStart').classList.replace('z-[1]', 'z-[0]');
-    //     console.log('z replace test');
+    //     // console.log('z replace test');
     //   };
     // };
 
