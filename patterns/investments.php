@@ -61,9 +61,9 @@
           <li class="invest-tile max-w-full w-full inline-block">
             <!-- wp:group -->
             <div class="wp-block-group">
-              <!-- wp:link -->
-              <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block w-full">Link test
-              </a>
+              <span>
+                <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block w-full">Link test
+              </span>
               <!-- /wp:link -->
 
               <!-- wp:group -->
