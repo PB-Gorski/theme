@@ -1531,7 +1531,7 @@ window.addEventListener("load", function () {
     // setTimeout(() => {
 
         let pasteFilters = window.setInterval(function(){
-          if(YMCTools !== undefined){
+          if(typeof YMCTools !== 'undefined'){
             YMCTools({
               target: filterID,
               terms: investIDFromDataAttr + ',' + filteredTermsFromCookies,
