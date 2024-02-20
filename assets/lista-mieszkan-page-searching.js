@@ -687,9 +687,9 @@ window.addEventListener("load", function () {
         // let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
         // console.log(
-          "json check: ",
-          filteredTermsFromCookies.substring(1).slice(0, -1)
-        );
+          // "json check: ",
+          // filteredTermsFromCookies.substring(1).slice(0, -1)
+        // );
         // console.log("json check after parse: ", filteredTermsFromCookies);
 
         let tempArr = [];
@@ -707,9 +707,9 @@ window.addEventListener("load", function () {
         // console.log("slice test: ", tempArr.join(",").split(","));
 
         // console.log(
-          "slice test2: ",
-          [].concat(...tempArr.map((a) => a.split(",")))
-        );
+        //   "slice test2: ",
+        //   [].concat(...tempArr.map((a) => a.split(",")))
+        // );
 
         // console.log("*****", filteredTermsFromCookies.split(","));
 
@@ -959,9 +959,9 @@ window.addEventListener("load", function () {
         // console.log(filteredCustomPriceFromCookies.join());
         // console.log("filteredTermsFromCookies", filteredTermsFromCookies);
         // console.log(
-          "filteredTermsFromCookies from frontpage: ",
-          filteredTermsFromCookies
-        );
+        //   "filteredTermsFromCookies from frontpage: ",
+        //   filteredTermsFromCookies
+        // );
         // console.log("max metraz***: ", filteredMetrazMaxFromCookies);
 
         // console.log("after write", filteredMetrazMaxFromCookies);
@@ -1330,31 +1330,31 @@ window.addEventListener("load", function () {
       // console.log("in btn prices: ", pricesID.join());
       // console.log("in btn metraze: ", metrazeID.join());
       // console.log(
-        "all terms id searched: ",
-        pricesID.join() +
-          "," +
-          metrazeID.join() +
-          "," +
-          choosenOptions.join() +
-          "," +
-          searchedFromActiveIDs.join()
-      );
+      //   "all terms id searched: ",
+      //   pricesID.join() +
+      //     "," +
+      //     metrazeID.join() +
+      //     "," +
+      //     choosenOptions.join() +
+      //     "," +
+      //     searchedFromActiveIDs.join()
+      // );
       // console.log(
-        "all terms id searched2: ",
-        pricesID.join() + "," + metrazeID.join() + "," + choosenOptions.join()
-      );
+      //   "all terms id searched2: ",
+      //   pricesID.join() + "," + metrazeID.join() + "," + choosenOptions.join()
+      // );
       // console.log(
-        "all terms id searched3: ",
-        searchedFromActiveIDs.join() +
-          "," +
-          pricesID.join() +
-          "," +
-          metrazeID.join()
-      );
+      //   "all terms id searched3: ",
+      //   searchedFromActiveIDs.join() +
+      //     "," +
+      //     pricesID.join() +
+      //     "," +
+      //     metrazeID.join()
+      // );
       // console.log(
-        "all terms id searched4: ",
-        searchedFromActiveIDs.join() + "," + choosenOptions.join()
-      );
+      //   "all terms id searched4: ",
+      //   searchedFromActiveIDs.join() + "," + choosenOptions.join()
+      // );
     });
 
     // *******************************************************

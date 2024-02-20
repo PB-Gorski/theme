@@ -659,9 +659,9 @@ window.addEventListener("load", function () {
 
       // console.log('filteredTermsFromCookies2', filteredTermsFromCookies);
       // console.log(
-        "filteredTermsFromCookies from frontpage: ",
-        filteredTermsFromCookies
-      );
+      //   "filteredTermsFromCookies from frontpage: ",
+      //   filteredTermsFromCookies
+      // );
       // console.log("max metraz***: ", filteredMetrazMaxFromCookies);
 
       let choosenMiastoArr = [];
@@ -681,9 +681,9 @@ window.addEventListener("load", function () {
         // let menuActiveTitle = item.parentNode.previousElementSibling.previousElementSibling.innerHTML.replace(':','').toLowerCase();
 
         // console.log(
-          "json check: ",
-          filteredTermsFromCookies.substring(1).slice(0, -1)
-        );
+          // "json check: ",
+          // filteredTermsFromCookies.substring(1).slice(0, -1)
+        // );
         // console.log("json check after parse: ", filteredTermsFromCookies);
 
         let tempArr = [];
@@ -697,9 +697,9 @@ window.addEventListener("load", function () {
         // console.log("filteredTermsFromCookies*:", filteredTermsFromCookies);
         // console.log("slice test: ", tempArr.join(",").split(","));
         // console.log(
-          "slice test2: ",
-          [].concat(...tempArr.map((a) => a.split(",")))
-        );
+        //   "slice test2: ",
+        //   [].concat(...tempArr.map((a) => a.split(",")))
+        // );
 
         // console.log("*****", filteredTermsFromCookies.split(","));
 
