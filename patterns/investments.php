@@ -64,7 +64,6 @@
               <span>
                 <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block w-full">Link test
               </span>
-              <!-- /wp:link -->
 
               <!-- wp:group -->
               <div class="wp-block-group relative group desktop:max-w-full  h-full">
