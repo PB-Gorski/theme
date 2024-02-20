@@ -108,7 +108,7 @@
                         elseif ($tax->name == 'Toruńska 16') echo 'Gdańsk';
                         elseif ($tax->name == 'Wieżycka Folwark') echo 'Gdańsk';
 
-                        print_r($tax)
+                        print_r($tax);
 
                         $scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
                         $url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
