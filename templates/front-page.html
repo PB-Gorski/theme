@@ -10,27 +10,35 @@
       <!-- wp:pattern {"slug":"searchbar-mieszkania"} /-->
       <!-- wp:pattern {"slug":"inwestycje"} /-->
 
-      <!-- wp:query {"query":{"perPage":3,"pages":0,"offset":0,"postType":"mieszkania"},"isLink":true} -->
-				<!-- wp:post-template -->
-					<!-- wp:group {"isLink":true  } -->
-					<div class="wp-block-group aos-fade-right">
-						<!-- wp:group -->
-						<div class="wp-block-group">
-							<!-- wp:group -->
-							<div class="wp-block-group">
-								<!-- wp:post-terms {"term":"inwestycja"} /-->
-								<!-- wp:term-description /-->
-								<!-- wp:term-count /-->
-								<!-- wp:post-title {"level":6} /-->
-							</div>
-							<!-- /wp:group -->
-							<!-- wp:post-terms {"term":"cena"} /-->
-						</div>
-						<!-- /wp:group -->
-					</div>
-					<!-- /wp:group -->
-				<!-- /wp:post-template -->
-			<!-- /wp:query -->
+      <!-- wp:group -->
+      <div class="wp-block-group query_container aos-fade-right">
+        <!-- wp:query {"query":{"perPage":0,"pages":0,"offset":0,"postType":"mieszkania"},"isLink":true} -->
+        !-- wp:group -->
+        <div class="wp-block-group query_container aos-fade-right flex gap-[30px]">
+          <!-- wp:post-template -->
+            <!-- wp:group {"isLink":true  } -->
+            <div class="wp-block-group aos-fade-right">
+              <!-- wp:group -->
+              <div class="wp-block-group">
+                <!-- wp:group -->
+                <div class="wp-block-group">
+                  <!-- wp:post-terms {"term":"inwestycja"} /-->
+                  <!-- wp:term-description /-->
+                  <!-- wp:term-count /-->
+                  <!-- wp:post-title {"level":6} /-->
+                </div>
+                <!-- /wp:group -->
+                <!-- wp:post-terms {"term":"cena"} /-->
+              </div>
+              <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+          <!-- /wp:post-template -->
+        </div>
+        <!-- /wp:group -->
+			  <!-- /wp:query -->
+      </div>
+      <!-- /wp:group -->
 
       <!-- wp:pattern {"slug":"blog"} /-->
       <!-- wp:template-part {"slug":"cta"} /-->
