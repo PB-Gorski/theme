@@ -78,3 +78,7 @@ figure div{
 .editor-styles-wrapper .z-\[-1\]{
     z-index: 0!important;
 }
+
+.invest_tile_link{
+    z-index: -1!important;
+}
