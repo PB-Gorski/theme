@@ -1529,10 +1529,18 @@ window.addEventListener("load", function () {
    });
 
     // setTimeout(() => {
-      YMCTools({
-        target: filterID,
-        terms: investIDFromDataAttr + ',' + filteredTermsFromCookies,
-      }).apiTermUpdate();
+
+        let pasteFilters = window.setInterval(function(){
+          if(YMCTools !== undefined){
+            YMCTools({
+              target: filterID,
+              terms: investIDFromDataAttr + ',' + filteredTermsFromCookies,
+            }).apiTermUpdate();
+            clearInterval(pasteFilters);
+          }
+        },200)
+
+
       // console.log("after YMC api update1");
       deleteAllCookies();
       document.cookie = "filteredTermsFromCookies=;";
