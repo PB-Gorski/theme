@@ -1000,11 +1000,11 @@ window.addEventListener("load", function () {
         //   runFromCookies();
         // });
 
-        setTimeout(() => {
+        // setTimeout(() => {
           runFromCookies();
           document.cookie = "filteredTermsFromCookies=; path=/";
           document.cookie = "filteredTermsFromCookies=; path=/pl";
-        }, 2000);
+        // }, 2000);
       }
 
       deleteAllCookies();

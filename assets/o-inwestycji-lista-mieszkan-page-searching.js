@@ -1156,21 +1156,21 @@ window.addEventListener("load", function () {
       );
 
       if (filteredTermsFromCookies > 0) {
-        setTimeout(() => {
+        // setTimeout(() => {
           runFromCookies();
-        }, 2000);
+        // }, 2000);
       }
 
       wp.hooks.addAction(
         "ymc_after_loaded_data_148_4",
         "smartfilter",
         function () {
-          setTimeout(() => {
+          // setTimeout(() => {
             document.cookie = "filteredTermsFromCookies=;";
             document.cookie = "filteredTermsFromCookies=; path=/";
             document.cookie = "filteredTermsFromCookies=; path=/pl";
             // console.log("test cookies");
-          }, 1000);
+          // }, 1000);
         }
       );
 
@@ -1528,7 +1528,7 @@ window.addEventListener("load", function () {
       document.cookie = "filteredTermsFromCookies=; path=/pl";
    });
 
-    setTimeout(() => {
+    // setTimeout(() => {
       YMCTools({
         target: filterID,
         terms: investIDFromDataAttr + ',' + filteredTermsFromCookies,
@@ -1539,7 +1539,7 @@ window.addEventListener("load", function () {
       document.cookie = "filteredTermsFromCookies=; path=/";
       // document.cookie = "filteredTermsFromCookies=; path=/pl/o-inwestycji-sukiennicza-19a	";
       document.cookie = "filteredTermsFromCookies=; path=/pl";
-    }, 2000);
+    // }, 2000);
     // *******************************************************
 
     btnSearch.addEventListener("click", () => {
