@@ -27,13 +27,8 @@
           <!-- wp:heading {"level":1} -->
           <h1><span data-aos="fade-right" data-aos-offset="30">Znajdź miejsce postojowe</span></h1>
           <!-- /wp:heading -->
-        </div>
-        <!-- /wp:group -->
-
-        <!-- wp:group -->
-        <div class="wp-block-group sub-title text-[24px] text-[#8a8f99]">
           <!-- wp:paragraph -->
-          <p class="max-w-[550px] text-white opacity-[0.75] hidden" data-aos="fade-right" data-aos-offset="30">Określ parametry, aby znaleźć lokal dokładnie taki, jakiego potrzebujesz.</p>
+          <p class="sub-title text-[24px] text-[#8a8f99] max-w-[550px] text-white opacity-[0.75] hidden" data-aos="fade-right" data-aos-offset="30">Określ parametry, aby znaleźć lokal dokładnie taki, jakiego potrzebujesz.</p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
