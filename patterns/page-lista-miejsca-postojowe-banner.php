@@ -30,7 +30,7 @@
         </div>
         <!-- /wp:group -->
         <!-- wp:paragraph -->
-        <p class="sub-title text-[24px] text-[#8a8f99] font-normal leading-[38px] max-w-[550px] text-white opacity-[0.75]" data-aos="fade-right" data-aos-offset="30">Posiadamy na sprzedaż miejsca postojowe w halach garażowych w budynkach już zrealizowanych. Miejsca są dostępne od zaraz.</p>
+        <p class="sub-title text-[24px] text-[#8a8f99] font-normal leading-[38px] max-w-[700px] text-white opacity-[0.75]" data-aos="fade-right" data-aos-offset="30">Posiadamy na sprzedaż miejsca postojowe w halach garażowych w budynkach już zrealizowanych. Miejsca są dostępne od zaraz.</p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
