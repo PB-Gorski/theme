@@ -117,17 +117,6 @@
 
                       print_r($terms);
 
-                      echo "<span id='term-data' ";
-                      foreach ($terms as $term) {
-                        print_r($term);
-                        // $term_city = get_field('miasto_inwestycji', $term);
-                        echo " data-investment-city-id='" . $term_city->term_id . "' data-investment-city-name='" . $term_city->name . "' ";
-                      }
-
-                      foreach ($terms as $term) {
-                        echo " data-investment-id='" . $term->term_id . "' data-investment-name='" . $term->name . "' ";
-                      }
-                      echo "></span>";
                       ?>
                     </p>
                     <!-- /wp:paragraph -->
