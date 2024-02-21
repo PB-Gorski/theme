@@ -11,7 +11,7 @@
 <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
 <div id="Banner" class="wp-block-group banner-lista-lokali relative">
   <!-- wp:group -->
-  <div class="wp-block-group w-full h-[600px] relative py-[60px]">
+  <div class="wp-block-group bg-banner w-full h-[600px] relative py-[60px]">
     <!-- wp:image -->
     <figure class="wp-block-image w-full h-full absolute top-0 left-0 z-[-1] overflow-hidden">
       <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/page-lista-mieszkan/lista-mieszkan-bg.jpeg" alt="banner-bg">
