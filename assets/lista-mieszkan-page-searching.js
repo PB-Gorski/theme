@@ -11,6 +11,9 @@
           return arr;
         }
 
+        wp.hooks.addAction('ymc_stop_loading_data', 'smartfilter', function(elem) {
+          elem.dataset.loading = 'false';
+       });
 
 window.addEventListener("load", function () {
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
