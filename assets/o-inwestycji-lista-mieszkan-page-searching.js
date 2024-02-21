@@ -1,3 +1,7 @@
+wp.hooks.addAction('ymc_stop_loading_data', 'smartfilter', function(elem) {
+  elem.dataset.loading = 'false';
+});
+
 window.addEventListener("load", function () {
   if (document.body.classList.contains('post-type-archive-lokale')) return
 

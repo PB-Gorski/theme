@@ -372,7 +372,7 @@ function pb_gorski_blocks_register_styles()
 		'strategy'  => 'defer',
 		'in_footer'  => true,
 	));
-	wp_enqueue_script('customJS4', get_theme_file_uri('/assets/o-inwestycji-lista-mieszkan-page-searching.js'), array('smart-filter-' . wp_create_nonce('smart-filter')), '2.5.4', array(
+	wp_enqueue_script('customJS4', get_theme_file_uri('/assets/o-inwestycji-lista-mieszkan-page-searching.js'), array('smart-filter-' . wp_create_nonce('smart-filter')), '2.5.5', array(
 		'strategy'  => 'defer',
 		'in_footer'  => true,
 	));
