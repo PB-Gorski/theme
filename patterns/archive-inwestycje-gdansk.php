@@ -54,9 +54,9 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
           <!-- /wp:list-item -->
           <?php
           $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 42, 20));
-          $url     = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-          print_r($url);
-          print_r($currentCategory);
+          $url = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+          print_r('url: ' . $url);
+          print_r('url2: ' . $currentCategory);
 
           foreach ($cats as $cat) {
             $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
