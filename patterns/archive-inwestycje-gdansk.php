@@ -73,18 +73,6 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
             $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
             $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
             $alias = strtr($alias, ' ', '-');
-
-            if ($currentCategory2 == $alias) {
-              print_r('underline');
-              echo '
-              <!-- wp:list-item -->
-              <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer tab-active"><a href="' . home_url() . '/inwestycje-' . $alias;
-              echo '">' . $cat->name;
-              echo '</a></li>
-              <!-- /wp:list-item -->
-              ';
-            };
-
           ?>
             <!-- wp:list-item -->
             <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory2 == $alias) ? 'tab-active' : ''; ?>"><a href="<?php echo home_url() . '/inwestycje-' . $alias; ?>"><?php echo $cat->name; ?></a></li>
