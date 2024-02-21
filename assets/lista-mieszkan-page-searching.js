@@ -444,7 +444,7 @@ window.addEventListener("load", function () {
 
     if (
       document.body.classList.contains("post-type-archive-mieszkania") ||
-      document.body.classList.contains("_post-type-archive-lokale")
+      document.body.classList.contains("post-type-archive-lokale")
     ) {
       listaMieszkanContainer.insertAdjacentHTML("beforebegin", sortingBarHTML);
     }
