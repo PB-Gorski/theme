@@ -73,10 +73,11 @@ window.addEventListener("load", function () {
     window.location.href.search("galeria-") > 5 ||
     window.location.href.search("kronika-budowy-") > 5
   ) {
+    let investNameFromDataAttr2 = document.querySelector('#term-data').dataset.investmentName;
     // console.log("inwestycja: ", globalInvestFromLink);
     document.querySelector(
       ".filter-entry"
-    ).childNodes[3].childNodes[3].childNodes[1].innerText = investNameFromDataAttr;
+    ).childNodes[3].childNodes[3].childNodes[1].innerText = investNameFromDataAttr2;
     document
       .querySelector(".filter-entry")
       .childNodes[3].classList.add("pointer-events-none");
