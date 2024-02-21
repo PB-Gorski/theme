@@ -53,7 +53,9 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
           </li>
           <!-- /wp:list-item -->
           <?php
-          $currentCategory = str_replace('/', '', substr("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]", 42, 20));
+          $currentCategory = str_replace('/', '', ("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"));
+          $scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
+
           $url = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
           print_r('url: ' . $url);
           print_r('url2: ' . $currentCategory);
