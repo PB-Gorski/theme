@@ -1,3 +1,17 @@
+        // removing items from arr
+        function removeItemAll(arr, value) {
+          let i = 0;
+          while (i < arr.length) {
+            if (arr[i] === value) {
+              arr.splice(i, 1);
+            } else {
+              ++i;
+            }
+          }
+          return arr;
+        }
+
+
 window.addEventListener("load", function () {
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   if (
@@ -37,19 +51,6 @@ window.addEventListener("load", function () {
             // option.remove("span");
           }
         });
-
-        // removing items from arr
-        function removeItemAll(arr, value) {
-          let i = 0;
-          while (i < arr.length) {
-            if (arr[i] === value) {
-              arr.splice(i, 1);
-            } else {
-              ++i;
-            }
-          }
-          return arr;
-        }
 
         if (choosenOptions.includes(choosenOptionID)) {
           removeItemAll(choosenOptions, choosenOptionID);
@@ -1163,8 +1164,10 @@ window.addEventListener("load", function () {
         });
       }
 
-      const customStaticPriceId = 677; // cena 'Zapytaj'
-      filteredTermsID.push(customStaticPriceId);
+      if(document.querySelectorAll('.item-zapytaj').length){
+        const customStaticPriceId = 677 // cena 'Zapytaj'
+        filteredPriceTermsID.push(customStaticPriceId)
+        }
 
       // console.log("new filtered id", filteredTermsID.join(","));
 
