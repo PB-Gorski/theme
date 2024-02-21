@@ -62,7 +62,8 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
 
           $currentCategory2 = str_replace(home_url() . 'inwestycje-', '', $url);
 
-          print_r($currentCategory2);
+          print_r('replace: ' . home_url() . 'inwestycje-');
+          print_r('currentcat: ' . $currentCategory2);
 
           foreach ($cats as $cat) {
             $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
