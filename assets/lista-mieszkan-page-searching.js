@@ -1164,11 +1164,10 @@ window.addEventListener("load", function () {
         });
       }
 
-      if(document.querySelectorAll('.item-zapytaj').length && filteredTermsID.length){
+      if(filteredTermsID && document.querySelectorAll('.item-zapytaj').length && filteredTermsID.length){
         const customStaticPriceId = 677 // cena 'Zapytaj'
-        filteredTermsID.push(customStaticPriceId)
-        }
-
+         filteredTermsID.push(customStaticPriceId)
+      }
       // console.log("new filtered id", filteredTermsID.join(","));
 
       priceValueArr = [];

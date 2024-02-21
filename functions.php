@@ -368,7 +368,7 @@ function pb_gorski_blocks_register_styles()
 		'strategy'  => 'defer',
 		'in_footer'  => true,
 	));
-	wp_enqueue_script('customJS3', get_theme_file_uri('/assets/lista-mieszkan-page-searching.js'),  array('smart-filter-' . wp_create_nonce('smart-filter')), '2.5.3', array(
+	wp_enqueue_script('customJS3', get_theme_file_uri('/assets/lista-mieszkan-page-searching.js'),  array('smart-filter-' . wp_create_nonce('smart-filter')), '2.5.4', array(
 		'strategy'  => 'defer',
 		'in_footer'  => true,
 	));
