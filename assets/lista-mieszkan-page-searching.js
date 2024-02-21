@@ -1164,7 +1164,7 @@ window.addEventListener("load", function () {
         });
       }
 
-      if(document.querySelectorAll('.item-zapytaj').length){
+      if(document.querySelectorAll('.item-zapytaj').length && filteredTermsID.length){
         const customStaticPriceId = 677 // cena 'Zapytaj'
         filteredPriceTermsID.push(customStaticPriceId)
         }

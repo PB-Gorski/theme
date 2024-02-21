@@ -382,7 +382,7 @@ window.addEventListener("load", function() {
         filteredPriceTermsID.push(el2.dataset.termid);
       });
 
-      if(document.querySelectorAll('.item-zapytaj').length){
+      if(document.querySelectorAll('.item-zapytaj').length && filteredPriceTermsID.length){
       const customStaticPriceId = 677 // cena 'Zapytaj'
       filteredPriceTermsID.push(customStaticPriceId)
       }
