@@ -41,6 +41,10 @@ window.addEventListener("load", function () {
       .replace("-", " ");
   };
 
+  wp.hooks.addAction('ymc_stop_loading_data', 'smartfilter', function(elem) {
+    elem.dataset.loading = 'false'
+});
+
   if (globalInvestFromLink) {
     globalInvestFromLink =
       globalInvestFromLink.charAt(0).toUpperCase() +
