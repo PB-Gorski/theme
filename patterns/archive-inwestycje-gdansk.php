@@ -57,13 +57,8 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
           $scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
 
           $url = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-          // print_r('url: ' . $url);
-          // print_r('url2: ' . $currentCategory);
-
           $currentCategory2 = str_replace('/', '', str_replace(home_url() . '/inwestycje-', '', $url));
-
-          // print_r('replace: ' . home_url() . '/inwestycje-');
-          print_r('currentcat: ' . $currentCategory2);
+          // print_r('currentcat: ' . $currentCategory2);
 
           foreach ($cats as $cat) {
             $catNoSpaces = str_replace(' ', '-', strtolower($cat->name));
@@ -78,7 +73,6 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
             $alias = str_replace(array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), $alias);
             $alias = str_replace(array(',', ':', ';', ' '), array('', '', '', '-'), $alias);
             $alias = strtr($alias, ' ', '-');
-            print_r('alias: ' . $alias);
           ?>
             <!-- wp:list-item -->
             <li class="CityTabBtn text-[#959ba6] hover:text-textGray hover:underline hover:underline-offset-4 hover:decoration-2 hover:decoration-primaryRed cursor-pointer <?php echo ($currentCategory2 == $alias) ? 'tab-active' : ''; ?>"><a href="<?php echo home_url() . '/inwestycje-' . $alias; ?>"><?php echo $cat->name; ?></a></li>
