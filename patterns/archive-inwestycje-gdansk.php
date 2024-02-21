@@ -57,12 +57,12 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
           $scheme  = (!isset($_SERVER["HTTPS"]) || $_SERVER["HTTPS"] === "off") ? "http" : "https";
 
           $url = "$scheme://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-          print_r('url: ' . $url);
-          print_r('url2: ' . $currentCategory);
+          // print_r('url: ' . $url);
+          // print_r('url2: ' . $currentCategory);
 
-          $currentCategory2 = str_replace(home_url() . '/inwestycje-', '', $url);
+          $currentCategory2 = str_replace('/', '', str_replace(home_url() . '/inwestycje-', '', $url));
 
-          print_r('replace: ' . home_url() . '/inwestycje-');
+          // print_r('replace: ' . home_url() . '/inwestycje-');
           print_r('currentcat: ' . $currentCategory2);
 
           foreach ($cats as $cat) {
