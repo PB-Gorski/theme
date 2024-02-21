@@ -61,6 +61,7 @@ $my_terms    = wp_get_object_terms($my_post_ids, 'inwestycja');
           // print_r('url2: ' . $currentCategory);
 
           $currentCategory2 = str_replace('/', '', str_replace(home_url() . '/inwestycje-', '', $url));
+          $currentCategory2 = str_replace(array('a', 'c', 'e', 'l', 'n', 'o', 's', 'z', 'z', 's'), array('ą', 'ć', 'ę', 'ł', 'ń', 'ó', 'ś', 'ź', 'ż', 'Ś'), $currentCategory2);
 
           // print_r('replace: ' . home_url() . '/inwestycje-');
           print_r('currentcat: ' . $currentCategory2);
