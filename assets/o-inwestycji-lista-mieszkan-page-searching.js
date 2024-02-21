@@ -76,7 +76,7 @@ window.addEventListener("load", function () {
     // console.log("inwestycja: ", globalInvestFromLink);
     document.querySelector(
       ".filter-entry"
-    ).childNodes[3].childNodes[3].childNodes[1].innerText = investTermName ?? globalInvestFromLink;
+    ).childNodes[3].childNodes[3].childNodes[1].innerText = investNameFromDataAttr;
     document
       .querySelector(".filter-entry")
       .childNodes[3].classList.add("pointer-events-none");
