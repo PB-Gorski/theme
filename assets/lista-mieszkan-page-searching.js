@@ -1156,7 +1156,6 @@ window.addEventListener("load", function () {
 
       if (priceMinValue == 0 && priceMaxValue == 10000000) {
         // console.log("price not changed");
-        filteredTermsID = [];
       } else {
         // console.log("price changed");
         newArrHTMLList.forEach((el2) => {
