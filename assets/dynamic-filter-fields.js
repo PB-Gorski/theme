@@ -38,7 +38,7 @@
           if (choosenFilterFieldsArr.includes(item.dataset.termid)) {
             removeItemFromArr(choosenFilterFieldsArr, item.dataset.termid);
           } else {
-            choosenFilterFieldsArr = ((item.dataset.termid));
+            choosenFilterFieldsArr.push((item.dataset.termid));
           };
           
         };
