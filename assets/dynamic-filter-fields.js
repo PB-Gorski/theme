@@ -30,7 +30,7 @@
     });
     console.log('SwPiotraDependenciesArr: ', SwPiotraDependenciesArr);
 
-    function getChoosenIds(){
+    function getChoosenIds(item){
       let activeIds = window.setInterval(function(){
         if (item.classList.contains('active')){
 
@@ -47,8 +47,8 @@
 
     passiveOptionsArr.forEach(item => {
       item.addEventListener('click', () => {
-        getChoosenIds();
-        
+        getChoosenIds(item);
+
         console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
       });
     });
