@@ -21,11 +21,14 @@
     passiveOptionsArr.forEach(item => {
       item.addEventListener('click', () => {
         console.log('item: ', item);
-        if (item.classList.contains('active')){
-          console.log('active added');
-          choosenFilterFieldsArr.push(item);
-          console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
-        };
+        let activeIds = window.setInterval(function(){
+          if (item.classList.contains('active')){
+            console.log('active added');
+            choosenFilterFieldsArr.push(item);
+            console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
+          };
+        },200)
+
       });
     });
     
