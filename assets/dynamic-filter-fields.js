@@ -24,6 +24,7 @@
         if (item.classList.contains('active')){
           console.log('active added');
           choosenFilterFieldsArr.push(item);
+          console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
         };
       });
     });
