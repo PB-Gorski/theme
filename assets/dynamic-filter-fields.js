@@ -42,6 +42,7 @@
           };
           
         };
+        console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
         clearInterval(activeIds);
       },200)
     };
@@ -50,7 +51,7 @@
       item.addEventListener('click', () => {
         getChoosenIds(item);
 
-        console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
+        
       });
     });
   };
