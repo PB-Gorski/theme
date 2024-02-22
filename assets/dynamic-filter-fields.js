@@ -1,6 +1,20 @@
 // window.addEventListener("load", function () {
   if (document.querySelector('.ymc-smart-filter-container')){
     console.log('dynamic-filter-fields.js');
+    // removing items from arr
+    function removeItemFromArr(arr, value) {
+      let i = 0;
+      while (i < arr.length) {
+        if (arr[i] === value) {
+          arr.splice(i, 1);
+        } else {
+          ++i;
+        }
+      }
+      return arr;
+    }
+    // ---------
+
     let inwestycjaOptionPassiveArr = document.querySelectorAll('.menu-link');
     let swPiotrOption;
 
@@ -22,13 +36,21 @@
       item.addEventListener('click', () => {
         let activeIds = window.setInterval(function(){
           if (item.classList.contains('active')){
-            choosenFilterFieldsArr.push(item.dataset.termid);
-            console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
+
+            if (choosenFilterFieldsArr.includes(item.dataset.termid)) {
+              removeItemFromArr(choosenFilterFieldsArr, item.dataset.termid);
+            } else {
+              choosenFilterFieldsArr.push((item.dataset.termid));
+            };
+            
           };
           clearInterval(activeIds);
         },200)
-
+        
+        console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
       });
     });
+
+    
   };
 // });
