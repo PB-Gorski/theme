@@ -27,6 +27,7 @@
             choosenFilterFieldsArr.push(item);
             console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
           };
+          clearInterval(activeIds);
         },200)
 
       });
