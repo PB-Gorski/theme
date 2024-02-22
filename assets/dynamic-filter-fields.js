@@ -5,7 +5,7 @@
     let swPiotrOption;
 
     inwestycjaOptionPassiveArr.forEach(item =>{
-      if (item.dataset.name = 'Św. Piotra'){
+      if (item.dataset.name == 'Św. Piotra'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"40"},{"termId":"640"},{"termId":"641"}]}';
         swPiotrOption = item;
       };
