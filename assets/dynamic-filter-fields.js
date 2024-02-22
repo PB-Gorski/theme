@@ -20,12 +20,10 @@
 
     passiveOptionsArr.forEach(item => {
       item.addEventListener('click', () => {
-        // console.log('item: ', item);
         let activeIds = window.setInterval(function(){
           if (item.classList.contains('active')){
-            console.log('active added');
-            choosenFilterFieldsArr.push(item);
-            console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
+            choosenFilterFieldsArr.push(item.dataset.termid);
+            // console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
           };
           clearInterval(activeIds);
         },200)
