@@ -20,7 +20,7 @@
     let swPiotrOption;
     let SwPiotraDependenciesArr;
     let passiveOptionsArr = document.querySelectorAll(".menu-link");
-    let choosenFilterFieldsArr= [];
+    let choosenFilterFieldsArr;
 
     inwestycjaOptionPassiveArr.forEach(item =>{
       if (item.dataset.name == 'Św. Piotra'){
@@ -38,7 +38,7 @@
           if (choosenFilterFieldsArr.includes(item.dataset.termid)) {
             removeItemFromArr(choosenFilterFieldsArr, item.dataset.termid);
           } else {
-            choosenFilterFieldsArr.push((item.dataset.termid));
+            choosenFilterFieldsArr = ((item.dataset.termid));
           };
           
         };
@@ -50,8 +50,6 @@
     passiveOptionsArr.forEach(item => {
       item.addEventListener('click', () => {
         getChoosenIds(item);
-
-        
       });
     });
   };
