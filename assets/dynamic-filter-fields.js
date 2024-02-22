@@ -23,14 +23,12 @@
         let activeIds = window.setInterval(function(){
           if (item.classList.contains('active')){
             choosenFilterFieldsArr.push(item.dataset.termid);
-            // console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
+            console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
           };
           clearInterval(activeIds);
         },200)
 
       });
     });
-    
-    console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
   };
 // });
