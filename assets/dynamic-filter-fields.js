@@ -18,7 +18,7 @@
 
     let inwestycjaOptionPassiveArr = document.querySelectorAll('.menu-link');
     let swPiotrOption;
-    let SwPiotraDependenciesArr = JSON.parse(swPiotrOption.dataset.dependencies).dependencies;
+    let SwPiotraDependenciesArr;
     let passiveOptionsArr = document.querySelectorAll(".menu-link");
     let choosenFilterFieldsArr= [];
 
@@ -28,6 +28,7 @@
         swPiotrOption = item;
       };
     });
+    SwPiotraDependenciesArr = JSON.parse(swPiotrOption.dataset.dependencies).dependencies;
     console.log('SwPiotraDependenciesArr: ', SwPiotraDependenciesArr);
 
     function getChoosenIds(item){
