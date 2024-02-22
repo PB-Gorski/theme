@@ -20,7 +20,7 @@
     let swPiotrOption;
     let SwPiotraDependenciesArr;
     let passiveOptionsArr = document.querySelectorAll(".menu-link");
-    let choosenFilterFieldsArr;
+    let choosenFilterFieldsArr = [];
 
     inwestycjaOptionPassiveArr.forEach(item =>{
       if (item.dataset.name == 'Św. Piotra'){
