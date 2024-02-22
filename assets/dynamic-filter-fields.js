@@ -20,7 +20,7 @@
 
     passiveOptionsArr.forEach(item => {
       item.addEventListener('click', () => {
-        console.log('item: ', item);
+        // console.log('item: ', item);
         let activeIds = window.setInterval(function(){
           if (item.classList.contains('active')){
             console.log('active added');
