@@ -27,13 +27,13 @@
       if (item.dataset.name == 'Św. Piotra'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"40"},{"termId":"640"},{"termId":"641"}]}';
         swPiotrOption = item;
-      }else{
+      }else if(item.dataset.name != 'Św. Piotra'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"1"},{"termId":"2"},{"termId":"3"}]}';
       };
 
       if (item.dataset.name == 'Zatorze'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"40"},{"termId":"640"},{"termId":"641"}]}';
-        swPiotrOption = item;
+        // swPiotrOption = item;
       };
     });
 
@@ -66,6 +66,8 @@
           for (let i = 0 ; i < inwestycjeDependenciesArr.length ; i++){
             for (let j = 0 ;  j < inwestycjeDependenciesArr[i].length ; j++){
               if (+inwestycjeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
+                console.log(+inwestycjeDependenciesArr[i][j].termId);
+                console.log(+choosenFilterFieldsArr);
                 console.log('match: ', item);
               };
             };
