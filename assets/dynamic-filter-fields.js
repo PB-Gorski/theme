@@ -85,7 +85,7 @@
     passiveOptionsArr.forEach(item => {
       item.addEventListener('click', () => {
         getChoosenCityId(item);
-        checkInwestycjeForDependenciesID();
+        // checkInwestycjeForDependenciesID();
 
       });
     });
