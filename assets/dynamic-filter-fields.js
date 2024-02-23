@@ -31,25 +31,27 @@
     SwPiotraDependenciesArr = JSON.parse(swPiotrOption.dataset.dependencies).dependencies;
     console.log('SwPiotraDependenciesArr: ', SwPiotraDependenciesArr);
 
-    function getChoosenIds(item){
+    function getChoosenCityId(item){
       let activeIds = window.setInterval(function(){
+        choosenFilterFieldsArr = [];
         if (item.classList.contains('active')){
 
-          if (choosenFilterFieldsArr.includes(item.dataset.termid)) {
-            removeItemFromArr(choosenFilterFieldsArr, item.dataset.termid);
-          } else {
-            choosenFilterFieldsArr.push((item.dataset.termid));
-          };
+          // if (choosenFilterFieldsArr.includes(item.dataset.termid)) {
+            // removeItemFromArr(choosenFilterFieldsArr, item.dataset.termid);
+          // } else {
+            choosenFilterFieldsArr = ((item.dataset.termid));
+          // };
           
         };
-        console.log('choosenFilterFieldsArr: ', choosenFilterFieldsArr);
+        console.log('choosenFilterFieldsArr: ', +choosenFilterFieldsArr);
         clearInterval(activeIds);
       },200)
     };
 
     passiveOptionsArr.forEach(item => {
       item.addEventListener('click', () => {
-        getChoosenIds(item);
+        getChoosenCityId(item);
+
       });
     });
   };
