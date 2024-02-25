@@ -88,6 +88,13 @@
           item.parentNode.classList.add('bg-yellow-500');
         };
       });
+      inwestycjePassiveArr.forEach(item => {
+        if(!item.parentNode.classList.contains('dynamic-active')){
+          console.log('inwestycjePassiveArr removing: ', item);
+          item.parentNode.classList.remove('bg-green-500');
+          item.parentNode.classList.add('bg-yellow-500');
+        };
+      });
     };
 
     passiveOptionsArr.forEach(item => {
