@@ -23,7 +23,7 @@
     let passiveOptionsArr = document.querySelectorAll(".menu-link");
     let choosenFilterFieldsArr = [];
 
-    // dodawanie zaleznosci dla testów
+    // adding dependencies for dynamic tests
     allOptionsPassiveArr.forEach(item =>{
       if (item.dataset.name == 'Św. Piotra' || item.dataset.name == 'Zatorze' || item.dataset.name == 'test'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"40"},{"termId":"640"},{"termId":"641"}]}';
@@ -37,75 +37,43 @@
       };
     });
 
+    // getting dependencies from html
     SwPiotraDependenciesArr = JSON.parse(swPiotrOption.dataset.dependencies).dependencies;
-    console.log('SwPiotraDependenciesArr: ', SwPiotraDependenciesArr);
 
     function getChoosenCityId(item){
-      // let activeIds = window.setInterval(function(){
-        // console.log('start: getChoosenCityId');
-        
-        if (item.classList.contains('active')){
-          choosenFilterFieldsArr = [];
-          choosenFilterFieldsArr = ((item.dataset.termid));
-        };
-        // console.log('choosenFilterFieldsArr: ', +choosenFilterFieldsArr);
-        // clearInterval(activeIds);
-      // },100);
-      // console.log('end: getChoosenCityId');
+      // city single choice
+      if (item.classList.contains('active')){
+        choosenFilterFieldsArr = [];
+        choosenFilterFieldsArr = ((item.dataset.termid));
+      };
       return choosenFilterFieldsArr;
     };
 
     function checkInwestycjeForDependenciesID(){
-      console.log('start: checkInwestycjeForDependenciesID');
       let inwestycjeDependenciesArr = [];
-      let newArr = [];
+
       inwestycjePassiveArr.forEach(item => {
-        console.log('item: ', item);
         if (item.childNodes[1] != undefined){
+          // all dependencies array
           inwestycjeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
-          item?.classList.remove('dynamic-active');
-          item?.classList.remove('bg-yellow-500');
-          item?.classList.remove('bg-green-500');
+
+          // cleaning marked items in filter list
+          item?.classList.remove('dynamic-active', 'bg-green-500');
+          // item?.classList.remove('bg-green-500');
         };
       });
 
-
+      // searching and marking same dependencies
       for (let i = 0 ; i < inwestycjeDependenciesArr.length ; i++){
         for (let j = 0 ;  j < inwestycjeDependenciesArr[i].length ; j++){
           if (+inwestycjeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
-            console.log(+inwestycjeDependenciesArr[i][j].termId);
-            // console.log('matched item:: ', inwestycjePassiveArr[i+3]);
-
-
             inwestycjePassiveArr[i+3].classList.add('bg-green-500', 'dynamic-active');
           }else if(+inwestycjeDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
             if(!inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
-
-              inwestycjePassiveArr[i+3].classList.remove('dynamic-active');
-              inwestycjePassiveArr[i+3].classList.remove('bg-green-500');
-              inwestycjePassiveArr[i+3].classList.remove('bg-yellow-500');
-              console.log('!= termid: ', inwestycjePassiveArr[i+3]);
-              // inwestycjePassiveArr[i+3].style.background = 'red';
-              // inwestycjePassiveArr[i+3].classList.add('bg-red-500');
-            }
+            };
           };
         };
       };
-
-      passiveOptionsArr.forEach(item => {
-        if(!item.parentNode.classList.contains('dynamic-active')){
-          // console.log('item without dynamic-active: ', item.parentNode);
-          item.parentNode.classList.remove('bg-green-500');
-          // item.parentNode.classList.add('bg-yellow-500');
-        };
-      });
-      inwestycjePassiveArr.forEach(item => {
-        if(!item.parentNode.classList.contains('dynamic-active')){
-          // console.log('inwestycjePassiveArr removing: ', item.parentNode);
-          item.parentNode.classList.remove('bg-green-500');
-          // item.parentNode.classList.add('bg-yellow-500');
-        };
-      });
     };
 
     passiveOptionsArr.forEach(item => {
