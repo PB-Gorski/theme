@@ -35,6 +35,10 @@
         item.dataset.dependencies = '{"dependencies":[{"termId":"40"},{"termId":"640"},{"termId":"641"}]}';
         // swPiotrOption = item;
       };
+      if (item.dataset.name == 'test'){
+        item.dataset.dependencies = '{"dependencies":[{"termId":"40"},{"termId":"640"},{"termId":"641"}]}';
+        // swPiotrOption = item;
+      };
     });
 
     SwPiotraDependenciesArr = JSON.parse(swPiotrOption.dataset.dependencies).dependencies;
@@ -71,7 +75,6 @@
             console.log(+inwestycjeDependenciesArr[i][j].termId);
             console.log('matched item:: ', inwestycjePassiveArr[i+3]);
             inwestycjePassiveArr[i+3].classList.add('bg-green-500', 'dynamic-active');
-            // inwestycjePassiveArr[i+3].style.background = 'green';
           };
         };
       };
