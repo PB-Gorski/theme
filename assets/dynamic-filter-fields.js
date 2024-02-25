@@ -76,8 +76,6 @@
             console.log('matched item:: ', inwestycjePassiveArr[i+3]);
             inwestycjePassiveArr[i+3].classList.remove('bg-red-500');
             inwestycjePassiveArr[i+3].classList.add('bg-green-500', 'dynamic-active','hover:bg-green-600');
-          }else{
-            inwestycjePassiveArr[i+3].classList.add('bg-red-500','hover:bg-red-600');
           };
         };
       };
