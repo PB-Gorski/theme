@@ -60,25 +60,28 @@
       let inwestycjeDependenciesArr = [];
       let newArr = [];
       inwestycjePassiveArr.forEach(item => {
+        console.log('item: ', item.childNodes[1]);
         if (item.childNodes[1] != undefined){
           inwestycjeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
+          item.childNodes[1].classList.remove('dynamic-active', 'bg-yellow-500', 'bg-green-500');
+          // item.childNodes[1].classList.remove('bg-yellow-500');
+          // item.childNodes[1].classList.remove('bg-green-500');
         };
       });
+
 
       for (let i = 0 ; i < inwestycjeDependenciesArr.length ; i++){
         for (let j = 0 ;  j < inwestycjeDependenciesArr[i].length ; j++){
           if (+inwestycjeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
             console.log(+inwestycjeDependenciesArr[i][j].termId);
-            console.log('matched item:: ', inwestycjePassiveArr[i+3]);
-            inwestycjePassiveArr[i+3].classList.remove('dynamic-active');
-            inwestycjePassiveArr[i+3].classList.remove('bg-yellow-500');
-            inwestycjePassiveArr[i+3].classList.remove('bg-green-500');
-            
-            inwestycjePassiveArr[i+3].classList.add('bg-green-500', 'dynamic-active','hover:bg-green-600');
+            // console.log('matched item:: ', inwestycjePassiveArr[i+3]);
+
+
+            inwestycjePassiveArr[i+3].classList.add('bg-green-500', 'dynamic-active');
           }else if(+inwestycjeDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
             if(!inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
 
-              // inwestycjePassiveArr[i+3].classList.remove('dynamic-active');
+              inwestycjePassiveArr[i+3].classList.remove('dynamic-active');
               inwestycjePassiveArr[i+3].classList.remove('bg-green-500');
               inwestycjePassiveArr[i+3].classList.remove('bg-yellow-500');
               console.log('!= termid: ', inwestycjePassiveArr[i+3]);
@@ -91,14 +94,14 @@
 
       passiveOptionsArr.forEach(item => {
         if(!item.parentNode.classList.contains('dynamic-active')){
-          // console.log('item without dynamic-active: ', item);
+          // console.log('item without dynamic-active: ', item.parentNode);
           item.parentNode.classList.remove('bg-green-500');
-          item.parentNode.classList.add('bg-yellow-500');
+          // item.parentNode.classList.add('bg-yellow-500');
         };
       });
       inwestycjePassiveArr.forEach(item => {
         if(!item.parentNode.classList.contains('dynamic-active')){
-          // console.log('inwestycjePassiveArr removing: ', item);
+          // console.log('inwestycjePassiveArr removing: ', item.parentNode);
           item.parentNode.classList.remove('bg-green-500');
           // item.parentNode.classList.add('bg-yellow-500');
         };
