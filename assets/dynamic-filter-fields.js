@@ -82,8 +82,8 @@
       passiveOptionsArr.forEach(item => {
         if(!item.parentNode.classList.contains('dynamic-active')){
           console.log('item without dynamic-active: ', item);
-          item.classList.remove('bg-green-500');
-          item.classList.add('bg-yellow-500');
+          item.parentNode.classList.remove('bg-green-500');
+          item.parentNode.classList.add('bg-yellow-500');
         };
       });
     };
