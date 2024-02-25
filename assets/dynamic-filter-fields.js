@@ -78,7 +78,7 @@
             inwestycjePassiveArr[i+3].classList.add('bg-green-500', 'dynamic-active','hover:bg-green-600');
             // inwestycjePassiveArr[i+3].style.background = 'green';
           }else if(+inwestycjeDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
-            inwestycjePassiveArr[i+3].classList.remove('bg-green-500', 'dynamic-active','hover:bg-green-600');
+            // inwestycjePassiveArr[i+3].classList.remove('bg-green-500', 'dynamic-active','hover:bg-green-600');
             // inwestycjePassiveArr[i+3].style.background = 'red';
             // inwestycjePassiveArr[i+3].classList.add('bg-red-500');
           };
