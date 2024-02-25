@@ -60,12 +60,12 @@
       let inwestycjeDependenciesArr = [];
       let newArr = [];
       inwestycjePassiveArr.forEach(item => {
-        // console.log('item: ', item.childNodes[1]);
+        console.log('item: ', item);
         if (item.childNodes[1] != undefined){
           inwestycjeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
-          item.childNodes[1].classList.remove('dynamic-active');
-          item.childNodes[1].classList.remove('bg-yellow-500');
-          item.childNodes[1].classList.remove('bg-green-500');
+          item?.classList.remove('dynamic-active');
+          item?.classList.remove('bg-yellow-500');
+          item?.classList.remove('bg-green-500');
         };
       });
 
