@@ -2,7 +2,7 @@
   if (document.querySelector('.ymc-smart-filter-container')){
     console.clear();
     console.log('dynamic-filter-fields.js');
-    
+
     // removing items from arr
     function removeItemFromArr(arr, value) {
       let i = 0;
@@ -24,6 +24,14 @@
     let passiveOptionsArr = document.querySelectorAll(".menu-link");
     let choosenFilterFieldsArr = [];
 
+    // ------------------------------------------------------------
+    /*
+      na testy takie relacje między miastem a inwestycją:
+      gdynia(termid: 40) - inwestycje: sw piotr, zatorze, test
+      gdansk(termid: 28) - inwestycje: osiedle srebrniki, sukiennicza 19
+      reszta inwestycji ma dodane termid-1,2,3 zeby tylko były wypełnione
+    */
+
     // adding dependencies into html for dynamic tests
     allOptionsPassiveArr.forEach(item =>{
       if (item.dataset.name == 'Św. Piotra' || item.dataset.name == 'Zatorze' || item.dataset.name == 'test'){
@@ -37,6 +45,7 @@
         item.dataset.dependencies = '{"dependencies":[{"termId":"28"},{"termId":"640"},{"termId":"641"}]}';
       };
     });
+    // ------------------------------------------------------------
 
     // getting dependencies from html
     SwPiotraDependenciesArr = JSON.parse(swPiotrOption.dataset.dependencies).dependencies;
@@ -81,12 +90,13 @@
 
     // party begin
     passiveOptionsArr.forEach(item => {
+      // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
       item.addEventListener('click', () => {
-        setTimeout(() => {
+        let runDynamicFilters = window.setInterval(function(){
           choosenFilterFieldsArr = +getChoosenCityId(item);
           checkInwestycjeForDependenciesID();
-        }, 200);
-
+            clearInterval(runDynamicFilters);
+          },300)
       });
     });
   };
