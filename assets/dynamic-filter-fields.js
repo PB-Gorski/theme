@@ -77,6 +77,7 @@
             if(!inwestycjePassiveArr[i+3].classList.contains('dynamic-active'))
             // inwestycjePassiveArr[i+3].classList.remove('dynamic-active');
             inwestycjePassiveArr[i+3].classList.remove('bg-green-500');
+            // inwestycjePassiveArr[i+3].classList.add('bg-yellow-500');
             console.log('!= termid: ', inwestycjePassiveArr[i+3]);
             // inwestycjePassiveArr[i+3].style.background = 'red';
             // inwestycjePassiveArr[i+3].classList.add('bg-red-500');
