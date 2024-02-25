@@ -70,7 +70,8 @@
           if (+inwestycjeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
             console.log(+inwestycjeDependenciesArr[i][j].termId);
             console.log('matched item:: ', inwestycjePassiveArr[i+3]);
-            inwestycjePassiveArr[i+3].classList.add('bg-green-500', 'dynamic-active','hover:bg-green-600');
+            inwestycjePassiveArr[i+3].classList.remove('bg-yellow-500');
+            inwestycjePassiveArr[i+3].classList.add('!bg-green-500', 'dynamic-active','hover:bg-green-600');
           }else if(+inwestycjeDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
             // inwestycjePassiveArr[i+3].classList.remove('dynamic-active');
             // inwestycjePassiveArr[i+3].style.background = 'red';
@@ -82,7 +83,7 @@
       passiveOptionsArr.forEach(item => {
         if(!item.parentNode.classList.contains('dynamic-active')){
           // console.log('item without dynamic-active: ', item);
-          item.parentNode.classList.remove('bg-green-500');
+          item.parentNode.classList.remove('!bg-green-500');
           item.parentNode.classList.add('bg-yellow-500');
         };
       });
