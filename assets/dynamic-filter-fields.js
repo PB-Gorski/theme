@@ -64,12 +64,12 @@
           inwestycjeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
 
           for (let i = 0 ; i < inwestycjeDependenciesArr.length ; i++){
-            console.log('passiveOption',item);
+            // console.log('passiveOption',item);
             for (let j = 0 ;  j < inwestycjeDependenciesArr[i].length ; j++){
               if (+inwestycjeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
                 console.log(+inwestycjeDependenciesArr[i][j].termId);
-                console.log(+choosenFilterFieldsArr);
-                console.log('match: ', item);
+                // console.log(+choosenFilterFieldsArr);
+                // console.log('match: ', item);
               };
             };
           };
