@@ -1,7 +1,8 @@
 // window.addEventListener("load", function () {
   if (document.querySelector('.ymc-smart-filter-container')){
-    console.log('dynamic-filter-fields.js');
     console.clear();
+    console.log('dynamic-filter-fields.js');
+    
     // removing items from arr
     function removeItemFromArr(arr, value) {
       let i = 0;
@@ -23,7 +24,7 @@
     let passiveOptionsArr = document.querySelectorAll(".menu-link");
     let choosenFilterFieldsArr = [];
 
-    // adding dependencies for dynamic tests
+    // adding dependencies into html for dynamic tests
     allOptionsPassiveArr.forEach(item =>{
       if (item.dataset.name == 'Św. Piotra' || item.dataset.name == 'Zatorze' || item.dataset.name == 'test'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"40"},{"termId":"640"},{"termId":"641"}]}';
@@ -40,6 +41,7 @@
     // getting dependencies from html
     SwPiotraDependenciesArr = JSON.parse(swPiotrOption.dataset.dependencies).dependencies;
 
+    // getting id of choosen city
     function getChoosenCityId(item){
       // city single choice
       if (item.classList.contains('active')){
@@ -49,6 +51,7 @@
       return choosenFilterFieldsArr;
     };
 
+    // searching for id's dependencies and marking items with connected id
     function checkInwestycjeForDependenciesID(){
       let inwestycjeDependenciesArr = [];
 
@@ -63,7 +66,7 @@
         };
       });
 
-      // searching and marking same dependencies
+      // searching and marking items with the same dependencies
       for (let i = 0 ; i < inwestycjeDependenciesArr.length ; i++){
         for (let j = 0 ;  j < inwestycjeDependenciesArr[i].length ; j++){
           if (+inwestycjeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
@@ -76,11 +79,11 @@
       };
     };
 
+    // party begin
     passiveOptionsArr.forEach(item => {
       item.addEventListener('click', () => {
         setTimeout(() => {
           choosenFilterFieldsArr = +getChoosenCityId(item);
-
           checkInwestycjeForDependenciesID();
         }, 200);
 
