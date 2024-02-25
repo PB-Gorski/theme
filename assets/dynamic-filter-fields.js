@@ -71,10 +71,11 @@
 
       for (let i = 0 ; i < inwestycjeDependenciesArr.length ; i++){
         for (let j = 0 ;  j < inwestycjeDependenciesArr[i].length ; j++){
-          inwestycjePassiveArr[i+3].classList.add('bg-red-500', 'dynamic-active','hover:bg-red-600');
+          inwestycjePassiveArr[i+3].classList.add('bg-red-500','hover:bg-red-600');
           if (+inwestycjeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
             console.log(+inwestycjeDependenciesArr[i][j].termId);
             console.log('matched item:: ', inwestycjePassiveArr[i+3]);
+            inwestycjePassiveArr[i+3].classList.remove('bg-red-500','hover:bg-red-600');
             inwestycjePassiveArr[i+3].classList.add('bg-green-500', 'dynamic-active','hover:bg-green-600');
           };
         };
