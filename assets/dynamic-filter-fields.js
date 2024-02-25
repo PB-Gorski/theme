@@ -1,7 +1,7 @@
 // window.addEventListener("load", function () {
   if (document.querySelector('.ymc-smart-filter-container')){
     console.log('dynamic-filter-fields.js');
-    clear();
+    console.clear();
     // removing items from arr
     function removeItemFromArr(arr, value) {
       let i = 0;
