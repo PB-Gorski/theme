@@ -72,7 +72,7 @@
             console.log('matched item:: ', inwestycjePassiveArr[i+3]);
             inwestycjePassiveArr[i+3].classList.add('bg-green-500', 'dynamic-active','hover:bg-green-600');
           }else if(+inwestycjeDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
-            inwestycjePassiveArr[i+3].classList.remove('dynamic-active');
+            // inwestycjePassiveArr[i+3].classList.remove('dynamic-active');
             // inwestycjePassiveArr[i+3].style.background = 'red';
             // inwestycjePassiveArr[i+3].classList.add('bg-red-500');
           };
