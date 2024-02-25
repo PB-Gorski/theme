@@ -78,6 +78,14 @@
           };
         };
       };
+
+      passiveOptionsArr.forEach(item => {
+        if(!item.classList.contains('dynamic-active')){
+          console.log('item without dynamic-active: ', item);
+          item.classList.remove('bg-green-500');
+          item.classList.add('bg-yellow-500');
+        };
+      });
     };
 
     passiveOptionsArr.forEach(item => {
