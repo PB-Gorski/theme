@@ -71,7 +71,6 @@
 
           // cleaning marked items in filter list
           item?.classList.remove('dynamic-active', 'bg-green-500');
-          // item?.classList.remove('bg-green-500');
         };
       });
 
@@ -86,6 +85,7 @@
           };
         };
       };
+
     };
 
     // party begin
@@ -95,8 +95,18 @@
         let runDynamicFilters = window.setInterval(function(){
           choosenFilterFieldsArr = +getChoosenCityId(item);
           checkInwestycjeForDependenciesID();
-            clearInterval(runDynamicFilters);
-          },300)
+
+ 
+          // cleaning marked items in filter list when no option selected
+          inwestycjePassiveArr.forEach(item => {
+          if (item.childNodes[1] != undefined){
+            item?.childNodes[1].classList.remove('dynamic-active', 'bg-green-500');
+          };
+          });
+
+          clearInterval(runDynamicFilters);
+          },300);
+
       });
     });
   };
