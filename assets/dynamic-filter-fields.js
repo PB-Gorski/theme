@@ -72,7 +72,7 @@
             console.log('matched item:: ', inwestycjePassiveArr[i+3]);
             inwestycjePassiveArr[i+3].classList.add('bg-green-500', 'dynamic-active','hover:bg-green-600');
           }else if(+inwestycjeDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
-            // inwestycjePassiveArr[i+3].classList.remove('bg-green-500', 'dynamic-active','hover:bg-green-600');
+            inwestycjePassiveArr[i+3].classList.remove('dynamic-active');
             // inwestycjePassiveArr[i+3].style.background = 'red';
             // inwestycjePassiveArr[i+3].classList.add('bg-red-500');
           };
@@ -81,7 +81,7 @@
 
       passiveOptionsArr.forEach(item => {
         if(!item.parentNode.classList.contains('dynamic-active')){
-          console.log('item without dynamic-active: ', item);
+          // console.log('item without dynamic-active: ', item);
           item.parentNode.classList.remove('bg-green-500');
           item.parentNode.classList.add('bg-yellow-500');
         };
