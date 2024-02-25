@@ -74,7 +74,7 @@
           if (+inwestycjeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
             console.log(+inwestycjeDependenciesArr[i][j].termId);
             console.log('matched item:: ', inwestycjePassiveArr[i+3]);
-            inwestycjePassiveArr[i+3].classList.add('bg-green-500', 'dynamic-active');
+            inwestycjePassiveArr[i+3].classList.add('bg-green-500', 'dynamic-active','hover:bg-green-600');
           };
         };
       };
