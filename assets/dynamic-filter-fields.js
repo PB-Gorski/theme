@@ -60,11 +60,9 @@
 
         // for now every option cleaning dynamic filtering
         passiveOptionsArr.forEach(item2 => {
-          setTimeout(() => {
-            if(!item2?.parentNode.classList.contains('dynamic-active')){
-              item2?.parentNode.classList.remove('hidden');
-            }
-          }, 400);
+          if(!item2?.parentNode.classList.contains('dynamic-active')){
+            // item2?.parentNode.classList.remove('hidden');
+          }
         });
       };
       return choosenFilterFieldsArr;
