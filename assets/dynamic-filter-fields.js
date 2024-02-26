@@ -42,7 +42,7 @@
         item.dataset.dependencies = '{"dependencies":[{"termId":"40"},{"termId":"640"},{"termId":"641"}]}';
         swPiotrOption = item;
       }
-      if (item.dataset.name == 'Osiedle Srebrniki' || item.dataset.name == 'Sukiennicza 19A' || item.dataset.name == 'Toruńska 16' || item.dataset.name == 'Wieżycka Folwark'){
+      if (item.dataset.name == 'Osiedle Srebrniki'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"28"},{"termId":"640"},{"termId":"641"}]}';
       };
       if (item.dataset.name == 'Sukiennicza 19A'){
