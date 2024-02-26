@@ -65,9 +65,7 @@
         // for now every option cleaning dynamic filtering
         passiveOptionsArr.forEach(item2 => {
           setTimeout(() => {
-            if(!dynamicFilterActive){
-              // item2?.parentNode.classList.remove('dynamic-active', 'hidden');
-            }
+            item2?.parentNode.classList.remove('dynamic-active', 'hidden');
             // console.log(item2);
           }, 400);
         });
@@ -147,7 +145,7 @@
         if(choosenFilterFieldsArr.length == 0){
           inwestycjePassiveArr.forEach(item => {
             if (item.childNodes[1] != undefined){
-              // item?.classList.remove('dynamic-active');
+              item?.classList.remove('dynamic-active');
               setTimeout(() => {
                 item?.classList.add('test1');
               }, 300);
