@@ -379,7 +379,7 @@ window.addEventListener("load", function () {
         let removePokojeColumnAfterJsInjected = window.setInterval(function(){
           document.querySelector('.js-sort-pokoje').classList.add('opacity-0')
           clearInterval(removePokojeColumnAfterJsInjected);
-          },300);
+          },2000);
       });
     };
 
