@@ -74,9 +74,8 @@
 
     // searching for id's dependencies and marking items with connected id
     function checkInwestycjeForDependenciesID(){
-
-
       if(dynamicFilterActive){
+        console.log('active searching inside function');
         let inwestycjeDependenciesArr = [];
 
  
@@ -130,10 +129,12 @@
             if ( typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
               console.log('dynamic filter is active');
               dynamicFilterActive = true;
-            }else{
-              console.log('dynamic filter is not active');
+            }else if(!item.childNodes[1]?.classList.contains('active')){
+              setTimeout(() => {
+                console.log('dynamic filter is not active');
+                dynamicFilterActive = false;
+              }, 300);
 
-              dynamicFilterActive = false;
             };
           });
 
