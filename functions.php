@@ -360,7 +360,7 @@ function pb_gorski_blocks_register_styles()
 	wp_enqueue_style('google-fonts-roboto', '//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap', '1.0');
 	wp_enqueue_style('google-fonts-Montserrat', '//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap', '1.0');
 	wp_enqueue_style('aos-styles', '//unpkg.com/aos@2.3.1/dist/aos.css', '1.0');
-	wp_enqueue_script('customJS', get_theme_file_uri('/assets/custom-js.js'), array(), '2.5.3', array(
+	wp_enqueue_script('customJS', get_theme_file_uri('/assets/custom-js.js'), array(), '2.5.4', array(
 		'strategy'  => 'defer',
 		'in_footer'  => true,
 	));
