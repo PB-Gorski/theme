@@ -379,9 +379,25 @@ window.addEventListener("load", function () {
     };
     
     clearInterval(removePokojeColumnAfterJsInjected);
-    },2000);
+    },300);
 
+    // dynamic ymc filter id
+    // if(document.querySelector(".short-code-ymc-filter")){
+    //   currentYmcFilterID = document
+    //     .querySelector(".short-code-ymc-filter")
+    //     .childNodes[1].getAttribute("id")
+    //     .replace("ymc-smart-filter-container-", "");
+    //   };
 
+    // wp.hooks.addAction(
+    //   "ymc_after_loaded_data_2323_" + currentYmcFilterID,
+    //   "smartfilter",
+    //   function (class_name, response) {
+    //   if (document.body.classList.contains('post-type-archive-lokale')){
+    //     document.querySelector('.js-sort-pokoje').classList.add('opacity-0')
+    //   };
+    //   }
+    // );
 
     
 
