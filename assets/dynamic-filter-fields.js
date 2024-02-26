@@ -88,7 +88,6 @@
     // searching for id's dependencies and marking items with connected id
     function checkInwestycjeForDependenciesID(){
       if(dynamicFilterActive){
-        console.log('active searching inside function');
         let inwestycjeDependenciesArr = [];
 
         inwestycjePassiveArr.forEach(item => {
@@ -116,7 +115,6 @@
         };
 
         // cleaning marked items in filter list when no option selected
-        console.log('length: ', choosenFilterFieldsArr.length);
         if(choosenFilterFieldsArr.length == 0){
           inwestycjePassiveArr.forEach(item => {
             if (item.childNodes[1] != undefined){
