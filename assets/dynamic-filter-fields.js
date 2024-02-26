@@ -147,7 +147,7 @@
         if(choosenFilterFieldsArr.length == 0){
           inwestycjePassiveArr.forEach(item => {
             if (item.childNodes[1] != undefined){
-              item?.classList.remove('dynamic-active');
+              // item?.classList.remove('dynamic-active');
               setTimeout(() => {
                 item?.classList.add('test1');
               }, 300);
