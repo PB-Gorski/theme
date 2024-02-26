@@ -89,6 +89,11 @@
     // searching for id's dependencies and marking items with connected id
     function checkInwestycjeForDependenciesID(){
       let inwestycjeDependenciesArr = [];
+      inwestycjePassiveArr.forEach(item => {
+        if (item.childNodes[1] != undefined){
+          item?.classList.remove('dynamic-active');
+        };
+      });
       if(dynamicFilterActive){
 
         inwestycjePassiveArr.forEach(item => {
@@ -143,10 +148,7 @@
         if(choosenFilterFieldsArr.length == 0){
           inwestycjePassiveArr.forEach(item => {
             if (item.childNodes[1] != undefined){
-              // item?.classList.remove('dynamic-active');
-              setTimeout(() => {
-                item?.classList.add('test1');
-              }, 300);
+              item?.classList.remove('dynamic-active');
             };
           });
         };
