@@ -20,6 +20,7 @@
     let allOptionsPassiveArr = document.querySelectorAll('.menu-link');
     let miastoPassiveArr = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
     let inwestycjePassiveArr = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
+    let allMenuActiveArr = document.querySelectorAll('.menu-active');
     let swPiotrOption;
     let SwPiotraDependenciesArr;
     let passiveOptionsArr = document.querySelectorAll(".menu-link");
@@ -60,6 +61,7 @@
         choosenFilterFieldsArr = ((item.dataset.termid));
       }else{
         choosenFilterFieldsArr = [];
+
         // for now every option cleaning dynamic filtering
         passiveOptionsArr.forEach(item2 => {
           setTimeout(() => {
@@ -85,6 +87,7 @@
       });
     };
 
+
     // searching for id's dependencies and marking items with connected id
     function checkInwestycjeForDependenciesID(){
       if(dynamicFilterActive){
@@ -96,9 +99,28 @@
             inwestycjeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
 
             // cleaning marked items in filter list
-            item?.classList.remove('dynamic-active', 'hidden');
+            if(dynamicFilterActive){
+              console.log( 'isActive: ', dynamicFilterActive);
+              item?.classList.remove('hidden');
+            };
           };
         });
+
+        // allMenuActiveArr.forEach(item2 => {
+        //   item2.addEventListener('click', () => {
+        //     console.log('menu passive clicked');
+        //       // cleaning marked items in filter list
+        //       if(dynamicFilterActive){
+        //         console.log('menu passive clicked and dynamicFilterActive');
+    
+        //         item?.classList.remove('hidden');
+        //       };
+        //   });
+        // });
+
+
+
+    
 
         // searching and marking items with the same dependencies
         for (let i = 0 ; i < inwestycjeDependenciesArr.length ; i++){
@@ -106,10 +128,16 @@
             if (+inwestycjeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
               inwestycjePassiveArr[i+3].classList.add('dynamic-active');
             }else if(+inwestycjeDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
-              if(!inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
-                // cleaning option without dependencies
-                inwestycjePassiveArr[i+3].classList.add('hidden');
-              };
+              setTimeout(() => {
+                if(!inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
+                  // cleaning option without dependencies
+                  inwestycjePassiveArr[i+3].classList.add('hidden');
+                  if(inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
+                    inwestycjePassiveArr[i+3].classList.add('dynamic-active','hidden');
+                  }
+                };
+              }, 300);
+     
             };
           };
         };
