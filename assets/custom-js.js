@@ -415,4 +415,9 @@ window.addEventListener("load", function () {
   }
 
   //  ----------------------------------------------------------------------
+  //hide pokoje column [page-lista-lokali]
+    if (document.body.classList.contains('post-type-archive-lokale')){
+      document.querySelector('.js-sort-pokoje').classList.add('opacity-0')
+    };
+  //  ----------------------------------------------------------------------
 });
