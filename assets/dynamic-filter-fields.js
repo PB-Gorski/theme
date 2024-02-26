@@ -60,11 +60,12 @@
 
         // cleaning inwestycje list active fileds
         // inwestycjePassiveArr.forEach(item2 => {
-        //   if(item2 !== undefined){
-        //     item2.classList.remove('hidden');
-        //   };
-        // });
-
+          //   if(item2 !== undefined){
+            //     item2.classList.remove('hidden');
+            //   };
+            // });
+            
+        // cleaning inwestycje list active fileds
         for(let i = 3 ; i < inwestycjePassiveArr.length-1 ; i++){
           inwestycjePassiveArr[i]?.classList.remove('hidden');
         }
@@ -92,7 +93,7 @@
       let inwestycjeDependenciesArr = [];
       inwestycjePassiveArr.forEach(item => {
         if (item.childNodes[1] != undefined){
-          item?.classList.remove('dynamic-active');
+          // item?.classList.remove('dynamic-active');
         };
       });
 
@@ -149,7 +150,7 @@
         if(choosenFilterFieldsArr.length == 0){
           inwestycjePassiveArr.forEach(item => {
             if (item.childNodes[1] != undefined){
-              item?.classList.remove('dynamic-active');
+              // item?.classList.remove('dynamic-active');
             };
           });
         };
