@@ -66,7 +66,7 @@
         passiveOptionsArr.forEach(item2 => {
           setTimeout(() => {
             if(!dynamicFilterActive){
-              item2?.parentNode.classList.remove('dynamic-active', 'hidden');
+              // item2?.parentNode.classList.remove('dynamic-active', 'hidden');
             }
             // console.log(item2);
           }, 400);
