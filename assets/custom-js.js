@@ -373,15 +373,8 @@ window.addEventListener("load", function () {
   //  ----------------------------------------------------------------------
 
   //hide pokoje column [page-lista-lokali]
-  // let removePokojeColumnAfterJsInjected = window.setInterval(function(){
-  //   if (document.body.classList.contains('post-type-archive-lokale')){
-  //     document.querySelector('.js-sort-pokoje').classList.add('opacity-0')
-  //   };
-    
-  //   clearInterval(removePokojeColumnAfterJsInjected);
-  //   },300);
-
-    // dynamic ymc filter id
+  // dynamic ymc filter id
+  if (document.body.classList.contains('post-type-archive-lokale')){
     if(document.querySelector(".short-code-ymc-filter")){
       currentYmcFilterID = document
         .querySelector(".short-code-ymc-filter")
@@ -398,6 +391,7 @@ window.addEventListener("load", function () {
       };
       }
     );
+  };
 
     
 
