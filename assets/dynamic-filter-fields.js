@@ -58,12 +58,12 @@
       }else{
         choosenFilterFieldsArr = [];
 
-        // for now every option cleaning dynamic filtering
-        // passiveOptionsArr.forEach(item2 => {
-        //   if(!item2?.parentNode.classList.contains('dynamic-active')){
-        //     // item2?.parentNode.classList.remove('hidden');
-        //   }
-        // });
+        // cleaning inwestycje list active fileds
+        inwestycjePassiveArr.forEach(item2 => {
+          if(item2 !== undefined){
+            item2.classList.remove('hidden');
+          };
+        });
       };
       return choosenFilterFieldsArr;
     };
@@ -81,7 +81,6 @@
         };
       });
     };
-
 
     // searching for id's dependencies and marking items with connected id
     function checkInwestycjeForDependenciesID(){
