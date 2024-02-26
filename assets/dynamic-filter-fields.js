@@ -59,13 +59,13 @@
         choosenFilterFieldsArr = [];
 
         // for now every option cleaning dynamic filtering
-        // passiveOptionsArr.forEach(item2 => {
-        //   setTimeout(() => {
-        //     if(!dynamicFilterActive){
-        //       item2?.parentNode.classList.remove('dynamic-active', 'hidden');
-        //     }
-        //   }, 400);
-        // });
+        passiveOptionsArr.forEach(item2 => {
+          setTimeout(() => {
+            if(!item2?.parentNode.classList.contains('dynamic-active')){
+              item2?.parentNode.classList.remove('hidden');
+            }
+          }, 400);
+        });
       };
       return choosenFilterFieldsArr;
     };
