@@ -40,19 +40,23 @@
       // inwestycje setup
       if (item.dataset.name == 'Św. Piotra'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"40"},{"termId":"640"},{"termId":"641"}]}';
-        swPiotrOption = item;
+        swPiotrOption += item;
       }
       if (item.dataset.name == 'Osiedle Srebrniki'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"28"},{"termId":"640"},{"termId":"641"}]}';
+        swPiotrOption += item;
       };
       if (item.dataset.name == 'Sukiennicza 19A'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"28"},{"termId":"640"},{"termId":"641"}]}';
+        swPiotrOption += item;
       };
       if (item.dataset.name == 'Toruńska 16'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"28"},{"termId":"640"},{"termId":"641"}]}';
+        swPiotrOption += item;
       };
       if (item.dataset.name == 'Wieżycka Folwark'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"28"},{"termId":"640"},{"termId":"641"}]}';
+        swPiotrOption += item;
       };
 
       // miasto setup
@@ -69,7 +73,7 @@
     // ------------------------------------------------------------
 
     // getting dependencies from html
-    SwPiotraDependenciesArr = JSON.parse(swPiotrOption.dataset.dependencies).dependencies;
+    // SwPiotraDependenciesArr = JSON.parse(swPiotrOption.dataset.dependencies).dependencies;
 
     // getting id of choosen city
     function getChoosenCityId(item){
