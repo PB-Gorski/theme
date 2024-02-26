@@ -51,7 +51,7 @@
     // ------------------------------------------------------------
 
     // getting dependencies from html
-    // SwPiotraDependenciesArr = JSON.parse(swPiotrOption.dataset.dependencies).dependencies;
+    SwPiotraDependenciesArr = JSON.parse(swPiotrOption.dataset.dependencies).dependencies;
 
     // getting id of choosen city
     function getChoosenCityId(item){
@@ -65,10 +65,10 @@
         // for now every option cleaning dynamic filtering
         passiveOptionsArr.forEach(item2 => {
           setTimeout(() => {
-            console.log('isdynamicFilterActive', dynamicFilterActive);
-            if (!item2?.parentNode.classList.contains('dynamic-active')) {
-              item2?.parentNode.classList.remove('dynamic-active', 'hidden');
-            };
+            if(!dynamicFilterActive){
+              // item2?.parentNode.classList.remove('dynamic-active', 'hidden');
+            }
+            // console.log(item2);
           }, 400);
         });
       };
@@ -78,17 +78,17 @@
     function isDynamicFilterActive(){
       // checking if dynamic filter is running with choosen city
       miastoPassiveArr.forEach(item =>{
-        if (typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
+        if ( typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
           dynamicFilterActive = true;
         }else if(!item.childNodes[1]?.classList.contains('active')){
           let isDynamicFilterActiveTimeout = window.setInterval(function(){
-            choosenFilterFieldsArr = [];
             dynamicFilterActive = false;
             clearInterval(isDynamicFilterActiveTimeout);
             },400);
         };
       });
     };
+
 
     // searching for id's dependencies and marking items with connected id
     function checkInwestycjeForDependenciesID(){
@@ -99,7 +99,6 @@
           if (item.childNodes[1] != undefined){
             // all dependencies array
             inwestycjeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
-            console.log('all dependencies: ', inwestycjeDependenciesArr);
 
             // cleaning marked items in filter list
             if(dynamicFilterActive){
@@ -108,17 +107,17 @@
           };
         });
 
-        allMenuActiveArr.forEach(item2 => {
-          item2.addEventListener('click', () => {
-            console.log('menu passive clicked');
-              // cleaning marked items in filter list
-              if(dynamicFilterActive){
-                console.log('menu passive clicked and dynamicFilterActive');
+        // allMenuActiveArr.forEach(item2 => {
+        //   item2.addEventListener('click', () => {
+        //     console.log('menu passive clicked');
+        //       // cleaning marked items in filter list
+        //       if(dynamicFilterActive){
+        //         console.log('menu passive clicked and dynamicFilterActive');
     
-                item?.classList.remove('hidden');
-              };
-          });
-        });
+        //         item?.classList.remove('hidden');
+        //       };
+        //   });
+        // });
 
 
 
@@ -139,6 +138,7 @@
                 //   inwestycjePassiveArr[i+3].classList.add('dynamic-active','hidden');
                 // }
               }, 300);
+     
             };
           };
         };
