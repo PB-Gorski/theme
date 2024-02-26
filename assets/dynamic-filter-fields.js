@@ -24,6 +24,7 @@
     let SwPiotraDependenciesArr;
     let passiveOptionsArr = document.querySelectorAll(".menu-link");
     let choosenFilterFieldsArr = [];
+    let dynamicFilterActive = false;
 
     // ------------------------------------------------------------
     /*
@@ -70,15 +71,25 @@
       return choosenFilterFieldsArr;
     };
 
-    let dynamicFilterActive = false;
+    function isDynamicFilterActive(){
+      // checking if dynamic filter is running with choosen city
+      miastoPassiveArr.forEach(item =>{
+        if ( typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
+          dynamicFilterActive = true;
+        }else if(!item.childNodes[1]?.classList.contains('active')){
+          let isDynamicFilterActiveTimeout = window.setInterval(function(){
+            dynamicFilterActive = false;
+            clearInterval(isDynamicFilterActiveTimeout);
+            },400);
+        };
+      });
+    };
 
     // searching for id's dependencies and marking items with connected id
     function checkInwestycjeForDependenciesID(){
       if(dynamicFilterActive){
         console.log('active searching inside function');
         let inwestycjeDependenciesArr = [];
-
- 
 
         inwestycjePassiveArr.forEach(item => {
           if (item.childNodes[1] != undefined){
@@ -124,20 +135,7 @@
       // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
       item.addEventListener('click', () => {
         let runDynamicFilters = window.setInterval(function(){
-          // checking if dynamic filter is running with choosen city
-          miastoPassiveArr.forEach(item =>{
-            if ( typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
-              console.log('dynamic filter is active');
-              dynamicFilterActive = true;
-            }else if(!item.childNodes[1]?.classList.contains('active')){
-              setTimeout(() => {
-                console.log('dynamic filter is not active');
-                dynamicFilterActive = false;
-              }, 300);
-
-            };
-          });
-
+          isDynamicFilterActive();
           choosenFilterFieldsArr = +getChoosenCityId(item);
           checkInwestycjeForDependenciesID();
 
