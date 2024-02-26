@@ -100,7 +100,6 @@
 
             // cleaning marked items in filter list
             if(dynamicFilterActive){
-              console.log( 'isActive: ', dynamicFilterActive);
               item?.classList.remove('hidden');
             };
           };
@@ -132,10 +131,10 @@
                 if(!inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
                   // cleaning option without dependencies
                   inwestycjePassiveArr[i+3].classList.add('hidden');
-                  if(inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
-                    inwestycjePassiveArr[i+3].classList.add('dynamic-active','hidden');
-                  }
                 };
+                if(inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
+                  inwestycjePassiveArr[i+3].classList.add('dynamic-active','hidden');
+                }
               }, 300);
      
             };
@@ -146,7 +145,7 @@
         if(choosenFilterFieldsArr.length == 0){
           inwestycjePassiveArr.forEach(item => {
             if (item.childNodes[1] != undefined){
-              item?.classList.remove('dynamic-active');
+              // item?.classList.remove('dynamic-active');
               setTimeout(() => {
                 item?.classList.add('test1');
               }, 300);
