@@ -22,7 +22,6 @@
     let inwestycjePassiveArr = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
     let allMenuActiveArr = document.querySelectorAll('.menu-active');
     let swPiotrOption;
-    let SwPiotraDependenciesArr;
     let passiveOptionsArr = document.querySelectorAll(".menu-link");
     let choosenFilterFieldsArr = [];
     let dynamicFilterActive = false;
@@ -30,8 +29,8 @@
     // ------------------------------------------------------------
     /*
       na testy takie relacje między miastem a inwestycją:
-      gdynia(termid: 40) - inwestycje: sw piotr, zatorze, test
-      gdansk(termid: 28) - inwestycje: osiedle srebrniki, sukiennicza 19
+      gdynia(termid: 40) - inwestycje: sw piotr
+      gdansk(termid: 28) - inwestycje: osiedle srebrniki, sukiennicza 19, torunska 16, wiezycka folwark
       reszta inwestycji ma dodane termid-1,2,3 zeby tylko były wypełnione
     */
 
@@ -49,9 +48,6 @@
       };
     });
     // ------------------------------------------------------------
-
-    // getting dependencies from html
-    SwPiotraDependenciesArr = JSON.parse(swPiotrOption.dataset.dependencies).dependencies;
 
     // getting id of choosen city
     function getChoosenCityId(item){
@@ -92,8 +88,8 @@
 
     // searching for id's dependencies and marking items with connected id
     function checkInwestycjeForDependenciesID(){
+      let inwestycjeDependenciesArr = [];
       if(dynamicFilterActive){
-        let inwestycjeDependenciesArr = [];
 
         inwestycjePassiveArr.forEach(item => {
           if (item.childNodes[1] != undefined){
@@ -162,6 +158,15 @@
       // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
       item.addEventListener('click', () => {
         let runDynamicFilters = window.setInterval(function(){
+          inwestycjePassiveArr.forEach(item => {
+            if (item.childNodes[1] != undefined){
+              item?.classList.remove('dynamic-active');
+              setTimeout(() => {
+                item?.classList.remove('dynamic-active');
+                item?.classList.add('test1');
+              }, 300);
+            };
+          });
           isDynamicFilterActive();
           choosenFilterFieldsArr = +getChoosenCityId(item);
           checkInwestycjeForDependenciesID();
