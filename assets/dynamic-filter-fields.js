@@ -37,16 +37,28 @@
 
     // adding dependencies into html for dynamic tests
     allOptionsPassiveArr.forEach(item =>{
-      if (item.dataset.name == 'Św. Piotra' || item.dataset.name == 'Zatorze' || item.dataset.name == 'test'){
+      // inwestycje setup
+      if (item.dataset.name == 'Św. Piotra'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"40"},{"termId":"640"},{"termId":"641"}]}';
         swPiotrOption = item;
       }else if(item.dataset.name != 'Św. Piotra'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"1"},{"termId":"2"},{"termId":"3"}]}';
       };
 
-      if (item.dataset.name == 'Osiedle Srebrniki' || item.dataset.name == 'Sukiennicza 19A'){
+      if (item.dataset.name == 'Osiedle Srebrniki' || item.dataset.name == 'Sukiennicza 19A' || item.dataset.name == 'Toruńska 16' || item.dataset.name == 'Wieżycka Folwark'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"28"},{"termId":"640"},{"termId":"641"}]}';
       };
+
+      // miasto setup
+      if (item.dataset.name == 'Gdańsk'){
+        item.dataset.dependencies = '{"dependencies":[{"termId":"72"},{"termId":"82"},{"termId":"81"},{"termId":"677"}]}';
+        swPiotrOption = item;
+      }
+      if (item.dataset.name == 'Gdynia'){
+        item.dataset.dependencies = '{"dependencies":[{"termId":"71"}]}';
+        swPiotrOption = item;
+      }
+
     });
     // ------------------------------------------------------------
 
@@ -78,17 +90,17 @@
     function isDynamicFilterActive(){
       // checking if dynamic filter is running with choosen city
       miastoPassiveArr.forEach(item =>{
-        if ( typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
+        if (typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
           dynamicFilterActive = true;
         }else if(!item.childNodes[1]?.classList.contains('active')){
           let isDynamicFilterActiveTimeout = window.setInterval(function(){
+            choosenFilterFieldsArr = [];
             dynamicFilterActive = false;
             clearInterval(isDynamicFilterActiveTimeout);
             },400);
         };
       });
     };
-
 
     // searching for id's dependencies and marking items with connected id
     function checkInwestycjeForDependenciesID(){
@@ -107,17 +119,17 @@
           };
         });
 
-        // allMenuActiveArr.forEach(item2 => {
-        //   item2.addEventListener('click', () => {
-        //     console.log('menu passive clicked');
-        //       // cleaning marked items in filter list
-        //       if(dynamicFilterActive){
-        //         console.log('menu passive clicked and dynamicFilterActive');
+        allMenuActiveArr.forEach(item2 => {
+          item2.addEventListener('click', () => {
+            console.log('menu passive clicked');
+              // cleaning marked items in filter list
+              if(dynamicFilterActive){
+                console.log('menu passive clicked and dynamicFilterActive');
     
-        //         item?.classList.remove('hidden');
-        //       };
-        //   });
-        // });
+                item?.classList.remove('hidden');
+              };
+          });
+        });
 
 
 
@@ -138,7 +150,6 @@
                 //   inwestycjePassiveArr[i+3].classList.add('dynamic-active','hidden');
                 // }
               }, 300);
-     
             };
           };
         };
