@@ -59,14 +59,13 @@
         choosenFilterFieldsArr = [];
 
         // for now every option cleaning dynamic filtering
-        passiveOptionsArr.forEach(item2 => {
-          setTimeout(() => {
-            if(!dynamicFilterActive){
-              item2?.parentNode.classList.remove('dynamic-active', 'hidden');
-            }
-            // console.log(item2);
-          }, 400);
-        });
+        // passiveOptionsArr.forEach(item2 => {
+        //   setTimeout(() => {
+        //     if(!dynamicFilterActive){
+        //       item2?.parentNode.classList.remove('dynamic-active', 'hidden');
+        //     }
+        //   }, 400);
+        // });
       };
       return choosenFilterFieldsArr;
     };
@@ -88,14 +87,15 @@
 
     // searching for id's dependencies and marking items with connected id
     function checkInwestycjeForDependenciesID(){
+      // cleaning
       let inwestycjeDependenciesArr = [];
       inwestycjePassiveArr.forEach(item => {
         if (item.childNodes[1] != undefined){
           item?.classList.remove('dynamic-active');
         };
       });
-      if(dynamicFilterActive){
 
+      if(dynamicFilterActive){
         inwestycjePassiveArr.forEach(item => {
           if (item.childNodes[1] != undefined){
             // all dependencies array
