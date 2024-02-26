@@ -60,7 +60,7 @@
         choosenFilterFieldsArr = [];
         choosenFilterFieldsArr = ((item.dataset.termid));
       }else{
-        choosenFilterFieldsArr = [];
+        // choosenFilterFieldsArr = [];
 
         // for now every option cleaning dynamic filtering
         passiveOptionsArr.forEach(item2 => {
