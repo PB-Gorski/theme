@@ -65,10 +65,10 @@
         // for now every option cleaning dynamic filtering
         passiveOptionsArr.forEach(item2 => {
           setTimeout(() => {
-            if(!dynamicFilterActive){
-              // item2?.parentNode.classList.remove('dynamic-active', 'hidden');
-            }
-            // console.log(item2);
+            console.log('isdynamicFilterActive', dynamicFilterActive);
+            if (!item2?.parentNode.classList.contains('dynamic-active')) {
+              item2?.parentNode.classList.remove('dynamic-active', 'hidden');
+            };
           }, 400);
         });
       };
