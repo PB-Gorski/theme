@@ -65,7 +65,9 @@
         // for now every option cleaning dynamic filtering
         passiveOptionsArr.forEach(item2 => {
           setTimeout(() => {
-            item2?.parentNode.classList.remove('dynamic-active', 'hidden');
+            if(!dynamicFilterActive){
+              item2?.parentNode.classList.remove('dynamic-active', 'hidden');
+            }
             // console.log(item2);
           }, 400);
         });
@@ -132,9 +134,9 @@
                   // cleaning option without dependencies
                   inwestycjePassiveArr[i+3].classList.add('hidden');
                 };
-                if(inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
-                  inwestycjePassiveArr[i+3].classList.add('dynamic-active','hidden');
-                }
+                // if(inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
+                //   inwestycjePassiveArr[i+3].classList.add('dynamic-active','hidden');
+                // }
               }, 300);
      
             };
