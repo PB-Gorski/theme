@@ -28,47 +28,25 @@
     let dynamicFilterActive = false;
 
     // ------------------------------------------------------------
-    /*
+      /*
       na testy takie relacje między miastem a inwestycją:
-      gdynia(termid: 40) - inwestycje: sw piotr
-      gdansk(termid: 28) - inwestycje: osiedle srebrniki, sukiennicza 19, torunska 16, wiezycka folwark
+      gdynia(termid: 40) - inwestycje: sw piotr, zatorze, test
+      gdansk(termid: 28) - inwestycje: osiedle srebrniki, sukiennicza 19
       reszta inwestycji ma dodane termid-1,2,3 zeby tylko były wypełnione
     */
 
     // adding dependencies into html for dynamic tests
     allOptionsPassiveArr.forEach(item =>{
-      // inwestycje setup
       if (item.dataset.name == 'Św. Piotra'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"40"},{"termId":"640"},{"termId":"641"}]}';
-        swPiotrOption += item;
-      }
-      if (item.dataset.name == 'Osiedle Srebrniki'){
-        item.dataset.dependencies = '{"dependencies":[{"termId":"28"},{"termId":"640"},{"termId":"641"}]}';
-        swPiotrOption += item;
-      };
-      if (item.dataset.name == 'Sukiennicza 19A'){
-        item.dataset.dependencies = '{"dependencies":[{"termId":"28"},{"termId":"640"},{"termId":"641"}]}';
-        swPiotrOption += item;
-      };
-      if (item.dataset.name == 'Toruńska 16'){
-        item.dataset.dependencies = '{"dependencies":[{"termId":"28"},{"termId":"640"},{"termId":"641"}]}';
-        swPiotrOption += item;
-      };
-      if (item.dataset.name == 'Wieżycka Folwark'){
-        item.dataset.dependencies = '{"dependencies":[{"termId":"28"},{"termId":"640"},{"termId":"641"}]}';
-        swPiotrOption += item;
+        swPiotrOption = item;
+      }else if(item.dataset.name != 'Św. Piotra'){
+        item.dataset.dependencies = '{"dependencies":[{"termId":"1"},{"termId":"2"},{"termId":"3"}]}';
       };
 
-      // miasto setup
-      // if (item.dataset.name == 'Gdańsk'){
-      //   item.dataset.dependencies = '{"dependencies":[{"termId":"72"},{"termId":"82"},{"termId":"81"},{"termId":"677"}]}';
-      //   swPiotrOption = item;
-      // }
-      // if (item.dataset.name == 'Gdynia'){
-      //   item.dataset.dependencies = '{"dependencies":[{"termId":"71"}]}';
-      //   swPiotrOption = item;
-      // }
-
+      if (item.dataset.name == 'Osiedle Srebrniki' || item.dataset.name == 'Sukiennicza 19A' || item.dataset.name == 'Toruńska 16'){
+        item.dataset.dependencies = '{"dependencies":[{"termId":"28"},{"termId":"640"},{"termId":"641"}]}';
+      };
     });
     // ------------------------------------------------------------
 
@@ -121,6 +99,7 @@
           if (item.childNodes[1] != undefined){
             // all dependencies array
             inwestycjeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
+            console.log('all dependencies: ', inwestycjeDependenciesArr);
 
             // cleaning marked items in filter list
             if(dynamicFilterActive){
