@@ -18,7 +18,8 @@
     // ---------
 
     let allOptionsPassiveArr = document.querySelectorAll('.menu-link');
-    let inwestycjePassiveArr = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes
+    let miastoPassiveArr = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
+    let inwestycjePassiveArr = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
     let swPiotrOption;
     let SwPiotraDependenciesArr;
     let passiveOptionsArr = document.querySelectorAll(".menu-link");
@@ -58,44 +59,64 @@
         choosenFilterFieldsArr = ((item.dataset.termid));
       }else{
         choosenFilterFieldsArr = [];
+        // for now every option cleaning dynamic filtering
+        passiveOptionsArr.forEach(item2 => {
+          setTimeout(() => {
+            item2?.parentNode.classList.remove('dynamic-active', 'hidden');
+            // console.log(item2);
+          }, 400);
+        });
       };
       return choosenFilterFieldsArr;
     };
 
+    let dynamicFilterActive = false;
+
     // searching for id's dependencies and marking items with connected id
     function checkInwestycjeForDependenciesID(){
-      let inwestycjeDependenciesArr = [];
 
-      inwestycjePassiveArr.forEach(item => {
-        if (item.childNodes[1] != undefined){
-          // all dependencies array
-          inwestycjeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
 
-          // cleaning marked items in filter list
-          item?.classList.remove('dynamic-active', 'bg-green-500');
-        };
-      });
+      if(dynamicFilterActive){
+        let inwestycjeDependenciesArr = [];
 
-      // searching and marking items with the same dependencies
-      for (let i = 0 ; i < inwestycjeDependenciesArr.length ; i++){
-        for (let j = 0 ;  j < inwestycjeDependenciesArr[i].length ; j++){
-          if (+inwestycjeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
-            inwestycjePassiveArr[i+3].classList.add('bg-green-500', 'dynamic-active');
-          }else if(+inwestycjeDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
-            if(!inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
+ 
+
+        inwestycjePassiveArr.forEach(item => {
+          if (item.childNodes[1] != undefined){
+            // all dependencies array
+            inwestycjeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
+
+            // cleaning marked items in filter list
+            item?.classList.remove('dynamic-active', 'hidden');
+          };
+        });
+
+        // searching and marking items with the same dependencies
+        for (let i = 0 ; i < inwestycjeDependenciesArr.length ; i++){
+          for (let j = 0 ;  j < inwestycjeDependenciesArr[i].length ; j++){
+            if (+inwestycjeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
+              inwestycjePassiveArr[i+3].classList.add('dynamic-active');
+            }else if(+inwestycjeDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
+              if(!inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
+                // cleaning option without dependencies
+                inwestycjePassiveArr[i+3].classList.add('hidden');
+              };
             };
           };
         };
-      };
 
-      // cleaning marked items in filter list when no option selected
-      console.log('length: ', choosenFilterFieldsArr.length);
-      if(choosenFilterFieldsArr.length == 0){
-        inwestycjePassiveArr.forEach(item => {
-          if (item.childNodes[1] != undefined){
-            item?.classList.remove('dynamic-active', 'bg-green-500');
-          };
-        });
+        // cleaning marked items in filter list when no option selected
+        console.log('length: ', choosenFilterFieldsArr.length);
+        if(choosenFilterFieldsArr.length == 0){
+          inwestycjePassiveArr.forEach(item => {
+            if (item.childNodes[1] != undefined){
+              item?.classList.remove('dynamic-active');
+              setTimeout(() => {
+                item?.classList.add('test1');
+              }, 300);
+            };
+          });
+        };
       };
     };
 
@@ -104,11 +125,23 @@
       // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
       item.addEventListener('click', () => {
         let runDynamicFilters = window.setInterval(function(){
+          // checking if dynamic filter is running with choosen city
+          miastoPassiveArr.forEach(item =>{
+            if ( typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
+              console.log('dynamic filter is active');
+              dynamicFilterActive = true;
+            }else{
+              console.log('dynamic filter is not active');
+
+              dynamicFilterActive = false;
+            };
+          });
+
           choosenFilterFieldsArr = +getChoosenCityId(item);
           checkInwestycjeForDependenciesID();
 
           clearInterval(runDynamicFilters);
-          },300);
+          },400);
 
       });
     });
