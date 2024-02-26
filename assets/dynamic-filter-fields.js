@@ -157,98 +157,14 @@
       };
     };
 
-        // searching for id's dependencies and marking items with connected id
-        function checkInwestycjeForDependenciesID2(){
-          // cleaning
-          let inwestycjeDependenciesArr = [];
-          // inwestycjePassiveArr.forEach(item => {
-          //   if (item.childNodes[1] != undefined){
-          //     item?.classList.remove('dynamic-active');
-          //   };
-          // });
-    
-          if(dynamicFilterActive){
-            inwestycjePassiveArr.forEach(item => {
-              if (item.childNodes[1] != undefined){
-                // all dependencies array
-                inwestycjeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
-    
-                // cleaning marked items in filter list
-                if(dynamicFilterActive){
-                  item?.classList.remove('hidden');
-                };
-              };
-            });
-    
-            // allMenuActiveArr.forEach(item2 => {
-            //   item2.addEventListener('click', () => {
-            //     console.log('menu passive clicked');
-            //       // cleaning marked items in filter list
-            //       if(dynamicFilterActive){
-            //         console.log('menu passive clicked and dynamicFilterActive');
-        
-            //         item?.classList.remove('hidden');
-            //       };
-            //   });
-            // });
-    
-    
-    
-        
-    
-            // searching and marking items with the same dependencies
-            for (let i = 0 ; i < inwestycjeDependenciesArr.length ; i++){
-              for (let j = 0 ;  j < inwestycjeDependenciesArr[i].length ; j++){
-                if (+inwestycjeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
-                  inwestycjePassiveArr[i+3].classList.add('dynamic-active');
-                }else if(+inwestycjeDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
-                  setTimeout(() => {
-                    if(!inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
-                      // cleaning option without dependencies
-                      inwestycjePassiveArr[i+3].classList.add('hidden');
-                    };
-                    // if(inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
-                    //   inwestycjePassiveArr[i+3].classList.add('dynamic-active','hidden');
-                    // }
-                  }, 300);
-         
-                };
-              };
-            };
-    
-            // cleaning marked items in filter list when no option selected
-            if(choosenFilterFieldsArr.length == 0){
-              inwestycjePassiveArr.forEach(item => {
-                if (item.childNodes[1] != undefined){
-                  // item?.classList.remove('dynamic-active');
-                };
-              });
-            };
-          };
-        };
-
     // party begin
-    miastoPassiveArr.forEach(item => {
+    passiveOptionsArr.forEach(item => {
       // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
       item.addEventListener('click', () => {
         let runDynamicFilters = window.setInterval(function(){
           isDynamicFilterActive();
           choosenFilterFieldsArr = +getChoosenCityId(item);
           checkInwestycjeForDependenciesID();
-
-          clearInterval(runDynamicFilters);
-          },400);
-
-      });
-    });
-
-    inwestycjePassiveArr.forEach(item => {
-      // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
-      item.addEventListener('click', () => {
-        let runDynamicFilters = window.setInterval(function(){
-          isDynamicFilterActive();
-          choosenFilterFieldsArr = +getChoosenCityId(item);
-          checkInwestycjeForDependenciesID2();
 
           clearInterval(runDynamicFilters);
           },400);
