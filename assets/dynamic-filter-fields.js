@@ -59,11 +59,15 @@
         choosenFilterFieldsArr = [];
 
         // cleaning inwestycje list active fileds
-        inwestycjePassiveArr.forEach(item2 => {
-          if(item2 !== undefined){
-            item2.classList.remove('hidden');
-          };
-        });
+        // inwestycjePassiveArr.forEach(item2 => {
+        //   if(item2 !== undefined){
+        //     item2.classList.remove('hidden');
+        //   };
+        // });
+
+        for(let i = 3 ; i < inwestycjePassiveArr.length-1 ; i++){
+          inwestycjePassiveArr[i]?.classList.remove('hidden');
+        }
       };
       return choosenFilterFieldsArr;
     };
