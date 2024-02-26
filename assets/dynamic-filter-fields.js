@@ -92,7 +92,7 @@
       // cleaning
       let inwestycjeDependenciesArr = [];
       inwestycjePassiveArr.forEach(item => {
-        if (item.childNodes[1] != undefined || !item.childNodes[1].contains('dynamic-active')){
+        if (item.childNodes[1] != undefined){
           item?.classList.remove('dynamic-active');
         };
       });
