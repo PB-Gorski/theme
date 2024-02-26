@@ -373,15 +373,15 @@ window.addEventListener("load", function () {
   //  ----------------------------------------------------------------------
 
   //hide pokoje column [page-lista-lokali]
-  item.addEventListener('click', () => {
-    let removePokojeColumnAfterJsInjected = window.setInterval(function(){
-      if (document.body.classList.contains('post-type-archive-lokale')){
-        document.querySelector('.js-sort-pokoje').classList.add('opacity-0')
-      };
-      
-      clearInterval(removePokojeColumnAfterJsInjected);
-      },2000);
-  });
+  let removePokojeColumnAfterJsInjected = window.setInterval(function(){
+    if (document.body.classList.contains('post-type-archive-lokale')){
+      document.querySelector('.js-sort-pokoje').classList.add('opacity-0')
+    };
+    
+    clearInterval(removePokojeColumnAfterJsInjected);
+    },2000);
+
+
 
     
 
