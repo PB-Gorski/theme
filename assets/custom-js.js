@@ -84,28 +84,8 @@ window.addEventListener("load", function () {
       }
     }
   });
-
-  // call pop up modal
-  // const btnCloseModal = document.querySelector('.btn-close');
-  // const callModal = document.querySelector('.call-back-modal');
-  // const modalBg = document.querySelector('.call-back-modal-bg');
-  // const btnOpenModal = document.querySelector('.btn-leave-phone');
-
-  // btnCloseModal.addEventListener('click',()=>{
-  //   callModal.classList.replace('opacity-100', 'opacity-0');
-  //   callModal.classList.replace('z-[1]', 'z-[-1]');
-  //   modalBg.classList.replace('opacity-100', 'opacity-0');
-  //   modalBg.classList.replace('z-[1]', 'z-[-1]');
-  // });
-  // btnOpenModal.addEventListener('click',()=>{
-  //   callModal.classList.replace('opacity-0', 'opacity-100');
-  //   callModal.classList.replace('z-[-1]', 'z-[1]');
-  //   modalBg.classList.replace('opacity-0', 'opacity-100');
-  //   modalBg.classList.replace('z-[-1]', 'z-[1]');
-  // })
-
+  // ------------------------------------------------------------------------------------------
   // count up
-
   // const count1 = document.querySelector('#count1');
 
   // target = id of html element or let of previously selected html element where counting occurs
@@ -304,6 +284,8 @@ window.addEventListener("load", function () {
   // count3.start();
   // });
 
+  // -------------------------------------------------------------------------------------------
+
   // contact dropdown handle
   const clickBar = document.querySelectorAll(".click-bar");
   const stepParagraph = document.querySelectorAll(".step-paragraph");
@@ -333,31 +315,6 @@ window.addEventListener("load", function () {
     });
   });
 
-  // cookies from page o-inwestycji
-  const clickedLink = document.querySelector(".js-srebrniki-cookie");
-
-  // function deleteAllCookies() {
-  //   const cookies = document.cookie.split(";");
-
-  //   for (let i = 0; i < cookies.length; i++) {
-  //       const cookie = cookies[i];
-  //       const eqPos = cookie.indexOf("=");
-  //       const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-  //       document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-  //   }
-  // };
-
-  if (this.document.body.classList.contains("page-id-1711")) {
-    // document.cookie = "username=John Doe";
-    // document.cookie = "filteredTermsFromCookies2=72";
-    // console.log(document.cookie);
-    // clickedLink.addEventListener('click', () =>{
-    // deleteAllCookies();
-    // document.cookie = "filteredTermsFromCookies=72";
-    // console.log(document.cookie);
-    // });
-  }
-
   //  ----------------------------------------------------------------------
 
   let categoryList = document.querySelector(".wp-block-categories-list");
@@ -382,7 +339,6 @@ window.addEventListener("load", function () {
     pageBlogID?.classList.contains("page-blog-title") ||
     window.location.href.search("category") > 20
   ) {
-    // console.log("inserted js");
     categoryList.insertAdjacentHTML("afterbegin", link);
   }
 
@@ -416,7 +372,7 @@ window.addEventListener("load", function () {
 
   //  ----------------------------------------------------------------------
   //hide pokoje column [page-lista-lokali]
-    if (document.body.classList.contains('post-type-archive-lokale')){
+    if (document.body.classList.contains('post-type-archive-lokale') && document.querySelector('.js-injected')){
       document.querySelector('.js-sort-pokoje').classList.add('opacity-0')
     };
   //  ----------------------------------------------------------------------
