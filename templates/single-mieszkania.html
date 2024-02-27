@@ -5,7 +5,19 @@
   <!-- wp:group -->
   <div id="main" class="wp-block-group">
     <!-- wp:group -->
-    <div id="Page content" class="wp-block-group page-content-wrapper">
+    <div id="Page content" class="wp-block-group page-content-wrapper relative">
+      <!-- wp:group -->
+      <div class="featured_img_popup_container hidden w-full h-full fixed top-0 left-0 bg-[rgba(0,0,0,0.5)]">
+        <!-- wp:image -->
+        <figure class="wp-block-image js-featured-img-popup">
+          <img
+            src=""
+            alt="popup-image"
+          />
+        </figure>
+        <!-- /wp:image -->
+      </div>
+      <!-- /wp:group -->
       <!-- wp:query {"query":{"inherit":true}} -->
       <!-- wp:post-template -->
       <!-- wp:pattern {"slug":"_single-mieszkania"} /-->
@@ -13,7 +25,7 @@
       <!-- wp:group {"templateLock":"contentOnly","anchor":true} -->
       <div
         id="Wpis"
-        class="wp-block-group mieszkania-page-post ooverflow-hidden relative"
+        class="wp-block-group mieszkania-page-post relative"
       >
         <!-- wp:group -->
         <div
