@@ -1149,3 +1149,58 @@ class Investment_Subpages extends Walker_Page
 		$output .= "{$n}{$indent}<ul class='flex flex-wrap justify-center items-center gap-[20px]'>{$n}";
 	}
 }
+
+function custom_posts_count_shortcode($atts)
+{
+	extract(shortcode_atts(array(
+		'investment' => '',
+	), $atts, 'multilink'));
+
+	$query = new WP_Query(
+		array(
+			'post_status' => 'publish',
+			'post_type' => 'mieszkania',
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'inwestycja',
+					'field' => 'name',
+					'terms' => $investment
+				),
+			),
+		)
+	);
+
+	return $query->found_posts;
+}
+add_shortcode('custom_posts_count', 'custom_posts_count_shortcode');
+
+function sum_posts_for_terms_shortcode($atts)
+{
+	extract(shortcode_atts(array(
+		'terms' => '',
+	), $atts, 'multilink'));
+
+	$termsArray = explode(',', $terms);
+	$count_investments = 0;
+	foreach ($termsArray as $investment) {
+
+		$query = new WP_Query(
+			array(
+				'post_status' => 'publish',
+				'post_type' => 'mieszkania',
+				'tax_query' => array(
+					array(
+						'taxonomy' => 'inwestycja',
+						'field' => 'name',
+						'terms' => $investment
+					),
+				),
+			)
+		);
+
+		$count_investments += $query->found_posts;
+	}
+
+	return $count_investments;
+}
+add_shortcode('sum_posts_for_terms', 'sum_posts_for_terms_shortcode');
