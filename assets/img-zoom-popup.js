@@ -12,11 +12,11 @@
     featuredImageBig.style.height = '100%';
 
     featuredImage.addEventListener('click', () => {
-      popupImageContainer.classList.toggle('hidden');
+      popupImageContainer.classList.toggle('opacity-100');
     });
 
     popupImageCloseBtn.addEventListener('click', () => {
-      popupImageContainer.classList.toggle('hidden');
+      popupImageContainer.classList.toggle('opacity-100');
     });
     
   };
