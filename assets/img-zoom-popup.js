@@ -9,7 +9,7 @@
     let popupImageContainer = document.querySelector('.js-featured_img_popup_container');
 
     featuredImageBig.childNodes[1].src = featuredImageLink;
-    featuredImageBig.classList.add('scale-[0.6]')
+    featuredImageBig.classList.add('scale-[0.7]');
 
 
 
