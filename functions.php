@@ -380,7 +380,11 @@ function pb_gorski_blocks_register_styles()
 		'strategy'  => 'defer',
 		'in_footer'  => true,
 	));
-	wp_enqueue_script('customJS6', get_theme_file_uri('/assets/dynamic-filter-fields.js'), array('smart-filter-' . wp_create_nonce('smart-filter')), '1.0.0', array(
+	wp_enqueue_script('customJS6', get_theme_file_uri('/assets/dynamic-filter-fields.js'), array('smart-filter-' . wp_create_nonce('smart-filter')), '1.0.1', array(
+		'strategy'  => 'defer',
+		'in_footer'  => true,
+	));
+	wp_enqueue_script('customJS6', get_theme_file_uri('/assets/img-zoom-popup.js'), array('smart-filter-' . wp_create_nonce('smart-filter')), '1.0.0', array(
 		'strategy'  => 'defer',
 		'in_footer'  => true,
 	));
