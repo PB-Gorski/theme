@@ -2,13 +2,13 @@
   if (document.body.classList.contains('single-mieszkania')){
     console.log('img-zoom-popup.js');
 
-    let featuredImage = document.querySelector('.wp-block-post-featured-image');
+    let featuredImage = document.querySelector('.wp-post-image');
+    let featuredImageLink = document.querySelector('.wp-post-image').src;
     let featuredImageBig = document.querySelector('.js-featured-img-popup');
-    let featuredImageLink = document.querySelector('.wp-block-post-featured-image').childNodes[0].src;
     let popupImageCloseBtn = document.querySelector('.js-close-popup-featured-image');
     let popupImageContainer = document.querySelector('.js-featured_img_popup_container');
 
-    featuredImageBig.childNodes[1].src = featuredImageLink;
+    featuredImageBig.src = featuredImageLink;
 
     featuredImage.addEventListener('click', () => {
       popupImageContainer.classList.toggle('hidden');
