@@ -1170,7 +1170,7 @@ function custom_posts_count_shortcode($atts)
 		)
 	);
 
-	return $query->found_posts;
+	return '<p class="text-[48px] text-primaryRed font-bold">' . $query->found_posts . '</p>';
 }
 add_shortcode('custom_posts_count', 'custom_posts_count_shortcode');
 
