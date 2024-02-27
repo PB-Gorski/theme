@@ -88,7 +88,7 @@
     };
 
     // searching for id's dependencies and marking items with connected id
-    function checkInwestycjeForDependenciesID(){
+    function checkInwestycjeForDependenciesID(item){
       // cleaning
       let inwestycjeDependenciesArr = [];
       inwestycjePassiveArr.forEach(item => {
@@ -154,6 +154,17 @@
             };
           });
         };
+
+        console.log('item@#$@$: ', item);
+        if (item.dataset.dataName == 'Gdynia' || item.dataset.dataName == 'Gdańsk'){
+          console.log('miasto');
+
+          inwestycjePassiveArr.forEach(item => {
+            if (item.childNodes[1] != undefined){
+              item?.classList.remove('dynamic-active');
+            };
+          });
+        }
       };
     };
 
@@ -164,7 +175,7 @@
         let runDynamicFilters = window.setInterval(function(){
           isDynamicFilterActive();
           choosenFilterFieldsArr = +getChoosenCityId(item);
-          checkInwestycjeForDependenciesID();
+          checkInwestycjeForDependenciesID(item);
 
           clearInterval(runDynamicFilters);
           },400);
