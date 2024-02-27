@@ -2,8 +2,8 @@
   if (document.body.classList.contains('single-mieszkania')){
     let featuredImage = document.querySelector('.wp-post-image');
     let featuredImageLink = document.querySelector('.wp-post-image').src;
-    if(featuredImage.src.includes('data:')){
-      featuredImage = document.querySelector('.wp-post-image').dataset.src;
+    if(featuredImageLink.includes('data:')){
+      featuredImageLink = document.querySelector('.wp-post-image').dataset.src;
     }
     document.querySelector('.wp-post-image').dataset.src
     let featuredImageBig = document.querySelector('.js-featured-img-popup').childNodes[1];
