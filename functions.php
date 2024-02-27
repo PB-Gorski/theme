@@ -384,7 +384,7 @@ function pb_gorski_blocks_register_styles()
 		'strategy'  => 'defer',
 		'in_footer'  => true,
 	));
-	wp_enqueue_script('customJS7', get_theme_file_uri('/assets/img-zoom-popup.js'), array(''), '1.0.2', array(
+	wp_enqueue_script('customJS7', get_theme_file_uri('/assets/img-zoom-popup.js'), array(), '1.0.2', array(
 		'strategy'  => 'defer',
 		'in_footer'  => true,
 	));
