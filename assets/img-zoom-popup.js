@@ -9,9 +9,6 @@
     let popupImageContainer = document.querySelector('.js-featured_img_popup_container');
 
     featuredImageBig.childNodes[1].src = featuredImageLink;
-    featuredImageBig.classList.add('scale-[0.7]');
-
-
 
     featuredImage.addEventListener('click', () => {
       popupImageContainer.classList.toggle('hidden');
