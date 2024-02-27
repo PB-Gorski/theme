@@ -13,10 +13,12 @@
 
     featuredImage.addEventListener('click', () => {
       popupImageContainer.classList.toggle('opacity-100');
+      popupImageContainer.classList.toggle('z-[2]');
     });
 
     popupImageCloseBtn.addEventListener('click', () => {
       popupImageContainer.classList.toggle('opacity-100');
+      popupImageContainer.classList.toggle('z-[2]');
     });
     
   };
