@@ -12,13 +12,10 @@
 
     featuredImage.addEventListener('click', () => {
       popupImageContainer.classList.toggle('hidden');
-      console.log('popupImageContainer toggle1');
     });
 
     popupImageCloseBtn.addEventListener('click', () => {
       popupImageContainer.classList.toggle('hidden');
-      console.log('popupImageContainer toggle2');
-
     });
     
   };
