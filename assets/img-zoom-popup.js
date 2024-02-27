@@ -4,7 +4,7 @@
 
     let featuredImage = document.querySelector('.wp-post-image');
     let featuredImageLink = document.querySelector('.wp-post-image').src;
-    let featuredImageBig = document.querySelector('.js-featured-img-popup');
+    let featuredImageBig = document.querySelector('.js-featured-img-popup').childNodes[0];
     let popupImageCloseBtn = document.querySelector('.js-close-popup-featured-image');
     let popupImageContainer = document.querySelector('.js-featured_img_popup_container');
 
