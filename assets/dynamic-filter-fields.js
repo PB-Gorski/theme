@@ -20,15 +20,12 @@
     let allOptionsPassiveArr = document.querySelectorAll('.menu-link');
     let miastoPassiveArr = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
     let inwestycjePassiveArr = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
-    let allMenuActiveArr = document.querySelectorAll('.menu-active');
-    let swPiotrOption;
     let passiveOptionsArr = document.querySelectorAll(".menu-link");
     let choosenFilterFieldsArr = [];
     let dynamicFilterActive = false;
 
     // ------------------------------------------------------------
     /*
-      na testy takie relacje między miastem a inwestycją:
       gdynia(termid: 40) - inwestycje: sw piotr
       gdansk(termid: 28) - inwestycje: osiedle srebrniki, sukiennicza 19, torunska 16, wiezycka folwark
       reszta inwestycji ma dodane termid-1,2,3 zeby tylko były wypełnione
@@ -57,13 +54,6 @@
         choosenFilterFieldsArr = ((item.dataset.termid));
       }else{
         choosenFilterFieldsArr = [];
-
-        // cleaning inwestycje list active fileds
-        // inwestycjePassiveArr.forEach(item2 => {
-          //   if(item2 !== undefined){
-            //     item2.classList.remove('hidden');
-            //   };
-            // });
             
         // cleaning inwestycje list active fileds
         for(let i = 3 ; i < inwestycjePassiveArr.length-1 ; i++){
@@ -89,17 +79,9 @@
 
     // searching for id's dependencies and marking items with connected id
     function checkInwestycjeForDependenciesID(item){
-      // cleaning
+      // cleaning when choosen city
       let inwestycjeDependenciesArr = [];
-      inwestycjePassiveArr.forEach(item => {
-        if (item.childNodes[1] != undefined){
-          // item?.classList.remove('dynamic-active');
-        };
-      });
-      console.log('item@#$@$: ', item);
       if (item.dataset.name == 'Gdynia' || item.dataset.name == 'Gdańsk'){
-        console.log('miasto');
-
         inwestycjePassiveArr.forEach(item => {
           if (item.childNodes[1] != undefined){
             item?.classList.remove('dynamic-active');
@@ -120,22 +102,6 @@
           };
         });
 
-        // allMenuActiveArr.forEach(item2 => {
-        //   item2.addEventListener('click', () => {
-        //     console.log('menu passive clicked');
-        //       // cleaning marked items in filter list
-        //       if(dynamicFilterActive){
-        //         console.log('menu passive clicked and dynamicFilterActive');
-    
-        //         item?.classList.remove('hidden');
-        //       };
-        //   });
-        // });
-
-
-
-    
-
         // searching and marking items with the same dependencies
         for (let i = 0 ; i < inwestycjeDependenciesArr.length ; i++){
           for (let j = 0 ;  j < inwestycjeDependenciesArr[i].length ; j++){
@@ -147,25 +113,10 @@
                   // cleaning option without dependencies
                   inwestycjePassiveArr[i+3].classList.add('hidden');
                 };
-                // if(inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
-                //   inwestycjePassiveArr[i+3].classList.add('dynamic-active','hidden');
-                // }
               }, 300);
-     
             };
           };
         };
-
-        // cleaning marked items in filter list when no option selected
-        if(choosenFilterFieldsArr.length == 0){
-          inwestycjePassiveArr.forEach(item => {
-            if (item.childNodes[1] != undefined){
-              // item?.classList.remove('dynamic-active');
-            };
-          });
-        };
-
-
       };
     };
 
@@ -180,7 +131,6 @@
 
           clearInterval(runDynamicFilters);
           },400);
-
       });
     });
   };
