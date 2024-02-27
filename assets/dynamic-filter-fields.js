@@ -156,7 +156,7 @@
         };
 
         console.log('item@#$@$: ', item);
-        if (item.dataset.dataName == 'Gdynia' || item.dataset.dataName == 'Gdańsk'){
+        if (item.dataset.name == 'Gdynia' || item.dataset.name == 'Gdańsk'){
           console.log('miasto');
 
           inwestycjePassiveArr.forEach(item => {
