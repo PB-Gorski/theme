@@ -12,12 +12,12 @@
     featuredImage.addEventListener('click', () => {
       popupImageContainer.classList.toggle('opacity-100');
       popupImageContainer.classList.toggle('z-[2]');
-    });
+    }, {passive: true});
 
     popupImageCloseBtn.addEventListener('click', () => {
       popupImageContainer.classList.toggle('opacity-100');
       popupImageContainer.classList.toggle('z-[2]');
-    });
-    
+    }, {passive: true});
+
   };
 // });
