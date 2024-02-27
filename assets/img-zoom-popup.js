@@ -9,6 +9,7 @@
     let popupImageContainer = document.querySelector('.js-featured_img_popup_container');
 
     featuredImageBig.src = featuredImageLink;
+    featuredImageBig.style.height = '100%';
 
     featuredImage.addEventListener('click', () => {
       popupImageContainer.classList.toggle('hidden');
