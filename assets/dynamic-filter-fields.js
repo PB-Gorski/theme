@@ -96,6 +96,16 @@
           // item?.classList.remove('dynamic-active');
         };
       });
+      console.log('item@#$@$: ', item);
+      if (item.dataset.name == 'Gdynia' || item.dataset.name == 'Gdańsk'){
+        console.log('miasto');
+
+        inwestycjePassiveArr.forEach(item => {
+          if (item.childNodes[1] != undefined){
+            item?.classList.remove('dynamic-active');
+          };
+        });
+      }
 
       if(dynamicFilterActive){
         inwestycjePassiveArr.forEach(item => {
@@ -155,16 +165,7 @@
           });
         };
 
-        console.log('item@#$@$: ', item);
-        if (item.dataset.name == 'Gdynia' || item.dataset.name == 'Gdańsk'){
-          console.log('miasto');
 
-          inwestycjePassiveArr.forEach(item => {
-            if (item.childNodes[1] != undefined){
-              item?.classList.remove('dynamic-active');
-            };
-          });
-        }
       };
     };
 
