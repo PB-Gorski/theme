@@ -1788,3 +1788,18 @@ background-color: #e8fbff!important;
 .single-mieszkania .wp-block-post-content + .wp-block-post-featured-image{
   display: none;
 }
+
+.parent{
+  width:300px;
+  border:5px solid red;
+  overflow-x: hidden; 
+  float:left;
+}
+.child{
+  width:1000px;
+  float:left;
+  font-size:15px;
+  font-family:arial;
+  padding:10px;
+  cursor: pointer;
+}
