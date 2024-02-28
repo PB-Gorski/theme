@@ -30,39 +30,82 @@
       e.stopPropagation();
     }, {passive: true});
 
-    let mouseDown = false;
-    let startX, scrollLeft;
-    let startY, scrollTop;
-    const slider = document.querySelector('.parent');
+    // let mouseDown = false;
+    // let startX, scrollLeft;
+    // let startY, scrollTop;
+    // const slider = document.querySelector('.parent');
 
-    const startDragging = (e) => {
-      mouseDown = true;
-      startX = e.pageX - slider.offsetLeft;
-      startY = e.pageY - slider.offsetDown;
-      scrollLeft = slider.scrollLeft;
-      scrollTop = slider.scrollTop;
+    // const startDragging = (e) => {
+    //   mouseDown = true;
+    //   startX = e.pageX - slider.offsetLeft;
+    //   startY = e.pageY - slider.offsetDown;
+    //   scrollLeft = slider.scrollLeft;
+    //   scrollTop = slider.scrollTop;
+    // }
+
+    // const stopDragging = (e) => {
+    //   mouseDown = false;
+    // }
+
+    // const move = (e) => {
+    //   e.preventDefault();
+    //   if(!mouseDown) { return; }
+    //   const x = e.pageX - slider.offsetLeft;
+    //   const y = e.pageY - slider.offsetDown;
+    //   const scroll = x - startX;
+    //   const scrollY = y - startY;
+    //   console.log(scroll, scrollY, scrollLeft, scrollTop);
+    //   slider.scrollLeft = scrollLeft - scroll;
+    //   slider.scrollTop = scrollTop - scrollY;
+    // }
+
+    // // Add the event listeners
+    // slider.addEventListener('mousemove', move, false);
+    // slider.addEventListener('mousedown', startDragging, false);
+    // slider.addEventListener('mouseup', stopDragging, false);
+    // slider.addEventListener('mouseleave', stopDragging, false);
+    // // end
+
+    const container = document.querySelector('#items-container');
+                
+    let startY;
+    let startX;
+    let scrollLeft;
+    let scrollTop;
+    let isDown;
+
+    container.addEventListener('mousedown',e => mouseIsDown(e));  
+    container.addEventListener('mouseup',e => mouseUp(e))
+    container.addEventListener('mouseleave',e=>mouseLeave(e));
+    container.addEventListener('mousemove',e=>mouseMove(e));
+
+    function mouseIsDown(e){
+      isDown = true;
+      startY = e.pageY - container.offsetTop;
+      startX = e.pageX - container.offsetLeft;
+      scrollLeft = container.scrollLeft;
+      scrollTop = container.scrollTop; 
     }
-
-    const stopDragging = (e) => {
-      mouseDown = false;
+    function mouseUp(e){
+      isDown = false;
     }
-
-    const move = (e) => {
-      e.preventDefault();
-      if(!mouseDown) { return; }
-      const x = e.pageX - slider.offsetLeft;
-      const y = e.pageY - slider.offsetDown;
-      const scroll = x - startX;
-      const scrollY = y - startY;
-      console.log(scroll, scrollY, scrollLeft, scrollTop);
-      slider.scrollLeft = scrollLeft - scroll;
-      slider.scrollTop = scrollTop - scrollY;
+    function mouseLeave(e){
+      isDown = false;
     }
+    function mouseMove(e){
+      if(isDown){
+        e.preventDefault();
+        //Move vertcally
+        const y = e.pageY - container.offsetTop;
+        const walkY = y - startY;
+        container.scrollTop = scrollTop - walkY;
 
-    // Add the event listeners
-    slider.addEventListener('mousemove', move, false);
-    slider.addEventListener('mousedown', startDragging, false);
-    slider.addEventListener('mouseup', stopDragging, false);
-    slider.addEventListener('mouseleave', stopDragging, false);
+        //Move Horizontally
+        const x = e.pageX - container.offsetLeft;
+        const walkX = x - startX;
+        container.scrollLeft = scrollLeft - walkX;
+
+      }
+    }
   };
 // });
