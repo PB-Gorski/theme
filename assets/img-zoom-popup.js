@@ -21,12 +21,6 @@
       popupImageContainer.classList.toggle('z-[2]');
     }, {passive: true});
 
-    // close popup
-    // popupImageCloseBtn.addEventListener('click', () => {
-    //   popupImageContainer.classList.toggle('opacity-100');
-    //   popupImageContainer.classList.toggle('z-[2]');
-    // }, {passive: true});
-
     // close popup by clicking outiside img
     popupImageContainer.addEventListener('click', (e) => {
       popupImageContainer.classList.toggle('opacity-100');
