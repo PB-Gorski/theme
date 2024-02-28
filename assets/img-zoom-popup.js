@@ -81,7 +81,7 @@
     })
     featuredImageBig.parentElement.addEventListener('dblclick', () => {
       console.log('double clicked on popup img');
-      featuredImageBig.classList.toggle('w-[200%]');
+      featuredImageBig.classList.toggle('w-[100%]');
       featuredImageBig.style.height = 'auto';
 
     })
