@@ -54,6 +54,7 @@
       const y = e.pageY - slider.offsetDown;
       const scroll = x - startX;
       const scrollY = y - startY;
+      console.log(scroll, scrollY, scrollLeft, scrollTop);
       slider.scrollLeft = scrollLeft - scroll;
       slider.scrollTop = scrollTop - scrollY;
     }
