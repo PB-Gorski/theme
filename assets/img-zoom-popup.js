@@ -50,7 +50,7 @@
       scrollLeft = container.scrollLeft;
       scrollTop = container.scrollTop; 
     };
-    
+
     function mouseUp(e){
       isDown = false;
     };
@@ -73,5 +73,11 @@
         container.scrollLeft = scrollLeft - walkX;
       };
     };
+
+    let item = document.querySelector('.js-item');
+
+    item.addEventListener('dbclick', () => {
+      item.classList.toggle('w-[300%]');
+    })
   };
 // });
