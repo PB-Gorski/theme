@@ -30,44 +30,8 @@
       e.stopPropagation();
     }, {passive: true});
 
-    // let mouseDown = false;
-    // let startX, scrollLeft;
-    // let startY, scrollTop;
-    // const slider = document.querySelector('.parent');
-
-    // const startDragging = (e) => {
-    //   mouseDown = true;
-    //   startX = e.pageX - slider.offsetLeft;
-    //   startY = e.pageY - slider.offsetDown;
-    //   scrollLeft = slider.scrollLeft;
-    //   scrollTop = slider.scrollTop;
-    // }
-
-    // const stopDragging = (e) => {
-    //   mouseDown = false;
-    // }
-
-    // const move = (e) => {
-    //   e.preventDefault();
-    //   if(!mouseDown) { return; }
-    //   const x = e.pageX - slider.offsetLeft;
-    //   const y = e.pageY - slider.offsetDown;
-    //   const scroll = x - startX;
-    //   const scrollY = y - startY;
-    //   console.log(scroll, scrollY, scrollLeft, scrollTop);
-    //   slider.scrollLeft = scrollLeft - scroll;
-    //   slider.scrollTop = scrollTop - scrollY;
-    // }
-
-    // // Add the event listeners
-    // slider.addEventListener('mousemove', move, false);
-    // slider.addEventListener('mousedown', startDragging, false);
-    // slider.addEventListener('mouseup', stopDragging, false);
-    // slider.addEventListener('mouseleave', stopDragging, false);
-    // // end
-
+    // image zoom
     const container = document.querySelector('#items-container');
-                
     let startY;
     let startX;
     let scrollLeft;
@@ -85,13 +49,16 @@
       startX = e.pageX - container.offsetLeft;
       scrollLeft = container.scrollLeft;
       scrollTop = container.scrollTop; 
-    }
+    };
+    
     function mouseUp(e){
       isDown = false;
-    }
+    };
+
     function mouseLeave(e){
       isDown = false;
-    }
+    };
+
     function mouseMove(e){
       if(isDown){
         e.preventDefault();
@@ -104,8 +71,7 @@
         const x = e.pageX - container.offsetLeft;
         const walkX = x - startX;
         container.scrollLeft = scrollLeft - walkX;
-
-      }
-    }
+      };
+    };
   };
 // });
