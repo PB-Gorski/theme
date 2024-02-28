@@ -76,7 +76,7 @@
 
     let item = document.querySelector('.js-item');
 
-    item.addEventListener('dbclick', () => {
+    item.addEventListener('dblclick', () => {
       item.classList.toggle('w-[300%]');
     })
   };
