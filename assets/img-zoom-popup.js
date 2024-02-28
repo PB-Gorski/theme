@@ -81,7 +81,9 @@
     })
     featuredImageBig.parentElement.addEventListener('dblclick', () => {
       console.log('double clicked on popup img');
-      featuredImageBig.classList.toggle('w-[300%]');
+      featuredImageBig.classList.toggle('w-[200%]');
+      featuredImageBig.style.height = 'auto';
+
     })
   };
 // });
