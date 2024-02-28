@@ -32,7 +32,7 @@
 
     let mouseDown = false;
     let startX, scrollLeft;
-    let startY, scrollDown;
+    let startY, scrollTop;
     const slider = document.querySelector('.parent');
 
     const startDragging = (e) => {
@@ -40,7 +40,7 @@
       startX = e.pageX - slider.offsetLeft;
       startY = e.pageY - slider.offsetDown;
       scrollLeft = slider.scrollLeft;
-      scrollDown = slider.scrollDown;
+      scrollTop = slider.scrollTop;
     }
 
     const stopDragging = (e) => {
@@ -55,7 +55,7 @@
       const scroll = x - startX;
       const scrollY = y - startY;
       slider.scrollLeft = scrollLeft - scroll;
-      slider.scrollDown = scrollDown - scrollY;
+      slider.scrollTop = scrollTop - scrollY;
     }
 
     // Add the event listeners
