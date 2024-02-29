@@ -30,6 +30,8 @@
       e.stopPropagation();
     }, {passive: true});
 
+    // ------------------------------------------------------------------------------------------
+
     // image zoom
     const container = document.querySelector('#items-container');
     let startY;
@@ -83,7 +85,7 @@
       // item.classList.toggle('w-[300%]');
     })
     featuredImageBig.parentElement.addEventListener('dblclick', () => {
-      console.log('double clicked on popup img');
+      featuredImageBig.parentElement.classList.toggle('h-[90%]')
       // featuredImageBig.classList.toggle('w-[100%]');
       if (featuredImageBig.style.height == 'auto'){
         featuredImageBig.style.height = '90%';
