@@ -72,9 +72,6 @@
         const x = e.pageX - container.offsetLeft;
         const walkX = x - startX;
         container.scrollLeft = scrollLeft - walkX;
-
-        console.log(walkY, walkX);
-        console.log(startY, startX);
       };
     };
 
