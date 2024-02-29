@@ -79,7 +79,7 @@
     };
 
     featuredImageBig.parentElement.addEventListener('dblclick', () => {
-      featuredImageBig.parentElement.classList.toggle('h-[90%]')
+      featuredImageBig.parentElement.classList.toggle('desktop:h-[90%]')
       featuredImageBig.classList.toggle('w-[95%]');
       if (featuredImageBig.style.height == 'auto'){
         featuredImageBig.style.height = '90%';
