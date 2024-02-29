@@ -81,12 +81,12 @@
 
     let item = document.querySelector('.js-item');
 
-    item.addEventListener('dblclick', () => {
-      // item.classList.toggle('w-[300%]');
-    })
+    // item.addEventListener('dblclick', () => {
+    //   item.classList.toggle('w-[300%]');
+    // })
     featuredImageBig.parentElement.addEventListener('dblclick', () => {
       featuredImageBig.parentElement.classList.toggle('h-[90%]')
-      // featuredImageBig.classList.toggle('w-[100%]');
+      // featuredImageBig.classList.toggle('w-[80%]');
       if (featuredImageBig.style.height == 'auto'){
         featuredImageBig.style.height = '90%';
       }else{
