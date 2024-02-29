@@ -73,6 +73,7 @@
         container.scrollLeft = scrollLeft - walkX;
 
         console.log(walkY, walkX);
+        console.log(startY, startX);
       };
     };
 
