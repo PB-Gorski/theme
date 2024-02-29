@@ -46,7 +46,7 @@
     function mouseIsDown(e){
       isDown = true;
       startY = e.pageY - container.offsetTop;
-      startX = (e.pageX - container.offsetLeft)/2;
+      startX = e.pageX - container.offsetLeft;
       scrollLeft = container.scrollLeft;
       scrollTop = container.scrollTop; 
     };
@@ -69,7 +69,7 @@
 
         //Move Horizontally
         const x = e.pageX - container.offsetLeft;
-        const walkX = startX;
+        const walkX = x - startX;
         container.scrollLeft = scrollLeft - walkX;
 
         console.log(walkY, walkX);
