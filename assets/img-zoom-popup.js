@@ -84,8 +84,12 @@
     featuredImageBig.parentElement.addEventListener('dblclick', () => {
       console.log('double clicked on popup img');
       // featuredImageBig.classList.toggle('w-[100%]');
-      walkX = -800;
-      featuredImageBig.style.height = 'auto';
+      if (featuredImageBig.style.height == 'auto'){
+        featuredImageBig.style.height = '90%';
+      }else{
+        featuredImageBig.style.height = 'auto';
+
+      }
 
     })
   };
