@@ -48,6 +48,10 @@ if (!defined('ABSPATH')) {
   </tbody>
 </table>
 <div>
+  <div class="hidden">
+    [dynamic_text inwestycja class:hidden readonly "CF7_get_taxonomy taxonomy='inwestycja'"]
+    [dynamic_text local class:hidden readonly "CF7_get_post_var key='post_title'"]
+  </div>
   [submit "Wyślij wiadomość"]
   <!-- <button type="submit" class="relative mx-auto bg-primaryRed px-[20px] text-white w-fit h-[55px] flex items-center justify-center before:content-[''] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#95102b] before:transition-height before:duration-300 before:ease cursor-pointer" style="border-bottom:3px solid #95102b"><span class=" z-[1] relative">Wyślij</span></button>  -->
 </div>
