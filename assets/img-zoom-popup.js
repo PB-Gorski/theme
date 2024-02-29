@@ -71,6 +71,8 @@
         const x = e.pageX - container.offsetLeft;
         const walkX = x - startX;
         container.scrollLeft = scrollLeft - walkX;
+
+        console.log(walkY, walkX);
       };
     };
 
@@ -82,6 +84,7 @@
     featuredImageBig.parentElement.addEventListener('dblclick', () => {
       console.log('double clicked on popup img');
       // featuredImageBig.classList.toggle('w-[100%]');
+      walkX = -800;
       featuredImageBig.style.height = 'auto';
 
     })
