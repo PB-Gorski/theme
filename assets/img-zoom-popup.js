@@ -80,7 +80,7 @@
     let item = document.querySelector('.js-item');
 
     item.addEventListener('dblclick', () => {
-      item.classList.toggle('w-[300%]');
+      // item.classList.toggle('w-[300%]');
     })
     featuredImageBig.parentElement.addEventListener('dblclick', () => {
       console.log('double clicked on popup img');
