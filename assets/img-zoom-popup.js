@@ -3,13 +3,12 @@
     let featuredImage = document.querySelector('.wp-post-image');
     let featuredImageLink = document.querySelector('.wp-post-image').src;
 
-
     if(featuredImageLink.includes('data:')){
       featuredImageLink = document.querySelector('.wp-post-image').dataset.src;
     }
     document.querySelector('.wp-post-image').dataset.src
     let featuredImageBig = document.querySelector('.js-featured-img-popup').childNodes[1];
-    let popupImageCloseBtn = document.querySelector('.js-close-popup-featured-image');
+    // let popupImageCloseBtn = document.querySelector('.js-close-popup-featured-image');
     let popupImageContainer = document.querySelector('.js-featured_img_popup_container');
 
     featuredImageBig.src = featuredImageLink;
@@ -79,11 +78,6 @@
       };
     };
 
-    let item = document.querySelector('.js-item');
-
-    // item.addEventListener('dblclick', () => {
-    //   item.classList.toggle('w-[300%]');
-    // })
     featuredImageBig.parentElement.addEventListener('dblclick', () => {
       featuredImageBig.parentElement.classList.toggle('h-[90%]')
       featuredImageBig.classList.toggle('w-[95%]');
@@ -91,9 +85,7 @@
         featuredImageBig.style.height = '90%';
       }else{
         featuredImageBig.style.height = 'auto';
-
-      }
-
-    })
+      };
+    });
   };
 // });
