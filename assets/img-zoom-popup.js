@@ -69,7 +69,7 @@
 
         //Move Horizontally
         const x = e.pageX - container.offsetLeft;
-        const walkX = x - startX;
+        const walkX = startX;
         container.scrollLeft = scrollLeft - walkX;
 
         console.log(walkY, walkX);
