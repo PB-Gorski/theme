@@ -40,11 +40,18 @@
       if (item.dataset.name == 'Osiedle Srebrniki' || item.dataset.name == 'Sukiennicza 19A' || item.dataset.name == 'Toruńska 16' || item.dataset.name == 'Wieżycka Folwark'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"28"},{"termId":"640"},{"termId":"641"}]}';
       };
+
+      if (item.dataset.name == 'Gdynia'){
+        item.dataset.dependencies = '{"dependencies":[{"termId":"71"},{"termId":"640"},{"termId":"641"}]}';
+        swPiotrOption = item;
+      }else if(item.dataset.name != 'Gdańsk'){
+        item.dataset.dependencies = '{"dependencies":[{"termId":"72"},{"termId":"81"},{"termId":"82"},{"termId":"677"}]}';
+      };
     });
     // ------------------------------------------------------------
 
     // getting id of choosen city
-    function getChoosenCityId(item){
+    function getChoosenSingleId(item){
       // city single choice
       if (item.classList.contains('active')){
         choosenFilterFieldsArr = [];
@@ -57,7 +64,7 @@
           inwestycjePassiveArr[i]?.classList.remove('hidden');
         }
       };
-      console.log('getChoosenCityId choosenFilterFieldsArr: ', choosenFilterFieldsArr);
+      console.log('getChoosenSingleId choosenFilterFieldsArr: ', choosenFilterFieldsArr);
       return choosenFilterFieldsArr;
     };
 
@@ -75,7 +82,7 @@
       });
     };
 
-    // searching for id's dependencies and marking items with connected id
+    // searching for id's dependencies and marking items with connected id (miasto -> inwestycje)
     function checkInwestycjeForDependenciesID(item){
       // cleaning when choosen city
       let inwestycjeDependenciesArr = [];
@@ -118,14 +125,58 @@
       };
     };
 
+    // searching for id's dependencies and marking items with connected id (inwestycje -> misto)
+    function checkMiastoForDependenciesID(item){
+      // cleaning when choosen inwestyjca
+      let miastoDependenciesArr = [];
+      if (item.dataset.name == 'Św. Piotra' || item.dataset.name == 'Osiedle Srebrniki'){
+        miastoPassiveArr.forEach(item => {
+          if (item.childNodes[1] != undefined){
+            item?.classList.remove('dynamic-active');
+          };
+        });
+      }
+
+      if(dynamicFilterActive){
+        miastoPassiveArr.forEach(item => {
+          if (item.childNodes[1] != undefined){
+            // all dependencies array
+            miastoDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
+
+            // cleaning marked items in filter list
+            if(dynamicFilterActive){
+              item?.classList.remove('hidden');
+            };
+          };
+        });
+
+        // searching and marking items with the same dependencies
+        for (let i = 0 ; i < miastoDependenciesArr.length ; i++){
+          for (let j = 0 ;  j < miastoDependenciesArr[i].length ; j++){
+            if (+miastoDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
+              miastoPassiveArr[i+3].classList.add('dynamic-active');
+            }else if(+miastoDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
+              setTimeout(() => {
+                if(!miastoPassiveArr[i+3].classList.contains('dynamic-active')){
+                  // cleaning option without dependencies
+                  miastoPassiveArr[i+3].classList.add('hidden');
+                };
+              }, 300);
+            };
+          };
+        };
+      };
+    };
+
     // party begin
     passiveOptionsArr.forEach(item => {
       // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
       item.addEventListener('click', () => {
         let runDynamicFilters = window.setInterval(function(){
           isDynamicFilterActive();
-          choosenFilterFieldsArr = +getChoosenCityId(item);
+          choosenFilterFieldsArr = +getChoosenSingleId(item);
           checkInwestycjeForDependenciesID(item);
+          checkMiastoForDependenciesID(item);
 
           clearInterval(runDynamicFilters);
           },400);
