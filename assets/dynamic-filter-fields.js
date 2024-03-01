@@ -151,7 +151,7 @@
             console.log('miastoDependenciesArr: ', miastoDependenciesArr);
 
             // cleaning marked items in filter list
-            if(dynamicFilterActive){
+            if(true){
               item?.classList.remove('hidden');
             };
           };
