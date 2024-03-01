@@ -23,8 +23,8 @@
 
     // ------------------------------------------------------------
     /*
-      gdynia(termid: 40) - inwestycje: sw piotr
-      gdansk(termid: 28) - inwestycje: osiedle srebrniki, sukiennicza 19, torunska 16, wiezycka folwark
+      gdynia(termid: 40) - inwestycje: sw piotr (71)
+      gdansk(termid: 28) - inwestycje: osiedle srebrniki (72), sukiennicza 19 (677), torunska 16 (82), wiezycka folwark (81)
       reszta inwestycji ma dodane termid-1,2,3 zeby tylko były wypełnione
     */
 
@@ -57,8 +57,25 @@
           inwestycjePassiveArr[i]?.classList.remove('hidden');
         }
       };
+      console.log('getChoosenCityId choosenFilterFieldsArr: ', choosenFilterFieldsArr);
       return choosenFilterFieldsArr;
     };
+    // getting id of choosen inwestycja
+    // function getChoosenInvestmentId(item){
+    //   // city single choice
+    //   if (item.classList.contains('active')){
+    //     choosenFilterFieldsArr = [];
+    //     choosenFilterFieldsArr = ((item.dataset.termid));
+    //   }else{
+    //     choosenFilterFieldsArr = [];
+            
+    //     // cleaning inwestycje list active fileds
+    //     for(let i = 3 ; i < inwestycjePassiveArr.length-1 ; i++){
+    //       inwestycjePassiveArr[i]?.classList.remove('hidden');
+    //     }
+    //   };
+    //   return choosenFilterFieldsArr;
+    // };
 
     function isDynamicFilterActive(){
       // checking if dynamic filter is running with choosen city
