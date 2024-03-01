@@ -80,6 +80,18 @@
             },400);
         };
       });
+
+      // checking if dynamic filter is running with choosen inwestment
+      inwestycjePassiveArr.forEach(item =>{
+        if ( typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
+          dynamicFilterActive = true;
+        }else if(!item.childNodes[1]?.classList.contains('active')){
+          let isDynamicFilterActiveTimeout = window.setInterval(function(){
+            dynamicFilterActive = false;
+            clearInterval(isDynamicFilterActiveTimeout);
+            },400);
+        };
+      });
     };
 
     // searching for id's dependencies and marking items with connected id (miasto -> inwestycje)
@@ -138,17 +150,17 @@
         });
       }
 
-      console.log('miastoPassiveArr: ', miastoPassiveArr);
+      // console.log('miastoPassiveArr: ', miastoPassiveArr);
       console.log('dynamicFilterActive: ', dynamicFilterActive);
 
-      if(true){
-        console.log('if dynamicFilterActive true');
+      if(dynamicFilterActive){
+        console.log('if dynamicFilterActive dynamicFilterActive');
         miastoPassiveArr.forEach(item => {
           console.log('forEach start');
           if (item.childNodes[1] != undefined){
             // all dependencies array
             miastoDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
-            console.log('miastoDependenciesArr: ', miastoDependenciesArr);
+            // console.log('miastoDependenciesArr: ', miastoDependenciesArr);
 
             // cleaning marked items in filter list
             if(true){
@@ -163,7 +175,7 @@
           for (let j = 0 ;  j < miastoDependenciesArr[i].length ; j++){
             if (+miastoDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
               miastoPassiveArr[i+3].classList.add('dynamic-active');
-              console.log('miastoPassiveArr[i+3]: ',miastoPassiveArr[i+3]);
+              // console.log('miastoPassiveArr[i+3]: ',miastoPassiveArr[i+3]);
             }else if(+miastoDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
               setTimeout(() => {
                 if(!miastoPassiveArr[i+3].classList.contains('dynamic-active')){
