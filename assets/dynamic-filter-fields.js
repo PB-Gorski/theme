@@ -139,8 +139,9 @@
       }
 
       console.log('miastoPassiveArr: ', miastoPassiveArr);
+      console.log('dynamicFilterActive: ', dynamicFilterActive);
 
-      if(dynamicFilterActive){
+      if(true){
         console.log('if dynamicFilterActive true');
         miastoPassiveArr.forEach(item => {
           console.log('forEach start');
