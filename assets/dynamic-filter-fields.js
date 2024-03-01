@@ -181,7 +181,7 @@
                 if(!miastoPassiveArr[i+3].classList.contains('dynamic-active')){
                   // cleaning option without dependencies
                   console.log('cleaning option without dependencies');
-                  miastoPassiveArr[i+3].classList.add('hidden');
+                  // miastoPassiveArr[i+3].classList.add('hidden');
                 };
               }, 300);
             };
