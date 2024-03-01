@@ -43,8 +43,8 @@
 
       if (item.dataset.name == 'Gdynia'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"71"},{"termId":"640"},{"termId":"641"}]}';
-        swPiotrOption = item;
-      }else if(item.dataset.name != 'Gdańsk'){
+      }
+      if(item.dataset.name != 'Gdańsk'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"72"},{"termId":"81"},{"termId":"82"},{"termId":"677"}]}';
       };
     });
