@@ -60,22 +60,6 @@
       console.log('getChoosenCityId choosenFilterFieldsArr: ', choosenFilterFieldsArr);
       return choosenFilterFieldsArr;
     };
-    // getting id of choosen inwestycja
-    // function getChoosenInvestmentId(item){
-    //   // city single choice
-    //   if (item.classList.contains('active')){
-    //     choosenFilterFieldsArr = [];
-    //     choosenFilterFieldsArr = ((item.dataset.termid));
-    //   }else{
-    //     choosenFilterFieldsArr = [];
-            
-    //     // cleaning inwestycje list active fileds
-    //     for(let i = 3 ; i < inwestycjePassiveArr.length-1 ; i++){
-    //       inwestycjePassiveArr[i]?.classList.remove('hidden');
-    //     }
-    //   };
-    //   return choosenFilterFieldsArr;
-    // };
 
     function isDynamicFilterActive(){
       // checking if dynamic filter is running with choosen city
