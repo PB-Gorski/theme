@@ -141,7 +141,9 @@
       console.log('miastoPassiveArr: ', miastoPassiveArr);
 
       if(dynamicFilterActive){
+        console.log('if dynamicFilterActive true');
         miastoPassiveArr.forEach(item => {
+          console.log('forEach start');
           if (item.childNodes[1] != undefined){
             // all dependencies array
             miastoDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
@@ -180,7 +182,7 @@
         let runDynamicFilters = window.setInterval(function(){
           isDynamicFilterActive();
           choosenFilterFieldsArr = +getChoosenSingleId(item);
-          checkInwestycjeForDependenciesID(item);
+          // checkInwestycjeForDependenciesID(item);
           checkMiastoForDependenciesID(item);
 
           clearInterval(runDynamicFilters);
