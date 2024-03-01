@@ -163,7 +163,7 @@
             // console.log('miastoDependenciesArr: ', miastoDependenciesArr);
 
             // cleaning marked items in filter list
-            if(true){
+            if(dynamicFilterActive){
               console.log('remove hidden');
               item?.classList.remove('hidden');
             };
@@ -181,7 +181,7 @@
                 if(!miastoPassiveArr[i+3].classList.contains('dynamic-active')){
                   // cleaning option without dependencies
                   console.log('cleaning option without dependencies');
-                  // miastoPassiveArr[i+3].classList.add('hidden');
+                  miastoPassiveArr[i+3].classList.add('hidden');
                 };
               }, 300);
             };
