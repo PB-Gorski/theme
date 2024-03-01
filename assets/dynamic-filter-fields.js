@@ -145,6 +145,7 @@
         miastoPassiveArr.forEach(item => {
           if (item.childNodes[1] != undefined){
             item?.classList.remove('dynamic-active');
+            item?.classList.remove('hidden');
             console.log('removed dynamic-active when osiedle choosen');
           };
         });
