@@ -205,7 +205,7 @@
       };
     };
 
-    // party begin
+    
     // old
     // allOptionsPassiveArr.forEach(item => {
     //   // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
@@ -220,18 +220,23 @@
     //       },400);
     //   });
     // });
+
+    // party begin
     miastoOptionsPassiveLinkArr.forEach(item => {
       // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
-      item.addEventListener('click', () => {
-        let runDynamicFilters = window.setInterval(function(){
-          isDynamicFilterActive();
-          choosenFilterFieldsArr = +getChoosenSingleId(item);
-          checkInwestycjeForDependenciesID(item);
+      if(dynamicFilterMiastoActive){
+        item.addEventListener('click', () => {
+          let runDynamicFilters = window.setInterval(function(){
+            isDynamicFilterActive();
+            choosenFilterFieldsArr = +getChoosenSingleId(item);
+            checkInwestycjeForDependenciesID(item);
 
-          clearInterval(runDynamicFilters);
-          },400);
-      });
+            clearInterval(runDynamicFilters);
+            },400);
+        });
+      }
     });
+    
     inwestycjaOptionsPassiveLinkArr.forEach(item => {
       // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
       item.addEventListener('click', () => {
