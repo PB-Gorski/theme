@@ -32,6 +32,8 @@
     let inwestycjePassiveArr = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
     let choosenFilterFieldsArr = [];
     let dynamicFilterActive = false;
+    let dynamicFilterMiastoActive = false;
+    let dynamicFilterInwestycaActive = false;
 
     // ------------------------------------------------------------
     /*
@@ -84,10 +86,10 @@
       // checking if dynamic filter is running with choosen city
       miastoPassiveArr.forEach(item =>{
         if ( typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
-          dynamicFilterActive = true;
+          dynamicFilterMiastoActive = true;
         }else if(!item.childNodes[1]?.classList.contains('active')){
           let isDynamicFilterActiveTimeout = window.setInterval(function(){
-            dynamicFilterActive = false;
+            dynamicFilterMiastoActive = false;
             clearInterval(isDynamicFilterActiveTimeout);
             },400);
         };
@@ -96,10 +98,10 @@
       // checking if dynamic filter is running with choosen investment
       inwestycjePassiveArr.forEach(item =>{
         if ( typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
-          dynamicFilterActive = true;
+          dynamicFilterInwestycaActive = true;
         }else if(!item.childNodes[1]?.classList.contains('active')){
           let isDynamicFilterActiveTimeout = window.setInterval(function(){
-            dynamicFilterActive = false;
+            dynamicFilterInwestycaActive = false;
             clearInterval(isDynamicFilterActiveTimeout);
             },400);
         };
@@ -118,14 +120,14 @@
         });
       }
 
-      if(dynamicFilterActive){
+      if(dynamicFilterMiastoActive){
         inwestycjePassiveArr.forEach(item => {
           if (item.childNodes[1] != undefined){
             // all dependencies array
             inwestycjeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
 
             // cleaning marked items in filter list
-            if(dynamicFilterActive){
+            if(dynamicFilterMiastoActive){
               item?.classList.remove('hidden');
             };
           };
@@ -164,9 +166,9 @@
       }
 
       // console.log('miastoPassiveArr: ', miastoPassiveArr);
-      console.log('dynamicFilterActive: ', dynamicFilterActive);
+      console.log('dynamicFilterActive: ', dynamicFilterInwestycaActive);
 
-      if(dynamicFilterActive){
+      if(dynamicFilterInwestycaActive){
         console.log('if dynamicFilterActive dynamicFilterActive');
         miastoPassiveArr.forEach(item => {
           console.log('forEach start');
@@ -176,7 +178,7 @@
             // console.log('miastoDependenciesArr: ', miastoDependenciesArr);
 
             // cleaning marked items in filter list
-            if(dynamicFilterActive){
+            if(dynamicFilterInwestycaActive){
               console.log('remove hidden');
               item?.classList.remove('hidden');
             };
