@@ -17,15 +17,15 @@
     // let passiveOptionsArr = document.querySelectorAll(".menu-link");
     let allOptionsPassiveArr = document.querySelectorAll('.menu-link');
     let miastoOptionsPassiveLinkArr = [
-      document.querySelector('.item-gdansk'),
-      document.querySelector('.item-gdansk')
+      document.querySelector('.item-gdansk').childNodes[1],
+      document.querySelector('.item-gdansk').childNodes[1]
     ];
     let inwestycjaOptionsPassiveLinkArr = [
-      document.querySelector('.item-osiedle-srebrniki'),
-      document.querySelector('.item-sukienicza-19A'),
-      document.querySelector('.item-sw-piotra'),
-      document.querySelector('.item-torunska-16'),
-      document.querySelector('.item-wiezycka-folwark'),
+      document.querySelector('.item-osiedle-srebrniki').childNodes[1],
+      document.querySelector('.item-sukienicza-19A').childNodes[1],
+      document.querySelector('.item-sw-piotra').childNodes[1],
+      document.querySelector('.item-torunska-16').childNodes[1],
+      document.querySelector('.item-wiezycka-folwark').childNodes[1],
     ];
     let inwestycjaOptionsPassiveArr = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes[3].childNodes[1];
     let miastoPassiveArr = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
