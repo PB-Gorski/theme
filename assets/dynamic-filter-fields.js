@@ -225,7 +225,6 @@
           isDynamicFilterActive();
           choosenFilterFieldsArr = +getChoosenSingleId(item);
           checkInwestycjeForDependenciesID(item);
-          checkMiastoForDependenciesID(item);
 
           clearInterval(runDynamicFilters);
           },400);
