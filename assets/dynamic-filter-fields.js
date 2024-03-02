@@ -232,8 +232,8 @@
             choosenFilterFieldsArr = +getChoosenSingleId(item);
             checkInwestycjeForDependenciesID(item);
 
-            clearInterval(runDynamicFilters);
           };
+            clearInterval(runDynamicFilters);
         },400);
       });
      
