@@ -18,7 +18,7 @@
     let allOptionsPassiveArr = document.querySelectorAll('.menu-link');
     let miastoOptionsPassiveLinkArr = [
       document.querySelector('.item-gdansk').childNodes[1],
-      document.querySelector('.item-gdansk').childNodes[1]
+      document.querySelector('.item-gdynia').childNodes[1]
     ];
     let inwestycjaOptionsPassiveLinkArr = [
       document.querySelector('.item-osiedle-srebrniki').childNodes[1],
@@ -225,6 +225,18 @@
           isDynamicFilterActive();
           choosenFilterFieldsArr = +getChoosenSingleId(item);
           checkInwestycjeForDependenciesID(item);
+
+          clearInterval(runDynamicFilters);
+          },400);
+      });
+    });
+    inwestycjaOptionsPassiveLinkArr.forEach(item => {
+      // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
+      item.addEventListener('click', () => {
+        let runDynamicFilters = window.setInterval(function(){
+          isDynamicFilterActive();
+          choosenFilterFieldsArr = +getChoosenSingleId(item);
+          checkMiastoForDependenciesID(item);
 
           clearInterval(runDynamicFilters);
           },400);
