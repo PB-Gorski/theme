@@ -22,7 +22,7 @@
     ];
     let inwestycjaOptionsPassiveLinkArr = [
       document.querySelector('.item-osiedle-srebrniki').childNodes[1],
-      document.querySelector('.item-sukiennicza-19A').childNodes[1],
+      document.querySelector('.item-sukiennicza-19a').childNodes[1],
       document.querySelector('.item-sw-piotra').childNodes[1],
       document.querySelector('.item-torunska-16').childNodes[1],
       document.querySelector('.item-wiezycka-folwark').childNodes[1],
