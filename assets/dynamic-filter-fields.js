@@ -14,10 +14,22 @@
     };
     // ---------
 
+    // let passiveOptionsArr = document.querySelectorAll(".menu-link");
     let allOptionsPassiveArr = document.querySelectorAll('.menu-link');
+    let miastoOptionsPassiveLinkArr = [
+      document.querySelector('.item-gdansk'),
+      document.querySelector('.item-gdansk')
+    ];
+    let inwestycjaOptionsPassiveLinkArr = [
+      document.querySelector('.item-osiedle-srebrniki'),
+      document.querySelector('.item-sukienicza-19A'),
+      document.querySelector('.item-sw-piotra'),
+      document.querySelector('.item-torunska-16'),
+      document.querySelector('.item-wiezycka-folwark'),
+    ];
+    let inwestycjaOptionsPassiveArr = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes[3].childNodes[1];
     let miastoPassiveArr = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
     let inwestycjePassiveArr = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
-    let passiveOptionsArr = document.querySelectorAll(".menu-link");
     let choosenFilterFieldsArr = [];
     let dynamicFilterActive = false;
 
@@ -81,7 +93,7 @@
         };
       });
 
-      // checking if dynamic filter is running with choosen inwestment
+      // checking if dynamic filter is running with choosen investment
       inwestycjePassiveArr.forEach(item =>{
         if ( typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
           dynamicFilterActive = true;
@@ -192,7 +204,21 @@
     };
 
     // party begin
-    passiveOptionsArr.forEach(item => {
+    // old
+    // allOptionsPassiveArr.forEach(item => {
+    //   // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
+    //   item.addEventListener('click', () => {
+    //     let runDynamicFilters = window.setInterval(function(){
+    //       isDynamicFilterActive();
+    //       choosenFilterFieldsArr = +getChoosenSingleId(item);
+    //       checkInwestycjeForDependenciesID(item);
+    //       checkMiastoForDependenciesID(item);
+
+    //       clearInterval(runDynamicFilters);
+    //       },400);
+    //   });
+    // });
+    miastoOptionsPassiveLinkArr.forEach(item => {
       // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
       item.addEventListener('click', () => {
         let runDynamicFilters = window.setInterval(function(){
