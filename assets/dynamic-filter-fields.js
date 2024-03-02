@@ -198,7 +198,7 @@
         let runDynamicFilters = window.setInterval(function(){
           isDynamicFilterActive();
           choosenFilterFieldsArr = +getChoosenSingleId(item);
-          // checkInwestycjeForDependenciesID(item);
+          checkInwestycjeForDependenciesID(item);
           checkMiastoForDependenciesID(item);
 
           clearInterval(runDynamicFilters);
