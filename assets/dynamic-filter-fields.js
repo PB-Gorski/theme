@@ -243,17 +243,17 @@
      
     });
 
-    inwestycjaOptionsPassiveLinkArr.forEach(item => {
-      // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
-      item.addEventListener('click', () => {
-        let runDynamicFilters = window.setInterval(function(){
-          isDynamicFilterActive();
-          choosenFilterFieldsArr = +getChoosenSingleId(item);
-          checkMiastoForDependenciesID(item);
+    // inwestycjaOptionsPassiveLinkArr.forEach(item => {
+    //   // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
+    //   item.addEventListener('click', () => {
+    //     let runDynamicFilters = window.setInterval(function(){
+    //       isDynamicFilterActive();
+    //       choosenFilterFieldsArr = +getChoosenSingleId(item);
+    //       checkMiastoForDependenciesID(item);
 
-          clearInterval(runDynamicFilters);
-          },400);
-      });
-    });
+    //       clearInterval(runDynamicFilters);
+    //       },400);
+    //   });
+    // });
   };
 // });
