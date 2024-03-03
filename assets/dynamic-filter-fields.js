@@ -247,8 +247,11 @@
       
       item.addEventListener('click', () => {
         miastoOptionsPassiveLinkArr.forEach(item => {
-          if(item.classList.contains('active')){
+          if(!item.classList.contains('active')){
             isMiastoActive = true;
+          } else{
+            isMiastoActive = false;
+
           };
         });
         console.log('after if, miastoActive: ', isMiastoActive);
