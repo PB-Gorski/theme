@@ -228,11 +228,9 @@
       item.addEventListener('click', () => {
         let runDynamicFilters = window.setInterval(function(){
           isDynamicFilterActive();
-          if(dynamicFilterMiastoActive){
             choosenFilterFieldsArr = +getChoosenSingleId(item);
             checkInwestycjeForDependenciesID(item);
 
-          };
             clearInterval(runDynamicFilters);
         },400);
       });
