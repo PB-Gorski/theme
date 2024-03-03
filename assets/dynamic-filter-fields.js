@@ -226,12 +226,8 @@
       // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
       
       item.addEventListener('click', () => {
-        let runDynamicFilters2 = window.setInterval(function(){
-        isDynamicFilterActive();
-        clearInterval(runDynamicFilters2);
-        },400);
-
         let runDynamicFilters = window.setInterval(function(){
+          isDynamicFilterActive();
           if(dynamicFilterMiastoActive){
             choosenFilterFieldsArr = +getChoosenSingleId(item);
             checkInwestycjeForDependenciesID(item);
