@@ -160,26 +160,19 @@
           if (item.childNodes[1] != undefined){
             item?.classList.remove('dynamic-active');
             item?.classList.remove('hidden');
-            console.log('removed dynamic-active when osiedle choosen');
           };
         });
       }
 
-      // console.log('miastoPassiveArr: ', miastoPassiveArr);
-      console.log('dynamicFilterActive: ', dynamicFilterInwestycaActive);
-
       if(dynamicFilterInwestycaActive){
         console.log('if dynamicFilterActive dynamicFilterActive');
         miastoPassiveArr.forEach(item => {
-          console.log('forEach start');
           if (item.childNodes[1] != undefined){
             // all dependencies array
             miastoDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
-            // console.log('miastoDependenciesArr: ', miastoDependenciesArr);
 
             // cleaning marked items in filter list
             if(dynamicFilterInwestycaActive){
-              console.log('remove hidden');
               item?.classList.remove('hidden');
             };
           };
@@ -195,7 +188,6 @@
               setTimeout(() => {
                 if(!miastoPassiveArr[i+3].classList.contains('dynamic-active')){
                   // cleaning option without dependencies
-                  console.log('cleaning option without dependencies');
                   miastoPassiveArr[i+3].classList.add('hidden');
                 };
               }, 300);
