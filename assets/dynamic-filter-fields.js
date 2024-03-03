@@ -78,7 +78,6 @@
           inwestycjePassiveArr[i]?.classList.remove('hidden');
         }
       };
-      console.log('getChoosenSingleId choosenFilterFieldsArr: ', choosenFilterFieldsArr);
       return choosenFilterFieldsArr;
     };
 
@@ -165,7 +164,6 @@
       }
 
       if(dynamicFilterInwestycaActive){
-        console.log('if dynamicFilterActive dynamicFilterActive');
         miastoPassiveArr.forEach(item => {
           if (item.childNodes[1] != undefined){
             // all dependencies array
@@ -183,7 +181,6 @@
           for (let j = 0 ;  j < miastoDependenciesArr[i].length ; j++){
             if (+miastoDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
               miastoPassiveArr[i+3].classList.add('dynamic-active');
-              // console.log('miastoPassiveArr[i+3]: ',miastoPassiveArr[i+3]);
             }else if(+miastoDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
               setTimeout(() => {
                 if(!miastoPassiveArr[i+3].classList.contains('dynamic-active')){
@@ -234,9 +231,6 @@
 
     let isMiastoActive = false;
     inwestycjaOptionsPassiveLinkArr.forEach(item => {      
-      
-      
-      
       item.addEventListener('click', () => {
         miastoOptionsPassiveLinkArr.forEach(item => {
           if(!item.classList.contains('active')){
@@ -246,9 +240,8 @@
 
           };
         });
-        console.log('after if, miastoActive: ', isMiastoActive);
+
         if(isMiastoActive){
-          console.log('running inwestycje');
           // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
           let runDynamicFilters = window.setInterval(function(){
             isDynamicFilterActive();
