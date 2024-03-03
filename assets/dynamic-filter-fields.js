@@ -236,19 +236,24 @@
      
     });
 
-    let isMiastoActive = false;
-    inwestycjaOptionsPassiveLinkArr.forEach(item => {
 
-      miastoOptionsPassiveLinkArr.forEach(item => {
-        if(item.classList.contains('active')){
-          isMiastoActive = true;
-        };
-      });
+
+
+
+    let isMiastoActive = false;
+    inwestycjaOptionsPassiveLinkArr.forEach(item => {      
       
-      console.log('miastoAcrtive: ', isMiastoActive);
-      if(isMiastoActive){
-        console.log('running inwestycje');
-        item.addEventListener('click', () => {
+      
+      
+      item.addEventListener('click', () => {
+        miastoOptionsPassiveLinkArr.forEach(item => {
+          if(item.classList.contains('active')){
+            isMiastoActive = true;
+          };
+        });
+        console.log('after if, miastoActive: ', isMiastoActive);
+        if(isMiastoActive){
+          console.log('running inwestycje');
           // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
           let runDynamicFilters = window.setInterval(function(){
             isDynamicFilterActive();
@@ -257,8 +262,8 @@
 
             clearInterval(runDynamicFilters);
             },400);
-        });
-      };
+          };
+      });
     });
   };
 // });
