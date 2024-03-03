@@ -224,7 +224,6 @@
     // party begin
     miastoOptionsPassiveLinkArr.forEach(item => {
       // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
-      
       item.addEventListener('click', () => {
         let runDynamicFilters = window.setInterval(function(){
           isDynamicFilterActive();
@@ -237,17 +236,27 @@
      
     });
 
-    // inwestycjaOptionsPassiveLinkArr.forEach(item => {
-    //   // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
-    //   item.addEventListener('click', () => {
-    //     let runDynamicFilters = window.setInterval(function(){
-    //       isDynamicFilterActive();
-    //       choosenFilterFieldsArr = +getChoosenSingleId(item);
-    //       checkMiastoForDependenciesID(item);
+    let isMiastoActive = false;
+    inwestycjaOptionsPassiveLinkArr.forEach(item => {
 
-    //       clearInterval(runDynamicFilters);
-    //       },400);
-    //   });
-    // });
+      miastoOptionsPassiveLinkArr.forEach(item => {
+        if(item.classList.contains('active')){
+          isMiastoActive = true;
+        };
+      });
+      
+      if(isMiastoActive){
+        item.addEventListener('click', () => {
+          // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
+          let runDynamicFilters = window.setInterval(function(){
+            isDynamicFilterActive();
+            choosenFilterFieldsArr = +getChoosenSingleId(item);
+            checkMiastoForDependenciesID(item);
+
+            clearInterval(runDynamicFilters);
+            },400);
+        });
+      };
+    });
   };
 // });
