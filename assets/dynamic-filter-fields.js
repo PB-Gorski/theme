@@ -245,7 +245,9 @@
         };
       });
       
+      console.log('miastoAcrtive: ', isMiastoActive);
       if(isMiastoActive){
+        console.log('running inwestycje');
         item.addEventListener('click', () => {
           // set timeout / interval bo klasa active na pozycji z listy pojawia sie dopiero po kliknięciu na nią
           let runDynamicFilters = window.setInterval(function(){
