@@ -40,7 +40,7 @@
     // ------------------------------------------------------------
     /*
       gdynia(termid: 40) - inwestycje: sw piotr (71)
-      gdansk(termid: 28) - inwestycje: osiedle srebrniki (72), sukiennicza 19 (677), torunska 16 (82), wiezycka folwark (81)
+      gdansk(termid: 28) - inwestycje: osiedle srebrniki (72), sukiennicza 19 (677), torunska 16 (82), wiezycka folwark (81), pokoje: 1,2,3,4
       reszta inwestycji ma dodane termid-1,2,3 zeby tylko były wypełnione
     */
 
