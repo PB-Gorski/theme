@@ -234,7 +234,6 @@
           </svg>
         </p>
         <!-- /wp:paragraph -->
-        </a>
       </span>
       <!-- /wp:paragraph -->
 
