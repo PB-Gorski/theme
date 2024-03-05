@@ -213,18 +213,20 @@
     </div>
     <!-- /wp:group -->
     <!-- wp:group -->
-    <div class="wp-block-group col2 flex gap-[10px] items-center">
+    <div class="wp-block-group col2 flex gap-[10px] items-center relative">
       <!-- wp:paragraph -->
       <p>Wdrożone przez </p>
       <!-- /wp:paragraph -->
 
       <!-- wp:paragraph -->
-      <span class="relative">
-        <!-- wp:paragraph -->
-        <p class="invest_tile_link absolute top-0 left-0 w-full h-full opacity-0 z-[1]">
-          <a href="https://webo.pl/" target="_blank" class="inline-block w-full h-full">Link test</a>
-        </p>
-        <!-- /wp:paragraph -->
+      <p class="invest_tile_link absolute top-0 left-0 w-full h-full opacity-0 z-[1]">
+        <a href="https://webo.pl/" target="_blank" class="inline-block w-full h-full">Link test</a>
+      </p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:paragraph -->
+      <span>
+
         <a href=">
           <!-- wp:paragraph -->
           <p>
