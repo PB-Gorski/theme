@@ -12,9 +12,9 @@ if (!defined('ABSPATH')) {
     <tr class="flex flex-col desktop:flex-row gap-[20px]">
       <td class="w-[100%] desktop:w-[50%] leading-[0px]">
         [text* your-name id:your-name placeholder "Imię i nazwisko"]
-        <!-- <input id="your-name" name="your-name" type="text" placeholder="Imię i nazwisko" class="mb-[20px] px-[15px] py-[10px] w-[330px] desktop:w-full h-[60px] text-[#2e384d] placeholder:text-[#757575] focus:border-white active:border-black drop-shadow-lg"> -->
+        <!-- <input id="your-name" name="your-name" type="text" placeholder="Imię i nazwisko" class="px-[15px] py-[10px] w-[330px] desktop:w-full h-[60px] text-[#2e384d] placeholder:text-[#757575] focus:border-white active:border-black drop-shadow-lg"> -->
         [email* your-email id:your-email placeholder "Adres email"]
-        <!-- <input id="your-name" name="your-name" type="text" placeholder="Adres email" class=" mb-[20px] px-[15px] py-[10px] w-[330px] desktop:w-full h-[60px] text-[#2e384d] placeholder:text-[#757575]"> -->
+        <!-- <input id="your-name" name="your-name" type="text" placeholder="Adres email" class="px-[15px] py-[10px] w-[330px] desktop:w-full h-[60px] text-[#2e384d] placeholder:text-[#757575]"> -->
         [text* your-phone id:your-phone placeholder "Numer telefonu"]
         <!-- <input id="your-phone" name="your-phone" type="text" placeholder="Numer telefonu" class="px-[15px] py-[10px] w-[330px] desktop:w-full h-[60px] text-[#2e384d] placeholder:text-[#757575]"> -->
       </td>
