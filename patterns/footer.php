@@ -17,13 +17,21 @@
       <!-- wp:group -->
       <div class="wp-block-group logo mr-[80px] mb-[15px]">
         <!-- wp:paragraph -->
-        <a href="<?php echo home_url(); ?>">
-          <!-- wp:image -->
-          <figure class="wp-block-image w-[115px]">
-            <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/frontpage/logo.png" alt="pb-gorski-logo" />
-          </figure>
-          <!-- /wp:image -->
-        </a>
+        <p class="invest_tile_link hidden absolute top-0 left-0 w-full h-full opacity-0 z-[1]">
+          <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block w-full h-full">Link test</a>
+        </p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:paragraph -->
+        <p>
+          <a href="<?php echo home_url(); ?>">
+            <!-- wp:image -->
+            <figure class="wp-block-image w-[115px]">
+              <img src="<?php echo home_url(); ?>/wp-content/themes/pbgorski/assets/img/frontpage/logo.png" alt="pb-gorski-logo" />
+            </figure>
+            <!-- /wp:image -->
+          </a>
+        </p>
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:group -->
