@@ -225,15 +225,6 @@
         });
       };
 
-      // if (item.dataset.name == 'Św. Piotra' || item.dataset.name == 'Osiedle Srebrniki'){
-      //   miastoPassiveArr.forEach(item => {
-      //     if (item.childNodes[1] != undefined){
-      //       item?.classList.remove('dynamic-active');
-      //       item?.classList.remove('hidden');
-      //     };
-      //   });
-      // }
-
       if(dynamicFilterMiastoActive){
         console.log('dynamicFilterPokojeActive');
         pokojePassiveArr.forEach(item => {
@@ -242,8 +233,7 @@
             pokojeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
 
             // cleaning marked items in filter list
-            if(true){
-              console.log('remove hidden');
+            if(dynamicFilterMiastoActive){
               item?.classList.remove('hidden');
             };
           };
