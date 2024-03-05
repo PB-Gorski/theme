@@ -15,10 +15,10 @@
     <!-- wp:group -->
     <div class="wp-block-group col1 mb-[25px] desktop:mb-0 desktop:w-[30%]">
       <!-- wp:group -->
-      <div class="wp-block-group logo mr-[80px] mb-[15px]">
+      <div class="wp-block-group logo mr-[80px] mb-[15px] relative">
         <!-- wp:paragraph -->
-        <p class="invest_tile_link hidden absolute top-0 left-0 w-full h-full opacity-0 z-[1]">
-          <a href="<?php echo home_url() . '/o-inwestycji-' . $alias; ?>" class="inline-block w-full h-full">Link test</a>
+        <p class="invest_tile_link absolute top-0 left-0 w-full h-full _opacity-0 z-[1]">
+          <a href="<?php echo home_url(); ?>" class="inline-block w-full h-full">Link test</a>
         </p>
         <!-- /wp:paragraph -->
 
