@@ -216,7 +216,7 @@
       // cleaning when choosen city
       console.log('pokoje check start');
       let pokojeDependenciesArr = [];
-      if (item.dataset.name == '1' || item.dataset.name == '2' || item.dataset.name == '3' || item.dataset.name == '4'){
+      if (item.dataset.name == 'Gdynia' || item.dataset.name == 'Gdańsk'){
         pokojePassiveArr.forEach(item => {
           if (item.childNodes[1] != undefined){
             item?.classList.remove('dynamic-active');
