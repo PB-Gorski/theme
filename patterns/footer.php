@@ -167,7 +167,7 @@
             </ul>
             <!-- /wp:list -->
             <!-- wp:list -->
-            <ul class="wp-block-list text-[#8a8f99] text-[14px]">
+            <ul class="wp-block-list hidden text-[#8a8f99] text-[14px]">
               <!-- wp:list-item -->
               <li class="mb-[10px] hover:text-textGray transition ease duration-[300ms]">
                 <a href="<?php echo home_url() . '/dla-akcjonariuszy' ?>">Dla Akcjonariuszy</a>
