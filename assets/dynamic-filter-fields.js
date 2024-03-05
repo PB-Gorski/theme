@@ -216,13 +216,23 @@
       // cleaning when choosen city
       console.log('pokoje check start');
       let pokojeDependenciesArr = [];
-      if (item.dataset.name == 'Gdynia' || item.dataset.name == 'Gdańsk'){
+      if (item.dataset.name == '1' || item.dataset.name == '2' || item.dataset.name == '3' || item.dataset.name == '4'){
         pokojePassiveArr.forEach(item => {
           if (item.childNodes[1] != undefined){
             item?.classList.remove('dynamic-active');
+            item?.classList.remove('hidden');
           };
         });
-      }
+      };
+
+      // if (item.dataset.name == 'Św. Piotra' || item.dataset.name == 'Osiedle Srebrniki'){
+      //   miastoPassiveArr.forEach(item => {
+      //     if (item.childNodes[1] != undefined){
+      //       item?.classList.remove('dynamic-active');
+      //       item?.classList.remove('hidden');
+      //     };
+      //   });
+      // }
 
       if(dynamicFilterMiastoActive){
         console.log('dynamicFilterPokojeActive');
@@ -233,6 +243,7 @@
 
             // cleaning marked items in filter list
             if(true){
+              console.log('remove hidden');
               item?.classList.remove('hidden');
             };
           };
