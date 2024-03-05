@@ -1709,7 +1709,7 @@ background-color: #e8fbff!important;
 
 /* Contact Form - Houses */
 .cta2 .wpcf7-text{
-  margin-bottom: 15px
+  margin-bottom: 21px
 }
 @layer components {
   .cta2 .wpcf7-text{
@@ -1726,7 +1726,7 @@ background-color: #e8fbff!important;
   }
 
   .cta2 .wpcf7-email{
-    @apply mb-[15px];
+    @apply mb-[21px];
     @apply px-[15px];
     @apply py-[10px];
     @apply w-[330px];
