@@ -223,7 +223,7 @@
       <!-- /wp:paragraph -->
 
       <!-- wp:paragraph -->
-      <span>
+      <span class="mb-[5px]">
         <!-- wp:paragraph -->
         <p>
           <svg xmlns=" http://www.w3.org/2000/svg" width="50" height="16" viewBox="0 0 50 16" fill="none">
