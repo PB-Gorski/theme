@@ -218,7 +218,7 @@
 
       <!-- wp:paragraph -->
       <p class="invest_tile_link absolute top-0 left-0 w-full h-full opacity-0 z-[1]">
-        <a href="https://webo.pl/" target="_blank" class="inline-block w-full h-full">Link test</a>
+        <a href="https://webo.pl/" target="_blank" class="inline-block w-full h-full"></a>
       </p>
       <!-- /wp:paragraph -->
 
