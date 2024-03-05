@@ -30,10 +30,12 @@
     let inwestycjaOptionsPassiveArr = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes[3].childNodes[1];
     let miastoPassiveArr = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
     let inwestycjePassiveArr = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
+    let pokojePassiveArr = document.querySelectorAll('.dropdown-filter')[2].childNodes[5].childNodes;
     let choosenFilterFieldsArr = [];
     let dynamicFilterActive = false;
     let dynamicFilterMiastoActive = false;
     let dynamicFilterInwestycaActive = false;
+    let dynamicFilterPokojeActive = false;
 
     // ------------------------------------------------------------
     /*
@@ -97,13 +99,25 @@
         };
       });
 
-      // checking if dynamic filter is running with choosen investment
+      // checking if dynamic filter is running with choosen inwestycja
       inwestycjePassiveArr.forEach(item =>{
         if ( typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
           dynamicFilterInwestycaActive = true;
         }else if(!item.childNodes[1]?.classList.contains('active')){
           let isDynamicFilterActiveTimeout = window.setInterval(function(){
             dynamicFilterInwestycaActive = false;
+            clearInterval(isDynamicFilterActiveTimeout);
+            },400);
+        };
+      });
+
+      // checking if dynamic filter is running with choosen pokoje
+      pokojePassiveArr.forEach(item =>{
+        if ( typeof item.childNodes[1] !== 'undefined' && item.childNodes[1].classList.contains('active')){
+          dynamicFilterPokojeActive = true;
+        }else if(!item.childNodes[1]?.classList.contains('active')){
+          let isDynamicFilterActiveTimeout = window.setInterval(function(){
+            dynamicFilterPokojeActive = false;
             clearInterval(isDynamicFilterActiveTimeout);
             },400);
         };
@@ -197,6 +211,50 @@
       };
     };
 
+    // searching for id's dependencies and marking items with connected id (miasto -> pokoje)
+    function checkPokojeForDependenciesID(item){
+      // cleaning when choosen city
+      let pokojeDependenciesArr = [];
+      if (item.dataset.name == 'Gdynia' || item.dataset.name == 'Gdańsk'){
+        pokojePassiveArr.forEach(item => {
+          if (item.childNodes[1] != undefined){
+            item?.classList.remove('dynamic-active');
+          };
+        });
+      }
+
+      if(dynamicFilterPokojeActive){
+        pokojePassiveArr.forEach(item => {
+          if (item.childNodes[1] != undefined){
+            // all dependencies array
+            pokojeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
+
+            // cleaning marked items in filter list
+            if(dynamicFilterPokojeActive){
+              item?.classList.remove('hidden');
+            };
+          };
+        });
+
+        // searching and marking items with the same dependencies
+        for (let i = 0 ; i < pokojeDependenciesArr.length ; i++){
+          for (let j = 0 ;  j < pokojeDependenciesArr[i].length ; j++){
+            if (+pokojeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
+              pokojePassiveArr[i+3].classList.add('dynamic-active');
+            }else if(+pokojeDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
+              setTimeout(() => {
+                if(!pokojePassiveArr[i+3].classList.contains('dynamic-active')){
+                  // cleaning option without dependencies
+                  pokojePassiveArr[i+3].classList.add('hidden');
+                };
+              }, 300);
+            };
+          };
+        };
+      };
+    };
+    
+
     
     // old
     // allOptionsPassiveArr.forEach(item => {
@@ -221,15 +279,13 @@
           isDynamicFilterActive();
             choosenFilterFieldsArr = +getChoosenSingleId(item);
             checkInwestycjeForDependenciesID(item);
+            checkPokojeForDependenciesID(item);
 
             clearInterval(runDynamicFilters);
         },400);
       });
      
     });
-
-
-
 
 
     let isMiastoActive = false;
