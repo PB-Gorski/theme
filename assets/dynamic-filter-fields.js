@@ -232,7 +232,7 @@
             pokojeDependenciesArr.push(JSON.parse(item.childNodes[1].dataset.dependencies).dependencies);
 
             // cleaning marked items in filter list
-            if(dynamicFilterPokojeActive){
+            if(dynamicFilterMiastoActive){
               item?.classList.remove('hidden');
             };
           };
