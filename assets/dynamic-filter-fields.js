@@ -214,6 +214,7 @@
     // searching for id's dependencies and marking items with connected id (miasto -> pokoje)
     function checkPokojeForDependenciesID(item){
       // cleaning when choosen city
+      console.log('pokoje check start');
       let pokojeDependenciesArr = [];
       if (item.dataset.name == 'Gdynia' || item.dataset.name == 'Gdańsk'){
         pokojePassiveArr.forEach(item => {
@@ -223,7 +224,8 @@
         });
       }
 
-      if(dynamicFilterPokojeActive){
+      if(dynamicFilterMiastoActive){
+        console.log('dynamicFilterPokojeActive');
         pokojePassiveArr.forEach(item => {
           if (item.childNodes[1] != undefined){
             // all dependencies array
