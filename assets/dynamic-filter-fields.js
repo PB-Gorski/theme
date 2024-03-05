@@ -58,13 +58,13 @@
       };
 
       if (item.dataset.name == 'Gdynia'){
-        item.dataset.dependencies = '{"dependencies":[{"termId":"71"},{"termId":"640"},{"termId":"641"}]}';
+        item.dataset.dependencies = '{"dependencies":[{"termId":"71"},{"termId":"640"},{"termId":"641"},{"termId":"642"},{"termId":"643"}]}';
       }
       if(item.dataset.name == 'Gdańsk'){
         item.dataset.dependencies = '{"dependencies":[{"termId":"72"},{"termId":"81"},{"termId":"82"},{"termId":"677"},{"termId":"640"},{"termId":"641"},{"termId":"642"},{"termId":"643"}]}';
       };
       if(item.dataset.name == '1' || item.dataset.name == '2' || item.dataset.name == '3' || item.dataset.name == '4'){
-        item.dataset.dependencies = '{"dependencies":[{"termId":"28"}]}';
+        item.dataset.dependencies = '{"dependencies":[{"termId":"28"}, {"termId":"40"}]}';
       };
     });
     // ------------------------------------------------------------
