@@ -52,11 +52,9 @@
         <!-- wp:group -->
         <div class="wp-block-group col2 desktop:w-[50%]">
           <!-- wp:paragraph -->
-          <p class="hover:text-textGray transition ease duration-[300ms]"><a href="tel:+48583407900">tel.: (+48) 58 340-79-00</a></p>
+          <p class="hover:text-textGray transition ease duration-[300ms]"><a href="tel:+48583407900">tel.: (+48) 58 340 79 00</a></p>
           <!-- /wp:paragraph -->
-          <!-- wp:paragraph -->
-          <p class="hover:text-textGray transition ease duration-[300ms]"><a href="tel:+48583047101">tel.: (+48) 58 304-71-01</a></p>
-          <!-- /wp:paragraph -->
+
           <!-- wp:paragraph -->
           <p class="hover:text-textGray transition ease duration-[300ms]"><a href="mailto:sprzedaz@pbgorski.pl">sprzedaz@pbgorski.pl</a></p>
           <!-- /wp:paragraph -->
