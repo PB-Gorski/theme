@@ -78,8 +78,10 @@ window.addEventListener("load", function() {
         };
 
         if(choosenOptions.includes(choosenOption)){
+          console.log('choosenOptions.includes(choosenOption)');
           removeItemAll(choosenOptions,choosenOption)
         }else{
+          console.log('else');
           choosenOptions.push(choosenOption)
         };
 
