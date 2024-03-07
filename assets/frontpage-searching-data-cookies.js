@@ -569,39 +569,6 @@ window.addEventListener("load", function() {
           console.log('else', choosenOptions);
           choosenOptionsTemp.push(e.target.dataset.termid)
         };
-
-        // if(e.target.dataset.termid == '28'){
-          // choosenOptionsTemp.includes('28') ? removeItemAll(choosenOptionsTemp,'28') : null;
-          // choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
-          // choosenOptionsTemp.push('28');
-
-          // if(choosenOptionsTemp.includes('28')){
-          //   console.log('2');
-          //   removeItemAll(choosenOptionsTemp,'28');
-          //   choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
-          //   choosenOptionsTemp.push('28');
-          // }else if(!choosenOptionsTemp.includes('28')){
-          //   console.log('1');
-          //   choosenOptionsTemp.push('28');
-          //   return;
-          // };
-
-        // };
-
-
-        // if((e.target.dataset.termid == '40')){
-        //   // choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
-        //   choosenOptionsTemp.includes('28') ? removeItemAll(choosenOptionsTemp,'28') : null;
-        //   // choosenOptionsTemp.push('40');
-
-        //   if(choosenOptionsTemp.includes('40')){
-        //     removeItemAll(choosenOptionsTemp,'40');
-        //     // choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
-        //     // choosenOptionsTemp.push('28');
-        //   }else if(!choosenOptionsTemp.includes('40')){
-        //     choosenOptionsTemp.push('40');
-        //   };
-        // };
         // console.log('clicked target: ',e.target.dataset.termid);
         // choosenOptionsTemp.push(e.target.dataset.termid)
         // console.log('choosenOptionsTemp: ', choosenOptionsTemp);
