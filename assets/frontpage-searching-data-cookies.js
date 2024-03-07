@@ -572,14 +572,16 @@ window.addEventListener("load", function() {
           choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
           // choosenOptionsTemp.push('28');
 
+          if(!choosenOptionsTemp.includes('28')){
+            choosenOptionsTemp.push('28');
+          };
+
           if(choosenOptionsTemp.includes('28')){
             removeItemAll(choosenOptionsTemp,'28');
             // choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
             // choosenOptionsTemp.push('28');
           }
-          if(!choosenOptionsTemp.includes('28')){
-            choosenOptionsTemp.push('28');
-          };
+
         };
 
 
