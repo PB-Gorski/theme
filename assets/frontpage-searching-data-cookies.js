@@ -575,7 +575,6 @@ window.addEventListener("load", function() {
           if(choosenOptionsTemp.includes('28')){
             console.log('2');
             removeItemAll(choosenOptionsTemp,'28');
-            return;
             // choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
             // choosenOptionsTemp.push('28');
           }else if(!choosenOptionsTemp.includes('28')){
