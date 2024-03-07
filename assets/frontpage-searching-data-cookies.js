@@ -565,6 +565,7 @@ window.addEventListener("load", function() {
         // console.log('choosenOptionsTemp2: ', choosenOptionsTemp.join());
 
         document.cookie = "filteredTermsFromCookies=" + choosenOptionsTemp.join();
+        console.log('choosenOptionsTemp', choosenOptionsTemp);
       });
     });
 
