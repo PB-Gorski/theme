@@ -90,7 +90,7 @@ window.addEventListener("load", function() {
 
         // document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + filteredPriceFromFrontPage;
         document.cookie = "filteredTermsFromCookies=" + choosenOptions.join() + '; path=/pl';
-        // console.log('cookie data: ', document.cookie);
+        console.log('cookie data: ', document.cookie);
 
         // dynamic filtr data
         allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
