@@ -570,11 +570,12 @@ window.addEventListener("load", function() {
             choosenOptionsTemp.push(e.target.dataset.termid)
           };
         }else if(e.target.dataset.termid == '28'){
+          choosenOptionsTemp.includes('28') ? removeItemAll(choosenOptionsTemp,'28') : null;
           choosenOptionsTemp.push(e.target.dataset.termid)
         }else if(e.target.dataset.termid == '40'){
           choosenOptionsTemp.push(e.target.dataset.termid)
         };
-        choosenOptionsTemp.includes('28') ? removeItemAll(choosenOptionsTemp,'28') : null;
+        
 
 
 
