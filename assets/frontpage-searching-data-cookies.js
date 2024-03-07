@@ -559,20 +559,14 @@ window.addEventListener("load", function() {
 
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
-        // removeItemAll(choosenOptionsTemp,'28');
+        removeItemAll(choosenOptionsTemp,'28');
         removeItemAll(choosenOptionsTemp,'40');
 
         if(choosenOptionsTemp.includes(e.target.dataset.termid)){
           console.log('choosenOptions.includes(choosenOption)', choosenOptionsTemp);
           removeItemAll(choosenOptionsTemp,e.target.dataset.termid)
         }else{
-          if(choosenOptionsTemp.includes('28')){
-            removeItemAll(choosenOptionsTemp,'28')
-          }else{
-
-            console.log('else', choosenOptionsTemp);
-            choosenOptionsTemp.push(e.target.dataset.termid)
-          }
+          choosenOptionsTemp.push(e.target.dataset.termid)
         };
 
 
