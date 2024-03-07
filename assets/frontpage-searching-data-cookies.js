@@ -559,8 +559,15 @@ window.addEventListener("load", function() {
 
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
+        if(choosenOptionsTemp.includes(e.target.dataset.termid)){
+          console.log('choosenOptions.includes(choosenOption)', choosenOptions);
+          removeItemAll(choosenOptionsTemp,e.target.dataset.termid)
+        }else{
+          console.log('else', choosenOptions);
+          choosenOptionsTemp.push(e.target.dataset.termid)
+        };
         // console.log('clicked target: ',e.target.dataset.termid);
-        choosenOptionsTemp.push(e.target.dataset.termid)
+        // choosenOptionsTemp.push(e.target.dataset.termid)
         // console.log('choosenOptionsTemp: ', choosenOptionsTemp);
         // console.log('choosenOptionsTemp2: ', choosenOptionsTemp.join());
 
