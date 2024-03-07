@@ -561,7 +561,7 @@ window.addEventListener("load", function() {
       passive.addEventListener('click', (e) => {
         removeItemAll(choosenOptionsTemp,'28');
         removeItemAll(choosenOptionsTemp,'40');
-        
+
         if(choosenOptionsTemp.includes(e.target.dataset.termid)){
           console.log('choosenOptions.includes(choosenOption)', choosenOptions);
           removeItemAll(choosenOptionsTemp,e.target.dataset.termid)
@@ -569,6 +569,11 @@ window.addEventListener("load", function() {
           console.log('else', choosenOptions);
           choosenOptionsTemp.push(e.target.dataset.termid)
         };
+
+        if(choosenOptionsTemp.includes(e.target.dataset.termid)){
+          console.log('choosenOptions.includes(choosenOption)', choosenOptions);
+          removeItemAll(choosenOptionsTemp,e.target.dataset.termid)
+        }
         
 
 
