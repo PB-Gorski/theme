@@ -570,12 +570,6 @@ window.addEventListener("load", function() {
           choosenOptionsTemp.push(e.target.dataset.termid)
         };
 
-        if(choosenOptionsTemp.includes(e.target.dataset.termid)){
-          console.log('choosenOptions.includes(choosenOption)', choosenOptions);
-          removeItemAll(choosenOptionsTemp,e.target.dataset.termid)
-        }
-        
-
 
 
 
