@@ -572,15 +572,16 @@ window.addEventListener("load", function() {
           choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
           // choosenOptionsTemp.push('28');
 
-          if(!choosenOptionsTemp.includes('28')){
+          if(choosenOptionsTemp.includes('28')){
+            console.log('2');
+            removeItemAll(choosenOptionsTemp,'28');
+            return;
+            // choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
+            // choosenOptionsTemp.push('28');
+          }else if(!choosenOptionsTemp.includes('28')){
             console.log('1');
             choosenOptionsTemp.push('28');
             return;
-          }else if(choosenOptionsTemp.includes('28')){
-            console.log('2');
-            removeItemAll(choosenOptionsTemp,'28');
-            // choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
-            // choosenOptionsTemp.push('28');
           };
 
         };
