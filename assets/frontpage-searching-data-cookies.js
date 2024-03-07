@@ -569,12 +569,12 @@ window.addEventListener("load", function() {
 
         if(e.target.dataset.termid == '28'){
           removeItemAll(choosenOptionsTemp,'28');
-          choosenOptionsTemp.includes('28') ? removeItemAll(choosenOptionsTemp,'28') : null;
+          // choosenOptionsTemp.includes('28') ? removeItemAll(choosenOptionsTemp,'28') : null;
           choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
           choosenOptionsTemp.push('28');
         }else if((e.target.dataset.termid == '40')){
           removeItemAll(choosenOptionsTemp,'40');
-          choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
+          // choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
           choosenOptionsTemp.includes('28') ? removeItemAll(choosenOptionsTemp,'28') : null;
           choosenOptionsTemp.push('40');
         };
