@@ -559,17 +559,23 @@ window.addEventListener("load", function() {
 
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
-
-
-        if(choosenOptionsTemp.includes(e.target.dataset.termid)){
-          removeItemAll(choosenOptionsTemp,'28');
-          removeItemAll(choosenOptionsTemp,'40');
-          console.log('choosenOptions.includes(choosenOption)', choosenOptions);
-          removeItemAll(choosenOptionsTemp,e.target.dataset.termid)
-        }else{
-          console.log('else', choosenOptions);
+        removeItemAll(choosenOptionsTemp,'28');
+        removeItemAll(choosenOptionsTemp,'40');
+        if(e.target.dataset.termid != '28' || e.target.dataset.termid != '40'){
+          if(choosenOptionsTemp.includes(e.target.dataset.termid)){
+            console.log('choosenOptions.includes(choosenOption)', choosenOptions);
+            removeItemAll(choosenOptionsTemp,e.target.dataset.termid)
+          }else{
+            console.log('else', choosenOptions);
+            choosenOptionsTemp.push(e.target.dataset.termid)
+          };
+        }else if(e.target.dataset.termid == '28'){
           choosenOptionsTemp.push(e.target.dataset.termid)
-        };
+        }else if(e.target.dataset.termid == '40'){
+          choosenOptionsTemp.push(e.target.dataset.termid)
+        }
+
+
 
         // if(e.target.dataset.termid == '28'){
           // choosenOptionsTemp.includes('28') ? removeItemAll(choosenOptionsTemp,'28') : null;
