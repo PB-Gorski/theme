@@ -569,7 +569,8 @@ window.addEventListener("load", function() {
             console.log('else', choosenOptions);
             choosenOptionsTemp.push(e.target.dataset.termid)
           };
-        }else if(e.target.dataset.termid == '28'){
+        }
+        if(e.target.dataset.termid == '28'){
           if(choosenOptionsTemp.includes('28')){
             removeItemAll(choosenOptionsTemp,'28');
           }else{
