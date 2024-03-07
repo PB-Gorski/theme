@@ -563,10 +563,10 @@ window.addEventListener("load", function() {
         removeItemAll(choosenOptionsTemp,'40');
 
         if(choosenOptionsTemp.includes(e.target.dataset.termid)){
-          console.log('choosenOptions.includes(choosenOption)', choosenOptions);
+          console.log('choosenOptions.includes(choosenOption)', choosenOptionsTemp);
           removeItemAll(choosenOptionsTemp,e.target.dataset.termid)
         }else{
-          console.log('else', choosenOptions);
+          console.log('else', choosenOptionsTemp);
           choosenOptionsTemp.push(e.target.dataset.termid)
         };
 
