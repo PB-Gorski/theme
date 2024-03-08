@@ -559,8 +559,8 @@ window.addEventListener("load", function() {
 
     document.querySelectorAll('.menu-passive__item').forEach(passive =>{
       passive.addEventListener('click', (e) => {
-        removeItemAll(choosenOptionsTemp,'28');
-        removeItemAll(choosenOptionsTemp,'40');
+        // removeItemAll(choosenOptionsTemp,'28');
+        // removeItemAll(choosenOptionsTemp,'40');
 
         if(choosenOptionsTemp.includes(e.target.dataset.termid)){
           console.log('choosenOptions.includes(choosenOption)', choosenOptionsTemp);
