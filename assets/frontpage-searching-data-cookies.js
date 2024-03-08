@@ -572,23 +572,10 @@ window.addEventListener("load", function() {
 
 
 
-        // if(e.target.dataset.termid == '28'){
-          // choosenOptionsTemp.includes('28') ? removeItemAll(choosenOptionsTemp,'28') : null;
-          // choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
-          // choosenOptionsTemp.push('28');
-
-          // if(choosenOptionsTemp.includes('28')){
-          //   console.log('2');
-          //   removeItemAll(choosenOptionsTemp,'28');
-          //   choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
-          //   choosenOptionsTemp.push('28');
-          // }else if(!choosenOptionsTemp.includes('28')){
-          //   console.log('1');
-          //   choosenOptionsTemp.push('28');
-          //   return;
-          // };
-
-        // };
+        if(e.target.dataset.termid == '28'){
+          choosenOptionsTemp.includes('28') ? removeItemAll(choosenOptionsTemp,'28') : null;
+          choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
+        };
 
 
         // if((e.target.dataset.termid == '40')){
