@@ -573,8 +573,13 @@ window.addEventListener("load", function() {
 
 
         if(e.target.dataset.termid == '28'){
-          choosenOptionsTemp.includes('28') ? removeItemAll(choosenOptionsTemp,'28') : null;
+          // choosenOptionsTemp.includes('28') ? removeItemAll(choosenOptionsTemp,'28') : null;
           choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
+        };
+
+        if(e.target.dataset.termid == '40'){
+          choosenOptionsTemp.includes('28') ? removeItemAll(choosenOptionsTemp,'28') : null;
+          // choosenOptionsTemp.includes('40') ? removeItemAll(choosenOptionsTemp,'40') : null;
         };
 
 
