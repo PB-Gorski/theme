@@ -152,12 +152,12 @@
         for (let i = 0 ; i < inwestycjeDependenciesArr.length ; i++){
           for (let j = 0 ;  j < inwestycjeDependenciesArr[i].length ; j++){
             if (+inwestycjeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
-              inwestycjePassiveArr[i+3].classList.add('dynamic-active');
+              inwestycjePassiveArr[i].classList.add('dynamic-active');
             }else if(+inwestycjeDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
               setTimeout(() => {
-                if(!inwestycjePassiveArr[i+3].classList.contains('dynamic-active')){
+                if(!inwestycjePassiveArr[i].classList.contains('dynamic-active')){
                   // cleaning option without dependencies
-                  inwestycjePassiveArr[i+3].classList.add('hidden');
+                  inwestycjePassiveArr[i].classList.add('hidden');
                 };
               }, 300);
             };
@@ -196,12 +196,12 @@
         for (let i = 0 ; i < miastoDependenciesArr.length ; i++){
           for (let j = 0 ;  j < miastoDependenciesArr[i].length ; j++){
             if (+miastoDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
-              miastoPassiveArr[i+3].classList.add('dynamic-active');
+              miastoPassiveArr[i].classList.add('dynamic-active');
             }else if(+miastoDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
               setTimeout(() => {
-                if(!miastoPassiveArr[i+3].classList.contains('dynamic-active')){
+                if(!miastoPassiveArr[i].classList.contains('dynamic-active')){
                   // cleaning option without dependencies
-                  miastoPassiveArr[i+3].classList.add('hidden');
+                  miastoPassiveArr[i].classList.add('hidden');
                 };
               }, 300);
             };
@@ -242,12 +242,12 @@
         for (let i = 0 ; i < pokojeDependenciesArr.length ; i++){
           for (let j = 0 ;  j < pokojeDependenciesArr[i].length ; j++){
             if (+pokojeDependenciesArr[i][j].termId == +choosenFilterFieldsArr){
-              pokojePassiveArr[i+3].classList.add('dynamic-active');
+              pokojePassiveArr[i].classList.add('dynamic-active');
             }else if(+pokojeDependenciesArr[i][j].termId != +choosenFilterFieldsArr){
               setTimeout(() => {
-                if(!pokojePassiveArr[i+3].classList.contains('dynamic-active')){
+                if(!pokojePassiveArr[i].classList.contains('dynamic-active')){
                   // cleaning option without dependencies
-                  pokojePassiveArr[i+3].classList.add('hidden');
+                  pokojePassiveArr[i].classList.add('hidden');
                 };
               }, 300);
             };
