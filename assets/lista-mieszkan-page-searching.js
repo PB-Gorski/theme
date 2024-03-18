@@ -618,7 +618,6 @@ window.addEventListener("load", function () {
       }
       // console.log("deleteAllCookies() done");
     }
-    deleteAllCookies();
 
     function getCookie(cname) {
       let name = cname + "=";
