@@ -92,8 +92,7 @@ window.addEventListener("load", function () {
 
         // dynamic filtr data
         allInvestmentsElements =
-          document.querySelectorAll(".dropdown-filter")[1].childNodes[5]
-            .childNodes;
+        document.querySelectorAll(".dropdown-filter")[1].querySelector(".menu-passive").childNodes;
         investIDsArr = [];
 
         allInvestmentsElements.forEach((el) => {

@@ -75,20 +75,12 @@ window.addEventListener("load", function () {
   ) {
     let investNameFromDataAttr2 = document.querySelector('#term-data').dataset.investmentName;
     // console.log("inwestycja: ", globalInvestFromLink);
-    document.querySelector(
-      ".filter-entry"
-    ).childNodes[3].childNodes[3].childNodes[1].innerText = investNameFromDataAttr2;
-    document
-      .querySelector(".filter-entry")
-      .childNodes[3].classList.add("pointer-events-none");
+    document.querySelectorAll(".filter-entry .dropdown-filter")[1].querySelector('.menu-active span').innerText = investNameFromDataAttr2;
+    document.querySelectorAll(".filter-entry .dropdown-filter")[1].classList.add("pointer-events-none");
 
     currentInvestCity = document.querySelector(".investCity")?.innerText;
-    document.querySelector(
-      ".filter-entry"
-    ).childNodes[1].childNodes[3].childNodes[1].innerText = investCityName ?? currentInvestCity;
-    document
-      .querySelector(".filter-entry")
-      .childNodes[1].classList.add("pointer-events-none");
+    document.querySelectorAll(".filter-entry .dropdown-filter")[0].querySelector('.menu-active span').innerText = investCityName ?? currentInvestCity;
+    document.querySelectorAll(".filter-entry .dropdown-filter")[0].classList.add("pointer-events-none");
   }
 
   if (
@@ -586,8 +578,8 @@ window.addEventListener("load", function () {
     deleteAllCookies();
 
     // dynamic filtr data
-    allInvestmentsElements =
-      document.querySelectorAll(".dropdown-filter")[1].childNodes[5].childNodes;
+    // allInvestmentsElements =
+    //   document.querySelectorAll(".dropdown-filter")[1].childNodes[5].childNodes;
     investIDsArr = [];
     globalCurrentInvestID = investTermId ?? 0;
     globalCurrentInvestName = investTermName ?? "";
@@ -603,8 +595,8 @@ window.addEventListener("load", function () {
     };
 
     // dynamic term id for city
-    allCityElements =
-      document.querySelectorAll(".dropdown-filter")[0].childNodes[5].childNodes;
+
+    allCityElements = document.querySelectorAll(".dropdown-filter")[0].querySelectorAll('.menu-passive .menu-passive__item')
     cityIDsArr = [];
 
     allCityElements.forEach((el) => {
