@@ -1457,10 +1457,7 @@ window.addEventListener("load", function () {
       // console.log("after YMC api update2");
     }
 
-    let currentYmcFilterID3 = document
-    .querySelector(".short-code-ymc-filter")
-    .childNodes[1].getAttribute("id")
-    .replace("ymc-smart-filter-container-", "");
+    let currentYmcFilterID3 = document.querySelector(".short-code-ymc-filter .ymc-smart-filter-container").id.replace("ymc-smart-filter-container-", ""); 
 
     // wp.hooks.addAction(
     //   "ymc_after_loaded_data_148_" + currentYmcFilterID3,

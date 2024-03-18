@@ -1017,10 +1017,7 @@ window.addEventListener("load", function () {
       // console.log("no cookies");
 
       let globalFoundedPostsCount;
-      currentYmcFilterID = document
-        .querySelector(".short-code-ymc-filter")
-        .childNodes[1].getAttribute("id")
-        .replace("ymc-smart-filter-container-", "");
+      currentYmcFilterID = document.querySelector(".short-code-ymc-filter .ymc-smart-filter-container").id.replace("ymc-smart-filter-container-", ""); 
       // console.log("current filter id **********************");
       // console.log(currentYmcFilterID);
 

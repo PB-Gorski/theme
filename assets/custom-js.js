@@ -376,12 +376,8 @@ window.addEventListener("load", function () {
   // dynamic ymc filter id
   if (document.body.classList.contains('post-type-archive-lokale')){
     if(document.querySelector(".short-code-ymc-filter")){
-      currentYmcFilterID = document
-        .querySelector(".short-code-ymc-filter")
-        .childNodes[1].getAttribute("id")
-        .replace("ymc-smart-filter-container-", "");
-      };
-
+      currentYmcFilterID = document.querySelector(".short-code-ymc-filter .ymc-smart-filter-container").id.replace("ymc-smart-filter-container-", ""); 
+    }
     wp.hooks.addAction(
       "ymc_after_loaded_data_2323_" + currentYmcFilterID,
       "smartfilter",
