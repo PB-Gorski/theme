@@ -106,9 +106,7 @@ window.addEventListener("load", function () {
         // console.log("$$$$$$$$$$$$$ invest arr ids ", investIDsArr);
 
         // dynamic term id for city
-        allCityElements =
-          document.querySelectorAll(".dropdown-filter")[0].childNodes[5]
-            .childNodes;
+        allCityElements = document.querySelectorAll(".dropdown-filter")[0].querySelector(".menu-passive").childNodes;
         cityIDsArr = [];
 
         allCityElements.forEach((el) => {
@@ -669,9 +667,7 @@ window.addEventListener("load", function () {
       // console.log("$$$$$$$$$$$$$ invest arr ids ", investIDsArr);
 
       // dynamic term id for city
-      allCityElements =
-        document.querySelectorAll(".dropdown-filter")[0].childNodes[5]
-          .childNodes;
+      allCityElements = document.querySelectorAll(".dropdown-filter")[0].querySelector(".menu-passive").childNodes;
       cityIDsArr = [];
 
       allCityElements.forEach((el) => {
