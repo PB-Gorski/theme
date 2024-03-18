@@ -618,30 +618,27 @@ window.addEventListener("load", function () {
       }
       // console.log("deleteAllCookies() done");
     }
-    deleteAllCookies();
 
     function getCookie(cname) {
       let name = cname + "=";
       let decodedCookie = decodeURIComponent(document.cookie);
       let ca = decodedCookie.split(";");
+      let cookieValues = [];
+
       for (let i = 0; i < ca.length; i++) {
         let c = ca[i];
         while (c.charAt(0) == " ") {
           c = c.substring(1);
         }
         if (c.indexOf(name) == 0) {
-          return c.substring(name.length, c.length);
+          cookieValues.push(c.substring(name.length, c.length));
         }
       }
-      return "";
+      return cookieValues.join(",");
     }
 
     let filteredTermsFromCookies = "";
-    if (
-      document.cookie.indexOf("filteredTermsFromCookies=") == 0 ||
-      document.cookie.indexOf("PriceMinFromCookies=") == 0 ||
-      document.cookie.indexOf("PriceMaxFromCookies=") == 0
-    ) {
+    if (['filteredTermsFromCookies','PriceMinFromCookies','PriceMaxFromCookies'].some(name => document.cookie.includes(name))) {
       // cookies exist
       // console.log("cookies exist");
       filteredTermsFromCookies = getCookie("filteredTermsFromCookies");
