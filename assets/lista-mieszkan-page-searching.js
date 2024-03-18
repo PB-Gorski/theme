@@ -1074,11 +1074,20 @@ window.addEventListener("load", function () {
       );
 
       let filterId = getFilterId()
+      let pricesID = runSearchingPrice();
+      let metrazeID = runSearchingMetraz();
       let searchedFromActiveIDs = getActiveTermsId()
-      
+
       YMCTools({
         target: filterId,
-        terms: searchedFromActiveIDs.join(),
+        terms:
+          pricesID.join() +
+          "," +
+          metrazeID.join() +
+          "," +
+          choosenOptions.join() +
+          "," +
+          searchedFromActiveIDs.join(),
       }).apiTermUpdate();
 
     }
