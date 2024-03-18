@@ -588,10 +588,7 @@ window.addEventListener("load", function () {
 
     // dynamic ymc filter id
     if(document.querySelector(".short-code-ymc-filter")){
-    currentYmcFilterID = document
-      .querySelector(".short-code-ymc-filter")
-      .childNodes[1].getAttribute("id")
-      .replace("ymc-smart-filter-container-", "");
+    currentYmcFilterID = document.querySelector(".short-code-ymc-filter .ymc-smart-filter-container").id.replace("ymc-smart-filter-container-", "");
     };
 
     // dynamic term id for city
@@ -1400,10 +1397,7 @@ window.addEventListener("load", function () {
     let investNameFromDataAttr = document.querySelector('#term-data').dataset.investmentName;
 
     // dynamic ymc filter id
-    let currentYmcFilterID2 = document
-      .querySelector(".short-code-ymc-filter")
-      .childNodes[1].getAttribute("id")
-      .replace("ymc-smart-filter-container-", "");
+    let currentYmcFilterID2 = document.querySelector(".short-code-ymc-filter .ymc-smart-filter-container").id.replace("ymc-smart-filter-container-", "");
 
     let filterID = ".data-target-ymc" + currentYmcFilterID2;
     // --------
