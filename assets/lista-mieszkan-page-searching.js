@@ -15,6 +15,30 @@
           elem.dataset.loading = 'false';
        });
 
+// get filterId by Banner class
+function getFilterId(){
+  let pageID = document.querySelector("#Banner");
+  let filterID = ".ymc-smart-filter-container";
+  if (pageID.classList.contains("banner-lista-mieszkan")) {
+    filterID = ".data-target-ymc2";
+  } else if (pageID.classList.contains("banner-lista-lokali")) {
+    filterID = ".data-target-ymc1";
+  }
+
+  return filterID
+}
+
+function getActiveTermsId(){
+  let searchedFromActiveHTML = document.querySelectorAll(".active");
+  let searchedFromActiveIDs = [];
+
+  searchedFromActiveHTML.forEach((item) => {
+    searchedFromActiveIDs.push(item.dataset.termid);
+  });
+
+  return searchedFromActiveIDs
+}
+
 window.addEventListener("load", function () {
   //  page lista mieszkan - filtrowanie i sortowanie listy mieszkan
   if (
@@ -973,24 +997,10 @@ window.addEventListener("load", function () {
 
       showActiveFilterNameFromCookies();
 
-      // filter ID by page id
-      let pageID = document.querySelector("#Banner");
-      let filterID = ".ymc-smart-filter-container";
-      if (pageID.classList.contains("banner-lista-mieszkan")) {
-        filterID = ".data-target-ymc2";
-        // console.log("ymc2");
-      } else if (pageID.classList.contains("banner-lista-lokali")) {
-        filterID = ".data-target-ymc1";
-        // console.log("ymc1");
-      }
+      let filterID = getFilterId()
 
       function runFromCookies() {
-        let searchedFromActiveHTML = document.querySelectorAll(".active");
-        let searchedFromActiveIDs = [];
-
-        searchedFromActiveHTML.forEach((item) => {
-          searchedFromActiveIDs.push(item.dataset.termid);
-        });
+        let searchedFromActiveIDs = getActiveTermsId()
 
         YMCTools({
           target: filterID,
@@ -1062,6 +1072,15 @@ window.addEventListener("load", function () {
           }
         }
       );
+
+      let filterId = getFilterId()
+      let searchedFromActiveIDs = getActiveTermsId()
+      
+      YMCTools({
+        target: filterId,
+        terms: searchedFromActiveIDs.join(),
+      }).apiTermUpdate();
+
     }
 
     // ------------------------------------------------------------------------------
@@ -1289,29 +1308,14 @@ window.addEventListener("load", function () {
     btnSearch.addEventListener("click", () => {
       let pricesID = runSearchingPrice();
       let metrazeID = runSearchingMetraz();
-      let searchedFromActiveHTML = document.querySelectorAll(".active");
-      let searchedFromActiveIDs = [];
-
-      searchedFromActiveHTML.forEach((item) => {
-        // console.log('term from cookies',item.dataset.termid);
-        searchedFromActiveIDs.push(item.dataset.termid);
-      });
+      let searchedFromActiveIDs = getActiveTermsId()
 
       // console.log("logggggg: ", searchedFromActiveIDs.join());
 
       deleteAllCookies();
       // document.cookie = "filteredTermsFromCookies=; PriceMinFromCookies=; PriceMaxFromCookies=;";
 
-      // filter ID by page id
-      let pageID = document.querySelector("#Banner");
-      let filterID = ".ymc-smart-filter-container";
-      if (pageID.classList.contains("banner-lista-mieszkan")) {
-        filterID = ".data-target-ymc2";
-        // console.log("ymc2");
-      } else if (pageID.classList.contains("banner-lista-lokali")) {
-        filterID = ".data-target-ymc1";
-        // console.log("ymc1");
-      }
+      let filterID = getFilterId() 
 
       // old
       // YMCTools({
