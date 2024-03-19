@@ -93,7 +93,7 @@ window.addEventListener("load", function() {
         console.log('cookie data: ', document.cookie);
 
         // dynamic filtr data
-        allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1].childNodes[5].childNodes;
+        allInvestmentsElements = document.querySelectorAll('.dropdown-filter')[1].querySelectorAll('.menu-passive__item');
         investIDsArr = [];
         globalCurrentInvestID = 0;
         globalCurrentInvestName = '';
@@ -115,7 +115,7 @@ window.addEventListener("load", function() {
         currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
 
         // dynamic term id for city
-        allCityElements = document.querySelectorAll('.dropdown-filter')[0].childNodes[5].childNodes;
+        allCityElements = document.querySelectorAll('.dropdown-filter')[0].querySelectorAll('.menu-passive__item');
         cityIDsArr = [];
 
         allCityElements.forEach(el => {
