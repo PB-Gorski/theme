@@ -27,9 +27,9 @@
       document.querySelector('.item-torunska-16').childNodes[1],
       document.querySelector('.item-wiezycka-folwark').childNodes[1],
     ];
-    let miastoPassiveArr = document.querySelectorAll('.dropdown-filter')[0].querySelector('.menu-passive').childNodes;
-    let inwestycjePassiveArr = document.querySelectorAll('.dropdown-filter')[1].querySelector('.menu-passive').childNodes;
-    let pokojePassiveArr = document.querySelectorAll('.dropdown-filter')[2].querySelector('.menu-passive').childNodes;
+    let miastoPassiveArr = document.querySelectorAll('.dropdown-filter')[0].querySelectorAll('.menu-passive__item');
+    let inwestycjePassiveArr = document.querySelectorAll('.dropdown-filter')[1].querySelectorAll('.menu-passive__item');
+    let pokojePassiveArr = document.querySelectorAll('.dropdown-filter')[2].querySelectorAll('.menu-passive__item');
     let choosenFilterFieldsArr = [];
     let dynamicFilterActive = false;
     let dynamicFilterMiastoActive = false;
