@@ -1118,7 +1118,7 @@ background-color: #e8fbff!important;
 }
 .single-mieszkania .entry-content a,
 .single-lokale .entry-content a{
-  position: absolute!important;
+
   top: 230px;
   right: -270px;
 
@@ -1195,10 +1195,30 @@ background-color: #e8fbff!important;
 .modula .modula-items .modula-item{
   height: auto !important;
   width: 100% !important;
+  position: static;
 }
-.modula .modula-items .modula-item .pic{
+.modula .modula-items .modula-item .modula-item-content{
+  max-height: 800px;
+}
+.modula .modula-items .modula-item .modula-item-content img.pic{
   width: 100% !important;
   height: auto !important;
+  position: static !important;
+  max-height: inherit;
+  object-fit: contain;
+  object-position: left;
+}
+
+.modula-fancybox-container .modula-fancybox-content{
+  width: 100% !important;
+  height: 100% !important;
+  overflow: auto;
+}
+.modula-fancybox-container .modula-fancybox-content img.modula-fancybox-image{
+  height: auto !important;
+  width: auto !important;
+  position: static !important;
+  margin: 20px auto;
 }
 
 .single .entry-content h4{
