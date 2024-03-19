@@ -385,10 +385,10 @@ window.addEventListener("load", function() {
       });
 
       if(document.querySelectorAll('.item-zapytaj').length && filteredPriceTermsID.length){
-      const customStaticPriceId = 677 // cena 'Zapytaj'
-      document.querySelector('.item-zapytaj a').classList.add('active')
-      filteredPriceTermsID.push(customStaticPriceId)
+        const customStaticPriceId = 677 // cena 'Zapytaj'
+        filteredPriceTermsID.push(customStaticPriceId)
       }
+      document.querySelector('.item-zapytaj a').classList.add('active');
 
       // console.log(filteredPriceTermsID.join(','));
 
