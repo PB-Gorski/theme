@@ -16,7 +16,7 @@
     // open popup
     featuredImage.addEventListener('click', () => {
       popupImageContainer.classList.toggle('opacity-100');
-      popupImageContainer.classList.toggle('!z-[99999]');
+      popupImageContainer.classList.toggle('z-[99999]');
       document.body.classList.add('overflow-hidden')
     }, {passive: true});
 
