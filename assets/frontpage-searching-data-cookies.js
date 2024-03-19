@@ -112,7 +112,7 @@ window.addEventListener("load", function() {
 
 
         // dynamic ymc filter id
-        currentYmcFilterID = document.querySelector('.short-code-ymc-filter').childNodes[1].getAttribute('id').replace('ymc-smart-filter-container-','');
+        currentYmcFilterID = document.querySelector('.short-code-ymc-filter .ymc-smart-filter-container').id.replace('ymc-smart-filter-container-','');
 
         // dynamic term id for city
         allCityElements = document.querySelectorAll('.dropdown-filter')[0].querySelectorAll('.menu-passive__item');
@@ -386,6 +386,7 @@ window.addEventListener("load", function() {
 
       if(document.querySelectorAll('.item-zapytaj').length && filteredPriceTermsID.length){
       const customStaticPriceId = 677 // cena 'Zapytaj'
+      document.querySelectorAll('.item-zapytaj').classList.add('active')
       filteredPriceTermsID.push(customStaticPriceId)
       }
 
