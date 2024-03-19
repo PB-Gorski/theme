@@ -23,7 +23,7 @@
     // close popup by clicking outiside img
     popupImageContainer.addEventListener('click', (e) => {
       popupImageContainer.classList.toggle('opacity-100');
-      popupImageContainer.classList.toggle('!z-[99999]');
+      popupImageContainer.classList.toggle('z-[99999]');
       document.body.classList.remove('overflow-hidden')
     }, {passive: true});
     featuredImageBig.addEventListener('click', (e) => {
