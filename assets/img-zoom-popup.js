@@ -12,18 +12,19 @@
     let popupImageContainer = document.querySelector('.js-featured_img_popup_container');
 
     featuredImageBig.src = featuredImageLink;
-    featuredImageBig.style.height = '90%';
 
     // open popup
     featuredImage.addEventListener('click', () => {
       popupImageContainer.classList.toggle('opacity-100');
-      popupImageContainer.classList.toggle('z-[2]');
+      popupImageContainer.classList.toggle('!z-[99999]');
+      document.body.classList.add('overflow-hidden')
     }, {passive: true});
 
     // close popup by clicking outiside img
     popupImageContainer.addEventListener('click', (e) => {
       popupImageContainer.classList.toggle('opacity-100');
-      popupImageContainer.classList.toggle('z-[2]');
+      popupImageContainer.classList.toggle('!z-[99999]');
+      document.body.classList.remove('overflow-hidden')
     }, {passive: true});
     featuredImageBig.addEventListener('click', (e) => {
       e.stopPropagation();
