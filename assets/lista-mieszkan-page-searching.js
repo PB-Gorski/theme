@@ -1184,7 +1184,7 @@ window.addEventListener("load", function () {
 
       if(filteredTermsID && document.querySelectorAll('.item-zapytaj').length && filteredTermsID.length){
         const customStaticPriceId = 677 // cena 'Zapytaj'
-        document.querySelectorAll('.item-zapytaj').classList.add('active')
+        document.querySelectorAll('.item-zapytaj a').classList.add('active')
         filteredTermsID.push(customStaticPriceId)
       }
       // console.log("new filtered id", filteredTermsID.join(","));
