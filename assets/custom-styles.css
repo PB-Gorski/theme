@@ -1118,10 +1118,9 @@ background-color: #e8fbff!important;
 }
 .single-mieszkania .entry-content a,
 .single-lokale .entry-content a{
-
   top: 230px;
   right: -270px;
-
+  position: absolute!important;
   background-color: #f5f7fa;
   color: inherit;
   font-weight: bold;
@@ -1189,13 +1188,17 @@ background-color: #e8fbff!important;
   position: static!important;
 }
 
+html body .modula .modula-items .modula-item .modula-item-content>a.modula-item-link{
+  position: absolute !important;
+}
+
 .modula .modula-items{
   height: auto !important;
 }
 .modula .modula-items .modula-item{
   height: auto !important;
   width: 100% !important;
-  position: static;
+  position: static !important;
 }
 .modula .modula-items .modula-item .modula-item-content{
   max-height: 800px;
@@ -1209,16 +1212,19 @@ background-color: #e8fbff!important;
   object-position: left;
 }
 
-.modula-fancybox-container .modula-fancybox-content{
-  width: 100% !important;
-  height: 100% !important;
-  overflow: auto;
-}
-.modula-fancybox-container .modula-fancybox-content img.modula-fancybox-image{
-  height: auto !important;
-  width: auto !important;
-  position: static !important;
-  margin: 20px auto;
+@media only screen and (min-width: 1024px) {
+  .modula-fancybox-container .modula-fancybox-content{
+    width: 100% !important;
+    height: 100% !important;
+    transform: none !important;
+    overflow: auto;
+  }
+  .modula-fancybox-container .modula-fancybox-content img.modula-fancybox-image{
+    height: auto !important;
+    width: auto !important;
+    position: static !important;
+    margin: 20px auto;
+  }
 }
 
 .single .entry-content h4{
