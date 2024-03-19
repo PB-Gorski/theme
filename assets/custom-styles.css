@@ -1188,11 +1188,19 @@ background-color: #e8fbff!important;
 .single .entry-content > .modula > a{
   position: static!important;
 }
-.pic{
-  height: 100%!important;
-  width: fit-content!important;
-  inset: 0!important;
+
+.modula .modula-items{
+  height: auto !important;
 }
+.modula .modula-items .modula-item{
+  height: auto !important;
+  width: 100% !important;
+}
+.modula .modula-items .modula-item .pic{
+  width: 100% !important;
+  height: auto !important;
+}
+
 .single .entry-content h4{
   margin-bottom: 30px;
 }
