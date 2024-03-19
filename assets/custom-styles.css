@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-  .applyContainer1 {
-    @apply [&>div>div>:first-child]:container [&>div>div>:first-child]:mx-auto;
+  .applyContainer1 .post-entry{
+    @apply container mx-auto;
   }
-  .applyContainer2 {
-    @apply [&>div>div>:nth-child(2)]:container [&>div>div>:nth-child(2)]:mx-auto;
+  .applyContainer2 .post-entry {
+    @apply container mx-auto;
   }
   .apply-btn-more-hover {
     @apply before:content-[``] before:inline-block before:absolute before:bottom-0 before:left-0 before:w-full before:min-h-[0%] hover:before:min-h-[100%] before:bg-[#e1e1e1] before:transition-height before:duration-300 before:ease-in-out cursor-pointer;
@@ -1214,6 +1214,9 @@ html body .modula .modula-items .modula-item .modula-item-content>a.modula-item-
 }
 
 @media only screen and (min-width: 1024px) {
+  .modula .modula-items{
+    padding-right: 20px;
+  }
   .modula-fancybox-container .modula-fancybox-content{
     width: 100% !important;
     height: 100% !important;
