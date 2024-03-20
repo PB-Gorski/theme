@@ -67,12 +67,13 @@ function initDependenciesWatch(dependencies,affectedIds) {
   })
 }
 
-function getMenuItemElByTermId(id){
-  return getTargetElByTermId(id)?.parentElement
-}
 
 function getTargetElByTermId(id){
   return document.querySelector(`[data-termid='${id}']`)
+}
+
+function getMenuItemElByTermId(id){
+  return getTargetElByTermId(id)?.parentElement
 }
 
 function hideByIds(idArray){
