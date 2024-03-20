@@ -83,9 +83,21 @@ function showByIds(idArray){
   setVisibilityByIds(idArray,true)
 }
 
-function setVisibilityByIds(idArray,hidden){
+function setVisibilityByIds(idArray,visible){
   idArray.forEach(id => {
     const item = getMenuItemElByTermId(id)
-    if (item) hidden ? item.classList.remove('hidden') : item.classList.add('hidden') 
+    if (item){
+      if (visible) {
+        item.classList.remove('hidden')
+      }else{
+        item.classList.add('hidden')
+        unsetActiveById(id)
+      }
+    } 
   })
+}
+
+function unsetActiveById(id){
+  const item = getTargetElByTermId(id)
+  if(item && item.classList.contains('active')) item.click()
 }
