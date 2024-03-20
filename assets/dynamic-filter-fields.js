@@ -20,6 +20,15 @@ window.addEventListener('load',function(){
     81 - Wiezycka
     680 - Zatorze
     682 - Zatorze2
+
+    Pokoje:
+    640 - 1
+    641 - 2
+    642 - 3
+    643 - 4
+    644 - 5
+    645 - 6
+    646 - 7
   
     */
 
@@ -28,10 +37,22 @@ window.addEventListener('load',function(){
     40: [71],
     681: [680,682]
   }
-
   const investmentsIds = [71,72,677,82,81,680,682];
-
   initDependenciesWatch(cityDependencies,investmentsIds)
+
+  const investmentDependencies = {
+    71: [640,641,642,643],
+    72: [641,642,643],
+    677: [640, 641],
+    82: [640,642,643],
+    81: [641,642,643],
+    680: [642],
+    682: []
+  }
+
+  const roomsIds = [640, 641, 642, 643, 644, 645, 646];
+  initDependenciesWatch(investmentDependencies,roomsIds)
+
 
 })
 
