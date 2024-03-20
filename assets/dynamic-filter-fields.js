@@ -319,10 +319,10 @@
 
 
 
-window.addEventListener('load',()=>{
+window.addEventListener('load',function(){
 
-  if (document.querySelector('.ymc-smart-filter-container')) return
-  
+  if (!document.querySelector('.ymc-smart-filter-container')) return
+
   // Miasta:
   // 28 - Gdańsk
   // 40 - Gdynia
