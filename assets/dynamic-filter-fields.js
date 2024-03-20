@@ -356,9 +356,9 @@ function initDependenciesWatch(dependencies,affectedIds) {
     getTargetByTermId(id)?.addEventListener('click',()=>{
       hideByIds(affectedIds);
 
-      const activeIds = dependenciesIds.filter(id => getMenuItemByTermId(id)?.classList.contains('active')) 
-      activeIds.forEach(id => {
-        const affectedIdsVisible = dependencies[id]
+      const activeIds = dependenciesIds.filter(dependencyId => getMenuItemByTermId(dependencyId )?.classList.contains('active')) 
+      activeIds.forEach(activeDependencyId => {
+        const affectedIdsVisible = dependencies[activeDependencyId]
         showByIds(affectedIdsVisible)
       })
 
