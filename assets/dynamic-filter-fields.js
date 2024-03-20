@@ -37,9 +37,9 @@ window.addEventListener('load',function(){
 
 function initDependenciesWatch(dependencies,affectedIds) {
 
+  const dependenciesIds = Object.keys(dependencies)
   setDependencies(dependenciesIds,affectedIds)  //set dependencies on page enter
   
-  const dependenciesIds = Object.keys(dependencies)
   dependenciesIds.forEach(id => {
     const target = getTargetElByTermId(id);
     if (!target) return;
