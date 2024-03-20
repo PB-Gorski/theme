@@ -356,11 +356,13 @@ function initDependenciesWatch(dependencies,affectedIds) {
     getTargetByTermId(id)?.addEventListener('click',()=>{
       hideByIds(affectedIds);
 
-      const activeIds = dependenciesIds.filter(dependencyId => getMenuItemByTermId(dependencyId )?.classList.contains('active')) 
-      activeIds.forEach(activeDependencyId => {
-        const affectedIdsVisible = dependencies[activeDependencyId]
-        showByIds(affectedIdsVisible)
-      })
+      setTimeout(()=>{
+        const activeIds = dependenciesIds.filter(dependencyId => getMenuItemByTermId(dependencyId )?.classList.contains('active')) 
+        activeIds.forEach(activeDependencyId => {
+          const affectedIdsVisible = dependencies[activeDependencyId]
+          showByIds(affectedIdsVisible)
+        })
+      },100)
 
     })
   })
