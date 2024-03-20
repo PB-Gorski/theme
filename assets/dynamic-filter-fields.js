@@ -357,7 +357,7 @@ function initDependenciesWatch(dependencies,affectedIds) {
       hideByIds(affectedIds);
 
       setTimeout(()=>{
-        const activeIds = dependenciesIds.filter(dependencyId => getMenuItemByTermId(dependencyId )?.classList.contains('active')) 
+        const activeIds = dependenciesIds.filter(dependencyId => getTargetByTermId(dependencyId )?.classList.contains('active')) 
         activeIds.forEach(activeDependencyId => {
           const affectedIdsVisible = dependencies[activeDependencyId]
           showByIds(affectedIdsVisible)
