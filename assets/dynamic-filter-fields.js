@@ -38,7 +38,7 @@ window.addEventListener('load',function(){
 function initDependenciesWatch(dependencies,affectedIds) {
 
   const dependenciesIds = Object.keys(dependencies)
-  setDependencies(dependenciesIds,affectedIds)  //set dependencies on page enter
+  setDependencies(dependencies, dependenciesIds,affectedIds)  //set dependencies on page enter
   
   dependenciesIds.forEach(id => {
     const target = getTargetElByTermId(id);
@@ -47,14 +47,14 @@ function initDependenciesWatch(dependencies,affectedIds) {
     target.addEventListener('click',()=>{
       
       setTimeout(()=>{
-        setDependencies(dependenciesIds,affectedIds)
+        setDependencies(dependencies,dependenciesIds,affectedIds)
       },100)
 
     })
   })
 }
 
-function setDependencies(dependenciesIds,affectedIds){
+function setDependencies(dependencies,dependenciesIds,affectedIds){
   const activeIds = dependenciesIds.filter(dependencyId => {
     const target = getTargetElByTermId(dependencyId);
     return target && target.classList.contains('active');
