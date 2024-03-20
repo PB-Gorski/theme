@@ -36,6 +36,9 @@ window.addEventListener('load',function(){
 })
 
 function initDependenciesWatch(dependencies,affectedIds) {
+
+  setDependencies(dependenciesIds,affectedIds)  //set dependencies on page enter
+  
   const dependenciesIds = Object.keys(dependencies)
   dependenciesIds.forEach(id => {
     const target = getTargetElByTermId(id);
@@ -44,26 +47,30 @@ function initDependenciesWatch(dependencies,affectedIds) {
     target.addEventListener('click',()=>{
       
       setTimeout(()=>{
-        const activeIds = dependenciesIds.filter(dependencyId => {
-          const target = getTargetElByTermId(dependencyId);
-          return target && target.classList.contains('active');
-        })
-        
-        if (activeIds.length == 0) {
-          showByIds(affectedIds)
-          return 
-        }
-        
-        hideByIds(affectedIds);
-
-        activeIds.forEach(activeDependencyId => {
-          const affectedIdsVisible = dependencies[activeDependencyId]
-          if (affectedIdsVisible.length > 0) showByIds(affectedIdsVisible)
-          
-        })
+        setDependencies(dependenciesIds,affectedIds)
       },100)
 
     })
+  })
+}
+
+function setDependencies(dependenciesIds,affectedIds){
+  const activeIds = dependenciesIds.filter(dependencyId => {
+    const target = getTargetElByTermId(dependencyId);
+    return target && target.classList.contains('active');
+  })
+  
+  if (activeIds.length == 0) {
+    showByIds(affectedIds)
+    return 
+  }
+  
+  hideByIds(affectedIds);
+
+  activeIds.forEach(activeDependencyId => {
+    const affectedIdsVisible = dependencies[activeDependencyId]
+    if (affectedIdsVisible.length > 0) showByIds(affectedIdsVisible)
+    
   })
 }
 
