@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 @layer components {
-  .applyContainer1 .post-entry{
+  .applyContainer1 .post-entry,
+  .applyContainer1 .filter-layout3{
     @apply container mx-auto;
   }
-  .applyContainer2 .post-entry {
+  .applyContainer2 .post-entry,
+  .applyContainer2 .filter-layout3 {
     @apply container mx-auto;
   }
   .apply-btn-more-hover {
