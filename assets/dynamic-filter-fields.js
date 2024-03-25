@@ -5,21 +5,18 @@ window.addEventListener('load',function(){
 
   /*
   
-  IDS BASED ON DEV ENVIRONMENT!!!
+  IDS BASED ON PROD ENVIRONMENT
 
     Miasta:
     28 - Gdańsk
     40 - Gdynia
-    681 - Gliwice
     
     Inwestycje:
-    71 - Sw Piotra
     72 - Srebrniki
-    677 - Sukiennicza
+    675 - Sukiennicza
+    71 - Sw Piotra
     82 - Torunska
     81 - Wiezycka
-    680 - Zatorze
-    682 - Zatorze2
 
     Pokoje:
     640 - 1
