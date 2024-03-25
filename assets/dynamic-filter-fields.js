@@ -38,7 +38,7 @@ window.addEventListener('load',function(){
     681: [680,682]
   }
   const investmentsIds = [71,72,677,82,81,680,682];
-  initDependenciesWatch(cityDependencies,investmentsIds)
+  // initDependenciesWatch(cityDependencies,investmentsIds)
 
   const investmentDependencies = {
     71: [640,641,642,643],
@@ -51,7 +51,7 @@ window.addEventListener('load',function(){
   }
 
   const roomsIds = [640, 641, 642, 643, 644, 645, 646];
-  initDependenciesWatch(investmentDependencies,roomsIds)
+  // initDependenciesWatch(investmentDependencies,roomsIds)
 
 
 })
