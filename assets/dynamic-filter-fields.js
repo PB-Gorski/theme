@@ -86,13 +86,16 @@ function setDependencies(dependencies,dependenciesIds,affectedIds){
     return 
   }
   
-  hideByIds(affectedIds);
-
+  // hideByIds(affectedIds);
+  
+  const idsToShow = []
   activeIds.forEach(activeDependencyId => {
     const affectedIdsVisible = dependencies[activeDependencyId]
-    if (affectedIdsVisible.length > 0) showByIds(affectedIdsVisible)
-    
+    if (affectedIdsVisible.length > 0) idsToShow.push(...affectedIdsVisible)
   })
+  const idsToHide = affectedIds.filter(item => !idsToShow.includes(item))
+  hideByIds(idsToHide)
+  showByIds(idsToShow)
 }
 
 
