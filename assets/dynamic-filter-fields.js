@@ -30,21 +30,18 @@ window.addEventListener('load',function(){
     */
 
   const cityDependencies = {
-    28: [72,677,82,81],
+    28: [72,675,82,81],
     40: [71],
-    681: [680,682]
   }
-  const investmentsIds = [71,72,677,82,81,680,682];
+  const investmentsIds = [72,675,71,82,81];
   initDependenciesWatch(cityDependencies,investmentsIds)
 
   const investmentDependencies = {
+    72: [640,641,642,643],
+    675: [640, 641],
     71: [640,641,642,643],
-    72: [641,642,643],
-    677: [640, 641],
     82: [640,642,643],
     81: [641,642,643],
-    680: [642],
-    682: []
   }
 
   const roomsIds = [640, 641, 642, 643, 644, 645, 646];
