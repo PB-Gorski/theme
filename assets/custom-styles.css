@@ -1216,6 +1216,11 @@ html body .modula .modula-items .modula-item .modula-item-content>a.modula-item-
 }
 
 @media only screen and (min-width: 1024px) {
+
+  figure.wp-block-post-featured-image{
+    padding-right: 20px;
+
+  }
   .modula .modula-items{
     padding-right: 20px;
   }
@@ -1230,11 +1235,23 @@ html body .modula .modula-items .modula-item .modula-item-content>a.modula-item-
     width: auto !important;
     position: static !important;
     margin: 20px auto;
+    max-width: 90%;
   }
+  .featured_img_popup_container img{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+}
+
+.modula-fancybox-container .modula-fancybox-content img.modula-fancybox-image{
+  max-height: 1200px;
+  object-fit: contain;
 }
 
 .featured_img_popup_container img{
   height: auto !important;
+  max-height: 1200px;
 }
 
 .single .entry-content h4{
